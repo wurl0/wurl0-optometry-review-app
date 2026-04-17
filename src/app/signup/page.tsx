@@ -42,8 +42,8 @@ export default function SignupPage() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-teal-600 text-white text-2xl mb-4">👁️</div>
-          <h1 className="text-2xl font-bold text-gray-900">Create account</h1>
-          <p className="text-gray-500 text-sm mt-1">Join OLE Review — free for all OD students</p>
+          <h1 className="text-2xl font-bold text-gray-900">Join OptoPrep</h1>
+          <p className="text-gray-500 text-sm mt-1">Prep. Practice. Pass. — free for all OD students</p>
         </div>
 
         <form onSubmit={handleSignup} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">

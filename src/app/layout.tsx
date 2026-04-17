@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'OLE Review',
-  description: 'Philippine Optometry Licensure Exam Review Platform',
+  title: 'OptoPrep',
+  description: 'Prep. Practice. Pass. — The Philippine Optometry review platform.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

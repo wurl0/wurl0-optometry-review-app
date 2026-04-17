@@ -37,7 +37,7 @@ export default async function HomePage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">👁️</span>
-            <span className="font-bold text-gray-900">OLE Review</span>
+            <span className="font-bold text-gray-900">OptoPrep</span>
             <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full font-medium">2026</span>
           </div>
           <div className="flex items-center gap-3">
@@ -53,7 +53,7 @@ export default async function HomePage() {
         {/* Greeting */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
-          <p className="text-gray-500 mt-1">Pick a subject to practice. OLE 2026 — you got this.</p>
+          <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let's go.</p>
         </div>
 
         {/* Overall stats */}
