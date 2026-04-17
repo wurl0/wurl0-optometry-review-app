@@ -53,7 +53,7 @@ export default async function HomePage() {
         {/* Greeting */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
-          <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let's go.</p>
+          <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
 
         {/* Overall stats */}

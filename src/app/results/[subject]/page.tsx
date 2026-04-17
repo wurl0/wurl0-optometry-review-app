@@ -43,7 +43,11 @@ export default function ResultsPage() {
   })
 
   function toggleExpand(i: number) {
-    setExpanded(prev => { const n = new Set(prev); n.has(i) ? n.delete(i) : n.add(i); return n })
+    setExpanded(prev => {
+      const n = new Set(prev)
+      if (n.has(i)) { n.delete(i) } else { n.add(i) }
+      return n
+    })
   }
 
   function getAnswerLabel(q: Question, a: number | boolean | null): string {
