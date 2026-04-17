@@ -1,0 +1,1584 @@
+[
+  {
+    "type": "mcq",
+    "stem": "The Phorometric Test primarily deals with the determination of:",
+    "options": [
+      "Visual acuity and colour vision",
+      "The power of accommodation and convergence",
+      "Intraocular pressure and tear film",
+      "Retinal sensitivity and dark adaptation"
+    ],
+    "correct": 1,
+    "explanation": "The phorometric test deals specifically with the determination of the power of accommodation and convergence, particularly their relationship with each other.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which probe body is used to produce a specific effect on the accommodative pattern?",
+    "options": [
+      "Prisms",
+      "Lenses",
+      "Mirrors",
+      "Occluders"
+    ],
+    "correct": 1,
+    "explanation": "Lenses are used for a specific effect upon the accommodative pattern, while prisms are used for a specific effect upon the convergence pattern.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "A convex lens placed before the eye:",
+    "options": [
+      "Stimulates accommodation and makes the target appear smaller",
+      "Inhibits accommodation and makes the target appear bigger",
+      "Stimulates convergence and makes the target appear smaller",
+      "Inhibits convergence and makes the target appear bigger"
+    ],
+    "correct": 1,
+    "explanation": "A convex lens inhibits accommodation. The induced change is as if the object moved away, so the target appears bigger.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "A concave lens placed before the eye produces what change in the accommodative pattern?",
+    "options": [
+      "Inhibits accommodation; target appears bigger",
+      "Stimulates accommodation; target appears bigger",
+      "Inhibits accommodation; target appears smaller",
+      "Stimulates accommodation; target appears smaller"
+    ],
+    "correct": 3,
+    "explanation": "A concave lens stimulates accommodation. The induced change is as if the object moved closer, so the target appears smaller. Board trap: many confuse bigger/smaller with plus/minus.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "A Base-In prism inhibits convergence. What does the patient perceive about target size?",
+    "options": [
+      "Target appears smaller",
+      "Target appears the same size",
+      "Target appears bigger",
+      "Target appears distorted"
+    ],
+    "correct": 2,
+    "explanation": "Base-In prism inhibits convergence. The induced change is as if the object moved away, so the target appears bigger.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "A Base-Out prism stimulates convergence. The induced change is as if the object:",
+    "options": [
+      "Moved away from the plane of regard",
+      "Remained at the same distance",
+      "Moved closer to the observer",
+      "Disappeared from view"
+    ],
+    "correct": 2,
+    "explanation": "Base-Out prism stimulates convergence. The induced change is as if the object moved closer to the observer. Target appears smaller as a result.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following pairs share the same perceived effect on target SIZE?",
+    "options": [
+      "Convex lens and Base-Out prism",
+      "Concave lens and Base-In prism",
+      "Convex lens and Base-In prism",
+      "Concave lens and Base-Out prism"
+    ],
+    "correct": 2,
+    "explanation": "Convex lens (inhibits accommodation) and Base-In prism (inhibits convergence) both make the target appear BIGGER. Concave and Base-Out both make it appear smaller. Board trap: knowing which inhibit and which stimulate.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "The buffer area for the convergence pattern is:",
+    "options": [
+      "Esophoria",
+      "Hyperopia",
+      "Exophoria",
+      "Myopia"
+    ],
+    "correct": 2,
+    "explanation": "Exophoria is the buffer area for the convergence pattern. Hyperopia is the buffer area for the accommodative pattern.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "The buffer area for the accommodative pattern is:",
+    "options": [
+      "Exophoria",
+      "Esophoria",
+      "Myopia",
+      "Hyperopia"
+    ],
+    "correct": 3,
+    "explanation": "Hyperopia is the buffer area for the accommodative pattern. Exophoria is the buffer for convergence. These two are commonly reversed in board questions.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Probe bodies used in the phorometric test are composed of:",
+    "options": [
+      "Lenses and mirrors",
+      "Lenses and prisms",
+      "Prisms and mirrors",
+      "Filters and lenses"
+    ],
+    "correct": 1,
+    "explanation": "Probe bodies are composed of lenses and prisms. Lenses affect accommodation; prisms affect convergence.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which statement correctly describes the effect of a Base-Out prism on target perception?",
+    "options": [
+      "Object appears to move away; target appears bigger",
+      "Object appears to move closer; target appears bigger",
+      "Object appears to move away; target appears smaller",
+      "Object appears to move closer; target appears smaller"
+    ],
+    "correct": 3,
+    "explanation": "Base-Out prism stimulates convergence. The induced change is as if the object moved closer; the target appears smaller.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "At 16 inches (40cm), the stimulus to accommodation is:",
+    "options": [
+      "1.50D",
+      "2.00D",
+      "2.50D",
+      "3.00D"
+    ],
+    "correct": 2,
+    "explanation": "At 16 inches (40cm), the stimulus to accommodation is 2.50D and the stimulus to convergence is 15 prisms (if PD is approximately 64mm).",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "At 16 inches with a PD of approximately 64mm, the stimulus to convergence is:",
+    "options": [
+      "10 prism dioptres",
+      "12 prism dioptres",
+      "15 prism dioptres",
+      "18 prism dioptres"
+    ],
+    "correct": 2,
+    "explanation": "At 16 inches the stimulus to convergence is 15 prism dioptres when PD is approximately 64mm.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Von Graefe method of phoria measurement uses:",
+    "options": [
+      "A horizontal dissociating prism before both eyes",
+      "A vertical dissociating prism before one eye and a measuring prism before the other",
+      "Two measuring prisms before both eyes",
+      "A polaroid dissociator and prism bar"
+    ],
+    "correct": 1,
+    "explanation": "The Von Graefe method places a dissociating prism before one eye and a measuring prism before the other eye.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of prism is used to measure a lateral phoria?",
+    "options": [
+      "Horizontal dissociating prism",
+      "Vertical dissociating prism",
+      "Base-Out prism",
+      "Base-In prism"
+    ],
+    "correct": 1,
+    "explanation": "A vertical dissociating prism is used for the measurement of a lateral phoria. A horizontal dissociating prism is used for vertical phoria.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of prism is used to measure a VERTICAL phoria?",
+    "options": [
+      "Vertical dissociating prism",
+      "Horizontal dissociating prism",
+      "Base-Up prism only",
+      "Base-Down prism only"
+    ],
+    "correct": 1,
+    "explanation": "A horizontal dissociating prism is used for the measurement of vertical phoria. Board trap: vertical phoria requires a horizontal prism (not a vertical one).",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Phorias in the 21-step OEP sequence are measured at which two distances?",
+    "options": [
+      "10 ft and 16 inches",
+      "20 ft and 33 cm",
+      "20 ft (6M) and 16 inches (40cm)",
+      "6M and 50cm"
+    ],
+    "correct": 2,
+    "explanation": "Phorias are measured at distances of 20 ft (6M) and 16 inches (40cm).",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "The general use of the phoria test is primarily to:",
+    "options": [
+      "Measure the amplitude of accommodation",
+      "Indicate the position of rest of the eyes when fusional convergence is relaxed",
+      "Determine intraocular pressure",
+      "Assess retinal sensitivity"
+    ],
+    "correct": 1,
+    "explanation": "The phoria test is designated primarily to indicate the position of rest of the eyes when fusional convergence is relaxed.",
+    "isTrap": false,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "If a plus lens is placed before each eye, which of the near-point reactions occurs WITHOUT accommodation?",
+    "options": [
+      "Miosis only",
+      "Convergence and miosis but not accommodation",
+      "Accommodation and convergence but not miosis",
+      "Convergence only"
+    ],
+    "correct": 1,
+    "explanation": "If plus lenses are placed before each eye, pupillary constriction (miosis) and convergence occur without accommodation. Each near reaction can occur without the others.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "If a Base-In prism is placed before each eye, which reactions occur?",
+    "options": [
+      "Accommodation and miosis but not convergence",
+      "Convergence and accommodation but not miosis",
+      "Miosis only",
+      "Convergence only"
+    ],
+    "correct": 0,
+    "explanation": "If a base-in prism is placed before each eye, pupillary constriction and accommodation occur without convergence. Convergence is inhibited by BI prism.",
+    "isTrap": true,
+    "category": "probe"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #3 in the OEP sequence determines:",
+    "options": [
+      "Lateral muscular imbalance at far using test #7 lenses",
+      "Lateral muscular imbalance at near using habitual correction",
+      "Lateral muscular imbalance at far using habitual correction",
+      "Vertical muscular imbalance at far"
+    ],
+    "correct": 2,
+    "explanation": "Test #3 determines the lateral muscular imbalance at far using the patient's habitual correction. It is called the habitual lateral phoria at far.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The key difference between Test #3 and Test #8 is:",
+    "options": [
+      "Test distance — #3 is at far, #8 is at near",
+      "Lenses in place — #3 uses habitual correction, #8 uses Test #7 results",
+      "Prism setup — #3 uses BI prisms, #8 uses BO prisms",
+      "Endpoint — #3 uses blur, #8 uses vertical alignment"
+    ],
+    "correct": 1,
+    "explanation": "Both tests are at 20ft with the same prism setup and endpoint (vertical alignment). The difference is the lenses: #3 uses habitual correction, #8 uses Test #7 (the subjective refraction result).",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The prism setup used in Test #3 (Habitual Lateral Phoria at Far) is:",
+    "options": [
+      "OD: 6△BU / OS: 12-15△BI",
+      "OD: 12-15△BI / OS: 6△BU",
+      "OU: 3△BD",
+      "OU: ready to turn BO"
+    ],
+    "correct": 1,
+    "explanation": "The prism setup for Test #3 is OD: 12-15△BI and OS: 6△BU. This same setup is used for all lateral phoria tests (#3, #8, #13A, #13B, #15A, #15B).",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for Test #3 is:",
+    "options": [
+      "Blur out",
+      "Break and recovery",
+      "Vertical alignment",
+      "Horizontal alignment"
+    ],
+    "correct": 2,
+    "explanation": "The endpoint for Test #3 (and all lateral phoria tests) is vertical alignment. The measuring prism brings the two displaced images into vertical alignment to quantify the phoria.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #8 (Induced Lateral Phoria at Far) determines:",
+    "options": [
+      "Lateral muscular imbalance at far influenced by Test #7",
+      "Vertical muscular imbalance at far",
+      "Lateral phoria at near influenced by Test #7",
+      "Amplitude of accommodation"
+    ],
+    "correct": 0,
+    "explanation": "Test #8 determines the lateral muscular imbalance at far as influenced by Test #7 (the subjective refraction result). It shows how the prescription affects the phoria at far.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which test uses habitual correction at NEAR to determine lateral phoria?",
+    "options": [
+      "Test #8",
+      "Test #13B",
+      "Test #13A",
+      "Test #15A"
+    ],
+    "correct": 2,
+    "explanation": "Test #13A is the habitual lateral phoria at near. It uses habitual correction at near, the same as Test #3 uses habitual correction at far. #13B is the induced version at near.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The phoropter adjustment for Test #3 is set to:",
+    "options": [
+      "Near PD",
+      "Far PD",
+      "Any PD",
+      "Monocular PD"
+    ],
+    "correct": 1,
+    "explanation": "Test #3 is at far (20ft), so the phoropter is adjusted to Far PD. Near tests use Near PD.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #13B uses which lenses?",
+    "options": [
+      "Habitual correction at near",
+      "Test No. 7 lenses",
+      "Gross No. 14A lenses",
+      "Test No. 7 (H/E)"
+    ],
+    "correct": 2,
+    "explanation": "Test #13B (Induced Lateral Phoria at Near) uses Gross No. 14A lenses, not Test #7. This distinguishes it from #13A (habitual) and from #8 (induced at far, which uses Test #7).",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #9 (True Adduction at Far) uses which prism direction?",
+    "options": [
+      "OU: ready to turn BI",
+      "OU: ready to turn BO",
+      "OD: 12-15△BI / OS: 6△BU",
+      "OD: 3△BD / OS: 3△BU"
+    ],
+    "correct": 1,
+    "explanation": "Test #9 uses OU ready to turn BO (Base-Out). Despite being called 'adduction' (inward movement), the BO prism forces the eyes to converge more — this is the true adduction test at far.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for Test #9 (True Adduction) is:",
+    "options": [
+      "Break and recovery",
+      "Vertical alignment",
+      "Blur (same as adding +0.25D)",
+      "Horizontal alignment"
+    ],
+    "correct": 2,
+    "explanation": "The endpoint for Test #9 is blur — specifically blur equivalent to what +0.25D auxiliary lens produces. This is different from #10 whose endpoint is Break/Recovery.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #10 (Convergence at Far) measures:",
+    "options": [
+      "The limit of available fusional convergence in reserve at blur",
+      "The reserve of the total positive convergence at far; break represents total positive convergence",
+      "The negative fusional convergence in reserve at far",
+      "The amplitude of accommodation at far"
+    ],
+    "correct": 1,
+    "explanation": "Test #10: Breakpoint represents the reserve of the total positive convergence at far. Recovery represents the limit of the fusional field in that direction.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #11 (Abduction at Far) uses which prism and what does its breakpoint indicate?",
+    "options": [
+      "BO prisms; positive fusional reserve",
+      "BI prisms; negative fusional convergence or divergence in reserve",
+      "BO prisms; negative fusional convergence",
+      "BI prisms; positive fusional reserve"
+    ],
+    "correct": 1,
+    "explanation": "Test #11 uses BI (Base-In) prisms and the breakpoint indicates the negative fusional convergence or divergence in reserve at far.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "An auxiliary lens of +0.25D is used in which step?",
+    "options": [
+      "Test #10",
+      "Test #9",
+      "Test #11",
+      "Test #12"
+    ],
+    "correct": 1,
+    "explanation": "Test #9 (True Adduction at Far) uses an auxiliary +0.25D lens. The endpoint is blur equivalent to the effect of this +0.25D lens.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Tests #9, #10, and #11 all use which lenses?",
+    "options": [
+      "Habitual correction",
+      "Test No. 7",
+      "Gross No. 14A",
+      "Test No. 7 plus auxiliary"
+    ],
+    "correct": 1,
+    "explanation": "Tests #9, #10, and #11 all use Test No. 7 lenses (the result of subjective refraction). They are all conducted at 20ft with far PD.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #12 (Vertical Phoria at Far) determines:",
+    "options": [
+      "The amount of lateral imbalance at far",
+      "The amount of vertical imbalance at far",
+      "The amplitude of accommodation at near",
+      "The positive relative convergence at near"
+    ],
+    "correct": 1,
+    "explanation": "Test #12 phoria component determines the amount of vertical imbalance at far. The duction component determines the reserve used at far to compensate vertical imbalance.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for the Vertical Duction component of Test #12 is:",
+    "options": [
+      "Vertical alignment",
+      "Horizontal alignment",
+      "Break and recovery",
+      "Blur out"
+    ],
+    "correct": 2,
+    "explanation": "The vertical duction component of Test #12 has a Break/Recovery endpoint. The phoria component uses horizontal alignment as its endpoint.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #18 is the near equivalent of Test #12. Their difference is:",
+    "options": [
+      "Test distance — #12 is at far, #18 is at near",
+      "Prism direction — #12 uses BU/BD, #18 uses BI/BU",
+      "Lenses — #12 uses habitual, #18 uses Test #7",
+      "Endpoint — #12 uses blur, #18 uses break"
+    ],
+    "correct": 0,
+    "explanation": "Tests #12 and #18 are identical except for test distance. #12 is at 20ft (Far PD), #18 is at 16 inches (Near PD). Both use Test #7, BU/BD prisms, and Break/Recovery endpoints.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "For the vertical phoria measurement in Tests #12 and #18, which prism setup is used?",
+    "options": [
+      "OD: 12-15△BI / OS: 6△BU",
+      "OU: ready to turn BO",
+      "OD: 12-15△BI / OS: 6△BU for phoria; BU and BD for duction",
+      "OU: 3△BD and 3△BU"
+    ],
+    "correct": 2,
+    "explanation": "For phoria in #12 and #18: OD 12-15△BI / OS 6△BU with endpoint horizontal alignment. For duction: prisms ready to turn BU and BD with endpoint Break/Recovery.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #18 uses which phoropter adjustment?",
+    "options": [
+      "Far PD",
+      "Near PD",
+      "Monocular PD",
+      "Interpupillary distance at 33cm"
+    ],
+    "correct": 1,
+    "explanation": "Test #18 is at 16 inches (40cm), so it uses Near PD. Test #12 is at 20ft and uses Far PD.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #14A (Dissociated Cross-Cylinder) uses which prism setup?",
+    "options": [
+      "OD: 12-15△BI / OS: 6△BU",
+      "OD: 3△BD / OS: 3△BU",
+      "OU: ready to turn BO",
+      "No prisms"
+    ],
+    "correct": 1,
+    "explanation": "Test #14A uses OD: 3△BD and OS: 3△BU to dissociate the images. This is different from the 12-15△BI / 6△BU used in phoria tests.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #14B (Binocular Cross-Cylinder) differs from #14A primarily in:",
+    "options": [
+      "Test distance — #14A is at far, #14B is at near",
+      "Prisms — #14B uses no prisms; images are fused",
+      "Endpoint — #14A uses blur, #14B uses alignment",
+      "Lenses — #14A uses Test #7, #14B uses habitual correction"
+    ],
+    "correct": 1,
+    "explanation": "The key difference: #14A uses dissociating prisms (OD 3△BD / OS 3△BU) making it dissociated. #14B uses NO prisms, keeping the images fused (binocular condition). Both have the same endpoint: equality (highest plus).",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The auxiliary device used in both #14A and #14B is:",
+    "options": [
+      "Maddox rod",
+      "Cross-cylinder (-0.50D) with red dot at 90",
+      "Polaroid filter",
+      "+0.50D cross-cylinder"
+    ],
+    "correct": 1,
+    "explanation": "Both #14A and #14B use a cross-cylinder of -0.50D with the red dot at 90 degrees as the auxiliary device.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for Test #14A is:",
+    "options": [
+      "Blur out",
+      "Break and recovery",
+      "Equality — highest plus",
+      "Vertical alignment"
+    ],
+    "correct": 2,
+    "explanation": "The endpoint for Test #14A is equality at the highest plus level. This is also the endpoint for Test #14B.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #14A (Dissociated Cross-Cylinder) indicates:",
+    "options": [
+      "The lag of accommodation under fused condition",
+      "The lag of accommodation under dissociated condition",
+      "The positive fusional reserve at near",
+      "The amplitude of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Test #14A indicates the lag of accommodation under dissociated condition. Test #14B indicates the lag under fused (binocular) condition.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #14B uses which lenses?",
+    "options": [
+      "Test No. 7",
+      "Habitual near correction",
+      "Gross No. 14A",
+      "Test No. 7 plus cross-cylinder"
+    ],
+    "correct": 2,
+    "explanation": "Test #14B uses Gross No. 14A as the lenses in place. This is a common board trap — #14A uses Test #7, but #14B builds on #14A's gross finding.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The test target used in both #14A and #14B is:",
+    "options": [
+      "Smallest readable Snellen",
+      "Reduced Snellen",
+      "Cross grid",
+      "0.62 Em type"
+    ],
+    "correct": 2,
+    "explanation": "Both #14A and #14B use a cross grid as the test target. This is different from other near tests which use the smallest readable target.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The illumination used for Tests #14A and #14B is:",
+    "options": [
+      "20 ft. candle only",
+      "Dim illumination only",
+      "20 ft. candle or dim illumination",
+      "Bright overhead lighting"
+    ],
+    "correct": 2,
+    "explanation": "Tests #14A and #14B are conducted under 20 ft. candle or dim illumination, unlike most other tests which use 20 ft. candle only.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #15A determines:",
+    "options": [
+      "Lag of accommodation under dissociated condition",
+      "Influence of #14A lenses on lateral muscular imbalance at near",
+      "Positive relative convergence at near",
+      "Amplitude of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Test #15A determines the influence of #14A lenses on lateral muscular imbalance at near. It uses the same prism setup as lateral phoria tests (OD 12-15△BI / OS 6△BU).",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The test target for Test #15B is:",
+    "options": [
+      "Cross grid",
+      "0.62 Em type",
+      "Smallest readable",
+      "Reduced Snellen"
+    ],
+    "correct": 3,
+    "explanation": "Test #15B uses a Reduced Snellen as the test target. Test #15A uses a Cross grid. Board trap: #15A and #15B share the same prism setup but differ in lenses and target.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #15B uses which lenses?",
+    "options": [
+      "Test No. 7",
+      "Gross No. 14A",
+      "Gross No. 14B",
+      "Habitual near correction"
+    ],
+    "correct": 2,
+    "explanation": "Test #15B uses Gross No. 14B as the lenses in place. Test #15A uses Gross No. 14A. Both have the same endpoint: vertical alignment.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #15A determines the influence of which previous test's lenses?",
+    "options": [
+      "Test #7",
+      "Test #13A",
+      "Test #14A",
+      "Test #14B"
+    ],
+    "correct": 2,
+    "explanation": "Test #15A determines the influence of #14A lenses on lateral muscular imbalance at near. #15B determines the influence of #14B lenses.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for both Tests #15A and #15B is:",
+    "options": [
+      "Blur out",
+      "Break and recovery",
+      "Equality — highest plus",
+      "Vertical alignment"
+    ],
+    "correct": 3,
+    "explanation": "Both #15A and #15B have vertical alignment as their endpoint. They function like phoria tests but with the cross-cylinder lenses in place.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #16A (Positive Relative Convergence) uses which prism direction?",
+    "options": [
+      "OU: ready to turn BI",
+      "OU: ready to turn BO",
+      "OD: 12-15△BI / OS: 6△BU",
+      "OD: 3△BD / OS: 3△BU"
+    ],
+    "correct": 1,
+    "explanation": "Test #16A uses OU ready to turn Base-Out (BO). BO prisms stimulate convergence. Tests #16A and #16B are the positive convergence tests.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for Test #16A (PRC) is:",
+    "options": [
+      "Break and recovery",
+      "Vertical alignment",
+      "Blur out",
+      "Horizontal alignment"
+    ],
+    "correct": 2,
+    "explanation": "Test #16A (Positive Relative Convergence) endpoint is blur out only. Test #16B (Positive Fusional Reserve) goes further to break and recovery. Board trap: #16A stops at blur; #16B continues to break.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The clinical significance of the blur point in Test #16A is:",
+    "options": [
+      "It indicates the limit of total convergence at near",
+      "It indicates the amount of positive fusional innervation in reserve at the fixation distance",
+      "It indicates the break point of the vergence system",
+      "It indicates the amplitude of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "In Test #16A, the blur point indicates the amount of positive fusional innervation in reserve available at that fixation distance.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "In Test #16B (Positive Fusional Reserve), the recovery point indicates:",
+    "options": [
+      "The total positive convergence at near",
+      "The limit of the fusion field in that direction",
+      "The accommodative convergence in reserve",
+      "The blur point of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "In Test #16B, the break point indicates accommodative convergence in reserve. The recovery point indicates the limit of the fusion field in that direction.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Tests #17A and #17B use which prism direction?",
+    "options": [
+      "OU: ready to turn BO",
+      "OU: ready to turn BI",
+      "OD: 3△BD / OS: 3△BU",
+      "OD: 12-15△BI / OS: 6△BU"
+    ],
+    "correct": 1,
+    "explanation": "Tests #17A and #17B use OU ready to turn Base-In (BI). BI prisms inhibit convergence. Board trap: #16A/16B = BO (positive), #17A/17B = BI (negative).",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "The endpoint for Test #17A (Negative Relative Convergence) is:",
+    "options": [
+      "Break and recovery",
+      "Blur out",
+      "Vertical alignment",
+      "Horizontal alignment"
+    ],
+    "correct": 1,
+    "explanation": "Test #17A (NRC) endpoint is blur out. Test #17B (NFR) endpoint is break and recovery. Same A/B rule: A = blur, B = break/recovery.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #17A (Negative Relative Convergence) blur point indicates:",
+    "options": [
+      "The positive fusional innervation in reserve",
+      "The amount of convergence that can be stimulated",
+      "The amount of negative fusional convergence or convergence relaxable at that fixation distance",
+      "The accommodative convergence in reserve"
+    ],
+    "correct": 2,
+    "explanation": "Test #17A blur point indicates the amount of negative fusional convergence or measures the amount of convergence relaxable at that fixation distance.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "For a non-presbyope, which lenses are used in Tests #16A and #16B?",
+    "options": [
+      "Habitual near correction",
+      "Test #7 (H/E)",
+      "Gross No. 14A",
+      "Gross No. 14B"
+    ],
+    "correct": 1,
+    "explanation": "For a non-presbyope, Tests #16A and #16B use Test #7 (H/E). For presbyopes they use 14B Net. For myopes they use habitual minus at near.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "For a PRESBYOPE, Tests #16A, #16B, #17A, and #17B use which lenses?",
+    "options": [
+      "Test #7",
+      "Habitual near correction",
+      "Gross No. 14A",
+      "14B Net"
+    ],
+    "correct": 3,
+    "explanation": "For presbyopes, Tests #16A, #16B, #17A, and #17B use 14B Net. Non-presbyopes use Test #7 (H/E). Myopes use habitual minus at near. Board trap: the lens varies by patient type.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #17B (Negative Fusional Reserve) break point indicates:",
+    "options": [
+      "The limit of the fusion field",
+      "The amount of negative fusional convergence relaxable",
+      "The amount of accommodative convergence which relaxation of accommodation can inhibit",
+      "The total negative convergence at near"
+    ],
+    "correct": 2,
+    "explanation": "Test #17B break point indicates the amount of accommodative convergence which the relaxation of accommodation can inhibit. Recovery indicates the limit of the fusion field.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #19 (Amplitude of Accommodation) uses which test target?",
+    "options": [
+      "Smallest readable Snellen",
+      "Cross grid",
+      "Reduced Snellen (20/20)",
+      "0.62 Em type"
+    ],
+    "correct": 3,
+    "explanation": "Test #19 uses 0.62 Em type as the test target, which is different from most other near tests that use smallest readable.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "For a NON-PRESBYOPE in Test #19, which lenses are added and what is the endpoint?",
+    "options": [
+      "Plus lenses; 1st readable",
+      "Minus lenses; print difficult to read",
+      "Plus lenses; blur out",
+      "Minus lenses; 1st readable"
+    ],
+    "correct": 1,
+    "explanation": "For a non-presbyope: minus lenses are added until print becomes difficult to read. For a presbyope: plus lenses are added until 1st readable. Board trap: direction of lens change is opposite.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #19 (Amplitude of Accommodation) clinical significance is:",
+    "options": [
+      "To determine the positive relative accommodation",
+      "To determine the maximum amplitude of accommodation",
+      "To determine the lag of accommodation",
+      "To determine the positive fusional reserve"
+    ],
+    "correct": 1,
+    "explanation": "Test #19 determines the amount (maximum) of amplitude of accommodation available to the patient.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #20 (Positive Relative Accommodation) procedure involves:",
+    "options": [
+      "Plus lenses added until 20/20 cannot be read",
+      "Minus lenses added until 20/20 cannot be read",
+      "BO prisms added until blur",
+      "BI prisms added until break"
+    ],
+    "correct": 1,
+    "explanation": "Test #20 (PRA): minus lenses are added until the patient cannot read the 20/20 reduced Snellen. This measures the maximum amount of accommodation that can be stimulated.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #21 (Negative Relative Accommodation) procedure involves:",
+    "options": [
+      "Minus lenses added; endpoint blur out",
+      "Plus lenses added; endpoint blur out",
+      "BI prisms; endpoint blur out",
+      "BO prisms; endpoint break/recovery"
+    ],
+    "correct": 1,
+    "explanation": "Test #21 (NRA): plus lenses are added until blur. This inhibits accommodation. Board trap: PRA (#20) = minus lenses (stimulate). NRA (#21) = plus lenses (inhibit).",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #20 (PRA) indicates:",
+    "options": [
+      "The extent to which accommodation can be inhibited at 16 inches",
+      "The extent to which accommodation can be stimulated at 16 inches",
+      "The amplitude of accommodation",
+      "The lag of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Test #20 indicates the extent at which accommodation would be STIMULATED while fixation is maintained at 16 inches.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #21 (NRA) indicates:",
+    "options": [
+      "The extent to which accommodation can be stimulated at 16 inches",
+      "The amplitude of accommodation available",
+      "The extent to which accommodation can be inhibited at 16 inches",
+      "The positive fusional convergence in reserve"
+    ],
+    "correct": 2,
+    "explanation": "Test #21 indicates the extent at which accommodation could be INHIBITED while fixation is maintained at 16 inches.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Both Tests #20 and #21 share the same endpoint. What is it?",
+    "options": [
+      "Break and recovery",
+      "Vertical alignment",
+      "1st readable",
+      "Blur out"
+    ],
+    "correct": 3,
+    "explanation": "Both #20 (PRA) and #21 (NRA) have blur out as their endpoint. The difference is the direction of lens change: #20 adds minus, #21 adds plus.",
+    "isTrap": true,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "For a presbyope in Test #20 and #21, which lenses are used as the starting point?",
+    "options": [
+      "Test #7",
+      "Habitual near correction",
+      "14B Net",
+      "Gross No. 14A"
+    ],
+    "correct": 2,
+    "explanation": "For presbyopes in Tests #20 and #21, the starting lenses are 14B Net. Non-presbyopes use Test #7 (H/E). Myopes use habitual minus at near.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "Test #19 for a presbyope uses plus lenses added until:",
+    "options": [
+      "Blur out",
+      "Print becomes difficult to read",
+      "1st readable",
+      "Break"
+    ],
+    "correct": 2,
+    "explanation": "For presbyopes in Test #19: plus lenses are added until 1st readable (the point where they can just read the target). For non-presbyopes: minus lenses until print becomes difficult.",
+    "isTrap": false,
+    "category": "step"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the OEP technique, Net #4 is calculated as:",
+    "options": [
+      "Gross #4 minus lag",
+      "Gross #4 minus working distance",
+      "Gross #5 minus lag",
+      "Gross #4 plus working distance"
+    ],
+    "correct": 1,
+    "explanation": "Net #4 = Gross #4 minus Working Distance. The working distance is subtracted because it represents the dioptric equivalent of the examiner's distance.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Gross #4 = +2.00, Working Distance = 50cm. Net #4 = ?",
+    "options": [
+      "+2.00",
+      "+0.00",
+      "+4.00",
+      "+1.00"
+    ],
+    "correct": 1,
+    "explanation": "WD at 50cm = 100/50 = 2.00D. Net #4 = Gross #4 - WD = +2.00 - 2.00 = +0.00. The patient has no net hyperopia at this distance.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Gross #4 = +3.00, Working Distance = 50cm. Net #4 = ?",
+    "options": [
+      "+1.00",
+      "+3.00",
+      "+5.00",
+      "+2.00"
+    ],
+    "correct": 0,
+    "explanation": "WD at 50cm = 2.00D. Net #4 = +3.00 - 2.00 = +1.00.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Reading Add using OEP technique is calculated as:",
+    "options": [
+      "Net #5 minus Net #6",
+      "Net #6 minus Net #4",
+      "Net #5 minus Net #4",
+      "Net #4 minus Net #5"
+    ],
+    "correct": 2,
+    "explanation": "Reading Add = Net #5 minus Net #4. This is the fundamental OEP reading add formula.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Net #5 = +2.75, Net #4 = +0.00. Reading Add = ?",
+    "options": [
+      "+0.00",
+      "+2.75",
+      "+5.50",
+      "+1.375"
+    ],
+    "correct": 1,
+    "explanation": "Reading Add = Net #5 - Net #4 = +2.75 - 0.00 = +2.75 sph.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Net #5 = +3.25, Net #4 = +1.00. Reading Add = ?",
+    "options": [
+      "+4.25",
+      "+2.25",
+      "+3.25",
+      "+1.00"
+    ],
+    "correct": 1,
+    "explanation": "Reading Add = Net #5 - Net #4 = +3.25 - +1.00 = +2.25 sph.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the OEP lag table, a phoria of 2 XOP corresponds to a lag of:",
+    "options": [
+      "0.12",
+      "0.25",
+      "0.50",
+      "0.75"
+    ],
+    "correct": 1,
+    "explanation": "From the OEP lag table: 2 XOP = 0.25 lag. 1 XOP = 0.12, 4 XOP = 0.50, 6 XOP = 0.75.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the OEP lag table, a phoria of 8 XOP corresponds to a lag of:",
+    "options": [
+      "0.75",
+      "0.87",
+      "1.00",
+      "1.25"
+    ],
+    "correct": 2,
+    "explanation": "From the OEP lag table: 8 XOP = 1.00 lag.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "When is the modified lag formula (ML = Lag x AA/5) applied?",
+    "options": [
+      "When AA is 5.00D and above",
+      "When AA is less than 5.00D",
+      "Always in every calculation",
+      "Only when phoria is esophoric"
+    ],
+    "correct": 1,
+    "explanation": "The modified lag formula ML = Lag x AA/5 is applied only when AA is LESS than 5.00D. If AA is 5.00D and above, the lag from the table is used directly without modification.",
+    "isTrap": true,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Gross #5 = +3.00, #15A phoria = 2 XOP, AA = 2.50D (less than 5.00D). Modified lag = ?",
+    "options": [
+      "0.25",
+      "0.125",
+      "0.50",
+      "0.375"
+    ],
+    "correct": 1,
+    "explanation": "Lag from table for 2 XOP = 0.25. Since AA < 5.00D: ML = Lag x AA/5 = 0.25 x (2.50/5) = 0.25 x 0.5 = 0.125.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Net #6 = Gross #6 minus:",
+    "options": [
+      "Working distance",
+      "Net #4",
+      "Lag (0.25D when AA ≥ 5.00D)",
+      "Modified lag"
+    ],
+    "correct": 2,
+    "explanation": "Net #6 = Gross #6 minus lag. When AA is 5.00D and above, the lag is 0.25D (from the table for the measured XOP). The formula is straightforward subtraction.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Given: Gross #6 = +2.75, lag (from table) = 0.25. Net #6 = ?",
+    "options": [
+      "+3.00",
+      "+2.75",
+      "+2.50",
+      "+2.25"
+    ],
+    "correct": 2,
+    "explanation": "Net #6 = Gross #6 - lag = +2.75 - 0.25 = +2.50 sph.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Tait method, Physiologic Exophoria (PEX) is calculated as:",
+    "options": [
+      "TC minus AC",
+      "En minus Ed",
+      "Ed minus En",
+      "TC minus En"
+    ],
+    "correct": 1,
+    "explanation": "PEX = En - Ed, where En = phoria at near and Ed = phoria at far (distance). Positive values are XOP, negative values are ESO.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "In Tait's method with En = 8 XOP and Ed = 2 XOP, the PEX = ?",
+    "options": [
+      "10 XOP",
+      "6 XOP",
+      "4 XOP",
+      "2 XOP"
+    ],
+    "correct": 1,
+    "explanation": "PEX = En - Ed = 8 - 2 = 6 XOP.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "In Tait's method at 13 inches (TC = 18△), with PEX = 6 XOP, Accommodative Convergence (AC) = ?",
+    "options": [
+      "24△",
+      "12△",
+      "6△",
+      "18△"
+    ],
+    "correct": 1,
+    "explanation": "AC = TC - PEX = 18 - 6 = 12△. TC at 13 inches is 18 prism dioptres. TC at 16 inches is 15 prism dioptres.",
+    "isTrap": false,
+    "category": "calc"
+  },
+  {
+    "type": "mcq",
+    "stem": "Tests that induce an alteration of stimulus to CONVERGENCE include which of the following?",
+    "options": [
+      "Binocular Cross-Cylinder (#14A) and Dissociated Cross-Cylinder (#14B)",
+      "Amplitude of Accommodation (#19) and PRA (#20)",
+      "Phoria tests at far and near (#3, #8, #13A, #13B)",
+      "NRA (#21) only"
+    ],
+    "correct": 2,
+    "explanation": "Tests altering stimulus to convergence include phoria tests (#3, #8, #12, #13A, #13B, #15A, #15B, #18) and duction/vergence tests (#9, #10, #11, #16A, #16B, #17A, #17B). CC tests (#14A, #14B) and accommodation tests (#19, #20, #21) alter accommodation stimulus.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Tests #14A and #14B are classified as tests of indefinite response because:",
+    "options": [
+      "They do not have a defined endpoint",
+      "The patient's response is subjective and variable",
+      "They measure accommodation indirectly through a cross-cylinder, not directly",
+      "They are not part of the standard 21-step sequence"
+    ],
+    "correct": 2,
+    "explanation": "Tests #14A (Binocular CC) and #14B (Dissociated CC) are tests of indefinite response. Tests of definite response include AA (#19), PRA (#20), and NRA (#21).",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which tests are classified as tests of DEFINITE response in the accommodation category?",
+    "options": [
+      "#14A and #14B",
+      "#19, #20, and #21",
+      "#16A, #16B, #17A, and #17B",
+      "#3 and #8"
+    ],
+    "correct": 1,
+    "explanation": "Tests of definite response under accommodation include Amplitude of Accommodation (#19), Positive Relative Accommodation (#20), and Negative Relative Accommodation (#21).",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The test illumination used for most of the 21 steps is:",
+    "options": [
+      "10 ft. candle",
+      "20 ft. candle",
+      "30 ft. candle",
+      "Dim illumination only"
+    ],
+    "correct": 1,
+    "explanation": "Most tests in the 21-step sequence use 20 ft. candle illumination. Tests #14A and #14B may use dim illumination alternatively.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which pair of tests measures vertical imbalance (phoria and duction)?",
+    "options": [
+      "#3 and #13A",
+      "#9 and #11",
+      "#12 and #18",
+      "#16A and #17A"
+    ],
+    "correct": 2,
+    "explanation": "Tests #12 and #18 measure vertical phoria and vertical duction, at far and near respectively. #3 and #13A measure lateral phoria.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The phorometric test is conducted by investigating accommodation and convergence using:",
+    "options": [
+      "Ophthalmoscope and slit lamp",
+      "Lenses and prisms as probe bodies",
+      "Retinoscope and keratometer",
+      "Tonometer and perimeter"
+    ],
+    "correct": 1,
+    "explanation": "The phorometric test uses probe bodies composed of lenses (for accommodation) and prisms (for convergence) to investigate the relationship between these two visual patterns.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Static retinoscopy (Test #4) differs from dynamic retinoscopy (#5, #6) in that:",
+    "options": [
+      "#4 is done binocularly; #5 and #6 are monocular",
+      "#4 allows for working distance; #5 and #6 do not",
+      "#4 is at near; #5 and #6 are at far",
+      "#4 uses prisms; #5 and #6 use lenses"
+    ],
+    "correct": 1,
+    "explanation": "Static retinoscopy (Test #4) gives allowance for working distance. Dynamic retinoscopy (#5, #6) gives no allowance for working distance because the patient fixates at the plane of the retinoscope.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In dynamic retinoscopy, which point is recorded as the gross finding in Test #5?",
+    "options": [
+      "The lowest neutral point (LNP)",
+      "The first neutral point",
+      "The highest neutral point (HNP) — highest plus or least minus",
+      "The reversal point"
+    ],
+    "correct": 2,
+    "explanation": "The amount of plus with the highest plus or least minus represents the gross finding in Test #5 — this is the HNP (Highest Neutral Point).",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The MEM (Monocular Estimate Method) uses which motion as an indicator to add plus lenses?",
+    "options": [
+      "Against motion — add plus",
+      "With motion — add plus",
+      "Neutral — add plus",
+      "Against motion — add minus"
+    ],
+    "correct": 1,
+    "explanation": "In MEM: With motion means the eye is under-accommodating, so plus lenses are added. Against motion means over-accommodating, so minus lenses are added.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Nott method, if the movement is WITH motion at 40cm, the examiner:",
+    "options": [
+      "Moves closer to the patient until neutral",
+      "Moves away from the patient until neutral while keeping the target fixed",
+      "Adds plus lenses until neutral",
+      "Adds minus lenses until neutral"
+    ],
+    "correct": 1,
+    "explanation": "In the Nott method, if the movement is with, the examiner moves AWAY from the patient (keeping the target fixed) until the neutral point is reached. This measures the lag of accommodation.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Sheard method, what lag of accommodation did Sheard consider normal?",
+    "options": [
+      "0.25D or slightly more",
+      "0.50D or slightly more",
+      "0.75D or slightly more",
+      "1.00D or slightly more"
+    ],
+    "correct": 1,
+    "explanation": "Sheard believed the normal lag of accommodation was 0.50D or slightly more, and routinely subtracted 0.50D from the dynamic finding.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Bell retinoscopy method uses a change from 'with' to 'against' motion that typically occurs between:",
+    "options": [
+      "20-30cm",
+      "35-42cm (14-17 inches)",
+      "50-60cm",
+      "10-15cm"
+    ],
+    "correct": 1,
+    "explanation": "In Bell retinoscopy, a change from 'with' to 'against' is typically between 35-42cm (14-17 inches), and the change back from 'against' to 'with' at 37.5-45cm (15-18 inches).",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which test specifically uses the cross grid as its test target?",
+    "options": [
+      "Tests #14A, #14B, and #15A",
+      "Tests #16A and #16B",
+      "Tests #3 and #8",
+      "Tests #19, #20, and #21"
+    ],
+    "correct": 0,
+    "explanation": "Tests #14A, #14B, and #15A use the cross grid as the test target. Test #15B uses a Reduced Snellen. Most other near tests use the smallest readable target.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which test uses 0.62 Em type as the test target?",
+    "options": [
+      "Test #19 (Amplitude of Accommodation)",
+      "Test #20 (PRA)",
+      "Test #21 (NRA)",
+      "Test #16A (PRC)"
+    ],
+    "correct": 0,
+    "explanation": "Test #19 (Amplitude of Accommodation) uses 0.62 Em type. Tests #20, #21, #16A, #16B, #17A, and #17B use the smallest readable (20/20 reduced Snellen).",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "For a MYOPE in Tests #16A, #16B, #17A, and #17B, which lenses are used?",
+    "options": [
+      "Test #7",
+      "14B Net",
+      "Habitual minus at near",
+      "Habitual correction at far"
+    ],
+    "correct": 2,
+    "explanation": "For myopes in Tests #16A, #16B, #17A, and #17B: habitual minus at near. Non-presbyopes use Test #7 (H/E). Presbyopes use 14B Net.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following tests has its endpoint described as 'blur same as adding +0.25D'?",
+    "options": [
+      "Test #10",
+      "Test #9",
+      "Test #11",
+      "Test #16A"
+    ],
+    "correct": 1,
+    "explanation": "Test #9 (True Adduction at Far) has a unique endpoint: blur equivalent to adding +0.25D auxiliary lens. This differentiates it from #10 and #11 which use break/recovery.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The major difference between Test #9 (True Adduction) and Test #10 (Convergence) at far is:",
+    "options": [
+      "Prism direction — #9 uses BI, #10 uses BO",
+      "Endpoint — #9 endpoint is blur; #10 endpoint is break/recovery; also #9 uses +0.25 auxiliary",
+      "Lenses — #9 uses habitual, #10 uses Test #7",
+      "Test distance — #9 is at near, #10 is at far"
+    ],
+    "correct": 1,
+    "explanation": "Both use BO prisms and Test #7 lenses at far. The differences are: #9 uses a +0.25D auxiliary lens and has blur as its endpoint, while #10 has break/recovery and no auxiliary lens.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Tait method uses a working distance of:",
+    "options": [
+      "20 inches (50cm)",
+      "16 inches (40cm)",
+      "13 inches (33cm)",
+      "10 inches (25cm)"
+    ],
+    "correct": 2,
+    "explanation": "Tait's method uses a working distance of 33cm (13 inches), where total convergence (TC) = 18 prism dioptres.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient has a large exophoria at near but a small PFR (#16B). This patient is most likely to experience:",
+    "options": [
+      "No symptoms — exophoria is the buffer for convergence",
+      "Symptoms of convergence insufficiency: eyestrain and intermittent diplopia during near work",
+      "Difficulty seeing at distance",
+      "Reduced amplitude of accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Large exophoria = high convergence demand. Small PFR = low reserve. The patient uses most of their convergence just to align the eyes, leaving little in reserve. This produces symptoms of convergence insufficiency during near work.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which test specifically measures the lag of accommodation under FUSED (binocular) conditions?",
+    "options": [
+      "Test #14A",
+      "Test #14B",
+      "Test #15A",
+      "Test #15B"
+    ],
+    "correct": 1,
+    "explanation": "Test #14B (Binocular Cross-Cylinder) measures the lag of accommodation under fused (binocular) conditions. Test #14A measures it under dissociated conditions.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the OEP 21-step sequence, tests conducted at 16 inches (40cm) include all EXCEPT:",
+    "options": [
+      "Test #13A",
+      "Test #9",
+      "Test #14A",
+      "Test #16B"
+    ],
+    "correct": 1,
+    "explanation": "Test #9 (True Adduction at Far) is conducted at 20ft (6M), NOT at near. All other listed tests are near tests at 16 inches.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient cannot read 20/20 reduced Snellen after minus lenses are added during Test #20. The correct clinical interpretation is:",
+    "options": [
+      "Accommodation has been maximally inhibited",
+      "Accommodation has been maximally stimulated and reached its limit",
+      "Convergence reserve is depleted",
+      "The lag of accommodation is excessive"
+    ],
+    "correct": 1,
+    "explanation": "In Test #20 (PRA), minus lenses stimulate accommodation. When the patient can no longer read the target, accommodation has been maximally STIMULATED and reached its limit. The blur indicates the PRA endpoint.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following tests is NOT classified as a lateral phoria test?",
+    "options": [
+      "Test #3",
+      "Test #8",
+      "Test #12",
+      "Test #13A"
+    ],
+    "correct": 2,
+    "explanation": "Test #12 is a VERTICAL phoria and vertical duction test, not a lateral phoria test. Tests #3, #8, #13A, #13B, #15A, and #15B are all lateral phoria tests.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "The recovery point in vergence tests (#16B, #17B) indicates:",
+    "options": [
+      "The maximum convergence available",
+      "The limit of the fusion field in that direction",
+      "The accommodative convergence in reserve",
+      "The point where accommodation is maximally stimulated"
+    ],
+    "correct": 1,
+    "explanation": "In all vergence tests with a break/recovery endpoint, the recovery point indicates the limit of the fusion field in that direction.",
+    "isTrap": false,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In which test does blur appear BEFORE break due to the link between convergence and accommodation?",
+    "options": [
+      "Test #17A (NRC) — BI prisms",
+      "Test #11 (Abduction at Far) — BI prisms",
+      "Test #16A (PRC) — BO prisms",
+      "Test #12 (Vertical Duction) — BU/BD prisms"
+    ],
+    "correct": 2,
+    "explanation": "In Test #16A (PRC), BO prisms force more convergence, which drags accommodation along (due to the AC/A link). Accommodation reaches its limit first, causing blur before the convergence system itself breaks down. This is why PRC endpoint is blur, not break.",
+    "isTrap": true,
+    "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "All lateral phoria tests (#3, #8, #13A, #13B, #15A, #15B) share the same prism setup. What is it?",
+    "options": [
+      "OU: ready to turn BO",
+      "OD: 3△BD / OS: 3△BU",
+      "OD: 12-15△BI / OS: 6△BU",
+      "OU: 6△BU"
+    ],
+    "correct": 2,
+    "explanation": "All lateral phoria tests use OD: 12-15△BI and OS: 6△BU. The BI prism dissociates the images laterally, and the BU prism separates them vertically so the measuring prism can quantify the lateral deviation.",
+    "isTrap": false,
+    "category": "concept"
+  }
+]

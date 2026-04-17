@@ -1,0 +1,854 @@
+[
+  {
+    "type": "mcq",
+    "stem": "What is refractive status?",
+    "options": [
+      "The relationship between the anterior chamber and lens",
+      "The relationship between the posterior principal focus, refractive mechanism, and retina with accommodation relaxed",
+      "The power of the cornea relative to the lens",
+      "The axial length of the eye"
+    ],
+    "correct": 1,
+    "explanation": "Refractive status describes the relationship between the posterior principal focus of the eye's refractive mechanism and the retina with accommodation relaxed."
+  },
+  {
+    "type": "mcq",
+    "stem": "What percentage of the eye's refractive power does the cornea contribute?",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "correct": 2,
+    "explanation": "The cornea contributes 2/3 of the eye's refractive power, ranging from 36.00 D to 50.00 D with an average of 43.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the average power of the cornea?",
+    "options": [
+      "38.00 D",
+      "43.00 D",
+      "50.00 D",
+      "58.64 D"
+    ],
+    "correct": 1,
+    "explanation": "The average power of the cornea is 43.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the total refractive power of the complete unaccommodated eye in Gullstrand's schematic eye?",
+    "options": [
+      "43.05 D",
+      "50.00 D",
+      "58.64 D",
+      "62.00 D"
+    ],
+    "correct": 2,
+    "explanation": "The complete unaccommodated eye has a total refractive power of 58.64 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the index of refraction of the aqueous humor?",
+    "options": [
+      "1.336",
+      "1.376",
+      "1.386",
+      "1.406"
+    ],
+    "correct": 0,
+    "explanation": "The aqueous humor has an index of refraction of 1.336."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the index of refraction of the cornea?",
+    "options": [
+      "1.336",
+      "1.376",
+      "1.386",
+      "1.406"
+    ],
+    "correct": 1,
+    "explanation": "The cornea has an index of refraction of 1.376."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the index of refraction of the lens nucleus?",
+    "options": [
+      "1.336",
+      "1.376",
+      "1.386",
+      "1.406"
+    ],
+    "correct": 3,
+    "explanation": "The lens nucleus has an index of refraction of 1.406."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the radius of curvature of the front corneal surface?",
+    "options": [
+      "6.0 mm",
+      "6.8 mm",
+      "7.7 mm",
+      "10.0 mm"
+    ],
+    "correct": 2,
+    "explanation": "The front corneal surface has a radius of curvature of 7.7 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the power of the unaccommodated lens in Gullstrand's schematic eye?",
+    "options": [
+      "15.00 D",
+      "19.11 D",
+      "21.00 D",
+      "24.00 D"
+    ],
+    "correct": 1,
+    "explanation": "The unaccommodated lens has a power of 19.11 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "Where is the primary nodal point located from the corneal apex?",
+    "options": [
+      "3.6 mm",
+      "7.08 mm",
+      "7.33 mm",
+      "15.70 mm"
+    ],
+    "correct": 1,
+    "explanation": "The primary nodal point is located 7.08 mm from the corneal apex."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the primary focal length measured from the corneal apex?",
+    "options": [
+      "7.08 mm",
+      "15.70 mm",
+      "24.38 mm",
+      "31.00 mm"
+    ],
+    "correct": 1,
+    "explanation": "The primary focal length is 15.70 mm from the corneal apex."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the secondary focal length in Gullstrand's schematic eye?",
+    "options": [
+      "15.70 mm",
+      "20.00 mm",
+      "24.38 mm",
+      "30.00 mm"
+    ],
+    "correct": 2,
+    "explanation": "The secondary focal length is 24.38 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the corneal thickness in Gullstrand's schematic eye?",
+    "options": [
+      "0.5 mm",
+      "1.0 mm",
+      "1.5 mm",
+      "2.0 mm"
+    ],
+    "correct": 0,
+    "explanation": "The corneal thickness is 0.5 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the distance from the corneal apex to the front lens surface?",
+    "options": [
+      "0.5 mm",
+      "3.6 mm",
+      "7.2 mm",
+      "10.0 mm"
+    ],
+    "correct": 1,
+    "explanation": "The distance from the corneal apex to the front lens surface is 3.6 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "In myopia, where do parallel rays focus with accommodation relaxed?",
+    "options": [
+      "On the retina",
+      "Behind the retina",
+      "In front of the retina",
+      "At the cornea"
+    ],
+    "correct": 2,
+    "explanation": "In myopia, parallel rays focus in front of the retina with accommodation relaxed."
+  },
+  {
+    "type": "mcq",
+    "stem": "In hyperopia, where do parallel rays focus with accommodation relaxed?",
+    "options": [
+      "On the retina",
+      "Behind the retina",
+      "In front of the retina",
+      "At the lens"
+    ],
+    "correct": 1,
+    "explanation": "In hyperopia, parallel rays focus behind the retina with accommodation relaxed."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the classification of myopia from 0.25 D to 3.00 D?",
+    "options": [
+      "Low",
+      "Medium",
+      "High",
+      "Extreme"
+    ],
+    "correct": 0,
+    "explanation": "Myopia from 0.25 D to 3.00 D is classified as low degree."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the classification of hyperopia from 5.00 D and above?",
+    "options": [
+      "Low",
+      "Medium",
+      "High",
+      "Severe"
+    ],
+    "correct": 2,
+    "explanation": "Hyperopia from 5.00 D and above is classified as high degree."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of hyperopia can be overcome by accommodation?",
+    "options": [
+      "Absolute",
+      "Facultative",
+      "Latent",
+      "Total"
+    ],
+    "correct": 1,
+    "explanation": "Facultative hyperopia is the amount that can be overcome by accommodation."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of hyperopia cannot be overcome by accommodation?",
+    "options": [
+      "Absolute",
+      "Facultative",
+      "Latent",
+      "Manifest"
+    ],
+    "correct": 0,
+    "explanation": "Absolute hyperopia cannot be overcome by accommodation and results in subnormal vision."
+  },
+  {
+    "type": "mcq",
+    "stem": "What type of hyperopia requires cycloplegic refraction to reveal?",
+    "options": [
+      "Absolute",
+      "Facultative",
+      "Latent",
+      "Manifest"
+    ],
+    "correct": 2,
+    "explanation": "Latent hyperopia is hidden and requires cycloplegic refraction to reveal."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the sum of manifest and latent hyperopia called?",
+    "options": [
+      "Absolute hyperopia",
+      "Total hyperopia",
+      "Facultative hyperopia",
+      "Complete hyperopia"
+    ],
+    "correct": 1,
+    "explanation": "Total hyperopia is the sum of manifest and latent hyperopia."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is Hofstetter's formula for minimum amplitude of accommodation?",
+    "options": [
+      "15 - 0.25(age)",
+      "18.5 - 0.30(age)",
+      "25 - 0.40(age)",
+      "20 - 0.30(age)"
+    ],
+    "correct": 0,
+    "explanation": "The minimum amplitude of accommodation is calculated as 15 - 0.25(age)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is Hofstetter's formula for average amplitude of accommodation?",
+    "options": [
+      "15 - 0.25(age)",
+      "18.5 - 0.30(age)",
+      "25 - 0.40(age)",
+      "20 - 0.35(age)"
+    ],
+    "correct": 1,
+    "explanation": "The average amplitude of accommodation is calculated as 18.5 - 0.30(age)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is Hofstetter's formula for maximum amplitude of accommodation?",
+    "options": [
+      "15 - 0.25(age)",
+      "18.5 - 0.30(age)",
+      "25 - 0.40(age)",
+      "30 - 0.50(age)"
+    ],
+    "correct": 2,
+    "explanation": "The maximum amplitude of accommodation is calculated as 25 - 0.40(age)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the typical age when presbyopia becomes clinically apparent?",
+    "options": [
+      "35 years",
+      "40 years",
+      "45 years",
+      "50 years"
+    ],
+    "correct": 2,
+    "explanation": "Presbyopia typically becomes clinically apparent around age 45, though it can range from 40 to 50."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who proved the existence of accommodation using a disc with two pinholes?",
+    "options": [
+      "Thomas Young",
+      "Christopher Scheiner",
+      "George Biddle Airy",
+      "Johannes Kepler"
+    ],
+    "correct": 1,
+    "explanation": "Christopher Scheiner proved the existence of accommodation in 1619 using Scheiner's disc."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who first corrected astigmatism with a spherocylindrical lens?",
+    "options": [
+      "Thomas Young",
+      "Christopher Scheiner",
+      "George Biddle Airy",
+      "John Green"
+    ],
+    "correct": 2,
+    "explanation": "George Biddle Airy was the first to correct astigmatism using a spherocylindrical lens."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who gave the definition of myopia in 1611?",
+    "options": [
+      "Aristotle",
+      "Johannes Kepler",
+      "Donders",
+      "Thomas Young"
+    ],
+    "correct": 1,
+    "explanation": "Johannes Kepler gave the actual definition of myopia in 1611."
+  },
+  {
+    "type": "mcq",
+    "stem": "In with-the-rule astigmatism, where is the curvature of greatest power?",
+    "options": [
+      "Horizontal meridian",
+      "Vertical meridian",
+      "45 degrees",
+      "135 degrees"
+    ],
+    "correct": 1,
+    "explanation": "In with-the-rule astigmatism, the curvature of greatest power is near the vertical meridian (60-120 degrees)."
+  },
+  {
+    "type": "mcq",
+    "stem": "In against-the-rule astigmatism, where is the curvature of greatest power?",
+    "options": [
+      "Horizontal meridian",
+      "Vertical meridian",
+      "45 degrees",
+      "Oblique"
+    ],
+    "correct": 0,
+    "explanation": "In against-the-rule astigmatism, the curvature of greatest power is near the horizontal meridian (0-30, 150-180 degrees)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What type of astigmatism has both principal meridians focusing behind the retina?",
+    "options": [
+      "Simple myopic",
+      "Compound myopic",
+      "Simple hyperopic",
+      "Compound hyperopic"
+    ],
+    "correct": 3,
+    "explanation": "Compound hyperopic astigmatism has both principal meridians focusing behind the retina."
+  },
+  {
+    "type": "mcq",
+    "stem": "What type of astigmatism has one meridian focusing on the retina and the other in front?",
+    "options": [
+      "Simple myopic",
+      "Compound myopic",
+      "Mixed",
+      "Simple hyperopic"
+    ],
+    "correct": 0,
+    "explanation": "Simple myopic astigmatism has one meridian on the retina and the other in front."
+  },
+  {
+    "type": "mcq",
+    "stem": "What type of astigmatism has one meridian in front and one behind the retina?",
+    "options": [
+      "Simple myopic",
+      "Compound myopic",
+      "Mixed",
+      "Compound hyperopic"
+    ],
+    "correct": 2,
+    "explanation": "Mixed astigmatism has one meridian focusing in front and one behind the retina."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the minimum difference in refractive error between eyes to be considered anisometropia according to Grosvenor?",
+    "options": [
+      "0.25 D",
+      "0.50 D",
+      "1.00 D",
+      "2.00 D"
+    ],
+    "correct": 2,
+    "explanation": "According to Grosvenor, anisometropia requires at least 1.00 D difference between eyes."
+  },
+  {
+    "type": "mcq",
+    "stem": "What condition describes one eye being myopic and the other hyperopic?",
+    "options": [
+      "Isometropia",
+      "Isoanisometropia",
+      "Antimetropia",
+      "Aniso-oxyopia"
+    ],
+    "correct": 2,
+    "explanation": "Antimetropia is a condition where one eye is myopic and the other is hyperopic."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the process by which the crystalline lens varies its focal length?",
+    "options": [
+      "Refraction",
+      "Accommodation",
+      "Convergence",
+      "Adaptation"
+    ],
+    "correct": 1,
+    "explanation": "Accommodation is the process by which the crystalline lens varies its focal length in response to changes in vergence."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is static refraction used to describe?",
+    "options": [
+      "Dynamic accommodation",
+      "Refractive status with accommodation relaxed",
+      "Near vision testing",
+      "Convergence ability"
+    ],
+    "correct": 1,
+    "explanation": "Static refraction is used to describe the refractive status of the eye with accommodation relaxed."
+  },
+  {
+    "type": "mcq",
+    "stem": "For a 20-year-old, what is the minimum amplitude of accommodation using Hofstetter's formula?",
+    "options": [
+      "8.00 D",
+      "10.00 D",
+      "12.50 D",
+      "17.00 D"
+    ],
+    "correct": 1,
+    "explanation": "For a 20-year-old: Min AOA = 15 - 0.25(20) = 10.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "For a 20-year-old, what is the average amplitude of accommodation using Hofstetter's formula?",
+    "options": [
+      "10.00 D",
+      "12.50 D",
+      "15.00 D",
+      "17.00 D"
+    ],
+    "correct": 1,
+    "explanation": "For a 20-year-old: Ave AOA = 18.5 - 0.30(20) = 12.50 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is presbyopia described as in relation to amplitude of accommodation?",
+    "options": [
+      "Increase with age",
+      "No change",
+      "Diminution with age",
+      "Fluctuation with age"
+    ],
+    "correct": 2,
+    "explanation": "Presbyopia is the condition where amplitude of accommodation diminishes with increasing age."
+  },
+  {
+    "type": "mcq",
+    "stem": "The cornea contributes approximately 2/3 of the eye's total refractive power.",
+    "options": [
+      "Length of the eyeball",
+      "Power of the cornea",
+      "Colour of the iris",
+      "Depth of anterior chamber"
+    ],
+    "correct": 2,
+    "explanation": "The four factors that influence refractive status are: length of eyeball, power of cornea, power of lens, and depth of anterior chamber."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the index of refraction of the lens cortex?",
+    "options": [
+      "1.336",
+      "1.376",
+      "1.386",
+      "1.406"
+    ],
+    "correct": 2,
+    "explanation": "The lens cortex has an index of refraction of 1.386."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the radius of curvature of the back corneal surface?",
+    "options": [
+      "6.0 mm",
+      "6.8 mm",
+      "7.7 mm",
+      "10.0 mm"
+    ],
+    "correct": 1,
+    "explanation": "The back corneal surface has a radius of curvature of 6.8 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the radius of curvature of the front lens surface?",
+    "options": [
+      "6.0 mm",
+      "6.8 mm",
+      "7.7 mm",
+      "10.0 mm"
+    ],
+    "correct": 3,
+    "explanation": "The front lens surface has a radius of curvature of 10.0 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the radius of curvature of the back lens surface?",
+    "options": [
+      "6.0 mm",
+      "6.8 mm",
+      "7.7 mm",
+      "10.0 mm"
+    ],
+    "correct": 0,
+    "explanation": "The back lens surface has a radius of curvature of 6.0 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "Where is the secondary nodal point located?",
+    "options": [
+      "3.6 mm",
+      "7.08 mm",
+      "7.33 mm",
+      "15.70 mm"
+    ],
+    "correct": 2,
+    "explanation": "The secondary nodal point is located at 7.33 mm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the classification of myopia from 3.00 D to 6.00 D?",
+    "options": [
+      "Low",
+      "Medium",
+      "High",
+      "Severe"
+    ],
+    "correct": 1,
+    "explanation": "Myopia from 3.00 D to 6.00 D is classified as medium degree."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the classification of hyperopia from 3.00 D to 5.00 D?",
+    "options": [
+      "Low",
+      "Medium",
+      "High",
+      "Extreme"
+    ],
+    "correct": 1,
+    "explanation": "Hyperopia from 3.00 D to 5.00 D is classified as medium degree."
+  },
+  {
+    "type": "mcq",
+    "stem": "According to Sorsby's classification, what is correlative hyperopia?",
+    "options": [
+      "0.25 D to 3.00 D",
+      "0.25 D to 6.00 D",
+      "Above 6.00 D",
+      "3.00 D to 6.00 D"
+    ],
+    "correct": 1,
+    "explanation": "Correlative hyperopia includes errors from 0.25 D to 6.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "According to Sorsby's classification, what is component hyperopia?",
+    "options": [
+      "0.25 D to 3.00 D",
+      "0.25 D to 6.00 D",
+      "Above 6.00 D",
+      "3.00 D to 5.00 D"
+    ],
+    "correct": 2,
+    "explanation": "Component hyperopia includes errors above 6.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is tonic latent hyperopia?",
+    "options": [
+      "Temporary spasm",
+      "Permanent spasm",
+      "No spasm",
+      "Variable spasm"
+    ],
+    "correct": 1,
+    "explanation": "Tonic latent hyperopia is a relatively fixed or permanent state of spasm."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is clonic latent hyperopia?",
+    "options": [
+      "Temporary spasm",
+      "Permanent spasm",
+      "No spasm",
+      "Chronic spasm"
+    ],
+    "correct": 0,
+    "explanation": "Clonic latent hyperopia is a temporary state of spasm."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which is NOT a symptom of hyperopia?",
+    "options": [
+      "Asthenopia",
+      "Photophobia",
+      "Improved near vision",
+      "Tearing"
+    ],
+    "correct": 2,
+    "explanation": "Improved near vision is not a symptom. Hyperopes have blurred vision at near."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which is a sign of hyperopia?",
+    "options": [
+      "Dilated pupil",
+      "Constricted pupil",
+      "Normal pupil",
+      "Irregular pupil"
+    ],
+    "correct": 1,
+    "explanation": "Constricted pupil is a sign of hyperopia."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who definitively described and classified myopia in 1866?",
+    "options": [
+      "Aristotle",
+      "Johannes Kepler",
+      "Donders",
+      "Scheiner"
+    ],
+    "correct": 2,
+    "explanation": "Donders definitively described and classified myopia in 1866."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who first identified and described hyperopia in 1855?",
+    "options": [
+      "Kastner",
+      "Donders",
+      "Helmholtz",
+      "Kepler"
+    ],
+    "correct": 0,
+    "explanation": "Kastner first identified and described hyperopia in 1855."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who used the term 'hyperopia' in 1859?",
+    "options": [
+      "Kastner",
+      "Donders",
+      "Helmholtz",
+      "Kepler"
+    ],
+    "correct": 2,
+    "explanation": "Helmholtz used the term 'hyperopia' in 1859."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is oblique astigmatism?",
+    "options": [
+      "Greatest power 0-30 degrees",
+      "Greatest power 60-120 degrees",
+      "Greatest power 30-60 or 120-150 degrees",
+      "No specific meridian"
+    ],
+    "correct": 2,
+    "explanation": "Oblique astigmatism has greatest power within 30-60 and 120-150 degrees."
+  },
+  {
+    "type": "mcq",
+    "stem": "In compound hyperopic astigmatism with WTR, what shape is the image?",
+    "options": [
+      "Vertical oval",
+      "Horizontal oval",
+      "Circle",
+      "Vertical line"
+    ],
+    "correct": 1,
+    "explanation": "In compound hyperopic astigmatism with WTR, the image is a horizontal oval."
+  },
+  {
+    "type": "mcq",
+    "stem": "In compound myopic astigmatism with WTR, what shape is the image?",
+    "options": [
+      "Vertical oval",
+      "Horizontal oval",
+      "Circle",
+      "Horizontal line"
+    ],
+    "correct": 0,
+    "explanation": "In compound myopic astigmatism with WTR, the image is a vertical oval."
+  },
+  {
+    "type": "mcq",
+    "stem": "What correction is needed for compound hyperopic astigmatism?",
+    "options": [
+      "Plus sphere with plus cylinder",
+      "Minus sphere with minus cylinder",
+      "Plus sphere with minus cylinder",
+      "Minus sphere with plus cylinder"
+    ],
+    "correct": 0,
+    "explanation": "Compound hyperopic astigmatism is corrected with plus sphere and plus cylinder."
+  },
+  {
+    "type": "mcq",
+    "stem": "What correction is needed for compound myopic astigmatism?",
+    "options": [
+      "Plus sphere with plus cylinder",
+      "Minus sphere with minus cylinder",
+      "Plus sphere with minus cylinder",
+      "Simple plus cylinder"
+    ],
+    "correct": 1,
+    "explanation": "Compound myopic astigmatism is corrected with minus sphere and minus cylinder."
+  },
+  {
+    "type": "mcq",
+    "stem": "What correction is needed for simple hyperopic astigmatism?",
+    "options": [
+      "Simple plus cylinder",
+      "Simple minus cylinder",
+      "Plus sphere with plus cylinder",
+      "Minus sphere"
+    ],
+    "correct": 0,
+    "explanation": "Simple hyperopic astigmatism is corrected with a simple plus cylinder."
+  },
+  {
+    "type": "mcq",
+    "stem": "What correction is needed for simple myopic astigmatism?",
+    "options": [
+      "Simple plus cylinder",
+      "Simple minus cylinder",
+      "Minus sphere with minus cylinder",
+      "Plus sphere"
+    ],
+    "correct": 1,
+    "explanation": "Simple myopic astigmatism is corrected with a simple minus cylinder."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the primary cause of presbyopia?",
+    "options": [
+      "Corneal changes",
+      "Sclerosis of lens fibres and capsule",
+      "Retinal degeneration",
+      "Vitreous liquefaction"
+    ],
+    "correct": 1,
+    "explanation": "The generally accepted cause is sclerosis of the lens fibres and capsule."
+  },
+  {
+    "type": "mcq",
+    "stem": "At what amplitude of accommodation does presbyopia typically manifest symptoms?",
+    "options": [
+      "Below 10.00 D",
+      "Below 7.00 D",
+      "Below 5.00 D",
+      "Below 3.00 D"
+    ],
+    "correct": 2,
+    "explanation": "Presbyopia symptoms typically appear when amplitude is below 5.00 D."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is absolute presbyopia?",
+    "options": [
+      "Early presbyopia",
+      "Presbyopia with some accommodation",
+      "Presbyopia with practically no accommodation",
+      "Temporary presbyopia"
+    ],
+    "correct": 2,
+    "explanation": "Absolute presbyopia is when accommodation is at minimum or practically absent."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is incipient presbyopia?",
+    "options": [
+      "Terminal presbyopia",
+      "Early stage presbyopia",
+      "Complete presbyopia",
+      "Severe presbyopia"
+    ],
+    "correct": 1,
+    "explanation": "Incipient presbyopia is the early stage where small print can be read with effort."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is premature presbyopia?",
+    "options": [
+      "Presbyopia after 50",
+      "Presbyopia before 40",
+      "Presbyopia at 45",
+      "Presbyopia after 60"
+    ],
+    "correct": 1,
+    "explanation": "Premature presbyopia manifests at an early age, before 40 years."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is nocturnal presbyopia?",
+    "options": [
+      "Presbyopia during day",
+      "Presbyopia with bright light",
+      "Reduced accommodation with reduced illumination",
+      "Presbyopia with near work"
+    ],
+    "correct": 2,
+    "explanation": "Nocturnal presbyopia is reduction in accommodation induced by reduced illumination."
+  }
+]

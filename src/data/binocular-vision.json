@@ -1,0 +1,1367 @@
+[
+  {
+    "type": "mcq",
+    "stem": "Which of the following BEST defines binocular vision?",
+    "options": [
+      "The use of one eye alone to perceive depth and space",
+      "The coordinated, integrated, and simultaneous function of both eyes to produce a single mental image",
+      "The ability to see with each eye independently without suppression",
+      "The simple summation of visual fields from both eyes"
+    ],
+    "correct": 1,
+    "explanation": "Binocular vision is defined as the coordinate use of BOTH eyes to produce a single mental image, implying FUSION — the blending of both images into one percept.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the TOTAL binocular visual field?",
+    "options": [
+      "120°",
+      "150°",
+      "180°",
+      "210°"
+    ],
+    "correct": 2,
+    "explanation": "Total binocular visual field = 180°. Common binocular field = 120° (overlap zone). Monocular = 150°. Temporal crescent = 30°.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "The COMMON binocular visual field (overlap zone seen by both eyes) measures:",
+    "options": [
+      "30°",
+      "120°",
+      "150°",
+      "180°"
+    ],
+    "correct": 1,
+    "explanation": "The common binocular visual field = 120°. This is the zone where both eyes overlap. The total binocular field is 180°, monocular is 150°.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "The temporal crescent of the visual field (30°) is unique because it is:",
+    "options": [
+      "Seen by both eyes simultaneously",
+      "Seen by one eye only with no binocular overlap",
+      "Processed by the contralateral cortex only",
+      "Stimulated exclusively by the fovea"
+    ],
+    "correct": 1,
+    "explanation": "The temporal crescent (30°) is the outermost zone of the visual field seen by ONLY one eye — no binocular overlap exists here.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT listed as a prerequisite for single binocular vision?",
+    "options": [
+      "Foveal region stimulated in both eyes",
+      "Corresponding retinal points",
+      "Partial decussation of optic nerve fibers",
+      "Equal refractive error in both eyes"
+    ],
+    "correct": 3,
+    "explanation": "Equal refractive error is NOT a prerequisite. The 6 prerequisites are: frontally placed eyes, partial decussation, foveal stimulation, corresponding retinal points, equal/near-equal retinal image SIZE (iseikonia), and efficient EOMs.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "Unequal size of retinal images between both eyes is called:",
+    "options": [
+      "Anisometropia",
+      "Antimetropia",
+      "Aniseikonia",
+      "Aniso-oxyopia"
+    ],
+    "correct": 2,
+    "explanation": "Aniseikonia = unequal retinal image SIZE. Iseikonia = equal. Anisometropia = difference in refractive error amount. Aniso-oxyopia = unequal best-corrected VA.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient has one myopic eye and one hyperopic eye (different refractive status). This is termed:",
+    "options": [
+      "Anisometropia",
+      "Aniseikonia",
+      "Iso-oxyopia",
+      "Antimetropia"
+    ],
+    "correct": 3,
+    "explanation": "Antimetropia = DIFFERENT refractive status (one eye myopic, one hyperopic). Anisometropia = significant difference in the AMOUNT of refractive error, but same type.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is considered the FIRST and FOREMOST advantage of binocular vision?",
+    "options": [
+      "Stereopsis",
+      "Enlarged field of vision",
+      "Single vision",
+      "Compensation of blind spot"
+    ],
+    "correct": 2,
+    "explanation": "Single vision is explicitly stated as the FIRST and FOREMOST advantage of binocular vision. Stereopsis is also an advantage but ranked below single vision.",
+    "module": "Module 1"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age are the foveas fully formed?",
+    "options": [
+      "At birth",
+      "2 months",
+      "3 months",
+      "6 months"
+    ],
+    "correct": 2,
+    "explanation": "The foveas are fully formed at 3 months. At 3 months, the infant also begins to HOLD fixation on objects. At 3–4 months, eyes are expected to be STRAIGHT.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "The FIRST sign of binocular vision development in a newborn is:",
+    "options": [
+      "Following large objects",
+      "Fixing on a face",
+      "Eyes following LIGHT",
+      "Equal VA in both eyes"
+    ],
+    "correct": 2,
+    "explanation": "In the newborn, the first sign of fixation development appears when the eyes follow LIGHT. At 2 months, they follow large objects. At 3 months, foveas are fully formed.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age does the fusional mechanism become FULLY DEVELOPED?",
+    "options": [
+      "3 months",
+      "6 months",
+      "1 year",
+      "1 year 6 months"
+    ],
+    "correct": 3,
+    "explanation": "Fusional mechanism becomes fully developed at 1 year 6 months (18 months). VA of 20/20 is reached at 3 years. Accommodation develops with sharpening of VA at ~3 years.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "Visual acuity of 20/70 is considered NORMAL at which age?",
+    "options": [
+      "Birth",
+      "6 months",
+      "1 year",
+      "3 years"
+    ],
+    "correct": 2,
+    "explanation": "VA of 20/70 is normal at 1 year. VA of 20/20 is expected at 3 years. At birth, VA is ≤ 5/200.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "The age of emmetropization spans from approximately:",
+    "options": [
+      "0–3 years",
+      "3–6 years",
+      "7–12 years",
+      "12–18 years"
+    ],
+    "correct": 2,
+    "explanation": "7–12 years is the age of emmetropization — when the eye gradually shifts toward emmetropia as axial length increases.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "At birth, a newborn is normally expected to be:",
+    "options": [
+      "Emmetropic",
+      "Myopic",
+      "Hyperopic",
+      "Astigmatic"
+    ],
+    "correct": 2,
+    "explanation": "Newborns are normally hyperopic because the eyeball is smaller and the ciliary muscles are not yet fully developed. VA at birth is ≤ 5/200.",
+    "module": "Module 2"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the bar reading test, reading material is positioned at what distance from the patient?",
+    "options": [
+      "20 cm",
+      "30 cm",
+      "40 cm",
+      "50 cm"
+    ],
+    "correct": 2,
+    "explanation": "Reading material is positioned at 40 cm (16 inches) from the patient in the bar reading test. A pen is placed 2–3 inches over the page.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the prism test for binocular vision, how many prism diopters are typically used?",
+    "options": [
+      "2 prism diopters",
+      "4 prism diopters",
+      "6 prism diopters",
+      "10 prism diopters"
+    ],
+    "correct": 2,
+    "explanation": "6 prism diopters (BU or BD) is placed before one eye to induce doubling. If the patient detects diplopia, BV is confirmed.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "Light passing through a prism is bent toward the:",
+    "options": [
+      "Apex",
+      "Center",
+      "Base",
+      "Edge"
+    ],
+    "correct": 2,
+    "explanation": "LIGHT bends toward the BASE. The EYE looking through a prism is displaced toward the APEX. The OBJECT viewed appears displaced toward the APEX. Remember: Light=Base, Eye/Object=Apex.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "An eye looking through a prism is displaced toward the:",
+    "options": [
+      "Base",
+      "Optical center",
+      "Edge",
+      "Apex"
+    ],
+    "correct": 3,
+    "explanation": "Both the EYE and the OBJECT are displaced toward the APEX of the prism. Only LIGHT goes toward the BASE.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Maddox rod test, a HORIZONTAL Maddox rod produces a VERTICAL streak. This streak detects:",
+    "options": [
+      "A vertical phoria",
+      "A lateral (horizontal) phoria",
+      "A torsional phoria",
+      "A cyclodeviation"
+    ],
+    "correct": 1,
+    "explanation": "Horizontal Maddox rod → vertical streak → detects LATERAL (horizontal) phoria. Vertical Maddox rod → horizontal streak → detects VERTICAL phoria.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the stereoscope test, if OD sees the right image on the LEFT visual field (crossed projection), this indicates:",
+    "options": [
+      "Orthophoria",
+      "Esophoria",
+      "Exophoria",
+      "Hyperphoria"
+    ],
+    "correct": 2,
+    "explanation": "Crossed projection (OD sees right image on LEFT visual field) = EXOPHORIA. Uncrossed projection = esophoria. Superimposed images = orthophoria.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Maddox rod test, if the streak is on the SAME visual field as the fixation light (uncrossed position), this indicates:",
+    "options": [
+      "Exophoria",
+      "Orthophoria",
+      "Esophoria",
+      "Hyperphoria"
+    ],
+    "correct": 2,
+    "explanation": "Uncrossed position (streak on SAME side as light) = ESOPHORIA. Crossed position (opposite side) = exophoria. Superimposed = orthophoria.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the hole-in-the-hand test, the diameter specification for the rolled paper tube is:",
+    "options": [
+      "Exactly 1 diameter",
+      "2 or fewer diameters",
+      "3 diameters",
+      "More than 4 diameters"
+    ],
+    "correct": 1,
+    "explanation": "The rolled paper should have 2 or fewer diameters. The tube is directed toward a distant fixation object while the palm is held up — a hole appears in the hand if BV is present.",
+    "module": "Module 3"
+  },
+  {
+    "type": "mcq",
+    "stem": "The position the eyes assume when both lateral AND vertical movements are combined is the:",
+    "options": [
+      "Primary position",
+      "Secondary position",
+      "Tertiary position",
+      "Quaternary position"
+    ],
+    "correct": 2,
+    "explanation": "Tertiary position = combination of lateral + vertical movements (e.g., dextrosupra, levoinfra). Secondary = only lateral OR only vertical.",
+    "module": "Module 4"
+  },
+  {
+    "type": "mcq",
+    "stem": "The PRIMARY position of the eye is best described as:",
+    "options": [
+      "Eyes deviated right, head erect",
+      "Eyes deviated upward",
+      "Eyes directed straight ahead on the horizon, head erect",
+      "Eyes in the position of anatomical rest without visual stimulus"
+    ],
+    "correct": 2,
+    "explanation": "Primary position = head erect, eyes directed straight ahead on the horizon. This is the 'ortho' position.",
+    "module": "Module 4"
+  },
+  {
+    "type": "mcq",
+    "stem": "Dextrosupraversion is classified as which type of position?",
+    "options": [
+      "Primary",
+      "Secondary",
+      "Tertiary",
+      "Conjugate"
+    ],
+    "correct": 2,
+    "explanation": "Dextrosupraversion = right + up = combination of lateral and vertical = TERTIARY position.",
+    "module": "Module 4"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following represents a SECONDARY position of gaze?",
+    "options": [
+      "Dextrosupraversion",
+      "Levoinfraversion",
+      "Supraversion",
+      "Dextroinfraversion"
+    ],
+    "correct": 2,
+    "explanation": "Secondary positions involve ONLY lateral OR only vertical movement. Supraversion = only upward = SECONDARY. The others (dextrosupra, levoinfra, dextroinfra) are tertiary.",
+    "module": "Module 4"
+  },
+  {
+    "type": "mcq",
+    "stem": "Movement of ONE eye only is termed:",
+    "options": [
+      "Version",
+      "Vergence",
+      "Duction",
+      "Fusion"
+    ],
+    "correct": 2,
+    "explanation": "Duction = movement of ONE eye only. Version = both eyes in the SAME direction. Vergence = both eyes in OPPOSITE directions.",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Synchronous and symmetric movement of BOTH eyes in the SAME direction is called:",
+    "options": [
+      "Duction",
+      "Version",
+      "Vergence",
+      "Fusion"
+    ],
+    "correct": 1,
+    "explanation": "Version = both eyes move synchronously and symmetrically in the SAME direction (conjugate). Example: Dextroversion — both eyes look right.",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Both eyes moving INWARD (nasally) simultaneously is called:",
+    "options": [
+      "Divergence",
+      "Incyclovergence",
+      "Adduction",
+      "Convergence"
+    ],
+    "correct": 3,
+    "explanation": "Convergence = both eyes moving INWARD (nasally). Divergence = both outward. Adduction = ONE eye inward (a duction, not vergence).",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "'Sursumversion' is a synonym for:",
+    "options": [
+      "Infraversion",
+      "Dextroversion",
+      "Levoversion",
+      "Supraversion"
+    ],
+    "correct": 3,
+    "explanation": "Sursumversion = Supraversion = Anaversion — all mean both eyes looking UPWARD. Deorsumversion = Cataversion = Infraversion (both eyes down).",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Movement of the vertical corneal meridian of one eye INWARD is called:",
+    "options": [
+      "Excycloduction",
+      "Abduction",
+      "Infraduction",
+      "Incycloduction"
+    ],
+    "correct": 3,
+    "explanation": "Incycloduction = rotation of the vertical corneal meridian INWARD (intorsion). Excycloduction = outward rotation (extorsion). These are torsional ductions.",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Both eyes moving to the RIGHT and DOWNWARD simultaneously is:",
+    "options": [
+      "Dextrosupraversion",
+      "Levoinfraversion",
+      "Levosupraversion",
+      "Dextroinfraversion"
+    ],
+    "correct": 3,
+    "explanation": "Dextroinfraversion = both eyes to the RIGHT + DOWNWARD. Dextrosupraversion = right + up. Levoinfraversion = left + down.",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Negative Vertical Divergence is defined as:",
+    "options": [
+      "Right eye up, left eye down",
+      "Both eyes upward",
+      "Right eye down, left eye up",
+      "Both eyes downward"
+    ],
+    "correct": 2,
+    "explanation": "Negative Vertical Divergence = right eye DOWN, left eye UP. Positive Vertical Divergence = right eye UP, left eye DOWN.",
+    "module": "Module 5"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which extraocular muscle has NO secondary or tertiary actions?",
+    "options": [
+      "Superior Rectus",
+      "Inferior Oblique",
+      "Superior Oblique",
+      "Medial Rectus"
+    ],
+    "correct": 3,
+    "explanation": "MR (and LR) work only in the horizontal plane with NO secondary or tertiary actions. SR and IR angle 23° nasally, giving them secondary/tertiary actions. SO and IO are oblique muscles with complex actions.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Superior Oblique muscle is innervated by:",
+    "options": [
+      "CN III",
+      "CN IV",
+      "CN V",
+      "CN VI"
+    ],
+    "correct": 1,
+    "explanation": "SO = CN IV (trochlear nerve). LR = CN VI (abducens). ALL other EOMs = CN III (oculomotor).",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which extraocular muscle does NOT originate from the Annulus of Zinn?",
+    "options": [
+      "Superior Oblique",
+      "Superior Rectus",
+      "Inferior Rectus",
+      "Inferior Oblique"
+    ],
+    "correct": 3,
+    "explanation": "Inferior Oblique is the ONLY EOM that does NOT originate from the Annulus of Zinn. It originates from the inferior nasal orbital rim.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which extraocular muscle has the FARTHEST insertion from the limbus?",
+    "options": [
+      "Medial Rectus",
+      "Lateral Rectus",
+      "Superior Rectus",
+      "Inferior Rectus"
+    ],
+    "correct": 2,
+    "explanation": "SR has the FARTHEST insertion from the limbus. MR has the CLOSEST insertion to the limbus. SR is also the longest muscle when the tendon is excluded.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Spiral of Tillaux refers to:",
+    "options": [
+      "The pathway of the SO tendon through the trochlea",
+      "The circle connecting insertion points of all four recti muscles",
+      "The shape of the visual field in glaucoma",
+      "The arc of EOM origins at the Annulus of Zinn"
+    ],
+    "correct": 1,
+    "explanation": "Spiral of Tillaux = the circular arc connecting the INSERTION points of all four recti muscles on the sclera.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "The total length of the Superior Oblique muscle (including its tendon/trochlea) is approximately:",
+    "options": [
+      "40 mm",
+      "50 mm",
+      "60 mm",
+      "70 mm"
+    ],
+    "correct": 2,
+    "explanation": "SO is the longest EOM at 60mm total. The trochlea acts as a pulley, adding to its length. Without the tendon, SR is the longest rectus muscle.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "The PRIMARY action of the Superior Oblique muscle is:",
+    "options": [
+      "Elevation",
+      "Depression",
+      "Incycloduction",
+      "Excycloduction"
+    ],
+    "correct": 2,
+    "explanation": "SO primary action = INCYCLODUCTION (intorsion). Secondary = depression. Tertiary = abduction. The opposite muscle, IO, primarily excyclotorts.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "The PRIMARY action of the Inferior Oblique muscle is:",
+    "options": [
+      "Incycloduction",
+      "Depression",
+      "Elevation",
+      "Excycloduction"
+    ],
+    "correct": 3,
+    "explanation": "IO primary action = EXCYCLODUCTION (extorsion). Secondary = elevation. Tertiary = abduction. IO is innervated by CN III.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which extraocular muscle is described as the STRONGEST, HEAVIEST, and BROADEST?",
+    "options": [
+      "Lateral Rectus",
+      "Superior Rectus",
+      "Medial Rectus",
+      "Inferior Oblique"
+    ],
+    "correct": 2,
+    "explanation": "MR is the strongest, heaviest, and broadest EOM. It has the closest insertion to the limbus and works ONLY in the horizontal plane.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "During dextrosupraversion, the yoke muscle pair active per Hering's Law is:",
+    "options": [
+      "Right SR and Left SR",
+      "Right SR and Left IO",
+      "Right IO and Left SR",
+      "Right LR and Left MR"
+    ],
+    "correct": 1,
+    "explanation": "Dextrosupraversion = both eyes up and right. Right eye uses SR (elevation + adduction). Left eye uses IO (elevation + abduction from adducted). Yoke pair: Right SR + Left IO.",
+    "module": "Module 6"
+  },
+  {
+    "type": "mcq",
+    "stem": "Hering's Law of Equal Innervation states that:",
+    "options": [
+      "When a muscle contracts, its direct antagonist relaxes equally",
+      "An equal impulse is sent to the contralateral yoke muscle when a muscle is innervated",
+      "Convergence and accommodation are linked",
+      "Fusion requires equal retinal image size"
+    ],
+    "correct": 1,
+    "explanation": "Hering's Law = when a nervous impulse causes one muscle to contract, an EQUAL impulse goes to the CONTRALATERAL SYNERGIST (yoke muscle) to maintain parallelism of visual axes.",
+    "module": "Module 7"
+  },
+  {
+    "type": "mcq",
+    "stem": "Sherrington's Law of Reciprocal Innervation applies to:",
+    "options": [
+      "Binocular movements",
+      "Vergence movements only",
+      "Monocular movements (one eye)",
+      "Torsional movements only"
+    ],
+    "correct": 2,
+    "explanation": "Sherrington's Law applies to MONOCULAR movements — within one eye, when the agonist contracts, the direct antagonist RELAXES equally. Example: supraduction — SR contracts, IR relaxes.",
+    "module": "Module 7"
+  },
+  {
+    "type": "mcq",
+    "stem": "During dextroversion, which muscles receive EQUAL innervation per Hering's Law?",
+    "options": [
+      "Right MR and Left MR",
+      "Right LR and Left MR",
+      "Right MR and Left LR",
+      "Right SR and Left IO"
+    ],
+    "correct": 1,
+    "explanation": "Dextroversion = both eyes look right. Right eye agonist = LR. Left eye yoke = MR. Hering's Law sends EQUAL impulse to R LR and L MR simultaneously.",
+    "module": "Module 7"
+  },
+  {
+    "type": "mcq",
+    "stem": "During supraduction of the right eye, which muscle RELAXES per Sherrington's Law?",
+    "options": [
+      "Right Superior Oblique",
+      "Right Inferior Rectus",
+      "Left Superior Rectus",
+      "Right Lateral Rectus"
+    ],
+    "correct": 1,
+    "explanation": "Sherrington's = monocular. For right supraduction: R SR contracts (agonist) → R IR must RELAX (antagonist). This is within the same eye.",
+    "module": "Module 7"
+  },
+  {
+    "type": "mcq",
+    "stem": "The PRIMARY purpose of Hering's Law is to maintain:",
+    "options": [
+      "Accommodation",
+      "Parallelism of the visual axes",
+      "Equal pupil size",
+      "Constant accommodative vergence"
+    ],
+    "correct": 1,
+    "explanation": "Hering's Law ensures equal innervation to yoke muscles so both eyes remain PARALLEL — maintaining alignment of visual axes during conjugate movements.",
+    "module": "Module 7"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which axis of Fick governs TORSIONAL movements of the eye?",
+    "options": [
+      "X-axis (transverse)",
+      "Z-axis (vertical)",
+      "Y-axis (optic/sagittal)",
+      "None — torsion has no axis"
+    ],
+    "correct": 2,
+    "explanation": "Y-axis (optic/sagittal, 24mm) = TORSIONAL movements. X-axis (transverse, 22mm) = vertical movements. Z-axis (vertical, 22mm) = horizontal movements.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "The center of rotation of the eye is located approximately how far BEHIND the cornea?",
+    "options": [
+      "7 mm",
+      "10 mm",
+      "13.5 mm",
+      "17 mm"
+    ],
+    "correct": 2,
+    "explanation": "The center of rotation is 13.5 mm behind the cornea. ALL oblique axes pass through this point. All eye movements occur at the center of rotation.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "The VISUAL AXIS is defined as the line from:",
+    "options": [
+      "Object of regard to center of rotation",
+      "Center of cornea to center of rotation",
+      "Object of regard to the fovea, passing through the nodal point",
+      "Entrance pupil perpendicular to the cornea"
+    ],
+    "correct": 2,
+    "explanation": "Visual axis = object of regard → nodal point → fovea. Line of sight = object of regard → center of rotation. Pupillary axis = perpendicular to cornea through entrance pupil center.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "Angle Lambda (λ) is formed between:",
+    "options": [
+      "Visual axis and optic axis at the nodal point",
+      "Optic axis and line of sight at the center of rotation",
+      "Pupillary axis and line of sight",
+      "Baseline and visual axis"
+    ],
+    "correct": 2,
+    "explanation": "Angle Lambda = between PUPILLARY AXIS and LINE OF SIGHT. Angle Alpha = visual axis vs optic axis at nodal point. Angle Gamma = optic axis vs line of sight at COR.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "The FASTEST type of fixation is:",
+    "options": [
+      "Voluntary fixation",
+      "Pursuit fixation",
+      "Steady fixation",
+      "Saccadic (jump) fixation"
+    ],
+    "correct": 3,
+    "explanation": "Saccadic/jump fixation is the FASTEST type — rapid change of fixation from one point to another. Pursuit = tracking a moving object. Scanning = series of rapid fixations.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "The EQUATORIAL PLANE of the eye contains which axes and divides the eye into:",
+    "options": [
+      "Y + X axes; upper and lower",
+      "Y + Z axes; right and left hemispheres",
+      "X + Z axes; anterior and posterior halves",
+      "Y + Z axes; anterior and posterior halves"
+    ],
+    "correct": 2,
+    "explanation": "Equatorial plane = X-axis (transverse) + Z-axis (vertical) → divides eye into ANTERIOR and POSTERIOR halves. Horizontal plane (Y+X) = upper/lower. Median plane (Y+Z) = right/left.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Cyclopean Eye (Binoculus) is defined as:",
+    "options": [
+      "The dominant eye in binocular viewing",
+      "An imaginary eye between the two physical eyes representing both retinas",
+      "The eye with superior visual acuity",
+      "The fovea of the fixating eye"
+    ],
+    "correct": 1,
+    "explanation": "Cyclopean Eye/Binoculus = imaginary eye located BETWEEN the two physical eyes, representing both retinas as one unified system.",
+    "module": "Module 8"
+  },
+  {
+    "type": "mcq",
+    "stem": "In Normal Retinal Correspondence (NRC), the right NASAL retina corresponds to the:",
+    "options": [
+      "Right temporal retina",
+      "Left nasal retina",
+      "Left temporal retina",
+      "Left fovea"
+    ],
+    "correct": 2,
+    "explanation": "NRC: R nasal = L temporal; R temporal = L nasal; R fovea = L fovea. The nasal of one eye always matches the temporal of the other.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "Anomalous Retinal Correspondence (ARC) is defined as:",
+    "options": [
+      "Both foveas share a common visual direction with each other",
+      "The fovea of one eye shares a common visual direction with an extrafoveal area of the other eye",
+      "Complete suppression of the deviating eye",
+      "Retinal rivalry between the two eyes"
+    ],
+    "correct": 1,
+    "explanation": "ARC = fovea of one eye + EXTRAFOVEAL area of the other eye share a common visual direction. This is the brain's attempt to regain binocular advantage despite a strabismus.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "The quality of binocular vision in ARC is:",
+    "options": [
+      "Always superior to NRC",
+      "Not related to the angle of deviation",
+      "Directly proportional to the angle of deviation",
+      "Inversely proportional to the angle of deviation"
+    ],
+    "correct": 3,
+    "explanation": "Quality of BV in ARC is INVERSELY proportional to the angle of deviation — the larger the squint, the POORER the quality of ARC binocular vision.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "The term 'Horopter' was introduced by which individual, and in what year?",
+    "options": [
+      "Panum, 1850",
+      "Worth, 1903",
+      "Aguilonius, 1613",
+      "Hering, 1868"
+    ],
+    "correct": 2,
+    "explanation": "The term 'Horopter' (horizon of vision) was introduced in 1613 by Aguilonius. It describes the locus of all object points imaged on corresponding retinal elements at a given fixation distance.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "Panum's Fusional Space is NARROWEST at:",
+    "options": [
+      "The periphery of the retina",
+      "The temporal crescent",
+      "The point of fixation (fovea)",
+      "12° of eccentricity"
+    ],
+    "correct": 2,
+    "explanation": "Panum's is narrowest at the fixation point (6–10 arc min near fovea). It widens toward the periphery — reaching 30–40 arc min at 12° eccentricity.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "Panum's Fusional Space at approximately 12 degrees of eccentricity from the fovea is:",
+    "options": [
+      "6–10 arc minutes",
+      "10–15 arc minutes",
+      "15–25 arc minutes",
+      "30–40 arc minutes"
+    ],
+    "correct": 3,
+    "explanation": "At 12° eccentricity: 30–40 arc min. Near fovea: 6–10 arc min. Width increases ~1–2 arc min per degree of eccentricity.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "Per the Doctrine of Corresponding Points, if two images fall on DISPARATE (non-corresponding) retinal points, the result is:",
+    "options": [
+      "Single vision through fusion",
+      "Suppression of one image",
+      "Diplopia",
+      "ARC"
+    ],
+    "correct": 2,
+    "explanation": "Disparate points → two different visual directions → the object appears in TWO places = DIPLOPIA. Corresponding points → same visual direction → single vision.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "ARC requires which conditions to develop?",
+    "options": [
+      "Large, alternating strabismus",
+      "Non-changing deviation of sufficient duration for retinocortical reorientation",
+      "Complete suppression of the deviating eye",
+      "Bilateral patching for weeks"
+    ],
+    "correct": 1,
+    "explanation": "ARC requires a NON-CHANGING deviation of SUFFICIENT DURATION for retinocortical elements to become reoriented. Alternating strabismus prevents ARC since the deviation keeps shifting.",
+    "module": "Module 9"
+  },
+  {
+    "type": "mcq",
+    "stem": "Physiological diplopia for objects BEYOND the point of binocular fixation is called:",
+    "options": [
+      "Crossed diplopia",
+      "Proximal diplopia",
+      "Pathological diplopia",
+      "Uncrossed (distal) diplopia"
+    ],
+    "correct": 3,
+    "explanation": "Uncrossed/Distal diplopia = objects BEYOND fixation. Crossed/Proximal = objects NEARER than fixation. Both are PHYSIOLOGICAL — normal phenomena.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of physiological diplopia is commonly observed in EXOPHORIC conditions?",
+    "options": [
+      "Uncrossed diplopia",
+      "Distal diplopia",
+      "Homonymous diplopia",
+      "Crossed (proximal) diplopia"
+    ],
+    "correct": 3,
+    "explanation": "Crossed/Proximal diplopia is commonly seen in EXOPHORIC conditions. Uncrossed/Distal is more common in ESOPHORIC conditions.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "Suppression that persists even under MONOCULAR conditions and reduces visual acuity is called:",
+    "options": [
+      "Facultative suppression",
+      "Retinal rivalry",
+      "Binocular suppression",
+      "Obligatory suppression"
+    ],
+    "correct": 3,
+    "explanation": "Obligatory suppression persists monocularly → results in reduced VA. AMBLYOPIA is the direct consequence. Facultative suppression = binocular only, no monocular 'hangover'.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "AMBLYOPIA is the direct consequence of:",
+    "options": [
+      "Facultative suppression",
+      "Retinal rivalry",
+      "Physiological diplopia",
+      "Obligatory suppression"
+    ],
+    "correct": 3,
+    "explanation": "Amblyopia = fallout of OBLIGATORY suppression. The suppression persists under monocular conditions and causes reduction of visual acuity.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "FOVEAL suppression primarily functions to prevent:",
+    "options": [
+      "Diplopia",
+      "Amblyopia",
+      "ARC",
+      "Confusion"
+    ],
+    "correct": 3,
+    "explanation": "Foveal suppression prevents CONFUSION (dissimilar images on corresponding foveal areas). Extrafoveal suppression prevents DIPLOPIA (similar images on non-corresponding areas).",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "Retinal rivalry occurs when:",
+    "options": [
+      "Similar images fall on non-corresponding areas",
+      "Corresponding areas are stimulated by dissimilar contours",
+      "Both eyes are occluded simultaneously",
+      "The fovea is stimulated from peripheral retina"
+    ],
+    "correct": 1,
+    "explanation": "Retinal rivalry = dissimilar contours on CORRESPONDING retinal areas → fusion impossible → brain alternately suppresses one eye's image.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is an example of PATHOLOGICAL diplopia?",
+    "options": [
+      "Seeing a near object double while fixating far away",
+      "Far object appearing double when fixating near",
+      "Double vision due to myasthenia gravis",
+      "Physiological diplopia for objects outside Panum's area"
+    ],
+    "correct": 2,
+    "explanation": "Pathological diplopia is caused by disease — myasthenia gravis, multiple sclerosis, strabismus, proptosis, cataract, lens subluxation, etc. Options A and D describe physiological diplopia.",
+    "module": "Module 10"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which fusion theory proposes that alternating mosaic patterns from each eye combine in varying patterns to form a unified percept?",
+    "options": [
+      "Worth's Theory",
+      "Wall's Theory",
+      "Panum's Theory",
+      "Verhoeff's Theory"
+    ],
+    "correct": 3,
+    "explanation": "Verhoeff's Theory ('Theory of Replacement'/'Retinal Rivalry') = alternating mosaic patterns from each eye combine to form a unified percept. Worth's = psychological/cerebral. Wall's = projection to same perceptual position.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "Grade 1 fusion (Superimposition/SMP) requires stimulation of:",
+    "options": [
+      "Retinal areas with maximal disparity",
+      "Retinal areas with common visual directions",
+      "Non-corresponding retinal areas",
+      "Peripheral retina exclusively"
+    ],
+    "correct": 1,
+    "explanation": "Grade 1 (SMP) = stimulation of retinal areas with COMMON VISUAL DIRECTIONS — allowing two different objects (e.g., bird + cage) to be perceived simultaneously in the same direction.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "Grade 2 fusion (Flat Fusion) is characterized by:",
+    "options": [
+      "Three-dimensional depth perception",
+      "Simultaneous macular perception only",
+      "Absence of sensory fusion",
+      "True fusion without stereopsis — a 2D percept"
+    ],
+    "correct": 3,
+    "explanation": "Grade 2 = flat fusion = TRUE FUSION WITHOUT STEREOPSIS. The resultant percept is two-dimensional (flat), occupying a single plane. It is more than SMP but less than full stereopsis.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "The HIGHEST form of fusion is:",
+    "options": [
+      "Superimposition",
+      "Simultaneous macular perception",
+      "Flat fusion",
+      "Stereopsis"
+    ],
+    "correct": 3,
+    "explanation": "Stereopsis (Grade 3) is the highest form of fusion — full 3D depth perception from binocular retinal disparity. Tested with stereo fly/butterfly with full correction.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a requirement for fusion?",
+    "options": [
+      "Equal or nearly equal VA",
+      "Normal retinal correspondence",
+      "Normal ocular motility",
+      "Equal pupil size in both eyes"
+    ],
+    "correct": 3,
+    "explanation": "Equal pupil size is NOT a requirement for fusion. The 6 requirements are: equal VA, monocular fixation of each eye, NRC, normal motility, similar (not identical) images, and representation of crossed + uncrossed optic fibers in occipital cortex.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "Motor fusion is the exclusive function of:",
+    "options": [
+      "The fovea and central retina",
+      "The extrafoveal retinal periphery",
+      "The lateral geniculate nucleus",
+      "The optic chiasm"
+    ],
+    "correct": 1,
+    "explanation": "Motor fusion = exclusive function of the EXTRAFOVEAL RETINAL PERIPHERY. Sensory fusion involves foveal areas. Both are ultimately CENTRAL PROCESSES (visual cortex).",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "The stimulus that drives motor fusional eye movements is:",
+    "options": [
+      "Accommodative demand",
+      "Tonic vergence insufficiency",
+      "Retinal disparity outside Panum's area",
+      "Pupillary light reflex"
+    ],
+    "correct": 2,
+    "explanation": "Retinal disparity OUTSIDE Panum's fusional area is the stimulus for motor fusion. The eyes move in opposite directions (vergence) to bring the images back within Panum's space and restore fusion.",
+    "module": "Module 11"
+  },
+  {
+    "type": "mcq",
+    "stem": "The monocular cue based on the SPEED of object movement (fast = near) is called:",
+    "options": [
+      "Motion parallax",
+      "Aerial perspective",
+      "Mathematical perspective",
+      "Velocity"
+    ],
+    "correct": 3,
+    "explanation": "Velocity = speed cue. Fast moving image = NEARER. Slow moving = FARTHER. This is distinct from motion parallax which is based on direction of apparent movement relative to head motion.",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "An object that PARTLY OBSCURES another object is perceived as:",
+    "options": [
+      "Farther than the obscured object",
+      "At the same distance",
+      "Closer than the obscured object",
+      "At infinity"
+    ],
+    "correct": 2,
+    "explanation": "Intervening objects cue: the object that OBSCURES another is judged NEARER. The partly obscured object appears farther away.",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "During motion parallax, if the apparent movement of an object is AGAINST the direction of head movement, the object is:",
+    "options": [
+      "Farther than the fixation point",
+      "At the fixation point",
+      "Closer than the fixation point",
+      "Not detectable"
+    ],
+    "correct": 2,
+    "explanation": "Against parallax = object NEARER than fixation point. With parallax = object FARTHER. This is a reliable monocular depth cue.",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "In aerial perspective, objects viewed in CLEAR mountain air (vs. fog) appear:",
+    "options": [
+      "Farther and larger than they really are",
+      "Closer and smaller than they really are",
+      "At their actual distance",
+      "At infinity"
+    ],
+    "correct": 1,
+    "explanation": "Clear mountain air: objects appear CLOSER and SMALLER than they really are (too distinct). Foggy weather: objects appear FARTHER and larger (less distinct = more distance assumed).",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "Convergence and accommodation as a depth perception cue are classified as:",
+    "options": [
+      "Monocular cues",
+      "Binocular cues",
+      "Psychological cues",
+      "Proprioceptive cues only"
+    ],
+    "correct": 1,
+    "explanation": "Convergence + accommodation = BINOCULAR CUE — requires both eyes. The muscular effort for near fixation gives the brain distance information. There are 2 binocular cues total (+ binocular parallax).",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "The parallactic angle in binocular depth perception INCREASES as the object gets:",
+    "options": [
+      "Farther",
+      "At the same distance regardless",
+      "Closer",
+      "Placed at optical infinity"
+    ],
+    "correct": 2,
+    "explanation": "Greater parallactic angle = NEARER object. The parallactic angle is the sum of angles between the visual axes and the line connecting the object to the extrafoveal retina.",
+    "module": "Module 12"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient has NORMAL amplitude of accommodation but it fatigues easily with repeated stimulation. This describes:",
+    "options": [
+      "Accommodative insufficiency",
+      "Accommodative paralysis",
+      "Ill-sustained accommodation (accommodative fatigue)",
+      "Accommodative infacility"
+    ],
+    "correct": 2,
+    "explanation": "Ill-sustained accommodation = AA is NORMAL but tires with repeated stimulation. Insufficiency = AA is LOWER than expected for age. Infacility = difficulty CHANGING focus.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient struggles to shift focus quickly from near to far, but their amplitude of accommodation is normal. This is:",
+    "options": [
+      "Accommodative insufficiency",
+      "Accommodative fatigue",
+      "Accommodative infacility / inertia",
+      "Spasm of accommodation"
+    ],
+    "correct": 2,
+    "explanation": "Infacility/Inertia = difficulty CHANGING accommodative state (sluggish response). AA is normal. Insufficiency = AA is LOW. Fatigue = AA normal but tires with repeated stimulation.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "Spasm of the Near Reflex (SNR) is characterized by the triad of:",
+    "options": [
+      "Esophoria, miosis, and accommodative fatigue",
+      "Over-accommodation, over-convergence, and pupillary miosis",
+      "Exophoria, mydriasis, and accommodative paralysis",
+      "Convergence insufficiency, miosis, and reduced AA"
+    ],
+    "correct": 1,
+    "explanation": "Spasm of Near Reflex (SNR) triad = OVER-ACCOMMODATION + OVER-CONVERGENCE + PUPILLARY MIOSIS. The ciliary muscle is contracted and cannot relax.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "Accommodative insufficiency is characterized by:",
+    "options": [
+      "Normal AA that tires easily",
+      "Total inability to accommodate",
+      "AA lower than expected for age, NOT due to lens sclerosis",
+      "Ciliary muscle continuously contracted and unable to relax"
+    ],
+    "correct": 2,
+    "explanation": "Accommodative insufficiency = AA LOWER THAN EXPECTED for age, not from crystalline lens sclerosis (which is presbyopia). Usually demonstrates poor SUSTAINING ability.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which accommodative condition involves TOTAL inability to accommodate due to ciliary paralysis?",
+    "options": [
+      "Ill-sustained accommodation",
+      "Accommodative infacility",
+      "Accommodative insufficiency",
+      "Accommodative paralysis"
+    ],
+    "correct": 3,
+    "explanation": "Accommodative paralysis = rare condition; ciliary muscle completely fails to respond to any stimulus. TOTAL inability. All other types have partial or fatiguing accommodation.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "In spasm of accommodation, the ciliary muscle is:",
+    "options": [
+      "Completely paralyzed with no response",
+      "Slow to respond to accommodative stimuli",
+      "Contracted and CANNOT relax",
+      "Normal but fatigues on repeated stimulation"
+    ],
+    "correct": 2,
+    "explanation": "Spasm of accommodation = ciliary muscle is CONTRACTED and CANNOT BE RELAXED. Accommodation is continuously exerted. May be part of the SNR triad.",
+    "module": "Module 13"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with CONVERGENCE WEAKNESS exophoria demonstrates:",
+    "options": [
+      "Exophoria greater at distance than near",
+      "Exophoria equal at distance and near",
+      "Exophoria greater at NEAR than at distance",
+      "Esophoria at near"
+    ],
+    "correct": 2,
+    "explanation": "Convergence weakness = EXO at NEAR > Exo at distance. Decompensated exophoria for NEAR vision only. Divergence excess = Exo at distance > near.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "Divergence excess is best defined as:",
+    "options": [
+      "Exophoria at near greater than distance",
+      "Esophoria at distance greater than near",
+      "Exophoria at distance greater than near (≥15Δ)",
+      "Equal exophoria at distance and near"
+    ],
+    "correct": 2,
+    "explanation": "Divergence excess = Exo at DISTANCE > Exo at near (often by ≥15Δ). Presents as intermittent divergent squint for DISTANCE, with compensated exophoria for near.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with RIGHT SUPERIOR OBLIQUE palsy demonstrates compensatory head tilt toward the:",
+    "options": [
+      "Right (ipsilateral) side",
+      "Left (contralateral) side",
+      "No head tilt expected",
+      "Chin elevation only"
+    ],
+    "correct": 1,
+    "explanation": "SO damaged → head tilts to the OPPOSITE (contralateral) side. RSO palsy → LEFT head tilt. IO damaged → head tilts to SAME (ipsilateral) side.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with RIGHT INFERIOR OBLIQUE palsy demonstrates compensatory head tilt toward the:",
+    "options": [
+      "Left (contralateral) side",
+      "Right (ipsilateral) side",
+      "Chin depression",
+      "Left with chin elevation"
+    ],
+    "correct": 1,
+    "explanation": "IO damaged → head tilts to the SAME (ipsilateral) side. RIO palsy → RIGHT head tilt. Remember: IO = Ipsilateral; SO = opposite Side.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with LEFT ESOTROPIA turns their face to the LEFT. The GOOD (right) eye moves:",
+    "options": [
+      "Also to the left (same as face turn)",
+      "Downward",
+      "To the right (opposite to face turn)",
+      "Remains stationary"
+    ],
+    "correct": 2,
+    "explanation": "Face turn rule: the GOOD eye moves OPPOSITE to the direction of face turn. L esotropia → face turns LEFT → good eye (OD) moves RIGHT.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "TONIC vergence is primarily responsible for:",
+    "options": [
+      "Fusional vergence reserve",
+      "Proximal convergence near targets",
+      "The magnitude of heterophoria at DISTANCE",
+      "Accommodative convergence at near"
+    ],
+    "correct": 2,
+    "explanation": "Tonic vergence (from EOM tonus) is the basic cause of DISTANCE heterophoria. Deficient tonic = exophoria. Excessive tonic = esophoria at distance.",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "Fusional vergence dysfunction is characterized by:",
+    "options": [
+      "High AC/A ratio with normal vergence",
+      "Normal phorias and AC/A but REDUCED fusional vergence amplitudes",
+      "Large esodeviations at distance",
+      "Convergence excess at near"
+    ],
+    "correct": 1,
+    "explanation": "Fusional vergence dysfunction = normal phorias + normal AC/A + REDUCED fusional vergence amplitudes → small zone of Clear Single Binocular Vision (CSBV).",
+    "module": "Module 14"
+  },
+  {
+    "type": "mcq",
+    "stem": "In Bagolini's striated glasses test, the lens orientation is:",
+    "options": [
+      "90° OS and 180° OD",
+      "45° OD and 135° OS",
+      "45° OS and 135° OD",
+      "60° OD and 120° OS"
+    ],
+    "correct": 2,
+    "explanation": "Bagolini: OS at 45°, OD at 135°. Streaks appear perpendicular. MOST PHYSIOLOGICAL test — does not affect vision or accommodation. Does not use dissociating lenses.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Worth 4-Dot test, seeing only 3 GREEN dots indicates:",
+    "options": [
+      "Suppression of the LEFT eye",
+      "Normal binocular vision",
+      "Harmonious ARC",
+      "Suppression of the RIGHT eye"
+    ],
+    "correct": 3,
+    "explanation": "Convention: red filter OD, green filter OS. 3 green dots only = OD (right eye) SUPPRESSED — patient only sees what OS sees. 2 red dots only = OS suppressed.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "The formula for the Angle of Anomaly using the synoptophore is:",
+    "options": [
+      "Angle of Anomaly = Subjective + Objective Angle",
+      "Angle of Anomaly = Objective − Subjective Angle",
+      "Angle of Anomaly = Subjective − Objective Angle",
+      "Angle of Anomaly = Subjective × Objective Angle"
+    ],
+    "correct": 1,
+    "explanation": "Angle of Anomaly = OBJECTIVE − SUBJECTIVE Angle. If Subjective = Objective → NRC. If Angle of Anomaly = Objective Angle → Harmonious ARC (full sensory adaptation).",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Hering-Bielschowsky after-image test, a patient with RIGHT ESOTROPIA and ARC shows:",
+    "options": [
+      "Symmetrical cross response (superimposed gaps)",
+      "Single line with a gap (suppression)",
+      "Vertical afterimage displaced to the LEFT",
+      "Vertical afterimage displaced to the RIGHT"
+    ],
+    "correct": 2,
+    "explanation": "In ARC with right esotropia, the vertical afterimage (from deviating R eye's fovea) is displaced to the LEFT. This is because the fovea of OD has acquired a different (anomalous) visual direction.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "Bagolini's striated glasses test is considered the MOST PHYSIOLOGICAL test for binocular vision because:",
+    "options": [
+      "It uses highly dissociating filters",
+      "It projects afterimages onto the retina",
+      "It does NOT affect vision or accommodation of the patient",
+      "It measures objective and subjective angles simultaneously"
+    ],
+    "correct": 2,
+    "explanation": "Bagolini's = most physiological because the plano lenses with fine striations do NOT alter vision or accommodation. The patient's visual environment remains most natural.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the 4-prism base-out test, the ABSENCE of the second-phase fusional eye movement indicates:",
+    "options": [
+      "Normal bifoveal fusion",
+      "A central suppression scotoma over the fovea",
+      "ARC with harmonious deviation",
+      "Convergence insufficiency"
+    ],
+    "correct": 1,
+    "explanation": "The 4Δ base-out test: normal = biphasic response (version + fusional duction). Absent second phase (no fusional duction) = the foveal area shifted into is SCOTOMATOUS (suppression scotoma) — no refixation drive.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Worth 4-Dot test, if the patient sees FIVE dots, this indicates:",
+    "options": [
+      "Normal binocular vision",
+      "Harmonious ARC",
+      "Diplopia (uncrossed for esotropia, crossed for exotropia)",
+      "Suppression of one eye"
+    ],
+    "correct": 2,
+    "explanation": "5 dots = DIPLOPIA. For esotropia: uncrossed diplopia — red dots appear to the RIGHT. For exotropia: crossed diplopia — red dots appear to the LEFT of green dots.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which test for retinal correspondence is considered the MOST DISSOCIATING (least physiological)?",
+    "options": [
+      "Bagolini's striated glasses",
+      "Red filter test",
+      "Worth 4-Dot test",
+      "Hering-Bielschowsky after-image test"
+    ],
+    "correct": 3,
+    "explanation": "The after-image test is the MOST DISSOCIATING — it produces afterimages that persist regardless of whether eyes are open, closed, straight, or deviated, completely separating the two foveal inputs.",
+    "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the red filter test, if a patient with exotropia reports the red light to the LEFT of the white light (red filter on right eye), this indicates:",
+    "options": [
+      "Harmonious ARC",
+      "Unharmonious ARC",
+      "Suppression of the left eye",
+      "NRC — heteronymous (crossed) diplopia"
+    ],
+    "correct": 3,
+    "explanation": "NRC in exotropia produces HETERONYMOUS (crossed) diplopia — red light (right eye filtered) appears to the LEFT of white light. This is the expected response in NRC with exotropia.",
+    "module": "Module 15"
+  }
+]
