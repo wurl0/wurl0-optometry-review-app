@@ -2,10 +2,12 @@ import { notFound } from 'next/navigation'
 import { SUBJECTS } from '@/lib/subjects'
 import NotesClient from './NotesClient'
 import physioNotes from '@/data/notes/physiologic-optics'
+import bvNotes from '@/data/notes/binocular-vision'
 import { NotesData } from '@/lib/notes-types'
 
 const NOTES_MAP: Record<string, NotesData> = {
   'physiologic-optics': physioNotes,
+  'binocular-vision': bvNotes,
 }
 
 export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {
