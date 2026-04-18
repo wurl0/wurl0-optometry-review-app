@@ -84,10 +84,9 @@ export default async function HomePage() {
             const c = COLOR_MAP[subject.color]
             const stats = statsBySubject[subject.slug]
             return (
-              <Link
+              <div
                 key={subject.slug}
-                href={`/exam/${subject.slug}`}
-                className={`group bg-white rounded-2xl border-2 ${c.border} p-5 hover:shadow-md transition-all hover:-translate-y-0.5`}
+                className={`bg-white rounded-2xl border-2 ${c.border} p-5`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${c.badge}`}>
@@ -115,10 +114,29 @@ export default async function HomePage() {
                     </div>
                   </div>
                 )}
-                <div className={`mt-4 text-xs font-semibold ${c.text} group-hover:underline`}>
-                  {stats ? `${stats.attempts} attempt${stats.attempts > 1 ? 's' : ''} → Practice again →` : 'Start practice →'}
+                <div className="mt-4 space-y-2">
+                  <Link
+                    href={`/notes/${subject.slug}`}
+                    className={`block w-full text-center text-xs font-semibold py-2 rounded-lg border ${c.border} ${c.text} hover:${c.bg} transition-colors`}
+                  >
+                    📖 Notes & Reviewer
+                  </Link>
+                  <div className="flex gap-2">
+                    <Link
+                      href={`/practice/${subject.slug}`}
+                      className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+                    >
+                      Guided Practice
+                    </Link>
+                    <Link
+                      href={`/exam/${subject.slug}`}
+                      className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                    >
+                      Full Exam
+                    </Link>
+                  </div>
                 </div>
-              </Link>
+              </div>
             )
           })}
         </div>
