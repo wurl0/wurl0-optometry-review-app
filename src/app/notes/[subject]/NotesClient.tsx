@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Block, NotesData, Section } from '@/lib/notes-types'
 import { Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
-import { DiagramRenderer } from '@/components/diagrams/PhysioOpticsDiagrams'
+import { DiagramRenderer } from '@/components/diagrams/DiagramRenderer'
 
 interface Props {
   subject: Subject

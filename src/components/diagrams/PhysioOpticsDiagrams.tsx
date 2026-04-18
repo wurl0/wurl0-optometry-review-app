@@ -404,7 +404,7 @@ export function AccommodationDiagram() {
 
 // ─── Registry ──────────────────────────────────────────────────────────────────
 
-const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
+export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'refractive-status':         RefractiveStatusDiagram,
   'visual-pathway':            VisualPathwayDiagram,
   'astigmatism-meridian':      AstigmatismMeridianDiagram,

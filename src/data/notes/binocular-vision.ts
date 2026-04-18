@@ -8,6 +8,7 @@ const notes: NotesData = {
       id: 'basic-concepts',
       title: 'Basic Concepts & Prerequisites',
       blocks: [
+        { kind: 'diagram', id: 'bv-visual-fields' },
         {
           kind: 'text',
           content:
@@ -158,6 +159,7 @@ const notes: NotesData = {
           kind: 'sub',
           title: '9 Positions of Gaze',
           blocks: [
+            { kind: 'diagram', id: 'nine-positions-gaze' },
             {
               kind: 'bullets',
               items: [
@@ -314,6 +316,7 @@ const notes: NotesData = {
       id: 'retinal-correspondence-horopter',
       title: 'Retinal Correspondence, Horopter & Panum\'s Area',
       blocks: [
+        { kind: 'diagram', id: 'horopter-panum' },
         {
           kind: 'text',
           content:
@@ -433,6 +436,7 @@ const notes: NotesData = {
           kind: 'sub',
           title: 'Degrees/Grades of Fusion (Worth\'s Classification)',
           blocks: [
+            { kind: 'diagram', id: 'worth-grades' },
             {
               kind: 'table',
               headers: ['Grade', 'Name', 'Description', 'Test Target', 'Tool'],
@@ -541,6 +545,7 @@ const notes: NotesData = {
           kind: 'sub',
           title: 'Diplopia',
           blocks: [
+            { kind: 'diagram', id: 'diplopia-types' },
             {
               kind: 'text',
               content:
