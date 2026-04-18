@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Block, NotesData, Section } from '@/lib/notes-types'
 import { Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
+import { DiagramRenderer } from '@/components/diagrams/PhysioOpticsDiagrams'
 
 interface Props {
   subject: Subject
@@ -66,6 +67,10 @@ function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
         <p className="text-sm text-amber-900 leading-relaxed">{block.content}</p>
       </div>
     )
+  }
+
+  if (block.kind === 'diagram') {
+    return <DiagramRenderer id={block.id} caption={block.caption} />
   }
 
   if (block.kind === 'sub') {

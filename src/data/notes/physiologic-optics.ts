@@ -39,6 +39,7 @@ const data: NotesData = {
       id: 'eyeball',
       title: 'The Eyeball',
       blocks: [
+        { kind: 'diagram', id: 'eye-layers' },
         {
           kind: 'table',
           headers: ['Property', 'Value'],
@@ -219,6 +220,7 @@ const data: NotesData = {
           kind: 'sub',
           title: 'Accommodation',
           blocks: [
+            { kind: 'diagram', id: 'accommodation-mechanism' },
             { kind: 'text', content: 'Process by which the crystalline lens varies its focal length in response to changes in vergence of incident light. Primary stimulus: BLUR. Other stimulus: near target.' },
             {
               kind: 'table',
@@ -236,6 +238,7 @@ const data: NotesData = {
       id: 'refractive-status',
       title: 'Refractive Status',
       blocks: [
+        { kind: 'diagram', id: 'refractive-status' },
         {
           kind: 'text',
           content: 'Describes the relationship between the posterior principal focus, the eye\'s refractive mechanism, and the retina — with accommodation RELAXED.',
@@ -441,6 +444,7 @@ const data: NotesData = {
           kind: 'sub',
           title: 'Regular Corneal Astigmatism — WTR / ATR / Oblique',
           blocks: [
+            { kind: 'diagram', id: 'astigmatism-meridian' },
             {
               kind: 'pearl',
               content: 'WTR vs ATR — the axis of correction is perpendicular to the power meridian. WTR has power near vertical; ATR has power near horizontal.',
@@ -526,6 +530,7 @@ const data: NotesData = {
       id: 'visual-pathway',
       title: 'Visual Pathway',
       blocks: [
+        { kind: 'diagram', id: 'visual-pathway' },
         {
           kind: 'bullets',
           items: [

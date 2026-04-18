@@ -4,6 +4,7 @@ export type Block =
   | { kind: 'table'; headers: string[]; rows: string[][] }
   | { kind: 'pearl'; content: string }
   | { kind: 'sub'; title: string; blocks: Block[] }
+  | { kind: 'diagram'; id: string; caption?: string }
 
 export interface Section {
   id: string
