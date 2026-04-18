@@ -244,7 +244,32 @@ export default async function HomePage() {
         {/* Coming soon */}
         <div className="mt-4 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
           <p className="text-sm font-semibold text-gray-400">Coming soon</p>
-          <p className="text-xs text-gray-400 mt-0.5">Ocular Disease · Primary Care · Pharmacology · Ethics · Ocular Anatomy</p>
+          <p className="text-xs text-gray-400 mt-0.5">Ocular Anatomy · Ocular Disease · Pharmacology · Ethics · Special Areas</p>
+        </div>
+
+        {/* Changelog */}
+        <div className="mt-6">
+          <details className="group">
+            <summary className="cursor-pointer text-xs text-gray-400 hover:text-gray-600 transition-colors select-none list-none flex items-center gap-1.5">
+              <span className="group-open:rotate-90 transition-transform inline-block">▶</span>
+              What&apos;s new in OptoPrep
+            </summary>
+            <div className="mt-3 space-y-2">
+              {[
+                { version: 'v0.5', date: 'Apr 2026', note: 'Added Primary Eye Care — 151 practice questions across 6 modules' },
+                { version: 'v0.4', date: 'Apr 2026', note: 'OLE Board Style Prep — mnemonics, board traps, and active recall for 4 subjects' },
+                { version: 'v0.3', date: 'Mar 2026', note: 'Level system — practice unlocks in 3 stages (L1/L2/L3) before full exam access' },
+                { version: 'v0.2', date: 'Mar 2026', note: 'Notes & Reviewer — collapsible study notes with diagrams for 4 subjects' },
+                { version: 'v0.1', date: 'Feb 2026', note: 'Launch — exam mode, practice mode, XP + streaks, badges' },
+              ].map(({ version, date, note }) => (
+                <div key={version} className="flex gap-3 items-start">
+                  <span className="text-[10px] font-bold text-gray-400 shrink-0 mt-0.5 w-8">{version}</span>
+                  <span className="text-[10px] text-gray-400 shrink-0 mt-0.5 w-16">{date}</span>
+                  <span className="text-xs text-gray-500">{note}</span>
+                </div>
+              ))}
+            </div>
+          </details>
         </div>
       </main>
     </div>

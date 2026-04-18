@@ -39,7 +39,7 @@ export default async function OlePrepPage() {
 
         {/* Subject cards */}
         <div className="grid sm:grid-cols-2 gap-4">
-          {SUBJECTS.map(subject => {
+          {SUBJECTS.filter(s => s.olePrep).map(subject => {
             const c = COLOR_MAP[subject.color]
             return (
               <Link

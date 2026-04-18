@@ -16,6 +16,7 @@ export interface Subject {
   color: string
   questionCount: number
   icon: string
+  olePrep?: boolean
 }
 
 export interface ExamResult {

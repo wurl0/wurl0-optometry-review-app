@@ -8,6 +8,7 @@ export const SUBJECTS: Subject[] = [
     color: 'teal',
     questionCount: 80,
     icon: '👁️',
+    olePrep: true,
   },
   {
     slug: 'binocular-vision',
@@ -16,6 +17,7 @@ export const SUBJECTS: Subject[] = [
     color: 'blue',
     questionCount: 105,
     icon: '🎯',
+    olePrep: true,
   },
   {
     slug: 'theoretical-optics',
@@ -24,6 +26,7 @@ export const SUBJECTS: Subject[] = [
     color: 'violet',
     questionCount: 71,
     icon: '🌈',
+    olePrep: true,
   },
   {
     slug: 'phorometry',
@@ -32,6 +35,7 @@ export const SUBJECTS: Subject[] = [
     color: 'amber',
     questionCount: 113,
     icon: '🕶️',
+    olePrep: true,
   },
   {
     slug: 'primary-eye-care',
