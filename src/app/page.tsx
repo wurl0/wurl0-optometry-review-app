@@ -9,15 +9,25 @@ export default async function HomePage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const [attemptsRes, statsRes, badgesRes] = await Promise.all([
+  const [attemptsRes, statsRes, badgesRes, progressRes] = await Promise.all([
     supabase.from('exam_attempts').select('subject, score, total, percentage, created_at').eq('user_id', user.id).order('created_at', { ascending: false }),
     supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
     supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
+    supabase.from('practice_progress').select('subject, level, passed').eq('user_id', user.id),
   ])
 
   const attempts = attemptsRes.data
   const userStats = statsRes.data
   const badgeCount = badgesRes.data?.length ?? 0
+
+  // Map: subject → { 1: passed, 2: passed, 3: passed }
+  const levelMap: Record<string, Record<number, boolean>> = {}
+  for (const row of progressRes.data ?? []) {
+    if (!levelMap[row.subject]) levelMap[row.subject] = {}
+    levelMap[row.subject][row.level] = row.passed
+  }
+  const examUnlocked = (slug: string) =>
+    !!(levelMap[slug]?.[1] && levelMap[slug]?.[2] && levelMap[slug]?.[3])
 
   const statsBySubject: Record<string, { best: number; attempts: number }> = {}
   for (const a of attempts ?? []) {
@@ -147,9 +157,6 @@ export default async function HomePage() {
                 <div className={`bg-gradient-to-br ${c.gradient} px-5 pt-5 pb-4`}>
                   <div className="flex items-start justify-between">
                     <span className="text-4xl">{subject.icon}</span>
-                    <span className="text-xs font-semibold bg-white/25 text-white px-2.5 py-1 rounded-full">
-                      {subject.questionCount} questions
-                    </span>
                   </div>
                   <h2 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h2>
                   {stats && (
@@ -168,6 +175,24 @@ export default async function HomePage() {
                 {/* Card body */}
                 <div className="px-5 py-4">
                   <p className="text-xs text-gray-500 leading-relaxed mb-4">{subject.description}</p>
+                  {/* Level progress pips */}
+                  <div className="flex items-center gap-1.5 mb-3">
+                    {[1, 2, 3].map(lvl => {
+                      const passed = levelMap[subject.slug]?.[lvl]
+                      return (
+                        <div key={lvl} className="flex items-center gap-1">
+                          <div className={`w-4 h-4 rounded-full text-[9px] font-bold flex items-center justify-center ${passed ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
+                            {lvl}
+                          </div>
+                          {lvl < 3 && <div className={`w-3 h-0.5 ${passed ? 'bg-green-400' : 'bg-gray-200'}`} />}
+                        </div>
+                      )
+                    })}
+                    <span className="text-xs text-gray-400 ml-1">
+                      {examUnlocked(subject.slug) ? '· Exam unlocked ✓' : '· Complete all levels to unlock exam'}
+                    </span>
+                  </div>
+
                   <div className="space-y-2">
                     <Link
                       href={`/notes/${subject.slug}`}
@@ -180,14 +205,20 @@ export default async function HomePage() {
                         href={`/practice/${subject.slug}`}
                         className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
                       >
-                        Guided Practice
+                        Levels & Practice
                       </Link>
-                      <Link
-                        href={`/exam/${subject.slug}`}
-                        className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
-                      >
-                        Full Exam
-                      </Link>
+                      {examUnlocked(subject.slug) ? (
+                        <Link
+                          href={`/exam/${subject.slug}`}
+                          className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                        >
+                          Full Exam
+                        </Link>
+                      ) : (
+                        <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
+                          🔒 Full Exam
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -196,8 +227,22 @@ export default async function HomePage() {
           })}
         </div>
 
+        {/* OLE Board Style Prep */}
+        <div className="mt-6">
+          <Link
+            href="/ole-prep"
+            className="flex items-center justify-between bg-gradient-to-r from-violet-600 to-purple-700 rounded-2xl px-5 py-4 hover:from-violet-700 hover:to-purple-800 transition-colors"
+          >
+            <div>
+              <p className="text-sm font-bold text-white">🎓 OLE Board Style Prep</p>
+              <p className="text-xs text-violet-200 mt-0.5">Mnemonics · High-yield facts · Board traps · Active recall</p>
+            </div>
+            <span className="text-white text-lg">→</span>
+          </Link>
+        </div>
+
         {/* Coming soon */}
-        <div className="mt-6 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
+        <div className="mt-4 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
           <p className="text-sm font-semibold text-gray-400">Coming soon</p>
           <p className="text-xs text-gray-400 mt-0.5">Ocular Disease · Primary Care · Pharmacology · Ethics · Ocular Anatomy</p>
         </div>

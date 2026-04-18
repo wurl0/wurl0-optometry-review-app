@@ -16,6 +16,7 @@ export const BADGES: Record<string, Badge> = {
   daily_done:    { id: 'daily_done',    emoji: '🌟', name: 'Daily Champion',   description: 'Complete your daily goal' },
   polymath:      { id: 'polymath',      emoji: '🧠', name: 'Polymath',         description: 'Try at least 3 different subjects' },
   hardcore:      { id: 'hardcore',      emoji: '💪', name: 'Hardcore',         description: 'Answer 50+ questions in a single exam' },
+  quick_study:   { id: 'quick_study',   emoji: '📝', name: 'Quick Study',      description: 'Pass a notes quiz' },
 }
 
 export const ALL_BADGES: Badge[] = Object.values(BADGES)

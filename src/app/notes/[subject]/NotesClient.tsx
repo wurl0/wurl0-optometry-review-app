@@ -5,10 +5,13 @@ import { Block, NotesData, Section } from '@/lib/notes-types'
 import { Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
 import { DiagramRenderer } from '@/components/diagrams/DiagramRenderer'
+import { NotesQuizData } from '@/lib/notes-quiz-types'
+import NotesQuiz from './NotesQuiz'
 
 interface Props {
   subject: Subject
   notes: NotesData
+  quiz?: NotesQuizData
 }
 
 function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
@@ -100,12 +103,16 @@ function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
 }
 
 
-export default function NotesClient({ subject, notes }: Props) {
+export default function NotesClient({ subject, notes, quiz }: Props) {
   const c = COLOR_MAP[subject.color]
   const [allOpen, setAllOpen] = useState(false)
+  const [quizOpen, setQuizOpen] = useState(false)
 
   return (
     <div className="min-h-screen pb-16">
+      {quizOpen && quiz && (
+        <NotesQuiz subject={subject} quiz={quiz} onClose={() => setQuizOpen(false)} />
+      )}
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3">
@@ -155,19 +162,37 @@ export default function NotesClient({ subject, notes }: Props) {
           ))}
         </div>
 
+        {/* Quick Quiz CTA */}
+        {quiz && (
+          <div className={`mt-6 rounded-2xl border p-5 bg-gradient-to-br ${c.gradient} text-white`}>
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-bold">📝 Quick Notes Quiz</p>
+                <p className="text-xs mt-0.5 text-white/80">{quiz.questions.length} questions · MCQ, T/F & Identification · 50% to pass</p>
+              </div>
+              <button
+                onClick={() => setQuizOpen(true)}
+                className="text-xs font-semibold bg-white/20 hover:bg-white/30 px-4 py-2 rounded-xl transition-colors whitespace-nowrap"
+              >
+                Take quiz →
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Bottom actions */}
-        <div className="mt-6 flex gap-3">
+        <div className="mt-3 flex gap-3">
           <Link
             href={`/practice/${subject.slug}`}
             className={`flex-1 text-center text-sm font-semibold py-3 rounded-xl border-2 ${c.border} ${c.text} hover:${c.bg} transition-colors`}
           >
-            Practice questions →
+            Practice levels →
           </Link>
           <Link
-            href={`/exam/${subject.slug}`}
+            href="/"
             className="flex-1 text-center text-sm font-semibold py-3 rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition-colors"
           >
-            Full exam →
+            Home
           </Link>
         </div>
       </main>

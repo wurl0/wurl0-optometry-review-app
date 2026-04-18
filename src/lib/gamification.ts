@@ -44,7 +44,7 @@ export async function updateGamification(
   const currentStreak = stats?.streak ?? 0
   const lastActive: string | null = stats?.last_active ?? null
   const dailyGoal: number = stats?.daily_goal ?? 10
-  const dailyDone: number = (stats?.daily_date === today ? stats?.daily_done : 0) ?? 0
+  const dailyDone: number = (stats?.daily_date === today ? (stats?.daily_done ?? 0) : 0)
 
   // XP calculation
   const baseXp = session.isExam ? session.correct * 10 : session.correct * 5
@@ -111,6 +111,90 @@ export async function updateGamification(
     { badge: BADGES.daily_done,    condition: dailyGoalJustMet },
     { badge: BADGES.polymath,      condition: distinctSubjects >= 3 },
     { badge: BADGES.hardcore,      condition: session.isExam && session.total >= 50 },
+  ]
+
+  const newBadges = candidates
+    .filter(({ badge, condition }) => condition && !earned.has(badge.id))
+    .map(({ badge }) => badge)
+
+  if (newBadges.length > 0) {
+    await supabase.from('user_badges').insert(
+      newBadges.map(b => ({ user_id: userId, badge_id: b.id }))
+    )
+  }
+
+  return { xpEarned, totalXp: newTotalXp, streak: newStreak, dailyGoalMet: dailyGoalJustMet, newBadges }
+}
+
+export async function updateNotesQuizGamification(
+  supabase: SupabaseClient,
+  userId: string,
+  session: { correct: number; total: number; percentage: number; passed: boolean }
+): Promise<GamificationResult> {
+  const today = todayStr()
+  const yesterday = yesterdayStr()
+
+  const { data: stats } = await supabase
+    .from('user_stats')
+    .select('xp, streak, last_active, daily_goal, daily_done, daily_date')
+    .eq('user_id', userId)
+    .single()
+
+  const currentXp = stats?.xp ?? 0
+  const currentStreak = stats?.streak ?? 0
+  const lastActive: string | null = stats?.last_active ?? null
+  const dailyGoal: number = stats?.daily_goal ?? 10
+  const dailyDone: number = (stats?.daily_date === today ? stats?.daily_done : 0) ?? 0
+
+  // Notes quiz XP: 3 per correct + 20 pass bonus
+  const baseXp = session.correct * 3
+  const passBonus = session.passed ? 20 : 0
+
+  let newStreak = currentStreak
+  if (lastActive === today) {
+    // already counted today
+  } else if (lastActive === yesterday) {
+    newStreak = currentStreak + 1
+  } else {
+    newStreak = 1
+  }
+
+  const newDailyDone = dailyDone + session.total
+  const dailyGoalJustMet = dailyDone < dailyGoal && newDailyDone >= dailyGoal
+  const dailyBonus = dailyGoalJustMet ? 50 : 0
+
+  const xpEarned = baseXp + passBonus + dailyBonus
+  const newTotalXp = currentXp + xpEarned
+
+  await supabase.from('user_stats').upsert(
+    {
+      user_id: userId,
+      xp: newTotalXp,
+      streak: newStreak,
+      last_active: today,
+      daily_goal: dailyGoal,
+      daily_done: newDailyDone,
+      daily_date: today,
+    },
+    { onConflict: 'user_id' }
+  )
+
+  const { data: earnedData } = await supabase
+    .from('user_badges')
+    .select('badge_id')
+    .eq('user_id', userId)
+
+  const earned = new Set((earnedData ?? []).map(b => b.badge_id))
+
+  const candidates: Array<{ badge: Badge; condition: boolean }> = [
+    { badge: BADGES.first_step,   condition: true },
+    { badge: BADGES.quick_study,  condition: session.passed },
+    { badge: BADGES.perfect_score, condition: session.percentage === 100 },
+    { badge: BADGES.streak_3,     condition: newStreak >= 3 },
+    { badge: BADGES.streak_7,     condition: newStreak >= 7 },
+    { badge: BADGES.century,      condition: newTotalXp >= 100 },
+    { badge: BADGES.scholar,      condition: newTotalXp >= 500 },
+    { badge: BADGES.daily_done,   condition: dailyGoalJustMet },
   ]
 
   const newBadges = candidates

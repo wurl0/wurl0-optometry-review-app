@@ -3,11 +3,27 @@ import { SUBJECTS } from '@/lib/subjects'
 import NotesClient from './NotesClient'
 import physioNotes from '@/data/notes/physiologic-optics'
 import bvNotes from '@/data/notes/binocular-vision'
+import theoreticalOpticsNotes from '@/data/notes/theoretical-optics'
+import phorometryNotes from '@/data/notes/phorometry'
+import physioQuiz from '@/data/notes-quiz/physiologic-optics'
+import bvQuiz from '@/data/notes-quiz/binocular-vision'
+import theoreticalOpticsQuiz from '@/data/notes-quiz/theoretical-optics'
+import phorometryQuiz from '@/data/notes-quiz/phorometry'
 import { NotesData } from '@/lib/notes-types'
+import { NotesQuizData } from '@/lib/notes-quiz-types'
 
 const NOTES_MAP: Record<string, NotesData> = {
   'physiologic-optics': physioNotes,
   'binocular-vision': bvNotes,
+  'theoretical-optics': theoreticalOpticsNotes,
+  'phorometry': phorometryNotes,
+}
+
+const QUIZ_MAP: Record<string, NotesQuizData> = {
+  'physiologic-optics': physioQuiz,
+  'binocular-vision': bvQuiz,
+  'theoretical-optics': theoreticalOpticsQuiz,
+  'phorometry': phorometryQuiz,
 }
 
 export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {
@@ -29,5 +45,5 @@ export default async function NotesPage({ params }: { params: Promise<{ subject:
     )
   }
 
-  return <NotesClient subject={subjectMeta} notes={notes} />
+  return <NotesClient subject={subjectMeta} notes={notes} quiz={QUIZ_MAP[subject]} />
 }
