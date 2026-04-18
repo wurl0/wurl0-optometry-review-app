@@ -1,0 +1,1210 @@
+[
+  {
+    "type": "mcq",
+    "stem": "Which of these instruments uses the principle of indentation in measuring eye pressure?",
+    "options": ["Perkins handheld tonometer", "Schiotz tonometer", "Goldmann tonometer", "Biomicroscope"],
+    "correct": 1,
+    "explanation": "The Schiotz tonometer uses the INDENTATION principle — a weighted plunger indents the cornea. Goldmann uses APPLANATION (flattening). Perkins is also applanation.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Opacity of ocular media can be a cause of eccentric fixation. Which test should the doctor use?",
+    "options": ["Brock string", "Panum's area", "Visual fields", "Visuoscope"],
+    "correct": 3,
+    "explanation": "The Visuoscope (fixation ophthalmoscope) directly maps fixation behavior on the retina, allowing the examiner to determine whether the patient uses centric or eccentric fixation.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age does motor fusion first appear?",
+    "options": ["1–3 years", "1–3 months", "3–6 months", "3–4 years"],
+    "correct": 1,
+    "explanation": "Motor fusion first appears at approximately 1–3 months of age. The fusional mechanism is fully developed by 1–1.5 years.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following conditions is orthoptic treatment NOT recommended for?",
+    "options": ["Amblyopia", "Suppression", "Diplopia", "Centric fixation"],
+    "correct": 3,
+    "explanation": "Orthoptic treatment aims to ACHIEVE centric fixation — it is not needed when centric fixation is already present. Amblyopia, suppression, and diplopia are all indications for orthoptic treatment.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following conditions may have an effect in errors of refraction like myopia?",
+    "options": ["Hypertension", "Kidney failure", "Multiple sclerosis", "Diabetes mellitus"],
+    "correct": 3,
+    "explanation": "Diabetes mellitus causes lens swelling (due to sorbitol accumulation) and index changes, leading to transient myopia. Uncontrolled DM can shift refraction toward myopia.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these tests requires cycloplegic agents?",
+    "options": ["Subjective refraction", "Delayed fogging", "Dry refraction", "Wet refraction"],
+    "correct": 3,
+    "explanation": "Wet refraction = cycloplegic refraction. Cycloplegic agents (e.g., cyclopentolate, atropine) paralyze the ciliary muscle to relax accommodation and reveal true refractive error.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Observation of aqueous flare is possible in which slit-lamp technique?",
+    "options": ["Indirect Proximal Illumination", "Diffuse illumination", "Sunset Illumination", "Direct focal illumination"],
+    "correct": 0,
+    "explanation": "Aqueous flare (protein in anterior chamber) is best seen with Indirect Proximal Illumination (oblique broad beam through the AC). The Tyndall effect scatters light off protein particles.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "If there is an abnormally high eye pressure, which test is the next step to confirm a tentative diagnosis of glaucoma?",
+    "options": ["Visual field test", "Shadow test", "Goldmann three-mirror test", "Gonioscopy"],
+    "correct": 3,
+    "explanation": "Gonioscopy directly visualizes the drainage angle to determine if glaucoma is open-angle or closed-angle — a critical distinction for diagnosis and management.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "When a person looks at a 6-meter distance, the eye will be relaxed. What is the equivalent power at this distance?",
+    "options": ["0.00 D", "2.50 D", "0.17 D", "1.00 D"],
+    "correct": 0,
+    "explanation": "At 6 meters (optical infinity for clinical purposes), vergence = 0. An emmetropic eye is relaxed with no accommodation needed. Equivalent power = 1/6 = 0.17 D, but clinically = 0.00 D.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "The following medical conditions are commonly asked during history taking as possible causes of sight-threatening conditions EXCEPT:",
+    "options": ["Diabetes mellitus", "Heart disease", "Glaucoma", "Hypertension"],
+    "correct": 2,
+    "explanation": "Glaucoma is itself an ocular disease — it is not a systemic condition asked about as a cause. Diabetes, heart disease, and hypertension are systemic conditions that can threaten sight and are asked about in the history.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age group does approximately 90 percent of corrective lens wearers have plus power?",
+    "options": ["Ages 20 to 40", "Ages 40 to 60", "Ages 65 to 74", "Ages 12 to 17"],
+    "correct": 2,
+    "explanation": "By ages 65–74, nearly 90% of people wear plus (reading) lenses due to presbyopia. The crystalline lens loses elasticity progressively from age 40 onward.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What amount of myopia can be neutralized when the crystalline lens is removed through surgery?",
+    "options": ["10.00 D", "12.00 D", "24.00 D", "15.00 D"],
+    "correct": 3,
+    "explanation": "The crystalline lens contributes approximately 15–19 D to total eye power. Clear lens extraction (CLE) can neutralize up to ~15.00 D of myopia by removing the refracting power of the lens.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A child who has an uncorrected amount of myopia will need to use the following when reading EXCEPT:",
+    "options": ["Small amount of accommodative convergence", "Small amount of accommodation", "Use of negative fusional vergence", "Small amount of positive fusional vergence"],
+    "correct": 2,
+    "explanation": "An uncorrected myope's near point is within their far point — they do NOT need to diverge (negative fusional vergence) to read near targets. They still use accommodation, accommodative convergence, and positive fusional vergence.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these is the main test that tells whether angle closure is LIKELY to occur?",
+    "options": ["Goldmann tonometry", "Digital tonometry", "Field analyzer", "Gonioscopy"],
+    "correct": 3,
+    "explanation": "Gonioscopy directly visualizes the iridocorneal angle. A narrow or occludable angle indicates risk for acute angle-closure glaucoma.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following conditions will produce excessive disability glare?",
+    "options": ["Posterior subcapsular cataracts", "Miosis and nuclear sclerosis", "Miosis and pseudophakia", "Nuclear and posterior subcapsular cataracts"],
+    "correct": 0,
+    "explanation": "Posterior subcapsular cataracts (PSC) are located directly in the visual axis and cause maximum disability glare and reduced contrast sensitivity, especially in bright light or with oncoming headlights.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "The cornea contributes 2/3 of the refracting power of the eye. What is the average amount of the cornea's power?",
+    "options": ["43.00 D to 44.00 D", "46.00 D to 49.00 D", "40.00 D to 42.00 D", "36.00 D to 39.00 D"],
+    "correct": 0,
+    "explanation": "The cornea averages 43–44 D of refractive power (Gullstrand's schematic eye: 43.05 D). Total eye power is ~58.64 D; cornea = ~2/3 of that.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Astigmatism is increased with an average of 1.00 D between ages 40 to 80 years. What is the direction of this increase?",
+    "options": ["Against-the-rule astigmatism", "Irregular astigmatism", "Oblique astigmatism", "With-the-rule astigmatism"],
+    "correct": 0,
+    "explanation": "With aging, the vertical meridian flattens (decreasing WTR) and the horizontal meridian becomes relatively steeper, resulting in a shift toward against-the-rule (ATR) astigmatism.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A telescope system is used for distance vision. A patient with best corrected distance acuity of 20/200 should be improved to 20/50 by _____ magnification.",
+    "options": ["5X", "2X", "3X", "4X"],
+    "correct": 3,
+    "explanation": "Magnification needed = 200/50 = 4×. The telescope magnifies the image 4 times so the patient can resolve detail equivalent to 20/50.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "A full range of movement in a pursuit movement test is indicative of:",
+    "options": ["Smooth, accurate, extensive movement", "Smooth, full, and minimum jerk", "Jerk, full, extensive movement", "Limited but accurate movement"],
+    "correct": 1,
+    "explanation": "A full range of pursuit movement = smooth, full, with minimum jerk. Any saccadic intrusion indicates restricted or abnormal pursuit. Grading: full range = smooth, full, minimum jerk.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these findings is NOT a clinical sign of glaucoma?",
+    "options": ["Enlargement of blind spot", "Abnormal IOP", "Cupping of optic disc", "Swollen optic disc"],
+    "correct": 3,
+    "explanation": "Swollen optic disc (papilledema) indicates raised INTRACRANIAL pressure — not glaucoma. Glaucoma produces CUPPING (excavation) of the optic disc, not swelling. Signs include: abnormal IOP, cupping, enlarged blind spot, visual field loss.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "In providing corrective measures, the extent at which an image may be located in front or behind the retina and still appear sharp and clear is:",
+    "options": ["Extent of field", "Depth of focus", "Depth of field", "Retinal field"],
+    "correct": 1,
+    "explanation": "Depth of focus refers to the range of vergences (image positions in front of or behind the retina) over which a retinal image appears acceptably sharp. It is a property of the optical system of the eye.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What type of muscle located in the same eye acts in the direction opposite to that of the primary muscle?",
+    "options": ["Synergist", "Antagonist", "Agonist", "Yoke muscle"],
+    "correct": 1,
+    "explanation": "The ANTAGONIST acts in the OPPOSITE direction of the primary (agonist) muscle within the SAME eye. Yoke muscles are contralateral muscles that move both eyes in the same direction (versions).",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following conditions below is FREQUENTLY correlated with children with prominent epicanthal fold?",
+    "options": ["Esotropia", "Exotropia", "Hyperopia", "Exophoria"],
+    "correct": 0,
+    "explanation": "Prominent epicanthal folds cover the medial sclera and create the appearance of esotropia (pseudoesotropia). The eyes are actually straight — it is a common cause of false esotropia referral in children.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "During refraction with proper blur, the patient reports that the 9 o'clock line is clearest on the fan dial. What is the axis of the correcting cylinder?",
+    "options": ["180 degrees", "30 degrees", "90 degrees", "60 degrees"],
+    "correct": 0,
+    "explanation": "The 9 o'clock spoke on a fan dial is horizontal (180° orientation). The clearest line under fog indicates the axis of the MINUS cylinder. 9 o'clock = horizontal = axis 180°.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the patient has a manifest deviation inward, what would be the treatment modality?",
+    "options": ["Base-down prism", "Base-out prism", "Contact lenses", "Base-up prism"],
+    "correct": 1,
+    "explanation": "For esotropia (inward manifest deviation), base-out (BO) prism displaces the image temporally, reducing the convergence demand and allowing the deviated eye to straighten and achieve fusion.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "In infants, the fixation reflex develops at what age?",
+    "options": ["2 to 4 weeks", "Birth", "2 to 3 months", "6 months"],
+    "correct": 2,
+    "explanation": "Fixation (the ability to hold steady foveal regard on a target) develops at approximately 2–3 months of age. At birth, infants can track briefly but fixation is not well-established.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what stage of hypertensive retinopathy does copper wiring of arterioles become visible during ophthalmoscopy?",
+    "options": ["Stage 2", "Stage 4", "Stage 1", "Stage 3"],
+    "correct": 0,
+    "explanation": "Copper wiring (increased arteriolar light reflex with a reddish-orange color) is a Stage 2 finding in hypertensive retinopathy (Keith-Wagener classification). Stage 1 = silver wiring; Stages 3–4 = hemorrhages, papilledema.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A special disinfected prism is mounted on the tonometer head and placed against the cornea. The examiner uses a cobalt blue filter to view two green semicircles. Which device uses this principle?",
+    "options": ["Perkins tonometer", "Pulse air tonometry", "Goldmann tonometer", "Digital tonometry"],
+    "correct": 2,
+    "explanation": "The Goldmann applanation tonometer uses a biprism that splits the fluorescein ring into two semicircles. When the inner margins touch, the applanated area = 3.06mm diameter, and IOP is read from the dial.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "A child who may have been myopic or hyperopic at birth would typically be found to have some degree of ametropia by age 6 of:",
+    "options": ["0.50 to 1.00 D of hyperopia", "4.00 to 8.00 D of hyperopia", "2.00 to 6.00 D of hyperopia", "6.00 to 10.00 D of hyperopia"],
+    "correct": 2,
+    "explanation": "By age 6, most children retain 2.00–6.00 D of hyperopia after emmetropization. This range is considered within physiologic norms for school-age children.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Premature infants weighing more than 3.74 lbs (1,700 g) at birth have mature ocular fundi. What refractive error is MOST likely to be found?",
+    "options": ["10.00 to 20.00 D of hyperopia", "0.25 to 6.00 D of hyperopia", "10.00 to 20.00 D of myopia", "0.25 to 6.00 D of myopia"],
+    "correct": 1,
+    "explanation": "Premature infants with mature fundi (and birth weight > 1,700g) typically show low-to-moderate hyperopia (0.25–6.00 D). High myopia is more characteristic of premature infants with retinopathy of prematurity (ROP).",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "An amount of hyperopia which can be overcome by accommodation is found in which of these conditions?",
+    "options": ["Curvature hyperopia", "Facultative hyperopia", "Clonic hyperopia", "Absolute hyperopia"],
+    "correct": 1,
+    "explanation": "Facultative hyperopia is the portion of total hyperopia that CAN be overcome by accommodation. Absolute hyperopia cannot be overcome. Latent hyperopia is masked by ciliary muscle tone.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following factors does NOT contribute to the development of emmetropia?",
+    "options": ["Corneal power is about 44.00 D", "Lenticular power is reaching 58.00 D", "Axial length is reaching 24 mm", "Anterior chamber depth is about 3.6 mm"],
+    "correct": 1,
+    "explanation": "Lenticular (crystalline lens) power is approximately 19–20 D — NOT 58 D. The total eye power is ~58.64 D (cornea + lens combined). Stating lenticular power = 58 D is incorrect.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "In accommodative facility test with −/+ 2.00 D lens, if the patient was able to achieve 8 to 10 cycles per minute, what does it suggest?",
+    "options": ["Weak accommodative facility", "Strong accommodative facility", "Normal accommodative facility", "Adequate accommodative facility"],
+    "correct": 2,
+    "explanation": "Normal accommodative facility for adults = 8–12 cycles per minute with ±2.00 D flippers. 8–10 cpm falls within the normal range, indicating normal accommodative flexibility.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the amplitude of convergence in prism diopters if the NPC is 12.5 cm with a distance exophoria of 3 prism diopters? Patient's PD is 60 mm.",
+    "options": ["25", "8", "16", "45"],
+    "correct": 3,
+    "explanation": "Convergence at NPC = PD(cm)/NPC(m) = 6 cm / 0.125 m = 48 △. Subtract exophoria (divergent tendency at distance reduces convergence demand): 48 − 3 = 45 △.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these conditions is commonly experienced by young adult patients?",
+    "options": ["Cluster headaches", "Cranial arteritis", "Hypertension headaches", "Migraine headaches"],
+    "correct": 3,
+    "explanation": "Migraines are most prevalent in young adults, particularly those aged 20–40. Cluster headaches and cranial arteritis are less common in young patients. Migraine is the #1 headache type in optometric practice for young adults.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "The procedure that requires the angle of incidence to equal the angle of reflection is:",
+    "options": ["Specular Reflection", "Sclerotic Scatter", "Retro-illumination", "Van Herick Technique"],
+    "correct": 0,
+    "explanation": "Specular reflection uses the principle of equal angles — light striking the corneal or lens surface is reflected at the same angle. This illuminates the endothelium and tear film with minimal scatter.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "If an individual is emmetropic and has an amplitude of accommodation of 5.00 D, the person will be able to do close work at what distance?",
+    "options": ["20 cms", "10 cms", "30 cms", "40 cms"],
+    "correct": 0,
+    "explanation": "Near point = 1/AA = 1/5.00 D = 0.20 m = 20 cm. An emmetrope can work at 20 cm when fully accommodating with 5.00 D of amplitude.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "When do you use an ophthalmoscope?",
+    "options": ["Examining interior eye", "Measuring corneal thickness", "Identifying EOR", "Determining IOL power"],
+    "correct": 0,
+    "explanation": "The ophthalmoscope (direct or indirect) is used to examine the interior of the eye — optic disc, retina, vessels, macula, and vitreous. Corneal thickness = pachymeter; IOL power = biometry.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "When does fixation develop?",
+    "options": ["2 to 3 months", "2 to 4 weeks", "6 months", "At birth"],
+    "correct": 0,
+    "explanation": "Stable fixation develops at approximately 2–3 months of age. At birth, the infant can briefly follow a target but cannot maintain steady fixation.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the condition of the corneal curvature of the left eye if the patient's keratometry findings are: OD 45.75 D / 46.75 D at 180, OS 45.25 D / 47.75 D at 180?",
+    "options": ["Steep", "Loose", "Tight", "Flat"],
+    "correct": 0,
+    "explanation": "OS has a steep meridian of 47.75 D at 180° — the horizontal meridian is steeper (higher diopters) than OD's 46.75 D at 180°. Higher diopter value = steeper curvature. OS is classified as a steep cornea relative to OD.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what range of refractive power in children ages 5 to 6 would MOST likely become hyperopic at ages 14 to 16?",
+    "options": ["1.50 D or more of hyperopia", "+0.50 D to −0.50 D", "+0.50 to +1.50 D", "0.50 D or more of myopia"],
+    "correct": 0,
+    "explanation": "Children with 1.50 D or more of hyperopia at ages 5–6 have insufficient emmetropization reserve and are most likely to remain hyperopic at ages 14–16. Lower initial hyperopia tends to resolve through normal emmetropization.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Symptoms of blurred vision or inability to see well usually suggest reduced vision EXCEPT:",
+    "options": ["Ocular disease", "Ametropia", "Neurological disease", "Dichromacy"],
+    "correct": 3,
+    "explanation": "Dichromacy is color vision deficiency — it does NOT reduce visual acuity or cause blurred vision. Ocular disease, ametropia, and neurological disease can all cause blurred vision or visual loss.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the resolving power of the eye?",
+    "options": ["Visual acuity", "Vernier acuity", "Esophoria", "Detection"],
+    "correct": 0,
+    "explanation": "Resolving power = the ability to resolve two separate points = minimum angle of resolution (MAR) = visual acuity. Vernier acuity is hyperacuity (detecting alignment differences); detection is threshold presence/absence.",
+    "module": "Module 2: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the near point of convergence is more than 12 cms, what does it suggest?",
+    "options": ["Convergence insufficiency", "Convergence excess", "Divergence excess", "Accommodative insufficiency"],
+    "correct": 0,
+    "explanation": "Normal NPC = 6–10 cm. NPC > 12 cm means the patient cannot converge normally to a close target — this is the hallmark of convergence insufficiency.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the primary symptom of myopia?",
+    "options": ["Distance blur", "Eyestrain", "Blurring at near", "Diplopia"],
+    "correct": 0,
+    "explanation": "The primary symptom of myopia is blurred DISTANCE vision. Near vision is clear in myopes because the near point is within normal working distance. Eyestrain is common but secondary.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Compound myopic astigmatism will require correction using:",
+    "options": ["Concave sphere with convex cylinder lens", "Concave sphere with concave cylinder", "Convex sphere with concave cylinder lens", "Convex sphere with convex cylinder lens"],
+    "correct": 1,
+    "explanation": "Compound myopic astigmatism = both focal lines in FRONT of the retina. Correction requires a CONCAVE (minus) sphere + CONCAVE (minus) cylinder to push both focal lines back to the retina.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What will be the amount of accommodative convergence required to view a clear target at 40 cm distance?",
+    "options": ["15 prism diopters", "20 prism diopters", "10 prism diopters", "5 prism diopters"],
+    "correct": 0,
+    "explanation": "Convergence at 40 cm (0.40 m) with standard PD of 60 mm (6 cm): = PD(cm) / distance(m) = 6 / 0.40 = 15 prism diopters.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "When a near target blurs as base-in prism is added, the blur is usually from:",
+    "options": ["Excessive decrease in accommodation", "Excessive increase in divergence", "Dispersion by prism", "Excessive increase in accommodation"],
+    "correct": 0,
+    "explanation": "Base-in prism reduces the convergence demand. Via the AC/A ratio, less convergence leads to LESS accommodation. The resultant decrease in accommodation causes blur (underfocused).",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "If a patient is required to look at a near distance of 0.33 meter, what will be its equivalent accommodative power?",
+    "options": ["1.00 D", "0.50 D", "1.50 D", "3.00 D"],
+    "correct": 3,
+    "explanation": "Accommodative demand = 1/distance(m) = 1/0.33 m ≈ 3.00 D. At 33 cm (standard near point), an emmetrope requires approximately 3 D of accommodation.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Beyond the age of 45, what amount of astigmatism was found to increase?",
+    "options": ["0.25 D ATR", "1.25 D WTR", "1.00 D ATR", "0.50 D WTR"],
+    "correct": 0,
+    "explanation": "After age 45, astigmatism shifts toward ATR (against-the-rule) at a rate of approximately 0.25 D per decade. The vertical meridian weakens, increasing ATR astigmatism with aging.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Presbyopia usually begins prior to age 45 and gradually increases. At what age does it normally level off or stay with same amount?",
+    "options": ["70", "55", "63", "47"],
+    "correct": 1,
+    "explanation": "Presbyopia progresses from age 40 onward and typically stabilizes at approximately age 55–60 when the crystalline lens has lost virtually all elasticity. The add power plateaus around +2.50 to +3.00 D.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these pertains to the presence or absence of a test stimulus?",
+    "options": ["Detection", "One minute of arc", "Esophoria", "Visual acuity"],
+    "correct": 0,
+    "explanation": "Detection threshold = the minimum stimulus intensity needed to be seen (present vs absent). Visual acuity = resolution; one minute of arc = minimum angle of resolution.",
+    "module": "Module 2: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "What structure below has the MOST powerful optical elements in the eye?",
+    "options": ["Crystalline lens", "Vitreous humor", "Aqueous humor", "Cornea"],
+    "correct": 3,
+    "explanation": "The cornea is the most powerful refracting surface in the eye at ~43 D (2/3 of total eye power). The crystalline lens adds ~19 D (1/3), but cornea has greater total power due to the large air-cornea refractive index difference.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following visual conditions is MOST LIKELY to occur if the refractive system of the eye is too strong for its axial length?",
+    "options": ["Presbyopia", "Astigmatism", "Myopia", "Hyperopia"],
+    "correct": 2,
+    "explanation": "If the refractive system is TOO STRONG (excessive plus power) relative to axial length, the image focuses IN FRONT of the retina = MYOPIA. Hyperopia = system too weak (or axial length too short).",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of these conditions may increase the hyperopic power?",
+    "options": ["Hypertension", "Corneal steepening", "Cataract formation", "Diabetes mellitus"],
+    "correct": 2,
+    "explanation": "Certain cataract types (e.g., cortical) can reduce the effective plus power of the lens, shifting the refractive error toward hyperopia. Diabetes typically causes index myopia via nuclear changes.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the refractive prescription of OD is +3.00 D − 6.00 D × 175, what would be the refractive diagnosis?",
+    "options": ["Compound myopic astigmatism", "Compound hyperopic astigmatism", "Simple myopic astigmatism", "Mixed astigmatism"],
+    "correct": 3,
+    "explanation": "+3.00 DS − 6.00 DC × 175: one meridian = +3.00 D (hyperopic), other = +3.00 − 6.00 = −3.00 D (myopic). One focal line in front, one behind the retina = MIXED astigmatism.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Myopia usually manifests itself at some time between ages 6 and 16 gradually increasing. At what rate?",
+    "options": ["About 1.00 or 1.25 D per year", "About 0.75 or 1.00 D per year", "About 0.40 or 0.50 D per year", "About 1.00 or 1.50 D per year"],
+    "correct": 2,
+    "explanation": "Myopia typically progresses at approximately 0.40–0.50 D per year during school age (6–16 years). This is the most evidence-based figure from population studies.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the patient has a total convergence of 22 prism diopters at distance and a fusional convergence of 10 prism diopters, what will be his/her accommodative convergence?",
+    "options": ["22 prism diopters", "12 prism diopters", "32 prism diopters", "10 prism diopters"],
+    "correct": 1,
+    "explanation": "Total convergence = Accommodative Convergence (AC) + Fusional Convergence (FC). AC = Total − FC = 22 − 10 = 12 prism diopters.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "When a plus lens is moved from the eye past its anterior principal focus, it will:",
+    "options": ["Magnify the retinal image size", "Create spherical aberration", "Minify the retinal image size", "Cause distorted image"],
+    "correct": 0,
+    "explanation": "Moving a plus lens away from the eye (past the anterior focal point) increases the spectacle magnification. The image size on the retina increases — clinically important in aphakia correction with spectacles.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What amount of reading addition is required if a low vision patient will read 2M size print at 20 cm distance?",
+    "options": ["5.00 D", "10.00 D", "4.00 D", "8.00 D"],
+    "correct": 0,
+    "explanation": "Required add = 1/working distance(m) = 1/0.20 = 5.00 D. At 20 cm, 5.00 D of plus power is needed to bring the near point to that distance.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the patient has exotropia, what is the probable management?",
+    "options": ["Plus lens and BI prism", "Minus lens and BI prism", "Plus lens and BO prism", "Minus lens and BO prism"],
+    "correct": 1,
+    "explanation": "Exotropia = eyes turn OUT. Management: minus lenses stimulate accommodation and AC/A ratio to drive convergence. BI (base-in) prism relieves divergence demand. Combination = minus lens + BI prism.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age group do approximately 90 percent of corrective lens wearers wear plus lens?",
+    "options": ["Ages 40 to 60", "Ages 65 to 74", "Ages 20 to 40", "Ages 12 to 17"],
+    "correct": 1,
+    "explanation": "By ages 65–74, approximately 90% of individuals use plus (reading) lenses due to fully manifest presbyopia. Presbyopia begins at ~40 but affects nearly all by age 65.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "During refraction with proper blur, the patient reports that the 3 o'clock line is clearest on the fan dial. What is the axis of the correcting cylinder?",
+    "options": ["180 degrees", "30 degrees", "90 degrees", "60 degrees"],
+    "correct": 2,
+    "explanation": "3 o'clock on a clock dial corresponds to the 90° orientation (vertical spoke). The clearest line under fog = axis of minus cylinder. 3 o'clock = 3 × 30° = 90° axis.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "In infants, a blink response to a visual threat is present at what age?",
+    "options": ["6 to 8 weeks", "2 to 5 months", "Birth", "15 to 30 days"],
+    "correct": 1,
+    "explanation": "The visual menace (threat) response develops at approximately 2–5 months of age as the visual cortex matures. It is NOT present at birth. Full blink-to-threat is usually established by 3–4 months.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "What principle is applied in automatic refraction?",
+    "options": ["Point of neutrality", "Working distance power", "Maximum plus to relax", "Plane conjugate to retina"],
+    "correct": 3,
+    "explanation": "Autorefractors use the optometer principle — the measurement target is placed conjugate to the retina. When the patient's far point coincides with the target, the reflex is neutral and the refractive error is determined.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Select which of these describes a manifestation of altered function.",
+    "options": ["Symptoms", "Signs", "Complaints", "Eyestrain"],
+    "correct": 1,
+    "explanation": "Signs = objective findings observed by the clinician = manifestations of altered structure or function. Symptoms and complaints = subjective reports from the patient.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "In providing vision training, the practitioner MUST recognize the condition of EOR (ametropia) that cannot be compensated by accommodation. What is this condition?",
+    "options": ["Absolute hyperopia", "Latent hyperopia", "Facultative hyperopia", "Total hyperopia"],
+    "correct": 0,
+    "explanation": "Absolute hyperopia is the portion that CANNOT be overcome by any amount of accommodation. Vision remains subnormal without correction. It represents the most advanced/severe component of hyperopia.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "An increased depth of anterior chamber lessens the error of refraction. What visual condition will occur?",
+    "options": ["Hyperopia", "Myopia", "Astigmatism", "Presbyopia"],
+    "correct": 1,
+    "explanation": "A deeper anterior chamber means the crystalline lens is set further back, reducing the effective converging power. This leads to a relatively longer optical path, resulting in myopia.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the patient reported diplopia, which one of these conditions may NOT be related to the symptom?",
+    "options": ["Hypertension", "Nerve disease", "Thyroid disease", "Diabetes"],
+    "correct": 0,
+    "explanation": "While hypertension can indirectly cause diplopia via vasculopathic cranial nerve palsy, it is the LEAST directly related. Nerve disease (CN palsy), thyroid disease (Graves ophthalmopathy), and diabetes (diabetic CN palsy) are direct, well-established causes of diplopia.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "When the left eye turns downward upon covering, what does it indicate?",
+    "options": ["Hyperphoria", "Hypotropia", "Hypertropia", "Hypophoria"],
+    "correct": 3,
+    "explanation": "When the left eye moves DOWN upon covering (fusion broken), the left eye's resting position is BELOW fixation — indicating left HYPOPHORIA (latent downward deviation of the left eye).",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following tests CANNOT be utilized to determine the cylindrical portion of the distant correction?",
+    "options": ["Stenopaic slit", "Prism dissociation", "Robinson Cohen", "Paraboline test"],
+    "correct": 1,
+    "explanation": "Prism dissociation (Humphriss immediate contrast method) is a binocular balancing technique for spherical balance — it is NOT used to determine the cylindrical component of the correction.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what period of life does relatively little change in refractive error occur over a period of about 20 years?",
+    "options": ["Between the ages of 14 to 20 years", "From birth to 13 years", "Between the ages of 5 to 6 years", "Between the ages of 5 to 6 years"],
+    "correct": 0,
+    "explanation": "After puberty (around age 14–20), refractive error is relatively stable for approximately 20 years until presbyopic changes begin around age 40. Childhood and early presbyopia are periods of more significant change.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Choose which one describes the anatomical angle formed between the cornea and iris.",
+    "options": ["Sclerocorneal angle", "Trabecular meshwork", "Schlemm's canal", "Iridocorneal angle"],
+    "correct": 3,
+    "explanation": "The iridocorneal angle (also called the filtration angle or anterior chamber angle) is the anatomical space formed between the peripheral cornea and the iris root. This is where aqueous drains through the trabecular meshwork.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following questions may be asked to determine the medical history of the patient?",
+    "options": ["Do you have any health problems?", "When was your last eye exam?", "Are you taking any medications now?", "What is the problem?"],
+    "correct": 0,
+    "explanation": "'Do you have any health problems?' directly elicits medical history information (systemic diseases, conditions). The other options relate to ocular history (last exam), medications (separate category), or chief complaint.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "Select a condition that causes distortion of vision.",
+    "options": ["Itching", "Excessive tearing", "Eye pain", "Entoptic phenomena"],
+    "correct": 3,
+    "explanation": "Entoptic phenomena (e.g., floaters, phosphenes, afterimages) originate from within the eye or visual system and can cause visual distortions. Itching, tearing, and eye pain are non-visual ocular symptoms.",
+    "module": "Module 2: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "If there is a punctum remotum at 20 cms and a punctum proximum of 5 cms from the spectacle plane, what will be the amplitude of accommodation?",
+    "options": ["16.00 D", "4.10 D", "20.00 D", "6.60 D"],
+    "correct": 0,
+    "explanation": "AA = 1/PP − 1/PR = (100/5) − (100/20) = 20 − 5 = 15 D. With vertex correction (+1.2cm), near point from cornea ≈ 6.2cm → 100/6.2 ≈ 16.1 D. Clinically rounded to 16.00 D.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is TRUE about monocular smooth pursuit until 6 months of age?",
+    "options": ["Both are developed well", "Temporal to nasal is better than nasal to temporal", "Nasal to temporal is better than temporal to nasal", "Both are not well developed"],
+    "correct": 2,
+    "explanation": "In early infancy, nasal-to-temporal (N-T) pursuit is relatively better developed than temporal-to-nasal (T-N). This asymmetry resolves as binocular cortical development progresses, typically by 3–5 months.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the BEST way to perform retinoscopy in a patient with media opacity?",
+    "options": ["Concave setting", "Streak retinoscopy", "Spot retinoscopy", "Off-axis retinoscopy"],
+    "correct": 3,
+    "explanation": "Off-axis retinoscopy avoids the central opacity by angling the reflex through a clearer peripheral area. This allows an accurate reflex reading despite central media opacities like central corneal scars or cataracts.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "If the nearest point of convergence is located at 3 cms from the bridge of the nose, it suggests:",
+    "options": ["Ill-sustained accommodation", "Divergence excess", "Convergence excess", "Accommodative excess"],
+    "correct": 2,
+    "explanation": "Normal NPC = 6–10 cm. NPC < 5 cm (e.g., 3 cm) means the patient converges TOO strongly — indicating convergence excess. This is associated with esophoria at near and symptomatic near headaches.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which instrument below is NOT used for tonometry?",
+    "options": ["Exophthalmometer", "Biomicroscope", "Indentation device", "Applanation tonometer"],
+    "correct": 0,
+    "explanation": "The exophthalmometer (Hertel) measures the degree of proptosis (forward protrusion of the eye) — NOT intraocular pressure. Indentation, applanation, and non-contact tonometers all measure IOP.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following treatments for divergence insufficiency is NOT included?",
+    "options": ["Vertical prism", "Optical correction for ametropia", "Vision therapy for accommodative insufficiency", "Vision therapy for amblyopia"],
+    "correct": 2,
+    "explanation": "Divergence insufficiency is treated with BI (base-in) prism, optical correction, and divergence-specific vision therapy. Vision therapy for ACCOMMODATIVE INSUFFICIENCY addresses a separate condition not related to divergence insufficiency.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the minimum amplitude of accommodation of a 48-year-old patient?",
+    "options": ["2.00 D", "2.50 D", "3.00 D", "1.75 D"],
+    "correct": 2,
+    "explanation": "Hofstetter's minimum AA = 15 − 0.25(age) = 15 − 0.25(48) = 15 − 12 = 3.00 D.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Full lens correction is given when the following conditions occur EXCEPT:",
+    "options": ["Markedly reduced amplitude of accommodation", "Marked diplopia", "With much near work required", "With constant intermittent blur"],
+    "correct": 1,
+    "explanation": "In cases of marked diplopia, prescribing the full refractive correction may WORSEN diplopia if the patient has adapted to uncorrected status. Prisms or partial correction may be used first. Other conditions (reduced AA, near work, blur) all warrant full correction.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the natural shape of the lens in its accommodative form?",
+    "options": ["Toroidal", "Hyperbolic", "Elliptical", "Spherical"],
+    "correct": 3,
+    "explanation": "During full accommodation, the ciliary muscle contracts and zonular tension is released, allowing the crystalline lens to assume its natural, more SPHERICAL shape (increased curvature of anterior surface especially).",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "In retinoscopy, what does it mean when the point of neutrality falls in the range of 3.00 to 4.00 D?",
+    "options": ["1.00 D to 2.00 D EOR", "1.50 D to 2.50 D EOR", "1.50 D to 2.00 D EOR", "0.50 D to 2.50 D EOR"],
+    "correct": 1,
+    "explanation": "At standard working distance of 67 cm (1.50 D), subtract the working distance from the gross retinoscopy: 3.00−1.50 = 1.50 D and 4.00−1.50 = 2.50 D. EOR = 1.50 to 2.50 D.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a major cause of blindness in older people?",
+    "options": ["Multiple sclerosis", "Age-related maculopathy", "Cataracts", "Glaucoma"],
+    "correct": 0,
+    "explanation": "Multiple sclerosis typically affects younger adults (20–50 years) and is NOT a major cause of blindness in the elderly. Leading causes of blindness in the elderly: cataracts, AMD (age-related maculopathy), glaucoma, and diabetic retinopathy.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with a near point of convergence with break point less than 5 cms is indicative of:",
+    "options": ["Divergence excess", "Convergence excess", "Divergence insufficiency", "Convergence insufficiency"],
+    "correct": 1,
+    "explanation": "NPC < 5 cm = excessive convergence = convergence excess. The patient converges too strongly, characteristic of esophoria at near, sometimes with associated accommodative excess.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "At what age does refractive error distribution FIRST appear to be markedly leptokurtic?",
+    "options": ["14 to 15 years", "40 to 60 years", "5 to 6 years", "20 to 40 years"],
+    "correct": 0,
+    "explanation": "Leptokurtic distribution (narrow, tall peak) in refractive error means most eyes cluster near emmetropia — this first becomes marked at ages 14–15 years after the emmetropization process.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following tests CANNOT be utilized to determine the balance spherical portion of the distant correction?",
+    "options": ["Prism dissociation", "Duochrome test", "Maddox Rod", "Bichrome test"],
+    "correct": 2,
+    "explanation": "The Maddox Rod is used to measure phorias (dissociated binocular testing) — NOT for determining the spherical endpoint of refraction. Duochrome (bichrome), prism dissociation, and polarized fogging are all used for spherical balance.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following disorders is NOT considered the leading cause of blindness in the elderly requiring eye examination?",
+    "options": ["Diabetic retinopathy", "Glaucoma", "Traumatic injury", "Age-related maculopathy"],
+    "correct": 2,
+    "explanation": "Traumatic injury is NOT a leading cause of blindness in the ELDERLY. The top causes in the aging population are: AMD, diabetic retinopathy, glaucoma, and cataract. Trauma predominantly affects younger patients.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "What part of patient history taking covers questions about hypertension and diabetes?",
+    "options": ["Patient demographics", "Chief complaints", "Medical history", "Ocular history"],
+    "correct": 2,
+    "explanation": "Hypertension and diabetes are SYSTEMIC conditions asked about under the MEDICAL HISTORY section of the case history. Ocular history covers previous eye conditions and surgeries.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "Gathering of data by noting facts or occurrences while looking at the patient is:",
+    "options": ["Fixation test", "Heterotropia", "Patient observation", "External Assessment"],
+    "correct": 3,
+    "explanation": "External Assessment is the systematic observation and examination of the patient's external features (face, adnexa, ocular alignment) before instrumented testing. It includes noting posture, lids, pupils, and alignment by direct observation.",
+    "module": "Module 1: Case History & Patient Assessment"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the MOST common diagnostic symptom of ametropia?",
+    "options": ["Double vision", "Headache", "Blurred vision", "Asthenopia"],
+    "correct": 2,
+    "explanation": "Blurred vision is the most common and primary presenting symptom of all forms of ametropia (myopia, hyperopia, astigmatism). Headache and asthenopia are common secondary symptoms.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Choose the race that is PREDOMINANTLY hyperopic.",
+    "options": ["Mexican", "Korean", "Australian", "Filipino"],
+    "correct": 3,
+    "explanation": "In the Philippine optometry curriculum, Filipinos are classified as predominantly hyperopic in early life (consistent with Southeast Asian population studies showing higher prevalence of hyperopia in early childhood compared to East Asian myopia patterns).",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A presence of blurring of vision indicates:",
+    "options": ["Color blindness", "Heterophoria", "Ametropia", "Orthophoria"],
+    "correct": 2,
+    "explanation": "Blurring of vision = failure of the optical system to focus clearly on the retina = ametropia (any refractive error). Orthophoria and heterophoria relate to ocular alignment, not image clarity.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following refractive errors is considered SIGNIFICANT and requires correction?",
+    "options": ["−0.50 cyl × 90", "−0.50 D sphere", "−0.50 cyl × 180", "−1.00 D sphere"],
+    "correct": 3,
+    "explanation": "−1.00 D sphere is the most commonly cited threshold for significant myopia requiring correction. A −0.50 cyl × 90 (WTR) might be significant for some patients, but −1.00 D sphere is the standard clinical cutoff.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT CORRECT about the crystalline lens?",
+    "options": ["Crystalline lens provides 1/3 power of the eye", "Crystalline lens is situated 3.6 mm behind the cornea", "Complete power of the eye is 45.00 D", "Cornea contributes 2/3 of refracting power"],
+    "correct": 2,
+    "explanation": "The complete (total) power of the eye is approximately 58.64 D (Gullstrand), NOT 45.00 D. All other statements are correct: lens = 1/3, lens at ~3.6 mm behind cornea, cornea = 2/3.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with a myopic condition has the following symptoms EXCEPT:",
+    "options": ["Starring expression", "Blurring at far", "Squinting of eyelids", "Blurring at near"],
+    "correct": 3,
+    "explanation": "Myopes see NEAR clearly (near point is within comfortable working distance). Blurring at near is NOT a myope's symptom. Starring expression, squinting, and far blur are all characteristic myopia symptoms.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Select the test that aids to determine the presence of cyclophoria.",
+    "options": ["Duction tests", "Maddox Double Prism", "Maddox Wing", "Phoria test"],
+    "correct": 1,
+    "explanation": "Cyclophoria (torsional deviation) is measured with the double Maddox Rod test or Maddox Double Prism test. One red and one white Maddox Rod are used before each eye; a tilted line indicates cyclophoria.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Select the clinical method for objective determination of the refractive status of the eye for near distances.",
+    "options": ["Autorefraction", "Dynamic retinoscopy", "Static retinoscopy", "Videokeratoscopy"],
+    "correct": 1,
+    "explanation": "Dynamic retinoscopy (e.g., MEM, Nott, bell retinoscopy) measures the accommodative response at near working distance while the patient reads or fixates near targets. It provides objective near refractive data.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Minus lenses are used in the management of accommodative esotropia because they:",
+    "options": ["Increase accommodative convergence", "Reduce the accommodative demand and convergence", "Strengthen the medial rectus muscles", "Improve fusional vergence amplitudes"],
+    "correct": 1,
+    "explanation": "In accommodative esotropia, excess accommodation drives excess convergence through the AC/A ratio. Full plus correction (or minus reduction) reduces the accommodative effort and thus convergence, bringing the eyes into alignment.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "The primary purpose of the Worth 4-dot test in binocular vision assessment is to determine:",
+    "options": ["Stereoacuity level", "The presence of suppression or diplopia", "Fusional vergence amplitude", "Accommodative convergence ratio"],
+    "correct": 1,
+    "explanation": "The Worth 4-dot test evaluates binocular sensory status — specifically whether the patient has normal fusion, suppression of one eye, or diplopia. It uses red-green dissociation to separate the two eyes' inputs.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION: A patient presents with blurred vision at far only, difficulty driving at night, and frequently squints to see distant objects clearly. Which refractive condition best matches this presentation?",
+    "options": ["Hyperopia", "Myopia", "Astigmatism", "Presbyopia"],
+    "correct": 1,
+    "explanation": "Myopia (nearsightedness) presents with clear near vision but blurred far vision. Night difficulty and squinting to see at distance are classic myope behaviors as pupils enlarge in dim lighting and squinting reduces the circle of confusion.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The patient's retinoscopy reflex moves WITH the streak in all meridians. Which retinoscopy finding does this represent?",
+    "options": ["Against motion — myopia present", "With motion — hyperopia or low myopia present", "Neutralization — emmetropia at working distance", "Scissors reflex — irregular astigmatism"],
+    "correct": 1,
+    "explanation": "'With' motion (reflex moves in the same direction as the streak) in retinoscopy indicates hyperopia or myopia less than the working distance correction (~+1.50 D for 67 cm). Plus lenses are added to reach neutralization.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The patient's final subjective refraction is OD: -3.00 DS, OS: -3.25 DS. What is the interocular difference in spherical power?",
+    "options": ["0.00 D", "0.25 D", "0.50 D", "1.00 D"],
+    "correct": 1,
+    "explanation": "Interocular difference = |-3.00 - (-3.25)| = 0.25 D. An anisometropia of 0.25 D is within normal limits and typically well-tolerated.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION: A 45-year-old patient complains of blurred near vision only. She has no difficulty seeing distant objects and has never worn glasses. Her distance refraction is plano OU. Which condition does she most likely have?",
+    "options": ["Acquired myopia", "Absolute hyperopia", "Presbyopia", "Convergence insufficiency"],
+    "correct": 2,
+    "explanation": "A plano distance refraction with near blur in a 45-year-old is classic presbyopia — the age-related loss of accommodation. The crystalline lens hardens and can no longer adjust for near focus.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The patient's near add is determined to be +1.50 D. Her final near Rx is: OD: +1.50 DS, OS: +1.50 DS. What reading distance does this add correspond to approximately?",
+    "options": ["25 cm", "33 cm", "40 cm", "50 cm"],
+    "correct": 2,
+    "explanation": "+1.50 D corresponds to a focal point at 1/1.50 = 0.67 m = 67 cm — but as an add, it supplements residual accommodation. Standard reading at ~40 cm requires about +2.50 D total; a +1.50 add targets approximately 40 cm for patients with some remaining amplitude.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION: A child's cover test reveals an inward deviation of the left eye when the right eye fixates. When the cover is removed, both eyes resume fixation together. What type of deviation is this?",
+    "options": ["Exophoria", "Esophoria", "Esotropia", "Exotropia"],
+    "correct": 1,
+    "explanation": "Esophoria is a latent inward deviation controlled by fusion. The alternating cover test breaks fusion, revealing the phoria. On cover removal, fusional divergence re-establishes binocular alignment.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The same child's esophoria measures 8 prism diopters at distance and 14 prism diopters at near. The AC/A ratio is high. What is the most appropriate first management approach?",
+    "options": ["Prism therapy", "Vision therapy for fusional divergence", "Plus addition lenses for near", "Surgical correction"],
+    "correct": 2,
+    "explanation": "High AC/A convergence excess esophoria is managed with plus addition lenses at near (bifocals) — reducing the near accommodative demand decreases convergence through the high AC/A ratio. This is the standard non-surgical first approach.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): After plus add lenses, the near esophoria reduces from 14Δ to 4Δ. The remaining 4Δ near esophoria is symptomatic. The next step in management is:",
+    "options": ["Increase the plus add", "Base-out prism", "Base-in prism", "Occlusion therapy"],
+    "correct": 2,
+    "explanation": "Residual esophoria (inward deviation) after optical management is relieved with base-in prism, which displaces the image outward and reduces the convergence demand to relieve symptoms.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient presents with headaches, eyestrain after near work, and occasional double vision at near. Distance vision is clear and comfortable. Which condition is most likely?",
+    "options": ["Accommodative esotropia", "Convergence insufficiency", "Divergence excess exotropia", "Basic exophoria"],
+    "correct": 1,
+    "explanation": "Convergence insufficiency (CI) presents with near symptoms: asthenopia, diplopia at near, and difficulty sustaining near work. Distance vision is typically unaffected. Reduced NPC and low PFV are hallmarks.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with convergence insufficiency has a near point of convergence (NPC) of 20 cm (normal: ≤10 cm). The initial treatment of choice is:",
+    "options": ["Base-out prism reading glasses", "Pencil push-up convergence exercises", "Minus lens therapy", "Surgical recession of lateral rectus"],
+    "correct": 1,
+    "explanation": "Pencil push-ups (and office-based vergence/accommodative therapy) are the first-line treatment for CI. They train convergence by having the patient maintain single vision while advancing a fixation target toward the nose.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with convergence insufficiency is prescribed base-in prism reading glasses as a symptomatic relief measure. Base-in prism relieves CI symptoms by:",
+    "options": ["Stimulating accommodation to drive convergence", "Reducing the convergence demand at near", "Increasing fusional divergence reserves", "Correcting the underlying AC/A ratio"],
+    "correct": 1,
+    "explanation": "Base-in prism displaces the near image slightly outward, reducing the amount of convergence the patient must exert. This relieves asthenopia and diplopia while the underlying insufficiency is treated or monitored.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "On direct ophthalmoscopy, the optic disc cup-to-disc (C/D) ratio is estimated. A C/D ratio of 0.7 or greater in an adult is clinically significant because it may indicate:",
+    "options": ["Optic neuritis", "Central retinal vein occlusion", "Glaucomatous optic nerve damage", "Macular degeneration"],
+    "correct": 2,
+    "explanation": "A C/D ratio ≥0.7, especially with asymmetry between eyes, is a risk factor for glaucoma. Normal C/D is typically ≤0.5. Glaucoma causes progressive loss of rim tissue and cup enlargement.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "On fundus examination, a bright yellow-white focal deposit seen at the level of the retinal pigment epithelium is most consistent with:",
+    "options": ["Cotton-wool spot", "Drusen", "Flame-shaped hemorrhage", "Neovascularization"],
+    "correct": 1,
+    "explanation": "Drusen are yellow-white deposits beneath the RPE, characteristic of age-related macular degeneration (AMD). Hard drusen are small and well-defined; soft drusen are larger and confluent with higher AMD risk.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A cotton-wool spot seen on fundus examination represents:",
+    "options": ["Hard lipid exudate from capillary leakage", "Focal ischemia of the nerve fiber layer", "Drusen accumulation in Bruch's membrane", "Subretinal neovascular membrane"],
+    "correct": 1,
+    "explanation": "Cotton-wool spots are fluffy white superficial retinal lesions representing focal nerve fiber layer infarcts (microinfarctions from capillary occlusion). They are associated with hypertension, diabetes, HIV retinopathy, and other vascular diseases.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Hirschberg corneal light reflex test, the reflected light appears at the nasal limbus of the left eye while the patient looks at the penlight. This indicates approximately how many prism diopters of exotropia in the left eye?",
+    "options": ["15Δ exotropia", "30Δ exotropia", "45Δ exotropia", "60Δ exotropia"],
+    "correct": 2,
+    "explanation": "Hirschberg estimation: pupil center ~15Δ, halfway to limbus ~30Δ, limbus ~45Δ, beyond limbus ~60Δ. Reflex at the nasal limbus of the left eye = the left eye is deviated outward (exo) by approximately 45Δ.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "During the cover-uncover test, the uncovered eye is observed after the cover is placed over the other eye. The primary purpose of observing the UNCOVERED eye in this test is to detect:",
+    "options": ["Tropias (manifest deviations)", "Phorias (latent deviations)", "Anisometropia", "Fixation preference"],
+    "correct": 0,
+    "explanation": "In the cover-uncover test, observing the UNCOVERED eye detects tropias — if the uncovered eye moves to take up fixation when the other eye is covered, a manifest deviation (tropia) exists in the covered eye.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Keratometry readings of OD: 43.00 @ 180 / 46.00 @ 090 indicate:",
+    "options": ["With-the-rule astigmatism", "Against-the-rule astigmatism", "Oblique astigmatism", "Irregular astigmatism"],
+    "correct": 0,
+    "explanation": "With-the-rule (WTR) astigmatism: steeper meridian is vertical (near 90°). K-readings: 46.00 at 090 (steeper) and 43.00 at 180 (flatter). The steeper vertical meridian = WTR. Spectacle correction: minus cylinder axis 180.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "Keratometry readings of OD: 43.25 @ 090 / 45.00 @ 180 indicate:",
+    "options": ["With-the-rule astigmatism", "Against-the-rule astigmatism", "Oblique astigmatism", "Spherical cornea"],
+    "correct": 1,
+    "explanation": "Against-the-rule (ATR) astigmatism: steeper meridian is horizontal (near 180°). Here 45.00 at 180 > 43.25 at 090, so the steeper meridian is horizontal → ATR. The minus cylinder correction axis is 090. ATR becomes more common with age.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with diabetes mellitus presents with fluctuating vision, more blurred after meals. Which refractive change is most consistent with poorly controlled DM?",
+    "options": ["Hyperopic shift due to corneal edema", "Myopic shift due to lens swelling from sorbitol accumulation", "Irregular astigmatism from corneal neovascularization", "Presbyopic onset from ciliary muscle neuropathy"],
+    "correct": 1,
+    "explanation": "In uncontrolled DM, sorbitol accumulates in the lens via aldose reductase, causing osmotic lens swelling (increased thickness and power) → transient myopia. Blood glucose spikes post-meal worsen this effect.",
+    "module": "Module 3: Refraction & Refractive Errors"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with systemic hypertension shows flame-shaped hemorrhages and silver-wiring of arterioles on fundus exam. These findings correspond to which Keith-Wagener-Barker (KWB) grade?",
+    "options": ["Grade I", "Grade II", "Grade III", "Grade IV"],
+    "correct": 2,
+    "explanation": "KWB Grade III: flame hemorrhages, cotton-wool spots, hard exudates. Grade I: arteriolar narrowing only. Grade II: AV nicking. Grade IV: papilledema added to Grade III findings.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient on systemic corticosteroids long-term presents with gradual, painless decrease in vision. Slit lamp exam reveals a posterior subcapsular opacity. This is consistent with:",
+    "options": ["Nuclear sclerotic cataract", "Anterior subcapsular cataract", "Posterior subcapsular cataract", "Cortical cataract"],
+    "correct": 2,
+    "explanation": "Posterior subcapsular cataracts (PSC) are classically associated with chronic corticosteroid use (systemic or topical) and diabetes. PSC is located at the posterior pole of the lens and causes significant glare and near vision symptoms.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Duction tests measure:",
+    "options": ["Binocular version movements", "Monocular rotations of one eye", "Vergence amplitude of both eyes simultaneously", "Accommodative convergence ratio"],
+    "correct": 1,
+    "explanation": "Ductions are monocular eye movements performed with one eye covered. They test the range of rotation of a single eye in each direction (abduction, adduction, supraduction, infraduction, incycloduction, excycloduction).",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "On duction testing, limited abduction of the right eye is most suggestive of:",
+    "options": ["Right medial rectus overaction", "Right lateral rectus underaction or palsy", "Left lateral rectus overaction", "Thyroid-related inferior rectus restriction"],
+    "correct": 1,
+    "explanation": "Abduction is the action of the lateral rectus. Reduced right abduction implicates right lateral rectus underaction (e.g., CN VI palsy), causing esotropia that worsens in right gaze.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "On duction testing, limited elevation of the right eye in adduction is most consistent with palsy of which muscle?",
+    "options": ["Right superior rectus", "Right inferior oblique", "Right superior oblique", "Right inferior rectus"],
+    "correct": 0,
+    "explanation": "The superior rectus is the primary elevator, especially in abduction. However, the inferior oblique is the primary elevator in adduction. Limited elevation in adduction suggests inferior oblique palsy or superior oblique overaction. The superior rectus elevates best in abduction.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient reports seeing halos around lights, especially at night. On examination, IOP is 28 mmHg and the anterior chamber angle is narrow on gonioscopy. Which condition is most likely?",
+    "options": ["Open-angle glaucoma", "Angle-closure glaucoma", "Ocular hypertension", "Corneal edema from contact lens overwear"],
+    "correct": 1,
+    "explanation": "Narrow angle on gonioscopy with elevated IOP and halos indicates angle-closure glaucoma. The iris occludes the trabecular meshwork, reducing aqueous outflow. Halos occur from corneal edema secondary to IOP spike.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient reports sudden-onset blurred vision in one eye with an afferent pupillary defect (APD). On fundus exam, the optic disc appears swollen with surrounding hemorrhages. Which condition should be immediately suspected?",
+    "options": ["Diabetic macular edema", "Central retinal artery occlusion", "Anterior ischemic optic neuropathy", "Posterior vitreous detachment"],
+    "correct": 2,
+    "explanation": "Anterior ischemic optic neuropathy (AION) presents with sudden monocular visual loss, APD, and segmental or diffuse optic disc edema with peripapillary hemorrhages — classic for arteritic or non-arteritic AION.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION: A 7-year-old child's best corrected visual acuity is 20/20 in the right eye and 20/80 in the left eye, despite full optical correction. There is no structural ocular pathology. Which condition does this represent?",
+    "options": ["Myopic anisometropia only", "Functional amblyopia", "Organic amblyopia", "Strabismic suppression"],
+    "correct": 1,
+    "explanation": "Functional (or deprivation/refractive/strabismic) amblyopia is reduced BCVA with no structural cause. A 7-year-old with 20/80 BCVA in one eye despite full correction meets the criteria. The visual cortex fails to develop normal acuity due to abnormal visual input during the critical period.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The child is diagnosed with amblyopia secondary to anisometropia. What is the primary treatment?",
+    "options": ["Penalization of the amblyopic eye with atropine", "Full optical correction and patching of the dominant eye", "Vision therapy without spectacles", "Surgical correction of refractive error"],
+    "correct": 1,
+    "explanation": "First-line amblyopia treatment: full optical correction of both eyes (spectacles or contact lenses), then patching the dominant (better-seeing) eye to force use of the amblyopic eye. Correction alone can sometimes improve acuity, especially in anisometropic amblyopia.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "SITUATION (continued): The child's amblyopia improves from 20/80 to 20/40 after 3 months of patching. Patching is continued. At what acuity level would you consider the amblyopia successfully treated?",
+    "options": ["20/40 or better with improvement", "20/30 or better", "Equal BCVA in both eyes or near-equal", "20/20 in the amblyopic eye"],
+    "correct": 2,
+    "explanation": "Amblyopia treatment goal is equal or near-equal BCVA in both eyes — not necessarily 20/20. Achieving symmetrical acuity (within 1–2 Snellen lines) between eyes is the clinical endpoint for treatment success.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "Minimum angle of resolution (MAR) is the basis for which visual acuity notation?",
+    "options": ["Snellen notation (e.g., 20/20)", "logMAR notation", "Jaeger notation", "Point notation"],
+    "correct": 1,
+    "explanation": "logMAR (logarithm of the Minimum Angle of Resolution) is directly derived from MAR. logMAR 0.0 = 20/20 (MAR = 1 arcminute). LogMAR is the preferred clinical research notation because it is linear and statistically valid.",
+    "module": "Module 1: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "20/40 Snellen acuity converts to which logMAR value?",
+    "options": ["logMAR 0.1", "logMAR 0.2", "logMAR 0.3", "logMAR 0.4"],
+    "correct": 1,
+    "explanation": "logMAR = log10(MAR). For 20/40: MAR = 40/20 = 2 arcminutes; log10(2) = 0.301 ≈ 0.3. Therefore 20/40 = logMAR 0.3.",
+    "module": "Module 1: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which type of visual acuity measures the smallest spatial detail a patient can resolve — specifically the ability to distinguish two point targets as separate?",
+    "options": ["Minimum visible acuity", "Minimum resolvable (resolution) acuity", "Minimum recognizable (identification) acuity", "Hyperacuity (Vernier acuity)"],
+    "correct": 1,
+    "explanation": "Minimum resolvable (resolution) acuity measures the ability to discriminate two point stimuli as separate. The Snellen letter chart tests minimum recognizable (identification) acuity. Hyperacuity (Vernier) detects misalignment finer than a single receptor spacing.",
+    "module": "Module 1: Visual Acuity"
+  },
+  {
+    "type": "mcq",
+    "stem": "On slit lamp examination with the beam fully wide and diffuse illumination, you observe a white 'flare' in the anterior chamber. This finding indicates:",
+    "options": ["Corneal staining", "Aqueous flare from blood-aqueous barrier breakdown", "Vitreous hemorrhage", "Posterior synechiae"],
+    "correct": 1,
+    "explanation": "Aqueous flare (Tyndall effect) is protein-laden aqueous in the anterior chamber visible as a white beam scattering — indicating blood-aqueous barrier breakdown due to uveitis, trauma, or surgery.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "During slit lamp examination using specular reflection, the examiner can best evaluate:",
+    "options": ["Corneal stroma thickness", "Endothelial cell mosaic", "Tear film breakup time", "Anterior chamber angle"],
+    "correct": 1,
+    "explanation": "Specular reflection positions the angle of incidence equal to the angle of reflection at a smooth surface (e.g., corneal endothelium), revealing the endothelial cell mosaic. This allows assessment of cell density and morphology.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "The cobalt blue filter on the slit lamp is used in combination with which dye to evaluate corneal epithelial defects?",
+    "options": ["Lissamine green", "Rose Bengal", "Sodium fluorescein", "Trypan blue"],
+    "correct": 2,
+    "explanation": "Sodium fluorescein stains aqueous in corneal epithelial defects and is most visible under cobalt blue (465 nm) illumination, which excites fluorescein to emit a bright green fluorescence. Used for abrasion, ulcer, and RGP fit assessment.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "On slit lamp examination using sclerotic scatter illumination, which structure's pathology is highlighted most effectively?",
+    "options": ["Anterior chamber cells and flare", "Corneal opacities and edema", "Iris transillumination defects", "Vitreous opacities"],
+    "correct": 1,
+    "explanation": "Sclerotic scatter directs the beam at the limbus; total internal reflection conducts light through the cornea. Normal cornea appears dark; any opacity (edema, scar, infiltrate) scatters light and becomes visible as bright areas against a dark background.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Van Herick method, performed at the slit lamp, is used to estimate:",
+    "options": ["Central corneal thickness", "Anterior chamber depth (angle grade)", "Tear film breakup time", "Intraocular pressure"],
+    "correct": 1,
+    "explanation": "Van Herick technique: a narrow slit beam is placed at the temporal limbus at 60°. The ratio of the anterior chamber shadow to the corneal thickness estimates the peripheral chamber depth and predicts the angle grade. A ratio <1/4 suggests a narrow, potentially occludable angle.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Tear breakup time (TBUT) is measured by asking the patient to blink and then observing the tear film under cobalt blue light with fluorescein. A TBUT of less than how many seconds is considered abnormal?",
+    "options": ["5 seconds", "10 seconds", "15 seconds", "20 seconds"],
+    "correct": 1,
+    "explanation": "Normal TBUT is ≥10 seconds. TBUT <10 seconds suggests tear film instability consistent with dry eye disease (aqueous-deficient or evaporative). Values ≤5 seconds indicate significant instability.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient presents with an acute red eye, photophobia, and a ciliary flush. Slit lamp exam shows keratic precipitates (KPs) on the corneal endothelium and 2+ cells in the anterior chamber. The most likely diagnosis is:",
+    "options": ["Bacterial conjunctivitis", "Anterior uveitis (iritis)", "Episcleritis", "Acute angle-closure glaucoma"],
+    "correct": 1,
+    "explanation": "Anterior uveitis presents with ciliary flush (perilimbal injection), photophobia, AC cells and flare, and KPs (inflammatory cells deposited on the endothelium). Bacterial conjunctivitis lacks ciliary flush and KPs.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Mutton-fat keratic precipitates (large, greasy KPs) on the corneal endothelium are classically associated with:",
+    "options": ["Herpetic keratouveitis", "Granulomatous uveitis (e.g., sarcoidosis, TB)", "Bacterial endophthalmitis", "Fuchs heterochromic iridocyclitis"],
+    "correct": 1,
+    "explanation": "Large, greasy 'mutton-fat' KPs are characteristic of granulomatous uveitis, seen in sarcoidosis, tuberculosis, sympathetic ophthalmia, and VKH syndrome. Small, fine (stellate) KPs are associated with non-granulomatous uveitis.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a PRIMARY sign of open-angle glaucoma?",
+    "options": ["Sudden painful increase in IOP", "Optic disc cupping with visual field loss", "Corneal edema and halos", "Shallow anterior chamber"],
+    "correct": 1,
+    "explanation": "Primary open-angle glaucoma (POAG) is characterized by progressive optic disc cupping, loss of retinal nerve fiber layer, and corresponding visual field defects — typically asymptomatic until advanced. The angle remains open.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with hypertension and diabetes has 20/20 distance vision. Funduscopy shows bilateral dot and blot hemorrhages and microaneurysms in the posterior pole without macular edema or neovascularization. What stage of diabetic retinopathy is this?",
+    "options": ["Mild non-proliferative diabetic retinopathy", "Moderate non-proliferative diabetic retinopathy", "Severe non-proliferative diabetic retinopathy", "Proliferative diabetic retinopathy"],
+    "correct": 0,
+    "explanation": "Mild NPDR: characterized only by microaneurysms. Moderate NPDR adds dot-blot hemorrhages, hard exudates, and cotton-wool spots. The description (dot-blot hemorrhages + microaneurysms, no NV, no venous beading) fits mild-to-moderate NPDR. Mild = microaneurysms only; presence of hemorrhages elevates to moderate.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which visual field defect is characteristic of a chiasmal lesion (e.g., pituitary adenoma compressing the optic chiasm)?",
+    "options": ["Homonymous hemianopia", "Bitemporal hemianopia", "Binasal hemianopia", "Monocular central scotoma"],
+    "correct": 1,
+    "explanation": "A pituitary adenoma compresses the crossing nasal fibers at the chiasm, interrupting temporal visual field input from both eyes → bitemporal hemianopia. This is the classic chiasmal field defect.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient presents with a sudden shower of floaters and a curtain-like shadow in the peripheral vision. Which condition requires immediate referral?",
+    "options": ["Posterior vitreous detachment (PVD)", "Retinal detachment", "Vitreous syneresis", "Benign peripheral vitreous degeneration"],
+    "correct": 1,
+    "explanation": "A curtain or shadow in the visual field (scotoma) associated with floaters and photopsia (flashes) suggests a retinal detachment — a sight-threatening emergency requiring same-day ophthalmological evaluation.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient with no spectacle Rx presents with gradual progressive central vision loss, metamorphopsia (distorted straight lines), and a central scotoma. The macula shows drusen and geographic atrophy on fundus exam. What is the most likely diagnosis?",
+    "options": ["Diabetic macular edema", "Central serous chorioretinopathy", "Age-related macular degeneration (AMD)", "Macular hole"],
+    "correct": 2,
+    "explanation": "AMD presents with drusen, geographic atrophy, and CNV in older patients. Metamorphopsia (lines appear wavy) on Amsler grid and gradual central vision loss are hallmarks. It is the leading cause of vision loss in those over 50.",
+    "module": "Module 6: Ocular Disease"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which finding on the cover test indicates a manifest (constant) deviation rather than a latent (phoric) deviation?",
+    "options": ["Movement of the uncovered eye when the cover is placed over the other eye", "Movement of the covered eye when the cover is removed", "Refixation movement only during alternating cover test", "No movement of either eye during cover-uncover test"],
+    "correct": 0,
+    "explanation": "In the cover-uncover test, if the UNCOVERED eye moves to take up fixation when the cover is placed over the fellow eye, the uncovered eye was previously deviated — indicating a manifest tropia in that eye.",
+    "module": "Module 4: Binocular Vision & Strabismus"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient's case history reveals that they are a bookkeeper who performs 8 hours of near work daily and frequently travels long distances. What type of eyewear prescription is most appropriate for this patient's occupational needs?",
+    "options": ["Single vision distance lenses only", "Single vision reading lenses only", "Progressive addition lenses", "Occupational bifocal or trifocal lenses"],
+    "correct": 3,
+    "explanation": "An occupational bifocal or trifocal (e.g., flat-top with reading and intermediate segments) is most appropriate for a presbyopic patient who needs both distance (driving) and near (bookkeeping) correction with clear intermediate vision — progressive lenses are another excellent option but the occupational design is purpose-built for desk work.",
+    "module": "Module 2: Case History"
+  },
+  {
+    "type": "mcq",
+    "stem": "During case history, a patient mentions they are currently taking pilocarpine eye drops. This medication is used in the management of:",
+    "options": ["Dry eye disease", "Glaucoma (to increase aqueous outflow)", "Uveitis (to dilate the pupil)", "Allergic conjunctivitis"],
+    "correct": 1,
+    "explanation": "Pilocarpine is a cholinergic (muscarinic) agonist that constricts the pupil (miosis) and contracts the ciliary muscle, widening the trabecular meshwork and increasing aqueous outflow — used in glaucoma management. It is a miotic, not a mydriatic.",
+    "module": "Module 2: Case History"
+  },
+  {
+    "type": "mcq",
+    "stem": "In taking a case history, asking about a patient's occupation, hobbies, and visual demands is primarily important for:",
+    "options": ["Determining the refractive error type", "Establishing the working distance and prescription design needed", "Ruling out systemic disease", "Assessing the need for low vision rehabilitation"],
+    "correct": 1,
+    "explanation": "Occupational and lifestyle visual demands (working distance, near vs. distance tasks, outdoor exposure) directly determine the appropriate spectacle design, lens type, and add power. This guides the prescription to functional real-world needs.",
+    "module": "Module 2: Case History"
+  }
+]

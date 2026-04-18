@@ -33,6 +33,14 @@ export const SUBJECTS: Subject[] = [
     questionCount: 113,
     icon: '🕶️',
   },
+  {
+    slug: 'primary-eye-care',
+    name: 'Primary Eye Care',
+    description: 'Case history, refraction, binocular vision, ocular disease, examination techniques',
+    color: 'emerald',
+    questionCount: 151,
+    icon: '🩺',
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -79,5 +87,14 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-amber-400 to-orange-500',
     progressBar: 'bg-amber-500',
     ring: '#f59e0b',
+  },
+  emerald: {
+    bg: 'bg-emerald-50',
+    border: 'border-emerald-200',
+    badge: 'bg-emerald-100 text-emerald-800',
+    text: 'text-emerald-700',
+    gradient: 'from-emerald-500 to-teal-600',
+    progressBar: 'bg-emerald-500',
+    ring: '#10b981',
   },
 }
