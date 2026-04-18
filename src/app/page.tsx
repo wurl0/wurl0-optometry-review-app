@@ -2,17 +2,22 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
+import { xpLevel } from '@/lib/gamification'
 
 export default async function HomePage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const { data: attempts } = await supabase
-    .from('exam_attempts')
-    .select('subject, score, total, percentage, created_at')
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: false })
+  const [attemptsRes, statsRes, badgesRes] = await Promise.all([
+    supabase.from('exam_attempts').select('subject, score, total, percentage, created_at').eq('user_id', user.id).order('created_at', { ascending: false }),
+    supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
+    supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
+  ])
+
+  const attempts = attemptsRes.data
+  const userStats = statsRes.data
+  const badgeCount = badgesRes.data?.length ?? 0
 
   const statsBySubject: Record<string, { best: number; attempts: number }> = {}
   for (const a of attempts ?? []) {
@@ -22,6 +27,13 @@ export default async function HomePage() {
   }
 
   const name = user.user_metadata?.full_name?.split(' ')[0] ?? 'there'
+
+  const today = new Date().toISOString().split('T')[0]
+  const xp = userStats?.xp ?? 0
+  const streak = userStats?.streak ?? 0
+  const dailyGoal = userStats?.daily_goal ?? 10
+  const dailyDone = userStats?.daily_date === today ? (userStats?.daily_done ?? 0) : 0
+  const { level, progress } = xpLevel(xp)
 
   async function handleSignOut() {
     'use server'
@@ -51,10 +63,53 @@ export default async function HomePage() {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Greeting */}
-        <div className="mb-8">
+        <div className="mb-5">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
           <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
+
+        {/* Gamification stats bar */}
+        <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-6 grid grid-cols-3 gap-4">
+          {/* Streak */}
+          <div className="text-center">
+            <div className="text-2xl font-bold text-orange-500">{streak > 0 ? `🔥 ${streak}` : '—'}</div>
+            <div className="text-xs text-gray-500 mt-0.5">{streak > 0 ? `day${streak > 1 ? 's' : ''} streak` : 'No streak yet'}</div>
+          </div>
+
+          {/* XP / Level */}
+          <div className="text-center">
+            <div className="text-2xl font-bold text-teal-600">Lv {level}</div>
+            <div className="text-xs text-gray-500 mt-0.5">{xp} XP total</div>
+            <div className="mt-1.5 h-1 bg-gray-100 rounded-full overflow-hidden">
+              <div className="h-full bg-teal-500 rounded-full" style={{ width: `${progress}%` }} />
+            </div>
+          </div>
+
+          {/* Daily goal ring */}
+          <div className="flex flex-col items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" className="mb-1">
+              <circle cx="20" cy="20" r="16" fill="none" stroke="#e5e7eb" strokeWidth="4" />
+              <circle
+                cx="20" cy="20" r="16"
+                fill="none"
+                stroke={dailyDone >= dailyGoal ? '#22c55e' : '#14b8a6'}
+                strokeWidth="4"
+                strokeDasharray={`${2 * Math.PI * 16}`}
+                strokeDashoffset={`${2 * Math.PI * 16 * (1 - Math.min(1, dailyDone / dailyGoal))}`}
+                strokeLinecap="round"
+                transform="rotate(-90 20 20)"
+              />
+            </svg>
+            <div className="text-xs text-gray-500">{dailyDone}/{dailyGoal} today</div>
+          </div>
+        </div>
+
+        {/* Badge count */}
+        {badgeCount > 0 && (
+          <div className="mb-6 flex items-center gap-2">
+            <span className="text-xs text-gray-500">{badgeCount} badge{badgeCount > 1 ? 's' : ''} earned</span>
+          </div>
+        )}
 
         {/* Overall stats */}
         {(attempts?.length ?? 0) > 0 && (

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Question, Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
+import { createClient } from '@/lib/supabase-client'
+import { updateGamification, GamificationResult } from '@/lib/gamification'
 
 interface Props {
   subject: Subject
@@ -31,6 +33,8 @@ export default function PracticeClient({ subject, questions }: Props) {
   const [revealed, setRevealed] = useState(false)
   const [sessionAnswers, setSessionAnswers] = useState<SessionAnswer[]>([])
   const [done, setDone] = useState(false)
+  const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
+  const [gamLoading, setGamLoading] = useState(false)
 
   const q = shuffled[current]
   const isLast = current === shuffled.length - 1
@@ -42,12 +46,27 @@ export default function PracticeClient({ subject, questions }: Props) {
     setRevealed(true)
   }
 
-  function handleNext() {
+  async function handleNext() {
     const isCorrect = selected === q.correct
     const next = [...sessionAnswers, { isCorrect }]
     setSessionAnswers(next)
 
     if (isLast) {
+      setGamLoading(true)
+      const correct = next.filter(a => a.isCorrect).length
+      const total = next.length
+      const percentage = Math.round((correct / total) * 100 * 10) / 10
+      try {
+        const supabase = createClient()
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user) {
+          const result = await updateGamification(supabase, user.id, {
+            correct, total, isExam: false, percentage, subject: subject.slug,
+          })
+          setGamResult(result)
+        }
+      } catch {}
+      setGamLoading(false)
       setDone(true)
     } else {
       setCurrent(i => i + 1)
@@ -77,6 +96,17 @@ export default function PracticeClient({ subject, questions }: Props) {
   }
 
   // Summary screen
+  if (gamLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-4xl mb-3 animate-pulse">⚡</div>
+          <p className="text-gray-600 font-medium">Saving your progress…</p>
+        </div>
+      </div>
+    )
+  }
+
   if (done) {
     const score = sessionAnswers.filter(a => a.isCorrect).length
     const total = shuffled.length
@@ -84,43 +114,64 @@ export default function PracticeClient({ subject, questions }: Props) {
     const passed = pct >= 75
 
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-4">
-        <div className="w-full max-w-md">
-          <div className="bg-white rounded-2xl border border-gray-200 p-8 text-center mb-4">
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+        <div className="w-full max-w-md space-y-3">
+          {/* Score card */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-8 text-center">
             <div className="text-5xl mb-4">{passed ? '🎉' : '📚'}</div>
             <h2 className="text-xl font-bold text-gray-900 mb-1">Practice Complete</h2>
             <p className="text-sm text-gray-500 mb-6">{subject.name}</p>
-
-            <div className={`text-5xl font-bold mb-2 ${passed ? 'text-green-600' : 'text-orange-500'}`}>
-              {pct}%
+            <div className={`text-5xl font-bold mb-2 ${passed ? 'text-green-600' : 'text-orange-500'}`}>{pct}%</div>
+            <p className="text-sm text-gray-500 mb-4">{score} of {total} correct</p>
+            <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-4">
+              <div className={`h-full rounded-full ${passed ? 'bg-green-500' : 'bg-orange-400'}`} style={{ width: `${pct}%` }} />
             </div>
-            <p className="text-sm text-gray-500 mb-6">{score} of {total} correct</p>
-
-            <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-6">
-              <div
-                className={`h-full rounded-full ${passed ? 'bg-green-500' : 'bg-orange-400'}`}
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-
-            <div className={`inline-block text-xs font-semibold px-3 py-1.5 rounded-full mb-6 ${passed ? 'bg-green-100 text-green-700' : 'bg-orange-100 text-orange-700'}`}>
+            <div className={`inline-block text-xs font-semibold px-3 py-1.5 rounded-full ${passed ? 'bg-green-100 text-green-700' : 'bg-orange-100 text-orange-700'}`}>
               {passed ? 'Passing score ✓' : 'Below passing — keep going'}
             </div>
+          </div>
 
-            <div className="flex gap-3">
-              <button
-                onClick={handleRestart}
-                className={`flex-1 py-2.5 text-sm font-semibold rounded-xl border-2 ${c.border} ${c.text} hover:${c.bg} transition-colors`}
-              >
-                Practice again
-              </button>
-              <Link
-                href="/"
-                className="flex-1 py-2.5 text-sm font-semibold rounded-xl bg-gray-900 text-white text-center hover:bg-gray-800 transition-colors"
-              >
-                Home
-              </Link>
+          {/* XP earned */}
+          {gamResult && gamResult.xpEarned > 0 && (
+            <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 flex items-center justify-between">
+              <div>
+                <p className="text-sm font-bold text-amber-900">⚡ +{gamResult.xpEarned} XP earned</p>
+                <p className="text-xs text-amber-700 mt-0.5">{gamResult.totalXp} XP total · Level {Math.floor(gamResult.totalXp / 100) + 1}</p>
+              </div>
+              {gamResult.streak >= 2 && (
+                <div className="text-right">
+                  <p className="text-sm font-bold text-orange-600">🔥 {gamResult.streak}-day streak</p>
+                </div>
+              )}
             </div>
+          )}
+
+          {/* New badges */}
+          {gamResult && gamResult.newBadges.length > 0 && (
+            <div className="bg-white border border-gray-200 rounded-2xl px-5 py-4">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">New badges earned</p>
+              <div className="space-y-2">
+                {gamResult.newBadges.map(b => (
+                  <div key={b.id} className="flex items-center gap-3">
+                    <span className="text-2xl">{b.emoji}</span>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">{b.name}</p>
+                      <p className="text-xs text-gray-500">{b.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Actions */}
+          <div className="flex gap-3">
+            <button onClick={handleRestart} className={`flex-1 py-2.5 text-sm font-semibold rounded-xl border-2 ${c.border} ${c.text} transition-colors`}>
+              Practice again
+            </button>
+            <Link href="/" className="flex-1 py-2.5 text-sm font-semibold rounded-xl bg-gray-900 text-white text-center hover:bg-gray-800 transition-colors">
+              Home
+            </Link>
           </div>
         </div>
       </div>

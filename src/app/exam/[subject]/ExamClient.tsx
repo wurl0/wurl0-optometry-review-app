@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { Question, Subject, ExamResult } from '@/lib/types'
 import { createClient } from '@/lib/supabase-client'
 import { COLOR_MAP } from '@/lib/subjects'
+import { updateGamification, GamificationResult } from '@/lib/gamification'
 
 interface Props {
   subject: Subject
@@ -73,10 +74,8 @@ export default function ExamClient({ subject, questions }: Props) {
       completedAt: new Date().toISOString(),
     }
 
-    // Save to localStorage for results page
-    localStorage.setItem(`ole_result_${subject.slug}`, JSON.stringify({ ...result, questions: shuffled }))
+    let gamification: GamificationResult | undefined
 
-    // Save to Supabase
     try {
       const supabase = createClient()
       const { data: { user } } = await supabase.auth.getUser()
@@ -93,9 +92,17 @@ export default function ExamClient({ subject, questions }: Props) {
           percentage,
           wrong_questions: wrongQ,
         })
+        gamification = await updateGamification(supabase, user.id, {
+          correct: score,
+          total: shuffled.length,
+          isExam: true,
+          percentage,
+          subject: subject.slug,
+        })
       }
     } catch {}
 
+    localStorage.setItem(`ole_result_${subject.slug}`, JSON.stringify({ ...result, questions: shuffled, gamification }))
     router.push(`/results/${subject.slug}`)
   }, [answers, shuffled, subject, router])
 

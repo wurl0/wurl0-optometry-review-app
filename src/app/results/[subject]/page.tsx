@@ -4,9 +4,12 @@ import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Question, ExamResult } from '@/lib/types'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
+import { Badge } from '@/lib/badges'
+import { GamificationResult } from '@/lib/gamification'
 
 interface StoredResult extends ExamResult {
   questions: Question[]
+  gamification?: GamificationResult
 }
 
 export default function ResultsPage() {
@@ -29,7 +32,7 @@ export default function ResultsPage() {
 
   if (!result || !subject) return null
 
-  const { score, total, percentage, answers, questions } = result
+  const { score, total, percentage, answers, questions, gamification } = result
   const passing = percentage >= 75
 
   const wrongIndices = questions.reduce<number[]>((acc, q, i) => {
@@ -96,6 +99,35 @@ export default function ResultsPage() {
             </div>
           </div>
         </div>
+
+        {/* XP + badges */}
+        {gamification && gamification.xpEarned > 0 && (
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 mb-3 flex items-center justify-between">
+            <div>
+              <p className="text-sm font-bold text-amber-900">⚡ +{gamification.xpEarned} XP earned</p>
+              <p className="text-xs text-amber-700 mt-0.5">{gamification.totalXp} XP total · Level {Math.floor(gamification.totalXp / 100) + 1}</p>
+            </div>
+            {gamification.streak >= 2 && (
+              <p className="text-sm font-bold text-orange-600">🔥 {gamification.streak} days</p>
+            )}
+          </div>
+        )}
+        {gamification && gamification.newBadges.length > 0 && (
+          <div className="bg-white border border-gray-200 rounded-2xl px-5 py-4 mb-3">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">New badges earned</p>
+            <div className="space-y-2">
+              {(gamification.newBadges as Badge[]).map(b => (
+                <div key={b.id} className="flex items-center gap-3">
+                  <span className="text-2xl">{b.emoji}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">{b.name}</p>
+                    <p className="text-xs text-gray-500">{b.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Actions */}
         <div className="flex gap-3 mb-6">
