@@ -123,9 +123,10 @@ export default function ExamClient({ subject, questions }: Props) {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between mb-2">
-            <div>
+            <div className="flex items-center gap-2">
+              <span className="text-lg leading-none">{subject.icon}</span>
               <span className={`text-xs font-semibold ${c.text}`}>{subject.name}</span>
-              <span className="text-xs text-gray-400 ml-2">Q{current + 1} of {shuffled.length}</span>
+              <span className="text-xs text-gray-400">· Q{current + 1}/{shuffled.length}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-sm font-mono text-gray-500">{fmt(elapsed)}</span>
@@ -135,7 +136,7 @@ export default function ExamClient({ subject, questions }: Props) {
             </div>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div className={`h-full rounded-full bg-teal-500 transition-all`} style={{ width: `${progress}%` }} />
+            <div className={`h-full rounded-full ${c.progressBar} transition-all`} style={{ width: `${progress}%` }} />
           </div>
         </div>
       </header>
@@ -150,9 +151,9 @@ export default function ExamClient({ subject, questions }: Props) {
                   key={i}
                   onClick={() => { setCurrent(i); setShowNav(false) }}
                   className={`w-8 h-8 text-xs rounded-lg font-medium transition-colors
-                    ${i === current ? 'bg-teal-600 text-white' :
+                    ${i === current ? `${c.progressBar} text-white` :
                       flagged.has(i) ? 'bg-yellow-100 text-yellow-800 border border-yellow-300' :
-                      answers[i] !== null ? 'bg-teal-100 text-teal-800' :
+                      answers[i] !== null ? `${c.bg} ${c.text}` :
                       'bg-gray-100 text-gray-500'}`}
                 >
                   {i + 1}
@@ -243,7 +244,7 @@ export default function ExamClient({ subject, questions }: Props) {
           {current < shuffled.length - 1 ? (
             <button
               onClick={() => setCurrent(c => Math.min(shuffled.length - 1, c + 1))}
-              className="px-4 py-2 text-sm bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition-colors font-medium"
+              className={`px-4 py-2 text-sm ${c.progressBar} text-white rounded-xl transition-colors font-medium`}
             >
               Next →
             </button>

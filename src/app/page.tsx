@@ -141,54 +141,54 @@ export default async function HomePage() {
             return (
               <div
                 key={subject.slug}
-                className={`bg-white rounded-2xl border-2 ${c.border} p-5`}
+                className="bg-white rounded-2xl overflow-hidden border border-gray-200"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${c.badge}`}>
-                    {subject.questionCount} questions
-                  </span>
-                  {stats && (
-                    <span className={`text-xs font-bold ${stats.best >= 75 ? 'text-green-600' : 'text-orange-500'}`}>
-                      Best: {Math.round(stats.best)}%
+                {/* Gradient header */}
+                <div className={`bg-gradient-to-br ${c.gradient} px-5 pt-5 pb-4`}>
+                  <div className="flex items-start justify-between">
+                    <span className="text-4xl">{subject.icon}</span>
+                    <span className="text-xs font-semibold bg-white/25 text-white px-2.5 py-1 rounded-full">
+                      {subject.questionCount} questions
                     </span>
+                  </div>
+                  <h2 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h2>
+                  {stats && (
+                    <div className="mt-2">
+                      <div className="flex justify-between text-xs text-white/70 mb-1">
+                        <span>Best score</span>
+                        <span className="font-semibold text-white">{Math.round(stats.best)}%</span>
+                      </div>
+                      <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
+                        <div className="h-full bg-white/80 rounded-full" style={{ width: `${stats.best}%` }} />
+                      </div>
+                    </div>
                   )}
                 </div>
-                <h2 className={`text-lg font-bold ${c.text} mb-1`}>{subject.name}</h2>
-                <p className="text-sm text-gray-500 leading-relaxed">{subject.description}</p>
-                {stats && (
-                  <div className="mt-3">
-                    <div className="flex justify-between text-xs text-gray-400 mb-1">
-                      <span>Best score</span>
-                      <span>{Math.round(stats.best)}%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full ${stats.best >= 75 ? 'bg-green-500' : 'bg-orange-400'}`}
-                        style={{ width: `${stats.best}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-                <div className="mt-4 space-y-2">
-                  <Link
-                    href={`/notes/${subject.slug}`}
-                    className={`block w-full text-center text-xs font-semibold py-2 rounded-lg border ${c.border} ${c.text} hover:${c.bg} transition-colors`}
-                  >
-                    📖 Notes & Reviewer
-                  </Link>
-                  <div className="flex gap-2">
+
+                {/* Card body */}
+                <div className="px-5 py-4">
+                  <p className="text-xs text-gray-500 leading-relaxed mb-4">{subject.description}</p>
+                  <div className="space-y-2">
                     <Link
-                      href={`/practice/${subject.slug}`}
-                      className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+                      href={`/notes/${subject.slug}`}
+                      className={`block w-full text-center text-xs font-semibold py-2 rounded-lg border ${c.border} ${c.text} hover:${c.bg} transition-colors`}
                     >
-                      Guided Practice
+                      📖 Notes & Reviewer
                     </Link>
-                    <Link
-                      href={`/exam/${subject.slug}`}
-                      className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
-                    >
-                      Full Exam
-                    </Link>
+                    <div className="flex gap-2">
+                      <Link
+                        href={`/practice/${subject.slug}`}
+                        className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+                      >
+                        Guided Practice
+                      </Link>
+                      <Link
+                        href={`/exam/${subject.slug}`}
+                        className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                      >
+                        Full Exam
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

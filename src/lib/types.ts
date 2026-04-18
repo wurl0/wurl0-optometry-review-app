@@ -15,6 +15,7 @@ export interface Subject {
   description: string
   color: string
   questionCount: number
+  icon: string
 }
 
 export interface ExamResult {

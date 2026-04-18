@@ -107,6 +107,7 @@ export default function NotesClient({ subject, notes }: Props) {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
+              <span className="text-base leading-none">{subject.icon}</span>
               <span className={`text-xs font-semibold ${c.text}`}>{subject.name}</span>
               <span className="text-xs text-gray-400">· Notes</span>
             </div>

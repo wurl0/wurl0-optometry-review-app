@@ -7,6 +7,7 @@ export const SUBJECTS: Subject[] = [
     description: 'Accommodation, refractive errors, schematic eye, visual physiology',
     color: 'teal',
     questionCount: 80,
+    icon: '👁️',
   },
   {
     slug: 'binocular-vision',
@@ -14,6 +15,7 @@ export const SUBJECTS: Subject[] = [
     description: 'Vergence, eye movements, stereopsis, binocular disorders',
     color: 'blue',
     questionCount: 105,
+    icon: '🎯',
   },
   {
     slug: 'theoretical-optics',
@@ -21,6 +23,7 @@ export const SUBJECTS: Subject[] = [
     description: 'Geometric optics, lenses, prisms, optical principles',
     color: 'violet',
     questionCount: 71,
+    icon: '🌈',
   },
   {
     slug: 'phorometry',
@@ -28,12 +31,53 @@ export const SUBJECTS: Subject[] = [
     description: 'OEP 21-step sequence, probe bodies, phoria measurements',
     color: 'amber',
     questionCount: 113,
+    icon: '🕶️',
   },
 ]
 
-export const COLOR_MAP: Record<string, { bg: string; border: string; badge: string; text: string }> = {
-  teal:   { bg: 'bg-teal-50',   border: 'border-teal-200',   badge: 'bg-teal-100 text-teal-800',   text: 'text-teal-700' },
-  blue:   { bg: 'bg-blue-50',   border: 'border-blue-200',   badge: 'bg-blue-100 text-blue-800',   text: 'text-blue-700' },
-  violet: { bg: 'bg-violet-50', border: 'border-violet-200', badge: 'bg-violet-100 text-violet-800', text: 'text-violet-700' },
-  amber:  { bg: 'bg-amber-50',  border: 'border-amber-200',  badge: 'bg-amber-100 text-amber-800',  text: 'text-amber-700' },
+export const COLOR_MAP: Record<string, {
+  bg: string
+  border: string
+  badge: string
+  text: string
+  gradient: string
+  progressBar: string
+  ring: string
+}> = {
+  teal: {
+    bg: 'bg-teal-50',
+    border: 'border-teal-200',
+    badge: 'bg-teal-100 text-teal-800',
+    text: 'text-teal-700',
+    gradient: 'from-teal-500 to-emerald-600',
+    progressBar: 'bg-teal-500',
+    ring: '#14b8a6',
+  },
+  blue: {
+    bg: 'bg-blue-50',
+    border: 'border-blue-200',
+    badge: 'bg-blue-100 text-blue-800',
+    text: 'text-blue-700',
+    gradient: 'from-blue-500 to-indigo-600',
+    progressBar: 'bg-blue-500',
+    ring: '#3b82f6',
+  },
+  violet: {
+    bg: 'bg-violet-50',
+    border: 'border-violet-200',
+    badge: 'bg-violet-100 text-violet-800',
+    text: 'text-violet-700',
+    gradient: 'from-violet-500 to-purple-600',
+    progressBar: 'bg-violet-500',
+    ring: '#8b5cf6',
+  },
+  amber: {
+    bg: 'bg-amber-50',
+    border: 'border-amber-200',
+    badge: 'bg-amber-100 text-amber-800',
+    text: 'text-amber-700',
+    gradient: 'from-amber-400 to-orange-500',
+    progressBar: 'bg-amber-500',
+    ring: '#f59e0b',
+  },
 }

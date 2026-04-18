@@ -186,6 +186,7 @@ export default function PracticeClient({ subject, questions }: Props) {
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-2">
               <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
+              <span className="text-base leading-none">{subject.icon}</span>
               <span className={`text-xs font-semibold ${c.text}`}>{subject.name}</span>
               <span className="text-xs text-gray-400">· Guided Practice</span>
             </div>
@@ -194,15 +195,7 @@ export default function PracticeClient({ subject, questions }: Props) {
             </span>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div
-              className={`h-full rounded-full transition-all`}
-              style={{
-                width: `${progress}%`,
-                backgroundColor: subject.color === 'teal' ? '#14b8a6' :
-                  subject.color === 'blue' ? '#3b82f6' :
-                  subject.color === 'violet' ? '#8b5cf6' : '#f59e0b'
-              }}
-            />
+            <div className={`h-full rounded-full transition-all ${c.progressBar}`} style={{ width: `${progress}%` }} />
           </div>
         </div>
       </header>
