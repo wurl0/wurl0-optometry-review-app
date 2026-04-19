@@ -21,9 +21,11 @@ export const ocularDiseaseNotes: NotesData = {
               headers: ['Term', 'Definition', 'Key Association'],
               rows: [
                 ['Anophthalmos', 'Complete absence of the eyeball', 'Congenital'],
-                ['Microphthalmos', 'Diminished size and diameter of the eyeball', 'Congenital'],
+                ['Microphthalmos', 'Small malformed eye; associated with colobomas and cyst', 'Congenital'],
+                ['Nanophthalmos', 'Small eye with NORMAL internal structures; thickened sclera and choroid; high hyperopia; normal lens volume', 'Congenital — distinct from microphthalmos'],
+                ['Macrophthalmia', 'Enlargement of the globe in all directions', 'Congenital'],
                 ['Phthisis bulbi', 'Degenerative shrinkage/disorganization of the eyeball', 'Injury or trauma'],
-                ['Buphthalmos', 'Enlargement of the eyeball (bull eye)', 'Congenital glaucoma'],
+                ['Buphthalmos', 'Increase in size of anterior and posterior parts of globe (bull eye)', 'Congenital glaucoma'],
                 ['Exophthalmos', 'Abnormal BILATERAL protrusion of eyeball', "Grave's disease (endocrine)"],
                 ['Proptosis', 'Passive or mechanical protrusion (can be unilateral)', 'Orbital pathology'],
                 ['Enophthalmos', 'Recession of eyeball within the orbit', 'Floor fracture, atrophy, surgical decompression'],
@@ -31,7 +33,7 @@ export const ocularDiseaseNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: "Buphthalmos = the eyeball itself is physically enlarged. Exophthalmos = the eyeball is pushed forward. Buphthalmos is always bilateral; exophthalmos is associated with Grave's disease.",
+              content: "Buphthalmos = the eyeball itself is physically enlarged. Exophthalmos = the eyeball is pushed forward. Buphthalmos is always bilateral; exophthalmos is associated with Grave's disease. Nanophthalmos vs Microphthalmos: both are small eyes, but Nanophthalmos has NORMAL internal structures with thickened sclera and high hyperopia. Microphthalmos is a malformed eye with colobomas.",
             },
           ],
         },
@@ -106,7 +108,8 @@ export const ocularDiseaseNotes: NotesData = {
                 'Coloboma — triangular notching at junction of inner & middle third of upper lid margins; absence of eyelashes and glands; due to absence of ocular tissue',
                 'Epicanthus — most common; bilateral crescentic vertical fold of skin at inner canthus; simulates convergent strabismus (pseudostrabismus or esotropia)',
                 'Blepharoptosis — drooping of eyelid with narrowing of palpebral fissure; Types: Congenital (bilateral, CN#3 interference) or Acquired (unilateral)',
-                'Distichiasis — supernumerary row of eyelashes; Meibomian glands replaced by 2nd row misdirected toward cornea (trichiasis)',
+                'Distichiasis — supernumerary row of eyelashes stemming from the Meibomian gland orifices; results in two rows of eyelashes, the second row directed toward the cornea causing trichiasis',
+                'Trichiasis — eyelashes grow inward toward the eye, rubbing against the cornea and conjunctiva; causes irritation and corneal damage from repeated contact; may result from entropion, trachoma, scarring, or blepharitis',
                 'Ankyloblepharon — partial or complete adhesion of upper and lower lid margins; often associated with symblepharon',
                 'Symblepharon — adhesion between inner surface of eyelids and eyeball (palpebral and bulbar conjunctiva)',
                 'Blepharophimosis / Blepharostenosis — decrease in size of palpebral fissure; usually associated with epicanthus and ptosis',
@@ -148,6 +151,38 @@ export const ocularDiseaseNotes: NotesData = {
             {
               kind: 'pearl',
               content: 'Hordeolum vs Chalazion: Hordeolum is ACUTE, PAINFUL, MOVABLE (Zeis/Moll, Staph). Chalazion is CHRONIC, PAINLESS, FIXED TO TARSUS (Meibomian, duct blockage). Chalazion causes astigmatism by pressing on the cornea.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Blepharitis: Anterior vs Posterior',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Type', 'Location', 'Key Signs', 'Cause'],
+              rows: [
+                ['Anterior Blepharitis', 'Lash follicles at anterior lid margin', 'Crusting, collarettes, lid debris; red thickened margins; flaky debris in lashes', 'Staphylococcus aureus (most common); seborrheic'],
+                ['Posterior Blepharitis (Meibomitis)', 'Meibomian gland orifices at posterior lid margin', 'Sebum-like secretion from Meibomian orifices; erythematous lid margins; no eye redness', 'Meibomian gland dysfunction; chronic'],
+              ],
+            },
+            {
+              kind: 'pearl',
+              content: 'Anterior blepharitis = crusting and debris at the lash line. Posterior blepharitis = sebaceous secretion from Meibomian glands without redness. Both may coexist. Chronic blepharitis is associated with Staph and is the most common source of chronic bacterial conjunctivitis.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Hordeolum Subtypes',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Subtype', 'Location', 'Gland', 'Notes'],
+              rows: [
+                ['External Hordeolum (Stye)', 'Outer part of upper or lower eyelid', 'Gland of Zeis', 'MOST COMMON type; forms at outer lid surface'],
+                ['Internal Hordeolum', 'Inner surface of eyelid', 'Meibomian gland', 'Less common; infection of Meibomian gland; may look like chalazion but is acute and tender'],
+              ],
             },
           ],
         },
@@ -286,8 +321,9 @@ export const ocularDiseaseNotes: NotesData = {
               kind: 'table',
               headers: ['Lesion', 'Description', 'Key Distinction'],
               rows: [
-                ['Pinguecula', 'Small yellowish raised spot at bulbar conjunctiva nasal or temporal to cornea; benign; from elastic tissue and hyaline tissue', 'STOPS at limbus; does NOT extend onto cornea'],
-                ['Pterygium', 'Triangular vascular connective tissue growth from bulbar conjunctiva extending onto corneal epithelium; destroys Bowman\'s membrane', 'INVADES cornea; destroys Bowman\'s membrane'],
+                ['Pinguecula', 'Small yellowish raised spot at bulbar conjunctiva, most commonly on nasal side; benign; from elastic tissue and hyaline tissue; usually resolves with artificial tears or topical vasoconstrictors', 'STOPS at limbus; does NOT extend onto cornea'],
+                ['Pingueculitis', 'Inflammation of pinguecula; focal engorgement of conjunctival vessels and thickening of conjunctiva overlying the pinguecula', 'Distinguish from pterygium by lack of corneal invasion'],
+                ['Pterygium', 'Fibrovascular growth extending from bulbar conjunctiva onto corneal surface; caused by heavy exposure to sunlight and UV; destroys Bowman\'s membrane', 'INVADES cornea; destroys Bowman\'s membrane; no visual symptoms unless growth reaches visual axis'],
                 ['Symblepharon', 'Cicatricial adhesion between conjunctiva and eyeball; lower eyelid usually affected', 'Caused by chemical burns (acid or lime/alkali), molten metal, surgery, trachoma'],
                 ['Subconjunctival hemorrhage', 'Blood beneath bulbar conjunctiva from brittle blood vessels; NOT accompanied by inflammation', 'Causes: injury, blood dyscrasia, post-op, conjunctivitis, hypertension'],
               ],
@@ -326,6 +362,72 @@ export const ocularDiseaseNotes: NotesData = {
                 'Trachoma stages: I (Insidious — minute follicles at upper tarsal conjunctiva), II (Acute — intense inflammation, purulent discharge, ptosis), III (Cicatricial — scar tissue, follicles disappear), IV (Healed — scars remain)',
                 'Trachoma treatment: Tetracycline (topical, drug of choice), Sulfonamide (oral), Cycloplegic (for photophobia)',
                 'Trachoma sequelae: trichiasis, entropion, symblepharon, ectropion, corneal opacity (from pannus and ulcers), xerosis',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Bacterial Conjunctivitis Subtypes',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Subtype', 'Duration', 'Most Common Organism', 'Key Feature'],
+              rows: [
+                ['Hyperacute (Purulent)', 'Rapid onset', 'Neisseria gonorrhoeae (most common); also N. meningitidis, Staph aureus, Strep', 'Profuse purulent discharge; can penetrate intact corneal epithelium; acquired by autoinoculation from infected genitalia'],
+                ['Acute (Mucopurulent)', '<3 weeks', 'Staphylococcus aureus (most common); Streptococcus pneumoniae; Haemophilus', 'Common across all ages and races; self-limiting'],
+                ['Chronic', '>4 weeks', 'Staphylococcus aureus', 'Associated with continuous bacterial inoculation from blepharitis; different etiology than acute'],
+                ['Chlamydial', 'Chronic', 'Chlamydia trachomatis', 'Causes adult inclusion conjunctivitis, ophthalmia neonatorum, and trachoma; follicles at INFERIOR bulbar and palpebral conjunctiva (vs trachoma = upper tarsal)'],
+              ],
+            },
+            {
+              kind: 'pearl',
+              content: 'Chlamydial inclusion conjunctivitis vs Trachoma: Both caused by Chlamydia trachomatis, but the follicle location differs. Chlamydial inclusion conjunctivitis = follicles at INFERIOR palpebral conjunctiva. Trachoma = follicles at UPPER tarsal conjunctiva. This anatomical distinction is a classic board trap.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Viral Conjunctivitis Subtypes',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                'Adenoviral conjunctivitis — caused by adenovirus; MOST COMMON cause for acute unilateral pink eye; symptoms: photophobia, watery-mucoid discharge, diffuse engorgement of conjunctival vessels',
+                'Herpetic conjunctivitis — caused by Herpes simplex virus (HSV), varicella-zoster (VZV), or Epstein-Barr virus; 50% of patients with herpes zoster ophthalmicus manifest conjunctivitis',
+                'Herpes zoster ophthalmicus (HZO) — herpes zoster virus involving the ophthalmic division of the trigeminal nerve (CN V1); leading cause of blindness from corneal disease in the US; presents with dermatomal rash on forehead/eyelid + conjunctivitis; Hutchinson\'s sign (rash on tip of nose) predicts ocular involvement',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Allergic Conjunctivitis Subtypes',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Subtype', 'Allergen', 'Duration', 'Key Feature'],
+              rows: [
+                ['Seasonal Allergic Conjunctivitis (SAC)', 'Ragweed, pollens, dander, dust, mold spores', 'Seasonal; recurrent, transient, self-limiting', 'Most common allergic conjunctivitis type; IgE-mediated'],
+                ['Perennial Allergic Conjunctivitis (PAC)', 'House dust mite; year-round allergens', 'Year-round; rarer than SAC', 'Similar symptoms to SAC but persistent'],
+                ['Atopic Keratoconjunctivitis (AKC)', 'Chronic external ocular inflammation', 'Severe; chronic', '95% associated with atopic dermatitis (eczema); corneal involvement common — punctate erosions to epithelial filaments and defects'],
+                ['Vernal Keratoconjunctivitis (VKC)', 'Airborne allergens; IgE-mediated', 'Lasts average 4 years; warm dry climates', 'Males under 20; cobblestone papillae; shield corneal ulcers'],
+                ['Giant Papillary Conjunctivitis (GPC)', 'Contact lenses, ocular prosthesis, exposed sutures', 'Year-round', 'Papillae on upper tarsal conjunctiva; CL intolerance'],
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Other Conjunctivitis Forms',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                'Parinaud Oculoglandular Syndrome — unilateral granulomatous conjunctivitis + ipsilateral preauricular lymphadenopathy; caused by cat-scratch disease (Bartonella henselae), tularemia, sporotrichosis, or tuberculosis; also called "cat-scratch fever conjunctivitis"',
+                'Phlyctenular conjunctivitis — hypersensitivity reaction to bacterial antigens (TB, Staph); small elevated nodule (phlycten) at limbus; associated with photophobia and lacrimation; nodule may migrate onto cornea',
+                'Neonatal conjunctivitis (Ophthalmia neonatorum) — conjunctivitis in newborn; causes vary by onset timing: chemical (silver nitrate) at day 1; Neisseria gonorrhoeae at days 2-4; Chlamydia at days 5-14',
+                'Contact Lens-Related conjunctivitis — includes GPC and mechanical/toxic forms from lens deposit or solution reactions',
               ],
             },
           ],
