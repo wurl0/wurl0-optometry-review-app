@@ -9,6 +9,8 @@ import primaryEyeCareNotes from '@/data/notes/primary-eye-care'
 import { ocularAnatomyNotes } from '@/data/notes/ocular-anatomy'
 import { generalAnatomyNotes } from '@/data/notes/general-anatomy'
 import { ocularDiseaseNotes } from '@/data/notes/ocular-disease'
+import { generalPharmacologyNotes } from '@/data/notes/general-pharmacology'
+import { ocularPharmacologyNotes } from '@/data/notes/ocular-pharmacology'
 import physioQuiz from '@/data/notes-quiz/physiologic-optics'
 import bvQuiz from '@/data/notes-quiz/binocular-vision'
 import theoreticalOpticsQuiz from '@/data/notes-quiz/theoretical-optics'
@@ -17,6 +19,8 @@ import primaryEyeCareQuiz from '@/data/notes-quiz/primary-eye-care'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
 import { ocularDiseaseQuiz } from '@/data/notes-quiz/ocular-disease'
+import { generalPharmacologyQuiz } from '@/data/notes-quiz/general-pharmacology'
+import { ocularPharmacologyQuiz } from '@/data/notes-quiz/ocular-pharmacology'
 import { NotesData } from '@/lib/notes-types'
 import { NotesQuizData } from '@/lib/notes-quiz-types'
 
@@ -29,6 +33,8 @@ const NOTES_MAP: Record<string, NotesData> = {
   'ocular-anatomy': ocularAnatomyNotes,
   'general-anatomy': generalAnatomyNotes,
   'ocular-disease': ocularDiseaseNotes,
+  'general-pharmacology': generalPharmacologyNotes,
+  'ocular-pharmacology': ocularPharmacologyNotes,
 }
 
 const QUIZ_MAP: Record<string, NotesQuizData> = {
@@ -40,6 +46,8 @@ const QUIZ_MAP: Record<string, NotesQuizData> = {
   'ocular-anatomy': ocularAnatomyQuiz,
   'general-anatomy': generalAnatomyQuiz,
   'ocular-disease': ocularDiseaseQuiz,
+  'general-pharmacology': generalPharmacologyQuiz,
+  'ocular-pharmacology': ocularPharmacologyQuiz,
 }
 
 export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {

@@ -73,6 +73,24 @@ export const SUBJECTS: Subject[] = [
     icon: '🔴',
     olePrep: true,
   },
+  {
+    slug: 'general-pharmacology',
+    name: 'General Pharmacology',
+    description: 'Pharmacokinetics, pharmacodynamics, ANS drugs, anti-infectives, CNS agents, and drug interactions.',
+    color: 'indigo',
+    questionCount: 120,
+    icon: '💊',
+    olePrep: true,
+  },
+  {
+    slug: 'ocular-pharmacology',
+    name: 'Ocular Pharmacology',
+    description: 'Diagnostic agents, anti-glaucoma drugs, anti-infectives, steroids, and autonomic agents in eye care.',
+    color: 'cyan',
+    questionCount: 150,
+    icon: '👁️‍🗨️',
+    olePrep: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -146,5 +164,23 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-red-500 to-rose-600',
     progressBar: 'bg-red-500',
     ring: '#ef4444',
+  },
+  indigo: {
+    bg: 'bg-indigo-50',
+    border: 'border-indigo-200',
+    badge: 'bg-indigo-100 text-indigo-800',
+    text: 'text-indigo-700',
+    gradient: 'from-indigo-500 to-indigo-700',
+    progressBar: 'bg-indigo-500',
+    ring: '#6366f1',
+  },
+  cyan: {
+    bg: 'bg-cyan-50',
+    border: 'border-cyan-200',
+    badge: 'bg-cyan-100 text-cyan-800',
+    text: 'text-cyan-700',
+    gradient: 'from-cyan-500 to-cyan-700',
+    progressBar: 'bg-cyan-500',
+    ring: '#06b6d4',
   },
 }
