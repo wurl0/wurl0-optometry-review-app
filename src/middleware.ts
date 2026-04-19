@@ -24,7 +24,7 @@ export async function middleware(request: NextRequest) {
   const { data: { user } } = await supabase.auth.getUser()
   const { pathname } = request.nextUrl
 
-  const publicPaths = ['/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password']
+  const publicPaths = ['/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password', '/pending', '/api/approve']
   const isPublic = publicPaths.some(p => pathname.startsWith(p))
 
   if (!user && !isPublic) {
@@ -33,6 +33,19 @@ export async function middleware(request: NextRequest) {
 
   if (user && (pathname === '/login' || pathname === '/signup')) {
     return NextResponse.redirect(new URL('/', request.url))
+  }
+
+  // Check approval status for authenticated users accessing protected routes
+  if (user && !isPublic && pathname !== '/pending') {
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('approved')
+      .eq('user_id', user.id)
+      .single()
+
+    if (profile && !profile.approved) {
+      return NextResponse.redirect(new URL('/pending', request.url))
+    }
   }
 
   return supabaseResponse

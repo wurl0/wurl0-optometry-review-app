@@ -16,11 +16,18 @@ export default function SignupPage() {
     setLoading(true)
     setError('')
     const supabase = createClient()
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email, password,
       options: { data: { full_name: name } },
     })
     if (error) { setError(error.message); setLoading(false); return }
+    if (data.user) {
+      await fetch('/api/signup-notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: data.user.id }),
+      })
+    }
     setDone(true)
   }
 
@@ -28,9 +35,9 @@ export default function SignupPage() {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="w-full max-w-sm text-center">
-          <div className="text-4xl mb-4">✅</div>
-          <h2 className="text-xl font-bold text-gray-900 mb-2">Check your email</h2>
-          <p className="text-gray-500 text-sm">We sent a confirmation link to <strong>{email}</strong>. Click it to activate your account.</p>
+          <div className="text-4xl mb-4">⏳</div>
+          <h2 className="text-xl font-bold text-gray-900 mb-2">Account pending approval</h2>
+          <p className="text-gray-500 text-sm">Your account has been created. You&apos;ll receive an email at <strong>{email}</strong> once you&apos;ve been approved.</p>
           <Link href="/login" className="block mt-6 text-teal-600 text-sm font-medium hover:underline">Back to login</Link>
         </div>
       </div>
