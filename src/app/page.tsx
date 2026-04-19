@@ -64,6 +64,9 @@ export default async function HomePage() {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 hidden sm:block">{user.email}</span>
+            {user.id === process.env.ADMIN_USER_ID && (
+              <Link href="/admin" className="text-xs font-medium text-teal-600 hover:underline">Admin</Link>
+            )}
             <form action={handleSignOut}>
               <button className="text-sm text-gray-500 hover:text-gray-800 transition-colors">Sign out</button>
             </form>

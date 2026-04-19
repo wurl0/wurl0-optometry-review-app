@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase-client'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 type Profile = {
   id: string
@@ -64,7 +65,10 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-900 mb-1">Admin Panel</h1>
+        <div className="flex items-center justify-between mb-1">
+          <h1 className="text-2xl font-bold text-gray-900">Admin Panel</h1>
+          <Link href="/" className="text-sm text-teal-600 hover:underline font-medium">← Home</Link>
+        </div>
         <p className="text-gray-500 text-sm mb-8">Manage OptoPrep sign-up approvals</p>
 
         {error && (
