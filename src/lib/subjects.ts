@@ -46,6 +46,15 @@ export const SUBJECTS: Subject[] = [
     icon: '🩺',
     olePrep: true,
   },
+  {
+    slug: 'ocular-anatomy',
+    name: 'Ocular Anatomy',
+    description: 'Orbit, eyelids, cornea, uvea, retina, visual pathways, cranial nerves, extraocular muscles',
+    color: 'rose',
+    questionCount: 120,
+    icon: '🔬',
+    olePrep: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -101,5 +110,14 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-emerald-500 to-teal-600',
     progressBar: 'bg-emerald-500',
     ring: '#10b981',
+  },
+  rose: {
+    bg: 'bg-rose-50',
+    border: 'border-rose-200',
+    badge: 'bg-rose-100 text-rose-800',
+    text: 'text-rose-700',
+    gradient: 'from-rose-500 to-pink-600',
+    progressBar: 'bg-rose-500',
+    ring: '#f43f5e',
   },
 }
