@@ -96,7 +96,7 @@ export function PrismDiagram() {
     <DiagramShell caption="Light bends toward BASE | Image displaces toward APEX | Prentice's Rule: Δ = F × d(cm) | Prism diopter: 1Δ = 1cm displacement at 1m">
       <svg viewBox="0 0 440 260" className="w-full">
         <rect width="440" height="260" fill="#f9fafb" />
-        <text x="220" y="18" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#111827">Prism — Light Deviation & Prentice's Rule</text>
+        <text x="220" y="18" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#111827">Prism — Light Deviation &amp; Prentice&apos;s Rule</text>
 
         {/* ── Prism shape (left side) ── */}
         {/* Triangle: apex top, base bottom */}
@@ -132,7 +132,7 @@ export function PrismDiagram() {
 
         {/* ── Prentice's Rule (right side) ── */}
         <rect x="278" y="38" width="148" height="175" rx="8" fill="white" stroke="#e5e7eb" strokeWidth="1" />
-        <text x="352" y="56" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#111827">Prentice's Rule</text>
+        <text x="352" y="56" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#111827">Prentice&apos;s Rule</text>
 
         {/* Formula */}
         <rect x="290" y="62" width="124" height="32" rx="6" fill="#ede9fe" stroke="#8b5cf6" />

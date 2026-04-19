@@ -51,7 +51,7 @@ export default function ExamClient({ subject, questions }: Props) {
   }
 
   function toggleFlag() {
-    setFlagged(prev => { const n = new Set(prev); n.has(current) ? n.delete(current) : n.add(current); return n })
+    setFlagged(prev => { const n = new Set(prev); if (n.has(current)) { n.delete(current) } else { n.add(current) } return n })
   }
 
   const handleSubmit = useCallback(async () => {

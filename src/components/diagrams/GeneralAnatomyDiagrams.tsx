@@ -193,7 +193,6 @@ export function SarcomereDiagram() {
   const startX = 30
   const endX = 410
   const totalW = endX - startX
-  const halfW = totalW / 2
 
   // Z-lines
   const zLeft = startX + 20

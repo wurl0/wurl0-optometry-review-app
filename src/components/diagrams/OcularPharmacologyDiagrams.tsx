@@ -103,7 +103,6 @@ export function AntiGlaucomaDiagram() {
   ]
 
   const colW = 138
-  const rowH = 20
   const startX = 10
   const startY = 34
 
