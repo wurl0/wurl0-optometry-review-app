@@ -68,6 +68,10 @@ export const generalAnatomyNotes: NotesData = {
           ],
         },
         {
+          kind: 'diagram',
+          id: 'ga-body-planes',
+        },
+        {
           kind: 'sub',
           title: 'Planes of the Body (4)',
           blocks: [
@@ -141,6 +145,10 @@ export const generalAnatomyNotes: NotesData = {
         {
           kind: 'text',
           content: 'Comprises skin (largest organ in body) and skin appendages: nails, hairs, sebaceous and sweat glands. Dermatology = study of skin. Layers: Epidermis (epithelium) and Dermis (connective tissue).',
+        },
+        {
+          kind: 'diagram',
+          id: 'ga-epidermis-layers',
         },
         {
           kind: 'sub',
@@ -298,6 +306,10 @@ export const generalAnatomyNotes: NotesData = {
           content: 'Myology = study of muscles. 605 skeletal muscles (850 including all types). Muscles are responsible for movement via contractility and conductivity. Muscle composition: 75% water, 20% protein, 15% carbohydrates/lipids/salts/creatine.',
         },
         {
+          kind: 'diagram',
+          id: 'ga-sarcomere',
+        },
+        {
           kind: 'sub',
           title: 'Sarcomere & Contractile Proteins',
           blocks: [
@@ -322,6 +334,10 @@ export const generalAnatomyNotes: NotesData = {
               content: 'Calcium (released from sarcoplasmic reticulum during spike potential) binds Troponin C → conformational change in Tropomyosin → Tropomyosin slides deeper into F-actin grooves → active site (ADP) on F-actin exposed → myosin head attaches to active site → tilts and drags actin forward → detaches → repeats. Smooth muscles contract the same way but lack troponin.',
             },
           ],
+        },
+        {
+          kind: 'diagram',
+          id: 'ga-muscle-types',
         },
         {
           kind: 'sub',
