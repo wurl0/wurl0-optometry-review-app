@@ -256,6 +256,7 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.7', date: 'Apr 2026', note: 'General Anatomy — notes reviewer, OLE prep, and quiz covering 8 body systems' },
                 { version: 'v0.6', date: 'Apr 2026', note: 'Ocular Anatomy — full notes reviewer with 5 inline SVG diagrams, OLE prep, and quiz' },
                 { version: 'v0.5', date: 'Apr 2026', note: 'Added Primary Eye Care — 151 practice questions across 6 modules' },
                 { version: 'v0.4', date: 'Apr 2026', note: 'OLE Board Style Prep — mnemonics, board traps, and active recall for 4 subjects' },

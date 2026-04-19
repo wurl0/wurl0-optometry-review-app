@@ -55,6 +55,15 @@ export const SUBJECTS: Subject[] = [
     icon: '🔬',
     olePrep: true,
   },
+  {
+    slug: 'general-anatomy',
+    name: 'General Anatomy',
+    description: 'Cell biology, integumentary, skeletal, muscular, nervous, circulatory, respiratory, digestive systems',
+    color: 'amber',
+    questionCount: 100,
+    icon: '🦴',
+    olePrep: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
