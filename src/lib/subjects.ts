@@ -91,6 +91,15 @@ export const SUBJECTS: Subject[] = [
     icon: '👁️‍🗨️',
     olePrep: true,
   },
+  {
+    slug: 'practical-mechanical-optics',
+    name: 'Practical and Mechanical Optics',
+    description: 'Lenses, prisms, optical instruments, retinoscopy, keratometry, and lens prescriptions.',
+    color: 'lime',
+    questionCount: 120,
+    icon: '🔭',
+    olePrep: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -182,5 +191,14 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-cyan-500 to-cyan-700',
     progressBar: 'bg-cyan-500',
     ring: '#06b6d4',
+  },
+  lime: {
+    bg: 'bg-lime-50',
+    border: 'border-lime-200',
+    badge: 'bg-lime-100 text-lime-800',
+    text: 'text-lime-700',
+    gradient: 'from-lime-500 to-lime-700',
+    progressBar: 'bg-lime-500',
+    ring: '#84cc16',
   },
 }

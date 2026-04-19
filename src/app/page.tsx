@@ -259,6 +259,7 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.11', date: 'Apr 2026', note: 'Practical & Mechanical Optics — notes reviewer, OLE prep, and quiz covering lenses, prisms, and optical instruments' },
                 { version: 'v0.9', date: 'Apr 2026', note: 'General Pharmacology — notes reviewer, OLE prep, and quiz covering ADME, pharmacodynamics, and ANS drugs' },
                 { version: 'v0.8', date: 'Apr 2026', note: 'Ocular Disease — notes reviewer, OLE prep, and quiz covering eyelid to neuro-ophthalmology' },
                 { version: 'v0.7', date: 'Apr 2026', note: 'General Anatomy — notes reviewer, OLE prep, and quiz covering 8 body systems' },

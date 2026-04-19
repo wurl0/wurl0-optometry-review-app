@@ -13,6 +13,7 @@ import { generalAnatomyData } from '@/data/ole-prep/general-anatomy'
 import { ocularDiseaseData } from '@/data/ole-prep/ocular-disease'
 import { generalPharmacologyData } from '@/data/ole-prep/general-pharmacology'
 import { ocularPharmacologyData } from '@/data/ole-prep/ocular-pharmacology'
+import { practicalMechanicalOpticsData } from '@/data/ole-prep/practical-mechanical-optics'
 
 const DATA_MAP: Record<string, OlePrepData> = {
   'physiologic-optics': physiologicOpticsData,
@@ -25,6 +26,7 @@ const DATA_MAP: Record<string, OlePrepData> = {
   'ocular-disease': ocularDiseaseData,
   'general-pharmacology': generalPharmacologyData,
   'ocular-pharmacology': ocularPharmacologyData,
+  'practical-mechanical-optics': practicalMechanicalOpticsData,
 }
 
 export default async function OlePrepSubjectPage({
