@@ -194,13 +194,11 @@ export function CornealLayersDiagram() {
   const width = 180
   const startY = 38
 
-  let curY = startY
-  const rendered = CORNEAL_LAYERS.map((layer) => {
-    const y = curY
-    curY += layer.h
-    return { ...layer, y }
-  })
-  const totalH = curY
+  const rendered = CORNEAL_LAYERS.reduce<Array<typeof CORNEAL_LAYERS[0] & { y: number }>>((acc, layer) => {
+    const y = acc.length === 0 ? startY : acc[acc.length - 1].y + acc[acc.length - 1].h
+    return [...acc, { ...layer, y }]
+  }, [])
+  const totalH = rendered.reduce((sum, l) => sum + l.h, 0) + startY
 
   return (
     <DiagramShell caption="Corneal Layers (Anterior → Posterior) | Bowman's cannot regenerate | Endothelium: Na-K ATPase deturgescence">
@@ -303,13 +301,11 @@ export function RetinalLayersDiagram() {
   const width = 152
   const startY = 42
 
-  let curY = startY
-  const rendered = RETINAL_LAYERS.map((layer) => {
-    const y = curY
-    curY += layer.h
-    return { ...layer, y }
-  })
-  const totalH = curY - startY
+  const rendered = RETINAL_LAYERS.reduce<Array<typeof RETINAL_LAYERS[0] & { y: number }>>((acc, layer) => {
+    const y = acc.length === 0 ? startY : acc[acc.length - 1].y + acc[acc.length - 1].h
+    return [...acc, { ...layer, y }]
+  }, [])
+  const totalH = rendered.reduce((sum, l) => sum + l.h, 0)
 
   return (
     <DiagramShell caption="11 Retinal Layers | Detachment = between RPE and Photoreceptors | Foveola: cones only, no rods">
