@@ -960,6 +960,80 @@ export const generalPharmacologyNotes: NotesData = {
             },
           ],
         },
+        {
+          kind: 'sub',
+          title: 'Cholinergic Receptor Subtypes (M1–M3, NM, NN)',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Receptor', 'Location', 'Effect'],
+              rows: [
+                ['M1 ("neural")', 'Autonomic ganglia, presynaptic nerve terminals, CNS', 'Modulation of neurotransmission'],
+                ['M2 ("cardiac")', 'SA node, AV node (cardiac tissue)', 'Slows heart rate and AV conduction; decreases cAMP (Gi pathway)'],
+                ['M3 ("glandular")', 'Smooth muscle, glands, vascular smooth muscle', 'Contraction of smooth muscle, glandular secretion, vasodilation'],
+                ['NM (muscle)', 'Somatic neuromuscular junctions', 'Contraction of skeletal muscles (including extraocular muscles)'],
+                ['NN (neuron)', 'Autonomic ganglia', 'Ganglionic excitation'],
+              ],
+            },
+            {
+              kind: 'pearl',
+              content: 'M3 receptors (Gq pathway → phospholipase C → IP3/DAG → increased Ca²⁺) mediate: sphincter pupillae contraction (miosis), ciliary muscle contraction (accommodation), Brucke\'s muscle contraction (opens trabecular meshwork → lowers IOP). M2 receptors use Gi pathway (inhibit adenylyl cyclase → decrease cAMP) — classic for cardiac slowing.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Beta-Blockers: Special Properties',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Property', 'Drugs', 'Clinical Significance'],
+              rows: [
+                ['Intrinsic Sympathomimetic Activity (ISA)', 'Carteolol, Celiprolol, Labetalol, Acebutolol, Pindolol, Penbutolol (CCLAPP)', 'Partial agonist at beta receptors — less resting bradycardia and fewer lipid metabolic effects; less risk of rebound hypertension on withdrawal'],
+                ['Membrane-Stabilizing Activity (MSA)', 'Labetalol, Acebutolol, Pindolol, Propranolol, Metoprolol (LAPPM)', 'Local anesthetic-like effect on cell membranes; drugs with MSA CANNOT be used topically in the eye — cause corneal injury'],
+                ['Alpha + Beta blockade', 'Labetalol, Carvedilol', 'Vasodilation (alpha-1 block) + decreased cardiac output (beta block); used in hypertensive emergencies'],
+                ['Cardioselective (B1 only)', 'Betaxolol, Bisoprolol, Esmolol, Atenolol, Acebutolol, Metoprolol, Nebivolol (BEAM NC)', 'Safe in asthma, COPD; use with caution in DM (still mask hypoglycemia tachycardia partially)'],
+              ],
+            },
+            {
+              kind: 'pearl',
+              content: 'MSA mnemonic (LAPPM): Labetalol, Acebutolol, Pindolol, Propranolol, Metoprolol — these CANNOT be used as topical ophthalmic agents because their membrane-stabilizing (local anesthetic) property causes corneal damage. ISA mnemonic (CCLAPP): Carteolol, Celiprolol, Labetalol, Acebutolol, Pindolol, Penbutolol — partial agonists, cause less bradycardia at rest.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Ganglionic Blockers',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                'Block NN (nicotinic neuronal) receptors in BOTH sympathetic and parasympathetic ganglia.',
+                'Arrest the ENTIRE ANS — complex, unpredictable effects; rarely used clinically.',
+                'Examples: Tetraethylammonium, Hexamethonium, Mecamylamine, Trimethaphan (occasionally for hypertensive crisis).',
+                'Nicotine at HIGH doses also acts as a ganglionic blocker (depolarizing type).',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Neuromuscular Blockers',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Type', 'Drugs', 'Mechanism', 'Reversal'],
+              rows: [
+                ['Depolarizing (irreversible/noncompetitive)', 'Succinylcholine (suxamethonium), Decamethonium', 'Persistent NMJ depolarization → Phase I (fasciculations) → Phase II (desensitization/paralysis)', 'Plasma pseudocholinesterase metabolizes succinylcholine; NOT reversed by neostigmine; Sugammadex for steroidal blockers'],
+                ['Non-depolarizing (competitive)', 'Bisoquinoline: Tubocurarine, Atracurium, Cisatracurium, Mivacurium; Steroidal: Pancuronium, Rocuronium, Vecuronium', 'Competitive antagonist at NM receptors; prevents ACh from binding', 'Neostigmine or Edrophonium (anticholinesterases); Sugammadex specifically reverses steroidal agents (rocuronium, vecuronium)'],
+              ],
+            },
+            {
+              kind: 'pearl',
+              content: 'Malignant hyperthermia is a life-threatening complication of succinylcholine (and volatile anesthetics). It involves uncontrolled Ca²⁺ release via ryanodine receptors → severe muscle rigidity + hyperthermia. Antidote: Dantrolene (ryanodine receptor blocker). Succinylcholine SE also include myalgia, rhabdomyolysis, and lactic acidosis.',
+            },
+          ],
+        },
       ],
     },
     {
@@ -1073,18 +1147,30 @@ export const generalPharmacologyNotes: NotesData = {
               kind: 'table',
               headers: ['Group', 'Key Drugs', 'Notes'],
               rows: [
-                ['Sulfonamides', 'Sulfamethoxazole (+ trimethoprim = co-trimoxazole), Sulfacetamide (topical), Sulfadiazine', 'Inhibit folic acid synthesis; esters decrease sulfa drug effect'],
-                ['Fluoroquinolones', 'Ciprofloxacin, Ofloxacin, Norfloxacin, Levofloxacin (have ocular prep); Lomefloxacin, Enoxacin, Sparfloxacin, Trovafloxacin', 'Inhibit DNA gyrase (nucleic acid synthesis)'],
-                ['Penicillins', 'Penicillin G+V; Penicillinase-resistant: Cloxacillin, Dicloxacillin, Oxacillin; Broad spectrum: Ampicillin, Amoxicillin; Anti-pseudomonal: Carbenicillin, Piperacillin', 'Discovered by Alexander Fleming; from Penicillium mold; MOA: inhibit cell wall synthesis'],
-                ['Cephalosporins (1st gen)', 'Cefalexin, Cefazolin', 'Good for gram-positive bacteria'],
-                ['Cephalosporins (2nd gen)', 'Cefuroxime, Cefaclor', 'Effective for PEcK organisms'],
-                ['Cephalosporins (3rd gen)', 'Cefotaxime, Ceftriaxone', 'Effective for PEcKS organisms'],
-                ['Cephalosporins (4th gen)', 'Cefditoren, Cefepime, Cefpirome', 'Effective for HENPEcKS organisms'],
-                ['Aminoglycosides', 'Streptomycin (oldest), Gentamicin, Tobramycin, Neomycin (also for Acanthamoeba), Amikacin, Kanamycin', 'Effective for gram-negative; SE: ototoxicity and nephrotoxicity if used >5 days; vestibulotoxic (vertigo, balance loss)'],
-                ['Tetracyclines', 'Short-acting: Tetracycline, Oxytetracycline; Intermediate: Methacycline, Demeclocycline; Long-acting: Doxycycline, Minocycline', 'DOC for Trachoma and inclusion conjunctivitis'],
-                ['Chloramphenicol', 'Chloramphenicol', 'DOC for typhoid fever'],
-                ['Macrolides', 'Erythromycin, Clarithromycin, Roxithromycin, Azithromycin', 'Useful for patients allergic to other antibiotics'],
+                ['Sulfonamides', 'Sulfamethoxazole (+ trimethoprim = co-trimoxazole), Sulfacetamide (topical), Sulfadiazine', 'Inhibit folic acid synthesis (PABA analogs); esters decrease sulfa drug effect'],
+                ['Fluoroquinolones', 'Ciprofloxacin, Ofloxacin, Norfloxacin, Levofloxacin (have ocular prep); Lomefloxacin, Enoxacin, Sparfloxacin, Trovafloxacin', 'Inhibit DNA gyrase (nucleic acid synthesis); avoid in children <18 and pregnancy (damage bone/cartilage)'],
+                ['Penicillins', 'Penicillin G+V; Penicillinase-resistant: Cloxacillin, Dicloxacillin, Oxacillin; Broad spectrum: Ampicillin, Amoxicillin; Anti-pseudomonal: Carbenicillin, Piperacillin', 'Discovered by Alexander Fleming; from Penicillium mold; MOA: inhibit transpeptidase (PBP) → block peptidoglycan cross-linking; hypersensitivity in 1–10%'],
+                ['Beta-lactamase inhibitors', 'Clavulanic acid (clavam), Sulbactam, Tazobactam, Avibactam', 'Combined with penicillins to overcome beta-lactamase resistance: Amoxicillin-clavulanate, Ampicillin-sulbactam, Piperacillin-tazobactam'],
+                ['Cephalosporins (1st gen)', 'Cefalexin, Cefazolin', 'Primarily gram-positive cocci; similar MOA to penicillins (inhibit PBP)'],
+                ['Cephalosporins (2nd gen)', 'Cefuroxime, Cefaclor', 'Expanded gram-negative coverage (PEcK organisms)'],
+                ['Cephalosporins (3rd gen)', 'Cefotaxime, Ceftriaxone', 'Broader gram-negative (PEcKS organisms); DOC for bacterial meningitis'],
+                ['Cephalosporins (4th gen)', 'Cefditoren, Cefepime, Cefpirome', 'Broadest spectrum including Pseudomonas (HENPEcKS organisms)'],
+                ['Carbapenems', 'Imipenem, Meropenem, Ertapenem, Doripenem', 'Extremely broad-spectrum beta-lactams; substitute carbon for sulfur in penicillin nucleus; for multi-drug-resistant infections'],
+                ['Monobactams', 'Aztreonam', 'Monocyclic beta-lactam ring; gram-negative only (binds PBP3); resistant to beta-lactamases; safe in penicillin allergy (no cross-reactivity)'],
+                ['Vancomycin', 'Vancomycin (glycopeptide)', 'Binds D-Ala-D-Ala terminus of peptidoglycan precursor — physically blocks transpeptidase (different from beta-lactams which bind the enzyme itself); reserved for MRSA and resistant gram-positive infections'],
+                ['Bacitracin', 'Bacitracin', 'Inhibits dephosphorylation of lipid carrier needed for peptidoglycan transport; bactericidal; too toxic systemically — topical/ophthalmic use only; gram-positive coverage'],
+                ['Aminoglycosides', 'Streptomycin (oldest), Gentamicin, Tobramycin, Neomycin (also for Acanthamoeba), Amikacin, Kanamycin, Netilmicin, Sisomicin', 'Bind 30S ribosome → misread mRNA → inhibit protein synthesis; effective for gram-negative; SE: ototoxicity and nephrotoxicity if used >5 days; require oxygen (ineffective against anaerobes)'],
+                ['Tetracyclines', 'Short-acting: Tetracycline, Oxytetracycline; Intermediate: Methacycline, Demeclocycline; Long-acting: Doxycycline (Vibramycin), Minocycline; Glycylcycline: Tigecycline (Tygacil)', 'Bind 30S ribosome → block aminoacyl-tRNA entry; DOC for Trachoma and inclusion conjunctivitis; SE: brown tooth staining in fetuses/children, vaginal candidiasis, GI flora suppression; Tigecycline is broad-spectrum, effective against MRSA and multi-drug-resistant Acinetobacter'],
+                ['Chloramphenicol', 'Chloramphenicol', 'Binds 50S ribosome → blocks peptidyltransferase; DOC for typhoid fever; SE: aplastic anemia (bone marrow toxicity from nitrobenzene nucleus), "gray baby" syndrome in neonates (immature liver, absent glucuronosyltransferase)'],
+                ['Macrolides', 'Erythromycin, Clarithromycin, Roxithromycin, Azithromycin; Ketolide: Telithromycin', 'Bind 23S rRNA in 50S subunit → prevent tRNA release and block translocation; bacteriostatic; used in penicillin-allergic patients'],
+                ['Lincosamides', 'Clindamycin, Lincomycin', 'Bind 50S ribosome (same site as macrolides); excellent for anaerobes (gram-positive: C. perfringens; gram-negative: B. fragilis); SE: Clostridioides difficile pseudomembranous colitis'],
+                ['Oxazolidinones', 'Linezolid', 'Binds 23S rRNA in 50S subunit; blocks initiation of protein synthesis; bactericidal against pneumococci, bacteriostatic against enterococci/staphylococci; useful for VRE, MRSA, penicillin-resistant pneumococci'],
+                ['Polymyxins', 'Polymyxin B, Colistin (Polymyxin E)', 'Cyclic polypeptides; positively charged cationic groups disrupt phospholipid structure of bacterial cell membrane; gram-negative organisms; topical ophthalmic combinations (Polytrim)'],
               ],
+            },
+            {
+              kind: 'pearl',
+              content: 'Antibiotics by ribosomal target: 30S inhibitors = Aminoglycosides + Tetracyclines (+ glycylcyclines). 50S inhibitors = Chloramphenicol + Macrolides + Lincosamides + Oxazolidinones + Streptogramins. Key distinction: Vancomycin binds D-Ala-D-Ala on the peptidoglycan precursor (substrate-level); Beta-lactams bind PBP transpeptidase (enzyme-level). Both inhibit cell wall synthesis but at different points.',
             },
           ],
         },
