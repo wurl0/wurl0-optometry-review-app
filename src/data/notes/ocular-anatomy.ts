@@ -501,6 +501,10 @@ export const ocularAnatomyNotes: NotesData = {
           ],
         },
         {
+          kind: 'diagram',
+          id: 'oa-corneal-layers',
+        },
+        {
           kind: 'sub',
           title: 'Histologic Layers of the Cornea (5+1)',
           blocks: [
@@ -557,6 +561,10 @@ export const ocularAnatomyNotes: NotesData = {
         {
           kind: 'text',
           content: 'Middle coat of the eyeball — most dangerous coat. Contains three layers: Iris (outermost), Ciliary Body (most dangerous, highly vascular), and Choroid (posteriormost).',
+        },
+        {
+          kind: 'diagram',
+          id: 'oa-eye-cross-section',
         },
         {
           kind: 'sub',
@@ -846,6 +854,10 @@ export const ocularAnatomyNotes: NotesData = {
           ],
         },
         {
+          kind: 'diagram',
+          id: 'oa-retinal-layers',
+        },
+        {
           kind: 'sub',
           title: 'Histologic Layers of the Retina (11 layers — outside in)',
           blocks: [
@@ -923,6 +935,10 @@ export const ocularAnatomyNotes: NotesData = {
           ],
         },
         {
+          kind: 'diagram',
+          id: 'oa-visual-pathway',
+        },
+        {
           kind: 'pearl',
           content: 'Rule: Congruent hemianopsia = lesion at/posterior to LGB. Incongruent = lesion anterior to LGB (optic tract). Bitemporal = chiasma crossing fibers. Binasal = chiasma uncrossed fibers.',
         },
@@ -969,6 +985,10 @@ export const ocularAnatomyNotes: NotesData = {
         {
           kind: 'text',
           content: 'Move the eye in vertical and horizontal directions and to rotate the eye. There are 6 EOMs: 4 Recti muscles (all originate from Annulus of Zinn, inserted in front of equator of sclera) and 2 Obliques (both inserted behind equator of sclera). Herring\'s Law: yoke muscles receive equal and simultaneous innervation. Sherrington\'s Law: increased innervation to agonist = decreased innervation to antagonist.',
+        },
+        {
+          kind: 'diagram',
+          id: 'oa-eom-cardinal',
         },
         {
           kind: 'sub',
