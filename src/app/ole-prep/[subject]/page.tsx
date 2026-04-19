@@ -7,12 +7,14 @@ import physiologicOpticsData from '@/data/ole-prep/physiologic-optics'
 import binocularVisionData from '@/data/ole-prep/binocular-vision'
 import theoreticalOpticsData from '@/data/ole-prep/theoretical-optics'
 import phorometryData from '@/data/ole-prep/phorometry'
+import primaryEyeCareData from '@/data/ole-prep/primary-eye-care'
 
 const DATA_MAP: Record<string, OlePrepData> = {
   'physiologic-optics': physiologicOpticsData,
   'binocular-vision': binocularVisionData,
   'theoretical-optics': theoreticalOpticsData,
   'phorometry': phorometryData,
+  'primary-eye-care': primaryEyeCareData,
 }
 
 export default async function OlePrepSubjectPage({

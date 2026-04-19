@@ -44,6 +44,7 @@ export const SUBJECTS: Subject[] = [
     color: 'emerald',
     questionCount: 151,
     icon: '🩺',
+    olePrep: true,
   },
 ]
 

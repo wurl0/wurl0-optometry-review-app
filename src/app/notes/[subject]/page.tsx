@@ -5,10 +5,12 @@ import physioNotes from '@/data/notes/physiologic-optics'
 import bvNotes from '@/data/notes/binocular-vision'
 import theoreticalOpticsNotes from '@/data/notes/theoretical-optics'
 import phorometryNotes from '@/data/notes/phorometry'
+import primaryEyeCareNotes from '@/data/notes/primary-eye-care'
 import physioQuiz from '@/data/notes-quiz/physiologic-optics'
 import bvQuiz from '@/data/notes-quiz/binocular-vision'
 import theoreticalOpticsQuiz from '@/data/notes-quiz/theoretical-optics'
 import phorometryQuiz from '@/data/notes-quiz/phorometry'
+import primaryEyeCareQuiz from '@/data/notes-quiz/primary-eye-care'
 import { NotesData } from '@/lib/notes-types'
 import { NotesQuizData } from '@/lib/notes-quiz-types'
 
@@ -17,6 +19,7 @@ const NOTES_MAP: Record<string, NotesData> = {
   'binocular-vision': bvNotes,
   'theoretical-optics': theoreticalOpticsNotes,
   'phorometry': phorometryNotes,
+  'primary-eye-care': primaryEyeCareNotes,
 }
 
 const QUIZ_MAP: Record<string, NotesQuizData> = {
@@ -24,6 +27,7 @@ const QUIZ_MAP: Record<string, NotesQuizData> = {
   'binocular-vision': bvQuiz,
   'theoretical-optics': theoreticalOpticsQuiz,
   'phorometry': phorometryQuiz,
+  'primary-eye-care': primaryEyeCareQuiz,
 }
 
 export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {
