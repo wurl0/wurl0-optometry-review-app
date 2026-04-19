@@ -64,7 +64,7 @@ export default async function HomePage() {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 hidden sm:block">{user.email}</span>
-            {user.id === process.env.ADMIN_USER_ID && (
+            {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
               <Link href="/admin" className="text-xs font-medium text-teal-600 hover:underline">Admin</Link>
             )}
             <form action={handleSignOut}>

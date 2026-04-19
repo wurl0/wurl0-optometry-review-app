@@ -4,8 +4,9 @@ import { DIAGRAM_REGISTRY as TO } from './TheoreticalOpticsDiagrams'
 import { DIAGRAM_REGISTRY as PH } from './PhorometryDiagrams'
 import { DIAGRAM_REGISTRY as OA } from './OcularAnatomyDiagrams'
 import { DIAGRAM_REGISTRY as GA } from './GeneralAnatomyDiagrams'
+import { DIAGRAM_REGISTRY as OD } from './OcularDiseaseDiagrams'
 
-const ALL_DIAGRAMS: Record<string, React.ComponentType> = { ...PHYSIO, ...BV, ...TO, ...PH, ...OA, ...GA }
+const ALL_DIAGRAMS: Record<string, React.ComponentType> = { ...PHYSIO, ...BV, ...TO, ...PH, ...OA, ...GA, ...OD }
 
 export function DiagramRenderer({ id, caption }: { id: string; caption?: string }) {
   const Component = ALL_DIAGRAMS[id]

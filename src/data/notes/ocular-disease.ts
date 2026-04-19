@@ -517,6 +517,10 @@ export const ocularDiseaseNotes: NotesData = {
           content: 'Glaucoma is a group of ocular disorders resulting in optic nerve damage, often associated with IOP above 21 mmHg. Called the "Silent Thief of Sight." It is the SECOND cause of blindness after cataract.',
         },
         {
+          kind: 'diagram',
+          id: 'od-glaucoma-angles',
+        },
+        {
           kind: 'sub',
           title: 'POAG vs PACG (Primary Open vs Closed Angle)',
           blocks: [
@@ -668,6 +672,10 @@ export const ocularDiseaseNotes: NotesData = {
           content: 'Lens diseases include ectopia lentis (displacement) and cataract (opacity). The location of the opacity and the direction of lens displacement are the two most tested details.',
         },
         {
+          kind: 'diagram',
+          id: 'od-cataract-types',
+        },
+        {
           kind: 'sub',
           title: 'Lens Dislocation Syndromes (MSH)',
           blocks: [
@@ -747,6 +755,10 @@ export const ocularDiseaseNotes: NotesData = {
         {
           kind: 'text',
           content: 'Posterior segment diseases include uveal, retinal, and vitreous conditions. Many are associated with systemic diseases and represent major causes of irreversible vision loss.',
+        },
+        {
+          kind: 'diagram',
+          id: 'od-retinal-detachment',
         },
         {
           kind: 'sub',
