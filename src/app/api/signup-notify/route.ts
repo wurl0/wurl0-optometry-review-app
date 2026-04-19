@@ -11,11 +11,10 @@ export async function POST(req: NextRequest) {
 
     const supabase = createAdminClient()
 
-    // Fetch the newly created profile (trigger should have created it)
     const { data: profile, error } = await supabase
       .from('profiles')
-      .select('full_name, email, approval_token')
-      .eq('user_id', userId)
+      .select('full_name, email')
+      .eq('id', userId)
       .single()
 
     if (error || !profile) {
@@ -23,7 +22,7 @@ export async function POST(req: NextRequest) {
     }
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://wurl0-optometry-review-app.vercel.app'
-    const approveUrl = `${appUrl}/api/approve?token=${profile.approval_token}`
+    const adminUrl = `${appUrl}/admin`
 
     await resend.emails.send({
       from: 'OptoPrep <onboarding@resend.dev>',
@@ -43,12 +42,12 @@ export async function POST(req: NextRequest) {
               <td style="padding:8px 0;font-size:14px">${profile.email}</td>
             </tr>
           </table>
-          <a href="${approveUrl}"
+          <a href="${adminUrl}"
             style="display:inline-block;background:#0d9488;color:#fff;text-decoration:none;padding:12px 28px;border-radius:8px;font-weight:600;font-size:15px">
-            ✅ Approve Access
+            Open Admin Panel →
           </a>
           <p style="color:#aaa;font-size:12px;margin-top:20px">
-            Or copy this link: ${approveUrl}
+            Go to ${adminUrl} to approve or manage users.
           </p>
         </div>
       `,
