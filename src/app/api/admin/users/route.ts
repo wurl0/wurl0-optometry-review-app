@@ -5,7 +5,8 @@ import { createClient } from '@/lib/supabase-server'
 export async function GET() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.email !== process.env.ADMIN_EMAIL) {
+  const userEmail = user?.email ?? user?.user_metadata?.email ?? ''
+  if (!user || (userEmail !== process.env.ADMIN_EMAIL && user.id !== process.env.ADMIN_USER_ID)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 403 })
   }
 
