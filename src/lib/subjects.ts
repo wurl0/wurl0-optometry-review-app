@@ -64,6 +64,15 @@ export const SUBJECTS: Subject[] = [
     icon: '🦴',
     olePrep: true,
   },
+  {
+    slug: 'ocular-disease',
+    name: 'Ocular Disease',
+    description: 'Eyelid disorders, conjunctiva, cornea, uvea, glaucoma, retinal diseases, and neuro-ophthalmology.',
+    color: 'red',
+    questionCount: 150,
+    icon: '🔴',
+    olePrep: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -128,5 +137,14 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-rose-500 to-pink-600',
     progressBar: 'bg-rose-500',
     ring: '#f43f5e',
+  },
+  red: {
+    bg: 'bg-red-50',
+    border: 'border-red-200',
+    badge: 'bg-red-100 text-red-800',
+    text: 'text-red-700',
+    gradient: 'from-red-500 to-rose-600',
+    progressBar: 'bg-red-500',
+    ring: '#ef4444',
   },
 }

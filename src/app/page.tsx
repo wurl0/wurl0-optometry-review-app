@@ -244,7 +244,7 @@ export default async function HomePage() {
         {/* Coming soon */}
         <div className="mt-4 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
           <p className="text-sm font-semibold text-gray-400">Coming soon</p>
-          <p className="text-xs text-gray-400 mt-0.5">Ocular Disease · Pharmacology · Ethics · Special Areas</p>
+          <p className="text-xs text-gray-400 mt-0.5">Pharmacology · Ethics · Special Areas</p>
         </div>
 
         {/* Changelog */}
@@ -256,6 +256,7 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.8', date: 'Apr 2026', note: 'Ocular Disease — notes reviewer, OLE prep, and quiz covering eyelid to neuro-ophthalmology' },
                 { version: 'v0.7', date: 'Apr 2026', note: 'General Anatomy — notes reviewer, OLE prep, and quiz covering 8 body systems' },
                 { version: 'v0.6', date: 'Apr 2026', note: 'Ocular Anatomy — full notes reviewer with 5 inline SVG diagrams, OLE prep, and quiz' },
                 { version: 'v0.5', date: 'Apr 2026', note: 'Added Primary Eye Care — 151 practice questions across 6 modules' },
