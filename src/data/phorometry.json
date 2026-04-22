@@ -386,8 +386,8 @@
       "Gross No. 14A lenses",
       "Test No. 7 (H/E)"
     ],
-    "correct": 2,
-    "explanation": "Test #13B (Induced Lateral Phoria at Near) uses Gross No. 14A lenses, not Test #7. This distinguishes it from #13A (habitual) and from #8 (induced at far, which uses Test #7).",
+    "correct": 1,
+    "explanation": "Test #13B uses Test No. 7 lenses (subjective refraction), not Gross No. 14A. #13A uses habitual correction, while #15A/#15B use 14A/14B lenses.",
     "isTrap": true,
     "category": "step"
   },
