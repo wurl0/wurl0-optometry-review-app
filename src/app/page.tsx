@@ -259,6 +259,7 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.12', date: 'May 2026', note: 'OLE Prep expanded — new sections added to Binocular Vision (EOM anatomy, visual axes, diplopia, accommodative dysfunction, compensatory postures), General Pharmacology (glaucoma drugs, CNS/neuro, anti-inflammatories), and Optometry Constants (fusion amplitudes, Spiral of Tillaux, Axes of Fick, pharmacology time constants). Source: MCU 2024 Dr. Sumaya & Gen-Pharmacology PDFs.' },
                 { version: 'v0.11', date: 'Apr 2026', note: 'Practical & Mechanical Optics — notes reviewer, OLE prep, and quiz covering lenses, prisms, and optical instruments' },
                 { version: 'v0.9', date: 'Apr 2026', note: 'General Pharmacology — notes reviewer, OLE prep, and quiz covering ADME, pharmacodynamics, and ANS drugs' },
                 { version: 'v0.8', date: 'Apr 2026', note: 'Ocular Disease — notes reviewer, OLE prep, and quiz covering eyelid to neuro-ophthalmology' },
