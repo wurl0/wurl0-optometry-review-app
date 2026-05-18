@@ -86,6 +86,31 @@ function TrapCard({ item }: { item: Extract<OlePrepItem, { kind: 'trap' }> }) {
   )
 }
 
+function RecallAnswer({ answer }: { answer: string }) {
+  const parts = answer.split(' | ')
+  if (parts.length < 2) {
+    return <p className="text-sm text-teal-800 font-medium leading-relaxed">{answer}</p>
+  }
+  return (
+    <div className="space-y-1.5">
+      {parts.map((part, i) => {
+        const colon = part.indexOf(':')
+        if (colon === -1) {
+          return <p key={i} className="text-sm text-teal-800 font-medium">{part}</p>
+        }
+        const label = part.slice(0, colon).trim()
+        const value = part.slice(colon + 1).trim()
+        return (
+          <div key={i} className="flex items-baseline gap-2">
+            <span className="text-xs font-semibold text-gray-500 w-28 shrink-0">{label}</span>
+            <span className="text-sm font-bold text-teal-800">{value}</span>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 function RecallCard({ item }: { item: Extract<OlePrepItem, { kind: 'recall' }> }) {
   const [revealed, setRevealed] = useState(false)
   return (
@@ -103,7 +128,7 @@ function RecallCard({ item }: { item: Extract<OlePrepItem, { kind: 'recall' }> }
           </button>
         ) : (
           <div className="flex items-start justify-between gap-2">
-            <p className="text-sm text-teal-800 font-medium leading-relaxed">{item.answer}</p>
+            <RecallAnswer answer={item.answer} />
             <button
               onClick={() => setRevealed(false)}
               className="text-xs text-gray-400 hover:text-gray-600 shrink-0"
