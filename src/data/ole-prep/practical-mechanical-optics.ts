@@ -254,5 +254,208 @@ export const practicalMechanicalOpticsData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'cl-history-classification',
+      title: 'Contact Lens: History, Classification & Terminology',
+      icon: '👁️',
+      items: [
+        {
+          kind: 'mnemonic',
+          term: 'Contact Lens History — Key Figures',
+          device: '"Da Vinci Dreams, Herschel Hears, Muller Makes, Fick Fits, Touhy Takes Plastic, Wichterle Wets"',
+          breakdown: 'Da Vinci (1508): first described the concept. Herschel (1827): described a glass lens matching the eye\'s shape. F.E. Muller (1887): fitted a blown glass lens to a surgically removed eye. A.E. Fick (1888): described the first CL intended to correct vision. Kevin Touhy (1947): first plastic corneal lens from PMMA. Otto Wichterle: developed HEMA (soft lens material).',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'CL Classification by Material',
+          device: '"Hard Non-gas, Hard Gas, Soft Hydrogel, Soft SiHy"',
+          breakdown: 'Hard: Non-gas permeable (PMMA) and Gas permeable (RGP — silicone acrylate, fluoropolymers, cellulose acetate butyrate). Soft: Hydrogel (PHEMA-based) and Silicone hydrogel (SiHy — high oxygen, all modes of wear).',
+        },
+        {
+          kind: 'fact',
+          content: 'Contact lens classification by purpose: Optical (spherical — corrects up to -0.75 D astigmatism; toric — for significant astigmatism; presbyopic), Therapeutic (bandage lenses), Cosmetic (tinted, opaque). Classification by size: Corneal, Semi-corneal, Scleral.',
+          highlight: 'Spherical CL: corrects up to -0.75 D astig',
+        },
+        {
+          kind: 'fact',
+          content: 'CL Nomenclature: -filcon suffix = hydrophilic materials (water content ≥10% by weight). -focon suffix = hydrophobic materials (water content <10%). Contact lens material groups: Group 1 (Low water/Non-ionic), Group 2 (High water/Non-ionic), Group 3 (Low water/Ionic), Group 4 (High water/Ionic). Most SiHy CLs = Group 1.',
+          highlight: '-filcon = hydrophilic; -focon = hydrophobic',
+        },
+        {
+          kind: 'fact',
+          content: 'Key CL terms: Base Curve (BC) = radius of curvature of the posterior zone. Optic Zone (OZ) = posterior central optic portion (the visually usable area). Sagittal value (sag) = distance from the line between outer lens edges to the center of the back surface.',
+          highlight: 'BC = back radius; OZ = usable optic area',
+        },
+        {
+          kind: 'fact',
+          content: 'HVID (Horizontal Visible Iris Diameter): average 11.7 mm; range 10-14 mm. VVID (Vertical VID): average 10.6 mm — smaller than HVID by 0.5-1.0 mm. Corneal thickness: 0.50-0.65 mm clinically; Gullstrand\'s schematic eye = 0.50 mm. Keratometer measures 3-4 mm of the optic cap.',
+          highlight: 'HVID avg 11.7 mm; cornea 0.50 mm',
+        },
+        {
+          kind: 'trap',
+          question: 'Who designed the FIRST contact lens intended to CORRECT VISION?',
+          wrong: 'F.E. Muller (1887)',
+          correct: 'A.E. Fick (1888) — Muller fitted a lens to a surgical patient\'s enucleated eye for protection, not vision correction. Fick described the first CL intended specifically to correct vision.',
+          why: 'Muller fitted a glass lens to protect an eye from which the eyelids had been surgically removed — not for vision correction. Fick\'s 1888 work described fitting on an intact eye for refractive correction.',
+        },
+        {
+          kind: 'trap',
+          question: 'A spherical soft contact lens can correct how much astigmatism before a toric lens is needed?',
+          wrong: '-1.00 D or more',
+          correct: 'Up to -0.75 D astigmatism can be corrected by a spherical lens. Above -0.75 D, a toric lens is indicated.',
+          why: 'The 4:1 rule and spherical equivalent are used for small amounts of astigmatism. The clinical threshold for toric CL prescription is generally when astigmatism exceeds -0.75 D, though some sources use -1.00 D.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Kevin Touhy is credited with making the first plastic corneal lens from which material?',
+          answer: 'PMMA (polymethylmethacrylate) — 1947',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Orthokeratology: what is it and who benefits most?',
+          answer: 'Non-surgical application of rigid gas permeable lenses to temporarily reshape the cornea and reduce/eliminate myopia and astigmatism. Best candidates: children with >0.50 D annual myopia progression, patients wanting unaided acuity without surgery. Myopia limit: up to -6.00 D.',
+        },
+      ],
+    },
+    {
+      id: 'cl-optics-oxygen-fitting',
+      title: 'CL Optics, Oxygen Properties & Fitting Principles',
+      icon: '🔬',
+      items: [
+        {
+          kind: 'mnemonic',
+          term: 'CL Optics: Five Power Types',
+          device: '"Nominal adds. Equivalent subtracts. Back Vertex = D1². Front Vertex = D2²."',
+          breakdown: 'Nominal power: Dn = D1 + D2 (ignores thickness). Equivalent power: Deq = D1 + D2 - (t/n)(D1 × D2). Back Vertex (effective) power: Dv = Dn + (t/n)(D1)². Front Vertex (neutralizing) power: Dfv = Dn + (t/n)(D2)². Surface power: D = (n-1)/r.',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'Oxygen Properties: dk vs Dk/t',
+          device: '"dk = Material quality. Dk/t = Lens delivery."',
+          breakdown: 'dk (oxygen permeability): property of the material — how freely oxygen moves through it. Low dk = <30; Medium = 30-60; High = >60. Dk/t (oxygen transmissibility): how much oxygen actually gets through the specific lens with its thickness. Thinner lens = higher Dk/t. Minimum Dk/t: 25 for daily wear; 87+ for overnight wear.',
+        },
+        {
+          kind: 'fact',
+          content: 'Vertex distance correction formula: DCL = DSpec / (1 - d × DSpec). Where DCL = contact lens power, DSpec = spectacle refraction, d = vertex distance in meters. Rule: spectacle powers ≥4.00 D require vertex distance conversion. Spherical equivalent: DCL = Sph + ½ Cyl (when astigmatism < -0.75 D).',
+          highlight: 'Vertex: DCL = DSpec / (1 - d×DSpec)',
+        },
+        {
+          kind: 'fact',
+          content: 'Keratometer formula: D = 337.5 / r. r = 337.5 / D. The keratometer calibration index is 1.3375. For RGP lens base curve: BC = 337.5 / D. For SCL base curve: BC = (337.5 / D) + 0.7 (flatter than RGP by 0.7 mm). Keratometer measures 3-4 mm of the corneal optic cap.',
+          highlight: 'K formula: D = 337.5/r; SCL BC = RGP BC + 0.7',
+        },
+        {
+          kind: 'fact',
+          content: 'SCL fitting rules: Total diameter = HVID + 2 mm (low water) or HVID + 2.5 mm (high water). BOZR = flattest K + 0.3-0.9 mm, or 1 mm + average K, or 4 D flatter than average K. Rule of thumb: increase TD by 0.5 mm when increasing BOZR by 0.3 mm.',
+          highlight: 'SCL TD = HVID + 2mm; BOZR flatter than K',
+        },
+        {
+          kind: 'fact',
+          content: 'SCL fluorescein fitting interpretation: Too steep = clear vision IMMEDIATELY after blink (trapped fluid, then blurs). Too flat = blurred vision IMMEDIATELY after blink (lens moves away, disrupting optics). Movement required: removes debris, promotes tear exchange, aids epithelial wetting.',
+          highlight: 'Steep = clear after blink; Flat = blurred after blink',
+        },
+        {
+          kind: 'fact',
+          content: 'RGP fitting: BOZR = ±0.10 mm of flattest corneal radius. Lens diameter = HVID - 2 mm. Central fluorescein pattern: Pooling = steep fitting. Alignment = ideal. Touch = flat fitting. RGP lens success criteria: good VA, comfort, no ocular insult, normal facial appearance.',
+          highlight: 'RGP: pooling = steep; touch = flat',
+        },
+        {
+          kind: 'fact',
+          content: 'Accommodation with CLs vs spectacles: A myope switching from spectacles to CLs may need a near addition sooner (CLs induce more accommodative demand at near for myopes). A hyperope switching from spectacles to CLs may delay the need for a near addition (CLs demand less accommodation for hyperopes at near).',
+          highlight: 'Myope to CL: needs add sooner. Hyperope: delays add.',
+        },
+        {
+          kind: 'trap',
+          question: 'Higher water content in a soft CL means better oxygen performance — true or false?',
+          wrong: 'True — more water = more oxygen transmission',
+          correct: 'Partially true for HYDROGEL lenses only. High water content lenses DEHYDRATE on the eye, and dehydrated lenses transmit less oxygen than expected. Silicone hydrogel lenses deliver oxygen via silicone channels, not water content.',
+          why: 'For traditional hydrogels: water content correlates with Dk. But high water lenses lose water on the eye (dehydration), reducing real-world oxygen delivery. SiHy lenses solve this — oxygen moves through silicone regardless of water content.',
+        },
+        {
+          kind: 'trap',
+          question: 'What does "too steep" SCL fitting look like on the slit lamp after a blink?',
+          wrong: 'Vision immediately blurs — the steep lens is gripping the cornea',
+          correct: 'Vision is CLEAR immediately after the blink — trapped tear film behind the steep lens creates a fluid lens. Vision then worsens as the lens settles and the tear layer redistributes.',
+          why: 'Steep fit traps fluid. Right after a blink, this fluid provides clear optics briefly. Then as the lens decenters or fluid escapes, vision blurs. Flat fit = lens moves with blink, instantly disrupting the optical surface = immediate blur.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'State the minimum Dk/t values for daily wear and extended/overnight wear.',
+          answer: 'Daily wear: minimum Dk/t = 25. Extended/overnight wear: minimum Dk/t = 87 or above.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Corneal topography asphericity: what is "prolate" vs "oblate"?',
+          answer: 'Prolate = normal cornea — steeper at center, flatter toward periphery. Oblate = flatter at center, steeper at periphery — seen after laser surgery or orthokeratology.',
+        },
+      ],
+    },
+    {
+      id: 'cl-care-complications',
+      title: 'CL Care, Materials & Complications',
+      icon: '⚠️',
+      items: [
+        {
+          kind: 'mnemonic',
+          term: 'Toric SCL Stabilization Methods',
+          device: '"Prism Ballast Pulls it Down. Truncation Trims the Bottom. Peri-Ballast Prism-Free."',
+          breakdown: 'Prism Ballast: 1-1.5Δ base-down; thicker inferiorly; gravity stabilizes. Truncation: flat inferior edge aligns with lower lid; comfortable only if truncation is small. Peri-Ballast: minus carrier creates BD effect, prism-free optic zone; similar to prism ballast but without prismatic optics. Double slab-off: thin superiorly and inferiorly; lid forces maintain orientation.',
+        },
+        {
+          kind: 'fact',
+          content: 'Tear film pH = 7.4. CL solution pH range = 6.5-8.0. pH extremes cause brittleness, discoloration, or breakdown of polymer material. Osmolality of tear film = 302 mOsm/kg. A hypotonic solution causes SCL to SHRINK (lose water). A hypertonic solution causes SCL to EXPAND (gain water).',
+          highlight: 'Tear pH = 7.4; hypotonic → SCL shrinks',
+        },
+        {
+          kind: 'fact',
+          content: 'CL deposit categories: Protein (most common on high water ionic lenses), Lipid (most common on RGP and hard lenses), Mucin, Inorganic, Environmental, Cosmetic. Cleaner types: Surfactant (removes lipids and loose protein), Enzymatic (papain, pancreatin, subtilisin — breaks protein bonds).',
+          highlight: 'Protein on high water ionic; Lipid on RGP',
+        },
+        {
+          kind: 'fact',
+          content: 'CL preservatives (bacteriostatic): Thimerosal, BAK (benzalkonium chloride), Chlorhexidine, Sorbic acid, Dymed, Polyquad. BAK: effective against most organisms but REDUCED efficacy against Pseudomonas aeruginosa. Thimerosal: effective but contains mercury — toxic to the eye. Dymed/Polyquad: mild, reduced toxicity, less lens matrix accumulation.',
+          highlight: 'BAK: poor vs Pseudomonas. Thimerosal: toxic (mercury)',
+        },
+        {
+          kind: 'fact',
+          content: 'Contact lens-related complications include: CLARE (Contact Lens Acute Red Eye), CLPU (Contact Lens Peripheral Ulcer), Giant Papillary Conjunctivitis (GPC), 3 & 9 o\'clock staining (RGP), Superior Epithelial Arcuate Lesion (SEAL), corneal neovascularization, microbial keratitis, Sattler\'s veil (epithelial edema), dimple veiling.',
+          highlight: 'Key CL complications to recognize',
+        },
+        {
+          kind: 'fact',
+          content: 'Wettability is critical for RGP lenses — silicone in RGP materials is hydrophobic, causing discomfort and deposit formation. Wettability tested by measuring the wetting angle: HIGHER wetting angle = LESS wettable. Hydrophilic materials (soft lenses) have wetting angle ≈ 0.',
+          highlight: 'Higher wetting angle = less wettable (RGP)',
+        },
+        {
+          kind: 'fact',
+          content: 'Ideal contact lens material properties: meets cornea\'s oxygen requirements, physiologically inert, excellent in vivo wetting, resists spoilation, dimensionally stable, durable, optically transparent, requires minimal patient care, easily machineable.',
+          highlight: '9 ideal CL material properties',
+        },
+        {
+          kind: 'trap',
+          question: 'Average lens rotation for a toric soft CL is in which direction, and how many degrees?',
+          wrong: 'Temporal rotation, 10-15 degrees',
+          correct: '5-10 degrees NASAL rotation — this is the average, but large individual variations exist.',
+          why: 'Toric SCLs typically rotate nasally due to lid pressure. The practitioner must compensate for this rotation when calculating the final axis for the lens prescription. Rotation compensation rule: if the lens rotates nasally, add the rotation to the spectacle axis.',
+        },
+        {
+          kind: 'trap',
+          question: 'Which CL solution component makes high-water ionic lenses absorb MORE of it, causing potential toxicity?',
+          wrong: 'Buffer agents',
+          correct: 'Preservatives — high water ionic lenses absorb more preservatives into the lens matrix, increasing the risk of preservative-related toxicity and ocular irritation.',
+          why: 'Ionic materials attract charged preservatives. High water content increases absorption. This is why Group 4 lenses (high water/ionic) are most susceptible to preservative uptake and are not compatible with all disinfecting systems.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Scleral lens indications: name at least four.',
+          answer: 'Advanced keratoconus, active water sports, vigorous sports or dusty environments, pathological/disfigured eyes, greatly decentered pupils, high toric powers and prisms, patients needing easier handling (elderly, tremors/arthritis), epithelial protection.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Orthokeratology lens design type and material requirement.',
+          answer: 'Reverse geometric design. Must use HIGH Dk material (gas permeable). Patient selection: myopia up to -6.00 D, astigmatism up to -2.00 D. Patients with large pupils should be discouraged (risk of ghost images at night).',
+        },
+      ],
+    },
   ],
 }
