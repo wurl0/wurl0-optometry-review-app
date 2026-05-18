@@ -3,6 +3,14 @@ export type OlePrepItem =
   | { kind: 'fact'; content: string; highlight?: string }
   | { kind: 'trap'; question: string; wrong: string; correct: string; why: string }
   | { kind: 'recall'; prompt: string; answer: string }
+  | {
+      kind: 'formula'
+      title: string
+      formula: string
+      variables?: Array<{ symbol: string; definition: string }>
+      notes?: string
+      diagram?: string
+    }
 
 export interface OlePrepSection {
   id: string

@@ -391,6 +391,111 @@ export const practicalMechanicalOpticsData: OlePrepData = {
       ],
     },
     {
+      id: 'cl-surface-power-formulas',
+      title: 'Contact Lens Surface Power Formulas',
+      icon: '🔵',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'BOZR by Keratometer Brand',
+          formula: 'B&L:    1.3375 ÷ 337.5 ÷ flat K + 0.7 mm (soft)\nAO:     1.336  ÷ 336   ÷ flat K or steep K\nTopcon: 1.332  ÷ 332   ÷ flat K or steep K',
+          notes: 'Soft CL BC = Flat K + 0.7 mm. RGP BC = Flat K. If steeper K given, use steeper value.',
+        },
+        {
+          kind: 'formula' as const,
+          title: '① CL Surface Power',
+          formula: 'D = (n − 1) / r',
+          variables: [
+            { symbol: 'D', definition: 'surface power (diopters)' },
+            { symbol: 'n', definition: 'IOR of CL material' },
+            { symbol: 'r', definition: 'radius of curvature (mm ÷ 1000 = meters)' },
+          ],
+          notes: '+ sign = Front (FOZR/OCR). − sign = Back (BOZR/BC).',
+          diagram: `<svg viewBox="0 0 200 100" width="200" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M 60 20 Q 100 50 60 80" stroke="#6366f1" stroke-width="3" fill="none"/><path d="M 140 20 Q 100 50 140 80" stroke="#10b981" stroke-width="3" fill="none"/><text x="35" y="48" text-anchor="middle" font-size="9" font-weight="bold" fill="#4f46e5">Front (+)</text><text x="35" y="60" text-anchor="middle" font-size="8" fill="#4f46e5">FOZR</text><text x="165" y="48" text-anchor="middle" font-size="9" font-weight="bold" fill="#059669">Back (−)</text><text x="165" y="60" text-anchor="middle" font-size="8" fill="#059669">BOZR</text><text x="100" y="55" text-anchor="middle" font-size="9" fill="#374151">CL</text><text x="100" y="95" text-anchor="middle" font-size="8" fill="#6b7280">D = (n−1)/r</text></svg>`,
+        },
+        {
+          kind: 'formula' as const,
+          title: '② Nominal (Approximate) Power',
+          formula: 'Dn = D₁ + D₂',
+          variables: [
+            { symbol: 'D₁', definition: 'Front surface power (FOZR)' },
+            { symbol: 'D₂', definition: 'Back surface power (BOZR)' },
+          ],
+        },
+        {
+          kind: 'formula' as const,
+          title: '③ Equivalent Power (True Power)',
+          formula: 'Deq = Dn − (t/n) × D₁ × D₂',
+          variables: [
+            { symbol: 'Dn', definition: 'Nominal power' },
+            { symbol: 't', definition: 'CL thickness in meters' },
+            { symbol: 'n', definition: 'Index of refraction' },
+          ],
+        },
+        {
+          kind: 'formula' as const,
+          title: '④ Effective Power (Back Vertex)',
+          formula: 'Dv = Dn + (t/n) × D₁²',
+          notes: 'Second principal focus / back vertex power',
+        },
+        {
+          kind: 'formula' as const,
+          title: '⑤ Neutralizing Power (Front Vertex)',
+          formula: 'DFV = Dn + (t/n) × D₂²',
+          notes: 'Second principal focus / front vertex power',
+        },
+      ],
+    },
+    {
+      id: 'cl-vertex-distance-formulas',
+      title: 'Contact Lens Power Conversion',
+      icon: '↔️',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'CL Spherical Equivalent (≤ ±4.00D)',
+          formula: 'DCL = Sph + ½ Cyl',
+          notes: '4:1 Rule: if cyl×4 < sph, add ½ cyl to sph. If cyl = ±0.75–±1.00: split in TWO, add to sphere.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Vertex Distance Formula (> ±4.00D)',
+          formula: 'DCL = Dspec / (1 − d × Dspec)',
+          variables: [
+            { symbol: 'DCL', definition: 'Contact lens power' },
+            { symbol: 'Dspec', definition: 'Spectacle spherical equivalent' },
+            { symbol: 'd', definition: 'Vertex distance in meters (VD mm ÷ 1000)' },
+          ],
+          notes: '(+) lens (−VD): 1 − d(Dspec) denominator\n(−) lens (+VD): 1 + d(Dspec) denominator\nDefault VD if not given: 12 mm = 0.012 m',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'VERTEX DISTANCE RULES',
+          content: '(+) plus lens + less (−)VD = Hyperopia | (−) minus lens + plus (+)VD = Myopia | ≤ ±4.00D: power stays the same (VD effect negligible)',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'CL Magnification',
+          formula: 'CLM = 1 − d(F)',
+          variables: [
+            { symbol: 'd', definition: 'vertex distance in meters' },
+            { symbol: 'F', definition: 'lens prescription power (diopters)' },
+          ],
+          notes: 'Unit: × (magnification)',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Residual Astigmatism',
+          formula: 'RA = Steeper K − Flattest K\nDeduct from given cyl; copy axis',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'CL DIAMETER RULE',
+          content: '+2 mm from HVID → Soft CL diameter. −2 mm from HVID → Hard/RGP CL diameter. Average HVID = 11.7 mm.',
+        },
+      ],
+    },
+    {
       id: 'cl-care-complications',
       title: 'CL Care, Materials & Complications',
       icon: '⚠️',

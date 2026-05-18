@@ -110,6 +110,16 @@ export const SUBJECTS: Subject[] = [
     olePrep: true,
     isBonus: true,
   },
+  {
+    slug: 'low-vision',
+    name: 'Low Vision',
+    description: 'Magnification types, low power lens table, telescope formulas, relative distance and size magnification.',
+    color: 'emerald',
+    questionCount: 0,
+    icon: '🔍',
+    olePrep: true,
+    isBonus: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {

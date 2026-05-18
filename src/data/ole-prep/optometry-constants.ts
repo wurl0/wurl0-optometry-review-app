@@ -453,6 +453,155 @@ export const optometryConstantsData: OlePrepData = {
       ],
     },
     {
+      id: 'speed-light-ior-constants',
+      title: 'Speed of Light & IOR Values',
+      icon: '💡',
+      items: [
+        {
+          kind: 'recall' as const,
+          prompt: 'Speed of light in vacuum and common optical media',
+          answer: 'Vacuum: 186,050 mi/sec (300,000 km/sec) | Air: 186,000 mi/sec | H₂O: 140,000 mi/sec | Glass: 124,000 mi/sec | Diamond: 77,550 mi/sec',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Index of refraction of common optical materials',
+          answer: 'Air: 1.000 | Ice: 1.31 | H₂O: 1.33 | Ethyl Alcohol: 1.36 | CR-39: 1.49 | PMMA: 1.49 | Oil: 1.51 | Crown Glass: 1.523 | Polycarbonate/Light Flint: 1.58 | Dense Flint: 1.67 | Zircon: 1.923 | Diamond: 2.417',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Index of refraction of the eye components with powers where applicable',
+          answer: 'Tears: 1.336 | Cornea: 1.376 (43.00D) | Aqueous: 1.376 | Lens cortex: 1.386 (14.11D) | Lens nucleus: 1.406 | Vitreous: 1.336–1.357',
+        },
+      ],
+    },
+    {
+      id: 'photometry-unit-constants',
+      title: 'Photometry Units & Formulas',
+      icon: '🔦',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'Luminous Flux',
+          formula: 'F = 4πI     unit: Lumen',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Luminous Intensity',
+          formula: 'J = F / W   unit: candle\nW = A / r² (steradians)',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Illuminance — Inverse Square Law',
+          formula: 'E = I / d²  unit: FC or lux\nLaw: I₁/d₁² = I₂/d₂²',
+          notes: 'FC = lumen/sq ft | lux = lumen/sq m | doubling distance = ¼ illuminance',
+        },
+      ],
+    },
+    {
+      id: 'lv-constants',
+      title: 'Low Vision Formula Constants',
+      icon: '🔍',
+      items: [
+        {
+          kind: 'recall' as const,
+          prompt: 'Low power lens table — diopter, magnification, expected visual acuity',
+          answer: '+2.50D = 1× → 2/400 | +5.00D = 2× → 2/200 | +10.00D = 4× → 2/100 | +20.00D = 8× → 2/50 | +40.00D = 16× → 2/25',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Telescope Magnification & Length',
+          formula: 'M = Fo / Fe\nL = Fo + Fe',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Predicting LV Reading Add',
+          formula: 'Add (D) = 100 / WD (cm)',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Relative Distance Magnification',
+          formula: 'RDM = d₁ / d₂',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Relative Size Magnification',
+          formula: 'RSM = h₁ / h₂',
+        },
+      ],
+    },
+    {
+      id: 'cl-power-constants',
+      title: 'Contact Lens Power Formula Constants',
+      icon: '🔵',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: '① Surface Power',
+          formula: 'D = (n − 1) / r',
+        },
+        {
+          kind: 'formula' as const,
+          title: '② Nominal Power',
+          formula: 'Dn = D₁ + D₂',
+        },
+        {
+          kind: 'formula' as const,
+          title: '③ Equivalent Power (True)',
+          formula: 'Deq = Dn − (t/n) × D₁ × D₂',
+        },
+        {
+          kind: 'formula' as const,
+          title: '④ Effective Power (Back Vertex)',
+          formula: 'Dv = Dn + (t/n) × D₁²',
+        },
+        {
+          kind: 'formula' as const,
+          title: '⑤ Neutralizing Power (Front Vertex)',
+          formula: 'DFV = Dn + (t/n) × D₂²',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Vertex Distance Conversion',
+          formula: 'DCL = Dspec / (1 − d × Dspec)\nDefault VD = 0.012 m if not given',
+          notes: 'Use when spectacle power > ±4.00D',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Name the 5 CL power types in order and their formulas',
+          answer: '① Surface: D=(n−1)/r | ② Nominal: Dn=D₁+D₂ | ③ Equivalent: Deq=Dn−t/n(D₁)(D₂) | ④ Effective/Back Vertex: Dv=Dn+t/n(D₁²) | ⑤ Neutralizing/Front Vertex: DFV=Dn+t/n(D₂²)',
+        },
+      ],
+    },
+    {
+      id: 'mirror-shadow-formula-constants',
+      title: 'Mirror & Shadow Formula Constants',
+      icon: '🪞',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'Mirror Equation',
+          formula: '1/f = 1/p + 1/q',
+          notes: 'Shortcut: f = (p⁻¹ + q⁻¹)⁻¹',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Images in Inclined Mirrors',
+          formula: 'n = (360 ÷ A) ± 1',
+          notes: '+1 if 360/A is odd; −1 if even',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Minimum Mirror Size',
+          formula: 'Mirror size = Object size / 2',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Shadow formulas — point source diameter and extended source umbra/penumbra',
+          answer: 'Point source: a/b = c/d. Area: As = πr². Extended source: Umbra = x−y; Penumbra = x+y; from A₁/b=x/d and A₂/b=y/e. Total: As = Au + Ap.',
+        },
+      ],
+    },
+    {
       id: 'refractive-error',
       title: 'Refractive Error Classification',
       icon: '📊',
