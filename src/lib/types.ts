@@ -17,6 +17,7 @@ export interface Subject {
   questionCount: number
   icon: string
   olePrep?: boolean
+  isBonus?: boolean
 }
 
 export interface ExamResult {

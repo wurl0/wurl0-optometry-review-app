@@ -100,6 +100,16 @@ export const SUBJECTS: Subject[] = [
     icon: '🔭',
     olePrep: true,
   },
+  {
+    slug: 'optometry-constants',
+    name: 'Optometry Constants',
+    description: 'All key constants and formulas — Gullstrand\'s schematic eye, Hofstetter\'s, Prentice\'s Rule, cardinal points, and more.',
+    color: 'gold',
+    questionCount: 0,
+    icon: '📐',
+    olePrep: true,
+    isBonus: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
@@ -200,5 +210,14 @@ export const COLOR_MAP: Record<string, {
     gradient: 'from-lime-500 to-lime-700',
     progressBar: 'bg-lime-500',
     ring: '#84cc16',
+  },
+  gold: {
+    bg: 'bg-yellow-50',
+    border: 'border-yellow-300',
+    badge: 'bg-yellow-100 text-yellow-800',
+    text: 'text-yellow-700',
+    gradient: 'from-yellow-400 to-amber-500',
+    progressBar: 'bg-yellow-500',
+    ring: '#eab308',
   },
 }

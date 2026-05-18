@@ -8,6 +8,22 @@ export default async function OlePrepPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
+  const isAdmin =
+    user.email === process.env.ADMIN_EMAIL ||
+    user.id === process.env.ADMIN_USER_ID
+
+  const { data: attempts } = await supabase
+    .from('exam_attempts')
+    .select('subject')
+    .eq('user_id', user.id)
+
+  const attemptedSlugs = new Set((attempts ?? []).map(a => a.subject))
+  const regularSubjects = SUBJECTS.filter(s => s.olePrep && !s.isBonus)
+  const bonusSubject = SUBJECTS.find(s => s.isBonus && s.olePrep)
+  const completedCount = regularSubjects.filter(s => attemptedSlugs.has(s.slug)).length
+  const totalRequired = regularSubjects.length
+  const bonusUnlocked = isAdmin || completedCount >= totalRequired
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -37,9 +53,9 @@ export default async function OlePrepPage() {
           </ul>
         </div>
 
-        {/* Subject cards */}
+        {/* Regular subject cards */}
         <div className="grid sm:grid-cols-2 gap-4">
-          {SUBJECTS.filter(s => s.olePrep).map(subject => {
+          {regularSubjects.map(subject => {
             const c = COLOR_MAP[subject.color]
             return (
               <Link
@@ -63,6 +79,72 @@ export default async function OlePrepPage() {
             )
           })}
         </div>
+
+        {/* Bonus subject */}
+        {bonusSubject && (
+          <div className="mt-8">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xs font-bold uppercase tracking-widest text-yellow-600">Bonus</span>
+              <div className="flex-1 h-px bg-yellow-200" />
+            </div>
+
+            {bonusUnlocked ? (
+              <Link
+                href={`/ole-prep/${bonusSubject.slug}`}
+                className="block bg-white rounded-2xl overflow-hidden border-2 border-yellow-300 hover:shadow-md transition-shadow"
+              >
+                <div className="bg-gradient-to-br from-yellow-400 to-amber-500 px-5 py-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-3xl">{bonusSubject.icon}</span>
+                    <span className="text-xs font-bold bg-white/20 text-white px-2 py-0.5 rounded-full">
+                      {isAdmin ? 'Admin' : '🔓 Unlocked'}
+                    </span>
+                  </div>
+                  <h2 className="text-base font-bold text-white mt-2 leading-tight">{bonusSubject.name}</h2>
+                </div>
+                <div className="px-5 py-4">
+                  <div className="flex flex-wrap gap-1.5">
+                    {['Gullstrand', 'Hofstetter\'s', 'Prentice\'s Rule', 'All Formulas'].map(tag => (
+                      <span key={tag} className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-yellow-100 text-yellow-800">{tag}</span>
+                    ))}
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">{bonusSubject.description}</p>
+                </div>
+              </Link>
+            ) : (
+              <div className="bg-white rounded-2xl overflow-hidden border-2 border-dashed border-yellow-300 opacity-80">
+                <div className="bg-gradient-to-br from-yellow-100 to-amber-100 px-5 py-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-3xl grayscale">{bonusSubject.icon}</span>
+                    <span className="text-xs font-bold bg-yellow-200 text-yellow-700 px-2 py-0.5 rounded-full">
+                      🔒 Locked
+                    </span>
+                  </div>
+                  <h2 className="text-base font-bold text-yellow-800 mt-2 leading-tight">{bonusSubject.name}</h2>
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-xs text-gray-500 mb-3">{bonusSubject.description}</p>
+                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-3 py-2">
+                    <p className="text-xs font-semibold text-yellow-800 mb-1">
+                      Complete at least 1 quiz for every subject to unlock
+                    </p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <div className="flex-1 bg-yellow-200 rounded-full h-1.5">
+                        <div
+                          className="bg-yellow-500 h-1.5 rounded-full transition-all"
+                          style={{ width: `${(completedCount / totalRequired) * 100}%` }}
+                        />
+                      </div>
+                      <span className="text-xs font-bold text-yellow-700 shrink-0">
+                        {completedCount}/{totalRequired}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </main>
     </div>
   )
