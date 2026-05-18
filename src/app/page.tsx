@@ -139,7 +139,7 @@ export default async function HomePage() {
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
               <div className="text-2xl font-bold text-gray-900">
-                {Object.keys(statsBySubject).length}/{SUBJECTS.length}
+                {Object.keys(statsBySubject).length}/{SUBJECTS.filter(s => !s.isBonus).length}
               </div>
               <div className="text-xs text-gray-500 mt-0.5">Subjects tried</div>
             </div>
@@ -148,7 +148,7 @@ export default async function HomePage() {
 
         {/* Subject cards */}
         <div className="grid sm:grid-cols-2 gap-4">
-          {SUBJECTS.map(subject => {
+          {SUBJECTS.filter(s => !s.isBonus).map(subject => {
             const c = COLOR_MAP[subject.color]
             const stats = statsBySubject[subject.slug]
             return (
