@@ -408,6 +408,146 @@ const data: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'eom-anatomy-laws',
+      title: 'EOM Anatomy & Laws of Eye Movement',
+      icon: '👁️',
+      items: [
+        {
+          kind: 'mnemonic',
+          term: 'EOM Innervation',
+          device: 'LR6 SO4 — All Others 3',
+          breakdown: 'Lateral Rectus = CN6 (Abducens); Superior Oblique = CN4 (Trochlear); All Others (MR, SR, IR, IO) = CN3 (Oculomotor). The single most tested EOM fact on boards.',
+        },
+        {
+          kind: 'fact',
+          content: 'EOM CHARACTERISTICS: MR = strongest, heaviest, closest to limbus (5.5mm), CN3. LR = CN6, thinnest tendon. SR = farthest from limbus (7.7mm), runs 23° nasal to visual axis, CN3. IR = 6.0mm from limbus, CN3. SO = LONGEST overall (60mm including trochlea), arises from annulus of Zinn, CN4. IO = the ONLY EOM that does NOT arise from the annulus of Zinn — originates from the inferior nasal orbital rim, CN3.',
+          highlight: 'IO = only EOM NOT from annulus of Zinn; MR = closest to limbus; SR = farthest',
+        },
+        {
+          kind: 'fact',
+          content: 'SPIRAL OF TILLAUX: The four rectus muscles insert at increasing distances from the limbus in the order MR → IR → LR → SR. MR: 5.5mm, IR: 6.0mm, LR: 6.9mm, SR: 7.7mm. This spiral pattern is clinically important for strabismus surgery — limbal incisions must account for these distances.',
+          highlight: 'Spiral of Tillaux: MR(5.5) → IR(6.0) → LR(6.9) → SR(7.7) from limbus',
+        },
+        {
+          kind: 'fact',
+          content: 'HERING\'S LAW OF EQUAL INNERVATION: Equal and simultaneous innervation is sent to yoke muscles (contralateral synergist pairs) during binocular eye movements. This is a BINOCULAR law. Yoke pairs by cardinal gaze: R-LR+L-MR (dextroversion), R-MR+L-LR (levoversion), R-SR+L-IO (dextroelevation), R-IO+L-SR (levoelevation), R-IR+L-SO (dextrodepression), R-SO+L-IR (levodepression). A paretic muscle causes apparent over-action of its yoke muscle.',
+          highlight: 'Hering = BINOCULAR; equal impulse to yoke muscles (contralateral synergists)',
+        },
+        {
+          kind: 'fact',
+          content: 'SHERRINGTON\'S LAW OF RECIPROCAL INNERVATION: When an agonist muscle contracts, its direct antagonist within the SAME eye simultaneously relaxes. This is a MONOCULAR law. Example: MR contracts for adduction → LR of the same eye relaxes. Boards frequently ask which law is monocular vs binocular.',
+          highlight: 'Sherrington = MONOCULAR; agonist contracts → ipsilateral direct antagonist relaxes',
+        },
+        {
+          kind: 'trap',
+          question: 'Hering\'s Law and Sherrington\'s Law both apply to the same eye\'s muscles. True or False?',
+          wrong: 'True — both describe coordination between muscles',
+          correct: 'False — Hering\'s Law is BINOCULAR (equal innervation to yoke muscles in opposite eyes); Sherrington\'s Law is MONOCULAR (reciprocal innervation between agonist and antagonist within one eye)',
+          why: 'Boards will give a scenario and ask which law applies. Hering = between the two eyes. Sherrington = within one eye. Esotropia with a paretic MR showing apparent LR over-action in the other eye = Hering\'s Law.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Which EOM does NOT originate from the annulus of Zinn, and where does it arise?',
+          answer: 'The Inferior Oblique (IO). It is the only EOM that does not originate from the annulus of Zinn (common tendinous ring). It arises from the inferior nasal orbital rim (anteromedial floor of the orbit). Innervated by the inferior branch of CN3.',
+        },
+      ],
+    },
+    {
+      id: 'visual-axes-fixation-diplopia',
+      title: 'Visual Axes, Fixation & Diplopia',
+      icon: '🔭',
+      items: [
+        {
+          kind: 'fact',
+          content: 'AXES OF FICK — three axes of eye rotation through the center of rotation: Y-axis (sagittal/optic axis, 24mm) = torsional movements occur around this. X-axis (transverse/horizontal, 22mm) = elevation and depression occur around this. Z-axis (vertical/frontal, 22mm) = horizontal movements (adduction/abduction) occur around this.',
+          highlight: 'Y=torsion (24mm); X=elevation/depression (22mm); Z=adduction/abduction (22mm)',
+        },
+        {
+          kind: 'fact',
+          content: 'VISUAL ANGLES: Alpha (α) = angle between visual axis and optic axis at the nodal point; normally 5° nasal. Kappa (κ) = angle between pupillary axis and visual axis at the cornea; POSITIVE Kappa = visual axis nasal to pupillary axis → appears pseudo-exotropic; NEGATIVE Kappa → appears pseudo-esotropic. Lambda (λ) = angle between pupillary axis and line of sight. Gamma (γ) = angle between optic axis and line of sight at center of rotation.',
+          highlight: 'Kappa: positive = pseudo-exotropia; negative = pseudo-esotropia; tested with Hirschberg',
+        },
+        {
+          kind: 'fact',
+          content: 'FIXATION TYPES (6): Voluntary = intentional. Reflex/Involuntary = automatic response to stimulus. Saccadic = FASTEST; rapid ballistic re-fixation between targets. Pursuit = slow, smooth velocity-matched following of a moving object. Scanning = voluntary visual scanning without a fixed target. Steady = sustained fixation on a stationary target.',
+          highlight: 'Saccadic = fastest fixation type; Pursuit = slow velocity-matched following',
+        },
+        {
+          kind: 'fact',
+          content: 'DIPLOPIA TYPES: Physiological diplopia = normal diplopia of objects outside Panum\'s fusional area. UNCROSSED (homonymous): false image is on the SAME side as the deviating eye — seen with DISTAL objects and ESOPHORIC tendency. CROSSED (heteronymous): false image is on the OPPOSITE side — seen with PROXIMAL objects and EXOPHORIC tendency. Pathological diplopia: caused by strabismus, cataract, lens subluxation, MS, myasthenia gravis, corneal conditions.',
+          highlight: 'Uncrossed = distal object = esophoric; Crossed = proximal = exophoric',
+        },
+        {
+          kind: 'mnemonic',
+          term: '8 Monocular Depth Perception Cues',
+          device: 'SCI-AMLV: Size, Clearness, Interposition, Aerial, Mathematical perspective, Light/shadow, Motion parallax, Velocity',
+          breakdown: 'Size of retinal image, Clearness/detail, Intervening objects (interposition), Aerial perspective (atmospheric haze), Mathematical/linear perspective, Light and shadow, Motion parallax, Velocity of moving objects. All 8 allow depth perception without binocular disparity.',
+        },
+        {
+          kind: 'trap',
+          question: 'A patient with esotropia experiences CROSSED diplopia. True or False?',
+          wrong: 'True — esotropia means the eye crosses in, so the diplopia is crossed',
+          correct: 'False — esotropia (convergent deviation) produces UNCROSSED (homonymous) diplopia. The false image falls on the same side as the deviating eye. Crossed diplopia is seen with EXOtropia (divergent deviation).',
+          why: 'The naming of diplopia can be counterintuitive. Esotropia = inward deviation = fovea receives image from farther temporal field = the false image appears on the same side (uncrossed). Exotropia = outward deviation = the opposite. Boards commonly reverse this.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'What is angle Kappa, and what does positive vs negative angle Kappa indicate clinically?',
+          answer: 'Angle Kappa = angle between the pupillary axis and the visual axis, measured at the cornea. Positive Kappa: visual axis is nasal to the pupillary axis → Hirschberg light reflex appears temporal → PSEUDO-EXOTROPIA appearance. Negative Kappa: visual axis is temporal → light reflex appears nasal → PSEUDO-ESOTROPIA appearance. Measured by the Hirschberg corneal light reflex test.',
+        },
+      ],
+    },
+    {
+      id: 'fusion-accommodative-compensatory',
+      title: 'Fusion, Accommodation & Compensatory Postures',
+      icon: '🔗',
+      items: [
+        {
+          kind: 'fact',
+          content: 'FUSION THEORIES (3): Worth\'s Theory = fusion is a CEREBRAL/psychological function — the brain compulsively combines the two retinal images. Verhoeff\'s Theory = retinal rivalry and replacement — when images from the two eyes differ significantly, one replaces the other. Wall\'s Theory = perceptual projection — both images are projected onto a unified perceptual field through cortical processing.',
+          highlight: 'Worth = cerebral (most accepted); Verhoeff = retinal rivalry; Wall = perceptual projection',
+        },
+        {
+          kind: 'fact',
+          content: 'NORMAL FUSION AMPLITUDES: Convergence (BI prism) = 35–40Δ — LARGEST reserve. Divergence (BO prism) = 5–7Δ — SMALLEST reserve. Supravergence = 3Δ per eye. Infravergence = 3Δ per eye. Cyclovergence = 2–3Δ. Reduced convergence amplitude is the hallmark of convergence insufficiency. Reduced divergence amplitudes suggest divergence insufficiency.',
+          highlight: 'Convergence 35–40Δ (largest); Divergence 5–7Δ (smallest); Supra/infra 3Δ each',
+        },
+        {
+          kind: 'fact',
+          content: 'ACCOMMODATIVE DYSFUNCTION — 5 types: (1) Insufficiency: amplitude lower than age-expected normal. (2) Ill-sustained (fatigue): normal initial amplitude that drops with sustained near demand. (3) Infacility/Inertia: slow, sluggish accommodation; difficulty rapidly changing focus between distances. (4) Paralysis: complete loss of accommodation; internal ophthalmoplegia from cycloplegia or CN3 palsy. (5) Spasm: excessive tonic accommodation presenting as pseudo-myopia; ciliary muscle locked in contraction; relieved by cycloplegics.',
+          highlight: 'Spasm = pseudo-myopia; Paralysis = complete loss; Ill-sustained = fatigue type',
+        },
+        {
+          kind: 'fact',
+          content: 'COMPENSATORY HEAD/FACE POSTURES in EOM palsy: IO damage → tilt toward SAME (ipsilateral) side. SO damage → tilt toward OPPOSITE (contralateral) side. Face turn → toward the GOOD eye (contralateral to the restricted gaze). Hypertropia (one eye higher) → chin DEPRESSION. Hypotropia (one eye lower) → chin ELEVATION.',
+          highlight: 'IO palsy = tilt SAME side; SO/CN4 palsy = tilt OPPOSITE side; hypertropia = chin down',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'SO vs IO Compensatory Tilt',
+          device: 'IO = Ipsilateral tilt; SO = Opposite tilt',
+          breakdown: 'IO (Inferior Oblique) damage → head tilts IPSILATERAL (same side). SO (Superior Oblique / CN4) damage → head tilts to the OPPOSITE side (away from affected eye). CN4 palsy is the most common cause of vertical diplopia — the patient tilts away from the affected side to reduce extorsion and vertical misalignment.',
+        },
+        {
+          kind: 'trap',
+          question: 'A patient with right CN4 palsy (right SO weakness) compensates by tilting the head to the right. True or False?',
+          wrong: 'True — tilting toward the affected side aligns the eyes',
+          correct: 'False — SO palsy causes a tilt toward the OPPOSITE side. Right CN4 palsy → left head tilt. The left head tilt reduces the intorsion demand on the paretic right SO and decreases vertical diplopia.',
+          why: 'The SO is the primary intorter. With a right SO palsy, the right eye is extorted and elevated. Tilting LEFT places the right eye in a more intorted position using the intact left SO/right IR mechanism, reducing the cyclovertical diplopia.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'List the 5 types of accommodative dysfunction with a key distinguishing feature of each.',
+          answer: '(1) Insufficiency: amplitude below Hofstetter\'s minimum for age. (2) Ill-sustained: normal amplitude at first, fatigues with sustained demand. (3) Infacility/Inertia: sluggish change between near and far; MEM reveals lag; poor facility on ±2.00D flippers. (4) Paralysis: zero amplitude; internal ophthalmoplegia. (5) Spasm: excess accommodation causing pseudo-myopia; resolved by cycloplegic refraction.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'What are the normal fusional vergence amplitudes, and which is the largest and smallest reserve?',
+          answer: 'Convergence (BI): 35–40Δ — LARGEST. Divergence (BO): 5–7Δ — SMALLEST. Supravergence: 3Δ each eye. Infravergence: 3Δ each eye. Cyclovergence: 2–3Δ. Loss of convergence reserve is the hallmark of convergence insufficiency; reduced divergence amplitudes suggest divergence insufficiency or space esotropia.',
+        },
+      ],
+    },
   ],
 }
 

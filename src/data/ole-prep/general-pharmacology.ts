@@ -254,5 +254,182 @@ export const generalPharmacologyData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'glaucoma-pharmacotherapy',
+      title: 'Glaucoma Pharmacotherapy',
+      icon: '👁️',
+      items: [
+        {
+          kind: 'fact',
+          content: 'PROSTAGLANDIN ANALOGS (PGF2α derivatives) — MOST EFFECTIVE class for IOP reduction. Examples: Latanoprost (Xalatan), Travoprost (Travatan), Bimatoprost (Lumigan). MOA: increase UVEOSCLERAL outflow of aqueous humor. Given once daily at NIGHT. S/E: iris darkening (prostaglandin-induced melanogenesis), eyelash growth (hypertrichosis), conjunctival hyperemia, anterior uveitis.',
+          highlight: 'Latanoprost/Travoprost: PGF2α; most effective IOP reduction; once nightly; iris darkening S/E',
+        },
+        {
+          kind: 'fact',
+          content: 'BETA-BLOCKERS for glaucoma: MOA = decrease aqueous humor PRODUCTION. Non-selective: Timolol (DOC for glaucoma), Carteolol, Levobunolol — C/I: asthma, COPD, bradycardia, heart block. Selective B1: Betaxolol — SAFER in asthma/COPD patients (still use with caution). S/E: bradycardia, hypotension, bronchospasm; Betaxolol may reduce ocular perfusion less than timolol.',
+          highlight: 'Timolol = DOC glaucoma (non-selective); Betaxolol = safer in asthma (selective B1)',
+        },
+        {
+          kind: 'fact',
+          content: 'CARBONIC ANHYDRASE INHIBITORS (CAIs) — MOA: inhibit carbonic anhydrase in ciliary body → decrease aqueous humor production. Systemic: Acetazolamide (Diamox) — DOC for acute angle-closure emergency; also reduces ICP. S/E: paresthesia, metabolic acidosis, kidney stones, sulfa allergy. Topical: Dorzolamide (Trusopt), Brinzolamide (Azopt) — fewer systemic S/E; avoid in sulfa allergy.',
+          highlight: 'Acetazolamide = DOC acute angle closure + lowers ICP; Dorzolamide = topical CAI',
+        },
+        {
+          kind: 'fact',
+          content: 'ALPHA-2 AGONISTS for glaucoma: Brimonidine (Alphagan), Apraclonidine. MOA: decrease aqueous production AND increase uveoscleral outflow (dual mechanism). Brimonidine also has neuroprotective properties. S/E: ocular allergy (brimonidine has ~25% allergy rate), dry mouth, drowsiness, rebound hyperemia. C/I: neonates/young children (systemic absorption → CNS depression).',
+          highlight: 'Brimonidine: dual MOA (decrease production + increase uveoscleral outflow); high allergy rate',
+        },
+        {
+          kind: 'fact',
+          content: 'MIOTICS (Cholinergic agonists) for glaucoma: Pilocarpine — MOST widely used miotic; direct muscarinic agonist. MOA: contract ciliary muscle → opens trabecular meshwork → increases CONVENTIONAL outflow. Also contracts sphincter pupillae → miosis. Used in acute angle-closure (breaks the pupillary block) and chronic open-angle glaucoma. S/E: induced myopia, brow ache, dim vision (miosis), retinal detachment risk. Carbachol: more potent, longer acting, resistant to cholinesterase.',
+          highlight: 'Pilocarpine: most common miotic; increases conventional outflow; causes miosis + induced myopia',
+        },
+        {
+          kind: 'fact',
+          content: 'OSMOTIC DIURETICS for acute glaucoma — MOA: create osmotic gradient to draw fluid from vitreous and anterior chamber into blood. Mannitol (IV): DRUG OF CHOICE for acute angle-closure attack unresponsive to drops; also reduces ICP. Glycerol (oral): alternative to mannitol. Given as temporizing measure before surgery. S/E: headache, nausea, dehydration, electrolyte imbalance; avoid in renal failure.',
+          highlight: 'Mannitol IV = DOC acute angle-closure emergency; also lowers ICP; osmotic diuretic',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'Glaucoma Drug Classes by MOA',
+          device: 'PABCAMO: Prostaglandins, Alpha-2 agonists, Betas, CAIs, Alpha-1, Miotics, Osmotic',
+          breakdown: 'Prostaglandins (increase uveoscleral outflow). Alpha-2 agonists (decrease production + increase uveoscleral). Beta-blockers (decrease production). CAIs (decrease production). Miotics/Cholinergics (increase conventional/trabecular outflow). Osmotic diuretics (emergency dehydration of vitreous).',
+        },
+        {
+          kind: 'trap',
+          question: 'Betaxolol is as safe as timolol for patients with asthma because it is a beta-blocker with IOP-lowering effects. True or False?',
+          wrong: 'True — betaxolol is safe because it lowers IOP just like timolol',
+          correct: 'False — Betaxolol is RELATIVELY safer in asthma because it is SELECTIVE for B1 receptors (less B2 blockade), but it is still used with caution. Timolol is NON-SELECTIVE and is absolutely contraindicated in asthma/COPD.',
+          why: 'Non-selective beta-blockers (timolol, levobunolol, carteolol) block both B1 (heart) and B2 (lungs) receptors — causing bronchospasm. Betaxolol blocks B1 predominantly, sparing the bronchial B2 receptors. It is not completely safe in severe asthma, but is the preferred beta-blocker when one is needed in a pulmonary patient.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'List the 5 classes of glaucoma medications, their MOA, and one key example of each.',
+          answer: '(1) Prostaglandin analogs: increase uveoscleral outflow — Latanoprost. (2) Beta-blockers: decrease aqueous production — Timolol (DOC), Betaxolol (B1-selective). (3) CAIs: decrease aqueous production — Acetazolamide (systemic), Dorzolamide (topical). (4) Alpha-2 agonists: decrease production + increase uveoscleral outflow — Brimonidine. (5) Miotics (cholinergics): increase conventional outflow — Pilocarpine. Emergency: Mannitol (osmotic; vitreous dehydration).',
+        },
+      ],
+    },
+    {
+      id: 'cns-neuro-pharmacology',
+      title: 'CNS & Neuromuscular Pharmacology',
+      icon: '🧠',
+      items: [
+        {
+          kind: 'fact',
+          content: 'BOTULINUM TOXIN (Botox) in ophthalmology: MOA = inhibits release of acetylcholine at the neuromuscular junction → local flaccid paralysis of the injected muscle. Used for treatment of strabismus (replacing or supplementing surgery), blepharospasm, and hemifacial spasm. Duration of effect: 3–6 months. NOT a permanent solution — reinjection required.',
+          highlight: 'Botulinum toxin: inhibits ACh release at NMJ; used for strabismus, blepharospasm; lasts 3–6 months',
+        },
+        {
+          kind: 'fact',
+          content: 'ANTI-PSYCHOTIC EXTRAPYRAMIDAL SIDE EFFECTS (EPS) — most serious adverse effect of typical antipsychotics (phenothiazines, butyrophenones like haloperidol). MOA: D2 receptor blockade in basal ganglia. EPS in chronological order: Acute dystonia (first 1–3 days): sustained muscle contractions, oculogyric crisis. Akathisia (3–90 days): motor restlessness, inability to sit still. Tardive dyskinesia (90–365 days): repetitive involuntary movements of face/tongue — IRREVERSIBLE, worst S/E.',
+          highlight: 'EPS timeline: Acute dystonia (1–3d) → Akathisia (3–90d) → Tardive dyskinesia (90–365d)',
+        },
+        {
+          kind: 'fact',
+          content: 'MORPHINE and OPIOID OCULAR EFFECTS: Morphine and most opioids cause MIOSIS (pupillary constriction) via opioid receptor stimulation of the Edinger-Westphal nucleus (CN3 parasympathetic). This is a key clinical sign of opioid overdose — pinpoint pupils. Meperidine (pethidine) is the exception — it can cause MYDRIASIS via its atropine-like (anticholinergic) effect.',
+          highlight: 'Morphine → miosis (pinpoint pupils); Meperidine exception → mydriasis (anticholinergic)',
+        },
+        {
+          kind: 'fact',
+          content: 'ANTI-PARKINSONIAN DRUGS: L-dopa (levodopa) + Carbidopa — DOC for Parkinson\'s. L-dopa crosses the blood-brain barrier; Carbidopa = dopa-decarboxylase inhibitor (prevents peripheral conversion, reduces S/E). MAO-B inhibitor: Selegiline — slows dopamine breakdown. COMT inhibitors: tolcapone, entacapone. Anticholinergics: benztropine, trihexyphenidyl (useful for tremor, cause mydriasis as S/E).',
+          highlight: 'L-dopa + Carbidopa = DOC Parkinson\'s; anticholinergics cause mydriasis as S/E',
+        },
+        {
+          kind: 'fact',
+          content: 'ANTI-EPILEPTIC DRUGS (DOC by seizure type): Grand mal (generalized tonic-clonic): Phenytoin (hydantoin) = DOC. Petit mal (absence): Ethosuximide = DOC. Status epilepticus: IV Diazepam (BZD) = DOC. Phenobarbital: oldest anti-epileptic; used for grand mal and status. Valproic acid: broad spectrum (grand mal, petit mal, mixed). Carbamazepine: temporal lobe/complex partial seizures.',
+          highlight: 'Grand mal DOC = Phenytoin; Petit mal DOC = Ethosuximide; Status epilepticus DOC = IV Diazepam',
+        },
+        {
+          kind: 'fact',
+          content: 'BENZODIAZEPINES and reversal: Diazepam, lorazepam, midazolam — MOA: enhance GABA-A receptor activity (increase Cl- influx). Uses: anxiolytic, sedation, muscle relaxant, anti-epileptic, anti-panic. ANTIDOTE: Flumazenil = competitive BZD receptor antagonist; reverses sedation and respiratory depression. Barbiturate OD has NO antidote — supportive care only.',
+          highlight: 'BZD antidote = Flumazenil (competitive antagonist); Barbiturate OD = no antidote',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'Anti-Psychotic EPS Timeline',
+          device: 'DAT — Days, Akathisia, Tardive',
+          breakdown: 'Acute Dystonia: Days 1–3. Akathisia: 3–90 days. Tardive dyskinesia: 90–365 days (90 days to 1 year). Tardive dyskinesia is the worst because it may be IRREVERSIBLE. Oculogyric crisis (eyes rolling up) is a classic acute dystonia presentation.',
+        },
+        {
+          kind: 'trap',
+          question: 'Meperidine (Demerol) causes miosis like other opioids because it acts on opioid receptors. True or False?',
+          wrong: 'True — all opioids cause miosis via opioid receptors',
+          correct: 'False — Meperidine is the EXCEPTION among opioids. It has ATROPINE-LIKE (anticholinergic) activity that can cause MYDRIASIS, unlike other opioids which cause miosis.',
+          why: 'All opioids stimulate Edinger-Westphal nucleus → miosis. Meperidine\'s anticholinergic property blocks muscarinic receptors on the sphincter pupillae → mydriasis. This is a classic boards distinction. Morphine OD = pinpoint pupils; Meperidine OD = dilated pupils is a testable fact.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'List the EPS side effects of anti-psychotic drugs in order of onset, and which is the most dangerous.',
+          answer: '(1) Acute dystonia: 1–3 days; sustained muscle contractions, oculogyric crisis; treated with anticholinergics (benztropine) or antihistamines (diphenhydramine). (2) Akathisia: 3–90 days; motor restlessness; treated with propranolol or BZDs. (3) Tardive dyskinesia: 90–365 days; repetitive involuntary orofacial movements; may be IRREVERSIBLE — the most dangerous EPS. Reduce dose or switch to atypical antipsychotic (clozapine).',
+        },
+      ],
+    },
+    {
+      id: 'anti-inflammatory-analgesics',
+      title: 'Anti-Inflammatory Drugs & Analgesics',
+      icon: '💊',
+      items: [
+        {
+          kind: 'mnemonic',
+          term: 'Aspirin\'s 4 A\'s',
+          device: '4 A\'s: Antipyretic, Analgesic, Anti-inflammatory, Anti-platelet',
+          breakdown: 'Aspirin (Acetylsalicylic acid) has 4 main effects. Anti-platelet effect: irreversibly inhibits COX-1 in platelets (permanent for platelet lifespan ~7–10 days). C/I: gouty arthritis (increases uric acid retention). Risk: Reye\'s syndrome in children with viral illness.',
+        },
+        {
+          kind: 'fact',
+          content: 'NSAID MECHANISM AND S/E: MOA = inhibit cyclooxygenase (COX) → decrease prostaglandin synthesis. COX-1 (constitutive): protects gastric mucosa, platelet aggregation. COX-2 (inducible): inflammation, pain, fever. Non-selective COX inhibitors (aspirin, ibuprofen, indomethacin) inhibit both → GI S/E. Selective COX-2 inhibitors (celecoxib) — fewer GI S/E but increased MI/CVA risk (rofecoxib, valdecoxib withdrawn). S/E of NSAIDs: PUD, prolonged bleeding, hepatotoxicity, nephrotoxicity.',
+          highlight: 'NSAIDs: inhibit COX → decrease PGs; S/E: PUD, bleeding, hepatotoxicity, nephrotoxicity',
+        },
+        {
+          kind: 'fact',
+          content: 'ACETAMINOPHEN (Paracetamol): NOT an NSAID — has analgesic and antipyretic effects ONLY; no anti-inflammatory property. Advantage over aspirin: no Reye\'s syndrome risk, no GI bleeding, no antiplatelet effect. S/E: hepatotoxicity in overdose (depletes glutathione). ANTIDOTE: N-acetylcysteine (effective if given within 8–24 hours). Ibuprofen is a better antipyretic than paracetamol.',
+          highlight: 'Acetaminophen: NOT NSAID (no anti-inflammatory); OD antidote = N-acetylcysteine',
+        },
+        {
+          kind: 'fact',
+          content: 'CORTICOSTEROIDS — GLUCOCORTICOIDS by duration: Short/medium-acting (8–12h): Cortisone, Cortisol (hydrocortisone), Prednisone, Prednisolone, Methylprednisolone. Intermediate-acting (12–36h): Triamcinolone. Long-acting (36–54h): Dexamethasone, Betamethasone. MINERALOCORTICOIDS: Fludrocortisone, Deoxycorticosterone — affect electrolytes. MOA anti-inflammatory: inhibit leukotrienes (slow substance of anaphylaxis), inhibit WBC migration, inhibit PGs synthesis.',
+          highlight: 'Short: prednisone/prednisolone; Long: dexamethasone/betamethasone; MOA: inhibit leukotrienes + PGs',
+        },
+        {
+          kind: 'fact',
+          content: 'GOUT TREATMENT: Colchicine = drug of choice for ACUTE gout attack; MOA = inhibit migration of PMN (neutrophils) into the joint; S/E = diarrhea (dose-limiting); toxicity signs = bloody diarrhea, hematuria. Allopurinol = drug of choice for CHRONIC gout; MOA = inhibit xanthine oxidase (enzyme converting hypoxanthine → xanthine → uric acid). Uricosuric agents (probenecid, sulfinpyrazone) = chronic gout; MOA = inhibit tubular reabsorption of uric acid.',
+          highlight: 'Gout: Colchicine = acute (inhibit PMN migration); Allopurinol = chronic (inhibit xanthine oxidase)',
+        },
+        {
+          kind: 'fact',
+          content: 'ANTIHISTAMINES — H1, H2, H3 receptors: H1 = endothelium and smooth muscles (inflammation, bronchoconstriction, itch); H2 = gastric parietal cells and myocardium (HCl secretion, heart rate); H3 = CNS (inhibitory; decreases histamine release). H1 ANTIHISTAMINES: 1st generation (sedating): diphenhydramine, promethazine, hydroxyzine, meclizine (anti-vertigo). 2nd generation (non-sedating): cetirizine, loratadine, fexofenadine, desloratadine, azelastine. S/E of 1st gen: sedation, blurred vision (anticholinergic mydriasis), urinary retention, dry mouth.',
+          highlight: '1st gen antihistamines: sedating + anticholinergic (blurred vision, mydriasis); 2nd gen: non-sedating',
+        },
+        {
+          kind: 'fact',
+          content: 'NARCOTIC ANALGESICS — key facts for boards: Morphine = causes MIOSIS (pupillary constriction) via Edinger-Westphal stimulation. Codeine = powerful cough suppressant; ether of morphine; lower CNS depression. Meperidine = anticholinergic effect → MYDRIASIS (exception to opioid miosis rule). Naloxone = pure opioid antagonist; DOC for acute opioid overdose. Naltrexone = DOC for heroin-dependent patients (maintenance). Dextromethorphan = cough suppressant with NO analgesia.',
+          highlight: 'Morphine = miosis; Meperidine = mydriasis (exception); Naloxone = OD antidote; Naltrexone = heroin DOC',
+        },
+        {
+          kind: 'trap',
+          question: 'Colchicine treats acute gout by reducing uric acid production in the joint. True or False?',
+          wrong: 'True — it inhibits uric acid synthesis like allopurinol',
+          correct: 'False — Colchicine does NOT affect uric acid levels. It treats acute gout by INHIBITING PMN (neutrophil) MIGRATION into the joint, reducing the inflammatory cascade. Allopurinol reduces uric acid by inhibiting xanthine oxidase, but is used for CHRONIC gout prevention, not acute attacks.',
+          why: 'This is a classic mechanism mix-up. Colchicine = anti-inflammatory (blocks neutrophil influx). Allopurinol = uric acid lowering (xanthine oxidase inhibitor). Probenecid = uricosuric (increases renal uric acid excretion). All three have different mechanisms and different indications.',
+        },
+        {
+          kind: 'trap',
+          question: 'Second-generation antihistamines are preferred over first-generation for allergic conjunctivitis because they have no ocular side effects. True or False?',
+          wrong: 'True — 2nd gen are completely free of ocular side effects',
+          correct: 'False — 2nd gen antihistamines have significantly fewer anticholinergic S/E than 1st gen, but they are preferred mainly because they do not cause sedation. 1st gen (diphenhydramine, etc.) cause blurred vision and mydriasis due to anticholinergic effects on the ciliary muscle and iris sphincter.',
+          why: '1st generation antihistamines have antimuscarinic activity — they block M3 receptors on the ciliary muscle and sphincter pupillae, causing cycloplegia (blurred vision/near point recedes) and mydriasis. This is clinically important for optometrists who need to know drug-induced pupil dilation vs pathological causes.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'What is the DOC for acute gout vs chronic gout, and what is the MOA of each?',
+          answer: 'Acute gout: Colchicine — MOA = inhibit migration of PMN (neutrophils) into the joint, interrupting the inflammatory cycle. Also NSAIDs (especially indomethacin). Chronic gout prevention: Allopurinol — MOA = inhibit xanthine oxidase, preventing conversion of hypoxanthine → xanthine → uric acid, thus lowering serum uric acid. Uricosuric agents (probenecid): inhibit tubular reabsorption of uric acid for chronic management.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'List the glucocorticoids by duration of action (short/medium → intermediate → long acting).',
+          answer: 'Short/Medium-acting (8–12 hrs): Cortisone, Hydrocortisone (cortisol), Prednisone, Prednisolone, Methylprednisolone. Intermediate-acting (12–36 hrs): Triamcinolone, Fluprednisolone. Long-acting (36–54 hrs): Dexamethasone, Betamethasone. Key for boards: Dexamethasone is the most potent and longest acting — also the one causing corticosteroid-induced glaucoma after 6 weeks of topical use.',
+        },
+      ],
+    },
   ],
 }
