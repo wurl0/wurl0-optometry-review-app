@@ -294,6 +294,16 @@ export const optometryConstantsData: OlePrepData = {
         },
         {
           kind: 'recall',
+          prompt: "Morgan's norms — PFV and NFV at distance (blur/break/recovery)",
+          answer: 'PFV: 9/19/10 | NFV: x/7/4 (blur point often not found at distance)',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Normal fusional vergence amplitudes (BI and BO prism findings)',
+          answer: 'Convergence (BI): 35–40Δ | Divergence (BO): 5–7Δ | Supravergence: 3Δ each eye | Infravergence: 3Δ each eye | Cyclovergence: 2–3Δ',
+        },
+        {
+          kind: 'recall',
           prompt: 'Normal NPC break point',
           answer: '≤ 6 cm — values >6 cm suggest convergence insufficiency',
         },
@@ -370,6 +380,75 @@ export const optometryConstantsData: OlePrepData = {
           kind: 'recall',
           prompt: 'Dark adaptation time vs. light adaptation time',
           answer: 'Full dark adaptation: 1–2 hours | Light adaptation (pigment migration): ~10 minutes',
+        },
+      ],
+    },
+    {
+      id: 'eom-anatomy-constants',
+      title: 'EOM Anatomy & Axes of Fick',
+      icon: '📐',
+      items: [
+        {
+          kind: 'recall',
+          prompt: 'Spiral of Tillaux — rectus muscle insertion distances from the limbus',
+          answer: 'MR: 5.5 mm | IR: 6.0 mm | LR: 6.9 mm | SR: 7.7 mm (in order of increasing distance from limbus)',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Axes of Fick — three axes of eye rotation with their lengths',
+          answer: 'Y-axis (sagittal/optic axis): 24 mm — torsion | X-axis (transverse/horizontal): 22 mm — elevation and depression | Z-axis (vertical/frontal): 22 mm — adduction and abduction',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Which EOM is the strongest and heaviest, and which inserts closest to vs. farthest from the limbus?',
+          answer: 'Strongest/heaviest: Medial Rectus (MR). Closest to limbus: MR at 5.5 mm. Farthest from limbus: SR at 7.7 mm.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Length of the Superior Oblique including trochlea, and which EOM does NOT arise from the annulus of Zinn?',
+          answer: 'SO total length (including trochlea): 60 mm — the longest EOM overall. The Inferior Oblique (IO) is the ONLY EOM that does not arise from the annulus of Zinn; it originates from the inferior nasal orbital rim.',
+        },
+        {
+          kind: 'fact',
+          highlight: 'ANGLE ALPHA',
+          content: 'Angle Alpha (α) = angle between the visual axis and the optic axis at the nodal point. Normal value: ~5° nasal. The visual axis is nasal to the optic axis.',
+        },
+      ],
+    },
+    {
+      id: 'pharmacology-constants',
+      title: 'Pharmacology Time Constants',
+      icon: '⏱️',
+      items: [
+        {
+          kind: 'recall',
+          prompt: 'Cycloplegic/mydriatic agents — duration of action from longest to shortest',
+          answer: 'Atropine: 7–14 days | Scopolamine: 5–7 days | Homatropine: 24–48 hrs | Cyclopentolate: 6–24 hrs | Tropicamide: 4–6 hrs',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Normal intraocular pressure range',
+          answer: '10–21 mmHg (mean ~15–16 mmHg). Values >21 mmHg = ocular hypertension. Values <6 mmHg = hypotony.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Anti-psychotic EPS onset timeline (3 stages)',
+          answer: 'Acute dystonia: 1–3 days | Akathisia: 3–90 days | Tardive dyskinesia: 90–365 days (up to 1 year of use)',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Aminoglycoside toxicity threshold — after how many days does ototoxicity/nephrotoxicity risk rise?',
+          answer: 'Risk significantly increases after >5 days of use.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Corticosteroid-induced glaucoma time thresholds (topical dexamethasone)',
+          answer: 'Secondary OAG: develops after 6 weeks of topical dexamethasone use. Permanent OAG: after 18 months of continued use.',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Botulinum toxin duration of effect for strabismus treatment',
+          answer: '3–6 months per injection (temporary; reinjection required for sustained effect)',
         },
       ],
     },
