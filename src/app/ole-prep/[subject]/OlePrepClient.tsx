@@ -176,6 +176,41 @@ function FormulaCard({ item }: { item: Extract<OlePrepItem, { kind: 'formula' }>
   )
 }
 
+function TableCard({ item }: { item: Extract<OlePrepItem, { kind: 'table' }> }) {
+  return (
+    <div className="bg-white border border-sky-200 rounded-xl overflow-hidden">
+      <div className="px-4 py-2 bg-sky-50 border-b border-sky-100">
+        <p className="text-xs font-bold uppercase tracking-wide text-sky-700">{item.title}</p>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs">
+          <thead>
+            <tr className="bg-sky-50">
+              {item.headers.map((h, i) => (
+                <th key={i} className="px-3 py-2 text-left font-semibold text-sky-800 border-b border-sky-100 whitespace-nowrap">{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {item.rows.map((row, ri) => (
+              <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                {row.map((cell, ci) => (
+                  <td key={ci} className="px-3 py-2 text-gray-700 border-b border-gray-100 align-top">{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {item.notes && (
+        <div className="px-4 py-2 bg-amber-50 border-t border-amber-100">
+          <p className="text-xs text-amber-700">{item.notes}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const SECTION_ICONS: Record<string, string> = {
   mnemonics: '🧠',
   'high-yield': '⭐',
@@ -253,6 +288,7 @@ export default function OlePrepClient({ data }: Props) {
                       if (item.kind === 'trap') return <TrapCard key={idx} item={item} />
                       if (item.kind === 'recall') return <RecallCard key={idx} item={item} />
                       if (item.kind === 'formula') return <FormulaCard key={idx} item={item} />
+                      if (item.kind === 'table') return <TableCard key={idx} item={item} />
                       return null
                     })}
                   </div>

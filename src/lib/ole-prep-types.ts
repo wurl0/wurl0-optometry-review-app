@@ -11,6 +11,13 @@ export type OlePrepItem =
       notes?: string
       diagram?: string
     }
+  | {
+      kind: 'table'
+      title: string
+      headers: string[]
+      rows: string[][]
+      notes?: string
+    }
 
 export interface OlePrepSection {
   id: string

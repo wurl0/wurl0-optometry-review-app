@@ -529,6 +529,303 @@ const data: OlePrepData = {
       ],
     },
     {
+      id: 'to-basic-optics',
+      title: 'Basic Optics: Definitions & Theories of Light',
+      icon: '⚗️',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: 'OPTICS DEFINED',
+          content: 'Optics: the science dealing with the generation, propagation, and detection of light. Two phases: (1) Physical/Geometric Optics — behavior of light as it travels through media and interacts with surfaces (reflection, refraction, diffraction). (2) Physiological/Visual Optics — how the eye forms images and how the brain processes them.',
+        },
+        {
+          kind: 'table' as const,
+          title: 'Four Theories of Light',
+          headers: ['Theory', 'Proponent', 'Year', 'Core Concept'],
+          rows: [
+            ['Corpuscular', 'Newton', '1666', 'Light = stream of particles (corpuscles) traveling in straight lines; explains reflection but not interference'],
+            ['Wave / Undulatory', 'Huygens', '1678', 'Light = transverse wave motion; explains diffraction and interference but not photoelectric effect'],
+            ['Electromagnetic', 'Maxwell', '1865', 'Light = electromagnetic wave; predicted by field equations before experimental proof'],
+            ['Quantum', 'Planck / Einstein', '1900 / 1905', 'Light = photons (discrete quanta); E = hf; explains photoelectric effect and emission spectra'],
+          ],
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'CURRENTLY ACCEPTED: DUAL NATURE',
+          content: 'Modern physics accepts wave-particle duality. Light behaves as a wave in propagation (interference, diffraction) and as a particle (photon) when interacting with matter (photoelectric effect, Compton scattering). Neither theory alone is complete.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Match each theory with its proponent: Corpuscular / Wave / Electromagnetic / Quantum',
+          answer: 'Corpuscular → Newton (1666). Wave/Undulatory → Huygens (1678). Electromagnetic → Maxwell (1865). Quantum → Planck (1900) and Einstein (1905).',
+        },
+      ],
+    },
+    {
+      id: 'to-em-spectrum',
+      title: 'Electromagnetic Spectrum',
+      icon: '🌈',
+      items: [
+        {
+          kind: 'table' as const,
+          title: 'EM Spectrum — Shortest to Longest Wavelength',
+          headers: ['Region', 'Wavelength Range', 'Key Clinical/Board Points'],
+          rows: [
+            ['Gamma rays', '< 0.01 nm', 'Highest energy, most penetrating; from nuclear reactions; cancer radiotherapy'],
+            ['X-rays', '0.01–10 nm', 'Diagnostic imaging; can damage DNA; used in radiography'],
+            ['Ultraviolet (UV)', '100–400 nm', 'UV-C (100–280): germicidal. UV-B (280–315): sunburn, cataract. UV-A (315–400): tanning, photokeratitis'],
+            ['Visible light', '380–760 nm', 'ROYGBIV; only region seen by the human eye; violet bends most through prism'],
+            ['Infrared (IR)', '760 nm–1 mm', 'Heat radiation; near-IR used in remote controls; far-IR absorbed by water'],
+            ['Microwave', '1 mm–1 m', 'Radar; microwave ovens; absorbed by water molecules'],
+            ['Radio waves', '> 1 m', 'Lowest energy; longest wavelength; AM/FM, TV, MRI'],
+          ],
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Visible Light ROYGBIV — Colors & Wavelengths',
+          device: '"ROY G BIV" — Red, Orange, Yellow, Green, Blue, Indigo, Violet',
+          breakdown: 'Approximate wavelengths: Red 620–750 nm (longest → bends LEAST in prism). Orange 590–620 nm. Yellow 560–590 nm. Green 490–560 nm. Blue 450–490 nm. Indigo ~445 nm. Violet 380–450 nm (shortest → bends MOST). Chromatic dispersion: violet is deviated most by a prism.',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: "EFFECTS OF RADIATION — DRAPER'S LAW",
+          content: "Draper's Law (Grotthuss-Draper Law): only ABSORBED radiation produces photochemical effects — transmitted or reflected radiation does nothing. Types of radiation effects: (1) Thermal — IR absorbed as heat (corneal and lenticular damage from heat). (2) Photochemical — UV triggers chemical reactions (retinal damage, tanning, cataracts). (3) Photoluminescence — Fluorescence: emission stops when irradiation stops. Phosphorescence: emission CONTINUES after irradiation stops.",
+        },
+        {
+          kind: 'trap' as const,
+          question: "Draper's Law: which radiation produces photochemical effects?",
+          wrong: 'Transmitted radiation passing through the tissue',
+          correct: 'Only ABSORBED radiation — if it passes through without absorption, no photochemical effect occurs.',
+          why: "Classic board trap. Draper's Law specifically requires absorption. UV that passes straight through a lens without being absorbed produces no photochemical change in the lens. This is why UV-absorbing lens coatings protect against cataract.",
+        },
+      ],
+    },
+    {
+      id: 'to-light-properties',
+      title: 'Properties of Light & Vergence',
+      icon: '🔆',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'Wave Equation',
+          formula: 'v = f × λ',
+          variables: [
+            { symbol: 'v', definition: 'speed of light in the medium (m/s)' },
+            { symbol: 'f', definition: 'frequency (Hz) — does NOT change between media' },
+            { symbol: 'λ', definition: 'wavelength (m) — changes when light enters a new medium' },
+          ],
+          notes: 'When light enters a denser medium: speed ↓ and wavelength ↓, but frequency stays constant. This is why color (frequency) is preserved but the wave compresses.',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'TYPES OF MEDIUM',
+          content: 'Transparent: allows light to pass through with negligible scattering — clear image visible through it (air, water, clear glass). Translucent: partially transmits light but scatters it — objects not clearly visible (frosted glass, tissue paper, wax paper). Opaque: blocks all light transmission (wood, metal, brick). Note: a substance can be opaque to one wavelength and transparent to another (e.g., glass is opaque to UV).',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'ELEMENTAL UNITS OF LIGHT',
+          content: 'Ray: a single geometric line indicating direction of light propagation (theoretical construct). Pencil: a narrow bundle of rays from or converging to a single point source. Beam: a broader bundle of rays — may be diverging (from a near source), converging (heading to a focus), or parallel (collimated, from source at infinity).',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'LAW OF RECTILINEAR PROPAGATION',
+          content: 'Light travels in straight lines in a homogeneous, isotropic medium. Basis for: shadows, pinhole cameras, geometric ray tracing, and eclipse formation. Limitations: fails at very small apertures (diffraction takes over) and in non-homogeneous media (e.g., mirages, atmospheric lensing, gradient-index media).',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Vergence of Light',
+          formula: 'L = n / l          L\' = L + F',
+          variables: [
+            { symbol: 'L', definition: 'vergence of incident light (diopters; negative = diverging)' },
+            { symbol: "L'", definition: 'vergence of refracted/emergent light (diopters; positive = converging)' },
+            { symbol: 'n', definition: 'index of refraction of the medium containing the light' },
+            { symbol: 'l', definition: 'distance from point source (or to image) in METERS; use sign convention' },
+            { symbol: 'F', definition: 'power of the refracting surface or lens (diopters)' },
+          ],
+          notes: 'In air (n=1): L = 1/l. Diverging vergence = negative. Parallel (from infinity): L = 0. At a refracting surface, the reduced vergence formula applies: L = n/l and L\' = n\'/l\'.',
+        },
+      ],
+    },
+    {
+      id: 'to-mirror-6cases',
+      title: 'Spherical Mirrors: 6 Image Cases',
+      icon: '🪞',
+      items: [
+        {
+          kind: 'table' as const,
+          title: 'Concave Mirror — 5 Object Positions',
+          headers: ['Object Position', 'Image Position', 'Image Nature', 'Size vs. Object', 'Orientation'],
+          rows: [
+            ['Beyond C (> 2f)', 'Between C and F', 'Real', 'Diminished (smaller)', 'Inverted'],
+            ['At C (= 2f)', 'At C (= 2f)', 'Real', 'Same size', 'Inverted'],
+            ['Between C and F', 'Beyond C (> 2f)', 'Real', 'Magnified (larger)', 'Inverted'],
+            ['At F', 'At infinity', 'No image formed', '—', '—'],
+            ['Between F and mirror', 'Behind mirror (virtual)', 'Virtual', 'Magnified (larger)', 'Erect'],
+          ],
+          notes: 'C = center of curvature = 2f. Concave mirror is convergent (positive power). Real images form in FRONT of the mirror.',
+        },
+        {
+          kind: 'table' as const,
+          title: 'Convex Mirror — Any Object Position (1 case)',
+          headers: ['Object Position', 'Image Position', 'Image Nature', 'Size vs. Object', 'Orientation'],
+          rows: [
+            ['Any position', 'Behind mirror, between F and mirror vertex', 'Virtual', 'Diminished (smaller)', 'Erect'],
+          ],
+          notes: 'Convex mirror is ALWAYS virtual, erect, diminished. Used as rear-view mirrors for wider field of view. Focal point is behind the mirror (virtual focus).',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Concave Mirror Cases — Object Moving Toward Mirror',
+          device: '"Beyond C: Small-Real-Inverted → At C: Same → Between CF: Big-Real-Inverted → At F: Infinity → Inside F: Virtual-Big-Erect"',
+          breakdown: 'As the object moves from beyond C toward the mirror: image starts small and real, grows to same size at C, becomes magnified, then blows to infinity at F, then flips virtual and erect inside F. Think of a concave mirror as a real-image maker (except inside F).',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Object placed between F and the concave mirror. Describe the image.',
+          answer: 'Virtual, erect, magnified, located behind the mirror. Same as a magnifying mirror (e.g., cosmetic/shaving mirror).',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'A convex mirror ALWAYS produces what kind of image?',
+          answer: 'Virtual, erect, and diminished — regardless of object distance.',
+        },
+      ],
+    },
+    {
+      id: 'to-lens-cases',
+      title: 'Thin Lens: Image Cases & Surface Power',
+      icon: '🔍',
+      items: [
+        {
+          kind: 'table' as const,
+          title: 'Convex (Plus) Lens — 5 Object Positions + Concave',
+          headers: ['Lens Type', 'Object Position', 'Image Position', 'Nature', 'Size', 'Orientation'],
+          rows: [
+            ['Convex', 'Beyond 2F', 'Between F and 2F (other side)', 'Real', 'Diminished', 'Inverted'],
+            ['Convex', 'At 2F', 'At 2F (other side)', 'Real', 'Same size', 'Inverted'],
+            ['Convex', 'Between F and 2F', 'Beyond 2F (other side)', 'Real', 'Magnified', 'Inverted'],
+            ['Convex', 'At F', 'At infinity', '—', '—', '—'],
+            ['Convex', 'Between F and lens', 'Same side as object', 'Virtual', 'Magnified', 'Erect'],
+            ['Concave', 'Any position', 'Same side as object', 'Virtual', 'Diminished', 'Erect'],
+          ],
+          notes: 'Convex lens = converging (+). Concave lens = diverging (−). Real images form on the OPPOSITE side of the lens from the object.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Surface Power (Lensmaker\'s Formula)',
+          formula: 'D = (n₂ − n₁) / R',
+          variables: [
+            { symbol: 'D', definition: 'surface refracting power (diopters)' },
+            { symbol: 'n₁', definition: 'IOR of medium light is coming FROM' },
+            { symbol: 'n₂', definition: 'IOR of medium light is entering' },
+            { symbol: 'R', definition: 'radius of curvature in METERS (+: center of curvature to the right; −: to the left)' },
+          ],
+          notes: 'Total thin lens power in air: D_total = D_front + D_back. For the cornea: D = (1.376 − 1.000) / 0.0077 ≈ 48.8 D (front surface alone).',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Convex lens, object between F and the lens. What is the image?',
+          answer: 'Virtual, erect, magnified — on the same side as the object. This is how a simple magnifier works.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Concave lens always produces what type of image?',
+          answer: 'Virtual, erect, diminished — always on the same side as the object.',
+        },
+      ],
+    },
+    {
+      id: 'to-neutralization',
+      title: 'Neutralization Methods',
+      icon: '🔬',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: '5 METHODS OF NEUTRALIZATION',
+          content: '(1) Static neutralization — combine the unknown lens with a known trial lens until no movement of the target is seen (neutralizes vergence). (2) Dynamic neutralization — observe movement of a target through the lens while moving the lens side to side; "with" = plus, "against" = minus. (3) Lensometer (Focimeter / Vertometer) — measures vertex power directly using a telescope and Badal optometer principle. (4) Lens clock (Geneva lens measure) — measures surface curvature via three-pin mechanical contact; convert using D = (n−1)/R. (5) Oblique neutralization — used for cylinders; lens is rotated until the mires show no power in one meridian, then the other meridian is measured.',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'LENSOMETER (FOCIMETER) — KEY POINTS',
+          content: 'Clinical standard for measuring spectacle lens power. Reads BACK vertex power (BVP) for plus lenses and FRONT vertex power (FVP) for minus lenses. Principle: Badal optometer — a standard lens collimates light from a moving target; when the unknown lens focuses it, the target position reveals the power. Also measures prism and axis.',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'LENS CLOCK / GENEVA LENS MEASURE',
+          content: 'Three-pin gauge: two outer fixed pins and one central movable pin. Measures surface sag (curve depth), then converts to surface power using D = (n−1)/R. Calibrated for Crown Glass (n = 1.523). For other materials (CR-39 n=1.49, polycarbonate n=1.586), apply a correction factor: D_actual = D_reading × (n_actual − 1) / (1.523 − 1).',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'What principle does the lensometer operate on?',
+          answer: "Badal optometer principle: a fixed collimating lens plus a movable target; the unknown lens's power is determined when the target appears in focus through the system.",
+        },
+        {
+          kind: 'trap' as const,
+          question: 'Lens clock reads +4.00 D on a CR-39 (n = 1.49) lens surface. What is the actual surface power?',
+          wrong: '+4.00 D — the lens clock reading is the actual power',
+          correct: 'D_actual = 4.00 × (1.49 − 1) / (1.523 − 1) = 4.00 × 0.49/0.523 ≈ +3.75 D',
+          why: 'The lens clock is calibrated for Crown Glass (n = 1.523). For any other material, you must rescale the reading using the actual vs. Crown Glass refractive index difference.',
+        },
+      ],
+    },
+    {
+      id: 'to-prism',
+      title: 'Prism: Properties & Prentice Rule',
+      icon: '🔺',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: 'PRISM CHARACTERISTICS',
+          content: 'A prism deviates light toward its BASE without changing vergence (no focal point). Objects appear displaced toward the APEX. Key properties: (1) Light bends toward the base. (2) Image appears shifted toward the apex. (3) Deviation increases with prism power (angle) and with shorter wavelength (chromatic dispersion — violet deviates more than red). (4) A prism does NOT magnify or minify.',
+        },
+        {
+          kind: 'formula' as const,
+          title: "Prentice's Rule",
+          formula: 'Δ = D × c',
+          variables: [
+            { symbol: 'Δ', definition: 'prismatic effect in prism diopters (Δ); 1Δ = 1 cm displacement at 1 m' },
+            { symbol: 'D', definition: 'lens power in diopters (absolute value)' },
+            { symbol: 'c', definition: 'distance from optical center in CENTIMETERS' },
+          ],
+          notes: 'Base direction: PLUS lens — base is AWAY from the optical center (base in when displaced nasally). MINUS lens — base is TOWARD the optical center (base out when displaced nasally). Mnemonic: "PLUS = base away, MINUS = base toward OC displacement."',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Combining Prisms (Resultant)',
+          formula: 'Δ_total = √(Δ_H² + Δ_V²)',
+          variables: [
+            { symbol: 'Δ_H', definition: 'horizontal prism component (base in or out)' },
+            { symbol: 'Δ_V', definition: 'vertical prism component (base up or down)' },
+          ],
+          notes: 'Direction of resultant: θ = arctan(Δ_V / Δ_H). Then split into base direction components for prescription.',
+        },
+        {
+          kind: 'table' as const,
+          title: 'Prism Deviation Table — Base Direction & Clinical Effect',
+          headers: ['Prism Base', 'Eye Deviation Induced', 'Phoria It Corrects', 'Demand Added'],
+          rows: [
+            ['Base OUT (BO)', 'Eye moves IN (adducts)', 'Corrects exophoria/exotropia', 'Convergence demand ↑'],
+            ['Base IN (BI)', 'Eye moves OUT (abducts)', 'Corrects esophoria/esotropia', 'Divergence demand ↑'],
+            ['Base UP (BU) OD', 'Right eye moves DOWN', 'Corrects right hyperphoria', 'Vertical divergence'],
+            ['Base DOWN (BD) OD', 'Right eye moves UP', 'Corrects right hypophoria', 'Vertical convergence'],
+          ],
+          notes: 'Memory: the eye always moves AWAY from the base (toward the apex). Light bends toward base → image shifts to apex → eye rotates toward apex to fixate.',
+        },
+        {
+          kind: 'trap' as const,
+          question: '4Δ base-out prism in front of the right eye. Which direction does the right eye move?',
+          wrong: 'Outward (abduction) — base is out so the eye goes out',
+          correct: 'Inward (adduction) — the eye moves TOWARD the APEX, which is in. Base OUT → eye moves IN.',
+          why: 'The prism displaces the image toward the apex (medially for base-out). To fixate the shifted image, the eye rotates toward the apex = adducts. This is a classic board exam reversal trap.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'A −5.00 D lens. The patient is reading 8 mm nasal to the optical center. Prismatic effect and base direction?',
+          answer: 'Δ = 5 × 0.8 = 4Δ. Minus lens → base toward OC. Nasal displacement → base is nasal = BASE IN. Answer: 4Δ base-in.',
+        },
+      ],
+    },
+    {
       id: 'presbyopia-amblyopia-classification',
       title: 'Presbyopia & Amblyopia Classification',
       icon: '📖',
