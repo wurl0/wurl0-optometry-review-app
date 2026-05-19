@@ -143,7 +143,7 @@ function RecallCard({ item }: { item: Extract<OlePrepItem, { kind: 'recall' }> }
 }
 
 function FormulaCard({ item }: { item: Extract<OlePrepItem, { kind: 'formula' }> }) {
-  const [revealed, setRevealed] = useState(false)
+  const [revealed, setRevealed] = useState(true)
   return (
     <div className="bg-white border border-indigo-200 rounded-xl overflow-hidden">
       <button
