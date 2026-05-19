@@ -124,9 +124,10 @@ export const optometryConstantsData: OlePrepData = {
       icon: '🔢',
       items: [
         {
-          kind: 'recall',
-          prompt: "Hofstetter's three formulas for amplitude of accommodation",
-          answer: 'Maximum: 25 − 0.40(age) | Average: 18.5 − 0.30(age) | Minimum: 15 − 0.25(age)',
+          kind: 'formula' as const,
+          title: "Hofstetter's Amplitude of Accommodation",
+          formula: 'Maximum:  25 − 0.40 × age\nAverage:  18.5 − 0.30 × age\nMinimum:  15 − 0.25 × age',
+          notes: 'Max subtracts most per year (0.40). Min subtracts least (0.25). Result in diopters.',
         },
         {
           kind: 'mnemonic',
@@ -140,9 +141,13 @@ export const optometryConstantsData: OlePrepData = {
           answer: 'Age 10: 14 D | Age 20: 10 D | Age 30: 7 D | Age 40: 5 D | Age 45: 3.5 D | Age 50: 2.5 D | Age 60: 1 D | Age 75: 0 D',
         },
         {
-          kind: 'recall',
-          prompt: 'Reading addition formula',
-          answer: 'ADD = Working Distance − ½(Amplitude of Accommodation)',
+          kind: 'formula' as const,
+          title: 'Reading Addition Formula',
+          formula: 'ADD = WD − ½(AA)',
+          variables: [
+            { symbol: 'WD', definition: 'working distance vergence in diopters (= 1/m)' },
+            { symbol: 'AA', definition: 'amplitude of accommodation (diopters)' },
+          ],
         },
         {
           kind: 'recall',
@@ -196,29 +201,39 @@ export const optometryConstantsData: OlePrepData = {
           answer: 'V = 1/d — d in meters, V in diopters',
         },
         {
-          kind: 'recall',
-          prompt: 'Power from focal length — in meters, cm, mm, and inches',
-          answer: 'D = 1/f (m) | D = 100/f (cm) | D = 1000/f (mm) | D = 40/f (in)',
+          kind: 'formula' as const,
+          title: 'Power from Focal Length',
+          formula: 'D = 1/f (m)      D = 100/f (cm)\nD = 1000/f (mm)  D = 40/f (in)',
         },
         {
-          kind: 'recall',
-          prompt: 'Thick lens equivalent power formula',
-          answer: 'Deq = F1 + F2 − (t/n)(F1)(F2) — t = thickness, n = index',
+          kind: 'formula' as const,
+          title: 'Thick Lens Equivalent Power',
+          formula: 'Deq = F₁ + F₂ − (t/n)(F₁)(F₂)',
+          variables: [
+            { symbol: 'F₁, F₂', definition: 'front and back surface powers (D)' },
+            { symbol: 't', definition: 'center thickness (meters)' },
+            { symbol: 'n', definition: 'refractive index of lens material' },
+          ],
         },
         {
-          kind: 'recall',
-          prompt: 'Vertex distance correction — spectacle to contact lens',
-          answer: 'DCL = DSpec / [1 − d × DSpec] — d = vertex distance in meters',
+          kind: 'formula' as const,
+          title: 'Vertex Distance Conversion (Spec → CL)',
+          formula: 'DCL = DSpec / (1 − d × DSpec)',
+          variables: [
+            { symbol: 'd', definition: 'vertex distance in METERS (default 0.012 m)' },
+          ],
+          notes: 'Apply when spectacle power > ±4.00 D. CL will be less plus/minus than spec Rx.',
         },
         {
-          kind: 'recall',
-          prompt: 'Spherical equivalent formula',
-          answer: 'SE = Sphere + ½ Cylinder',
+          kind: 'formula' as const,
+          title: 'Spherical Equivalent',
+          formula: 'SE = Sphere + ½ Cylinder',
         },
         {
-          kind: 'recall',
-          prompt: 'Lens clock conversion formula',
-          answer: 'F = R(n − 1) / (c − 1) — R = gauge reading; c = 1.53 (crown glass calibration)',
+          kind: 'formula' as const,
+          title: 'Lens Clock Conversion (Non-Crown Glass)',
+          formula: 'F_actual = F_reading × (n_actual − 1) / (1.523 − 1)',
+          notes: 'Lens clock calibrated for Crown Glass (n=1.523). Rescale for CR-39 (1.49), poly (1.586), etc.',
         },
       ],
     },
@@ -323,9 +338,14 @@ export const optometryConstantsData: OlePrepData = {
       icon: '🔵',
       items: [
         {
-          kind: 'recall',
-          prompt: 'Keratometer conversion formula',
-          answer: 'D = 337.5 / r — r in mm. Calibration index: 1.3375',
+          kind: 'formula' as const,
+          title: 'Keratometer Conversion',
+          formula: 'D = 337.5 / r',
+          variables: [
+            { symbol: 'D', definition: 'corneal power in diopters' },
+            { symbol: 'r', definition: 'radius of curvature in MILLIMETERS' },
+          ],
+          notes: 'Calibration index: n = 1.3375 (not the true corneal IOR of 1.376 — accounts for posterior surface). Reverse: r = 337.5 / D',
         },
         {
           kind: 'recall',
@@ -365,9 +385,15 @@ export const optometryConstantsData: OlePrepData = {
           answer: '4:1 (range 4–6:1) | High AC/A: >6:1 | Low AC/A (CI): <3:1',
         },
         {
-          kind: 'recall',
-          prompt: 'AC/A heterophoria method formula',
-          answer: 'AC/A = PD + (Δnear − Δfar) / D — PD in cm; eso = positive, exo = negative',
+          kind: 'formula' as const,
+          title: 'AC/A Ratio — Heterophoria Method',
+          formula: 'AC/A = PD + (Δnear − Δfar) / D',
+          variables: [
+            { symbol: 'PD', definition: 'interpupillary distance in CENTIMETERS' },
+            { symbol: 'Δnear', definition: 'near phoria (eso = +, exo = −)' },
+            { symbol: 'Δfar', definition: 'distance phoria (eso = +, exo = −)' },
+            { symbol: 'D', definition: 'near test distance in diopters (usually 2.50 D = 40 cm)' },
+          ],
         },
         {
           kind: 'recall',

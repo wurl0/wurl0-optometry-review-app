@@ -143,35 +143,44 @@ function RecallCard({ item }: { item: Extract<OlePrepItem, { kind: 'recall' }> }
 }
 
 function FormulaCard({ item }: { item: Extract<OlePrepItem, { kind: 'formula' }> }) {
+  const [revealed, setRevealed] = useState(false)
   return (
     <div className="bg-white border border-indigo-200 rounded-xl overflow-hidden">
-      <div className="px-4 py-2 bg-indigo-50 border-b border-indigo-100">
+      <button
+        onClick={() => setRevealed(r => !r)}
+        className="w-full flex items-center justify-between px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors"
+      >
         <p className="text-xs font-bold uppercase tracking-wide text-indigo-700">{item.title}</p>
-      </div>
-      <div className="px-4 py-4 space-y-3">
-        <div className="bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-center font-mono text-base text-gray-900 tracking-wide whitespace-pre-wrap">
-          {item.formula}
-        </div>
-        {item.diagram && (
-          <div
-            className="flex justify-center py-2"
-            dangerouslySetInnerHTML={{ __html: item.diagram }}
-          />
-        )}
-        {item.variables && item.variables.length > 0 && (
-          <div className="space-y-1">
-            {item.variables.map((v, i) => (
-              <div key={i} className="flex gap-3 items-baseline">
-                <span className="font-mono font-bold text-indigo-700 text-sm w-16 shrink-0">{v.symbol}</span>
-                <span className="text-xs text-gray-600">{v.definition}</span>
-              </div>
-            ))}
+        <span className="text-xs font-semibold text-indigo-500 shrink-0 ml-3">
+          {revealed ? 'Hide ▲' : 'Reveal ▼'}
+        </span>
+      </button>
+      {revealed && (
+        <div className="px-4 py-4 space-y-3">
+          <div className="bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-center font-mono text-base text-gray-900 tracking-wide whitespace-pre-wrap">
+            {item.formula}
           </div>
-        )}
-        {item.notes && (
-          <p className="text-xs text-amber-700 bg-amber-50 rounded-lg px-3 py-2 border border-amber-100">{item.notes}</p>
-        )}
-      </div>
+          {item.diagram && (
+            <div
+              className="flex justify-center py-2"
+              dangerouslySetInnerHTML={{ __html: item.diagram }}
+            />
+          )}
+          {item.variables && item.variables.length > 0 && (
+            <div className="space-y-1">
+              {item.variables.map((v, i) => (
+                <div key={i} className="flex gap-3 items-baseline">
+                  <span className="font-mono font-bold text-indigo-700 text-sm w-16 shrink-0">{v.symbol}</span>
+                  <span className="text-xs text-gray-600">{v.definition}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          {item.notes && (
+            <p className="text-xs text-amber-700 bg-amber-50 rounded-lg px-3 py-2 border border-amber-100">{item.notes}</p>
+          )}
+        </div>
+      )}
     </div>
   )
 }
