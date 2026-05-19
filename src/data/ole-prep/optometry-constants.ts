@@ -162,13 +162,37 @@ export const optometryConstantsData: OlePrepData = {
       icon: '📏',
       items: [
         {
-          kind: 'recall',
-          prompt: 'Surface power formula',
-          answer: 'D = (n − 1) / r — where r is in meters and n is the refractive index',
+          kind: 'formula' as const,
+          title: 'Surface Power — Corrected Form',
+          formula: 'D = (n₂ − n₁) / R',
+          variables: [
+            { symbol: 'n₁', definition: 'IOR of medium light is coming FROM' },
+            { symbol: 'n₂', definition: 'IOR of medium light is entering' },
+            { symbol: 'R', definition: 'radius of curvature in METERS (+ = center on right)' },
+          ],
+          notes: 'Simplified for air (n₁=1): D = (n−1)/R. Use full form for surfaces inside the eye or immersed in media.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Vergence — With Index of Refraction',
+          formula: 'L = n / l          L\' = L + F',
+          variables: [
+            { symbol: 'L', definition: 'incident vergence (D); negative = diverging' },
+            { symbol: "L'", definition: 'emergent vergence (D); positive = converging' },
+            { symbol: 'n', definition: 'IOR of the medium containing the light' },
+            { symbol: 'l', definition: 'distance in METERS (neg for diverging, pos for converging)' },
+            { symbol: 'F', definition: 'power of the refracting element (D)' },
+          ],
+          notes: 'In air (n=1): L = 1/l. From infinity: L = 0. Use sign convention consistently.',
         },
         {
           kind: 'recall',
-          prompt: 'Vergence formula',
+          prompt: 'Surface power formula (simplified — in air)',
+          answer: 'D = (n − 1) / r — where r is in meters and n is the refractive index of the lens material',
+        },
+        {
+          kind: 'recall',
+          prompt: 'Vergence formula (in air)',
           answer: 'V = 1/d — d in meters, V in diopters',
         },
         {
@@ -214,6 +238,16 @@ export const optometryConstantsData: OlePrepData = {
           answer: 'Dev = Aa(n − 1) — Aa = apical angle; n = refractive index',
         },
         {
+          kind: 'formula' as const,
+          title: 'Resultant Prism (Two Components Combined)',
+          formula: 'Δ_total = √(Δ_H² + Δ_V²)',
+          variables: [
+            { symbol: 'Δ_H', definition: 'horizontal prism (base in or out)' },
+            { symbol: 'Δ_V', definition: 'vertical prism (base up or down)' },
+          ],
+          notes: 'Direction: θ = arctan(Δ_V / Δ_H). Base direction of resultant found by resolving the angle.',
+        },
+        {
           kind: 'recall',
           prompt: 'Prism diopter unit definition',
           answer: '1 Δ = 1 cm displacement at 1 meter distance',
@@ -222,6 +256,64 @@ export const optometryConstantsData: OlePrepData = {
           kind: 'fact',
           highlight: 'PRISM UNITS COMPARED',
           content: 'Prism diopter (Δ): 1 cm/m | Prism degree (°): 0.9 cm/m | Prism degree (°d): 1.75 cm/m',
+        },
+      ],
+    },
+    {
+      id: 'refraction-constants',
+      title: "Snell's Law & Refraction Constants",
+      icon: '🌊',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: "Snell's Law",
+          formula: 'n₁ × sin θ₁ = n₂ × sin θ₂',
+          variables: [
+            { symbol: 'n₁', definition: 'IOR of medium light is coming from' },
+            { symbol: 'θ₁', definition: 'angle of incidence (from normal)' },
+            { symbol: 'n₂', definition: 'IOR of medium light is entering' },
+            { symbol: 'θ₂', definition: 'angle of refraction (from normal)' },
+          ],
+          notes: 'Calculator: (n₁ × sin θ₁) ÷ n₂ = Ans → Shift Sin → θ₂. Light bends TOWARD normal when entering denser medium.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Shallowing Effect (Apparent Depth)',
+          formula: 'q / n\' = p / n',
+          variables: [
+            { symbol: 'q', definition: 'apparent distance (image position)' },
+            { symbol: "n'", definition: 'IOR of medium where the observer/eye is' },
+            { symbol: 'p', definition: 'actual distance of object' },
+            { symbol: 'n', definition: 'IOR of medium where the object is' },
+          ],
+          notes: 'Fish in water appears shallower than it really is. Mnemonic: "Fish ↑ Bird" — observer in less dense medium sees object higher/closer than actual.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Critical Angle (Total Internal Reflection)',
+          formula: 'sin θc = n₂ / n₁',
+          variables: [
+            { symbol: 'θc', definition: 'critical angle — at or beyond this angle, TIR occurs' },
+            { symbol: 'n₁', definition: 'IOR of denser medium (where light originates)' },
+            { symbol: 'n₂', definition: 'IOR of less dense medium (usually air = 1.000)' },
+          ],
+          notes: 'TIR only occurs when light travels from DENSER to LESS DENSE medium. Crown glass (1.523): θc ≈ 41°. Diamond (2.417): θc ≈ 24.4°.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Lateral Displacement (Plane Refractor)',
+          formula: 'd = t × sin(i − R) / cos R',
+          variables: [
+            { symbol: 'd', definition: 'lateral displacement of the emerging ray' },
+            { symbol: 't', definition: 'thickness of the refracting medium' },
+            { symbol: 'i', definition: 'angle of incidence' },
+            { symbol: 'R', definition: "angle of refraction (find via Snell's Law first)" },
+          ],
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Critical angle for Crown Glass (n = 1.523) and water (n = 1.333)',
+          answer: 'Crown Glass: sin θc = 1/1.523 → θc ≈ 41.0° | Water: sin θc = 1/1.333 → θc ≈ 48.6°',
         },
       ],
     },
@@ -458,6 +550,29 @@ export const optometryConstantsData: OlePrepData = {
       icon: '💡',
       items: [
         {
+          kind: 'formula' as const,
+          title: 'Index of Refraction — Two Forms',
+          formula: 'n = c / v          n = sin i / sin r',
+          variables: [
+            { symbol: 'c', definition: 'speed of light in vacuum (300,000 km/s)' },
+            { symbol: 'v', definition: 'speed of light in the medium' },
+            { symbol: 'i', definition: 'angle of incidence (in less dense medium)' },
+            { symbol: 'r', definition: 'angle of refraction (in denser medium)' },
+          ],
+          notes: 'Both definitions yield the same n. Form 1 uses speeds; Form 2 uses angles (Snell version). n > 1 means slower than vacuum.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Wave Equation',
+          formula: 'v = f × λ',
+          variables: [
+            { symbol: 'v', definition: 'speed of light in medium (m/s)' },
+            { symbol: 'f', definition: 'frequency (Hz) — DOES NOT change between media' },
+            { symbol: 'λ', definition: 'wavelength (m) — changes with medium' },
+          ],
+          notes: 'Entering a denser medium: speed ↓, wavelength ↓, frequency stays constant. Color = frequency, not wavelength.',
+        },
+        {
           kind: 'recall' as const,
           prompt: 'Speed of light in vacuum and common optical media',
           answer: 'Vacuum: 186,050 mi/sec (300,000 km/sec) | Air: 186,000 mi/sec | H₂O: 140,000 mi/sec | Glass: 124,000 mi/sec | Diamond: 77,550 mi/sec',
@@ -494,6 +609,29 @@ export const optometryConstantsData: OlePrepData = {
           title: 'Illuminance — Inverse Square Law',
           formula: 'E = I / d²  unit: FC or lux\nLaw: I₁/d₁² = I₂/d₂²',
           notes: 'FC = lumen/sq ft | lux = lumen/sq m | doubling distance = ¼ illuminance',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Cosine Law of Illuminance',
+          formula: 'E = (I × cos θ) / d²',
+          variables: [
+            { symbol: 'E', definition: 'illuminance at the surface (FC or lux)' },
+            { symbol: 'I', definition: 'luminous intensity of source (candela)' },
+            { symbol: 'θ', definition: 'angle of incidence of light relative to surface normal' },
+            { symbol: 'd', definition: 'distance from source to surface' },
+          ],
+          notes: 'When θ = 0° (perpendicular), cos θ = 1 → reduces to E = I/d². As angle increases, illuminance decreases.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Apparent Height / Angular Elevation',
+          formula: 'tan θ = h / d',
+          variables: [
+            { symbol: 'θ', definition: 'angular height or elevation (degrees)' },
+            { symbol: 'h', definition: 'actual height of the object' },
+            { symbol: 'd', definition: 'horizontal distance from observer to object' },
+          ],
+          notes: 'Calculator: h ÷ d → Shift Tan Ans → degrees. Same formula as angular subtense.',
         },
       ],
     },
