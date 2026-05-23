@@ -15,6 +15,11 @@ CREATE TABLE IF NOT EXISTS public.profiles (
 -- 2. RLS
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
+-- authenticated: select only (insert is handled by the trigger via SECURITY DEFINER)
+GRANT SELECT
+  ON public.profiles
+  TO authenticated;
+
 -- Users can read their own profile (needed for middleware approved check)
 CREATE POLICY "Users can view own profile"
   ON public.profiles FOR SELECT

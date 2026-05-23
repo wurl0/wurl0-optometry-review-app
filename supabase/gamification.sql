@@ -14,6 +14,10 @@ CREATE TABLE IF NOT EXISTS user_stats (
 
 ALTER TABLE user_stats ENABLE ROW LEVEL SECURITY;
 
+GRANT SELECT, INSERT, UPDATE, DELETE
+  ON public.user_stats
+  TO authenticated;
+
 CREATE POLICY "Users manage their own stats"
   ON user_stats FOR ALL
   USING (auth.uid() = user_id);
@@ -28,6 +32,10 @@ CREATE TABLE IF NOT EXISTS user_badges (
 );
 
 ALTER TABLE user_badges ENABLE ROW LEVEL SECURITY;
+
+GRANT SELECT, INSERT, UPDATE, DELETE
+  ON public.user_badges
+  TO authenticated;
 
 CREATE POLICY "Users manage their own badges"
   ON user_badges FOR ALL

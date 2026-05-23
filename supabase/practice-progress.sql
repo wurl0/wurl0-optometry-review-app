@@ -17,6 +17,10 @@ CREATE TABLE IF NOT EXISTS practice_progress (
 
 ALTER TABLE practice_progress ENABLE ROW LEVEL SECURITY;
 
+GRANT SELECT, INSERT, UPDATE, DELETE
+  ON public.practice_progress
+  TO authenticated;
+
 CREATE POLICY "Users manage their own practice progress"
   ON practice_progress FOR ALL
   USING (auth.uid() = user_id);

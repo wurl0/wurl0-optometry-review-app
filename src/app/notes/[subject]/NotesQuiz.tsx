@@ -1,12 +1,38 @@
 'use client'
 import { useState } from 'react'
-import { NotesQuizData } from '@/lib/notes-quiz-types'
+import { NotesQuizData, QuizQuestion } from '@/lib/notes-quiz-types'
 import { GamificationResult, updateNotesQuizGamification } from '@/lib/gamification'
 import { createClient } from '@/lib/supabase-client'
 import { COLOR_MAP } from '@/lib/subjects'
 import { Subject } from '@/lib/types'
 
 const PASS_THRESHOLD = 50
+
+// ─── Shuffle helpers ──────────────────────────────────────────────────────────
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+/** Shuffles question order and, for MCQ questions, also shuffles the options
+ *  (updating the correct index to match the new position). */
+function prepareQuestions(questions: QuizQuestion[]): QuizQuestion[] {
+  return shuffleArray(questions).map(q => {
+    if (q.kind !== 'mcq') return q
+    const indexed = q.options.map((opt, i) => ({ opt, isCorrect: i === q.correct }))
+    const shuffled = shuffleArray(indexed)
+    return {
+      ...q,
+      options: shuffled.map(x => x.opt),
+      correct: shuffled.findIndex(x => x.isCorrect),
+    }
+  })
+}
 
 interface Props {
   subject: Subject
@@ -19,6 +45,7 @@ type Phase = 'playing' | 'reveal' | 'result'
 export default function NotesQuiz({ subject, quiz, onClose }: Props) {
   const c = COLOR_MAP[subject.color]
 
+  const [questions, setQuestions] = useState<QuizQuestion[]>(() => prepareQuestions(quiz.questions))
   const [current, setCurrent] = useState(0)
   const [phase, setPhase] = useState<Phase>('playing')
   const [selected, setSelected] = useState<number | boolean | null>(null)
@@ -27,8 +54,8 @@ export default function NotesQuiz({ subject, quiz, onClose }: Props) {
   const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
   const [saving, setSaving] = useState(false)
 
-  const q = quiz.questions[current]
-  const total = quiz.questions.length
+  const q = questions[current]
+  const total = questions.length
   const isLast = current === total - 1
   const progress = ((current + (phase === 'reveal' ? 1 : 0)) / total) * 100
 
@@ -144,6 +171,7 @@ export default function NotesQuiz({ subject, quiz, onClose }: Props) {
           <div className="flex gap-3 pt-1">
             <button
               onClick={() => {
+                setQuestions(prepareQuestions(quiz.questions))
                 setCurrent(0)
                 setPhase('playing')
                 setSelected(null)

@@ -13,6 +13,10 @@ create table if not exists exam_attempts (
 
 alter table exam_attempts enable row level security;
 
+grant select, insert
+  on public.exam_attempts
+  to authenticated;
+
 create policy "Users see own attempts"
   on exam_attempts for select
   using (auth.uid() = user_id);

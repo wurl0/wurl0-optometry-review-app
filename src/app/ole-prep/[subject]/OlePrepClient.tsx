@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { OlePrepData, OlePrepItem } from '@/lib/ole-prep-types'
+import { SUBJECTS } from '@/lib/subjects'
+import ConstantsQuizPicker from './ConstantsQuizPicker'
 
 interface Props {
   data: OlePrepData
@@ -229,6 +231,10 @@ const SECTION_ICONS: Record<string, string> = {
 
 export default function OlePrepClient({ data }: Props) {
   const [openSections, setOpenSections] = useState<Set<string>>(() => new Set(data.sections.map(s => s.id)))
+  const [showQuiz, setShowQuiz] = useState(false)
+
+  const subjectMeta = SUBJECTS.find(s => s.slug === data.slug)
+  const hasQuiz = data.slug === 'optometry-constants'
 
   const toggleSection = (id: string) => {
     setOpenSections(prev => {
@@ -244,6 +250,14 @@ export default function OlePrepClient({ data }: Props) {
 
   return (
     <div className="min-h-screen">
+      {/* Constants quiz picker + modal */}
+      {showQuiz && hasQuiz && subjectMeta && (
+        <ConstantsQuizPicker
+          subject={subjectMeta}
+          onClose={() => setShowQuiz(false)}
+        />
+      )}
+
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
@@ -262,7 +276,15 @@ export default function OlePrepClient({ data }: Props) {
             <h1 className="text-xl font-bold text-gray-900">{data.subject}</h1>
             <p className="text-xs text-gray-500 mt-0.5">OLE Board Style Prep</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
+            {hasQuiz && (
+              <button
+                onClick={() => setShowQuiz(true)}
+                className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-yellow-900 transition-colors"
+              >
+                Quiz Me 🧠
+              </button>
+            )}
             <button onClick={expandAll} className="text-xs text-gray-500 hover:text-gray-800 transition-colors">Expand all</button>
             <span className="text-gray-200">|</span>
             <button onClick={collapseAll} className="text-xs text-gray-500 hover:text-gray-800 transition-colors">Collapse all</button>
