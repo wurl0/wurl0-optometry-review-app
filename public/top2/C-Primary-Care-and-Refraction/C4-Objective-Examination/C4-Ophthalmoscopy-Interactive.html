@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ophthalmoscopy — Direct vs Indirect (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--key:#a371f7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:20px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+  .stage{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start;justify-content:center}
+  .viewcol{text-align:center}
+  svg.view{width:300px;max-width:78vw;height:auto;border-radius:50%;background:#05080b}
+  .compass{margin-top:8px;font-size:12px;color:var(--mut)}
+  .statcol{flex:1;min-width:240px}
+  .stat{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:6px 0;font-size:13.5px}
+  .stat .k{color:var(--mut)} .stat .v{font-weight:700;text-align:right}
+  .btns{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;padding:8px 12px;font-size:13px;transition:.14s}
+  .btn:hover{border-color:var(--mut)}
+  .btn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+  .btn.sub{padding:6px 10px;font-size:12.5px}
+  .grp{margin-top:12px}
+  .grp .lbl{font-size:12px;color:var(--mut);margin-bottom:5px}
+  .readout{margin:14px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:13px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+  th{background:var(--card2);color:var(--mut)}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--accent)}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+  /* fundus default colours */
+  .fundusBg{fill:#b5481f}.disc{fill:#f3cfa0}.cup{fill:#f8e8d0}
+  .vA{stroke:#d8472a;fill:none;stroke-linecap:round}.vV{stroke:#9e2a1c;fill:none;stroke-linecap:round}
+  .macula{fill:#7a2f17;opacity:.72}.fovea{fill:#561d0e}
+  .heme{fill:#8b1a10}.nfl{stroke:#c98a5f;fill:none;opacity:.18}
+  .slit{display:none}
+  /* red-free (green) filter */
+  .f-redfree .fundusBg{fill:#34402f}.f-redfree .disc{fill:#cfd9c2}.f-redfree .cup{fill:#e7eedd}
+  .f-redfree .vA,.f-redfree .vV{stroke:#0e150c}
+  .f-redfree .macula{fill:#1b2414}.f-redfree .fovea{fill:#0c1208}
+  .f-redfree .heme{fill:#05080a}.f-redfree .nfl{stroke:#dceccb;opacity:.55}
+  .f-slit .slit{display:block}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Ophthalmoscopy — Direct vs Indirect</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · same fundus, two scopes, see what each one gives you</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <div class="stage">
+      <div class="viewcol">
+        <svg class="view" id="view" viewBox="0 0 400 400" role="img" aria-label="Fundus view"></svg>
+        <div class="compass">retinal orientation: <span id="compass"></span></div>
+      </div>
+      <div class="statcol">
+        <div class="stat"><span class="k">Magnification</span><span class="v" id="s-mag"></span></div>
+        <div class="stat"><span class="k">Field of view</span><span class="v" id="s-fov"></span></div>
+        <div class="stat"><span class="k">Image</span><span class="v" id="s-img"></span></div>
+        <div class="stat"><span class="k">Stereopsis</span><span class="v" id="s-ste"></span></div>
+        <div class="stat"><span class="k">Working distance</span><span class="v" id="s-wd"></span></div>
+        <div class="stat"><span class="k">Best for</span><span class="v" id="s-use"></span></div>
+      </div>
+    </div>
+
+    <div class="grp"><div class="lbl">Instrument</div>
+      <div class="btns" id="modeBtns">
+        <div class="btn" data-mode="direct">Direct ophthalmoscope</div>
+        <div class="btn" data-mode="indirect">Indirect (BIO)</div>
+      </div>
+    </div>
+    <div class="grp" id="lensGrp"><div class="lbl">Condensing lens</div>
+      <div class="btns" id="lensBtns">
+        <div class="btn sub" data-lens="14">+14 D</div>
+        <div class="btn sub" data-lens="20">+20 D</div>
+        <div class="btn sub" data-lens="28">+28 D</div>
+      </div>
+    </div>
+    <div class="grp"><div class="lbl">Light / filter</div>
+      <div class="btns" id="filtBtns">
+        <div class="btn sub" data-filt="white">White</div>
+        <div class="btn sub" data-filt="redfree">Red-free (green)</div>
+        <div class="btn sub" data-filt="slit">Slit</div>
+        <div class="btn sub" id="apBtn">Small aperture</div>
+      </div>
+    </div>
+
+    <div class="readout" id="readout"></div>
+  </div>
+
+  <div class="card">
+    <h2>The two numbers that flip</h2>
+    <p class="hint" style="margin-top:0">Magnification ≈ <b>power of the eye ÷ power of the lens</b>. The eye is about 60 D. Direct ophthalmoscopy is roughly 60 ÷ 4 ≈ <b>15×</b>. With indirect, a lower-power lens (14 D) gives more magnification but a narrow field; a higher-power lens (28 D) gives a wide field but less magnification. Field of view always moves opposite to magnification.</p>
+    <details>
+      <summary>Side-by-side comparison</summary>
+      <table>
+        <tr><th></th><th>Direct</th><th>Indirect (BIO)</th></tr>
+        <tr><td>Magnification</td><td>≈15×</td><td>≈2 to 5×</td></tr>
+        <tr><td>Field</td><td>Small (~8–10°)</td><td>Large (~25–55°)</td></tr>
+        <tr><td>Image</td><td>Erect, virtual</td><td>Real, inverted &amp; reversed</td></tr>
+        <tr><td>Stereopsis</td><td>No (monocular)</td><td>Yes (binocular)</td></tr>
+        <tr><td>Working distance</td><td>Very close (~2 cm)</td><td>Arm's length</td></tr>
+        <tr><td>Hazy media</td><td>Poor</td><td>Better penetration</td></tr>
+        <tr><td>Best use</td><td>Disc &amp; macula detail</td><td>Periphery, detachment, screening</td></tr>
+      </table>
+      <p class="hint" style="margin:2px 0 0">Because the indirect image is inverted and reversed (rotated 180°), a lesion that looks superior is really inferior, which is why BIO fundus drawings are charted upside-down.</p>
+    </details>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · C4 Objective Examination — Ophthalmoscopy</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+function el(t,a,txt){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;}
+var view=document.getElementById('view');
+
+// ---- build the fundus once (group we transform) ----
+function buildFundus(){
+  // clip aperture
+  var defs=el('defs',{});
+  var cp=el('clipPath',{id:'ap'});cp.appendChild(el('circle',{id:'apc',cx:200,cy:200,r:198}));defs.appendChild(cp);
+  view.appendChild(defs);
+  view.appendChild(el('rect',{x:0,y:0,width:400,height:400,fill:'#05080b'}));
+  var clip=el('g',{'clip-path':'url(#ap)'});view.appendChild(clip);
+  var f=el('g',{id:'fundus'});clip.appendChild(f);
+  f.appendChild(el('circle',{class:'fundusBg',cx:200,cy:200,r:240}));
+  // NFL striations (visible mainly in red-free)
+  var nfl=el('g',{class:'nfl'});
+  for(var i=-3;i<=3;i++){nfl.appendChild(el('path',{d:'M250,'+(200+i*14)+' Q150,'+(180+i*18)+' 70,'+(200+i*24),'stroke-width':2}));}
+  f.appendChild(nfl);
+  // vessel arcades from disc (disc at 255,200)
+  var dx=255,dy=200;
+  var arc=[['M'+dx+','+dy+' Q200,120 110,90','vV',6],
+           ['M'+dx+','+dy+' Q200,280 110,310','vV',6],
+           ['M'+dx+','+dy+' Q300,130 350,95','vV',5],
+           ['M'+dx+','+dy+' Q300,270 350,305','vV',5],
+           ['M'+dx+','+dy+' Q205,135 120,108','vA',3],
+           ['M'+dx+','+dy+' Q205,265 120,292','vA',3]];
+  arc.forEach(function(a){f.appendChild(el('path',{class:a[1],d:a[0],'stroke-width':a[2]}));});
+  // macula temporal to disc
+  f.appendChild(el('circle',{class:'macula',cx:135,cy:205,r:32}));
+  f.appendChild(el('circle',{class:'fovea',cx:135,cy:205,r:5}));
+  // optic disc + cup
+  f.appendChild(el('circle',{class:'disc',cx:dx,cy:dy,r:33}));
+  f.appendChild(el('circle',{class:'cup',cx:dx+3,cy:dy,r:13}));
+  // a flame haemorrhage on the superotemporal arcade
+  f.appendChild(el('path',{class:'heme',d:'M175,135 q10,-12 20,-4 q-4,12 -16,16 q-8,-2 -4,-12 z'}));
+  // slit overlay
+  clip.appendChild(el('rect',{class:'slit',x:188,y:10,width:24,height:380,fill:'#fff7d6',opacity:.5,transform:'rotate(14 200 200)'}));
+  // aperture ring
+  view.appendChild(el('circle',{id:'ring',cx:200,cy:200,r:198,fill:'none',stroke:'#1a2733','stroke-width':6}));
+}
+buildFundus();
+
+var DATA={
+  direct:{mag:'≈15×',fov:'≈8–10°',img:'Erect &amp; virtual',ste:'No · monocular',wd:'~2 cm',use:'Disc &amp; macula',
+    zoom:2.4,rot:0,
+    pearl:'Direct ophthalmoscopy gives a bright, upright, roughly 15× image, but a tiny field and no stereopsis. Best for fine optic-disc and macular detail. The aperture and filter wheel live on this scope: the red-free (green) light makes nerve fibre layer defects and haemorrhages stand out.'},
+  indirect:{img:'Real, inverted &amp; reversed',ste:'Yes · binocular',wd:"arm's length",use:'Periphery, detachment',
+    rot:180,
+    L:{14:{mag:'≈4.3× (60/14)',fov:'≈30°',zoom:1.65},
+       20:{mag:'≈3.0× (60/20)',fov:'≈40°',zoom:1.3},
+       28:{mag:'≈2.1× (60/28)',fov:'≈53°',zoom:1.02}},
+    pearl:'The condensing lens forms a real, inverted, laterally reversed aerial image, so superior fundus appears inferior (chart your drawing upside-down). Lower-power lenses (14 D) magnify more over a narrow field; higher power (28 D) gives a wide field with less magnification. It is binocular, so you get stereopsis, and it penetrates hazy media. Method of choice for the peripheral retina and retinal detachment.'}
+};
+
+var mode='direct', lens=20, filt='white', smallAp=false;
+
+function syncBtns(){
+  document.querySelectorAll('#modeBtns .btn').forEach(function(b){b.classList.toggle('on',b.dataset.mode===mode);});
+  document.querySelectorAll('#lensBtns .btn').forEach(function(b){b.classList.toggle('on',+b.dataset.lens===lens);});
+  document.querySelectorAll('#filtBtns .btn[data-filt]').forEach(function(b){b.classList.toggle('on',b.dataset.filt===filt);});
+  document.getElementById('apBtn').classList.toggle('on',smallAp);
+  document.getElementById('lensGrp').style.display=mode==='indirect'?'block':'none';
+}
+function render(){
+  syncBtns();
+  var zoom,rot,mag,fov;
+  if(mode==='direct'){zoom=DATA.direct.zoom;rot=0;mag=DATA.direct.mag;fov=DATA.direct.fov;}
+  else{var L=DATA.indirect.L[lens];zoom=L.zoom;rot=180;mag=L.mag;fov=L.fov;}
+  // apply transform to fundus
+  document.getElementById('fundus').setAttribute('transform',
+    'translate(200,200) scale('+zoom+') rotate('+rot+') translate(-200,-200)');
+  // aperture size (small aperture = undilated pupil)
+  var apr=smallAp?120:198;
+  document.getElementById('apc').setAttribute('r',apr);
+  document.getElementById('ring').setAttribute('r',apr);
+  // filter class on svg
+  view.classList.remove('f-redfree','f-slit');
+  if(filt==='redfree')view.classList.add('f-redfree');
+  if(filt==='slit')view.classList.add('f-slit');
+  // stats
+  var D=mode==='direct'?DATA.direct:DATA.indirect;
+  document.getElementById('s-mag').innerHTML=mag;
+  document.getElementById('s-fov').innerHTML=fov;
+  document.getElementById('s-img').innerHTML=D.img;
+  document.getElementById('s-ste').innerHTML=D.ste;
+  document.getElementById('s-wd').innerHTML=D.wd;
+  document.getElementById('s-use').innerHTML=D.use;
+  // compass (flips when inverted)
+  document.getElementById('compass').textContent= rot===180 ? 'I (top) · S (bottom) — inverted' : 'S (top) · I (bottom) — upright';
+  // readout
+  var extra='';
+  if(filt==='redfree')extra=' Red-free filter on: the haemorrhage and nerve fibre layer now look dark and stand out against the green.';
+  else if(filt==='slit')extra=' Slit beam on: sweep it to judge elevation and contour of a lesion.';
+  if(smallAp)extra+=' Small aperture: easier through an undilated pupil, at the cost of field.';
+  document.getElementById('readout').innerHTML='<b>'+(mode==='direct'?'Direct':'Indirect (+'+lens+' D)')+'.</b> '+D.pearl+extra;
+}
+
+document.querySelectorAll('#modeBtns .btn').forEach(function(b){b.addEventListener('click',function(){mode=b.dataset.mode;render();});});
+document.querySelectorAll('#lensBtns .btn').forEach(function(b){b.addEventListener('click',function(){lens=+b.dataset.lens;mode='indirect';render();});});
+document.querySelectorAll('#filtBtns .btn[data-filt]').forEach(function(b){b.addEventListener('click',function(){filt=b.dataset.filt;render();});});
+document.getElementById('apBtn').addEventListener('click',function(){smallAp=!smallAp;render();});
+render();
+</script>
+</body>
+</html>

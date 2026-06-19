@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pupillary Pathways — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--bad:#e5534b;--key:#a371f7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:24px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+
+  /* pathway flow */
+  .track{margin:14px 0}
+  .track-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:7px}
+  .track.aff .track-label{color:var(--accent)}
+  .track.para .track-label{color:var(--ok)}
+  .track.symp .track-label{color:var(--key)}
+  .flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px}
+  .node{position:relative;cursor:pointer;background:var(--card2);border:1.5px solid var(--line);border-radius:9px;
+    padding:8px 10px;font-size:12.5px;line-height:1.25;color:var(--txt);transition:.14s;display:flex;align-items:center;min-height:42px}
+  .node small{display:block;color:var(--mut);font-size:10.5px;margin-top:1px}
+  .node:hover{border-color:var(--mut)}
+  .track.aff .node.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+  .track.para .node.on{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok) inset}
+  .track.symp .node.on{border-color:var(--key);box-shadow:0 0 0 2px var(--key) inset}
+  .arrow{display:flex;align-items:center;color:var(--mut);font-size:15px;padding:0 1px}
+  .endcap{align-self:center;font-size:11px;font-weight:700;border-radius:7px;padding:7px 9px;white-space:nowrap}
+  .endcap.miosis{background:#10301c;color:#7ee2a0;border:1px solid #2f7d4f}
+  .endcap.mydriasis{background:#2a1f3d;color:#cdb4f5;border:1px solid #6b4ea6}
+  .consensual{margin-top:10px;font-size:12.5px;color:var(--mut);background:var(--card2);border:1px dashed var(--line);border-radius:9px;padding:9px 12px}
+  .consensual b{color:var(--accent)}
+  .detail{margin:14px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:13px 15px;min-height:58px}
+  .detail .role{color:var(--txt)}
+  .detail .lesion{margin-top:7px;color:var(--mut)}
+  .detail .lesion b{color:var(--bad)}
+  .detail .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--warn)}
+
+  /* animated pupils */
+  .scene2{display:flex;gap:46px;justify-content:center;align-items:center;margin:10px 0 4px}
+  .ew2{text-align:center}
+  .eye2{width:120px;height:120px;border-radius:50%;position:relative;margin:0 auto;
+    background:radial-gradient(circle at 42% 36%,#fff,#dde6ee 60%,#aebccb);border:2px solid #8497a8;transition:box-shadow .25s}
+  .eye2.lit{box-shadow:0 0 30px 6px rgba(255,225,120,.85)}
+  .iris2{position:absolute;left:25px;top:25px;width:70px;height:70px;border-radius:50%;
+    background:radial-gradient(circle at 48% 42%,#7a5a2e,#5a3d1c 55%,#3a2710)}
+  .pupil2{position:absolute;border-radius:50%;background:#05080b;
+    transition:width .5s ease,height .5s ease,left .5s ease,top .5s ease}
+  .elab{font-size:12.5px;color:var(--mut);margin-top:8px}.elab b{color:var(--txt)}
+  .psizes{text-align:center;font-size:13px;color:var(--mut);margin:4px 0 10px}.psizes b{color:var(--txt)}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;padding:8px 12px;font-size:13px;transition:.14s}
+  .btn:hover{border-color:var(--mut)}
+  .btn.stim2.on,#swing2.on{border-color:var(--warn);box-shadow:0 0 0 2px var(--warn) inset}
+  .presp{margin-top:12px;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-height:48px}
+  .presp b{color:#fff}
+  .presp .lz{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--warn)}
+
+  /* quiz */
+  .qrow{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:13px;color:var(--mut)}
+  .bar{flex:1;height:7px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:700;color:var(--txt);white-space:nowrap}
+  .qtext{font-size:15.5px;font-weight:600;margin:4px 0 12px}
+  .opt{display:block;width:100%;text-align:left;background:var(--card2);border:1.5px solid var(--line);border-radius:10px;
+    padding:10px 13px;margin-bottom:8px;font-size:14.5px;cursor:pointer;color:var(--txt);transition:.14s}
+  .opt:hover:not(:disabled){border-color:var(--mut)}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--mut)}
+  .opt.correct{border-color:var(--ok);background:#10301c}.opt.correct .lab{color:var(--ok)}
+  .opt.incorrect{border-color:var(--bad);background:#34191a}.opt.incorrect .lab{color:var(--bad)}
+  .fb{border-radius:10px;padding:11px 14px;margin:6px 0 2px;font-size:14px}
+  .fb.good{background:#10301c;border:1px solid #2f7d4f}
+  .fb.bad{background:#34191a;border:1px solid #7d3a36}
+  .fb .t{font-weight:700;display:block;margin-bottom:3px}
+  .fb.good .t{color:var(--ok)}.fb.bad .t{color:var(--bad)}
+  .fb .anchor{margin-top:6px;font-size:12px;color:var(--mut)}
+  .acts{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#0b1118;border:none;border-radius:9px;padding:9px 20px;font-size:14.5px;font-weight:700;cursor:pointer}
+  button.nav.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center;padding:6px 0}
+  .results .big{font-size:38px;font-weight:800;margin:4px 0}
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:12.5px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+  th{background:var(--card2);color:var(--mut)}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--accent)}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Pupillary Pathways — Interactive</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · trace the light reflex &amp; sympathetic arcs, then localise the lesion</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <p class="hint" style="margin-top:0">Tap any station. <b>Afferent</b> carries light in; the reflex branches off at the <b>pretectum</b> and feeds <b>both</b> Edinger-Westphal nuclei (that's why light in one eye constricts both pupils). The <b>parasympathetic</b> efferent constricts; the 3-neuron <b>sympathetic</b> chain dilates.</p>
+
+    <div class="track aff">
+      <div class="track-label">Afferent — light in</div>
+      <div class="flow" id="flow-aff"></div>
+    </div>
+
+    <div class="track para">
+      <div class="track-label">Parasympathetic efferent — constriction</div>
+      <div class="flow" id="flow-para"></div>
+    </div>
+
+    <div class="track symp">
+      <div class="track-label">Sympathetic — dilation (3 neurons)</div>
+      <div class="flow" id="flow-symp"></div>
+    </div>
+
+    <div class="consensual"><b>Consensual response:</b> each pretectal nucleus projects to <b>both</b> Edinger-Westphal nuclei, so light in ONE eye constricts BOTH pupils (direct + consensual). The reflex leaves the visual pathway <b>before</b> the LGN/cortex — so cortical lesions never change the pupil.</div>
+
+    <div class="detail" id="detail">Tap a station above to see its role and what a lesion there causes.</div>
+  </div>
+
+  <div class="card">
+    <h2>What happens to the pupils</h2>
+    <p class="hint" style="margin-top:0">Tap a station on the pathway above to set the lesion, then apply a stimulus here. <b>Afferent</b> defects show up on the swinging-flashlight test; <b>efferent / autonomic</b> defects show at rest.</p>
+    <div class="scene2">
+      <div class="ew2"><div class="eye2" id="eR"><div class="iris2"><div class="pupil2" id="ppR"></div></div></div><div class="elab"><b>Right eye</b></div></div>
+      <div class="ew2"><div class="eye2" id="eL"><div class="iris2"><div class="pupil2" id="ppL"></div></div></div><div class="elab"><b>Left eye</b></div></div>
+    </div>
+    <div class="psizes" id="psizes"></div>
+    <div class="btns">
+      <div class="btn stim2" data-s="lightR">Light → Right</div>
+      <div class="btn stim2" data-s="lightL">Light → Left</div>
+      <div class="btn stim2" data-s="dark">Darkness</div>
+      <div class="btn stim2" data-s="near">Near target</div>
+      <div class="btn" id="swing2">▶ Swinging flashlight</div>
+    </div>
+    <div class="presp" id="presp"></div>
+  </div>
+
+  <div class="card">
+    <h2>Test yourself</h2>
+    <div class="qrow"><div class="bar"><span id="barfill"></span></div><div class="score" id="scoretext">0 / 0</div></div>
+    <div id="qbody"></div>
+  </div>
+
+  <div class="card">
+    <details>
+      <summary>Localisation quick-reference</summary>
+      <table>
+        <tr><th>Finding</th><th>Lesion site</th><th>Key clue</th></tr>
+        <tr><td>RAPD (Marcus Gunn)</td><td>Retina / optic nerve (afferent)</td><td>Swing test: bad eye dilates; ↓acuity, red desaturation</td></tr>
+        <tr><td>Wernicke's hemianopic pupil</td><td>Optic <b>tract</b></td><td>Only the tract (pupil fibres still present) — not cortex</td></tr>
+        <tr><td>Argyll-Robertson</td><td>Pretectum (central, midbrain)</td><td>Bilateral small/irregular; accommodates, no light; neurosyphilis; <i>no</i> pilocarpine response</td></tr>
+        <tr><td>Fixed dilated + ptosis, down-&amp;-out</td><td>CN III (efferent)</td><td>Pupil-involving = PCoA aneurysm until proven otherwise</td></tr>
+        <tr><td>Adie tonic pupil</td><td>Ciliary ganglion / short ciliary n.</td><td>Large, slow/tonic, light-near dissociation; 0.125% pilocarpine constricts; ±↓DTRs</td></tr>
+        <tr><td>Horner (miosis, ptosis, anhidrosis)</td><td>Sympathetic chain (3 neurons)</td><td>Anisocoria worse in DARK; dilation lag</td></tr>
+      </table>
+      <p class="hint" style="margin:2px 0 0">Anisocoria worse in <b>bright</b> light → big pupil abnormal (CN III, Adie). Worse in <b>dark</b> → small pupil abnormal (Horner).</p>
+    </details>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · A2 Ocular Anatomy — Pupillary pathways</footer>
+</div>
+
+<script>
+// ---- pathway stations ----
+const NODES={
+ aff:[
+  {id:'retina',t:'Retina',s:'photoreceptors → RGC',
+    role:'Light is transduced and the afferent signal leaves via the retinal ganglion cells.',
+    les:'Dense unilateral retinal/macular disease can contribute to a <b>RAPD</b>.'},
+  {id:'on',t:'Optic nerve',s:'CN II',
+    role:'Carries the afferent (light) signal toward the midbrain.',
+    les:'Unilateral lesion → <b>RAPD (Marcus Gunn)</b> on the swinging-flashlight test, with reduced acuity and red desaturation on that side.',tag:'Afferent defect'},
+  {id:'chiasm',t:'Optic chiasm',s:'nasal fibres cross',
+    role:'Nasal fibres decussate. Pupillary fibres travel with the visual fibres here.',
+    les:'Chiasm lesion → <b>bitemporal hemianopia</b>; the light reflex is usually clinically spared.'},
+  {id:'tract',t:'Optic tract',s:'fibres branch off here',
+    role:'Pupillary fibres run in the tract, then leave via the brachium of the superior colliculus to the pretectum — <b>before</b> the LGN.',
+    les:'Tract lesion → contralateral homonymous hemianopia + <b>Wernicke’s hemianopic pupil</b> (a tract-only sign).',tag:'Tract'},
+  {id:'pretectal',t:'Pretectal nucleus',s:'midbrain · branch point',
+    role:'The reflex <b>branches off the visual pathway here</b> (before the cortex) and projects to <b>both</b> Edinger-Westphal nuclei → the consensual response.',
+    les:'Central pretectal lesion → <b>Argyll-Robertson pupil</b>: small, irregular, bilateral; <i>accommodates but does not react to light</i> (light-near dissociation); neurosyphilis/tabes; does <b>not</b> respond to pilocarpine.',tag:'Argyll-Robertson'},
+  {id:'ew',t:'Edinger-Westphal',s:'both nuclei · parasympathetic',
+    role:'Parasympathetic motor nuclei (one each side). Bilateral input here is <b>why one light constricts both pupils</b>.',
+    les:'Begins the efferent (constrictor) limb below.'}
+ ],
+ para:[
+  {id:'cn3',t:'CN III',s:'oculomotor · surface fibres',
+    role:'Parasympathetic fibres ride on the <b>outside</b> of the oculomotor nerve.',
+    les:'Compressive CN III palsy → <b>fixed dilated pupil + ptosis + eye down-and-out</b>. A pupil-involving CN III is a <b>posterior communicating artery aneurysm</b> until proven otherwise.',tag:'Efferent (CN III) palsy'},
+  {id:'cg',t:'Ciliary ganglion',s:'parasympathetic synapse',
+    role:'Synapse of the parasympathetic (post-ganglionic) neuron in the orbit.',
+    les:'Post-ganglionic lesion → <b>Adie (tonic) pupil</b>: large pupil, slow/tonic light reaction, light-near dissociation, supersensitive to <b>0.125% pilocarpine</b>; ± lost deep-tendon reflexes (Holmes-Adie).',tag:'Adie tonic pupil'},
+  {id:'scn',t:'Short ciliary n.',s:'to the iris',
+    role:'Carries post-ganglionic parasympathetic fibres to the sphincter.',
+    les:'Damage with the ciliary ganglion produces the same tonic (Adie) picture.'},
+  {id:'sphincter',t:'Sphincter pupillae',s:'constrictor muscle',
+    role:'Contracts → <b>MIOSIS</b>. Parasympathetic, CN III. Also drives the near response.',
+    les:'Trauma/ischaemia → sphincter tears, irregular pupil, poor constriction.'}
+ ],
+ symp:[
+  {id:'hypo',t:'Hypothalamus',s:'1st-order neuron',
+    role:'First-order (central) neuron; descends through the brainstem and cord.',
+    les:'1st-order <b>Horner</b> → brainstem/cord causes (e.g., lateral medullary / Wallenberg, MS); often with other neuro signs.',tag:'Central Horner'},
+  {id:'budge',t:'Ciliospinal centre (C8–T2)',s:'Budge-Waller · 2nd-order starts',
+    role:'First-order synapses here; the second-order (preganglionic) neuron exits the cord and loops over the lung apex.',
+    les:'Lesion of the preganglionic neuron path → Horner (see SCG).'},
+  {id:'scg',t:'Superior cervical ganglion',s:'2nd→3rd order synapse',
+    role:'Preganglionic synapses; the third-order (postganglionic) neuron begins.',
+    les:'2nd-order (preganglionic) <b>Horner</b> → <b>Pancoast (apical lung) tumour</b>, neck trauma/surgery.',tag:'Preganglionic Horner'},
+  {id:'ica',t:'ICA plexus → long ciliary n.',s:'3rd-order',
+    role:'Postganglionic fibres climb the internal carotid, cross the cavernous sinus, and reach the iris via the long ciliary nerves.',
+    les:'3rd-order (postganglionic) <b>Horner</b> → <b>carotid dissection</b> (painful Horner), cavernous sinus lesions.',tag:'Postganglionic Horner'},
+  {id:'dilator',t:'Dilator pupillae',s:'dilator muscle',
+    role:'Contracts → <b>MYDRIASIS</b>. Sympathetic, long ciliary nerves.',
+    les:'Whole-chain sympathetic loss = <b>Horner</b>: miosis + ptosis + anhidrosis; anisocoria worse in dark; dilation lag.'}
+ ]
+};
+const ENDCAP={para:{cls:'miosis',txt:'→ MIOSIS'},symp:{cls:'mydriasis',txt:'→ MYDRIASIS'}};
+
+function buildTrack(track){
+  const host=document.getElementById('flow-'+track);let h='';
+  NODES[track].forEach((n,i)=>{
+    if(i>0)h+='<span class="arrow">→</span>';
+    h+='<div class="node" data-track="'+track+'" data-id="'+n.id+'"><div>'+n.t+'<small>'+n.s+'</small></div></div>';
+  });
+  if(ENDCAP[track])h+='<span class="arrow">→</span><span class="endcap '+ENDCAP[track].cls+'">'+ENDCAP[track].txt+'</span>';
+  host.innerHTML=h;
+}
+['aff','para','symp'].forEach(buildTrack);
+
+const detail=document.getElementById('detail');
+document.querySelectorAll('.node').forEach(el=>{
+  el.addEventListener('click',()=>{
+    document.querySelectorAll('.node').forEach(x=>x.classList.remove('on'));
+    el.classList.add('on');
+    const n=NODES[el.dataset.track].find(z=>z.id===el.dataset.id);
+    let h='<div class="role"><b>'+n.t+'.</b> '+n.role+'</div>';
+    if(n.les)h+='<div class="lesion">'+(n.tag?'<span class="tag">'+n.tag+'</span> ':'')+'Lesion here → '+n.les+'</div>';
+    detail.innerHTML=h;
+    setModelFromStation(el.dataset.id);   // drive the animated pupils
+  });
+});
+
+// ---- animated pupil response, driven by the selected lesion ----
+const PPM=7; // px per mm
+const MODELS={
+ normal:{label:'No lesion (normal)',note:'Equal pupils with brisk direct AND consensual constriction to light, and constriction to a near target.',
+   s:{lightR:[3,3],lightL:[3,3],dark:[6,6],near:[3.2,3.2]}},
+ rapd:{label:'Right RAPD — afferent (optic nerve/retina)',note:'Light into the weak RIGHT eye drives less constriction in BOTH pupils, so on the swinging-flashlight test the right pupil paradoxically DILATES (Marcus Gunn). Resting sizes are equal.',
+   s:{lightR:[5,5],lightL:[3,3],dark:[6,6],near:[3.2,3.2]}},
+ cn3:{label:'Right CN III palsy — efferent',note:'The right pupil is fixed and dilated; it will not constrict to light shone in EITHER eye. The left reacts normally. Look for ptosis and a down-and-out eye.',
+   s:{lightR:[6,3],lightL:[6,3],dark:[6,6],near:[6,3.2]}},
+ adie:{label:'Right Adie tonic pupil — ciliary ganglion',note:'A large right pupil with poor/slow light reaction but a stronger NEAR response — light-near dissociation. Supersensitive to 0.125% pilocarpine.',
+   s:{lightR:[5,3],lightL:[5,3],dark:[5.5,6],near:[3.4,3.2]}},
+ argyll:{label:'Argyll-Robertson — pretectal (bilateral)',note:'Both pupils small and irregular: they do NOT react to light but constrict briskly to NEAR — light-near dissociation. Classic for neurosyphilis. No pilocarpine response.',
+   s:{lightR:[2,2],lightL:[2,2],dark:[2.6,2.6],near:[1.4,1.4]}},
+ horner:{label:'Right Horner — sympathetic',note:'The right pupil is miotic with a NORMAL light reaction. Anisocoria is greater in the DARK (dilation lag). + mild ptosis, anhidrosis.',
+   s:{lightR:[2,3],lightL:[2,3],dark:[4,6],near:[2,3.2]}},
+ tract:{label:'Right optic tract',note:'The light reflex is grossly preserved (pupils react). A subtle Wernicke\'s hemianopic pupil can be elicited by stimulating the blind hemifield — a tract-only sign.',
+   s:{lightR:[3,3],lightL:[3,3],dark:[6,6],near:[3.2,3.2]}}
+};
+const STATION_MODEL={retina:'rapd',on:'rapd',chiasm:'normal',tract:'tract',pretectal:'argyll',ew:'normal',
+ cn3:'cn3',cg:'adie',scn:'adie',sphincter:'cn3',
+ hypo:'horner',budge:'horner',scg:'horner',ica:'horner',dilator:'horner'};
+let curModel='normal',curStim='lightR',swinging=false,swingTimer=null;
+function setPup(id,mm){const d=mm*PPM,off=(70-d)/2,p=document.getElementById(id);p.style.width=d+'px';p.style.height=d+'px';p.style.left=off+'px';p.style.top=off+'px';}
+function renderPup(){
+  const M=MODELS[curModel],st=M.s[curStim];
+  setPup('ppR',st[0]);setPup('ppL',st[1]);
+  document.getElementById('eR').classList.toggle('lit',curStim==='lightR');
+  document.getElementById('eL').classList.toggle('lit',curStim==='lightL');
+  document.getElementById('psizes').innerHTML='Right pupil <b>'+st[0].toFixed(1)+' mm</b> · Left pupil <b>'+st[1].toFixed(1)+' mm</b>';
+  const stim={lightR:'Light shone into the right eye.',lightL:'Light shone into the left eye.',dark:'Room darkened.',near:'Patient fixates a near target.'}[curStim];
+  document.getElementById('presp').innerHTML='<span class="lz">Showing</span> <b>'+M.label+'.</b> '+stim+'<br>'+M.note;
+  document.querySelectorAll('.stim2').forEach(b=>b.classList.toggle('on',b.dataset.s===curStim));
+  document.getElementById('swing2').classList.toggle('on',swinging);
+}
+function setModelFromStation(id){curModel=STATION_MODEL[id]||'normal';renderPup();}
+document.querySelectorAll('.stim2').forEach(b=>b.addEventListener('click',()=>{stopSwing();curStim=b.dataset.s;renderPup();}));
+document.getElementById('swing2').addEventListener('click',()=>{swinging?stopSwing():startSwing();});
+function startSwing(){swinging=true;let side=true;swingTimer=setInterval(()=>{curStim=side?'lightR':'lightL';side=!side;renderPup();},1300);document.getElementById('swing2').textContent='⏸ Swinging flashlight';renderPup();}
+function stopSwing(){if(swingTimer)clearInterval(swingTimer);swingTimer=null;swinging=false;document.getElementById('swing2').textContent='▶ Swinging flashlight';renderPup();}
+renderPup();
+
+// ---- self-test ----
+const Q=[
+ {q:"Where does the pupillary light-reflex pathway leave the visual pathway?",
+  o:["At the lateral geniculate nucleus","At the pretectal area (midbrain), before the LGN","In the occipital cortex","At the optic chiasm"],a:1,
+  w:"Pupillary fibres branch off via the brachium of the superior colliculus to the pretectum BEFORE the LGN — so cortical lesions never affect the pupil.",
+  k:"Reflex branches at the pretectum (pre-LGN)."},
+ {q:"Light shone in the RIGHT eye constricts BOTH pupils because:",
+  o:["The optic nerves fuse at the chiasm","Each pretectal nucleus projects to BOTH Edinger-Westphal nuclei","The sympathetic chain is bilateral","CN III crosses the midline"],a:1,
+  w:"Bilateral pretectal → Edinger-Westphal projection produces the direct AND consensual response.",
+  k:"Bilateral EW input = consensual response."},
+ {q:"A relative afferent pupillary defect (Marcus Gunn) localises to the:",
+  o:["Ciliary ganglion","Optic nerve / retina (afferent limb)","Edinger-Westphal nucleus","Dilator pupillae"],a:1,
+  w:"An afferent (optic nerve/retina) defect makes light in the bad eye drive less constriction in both pupils — the bad eye 'dilates' on the swing.",
+  k:"RAPD = afferent (optic nerve)."},
+ {q:"A fixed, dilated pupil with ptosis and a 'down-and-out' eye points to a lesion of the:",
+  o:["Sympathetic chain","Pretectal nucleus","CN III (efferent limb)","Optic tract"],a:2,
+  w:"Parasympathetic fibres ride on CN III; a pupil-involving third-nerve palsy is a posterior communicating artery aneurysm until proven otherwise.",
+  k:"Blown pupil + ptosis + down-and-out = CN III."},
+ {q:"An Adie (tonic) pupil — large, slow to light, light-near dissociation — localises to the:",
+  o:["Pretectal area","Ciliary ganglion / short ciliary nerve","Optic chiasm","Superior cervical ganglion"],a:1,
+  w:"Adie's is a post-ganglionic parasympathetic (ciliary ganglion) lesion; it is supersensitive to dilute 0.125% pilocarpine, ± lost deep-tendon reflexes.",
+  k:"Adie = ciliary ganglion; 0.125% pilocarpine constricts."},
+ {q:"Bilateral small, irregular pupils that accommodate but do NOT react to light (no pilocarpine response) indicate:",
+  o:["Adie tonic pupils","Argyll-Robertson pupils (pretectal, neurosyphilis)","Bilateral Horner","Bilateral CN III palsy"],a:1,
+  w:"A central pretectal lesion blocks the light reflex but spares the near reflex (light-near dissociation) — classic for neurosyphilis/tabes; it does NOT respond to pilocarpine (unlike Adie's).",
+  k:"Argyll-Robertson = pretectal; accommodates, doesn't react."},
+ {q:"A preganglionic (2nd-order) Horner syndrome is classically caused by:",
+  o:["Carotid artery dissection","A Pancoast (apical lung) tumour","Lateral medullary stroke","Posterior communicating artery aneurysm"],a:1,
+  w:"The 2nd-order neuron loops over the lung apex via the superior cervical ganglion — a Pancoast tumour hits it. (1st-order = Wallenberg; 3rd-order = carotid dissection.)",
+  k:"Preganglionic Horner = Pancoast tumour."},
+ {q:"In Horner syndrome, the anisocoria is greatest:",
+  o:["In bright light","In the dark","During near fixation","It is equal in all conditions"],a:1,
+  w:"The Horner (small) pupil dilates poorly (dilation lag), so the size difference is greatest in the dark. Anisocoria worse in BRIGHT light means the big pupil (CN III/Adie) is abnormal.",
+  k:"Horner anisocoria worse in the DARK."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){
+ done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="acts" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
+}
+function choose(c){
+ if(done)return;done=true;const it=Q[i],right=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===right)b.classList.add('correct');if(n===c&&c!==right)b.classList.add('incorrect');});
+ const ok=c===right;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='fb '+(ok?'good':'bad');
+ fb.innerHTML='<span class="t">'+(ok?'Correct':'Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="anchor"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;
+ document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);
+}
+function next(){if(i<Q.length-1){i++;render();}else{
+ barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--mut);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});
+}}
+render();
+</script>
+</body>
+</html>

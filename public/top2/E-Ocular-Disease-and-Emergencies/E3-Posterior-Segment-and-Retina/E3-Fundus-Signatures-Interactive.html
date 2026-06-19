@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Fundus Signatures Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#993556; --accent-soft:#fbeaf0;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+  .stage{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+  .fundwrap{flex:none}
+  svg#fundus{border-radius:50%;border:3px solid #2c2c2a;box-shadow:0 0 0 4px #ece9e1}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;flex:1;min-width:240px;align-content:flex-start}
+  .chip{border:1.5px solid var(--line);background:#fff;border-radius:20px;padding:7px 13px;font-size:13px;cursor:pointer;color:var(--ink)}
+  .chip:hover{border-color:var(--accent)}
+  .chip.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .detail{margin-top:14px;background:var(--accent-soft);border-radius:11px;padding:14px 16px;font-size:14.5px;min-height:50px}
+  .detail b{color:var(--accent)}
+  .dxname{font-size:16px;font-weight:700;margin-bottom:3px}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>E3 — Fundus Signatures, interactive</h1>
+    <p class="sub">Personal study notes · tap a disease and read its classic fundus, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. The picture is the diagnosis</h2>
+    <p class="hint">Tap a disease. The retina redraws with its hallmark finding (stylized for recognition, not photo-real).</p>
+    <div class="stage">
+      <div class="fundwrap">
+        <svg id="fundus" width="260" height="260" viewBox="0 0 300 300" aria-label="Fundus illustration"></svg>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="detail" id="detail"><div class="dxname">Normal fundus</div>Tap a disease to see its signature.</div>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · E3 Posterior Segment & Retina</footer>
+</div>
+
+<script>
+const fundus=document.getElementById('fundus');
+const DISC={x:212,y:150,r:26}, MAC={x:108,y:150};
+function base(extra){
+  let s='';
+  s+='<rect x="0" y="0" width="300" height="300" fill="#bf5a37"/>';
+  // subtle texture
+  s+='<circle cx="150" cy="150" r="150" fill="url(#g)"/>';
+  s+='<defs><radialGradient id="g"><stop offset="60%" stop-color="#bf5a37" stop-opacity="0"/><stop offset="100%" stop-color="#7d3415" stop-opacity="0.5"/></radialGradient></defs>';
+  // vessels (arcades) - drawn first so signs overlay
+  const vc=(extra&&extra.vesselColor)||'#8f2f1c', vw=(extra&&extra.vesselW)||3.2;
+  s+='<path d="M '+DISC.x+' '+DISC.y+' C 170 90, 130 70, 70 70" stroke="'+vc+'" stroke-width="'+vw+'" fill="none"/>';
+  s+='<path d="M '+DISC.x+' '+DISC.y+' C 170 210, 130 230, 70 230" stroke="'+vc+'" stroke-width="'+vw+'" fill="none"/>';
+  s+='<path d="M '+DISC.x+' '+DISC.y+' C 175 120, 150 110, 120 110" stroke="'+vc+'" stroke-width="'+(vw-0.6)+'" fill="none"/>';
+  s+='<path d="M '+DISC.x+' '+DISC.y+' C 175 180, 150 190, 120 190" stroke="'+vc+'" stroke-width="'+(vw-0.6)+'" fill="none"/>';
+  // optic disc
+  const discFill=(extra&&extra.discFill)||'#e7a86a';
+  if(extra&&extra.discBlur) s+='<circle cx="'+DISC.x+'" cy="'+DISC.y+'" r="'+(DISC.r+6)+'" fill="#e7a86a" opacity="0.5"/>';
+  s+='<circle cx="'+DISC.x+'" cy="'+DISC.y+'" r="'+DISC.r+'" fill="'+discFill+'" stroke="#c98a4e" stroke-width="1.5"/>';
+  if(!(extra&&extra.discBlur)) s+='<circle cx="'+DISC.x+'" cy="'+DISC.y+'" r="'+(DISC.r*0.5)+'" fill="#f2cfa0"/>'; // cup
+  // macula
+  s+='<circle cx="'+MAC.x+'" cy="'+MAC.y+'" r="30" fill="#9c3f1f" opacity="0.45"/>';
+  s+='<circle cx="'+MAC.x+'" cy="'+MAC.y+'" r="2.5" fill="#7d3415"/>'; // foveal reflex
+  return s;
+}
+function dot(x,y,r,c){return '<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+c+'"/>';}
+function flame(x,y,a){return '<path d="M '+x+' '+y+' q 6 -3 10 1 q -5 2 -10 -1 z" fill="#7a0f0f" transform="rotate('+(a||0)+' '+x+' '+y+')"/>';}
+function cotton(x,y){return '<ellipse cx="'+x+'" cy="'+y+'" rx="7" ry="5" fill="#f3efe0" opacity="0.92"/>';}
+function spicule(x,y){return '<path d="M '+x+' '+y+' l 5 4 l -2 5 l -6 -2 l 1 -5 z M '+(x+4)+' '+(y+4)+' l 6 1 M '+x+' '+y+' l -5 -3" stroke="#241d1a" stroke-width="2.2" fill="#241d1a"/>';}
+const SIGNS={
+ crao:()=>{let s=base({vesselColor:'#a85a40',vesselW:2.2});
+   s='<rect x="0" y="0" width="300" height="300" fill="#bf5a37"/>'+s.substring(s.indexOf('<circle cx="150"'));
+   // retinal whitening overlay
+   s+='<circle cx="150" cy="150" r="150" fill="#eef0e6" opacity="0.55"/>';
+   // re-emphasize cherry-red spot
+   s+=dot(MAC.x,MAC.y,9,'#c0152a');s+=dot(MAC.x,MAC.y,4,'#e23a2a');
+   return s;},
+ crvo:()=>{let s=base({discBlur:true,vesselColor:'#6e1f12',vesselW:4.5});
+   const fl=[[90,85,20],[120,200,-15],[160,95,10],[80,170,0],[150,210,25],[110,120,-20],[175,200,15],[95,210,5],[140,80,-10]];
+   fl.forEach(f=>s+=flame(f[0],f[1],f[2]));
+   s+=cotton(130,110);s+=cotton(95,180);
+   return s;},
+ rp:()=>{let s=base({discFill:'#e8d2ad',vesselColor:'#9c5a40',vesselW:1.6});
+   const sp=[[60,80],[70,210],[55,150],[90,60],[100,235],[235,80],[240,210],[80,110],[90,195],[230,120],[225,185]];
+   sp.forEach(p=>s+=spicule(p[0],p[1]));
+   return s;},
+ htn:()=>{let s=base({});
+   // macular star: radial yellow exudates around macula
+   for(let k=0;k<10;k++){const ang=k*36*Math.PI/180;const x1=MAC.x+8*Math.cos(ang),y1=MAC.y+8*Math.sin(ang),x2=MAC.x+22*Math.cos(ang),y2=MAC.y+22*Math.sin(ang);
+     s+='<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="#e7c645" stroke-width="2.4"/>';}
+   s+=flame(150,95,10);s+=flame(170,200,-10);s+=cotton(140,115);s+=cotton(160,185);
+   return s;},
+ dr:()=>{let s=base({});
+   const ma=[[120,120],[95,170],[150,140],[130,180],[100,130],[160,165],[115,200]];ma.forEach(p=>s+=dot(p[0],p[1],3,'#9a0f1a'));
+   const ex=[[95,150],[105,160],[88,140],[118,155]];ex.forEach(p=>s+=dot(p[0],p[1],3.5,'#e7c645'));
+   s+=cotton(150,110);s+=flame(135,200,15);
+   return s;},
+ amd:()=>{let s=base({});
+   const dru=[[100,140],[115,150],[95,160],[108,135],[120,165],[92,148],[110,158]];dru.forEach(p=>s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="5" fill="#ecd79b" opacity="0.9"/>');
+   return s;},
+ papil:()=>{let s=base({discBlur:true});
+   s+='<circle cx="'+DISC.x+'" cy="'+DISC.y+'" r="'+(DISC.r+9)+'" fill="none" stroke="#f0c89a" stroke-width="6" opacity="0.5"/>';
+   s+=flame(DISC.x-22,DISC.y-20,40);s+=flame(DISC.x+18,DISC.y+22,-30);s+=flame(DISC.x-26,DISC.y+10,10);
+   return s;}
+};
+const DX={
+ crao:{name:"Central retinal artery occlusion (CRAO)",d:"Sudden painless monocular loss. The inner retina goes pale; the choroid-fed fovea shows through as a <b>cherry-red spot</b>. Treat within 4–6 h; rule out giant cell arteritis."},
+ crvo:{name:"Central retinal vein occlusion (CRVO)",d:"The <b>'blood and thunder'</b> fundus: diffuse flame hemorrhages in all quadrants, dilated tortuous veins, disc edema. Ischemic type risks neovascular glaucoma at ~3 months."},
+ rp:{name:"Retinitis pigmentosa (RP)",d:"Rod-cone dystrophy: <b>bone-spicule pigmentation</b>, attenuated arterioles, and a waxy pale disc. Night blindness comes first; fields constrict to a central island."},
+ htn:{name:"Hypertensive retinopathy (grade III–IV)",d:"Flame hemorrhages, cotton-wool spots, and a <b>macular star</b> of hard exudates. Add papilledema and it becomes grade IV = malignant hypertension."},
+ dr:{name:"Diabetic retinopathy",d:"<b>Microaneurysms</b> (earliest, red dots), dot-blot hemorrhages, hard exudates (yellow), and cotton-wool spots. Severe NPDR follows the 4-2-1 rule."},
+ amd:{name:"Age-related macular degeneration (dry)",d:"<b>Drusen</b> (pale-yellow deposits) at the macula with RPE changes. Dry AMD is 85–90%; new metamorphopsia or subretinal fluid signals conversion to wet AMD."},
+ papil:{name:"Papilledema",d:"<b>Bilateral disc swelling</b> with blurred margins and peripapillary flame hemorrhages from raised intracranial pressure. Vision is spared early (enlarged blind spot)."}
+};
+const ORDER=['crao','crvo','rp','htn','dr','amd','papil'];
+const LABEL={crao:'CRAO',crvo:'CRVO',rp:'Retinitis pigmentosa',htn:'Hypertensive',dr:'Diabetic',amd:'AMD (dry)',papil:'Papilledema'};
+fundus.innerHTML=base({});
+const detail=document.getElementById('detail'),chips=document.getElementById('chips');
+ORDER.forEach(k=>{const b=document.createElement('button');b.className='chip';b.textContent=LABEL[k];
+  b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    fundus.innerHTML=SIGNS[k]();detail.innerHTML='<div class="dxname">'+DX[k].name+'</div>'+DX[k].d;});
+  chips.appendChild(b);});
+
+const Q=[
+ {q:"A pale retina with a cherry-red fovea after sudden painless loss is:",o:["CRVO","CRAO","Diabetic retinopathy","Papilledema"],a:1,w:"CRAO: inner-retinal whitening with the choroid-fed fovea visible as a cherry-red spot.",k:"Cherry-red spot = CRAO."},
+ {q:"A 'blood and thunder' fundus with diffuse hemorrhages and tortuous veins is:",o:["CRAO","CRVO","RP","AMD"],a:1,w:"Central retinal vein occlusion gives the blood-and-thunder appearance.",k:"Blood and thunder = CRVO."},
+ {q:"Bone-spicule pigmentation with a waxy pale disc and night blindness is:",o:["Retinitis pigmentosa","Hypertensive retinopathy","Diabetic retinopathy","CRAO"],a:0,w:"RP: rod-first dystrophy with bone spicules, attenuated vessels, waxy disc.",k:"Bone spicules = RP."},
+ {q:"A macular star of hard exudates with flame hemorrhages indicates:",o:["AMD","Hypertensive retinopathy","CRVO","RP"],a:1,w:"The macular star (Henle-layer exudates) is classic for grade III–IV hypertensive retinopathy.",k:"Macular star = hypertensive retinopathy."},
+ {q:"The earliest sign of diabetic retinopathy is the:",o:["Cotton-wool spot","Microaneurysm","Neovascular frond","Drusen"],a:1,w:"Microaneurysms (small red dots) are the earliest ophthalmoscopic sign.",k:"Earliest DR sign = microaneurysm."},
+ {q:"Drusen at the macula are the hallmark of:",o:["Dry AMD","CRAO","Papilledema","RP"],a:0,w:"Drusen (yellow sub-RPE deposits) characterize dry (atrophic) AMD.",k:"Drusen = dry AMD."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

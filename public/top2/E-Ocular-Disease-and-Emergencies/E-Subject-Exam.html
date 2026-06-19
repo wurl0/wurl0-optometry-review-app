@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Subject E Board Exam</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#993556; --accent-soft:#fbeaf0;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header.brand{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  .intro h2{font-size:17px;margin:0 0 8px}
+  .intro p{font-size:14.5px;color:var(--muted);margin:0 0 12px}
+  .topic-list{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+  .chip{background:var(--tag-soft);color:var(--tag);font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:20px}
+  .modes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .modebtn{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .modebtn.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  button.start{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:12px 26px;font-size:16px;font-weight:600;cursor:pointer}
+  button.start:hover{filter:brightness(.95)}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtag{display:inline-block;background:var(--tag-soft);color:var(--tag);font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;margin-bottom:8px}
+  .qnum{font-size:12.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;float:right;margin-top:5px}
+  .qtext{font-size:17px;font-weight:600;margin:4px 0 16px;clear:both}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;transition:.15s;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .quit{background:none;border:none;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline}
+  .results{text-align:center;padding:6px 0}
+  .results .big{font-size:46px;font-weight:700;margin:4px 0}
+  .results .msg{color:var(--muted);margin-bottom:16px}
+  .breakdown{text-align:left;margin:14px 0}
+  .breakdown h3{font-size:15px;margin:0 0 10px}
+  .brow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:14px}
+  .brow .name{width:210px;color:var(--ink)}
+  .brow .track{flex:1;height:7px;background:var(--line);border-radius:20px;overflow:hidden}
+  .brow .fill{height:100%;border-radius:20px}
+  .brow .pct{width:54px;text-align:right;color:var(--muted);font-size:13px}
+  .missed-item{font-size:14px;border-left:3px solid var(--wrong);padding:3px 0 3px 11px;margin:9px 0;color:var(--muted);text-align:left}
+  .missed-item b{color:var(--ink)}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>Subject E — Board Exam</h1>
+    <p class="sub">Ocular Disease and Emergencies · 100 questions · mixed, board-style</p>
+  </header>
+
+  <div class="panel intro" id="intro">
+    <h2>Before you start</h2>
+    <p>100 board-style questions across the four E areas, shuffled like the real exam. Each question is tagged. Answer, read the explanation, and the end screen gives a score breakdown by area so you know which note to reread.</p>
+    <div class="topic-list">
+      <span class="chip">E1 Orbit / Adnexa / Lids</span>
+      <span class="chip">E2 Anterior Segment</span>
+      <span class="chip">E3 Posterior / Retina</span>
+      <span class="chip">E4 Emergencies</span>
+    </div>
+    <p style="margin-bottom:8px"><b>Length:</b></p>
+    <div class="modes" id="modes">
+      <button class="modebtn sel" data-n="100">Full 100</button>
+      <button class="modebtn" data-n="50">Half (50)</button>
+      <button class="modebtn" data-n="25">Quick (25)</button>
+    </div>
+    <button class="start" id="startBtn">Start the exam</button>
+  </div>
+
+  <div class="panel" id="quiz" style="display:none">
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </div>
+
+  <footer>WAA Board Review 2026 · Personal study notes · Subject E board exam</footer>
+</div>
+
+<script>
+const BANK=[
+// ===== E1 Orbit / Adnexa / Eyelids =====
+{t:"E1 Orbit/Adnexa/Lids",q:"An infant has an enlarged, cloudy cornea and tearing. The enlarged globe is termed:",o:["Microphthalmos","Buphthalmos","Phthisis bulbi","Anophthalmos"],a:1,w:"Raised IOP from congenital glaucoma stretches the infant's distensible cornea and sclera (buphthalmos).",k:"Buphthalmos = big infant eye = congenital glaucoma."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common cause of orbital cellulitis is:",o:["Frontal sinusitis","Ethmoiditis","Dental infection","Trauma"],a:1,w:"The thin lamina papyracea shares the medial orbital wall with the ethmoid, so ethmoiditis is the usual source.",k:"Orbital cellulitis = ethmoiditis."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common primary orbital malignancy in children is:",o:["Retinoblastoma","Rhabdomyosarcoma","Cavernous hemangioma","Lymphoma"],a:1,w:"Rhabdomyosarcoma is the most common pediatric primary orbital malignancy (peak 7–8 years).",k:"Pediatric orbital malignancy = rhabdomyosarcoma."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Fatiguable ptosis that improves with a Tensilon (edrophonium) test indicates:",o:["CN3 palsy","Horner's syndrome","Myasthenia gravis","Aponeurotic ptosis"],a:2,w:"Variable, fatiguable ptosis with a positive Tensilon test is myasthenia gravis.",k:"Fatiguable ptosis + Tensilon = myasthenia."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common type of adult ptosis is:",o:["Neurogenic","Myogenic","Aponeurotic","Mechanical"],a:2,w:"Aponeurotic (levator disinsertion) ptosis is the most common in adults, with a thin lid and high crease.",k:"Most common adult ptosis = aponeurotic."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Horner's syndrome triad consists of:",o:["Ptosis, mydriasis, anhidrosis","Ptosis, miosis, anhidrosis","Ptosis, miosis, exophthalmos","Proptosis, mydriasis, tearing"],a:1,w:"Horner's = ptosis + miosis (small pupil) + anhidrosis. CN3 palsy gives the dilated-pupil ptosis.",k:"Horner = ptosis + miosis + anhidrosis."},
+{t:"E1 Orbit/Adnexa/Lids",q:"A chronic, non-tender, firm lid nodule is a:",o:["Hordeolum","Chalazion","Basal cell carcinoma","Dacryocystitis"],a:1,w:"A chalazion is a chronic sterile lipogranuloma of the meibomian gland; the hordeolum is the acute, tender abscess.",k:"Chalazion = chronic, non-tender granuloma."},
+{t:"E1 Orbit/Adnexa/Lids",q:"An eyelid that turns outward after a CN VII palsy is:",o:["Entropion","Ectropion","Trichiasis","Distichiasis"],a:1,w:"Orbicularis paralysis (CN VII) lets the lid evert (ectropion). Entropion turns in and scratches the cornea.",k:"Ectropion = turns out (CN VII palsy)."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common malignant eyelid tumor is:",o:["Squamous cell carcinoma","Basal cell carcinoma","Sebaceous carcinoma","Melanoma"],a:1,w:"Basal cell carcinoma (pearly margin, lower lid) is the most common eyelid malignancy.",k:"Most common lid malignancy = BCC."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common malignant lacrimal gland tumor is:",o:["Pleomorphic adenoma","Adenoid cystic carcinoma","Lymphoma","Squamous cell carcinoma"],a:1,w:"Adenoid cystic carcinoma is the most common malignant lacrimal gland tumor (painful, perineural, poor prognosis).",k:"Malignant lacrimal tumor = adenoid cystic carcinoma."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Chronic dacryocystitis from nasolacrimal duct obstruction is definitively treated with:",o:["Probing","DCR (dacryocystorhinostomy)","Antibiotic drops only","Massage"],a:1,w:"DCR creates a new drainage passage for chronic obstruction; probing is used for congenital cases.",k:"Chronic dacryocystitis → DCR."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Blood regurgitating on pressure over the lacrimal sac suggests:",o:["Simple infection","Squamous cell carcinoma of the sac","Allergic reaction","Canalicular stenosis"],a:1,w:"Pus = infection; blood = a sac tumor (classically SCC).",k:"Blood from the sac = tumor (SCC)."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common overall cause of proptosis in adults is:",o:["Orbital tumor","Thyroid (Graves) eye disease","Cellulitis","Trauma"],a:1,w:"Thyroid eye disease (Graves) is the most common cause of both unilateral and bilateral proptosis in adults.",k:"Adult proptosis = thyroid (Graves)."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Pulsating exophthalmos suggests:",o:["Orbital varices","Carotid-cavernous fistula","Thyroid disease","Cellulitis"],a:1,w:"A transmitted vascular pulse (pulsating proptosis) suggests a carotid-cavernous fistula; intermittent (Valsalva) suggests varices.",k:"Pulsating proptosis = carotid-cavernous fistula."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Bilateral painless enlargement of the lacrimal AND salivary glands is:",o:["Sjogren's syndrome","Mikulicz syndrome","Acute dacryoadenitis","Mumps"],a:1,w:"Mikulicz syndrome is bilateral painless lacrimal + salivary gland enlargement (sarcoid, lymphoma, TB).",k:"Mikulicz = lacrimal + salivary enlargement."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Acute dacryoadenitis classically produces what lid sign?",o:["Complete ptosis","S-shaped ptosis of the upper outer lid","Lagophthalmos","Ectropion"],a:1,w:"Inflammation of the lacrimal gland (upper outer orbit) causes a characteristic S-shaped ptosis.",k:"Acute dacryoadenitis = S-shaped ptosis."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Yellow lipid plaques near the medial canthi (xanthelasma) prompt screening for:",o:["Diabetes","Hyperlipidemia","Thyroid disease","Anemia"],a:1,w:"Xanthelasma are lipid deposits associated with hyperlipidemia.",k:"Xanthelasma = hyperlipidemia."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Inability to fully close the eye (e.g., from facial palsy) is:",o:["Blepharospasm","Lagophthalmos","Entropion","Ptosis"],a:1,w:"Lagophthalmos is incomplete lid closure, risking exposure keratopathy.",k:"Lagophthalmos = incomplete closure → exposure."},
+{t:"E1 Orbit/Adnexa/Lids",q:"The most common benign orbital tumor in adults is:",o:["Cavernous hemangioma","Rhabdomyosarcoma","Lymphoma","Glioma"],a:0,w:"Cavernous hemangioma is the most common benign orbital tumor in adults.",k:"Benign orbital tumor = cavernous hemangioma."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Forceful, involuntary bilateral lid closure treated with botulinum toxin is:",o:["Myokymia","Essential blepharospasm","Blepharoclonus","Hemifacial spasm"],a:1,w:"Essential blepharospasm is bilateral forced closure managed with botulinum toxin; myokymia is a benign unilateral twitch.",k:"Blepharospasm = bilateral forced closure (botulinum)."},
+{t:"E1 Orbit/Adnexa/Lids",q:"An extra row of lashes arising from the meibomian gland orifices is:",o:["Trichiasis","Distichiasis","Madarosis","Poliosis"],a:1,w:"Distichiasis is an accessory lash row from the meibomian orifices; trichiasis is misdirection of normal lashes.",k:"Distichiasis = extra lash row."},
+{t:"E1 Orbit/Adnexa/Lids",q:"Congenital dacryocystitis in a newborn is most commonly caused by:",o:["Staphylococcus","Pneumococcus","Pseudomonas","Chlamydia"],a:1,w:"Congenital (bilateral) dacryocystitis from a non-canalized NLD is classically pneumococcal; probe at 12–18 months if massage fails.",k:"Congenital dacryocystitis = pneumococcus."},
+// ===== E2 Anterior Segment =====
+{t:"E2 Anterior Segment",q:"A wing-shaped fibrovascular growth crossing the limbus and destroying Bowman's layer is a:",o:["Pinguecula","Pterygium","Phlyctenule","Pannus"],a:1,w:"A pterygium crosses the limbus and destroys Bowman's; a pinguecula is a yellow limbal deposit that does not cross.",k:"Pterygium crosses limbus, destroys Bowman's."},
+{t:"E2 Anterior Segment",q:"The leading infectious cause of blindness worldwide is:",o:["Herpes keratitis","Trachoma (Chlamydia)","Bacterial conjunctivitis","Onchocerciasis"],a:1,w:"Trachoma (Chlamydia trachomatis A, B, C) is the leading infectious cause of world blindness; pannus forms at the upper limbus.",k:"Trachoma = leading infectious blindness."},
+{t:"E2 Anterior Segment",q:"A violet ring of injection around the cornea that does not blanch with epinephrine indicates:",o:["Allergic conjunctivitis","A deep process: uveitis, keratitis, or acute glaucoma","Subconjunctival hemorrhage","Pinguecula"],a:1,w:"Ciliary (circumcorneal) flush reflects engorged deep perilimbal vessels seen in serious anterior disease.",k:"Ciliary flush = deep danger."},
+{t:"E2 Anterior Segment",q:"The earliest sign of keratoconus is:",o:["Munson's sign","Fleischer ring","Vogt's striae","Hydrops"],a:1,w:"The Fleischer ring (iron at the cone base) is the earliest sign; Munson's sign and hydrops are later.",k:"Keratoconus earliest sign = Fleischer ring."},
+{t:"E2 Anterior Segment",q:"A green-gold ring in Descemet's membrane (Kayser-Fleischer ring) indicates:",o:["Hemochromatosis","Wilson's disease (copper)","Diabetes","Gout"],a:1,w:"The KF ring is copper deposition in Descemet's membrane in Wilson's disease.",k:"Kayser-Fleischer = copper in Descemet's (Wilson's)."},
+{t:"E2 Anterior Segment",q:"Which growth does NOT cross the limbus?",o:["Pterygium","Pinguecula","Pannus","Phlyctenule migrating onto cornea"],a:1,w:"A pinguecula is a degenerative yellow deposit that stops at the limbus.",k:"Pinguecula stops at the limbus."},
+{t:"E2 Anterior Segment",q:"Cobblestone papillae on the upper tarsus with a shield ulcer in a young male is:",o:["Giant papillary conjunctivitis","Vernal keratoconjunctivitis","Trachoma","Phlyctenular keratoconjunctivitis"],a:1,w:"Vernal KC (seasonal, young males) shows cobblestone papillae, Trantas dots, and a sterile shield ulcer.",k:"Vernal KC = cobblestone papillae + shield ulcer."},
+{t:"E2 Anterior Segment",q:"Giant papillary conjunctivitis is most associated with:",o:["Bacterial infection","Contact lens wear","Dry eye","Allergy to pollen"],a:1,w:"GPC is caused by lens deposits and friction on the upper tarsus (also sutures, prostheses).",k:"GPC = contact-lens related."},
+{t:"E2 Anterior Segment",q:"In bacterial conjunctivitis, the predominant cells and discharge are:",o:["Lymphocytes, watery","Neutrophils (PMN), mucopurulent","Eosinophils, stringy","Plasma cells, serous"],a:1,w:"Bacterial conjunctivitis = neutrophils and mucopurulent discharge; viral = lymphocytes/watery; allergic = eosinophils/stringy.",k:"Bacterial = PMN + mucopurulent."},
+{t:"E2 Anterior Segment",q:"A recurrent branching corneal ulcer with terminal bulbs that stains with fluorescein is:",o:["Bacterial ulcer","Herpes simplex dendritic keratitis","Fungal keratitis","Acanthamoeba"],a:1,w:"The dendritic ulcer is pathognomonic of HSV; topical steroids are contraindicated on epithelial disease.",k:"Dendritic ulcer = herpes simplex (no steroids)."},
+{t:"E2 Anterior Segment",q:"Vesicles on the tip of the nose in herpes zoster ophthalmicus (Hutchinson's sign) indicate:",o:["Mild disease","Nasociliary involvement and high ocular risk","Bacterial superinfection","Allergy"],a:1,w:"Hutchinson's sign (nasociliary branch of V1) predicts a high risk of ocular involvement.",k:"Hutchinson's sign = nasociliary = ocular risk."},
+{t:"E2 Anterior Segment",q:"A tonic pupil that constricts to dilute (0.1%) pilocarpine is:",o:["Argyll-Robertson","Adie's pupil","Horner's","Marcus Gunn"],a:1,w:"Adie's (ciliary ganglion) shows denervation supersensitivity, constricting to 0.1% pilocarpine.",k:"Adie's pupil constricts to 0.1% pilocarpine."},
+{t:"E2 Anterior Segment",q:"Small, irregular pupils that accommodate but do not react to light, due to neurosyphilis, are:",o:["Adie's pupils","Argyll-Robertson pupils","Horner's pupils","Marcus Gunn pupils"],a:1,w:"Argyll-Robertson pupils (light-near dissociation) indicate neurosyphilis (pretectal lesion).",k:"Argyll-Robertson = neurosyphilis, light-near dissociation."},
+{t:"E2 Anterior Segment",q:"Primary acute angle-closure glaucoma classically shows:",o:["A small pinpoint pupil","A mid-dilated, fixed pupil and cloudy cornea","A normal pupil and clear cornea","Bilateral gradual field loss"],a:1,w:"PACG presents with a hard painful eye, cloudy cornea, halos, and a mid-dilated fixed pupil; it is a surgical emergency.",k:"PACG = mid-dilated fixed pupil, cloudy cornea."},
+{t:"E2 Anterior Segment",q:"A hypermature cataract leaking protein that clogs the trabecular meshwork causes which glaucoma?",o:["Phacomorphic (closed angle)","Phacolytic (open angle)","Pupillary block","Neovascular"],a:1,w:"Phacolytic glaucoma is open-angle (leaked lens protein blocks the meshwork); phacomorphic is the closed-angle swollen-lens type.",k:"Phacolytic = open angle; phacomorphic = closed."},
+{t:"E2 Anterior Segment",q:"In Marfan syndrome the crystalline lens dislocates:",o:["Inferiorly","Superotemporally (up)","Posteriorly","It does not dislocate"],a:1,w:"Marfan (FBN1) dislocates the lens up (superotemporal); homocystinuria dislocates it down (inferonasal).",k:"Marfan up; homocystinuria down."},
+{t:"E2 Anterior Segment",q:"A nuclear sclerotic cataract that temporarily improves near vision causes:",o:["Hypermetropic shift","Second sight (myopic shift)","Sudden blindness","No refractive change"],a:1,w:"Nuclear sclerosis raises the lens index, producing a myopic shift ('second sight') before clouding vision.",k:"Nuclear cataract = second sight (myopic shift)."},
+{t:"E2 Anterior Segment",q:"Which age-related cataract is described as the most common and most visually disabling, and is steroid-linked?",o:["Cortical","Nuclear","Posterior subcapsular","Anterior subcapsular"],a:2,w:"Posterior subcapsular cataract disables near vision most and is associated with steroids and diabetes.",k:"PSC = most disabling, steroid-linked."},
+{t:"E2 Anterior Segment",q:"A snowflake cataract that can progress within 72 hours occurs in:",o:["Galactosemia","Diabetes mellitus","Wilson's disease","Hypocalcemia"],a:1,w:"The bilateral snowflake cataract is the classic acute diabetic cataract.",k:"Snowflake cataract = diabetes (72 h)."},
+{t:"E2 Anterior Segment",q:"Large, greasy 'mutton-fat' keratic precipitates indicate which uveitis?",o:["Viral","Granulomatous (sarcoid, TB)","Fuchs heterochromic","Allergic"],a:1,w:"Mutton-fat KP suggest granulomatous uveitis (sarcoid, TB, VKH); fine stellate KP suggest viral or Fuchs.",k:"Mutton-fat KP = granulomatous."},
+{t:"E2 Anterior Segment",q:"A hypopyon in acute anterior uveitis is most associated with:",o:["Allergic disease","HLA-B27 conditions / Behcet's","Refractive error","Dry eye"],a:1,w:"Hypopyon (pus in the AC) is classic for HLA-B27 uveitis and Behcet's, and for bacterial endophthalmitis.",k:"Hypopyon = HLA-B27 / Behcet's."},
+{t:"E2 Anterior Segment",q:"The standard treatment of acute anterior uveitis is:",o:["Topical antibiotic only","Topical steroid + cycloplegic","Laser iridotomy","Anti-VEGF"],a:1,w:"Topical steroids quiet inflammation and a cycloplegic relieves spasm and prevents posterior synechiae.",k:"Anterior uveitis = steroid + cycloplegic."},
+{t:"E2 Anterior Segment",q:"Fuchs heterochromic cyclitis characteristically shows:",o:["A darker affected iris with synechiae","A lighter (hypochromic) affected iris and NO posterior synechiae","Mutton-fat KP","Hypopyon"],a:1,w:"Fuchs is a chronic unilateral uveitis with a lighter iris, fine KP, and notably no posterior synechiae; causes cataract.",k:"Fuchs = lighter iris, no synechiae."},
+{t:"E2 Anterior Segment",q:"Severe, boring eye pain that radiates, often with systemic disease (RA, PTB), describes:",o:["Episcleritis","Scleritis","Conjunctivitis","Pinguecula"],a:1,w:"Scleritis is deep, severely painful, and linked to systemic disease; episcleritis is superficial and mild.",k:"Scleritis = deep boring pain + systemic link."},
+{t:"E2 Anterior Segment",q:"Band keratopathy (calcium in Bowman's layer) is treated with:",o:["Antiviral drops","EDTA chelation","Laser iridotomy","Anti-VEGF"],a:1,w:"Band keratopathy is calcium deposition (chronic uveitis, hypercalcemia) removed by EDTA chelation.",k:"Band keratopathy = calcium, EDTA chelation."},
+{t:"E2 Anterior Segment",q:"Aphakia (absence of the lens) results in approximately:",o:["−10 D myopia","+10 to +12 D hyperopia","Emmetropia","−3 D myopia"],a:1,w:"Removing the lens leaves a high hyperopic refraction (~+10 to +12 D), corrected by IOL, CL, or thick spectacles.",k:"Aphakia ≈ +10 to +12 D hyperopia."},
+{t:"E2 Anterior Segment",q:"A vertical brown spindle of pigment on the corneal endothelium (Krukenberg spindle) is part of:",o:["Wilson's disease","Pigment dispersion syndrome","Fuchs dystrophy","Keratoconus"],a:1,w:"Krukenberg spindle, iris transillumination defects, and Sampaolesi line make the pigment dispersion triad → pigmentary glaucoma.",k:"Krukenberg spindle = pigment dispersion."},
+{t:"E2 Anterior Segment",q:"The dry eye test cutoffs are:",o:["Schirmer <10 mm and TBUT <10 sec","Schirmer <25 mm and TBUT <30 sec","Schirmer <5 mm only","TBUT <2 sec only"],a:0,w:"Schirmer <10 mm/5 min suggests aqueous deficiency; TBUT <10 sec suggests instability (lipid/mucin).",k:"Dry eye: Schirmer <10 mm, TBUT <10 sec."},
+{t:"E2 Anterior Segment",q:"The aqueous deficiency form of dry eye is most classically caused by:",o:["Meibomian gland dysfunction","Sjogren's syndrome","Vitamin A deficiency","Pterygium"],a:1,w:"Sjogren's is the classic immune cause of aqueous-deficient dry eye; vitamin A and trachoma cause mucin deficiency.",k:"Sjogren's = aqueous-deficient dry eye."},
+{t:"E2 Anterior Segment",q:"After-cataract (posterior capsule opacification) following extracapsular surgery is treated with:",o:["Repeat cataract surgery","YAG laser capsulotomy","Anti-VEGF","Steroid drops"],a:1,w:"YAG laser capsulotomy opens the clouded posterior capsule (after-cataract).",k:"After-cataract = YAG capsulotomy."},
+// ===== E3 Posterior Segment / Retina =====
+{t:"E3 Posterior/Retina",q:"Sudden painless monocular vision loss with a pale retina and a cherry-red fovea is:",o:["CRVO","CRAO","Optic neuritis","Retinal detachment"],a:1,w:"CRAO whitens the inner retina, leaving the choroid-fed fovea visible as a cherry-red spot; rule out giant cell arteritis.",k:"Cherry-red spot + painless loss = CRAO."},
+{t:"E3 Posterior/Retina",q:"A 'blood and thunder' fundus with diffuse hemorrhages and dilated tortuous veins is:",o:["CRAO","CRVO","ARMD","Diabetic macular edema"],a:1,w:"Central retinal vein occlusion gives the blood-and-thunder appearance; ischemic CRVO risks neovascular glaucoma at ~3 months.",k:"Blood and thunder = CRVO."},
+{t:"E3 Posterior/Retina",q:"The earliest sign of diabetic retinopathy is:",o:["Cotton-wool spots","Microaneurysm","Neovascularization","Hard exudates"],a:1,w:"Microaneurysms are the earliest ophthalmoscopic sign of diabetic retinopathy.",k:"Earliest DR sign = microaneurysm."},
+{t:"E3 Posterior/Retina",q:"Severe non-proliferative diabetic retinopathy is defined by the:",o:["1-2-3 rule","4-2-1 rule","ABCD rule","ISNT rule"],a:1,w:"4-2-1: hemorrhages in all 4 quadrants, OR venous beading in 2, OR IRMA in 1.",k:"Severe NPDR = 4-2-1 rule."},
+{t:"E3 Posterior/Retina",q:"Cotton-wool spots represent:",o:["Lipid exudates","Nerve fiber layer infarcts (ischemia)","Hemorrhages","Drusen"],a:1,w:"Cotton-wool spots are NFL microinfarcts from ischemia; hard exudates are lipid.",k:"Cotton-wool spots = NFL infarcts."},
+{t:"E3 Posterior/Retina",q:"Proliferative diabetic retinopathy is treated with:",o:["Observation","Panretinal photocoagulation (+ anti-VEGF)","Topical steroids","Cycloplegics"],a:1,w:"PRP destroys ischemic retina to cut the VEGF drive; anti-VEGF is an adjunct.",k:"PDR → panretinal photocoagulation."},
+{t:"E3 Posterior/Retina",q:"A macular star of hard exudates with papilledema indicates:",o:["Diabetic retinopathy","Malignant (grade IV) hypertensive retinopathy","ARMD","CRAO"],a:1,w:"Grade IV (Keith-Wagener-Barker) hypertensive retinopathy adds papilledema to grade III findings = malignant hypertension.",k:"Macular star + papilledema = malignant HTN."},
+{t:"E3 Posterior/Retina",q:"The most common type of age-related macular degeneration is:",o:["Wet (neovascular)","Dry (atrophic)","Mixed","Myopic"],a:1,w:"Dry (atrophic) ARMD with drusen is 85–90%; wet (CNV) is the aggressive minority.",k:"Dry ARMD = 85–90% (most common)."},
+{t:"E3 Posterior/Retina",q:"First-line treatment for wet (neovascular) ARMD is:",o:["Laser only","Intravitreal anti-VEGF","AREDS2 vitamins only","Observation"],a:1,w:"Anti-VEGF (ranibizumab, bevacizumab, aflibercept) is first-line for choroidal neovascularization.",k:"Wet ARMD → intravitreal anti-VEGF."},
+{t:"E3 Posterior/Retina",q:"Night blindness, bone-spicule pigmentation, and a waxy pale disc describe:",o:["Diabetic retinopathy","Retinitis pigmentosa","ARMD","CRVO"],a:1,w:"RP is a rod-first dystrophy: nyctalopia, bone spicules, attenuated vessels, waxy disc, reduced rod ERG.",k:"Bone spicules + nyctalopia = RP."},
+{t:"E3 Posterior/Retina",q:"A 'headlight in the fog' focal chorioretinitis at the edge of an old scar is:",o:["CMV retinitis","Toxoplasmosis","Toxocariasis","VKH"],a:1,w:"Toxoplasmosis (the most common posterior uveitis) reactivates at an old pigmented scar with overlying vitritis.",k:"Headlight in fog = toxoplasmosis."},
+{t:"E3 Posterior/Retina",q:"A 'pizza pie' retinitis with hemorrhage in a patient with HIV (CD4 <50) is:",o:["Toxoplasmosis","CMV retinitis","ARMD","Histoplasmosis"],a:1,w:"CMV retinitis (immunocompromised) shows the pizza-pie / brushfire appearance; treat with ganciclovir/foscarnet.",k:"Pizza pie = CMV retinitis (HIV)."},
+{t:"E3 Posterior/Retina",q:"Which retinal detachment type has an actual retinal break?",o:["Tractional","Exudative","Rhegmatogenous","Serous"],a:2,w:"Only rhegmatogenous RD has a break (e.g., horseshoe tear). Tractional and exudative have no break.",k:"Rhegmatogenous RD = has a break."},
+{t:"E3 Posterior/Retina",q:"Pigment cells in the anterior vitreous (tobacco dust / Shafer's sign) indicate:",o:["Normal aging","A retinal break until proven otherwise","Cataract","Vitreous hemorrhage"],a:1,w:"Tobacco dust signals a retinal break and warrants urgent retinal examination.",k:"Tobacco dust = retinal break."},
+{t:"E3 Posterior/Retina",q:"Unilateral vision loss over days with pain on eye movement and an RAPD in a young woman is:",o:["CRAO","Optic neuritis (consider MS)","Papilledema","NAION"],a:1,w:"Optic neuritis (often the first sign of multiple sclerosis) causes painful unilateral loss with RAPD and red desaturation.",k:"Painful unilateral loss + RAPD = optic neuritis (MS)."},
+{t:"E3 Posterior/Retina",q:"Papilledema differs from optic neuritis in that papilledema is:",o:["Unilateral with early vision loss","Bilateral, painless, with raised intracranial pressure","Painful with RAPD","Associated with MS"],a:1,w:"Papilledema is bilateral disc swelling from raised ICP, with vision spared early; optic neuritis is unilateral and painful.",k:"Papilledema = bilateral, painless, raised ICP."},
+{t:"E3 Posterior/Retina",q:"A 72-year-old with jaw claudication, raised ESR, and a chalky-white swollen disc has:",o:["NAION","Giant cell arteritis (AAION)","Optic neuritis","Papilledema"],a:1,w:"Arteritic AION from giant cell arteritis is an emergency; start high-dose steroids before the biopsy to save the other eye.",k:"Jaw claudication + chalky disc = GCA (AAION)."},
+{t:"E3 Posterior/Retina",q:"Painless vision loss on waking with an altitudinal field defect and a 'disc at risk' is:",o:["Arteritic AION","Non-arteritic AION (NAION)","Optic neuritis","CRAO"],a:1,w:"NAION (nocturnal hypotension, small crowded disc, vascular risk factors) gives a painless altitudinal defect.",k:"NAION = altitudinal defect, disc at risk, on waking."},
+{t:"E3 Posterior/Retina",q:"Panuveitis with vitiligo, poliosis, alopecia, and meningismus is:",o:["Behcet's","Vogt-Koyanagi-Harada (VKH)","Sarcoidosis","Sympathetic ophthalmia"],a:1,w:"VKH is a panuveitis with integumentary and neurological features, treated with high-dose systemic steroids.",k:"VKH = panuveitis + vitiligo/poliosis."},
+{t:"E3 Posterior/Retina",q:"After penetrating trauma to one eye, bilateral granulomatous panuveitis develops. The injured eye is called the:",o:["Sympathizing eye","Exciting eye","Dominant eye","Amblyopic eye"],a:1,w:"In sympathetic ophthalmia the injured eye is the 'exciting' eye and the fellow is the 'sympathizing' eye; prevent by enucleation within 10–14 days.",k:"Sympathetic ophthalmia: injured = exciting eye."},
+{t:"E3 Posterior/Retina",q:"Retinopathy of prematurity active disease ('plus disease') is marked by:",o:["Bone spicules","Dilation and tortuosity of posterior vessels","Cherry-red spot","Drusen"],a:1,w:"Plus disease (vascular dilation + tortuosity) marks active ROP; stage 5 is total RD with leukocoria.",k:"ROP plus disease = dilation + tortuosity."},
+{t:"E3 Posterior/Retina",q:"A branch retinal vein occlusion most commonly occurs:",o:["At the optic disc","At an arteriovenous crossing, superotemporal quadrant","In the fovea","At the ora serrata"],a:1,w:"BRVO occurs where a thickened artery compresses a vein at a crossing, most often superotemporally.",k:"BRVO = AV crossing, superotemporal."},
+{t:"E3 Posterior/Retina",q:"Which retinal break carries the highest risk of progressing to detachment?",o:["Atrophic round hole","Horseshoe (flap) tear","Lattice without holes","Drusen"],a:1,w:"A horseshoe (flap) tear is under active vitreoretinal traction and most likely to lead to RD.",k:"Horseshoe tear = highest RD risk."},
+{t:"E3 Posterior/Retina",q:"Leukocoria in a child with a peripheral granuloma from dog/cat roundworm suggests:",o:["Retinoblastoma","Ocular toxocariasis","Coats disease","ROP"],a:1,w:"Ocular toxocariasis (Toxocara) causes a granuloma and leukocoria in children.",k:"Toxocariasis = granuloma + leukocoria (children)."},
+{t:"E3 Posterior/Retina",q:"On the optic disc, glaucomatous cupping violates which rule?",o:["4-2-1 rule","ISNT rule","Roper-Hall rule","KWB rule"],a:1,w:"The healthy neuroretinal rim follows Inferior>Superior>Nasal>Temporal (ISNT); glaucoma violates it (often inferior notching).",k:"Glaucoma violates the ISNT rule."},
+{t:"E3 Posterior/Retina",q:"A large solitary floater after acute posterior vitreous detachment (a ring of condensed peripapillary vitreous) is a:",o:["Drusen","Weiss ring","Cotton-wool spot","Roth spot"],a:1,w:"The Weiss ring is detached peripapillary vitreous seen in PVD; new floaters/flashes warrant a retinal exam for breaks.",k:"Weiss ring = posterior vitreous detachment."},
+{t:"E3 Posterior/Retina",q:"Distortion of straight lines (metamorphopsia) on an Amsler grid is an early sign of:",o:["Glaucoma","Choroidal neovascularization (wet ARMD)","Cataract","Optic neuritis"],a:1,w:"Metamorphopsia signals macular pathology, classically early CNV in wet ARMD.",k:"Amsler metamorphopsia = macular (CNV) disease."},
+// ===== E4 Ocular Emergencies =====
+{t:"E4 Emergencies",q:"A worker splashes lye (alkali) in one eye. The correct first step is:",o:["Take a full history first","Begin copious irrigation immediately","Pad the eye and refer","Instill antibiotic ointment"],a:1,w:"A chemical burn is the only ocular injury treated before history and exam; irrigate at once.",k:"Chemical burn = irrigate first, history later."},
+{t:"E4 Emergencies",q:"Compared with acid, an alkali ocular burn is:",o:["Less dangerous (coagulates)","More dangerous, penetrating deeply (liquefactive necrosis)","Identical","Limited to the conjunctiva"],a:1,w:"Alkali causes liquefactive necrosis and drives deeper; acid coagulates surface proteins and self-limits.",k:"Alkali penetrates deeper (liquefactive)."},
+{t:"E4 Emergencies",q:"Chemical-burn irrigation should continue until the pH reaches:",o:["5.0","7.0–7.4","8.5","Any time after 1 minute"],a:1,w:"Irrigate copiously and continue until the conjunctival pH normalizes to about 7.0–7.4.",k:"Irrigate until pH 7.0–7.4."},
+{t:"E4 Emergencies",q:"The prognosis in a chemical burn (Roper-Hall) depends most on:",o:["Corneal diameter","The degree of limbal ischemia","Eyelid involvement","IOP"],a:1,w:"Limbal (stem cell) ischemia is the key prognostic factor in the Roper-Hall grading.",k:"Chemical burn prognosis = limbal ischemia."},
+{t:"E4 Emergencies",q:"A hard, painful red eye with a mid-dilated fixed pupil and cloudy cornea is managed by:",o:["Topical steroid only","Lowering IOP medically, then laser peripheral iridotomy","Antibiotics","Patching"],a:1,w:"Acute angle-closure is an emergency: lower IOP with drops/oral agents, then definitive laser iridotomy.",k:"Acute angle-closure = lower IOP then iridotomy."},
+{t:"E4 Emergencies",q:"The treatment window to attempt to save vision in CRAO is about:",o:["24 hours","4–6 hours","1 week","No window"],a:1,w:"Within ~4–6 hours, ocular massage and IOP lowering may help; always exclude giant cell arteritis.",k:"CRAO window ~4–6 hours."},
+{t:"E4 Emergencies",q:"In suspected giant cell arteritis with sudden vision loss, you should:",o:["Wait for temporal artery biopsy before treating","Start high-dose corticosteroids immediately","Give anti-VEGF","Observe"],a:1,w:"Treat immediately to protect the second eye; the biopsy can follow within days.",k:"GCA: steroids before biopsy."},
+{t:"E4 Emergencies",q:"A suspected open (ruptured) globe should be:",o:["Patched firmly","Shielded with no pressure, kept NPO, and referred for surgery","Irrigated forcefully","Pressed to check IOP"],a:1,w:"Place a rigid shield (not a pad), avoid all pressure and IOP measurement, keep NPO, and arrange urgent surgery.",k:"Open globe = shield, no pressure, NPO."},
+{t:"E4 Emergencies",q:"Which imaging is CONTRAINDICATED for a suspected ferrous (iron) intraocular foreign body?",o:["CT","Ultrasound","MRI","Plain X-ray"],a:2,w:"MRI is contraindicated with a ferrous IOFB (magnetic movement risk); use CT.",k:"Ferrous IOFB = no MRI (use CT)."},
+{t:"E4 Emergencies",q:"An iron intraocular foreign body causes which toxic syndrome?",o:["Chalcosis","Siderosis (rust iris, b-wave loss)","Argyrosis","Chrysiasis"],a:1,w:"Iron causes siderosis (rusty iris, heterochromia, b-wave attenuation); copper alloy causes chalcosis (KF ring, sunflower cataract).",k:"Iron IOFB = siderosis; copper alloy = chalcosis."},
+{t:"E4 Emergencies",q:"A hypopyon and decreasing vision a few days after cataract surgery is:",o:["GPC","Endophthalmitis (intravitreal antibiotics)","Dry eye","Allergic reaction"],a:1,w:"Post-operative endophthalmitis is an emergency treated with a vitreous tap and intravitreal antibiotics.",k:"Post-op hypopyon = endophthalmitis."},
+{t:"E4 Emergencies",q:"Which finding distinguishes ORBITAL from preseptal cellulitis?",o:["Lid swelling","Proptosis with painful, restricted eye movement","Fever","Redness"],a:1,w:"Orbital cellulitis adds proptosis, pain on motion, and restricted gaze; preseptal has normal motility and no proptosis.",k:"Orbital cellulitis = proptosis + painful gaze."},
+{t:"E4 Emergencies",q:"A blow-out orbital floor fracture classically presents with:",o:["Pulsating proptosis","Infraorbital numbness and diplopia on vertical gaze","A cherry-red spot","Hypopyon"],a:1,w:"Floor fracture causes infraorbital nerve numbness, restricted up/down gaze, enophthalmos; best imaged with CT coronal sections.",k:"Blow-out = infraorbital numbness + diplopia (CT coronal)."},
+{t:"E4 Emergencies",q:"After a blunt orbital injury with a floor fracture, the patient should be told to:",o:["Blow the nose to clear pressure","Avoid blowing the nose","Apply heat","Bend forward often"],a:1,w:"Nose-blowing can force air into the orbit (emphysema) and worsen the injury; avoid it.",k:"Blow-out fracture: no nose blowing."},
+{t:"E4 Emergencies",q:"A traumatic hyphema carries the greatest risk of rebleeding on which days?",o:["Days 1–2","Days 3–5","Day 14","Day 30"],a:1,w:"Hyphema rebleeding peaks days 3–5 and can spike IOP; rest, shield, avoid antiplatelets, and screen for sickle cell.",k:"Hyphema rebleed = days 3–5."},
+{t:"E4 Emergencies",q:"Bilateral retinal hemorrhages with subdural hemorrhage in an infant under 2 suggest:",o:["Birth trauma only","Shaken baby syndrome (abuse)","ROP","Congenital glaucoma"],a:1,w:"Bilateral retinal hemorrhages plus intracranial bleeding in a young child is shaken baby syndrome; mandatory reporting.",k:"Bilateral retinal hemorrhages + subdural = shaken baby."},
+{t:"E4 Emergencies",q:"A white corneal infiltrate with fluorescein staining and pain in a contact-lens wearer is, until proven otherwise:",o:["Allergic conjunctivitis","Microbial keratitis (urgent)","Dry eye","Pinguecula"],a:1,w:"An infiltrate with staining and pain is microbial keratitis (Pseudomonas most common), a sight-threatening emergency.",k:"Infiltrate + staining = microbial keratitis."},
+{t:"E4 Emergencies",q:"UV photokeratitis ('welder's flash' or snow blindness) typically:",o:["Causes permanent scarring","Heals in 24–48 hours with supportive care","Requires surgery","Causes glaucoma"],a:1,w:"UV photokeratitis is intensely painful but self-limiting, healing in 24–48 hours (cool compress, NSAID, lubrication).",k:"UV photokeratitis heals in 24–48 h."},
+{t:"E4 Emergencies",q:"Which acids behave more like alkali, penetrating deeply?",o:["Acetic and citric","Hydrofluoric acid (and ammonia among bases)","Boric and carbonic","All acids equally"],a:1,w:"Hydrofluoric acid (and ammonia among alkalis) penetrates deeply, unlike most acids that coagulate and self-limit.",k:"Hydrofluoric acid penetrates like alkali."},
+{t:"E4 Emergencies",q:"A pigment ring imprinted on the anterior lens after blunt trauma (from the iris) is a:",o:["Vossius ring","Weiss ring","Kayser-Fleischer ring","Fleischer ring"],a:0,w:"A Vossius ring is iris-pigment imprinted on the anterior lens capsule from blunt trauma.",k:"Vossius ring = blunt trauma lens pigment imprint."},
+{t:"E4 Emergencies",q:"Gray retinal opacification after blunt trauma that usually resolves in weeks is:",o:["Commotio retinae","Choroidal rupture","CRAO","Retinal detachment"],a:0,w:"Commotio retinae (Berlin's edema) is transient gray retinal whitening that typically resolves over 2–6 weeks.",k:"Commotio retinae = transient gray retina."}
+];
+
+let MODE=100;
+document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
+  b.classList.add('sel');MODE=parseInt(b.dataset.n);
+}));
+
+let Q=[],i=0,s=0,done=false;const missed=[];let topicStats={};
+const intro=document.getElementById('intro'),quiz=document.getElementById('quiz');
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+
+function shuffle(arr){const a=arr.slice();for(let j=a.length-1;j>0;j--){const r=Math.floor(Math.random()*(j+1));[a[j],a[r]]=[a[r],a[j]];}return a;}
+
+document.getElementById('startBtn').addEventListener('click',()=>{
+  Q=shuffle(BANK).slice(0,Math.min(MODE,BANK.length));
+  i=0;s=0;missed.length=0;topicStats={};
+  intro.style.display='none';quiz.style.display='block';render();
+});
+
+function render(){
+ done=false;const it=Q[i];
+ barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
+ let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
+ h+='<div class="qtext">'+it.q+'</div>';
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
+ body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
+ document.getElementById('quitBtn').addEventListener('click',()=>{if(i>0||done)results();});
+}
+function choose(c){
+ if(done)return;done=true;const it=Q[i],right=it.a;
+ const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
+   if(n===right)b.classList.add('correct');
+   if(n===c&&c!==right)b.classList.add('incorrect');});
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ scoretext.textContent=s+' / '+Q.length;
+ const fb=document.getElementById('fb');
+ fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;
+ document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);
+ document.getElementById('quitBtn').addEventListener('click',results);
+}
+function next(){if(i<Q.length-1){i++;render();}else results();}
+function results(){
+ const answered=Object.values(topicStats).reduce((x,y)=>x+y.t,0)||1;
+ barfill.style.width='100%';const pct=Math.round(s/answered*100);
+ let m=pct>=80?'Strong across Subject E. Review the misses and you are board-ready here.':pct>=60?'Solid base. Focus on the weak areas in the breakdown below.':'Keep building. Reread the weak-area notes, then retake.';
+ let h='<div class="results"><div class="qtag" style="float:none">Subject E result</div><div class="big">'+pct+'%</div><div class="msg">'+s+' of '+answered+' answered correctly. '+m+'</div>';
+ h+='<div class="breakdown"><h3>Score by area</h3>';
+ Object.keys(topicStats).sort().forEach(k=>{
+   const st=topicStats[k],p=Math.round(st.c/st.t*100);
+   const col=p>=80?'#1d9e75':p>=50?'#ba7517':'#c0392b';
+   h+='<div class="brow"><span class="name">'+k+'</span><span class="track"><span class="fill" style="width:'+p+'%;background:'+col+'"></span></span><span class="pct">'+st.c+'/'+st.t+'</span></div>';
+ });
+ h+='</div>';
+ if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
+   missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
+ h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">Back to start</button></div></div>';
+ body.innerHTML=h;
+ document.getElementById('ag').addEventListener('click',()=>{quiz.style.display='none';intro.style.display='block';window.scrollTo(0,0);});
+}
+</script>
+<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="E-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><a href="E-Strategy.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Strategy</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#d6418a;color:#fff;">Exam</span></div><!--/WAA-LAYER-NAV--></body>
+</html>

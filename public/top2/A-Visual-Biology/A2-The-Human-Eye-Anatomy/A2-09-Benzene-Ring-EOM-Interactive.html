@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benzene Ring — EOM Actions &amp; Gaze (WAA Board Review 2026)</title>
+<style>
+  :root{
+    --bg:#0f1419; --card:#1a212b; --card2:#222b37; --line:#2d3845;
+    --txt:#e6edf3; --mut:#9fb0c0;
+    --ag:#3fb950; --anta:#e5534b; --yoke:#4aa8ff; --sel:#e3b341; --key:#a371f7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--yoke);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:17px;color:var(--sel);border-left:3px solid var(--sel);padding-left:10px;margin:28px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+
+  svg{width:100%;height:auto;display:block;touch-action:manipulation}
+  .outline{fill:none;stroke:#54657a;stroke-width:2.5;stroke-linejoin:round}
+  .spoke{stroke:#33414f;stroke-width:1.4}
+  .eyeletter{fill:#39485a;font-weight:800;font-size:62px;text-anchor:middle;dominant-baseline:central}
+  .apex{fill:#54657a}
+
+  .m{cursor:pointer}
+  .m circle{fill:#27313d;stroke:#3a4654;stroke-width:2;transition:.18s}
+  .m .ab{fill:#e6c2da;font-weight:800;font-size:19px;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+  .m .tag{fill:#fff;font-weight:800;font-size:14px;text-anchor:middle;pointer-events:none}
+  .m:hover circle{stroke:#7e8ea0}
+  .m.ag circle{fill:#123821;stroke:var(--ag);stroke-width:3}
+  .m.ag .ab{fill:#85e5a1}
+  .m.anta circle{fill:#3a1417;stroke:var(--anta);stroke-width:2.5}
+  .m.anta .ab{fill:#ff9d97}
+  .m.yoke circle{fill:#0f3150;stroke:var(--yoke);stroke-width:3}
+  .m.yoke .ab{fill:#9ccbff}
+  .m.sel circle{fill:#3a2d0f;stroke:var(--sel);stroke-width:3.5}
+  .m.sel .ab{fill:#f4d98a}
+
+  /* gaze pad */
+  .pad{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;max-width:560px;margin:0 auto;
+    grid-template-areas:"tl pp tr" "l pp2 r" "bl pp3 br"}
+  .gz{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);
+    border-radius:11px;padding:9px 10px;text-align:center;transition:.15s}
+  .gz:hover{border-color:var(--mut)}
+  .gz.on{border-color:var(--sel);box-shadow:0 0 0 2px var(--sel) inset}
+  .gz .a{font-size:18px;line-height:1}
+  .gz .n{font-weight:700;font-size:13.5px;margin-top:2px}
+  .gz .c{color:var(--mut);font-size:11.5px}
+  .center{grid-area:pp2;display:flex;align-items:center;justify-content:center;color:var(--mut);font-size:12px;
+    border:1px dashed var(--line);border-radius:11px;text-align:center;padding:6px}
+
+  .readout{margin:14px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-height:30px}
+  .readout b{color:#fff}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin-top:10px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+  .dot-ag{background:var(--ag)} .dot-anta{background:var(--anta)} .dot-yoke{background:var(--yoke)} .dot-sel{background:var(--sel)}
+
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+  th{background:var(--card2);color:var(--mut)}
+  .mnem{background:#1c1530;border:1px solid #3a2a5e;border-radius:10px;padding:11px 14px;margin:10px 0;font-size:13.5px}
+  .mnem b{color:#c9a9ff}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--yoke)}
+  /* animated eye pair + terminology grid */
+  .eyepair{display:flex;gap:50px;justify-content:center;align-items:center;margin:8px 0 8px}
+  .eyewrap{text-align:center}
+  .eye{width:116px;height:116px;border-radius:50%;position:relative;overflow:hidden;margin:0 auto;
+    background:radial-gradient(circle at 42% 36%,#fff,#e1e9f0 60%,#b6c4d1);border:2px solid #8497a8}
+  .eye.off{opacity:.22}
+  .iris{position:absolute;left:27px;top:27px;width:62px;height:62px;border-radius:50%;
+    background:radial-gradient(circle at 50% 45%,#6fb6ff,#2f74c0 60%,#1d4f88);transition:transform .4s ease}
+  .pupil{position:absolute;left:19px;top:19px;width:24px;height:24px;border-radius:50%;background:#0b0f14}
+  .mark{position:absolute;left:29px;top:2px;width:4px;height:16px;border-radius:2px;background:#fff}
+  .eyelabel{font-size:12px;color:var(--mut);margin-top:6px}
+  .nose{font-size:11px;color:var(--mut)}
+  .termgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:6px}
+  .tcol{background:var(--card2);border:1px solid var(--line);border-radius:11px;padding:10px 11px}
+  .tcol h3{margin:0 0 1px;font-size:14px;color:var(--key)}
+  .tcol .csub{font-size:11.5px;color:var(--mut);margin-bottom:6px}
+  .tgroup{margin:6px 0}
+  .axbadge{display:inline-block;font-weight:800;font-size:11px;color:var(--key);background:#1c1530;
+    border:1px solid #3a2a5e;border-radius:5px;padding:0 6px;margin-bottom:3px}
+  .tchip{display:block;width:100%;text-align:left;cursor:pointer;border:1px solid var(--line);
+    background:var(--card);color:var(--txt);border-radius:8px;padding:6px 9px;font-size:12.5px;margin:3px 0;transition:.13s}
+  .tchip:hover{border-color:var(--mut)}
+  .tchip.on{border-color:var(--sel);box-shadow:0 0 0 2px var(--sel) inset}
+  @media(max-width:680px){.termgrid{grid-template-columns:1fr}}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:32px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Benzene Ring — Extraocular Muscle Actions &amp; Gaze</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · pick a direction of gaze, or tap any muscle</div>
+</div></header>
+
+<div class="wrap">
+
+  <div class="card">
+    <p class="hint" style="margin-top:0">Drawn from the <b>examiner's view</b> (right eye on the left, the way these rings are usually shown). Pick a gaze direction to light the <span style="color:var(--ag)">agonist pair</span> that turns the eyes there. Or tap any single muscle to see what it does on its own.</p>
+    <svg id="ring" viewBox="0 0 1000 600" role="img" aria-label="Benzene ring of extraocular muscles"></svg>
+    <div class="legend">
+      <span><i class="dot-ag"></i>Agonist (contracts +++)</span>
+      <span><i class="dot-anta"></i>Antagonist (relaxes −−−)</span>
+      <span><i class="dot-yoke"></i>Yoke muscle (other eye)</span>
+      <span><i class="dot-sel"></i>Muscle you tapped</span>
+    </div>
+  </div>
+
+  <h2>Direction of gaze (6 cardinal positions)</h2>
+  <p class="hint">The agonist in each eye sits at the corner that <i>points</i> toward the gaze. Up = top row, down = bottom row, the obliques (IO/SO) handle up-in and down-in, the vertical recti (SR/IR) handle up-out and down-out.</p>
+  <div class="card">
+    <div class="pad" id="pad">
+      <div class="center">Primary<br>position<br>(straight ahead)</div>
+    </div>
+    <div class="readout" id="readout">Tap a gaze direction above, or a muscle in the ring.</div>
+  </div>
+
+  <h2>What each muscle does</h2>
+  <div class="card" id="detailCard">
+    <div class="readout" id="detail">Tap any muscle in the ring to break down its action, its antagonist (same eye), and its yoke (other eye).</div>
+    <details style="margin-top:12px">
+      <summary>Full action table (all six muscles)</summary>
+      <table>
+        <tr><th>Muscle</th><th>Primary</th><th>Secondary</th><th>Tertiary</th></tr>
+        <tr><td><b>MR</b> Medial rectus</td><td>Adduction</td><td>—</td><td>—</td></tr>
+        <tr><td><b>LR</b> Lateral rectus</td><td>Abduction</td><td>—</td><td>—</td></tr>
+        <tr><td><b>SR</b> Superior rectus</td><td>Elevation</td><td>Intorsion</td><td>Adduction</td></tr>
+        <tr><td><b>IR</b> Inferior rectus</td><td>Depression</td><td>Extorsion</td><td>Adduction</td></tr>
+        <tr><td><b>IO</b> Inferior oblique</td><td>Extorsion</td><td>Elevation</td><td>Abduction</td></tr>
+        <tr><td><b>SO</b> Superior oblique</td><td>Intorsion</td><td>Depression</td><td>Abduction</td></tr>
+      </table>
+      <p class="hint" style="margin:4px 0 0">Memory hook: <b>recti</b> adduct as their tertiary (they wrap toward the nose), <b>obliques</b> abduct. The <b>superior</b> muscles (SR, SO) both <b>in</b>tort; the <b>inferior</b> muscles (IR, IO) both <b>ex</b>tort.</p>
+    </details>
+  </div>
+
+  <h2>Naming the movements (duction · version · vergence)</h2>
+  <p class="hint">Same muscles, different name depending on how many eyes move and which way. Tap any term to animate the eyes, including the torsional (cyclo) movements. Watch the white 12 o'clock marker for torsion. Gaze terms also light the matching muscles in the ring above.</p>
+  <div class="card">
+    <div class="eyepair">
+      <div class="eyewrap"><div class="eye" id="eyeR"><div class="iris"><div class="mark"></div><div class="pupil"></div></div></div><div class="eyelabel">Right eye</div></div>
+      <div class="nose">nose</div>
+      <div class="eyewrap"><div class="eye" id="eyeL"><div class="iris"><div class="mark"></div><div class="pupil"></div></div></div><div class="eyelabel">Left eye</div></div>
+    </div>
+    <div class="termgrid" id="termgrid"></div>
+    <div class="readout" id="termReadout">Tap any term to see it move. The right eye is shown alone for the single-eye (duction) terms.</div>
+  </div>
+
+  <h2>The two laws behind the ring</h2>
+  <div class="card">
+    <div class="mnem">
+      <b>Hering's law (both eyes, equal innervation):</b> the impulse to an agonist goes equally to its <b>yoke</b> muscle in the other eye, so the eyes stay parallel. That yoke pair is exactly what lights up when you pick a gaze. Example: look right → R-LR + L-MR fire together.
+    </div>
+    <div class="mnem">
+      <b>Sherrington's law (one eye, reciprocal innervation):</b> when a muscle contracts, its direct antagonist relaxes by the same amount. That is the red muscle in each eye. Example: supraduction → SR contracts (+++), IR relaxes (−−−).
+    </div>
+    <p class="hint" style="margin-bottom:0">So every gaze you tap shows both laws at once: Hering across the two eyes (the green pair), Sherrington inside each eye (green agonist, red antagonist).</p>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · A2 Ocular Anatomy — Extraocular Muscles</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+// muscle data: node coords, abbreviation, full name, actions, same-eye antagonist, other-eye yoke
+var M = {
+  // RIGHT eye (centered x=300)
+  'R-SR':{xy:[185,200],ab:'SR',full:'Superior Rectus',p:'Elevation',s:'Intorsion',t:'Adduction',ant:'R-IR',yoke:'L-IO'},
+  'R-IO':{xy:[415,200],ab:'IO',full:'Inferior Oblique',p:'Extorsion',s:'Elevation',t:'Abduction',ant:'R-SO',yoke:'L-SR'},
+  'R-LR':{xy:[150,310],ab:'LR',full:'Lateral Rectus',p:'Abduction',s:'—',t:'—',ant:'R-MR',yoke:'L-MR'},
+  'R-MR':{xy:[450,310],ab:'MR',full:'Medial Rectus',p:'Adduction',s:'—',t:'—',ant:'R-LR',yoke:'L-LR'},
+  'R-IR':{xy:[185,420],ab:'IR',full:'Inferior Rectus',p:'Depression',s:'Extorsion',t:'Adduction',ant:'R-SR',yoke:'L-SO'},
+  'R-SO':{xy:[415,420],ab:'SO',full:'Superior Oblique',p:'Intorsion',s:'Depression',t:'Abduction',ant:'R-IO',yoke:'L-IR'},
+  // LEFT eye (centered x=700) — mirror
+  'L-IO':{xy:[585,200],ab:'IO',full:'Inferior Oblique',p:'Extorsion',s:'Elevation',t:'Abduction',ant:'L-SO',yoke:'R-SR'},
+  'L-SR':{xy:[815,200],ab:'SR',full:'Superior Rectus',p:'Elevation',s:'Intorsion',t:'Adduction',ant:'L-IR',yoke:'R-IO'},
+  'L-MR':{xy:[550,310],ab:'MR',full:'Medial Rectus',p:'Adduction',s:'—',t:'—',ant:'L-LR',yoke:'R-LR'},
+  'L-LR':{xy:[850,310],ab:'LR',full:'Lateral Rectus',p:'Abduction',s:'—',t:'—',ant:'L-MR',yoke:'R-MR'},
+  'L-SO':{xy:[585,420],ab:'SO',full:'Superior Oblique',p:'Intorsion',s:'Depression',t:'Abduction',ant:'L-IO',yoke:'R-IR'},
+  'L-IR':{xy:[815,420],ab:'IR',full:'Inferior Rectus',p:'Depression',s:'Extorsion',t:'Adduction',ant:'L-SR',yoke:'R-SO'}
+};
+var eyes = [
+  {c:[300,310], top:[300,120], bot:[300,500], order:['R-IO','R-MR','R-SO','R-IR','R-LR','R-SR'], letter:'R'},
+  {c:[700,310], top:[700,120], bot:[700,500], order:['L-SR','L-LR','L-IR','L-SO','L-MR','L-IO'], letter:'L'}
+];
+// gaze directions: agonist pair + pad placement (screen/examiner view) + clinical name
+var G = [
+  {id:'UR',area:'tl',a:'↖',n:'Up &amp; Right',clin:'Dextroelevation',pair:['R-SR','L-IO']},
+  {id:'UL',area:'tr',a:'↗',n:'Up &amp; Left',clin:'Levoelevation',pair:['R-IO','L-SR']},
+  {id:'DR',area:'l', a:'←',n:'Right',clin:'Dextroversion',pair:['R-LR','L-MR']},
+  {id:'LV',area:'r', a:'→',n:'Left',clin:'Levoversion',pair:['R-MR','L-LR']},
+  {id:'DDR',area:'bl',a:'↙',n:'Down &amp; Right',clin:'Dextrodepression',pair:['R-IR','L-SO']},
+  {id:'DDL',area:'br',a:'↘',n:'Down &amp; Left',clin:'Levodepression',pair:['R-SO','L-IR']}
+];
+
+var svg=document.getElementById('ring');
+function el(tag,attrs){var e=document.createElementNS(SVGNS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);return e;}
+
+// draw eyes
+eyes.forEach(function(ey){
+  // clockwise outline from top apex: order is [upper-R, mid-R, lower-R, lower-L, mid-L, upper-L]
+  var ids=ey.order;
+  var poly=[ey.top,M[ids[0]].xy,M[ids[1]].xy,M[ids[2]].xy,ey.bot,M[ids[3]].xy,M[ids[4]].xy,M[ids[5]].xy];
+  svg.appendChild(el('polygon',{points:poly.map(function(p){return p.join(',');}).join(' '),class:'outline'}));
+  // spokes
+  ids.forEach(function(id){
+    var p=M[id].xy;
+    svg.appendChild(el('line',{x1:ey.c[0],y1:ey.c[1],x2:p[0],y2:p[1],class:'spoke'}));
+  });
+  // apex dots
+  svg.appendChild(el('circle',{cx:ey.top[0],cy:ey.top[1],r:4,class:'apex'}));
+  svg.appendChild(el('circle',{cx:ey.bot[0],cy:ey.bot[1],r:4,class:'apex'}));
+  // center letter
+  var L=el('text',{x:ey.c[0],y:ey.c[1],class:'eyeletter'});L.textContent=ey.letter;svg.appendChild(L);
+});
+
+// draw muscle nodes (after outline so they sit on top)
+for(var id in M){(function(id){
+  var d=M[id],p=d.xy;
+  var g=el('g',{class:'m',id:'n-'+id});
+  g.appendChild(el('circle',{cx:p[0],cy:p[1],r:27}));
+  var ab=el('text',{x:p[0],y:p[1],class:'ab'});ab.textContent=d.ab;g.appendChild(ab);
+  var tag=el('text',{x:p[0],y:p[1]-38,class:'tag'});tag.textContent='';g.appendChild(tag);
+  g.addEventListener('click',function(){selectMuscle(id);});
+  svg.appendChild(g);
+})(id);}
+
+function clearAll(){
+  for(var id in M){var n=document.getElementById('n-'+id);
+    n.classList.remove('ag','anta','yoke','sel');
+    n.querySelector('.tag').textContent='';}
+}
+function tag(id,txt){document.getElementById('n-'+id).querySelector('.tag').textContent=txt;}
+
+// gaze pad
+var pad=document.getElementById('pad');
+G.forEach(function(g){
+  var b=document.createElement('div');b.className='gz';b.style.gridArea=g.area;
+  b.innerHTML='<div class="a">'+g.a+'</div><div class="n">'+g.n+'</div><div class="c">'+g.clin+'</div>';
+  b.addEventListener('click',function(){selectGaze(g,b);});
+  pad.appendChild(b);
+});
+
+function selectGaze(g,btn){
+  clearAll();
+  document.querySelectorAll('.gz').forEach(function(x){x.classList.remove('on');});
+  btn.classList.add('on');
+  var lines=[];
+  g.pair.forEach(function(id){
+    var n=document.getElementById('n-'+id);n.classList.add('ag');tag(id,'+++');
+    var ant=M[id].ant;document.getElementById('n-'+ant).classList.add('anta');tag(ant,'−−−');
+    lines.push('<b>'+id.replace('-',' ')+'</b> contracts, '+ant.replace('-',' ')+' relaxes');
+  });
+  var rd=document.getElementById('readout');
+  rd.innerHTML='<b>'+g.n.replace('&amp;','&')+'</b> ('+g.clin+'). '+
+    'Hering yoke pair (fire together): <b>'+g.pair[0].replace('-',' ')+' + '+g.pair[1].replace('-',' ')+'</b>.<br>'+
+    'Sherrington in each eye: '+lines.join('; ')+'.';
+  document.getElementById('detail').innerHTML='Tap any single muscle to break down its own action.';
+}
+
+function selectMuscle(id){
+  clearAll();
+  document.querySelectorAll('.gz').forEach(function(x){x.classList.remove('on');});
+  var d=M[id];
+  document.getElementById('n-'+id).classList.add('sel');tag(id,'•');
+  document.getElementById('n-'+d.yoke).classList.add('yoke');
+  document.getElementById('n-'+d.ant).classList.add('anta');tag(d.ant,'−−−');
+  var eye=id[0]==='R'?'Right':'Left';
+  var acts='<b>Primary:</b> '+d.p+(d.s!=='—'?(' · <b>Secondary:</b> '+d.s+' · <b>Tertiary:</b> '+d.t):' (pure horizontal mover)');
+  document.getElementById('detail').innerHTML=
+    '<b>'+d.full+'</b> ('+eye+' eye)<br>'+acts+'<br>'+
+    '<span style="color:var(--anta)">Antagonist (same eye, relaxes):</span> '+d.ant.replace('-',' ')+' · '+
+    '<span style="color:var(--yoke)">Yoke (other eye, fires with it):</span> '+d.yoke.replace('-',' ');
+  document.getElementById('readout').innerHTML='Showing one muscle. Tap a gaze direction to see a full yoke pair.';
+}
+
+/* ---- movement terminology: animated eye pair ---- */
+var AMP=11, DEG=22;
+function setEye(eyeId,vec){
+  var eye=document.getElementById(eyeId), iris=eye.querySelector('.iris');
+  if(!vec){eye.classList.add('off');iris.style.transform='translate(0,0) rotate(0deg)';return;}
+  eye.classList.remove('off');
+  iris.style.transform='translate('+(vec[0]*AMP)+'px,'+(vec[1]*AMP)+'px) rotate('+(vec[2]*DEG)+'deg)';
+}
+function lightAgonists(pair){
+  clearAll();
+  pair.forEach(function(id){
+    document.getElementById('n-'+id).classList.add('ag');tag(id,'+++');
+    var a=M[id].ant;document.getElementById('n-'+a).classList.add('anta');tag(a,'−−−');
+  });
+}
+var TERM={
+ 'Adduction':{cat:'duction, one eye',r:[1,0,0],note:'the eye turns in toward the nose, by the medial rectus.'},
+ 'Abduction':{cat:'duction, one eye',r:[-1,0,0],note:'the eye turns out toward the temple, by the lateral rectus.'},
+ 'Supraduction':{cat:'duction, one eye',r:[0,-1,0],note:'the eye rotates up, mainly SR with IO assisting.'},
+ 'Infraduction':{cat:'duction, one eye',r:[0,1,0],note:'the eye rotates down, mainly IR with SO assisting.'},
+ 'Incycloduction':{cat:'torsional duction',r:[0,0,1],note:'the 12 o’clock pole rolls toward the nose. SO is the prime intorter, SR assists.'},
+ 'Excycloduction':{cat:'torsional duction',r:[0,0,-1],note:'the 12 o’clock pole rolls outward. IO is the prime extorter, IR assists.'},
+ 'Dextroversion':{cat:'version, both same way',r:[-1,0,0],l:[-1,0,0],pair:['R-LR','L-MR'],note:'both eyes to the patient’s right.'},
+ 'Levoversion':{cat:'version, both same way',r:[1,0,0],l:[1,0,0],pair:['R-MR','L-LR'],note:'both eyes to the patient’s left.'},
+ 'Supraversion':{cat:'version, both same way',r:[0,-1,0],l:[0,-1,0],note:'both eyes up together, all four elevators (SR and IO of each eye).'},
+ 'Infraversion':{cat:'version, both same way',r:[0,1,0],l:[0,1,0],note:'both eyes down together, all four depressors (IR and SO of each eye).'},
+ 'Dextrocycloversion':{cat:'torsional version',r:[0,0,-1],l:[0,0,-1],note:'both 12 o’clock poles roll to the patient’s right.'},
+ 'Levocycloversion':{cat:'torsional version',r:[0,0,1],l:[0,0,1],note:'both 12 o’clock poles roll to the patient’s left.'},
+ 'Dextrosupraversion':{cat:'oblique version',r:[-1,-1,0],l:[-1,-1,0],pair:['R-SR','L-IO'],note:'both eyes up and to the patient’s right.'},
+ 'Dextroinfraversion':{cat:'oblique version',r:[-1,1,0],l:[-1,1,0],pair:['R-IR','L-SO'],note:'both eyes down and to the patient’s right.'},
+ 'Levosupraversion':{cat:'oblique version',r:[1,-1,0],l:[1,-1,0],pair:['R-IO','L-SR'],note:'both eyes up and to the patient’s left.'},
+ 'Levoinfraversion':{cat:'oblique version',r:[1,1,0],l:[1,1,0],pair:['R-SO','L-IR'],note:'both eyes down and to the patient’s left.'},
+ 'Convergence':{cat:'vergence, opposite ways',r:[1,0,0],l:[-1,0,0],note:'both eyes turn in toward the nose, both medial recti.'},
+ 'Divergence':{cat:'vergence, opposite ways',r:[-1,0,0],l:[1,0,0],note:'both eyes turn out, both lateral recti.'},
+ 'Positive Vertical Divergence':{cat:'vertical vergence',r:[0,-1,0],l:[0,1,0],note:'right eye up while left eye goes down.'},
+ 'Negative Vertical Convergence':{cat:'vertical vergence',r:[0,1,0],l:[0,-1,0],note:'right eye down while left eye goes up.'},
+ 'Incyclovergence':{cat:'torsional vergence',r:[0,0,1],l:[0,0,-1],note:'both 12 o’clock poles roll toward each other (toward the nose), both intort.'},
+ 'Excyclovergence':{cat:'torsional vergence',r:[0,0,-1],l:[0,0,1],note:'both 12 o’clock poles roll away from each other, both extort.'}
+};
+var COLS=[
+ {title:'Duction',sub:'movement of one eye only',groups:[
+   {ax:'H',items:['Adduction','Abduction']},
+   {ax:'V',items:['Supraduction','Infraduction']},
+   {ax:'T',items:['Incycloduction','Excycloduction']}]},
+ {title:'Version',sub:'both eyes, same direction',groups:[
+   {ax:'H',items:['Dextroversion','Levoversion']},
+   {ax:'V',items:['Supraversion','Infraversion']},
+   {ax:'T',items:['Dextrocycloversion','Levocycloversion']},
+   {ax:'H&V',items:['Dextrosupraversion','Dextroinfraversion','Levosupraversion','Levoinfraversion']}]},
+ {title:'Vergence',sub:'both eyes, opposite direction',groups:[
+   {ax:'H',items:['Convergence','Divergence']},
+   {ax:'V',items:['Positive Vertical Divergence','Negative Vertical Convergence']},
+   {ax:'T',items:['Incyclovergence','Excyclovergence']}]}
+];
+var tg=document.getElementById('termgrid');
+COLS.forEach(function(col){
+  var c=document.createElement('div');c.className='tcol';
+  c.innerHTML='<h3>'+col.title+'</h3><div class="csub">'+col.sub+'</div>';
+  col.groups.forEach(function(grp){
+    var gd=document.createElement('div');gd.className='tgroup';
+    gd.innerHTML='<span class="axbadge">'+grp.ax+'</span>';
+    grp.items.forEach(function(name){
+      var b=document.createElement('button');b.className='tchip';b.textContent=name;
+      b.addEventListener('click',function(){selectTerm(name,b);});
+      gd.appendChild(b);
+    });
+    c.appendChild(gd);
+  });
+  tg.appendChild(c);
+});
+function selectTerm(name,btn){
+  document.querySelectorAll('.gz').forEach(function(x){x.classList.remove('on');});
+  document.querySelectorAll('.tchip').forEach(function(x){x.classList.remove('on');});
+  btn.classList.add('on');
+  var d=TERM[name];
+  if(d.pair){lightAgonists(d.pair);}else{clearAll();}
+  setEye('eyeR',d.r);
+  setEye('eyeL',d.l);
+  document.getElementById('termReadout').innerHTML='<b>'+name+'</b> ('+d.cat+'). '+d.note+(d.pair?' The ring above shows the yoke pair.':'');
+}
+</script>
+</body>
+</html>

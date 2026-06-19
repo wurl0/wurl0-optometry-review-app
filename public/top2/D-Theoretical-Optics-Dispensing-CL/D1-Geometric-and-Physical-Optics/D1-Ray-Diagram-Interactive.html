@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Optics Ray Diagram Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .toggle{display:flex;gap:8px;margin-bottom:12px}
+  .tbtn{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .tbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:10px 0 6px}
+  .sliderow label{font-size:14px;color:var(--muted);min-width:120px}
+  input[type=range]{flex:1}
+  .readout{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .pill{font-size:13px;font-weight:600;padding:5px 11px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .pill.real{background:#e1f5ee;color:#0f6e56} .pill.virtual{background:#eeedfe;color:#534ab7}
+  .pill.up{background:#e6f1fb;color:#185fa5} .pill.inv{background:#faece7;color:#993c1d}
+  .note{font-size:13.5px;color:var(--muted);margin-top:8px}
+  /* quiz */
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D1 — Lens Ray Diagrams, interactive</h1>
+    <p class="sub">Personal study notes · move the object and watch the image form, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. Trace the rays</h2>
+    <p class="hint">Pick a lens, then slide the object toward and away from it. The blue arrow is the object; the orange arrow is the image. Dashed rays mark a virtual image.</p>
+    <div class="toggle" id="lensToggle">
+      <button class="tbtn on" data-f="6">Convex (converging, +)</button>
+      <button class="tbtn" data-f="-6">Concave (diverging, −)</button>
+    </div>
+    <svg id="scene" width="100%" viewBox="0 0 620 300" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Lens ray diagram"></svg>
+    <div class="sliderow">
+      <label>Object distance: <b id="pval">12</b> cm</label>
+      <input type="range" id="pslider" min="2" max="20" step="0.5" value="12">
+    </div>
+    <div class="readout" id="readout"></div>
+    <div class="note" id="rule"></div>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · D1 Geometric Optics</footer>
+</div>
+
+<script>
+const svg=document.getElementById('scene');
+const LX=310, AY=150, SC=11, H=5; // lens x, axis y, scale px/cm, object height cm
+let F=6, P=12;
+function sx(xc){return LX+xc*SC;}
+function sy(yc){return AY-yc*SC;}
+function line(x1,y1,x2,y2,stroke,dash,w){return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+stroke+'" stroke-width="'+(w||1.5)+'"'+(dash?' stroke-dasharray="5 4"':'')+'/>';}
+function arrow(xc,h,color){ // vertical arrow on axis from (xc,0) to (xc,h)
+  const x=sx(xc),y0=sy(0),y1=sy(h);const dir=h>=0?1:-1;
+  let s=line(x,y0,x,y1,color,false,3);
+  s+='<path d="M '+(x-5)+' '+(y1+dir*7)+' L '+x+' '+y1+' L '+(x+5)+' '+(y1+dir*7)+'" fill="none" stroke="'+color+'" stroke-width="3"/>';
+  return s;
+}
+function draw(){
+  document.getElementById('pval').textContent=P;
+  const rightXc=(620-LX)/SC, leftXc=(0-LX)/SC;
+  let s='';
+  // axis
+  s+=line(0,AY,620,AY,'#cfccc2',false,1.5);
+  // lens
+  const lensTop=sy(7),lensBot=sy(-7);
+  s+=line(LX,lensTop,LX,lensBot,'#7a86c9',false,2.5);
+  if(F>0){ // convex: outward arrowheads
+    s+='<path d="M '+LX+' '+lensTop+' l -6 9 M '+LX+' '+lensTop+' l 6 9" stroke="#7a86c9" stroke-width="2" fill="none"/>';
+    s+='<path d="M '+LX+' '+lensBot+' l -6 -9 M '+LX+' '+lensBot+' l 6 -9" stroke="#7a86c9" stroke-width="2" fill="none"/>';
+  } else { // concave: inward
+    s+='<path d="M '+(LX-6)+' '+(lensTop)+' l 6 9 M '+(LX+6)+' '+lensTop+' l -6 9" stroke="#7a86c9" stroke-width="2" fill="none"/>';
+    s+='<path d="M '+(LX-6)+' '+lensBot+' l 6 -9 M '+(LX+6)+' '+lensBot+' l -6 -9" stroke="#7a86c9" stroke-width="2" fill="none"/>';
+  }
+  // focal points (F at -|f| and +|f| on both sides; mark both)
+  const af=Math.abs(F);
+  [af,-af,2*af,-2*af].forEach(fx=>{ s+='<circle cx="'+sx(fx)+'" cy="'+AY+'" r="2.6" fill="#888"/>'; });
+  s+='<text x="'+sx(af)+'" y="'+(AY+16)+'" font-size="11" fill="#888" text-anchor="middle">F</text>';
+  s+='<text x="'+sx(-af)+'" y="'+(AY+16)+'" font-size="11" fill="#888" text-anchor="middle">F</text>';
+  // object (blue) at -P
+  s+=arrow(-P,H,'#185fa5');
+  // compute image
+  const near = Math.abs(P-F)<0.5 && F>0;
+  let v=null,m=null,mh=null;
+  if(!near){ v=F*P/(P-F); m=-v/P; mh=m*H; }
+  // ray 1: chief ray through center (0,0)
+  const slopeC=-H/P; // per cm
+  // incoming -P,H -> 0,0 ; outgoing continues same slope to right edge
+  s+=line(sx(-P),sy(H),sx(0),sy(0),'#d8862f',false,1.6);
+  s+=line(sx(0),sy(0),sx(rightXc),sy(slopeC*rightXc),'#d8862f',false,1.6);
+  // ray 2: parallel ray -> through back focus
+  s+=line(sx(-P),sy(H),sx(0),sy(H),'#d8862f',false,1.6);
+  if(near){
+    // emerges parallel (slope -H/|f|) -> image at infinity
+    const sl=-H/af;
+    s+=line(sx(0),sy(H),sx(rightXc),sy(H+sl*rightXc),'#d8862f',false,1.6);
+  } else {
+    const sP=(mh-H)/v; // slope of outgoing parallel ray (passes through (0,H) and (v,mh))
+    s+=line(sx(0),sy(H),sx(rightXc),sy(H+sP*rightXc),'#d8862f',false,1.6);
+    // image arrow
+    s+=arrow(v,mh,'#854f0b');
+    // virtual back-extensions (dashed) when v<0
+    if(v<0){
+      s+=line(sx(0),sy(0),sx(v),sy(mh),'#d8862f',true,1.3);
+      s+=line(sx(0),sy(H),sx(v),sy(mh),'#d8862f',true,1.3);
+    }
+  }
+  // labels
+  s+='<text x="'+sx(-P)+'" y="'+(sy(H)-8)+'" font-size="11" fill="#185fa5" text-anchor="middle">object</text>';
+  svg.innerHTML=s;
+  // readout
+  const ro=document.getElementById('readout'),rule=document.getElementById('rule');
+  if(near){
+    ro.innerHTML='<span class="pill">Object at F</span>';
+    rule.textContent='At the focal point the rays emerge parallel — the image is at infinity.';
+    return;
+  }
+  const real=v>0, upright=m>0, mag=Math.abs(m);
+  let sizeTxt = Math.abs(mag-1)<0.05?'same size':(mag>1?'magnified':'minified');
+  ro.innerHTML='<span class="pill '+(real?'real':'virtual')+'">'+(real?'Real':'Virtual')+'</span>'+
+    '<span class="pill '+(upright?'up':'inv')+'">'+(upright?'Upright':'Inverted')+'</span>'+
+    '<span class="pill">'+sizeTxt+' (×'+mag.toFixed(2)+')</span>'+
+    '<span class="pill">image at '+v.toFixed(1)+' cm</span>';
+  if(F<0) rule.textContent='A concave (minus) lens always gives a virtual, upright, minified image — at any object distance.';
+  else if(P>F) rule.textContent='Convex lens, object beyond F: a real, inverted image (minified beyond 2F, same size at 2F, magnified between F and 2F).';
+  else rule.textContent='Convex lens, object inside F: a virtual, upright, magnified image (the simple magnifier).';
+}
+document.getElementById('pslider').addEventListener('input',e=>{P=parseFloat(e.target.value);draw();});
+document.querySelectorAll('#lensToggle .tbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#lensToggle .tbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');F=parseFloat(b.dataset.f);draw();
+}));
+draw();
+
+const Q=[
+ {q:"A convex lens with the object BEYOND 2F forms an image that is:",o:["Virtual, upright, magnified","Real, inverted, minified","Real, upright, same size","Virtual, minified"],a:1,w:"Object beyond 2F gives a real, inverted, minified image between F and 2F.",k:"Convex, beyond 2F = real, inverted, minified."},
+ {q:"A convex lens with the object INSIDE the focal length forms:",o:["A real, inverted image","A virtual, upright, magnified image","No image","A minified image"],a:1,w:"Object inside F gives a virtual, upright, magnified image — the simple magnifier.",k:"Convex, inside F = virtual, magnified."},
+ {q:"A concave (minus) lens forms what image for ANY object position?",o:["Real, inverted, magnified","Virtual, upright, minified","Real, upright","Virtual, magnified"],a:1,w:"A minus lens always gives a virtual, upright, minified image.",k:"Concave lens = always virtual, upright, minified."},
+ {q:"When the object sits exactly at the focal point of a convex lens, the image is:",o:["At 2F, inverted","At infinity (rays emerge parallel)","Virtual and magnified","At F, upright"],a:1,w:"At F the outgoing rays are parallel, so the image forms at infinity.",k:"Object at F → image at infinity."},
+ {q:"For a convex lens, an object exactly at 2F gives an image that is:",o:["Magnified and virtual","Real, inverted, and the same size at 2F","Minified at F","Upright at infinity"],a:1,w:"Object at 2F → image at 2F, real, inverted, same size (magnification −1).",k:"Object at 2F = same-size inverted image at 2F."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

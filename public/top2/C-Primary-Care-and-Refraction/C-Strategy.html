@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Subject C Strategy & Mnemonics</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#993c1d; --accent-soft:#faece7;
+    --red:#a32d2d; --red-soft:#fbeaea; --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  .nav-chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 4px}
+  .nav-chips a{background:var(--tag-soft);color:var(--tag);font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:20px;text-decoration:none}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;scroll-margin-top:12px}
+  h2{font-size:17px;margin:0 0 12px;display:flex;align-items:center;gap:9px}
+  h2 .num{background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:7px;flex:none}
+  .rule{border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;padding:9px 13px;margin:9px 0;font-size:14.5px}
+  .mnem{background:var(--tag-soft);border-radius:9px;padding:10px 13px;margin:9px 0;font-size:14.5px}
+  .mnem b{color:var(--tag)}
+  .trap{border-left:3px solid var(--red);background:var(--red-soft);border-radius:0 8px 8px 0;padding:9px 13px;margin:9px 0;font-size:14px}
+  .trap b{color:var(--red)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:13.5px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  code{background:#efede6;padding:2px 6px;border-radius:5px;font-size:13px}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<!--WAA-FASTPICKS--><details open style="margin:0 0 22px;border:1px solid #e5e9ef;border-left:4px solid #e9603e;border-radius:12px;background:#f7f9fc;padding:12px 16px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><summary style="cursor:pointer;font-weight:750;font-size:15px;color:#e9603e;list-style:none;">⚡ Fast Picks — exam shortcuts</summary><div style="margin-top:10px;"><div style="font-size:12.5px;color:#5d6b7a;margin:0 0 10px;">Read the options first, kill wrong values, then settle the flip. <code style="background:#eef1f5;padding:1px 4px;border-radius:4px;font-size:.92em">cue → rule → trap</code>.</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;"><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">JCC axis/power<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: which dot position the patient prefers.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#e9603e;font-weight:700;margin-right:6px;">›</span>Prefers <b>P1</b> (red dots ∥ tentative axis) → cyl under-powered → <b>add minus cyl</b>. Prefers <b>P2</b> (white dots ∥ axis) → <b>reduce minus</b>.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: adding cylinder when the patient actually preferred P2.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Duochrome<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: red side vs green side clearer.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#e9603e;font-weight:700;margin-right:6px;">›</span><b>Green clearer</b> → over-minused → add plus / reduce minus. <b>Red clearer</b> → add minus. (RAM-GAP: Red Add Minus, Green Add Plus.)</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: over-minusing a patient who says green is clearer.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Cover test phoria vs tropia<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: movement on cover vs without cover.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#e9603e;font-weight:700;margin-right:6px;">›</span>Moves <b>only when covered</b> (recovers on uncover) = phoria. Moves <b>without cover</b> = tropia.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: calling a phoria a tropia because the eye moved — a phoria only moves under cover.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Prism for phoria<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: exo / eso / hyper.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#e9603e;font-weight:700;margin-right:6px;">›</span>Exophoria → <b>BI</b>, esophoria → <b>BO</b>, hyperphoria → <b>BD before the higher eye</b>.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: base-out for exo (it&#x27;s base-in).</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Retinoscopy reflex<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: with vs against motion.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#e9603e;font-weight:700;margin-right:6px;">›</span><b>With</b> motion → add plus (under-plussed/hyperopic). <b>Against</b> → add minus. Neutral = endpoint (+ working distance).</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: forgetting to subtract the working-distance lens at the end.</li></ul></div></div></div></details><!--/WAA-FASTPICKS-->
+
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>Subject C — Strategy, Rules &amp; Mnemonics</h1>
+    <p class="sub">Primary Care and Refraction · the read-before-you-test reference for all 7 topics</p>
+    <div class="nav-chips">
+      <a href="#c1">C1 Epi</a><a href="#c2">C2 Ametropia</a><a href="#c3">C3 Prelim</a>
+      <a href="#c4">C4 Objective</a><a href="#c5">C5 Subjective</a><a href="#c6">C6 Management</a><a href="#c7">C7 VT</a>
+    </div>
+  </header>
+
+  <section id="c1">
+    <h2><span class="num">C1</span>Epidemiology &amp; Prevention</h2>
+    <div class="rule"><b>Headline fact:</b> the two leading causes of global vision impairment are <b>uncorrected refractive error and cataract</b>, and <b>over 80% of VI is avoidable</b>.</div>
+    <div class="mnem"><b>EPIC sizes:</b> Endemic (constant, low) &lt; Epidemic (regional outbreak) &lt; Pandemic (across regions). <b>Incidence = new</b> cases; <b>prevalence = all</b> existing cases.</div>
+    <div class="rule"><b>Prevention 1-2-3:</b> primary = prevent onset; secondary = detect/reverse early; tertiary = limit disability. Philippines: cataract is the leading cause of blindness. WHO founded April 7, 1948.</div>
+    <div class="trap"><b>Trap:</b> incidence and prevalence are the same. No — incidence is new cases over time; prevalence is all existing cases at a point.</div>
+  </section>
+
+  <section id="c2">
+    <h2><span class="num">C2</span>Ametropia &amp; Refractive Errors</h2>
+    <div class="mnem"><b>Corrections:</b> myopia → minus; hyperopia → plus; astigmatism → cylinder; presbyopia → plus add.</div>
+    <div class="rule"><b>Hofstetter:</b> Min = 15 − 0.25(age); Ave = 18.5 − 0.30(age); Max = 25 − 0.40(age). Far point: emmetrope = ∞; −3 D myope = 33 cm; hyperope = virtual (behind eye).</div>
+    <div class="rule"><b>Astigmatism:</b> WTR steep at 90° (youth); ATR steep at 180° (age). <b>Total hyperopia = latent + manifest.</b> Pseudomyopia = accommodative spasm that clears under cycloplegia.</div>
+    <div class="rule"><b>Retinoscopy:</b> at 67 cm subtract 1.50 D; <b>with motion = add plus, against motion = add minus</b>. Hyperope + eso at near + high AC/A = accommodative esotropia (treat with full plus).</div>
+    <div class="trap"><b>Trap:</b> hyperopes always see distance clearly. No — absolute hyperopes are blurred at all distances.</div>
+    <div class="trap"><b>Trap:</b> WTR is more common in the elderly. No — WTR is common in youth; ATR increases with age.</div>
+  </section>
+
+  <section id="c3">
+    <h2><span class="num">C3</span>Preliminary Examination</h2>
+    <div class="rule"><b>Pinhole:</b> improves VA → refractive (correctable); no improvement → organic disease. Far VA at 6 m, near at 40 cm. Binocular VA should be ≥ the better monocular eye.</div>
+    <div class="mnem"><b>Reflexes:</b> corneal reflex <b>temporal = eso</b>, nasal = exo. Pupillary light reflex branches at the <b>pretectal nucleus</b> (before the LGN). Near triad = constriction + accommodation + convergence.</div>
+    <div class="rule"><b>NPC norm</b> break ~7 cm (&gt;10 = CI, &lt;5 = CE). Unilateral cover test distinguishes phoria vs tropia; alternating cover gives total deviation only. RAPD (Marcus Gunn) = swinging flashlight.</div>
+    <div class="mnem"><b>Headaches:</b> Frontal = hyperopia/CE · Temporal = astigmatism · Occipital = presbyopia/CI.</div>
+    <div class="trap"><b>Trap:</b> a nasal corneal reflex means esotropia. No — temporal reflex = eso; nasal = exo.</div>
+    <div class="trap"><b>Trap:</b> the alternating cover test tells phoria from tropia. No — it shows total deviation; use the unilateral cover test to differentiate.</div>
+  </section>
+
+  <section id="c4">
+    <h2><span class="num">C4</span>Objective Examination</h2>
+    <table>
+      <tr><th></th><th>Direct</th><th>Indirect</th></tr>
+      <tr><td>Image</td><td>Virtual, erect, ~15x</td><td>Real, inverted, 2–5x</td></tr>
+      <tr><td>Field</td><td>~6.5° (disc detail)</td><td>~40° (periphery)</td></tr>
+    </table>
+    <div class="rule"><b>Higher condensing lens</b> (e.g. +20 vs +14) = wider field, less magnification. <b>Van Herick:</b> grade 3–4 safe to dilate; grade 0–1 do not dilate.</div>
+    <div class="rule"><b>Javal's rule:</b> At = 1.25(Ac) + (−0.50 cyl × 90°); internal astigmatism ≈ −0.50 × 90° (ATR). Keratometer measures the anterior corneal surface only (n ≈ 1.3375).</div>
+    <div class="mnem"><b>Filters:</b> cobalt blue = fluorescein staining; red-free (green) = blood vessels. <b>Opacity parallax:</b> anterior moves opposite the scope, posterior moves with it.</div>
+    <div class="trap"><b>Trap:</b> direct ophthalmoscopy gives an inverted image. No — direct is erect/virtual; indirect is inverted/real.</div>
+    <div class="trap"><b>Trap:</b> a stronger condensing lens magnifies more. No — higher power = wider field, LESS magnification.</div>
+  </section>
+
+  <section id="c5">
+    <h2><span class="num">C5</span>Subjective Examination</h2>
+    <div class="rule"><b>Fog</b> +0.50 to +0.75 D above best sphere (target 20/30–20/40). Astigmatic dial: <b>darkest line = power meridian</b>; minus-cyl axis is 90° from it. Add +0.25 D sphere per −0.50 D cyl.</div>
+    <div class="mnem"><b>JCC:</b> prefer Position 1 (red dots ∥ axis) → cylinder under-powered → <b>add minus</b>. Prefer Position 2 → reduce minus. Rotation method for cyl &gt; 0.75 D; JCC for ≤ 0.75 D.</div>
+    <div class="mnem"><b>Duochrome:</b> <b>G</b>reen clearer → <b>G</b>ive plus / reduce minus (over-minused). Red clearer → add minus. Invalid in red-green color deficiency.</div>
+    <div class="rule"><b>Binocular balance:</b> re-fog +0.50–0.75 D to BOTH eyes; dissociate 3Δ BD OD / 3Δ BU OS; if +0.25 reverses preference, let the dominant eye keep better VA. <b>PRA = add minus; NRA = add plus.</b> OEP #7 endpoint = MPMVA.</div>
+    <div class="trap"><b>Trap:</b> the darkest astigmatic-dial line is the axis. No — it is the power meridian; the minus-cyl axis is 90° away.</div>
+  </section>
+
+  <section id="c6">
+    <h2><span class="num">C6</span>Management of Visual Disorders</h2>
+    <div class="rule"><b>Management order:</b> correct refractive error → prism → vision therapy → surgery.</div>
+    <div class="mnem"><b>Prism:</b> exophoria → base in; esophoria → base out; hyperphoria → base down before the higher eye. <b>Sheard's prism = (2 × phoria − recovery) ÷ 3.</b></div>
+    <div class="rule"><b>Amblyopia:</b> correct the Rx first; <b>patch the GOOD eye</b> (or atropine-penalize the good eye). Surgery aligns but does NOT treat amblyopia. Pleoptics is for eccentric fixation only. Critical period most sensitive 0–2 years.</div>
+    <div class="rule"><b>Accommodative esotropia:</b> full cycloplegic hyperopic correction first. Over-patching risks rebound amblyopia. Distinguish divergence insufficiency (comitant) from CN6 palsy (incomitant).</div>
+    <div class="trap"><b>Trap:</b> under-correct the amblyopic eye to avoid stress. No — it needs the clearest image; under-correction perpetuates suppression.</div>
+    <div class="trap"><b>Trap:</b> surgery cures amblyopia. No — it only corrects alignment; acuity still needs patching/penalization/VT.</div>
+  </section>
+
+  <section id="c7">
+    <h2><span class="num">C7</span>Vision Therapy &amp; Orthoptics</h2>
+    <div class="rule"><b>Glasses first, always.</b> VT expands fusional capacity; prism only compensates. Sheard's/Percival's decide <b>prism</b>, not VT.</div>
+    <div class="mnem"><b>Parks 3-step</b> (vertical deviations only): Higher eye → worse Gaze → worse Tilt, narrowing 8 → 4 → 2 → 1 candidate muscles.</div>
+    <div class="rule"><b>Brock string:</b> normal = X at the fixated bead; absent X = suppression (diagnostic AND therapeutic). <b>CAM</b> is monocular (occlude the dominant eye), ~7 min, weekly. Lens flippers ±2.00 D, target ~12 cpm.</div>
+    <div class="rule"><b>CI office sequence:</b> pencil push-ups → Brock string → aperture rule → prism/vectogram flippers. Part-time patching (2–6 hrs) ≈ full-time for moderate amblyopia (PEDIG); stop only at equalization or plateau.</div>
+    <div class="trap"><b>Trap:</b> CAM is done with both eyes open. No — it is monocular; the dominant eye is occluded.</div>
+    <div class="trap"><b>Trap:</b> Parks 3-step works for horizontal phorias. No — vertical (cyclovertical) deviations only.</div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · Subject C strategy card</footer>
+</div>
+<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="C-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#e9603e;color:#fff;">Strategy</span><a href="C-Subject-Exam.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Exam</a></div><!--/WAA-LAYER-NAV--></body>
+</html>

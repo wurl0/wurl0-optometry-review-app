@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horopter &amp; Panum's Area — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--single:#3fb950;--double:#e5534b;--panum:#a371f7;--warn:#e3b341;--tgt:#e673b0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:22px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+  svg{width:100%;height:auto;display:block;touch-action:none}
+  .readout{margin:12px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  .verdict{font-size:18px;font-weight:800;margin-bottom:4px}
+  .verdict.single{color:var(--single)} .verdict.double{color:var(--double)}
+  .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:10px}
+  input[type=range]{accent-color:var(--accent);flex:1;min-width:180px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin-top:8px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Horopter &amp; Panum's Area — Interactive</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · drag the dot, watch single vision turn into physiologic diplopia</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <p class="hint" style="margin-top:0">Top-down view. The <b>horopter</b> is the curve of points that land on corresponding retinal points, so they are seen single. <b>Panum's area</b> is the thin zone around it where slightly disparate images still fuse. Drag the pink dot. Inside the band it stays single; outside it splits into double vision (physiologic diplopia), crossed when nearer than fixation, uncrossed when farther.</p>
+
+    <svg id="scene" viewBox="0 0 600 420" role="img" aria-label="Top view of horopter and Panum's area"></svg>
+
+    <div class="legend">
+      <span><i style="background:var(--accent)"></i>Horopter (Vieth-Müller circle)</span>
+      <span><i style="background:var(--panum)"></i>Panum's fusional area</span>
+      <span><i style="background:var(--tgt)"></i>Draggable test point</span>
+    </div>
+
+    <div class="row">
+      <span style="font-size:13px;color:var(--mut);min-width:110px">Fixation distance</span>
+      <input type="range" id="fix" min="120" max="360" value="240">
+      <span style="font-size:13px;color:var(--mut)">near ← → far</span>
+    </div>
+
+    <div class="readout"><div class="verdict" id="verdict"></div><div id="detail"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Why it matters</h2>
+    <p class="hint" style="margin-top:0">Panum's area is small centrally (a few arc-minutes) and wider in the periphery, which is why fine stereopsis is best near fixation. Objects outside Panum's area give the disparity your brain reads as depth up to a limit, then they double. Hold a finger up close while fixating something far: the finger doubles (crossed diplopia), a normal demonstration of this exact geometry.</p>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · B5 Binocular Vision — Horopter &amp; fusion</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+function el(t,a){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+var svg=document.getElementById('scene');
+var EYEY=370, LX=255, RX=345; // eye positions (top view), baseline near bottom
+var PANUM=16;                  // band half-width in px
+var Fy=240;                    // fixation y (smaller = nearer to top = farther away)
+var probe={x:300,y:170};
+
+function circleThrough(){
+  // Vieth-Müller circle through both eyes and fixation F(300,Fy). Centre on x=300 (vertical bisector of L,R).
+  // Solve dist(centre, eye) = dist(centre, F):  cy = (dx^2 + ey^2 - fy^2) / (2(ey - fy))
+  var bx=300, ey=EYEY, fy=Fy, dx=bx-LX;
+  var cy=(dx*dx + ey*ey - fy*fy) / (2*(ey-fy));
+  return {cx:bx, cy:cy, r:Math.abs(cy-fy)};
+}
+function render(){
+  while(svg.firstChild)svg.removeChild(svg.firstChild);
+  var c=circleThrough();
+  // Panum band (thick stroke)
+  svg.appendChild(el('circle',{cx:c.cx,cy:c.cy,r:c.r,fill:'none',stroke:'var(--panum)','stroke-width':PANUM*2,opacity:.22}));
+  // horopter line
+  svg.appendChild(el('circle',{cx:c.cx,cy:c.cy,r:c.r,fill:'none',stroke:'var(--accent)','stroke-width':2.5}));
+  // eyes
+  [[LX,'L'],[RX,'R']].forEach(function(e){
+    svg.appendChild(el('circle',{cx:e[0],cy:EYEY,r:20,fill:'#16202b',stroke:'#3a4654','stroke-width':2}));
+    svg.appendChild(el('circle',{cx:e[0],cy:EYEY-14,r:6,fill:'#2f74c0'}));
+  });
+  // fixation point
+  svg.appendChild(el('circle',{cx:300,cy:Fy,r:7,fill:'var(--warn)'}));
+  var ft=el('text',{x:300,y:Fy-13,fill:'var(--warn)','font-size':12,'text-anchor':'middle'});ft.textContent='fixation';svg.appendChild(ft);
+  // lines of sight to fixation
+  svg.appendChild(el('line',{x1:LX,y1:EYEY,x2:300,y2:Fy,stroke:'#33414f','stroke-width':1}));
+  svg.appendChild(el('line',{x1:RX,y1:EYEY,x2:300,y2:Fy,stroke:'#33414f','stroke-width':1}));
+
+  // classify probe
+  var dCenter=Math.hypot(probe.x-c.cx,probe.y-c.cy);
+  var radial=dCenter-c.r;            // <0 inside circle (nearer), >0 outside (farther)
+  var single=Math.abs(radial)<=PANUM;
+  var nearer=radial<0;               // inside VM circle → nearer than horopter → crossed
+
+  // lines of sight to probe
+  var col=single?'var(--single)':'var(--double)';
+  svg.appendChild(el('line',{x1:LX,y1:EYEY,x2:probe.x,y2:probe.y,stroke:col,'stroke-width':1.6,opacity:.8}));
+  svg.appendChild(el('line',{x1:RX,y1:EYEY,x2:probe.x,y2:probe.y,stroke:col,'stroke-width':1.6,opacity:.8}));
+
+  if(single){
+    svg.appendChild(el('circle',{cx:probe.x,cy:probe.y,r:9,fill:'var(--tgt)',stroke:'#fff','stroke-width':2}));
+  }else{
+    // draw doubled images, separated horizontally by disparity
+    var sep=Math.min(34,8+Math.abs(radial)/3);
+    svg.appendChild(el('circle',{cx:probe.x-sep,cy:probe.y,r:8,fill:'var(--tgt)',opacity:.85}));
+    svg.appendChild(el('circle',{cx:probe.x+sep,cy:probe.y,r:8,fill:'var(--tgt)',opacity:.85}));
+    svg.appendChild(el('circle',{cx:probe.x,cy:probe.y,r:3,fill:'#fff'}));
+  }
+  // handle hint
+  svg.appendChild(el('circle',{cx:probe.x,cy:probe.y,r:15,fill:'none',stroke:'#fff','stroke-width':1,opacity:.25}));
+
+  var v=document.getElementById('verdict'), d=document.getElementById('detail');
+  if(single){v.className='verdict single';v.textContent='● SINGLE (fused)';
+    d.innerHTML=Math.abs(radial)<3?'The point sits on the horopter, landing on exactly corresponding retinal points.'
+      :'The point is within Panum’s fusional area, so the small disparity still fuses into one image (this is what your brain reads as fine depth).';}
+  else{v.className='verdict double';v.textContent='● DOUBLE (physiologic diplopia)';
+    d.innerHTML=nearer?'The point is <b>nearer</b> than the horopter and outside Panum’s area, giving <b>crossed</b> disparity and crossed diplopia.'
+      :'The point is <b>farther</b> than the horopter and outside Panum’s area, giving <b>uncrossed</b> disparity and uncrossed diplopia.';}
+}
+
+// dragging
+var dragging=false;
+function toSvg(evt){
+  var pt=svg.createSVGPoint();pt.x=evt.clientX;pt.y=evt.clientY;
+  var m=svg.getScreenCTM().inverse();var p=pt.matrixTransform(m);return p;
+}
+function near(evt){var p=toSvg(evt);return Math.hypot(p.x-probe.x,p.y-probe.y)<28;}
+svg.addEventListener('pointerdown',function(e){if(near(e)){dragging=true;svg.setPointerCapture(e.pointerId);}});
+svg.addEventListener('pointermove',function(e){if(!dragging)return;var p=toSvg(e);
+  probe.x=Math.max(30,Math.min(570,p.x));probe.y=Math.max(20,Math.min(EYEY-30,p.y));render();});
+svg.addEventListener('pointerup',function(){dragging=false;});
+document.getElementById('fix').addEventListener('input',function(e){Fy=420-(+e.target.value);render();});
+render();
+</script>
+</body>
+</html>

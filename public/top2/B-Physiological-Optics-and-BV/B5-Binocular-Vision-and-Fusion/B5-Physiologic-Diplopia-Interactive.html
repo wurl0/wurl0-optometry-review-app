@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Physiologic Diplopia Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#185fa5; --accent-soft:#e6f1fb;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --reye:#c0392b; --leye:#185fa5; --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:8px 0}
+  .sliderow .lbl{font-size:13px;color:var(--muted);min-width:62px}
+  input[type=range]{flex:1}
+  .verdict{text-align:center;font-size:16px;font-weight:700;padding:8px;border-radius:10px;margin-top:10px}
+  .verdict.crossed{background:var(--accent-soft);color:var(--accent)}
+  .verdict.uncrossed{background:#faece7;color:#993c1d}
+  .verdict.fused{background:var(--right-soft);color:#0f6e56}
+  .detail{margin-top:12px;background:var(--accent-soft);border-radius:11px;padding:13px 15px;font-size:14px}
+  .detail b{color:var(--accent)}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.on2{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>B5 — Physiologic Diplopia, interactive</h1>
+    <p class="sub">Personal study notes · the eyes fixate the green point; move the orange test object, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. Near crosses, far doesn't</h2>
+    <p class="hint">Top-down view. Both eyes stay fixated on the green point. Slide the orange object nearer or farther and watch what each eye perceives (red = right eye, blue = left eye).</p>
+    <svg id="scene" width="100%" viewBox="0 0 320 270" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Physiologic diplopia top-down view"></svg>
+    <div class="sliderow">
+      <span class="lbl">farther</span>
+      <input type="range" id="depth" min="-50" max="50" step="1" value="28">
+      <span class="lbl" style="text-align:right">nearer</span>
+    </div>
+    <div class="verdict" id="verdict"></div>
+    <div class="detail" id="detail"></div>
+  </section>
+
+  <section>
+    <h2>2. Retinal points &amp; the cyclopean eye</h2>
+    <p class="hint">Where the object's image lands on each retina, the matching (corresponding) pairs, and how the brain projects both images from the single "cyclopean" eye. Toggle the object beyond vs nearer than fixation.</p>
+    <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+      <button class="opt on2" id="rfar" style="width:auto;margin:0">Object beyond fixation (far)</button>
+      <button class="opt" id="rnear" style="width:auto;margin:0">Object nearer than fixation</button>
+    </div>
+    <svg id="rscene" width="100%" viewBox="0 0 400 440" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Retinal correspondence and cyclopean projection"></svg>
+    <div class="detail" id="rdetail"></div>
+    <div class="detail" style="background:var(--tag-soft);margin-top:8px"><b style="color:var(--tag)">Corresponding pairs:</b> fovea ↔ fovea (straight ahead), and the <b>nasal retina of one eye ↔ temporal retina of the other</b>. A non-fixated object lands on <b>same-named</b> points (both nasal, or both temporal) = <b>disparate</b> → seen double.</div>
+  </section>
+
+  <section>
+    <h2>3. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · B5 Binocular Vision & Fusion</footer>
+</div>
+
+<script>
+const svg=document.getElementById('scene');
+const Re={x:192,y:222}, Le={x:128,y:222}, F={x:160,y:96}, MID=160, BAR=34;
+function ln(x1,y1,x2,y2,c,w,dash){return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+c+'" stroke-width="'+w+'"'+(dash?' stroke-dasharray="4 3"':'')+'/>';}
+function draw(d){
+  // d>0 nearer than fixation, d<0 farther
+  const yT = Math.max(46, Math.min(176, F.y + d*1.6));
+  const fused = Math.abs(d)<6;
+  const mag = Math.min(58, Math.abs(d)*0.85);
+  let Rx,Lx;
+  if(d>0){ Rx=MID-mag; Lx=MID+mag; }   // near = crossed: R image left, L image right
+  else   { Rx=MID+mag; Lx=MID-mag; }   // far = uncrossed: R image right, L image left
+  let s='';
+  // perception bar
+  s+=ln(20,BAR,300,BAR,'#d9d6cc',1.5);
+  s+='<text x="160" y="20" font-size="11" fill="#888" text-anchor="middle">what you perceive</text>';
+  // eyes
+  [['R',Re,'var(--reye)'],['L',Le,'var(--leye)']].forEach(e=>{
+    s+='<circle cx="'+e[1].x+'" cy="'+e[1].y+'" r="15" fill="#fff" stroke="'+e[2]+'" stroke-width="2.5"/>';
+    s+='<circle cx="'+e[1].x+'" cy="'+(e[1].y-3)+'" r="4.5" fill="'+e[2]+'"/>';
+    s+='<text x="'+e[1].x+'" y="'+(e[1].y+30)+'" font-size="11" fill="'+e[2]+'" text-anchor="middle" font-weight="600">'+e[0]+' eye</text>';
+  });
+  // lines of sight to fixation (eyes converge on F)
+  s+=ln(Re.x,Re.y-10,F.x,F.y,'#b3b0a6',1.6,false);
+  s+=ln(Le.x,Le.y-10,F.x,F.y,'#b3b0a6',1.6,false);
+  // fixation point
+  s+='<circle cx="'+F.x+'" cy="'+F.y+'" r="6" fill="#1d9e75"/>';
+  s+='<text x="'+(F.x+12)+'" y="'+(F.y+4)+'" font-size="11" fill="#0f6e56">fixation</text>';
+  // test object
+  s+='<circle cx="'+MID+'" cy="'+yT+'" r="6" fill="#d8862f"/>';
+  s+='<text x="'+(MID-12)+'" y="'+(yT+4)+'" font-size="11" fill="#854f0b" text-anchor="end">object</text>';
+  // rays eye -> object
+  s+=ln(Re.x,Re.y-10,MID,yT,'var(--reye)',1.3,true);
+  s+=ln(Le.x,Le.y-10,MID,yT,'var(--leye)',1.3,true);
+  // perceived images on bar
+  if(fused){
+    s+='<circle cx="'+MID+'" cy="'+BAR+'" r="7" fill="#1d9e75"/>';
+    s+='<text x="'+MID+'" y="'+(BAR-12)+'" font-size="10" fill="#0f6e56" text-anchor="middle">single (fused)</text>';
+  } else {
+    s+='<circle cx="'+Rx+'" cy="'+BAR+'" r="7" fill="var(--reye)"/><text x="'+Rx+'" y="'+(BAR-12)+'" font-size="10" fill="var(--reye)" text-anchor="middle">R</text>';
+    s+='<circle cx="'+Lx+'" cy="'+BAR+'" r="7" fill="var(--leye)"/><text x="'+Lx+'" y="'+(BAR-12)+'" font-size="10" fill="var(--leye)" text-anchor="middle">L</text>';
+    // crossing indicator
+    s+=ln(MID,yT,Rx,BAR,'var(--reye)',1,true);
+    s+=ln(MID,yT,Lx,BAR,'var(--leye)',1,true);
+  }
+  svg.innerHTML=s;
+  const v=document.getElementById('verdict'),det=document.getElementById('detail');
+  if(fused){ v.className='verdict fused'; v.textContent='Single vision (object near fixation / on the horopter)';
+    det.innerHTML='On the horopter the object stimulates corresponding retinal points, so it is seen single (Panum\'s fusional area allows a small zone of fusion).'; }
+  else if(d>0){ v.className='verdict crossed'; v.textContent='CROSSED (heteronymous) diplopia — object NEARER than fixation';
+    det.innerHTML='<b>Near object</b> stimulates the <b>temporal retina</b> of both eyes → projected to nasal space → the right eye sees it on the left and the left eye on the right → the images <b>cross</b>.'; }
+  else { v.className='verdict uncrossed'; v.textContent='UNCROSSED (homonymous) diplopia — object FARTHER than fixation';
+    det.innerHTML='<b>Far object</b> stimulates the <b>nasal retina</b> of both eyes → projected to temporal space → the right eye sees it on the right and the left eye on the left → the images stay <b>uncrossed</b>.'; }
+}
+document.getElementById('depth').addEventListener('input',e=>draw(parseInt(e.target.value)));
+draw(28);
+
+// ----- Section 2: retinal points & cyclopean projection -----
+const rsvg=document.getElementById('rscene');
+function pstar(cx,cy,r,fill,stroke){let p='';for(let k=0;k<10;k++){const a=-Math.PI/2+k*Math.PI/5;const rr=k%2?r*0.45:r;p+=(cx+rr*Math.cos(a)).toFixed(1)+','+(cy+rr*Math.sin(a)).toFixed(1)+' ';}return '<polygon points="'+p+'" fill="'+fill+'" stroke="'+(stroke||'none')+'" stroke-width="1"/>';}
+function rl(a,b,c,dash){return ln(a.x,a.y,b.x,b.y,c,1.5,dash);}
+const PAIRC={t:'#0e9aa0',f:'#1d9e75',n:'#7b53d6'}; // teal = Lt·Rn pair, green = foveae, purple = Ln·Rt pair
+function dot(p,c,r){return '<circle cx="'+p.x+'" cy="'+p.y+'" r="'+(r||5)+'" fill="'+c+'"/>';}
+function ring(p,c){return '<circle cx="'+p.x+'" cy="'+p.y+'" r="9.5" fill="none" stroke="'+c+'" stroke-width="2.5"/>';}
+function drawRetina(mode){
+  const far=mode==='far';
+  const O={x:200,y:40}, ST={x:200,y:far?14:84};
+  const Le={x:120,y:166,r:42}, Re={x:280,y:166,r:42};
+  const Lt={x:96,y:199,c:PAIRC.t,k:'Lt'}, Lf={x:120,y:206,c:PAIRC.f,k:'Lf'}, Ln={x:144,y:199,c:PAIRC.n,k:'Ln'};
+  const Rn={x:256,y:199,c:PAIRC.t,k:'Rn'}, Rf={x:280,y:206,c:PAIRC.f,k:'Rf'}, Rt={x:304,y:199,c:PAIRC.n,k:'Rt'};
+  const pts=[Lt,Lf,Ln,Rn,Rf,Rt];
+  const C={x:200,y:358,r:62};
+  const Zl={x:162,y:392,c:PAIRC.t,t:'Lt·Rn'}, Zm={x:200,y:402,c:PAIRC.f,t:'Lf·Rf'}, Zr={x:238,y:392,c:PAIRC.n,t:'Rt·Ln'};
+  const ZONE={Lt:Zl,Rn:Zl,Lf:Zm,Rf:Zm,Ln:Zr,Rt:Zr};
+  const Lo=far?Ln:Lt, Ro=far?Rn:Rt;
+  let s='';
+  [['L',Le],['R',Re]].forEach(e=>{
+    s+='<circle cx="'+e[1].x+'" cy="'+e[1].y+'" r="'+e[1].r+'" fill="#fbfbf9" stroke="#aab2bb" stroke-width="2"/>';
+    s+='<circle cx="'+e[1].x+'" cy="'+(e[1].y-e[1].r)+'" r="3.5" fill="#555"/>';
+    s+='<text x="'+e[1].x+'" y="'+(e[1].y-e[1].r-7)+'" font-size="11" text-anchor="middle" fill="#6b685f" font-weight="600">'+e[0]+' eye</text>';
+  });
+  // faint wiring: every retinal point of BOTH eyes maps into the cyclopean eye
+  pts.forEach(p=>{s+=ln(p.x,p.y,ZONE[p.k].x,ZONE[p.k].y,p.c,0.8,true);});
+  // cyclopean eye — holds all six points as three corresponding-pair zones
+  s+='<circle cx="'+C.x+'" cy="'+C.y+'" r="'+C.r+'" fill="#f5f4fb" stroke="#534ab7" stroke-width="2"/>';
+  s+='<circle cx="'+C.x+'" cy="'+(C.y-C.r)+'" r="3.5" fill="#534ab7"/>';
+  s+='<text x="'+C.x+'" y="'+(C.y-14)+'" font-size="10.5" text-anchor="middle" fill="#534ab7" font-weight="700">cyclopean eye</text>';
+  s+='<text x="'+C.x+'" y="'+(C.y-2)+'" font-size="8.5" text-anchor="middle" fill="#8a83cf">both retinas, paired</text>';
+  [Zl,Zm,Zr].forEach(z=>{s+=dot(z,z.c,6)+'<text x="'+z.x+'" y="'+(z.y+17)+'" font-size="9.5" text-anchor="middle" fill="'+z.c+'" font-weight="600">'+z.t+'</text>';});
+  // retinal points + labels
+  pts.forEach(p=>{s+=dot(p,p.c,5)+'<text x="'+p.x+'" y="'+(p.y-9)+'" font-size="9" text-anchor="middle" fill="'+p.c+'">'+p.k+'</text>';});
+  // rays: fixation (green) to foveae, object (orange) to landing points
+  s+=rl(O,Lf,'#1d9e75',false)+rl(O,Rf,'#1d9e75',false);
+  s+=rl(ST,Lo,'#d8862f',false)+rl(ST,Ro,'#d8862f',false);
+  s+=ring(Lf,'#1d9e75')+ring(Rf,'#1d9e75')+ring(Lo,'#d8862f')+ring(Ro,'#d8862f');
+  // object reaches two DIFFERENT cyclopean zones → diplopia; project them to the fields
+  const zLo=ZONE[Lo.k], zRo=ZONE[Ro.k], fy=330;
+  [zLo,zRo].forEach(z=>s+=ring(z,'#d8862f'));
+  function perc(z,eye){const onLeft=z.x<C.x;const px=onLeft?C.x+100:C.x-100;const col=eye==='R'?'#c0392b':'#185fa5';
+    return ln(z.x,z.y,px,fy,col,1.3,true)+pstar(px,fy,7,col,'#333')+'<text x="'+px+'" y="'+(fy-12)+'" font-size="9" fill="'+col+'" text-anchor="middle">'+eye+' sees</text>';}
+  s+=perc(zRo,'R')+perc(zLo,'L');
+  // O + star
+  s+=dot(O,'#1d9e75',6)+'<text x="'+(O.x+11)+'" y="'+(O.y+4)+'" font-size="11" fill="#0f6e56">O · fixation</text>';
+  s+=pstar(ST.x,ST.y,8,'#d8862f','#854f0b')+'<text x="'+(ST.x+13)+'" y="'+(ST.y+4)+'" font-size="11" fill="#854f0b">object ('+(far?'far':'near')+')</text>';
+  rsvg.innerHTML=s;
+  const det=document.getElementById('rdetail');
+  if(far) det.innerHTML='<b>Far object</b> lands on <b>L-n</b> and <b>R-n</b> (both nasal). In the cyclopean eye they fall in <i>different</i> zones — R-n in the <span style="color:#0e9aa0">Lt·Rn</span> zone, L-n in the <span style="color:#7b53d6">Rt·Ln</span> zone — so they are <b>disparate</b> → two images, projecting to opposite fields: R seen right, L seen left → <b>UNCROSSED (homonymous)</b>. A corresponding pair like <span style="color:#0e9aa0">Lt with Rn</span> shares ONE zone → seen single.';
+  else det.innerHTML='<b>Near object</b> lands on <b>L-t</b> and <b>R-t</b> (both temporal). In the cyclopean eye L-t sits in the <span style="color:#0e9aa0">Lt·Rn</span> zone and R-t in the <span style="color:#7b53d6">Rt·Ln</span> zone — <b>disparate</b> → two images, projecting to opposite fields: R seen left, L seen right → <b>CROSSED (heteronymous)</b>.';
+}
+function setRtab(id){['rfar','rnear'].forEach(x=>document.getElementById(x).classList.toggle('on2',x===id));}
+document.getElementById('rfar').addEventListener('click',()=>{drawRetina('far');setRtab('rfar');});
+document.getElementById('rnear').addEventListener('click',()=>{drawRetina('near');setRtab('rnear');});
+drawRetina('far');
+
+const Q=[
+ {q:"An object closer than the fixation point produces what physiologic diplopia?",o:["Uncrossed (homonymous)","Crossed (heteronymous)","Vertical","None"],a:1,w:"Near objects stimulate temporal retina → crossed (heteronymous) diplopia.",k:"Near = crossed."},
+ {q:"An object farther than the fixation point produces:",o:["Crossed diplopia","Uncrossed (homonymous) diplopia","Torsional diplopia","Suppression"],a:1,w:"Far objects stimulate nasal retina → uncrossed (homonymous) diplopia.",k:"Far = uncrossed."},
+ {q:"Within which zone are slightly non-corresponding points still fused into single vision?",o:["The blind spot","Panum's fusional area","The macular star","The horopter only"],a:1,w:"Panum's fusional area is the zone around the horopter where fusion occurs despite small disparity (6–10 arc min at the fovea).",k:"Panum's area allows fusion despite small disparity."},
+ {q:"A high AC/A ratio is associated with which conditions?",o:["Convergence and divergence insufficiency","Convergence excess and divergence excess","Basic phorias only","None"],a:1,w:"High AC/A = too much convergence per diopter = excess conditions (CE, DE); low AC/A = insufficiency.",k:"High AC/A = excess (CE, DE)."},
+ {q:"The normal AC/A ratio is about:",o:["1:1","4:1 to 6:1","8:1","12:1"],a:1,w:"Normal AC/A is 4:1 to 6:1 (prism diopters of convergence per diopter of accommodation).",k:"Normal AC/A 4–6:1."},
+ {q:"Corresponding retinal points pair the nasal retina of one eye with the ___ of the other.",o:["Nasal retina","Temporal retina","Fovea","Optic disc"],a:1,w:"Nasal retina of one eye corresponds to the temporal retina of the other; the two foveas correspond. Same-named points (both nasal / both temporal) are disparate.",k:"Nasal ↔ temporal (other eye)."},
+ {q:"Binocular visual directions are referenced to which construct?",o:["The dominant eye's fovea","The cyclopean eye (egocentric centre)","The blind spot","Each eye's nodal point"],a:1,w:"The cyclopean eye is the imaginary single eye midway between the two; both eyes' images are projected from it (egocentric localisation).",k:"Cyclopean eye = egocentric reference."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

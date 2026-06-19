@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accommodation &amp; the Near Triad — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--key:#a371f7;--tgt:#e673b0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:22px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+  svg{width:100%;height:auto;display:block}
+  input[type=range]{accent-color:var(--accent);width:100%}
+  .rlabel{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mut);margin-top:6px}
+  .triad{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+  .t{background:var(--card2);border:1px solid var(--line);border-radius:11px;padding:12px;text-align:center}
+  .t .k{font-size:12px;color:var(--mut)}
+  .t .v{font-size:22px;font-weight:800;color:var(--accent);margin:3px 0}
+  .t .d{font-size:11.5px;color:var(--mut)}
+  .lensbox{display:flex;gap:18px;justify-content:center;align-items:center;margin-top:6px}
+  .lenscol{text-align:center}
+  .readout{margin:12px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  .calc{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:14px}
+  .calc input[type=number]{width:70px;background:#11181f;border:1px solid var(--line);color:var(--txt);border-radius:7px;padding:5px 7px;font-size:14px}
+  .out{background:#11181f;border:1px solid var(--line);border-radius:7px;padding:5px 10px}
+  .out b{color:var(--ok)}
+  .tag{display:inline-block;border-radius:6px;padding:1px 8px;font-weight:700;font-size:12.5px}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Accommodation &amp; the Near Triad</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · slide the target from far to near and watch all three responses</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <p class="hint" style="margin-top:0">The near reflex (near triad) links three things at once: the eyes <b>converge</b>, the lens <b>accommodates</b> (rounds up), and the pupils <b>constrict</b>. Move the target in.</p>
+
+    <svg id="topview" viewBox="0 0 640 280" role="img" aria-label="Top view of both eyes converging on a target"></svg>
+
+    <input type="range" id="dist" min="20" max="600" value="600">
+    <div class="rlabel"><span>Near (20 cm)</span><span id="distLbl"></span><span>Far (6 m)</span></div>
+
+    <div class="triad">
+      <div class="t"><div class="k">Accommodation</div><div class="v" id="accV">0.0 D</div><div class="d">lens power added = 100 / distance(cm)</div></div>
+      <div class="t"><div class="k">Convergence</div><div class="v" id="convV">0 Δ</div><div class="d">total, both eyes turn in</div></div>
+      <div class="t"><div class="k">Pupil</div><div class="v" id="pupV">4.5 mm</div><div class="d">miosis at near</div></div>
+    </div>
+
+    <div class="lensbox">
+      <div class="lenscol"><svg id="lensSvg" viewBox="0 0 120 120" width="110" height="110"></svg><div class="hint" style="margin:0">crystalline lens</div></div>
+      <div class="lenscol"><svg id="pupSvg" viewBox="0 0 120 120" width="110" height="110"></svg><div class="hint" style="margin:0">pupil</div></div>
+    </div>
+
+    <div class="readout" id="readout"></div>
+  </div>
+
+  <div class="card">
+    <h2>Helmholtz: how the lens rounds up</h2>
+    <p class="hint" style="margin-top:0">For near, the <b>ciliary muscle contracts</b>. That <i>releases</i> tension on the zonules, and the elastic lens springs into a rounder, more powerful shape. It feels backwards: muscle contraction loosens the zonules. With age the lens stiffens and stops responding, which is presbyopia.</p>
+  </div>
+
+  <div class="card">
+    <h2>AC/A ratio</h2>
+    <p class="hint" style="margin-top:0">Accommodation drags convergence along with it. The <b>AC/A ratio</b> is how many prism dioptres of accommodative convergence you get per dioptre of accommodation. Normal is about <b>3 to 5 Δ/D</b>. Too high or too low drives a near eso or exo deviation.</p>
+    <div class="calc">
+      <span>AC/A =</span>
+      <input type="number" id="aca" value="4" min="0" max="12" step="0.5"> Δ/D
+      <span>· Accommodation =</span>
+      <input type="number" id="acc" value="3" min="0" max="10" step="0.5"> D
+      <span>→</span>
+      <span class="out">Accommodative convergence = <b id="acOut">12</b> Δ</span>
+    </div>
+    <p class="hint" id="acaNote" style="margin:10px 0 0"></p>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · B1 Ocular Optics — Accommodation &amp; near reflex</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+function el(t,a){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+var IPD_CM=6.0; // interpupillary distance in cm
+
+var tv=document.getElementById('topview');
+function drawTopView(distCm){
+  while(tv.firstChild)tv.removeChild(tv.firstChild);
+  // eyes at bottom, target up the page; nearer target = lower y (closer to eyes)
+  var eyeY=240, lx=250, rx=390; // left/right eye centres (top view, viewer above)
+  // map distance 20..600cm to target y 40..210
+  var ty=40+(distCm-20)/(600-20)*150;
+  // eyeballs
+  [[lx,'L'],[rx,'R']].forEach(function(e){
+    tv.appendChild(el('circle',{cx:e[0],cy:eyeY,r:26,fill:'#16202b',stroke:'#3a4654','stroke-width':2}));
+  });
+  // target
+  tv.appendChild(el('circle',{cx:320,cy:ty,r:9,fill:'var(--tgt)'}));
+  var t=el('text',{x:320,y:ty-15,fill:'#e673b0','font-size':12,'text-anchor':'middle'});t.textContent='target';tv.appendChild(t);
+  // lines of sight (from each eye to target) — show convergence
+  tv.appendChild(el('line',{x1:lx,y1:eyeY,x2:320,y2:ty,stroke:'var(--accent)','stroke-width':2}));
+  tv.appendChild(el('line',{x1:rx,y1:eyeY,x2:320,y2:ty,stroke:'var(--accent)','stroke-width':2}));
+  // pupils pointing along line of sight (small dot offset toward target)
+  [[lx],[rx]].forEach(function(e){
+    var ex=e[0], ang=Math.atan2(ty-eyeY,320-ex);
+    tv.appendChild(el('circle',{cx:ex+Math.cos(ang)*12,cy:eyeY+Math.sin(ang)*12,r:7,fill:'#2f74c0'}));
+  });
+  // straight-ahead reference
+  tv.appendChild(el('line',{x1:lx,y1:eyeY,x2:lx,y2:eyeY-150,stroke:'#33414f','stroke-width':1,'stroke-dasharray':'4 5'}));
+  tv.appendChild(el('line',{x1:rx,y1:eyeY,x2:rx,y2:eyeY-150,stroke:'#33414f','stroke-width':1,'stroke-dasharray':'4 5'}));
+}
+
+function drawLens(power){ // power 0..4 ; rounder = higher
+  var s=document.getElementById('lensSvg');while(s.firstChild)s.removeChild(s.firstChild);
+  var rx=10+power*7; // half-thickness grows with accommodation
+  s.appendChild(el('path',{d:'M60,'+(60-40)+' Q'+(60+rx)+',60 60,'+(60+40)+' Q'+(60-rx)+',60 60,'+(60-40)+' Z',
+    fill:'#1c3a55',stroke:'#4aa8ff','stroke-width':2,opacity:.9}));
+}
+function drawPup(mm){
+  var s=document.getElementById('pupSvg');while(s.firstChild)s.removeChild(s.firstChild);
+  s.appendChild(el('circle',{cx:60,cy:60,r:34,fill:'#7a5a2e',stroke:'#8497a8','stroke-width':2}));
+  s.appendChild(el('circle',{cx:60,cy:60,r:mm*4,fill:'#080c10'}));
+}
+
+function update(){
+  var d=+document.getElementById('dist').value; // cm
+  var acc=Math.round((100/d)*100)/100; // D
+  var conv=Math.round(IPD_CM*(100/d)*10)/10; // total convergence in Δ  (IPD cm × dioptres)
+  var pup=Math.round((6-Math.min(1.8,acc*0.5))*10)/10; // 6mm far → constricts at near
+  document.getElementById('distLbl').textContent=(d>=100?(d/100).toFixed(2)+' m':d+' cm');
+  document.getElementById('accV').textContent=acc.toFixed(2)+' D';
+  document.getElementById('convV').textContent=conv.toFixed(1)+' Δ';
+  document.getElementById('pupV').textContent=pup.toFixed(1)+' mm';
+  drawTopView(d);drawLens(Math.min(4,acc));drawPup(pup);
+  var near=d<=40;
+  document.getElementById('readout').innerHTML='Target at <b>'+(d>=100?(d/100).toFixed(2)+' m':d+' cm')+'</b>. '+
+    'Accommodative demand is <b>'+acc.toFixed(2)+' D</b> (100 ÷ '+d+'), convergence is about <b>'+conv.toFixed(1)+' Δ</b>. '+
+    (near?'At this near point the ciliary muscle is working hard, the lens is at its roundest, and the pupils are small.':
+          'Far targets need almost no accommodation or convergence; the lens is flat and the pupils are larger.');
+}
+
+function acaCalc(){
+  var aca=+document.getElementById('aca').value, acc=+document.getElementById('acc').value;
+  var ac=Math.round(aca*acc*10)/10;
+  document.getElementById('acOut').textContent=ac;
+  var note;
+  if(aca>5) note='<span class="tag" style="background:rgba(229,83,75,.15);color:#ff9d97">High AC/A</span> a small amount of near work drives a lot of convergence, tending to <b>esophoria at near</b> (think convergence excess). Plus lenses or bifocals at near can help.';
+  else if(aca<3) note='<span class="tag" style="background:rgba(74,168,255,.15);color:#9ccbff">Low AC/A</span> near work drives too little convergence, tending to <b>exophoria at near</b> (convergence insufficiency). Base-in prism or convergence exercises are typical.';
+  else note='<span class="tag" style="background:rgba(63,185,80,.15);color:#85e5a1">Normal AC/A</span> (3 to 5 Δ/D). Convergence keeps pace with accommodation.';
+  document.getElementById('acaNote').innerHTML=note;
+}
+
+document.getElementById('dist').addEventListener('input',update);
+['aca','acc'].forEach(function(id){document.getElementById(id).addEventListener('input',acaCalc);});
+update();acaCalc();
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pupil Light Reflex &amp; RAPD — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--bad:#e5534b;--key:#a371f7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:24px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+
+  .scene{display:flex;gap:50px;justify-content:center;align-items:center;margin:6px 0 10px;position:relative;min-height:170px}
+  .eyewrap{text-align:center}
+  .eye{width:140px;height:140px;border-radius:50%;position:relative;margin:0 auto;
+    background:radial-gradient(circle at 42% 36%,#fff,#e1e9f0 60%,#b6c4d1);border:2px solid #8497a8;transition:box-shadow .25s}
+  .eye.lit{box-shadow:0 0 34px 6px rgba(255,225,120,.85)}
+  .iris{position:absolute;left:35px;top:35px;width:70px;height:70px;border-radius:50%;
+    background:radial-gradient(circle at 48% 42%,#7a5a2e,#5a3d1c 55%,#3a2710)}
+  .pupil{position:absolute;border-radius:50%;background:#080c10;
+    transition:width .5s ease,height .5s ease,left .5s ease,top .5s ease}
+  .eyelabel{font-size:12.5px;color:var(--mut);margin-top:8px}
+  .eyelabel b{color:var(--txt)}
+  .beam{font-size:11px;color:var(--warn);height:14px}
+
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;
+    padding:8px 12px;font-size:13px;transition:.14s}
+  .btn:hover{border-color:var(--mut)}
+  .btn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+  .btn.cond.on{border-color:var(--key);box-shadow:0 0 0 2px var(--key) inset}
+  .btn.swing.on{border-color:var(--warn);box-shadow:0 0 0 2px var(--warn) inset}
+  .readout{margin:14px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  .sizes{text-align:center;font-size:13px;color:var(--mut);margin-top:8px}
+  .sizes span{color:var(--txt);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:13px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+  th{background:var(--card2);color:var(--mut)}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--accent)}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Pupil Light Reflex &amp; RAPD — Interactive</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · run the swinging-flashlight test on different lesions</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <p class="hint" style="margin-top:0">Pick a lesion, then shine the light into each eye. <b>Afferent</b> (optic nerve) carries light in and drives <b>both</b> pupils. <b>Efferent</b> (CN III) tells each pupil to constrict. Watch how that split explains every pattern.</p>
+
+    <div class="scene">
+      <div class="eyewrap">
+        <div class="eye" id="eyeR"><div class="iris"><div class="pupil" id="pupR"></div></div></div>
+        <div class="eyelabel"><b>Right eye</b></div>
+        <div class="beam" id="beamR"></div>
+      </div>
+      <div class="eyewrap">
+        <div class="eye" id="eyeL"><div class="iris"><div class="pupil" id="pupL"></div></div></div>
+        <div class="eyelabel"><b>Left eye</b></div>
+        <div class="beam" id="beamL"></div>
+      </div>
+    </div>
+    <div class="sizes" id="sizes"></div>
+
+    <h2>Stimulus</h2>
+    <div class="btns">
+      <div class="btn stim" data-stim="light-R">Light → Right eye</div>
+      <div class="btn stim" data-stim="light-L">Light → Left eye</div>
+      <div class="btn stim" data-stim="dark">Darkness</div>
+      <div class="btn stim" data-stim="near">Near target</div>
+      <div class="btn swing" id="swingBtn">▶ Swinging flashlight</div>
+    </div>
+
+    <h2>Lesion</h2>
+    <div class="btns" id="condBtns"></div>
+
+    <div class="readout" id="readout">Pick a lesion and a stimulus.</div>
+  </div>
+
+  <div class="card">
+    <details>
+      <summary>Quick reference table</summary>
+      <table>
+        <tr><th>Lesion</th><th>Resting pupil</th><th>Light reaction</th><th>Hallmark</th></tr>
+        <tr><td>RAPD (optic nerve)</td><td>Equal size</td><td>Both react less to light in the bad eye</td><td>Paradoxical dilation on swing (Marcus Gunn)</td></tr>
+        <tr><td>CN III palsy</td><td>Affected pupil fixed, dilated</td><td>Bad pupil won't constrict either way</td><td>Ptosis, eye down-and-out</td></tr>
+        <tr><td>Horner</td><td>Affected pupil miotic</td><td>Normal</td><td>Anisocoria greater in dark, dilation lag</td></tr>
+        <tr><td>Adie tonic</td><td>Affected pupil large</td><td>Poor, slow to light</td><td>Light-near dissociation, slow near</td></tr>
+        <tr><td>Argyll Robertson</td><td>Both small, irregular</td><td>No light reaction</td><td>Light-near dissociation (neurosyphilis)</td></tr>
+      </table>
+      <p class="hint" style="margin:2px 0 0">Anisocoria worse in <b>bright</b> light → the big pupil is abnormal (CN III, Adie). Worse in <b>dark</b> → the small pupil is abnormal (Horner).</p>
+    </details>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · A2 Ocular Anatomy — Pupillary pathways</footer>
+</div>
+
+<script>
+var PPM=7; // px per mm
+var COND={
+ 'normal':{label:'Normal',
+   pearl:'Direct and consensual responses are equal. Both pupils constrict to light in either eye, and to a near target.',
+   s:{'light-R':[3,3],'light-L':[3,3],'dark':[6,6],'near':[3.2,3.2]}},
+ 'rapd-R':{label:'Right optic nerve (RAPD)',
+   pearl:'Right afferent defect. Light into the weaker right eye drives less constriction in BOTH pupils, so on the swinging-flashlight test both pupils paradoxically DILATE as the light reaches the right eye. This is the relative afferent pupillary defect, or Marcus Gunn pupil. Expect reduced acuity and colour (red desaturation) on that side.',
+   s:{'light-R':[5,5],'light-L':[3,3],'dark':[6,6],'near':[3.2,3.2]}},
+ 'cn3-R':{label:'Right CN III palsy',
+   pearl:'Right efferent (oculomotor) palsy. The right pupil is fixed and dilated and will not constrict to light shone in either eye. The left pupil reacts normally because its own efferent is intact. Look for ptosis and a down-and-out eye; a painful, pupil-involving third nerve palsy is a posterior communicating artery aneurysm until proven otherwise.',
+   s:{'light-R':[6,3],'light-L':[6,3],'dark':[6,6],'near':[6,3.2]}},
+ 'horner-R':{label:'Right Horner',
+   pearl:'Right oculosympathetic palsy. The right pupil is miotic with a NORMAL light reaction. The anisocoria is greater in the dark because the affected pupil dilates slowly (dilation lag). Look for mild ptosis and anhidrosis.',
+   s:{'light-R':[2,3],'light-L':[2,3],'dark':[4,6],'near':[2,3.2]}},
+ 'adie-R':{label:'Right Adie (tonic) pupil',
+   pearl:'Tonic pupil. A large pupil with a poor, slow reaction to light but a stronger, tonic near response: light-near dissociation. Classically a young woman with diminished deep-tendon reflexes (Holmes-Adie). Supersensitive to dilute pilocarpine.',
+   s:{'light-R':[5,3],'light-L':[5,3],'dark':[5.5,6],'near':[3.4,3.2]}},
+ 'argyll':{label:'Argyll Robertson (both)',
+   pearl:'Small, irregular pupils that do NOT react to light but constrict briskly to a near target: light-near dissociation. Classic for neurosyphilis. The phrase is "accommodates but does not react".',
+   s:{'light-R':[2,2],'light-L':[2,2],'dark':[2.6,2.6],'near':[1.4,1.4]}}
+};
+var ORDER=['normal','rapd-R','cn3-R','horner-R','adie-R','argyll'];
+
+var curCond='normal', curStim='light-R', swinging=false, swingTimer=null;
+
+// build condition buttons
+var cb=document.getElementById('condBtns');
+ORDER.forEach(function(k){
+  var b=document.createElement('div');b.className='btn cond';b.dataset.cond=k;b.textContent=COND[k].label;
+  b.addEventListener('click',function(){curCond=k;syncBtns();render();});
+  cb.appendChild(b);
+});
+// stimulus buttons
+document.querySelectorAll('.stim').forEach(function(b){
+  b.addEventListener('click',function(){stopSwing();curStim=b.dataset.stim;syncBtns();render();});
+});
+document.getElementById('swingBtn').addEventListener('click',toggleSwing);
+
+function setPupil(elId,mm){
+  var d=mm*PPM, off=(70-d)/2, p=document.getElementById(elId);
+  p.style.width=d+'px';p.style.height=d+'px';p.style.left=off+'px';p.style.top=off+'px';
+}
+function syncBtns(){
+  document.querySelectorAll('.cond').forEach(function(b){b.classList.toggle('on',b.dataset.cond===curCond);});
+  document.querySelectorAll('.stim').forEach(function(b){b.classList.toggle('on',b.dataset.stim===curStim);});
+  document.getElementById('swingBtn').classList.toggle('on',swinging);
+}
+function render(){
+  var st=COND[curCond].s[curStim];
+  setPupil('pupR',st[0]);setPupil('pupL',st[1]);
+  document.getElementById('eyeR').classList.toggle('lit',curStim==='light-R');
+  document.getElementById('eyeL').classList.toggle('lit',curStim==='light-L');
+  document.getElementById('beamR').textContent=curStim==='light-R'?'● light here':'';
+  document.getElementById('beamL').textContent=curStim==='light-L'?'● light here':'';
+  document.getElementById('sizes').innerHTML='Right pupil <span>'+st[0].toFixed(1)+' mm</span> · Left pupil <span>'+st[1].toFixed(1)+' mm</span>';
+  var stimTxt={'light-R':'Light shone into the right eye.','light-L':'Light shone into the left eye.',
+    'dark':'Room darkened (no light stimulus).','near':'Patient fixates a near target (accommodation).'}[curStim];
+  document.getElementById('readout').innerHTML='<b>'+COND[curCond].label+'.</b> '+stimTxt+'<br>'+COND[curCond].pearl;
+}
+function toggleSwing(){swinging?stopSwing():startSwing();}
+function startSwing(){
+  swinging=true;syncBtns();
+  document.getElementById('swingBtn').textContent='⏸ Swinging flashlight';
+  var side=true;
+  swingTimer=setInterval(function(){curStim=side?'light-R':'light-L';side=!side;syncBtns();render();},1300);
+}
+function stopSwing(){
+  if(swingTimer)clearInterval(swingTimer);swingTimer=null;swinging=false;
+  document.getElementById('swingBtn').textContent='▶ Swinging flashlight';syncBtns();
+}
+syncBtns();render();
+</script>
+</body>
+</html>

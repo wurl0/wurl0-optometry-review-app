@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Subject D Strategy & Formulas</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --red:#a32d2d; --red-soft:#fbeaea; --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  .nav-chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 4px}
+  .nav-chips a{background:var(--tag-soft);color:var(--tag);font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:20px;text-decoration:none}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;scroll-margin-top:12px}
+  h2{font-size:17px;margin:0 0 12px;display:flex;align-items:center;gap:9px}
+  h2 .num{background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:7px;flex:none}
+  .rule{border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;padding:9px 13px;margin:9px 0;font-size:14.5px}
+  .mnem{background:var(--tag-soft);border-radius:9px;padding:10px 13px;margin:9px 0;font-size:14.5px}
+  .mnem b{color:var(--tag)}
+  .trap{border-left:3px solid var(--red);background:var(--red-soft);border-radius:0 8px 8px 0;padding:9px 13px;margin:9px 0;font-size:14px}
+  .trap b{color:var(--red)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:13.5px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  code{background:#efede6;padding:2px 6px;border-radius:5px;font-size:13px}
+  .formula{font-size:15px;background:#efede6;border-radius:8px;padding:10px 13px;margin:7px 0;font-family:var(--font-mono),monospace}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<!--WAA-FASTPICKS--><details open style="margin:0 0 22px;border:1px solid #e5e9ef;border-left:4px solid #d99a16;border-radius:12px;background:#f7f9fc;padding:12px 16px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><summary style="cursor:pointer;font-weight:750;font-size:15px;color:#d99a16;list-style:none;">⚡ Fast Picks — exam shortcuts</summary><div style="margin-top:10px;"><div style="font-size:12.5px;color:#5d6b7a;margin:0 0 10px;">Read the options first, kill the wrong numbers, then settle the flip. Each rule is <code style="background:#eef1f5;padding:1px 4px;border-radius:4px;font-size:.92em">cue → rule → trap</code>.</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;"><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Power in an oblique meridian<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: a sphero-cyl Rx plus a named meridian.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#d99a16;font-weight:700;margin-right:6px;">›</span>Meridian = the cyl axis → answer is the <b>sphere alone</b> (sin²0 = 0). Meridian ⟂ to axis → <b>sphere + cyl</b>.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: any option that applies the *full* cylinder to an in-between meridian.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Resultant prism<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: both a vertical and a horizontal prism are given.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#d99a16;font-weight:700;margin-right:6px;">›</span>r is the hypotenuse: always <b>bigger than either component, smaller than their sum</b> (v + h). A 45° split gives r ≈ 1.41× a component.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: the option equal to <b>v + h</b> (added instead of √), and anything smaller than the larger component.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Base direction<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: lens sign + the wording.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#d99a16;font-weight:700;margin-right:6px;">›</span>&quot;Decentered&quot; → <code style="background:#eef1f5;padding:1px 4px;border-radius:4px;font-size:.92em">+ same, − opposite</code>. &quot;From the OC&quot; or OC ≠ PD → <code style="background:#eef1f5;padding:1px 4px;border-radius:4px;font-size:.92em">+ opposite, − same</code>.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: the twin option with your magnitude but flipped <b>BI/BO</b> — that is the keyed bait.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Prentice&#x27;s rule<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: a decentration (mm) and a lens power.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#d99a16;font-weight:700;margin-right:6px;">›</span>P = (mm × D) ÷ 10. Only one option&#x27;s number matches; pick the base with the sign rule above.</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: the option that forgot to ÷10 (used mm as cm), off by 10×.</li></ul></div><div style="background:#fff;border:1px solid #e5e9ef;border-radius:10px;padding:9px 13px;break-inside:avoid;"><div style="font-weight:700;font-size:13.5px;color:#1d2733;margin-bottom:3px;">Transposition<span style="color:#5d6b7a;font-weight:400;font-size:12.5px;"> — cue: &quot;express in plus/minus cyl,&quot; or options with a flipped axis.</span></div><ul style="margin:0;padding:0;"><li style="list-style:none;margin:3px 0;color:#2c3a47;font-size:13px;line-height:1.5;"><span style="color:#d99a16;font-weight:700;margin-right:6px;">›</span>New sphere = sph + cyl; flip the cyl sign; axis ± 90 (keep it 0–180).</li><li style="list-style:none;margin:3px 0;color:#c0392b;font-size:13px;line-height:1.5;"><span style="color:#c0392b;font-weight:700;margin-right:6px;">✗</span>Trap: an option whose sphere ≠ (old sph + cyl), or whose axis is not exactly 90° away.</li></ul></div></div></div></details><!--/WAA-FASTPICKS-->
+
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>Subject D — Strategy, Formulas &amp; Mnemonics</h1>
+    <p class="sub">Theoretical Optics, Dispensing &amp; Contact Lenses · the read-before-you-test reference</p>
+    <div class="nav-chips">
+      <a href="#key">Formulas &amp; Constants</a><a href="#d1p">D1 Physical</a><a href="#d1g">D1 Geometric</a>
+      <a href="#d2">D2 Dispensing</a><a href="#d3">D3 Contact Lens</a>
+    </div>
+  </header>
+
+  <section id="key">
+    <h2><span class="num">KEY</span>Formulas &amp; Constants</h2>
+    <div class="formula">Snell: <b>n₁ sin i = n₂ sin R</b> · Speed: <b>v = c/n</b> · Vergence: <b>D = 100/f</b> (f in cm)</div>
+    <div class="formula">Prentice: <b>P = d(cm) × F</b> · Mirror/lens: <b>1/p + 1/q = 1/f</b> · Mirror: <b>f = R/2</b></div>
+    <div class="formula">Keratometry: <b>D = 337.5/r</b> (n = 1.3375) · Vertex: <b>D_CL = D_spec / (1 − 0.012·D_spec)</b></div>
+    <div class="formula">Surface power: <b>D = (n₂ − n₁)/r</b> · Apparent depth = <b>actual ÷ n</b> · 1° ≈ <b>1.75Δ</b></div>
+    <table>
+      <tr><th>Gullstrand constant</th><th>Value</th></tr>
+      <tr><td>Cornea power / index</td><td>43 D / 1.376</td></tr>
+      <tr><td>Lens power (unaccommodated)</td><td>19 D</td></tr>
+      <tr><td>Total eye (exact / reduced)</td><td>58.64 D / 60 D</td></tr>
+      <tr><td>Aqueous &amp; vitreous index</td><td>1.336</td></tr>
+      <tr><td>Lens nucleus / cortex index</td><td>1.406 / 1.386</td></tr>
+      <tr><td>Anterior / posterior cornea radius</td><td>7.7 mm / 6.8 mm</td></tr>
+      <tr><td>Nodal points (N / N')</td><td>7.08 / 7.33 mm</td></tr>
+      <tr><td>Center of rotation</td><td>13.5 mm</td></tr>
+      <tr><td>Axial length (emmetrope)</td><td>24 mm</td></tr>
+    </table>
+  </section>
+
+  <section id="d1p">
+    <h2><span class="num">D1</span>Physical Optics</h2>
+    <div class="mnem"><b>Light theories "NHMP":</b> Newton (corpuscular) → Huygens (wave) → Maxwell (electromagnetic) → Planck (quantum). Huygens correctly predicted light <i>slows</i> in dense media.</div>
+    <div class="rule"><b>Vergence signs:</b> diverging = negative, converging = positive. <b>Higher n → slower light</b> and <b>lower critical angle</b> (diamond ~24.44°). Beyond the critical angle = total internal reflection.</div>
+    <div class="rule"><b>Abbe ↔ index are inverse:</b> higher index → lower Abbe → more chromatic aberration. <b>UV-B = photokeratitis</b> (welder's flash); UV-A → cataract. Thermal damage = permanent; photochemical = reversible.</div>
+    <div class="mnem"><b>Flat transposition:</b> new Sph = <b>S + C</b>, new Cyl = <b>−C</b>, new Axis = <b>±90°</b>.</div>
+    <div class="trap"><b>Trap:</b> higher index = higher Abbe = less aberration. No — inverse: higher index = <b>lower</b> Abbe = <b>more</b> chromatic aberration.</div>
+    <div class="trap"><b>Trap:</b> keratometry uses the true corneal index 1.376. No — it uses the keratometric index <b>1.3375</b>.</div>
+    <div class="trap"><b>Trap:</b> Newton's theory predicted light slows in glass. No — Newton predicted speed-up; Huygens was right.</div>
+  </section>
+
+  <section id="d1g">
+    <h2><span class="num">D1</span>Geometric Optics</h2>
+    <div class="rule"><b>Always virtual, upright, minified:</b> the convex mirror and the concave (minus) lens, at any object distance. Plane mirror = virtual, upright, same size, equal distance behind.</div>
+    <div class="rule"><b>Sign rules:</b> q positive = real, q negative = virtual; m positive = upright, m negative = inverted. Plus lens with object <b>inside F</b> = virtual, upright, magnified (a magnifier).</div>
+    <div class="mnem"><b>Prism:</b> light bends toward the <b>base</b>, image displaces toward the <b>apex</b>. Esotropia → base <b>out</b>; exotropia → base <b>in</b>. 1° ≈ 1.75Δ.</div>
+    <div class="rule"><b>Surface power needs BOTH</b> the radius and the index difference (matched media = zero power). Apparent depth = actual ÷ n (shallowing). Lens movement: <b>plus = against, minus = with</b>.</div>
+    <div class="trap"><b>Trap:</b> a flat glass slab (plane refractor) adds power. No — it only displaces the ray laterally; exit ray stays parallel.</div>
+    <div class="trap"><b>Trap:</b> exotropia is corrected base out. No — exotropia → base <b>in</b>; esotropia → base out.</div>
+    <div class="trap"><b>Trap:</b> a convex mirror can form a real image. No — convex mirrors are always virtual, upright, minified.</div>
+  </section>
+
+  <section id="d2">
+    <h2><span class="num">D2</span>Ophthalmic Lenses &amp; Dispensing</h2>
+    <table>
+      <tr><th>Material</th><th>Abbe</th><th>Note</th></tr>
+      <tr><td>Crown glass</td><td>58.9</td><td>Best optics (highest Abbe)</td></tr>
+      <tr><td>CR-39</td><td>58</td><td>Good optics, standard plastic</td></tr>
+      <tr><td>Trivex</td><td>43–45</td><td>Lightest (SG ~1.11), impact resistant</td></tr>
+      <tr><td>Polycarbonate</td><td>30</td><td>Most impact resistant; UV &lt;385 inherent; most CA</td></tr>
+    </table>
+    <div class="rule"><b>Photochromic</b> = silver halide, UV-triggered; <b>does not darken in a car</b> (windshield blocks UV). <b>UV 400</b> blocks all UV &lt;400 nm.</div>
+    <div class="rule"><b>Tints/filters:</b> higher CPF number = darker. RP → yellow/amber (CPF 511/527); achromatopsia → dark red (CPF 550, Wratten #25/#29).</div>
+    <div class="mnem"><b>Slab-off</b> for anisometropic vertical prism (&gt;~1.5Δ): grind on the <b>more minus / less plus</b> lens. Prentice <b>P = d(cm) × F</b>.</div>
+    <div class="rule"><b>Bifocal toric forms:</b> SVTT &amp; UBTT use plus-cyl; FBTT uses minus-cyl (cylinder on back). Fused bifocals: Kryptok, FT-28, FT-35. One-piece: Ultex, Executive.</div>
+    <div class="trap"><b>Trap:</b> polycarbonate has the highest Abbe value. No — it has the <b>lowest</b> (30); crown glass is highest.</div>
+    <div class="trap"><b>Trap:</b> slab-off goes on the more plus lens. No — on the <b>more minus / less plus</b> lens.</div>
+  </section>
+
+  <section id="d3">
+    <h2><span class="num">D3</span>Contact Lenses</h2>
+    <div class="rule"><b>Vertex correction matters above ±4.00 D.</b> <code>D_CL = D_spec/(1 − 0.012·D_spec)</code>. High minus → <b>less</b> minus as a CL; high plus → more plus. Low cyl (&lt;1.00) → spherical equivalent (sph + ½ cyl).</div>
+    <div class="rule"><b>Fit:</b> flat = excess movement → mechanical trauma; steep = too little movement → hypoxia/edema. Soft lens diameter ≈ HVID (11.7 mm) + 2 mm. Toric prism ballast ~1–1.5Δ base down.</div>
+    <div class="mnem"><b>Materials/history:</b> PMMA = non-gas-permeable (Touhy 1947). Soft HEMA = Wichterle (FDA 1971). Silicone hydrogel carries O₂ through the silicone matrix, not water.</div>
+    <div class="rule"><b>Complications:</b> microbial keratitis (infiltrate + staining + pain) is the emergency — <b>Pseudomonas</b> most common; <b>Acanthamoeba</b> with water exposure/extended wear. Polymegethism = irreversible hypoxia marker. GPC = deposits + upper-tarsus friction. <b>BAK is toxic with soft lenses.</b></div>
+    <div class="rule"><b>Monovision:</b> dominant eye = distance. <b>Ortho-K</b>: temporary corneal reshaping + myopia control, up to ~−6.00 D / −2.00 D.</div>
+    <div class="trap"><b>Trap:</b> a −6.50 spectacle becomes −6.50 as a CL. No — vertex correction makes it ~−6.00 (less minus).</div>
+    <div class="trap"><b>Trap:</b> PMMA is gas permeable. No — PMMA is non-permeable; RGPs use different polymers.</div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · Subject D strategy card</footer>
+</div>
+<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="D-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#d99a16;color:#fff;">Strategy</span><a href="D-Subject-Exam.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Exam</a></div><!--/WAA-LAYER-NAV--></body>
+</html>

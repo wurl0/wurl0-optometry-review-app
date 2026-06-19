@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference Axes & Angles of the Eye — WAA Board Review 2026</title>
+<style>
+:root{--accent:#2f6fdb;--soft:#e7f0fd;--ink:#1d2733;--muted:#5d6b7a;--line:#e2e8f0;--bg:#f5f8fc;
+ --va:#e23b3b;--ls:#1f9d57;--pa:#7b53d6;--oa:#0e9aa0;--fix:#e8902a;--ap:#7a8794;--trap:#c0392b;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:22px 18px 80px}
+.brand{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--muted)}.brand b{color:var(--accent)}
+h1{font-size:22px;margin:4px 0 2px}.sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1.25fr .9fr;gap:18px;align-items:start}
+@media(max-width:840px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+svg{width:100%;height:auto;display:block}
+.axis{fill:none;stroke-linecap:round;stroke-linejoin:round;transition:opacity .15s,stroke-width .15s;cursor:pointer}
+.dot{cursor:pointer;transition:r .15s}
+.lbl{font:600 13px -apple-system,Arial;fill:var(--ink)}.lbls{font:500 11px Arial;fill:var(--muted)}
+.dim{opacity:.12}.hot{stroke-width:5}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:9px;
+ padding:6px 10px;font-size:13px;font-weight:600;cursor:pointer;background:#fff;color:var(--ink)}
+.chip:hover{background:var(--soft)}.chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip .sw{width:14px;height:3px;border-radius:2px}
+.grp-h{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:14px 0 6px}
+.info{min-height:96px}
+.info .t{font-weight:750;font-size:16px;margin-bottom:3px}
+.info .d{font-size:14px;color:var(--ink)}.info .a{font-size:13px;color:var(--accent);font-weight:600;margin-top:6px}
+.val{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.val span{background:var(--soft);border-radius:7px;padding:3px 9px;font-size:12.5px;color:#21456e}
+.note{margin-top:14px;background:#fff7ec;border:1px solid #f3d9ad;border-radius:11px;padding:11px 14px;font-size:13.5px}
+.note b{color:#9a6112}
+.quiz{margin-top:18px}
+.q{background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px 15px;margin-bottom:10px}
+.q p{margin:0 0 9px;font-weight:600}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:8px;background:#fff;
+ padding:8px 11px;margin:5px 0;font-size:13.5px;cursor:pointer}
+.opt:hover{background:var(--soft)}.opt.ok{background:#e7f7ee;border-color:#1f9d57;color:#10663b}
+.opt.no{background:#fdeceb;border-color:#c0392b;color:#8f291f}
+.reset{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer;margin-top:10px}
+</style></head><body><div class="wrap">
+<div class="brand"><b>WAA</b> · BOARD REVIEW 2026</div>
+<h1>Reference Axes &amp; Angles of the Eye</h1>
+<p class="sub">Fixation: the lines, points, and angles that relate the eye to visual space. Tap any axis, point, or angle.</p>
+
+<div class="grid">
+<div class="card">
+<svg viewBox="0 0 700 470" role="img" aria-label="Schematic eye with reference axes and angles">
+  <!-- globe -->
+  <circle cx="430" cy="235" r="150" fill="#eaf1fb" stroke="#2f6fdb" stroke-width="3"/>
+  <!-- cornea dome (anterior, left) -->
+  <path d="M300 188 Q262 235 300 282" fill="#dcebff" stroke="#2f6fdb" stroke-width="3"/>
+  <!-- lens -->
+  <ellipse cx="408" cy="235" rx="15" ry="46" fill="#cfe0f7" stroke="#2f6fdb" stroke-width="2"/>
+  <!-- entrance pupil gap -->
+  <line x1="335" y1="214" x2="335" y2="256" stroke="#2f6fdb" stroke-width="3"/>
+
+  <!-- AXES (drawn back-to-front; horizontals first) -->
+  <line id="ax-ap"  class="axis" stroke="var(--ap)"  stroke-width="3" x1="300" y1="235" x2="600" y2="235"/>
+  <line id="ax-oa"  class="axis" stroke="var(--oa)"  stroke-width="3" x1="262" y1="235" x2="635" y2="235"/>
+  <line id="ax-pa"  class="axis" stroke="var(--pa)"  stroke-width="3" stroke-dasharray="8 5" x1="300" y1="235" x2="470" y2="235"/>
+  <polyline id="ax-fix" class="axis" stroke="var(--fix)" stroke-width="3" points="70,150 430,235 636,262"/>
+  <polyline id="ax-ls"  class="axis" stroke="var(--ls)"  stroke-width="3" points="70,150 335,235 624,197"/>
+  <polyline id="ax-va"  class="axis" stroke="var(--va)"  stroke-width="3" points="70,150 408,235 624,197"/>
+
+  <!-- angle vertex pulse markers (hidden until selected) -->
+  <circle id="v-alpha" cx="408" cy="235" r="13" fill="none" stroke="var(--va)" stroke-width="2.5" opacity="0"/>
+  <circle id="v-kappa" cx="335" cy="235" r="13" fill="none" stroke="var(--pa)" stroke-width="2.5" opacity="0"/>
+  <circle id="v-lambda" cx="423" cy="235" r="13" fill="none" stroke="var(--pa)" stroke-width="2.5" opacity="0"/>
+  <circle id="v-gamma" cx="430" cy="235" r="13" fill="none" stroke="var(--fix)" stroke-width="2.5" opacity="0"/>
+
+  <!-- POINTS -->
+  <g id="pt-o"  class="dot">
+    <path d="M70 132 l4.5 9 10 1.5 -7 7 1.7 9.8 -9.2 -4.8 -9.2 4.8 1.7 -9.8 -7 -7 10 -1.5 z" fill="#f0a92e" stroke="#d98a14" stroke-width="1"/>
+    <text class="lbl" x="84" y="142">O · object</text></g>
+  <circle id="pt-ep" class="dot" cx="335" cy="235" r="5.5" fill="#7b53d6"/>
+  <circle id="pt-n"  class="dot" cx="408" cy="235" r="5.5" fill="#111"/>
+  <circle id="pt-cr" class="dot" cx="430" cy="235" r="6"   fill="#1f9d57"/>
+  <circle id="pt-f"  class="dot" cx="624" cy="197" r="5.5" fill="#e23b3b"/>
+  <circle id="pt-ap" class="dot" cx="300" cy="235" r="4.5" fill="#7a8794"/>
+  <circle id="pt-pp" class="dot" cx="632" cy="235" r="4.5" fill="#7a8794"/>
+
+  <text class="lbls" x="318" y="206">EP</text>
+  <text class="lbls" x="398" y="288">N</text>
+  <text class="lbls" x="436" y="223">CR</text>
+  <text class="lbls" x="634" y="194">fovea</text>
+  <text class="lbls" x="250" y="270">ant pole</text>
+  <text class="lbls" x="600" y="262">post pole</text>
+  <text class="lbls" x="486" y="150">13.5 mm behind cornea → CR</text>
+</svg>
+<button class="reset" onclick="reset()">Show all / reset</button>
+</div>
+
+<div class="card">
+  <div class="info" id="info">
+    <div class="t">Tap an item to explore</div>
+    <div class="d">Six reference lines connect the object to the eye at different points. Four angles arise where the most similar lines diverge. Start with the confusable pair: <b>visual axis</b> vs <b>line of sight</b>.</div>
+  </div>
+
+  <div class="grp-h">Axes</div>
+  <div class="legend" id="axes"></div>
+  <div class="grp-h">Points</div>
+  <div class="legend" id="points"></div>
+  <div class="grp-h">Angles</div>
+  <div class="legend" id="angles"></div>
+
+  <div class="note"><b>Angle kappa (Hirschberg):</b> positive kappa = pupil center <b>nasal</b> to the visual axis → corneal reflex falls <b>temporal</b> → looks like <b>exotropia</b> (pseudo-exo), but cover test is negative. Small positive kappa is normal.</div>
+</div>
+</div>
+
+<div class="quiz" id="quiz"></div>
+
+<script>
+const AX=[
+ {id:'va',name:'Visual axis',c:'va',def:'Fixation point → through the NODAL POINTS (N, N′) → to the FOVEA. The "true" optical line of clear sight; theoretical, cannot be directly observed.',a:'Defines angle ALPHA (vs optic axis, at the nodal point).',pts:['o','n','f']},
+ {id:'ls',name:'Line of sight',c:'ls',def:'Fixation point → through the CENTER OF THE ENTRANCE PUPIL → to the FOVEA. The clinical surrogate for the visual axis — this is what Hirschberg actually tests.',a:'Defines angle KAPPA (vs pupillary axis, at the entrance pupil).',pts:['o','ep','f']},
+ {id:'pa',name:'Pupillary axis',c:'pa',def:'PERPENDICULAR to the corneal surface, passing through the CENTER OF THE ENTRANCE PUPIL.',a:'Defines angle KAPPA (vs line of sight) and LAMBDA (at the exit pupil).',pts:['ep']},
+ {id:'oa',name:'Optic axis',c:'oa',def:'Through the CENTERS OF CURVATURE of all refracting surfaces (cornea → lens). NOT the visual axis; used in schematic-eye calculations.',a:'Reference line for angle ALPHA and GAMMA.',pts:['ap','pp']},
+ {id:'fix',name:'Fixation axis',c:'fix',def:'Fixation point → through the CENTER OF ROTATION (≈13.5 mm behind the cornea), the point the eye pivots around.',a:'Defines angle GAMMA (vs optic axis, at the center of rotation). Rarely board-tested.',pts:['o','cr']},
+ {id:'ap',name:'Anteroposterior axis',c:'ap',def:'From the ANTERIOR POLE → to the POSTERIOR POLE. The longest axis of the eye (~24 mm).',a:'The Y-axis of Fick — the axis around which torsion (cyclorotation) occurs.',pts:['ap','pp']},
+];
+const PT={
+ o:{name:'Object of regard (O)',d:'The fixation point in space — where the eye is pointed. Every reference line starts here.'},
+ ep:{name:'Entrance pupil (EP)',d:'The image of the real pupil seen through the cornea. The line of sight passes through its center; angle kappa is measured here.'},
+ n:{name:'Nodal point (N)',d:'Optical point (≈ back of the lens) — a ray aimed at it passes undeviated. The visual axis runs through it; angle alpha is measured here.'},
+ cr:{name:'Center of rotation (CR)',d:'≈13.5 mm behind the cornea — the point the globe pivots around. The fixation axis runs through it; angle gamma is measured here.'},
+ f:{name:'Fovea (f)',d:'The highest-acuity point. It sits slightly TEMPORAL to the posterior pole, i.e. OFF the optic axis — which is exactly why angles alpha and kappa exist.'},
+ ap:{name:'Anterior pole',d:'The corneal apex — front end of the anteroposterior axis and the optic axis.'},
+ pp:{name:'Posterior pole',d:'The back of the eye on the optic axis (the fovea sits just temporal to it).'},
+};
+const AN=[
+ {id:'alpha',g:'α',name:'Alpha',bt:'Visual axis vs Optic axis',at:'Nodal point',val:'~5° temporal, 1.5° inferior',test:'Theoretical',lines:['va','oa']},
+ {id:'kappa',g:'κ',name:'Kappa',bt:'Pupillary axis vs Line of sight',at:'Entrance pupil',val:'Small positive (physiologic)',test:'Hirschberg — most important clinically',lines:['pa','ls']},
+ {id:'lambda',g:'λ',name:'Lambda',bt:'Pupillary axis vs Line of sight',at:'Exit pupil',val:'Similar to kappa',test:'Optical calculations',lines:['pa','ls']},
+ {id:'gamma',g:'γ',name:'Gamma',bt:'Fixation axis vs Optic axis',at:'Center of rotation',val:'Small positive',test:'Rarely tested',lines:['fix','oa']},
+];
+const $=s=>document.querySelector(s), axById=Object.fromEntries(AX.map(a=>[a.id,a]));
+function clearChips(){document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));}
+function dimAll(){AX.forEach(a=>{const e=$('#ax-'+a.id);e.classList.add('dim');e.classList.remove('hot');});
+ ['alpha','kappa','lambda','gamma'].forEach(v=>$('#v-'+v).setAttribute('opacity','0'));
+ document.querySelectorAll('.dot').forEach(d=>d.style.opacity=.25);}
+function showAll(){AX.forEach(a=>{const e=$('#ax-'+a.id);e.classList.remove('dim','hot');});
+ document.querySelectorAll('.dot').forEach(d=>d.style.opacity=1);}
+function reset(){clearChips();showAll();['alpha','kappa','lambda','gamma'].forEach(v=>$('#v-'+v).setAttribute('opacity','0'));
+ $('#info').innerHTML='<div class="t">Tap an item to explore</div><div class="d">Six reference lines connect the object to the eye at different points. Four angles arise where the most similar lines diverge.</div>';}
+function litePts(ids){document.querySelectorAll('.dot').forEach(d=>d.style.opacity=.2);
+ ids.forEach(p=>{const e=$('#pt-'+p);if(e)e.style.opacity=1;});}
+function selAxis(a,chip){clearChips();chip.classList.add('on');dimAll();
+ const e=$('#ax-'+a.id);e.classList.remove('dim');e.classList.add('hot');litePts(a.pts);
+ $('#info').innerHTML=`<div class="t" style="color:var(--${a.c})">${a.name}</div><div class="d">${a.def}</div><div class="a">${a.a}</div>`;}
+function selPoint(id,chip){clearChips();chip.classList.add('on');showAll();litePts([id]);
+ const p=PT[id];$('#info').innerHTML=`<div class="t">${p.name}</div><div class="d">${p.d}</div>`;}
+function selAngle(an,chip){clearChips();chip.classList.add('on');dimAll();
+ an.lines.forEach(l=>{const e=$('#ax-'+l);e.classList.remove('dim');e.classList.add('hot');});
+ $('#v-'+an.id).setAttribute('opacity','1');
+ const pts=[...new Set(an.lines.flatMap(l=>axById[l].pts))];litePts(pts);
+ $('#info').innerHTML=`<div class="t">Angle ${an.name} (${an.g})</div><div class="d">Between <b>${an.bt}</b>, measured at the <b>${an.at}</b>.</div>`+
+   `<div class="val"><span>Normal: ${an.val}</span><span>Test: ${an.test}</span></div>`;}
+// build chips
+AX.forEach(a=>{const c=document.createElement('button');c.className='chip';
+ c.innerHTML=`<span class="sw" style="background:var(--${a.c})"></span>${a.name}`;
+ c.onclick=()=>selAxis(a,c);$('#axes').appendChild(c);
+ $('#ax-'+a.id).onclick=()=>selAxis(a,c);});
+Object.keys(PT).forEach(id=>{const c=document.createElement('button');c.className='chip';
+ c.textContent=PT[id].name.replace(/\s*\(.*\)/,'');c.onclick=()=>selPoint(id,c);$('#points').appendChild(c);
+ const d=$('#pt-'+id);if(d)d.onclick=()=>selPoint(id,c);});
+AN.forEach(an=>{const c=document.createElement('button');c.className='chip';
+ c.innerHTML=`${an.g} ${an.name}`;c.onclick=()=>selAngle(an,c);$('#angles').appendChild(c);});
+// quiz
+const QZ=[
+ {q:'The visual axis passes through which structure?',o:['Center of the entrance pupil','The nodal points','The center of rotation','The corneal apex'],a:1},
+ {q:'Angle kappa is the angle between…',o:['Visual axis and optic axis','Fixation axis and optic axis','Pupillary axis and line of sight','AP axis and visual axis'],a:2},
+ {q:'A positive angle kappa on Hirschberg mimics which deviation?',o:['Esotropia','Exotropia (pseudo-exo)','Hypertropia','No effect'],a:1},
+ {q:'The center of rotation lies about how far behind the cornea?',o:['7 mm','10 mm','13.5 mm','24 mm'],a:2},
+ {q:'Which line is the clinical surrogate tested by Hirschberg?',o:['Optic axis','Visual axis','Line of sight','AP axis'],a:2},
+];
+const qd=$('#quiz');qd.innerHTML='<div class="grp-h">Quick check</div>';
+QZ.forEach((it)=>{const d=document.createElement('div');d.className='q';
+ d.innerHTML='<p>'+it.q+'</p>';it.o.forEach((o,j)=>{const b=document.createElement('button');b.className='opt';b.textContent=o;
+  b.onclick=()=>{if(b.classList.contains('ok')||b.classList.contains('no'))return;
+   b.classList.add(j===it.a?'ok':'no');if(j!==it.a)d.querySelectorAll('.opt')[it.a].classList.add('ok');};
+  d.appendChild(b);});qd.appendChild(d);});
+</script></body></html>

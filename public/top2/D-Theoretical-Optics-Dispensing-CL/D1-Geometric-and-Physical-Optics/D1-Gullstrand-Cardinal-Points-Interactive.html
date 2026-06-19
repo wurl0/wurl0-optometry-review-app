@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Gullstrand Cardinal Points</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}.sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}.hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .ptbtns{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 0}
+  .ptbtn{border:1.5px solid var(--line);background:#fff;border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;color:var(--ink)}
+  .ptbtn:hover{border-color:var(--accent)} .ptbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .detail{margin-top:12px;background:var(--accent-soft);border-radius:11px;padding:13px 15px;font-size:14.5px}
+  .detail b{color:var(--accent)} .dxname{font-size:15px;font-weight:700;margin-bottom:2px}
+  table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:13.5px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)} th{color:var(--muted);font-size:12px;text-transform:uppercase}
+  td:last-child{text-align:right;font-weight:600}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}.bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}.opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)}.opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)}.opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}.feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}.feedback.good .tag{color:var(--accent)}.feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D1 — Gullstrand Cardinal Points, interactive</h1>
+    <p class="sub">Personal study notes · tap a cardinal point on the schematic eye, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. The six cardinal points (measured from the anterior cornea)</h2>
+    <p class="hint">Light enters from the left. Tap a point to see where it sits and what it does.</p>
+    <svg id="eye" width="100%" viewBox="0 0 600 230" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Schematic eye cardinal points"></svg>
+    <div class="ptbtns" id="ptbtns"></div>
+    <div class="detail" id="detail"><div class="dxname">Tap a point</div>The cardinal points define the eye's optical system.</div>
+    <table>
+      <tr><th>Gullstrand constant</th><th>Value</th></tr>
+      <tr><td>Cornea power</td><td>43 D</td></tr>
+      <tr><td>Lens power (unaccommodated)</td><td>19 D</td></tr>
+      <tr><td>Total power — exact / reduced eye</td><td>58.64 D / 60 D</td></tr>
+      <tr><td>Axial length (emmetrope)</td><td>24 mm</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <div class="progress-row"><div class="bar"><span id="barfill"></span></div><div class="score" id="scoretext">0 / 0</div></div>
+    <div id="qbody"></div>
+  </section>
+  <footer>WAA Board Review 2026 · Personal study notes · D1 Gullstrand schematic eye</footer>
+</div>
+
+<script>
+const svg=document.getElementById('eye');
+// scale: mm -> px. Cornea at xmm=0 -> screen 110. scale 13 px/mm.
+const X0=110, SC=13, AY=115;
+function sx(mm){return X0+mm*SC;}
+const POINTS=[
+ {id:'F1',mm:-15.7,lab:"F₁",name:"Primary focal point",d:"~15.7 mm <b>in front</b> of the cornea. An object placed here sends out parallel rays after the eye."},
+ {id:'H',mm:1.35,lab:"H H'",name:"Principal planes (H, H')",d:"~1.35 and 1.60 mm behind the cornea (almost coincident). Refraction is 'considered' to occur here; powers and conjugates are measured from them."},
+ {id:'N',mm:7.08,lab:"N N'",name:"Nodal points (N, N')",d:"~7.08 and 7.33 mm behind the cornea. A ray aimed at the nodal point passes <b>undeviated</b>; retinal image size is calculated from here. Do not confuse with the center of rotation (13.5 mm)."},
+ {id:'CR',mm:13.5,lab:"CR",name:"Center of rotation",d:"~13.5 mm behind the cornea. The pivot for eye movements (all three axes of Fick pass through it). A different measurement from the nodal point."},
+ {id:'F2',mm:24,lab:"F₂",name:"Secondary focal point",d:"~24 mm behind the cornea — <b>on the retina in emmetropia</b>. Parallel rays from infinity converge here."}
+];
+function drawEye(active){
+  let s='';
+  // axis
+  s+='<line x1="20" y1="'+AY+'" x2="585" y2="'+AY+'" stroke="#cfccc2" stroke-width="1.5"/>';
+  // globe (from cornea 0 to ~24mm), drawn as a big circle/ellipse
+  const cxg=sx(12), r=12*SC+6;
+  s+='<ellipse cx="'+cxg+'" cy="'+AY+'" rx="'+(12*SC+8)+'" ry="'+(11*SC)+'" fill="#eef4fb" stroke="#b9cbe0" stroke-width="1.5"/>';
+  // cornea (front bump)
+  s+='<path d="M '+sx(0)+' '+(AY-70)+' Q '+(sx(0)-22)+' '+AY+' '+sx(0)+' '+(AY+70)+'" fill="none" stroke="#5f97c9" stroke-width="3"/>';
+  // retina (back) highlight
+  s+='<path d="M '+sx(23)+' '+(AY-78)+' Q '+(sx(25))+' '+AY+' '+sx(23)+' '+(AY+78)+'" fill="none" stroke="#d8862f" stroke-width="2.5"/>';
+  s+='<text x="'+sx(0)+'" y="'+(AY+92)+'" font-size="11" fill="#5f97c9" text-anchor="middle">cornea</text>';
+  s+='<text x="'+sx(23)+'" y="'+(AY-86)+'" font-size="11" fill="#854f0b" text-anchor="middle">retina</text>';
+  // points
+  POINTS.forEach(p=>{
+    const x=sx(p.mm), on=active===p.id;
+    s+='<line x1="'+x+'" y1="'+(AY-58)+'" x2="'+x+'" y2="'+(AY+58)+'" stroke="'+(on?'#854f0b':'#bbb7ac')+'" stroke-width="'+(on?2.5:1.2)+'" stroke-dasharray="'+(p.id==='F1'||p.id==='F2'?'0':'4 3')+'"/>';
+    s+='<circle cx="'+x+'" cy="'+AY+'" r="'+(on?6:4)+'" fill="'+(on?'#854f0b':'#8a8780')+'"/>';
+    s+='<text x="'+x+'" y="'+(AY-64)+'" font-size="12" fill="'+(on?'#854f0b':'#6b685f')+'" text-anchor="middle" font-weight="'+(on?700:400)+'">'+p.lab+'</text>';
+    s+='<text x="'+x+'" y="'+(AY+74)+'" font-size="9.5" fill="#9a968c" text-anchor="middle">'+p.mm+'mm</text>';
+  });
+  svg.innerHTML=s;
+}
+drawEye(null);
+const detail=document.getElementById('detail'),ptbtns=document.getElementById('ptbtns');
+POINTS.forEach(p=>{const b=document.createElement('button');b.className='ptbtn';b.textContent=p.lab+' · '+p.name.split('(')[0].trim();
+  b.addEventListener('click',()=>{document.querySelectorAll('.ptbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    drawEye(p.id);detail.innerHTML='<div class="dxname">'+p.name+'</div>'+p.d;});
+  ptbtns.appendChild(b);});
+
+const Q=[
+ {q:"The secondary focal point (F₂) of the emmetropic eye sits approximately:",o:["7 mm behind the cornea","13.5 mm behind the cornea","24 mm behind the cornea (on the retina)","15 mm in front"],a:2,w:"Parallel rays converge at F₂ ≈ 24 mm behind the cornea — on the retina in emmetropia.",k:"F₂ ≈ 24 mm = on the retina."},
+ {q:"A ray directed at the nodal point passes:",o:["Undeviated","Through the focal point","Back to the cornea","Parallel to the axis"],a:0,w:"Nodal-point rays pass undeviated and are used to compute retinal image size.",k:"Nodal-point ray = undeviated."},
+ {q:"The center of rotation lies about how far behind the cornea?",o:["7.08 mm","13.5 mm","24 mm","1.5 mm"],a:1,w:"The center of rotation (~13.5 mm) is the pivot for eye movements — not the nodal point (~7.08 mm).",k:"Center of rotation = 13.5 mm."},
+ {q:"The total power of Gullstrand's exact schematic eye is:",o:["43 D","58.64 D","60 D","19 D"],a:1,w:"Exact eye = 58.64 D; the reduced (Emsley) eye = 60 D.",k:"Gullstrand exact = 58.64 D."},
+ {q:"Where refraction is 'considered' to occur (powers measured from here) are the:",o:["Nodal points","Principal planes (H, H')","Focal points","Center of rotation"],a:1,w:"The principal planes (~1.5 mm behind the cornea) are the reference for power and conjugates.",k:"Principal planes = where refraction is considered."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

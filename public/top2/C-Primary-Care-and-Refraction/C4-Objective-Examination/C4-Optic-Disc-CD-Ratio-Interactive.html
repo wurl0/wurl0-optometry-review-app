@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optic Disc &amp; C/D Ratio — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--bad:#e5534b;--key:#a371f7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:20px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+  .stage{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start;justify-content:center}
+  svg.disc{width:300px;max-width:80vw;height:auto;background:#0a0d11;border-radius:14px}
+  .ctrl{flex:1;min-width:250px}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:8px 0}
+  input[type=range]{accent-color:var(--accent);flex:1;min-width:160px}
+  .cd{font-size:30px;font-weight:800;color:var(--accent);text-align:center;margin:2px 0}
+  .cd small{font-size:13px;color:var(--mut);font-weight:600}
+  .btns{display:flex;gap:7px;flex-wrap:wrap}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;padding:7px 11px;font-size:12.5px;transition:.14s}
+  .btn:hover{border-color:var(--mut)}
+  .btn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+  .chk{display:inline-flex;align-items:center;gap:7px;font-size:13px;cursor:pointer;border:1px solid var(--line);border-radius:9px;padding:6px 10px}
+  .chk input{accent-color:var(--bad);width:15px;height:15px}
+  .isnt{display:flex;gap:6px;align-items:flex-end;height:60px;margin-top:4px}
+  .bar{flex:1;text-align:center}
+  .bar .b{background:var(--ok);border-radius:4px 4px 0 0;margin:0 auto;width:70%}
+  .bar .l{font-size:11px;color:var(--mut);margin-top:3px}
+  .verdict{font-size:17px;font-weight:800;margin:2px 0 4px}
+  .v-low{color:var(--ok)} .v-mod{color:var(--warn)} .v-high{color:var(--bad)}
+  .readout{margin:12px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  .tag{display:inline-block;border-radius:6px;padding:1px 8px;font-weight:700;font-size:12px;margin-right:6px}
+  .ok-t{background:rgba(63,185,80,.15);color:#85e5a1}.bad-t{background:rgba(229,83,75,.15);color:#ff9d97}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--accent)}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Optic Disc &amp; C/D Ratio — Direct Ophthalmoscopy</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · size the cup, set the rim, read the glaucoma risk</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <div class="stage">
+      <svg class="disc" id="disc" viewBox="0 0 360 360" role="img" aria-label="Optic disc"></svg>
+      <div class="ctrl">
+        <div class="cd"><span id="cdVal">0.30</span><br><small>vertical cup-to-disc ratio</small></div>
+        <div class="row">
+          <span style="font-size:12.5px;color:var(--mut);min-width:70px">Cup size</span>
+          <input type="range" id="cd" min="10" max="90" value="30">
+        </div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">Rim pattern</div>
+        <div class="btns" id="patBtns">
+          <div class="btn" data-pat="healthy">Healthy (ISNT)</div>
+          <div class="btn" data-pat="concentric">Concentric</div>
+          <div class="btn" data-pat="inotch">Inferior notch</div>
+          <div class="btn" data-pat="snotch">Superior notch</div>
+        </div>
+        <div style="font-size:12.5px;color:var(--mut);margin:10px 0 4px">Other signs</div>
+        <div class="btns">
+          <label class="chk"><input type="checkbox" id="heme">Disc haemorrhage</label>
+          <label class="chk"><input type="checkbox" id="rnfl">RNFL defect</label>
+          <label class="chk"><input type="checkbox" id="ppa">Peripapillary atrophy</label>
+        </div>
+        <div style="font-size:12.5px;color:var(--mut);margin:12px 0 2px">Neuroretinal rim (ISNT)</div>
+        <div class="isnt" id="isnt"></div>
+        <div id="isntFlag" style="font-size:12.5px;margin-top:4px"></div>
+      </div>
+    </div>
+
+    <div class="readout"><div class="verdict" id="verdict"></div><div id="detail"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>What you are grading at the disc</h2>
+    <p class="hint" style="margin-top:0">With the direct ophthalmoscope, judge: the <b>vertical C/D ratio</b>, the <b>neuroretinal rim</b> (the <b>ISNT rule</b>: rim thickest <b>I</b>nferior, then <b>S</b>uperior, then <b>N</b>asal, thinnest <b>T</b>emporal), rim colour/pallor, and any <b>disc haemorrhage</b>. A C/D <b>asymmetry &gt; 0.2</b> between the two eyes is suspicious even if each disc looks borderline.</p>
+    <details>
+      <summary>Glaucomatous disc signs to learn</summary>
+      <table style="width:100%;border-collapse:collapse;font-size:13px">
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>Vertical cup enlargement</b></td><td style="border:1px solid var(--line);padding:6px 9px">cup grows vertically; C/D ≥ 0.6 raises concern</td></tr>
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>ISNT violation / notch</b></td><td style="border:1px solid var(--line);padding:6px 9px">focal rim thinning, usually inferotemporal or superotemporal</td></tr>
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>Disc (Drance) haemorrhage</b></td><td style="border:1px solid var(--line);padding:6px 9px">splinter at the margin; often precedes field loss</td></tr>
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>RNFL defect</b></td><td style="border:1px solid var(--line);padding:6px 9px">wedge defect, best seen with red-free light</td></tr>
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>Peripapillary atrophy</b></td><td style="border:1px solid var(--line);padding:6px 9px">beta zone enlargement around the disc</td></tr>
+        <tr><td style="border:1px solid var(--line);padding:6px 9px"><b>Bayoneting / baring of vessels</b></td><td style="border:1px solid var(--line);padding:6px 9px">vessels kink at a steep cup edge</td></tr>
+      </table>
+    </details>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · C4 Objective Examination — Optic disc assessment</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+function el(t,a,txt){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;}
+var svg=document.getElementById('disc');
+var CX=180,CY=180,RD=118;
+
+var pat='healthy', cd=0.30, heme=false,rnfl=false,ppa=false;
+
+// relative rim widths per pattern (I,S,N,T) before cup-size scaling
+var RIM={healthy:{I:1.0,S:0.85,N:0.7,T:0.55},
+         concentric:{I:0.62,S:0.58,N:0.52,T:0.46},
+         inotch:{I:0.18,S:0.85,N:0.7,T:0.55},
+         snotch:{I:1.0,S:0.16,N:0.68,T:0.55}};
+
+function draw(){
+  while(svg.firstChild)svg.removeChild(svg.firstChild);
+  // peripapillary fundus
+  svg.appendChild(el('circle',{cx:CX,cy:CY,r:170,fill:'#b5481f'}));
+  // PPA crescent (beta zone) temporal
+  if(ppa){svg.appendChild(el('path',{d:'M'+(CX+RD-2)+','+(CY-70)+' A'+(RD+22)+','+(RD+22)+' 0 0,1 '+(CX+RD-2)+','+(CY+70)+
+    ' A'+RD+','+RD+' 0 0,0 '+(CX+RD-2)+','+(CY-70)+' Z',fill:'#e9d3a8',opacity:.7}));}
+  // RNFL wedge defect (inferotemporal, outside disc)
+  if(rnfl){svg.appendChild(el('path',{d:'M'+(CX+70)+','+(CY+95)+' L'+(CX+150)+','+(CY+120)+' L'+(CX+135)+','+(CY+175)+' L'+(CX+55)+','+(CY+108)+' Z',
+    fill:'#7a3318',opacity:.75}));}
+  // disc
+  svg.appendChild(el('circle',{cx:CX,cy:CY,r:RD,fill:'#f0c79a',stroke:'#d39a63','stroke-width':2}));
+  // vessels (emerge nasally, bend at cup)
+  ['M'+(CX-10)+','+CY+' Q'+(CX-60)+','+(CY-70)+' '+(CX-150)+','+(CY-95),
+   'M'+(CX-10)+','+CY+' Q'+(CX-60)+','+(CY+70)+' '+(CX-150)+','+(CY+100),
+   'M'+(CX-10)+','+CY+' Q'+(CX+30)+','+(CY-60)+' '+(CX+150)+','+(CY-92),
+   'M'+(CX-10)+','+CY+' Q'+(CX+30)+','+(CY+60)+' '+(CX+150)+','+(CY+96)
+  ].forEach(function(d,i){svg.appendChild(el('path',{d:d,fill:'none',stroke:i<2?'#9e2a1c':'#cf3a24','stroke-width':i<2?5:3,'stroke-linecap':'round'}));});
+
+  // cup (vertical oval, slightly shifted up for healthy ISNT look)
+  var ry=cd*RD, rx=cd*RD*0.85;
+  var shift=(pat==='healthy')?-7:0;
+  svg.appendChild(el('ellipse',{cx:CX,cy:CY+shift,rx:rx,ry:ry,fill:'#f7e7cf',stroke:'#e3c49a','stroke-width':1.5}));
+  // focal notch eats the rim
+  if(pat==='inotch'){var rimI=RD-ry;svg.appendChild(el('ellipse',{cx:CX,cy:CY+ry+rimI*0.45,rx:rx*0.5,ry:rimI*0.95,fill:'#f7e7cf'}));}
+  if(pat==='snotch'){var rimS=RD-ry;svg.appendChild(el('ellipse',{cx:CX,cy:CY-ry-rimS*0.45,rx:rx*0.5,ry:rimS*0.95,fill:'#f7e7cf'}));}
+  // disc haemorrhage (splinter, inferotemporal margin)
+  if(heme){svg.appendChild(el('path',{d:'M'+(CX+58)+','+(CY+92)+' q14,4 26,16 q-16,-2 -28,-8 q-2,-5 2,-8 z',fill:'#8b1410'}));}
+  // labels S/I/N/T
+  [['S',CX,CY-RD-8],['I',CX,CY+RD+16],['N',CX-RD-12,CY+4],['T',CX+RD+8,CY+4]].forEach(function(p){
+    svg.appendChild(el('text',{x:p[1],y:p[2],fill:'#cdd6df','font-size':13,'font-weight':700,'text-anchor':'middle'},p[0]));
+  });
+}
+
+function drawISNT(){
+  var box=document.getElementById('isnt');box.innerHTML='';
+  var r=RIM[pat], scale=Math.max(0.12,1-cd); // bigger cup → thinner rim overall
+  var keys=['I','S','N','T'];
+  keys.forEach(function(k){
+    var w=r[k]*scale;
+    var d=document.createElement('div');d.className='bar';
+    var bar=document.createElement('div');bar.className='b';bar.style.height=(8+w*44)+'px';
+    bar.style.background=(pat==='inotch'&&k==='I')||(pat==='snotch'&&k==='S')?'var(--bad)':'var(--ok)';
+    var lab=document.createElement('div');lab.className='l';lab.textContent=k;
+    d.appendChild(bar);d.appendChild(lab);box.appendChild(d);
+  });
+  // ISNT obeyed?
+  var obeyed=(r.I>=r.S-0.01)&&(r.S>=r.N-0.01)&&(r.N>=r.T-0.01);
+  document.getElementById('isntFlag').innerHTML=obeyed
+    ?'<span class="tag ok-t">ISNT obeyed</span> rim thickest inferiorly'
+    :'<span class="tag bad-t">ISNT violated</span> focal rim loss is the red flag';
+  return obeyed;
+}
+
+function verdict(obeyed){
+  var score=0, why=[];
+  if(cd>=0.7){score+=3;why.push('cup '+cd.toFixed(2)+' is large');}
+  else if(cd>=0.6){score+=2;why.push('cup '+cd.toFixed(2)+' is borderline-high');}
+  else if(cd>=0.5){score+=1;why.push('cup '+cd.toFixed(2)+' is upper-normal');}
+  if(!obeyed){score+=2;why.push('ISNT is violated (notch)');}
+  if(heme){score+=2;why.push('a disc haemorrhage is present');}
+  if(rnfl){score+=1;why.push('an RNFL wedge defect is present');}
+  if(ppa){score+=1;why.push('peripapillary atrophy is present');}
+
+  var v=document.getElementById('verdict'), d=document.getElementById('detail');
+  var level= score>=4?'high':(score>=2?'mod':'low');
+  if(level==='low'){v.className='verdict v-low';v.textContent='● Low suspicion';
+    d.innerHTML='The disc looks healthy: '+(why.length?why.join(', ')+', but':'')+' nothing here strongly suggests glaucoma. Record the C/D and rim as a baseline, and compare the two eyes for asymmetry.';}
+  else if(level==='mod'){v.className='verdict v-mod';v.textContent='● Moderate suspicion (glaucoma suspect)';
+    d.innerHTML='Suspicious because '+why.join(', ')+'. Treat as a glaucoma suspect: measure IOP, do gonioscopy, pachymetry, and baseline OCT plus visual fields, then monitor.';}
+  else{v.className='verdict v-high';v.textContent='● High suspicion';
+    d.innerHTML='Several glaucomatous features: '+why.join(', ')+'. This needs full glaucoma work-up (IOP, gonioscopy, OCT RNFL, visual fields) and likely referral. A disc haemorrhage in particular often precedes field loss.';}
+}
+
+function render(){
+  document.querySelectorAll('#patBtns .btn').forEach(function(b){b.classList.toggle('on',b.dataset.pat===pat);});
+  document.getElementById('cdVal').textContent=cd.toFixed(2);
+  draw();
+  var obeyed=drawISNT();
+  verdict(obeyed);
+}
+
+document.getElementById('cd').addEventListener('input',function(e){cd=+e.target.value/100;render();});
+document.querySelectorAll('#patBtns .btn').forEach(function(b){b.addEventListener('click',function(){pat=b.dataset.pat;render();});});
+document.getElementById('heme').addEventListener('change',function(e){heme=e.target.checked;render();});
+document.getElementById('rnfl').addEventListener('change',function(e){rnfl=e.target.checked;render();});
+document.getElementById('ppa').addEventListener('change',function(e){ppa=e.target.checked;render();});
+render();
+</script>
+</body>
+</html>

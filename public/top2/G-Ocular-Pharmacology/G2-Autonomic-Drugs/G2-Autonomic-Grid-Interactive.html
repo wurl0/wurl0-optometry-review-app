@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Autonomic Grid Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#1d6e56; --accent-soft:#e1f5ee;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --symp:#185fa5; --symp-soft:#e6f1fb; --para:#993c1d; --para-soft:#faece7;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+  .stage{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
+  .pupilwrap{text-align:center;flex:none}
+  .pupil-state{font-size:13px;font-weight:600;color:var(--accent);margin-top:4px}
+  .grid{display:grid;grid-template-columns:auto 1fr 1fr;gap:7px;flex:1;min-width:280px}
+  .ghead{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;display:flex;align-items:center;justify-content:center;text-align:center;padding:4px}
+  .ghead.symp{color:var(--symp)} .ghead.para{color:var(--para)}
+  .rowlabel{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center;padding:4px}
+  .cell{border:1.5px solid var(--line);border-radius:11px;padding:10px 8px;cursor:pointer;text-align:center;background:#fff;transition:.15s}
+  .cell:hover{border-color:var(--accent);background:#fbfbf9}
+  .cell.on{border-color:var(--accent);background:var(--accent-soft)}
+  .cell .eff{font-size:14px;font-weight:700}
+  .cell .eff.dilate{color:var(--symp)} .cell .eff.constrict{color:var(--para)}
+  .cell .ex{font-size:11.5px;color:var(--muted);margin-top:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 0}
+  .chip{border:1.5px solid var(--line);background:#fff;border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;color:var(--ink)}
+  .chip:hover{border-color:var(--accent)}
+  .chip.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .detail{margin-top:14px;background:var(--accent-soft);border-radius:11px;padding:14px 16px;font-size:14.5px;min-height:50px}
+  .detail b{color:var(--accent)}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>G2 — The Autonomic 2×2 Grid, interactive</h1>
+    <p class="sub">Personal study notes · tap a drug or a box and watch the pupil respond, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. Push your muscle or release the opponent</h2>
+    <p class="hint">Sphincter = M3 (parasympathetic, closes the pupil). Dilator = α1 (sympathetic, opens it). Tap a grid box, or a drug below.</p>
+    <div class="stage">
+      <div class="pupilwrap">
+        <svg id="eye" width="120" height="120" viewBox="0 0 120 120" aria-label="Pupil response"></svg>
+        <div class="pupil-state" id="pstate">Resting pupil</div>
+      </div>
+      <div class="grid" id="grid">
+        <div class="ghead"></div>
+        <div class="ghead symp">Sympathetic (adrenergic)</div>
+        <div class="ghead para">Parasympathetic (cholinergic)</div>
+        <div class="rowlabel">Agonist (mimic)</div>
+        <div class="cell" data-k="symphom"><div class="eff dilate">Dilate</div><div class="ex">no cycloplegia · phenylephrine</div></div>
+        <div class="cell" data-k="paramim"><div class="eff constrict">Constrict</div><div class="ex">miosis · pilocarpine</div></div>
+        <div class="rowlabel">Antagonist (block)</div>
+        <div class="cell" data-k="symplytic"><div class="eff constrict">Constrict</div><div class="ex">miosis · dapiprazole</div></div>
+        <div class="cell" data-k="paralytic"><div class="eff dilate">Dilate</div><div class="ex">+ cycloplegia · atropine</div></div>
+      </div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="detail" id="detail">Tap a box or a drug to see the mechanism.</div>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · G2 Autonomic Drugs</footer>
+</div>
+
+<script>
+const CELLS={
+ symphom:{pupil:'dilate',cyclo:false,state:'Mydriasis (no cycloplegia)',d:"<b>Sympathomimetic</b> (α1 agonist): stimulates the dilator → <b>mydriasis with no cycloplegia</b> (the ciliary muscle has no α1). Example: phenylephrine."},
+ paramim:{pupil:'constrict',cyclo:false,state:'Miosis',d:"<b>Parasympathomimetic</b> (M3 agonist): contracts the sphincter → <b>miosis</b>; also contracts the ciliary muscle to open the trabeculum (lowers IOP). Example: pilocarpine."},
+ symplytic:{pupil:'constrict',cyclo:false,state:'Miosis',d:"<b>Sympatholytic</b> (α1 blocker): the dilator is switched off, so the unopposed sphincter wins → <b>miosis</b>. Example: dapiprazole (reverses pharmacologic mydriasis)."},
+ paralytic:{pupil:'dilate',cyclo:true,state:'Mydriasis + cycloplegia',d:"<b>Parasympatholytic</b> (M3 antagonist): the sphincter relaxes (mydriasis) AND the ciliary muscle is paralyzed → <b>mydriasis with cycloplegia</b>. Examples: atropine, tropicamide, cyclopentolate."}
+};
+const DRUGS=[
+ {n:"Phenylephrine",k:"symphom"},{n:"Pilocarpine",k:"paramim"},{n:"Carbachol",k:"paramim"},
+ {n:"Atropine",k:"paralytic"},{n:"Tropicamide",k:"paralytic"},{n:"Cyclopentolate",k:"paralytic"},
+ {n:"Dapiprazole",k:"symplytic"},{n:"Hydroxyamphetamine",k:"symphom"}
+];
+const eye=document.getElementById('eye'),pstate=document.getElementById('pstate'),detail=document.getElementById('detail');
+function drawEye(pupil){
+  const cx=60,cy=60;let pr=14;if(pupil==='dilate')pr=23;else if(pupil==='constrict')pr=7;
+  let s='';
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="48" fill="#fff" stroke="#c9c6bc" stroke-width="1.5"/>'; // sclera/limbus
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="40" fill="#cfe3df" stroke="#9fc7bd" stroke-width="1"/>'; // iris
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+pr+'" fill="#23211c"/>'; // pupil
+  s+='<circle cx="'+(cx-pr*0.35)+'" cy="'+(cy-pr*0.35)+'" r="'+(pr*0.22)+'" fill="#ffffff" opacity="0.7"/>'; // glint
+  eye.innerHTML=s;
+}
+drawEye('rest');
+function select(k){
+  document.querySelectorAll('.cell').forEach(c=>c.classList.toggle('on',c.dataset.k===k));
+  const cell=CELLS[k];drawEye(cell.pupil);pstate.textContent=cell.state;detail.innerHTML=cell.d;
+}
+document.querySelectorAll('.cell').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));select(c.dataset.k);
+}));
+const chips=document.getElementById('chips');
+DRUGS.forEach(dr=>{const b=document.createElement('button');b.className='chip';b.textContent=dr.n;
+  b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');select(dr.k);});
+  chips.appendChild(b);});
+
+const Q=[
+ {q:"Which drug dilates the pupil WITHOUT cycloplegia?",o:["Atropine","Tropicamide","Phenylephrine","Pilocarpine"],a:2,w:"Phenylephrine is an α1 agonist on the dilator; the ciliary muscle has no α1, so accommodation is spared.",k:"Phenylephrine = dilate, no cycloplegia."},
+ {q:"Blocking M3 (parasympatholytic, e.g. atropine) produces:",o:["Miosis only","Mydriasis + cycloplegia","Mydriasis without cycloplegia","No change"],a:1,w:"M3 blockade relaxes both the sphincter (mydriasis) and the ciliary muscle (cycloplegia).",k:"M3 block = mydriasis + cycloplegia."},
+ {q:"Pilocarpine constricts the pupil because it:",o:["Blocks α1","Is an M3 agonist contracting the sphincter","Releases norepinephrine","Paralyzes the ciliary muscle"],a:1,w:"As an M3 agonist it contracts the sphincter (miosis) and the ciliary muscle (opens the trabeculum).",k:"Pilocarpine = M3 agonist → miosis."},
+ {q:"An α1 BLOCKER such as dapiprazole causes:",o:["Mydriasis","Miosis (unopposed sphincter)","Cycloplegia","No pupil change"],a:1,w:"Switching off the dilator leaves the sphincter unopposed → miosis; used to reverse mydriasis.",k:"α1 blocker = miosis."},
+ {q:"The two drug types that DILATE the pupil sit on the grid's:",o:["Top row","Diagonal (sympathomimetic + parasympatholytic)","Bottom row","Left column"],a:1,w:"The two dilators are the sympathomimetic and the parasympatholytic — a diagonal; only the parasympatholytic adds cycloplegia.",k:"Dilators are on the diagonal."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

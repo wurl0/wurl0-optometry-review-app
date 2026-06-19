@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worth 4-Dot Test — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
+    --accent:#4aa8ff;--red:#e8493b;--green:#3fb950;--white:#eef2f6;--key:#a371f7}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:16px;color:#e3b341;border-left:3px solid #e3b341;padding-left:10px;margin:22px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
+  .panels{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .panel{flex:1;min-width:240px;text-align:center}
+  .panel h3{font-size:13px;color:var(--mut);font-weight:600;margin:0 0 6px}
+  svg{width:100%;max-width:280px;height:auto}
+  .glasses{display:flex;gap:8px;justify-content:center;margin:6px 0 0;font-size:12px;color:var(--mut)}
+  .chip{border-radius:6px;padding:2px 9px;font-weight:700}
+  .chip.r{background:rgba(232,73,59,.18);color:#ff9d92}
+  .chip.g{background:rgba(63,185,80,.18);color:#85e5a1}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;padding:8px 12px;font-size:13px;transition:.14s}
+  .btn:hover{border-color:var(--mut)}
+  .btn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+  .readout{margin:14px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .readout b{color:#fff}
+  .count{font-size:20px;font-weight:800;color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:13px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+  th{background:var(--card2);color:var(--mut)}
+  details{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:var(--card);margin:8px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--accent)}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Worth 4-Dot Test — Interactive</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · red filter over the RIGHT eye, green over the left</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card">
+    <p class="hint" style="margin-top:0">Four lights: one red on top, two green at the sides, one white at the bottom. The <b>red filter</b> lets the right eye see only red (white looks red), the <b>green filter</b> lets the left eye see only green. What the patient reports tells you about fusion, suppression, or diplopia.</p>
+    <div class="panels">
+      <div class="panel"><h3>The 4 lights (what is shown)</h3>
+        <svg id="lights" viewBox="0 0 200 200"></svg>
+        <div class="glasses"><span class="chip r">RE: red filter</span><span class="chip g">LE: green filter</span></div>
+      </div>
+      <div class="panel"><h3>What the patient sees</h3>
+        <svg id="seen" viewBox="0 0 200 200"></svg>
+        <div class="count" id="count"></div>
+      </div>
+    </div>
+
+    <div class="btns" id="btns" style="margin-top:14px"></div>
+    <div class="readout" id="readout"></div>
+  </div>
+
+  <div class="card">
+    <details>
+      <summary>Summary table</summary>
+      <table>
+        <tr><th>Patient sees</th><th>Meaning</th></tr>
+        <tr><td><b>4 lights</b></td><td>Normal fusion (or harmonious ARC at near)</td></tr>
+        <tr><td><b>2 red lights</b></td><td>Left eye (green) suppressed</td></tr>
+        <tr><td><b>3 green lights</b></td><td>Right eye (red) suppressed</td></tr>
+        <tr><td><b>5 lights</b></td><td>Diplopia (no fusion): red on the right = eso/uncrossed, red on the left = exo/crossed</td></tr>
+      </table>
+      <p class="hint" style="margin:2px 0 0">Test distance matters: at <b>33 cm</b> it checks a large area (central + peripheral fusion); at <b>6 m</b> only the small central area, so it is more likely to reveal a small central suppression scotoma.</p>
+    </details>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · B5 Binocular Vision — Sensory fusion tests</footer>
+</div>
+
+<script>
+var SVGNS="http://www.w3.org/2000/svg";
+function el(t,a){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+function dot(svg,x,y,fill,r){svg.appendChild(el('circle',{cx:x,cy:y,r:r||15,fill:fill}));}
+var C={red:'#e8493b',green:'#3fb950',white:'#eef2f6'};
+
+// physical lights: red top, green sides, white bottom
+var lsvg=document.getElementById('lights');
+function drawLights(){
+  lsvg.innerHTML='';
+  dot(lsvg,100,40,C.red);
+  dot(lsvg,55,100,C.green);
+  dot(lsvg,145,100,C.green);
+  dot(lsvg,100,160,C.white);
+}
+drawLights();
+
+var OUT={
+ fusion:{label:'Normal fusion',count:'4 lights',
+   draw:function(s){dot(s,100,40,C.red);dot(s,55,100,C.green);dot(s,145,100,C.green);
+     // bottom mixes: render half red half green
+     s.appendChild(el('path',{d:'M85,160 A15,15 0 0,1 115,160 Z',fill:C.green}));
+     s.appendChild(el('path',{d:'M85,160 A15,15 0 0,0 115,160 Z',fill:C.red}));},
+   note:'Both eyes are working together. The patient sees all 4 lights; the bottom light looks reddish-green or alternates. This is normal fusion (or harmonious anomalous correspondence if there is a manifest tropia at near).'},
+ supLE:{label:'Left eye suppressed',count:'2 red lights',
+   draw:function(s){dot(s,100,55,C.red);dot(s,100,140,C.red);},
+   note:'Only the red (right) eye is seen, so the patient reports 2 red lights (the red top plus the white bottom seen as red). The green-filtered left eye is being suppressed.'},
+ supRE:{label:'Right eye suppressed',count:'3 green lights',
+   draw:function(s){dot(s,55,100,C.green);dot(s,145,100,C.green);dot(s,100,150,C.green);},
+   note:'Only the green (left) eye is seen, so the patient reports 3 green lights (the 2 green plus the white bottom seen as green). The red-filtered right eye is being suppressed.'},
+ eso:{label:'Diplopia — esotropia',count:'5 lights (red on the right)',
+   draw:function(s){ // red pair to the right (uncrossed), green triplet to the left
+     dot(s,135,55,C.red);dot(s,135,150,C.red);
+     dot(s,55,70,C.green);dot(s,75,115,C.green);dot(s,55,160,C.green);},
+   note:'No fusion and no suppression, so both images are seen: 2 red + 3 green = 5 lights. The red lights fall to the RIGHT (uncrossed / homonymous diplopia), which points to an esodeviation.'},
+ exo:{label:'Diplopia — exotropia',count:'5 lights (red on the left)',
+   draw:function(s){ // red pair to the left (crossed)
+     dot(s,65,55,C.red);dot(s,65,150,C.red);
+     dot(s,145,70,C.green);dot(s,125,115,C.green);dot(s,145,160,C.green);},
+   note:'Both images seen (5 lights), but the red lights fall to the LEFT (crossed / heteronymous diplopia), which points to an exodeviation.'}
+};
+var ORDER=['fusion','supLE','supRE','eso','exo'];
+var cur='fusion';
+
+var btns=document.getElementById('btns');
+ORDER.forEach(function(k){
+  var b=document.createElement('div');b.className='btn';b.dataset.k=k;b.textContent=OUT[k].label;
+  b.addEventListener('click',function(){cur=k;render();});
+  btns.appendChild(b);
+});
+function render(){
+  document.querySelectorAll('#btns .btn').forEach(function(b){b.classList.toggle('on',b.dataset.k===cur);});
+  var o=OUT[cur], s=document.getElementById('seen');s.innerHTML='';o.draw(s);
+  document.getElementById('count').textContent=o.count;
+  document.getElementById('readout').innerHTML='<b>'+o.label+'.</b> '+o.note;
+}
+render();
+</script>
+</body>
+</html>

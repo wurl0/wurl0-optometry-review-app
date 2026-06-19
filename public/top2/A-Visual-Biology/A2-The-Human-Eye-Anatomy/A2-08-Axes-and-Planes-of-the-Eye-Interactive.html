@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axes &amp; Planes of the Eye — Interactive (WAA Board Review 2026)</title>
+<style>
+  :root{
+    --bg:#0f1419; --card:#1a212b; --card2:#222b37; --line:#2d3845;
+    --txt:#e6edf3; --mut:#9fb0c0;
+    --optic:#4aa8ff;   /* Optic / Y / sagittal  */
+    --trans:#3fb950;   /* Transverse / X        */
+    --vert:#a371f7;    /* Vertical / Z          */
+    --warn:#e3b341; --keybg:#1c1530;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
+  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
+  h1{margin:2px 0 0;font-size:21px}
+  .brand{font-size:13px;color:var(--optic);font-weight:700;letter-spacing:2px}
+  .sub{color:var(--mut);font-size:13px;margin-top:4px}
+  h2{font-size:17px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:30px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 14px}
+
+  /* ---------- 3D stage ---------- */
+  .stage{display:flex;justify-content:center;align-items:center;height:340px;perspective:1000px;overflow:hidden}
+  .world{position:relative;width:1px;height:1px;transform-style:preserve-3d;
+         transform:rotateX(-16deg) rotateY(-30deg);transition:transform .5s}
+  .center{position:absolute;left:0;top:0;transform-style:preserve-3d}
+
+  /* eyeball */
+  .eyeball{position:absolute;width:160px;height:160px;left:-80px;top:-80px;border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, #fbfdff 0%, #e7eef5 38%, #c4d0db 70%, #93a4b4 100%);
+    box-shadow:inset -16px -14px 34px rgba(40,55,70,.55);transform-style:preserve-3d}
+  .eyeball.anim-torsion{animation:torsion 3s ease-in-out infinite}
+  .eyeball.anim-vertical{animation:vertical 3s ease-in-out infinite}
+  .eyeball.anim-horizontal{animation:horizontal 3.2s ease-in-out infinite}
+  @keyframes torsion{0%,100%{transform:rotateZ(-26deg)}50%{transform:rotateZ(26deg)}}
+  @keyframes vertical{0%,100%{transform:rotateX(-26deg)}50%{transform:rotateX(26deg)}}
+  @keyframes horizontal{0%,100%{transform:rotateY(-32deg)}50%{transform:rotateY(32deg)}}
+
+  /* cornea / iris sitting on the anterior pole (+Z) */
+  .cornea{position:absolute;width:78px;height:78px;left:41px;top:41px;border-radius:50%;
+    transform:translateZ(74px);
+    background:radial-gradient(circle at 50% 50%, #6fb6ff 0%, #2f74c0 55%, #1d4f88 100%);
+    box-shadow:0 0 14px rgba(70,150,255,.5)}
+  .pupil{position:absolute;width:30px;height:30px;left:24px;top:24px;border-radius:50%;background:#0c1116}
+  .notch{position:absolute;width:4px;height:16px;left:37px;top:-2px;background:#fff;border-radius:2px}/* 12 o'clock torsion marker */
+
+  /* top orientation arrow (sits on superior pole, +Y) */
+  .uptag{position:absolute;left:-9px;top:-104px;width:18px;height:18px;background:var(--vert);
+    transform:translateZ(0) rotateZ(45deg);border-radius:3px}
+
+  /* axis rods (fixed in space; the eye rotates around them) */
+  .rod{position:absolute;left:0;top:0;height:5px;width:300px;margin-left:-150px;margin-top:-2.5px;border-radius:3px;opacity:.92}
+  .rod .cap{position:absolute;top:-9px;font:700 12px ui-monospace,Menlo,monospace;color:#fff;
+    background:rgba(0,0,0,.35);padding:1px 5px;border-radius:5px}
+  .rod .cap.l{left:-6px}.rod .cap.r{right:-6px}
+  .rod-x{background:var(--trans);transform:rotateX(90deg) translateZ(0)} /* will reset below */
+  .rod-x{transform:none}                 /* transverse = horizontal in screen plane */
+  .rod-y{background:var(--vert);transform:rotateZ(90deg)}   /* vertical axis */
+  .rod-z{background:var(--optic);transform:rotateY(90deg)}  /* optic / sagittal, front-back */
+  .rod.dim{opacity:.16}
+  .rod.hot{opacity:1;box-shadow:0 0 12px currentColor;height:7px;margin-top:-3.5px}
+
+  /* planes: translucent quad spanning two axes */
+  .plane{position:absolute;left:-95px;top:-95px;width:190px;height:190px;border-radius:8px;display:none;
+    border:1.5px dashed rgba(255,255,255,.55)}
+  .plane.show{display:block}
+  .pl-horizontal{transform:rotateX(90deg);background:rgba(227,179,65,.18);border-color:rgba(227,179,65,.8)}
+  .pl-median{transform:rotateY(90deg);background:rgba(163,113,247,.18);border-color:rgba(163,113,247,.85)}
+  .pl-equatorial{transform:translateZ(0);background:rgba(63,185,80,.16);border-color:rgba(63,185,80,.85)}
+
+  /* ---------- controls ---------- */
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);
+    border-radius:10px;padding:9px 13px;font-size:13.5px;text-align:left;transition:.15s;min-width:150px}
+  .btn:hover{border-color:var(--mut)}
+  .btn .t{font-weight:700;display:block;font-size:14px}
+  .btn .d{color:var(--mut);font-size:12px}
+  .btn.on{box-shadow:0 0 0 2px currentColor inset}
+  .b-optic{color:var(--optic)} .b-trans{color:var(--trans)} .b-vert{color:var(--vert)}
+  .b-warn{color:var(--warn)}
+  .readout{text-align:center;min-height:22px;margin:12px 0 2px;font-size:14px;color:var(--mut)}
+  .readout b{color:var(--txt)}
+
+  /* tables / mnemonic */
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:var(--card2);color:var(--mut)}
+  .pill{display:inline-block;border-radius:6px;padding:1px 7px;font-weight:700;font-size:12px}
+  .p-optic{background:rgba(74,168,255,.15);color:var(--optic)}
+  .p-trans{background:rgba(63,185,80,.15);color:var(--trans)}
+  .p-vert{background:rgba(163,113,247,.15);color:var(--vert)}
+  .mnem{background:var(--keybg);border:1px solid #3a2a5e;border-radius:10px;padding:12px 14px;margin:10px 0;font-size:14px}
+  .mnem b{color:#c9a9ff}
+  .key{font-family:ui-monospace,Menlo,monospace;background:#11181f;border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:34px}
+  .toggle{display:flex;gap:8px;justify-content:center;margin:4px 0 2px}
+  .toggle button{cursor:pointer;background:none;border:1px solid var(--line);color:var(--mut);border-radius:20px;padding:4px 12px;font-size:12px}
+  .toggle button.on{color:var(--txt);border-color:var(--optic)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">WAA</div>
+  <h1>Axes &amp; Planes of the Eye — Interactive</h1>
+  <div class="sub">Board Review 2026 · Personal study notes · rotate the globe to see the movement each axis makes</div>
+</div></header>
+
+<div class="wrap">
+
+  <!-- ============ AXES ============ -->
+  <h2>Axes of the Eye (Axes of Fick)</h2>
+  <p class="hint">Three imaginary lines, all passing through the <b>center of rotation</b>. The eye spins <i>around</i> an axis, and the axis itself stays put. Tap an axis to watch the movement it produces. The white notch on the cornea is your reference point.</p>
+
+  <div class="card">
+    <div class="stage">
+      <div class="world" id="world">
+        <div class="center">
+          <!-- planes (behind rods/eye in source so they layer under) -->
+          <div class="plane pl-horizontal"  data-plane="horizontal"></div>
+          <div class="plane pl-median"      data-plane="median"></div>
+          <div class="plane pl-equatorial"  data-plane="equatorial"></div>
+
+          <!-- rods -->
+          <div class="rod rod-z" data-axis="optic"><span class="cap l">P</span><span class="cap r">A</span></div>
+          <div class="rod rod-x" data-axis="trans"><span class="cap l">L</span><span class="cap r">R</span></div>
+          <div class="rod rod-y" data-axis="vert"><span class="cap l">S</span><span class="cap r">I</span></div>
+
+          <!-- eyeball -->
+          <div class="eyeball" id="eye">
+            <div class="uptag"></div>
+            <div class="cornea"><div class="notch"></div><div class="pupil"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="readout" id="readout">Pick an axis below.</div>
+
+    <div class="btns">
+      <div class="btn b-optic" data-axis="optic" data-anim="torsion">
+        <span class="t">Optic axis</span>
+        <span class="d">Y · sagittal · 24 mm → <b>Torsion</b></span>
+      </div>
+      <div class="btn b-trans" data-axis="trans" data-anim="vertical">
+        <span class="t">Transverse axis</span>
+        <span class="d">X · 22 mm → <b>Vertical</b> (up/down)</span>
+      </div>
+      <div class="btn b-vert" data-axis="vert" data-anim="horizontal">
+        <span class="t">Vertical axis</span>
+        <span class="d">Z · supero-infero · 22 mm → <b>Horizontal</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <tr><th>Axis</th><th>Other names</th><th>Length</th><th>Runs</th><th>Movement around it</th></tr>
+      <tr>
+        <td><span class="pill p-optic">Optic</span></td>
+        <td>Y-axis · antero-posterior · sagittal</td>
+        <td>24 mm</td>
+        <td>Cornea vertex → posterior pole</td>
+        <td><b>Torsional</b> (intorsion / extorsion)</td>
+      </tr>
+      <tr>
+        <td><span class="pill p-trans">Transverse</span></td>
+        <td>X-axis</td>
+        <td>22 mm</td>
+        <td>Side to side, at right angle to optic axis</td>
+        <td><b>Vertical</b> (elevation / depression)</td>
+      </tr>
+      <tr>
+        <td><span class="pill p-vert">Vertical</span></td>
+        <td>Z-axis · supero-infero</td>
+        <td>22 mm</td>
+        <td>Superior → inferior</td>
+        <td><b>Horizontal</b> (adduction / abduction)</td>
+      </tr>
+    </table>
+
+    <div class="mnem">
+      <b>Why the movement is perpendicular to the axis:</b> a door swings <i>across</i> the room, but its hinge runs straight up. The eye does the same. The cornea always travels in the plane at right angles to the axis it pivots on, so the vertical axis gives a horizontal sweep, and the horizontal (transverse) axis gives a vertical one. That crossover is exactly what the board question is testing.
+    </div>
+
+    <div class="mnem">
+      <b>Mnemonics, kept from your card:</b><br>
+      <span class="key">O&#8348; T&#7515; V&#7503;</span> &nbsp;→ <b>O</b>ptic→<b>T</b>orsion, <b>T</b>ransverse→<b>V</b>ertical, <b>V</b>ertical→<b>H</b>orizontal (each axis paired with the movement it makes).<br>
+      <span class="key">TOV / XYZ</span> &nbsp;→ <b>T</b>ransverse=X, <b>O</b>ptic=Y, <b>V</b>ertical=Z (the lettered axis for each name).
+    </div>
+  </div>
+
+  <!-- ============ PLANES ============ -->
+  <h2>Planes of the Eye</h2>
+  <p class="hint">A plane is built from <b>two axes</b>, and it slices the globe into two halves. Tap a plane to drop it into the same eye. Notice it always lies flat across the two axes it contains.</p>
+
+  <div class="card">
+    <div class="toggle">
+      <button class="plane-btn b-warn"  data-plane="horizontal">Horizontal</button>
+      <button class="plane-btn b-vert"  data-plane="median">Median</button>
+      <button class="plane-btn b-trans" data-plane="equatorial">Equatorial</button>
+    </div>
+    <div class="readout" id="planeReadout">Pick a plane (scroll up to see it land in the eye).</div>
+
+    <table>
+      <tr><th>Plane</th><th>Built from</th><th>Divides the eyeball into</th></tr>
+      <tr>
+        <td><span class="pill" style="background:rgba(227,179,65,.15);color:var(--warn)">Horizontal</span></td>
+        <td><span class="pill p-optic">Optic</span> + <span class="pill p-trans">Transverse</span></td>
+        <td>Upper &amp; lower portions</td>
+      </tr>
+      <tr>
+        <td><span class="pill p-vert">Median</span></td>
+        <td><span class="pill p-optic">Optic</span> + <span class="pill p-vert">Vertical</span></td>
+        <td>Right &amp; left hemispheres</td>
+      </tr>
+      <tr>
+        <td><span class="pill p-trans">Equatorial</span></td>
+        <td><span class="pill p-trans">Transverse</span> + <span class="pill p-vert">Vertical</span></td>
+        <td>Anterior &amp; posterior halves</td>
+      </tr>
+    </table>
+
+    <div class="mnem">
+      <b>Mnemonic, kept from your card:</b> <span class="key">H&#7506;&#8348; M&#7513;&#7515; E&#8348;&#7515;</span><br>
+      The big letter is the plane, the two small letters are the axes inside it:<br>
+      <b>H</b>ot = <b>H</b>orizontal holds <b>o</b>ptic + <b>t</b>ransverse ·
+      <b>M</b>ov = <b>M</b>edian holds <b>o</b>ptic + <b>v</b>ertical ·
+      <b>E</b>tv = <b>E</b>quatorial holds <b>t</b>ransverse + <b>v</b>ertical.
+    </div>
+    <p class="hint" style="margin-bottom:0">Quick check: the plane and its dividing line are always named for the axis that is <i>missing</i>. Equatorial leaves out the optic (front-back) axis, so it splits front from back.</p>
+  </div>
+
+  <footer>WAA · Board Review 2026 · Personal study notes · Ocular Anatomy / Visual Biology</footer>
+</div>
+
+<script>
+  var eye = document.getElementById('eye');
+  var readout = document.getElementById('readout');
+  var planeReadout = document.getElementById('planeReadout');
+  var world = document.getElementById('world');
+  var rods = document.querySelectorAll('.rod');
+  var axisBtns = document.querySelectorAll('.btn[data-axis]');
+  var planes = document.querySelectorAll('.plane');
+  var planeBtns = document.querySelectorAll('.plane-btn');
+
+  var axisInfo = {
+    optic: {move:'Torsional movement', note:'intorsion / extorsion, the cornea wheels around the line of sight'},
+    trans: {move:'Vertical movement', note:'elevation &amp; depression, the cornea travels up and down'},
+    vert:  {move:'Horizontal movement', note:'adduction &amp; abduction, the cornea swings left and right'}
+  };
+
+  function clearAxis(){
+    eye.className = 'eyeball';
+    rods.forEach(function(r){r.classList.remove('dim','hot')});
+    axisBtns.forEach(function(b){b.classList.remove('on')});
+  }
+
+  axisBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var axis = btn.dataset.axis, anim = btn.dataset.anim;
+      var active = btn.classList.contains('on');
+      clearAxis();
+      if(active){ readout.textContent='Pick an axis below.'; return; }
+      btn.classList.add('on');
+      eye.classList.add('anim-'+anim);
+      rods.forEach(function(r){ r.classList.add(r.dataset.axis===axis ? 'hot':'dim'); });
+      var i = axisInfo[axis];
+      readout.innerHTML = 'Rotating about the highlighted axis → <b>'+i.move+'</b> ('+i.note+').';
+    });
+  });
+
+  planeBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var p = btn.dataset.plane;
+      var on = btn.classList.contains('on');
+      planeBtns.forEach(function(b){b.classList.remove('on')});
+      planes.forEach(function(pl){pl.classList.remove('show')});
+      if(on){ planeReadout.textContent='Pick a plane (scroll up to see it land in the eye).'; return; }
+      btn.classList.add('on');
+      document.querySelector('.plane[data-plane="'+p+'"]').classList.add('show');
+      var txt = {
+        horizontal:'Horizontal plane = optic + transverse axes → splits the globe into <b>upper &amp; lower</b>.',
+        median:'Median plane = optic + vertical axes → splits the globe into <b>right &amp; left</b>.',
+        equatorial:'Equatorial plane = transverse + vertical axes → splits the globe into <b>anterior &amp; posterior</b>.'
+      };
+      planeReadout.innerHTML = txt[p];
+    });
+  });
+
+  // gentle drag-to-rotate for a better look at the 3D
+  var dragging=false, lx=0, ly=0, ry=-30, rx=-16;
+  function setView(){ world.style.transform='rotateX('+rx+'deg) rotateY('+ry+'deg)'; }
+  var stage=document.querySelector('.stage');
+  stage.addEventListener('pointerdown',function(e){dragging=true;lx=e.clientX;ly=e.clientY;world.style.transition='none';});
+  window.addEventListener('pointerup',function(){dragging=false;world.style.transition='transform .5s';});
+  window.addEventListener('pointermove',function(e){
+    if(!dragging)return;
+    ry += (e.clientX-lx)*0.4; rx -= (e.clientY-ly)*0.4;
+    rx=Math.max(-80,Math.min(80,rx));
+    lx=e.clientX; ly=e.clientY; setView();
+  });
+</script>
+</body>
+</html>

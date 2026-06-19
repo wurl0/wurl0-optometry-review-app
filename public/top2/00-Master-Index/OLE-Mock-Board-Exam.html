@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — OLE Mock Board Exam</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#042c53; --accent-soft:#e6eef6;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#185fa5; --tag-soft:#e6f1fb; --gold:#854f0b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header.brand{border-bottom:2px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:24px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  .intro h2{font-size:17px;margin:0 0 8px}
+  .intro p{font-size:14.5px;color:var(--muted);margin:0 0 12px}
+  .weighttab{width:100%;border-collapse:collapse;margin:6px 0 14px;font-size:13px}
+  .weighttab td{padding:4px 8px;border-bottom:1px solid var(--line)}
+  .weighttab td:last-child{text-align:right;color:var(--muted)}
+  .modes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .modebtn{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .modebtn.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  button.start{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:13px 28px;font-size:16px;font-weight:600;cursor:pointer}
+  button.start:hover{filter:brightness(1.15)}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtag{display:inline-block;background:var(--tag-soft);color:var(--tag);font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;margin-bottom:8px}
+  .qnum{font-size:12.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;float:right;margin-top:5px}
+  .qtext{font-size:17px;font-weight:600;margin:4px 0 16px;clear:both}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;transition:.15s;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
+  .feedback.good .tag{color:var(--right)} .feedback.bad .tag{color:var(--wrong)}
+  .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .quit{background:none;border:none;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline}
+  .results{text-align:center;padding:6px 0}
+  .verdict{font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:6px 16px;border-radius:20px;display:inline-block;margin-bottom:8px}
+  .verdict.pass{background:var(--right-soft);color:var(--right)}
+  .verdict.fail{background:var(--wrong-soft);color:var(--wrong)}
+  .results .big{font-size:48px;font-weight:700;margin:4px 0}
+  .results .msg{color:var(--muted);margin-bottom:16px}
+  .breakdown{text-align:left;margin:14px 0}
+  .breakdown h3{font-size:15px;margin:0 0 10px}
+  .brow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:14px}
+  .brow .name{width:230px;color:var(--ink)}
+  .brow .track{flex:1;height:7px;background:var(--line);border-radius:20px;overflow:hidden}
+  .brow .fill{height:100%;border-radius:20px}
+  .brow .pct{width:54px;text-align:right;color:var(--muted);font-size:13px}
+  .missed-item{font-size:14px;border-left:3px solid var(--wrong);padding:3px 0 3px 11px;margin:9px 0;color:var(--muted);text-align:left}
+  .missed-item b{color:var(--ink)}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>OLE Mock Board Exam</h1>
+    <p class="sub">All subjects A–H · weighted by Table of Specifications · OLE passing line 75%</p>
+  </header>
+
+  <div class="panel intro" id="intro">
+    <h2>Full mock board</h2>
+    <p>A cross-subject board simulation drawing flagship questions from every topic, weighted to the official exam percentages and shuffled. You get an overall pass/fail at the 75% OLE line plus a subject-by-subject breakdown showing exactly where you are weak.</p>
+    <table class="weighttab">
+      <tr><td>A — Visual Biology</td><td>10%</td></tr>
+      <tr><td>B — Physiological Optics + BV</td><td>15%</td></tr>
+      <tr><td>C — Primary Care + Refraction</td><td>15%</td></tr>
+      <tr><td>D — Theoretical Optics + Dispensing + CL</td><td>15%</td></tr>
+      <tr><td>E — Ocular Disease + Emergencies</td><td>10%</td></tr>
+      <tr><td>F — Clinical Optometry + Specialties</td><td>15%</td></tr>
+      <tr><td>G — Ocular Pharmacology</td><td>10%</td></tr>
+      <tr><td>H — Jurisprudence + Ethics</td><td>10%</td></tr>
+    </table>
+    <p style="margin-bottom:8px"><b>Length:</b></p>
+    <div class="modes" id="modes">
+      <button class="modebtn sel" data-n="100">Full mock (100)</button>
+      <button class="modebtn" data-n="50">Half (50)</button>
+      <button class="modebtn" data-n="25">Quick (25)</button>
+    </div>
+    <button class="start" id="startBtn">Begin mock board</button>
+  </div>
+
+  <div class="panel" id="quiz" style="display:none">
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </div>
+
+  <footer>WAA Board Review 2026 · Personal study notes · OLE mock board (cross-subject)</footer>
+</div>
+
+<script>
+// Pool weighted by TOS. Each attempt draws the target count per subject, then shuffles.
+const WEIGHT={"A Visual Biology":10,"B Phys Optics + BV":15,"C Primary Care":15,"D Theoretical Optics":15,"E Ocular Disease":10,"F Clinical Specialties":15,"G Pharmacology":10,"H Jurisprudence":10};
+const POOL=[
+// ---- A Visual Biology ----
+{t:"A Visual Biology",q:"Which cranial nerve is fully decussated, supplying the contralateral superior oblique?",o:["CN3","CN4","CN6","CN5"],a:1,w:"CN4 is the only completely crossed cranial nerve and the thinnest motor nerve.",k:"CN4 = contralateral SO, only fully decussated."},
+{t:"A Visual Biology",q:"A pupil-involving CN3 palsy is concerning for:",o:["Diabetic ischemia","A posterior communicating artery aneurysm","Migraine","Myasthenia"],a:1,w:"Outer pupillomotor fibers are hit first by compression, so a blown pupil suggests aneurysm (emergency).",k:"Pupil-involving CN3 = aneurysm."},
+{t:"A Visual Biology",q:"The primary action of the superior oblique is:",o:["Elevation","Depression","Intorsion","Abduction"],a:2,w:"SO primary action is intorsion (depression is secondary).",k:"SO primary = intorsion."},
+{t:"A Visual Biology",q:"Which corneal layer makes up ~90% of corneal thickness?",o:["Epithelium","Bowman's","Stroma","Endothelium"],a:2,w:"The stroma is ~90% of thickness; the endothelial pump keeps it deturgesced.",k:"Stroma = 90% of cornea."},
+{t:"A Visual Biology",q:"A green-gold ring in Descemet's membrane indicates:",o:["Iron (hemochromatosis)","Copper (Wilson's disease)","Calcium","Silver"],a:1,w:"The Kayser-Fleischer ring is copper in Descemet's (Wilson's disease).",k:"Kayser-Fleischer = copper (Wilson's)."},
+{t:"A Visual Biology",q:"Aqueous humor outflow is approximately:",o:["20% trabecular / 80% uveoscleral","80% trabecular / 20% uveoscleral","50/50","100% uveoscleral"],a:1,w:"~80% drains trabecular, ~20% uveoscleral (prostaglandins boost uveoscleral).",k:"Trabecular 80%, uveoscleral 20%."},
+{t:"A Visual Biology",q:"A retinal detachment separates which layers?",o:["RPE from Bruch's","Photoreceptors from the RPE","Choroid from sclera","NFL from ganglion cells"],a:1,w:"Detachment occurs between the neurosensory photoreceptors and the RPE.",k:"RD plane = photoreceptors vs RPE."},
+{t:"A Visual Biology",q:"Bitemporal hemianopia localizes to the:",o:["Optic nerve","Optic chiasm (pituitary adenoma)","Optic tract","Occipital cortex"],a:1,w:"Crossing nasal fibers are damaged at the chiasm, classically by a pituitary adenoma.",k:"Bitemporal hemianopia = chiasm."},
+{t:"A Visual Biology",q:"The crystalline lens is derived entirely from:",o:["Neuroectoderm","Surface ectoderm","Neural crest","Mesoderm"],a:1,w:"The lens forms entirely from the surface-ectoderm lens placode.",k:"Lens = surface ectoderm."},
+{t:"A Visual Biology",q:"In Marfan syndrome the lens dislocates:",o:["Inferiorly","Superotemporally (up)","Posteriorly","It does not dislocate"],a:1,w:"Marfan (FBN1) = up; homocystinuria = down.",k:"Marfan up; homocystinuria down."},
+{t:"A Visual Biology",q:"Corneal sensation is carried by:",o:["CN3","CN7","CN5 ophthalmic (nasociliary)","CN2"],a:2,w:"The nasociliary branch of V1 provides corneal sensation.",k:"Corneal sensation = CN5 V1."},
+// ---- B Physiological Optics + BV ----
+{t:"B Phys Optics + BV",q:"After full dark adaptation, threshold is lowest at which wavelength?",o:["440 nm","507 nm","535 nm","555 nm"],a:1,w:"Scotopic (rod) peak is ~507 nm; photopic (cone) peak is 555 nm.",k:"Scotopic 507, photopic 555."},
+{t:"B Phys Optics + BV",q:"Full rod dark adaptation takes about:",o:["7 minutes","15 minutes","30–40 minutes","60 minutes"],a:2,w:"Cones plateau at ~7 min (Kohlrausch kink); rods finish at 30–40 min.",k:"Cones 7 min, rods 30–40 min."},
+{t:"B Phys Optics + BV",q:"In early optic neuritis, which function is affected earliest?",o:["Motion","Form","Color","Light detection"],a:2,w:"Color is most vulnerable (red desaturation); motion is most resilient.",k:"Color fails first, motion last."},
+{t:"B Phys Optics + BV",q:"The temporal extent of the monocular visual field is about:",o:["60°","75°","100°","120°"],a:2,w:"Temporal 100° (widest); nasal/superior 60°, inferior 75°.",k:"Temporal field = 100°."},
+{t:"B Phys Optics + BV",q:"On Goldmann perimetry, which stimulus is largest?",o:["Size I","Size III","Size V (64 mm²)","Size 0"],a:2,w:"Size V (64 mm²) is largest; size I (0.25 mm²) is smallest.",k:"Goldmann V = largest."},
+{t:"B Phys Optics + BV",q:"The most common color vision deficiency is:",o:["Tritanopia","Deuteranomaly","Protanopia","Achromatopsia"],a:1,w:"Deuteranomaly (weak green) is most common; tritan defects are rare/autosomal.",k:"Deuteranomaly most common."},
+{t:"B Phys Optics + BV",q:"Additive mixing of red, green, and blue light produces:",o:["Black","White","Gray","Yellow"],a:1,w:"Additive RGB = white; subtractive CMY = black.",k:"Additive RGB = white."},
+{t:"B Phys Optics + BV",q:"The normal AC/A ratio (Sheard/BV note) is about:",o:["1:1","4:1 to 6:1","8:1","12:1"],a:1,w:"Normal AC/A 4:1 to 6:1; high AC/A drives excess, low drives insufficiency.",k:"AC/A normal 4–6:1."},
+{t:"B Phys Optics + BV",q:"The slowest eye movement system is:",o:["Saccade","Vergence (20°/s)","Pursuit","VOR"],a:1,w:"Vergence is slowest; the VOR is the fastest reflex.",k:"Vergence slowest; VOR fastest."},
+{t:"B Phys Optics + BV",q:"Stereopsis corresponds to which Worth grade?",o:["Grade 1","Grade 2","Grade 3","Grade 4"],a:2,w:"Grade 1 simultaneous perception, 2 flat fusion, 3 stereopsis.",k:"Stereopsis = Worth Grade 3."},
+{t:"B Phys Optics + BV",q:"Hering's law of equal innervation applies to:",o:["One muscle","Agonist/antagonist of one eye","Yoke muscles of both eyes","The pupil"],a:2,w:"Hering = binocular yoke muscles; Sherrington = monocular reciprocal.",k:"Hering = binocular yoke."},
+{t:"B Phys Optics + BV",q:"Normal stereoacuity is:",o:["20–40 sec arc","200 sec arc","1 min arc","3000 sec arc"],a:0,w:"Normal stereoacuity 20–40 sec arc; smaller is finer.",k:"Stereo normal 20–40 sec arc."},
+{t:"B Phys Optics + BV",q:"A child who loses his place reading with 20/20 acuity and normal BV is best assessed with:",o:["Visual field","Ishihara","TVPS-3","Tonometry"],a:2,w:"Figure-ground/sequencing problems are VPS; TVPS-3 (pointing only) evaluates them.",k:"VPS complaint, 20/20 = TVPS-3."},
+{t:"B Phys Optics + BV",q:"Constricted fields with night blindness suggest:",o:["Pituitary adenoma","Glaucoma","Retinitis pigmentosa","CSR"],a:2,w:"RP: ring scotoma to central island, with early nyctalopia.",k:"RP = constricted fields + nyctalopia."},
+// ---- C Primary Care + Refraction ----
+{t:"C Primary Care",q:"If pinhole improves acuity, the cause is most likely:",o:["Organic disease","Uncorrected refractive error","Amblyopia","Dense cataract"],a:1,w:"Pinhole improvement = refractive (correctable); no improvement = organic.",k:"Pinhole improves → refractive."},
+{t:"C Primary Care",q:"A temporally displaced corneal light reflex indicates:",o:["Exo deviation","Eso deviation","Hyperdeviation","No deviation"],a:1,w:"Temporal reflex = eso; nasal reflex = exo.",k:"Temporal reflex = eso."},
+{t:"C Primary Care",q:"Hofstetter's minimum amplitude of accommodation formula is:",o:["18.5 − 0.30(age)","15 − 0.25(age)","25 − 0.40(age)","15 + 0.25(age)"],a:1,w:"Min = 15 − 0.25(age); Ave = 18.5 − 0.30(age); Max = 25 − 0.40(age).",k:"Hofstetter min = 15 − 0.25(age)."},
+{t:"C Primary Care",q:"At 67 cm retinoscopy working distance, subtract how much from the gross?",o:["1.00 D","1.50 D","2.00 D","0.50 D"],a:1,w:"67 cm = 1.50 D; with motion add plus, against add minus.",k:"67 cm WD → subtract 1.50 D."},
+{t:"C Primary Care",q:"Direct ophthalmoscopy produces an image that is:",o:["Real, inverted","Virtual, erect, ~15x","Real, erect","Virtual, inverted"],a:1,w:"Direct = virtual, erect, ~15x; indirect = real, inverted, 2–5x, wide field.",k:"Direct = virtual, erect."},
+{t:"C Primary Care",q:"On the duochrome test, GREEN clearer means:",o:["Add minus","Over-minused → reduce minus / add plus","Correctly corrected","Add cylinder"],a:1,w:"Green clearer = focal point in front = over-minused.",k:"Green clearer → reduce minus."},
+{t:"C Primary Care",q:"On JCC, preferring Position 1 (red dots parallel to axis) means:",o:["Reduce minus cyl","Add minus cyl (cylinder under-powered)","Wrong axis","Too much sphere"],a:1,w:"Position 1 is the over-corrected state; preferring it means add minus cylinder.",k:"Prefer JCC Position 1 → add minus."},
+{t:"C Primary Care",q:"In amblyopia, you conventionally patch the:",o:["Amblyopic eye","Good eye","Both from the start","Neither"],a:1,w:"Cover the good eye to force the amblyopic eye to work.",k:"Patch the GOOD eye."},
+{t:"C Primary Care",q:"The first management of accommodative esotropia is:",o:["Surgery","Full cycloplegic hyperopic correction","Base-in prism","Patching"],a:1,w:"Full plus removes the accommodative drive; surgery is only for residual deviation.",k:"Accommodative ET = full plus."},
+{t:"C Primary Care",q:"The Parks 3-step test is used for:",o:["Horizontal phorias","Vertical (cyclovertical) deviations","Accommodation","Color vision"],a:1,w:"Parks 3-step isolates a paretic cyclovertical muscle in vertical deviations.",k:"Parks 3-step = vertical only."},
+{t:"C Primary Care",q:"The two leading causes of global vision impairment are:",o:["Glaucoma and DR","Uncorrected refractive error and cataract","Trachoma and corneal opacity","AMD and glaucoma"],a:1,w:"Both are avoidable; over 80% of VI is preventable or curable.",k:"Refractive error + cataract lead globally."},
+{t:"C Primary Care",q:"Normal near point of convergence break is about:",o:["7 cm","15 cm","20 cm","2 cm"],a:0,w:"NPC break ~7 cm; >10 cm = convergence insufficiency.",k:"NPC ~7 cm; >10 = CI."},
+{t:"C Primary Care",q:"Sheard's-criterion prism amount equals:",o:["(2 × phoria − recovery) ÷ 3","phoria ÷ 2","2 × phoria","recovery − phoria"],a:0,w:"Prism = (2 × phoria − recovery) ÷ 3.",k:"Sheard's prism = (2·phoria − recovery)/3."},
+{t:"C Primary Care",q:"The Brock string normal response is:",o:["A single line","An X crossing at the fixated bead","Two parallel lines","No lines"],a:1,w:"Normal = X at the fixated bead; absent X = suppression.",k:"Brock string normal = X at bead."},
+// ---- D Theoretical Optics ----
+{t:"D Theoretical Optics",q:"Which theory correctly predicted light slows in a denser medium?",o:["Newton (corpuscular)","Huygens (wave)","Planck (quantum)","Einstein"],a:1,w:"Huygens' wave theory was correct; Newton wrongly predicted speed-up.",k:"Huygens (wave) = slows in dense media."},
+{t:"D Theoretical Optics",q:"The keratometer uses which index in D = 337.5/r?",o:["1.376","1.3375","1.336","1.523"],a:1,w:"It uses the keratometric index 1.3375 (not the true 1.376).",k:"Keratometry n = 1.3375."},
+{t:"D Theoretical Optics",q:"As refractive index increases, the Abbe value and chromatic aberration:",o:["Both increase","Abbe falls, chromatic aberration rises","Both fall","No relationship"],a:1,w:"Higher index → lower Abbe → more chromatic aberration.",k:"Higher n → lower Abbe → more CA."},
+{t:"D Theoretical Optics",q:"The total power of Gullstrand's exact eye vs the reduced eye is:",o:["60 vs 58.64 D","58.64 vs 60 D","43 vs 60 D","58.64 vs 58.64 D"],a:1,w:"Gullstrand exact = 58.64 D; reduced (Emsley) = 60 D.",k:"Gullstrand 58.64; reduced 60 D."},
+{t:"D Theoretical Optics",q:"A convex mirror forms an image that is:",o:["Real, inverted","Virtual, upright, minified","Real, magnified","Virtual, magnified"],a:1,w:"Convex mirrors are always virtual, upright, minified.",k:"Convex mirror = virtual, upright, minified."},
+{t:"D Theoretical Optics",q:"A prism bends light toward the ___ and displaces the image toward the ___:",o:["apex; base","base; apex","base; base","apex; apex"],a:1,w:"Light bends toward the base; image displaces toward the apex.",k:"Light to base, image to apex."},
+{t:"D Theoretical Optics",q:"Esotropia is corrected with which prism?",o:["Base in","Base out","Base up","Base down"],a:1,w:"Esotropia → base out; exotropia → base in.",k:"Esotropia → base out."},
+{t:"D Theoretical Optics",q:"Which lens material has the lowest Abbe value (most chromatic aberration)?",o:["Crown glass","CR-39","Polycarbonate (30)","Trivex"],a:2,w:"Polycarbonate Abbe ~30; crown glass ~58.9 (highest).",k:"Polycarbonate Abbe 30 (lowest)."},
+{t:"D Theoretical Optics",q:"Why do photochromic lenses fail to darken in a car?",o:["Too warm","The windshield blocks the UV that activates them","Cabin too dark","React only to heat"],a:1,w:"They need UV; windshields block it.",k:"Windshield blocks UV → no darkening."},
+{t:"D Theoretical Optics",q:"In anisometropia, conventional slab-off is ground on the:",o:["More plus lens","More minus / less plus lens","Better-seeing eye","Either"],a:1,w:"Slab-off goes on the more minus/less plus lens.",k:"Slab-off on more minus / less plus."},
+{t:"D Theoretical Optics",q:"Vertex-distance power correction matters above:",o:["±1.00 D","±2.00 D","±4.00 D","±8.00 D"],a:2,w:"Above ±4.00 D the vertex distance meaningfully changes effective power.",k:"Vertex correction above ±4.00 D."},
+{t:"D Theoretical Optics",q:"A −6.50 D spectacle Rx at 14 mm becomes about which contact lens power?",o:["−7.00 D","−6.00 D","−6.50 D","−5.00 D"],a:1,w:"D_CL = D_spec/(1 − d·D_spec) ≈ −6.00 D (high minus needs less minus as a CL).",k:"High minus → less minus as CL."},
+{t:"D Theoretical Optics",q:"Silicone hydrogel lenses transmit oxygen through:",o:["Water content","The silicone polymer matrix","Surface pores","Tear exchange only"],a:1,w:"O₂ moves through the silicone matrix, independent of water content.",k:"SiHy O₂ via silicone, not water."},
+{t:"D Theoretical Optics",q:"Orthokeratology effectively treats myopia up to about:",o:["−2 D","−6 D","−10 D","No limit"],a:1,w:"Ortho-K works up to ~−6 D myopia and −2 D astigmatism.",k:"Ortho-K myopia limit ~−6 D."},
+// ---- E Ocular Disease ----
+{t:"E Ocular Disease",q:"An enlarged, cloudy infant cornea with tearing (buphthalmos) indicates:",o:["Microphthalmos","Congenital glaucoma","Cataract","Conjunctivitis"],a:1,w:"Raised IOP stretches the infant globe = buphthalmos = congenital glaucoma.",k:"Buphthalmos = congenital glaucoma."},
+{t:"E Ocular Disease",q:"A growth that crosses the limbus and destroys Bowman's layer is a:",o:["Pinguecula","Pterygium","Phlyctenule","Pannus"],a:1,w:"Pterygium crosses the limbus and destroys Bowman's; pinguecula does not.",k:"Pterygium destroys Bowman's."},
+{t:"E Ocular Disease",q:"A violet ring of injection around the cornea that does not blanch with epinephrine indicates:",o:["Allergic conjunctivitis","A deep process (uveitis, keratitis, acute glaucoma)","Subconjunctival hemorrhage","Pinguecula"],a:1,w:"Ciliary flush reflects deep perilimbal vessels seen in serious anterior disease.",k:"Ciliary flush = deep danger."},
+{t:"E Ocular Disease",q:"Sudden painless vision loss with a pale retina and cherry-red fovea is:",o:["CRVO","CRAO","Optic neuritis","RD"],a:1,w:"CRAO: pale ischemic retina, cherry-red fovea, rule out giant cell arteritis.",k:"Cherry-red spot = CRAO."},
+{t:"E Ocular Disease",q:"Severe non-proliferative diabetic retinopathy is defined by the:",o:["1-2-3 rule","4-2-1 rule","ABCD rule","ISNT rule"],a:1,w:"4-2-1: hemorrhages in 4 quadrants, venous beading in 2, or IRMA in 1.",k:"Severe NPDR = 4-2-1."},
+{t:"E Ocular Disease",q:"In giant cell arteritis with sudden vision loss, you should:",o:["Wait for biopsy before treating","Start high-dose corticosteroids immediately","Give anti-VEGF","Observe"],a:1,w:"Treat immediately to protect the second eye; biopsy can follow.",k:"GCA: steroids before biopsy."},
+{t:"E Ocular Disease",q:"A chemical (alkali) splash to the eye is first managed by:",o:["Taking a full history","Irrigating immediately (before history)","Padding and referral","Antibiotic ointment"],a:1,w:"A chemical burn is the only injury treated before history; alkali penetrates deeply.",k:"Chemical burn = irrigate first."},
+{t:"E Ocular Disease",q:"Which imaging is contraindicated for a ferrous intraocular foreign body?",o:["CT","Ultrasound","MRI","X-ray"],a:2,w:"MRI is contraindicated for ferrous IOFB; use CT.",k:"Ferrous IOFB = no MRI."},
+{t:"E Ocular Disease",q:"Acute angle-closure glaucoma classically shows:",o:["A pinpoint pupil","A mid-dilated fixed pupil, cloudy cornea","A normal exam","Bilateral gradual field loss"],a:1,w:"PACG = hard painful eye, cloudy cornea, mid-dilated fixed pupil; surgical emergency.",k:"PACG = mid-dilated fixed pupil."},
+{t:"E Ocular Disease",q:"The most common type of age-related macular degeneration is:",o:["Wet (neovascular)","Dry (atrophic)","Mixed","Myopic"],a:1,w:"Dry is 85–90%; wet (anti-VEGF) causes most severe loss.",k:"Dry AMD most common (85–90%)."},
+// ---- F Clinical Specialties ----
+{t:"F Clinical Specialties",q:"Which DPA dilates the pupil WITHOUT cycloplegia?",o:["Tropicamide","Cyclopentolate","Phenylephrine","Proparacaine"],a:2,w:"Phenylephrine is an α1 agonist; the ciliary muscle has no α1.",k:"Phenylephrine = no cycloplegia."},
+{t:"F Clinical Specialties",q:"The preferred dilating agent in pregnancy is:",o:["Cyclopentolate","Phenylephrine 10%","Tropicamide","Atropine"],a:2,w:"All DPAs are Category C; tropicamide has the shortest duration/least exposure.",k:"Pregnancy dilator = tropicamide."},
+{t:"F Clinical Specialties",q:"By what age should an infant's eyes be consistently straight?",o:["1 month","3–4 months","9 months","2 years"],a:1,w:"Stable alignment by 3–4 months; deviation beyond this warrants evaluation.",k:"Eyes straight by 3–4 months."},
+{t:"F Clinical Specialties",q:"The first treatment step for amblyopia is:",o:["Immediate patching","Cycloplegic refraction + full glasses (12–16 wks)","Surgery","Atropine"],a:1,w:"Full spectacle correction first; patching only if VA doesn't normalize.",k:"Amblyopia: refract + glasses first."},
+{t:"F Clinical Specialties",q:"Which AMD type causes the majority of severe vision loss?",o:["Dry (atrophic)","Wet (neovascular)","Both equally","Neither"],a:1,w:"Wet AMD (only ~15%) causes most severe central loss; treat with anti-VEGF.",k:"Wet AMD = most severe loss."},
+{t:"F Clinical Specialties",q:"A pupil-involving CN3 palsy is a neurosurgical emergency suggesting:",o:["Diabetes","A posterior communicating artery aneurysm","Migraine","Myasthenia"],a:1,w:"Outer pupillomotor fibers are compressed first by an aneurysm.",k:"Pupil-involving CN3 = aneurysm."},
+{t:"F Clinical Specialties",q:"A chemical solvent splash is first managed by:",o:["Identifying the chemical first","Immediate irrigation 20–30 min","A bandage lens","Anesthetic and referral"],a:1,w:"Irrigation is first; history follows.",k:"Splash = irrigate first."},
+{t:"F Clinical Specialties",q:"Which tint best enhances depth perception for golf or tennis?",o:["Gray","Blue","Brown or amber","Clear"],a:2,w:"Brown/amber contains a red element that aids depth and contrast.",k:"Brown/amber = depth perception."},
+{t:"F Clinical Specialties",q:"The WHO definition of low vision is best-corrected acuity worse than:",o:["20/40","20/70","20/200","20/400"],a:1,w:"Low vision < 20/70; blindness ≤ 20/200 in the better eye.",k:"Low vision < 20/70."},
+{t:"F Clinical Specialties",q:"A clear placeholder preventing socket contraction immediately after eye removal is a:",o:["Custom prosthesis","Conformer","Scleral shell","Bandage lens"],a:1,w:"A conformer holds the socket; the custom PMMA prosthesis is fitted at 6–8 weeks.",k:"Conformer = temporary placeholder."},
+{t:"F Clinical Specialties",q:"Infantile (congenital) nystagmus is characteristically:",o:["Vertical","Horizontal in all gaze, dampens with convergence","Rotary only","Only on upgaze"],a:1,w:"INS is horizontal and lessens with convergence; vertical nystagmus is always acquired.",k:"INS = horizontal, dampens with convergence."},
+{t:"F Clinical Specialties",q:"Low-vision magnification reference: 1× equals how many diopters?",o:["1 D","4 D","10 D","2 D"],a:1,w:"Reference 4 D = 1×; equivalent add = M × 4.",k:"4 D = 1×."},
+{t:"F Clinical Specialties",q:"Maternity leave under RA 11210 is:",o:["60 days","78 days","105 days","120 days"],a:2,w:"RA 11210 (2019) provides 105 days.",k:"Maternity leave = 105 days."},
+// ---- G Pharmacology ----
+{t:"G Pharmacology",q:"The main organ of drug metabolism and its enzyme system are:",o:["Kidney; glomerulus","Liver; cytochrome P-450","Lung; surfactant","Spleen"],a:1,w:"Liver metabolizes (P-450); kidney excretes.",k:"Liver metabolizes; kidney excretes."},
+{t:"G Pharmacology",q:"The strongest and longest-acting cycloplegic is:",o:["Tropicamide","Cyclopentolate","Atropine (14 days)","Homatropine"],a:2,w:"Atropine is strongest/longest; tropicamide weakest/shortest.",k:"Atropine = strongest cycloplegic."},
+{t:"G Pharmacology",q:"An Adie's tonic pupil constricts to which dilute agent?",o:["1% pilocarpine","0.1% pilocarpine","4% cocaine","2.5% phenylephrine"],a:1,w:"Denervation supersensitivity makes it constrict to 0.1% pilocarpine.",k:"Adie's → 0.1% pilocarpine."},
+{t:"G Pharmacology",q:"The first-line glaucoma class, acting by increasing uveoscleral outflow, is:",o:["Beta blockers","CAIs","Prostaglandin analogs","Alpha-2 agonists"],a:2,w:"Prostaglandins open uveoscleral outflow; others cut production.",k:"Prostaglandins = first-line (uveoscleral)."},
+{t:"G Pharmacology",q:"Acetazolamide (a CAI) is contraindicated in:",o:["Penicillin allergy","Sulfa (sulfonamide) allergy","Asthma","Diabetes"],a:1,w:"Acetazolamide is a sulfonamide; avoid in sulfa allergy.",k:"Acetazolamide = avoid in sulfa allergy."},
+{t:"G Pharmacology",q:"The two classic ocular side effects of long-term steroids are:",o:["Dry eye and ptosis","Open-angle glaucoma and posterior subcapsular cataract","Nystagmus and diplopia","Miosis and myopia"],a:1,w:"Steroids cause glaucoma and posterior subcapsular cataract; fluorometholone is safest.",k:"Steroid eye = glaucoma + PSC cataract."},
+{t:"G Pharmacology",q:"Local anesthetics produce numbness by:",o:["Blocking M3","Blocking sodium channels","Stimulating α1","Fluorescing"],a:1,w:"They block Na+ channels, stopping pain conduction.",k:"Anesthetics block Na+ channels."},
+{t:"G Pharmacology",q:"Long-term hydroxychloroquine causes which fundus finding?",o:["Cherry-red spot","Bull's-eye maculopathy","Cotton-wool spots","Neovascularization"],a:1,w:"Chloroquine = bull's-eye maculopathy, cornea verticillata, tritan.",k:"Chloroquine = bull's-eye macula."},
+{t:"G Pharmacology",q:"A digitalis patient sees a yellow tinge to everything. This is:",o:["Cyanopsia","Xanthopsia","Erythropsia","Chloropsia"],a:1,w:"Xanthopsia (yellow vision) is the classic digitalis effect.",k:"Digitalis = xanthopsia."},
+{t:"G Pharmacology",q:"The drug of choice for trachoma is:",o:["Gentamicin","Tetracycline","Penicillin","Polymyxin B"],a:1,w:"Tetracycline is the DOC for trachoma; avoid in children/pregnancy.",k:"Trachoma DOC = tetracycline."},
+// ---- H Jurisprudence ----
+{t:"H Jurisprudence",q:"RA 8050 is known as the:",o:["Optometry Law of 1955","Revised Optometry Law of 1995","Philippine Health Act","Professional Regulation Act"],a:1,w:"RA 8050 (1995) repealed the older RA 1998.",k:"RA 8050 = Revised Optometry Law of 1995."},
+{t:"H Jurisprudence",q:"The Board of Optometry is composed of how many members?",o:["3","5","7","9"],a:1,w:"Five members from 10 nominees, appointed by the President.",k:"Board = 5 members."},
+{t:"H Jurisprudence",q:"To pass the licensure exam, a candidate must obtain:",o:["70% average, none below 50%","75% average, no rating below 50%","80% average","75% average, none below 60%"],a:1,w:"Section 20: 75% average with no subject below 50%.",k:"Pass = 75% avg, none below 50%."},
+{t:"H Jurisprudence",q:"The professional license is renewed every:",o:["1 year","3 years","5 years","10 years"],a:1,w:"Licenses renew every 3 years with CPD.",k:"License renewal every 3 years."},
+{t:"H Jurisprudence",q:"The four bioethical principles are:",o:["Honesty, charity, courage, loyalty","Autonomy, beneficence, non-maleficence, justice","Profit, speed, efficiency, comfort","Diagnose, treat, bill, refer"],a:1,w:"Beauchamp and Childress: autonomy, beneficence, non-maleficence, justice.",k:"Four principles A-B-N-J."},
+{t:"H Jurisprudence",q:"Informed consent is the direct expression of which principle?",o:["Beneficence","Non-maleficence","Autonomy","Justice"],a:2,w:"Respecting the patient's right to decide is autonomy.",k:"Informed consent = autonomy."},
+{t:"H Jurisprudence",q:"The correct order to register a clinic is:",o:["BIR → Mayor → Barangay → DTI","DTI → Barangay → Mayor → BIR","Mayor → DTI → BIR → Barangay","Barangay → BIR → DTI → Mayor"],a:1,w:"Name (DTI) → location (Barangay) → permit (Mayor) → taxes (BIR).",k:"DTI → Barangay → Mayor → BIR."},
+{t:"H Jurisprudence",q:"The amount of chair time during an exam is:",o:["Set by the optical owner","The optometrist's sole discretion","Decided by the PRC","Fixed at 15 minutes"],a:1,w:"Board Resolution No. 11 makes chair time the optometrist's sole discretion.",k:"Chair time = optometrist's discretion."},
+{t:"H Jurisprudence",q:"The penalty for violating RA 8050 is:",o:["Fine only up to P5,000","1–8 years, or P10,000–40,000, or both","10–20 years","License suspension only"],a:1,w:"Section 33: 1–8 years and/or P10,000–40,000.",k:"Penalty: 1–8 yrs, P10k–40k."},
+{t:"H Jurisprudence",q:"Treating a charity patient with a lesser exam than a private patient violates:",o:["Autonomy","Beneficence","Non-maleficence","Justice"],a:3,w:"Justice requires the same standard regardless of ability to pay.",k:"Unequal care = justice violation."}
+];
+
+let MODE=100;
+document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
+  b.classList.add('sel');MODE=parseInt(b.dataset.n);
+}));
+
+let Q=[],i=0,s=0,done=false;const missed=[];let topicStats={};
+const intro=document.getElementById('intro'),quiz=document.getElementById('quiz');
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+
+function shuffle(arr){const a=arr.slice();for(let j=a.length-1;j>0;j--){const r=Math.floor(Math.random()*(j+1));[a[j],a[r]]=[a[r],a[j]];}return a;}
+
+function buildExam(total){
+  // Weighted draw per subject, then shuffle the whole set.
+  const bySubj={};POOL.forEach(q=>{(bySubj[q.t]=bySubj[q.t]||[]).push(q);});
+  const totalW=Object.values(WEIGHT).reduce((a,b)=>a+b,0);
+  let picked=[];
+  Object.keys(WEIGHT).forEach(subj=>{
+    const want=Math.round(total*WEIGHT[subj]/totalW);
+    const avail=shuffle(bySubj[subj]||[]);
+    picked=picked.concat(avail.slice(0,Math.min(want,avail.length)));
+  });
+  // top up or trim to the exact total from the leftover pool
+  if(picked.length<total){
+    const rest=shuffle(POOL.filter(q=>!picked.includes(q)));
+    picked=picked.concat(rest.slice(0,total-picked.length));
+  }
+  return shuffle(picked).slice(0,total);
+}
+
+document.getElementById('startBtn').addEventListener('click',()=>{
+  Q=buildExam(Math.min(MODE,POOL.length));
+  i=0;s=0;missed.length=0;topicStats={};
+  intro.style.display='none';quiz.style.display='block';render();
+});
+
+function render(){
+ done=false;const it=Q[i];
+ barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
+ let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
+ h+='<div class="qtext">'+it.q+'</div>';
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
+ body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
+ document.getElementById('quitBtn').addEventListener('click',()=>{if(i>0||done)results();});
+}
+function choose(c){
+ if(done)return;done=true;const it=Q[i],right=it.a;
+ const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
+   if(n===right)b.classList.add('correct');
+   if(n===c&&c!==right)b.classList.add('incorrect');});
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ scoretext.textContent=s+' / '+Q.length;
+ const fb=document.getElementById('fb');
+ fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;
+ document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);
+ document.getElementById('quitBtn').addEventListener('click',results);
+}
+function next(){if(i<Q.length-1){i++;render();}else results();}
+function results(){
+ const answered=Object.values(topicStats).reduce((x,y)=>x+y.t,0)||1;
+ barfill.style.width='100%';const pct=Math.round(s/answered*100);
+ const pass=pct>=75;
+ let h='<div class="results"><div class="verdict '+(pass?'pass':'fail')+'">'+(pass?'Passing (≥75%)':'Below the 75% line')+'</div>';
+ h+='<div class="big">'+pct+'%</div><div class="msg">'+s+' of '+answered+' correct. '+(pass?'You cleared the OLE passing line on this mock.':'Keep going — the weak subjects below are where to focus before the next attempt.')+'</div>';
+ h+='<div class="breakdown"><h3>Score by subject</h3>';
+ Object.keys(topicStats).sort().forEach(k=>{
+   const st=topicStats[k],p=Math.round(st.c/st.t*100);
+   const col=p>=75?'#1d9e75':p>=50?'#ba7517':'#c0392b';
+   h+='<div class="brow"><span class="name">'+k+'</span><span class="track"><span class="fill" style="width:'+p+'%;background:'+col+'"></span></span><span class="pct">'+st.c+'/'+st.t+'</span></div>';
+ });
+ h+='</div>';
+ if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
+   missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
+ h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">New mock</button></div></div>';
+ body.innerHTML=h;
+ document.getElementById('ag').addEventListener('click',()=>{quiz.style.display='none';intro.style.display='block';window.scrollTo(0,0);});
+}
+</script>
+</body>
+</html>

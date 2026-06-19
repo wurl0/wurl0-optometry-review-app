@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Subject B Board Exam (100)</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#185fa5; --accent-soft:#e6f1fb;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header.brand{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  .intro h2{font-size:17px;margin:0 0 8px}
+  .intro p{font-size:14.5px;color:var(--muted);margin:0 0 12px}
+  .topic-list{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+  .chip{background:var(--tag-soft);color:var(--tag);font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:20px}
+  .modes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .modebtn{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .modebtn.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  button.start{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:12px 26px;font-size:16px;font-weight:600;cursor:pointer}
+  button.start:hover{filter:brightness(.95)}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtag{display:inline-block;background:var(--tag-soft);color:var(--tag);font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px;margin-bottom:8px}
+  .qnum{font-size:12.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;float:right;margin-top:5px}
+  .qtext{font-size:17px;font-weight:600;margin:4px 0 16px;clear:both}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;transition:.15s;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .quit{background:none;border:none;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline}
+  .results{text-align:center;padding:6px 0}
+  .results .big{font-size:46px;font-weight:700;margin:4px 0}
+  .results .msg{color:var(--muted);margin-bottom:16px}
+  .breakdown{text-align:left;margin:14px 0}
+  .breakdown h3{font-size:15px;margin:0 0 10px}
+  .brow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:14px}
+  .brow .name{width:230px;color:var(--ink)}
+  .brow .track{flex:1;height:7px;background:var(--line);border-radius:20px;overflow:hidden}
+  .brow .fill{height:100%;border-radius:20px}
+  .brow .pct{width:54px;text-align:right;color:var(--muted);font-size:13px}
+  .missed-item{font-size:14px;border-left:3px solid var(--wrong);padding:3px 0 3px 11px;margin:9px 0;color:var(--muted);text-align:left}
+  .missed-item b{color:var(--ink)}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>Subject B — Board Exam</h1>
+    <p class="sub">Physiological Optics and Binocular Vision · 100 questions · mixed, board-style</p>
+  </header>
+
+  <div class="panel intro" id="intro">
+    <h2>Before you start</h2>
+    <p>100 board-style questions across all seven B topics, shuffled like the real exam. Each question is tagged with its topic. Answer, read the explanation, and at the end you get a score breakdown by topic so you know exactly which note to reread.</p>
+    <div class="topic-list">
+      <span class="chip">B1 Visual System</span>
+      <span class="chip">B2 Visual Perception</span>
+      <span class="chip">B3 Visual Field</span>
+      <span class="chip">B4 Color</span>
+      <span class="chip">B5 Binocular Vision</span>
+      <span class="chip">B6 Stereopsis</span>
+      <span class="chip">B7 VIP / VPS</span>
+    </div>
+    <p style="margin-bottom:8px"><b>Length:</b></p>
+    <div class="modes" id="modes">
+      <button class="modebtn sel" data-n="100">Full 100</button>
+      <button class="modebtn" data-n="50">Half (50)</button>
+      <button class="modebtn" data-n="25">Quick (25)</button>
+    </div>
+    <button class="start" id="startBtn">Start the exam</button>
+  </div>
+
+  <div class="panel" id="quiz" style="display:none">
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </div>
+
+  <footer>WAA Board Review 2026 · Personal study notes · Subject B board exam (100 items)</footer>
+</div>
+
+<script>
+const BANK=[
+// ===== B1 Visual System and Ocular Optics =====
+{t:"B1 Visual System",q:"After 40 minutes of dark adaptation, the visual threshold is lowest at which wavelength?",o:["440 nm","507 nm","535 nm","555 nm"],a:1,w:"Full dark adaptation is scotopic (rod-driven); rods peak at ~507 nm. 555 nm is the photopic cone peak.",k:"Scotopic 507, photopic 555."},
+{t:"B1 Visual System",q:"How long does full, rod-based dark adaptation take?",o:["7 minutes","15 minutes","30–40 minutes","60 minutes"],a:2,w:"Cones plateau at ~7 min (Kohlrausch kink); rhodopsin regenerates slowly, so full rod adaptation takes 30–40 min.",k:"Cones 7 min, rods 30–40 min."},
+{t:"B1 Visual System",q:"The inflection point at ~7 minutes on the dark adaptation curve, where rods take over from cones, is the:",o:["Purkinje shift","Kohlrausch kink","Ricco point","Stiles-Crawford effect"],a:1,w:"The Kohlrausch kink marks the cone-to-rod transition at about 7 minutes.",k:"Kohlrausch kink ~7 min = cone-rod handover."},
+{t:"B1 Visual System",q:"On Hirschberg the corneal reflex sits temporal in both eyes, but cover test shows no movement. The cause is:",o:["Bilateral exotropia","Positive angle kappa","Large angle alpha","Esotropia"],a:1,w:"Positive kappa puts the pupil nasal to the visual axis, so the reflex looks temporal, mimicking exotropia. Negative cover test confirms pseudo-exo.",k:"Positive kappa = pseudo-exotropia."},
+{t:"B1 Visual System",q:"A nasally displaced corneal light reflex with a negative cover test indicates:",o:["Positive angle kappa","Negative angle kappa","True esotropia","True exotropia"],a:1,w:"Negative kappa puts the pupil temporal, so the reflex sits nasal, simulating esotropia (pseudo-eso).",k:"Negative kappa = pseudo-esotropia."},
+{t:"B1 Visual System",q:"Rhodopsin fails to regenerate after light exposure. Which step is impaired?",o:["Photoisomerization in the outer segment","Glutamate release in the dark","Re-isomerization of all-trans to 11-cis retinal in the RPE","Cone pigment synthesis"],a:2,w:"The visual cycle regenerates 11-cis retinal from all-trans retinal in the RPE; blocking it stops rhodopsin regeneration.",k:"RPE converts all-trans back to 11-cis."},
+{t:"B1 Visual System",q:"Which is true of the fovea?",o:["Highest rod density","Rods absent; highest cone density","Equal rods and cones","No photoreceptors"],a:1,w:"The fovea excludes rods entirely and holds the highest cone density (~150,000/mm²) for peak acuity.",k:"Fovea = all cones, no rods."},
+{t:"B1 Visual System",q:"Why is a dim star easier to see by looking slightly to the side of it?",o:["Cones are densest off-center","Rods peak at ~20° from the fovea","The blind spot is central","Accommodation improves periphery"],a:1,w:"Averted vision lands the image on peripheral retina where rod density peaks (~20°), maximizing scotopic sensitivity.",k:"Averted vision targets peak rod zone (~20°)."},
+{t:"B1 Visual System",q:"In the axes of Fick, the anteroposterior (Y) axis, 24 mm long, controls which movement?",o:["Horizontal (adduction/abduction)","Vertical (elevation/depression)","Torsion (intorsion/extorsion)","Vergence"],a:2,w:"The AP axis is longest (24 mm) and controls torsion. X = vertical, Z = horizontal.",k:"AP/Y axis = torsion (24 mm)."},
+{t:"B1 Visual System",q:"The vertical (Z) axis controls which eye movement?",o:["Torsion","Vertical movements","Horizontal movements (adduction/abduction)","No movement"],a:2,w:"Rotation about the vertical axis produces horizontal movements. The X (transverse) axis produces vertical movements.",k:"Z (vertical) axis = horizontal movement."},
+{t:"B1 Visual System",q:"Angle alpha is measured at which point?",o:["The pupil center","The nodal point","The center of rotation","The fovea"],a:1,w:"Angle alpha (optical vs visual axis) is measured at the nodal point; angle kappa is measured at the pupil.",k:"Alpha at nodal point; kappa at pupil."},
+{t:"B1 Visual System",q:"At dusk a blue flower looks brighter than a red one that seemed equal at noon. This is the:",o:["Stiles-Crawford effect","Purkinje shift","Troxler fading","Bezold-Brucke shift"],a:1,w:"As light fades, sensitivity shifts from the photopic 555 nm peak to the scotopic 507 nm (blue-green) peak, so blues relatively brighten.",k:"Purkinje shift: 555 → 507 at low light."},
+{t:"B1 Visual System",q:"Ricco's law describes which kind of summation?",o:["Temporal summation","Spatial summation (area × intensity = constant)","Chromatic summation","Binocular summation"],a:1,w:"Ricco's law: within the critical area, area × intensity is constant (spatial). Bunsen-Roscoe covers temporal summation.",k:"Ricco = spatial; Bunsen-Roscoe = temporal."},
+{t:"B1 Visual System",q:"The law stating that time × intensity is constant for a brief stimulus (temporal summation) is:",o:["Ricco's law","Bunsen-Roscoe law","Weber's law","Bloch's exception"],a:1,w:"Bunsen-Roscoe governs temporal summation (up to ~100 ms for rods).",k:"Bunsen-Roscoe = temporal summation."},
+{t:"B1 Visual System",q:"Which cone pigment is most sensitive to long-wavelength (red) light?",o:["Cyanolabe","Chlorolabe","Erythrolabe","Rhodopsin"],a:2,w:"Erythrolabe (L-cones, ~750 nm) = red; chlorolabe (M, 535 nm) = green; cyanolabe (S, 440 nm) = blue.",k:"Erythrolabe = red L-cone."},
+{t:"B1 Visual System",q:"All three axes of eye rotation pass through the center of rotation, located approximately:",o:["6.5 mm behind the cornea","13.5 mm behind the cornea","24 mm behind the cornea","at the nodal point"],a:1,w:"The center of rotation is ~13.5 mm behind the cornea; all axes of Fick pass through it.",k:"Center of rotation 13.5 mm behind cornea."},
+{t:"B1 Visual System",q:"Compared with the cone plateau, rods at full dark adaptation are about:",o:["Equally sensitive","10× more sensitive","100× more sensitive","1000× more sensitive (3 log units)"],a:3,w:"Dark adaptation improves threshold by ~3 log units, making rods roughly 1000× more sensitive than cones.",k:"~3 log units = 1000× rod sensitivity."},
+{t:"B1 Visual System",q:"Which lowers the visual threshold (increases sensitivity)?",o:["Smaller pupil","Monocular viewing","Binocular viewing","Bright background"],a:2,w:"Binocular viewing combines neural signals from both eyes, lowering threshold. A larger pupil also helps.",k:"Two eyes beat one for threshold."},
+// ===== B2 Visual Perception =====
+{t:"B2 Visual Perception",q:"In early optic neuritis, which visual function is affected earliest?",o:["Motion","Form","Color","Contrast at low spatial frequency"],a:2,w:"Color is the most vulnerable function (basis of the red-desaturation test); motion is the most resilient.",k:"Color fails first, motion last."},
+{t:"B2 Visual Perception",q:"Which visual function is the most resilient, lost last in optic nerve disease?",o:["Color","Motion","Fine acuity","Stereopsis"],a:1,w:"Motion perception survives longest; color is lost first.",k:"Motion = most resilient."},
+{t:"B2 Visual Perception",q:"Which LGB (lateral geniculate body) layers receive contralateral (crossed) input?",o:["Layers 2, 3, 5","Layers 1, 4, 6","All six","Only layer 1"],a:1,w:"Layers 1, 4, 6 are contralateral (nasal/crossed); layers 2, 3, 5 are ipsilateral (temporal/uncrossed).",k:"1-4-6 contralateral; 2-3-5 ipsilateral."},
+{t:"B2 Visual Perception",q:"The primary visual cortex (area 17) is mainly responsible for:",o:["Object recognition","Basic feature detection (contrast, orientation)","Color naming","Eye movement planning"],a:1,w:"Area 17 detects basic features. Object recognition needs the ventral stream through areas 18, 19, and inferotemporal cortex.",k:"Area 17 = basic features, not object ID."},
+{t:"B2 Visual Perception",q:"The ventral visual stream is responsible for:",o:["'Where / how' spatial and motion processing","'What' object recognition (temporal lobe)","Pupil reflexes","Accommodation"],a:1,w:"Ventral ('what') runs to the temporal lobe; dorsal ('where/how') runs to the parietal lobe.",k:"Ventral = what; dorsal = where."},
+{t:"B2 Visual Perception",q:"The dorsal visual stream processes:",o:["Object identity","Spatial location and motion (parietal lobe)","Color","Faces"],a:1,w:"The dorsal stream handles 'where/how' (spatial and motion) and projects to the parietal lobe.",k:"Dorsal stream = where/how (parietal)."},
+{t:"B2 Visual Perception",q:"Background intensity doubles from 100 to 200 units. By Weber's law, the just-noticeable difference (JND):",o:["Stays the same absolute value","Stays a fixed fraction (k) of background, so it doubles","Disappears","Halves"],a:1,w:"Weber's law: ΔI/I = k. The ratio is constant, so when I doubles, the absolute JND doubles.",k:"ΔI/I = k (constant ratio)."},
+{t:"B2 Visual Perception",q:"The red-desaturation test (a red target looks washed out in one eye) detects:",o:["Cataract","Early optic nerve disease","Macular hole","Refractive error"],a:1,w:"Because color conduction is the most vulnerable, red desaturation flags early optic nerve compromise.",k:"Red desaturation = early optic nerve disease."},
+{t:"B2 Visual Perception",q:"Area 18 of the visual cortex is best described as:",o:["Primary striate cortex","Parastriate (secondary) cortex","Peristriate cortex","Lateral geniculate"],a:1,w:"Area 17 = primary striate; area 18 = parastriate (secondary); area 19 = peristriate (higher).",k:"17 striate, 18 parastriate, 19 peristriate."},
+{t:"B2 Visual Perception",q:"A lesion isolated to area 17 of one hemisphere would most directly impair:",o:["Object naming only","Basic vision in the contralateral field","Color vision only","Motion only"],a:1,w:"Area 17 is primary visual cortex; damage causes a contralateral field defect of basic vision.",k:"Area 17 lesion = contralateral field loss."},
+{t:"B2 Visual Perception",q:"Object recognition (the 'what' pathway) requires processing beyond area 17 through:",o:["The dorsal stream to parietal cortex","The ventral stream through areas 18, 19, to inferotemporal cortex","The pretectum","The superior colliculus"],a:1,w:"Recognition is a ventral-stream function extending to inferotemporal cortex; area 17 alone only detects features.",k:"Recognition = ventral stream to IT cortex."},
+{t:"B2 Visual Perception",q:"Which LGB layers carry ipsilateral (uncrossed, temporal retina) input?",o:["1, 4, 6","2, 3, 5","All","None"],a:1,w:"Layers 2, 3, 5 are ipsilateral; 1, 4, 6 are contralateral.",k:"2-3-5 ipsilateral."},
+{t:"B2 Visual Perception",q:"Weber's law is the physiological basis of which clinical measurement?",o:["Visual acuity","Contrast sensitivity","Color vision","Stereoacuity"],a:1,w:"Because the JND scales with background intensity, contrast detection (ΔI/I) underlies contrast sensitivity testing.",k:"Weber's law underlies contrast sensitivity."},
+// ===== B3 Visual Field =====
+{t:"B3 Visual Field",q:"The normal temporal extent of the monocular visual field is:",o:["60°","75°","100°","120°"],a:2,w:"Temporal is widest at 100°. Superior 60°, inferior 75°, nasal 60°.",k:"Temporal 100° is the widest."},
+{t:"B3 Visual Field",q:"The normal nasal and superior extents of the visual field are about:",o:["100°","60°","75°","45°"],a:1,w:"Nasal and superior are each ~60°; inferior 75°; temporal 100°.",k:"Nasal/superior 60°."},
+{t:"B3 Visual Field",q:"The inferior extent of the normal visual field is approximately:",o:["60°","75°","100°","45°"],a:1,w:"Inferior is ~75°, between nasal/superior (60°) and temporal (100°).",k:"Inferior 75°."},
+{t:"B3 Visual Field",q:"How much of the visual field is seen binocularly?",o:["60°","90°","120° central overlap","180°"],a:2,w:"The central 120° overlaps binocularly; each side has a 30° monocular temporal crescent.",k:"120° binocular overlap."},
+{t:"B3 Visual Field",q:"The monocular temporal crescent (seen by one eye only) is about:",o:["10°","30° each side","60° each side","90°"],a:1,w:"Beyond the 120° binocular zone, each eye sees a 30° temporal crescent alone.",k:"30° monocular crescent each side."},
+{t:"B3 Visual Field",q:"On Goldmann perimetry, which stimulus size is the largest?",o:["Size I (0.25 mm²)","Size III","Size V (64 mm²)","Size 0"],a:2,w:"Size V (64 mm²) is largest, used to map peripheral field in RP and low vision; size I is smallest.",k:"V largest, I smallest."},
+{t:"B3 Visual Field",q:"The smallest Goldmann stimulus is:",o:["V","III","I (0.25 mm²)","0"],a:2,w:"Size I (0.25 mm²) is the smallest; size V (64 mm²) is the largest.",k:"Size I = smallest Goldmann stimulus."},
+{t:"B3 Visual Field",q:"The standard Goldmann perimeter background luminance is:",o:["10 apostilbs","31.5 apostilbs","100 apostilbs","3.15 apostilbs"],a:1,w:"Goldmann uses a 31.5 apostilb background in a bowl of 300 mm radius.",k:"Goldmann background 31.5 asb."},
+{t:"B3 Visual Field",q:"The Amsler grid tests which portion of the visual field?",o:["The full field","The central 10°","The peripheral crescent","The blind spot"],a:1,w:"Each square is 1°; the grid covers only the central 10°, used for macular disease (metamorphopsia).",k:"Amsler = central 10°."},
+{t:"B3 Visual Field",q:"A bitemporal hemianopia localizes the lesion to the:",o:["Optic nerve","Optic chiasm (e.g., pituitary adenoma)","Optic tract","Occipital cortex"],a:1,w:"Crossing nasal fibers at the chiasm are damaged, producing bitemporal hemianopia, classically from a pituitary adenoma.",k:"Bitemporal hemianopia = chiasm."},
+{t:"B3 Visual Field",q:"A superior quadrantanopia ('pie in the sky') localizes to:",o:["Parietal radiations","Meyer's loop (temporal lobe)","Optic chiasm","Optic nerve"],a:1,w:"Inferior retinal fibers loop through the temporal lobe (Meyer's loop); damage gives a contralateral superior quadrant defect.",k:"Pie in the sky = Meyer's loop (temporal)."},
+{t:"B3 Visual Field",q:"Severely constricted fields with a small central island, plus years of night blindness, suggest:",o:["Pituitary adenoma","Glaucoma","Retinitis pigmentosa","Central serous retinopathy"],a:2,w:"RP is a rod dystrophy: a ring scotoma expands to leave a central island, with early nyctalopia.",k:"RP = constricted fields + night blindness."},
+{t:"B3 Visual Field",q:"Within the visual field, which function is the most vulnerable (lost first)?",o:["Motion","Color","Light detection","Form"],a:1,w:"Color is the most vulnerable; motion is the most resilient.",k:"Color most vulnerable, motion most resilient."},
+// ===== B4 Color Perception =====
+{t:"B4 Color",q:"The most common color vision deficiency is:",o:["Tritanopia","Deuteranomaly (green weakness)","Protanopia","Achromatopsia"],a:1,w:"Deuteranomaly (weak green) is most common; tritan defects are rare and autosomal.",k:"Deuteranomaly most common."},
+{t:"B4 Color",q:"Additive mixing of red, green, and blue light produces:",o:["Black","White","Gray","Yellow"],a:1,w:"Additive (light) mixing R+G+B = white; subtractive (pigment) mixing C+M+Y = black.",k:"Additive RGB = white."},
+{t:"B4 Color",q:"Subtractive mixing of cyan, magenta, and yellow pigments produces:",o:["White","Black","Red","Green"],a:1,w:"Subtractive pigment mixing C+M+Y = black; additive light mixing gives white.",k:"Subtractive CMY = black."},
+{t:"B4 Color",q:"What is the purpose of Ishihara plate 1 (the '12' plate)?",o:["Only normals see it","A control plate everyone sees","Only protans see it","It detects tritan defects"],a:1,w:"Plate 1 is the control: everyone, including color-deficient patients, reads it. It confirms task understanding.",k:"Plate 1 = control (all see it)."},
+{t:"B4 Color",q:"To precisely classify the axis and severity of a color defect, the best test is:",o:["FALANT","Ishihara","FM-100 Hue test","Plate 1"],a:2,w:"The Farnsworth-Munsell 100 Hue test plots a total error score and the exact axis of confusion. Ishihara only screens red-green.",k:"FM-100 = most comprehensive."},
+{t:"B4 Color",q:"The trichromatic theory of color (at the receptor level) is credited to:",o:["Hering","Young-Helmholtz","Ladd-Franklin","Purkinje"],a:1,w:"Young-Helmholtz = trichromatic (three cones, receptor level); Hering = opponent process (post-receptor).",k:"Young-Helmholtz = trichromatic (receptors)."},
+{t:"B4 Color",q:"The opponent-process theory of color (post-receptor level) is credited to:",o:["Young-Helmholtz","Hering","Ladd-Franklin","Newton"],a:1,w:"Hering proposed opponent channels (red-green, blue-yellow, black-white) at the post-receptor level.",k:"Hering = opponent process."},
+{t:"B4 Color",q:"The S-cone pigment cyanolabe is most sensitive at about:",o:["440 nm (blue)","535 nm (green)","507 nm","750 nm (red)"],a:0,w:"Cyanolabe (S-cone) peaks ~440 nm (blue); chlorolabe ~535 nm (green); erythrolabe ~750 nm (red).",k:"Cyanolabe (S) ~440 nm blue."},
+{t:"B4 Color",q:"In protanopia, red light appears:",o:["Brighter","Dim (L-cones absent)","Unchanged","Green"],a:1,w:"Without L-cones, red light poorly stimulates the remaining cones, so reds look dim.",k:"Protan = red looks dim (no L-cone)."},
+{t:"B4 Color",q:"How does the HRR test differ from Ishihara?",o:["It only screens red-green","It tests both red-green AND blue-yellow defects","It uses numbers only","It requires no responses"],a:1,w:"HRR (using symbols) screens both red-green and blue-yellow; Ishihara screens red-green only.",k:"HRR tests R-G and B-Y."},
+{t:"B4 Color",q:"The FALANT (Farnsworth Lantern) is primarily a(n):",o:["Diagnostic axis test","Occupational pass/fail test","Macular test","Stereo test"],a:1,w:"FALANT is an occupational lantern test (e.g., for navigation/aviation), performed at 8 feet, not a diagnostic axis test.",k:"FALANT = occupational lantern test."},
+{t:"B4 Color",q:"The prevalence of red-green color deficiency in males is approximately:",o:["0.5%","2%","8%","20%"],a:2,w:"Red-green deficiency affects ~8% of males (X-linked), versus ~0.5% of females.",k:"~8% of males red-green deficient."},
+{t:"B4 Color",q:"Tritan (blue-yellow) congenital color defects are:",o:["The most common defect","Rare and autosomal","X-linked like red-green","Always acquired"],a:1,w:"Congenital tritanopia is rare and autosomal, unlike the common X-linked red-green defects.",k:"Tritan = rare, autosomal."},
+// ===== B5 Binocular Vision and Fusion =====
+{t:"B5 Binocular Vision",q:"What is the normal AC/A ratio?",o:["1:1 to 2:1","4:1 to 6:1","8:1 to 10:1","12:1 to 15:1"],a:1,w:"Normal AC/A is 4:1 to 6:1. High AC/A drives excess conditions; low AC/A drives insufficiency.",k:"Normal AC/A 4:1 to 6:1."},
+{t:"B5 Binocular Vision",q:"A high AC/A ratio is associated with which conditions?",o:["Convergence and divergence insufficiency","Convergence excess and divergence excess","Basic phorias only","Fusional vergence dysfunction"],a:1,w:"High AC/A = too much convergence per diopter = excess conditions (CE, DE).",k:"High AC/A = excess (CE, DE)."},
+{t:"B5 Binocular Vision",q:"Convergence insufficiency is characterized by:",o:["High AC/A, eso at near","Low AC/A, exo at near, receded NPC","Normal AC/A, equal deviation","High eso at distance"],a:1,w:"CI has a low AC/A, exophoria greater at near, and a receded NPC, with near symptoms.",k:"CI = low AC/A, near exo, receded NPC."},
+{t:"B5 Binocular Vision",q:"Which is the slowest eye movement system?",o:["Saccade","Vergence (20°/s)","Smooth pursuit","VOR"],a:1,w:"Vergence is slowest (~20°/s). Saccades are fastest (500–1000°/s); VOR has the shortest latency.",k:"Vergence is slowest."},
+{t:"B5 Binocular Vision",q:"Which eye movement has the shortest (fastest) latency?",o:["Saccade (200 ms)","Vergence (160 ms)","Vestibulo-ocular reflex (15 ms)","Smooth pursuit"],a:2,w:"The VOR has ~15 ms latency, the fastest reflex, stabilizing gaze during head movement.",k:"VOR = fastest reflex (15 ms)."},
+{t:"B5 Binocular Vision",q:"Saccadic velocity is approximately:",o:["20°/s","90°/s","500–1000°/s","5°/s"],a:2,w:"Saccades are the fastest voluntary movement at 500–1000°/s; vergence is the slowest.",k:"Saccade 500–1000°/s."},
+{t:"B5 Binocular Vision",q:"Sheard's criterion for comfortable fusion requires the fusional reserve to be at least:",o:["Equal to the phoria","Twice the phoria","Half the phoria","Three times the phoria"],a:1,w:"Sheard's: compensating fusional reserve ≥ 2× the phoria. An 8 PD exophoria needs ≥16 PD PFC.",k:"Sheard's: reserve ≥ 2× phoria."},
+{t:"B5 Binocular Vision",q:"Percival's criterion states that the phoria should fall within:",o:["The first third of the range","The middle third of the fusional range","Twice the reserve","The blur point"],a:1,w:"Percival's: the demand line (phoria) should sit in the middle third of the total fusional vergence range.",k:"Percival's = middle third of range."},
+{t:"B5 Binocular Vision",q:"In Worth's classification, simultaneous macular perception is:",o:["Grade 1","Grade 2","Grade 3","Not graded"],a:0,w:"Grade 1 = simultaneous perception, Grade 2 = flat fusion, Grade 3 = stereopsis.",k:"Grade 1 = simultaneous perception."},
+{t:"B5 Binocular Vision",q:"In Worth's classification, flat (superimposition) fusion with amplitude is:",o:["Grade 1","Grade 2","Grade 3","Grade 4"],a:1,w:"Grade 2 is fusion (merging two images, with vergence amplitude). Grade 3 is stereopsis.",k:"Grade 2 = flat fusion."},
+{t:"B5 Binocular Vision",q:"Hering's law of equal innervation applies to:",o:["A single muscle","Agonist-antagonist of one eye","Yoke muscles of both eyes (binocular)","The pupil"],a:2,w:"Hering's law governs binocular yoke muscles (equal innervation). Sherrington's is the monocular agonist-antagonist rule.",k:"Hering = binocular yoke muscles."},
+{t:"B5 Binocular Vision",q:"Sherrington's law of reciprocal innervation describes:",o:["Yoke muscles of both eyes","Agonist contracts as its antagonist relaxes (one eye)","Pupil constriction","Accommodation"],a:1,w:"Sherrington's law is monocular: when the agonist contracts, its antagonist relaxes.",k:"Sherrington = monocular reciprocal."},
+{t:"B5 Binocular Vision",q:"An object beyond (farther than) the fixation point produces what physiologic diplopia?",o:["Crossed (heteronymous)","Uncrossed (homonymous)","Vertical","None"],a:1,w:"Far objects stimulate nasal retina, giving uncrossed (homonymous) diplopia; near objects give crossed.",k:"Far = uncrossed, near = crossed."},
+{t:"B5 Binocular Vision",q:"An object closer than the fixation point produces:",o:["Uncrossed diplopia","Crossed (heteronymous) diplopia","Torsional diplopia","Suppression"],a:1,w:"Near objects stimulate temporal retina, producing crossed (heteronymous) diplopia.",k:"Near = crossed diplopia."},
+{t:"B5 Binocular Vision",q:"Normal retinal correspondence (NRC) is maintained in:",o:["Constant strabismus","Heterophoria","Deep amblyopia","Eccentric fixation"],a:1,w:"In heterophoria, binocular vision is kept most of the time, preserving NRC. Constant strabismus may develop ARC.",k:"NRC preserved in heterophoria."},
+{t:"B5 Binocular Vision",q:"Anomalous retinal correspondence (ARC) typically develops in:",o:["Orthophoria","Intermittent phoria","Constant strabismus with a fixed angle","Refractive error alone"],a:2,w:"A fixed, constant deviation gives the brain time to rewire correspondence (ARC) to avoid diplopia.",k:"ARC develops in constant strabismus."},
+{t:"B5 Binocular Vision",q:"In harmonious ARC, the anomalous neutral point:",o:["Is less than the angle of deviation","Equals the angle of deviation","Exceeds the angle of deviation","Does not exist"],a:1,w:"Harmonious ARC is fully adapted: the anomalous angle equals the objective angle of deviation.",k:"Harmonious ARC: neutral point = deviation."},
+{t:"B5 Binocular Vision",q:"The normal near point of convergence (NPC) break is:",o:["≤8 cm","15 cm","20 cm","25 cm"],a:0,w:"Normal NPC break is ≤8 cm; greater than 10 cm suggests convergence insufficiency.",k:"NPC normal ≤8 cm; >10 = CI."},
+{t:"B5 Binocular Vision",q:"Panum's fusional area at the fovea is about:",o:["6–10 arc minutes","1 degree","30 arc minutes","60 arc minutes"],a:0,w:"Panum's area is very small at the fovea (6–10 arc min) and broadens peripherally.",k:"Panum's fovea 6–10 arc min."},
+{t:"B5 Binocular Vision",q:"A hyperope who is straight at distance but crosses at near, with a high AC/A, has:",o:["Convergence insufficiency","Accommodative esotropia","Divergence excess","Basic exophoria"],a:1,w:"Accommodative esotropia: hyperopic accommodation drives excess convergence (high AC/A), crossing the eyes at near.",k:"Accommodative ET = hyperope + high AC/A."},
+{t:"B5 Binocular Vision",q:"For an exophoria, vision therapy and prism approaches aim to:",o:["Reduce convergence with base-in prism","Increase fusional convergence (convergence training, base-out)","Patch the dominant eye","Add plus lenses"],a:1,w:"Exophoria is managed by building fusional convergence (convergence exercises) or temporary base-out prism. Esophoria uses base-in/plus.",k:"Exo: convergence training / base-out."},
+{t:"B5 Binocular Vision",q:"Which amblyopia type generally has the worst prognosis?",o:["Strabismic","Anisometropic","Deprivation","Meridional"],a:2,w:"Deprivation amblyopia (cataract, ptosis, opacity) has the worst prognosis and must be treated within the critical period.",k:"Deprivation amblyopia = worst prognosis."},
+{t:"B5 Binocular Vision",q:"Divergence excess shows which pattern?",o:["High exo at distance, ortho/less exo at near, high AC/A","Eso at distance","Equal exo near and far","Receded NPC"],a:0,w:"Divergence excess: large exo at distance, near closer to ortho, with a high AC/A.",k:"DE = exo far, ortho near, high AC/A."},
+{t:"B5 Binocular Vision",q:"The most common type of amblyopia is:",o:["Deprivation","Strabismic","Ametropic","Meridional"],a:1,w:"Strabismic amblyopia (suppression of a constantly deviating eye) is the most common type.",k:"Strabismic amblyopia is most common."},
+// ===== B6 Stereopsis =====
+{t:"B6 Stereopsis",q:"What is normal stereoacuity?",o:["20–40 seconds of arc","200–400 seconds of arc","1–2 minutes of arc","3000 seconds of arc"],a:0,w:"Normal stereoacuity is 20–40 seconds of arc; smaller arc-second values mean finer stereopsis.",k:"Normal stereo 20–40 sec arc."},
+{t:"B6 Stereopsis",q:"Which stereoacuity value represents the FINEST depth perception?",o:["400 sec arc","100 sec arc","40 sec arc","20 sec arc"],a:3,w:"Smaller arc-second values are finer; 20 sec arc is far better than 400 sec arc.",k:"Smaller arc sec = finer stereo."},
+{t:"B6 Stereopsis",q:"Stereopsis corresponds to which Worth grade of binocular vision?",o:["Grade 1","Grade 2","Grade 3","Grade 4"],a:2,w:"Grade 3 (stereopsis) is the highest; Grade 2 is flat fusion, Grade 1 is simultaneous perception.",k:"Stereopsis = Worth Grade 3."},
+{t:"B6 Stereopsis",q:"A patient with deep constant strabismic amblyopia (20/200) is tested on the Randot. Expected result:",o:["Normal stereo (40 sec arc)","Reduced stereo (~200 sec arc)","No measurable stereopsis","Unaffected"],a:2,w:"Deep suppression and disrupted binocular neurons abolish stereopsis regardless of the dominant eye's acuity.",k:"Deep strabismic amblyopia = no stereopsis."},
+{t:"B6 Stereopsis",q:"Which stereopsis test uses real (physical) depth and requires no special glasses?",o:["Titmus","TNO","Frisby","Randot"],a:2,w:"The Frisby uses transparent plates of real thickness, so no polarized/red-green glasses are needed.",k:"Frisby = real depth, no glasses."},
+{t:"B6 Stereopsis",q:"On the Titmus test, the 'fly' represents which (coarsest) disparity?",o:["40 sec arc","400 sec arc","3000 sec arc","20 sec arc"],a:2,w:"The Titmus fly is a gross stereo target at ~3000 sec arc, used to confirm any gross stereopsis.",k:"Titmus fly = 3000 sec arc (coarsest)."},
+{t:"B6 Stereopsis",q:"Stereopsis normally first develops at about:",o:["Birth","3–6 months of age","2 years","5 years"],a:1,w:"Binocular cortical neurons mature so stereopsis emerges around 3–6 months; it is not present at birth.",k:"Stereopsis develops ~3–6 months."},
+{t:"B6 Stereopsis",q:"A patient who loses one eye retains depth perception from:",o:["Stereopsis","Monocular cues (perspective, interposition, motion parallax)","Retinal disparity","Panum's fusion"],a:1,w:"A monocular patient loses stereopsis but keeps monocular cues and adapts well for daily function.",k:"Monocular cues survive loss of stereopsis."},
+{t:"B6 Stereopsis",q:"Stereopsis specifically depends on:",o:["Accommodation","Convergence","Binocular retinal disparity","Pupil size"],a:2,w:"Stereopsis arises from small horizontal disparities between the two retinal images within Panum's area.",k:"Stereopsis = retinal disparity."},
+{t:"B6 Stereopsis",q:"Stereopsis requires which prerequisites?",o:["Grade 3 only","Worth Grades 1 and 2 first","Suppression","Eccentric fixation"],a:1,w:"Stereopsis (Grade 3) is built on simultaneous perception (Grade 1) and fusion (Grade 2).",k:"Stereo needs Grades 1 + 2 first."},
+{t:"B6 Stereopsis",q:"Convergence as a depth cue provides useful information only within about:",o:["2 meters","10 meters","50 meters","Optical infinity"],a:0,w:"Convergence is a useful depth cue only at near (within ~2 m); beyond that, disparity and monocular cues dominate.",k:"Convergence cue useful <2 m."},
+// ===== B7 VIP / VPS =====
+{t:"B7 VIP / VPS",q:"A 7-year-old with 20/20 acuity and normal BV cannot find objects on a busy worksheet and loses his place reading. Best assessment:",o:["Humphrey visual field","Ishihara","TVPS-3","Tonometry"],a:2,w:"These figure-ground and sequencing problems are visual perceptual (VPS). With acuity and BV normal, TVPS-3 (pointing-only) is appropriate.",k:"VPS complaints with 20/20 = TVPS-3."},
+{t:"B7 VIP / VPS",q:"A patient has 20/20 acuity but struggles with visual processing tasks. This shows that:",o:["20/20 rules out a perceptual deficit","20/20 acuity does NOT rule out a VIP deficit","Acuity equals perception","The eyes are misaligned"],a:1,w:"Visual information processing is separate from acuity; 20/20 does not exclude a VIP/VPS deficit.",k:"20/20 does not rule out VIP deficit."},
+{t:"B7 VIP / VPS",q:"How do VIP and VPS relate?",o:["They are identical","VIP is broad (processing + motor); VPS is the non-motor subset","VPS includes motor output; VIP does not","VPS is acuity"],a:1,w:"Visual information processing (VIP) is the broad domain; visual perceptual skills (VPS) are its non-motor subset.",k:"VIP broad; VPS = non-motor subset."},
+{t:"B7 VIP / VPS",q:"The Beery VMI primarily measures:",o:["Non-motor perception only","Visual-motor integration (copying geometric shapes)","Color vision","Visual fields"],a:1,w:"Beery VMI requires copying shapes, testing visual-motor integration; a low score may be perceptual OR motor.",k:"Beery VMI = visual-motor (copying)."},
+{t:"B7 VIP / VPS",q:"The TVPS-3 is best described as:",o:["A motor-loaded copying test","A non-motor (pointing-only) VPS test, ages 4–18","A color test","A stereo test"],a:1,w:"TVPS-3 uses pointing responses to assess all seven non-motor VPS subtopics in ages 4–18.",k:"TVPS-3 = non-motor, pointing, 4–18."},
+{t:"B7 VIP / VPS",q:"A child scores poorly on the Beery VMI. To separate perception from motor output, do which test next?",o:["Visual field","TVPS-3 (non-motor)","Snellen acuity","Tonometry"],a:1,w:"TVPS-3 needs no motor output; if normal, the Beery deficit is motor; if poor, it is perceptual.",k:"Use TVPS-3 to isolate perception from motor."},
+{t:"B7 VIP / VPS",q:"The DTVP-2 is notable because it:",o:["Tests only color","Separates motor-free from motor-enhanced scores (ages 4–10)","Requires no responses","Measures acuity"],a:1,w:"The DTVP-2 yields both motor-reduced and motor-enhanced scores, helping localize the deficit, in ages 4–10.",k:"DTVP-2 separates motor-free vs motor-enhanced."},
+{t:"B7 VIP / VPS",q:"Difficulty recognizing a shape when its size or orientation changes is a deficit of:",o:["Visual closure","Form constancy","Figure-ground","Visual memory"],a:1,w:"Form constancy is recognizing an object despite changes in size, orientation, or context.",k:"Form constancy = same shape, changed size/orientation."},
+{t:"B7 VIP / VPS",q:"Identifying a complete object from an incomplete or partial drawing is the skill of:",o:["Visual closure","Figure-ground","Form constancy","Spatial relations"],a:0,w:"Visual closure is recognizing a whole from fragmentary visual information.",k:"Visual closure = whole from incomplete figure."},
+{t:"B7 VIP / VPS",q:"Trouble locating a target object within a cluttered background is a deficit of:",o:["Visual memory","Figure-ground","Form constancy","Visual closure"],a:1,w:"Figure-ground is separating the relevant object from a busy background; failing it causes 'lost on the page' behavior.",k:"Figure-ground = object vs busy background."},
+{t:"B7 VIP / VPS",q:"Which assessment is most appropriate when handwriting and shape-copying are the chief complaints?",o:["TVPS-3","Beery VMI","Ishihara","Goldmann perimetry"],a:1,w:"Copying and handwriting are visual-motor tasks, best evaluated by the Beery VMI.",k:"Copying/handwriting complaints = Beery VMI."}
+];
+
+let MODE=100;
+document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
+  b.classList.add('sel');MODE=parseInt(b.dataset.n);
+}));
+
+let Q=[],i=0,s=0,done=false;const missed=[];let topicStats={};
+const intro=document.getElementById('intro'),quiz=document.getElementById('quiz');
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+
+function shuffle(arr){const a=arr.slice();for(let j=a.length-1;j>0;j--){const r=Math.floor(Math.random()*(j+1));[a[j],a[r]]=[a[r],a[j]];}return a;}
+
+document.getElementById('startBtn').addEventListener('click',()=>{
+  Q=shuffle(BANK).slice(0,Math.min(MODE,BANK.length));
+  i=0;s=0;missed.length=0;topicStats={};
+  intro.style.display='none';quiz.style.display='block';render();
+});
+
+function render(){
+ done=false;const it=Q[i];
+ barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
+ let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
+ h+='<div class="qtext">'+it.q+'</div>';
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
+ body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
+ document.getElementById('quitBtn').addEventListener('click',()=>{if(i>0||done)results();});
+}
+function choose(c){
+ if(done)return;done=true;const it=Q[i],right=it.a;
+ const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
+   if(n===right)b.classList.add('correct');
+   if(n===c&&c!==right)b.classList.add('incorrect');});
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ scoretext.textContent=s+' / '+Q.length;
+ const fb=document.getElementById('fb');
+ fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;
+ document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);
+ document.getElementById('quitBtn').addEventListener('click',results);
+}
+function next(){if(i<Q.length-1){i++;render();}else results();}
+function results(){
+ const answered=Object.values(topicStats).reduce((x,y)=>x+y.t,0)||1;
+ barfill.style.width='100%';const pct=Math.round(s/answered*100);
+ let m=pct>=80?'Strong across Subject B. Review the misses and you are board-ready here.':pct>=60?'Solid base. Focus on the weak topics in the breakdown below.':'Keep building. Reread the weak-topic notes, then retake.';
+ let h='<div class="results"><div class="qtag" style="float:none">Subject B result</div><div class="big">'+pct+'%</div><div class="msg">'+s+' of '+answered+' answered correctly. '+m+'</div>';
+ h+='<div class="breakdown"><h3>Score by topic</h3>';
+ Object.keys(topicStats).sort().forEach(k=>{
+   const st=topicStats[k],p=Math.round(st.c/st.t*100);
+   const col=p>=80?'#1d9e75':p>=50?'#ba7517':'#c0392b';
+   h+='<div class="brow"><span class="name">'+k+'</span><span class="track"><span class="fill" style="width:'+p+'%;background:'+col+'"></span></span><span class="pct">'+st.c+'/'+st.t+'</span></div>';
+ });
+ h+='</div>';
+ if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
+   missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
+ h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">Back to start</button></div></div>';
+ body.innerHTML=h;
+ document.getElementById('ag').addEventListener('click',()=>{quiz.style.display='none';intro.style.display='block';window.scrollTo(0,0);});
+}
+</script>
+<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="B-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><a href="B-Strategy.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Strategy</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#2f6fdb;color:#fff;">Exam</span></div><!--/WAA-LAYER-NAV--></body>
+</html>

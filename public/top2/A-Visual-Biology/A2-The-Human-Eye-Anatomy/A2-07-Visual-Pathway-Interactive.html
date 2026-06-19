@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Visual Pathway Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#1d6e56; --accent-soft:#e1f5ee;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+  .lesions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .lbtn{border:1.5px solid var(--line);background:#fff;border-radius:11px;padding:9px 12px;font-size:13.5px;cursor:pointer;color:var(--ink);transition:.15s}
+  .lbtn:hover{border-color:var(--accent);background:#fbfbf9}
+  .lbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .lbtn .n{display:inline-flex;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;align-items:center;justify-content:center;margin-right:7px}
+  .stage{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:center;margin:6px 0}
+  .fields{text-align:center}
+  .fieldlabel{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+  .detail{margin-top:14px;background:var(--accent-soft);border-radius:11px;padding:14px 16px;font-size:14.5px;min-height:48px}
+  .detail b{color:var(--accent)}
+  .legend{font-size:12px;color:var(--muted);text-align:center;margin-top:8px}
+  /* quiz */
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;transition:.15s;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center;padding:6px 0}
+  .results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>A2-07 — The Visual Pathway, interactive</h1>
+    <p class="sub">Personal study notes · click a lesion site and watch the field defect appear, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. Lesion → visual field defect</h2>
+    <p class="hint">Tap a site along the pathway. The two circles are the patient's visual fields (left circle = Left eye/OS, right = Right eye/OD); shaded = the area NOT seen.</p>
+    <div class="lesions" id="lesions"></div>
+    <div class="stage">
+      <div class="fields">
+        <div class="fieldlabel">Left eye (OS)</div>
+        <svg id="odField" width="120" height="120" viewBox="0 0 120 120" aria-label="Left eye visual field"></svg>
+      </div>
+      <div class="fields">
+        <div class="fieldlabel">Right eye (OD)</div>
+        <svg id="osField" width="120" height="120" viewBox="0 0 120 120" aria-label="Right eye visual field"></svg>
+      </div>
+    </div>
+    <div class="legend">Patient's view (Left eye = left circle): left field = left of each circle. <b>T</b> = temporal (outer) · <b>N</b> = nasal (inner) · dotted centre = macula · shaded = NOT seen.</div>
+    <div class="detail" id="detail">Tap a lesion site above.</div>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+
+  <footer>WAA Board Review 2026 · Personal study notes · A2-07 Visual Pathway</footer>
+</div>
+
+<script>
+// Patient's view, Left eye = LEFT circle (od var), Right eye = RIGHT circle (os var) — matching
+// standard figures. Left field = left half of both circles. Each eye's temporal field is on its
+// OUTER edge (Left eye temporal = its left half; Right eye temporal = its right half).
+const LESIONS=[
+ {n:1,name:"Right optic nerve",od:"none",os:"all",d:"<b>Ipsilateral total blindness</b> of the right eye. A lesion BEFORE the chiasm blinds the whole eye on that side."},
+ {n:2,name:"Optic chiasm",od:"leftHalf",os:"rightHalf",d:"<b>Bitemporal hemianopia</b> — both <b>temporal (outer)</b> fields lost. Crossing nasal fibers are damaged, classically by a <b>pituitary adenoma</b>."},
+ {n:3,name:"Right optic tract",od:"leftHalf",os:"leftHalf",d:"<b>Left incongruous homonymous hemianopia</b> (+ Wernicke's hemianopic pupil). A right-sided post-chiasm lesion takes the <b>LEFT field of both eyes</b>."},
+ {n:4,name:"Right temporal lobe (Meyer's loop)",od:"upperLeft",os:"upperLeft",d:"<b>Left superior quadrantanopia</b> — 'pie in the sky'. Inferior retinal fibers loop through the temporal lobe."},
+ {n:5,name:"Right parietal radiation",od:"lowerLeft",os:"lowerLeft",d:"<b>Left inferior quadrantanopia</b>. Superior retinal fibers run through the parietal lobe."},
+ {n:6,name:"Right occipital cortex",od:"leftHalfSpare",os:"leftHalfSpare",d:"<b>Left homonymous hemianopia with macular sparing</b>. The macula's large cortical representation and dual blood supply spare the center."}
+];
+
+function drawField(svg,region,temporalSide){
+  const cx=60,cy=60,r=44,shade="#3a3a37";
+  let s='';
+  // base circle
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="#ffffff" stroke="#c9c6bc" stroke-width="1.5"/>';
+  // clip for shading
+  s+='<clipPath id="clip-'+svg.id+'"><circle cx="'+cx+'" cy="'+cy+'" r="'+r+'"/></clipPath>';
+  s+='<g clip-path="url(#clip-'+svg.id+')">';
+  function rect(x,y,w,h){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+shade+'"/>';}
+  if(region==='all') s+=rect(cx-r,cy-r,2*r,2*r);
+  else if(region==='rightHalf') s+=rect(cx,cy-r,r,2*r);
+  else if(region==='leftHalf') s+=rect(cx-r,cy-r,r,2*r);
+  else if(region==='upperLeft') s+=rect(cx-r,cy-r,r,r);
+  else if(region==='lowerLeft') s+=rect(cx-r,cy,r,r);
+  else if(region==='upperRight') s+=rect(cx,cy-r,r,r);
+  else if(region==='lowerRight') s+=rect(cx,cy,r,r);
+  else if(region==='leftHalfSpare'){ s+=rect(cx-r,cy-r,r,2*r); s+='<circle cx="'+cx+'" cy="'+cy+'" r="11" fill="#ffffff"/>'; }
+  else if(region==='rightHalfSpare'){ s+=rect(cx,cy-r,r,2*r); s+='<circle cx="'+cx+'" cy="'+cy+'" r="11" fill="#ffffff"/>'; }
+  s+='</g>';
+  // macula marker (dotted center)
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="6" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="2 2"/>';
+  // fixation cross
+  s+='<line x1="'+(cx-4)+'" y1="'+cy+'" x2="'+(cx+4)+'" y2="'+cy+'" stroke="#888" stroke-width="1"/>';
+  s+='<line x1="'+cx+'" y1="'+(cy-4)+'" x2="'+cx+'" y2="'+(cy+4)+'" stroke="#888" stroke-width="1"/>';
+  // temporal (T, outer) / nasal (N, inner) orientation labels
+  if(temporalSide){
+    const tx = temporalSide==='left' ? 8 : 112;
+    const nx = temporalSide==='left' ? 112 : 8;
+    s+='<text x="'+tx+'" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#6b685f">T</text>';
+    s+='<text x="'+nx+'" y="63" text-anchor="middle" font-size="9" fill="#b3afa4">N</text>';
+  }
+  svg.innerHTML=s;
+}
+
+const od=document.getElementById('odField'),os=document.getElementById('osField'),det=document.getElementById('detail');
+const lesionsEl=document.getElementById('lesions');
+drawField(od,'none','left');drawField(os,'none','right');
+LESIONS.forEach(le=>{
+  const b=document.createElement('button');b.className='lbtn';
+  b.innerHTML='<span class="n">'+le.n+'</span>'+le.name;
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.lbtn').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    drawField(od,le.od,'left');drawField(os,le.os,'right');det.innerHTML=le.d;
+  });
+  lesionsEl.appendChild(b);
+});
+
+const Q=[
+ {q:"A lesion of the optic chiasm produces which field defect?",o:["Right eye total blindness","Bitemporal hemianopia","Left homonymous hemianopia","Superior quadrantanopia"],a:1,w:"Crossing nasal fibers at the chiasm carry the temporal fields of both eyes; a pituitary adenoma is the classic cause.",k:"Chiasm = bitemporal hemianopia."},
+ {q:"A right optic NERVE lesion (before the chiasm) causes:",o:["Left homonymous hemianopia","Bitemporal hemianopia","Total blindness of the right eye","Tunnel vision"],a:2,w:"Before the chiasm, a lesion blinds the whole eye on that side (ipsilateral).",k:"Optic nerve lesion = ipsilateral blindness."},
+ {q:"A 'pie in the sky' (superior quadrantanopia) localizes to the:",o:["Parietal lobe","Temporal lobe (Meyer's loop)","Optic chiasm","Optic nerve"],a:1,w:"Inferior retinal fibers loop through the temporal lobe (Meyer's loop), so damage gives a superior quadrant defect.",k:"Pie in the sky = Meyer's loop (temporal)."},
+ {q:"As lesions move more posteriorly toward the occipital cortex, homonymous defects become:",o:["More incongruous","More congruous","Bitemporal","Monocular"],a:1,w:"Congruity increases posteriorly; tract lesions are incongruous, occipital lesions highly congruous.",k:"Posterior = more congruous."},
+ {q:"An occipital cortex lesion classically spares which area?",o:["The temporal crescent","The macula","The whole left field","Nothing"],a:1,w:"Macular sparing occurs because of the macula's large cortical representation and dual blood supply.",k:"Occipital lesion = macular sparing."},
+ {q:"Which fibers cross at the optic chiasm?",o:["Temporal retinal fibers","Nasal retinal fibers","All fibers","No fibers"],a:1,w:"Nasal fibers (carrying the temporal field) decussate; temporal fibers stay ipsilateral.",k:"Nasal fibers cross at the chiasm."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const L=['A','B','C','D'];
+function render(){
+ done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
+}
+function choose(c){
+ if(done)return;done=true;const it=Q[i],right=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===right)b.classList.add('correct');if(n===c&&c!==right)b.classList.add('incorrect');});
+ const ok=c===right;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[right])+'</span><div>'+it.w+'</div><div style="margin-top:7px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;
+ document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);
+}
+function next(){if(i<Q.length-1){i++;render();}else{
+ barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});
+}}
+render();
+</script>
+</body>
+</html>
