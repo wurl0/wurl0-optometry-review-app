@@ -48,6 +48,14 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Top 2 reviewer is admin-only
+  if (pathname.startsWith('/top2')) {
+    const isAdmin = user?.id === process.env.ADMIN_USER_ID || user?.email === process.env.ADMIN_EMAIL
+    if (!isAdmin) {
+      return NextResponse.redirect(new URL('/', request.url))
+    }
+  }
+
   return supabaseResponse
 }
 

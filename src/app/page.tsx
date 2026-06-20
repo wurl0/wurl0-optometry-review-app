@@ -244,19 +244,21 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (served from /public/top2) */}
-        <div className="mt-4">
-          <a
-            href="/top2/index.html"
-            className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-700 rounded-2xl px-5 py-4 hover:from-teal-700 hover:to-emerald-800 transition-colors"
-          >
-            <div>
-              <p className="text-sm font-bold text-white">📚 Dr. Wyrlo Top 2 Reviewer</p>
-              <p className="text-xs text-teal-100 mt-0.5">Interactive reviewers · strategies · subject exams · preboards</p>
-            </div>
-            <span className="text-white text-lg">→</span>
-          </a>
-        </div>
+        {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (admin-only, served from /public/top2) */}
+        {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
+          <div className="mt-4">
+            <a
+              href="/top2/index.html"
+              className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-700 rounded-2xl px-5 py-4 hover:from-teal-700 hover:to-emerald-800 transition-colors"
+            >
+              <div>
+                <p className="text-sm font-bold text-white">📚 Dr. Wyrlo Top 2 Reviewer</p>
+                <p className="text-xs text-teal-100 mt-0.5">Interactive reviewers · strategies · subject exams · preboards</p>
+              </div>
+              <span className="text-white text-lg">→</span>
+            </a>
+          </div>
+        )}
 
         {/* Coming soon */}
         <div className="mt-4 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
