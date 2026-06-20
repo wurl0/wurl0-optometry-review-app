@@ -44,7 +44,17 @@ a{text-decoration:none;color:inherit;}
 <div class="brand"><b>WAA</b> · BOARD REVIEW 2026</div>
 <div class="h1">OLE Preparation — Home</div>
 <div class="subtitle">Every reviewer, strategy card, board exam, and interactive in one place.</div>
-<div class="count"><i class="ti ti-calendar"></i>103 days to written exam</div>
+<div class="count"><i class="ti ti-calendar"></i><span id="exam-countdown">days to written exam</span></div>
+<script>
+  (function () {
+    const exam = new Date('2026-09-28T00:00:00');
+    const days = Math.ceil((exam - new Date()) / 86400000);
+    const el = document.getElementById('exam-countdown');
+    el.textContent = days > 0
+      ? days + ' days to written exam'
+      : (days === 0 ? 'Written exam is today' : 'Written exam has passed');
+  })();
+</script>
 
 <div class="sec-label">Full board simulation</div>
 <a class="mock" href="00-Master-Index/OLE-Mock-Board-Exam.html"><div><div class="mk-k">All subjects · weighted like the real OLE</div><div class="mk-t">OLE Mock Board Exam</div><div class="mk-s">~100 flagged questions drawn to TOS percentages · 75% pass line</div></div><i class="ti ti-trophy"></i></a>
