@@ -244,6 +244,20 @@ export default async function HomePage() {
           </Link>
         </div>
 
+        {/* Visual Biology — Subject Exam (open to all logged-in users) */}
+        <div className="mt-4">
+          <a
+            href="/top2/A-Visual-Biology/A-Subject-Exam.html"
+            className="flex items-center justify-between bg-gradient-to-r from-rose-500 to-pink-600 rounded-2xl px-5 py-4 hover:from-rose-600 hover:to-pink-700 transition-colors"
+          >
+            <div>
+              <p className="text-sm font-bold text-white">🔬 Visual Biology — Subject Exam</p>
+              <p className="text-xs text-rose-100 mt-0.5">Top 2 Reviewer · Board-style questions · Dr. Wyrlo format</p>
+            </div>
+            <span className="text-white text-lg">→</span>
+          </a>
+        </div>
+
         {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (admin-only, served from /public/top2) */}
         {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
           <div className="mt-4">

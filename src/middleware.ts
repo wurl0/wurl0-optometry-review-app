@@ -48,10 +48,12 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // Top 2 reviewer is admin-only
+  // Top 2 reviewer is admin-only, except explicitly released sections
   if (pathname.startsWith('/top2')) {
     const isAdmin = user?.id === process.env.ADMIN_USER_ID || user?.email === process.env.ADMIN_EMAIL
-    if (!isAdmin) {
+    const releasedPaths = ['/top2/A-Visual-Biology/A-Subject-Exam.html']
+    const isReleased = releasedPaths.some(p => pathname === p)
+    if (!isAdmin && !isReleased) {
       return NextResponse.redirect(new URL('/', request.url))
     }
   }
