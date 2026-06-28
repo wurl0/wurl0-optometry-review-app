@@ -265,7 +265,7 @@ export default async function HomePage() {
             className="flex items-center justify-between bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl px-5 py-4 hover:from-amber-600 hover:to-orange-700 transition-colors"
           >
             <div>
-              <p className="text-sm font-bold text-white">📝 Visual Biology — Preboards 2025</p>
+              <p className="text-sm font-bold text-white">📝 Visual Biology — Preboards Set 1</p>
               <p className="text-xs text-amber-100 mt-0.5">Top 2 Reviewer · Full preboard set · Dr. Wyrlo format</p>
             </div>
             <span className="text-white text-lg">→</span>
