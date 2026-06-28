@@ -56,9 +56,10 @@ export const SUBJECTS: Subject[] = [
     name: 'Ocular Anatomy',
     description: 'Orbit, eyelids, cornea, uvea, retina, visual pathways, cranial nerves, extraocular muscles',
     color: 'rose',
-    questionCount: 120,
+    questionCount: 63,
     icon: '🔬',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'general-anatomy',
