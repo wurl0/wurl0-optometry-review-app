@@ -262,10 +262,12 @@ export default function PracticeClient({ subject, questions, levelProgress: init
               <div>
                 <p className={`text-sm font-bold ${allLevelsPassed ? 'text-white' : 'text-gray-400'}`}>Full Exam</p>
                 <p className={`text-xs mt-0.5 ${allLevelsPassed ? 'text-gray-300' : 'text-gray-400'}`}>
-                  {allLevelsPassed ? 'Unlocked! Go take the full exam from the home page.' : 'Pass all 3 levels to unlock the full exam.'}
+                  {!subject.hasExam
+                    ? 'Full exam for this subject is coming soon.'
+                    : allLevelsPassed ? 'Unlocked! Go take the full exam from the home page.' : 'Pass all 3 levels to unlock the full exam.'}
                 </p>
               </div>
-              {allLevelsPassed && (
+              {allLevelsPassed && subject.hasExam && (
                 <Link
                   href={`/exam/${subject.slug}`}
                   className="ml-auto text-xs font-semibold text-white bg-teal-600 hover:bg-teal-500 px-3 py-1.5 rounded-lg transition-colors"

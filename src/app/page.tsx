@@ -192,7 +192,9 @@ export default async function HomePage() {
                       )
                     })}
                     <span className="text-xs text-gray-400 ml-1">
-                      {examUnlocked(subject.slug) ? '· Exam unlocked ✓' : '· Complete all levels to unlock exam'}
+                      {!subject.hasExam
+                        ? '· Exam coming soon'
+                        : examUnlocked(subject.slug) ? '· Exam unlocked ✓' : '· Complete all levels to unlock exam'}
                     </span>
                   </div>
 
@@ -210,7 +212,11 @@ export default async function HomePage() {
                       >
                         Levels & Practice
                       </Link>
-                      {examUnlocked(subject.slug) ? (
+                      {!subject.hasExam ? (
+                        <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
+                          Exam soon
+                        </div>
+                      ) : examUnlocked(subject.slug) ? (
                         <Link
                           href={`/exam/${subject.slug}`}
                           className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"

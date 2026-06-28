@@ -18,6 +18,7 @@ export interface Subject {
   icon: string
   olePrep?: boolean
   isBonus?: boolean
+  hasExam?: boolean
 }
 
 export interface ExamResult {

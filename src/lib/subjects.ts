@@ -9,6 +9,7 @@ export const SUBJECTS: Subject[] = [
     questionCount: 80,
     icon: '👁️',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'binocular-vision',
@@ -18,6 +19,7 @@ export const SUBJECTS: Subject[] = [
     questionCount: 105,
     icon: '🎯',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'theoretical-optics',
@@ -27,6 +29,7 @@ export const SUBJECTS: Subject[] = [
     questionCount: 71,
     icon: '🌈',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'phorometry',
@@ -36,6 +39,7 @@ export const SUBJECTS: Subject[] = [
     questionCount: 113,
     icon: '🕶️',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'primary-eye-care',
@@ -45,6 +49,7 @@ export const SUBJECTS: Subject[] = [
     questionCount: 151,
     icon: '🩺',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'ocular-anatomy',
