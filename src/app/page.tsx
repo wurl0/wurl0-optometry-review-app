@@ -258,6 +258,20 @@ export default async function HomePage() {
           </a>
         </div>
 
+        {/* Visual Biology — Preboards 2025 (open to all logged-in users) */}
+        <div className="mt-4">
+          <a
+            href="/top2/A-Visual-Biology/A-Preboards-2025.html"
+            className="flex items-center justify-between bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl px-5 py-4 hover:from-amber-600 hover:to-orange-700 transition-colors"
+          >
+            <div>
+              <p className="text-sm font-bold text-white">📝 Visual Biology — Preboards 2025</p>
+              <p className="text-xs text-amber-100 mt-0.5">Top 2 Reviewer · Full preboard set · Dr. Wyrlo format</p>
+            </div>
+            <span className="text-white text-lg">→</span>
+          </a>
+        </div>
+
         {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (admin-only, served from /public/top2) */}
         {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
           <div className="mt-4">
