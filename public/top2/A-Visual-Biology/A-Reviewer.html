@@ -99,7 +99,12 @@ body.hy-only .nav-sec:not(.hy){display:none;}
   body{background:#fff!important;}
   @page{margin:14mm;}
 }
-</style></head><body><button class="waa-print-btn" onclick="window.print()" title="Print or save this reviewer as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button>
+.waa-watermark,.waa-print-footer{display:none;}
+@media print{
+  .waa-watermark{display:flex!important;position:fixed;inset:0;z-index:9998;align-items:center;justify-content:center;pointer-events:none;transform:rotate(-32deg);font:800 160px/1 -apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.06em;color:#0f172a;opacity:.06;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .waa-print-footer{display:block!important;position:fixed;left:0;right:0;bottom:6mm;z-index:9998;text-align:center;pointer-events:none;font:600 10px/1.2 -apple-system,"Segoe UI",Roboto,sans-serif;color:#8a93a0;letter-spacing:.04em;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style></head><body><button class="waa-print-btn" onclick="window.print()" title="Print or save this reviewer as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button><div class="waa-watermark" aria-hidden="true">WAA</div><div class="waa-print-footer" aria-hidden="true">WAA · Board Review 2026 · Personal study notes</div>
 <div class="wrap">
 <aside>
 <div class="brand"><b>WAA</b> · BOARD REVIEW 2026</div>
