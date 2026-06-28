@@ -38,8 +38,19 @@
   li{margin:5px 0}
   footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
 </style>
-</head>
-<body>
+<style id="waa-print-export">
+.waa-print-btn{position:fixed;right:20px;bottom:20px;z-index:100000;display:inline-flex;align-items:center;gap:7px;background:var(--accent,#2e9e5b);color:#fff;border:none;border-radius:999px;padding:11px 17px;font:600 13px/1 -apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.22);cursor:pointer;}
+.waa-print-btn:hover{filter:brightness(.93);}
+.waa-print-btn:active{transform:translateY(1px);}
+@media print{
+  .nav-chips,.waa-print-btn,[style*="position:fixed"]{display:none!important;}
+  .wrap{max-width:100%!important;margin:0!important;}
+  .rule,.trap,.mnem,.num,table,tr{break-inside:avoid;}
+  body{background:#fff!important;}
+  @page{margin:14mm;}
+}
+</style></head>
+<body><button class="waa-print-btn" onclick="window.print()" title="Print or save this strategy sheet as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button>
 <div class="wrap">
   <header>
     <div class="kicker">WAA · Board Review 2026</div>
