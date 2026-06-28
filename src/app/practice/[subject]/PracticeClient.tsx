@@ -36,6 +36,16 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+// How many questions each level draws. When the bank is large enough we use the
+// designed 25/50/100 targets. When it's smaller, we scale proportionally so the
+// three levels stay distinct in size instead of all serving the same small pool.
+function levelSize(level: number, bankLen: number): number {
+  if (bankLen >= 100) return level === 1 ? 25 : level === 2 ? 50 : 100
+  const l1 = Math.max(1, Math.round(bankLen / 3))
+  const l2 = Math.max(l1 + 1, Math.round((bankLen * 2) / 3))
+  return level === 1 ? l1 : level === 2 ? Math.min(l2, bankLen) : bankLen
+}
+
 type Phase = 'select' | 'playing' | 'result'
 
 export default function PracticeClient({ subject, questions, levelProgress: initialProgress }: Props) {
@@ -63,8 +73,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
   }
 
   function startLevel(lvl: 1 | 2 | 3) {
-    const config = LEVEL_CONFIG.find(c => c.level === lvl)!
-    const count = Math.min(config.questions, questions.length)
+    const count = levelSize(lvl, questions.length)
     const sliced = shuffle(questions).slice(0, count)
     setActiveLevel(lvl)
     setLevelQuestions(sliced)
@@ -182,7 +191,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
             {LEVEL_CONFIG.map(cfg => {
               const rec = levelProgress[cfg.level]
               const unlocked = isUnlocked(cfg.level)
-              const count = Math.min(cfg.questions, questions.length)
+              const count = levelSize(cfg.level, questions.length)
 
               return (
                 <div
