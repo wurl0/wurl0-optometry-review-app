@@ -85,26 +85,22 @@ body.hy-only .nav-sec:not(.hy){display:none;}
 .topic.hidden,.nav-topic.hidden{display:none;}
 @media(max-width:820px){.wrap{grid-template-columns:1fr;}aside{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}main{padding:20px 16px 90px;}}
 </style><style id="waa-print-export">
-.waa-print-btn{position:fixed;right:20px;bottom:20px;z-index:9999;display:inline-flex;align-items:center;gap:7px;background:var(--accent,#2e9e5b);color:#fff;border:none;border-radius:999px;padding:11px 17px;font:600 13px/1 -apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.22);cursor:pointer;}
+.waa-print-btn{position:fixed;right:20px;bottom:20px;z-index:100000;display:inline-flex;align-items:center;gap:7px;background:var(--accent,#2e9e5b);color:#fff;border:none;border-radius:999px;padding:11px 17px;font:600 13px/1 -apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.22);cursor:pointer;}
 .waa-print-btn:hover{filter:brightness(.93);}
 .waa-print-btn:active{transform:translateY(1px);}
+.waa-print-footer{display:none;}
 @media print{
-  aside,.layers-bar,.search,.topbar .toggle,.waa-print-btn{display:none!important;}
-  .wrap{display:block!important;}
+  aside,.layers-bar,.search,.topbar .toggle,.nav-chips,[style*="position:fixed"],.waa-print-btn{display:none!important;}
+  .wrap{display:block!important;max-width:100%!important;margin:0!important;}
   main{width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;}
   .topbar{position:static!important;}
-  details:not([open])>*{display:revert!important;}
   .blueprint{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  article,section,table,pre,.blueprint{break-inside:avoid;}
-  body{background:#fff!important;}
+  .rule,.trap,.mnem,.num,article,section,table,tr,.blueprint{break-inside:avoid;}
+  body{background-color:#fff!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230'%3E%3Ctext x='170' y='120' fill='%230f172a' fill-opacity='0.06' font-family='Helvetica,Arial,sans-serif' font-size='46' font-weight='700' text-anchor='middle' transform='rotate(-30 170 120)'%3EWAA%3C/text%3E%3C/svg%3E")!important;background-repeat:repeat!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+  .waa-print-footer{display:block!important;position:fixed;left:0;right:0;bottom:6mm;z-index:9998;text-align:center;pointer-events:none;font:600 10px/1.2 -apple-system,"Segoe UI",Roboto,sans-serif;color:#8a93a0;letter-spacing:.04em;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
   @page{margin:14mm;}
 }
-.waa-watermark,.waa-print-footer{display:none;}
-@media print{
-  .waa-watermark{display:flex!important;position:fixed;inset:0;z-index:9998;align-items:center;justify-content:center;pointer-events:none;transform:rotate(-32deg);font:800 160px/1 -apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.06em;color:#0f172a;opacity:.06;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .waa-print-footer{display:block!important;position:fixed;left:0;right:0;bottom:6mm;z-index:9998;text-align:center;pointer-events:none;font:600 10px/1.2 -apple-system,"Segoe UI",Roboto,sans-serif;color:#8a93a0;letter-spacing:.04em;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-}
-</style></head><body><button class="waa-print-btn" onclick="window.print()" title="Print or save this reviewer as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button><div class="waa-watermark" aria-hidden="true">WAA</div><div class="waa-print-footer" aria-hidden="true">WAA · Board Review 2026 · Personal study notes</div>
+</style></head><body><button class="waa-print-btn" onclick="waaPrint()" title="Print or save as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button><div class="waa-print-footer" aria-hidden="true">WAA · Board Review 2026 · Personal study notes</div>
 <div class="wrap">
 <aside>
 <div class="brand"><b>WAA</b> · BOARD REVIEW 2026</div>
@@ -180,4 +176,12 @@ N=[].slice.call(document.querySelectorAll('.nav-topic'));
 s.addEventListener('input',function(){var q=s.value.trim().toLowerCase();
  T.forEach(function(t,i){var h=!q||t.textContent.toLowerCase().indexOf(q)!==-1;
  t.classList.toggle('hidden',!h);if(N[i])N[i].classList.toggle('hidden',!h);});});
+</script><script>
+(function(){
+  function openAll(){var o=[];document.querySelectorAll('details:not([open])').forEach(function(d){d.open=true;o.push(d);});return o;}
+  function restore(o){o.forEach(function(d){try{d.open=false;}catch(e){}});}
+  window.waaPrint=function(){var o=openAll();setTimeout(function(){window.print();setTimeout(function(){restore(o);},400);},80);};
+  window.addEventListener('beforeprint',function(){window.__waaOpened=openAll();});
+  window.addEventListener('afterprint',function(){if(window.__waaOpened){restore(window.__waaOpened);window.__waaOpened=null;}});
+})();
 </script></body></html>
