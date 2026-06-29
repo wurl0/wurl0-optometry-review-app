@@ -54,6 +54,7 @@ export async function middleware(request: NextRequest) {
     const releasedPaths = [
       '/top2/A-Visual-Biology/A-Subject-Exam.html',
       '/top2/A-Visual-Biology/A-Preboards-2025.html',
+      '/top2/A-Visual-Biology/A-Preboards-Set2.html',
     ]
     const isReleased = releasedPaths.some(p => pathname === p)
     if (!isAdmin && !isReleased) {
