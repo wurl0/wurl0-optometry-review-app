@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
+import { isAdmin, canOpenItem, isAsset, itemForPath, type Access } from '@/lib/access'
 
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
@@ -35,31 +36,52 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/', request.url))
   }
 
-  // Check approval status for authenticated users accessing protected routes
+  // Approval gate. Kept on its own query so it never depends on the newer
+  // tier/grants columns (deploy order vs the SQL migration cannot break it).
   if (user && !isPublic && pathname !== '/pending') {
-    const { data: profile } = await supabase
+    const { data: ap } = await supabase
       .from('profiles')
       .select('approved')
       .eq('user_id', user.id)
       .single()
-
-    if (profile && !profile.approved) {
+    if (ap && !ap.approved) {
       return NextResponse.redirect(new URL('/pending', request.url))
     }
   }
 
-  // Top 2 reviewer is admin-only, except explicitly released sections
+  // Top 2 reviewer: gated by tier + per-user grants (admin sees all).
   if (pathname.startsWith('/top2')) {
-    const isAdmin = user?.id === process.env.ADMIN_USER_ID || user?.email === process.env.ADMIN_EMAIL
-    const releasedPaths = [
-      '/top2/A-Visual-Biology/A-Subject-Exam.html',
-      '/top2/A-Visual-Biology/A-Preboards-2025.html',
-      '/top2/A-Visual-Biology/A-Preboards-Set2.html',
-    ]
-    const isReleased = releasedPaths.some(p => pathname === p)
-    if (!isAdmin && !isReleased) {
-      return NextResponse.redirect(new URL('/', request.url))
+    let tier = 'base'
+    let grants: string[] = []
+    if (user) {
+      // If the migration has not run yet this select errors, leaving tier='base'
+      // (only public items visible). Safe by default.
+      const { data: acc } = await supabase
+        .from('profiles')
+        .select('tier, grants')
+        .eq('user_id', user.id)
+        .single()
+      const row = acc as { tier?: string; grants?: string[] } | null
+      if (row) { tier = row.tier ?? 'base'; grants = row.grants ?? [] }
     }
+    const access: Access = {
+      tier,
+      grants,
+      isEnvAdmin: user?.id === process.env.ADMIN_USER_ID || user?.email === process.env.ADMIN_EMAIL,
+    }
+
+    if (isAdmin(access)) return supabaseResponse
+    if (isAsset(pathname)) return supabaseResponse  // css/js/fonts: rendering deps
+
+    // The static cockpit index is admin-only; everyone else uses the dynamic /reviewer.
+    if (pathname === '/top2' || pathname === '/top2/' || pathname === '/top2/index.html') {
+      return NextResponse.redirect(new URL('/reviewer', request.url))
+    }
+
+    const item = itemForPath(pathname)
+    if (item && canOpenItem(access, item)) return supabaseResponse
+
+    return NextResponse.redirect(new URL('/', request.url))  // default deny
   }
 
   return supabaseResponse
