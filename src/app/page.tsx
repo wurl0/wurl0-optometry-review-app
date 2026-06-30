@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS } from '@/lib/reviewer-manifest'
-import { canOpenItem, canOpenCockpit, isAdmin, type Access } from '@/lib/access'
+import { canOpenItem, canOpenCockpit, type Access } from '@/lib/access'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -32,11 +32,12 @@ export default async function HomePage() {
     grants: pr?.grants ?? [],
     isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
   }
-  const reviewerAdmin = isAdmin(access)
-  const reviewerCockpit = canOpenCockpit(access)
-  const grantedItems = REVIEWER_ITEMS.filter(i => !i.public && canOpenItem(access, i))
-  const showGrantedCards = !reviewerAdmin && !reviewerCockpit && grantedItems.length > 0
-  const showCockpitLink = !reviewerAdmin && reviewerCockpit
+  const reviewerCockpit = canOpenCockpit(access)  // full + admin (tier or env)
+  const grantedItems = REVIEWER_ITEMS.filter(i => canOpenItem(access, i))
+  // select tier gets direct cards; full + tier-admin get the cockpit link;
+  // the env admin keeps the richer static index card below.
+  const showGrantedCards = access.tier === 'select' && grantedItems.length > 0
+  const showCockpitLink = reviewerCockpit && !access.isEnvAdmin
 
   // Map: subject → { 1: passed, 2: passed, 3: passed }
   const levelMap: Record<string, Record<number, boolean>> = {}
