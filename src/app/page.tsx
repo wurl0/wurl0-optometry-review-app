@@ -268,48 +268,6 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        {/* Visual Biology — Subject Exam (open to all logged-in users) */}
-        <div className="mt-4">
-          <a
-            href="/top2/A-Visual-Biology/A-Subject-Exam.html"
-            className="flex items-center justify-between bg-gradient-to-r from-rose-500 to-pink-600 rounded-2xl px-5 py-4 hover:from-rose-600 hover:to-pink-700 transition-colors"
-          >
-            <div>
-              <p className="text-sm font-bold text-white">🔬 Visual Biology — Subject Exam</p>
-              <p className="text-xs text-rose-100 mt-0.5">Top 2 Reviewer · Board-style questions · Dr. Wyrlo format</p>
-            </div>
-            <span className="text-white text-lg">→</span>
-          </a>
-        </div>
-
-        {/* Visual Biology — Preboards 2025 (open to all logged-in users) */}
-        <div className="mt-4">
-          <a
-            href="/top2/A-Visual-Biology/A-Preboards-2025.html"
-            className="flex items-center justify-between bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl px-5 py-4 hover:from-amber-600 hover:to-orange-700 transition-colors"
-          >
-            <div>
-              <p className="text-sm font-bold text-white">📝 Visual Biology — Preboards Set 1</p>
-              <p className="text-xs text-amber-100 mt-0.5">Top 2 Reviewer · Full preboard set · Dr. Wyrlo format</p>
-            </div>
-            <span className="text-white text-lg">→</span>
-          </a>
-        </div>
-
-        {/* Visual Biology — Preboards Set 2 / MCU 2024 (open to all logged-in users) */}
-        <div className="mt-4">
-          <a
-            href="/top2/A-Visual-Biology/A-Preboards-Set2.html"
-            className="flex items-center justify-between bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl px-5 py-4 hover:from-purple-600 hover:to-violet-700 transition-colors"
-          >
-            <div>
-              <p className="text-sm font-bold text-white">📝 Visual Biology — Preboards Set 2</p>
-              <p className="text-xs text-purple-100 mt-0.5">Top 2 Reviewer · MCU 2024 preboard set · Dr. Wyrlo format</p>
-            </div>
-            <span className="text-white text-lg">→</span>
-          </a>
-        </div>
-
         {/* Granted reviewer items (select tier: direct cards, no cockpit) */}
         {showGrantedCards && grantedItems.map(i => (
           <div key={i.id} className="mt-4">

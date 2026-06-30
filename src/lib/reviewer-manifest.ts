@@ -39,8 +39,9 @@ const TYPE_LABEL: Record<Exclude<ItemType, 'mock'>, string> = {
   'preboards-set2': 'Preboards Set 2',
 }
 
-// Items free to every approved user today (preserved when the old releasedPaths is dropped).
-const PUBLIC_IDS = new Set<string>(['A.exam', 'A.preboards-2025', 'A.preboards-set2'])
+// No public/free items: all Top 2 content is controlled per-user via grants.
+// (Add an item id here to make it free to every approved user.)
+const PUBLIC_IDS = new Set<string>()
 
 // Filename per (subject, type). Only G and H differ: their strategy lives in
 // X-Subject-Exam-Strategy.html instead of X-Strategy.html.
