@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS } from '@/lib/reviewer-manifest'
-import { canOpenItem, canOpenCockpit, type Access } from '@/lib/access'
+import { canOpenItem, isAdmin, type Access } from '@/lib/access'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -32,12 +32,12 @@ export default async function HomePage() {
     grants: pr?.grants ?? [],
     isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
   }
-  const reviewerCockpit = canOpenCockpit(access)  // full + admin (tier or env)
   const grantedItems = REVIEWER_ITEMS.filter(i => canOpenItem(access, i))
-  // select tier gets direct cards; full + tier-admin get the cockpit link;
-  // the env admin keeps the richer static index card below.
+  // select tier: direct item cards. full tier: the filtered dynamic cockpit.
+  // admin (tier or env): the full static index (every subject, mocks, interactives).
   const showGrantedCards = access.tier === 'select' && grantedItems.length > 0
-  const showCockpitLink = reviewerCockpit && !access.isEnvAdmin
+  const showCockpitLink = access.tier === 'full'
+  const showStaticIndex = isAdmin(access)
 
   // Map: subject → { 1: passed, 2: passed, 3: passed }
   const levelMap: Record<string, Record<number, boolean>> = {}
@@ -301,8 +301,8 @@ export default async function HomePage() {
           </div>
         )}
 
-        {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (admin-only, served from /public/top2) */}
-        {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
+        {/* Full static index (env admin + tier admin): every subject, mocks, interactives */}
+        {showStaticIndex && (
           <div className="mt-4">
             <a
               href="/top2/index.html"
