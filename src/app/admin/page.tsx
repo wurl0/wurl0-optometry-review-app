@@ -204,6 +204,13 @@ export default function AdminPage() {
           )}
         </section>
 
+        <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 mb-4 text-xs text-blue-900 leading-relaxed">
+          <p className="font-semibold mb-1">Reviewer access</p>
+          <p><b>Tiers:</b> base = original app only · select = granted items via home cards · full = granted items + the reviewer cockpit · admin = everything.</p>
+          <p className="mt-1"><b>Grants</b> are per item: check to share, uncheck to revoke (applies to select and full). New sign-ups default to base, so nothing is shared until you grant it.</p>
+          <p className="mt-1 text-blue-700">If the controls error on save, run <code className="bg-blue-100 px-1 rounded">supabase/access-tiers.sql</code> in Supabase first.</p>
+        </div>
+
         <section>
           <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
             Approved ({approved.length})
