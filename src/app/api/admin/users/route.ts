@@ -11,10 +11,20 @@ export async function GET() {
   }
 
   const admin = createAdminClient()
-  const { data: profiles, error } = await admin
+  let { data: profiles, error } = await admin
     .from('profiles')
-    .select('id, full_name, email, approved, approved_at, created_at')
+    .select('id, full_name, email, approved, approved_at, created_at, tier, grants')
     .order('created_at', { ascending: false })
+
+  // Pre-migration fallback: if tier/grants columns do not exist yet, load without them.
+  if (error) {
+    const retry = await admin
+      .from('profiles')
+      .select('id, full_name, email, approved, approved_at, created_at')
+      .order('created_at', { ascending: false })
+    profiles = retry.data
+    error = retry.error
+  }
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
   return NextResponse.json({ profiles })
