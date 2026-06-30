@@ -292,7 +292,7 @@ export default async function HomePage() {
               className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-700 rounded-2xl px-5 py-4 hover:from-teal-700 hover:to-emerald-800 transition-colors"
             >
               <div>
-                <p className="text-sm font-bold text-white">📚 Top 2 Reviewer</p>
+                <p className="text-sm font-bold text-white">📚 Dr. Wyrlo Top 2 Reviewer</p>
                 <p className="text-xs text-teal-100 mt-0.5">Your reviewers, strategies, exams, and preboards</p>
               </div>
               <span className="text-white text-lg">→</span>

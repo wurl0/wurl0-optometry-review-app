@@ -69,6 +69,23 @@ function AccessEditor({ profile, onSaved }: {
             base = original app only · select = granted items via home cards · full = granted items + reviewer cockpit · admin = everything. Checkboxes grant individual items (apply to select and full).
           </p>
 
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setGrants(ITEMS.map(i => i.id))}
+              className="text-xs font-medium text-teal-700 border border-gray-300 rounded-md px-2 py-1 hover:bg-teal-50"
+            >
+              Select all
+            </button>
+            <button
+              type="button"
+              onClick={() => setGrants([])}
+              className="text-xs font-medium text-gray-600 border border-gray-300 rounded-md px-2 py-1 hover:bg-gray-50"
+            >
+              Deselect all
+            </button>
+          </div>
+
           {SUBJECTS.map(s => {
             const items = ITEMS.filter(i => i.subject === s.code)
             return (

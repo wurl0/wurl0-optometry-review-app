@@ -28,6 +28,10 @@ export default async function ReviewerPage() {
 
   const can = (i: Item) => canOpenItem(access, i)
   const mocks = ITEMS.filter(i => i.subject === 'GLOBAL' && can(i))
+  const subjects = SUBJECTS
+    .map(s => ({ s, items: ITEMS.filter(i => i.subject === s.code && can(i)) }))
+    .filter(g => g.items.length > 0)
+  const nothing = mocks.length === 0 && subjects.length === 0
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -35,7 +39,7 @@ export default async function ReviewerPage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div>
             <p className="text-[11px] font-bold tracking-widest text-teal-700">WAA · BOARD REVIEW 2026</p>
-            <h1 className="text-lg font-bold text-gray-900 leading-tight">Top 2 Reviewer</h1>
+            <h1 className="text-lg font-bold text-gray-900 leading-tight">Dr. Wyrlo Top 2 Reviewer</h1>
           </div>
           <Link href="/" className="text-sm text-teal-600 hover:underline font-medium">← Home</Link>
         </div>
@@ -60,32 +64,36 @@ export default async function ReviewerPage() {
           </section>
         )}
 
-        <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Subjects</p>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {SUBJECTS.map(s => {
-            const items = ITEMS.filter(i => i.subject === s.code && can(i))
-            if (items.length === 0) return null
-            return (
-              <div key={s.code} className="bg-white border border-gray-200 rounded-2xl p-4">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="w-9 h-9 rounded-xl bg-teal-600 text-white font-bold flex items-center justify-center">{s.code}</span>
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm leading-tight">{s.name}</p>
-                    <p className="text-xs text-gray-400">{s.weight}% of exam</p>
+        {subjects.length > 0 && (
+          <>
+            <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Subjects</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {subjects.map(({ s, items }) => (
+                <div key={s.code} className="bg-white border border-gray-200 rounded-2xl p-4">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-9 h-9 rounded-xl bg-teal-600 text-white font-bold flex items-center justify-center">{s.code}</span>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm leading-tight">{s.name}</p>
+                      <p className="text-xs text-gray-400">{s.weight}% of exam</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {items.map(i => (
+                      <a key={i.id} href={i.path}
+                        className="text-xs font-medium text-teal-700 border border-gray-200 rounded-lg px-2.5 py-1.5 hover:bg-teal-600 hover:text-white hover:border-teal-600 transition-colors">
+                        {i.label.split(' — ')[1] ?? i.label}
+                      </a>
+                    ))}
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {items.map(i => (
-                    <a key={i.id} href={i.path}
-                      className="text-xs font-medium text-teal-700 border border-gray-200 rounded-lg px-2.5 py-1.5 hover:bg-teal-600 hover:text-white hover:border-teal-600 transition-colors">
-                      {i.label.split(' — ')[1] ?? i.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )
-          })}
-        </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {nothing && (
+          <p className="text-sm text-gray-500">Nothing has been shared with you yet. Granted reviewers, exams, and preboards will appear here.</p>
+        )}
 
         <p className="text-[11px] text-gray-400 mt-8 border-t border-gray-200 pt-4">
           WAA · Board Review 2026 · personal study materials
