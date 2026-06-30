@@ -2,6 +2,17 @@ import { NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase-admin'
 import { createClient } from '@/lib/supabase-server'
 
+type ProfileRow = {
+  id: string
+  full_name: string | null
+  email: string | null
+  approved: boolean
+  approved_at: string | null
+  created_at: string
+  tier?: string | null
+  grants?: string[] | null
+}
+
 export async function GET() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
@@ -11,10 +22,13 @@ export async function GET() {
   }
 
   const admin = createAdminClient()
-  let { data: profiles, error } = await admin
+  const full = await admin
     .from('profiles')
     .select('id, full_name, email, approved, approved_at, created_at, tier, grants')
     .order('created_at', { ascending: false })
+
+  let profiles = full.data as ProfileRow[] | null
+  let error = full.error
 
   // Pre-migration fallback: if tier/grants columns do not exist yet, load without them.
   if (error) {
@@ -22,7 +36,7 @@ export async function GET() {
       .from('profiles')
       .select('id, full_name, email, approved, approved_at, created_at')
       .order('created_at', { ascending: false })
-    profiles = retry.data
+    profiles = retry.data as ProfileRow[] | null
     error = retry.error
   }
 
