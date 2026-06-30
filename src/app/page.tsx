@@ -3,6 +3,8 @@ import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
+import { ITEMS as REVIEWER_ITEMS } from '@/lib/reviewer-manifest'
+import { canOpenItem, canOpenCockpit, isAdmin, type Access } from '@/lib/access'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -19,6 +21,22 @@ export default async function HomePage() {
   const attempts = attemptsRes.data
   const userStats = statsRes.data
   const badgeCount = badgesRes.data?.length ?? 0
+
+  // Top 2 reviewer access (tier + per-user grants). Defaults to base if the
+  // migration has not run yet (select errors, profile is null).
+  const { data: profRow } = await supabase
+    .from('profiles').select('tier, grants').eq('user_id', user.id).single()
+  const pr = profRow as { tier?: string; grants?: string[] } | null
+  const access: Access = {
+    tier: pr?.tier ?? 'base',
+    grants: pr?.grants ?? [],
+    isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
+  }
+  const reviewerAdmin = isAdmin(access)
+  const reviewerCockpit = canOpenCockpit(access)
+  const grantedItems = REVIEWER_ITEMS.filter(i => !i.public && canOpenItem(access, i))
+  const showGrantedCards = !reviewerAdmin && !reviewerCockpit && grantedItems.length > 0
+  const showCockpitLink = !reviewerAdmin && reviewerCockpit
 
   // Map: subject → { 1: passed, 2: passed, 3: passed }
   const levelMap: Record<string, Record<number, boolean>> = {}
@@ -291,6 +309,38 @@ export default async function HomePage() {
             <span className="text-white text-lg">→</span>
           </a>
         </div>
+
+        {/* Granted reviewer items (select tier: direct cards, no cockpit) */}
+        {showGrantedCards && grantedItems.map(i => (
+          <div key={i.id} className="mt-4">
+            <a
+              href={i.path}
+              className="flex items-center justify-between bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl px-5 py-4 hover:from-indigo-600 hover:to-blue-700 transition-colors"
+            >
+              <div>
+                <p className="text-sm font-bold text-white">📖 {i.label}</p>
+                <p className="text-xs text-indigo-100 mt-0.5">Top 2 Reviewer · Dr. Wyrlo format</p>
+              </div>
+              <span className="text-white text-lg">→</span>
+            </a>
+          </div>
+        ))}
+
+        {/* Reviewer cockpit (full tier) */}
+        {showCockpitLink && (
+          <div className="mt-4">
+            <a
+              href="/reviewer"
+              className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-700 rounded-2xl px-5 py-4 hover:from-teal-700 hover:to-emerald-800 transition-colors"
+            >
+              <div>
+                <p className="text-sm font-bold text-white">📚 Top 2 Reviewer</p>
+                <p className="text-xs text-teal-100 mt-0.5">Your reviewers, strategies, exams, and preboards</p>
+              </div>
+              <span className="text-white text-lg">→</span>
+            </a>
+          </div>
+        )}
 
         {/* Dr. Wyrlo Top 2 — interactive HTML reviewer (admin-only, served from /public/top2) */}
         {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
