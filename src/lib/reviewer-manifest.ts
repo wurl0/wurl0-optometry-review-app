@@ -45,15 +45,17 @@ const PUBLIC_IDS = new Set<string>(['A.exam', 'A.preboards-2025', 'A.preboards-s
 // Filename per (subject, type). Only G and H differ: their strategy lives in
 // X-Subject-Exam-Strategy.html instead of X-Strategy.html.
 function fileFor(code: string, type: Exclude<ItemType, 'mock'>): string {
-  switch (type) {
-    case 'reviewer': return `${code}-Reviewer.html`
-    case 'strategy': return (code === 'G' || code === 'H')
-      ? `${code}-Subject-Exam-Strategy.html`
-      : `${code}-Strategy.html`
-    case 'exam': return `${code}-Subject-Exam.html`
-    case 'preboards-2025': return `${code}-Preboards-2025.html`
-    case 'preboards-set2': return `${code}-Preboards-Set2.html`
+  const strategy = (code === 'G' || code === 'H')
+    ? `${code}-Subject-Exam-Strategy.html`
+    : `${code}-Strategy.html`
+  const files: Record<Exclude<ItemType, 'mock'>, string> = {
+    reviewer: `${code}-Reviewer.html`,
+    strategy,
+    exam: `${code}-Subject-Exam.html`,
+    'preboards-2025': `${code}-Preboards-2025.html`,
+    'preboards-set2': `${code}-Preboards-Set2.html`,
   }
+  return files[type]
 }
 
 const SUBJECT_ITEMS: Item[] = SUBJECTS.flatMap(s =>
