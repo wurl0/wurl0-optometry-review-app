@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 — Progress Tracker</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#273449; --line:#334155;
+    --text:#e2e8f0; --muted:#94a3b8; --good:#22c55e; --warn:#f59e0b;
+    --track:#334155;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;padding:24px 16px 64px}
+  .wrap{max-width:1080px;margin:0 auto}
+  header{text-align:center;margin-bottom:8px}
+  .brand{font-size:13px;letter-spacing:2px;color:var(--muted);font-weight:600}
+  h1{font-size:24px;margin:4px 0 2px}
+  .sub{color:var(--muted);font-size:13px}
+
+  .overview{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:22px;margin:22px 0;text-align:center}
+  .bigcount{font-size:44px;font-weight:800;line-height:1}
+  .bigcount span{color:var(--muted);font-size:22px;font-weight:600}
+  .encourage{margin-top:8px;color:var(--text);font-size:15px;min-height:22px}
+  .readbar{height:12px;background:var(--track);border-radius:99px;overflow:hidden;margin:16px auto 0;max-width:560px}
+  .readbar>i{display:block;height:100%;background:linear-gradient(90deg,#22c55e,#4ade80);width:0;transition:width .5s}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;
+    border-left:5px solid var(--ac,#64748b)}
+  .card.cleared{box-shadow:0 0 0 1px var(--good) inset}
+  .chead{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .cname{font-weight:700;font-size:16px}
+  .cwt{color:var(--muted);font-size:12px;white-space:nowrap}
+  .best{font-size:32px;font-weight:800;margin:6px 0 2px}
+  .best small{font-size:14px;color:var(--muted);font-weight:600}
+  .status{font-size:13px;margin-bottom:10px;min-height:18px}
+  .status.g{color:var(--good)} .status.w{color:var(--warn)} .status.m{color:var(--muted)}
+
+  .bar{height:20px;background:var(--track);border-radius:8px;position:relative;overflow:hidden;margin-bottom:4px}
+  .bar>i{display:block;height:100%;width:0;background:var(--ac,#64748b);transition:width .45s}
+  .bar.done>i{background:var(--good)}
+  .tick{position:absolute;top:-3px;bottom:-3px;left:75%;width:2px;background:#e2e8f0;opacity:.7}
+  .ticklab{font-size:11px;color:var(--muted);text-align:right;margin-bottom:10px}
+
+  .row{display:flex;gap:6px;margin:8px 0}
+  input[type=number]{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--text);
+    border-radius:8px;padding:8px 10px;font-size:14px;width:100%}
+  button{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:8px;
+    padding:8px 12px;font-size:13px;cursor:pointer;font-weight:600}
+  button.add{background:var(--ac,#334155);border-color:transparent;color:#0b1220}
+  button:hover{filter:brightness(1.1)}
+  .hist{font-size:12px;color:var(--muted);margin:4px 0 2px;min-height:16px}
+  .hist b{color:var(--text)}
+  details{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+  summary{cursor:pointer;font-size:13px;color:var(--muted);font-weight:600}
+  summary .cnt{color:var(--warn)}
+  .topics{margin-top:8px;display:flex;flex-direction:column;gap:5px}
+  .topics label{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--text);cursor:pointer}
+  .topics input{margin-top:3px}
+  .footnote{text-align:center;color:var(--muted);font-size:12px;margin-top:28px;line-height:1.7}
+  .reset{margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">WAA | BOARD REVIEW 2026</div>
+    <h1>Progress Tracker</h1>
+    <div class="sub">Personal study notes · goal: 75%+ on all 8 areas · MCU preboard ~Jul 30</div>
+  </header>
+
+  <section class="overview">
+    <div class="bigcount"><span id="ovNum">0</span><span> / 8 board-ready</span></div>
+    <div class="encourage" id="ovMsg"></div>
+    <div class="readbar"><i id="ovBar"></i></div>
+  </section>
+
+  <div class="grid" id="grid"></div>
+
+  <div style="text-align:center">
+    <button class="reset" id="resetBtn">Reset all data</button>
+  </div>
+
+  <div class="footnote">
+    Scores save on this device only (your browser). Log a score after any Subject-Exam, Preboard, or Mock Board.<br>
+    75% is the line. Green means board-ready. A rest day does not move the bar backward, so rest without guilt.<br>
+    Built July 1, 2026 · seeded with Visual Biology at 55%.
+  </div>
+</div>
+
+<script>
+const PASS=75;
+const SUBJECTS=[
+  {id:'A',name:'Visual Biology',wt:'10% · 100 items',ac:'#34d399',topics:['A1 Body Systems & Cranial Nerves','A2-01 Orbit & Extraocular Muscles','A2-02 Eyelids / Conjunctiva / Lacrimal','A2-03 Cornea & Sclera','A2-04 Uvea & Chambers','A2-05 Lens / Vitreous / Aqueous','A2-06 Retina & Optic Nerve','A2-07 Visual Pathway','A3 Ocular Embryology']},
+  {id:'B',name:'PhysOptics + BV',wt:'15% · 150 items',ac:'#60a5fa',topics:['B1 Visual System & Ocular Optics','B2 Visual Perception','B3 Visual Field','B4 Color Perception','B5 Binocular Vision & Fusion','B6 Stereopsis & Depth','B7 VIP / VPS']},
+  {id:'C',name:'Primary Care',wt:'15% · 150 items',ac:'#fb7185',topics:['C1 Epidemiology & Prevention','C2 Ametropia & Refractive Errors','C3 Preliminary Examination','C4 Objective Examination','C5 Subjective Examination','C6 Management of Visual Disorders','C7 Vision Therapy & Orthoptics']},
+  {id:'D',name:'Theoretical + CL',wt:'15% · 150 items',ac:'#fbbf24',topics:['D1 Physical Optics','D1 Geometric Optics','D2 Ophthalmic Lenses & Dispensing','D3 Contact Lenses']},
+  {id:'E',name:'Ocular Disease',wt:'10% · 100 items',ac:'#f472b6',topics:['E1 Orbit / Adnexa / Eyelids','E2 Anterior Segment','E3 Posterior Segment & Retina','E4 Ocular Emergencies']},
+  {id:'F',name:'Clinical + Specialties',wt:'15% · 150 items',ac:'#2dd4bf',topics:['F1 DPA Examination','F2 Pediatric','F3 Geriatric','F4 Neuro-Optometry','F5 Occupational','F6 Sports Vision','F7 Low Vision','F8 Prosthesis & Absorptive']},
+  {id:'G',name:'Pharmacology',wt:'10% · 100 items',ac:'#818cf8',topics:['G1 General Pharmacology','G2 Autonomic Drugs','G3 Diagnostic Agents (DPA)','G4 Therapeutic Agents','G5 Special Populations']},
+  {id:'H',name:'Jurisprudence + Ethics',wt:'10% · 100 items',ac:'#94a3b8',topics:['H1 RA 8050 Optometry Law','H2 Bioethics & Code of Ethics','H3 Practice Management & Labor']},
+];
+const KEY='waa-progress-v1';
+let state=load();
+
+function load(){
+  let s={};
+  try{s=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){s={}}
+  SUBJECTS.forEach(x=>{ if(!s[x.id]) s[x.id]={scores:[],weak:[]}; });
+  if(!s.A.scores.length){ s.A.scores=[55]; } // seed the known first attempt
+  return s;
+}
+function save(){ try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){} }
+function best(id){ const a=state[id].scores; return a.length?Math.max(...a):null; }
+
+function subjMsg(b){
+  if(b===null) return {t:'Not started. One exam begins it.',c:'m'};
+  if(b>=PASS) return {t:'Cleared. Board-ready.',c:'g'};
+  if(b>=65) return {t:'Almost there. A short re-drill clears it.',c:'w'};
+  if(b>=50) return {t:'Moving. Log your misses and close them.',c:'w'};
+  return {t:'Early. Every miss you log is a hole you can fix.',c:'m'};
+}
+function overviewMsg(n,improved){
+  if(improved) return 'That is movement. Well done.';
+  if(n===0) return 'Start anywhere. The first score is the hardest to log.';
+  if(n<3) return 'You are on the board. Keep the pace gentle and steady.';
+  if(n<6) return 'Over halfway to full readiness. This is real progress.';
+  if(n<8) return 'Almost every subject is board-ready. Nearly there.';
+  return 'All eight cleared. You are preboard-ready.';
+}
+
+function render(improved){
+  const grid=document.getElementById('grid'); grid.innerHTML='';
+  let ready=0;
+  SUBJECTS.forEach(x=>{
+    const b=best(x.id); if(b!==null&&b>=PASS) ready++;
+    const m=subjMsg(b);
+    const pct=b===null?0:Math.min(100,b);
+    const hist=state[x.id].scores;
+    const weakCount=state[x.id].weak.length;
+    const card=document.createElement('div');
+    card.className='card'+(b!==null&&b>=PASS?' cleared':'');
+    card.style.setProperty('--ac',x.ac);
+    card.innerHTML=`
+      <div class="chead"><span class="cname">${x.id} — ${x.name}</span><span class="cwt">${x.wt}</span></div>
+      <div class="best">${b===null?'—':b+'<small>%</small>'}<small> best</small></div>
+      <div class="status ${m.c}">${m.t}</div>
+      <div class="bar ${b!==null&&b>=PASS?'done':''}"><i style="width:${pct}%"></i><span class="tick"></span></div>
+      <div class="ticklab">75% line</div>
+      <div class="row">
+        <input type="number" min="0" max="100" placeholder="new score %" id="in-${x.id}">
+        <button class="add" onclick="addScore('${x.id}')">Log</button>
+        <button onclick="undo('${x.id}')" title="Remove last score">Undo</button>
+      </div>
+      <div class="hist">${hist.length?'History: '+hist.map((v,i)=>i===hist.indexOf(Math.max(...hist))?'<b>'+v+'</b>':v).join(' → ')+'%':'No scores yet.'}</div>
+      <details><summary>Topics to review <span class="cnt">${weakCount?'('+weakCount+' flagged)':''}</span></summary>
+        <div class="topics">${x.topics.map(t=>`<label><input type="checkbox" ${state[x.id].weak.includes(t)?'checked':''} onchange="toggleWeak('${x.id}',this.value,this.checked)" value="${t}">${t}</label>`).join('')}</div>
+      </details>`;
+    grid.appendChild(card);
+  });
+  document.getElementById('ovNum').textContent=ready;
+  document.getElementById('ovBar').style.width=(ready/8*100)+'%';
+  document.getElementById('ovMsg').textContent=overviewMsg(ready,improved);
+}
+function addScore(id){
+  const el=document.getElementById('in-'+id);
+  let v=parseInt(el.value,10);
+  if(isNaN(v)||v<0||v>100){el.focus();return;}
+  const prevBest=best(id);
+  state[id].scores.push(v); save();
+  render(prevBest!==null && v>prevBest);
+}
+function undo(id){ state[id].scores.pop(); save(); render(false); }
+function toggleWeak(id,topic,on){
+  const w=state[id].weak;
+  if(on){ if(!w.includes(topic)) w.push(topic); }
+  else { state[id].weak=w.filter(t=>t!==topic); }
+  save(); render(false);
+}
+document.getElementById('resetBtn').onclick=function(){
+  if(confirm('Clear all logged scores and flags on this device?')){
+    localStorage.removeItem(KEY); state=load(); render(false);
+  }
+};
+render(false);
+</script>
+</body>
+</html>
