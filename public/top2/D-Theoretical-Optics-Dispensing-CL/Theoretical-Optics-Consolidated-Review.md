@@ -1,6 +1,6 @@
 # WAA — Board Review 2026
 ## Theoretical Optics: Consolidated Review
-*Personal study notes | Sources: MCU 2024 (Dr. Viñola & Dr. De Mesa), Board Primer, MCU Quizzes*
+*Personal study notes | Sources: 2024 (Dr. Viñola & Dr. De Mesa), Board Primer, quiz bank*
 
 ---
 
@@ -131,8 +131,8 @@ Think of it this way: Newton saw light like a stream of bullets (straight lines,
 ### By Origin
 - **Natural sources** — cannot be controlled by humans (sun, stars, fire, bioluminescent organisms)
 - **Artificial sources** — controlled by humans
-  - *Incandescent* — light from heat (flames, arc lamps, glowing coals)
-  - *Luminescent* — light from excited electrons dropping to lower energy (fluorescent lamps, gas discharge, LEDs)
+ - *Incandescent* — light from heat (flames, arc lamps, glowing coals)
+ - *Luminescent* — light from excited electrons dropping to lower energy (fluorescent lamps, gas discharge, LEDs)
 
 ### By Size
 - **Point source** — smallest possible light source; produces only umbra
@@ -355,8 +355,8 @@ a / b = c / d
 
 **For an extended source (umbra and penumbra):**
 ```
-a₁ / b = x / (b + d)     ← for first partial triangle
-a₂ / b = y / (b + e)     ← where e = distance on other side
+a₁ / b = x / (b + d) ← for first partial triangle
+a₂ / b = y / (b + e) ← where e = distance on other side
 ```
 
 **Umbra diameter** = x − y
@@ -422,8 +422,8 @@ y = k × x
 - **y** = pinhole diameter
 - **x** = length of camera
 - **k** = constant:
-  - k = 0.008 when using inches
-  - k = 0.01275 when using centimeters
+ - k = 0.008 when using inches
+ - k = 0.01275 when using centimeters
 
 ### Ratio-Proportion Formula for Image Size
 ```
@@ -1228,7 +1228,7 @@ Write the two cylinder powers as sphere and cylinder:
 - Take either cylinder as the sphere
 - Subtract to find cylinder power, note axis of remaining one
 
-**Practice set from MCU 2024:**
+**Practice set from 2024:**
 - +3.75 C × 30 = +3.75 S − 3.75 C × 120 *(or equivalent)*
 - +1.75 C × 90 = +1.25 C × 180 form → transpose first then combine
 

@@ -33,11 +33,11 @@ Visual Information Processing (VIP) is what happens after the image reaches the 
 
 ```
 VIP (Visual Information Processing) — BROAD umbrella
-  ├── VPS (Visual Perceptual Skills) — NON-MOTOR subset
-  │     Assessment: TVPS-3 (points only; no drawing)
-  │
-  └── Visual-Motor Integration (VMI) — requires motor output
-        Assessment: Beery VMI (copies shapes)
+ ├── VPS (Visual Perceptual Skills) — NON-MOTOR subset
+ │ Assessment: TVPS-3 (points only; no drawing)
+ │
+ └── Visual-Motor Integration (VMI) — requires motor output
+ Assessment: Beery VMI (copies shapes)
 ```
 
 **The 7 VPS subtopics (assessed by TVPS-3):**
@@ -64,15 +64,15 @@ VIP (Visual Information Processing) — BROAD umbrella
 
 ```
 VIP deficits seen in:
-  ├── Amblyopia / strabismus (suppression disrupts higher visual processing)
-  ├── Learning difficulties (reading, spelling, spatial math)
-  ├── Traumatic brain injury (acquired VIP deficits)
-  └── Cerebral visual impairment (global VIP disruption)
+ ├── Amblyopia / strabismus (suppression disrupts higher visual processing)
+ ├── Learning difficulties (reading, spelling, spatial math)
+ ├── Traumatic brain injury (acquired VIP deficits)
+ └── Cerebral visual impairment (global VIP disruption)
 
 Management:
-  ├── Vision therapy targeting specific VPS subtopics
-  ├── Referral to OT for VMI-specific intervention
-  └── Educational psychologist for school accommodations
+ ├── Vision therapy targeting specific VPS subtopics
+ ├── Referral to OT for VMI-specific intervention
+ └── Educational psychologist for school accommodations
 ```
 
 ---
@@ -175,101 +175,101 @@ Write "VIP, VPS, VMI." 3 minutes. Write: VIP vs VPS definition, 7 VPS subtopics,
 
 ---
 
-## Extended Topics: Expanded VPS Subtypes from MCU Review
+## Extended Topics: Expanded VPS Subtypes from the review course Review
 
-*(From MCU VISUAL PERCEPTION AND SENSORY ORGANIZATION-P.O.pdf — Dr. Aldwin Lanorio OD — added June 6, 2026)*
+*(From the review course VISUAL PERCEPTION AND SENSORY ORGANIZATION-P.O.pdf — Dr. Aldwin Lanorio OD — added June 6, 2026)*
 
 ---
 
 ### Visual Spatial Skills — Three Subtypes
 
-The MCU review breaks "Visual Spatial Relationships" (one of the original 7 VPS subtopics) into three distinct cognitive skills. The board may test these as separate concepts.
+The the review course breaks "Visual Spatial Relationships" (one of the original 7 VPS subtopics) into three distinct cognitive skills. The board may test these as separate concepts.
 
 ```
 SPATIAL VISUALIZATION
-  Plain version: You can mentally pick up an object and rotate or flip it in your mind.
-  Definition: The ability to mentally manipulate, rotate, twist, or invert a visual image
-              without physically touching it.
-  Example failure: Cannot figure out how a folded piece of paper will look unfolded.
-  Clinical significance: Needed for spatial math, reading maps, understanding 3D diagrams.
+ Plain version: You can mentally pick up an object and rotate or flip it in your mind.
+ Definition: The ability to mentally manipulate, rotate, twist, or invert a visual image
+ without physically touching it.
+ Example failure: Cannot figure out how a folded piece of paper will look unfolded.
+ Clinical significance: Needed for spatial math, reading maps, understanding 3D diagrams.
 
 MENTAL ROTATION
-  Plain version: You see a shape at one angle and can figure out what it looks like 
-                 if it were rotated 90° or upside down.
-  Definition: The ability to mentally rotate a 2D or 3D object around any axis
-              and compare it to another orientation.
-  Example failure: Cannot match a rotated letter to its upright version
-                   (e.g., confuses "b", "d", "p", "q").
-  Clinical significance: Strongly related to reading reversals and letter confusion in children.
+ Plain version: You see a shape at one angle and can figure out what it looks like 
+ if it were rotated 90° or upside down.
+ Definition: The ability to mentally rotate a 2D or 3D object around any axis
+ and compare it to another orientation.
+ Example failure: Cannot match a rotated letter to its upright version
+ (e.g., confuses "b", "d", "p", "q").
+ Clinical significance: Strongly related to reading reversals and letter confusion in children.
 
 SPATIAL REASONING
-  Plain version: You use position information to solve problems — like following a map
-                 or understanding where you are relative to other objects.
-  Definition: The ability to understand, reason about, and mentally manipulate spatial
-              relationships between objects in an environment.
-  Example failure: Gets lost in familiar environments; cannot read a blueprint or map.
-  Clinical significance: Needed for navigation, understanding spatial layouts,
-                          sports and physical coordination.
+ Plain version: You use position information to solve problems — like following a map
+ or understanding where you are relative to other objects.
+ Definition: The ability to understand, reason about, and mentally manipulate spatial
+ relationships between objects in an environment.
+ Example failure: Gets lost in familiar environments; cannot read a blueprint or map.
+ Clinical significance: Needed for navigation, understanding spatial layouts,
+ sports and physical coordination.
 ```
 
 ---
 
 ### Visual Analysis
 
-This is listed as a separate VPS skill in the MCU review. It is related to figure-ground but focuses on breaking down complex visual information.
+This is listed as a separate VPS skill in the the review course. It is related to figure-ground but focuses on breaking down complex visual information.
 
 ```
 VISUAL ANALYSIS
-  Plain version: You can look at something complex and identify its individual parts,
-                 then understand how those parts relate to each other.
-  Definition: The ability to examine visual information closely, identify its components,
-              recognize patterns, and understand how those parts relate to one another.
-  Example failure: Cannot break a word into letter components;
-                   cannot identify which part of a diagram belongs to which section.
-  Clinical significance: Reading comprehension, diagram interpretation, visual reasoning tasks.
-  
-  Distinguish from Visual Discrimination:
-    Visual Discrimination = detect differences BETWEEN objects (this vs that)
-    Visual Analysis = break apart one complex visual INTO its components
+ Plain version: You can look at something complex and identify its individual parts,
+ then understand how those parts relate to each other.
+ Definition: The ability to examine visual information closely, identify its components,
+ recognize patterns, and understand how those parts relate to one another.
+ Example failure: Cannot break a word into letter components;
+ cannot identify which part of a diagram belongs to which section.
+ Clinical significance: Reading comprehension, diagram interpretation, visual reasoning tasks.
+ 
+ Distinguish from Visual Discrimination:
+ Visual Discrimination = detect differences BETWEEN objects (this vs that)
+ Visual Analysis = break apart one complex visual INTO its components
 ```
 
 ---
 
 ### The Visual Base and Motor Base — Foundation Skills
 
-The MCU review explicitly states VPS is built on two foundational bases:
+The the review course explicitly states VPS is built on two foundational bases:
 
 ```
 VISUAL BASE (prerequisite for VPS development)
-  Established through FUNCTIONAL VISUAL SKILLS:
-    - Convergence (sustained near binocular alignment)
-    - Eye tracking (smooth pursuit for reading)
-    - Saccades (accurate jumps between words/targets)
-    - Accommodation (clear focus at near)
-  
-  Clinical implication:
-    A child with convergence insufficiency will struggle with VPS tasks NOT because
-    their brain can't process — but because the visual input is unstable.
-    Fix the functional visual skills FIRST before attributing failure to VPS deficit.
+ Established through FUNCTIONAL VISUAL SKILLS:
+ - Convergence (sustained near binocular alignment)
+ - Eye tracking (smooth pursuit for reading)
+ - Saccades (accurate jumps between words/targets)
+ - Accommodation (clear focus at near)
+ 
+ Clinical implication:
+ A child with convergence insufficiency will struggle with VPS tasks NOT because
+ their brain can't process — but because the visual input is unstable.
+ Fix the functional visual skills FIRST before attributing failure to VPS deficit.
 
 MOTOR BASE (prerequisite for VMI development)
-  Established through:
-    - Shoulder girdle stability
-    - Fine motor skills (pencil grip, hand control)
-    - Gross motor skills (bilateral coordination)
-    - Eye-hand coordination
-  
-  Clinical implication:
-    Poor Beery VMI score may reflect motor deficit (shaky hands) rather than
-    visual processing deficit. Use TVPS-3 (non-motor) to separate the two.
+ Established through:
+ - Shoulder girdle stability
+ - Fine motor skills (pencil grip, hand control)
+ - Gross motor skills (bilateral coordination)
+ - Eye-hand coordination
+ 
+ Clinical implication:
+ Poor Beery VMI score may reflect motor deficit (shaky hands) rather than
+ visual processing deficit. Use TVPS-3 (non-motor) to separate the two.
 ```
 
 ---
 
-### Updated VPS Map (MCU Review Version)
+### Updated VPS Map (the review course Review Version)
 
 ```
-VPS SUBTOPICS (MCU expanded version)
+VPS SUBTOPICS (the review course expanded version)
 ├── Visual Discrimination — detect differences between objects
 ├── Visual Memory — recall visual information
 ├── Visual Form Constancy — recognize despite size/rotation/position change
@@ -277,9 +277,9 @@ VPS SUBTOPICS (MCU expanded version)
 ├── Visual Figure Ground — locate target in busy background
 ├── Visual Analysis — break complex image into parts
 └── Visual Spatial Skills
-      ├── Spatial Visualization — mentally manipulate/rotate objects
-      ├── Mental Rotation — rotate 2D/3D object in mind
-      └── Spatial Reasoning — understand spatial relationships for problem-solving
+ ├── Spatial Visualization — mentally manipulate/rotate objects
+ ├── Mental Rotation — rotate 2D/3D object in mind
+ └── Spatial Reasoning — understand spatial relationships for problem-solving
 
 VMI (separate from VPS):
 └── Visual Motor Integration — coordinate vision with hand movement (Beery VMI)
@@ -323,7 +323,7 @@ Read the options first, kill wrong values, then settle the flip. `cue → rule �
 - [x] `Gap-Lectures/06-Visual-Information-Processing.md` — VIP vs VPS distinction, 7 VPS subtopics, TVPS-3, DTVP-2, Beery VMI, clinical relevance, board pearls
 - [x] `TOS Review Structure/B/REVIEW GUIDE — B.md` — TOS 7.0 quick reference
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.7 scope reference
-- [x] `MCU%20VISUAL%20PERCEPTION%20AND%20SENSORY%20ORGANIZATION-P.O.pdf` (MCU Review 2026, Dr. Aldwin Lanorio OD) — Expanded VPS subtypes under Visual Spatial Skills (spatial visualization, mental rotation, spatial reasoning); Visual Analysis; Visual Motor Integration; visual base vs motor base distinction
+- [x] `the review course%20VISUAL%20PERCEPTION%20AND%20SENSORY%20ORGANIZATION-P.O.pdf` (the 2026 review, Dr. Aldwin Lanorio OD) — Expanded VPS subtypes under Visual Spatial Skills (spatial visualization, mental rotation, spatial reasoning); Visual Analysis; Visual Motor Integration; visual base vs motor base distinction
 
 ---
 

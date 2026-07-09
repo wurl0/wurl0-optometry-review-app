@@ -341,7 +341,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ## F — Clinical Optometry and Specialties (15% — 150 items)
 
 ### F1 — DPA Examination
-*Source: Not in 1994 syllabi — covered by RA 8050 and MCU reviewers*
+*Source: Not in 1994 syllabi — covered by RA 8050 and review notes*
 
 > DPA was not part of optometry scope under RA 1998 (1994 syllabi). RA 8050 (1995) expanded scope to include DPA. This entire subtopic comes from the pharmacology and clinical optometry reviewers, not the 1994 syllabi.
 
@@ -355,12 +355,12 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 | Theoretical Optometry 3.1 | BV anomalies in children (amblyopia, anisometropia, strabismus) |
 | Practical Optometry 1.1 | Case history adapted for pediatric patients |
 
-> The 1994 syllabi has no dedicated pediatric section. Board coverage comes from MCU Pediatric Optometry reviewer.
+> The 1994 syllabi has no dedicated pediatric section. Board coverage comes from the review course Pediatric Optometry reviewer.
 
 ---
 
 ### F3 — Geriatric Optometry
-*Source: Not in 1994 syllabi — covered by MCU Low Vision and geriatric reviewers*
+*Source: Not in 1994 syllabi — covered by low vision and geriatric reviewers*
 
 > Covered by gap lectures `13-AMD-Management.md` and `LOW-VISION-Anatomical-Changes.pdf`.
 
@@ -379,7 +379,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ---
 
 ### F5 — Occupational Optometry
-*Source: Ethics, Economics, Jurisprudence — Section 5.5; MCU Occupational Optometry reviewer*
+*Source: Ethics, Economics, Jurisprudence — Section 5.5; the review course Occupational Optometry reviewer*
 
 | Syllabi Section | Topic |
 |---|---|
@@ -390,7 +390,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ### F6 — Sports Vision
 *Source: Not in 1994 syllabi*
 
-> Sports Vision is a 2016 TOS addition. Use MCU Sports Vision reviewer exclusively.
+> Sports Vision is a 2016 TOS addition. Use sports vision reviewer exclusively.
 
 ---
 
@@ -404,7 +404,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ---
 
 ### F8 — Prosthesis and Absorptive Lenses
-*Source: Ophthalmic Optics — Section 5.0 (Absorptive lenses); MCU reviewers for prosthesis*
+*Source: Ophthalmic Optics — Section 5.0 (Absorptive lenses); review notes for prosthesis*
 
 | Syllabi Section | Topic |
 |---|---|
@@ -419,7 +419,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ### G1 — General Pharmacology Principles
 *Source: Not listed as separate section in 1994 syllabi — covered under Theoretical Optometry 2.3 (cycloplegics) and clinical sections*
 
-> The 1994 syllabi does not have a dedicated pharmacology section. Under RA 8050 (1995), pharmacology was added to scope. Use `General Pharmacology.docx` and MCU Pharma reviewers. Topics: ADME, pharmacokinetics, drug classification, receptor subtypes.
+> The 1994 syllabi does not have a dedicated pharmacology section. Under RA 8050 (1995), pharmacology was added to scope. Use `General Pharmacology.docx` and pharmacology reviewers. Topics: ADME, pharmacokinetics, drug classification, receptor subtypes.
 
 ---
 
@@ -441,7 +441,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 |---|---|
 | Phys. Optics 2.7 | Cycloplegics (role in accommodation measurement) |
 
-> Full DPA content (all 5 agents, concentrations, MOA, indications, contraindications, adverse effects) comes from MCU Ocular Pharmacology reviewer and gap lecture `08-DPA-in-Pregnancy.md`.
+> Full DPA content (all 5 agents, concentrations, MOA, indications, contraindications, adverse effects) comes from the review course Ocular Pharmacology reviewer and gap lecture `08-DPA-in-Pregnancy.md`.
 
 ---
 
@@ -453,7 +453,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ---
 
 ### G5 — Special Populations and Drug Effects
-*Source: Not in 1994 syllabi — covered by gap lectures and MCU reviewers*
+*Source: Not in 1994 syllabi — covered by gap lectures and review notes*
 
 > Pregnancy (FDA categories, DPA in pregnancy), systemic drug-ocular side effects. Use gap lecture `08-DPA-in-Pregnancy.md`.
 

@@ -294,5 +294,5 @@ Write the DR classification sequence from mild NPDR to PDR on a blank page, with
 
 ---
 
-*Source: AMD Gap Lecture 13 | Geriatric/Anatomical Changes (MCU 2024) | LV DR and HTR reviewers (MCU 2024)*
+*Source: AMD Gap Lecture 13 | Geriatric/Anatomical Changes (2024) | LV DR and HTR reviewers (2024)*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

@@ -54,54 +54,54 @@ Because a toric lens has different power in different meridians — if it rotate
 1827 — John Herschel: described glass CL to match eye shape
 1888 — A.E. Fick: first CL intended to correct vision
 1938 — Muller and Obrig: first plastic scleral CL (covers sclera + cornea)
-         Problem: hypoxia — lens covered entire cornea, no O2 passage
+ Problem: hypoxia — lens covered entire cornea, no O2 passage
 
 1940s — E. Kalt: glass corneal CL (smaller diameter)
-         Improvement: peripheral cornea exposed → more O2
+ Improvement: peripheral cornea exposed → more O2
 
 1947 — Kevin Touhy: FIRST PLASTIC CORNEAL CL (PMMA)
-         Material: PMMA (n=1.49); rigid, durable, better centration
-         Problem: still non-gas permeable; hypoxia remained
+ Material: PMMA (n=1.49); rigid, durable, better centration
+ Problem: still non-gas permeable; hypoxia remained
 
 1970s — Otto Wichterle: developed HEMA → first SOFT CL
-         Improvement: soft; comfortable; better centration; water carries O2
-         Problem: low Dk; conventional hydrogel dries out
+ Improvement: soft; comfortable; better centration; water carries O2
+ Problem: low Dk; conventional hydrogel dries out
 
 1971 — First soft CL received FDA approval
 
 1979 — First RGP lens developed
-         Improvement: rigid for better optics + gas permeable (O2 through polymer)
-         Problem: comfort; not for dry eyes
+ Improvement: rigid for better optics + gas permeable (O2 through polymer)
+ Problem: comfort; not for dry eyes
 
 1987 — First DISPOSABLE CL (1–2 month replacement)
-         Reason: hygiene; contaminated saline DIY solution caused infections
+ Reason: hygiene; contaminated saline DIY solution caused infections
 
 1995 — DAILY DISPOSABLE CL introduced
-         Reason: patient non-compliance with cleaning; frequent replacement = fewer infections
+ Reason: patient non-compliance with cleaning; frequent replacement = fewer infections
 
 1999–2002 — SILICONE HYDROGEL CL introduced
-         Material: silicone + HEMA hybrid
-         Breakthrough: O2 diffuses through silicone polymer, not water → no hypoxia
-         Problem (1st gen): high modulus (rubbery) → GPC, difficult removal
-         Current gen: softer surface coating → improved comfort
+ Material: silicone + HEMA hybrid
+ Breakthrough: O2 diffuses through silicone polymer, not water → no hypoxia
+ Problem (1st gen): high modulus (rubbery) → GPC, difficult removal
+ Current gen: softer surface coating → improved comfort
 ```
 
 **Oxygen pathway — why Dk/t matters:**
 
 ```
 ATMOSPHERE
-     ↓ O2
+ ↓ O2
 TEAR FILM (in front of lens)
-     ↓ O2 through lens (Dk/t)
+ ↓ O2 through lens (Dk/t)
 BACK SURFACE OF LENS
-     ↓ O2
+ ↓ O2
 POST-LENS TEAR FILM
-     ↓ O2
+ ↓ O2
 CORNEAL EPITHELIUM
 
 Low Dk/t → insufficient O2 → corneal hypoxia:
-  Corneal edema → microcysts → neovascularization → CL intolerance
-  
+ Corneal edema → microcysts → neovascularization → CL intolerance
+ 
 RGP solution: O2 goes through polymer (high Dk) + tear pump (blinking)
 Silicone hydrogel solution: O2 diffuses directly through silicone
 ```
@@ -110,90 +110,90 @@ Silicone hydrogel solution: O2 diffuses directly through silicone
 
 ```
 BASE CURVE (BC):
-  Relationship to K (keratometry reading):
-  SCL: BC typically flatter than K ("flatter than K" by ~0.8-1.0 mm for SCL)
-  RGP: BC approximates K (fit "on K" or slightly flatter)
+ Relationship to K (keratometry reading):
+ SCL: BC typically flatter than K ("flatter than K" by ~0.8-1.0 mm for SCL)
+ RGP: BC approximates K (fit "on K" or slightly flatter)
 
-  Steep fit: lens moves little → restricts tear exchange → hypoxia, edema
-  Flat fit: lens moves too much → mechanical trauma, poor vision
+ Steep fit: lens moves little → restricts tear exchange → hypoxia, edema
+ Flat fit: lens moves too much → mechanical trauma, poor vision
 
 DIAMETER:
-  SCL: 13.5–15 mm (covers limbus + some sclera)
-  RGP: 8–10 mm (corneal diameter only; smaller)
+ SCL: 13.5–15 mm (covers limbus + some sclera)
+ RGP: 8–10 mm (corneal diameter only; smaller)
 
 POWER:
-  Vertex distance correction for prescriptions > ±4.00 D:
-    D_CL = D_Spec / (1 − d × D_Spec)    where d = vertex distance in meters (usually 0.012 m)
-    High plus: CL power LESS than spectacle; High minus: CL power MORE minus than spectacle
+ Vertex distance correction for prescriptions > ±4.00 D:
+ D_CL = D_Spec / (1 − d × D_Spec) where d = vertex distance in meters (usually 0.012 m)
+ High plus: CL power LESS than spectacle; High minus: CL power MORE minus than spectacle
 
-  Spherical equivalent rule (when astigmatism < 1.00 D):
-    D_CL = sphere + ½ cylinder  (the 4:1 rule)
-    Example: −3.00 −0.75 × 180 → CL = −3.00 + (−0.375) = −3.375 ≈ −3.25 D
+ Spherical equivalent rule (when astigmatism < 1.00 D):
+ D_CL = sphere + ½ cylinder (the 4:1 rule)
+ Example: −3.00 −0.75 × 180 → CL = −3.00 + (−0.375) = −3.375 ≈ −3.25 D
 
 CORNEAL DIMENSIONS (for CL fitting reference):
-  HVID (horizontal visible iris diameter): 11.7 mm average
-  VVID (vertical visible iris diameter): 10.6 mm average
-  SCL diameter is typically HVID + 2 mm = ~13.7 mm
+ HVID (horizontal visible iris diameter): 11.7 mm average
+ VVID (vertical visible iris diameter): 10.6 mm average
+ SCL diameter is typically HVID + 2 mm = ~13.7 mm
 
 BOZR SELECTION (back optic zone radius):
-  Empirical method: BOZR = flattest K + 0.3 to 0.9 mm
-  Rule of thumb for SCL: ΔTD 0.5 mm = ΔBOZR 0.3 mm
-    (If you increase lens diameter by 0.5 mm → steepen BOZR by 0.3 mm to maintain same fit)
-  RGP: BOZR ±0.10 mm of flattest corneal radius
+ Empirical method: BOZR = flattest K + 0.3 to 0.9 mm
+ Rule of thumb for SCL: ΔTD 0.5 mm = ΔBOZR 0.3 mm
+ (If you increase lens diameter by 0.5 mm → steepen BOZR by 0.3 mm to maintain same fit)
+ RGP: BOZR ±0.10 mm of flattest corneal radius
 ```
 
 **Toric CL stabilization methods:**
 
 ```
 1. PRISM BALLAST (most common)
-   1–1.5Δ base-down prism added inferiorly
-   Gravity + lid interaction keeps inferior edge down
-   Disadvantage: reduced O2 at thicker inferior zone; lid discomfort
+ 1–1.5Δ base-down prism added inferiorly
+ Gravity + lid interaction keeps inferior edge down
+ Disadvantage: reduced O2 at thicker inferior zone; lid discomfort
 
 2. TRUNCATION
-   Inferior edge cut flat to align with lower lid margin
-   Disadvantage: discomfort; not always successful
+ Inferior edge cut flat to align with lower lid margin
+ Disadvantage: discomfort; not always successful
 
 3. PERI-BALLAST
-   Thickness difference creates prism-base-down effect (minus carrier)
-   Thinner superior, thicker inferior
-   Similar comfort issues to prism ballast but thinner overall
+ Thickness difference creates prism-base-down effect (minus carrier)
+ Thinner superior, thicker inferior
+ Similar comfort issues to prism ballast but thinner overall
 
 4. DOUBLE SLAB-OFF
-   Thin zones superiorly AND inferiorly
-   Lid forces maintain orientation
-   Overall thinner lens → better O2 transmissibility
+ Thin zones superiorly AND inferiorly
+ Lid forces maintain orientation
+ Overall thinner lens → better O2 transmissibility
 
 5. REVERSE PRISM
-   Opposite of prism ballast — used in specific designs
+ Opposite of prism ballast — used in specific designs
 ```
 
 **Presbyopia correction with CL:**
 
 ```
 1. MONOVISION
-   Dominant eye: distance correction
-   Non-dominant eye: near correction (total reading add added to sphere)
-   Advantage: simple; flexible
-   Disadvantage: disrupts stereopsis; not ideal for high add
-   
+ Dominant eye: distance correction
+ Non-dominant eye: near correction (total reading add added to sphere)
+ Advantage: simple; flexible
+ Disadvantage: disrupts stereopsis; not ideal for high add
+ 
 2. ALTERNATING (TRANSLATING) BIFOCAL
-   Distance zone: upper portion
-   Near zone: lower portion (lid pushes lens up during downgaze)
-   Works like spectacle bifocal
-   Advantage: high visual quality
-   Disadvantage: needs significant lid-lens interaction; comfort issues
+ Distance zone: upper portion
+ Near zone: lower portion (lid pushes lens up during downgaze)
+ Works like spectacle bifocal
+ Advantage: high visual quality
+ Disadvantage: needs significant lid-lens interaction; comfort issues
 
 3. SIMULTANEOUS VISION BIFOCAL/PROGRESSIVE
-   Both distance and near zones over pupil simultaneously
-   Brain selects appropriate focus
-   Center-distance: distance at center, near at periphery
-   Center-near: near at center, distance at periphery
-   Modified monovision: center-distance dominant eye + center-near non-dominant
+ Both distance and near zones over pupil simultaneously
+ Brain selects appropriate focus
+ Center-distance: distance at center, near at periphery
+ Center-near: near at center, distance at periphery
+ Modified monovision: center-distance dominant eye + center-near non-dominant
 
 4. READING GLASSES OVER CLs
-   Simplest; high-quality distance AND near correction
-   Patient must carry glasses
+ Simplest; high-quality distance AND near correction
+ Patient must carry glasses
 ```
 
 ---
@@ -204,35 +204,35 @@ BOZR SELECTION (back optic zone radius):
 
 ```
 BY MATERIAL:
-  Hard:
-    Non-gas permeable (PMMA) — obsolete for wear; still used as RGP trial lens
-    Gas permeable (RGP) — rigid + O2 permeable through polymer
-  Soft:
-    Conventional — 6 months to 1 year replacement
-    Disposable:
-      Monthly (1–2 months)
-      Daily (single use — most hygienic)
+ Hard:
+ Non-gas permeable (PMMA) — obsolete for wear; still used as RGP trial lens
+ Gas permeable (RGP) — rigid + O2 permeable through polymer
+ Soft:
+ Conventional — 6 months to 1 year replacement
+ Disposable:
+ Monthly (1–2 months)
+ Daily (single use — most hygienic)
 
 BY MODE OF WEAR:
-  Daily wear — removed every night
-  Extended wear:
-    Continuous (silicone hydrogel) — up to 2 weeks without removal
-    Flexible wear — up to 1 month (not common)
+ Daily wear — removed every night
+ Extended wear:
+ Continuous (silicone hydrogel) — up to 2 weeks without removal
+ Flexible wear — up to 1 month (not common)
 
 BY DESIGN:
-  Monocurve — single radius; obsolete
-  Bicurve — central + peripheral curve (most common SCL)
-  Tricurve — central + mid-periphery + periphery (ortho-K; irregular cornea)
-  Aspheric — steeper center, flatter periphery
+ Monocurve — single radius; obsolete
+ Bicurve — central + peripheral curve (most common SCL)
+ Tricurve — central + mid-periphery + periphery (ortho-K; irregular cornea)
+ Aspheric — steeper center, flatter periphery
 
 BY INDICATION:
-  Spherical CL — regular myopia/hyperopia
-  Toric CL — astigmatism (corneal or residual)
-  Multifocal/bifocal — presbyopia
-  Ortho-K — temporary myopia correction (overnight wear)
-  Scleral — irregular cornea (keratoconus, post-surgical)
-  Bandage CL — corneal erosion healing; therapeutic
-  Prosthetic — cosmetic; disfigurement masking
+ Spherical CL — regular myopia/hyperopia
+ Toric CL — astigmatism (corneal or residual)
+ Multifocal/bifocal — presbyopia
+ Ortho-K — temporary myopia correction (overnight wear)
+ Scleral — irregular cornea (keratoconus, post-surgical)
+ Bandage CL — corneal erosion healing; therapeutic
+ Prosthetic — cosmetic; disfigurement masking
 ```
 
 **CL solutions and care:**
@@ -242,68 +242,68 @@ SOLUTION TYPES:
 1. Saline solution — rinse/storage; NOT a disinfectant
 2. Surfactant cleaner — removes deposits daily; use before disinfection
 3. Disinfecting solution — kills microorganisms
-   a. Chemical (preserved): PHMB, polyquaternium, benzalkonium chloride (BAK)
-   b. Hydrogen peroxide (3% H2O2): most effective; must neutralize before insertion
+ a. Chemical (preserved): PHMB, polyquaternium, benzalkonium chloride (BAK)
+ b. Hydrogen peroxide (3% H2O2): most effective; must neutralize before insertion
 4. Multipurpose solution (MPS) — combines cleaning, rinsing, disinfection, storage
 5. Enzymatic cleaner — removes protein deposits (weekly)
 6. Rewetting drops — lubricates during wear
 
 PRESERVATIVES:
-  BAK (benzalkonium chloride) — TOXIC to corneal epithelium; do NOT use with SCL
-  EDTA — chelating agent; synergistic with antimicrobials
-  Sorbic acid — low toxicity; commonly used in soft CL solutions
-  Thimerosal — mercury-based; largely discontinued (toxicity, allergy)
-  PHMB — polyhexamethylene biguanide; well-tolerated
+ BAK (benzalkonium chloride) — TOXIC to corneal epithelium; do NOT use with SCL
+ EDTA — chelating agent; synergistic with antimicrobials
+ Sorbic acid — low toxicity; commonly used in soft CL solutions
+ Thimerosal — mercury-based; largely discontinued (toxicity, allergy)
+ PHMB — polyhexamethylene biguanide; well-tolerated
 
 SOLUTION pH:
-  Tear film pH: 7.4
-  CL solution acceptable range: 6.5–8.0
-  Outside range → corneal burn (alkaline burns more dangerous)
+ Tear film pH: 7.4
+ CL solution acceptable range: 6.5–8.0
+ Outside range → corneal burn (alkaline burns more dangerous)
 ```
 
 **CL complications:**
 
 ```
 MECHANICAL:
-  Epithelial abrasion (flat fit, poor edge quality)
-  3 and 9 o'clock staining (RGP: peripheral desiccation)
-  Superior epithelial arcuate lesion (SEAL) — tightly fitted SCL
+ Epithelial abrasion (flat fit, poor edge quality)
+ 3 and 9 o'clock staining (RGP: peripheral desiccation)
+ Superior epithelial arcuate lesion (SEAL) — tightly fitted SCL
 
 HYPOXIC:
-  Corneal edema (acute: transient blur; chronic: microcysts, neovascularization)
-  Limbal hyperemia (early sign of hypoxic stress)
-  Corneal neovascularization (late sign — lens intolerance; stop wear immediately)
+ Corneal edema (acute: transient blur; chronic: microcysts, neovascularization)
+ Limbal hyperemia (early sign of hypoxic stress)
+ Corneal neovascularization (late sign — lens intolerance; stop wear immediately)
 
 IMMUNE/ALLERGIC:
-  GPC/CLPC (giant papillary conjunctivitis) — cobblestone upper tarsal conjunctiva
-    Cause: mechanical (deposits on lens) + type IV hypersensitivity
-    Treatment: reduce wear, dispose and replace, antihistamine drops
+ GPC/CLPC (giant papillary conjunctivitis) — cobblestone upper tarsal conjunctiva
+ Cause: mechanical (deposits on lens) + type IV hypersensitivity
+ Treatment: reduce wear, dispose and replace, antihistamine drops
 
 INFECTIOUS:
-  Microbial keratitis — most serious CL complication
-    Organisms: Pseudomonas aeruginosa (most common bacterial), Acanthamoeba (primary cause in extended wear — associated with tap water/swimming)
-    Risk: extended wear, poor hygiene, swimming in CLs
-    Emergency: refer immediately; culture and topical antibiotics
+ Microbial keratitis — most serious CL complication
+ Organisms: Pseudomonas aeruginosa (most common bacterial), Acanthamoeba (primary cause in extended wear — associated with tap water/swimming)
+ Risk: extended wear, poor hygiene, swimming in CLs
+ Emergency: refer immediately; culture and topical antibiotics
 
 ENDOTHELIAL / METABOLIC:
-  Polymegethism — variable endothelial cell size and shape from chronic hypoxia
-    Significance: marker of long-term corneal stress; not immediately vision-threatening but irreversible
-  Blebs — dark areas in specular reflection, appearing 20–30 min post-insertion; reduce over weeks
-  Corneal edema by wear modality:
-    Daily wear (conventional hydrogel): 2–7%
-    Conventional extended wear: 7–14%
-    SiHy extended wear: 2–4% (comparable to daily wear)
-    >8% is excessive for extended wear
+ Polymegethism — variable endothelial cell size and shape from chronic hypoxia
+ Significance: marker of long-term corneal stress; not immediately vision-threatening but irreversible
+ Blebs — dark areas in specular reflection, appearing 20–30 min post-insertion; reduce over weeks
+ Corneal edema by wear modality:
+ Daily wear (conventional hydrogel): 2–7%
+ Conventional extended wear: 7–14%
+ SiHy extended wear: 2–4% (comparable to daily wear)
+ >8% is excessive for extended wear
 
 ORTHO-K LIMITS:
-  Maximum myopia correction: −6.00 D
-  Maximum astigmatism correction: −2.00 D
-  Indication: myopia progression >0.50 D/year; career requiring unaided acuity
+ Maximum myopia correction: −6.00 D
+ Maximum astigmatism correction: −2.00 D
+ Indication: myopia progression >0.50 D/year; career requiring unaided acuity
 
 DEPOSIT-RELATED:
-  Protein deposits (jelly bumps on hydrogel)
-  Lipid deposits (in meibomian gland dysfunction)
-  Calcium deposits (in compromised corneas)
+ Protein deposits (jelly bumps on hydrogel)
+ Lipid deposits (in meibomian gland dysfunction)
+ Calcium deposits (in compromised corneas)
 ```
 
 ---
@@ -395,20 +395,20 @@ Look under the upper lid with fluorescein; cobblestone papillae = stop CL wear +
 CL MATERIAL EVOLUTION (oxygen problem → solution)
 ──────────────────────────────────────────────────
 1947 PMMA: No O2 → hypoxia
-     ↓
+ ↓
 1979 RGP: O2 through polymer + tear pump
-     ↓
+ ↓
 1970s Hydrogel (HEMA): O2 through water (low Dk)
-     ↓
+ ↓
 2002 Silicone hydrogel: O2 through silicone polymer (high Dk)
 
 TORIC SCL ORIENTATION (right eye, patient view)
 ────────────────────────────────────────────────
-         12
-         |
-    [TORIC LENS]
-   Thicker inferior = prism ballast
-         6
+ 12
+ |
+ [TORIC LENS]
+ Thicker inferior = prism ballast
+ 6
 (Inferior stays down by gravity + lid interaction)
 Reference marks at 3 and 9 o'clock (or 5,6,7)
 Mark position ≠ axis position
@@ -581,7 +581,7 @@ Explain to a new CL wearer why they should never sleep in conventional hydrogel 
 
 ## Extended Topics: CL Optics, Vertex Distance Conversion, Accommodation, Magnification, Corneal Topography, Special Fitting
 
-*(From Contact-Lens-MCU-2024.pdf — added June 6, 2026)*
+*(From Contact-Lens-2024.pdf — added June 6, 2026)*
 
 ---
 
@@ -591,19 +591,19 @@ Explain to a new CL wearer why they should never sleep in conventional hydrogel 
 
 ```
 CL SURFACE POWER:
-  D = (n − 1) / r    (r in meters; n = CL material index)
+ D = (n − 1) / r (r in meters; n = CL material index)
 
 NOMINAL POWER:
-  Dn = D₁ + D₂
+ Dn = D₁ + D₂
 
 EQUIVALENT POWER:
-  Deq = D₁ + D₂ − (t/n)(D₁ × D₂)
+ Deq = D₁ + D₂ − (t/n)(D₁ × D₂)
 
 EFFECTIVE POWER (Back Vertex Power):
-  BVP = Dn + (t/n)(D₁)²
+ BVP = Dn + (t/n)(D₁)²
 
 NEUTRALIZING POWER (Front Vertex Power):
-  FVP = Dn + (t/n)(D₂)²
+ FVP = Dn + (t/n)(D₂)²
 ```
 
 ---
@@ -616,33 +616,33 @@ NEUTRALIZING POWER (Front Vertex Power):
 
 ```
 FORMULA:
-  D_CL = D_Spec / (1 − d × D_Spec)
+ D_CL = D_Spec / (1 − d × D_Spec)
 
-  Where:
-    D_Spec = spectacle refraction power (diopters)
-    d = vertex distance in METERS (typically 0.012–0.014 m)
+ Where:
+ D_Spec = spectacle refraction power (diopters)
+ d = vertex distance in METERS (typically 0.012–0.014 m)
 
 WHEN VERTEX DISTANCE MATTERS:
-  ± 4.00D and below: vertex distance effect is < 0.25D → CL power ≈ spectacle power
-  ± 4.00D and above: vertex distance correction is clinically significant → always calculate
+ ± 4.00D and below: vertex distance effect is < 0.25D → CL power ≈ spectacle power
+ ± 4.00D and above: vertex distance correction is clinically significant → always calculate
 
 DIRECTION RULE:
-  Plus lens → CL power is LESS than spectacle power (minus vertex distance = shorter path)
-  Minus lens → CL power is MORE minus than spectacle power
+ Plus lens → CL power is LESS than spectacle power (minus vertex distance = shorter path)
+ Minus lens → CL power is MORE minus than spectacle power
 
 SPHERICAL EQUIVALENT RULE ("4:1 Rule"):
-  If residual astigmatism (from spectacle Rx) is < 1.00D:
-    D_CL = Spherical Equivalent = Sph + ½ Cyl
-  (Use a spherical CL; the 0.75D or less of astigmatism is tolerable)
+ If residual astigmatism (from spectacle Rx) is < 1.00D:
+ D_CL = Spherical Equivalent = Sph + ½ Cyl
+ (Use a spherical CL; the 0.75D or less of astigmatism is tolerable)
 ```
 
 **Sample:**
 Spectacle Rx: −4.75D at vertex distance 13 mm
 ```
 D_CL = −4.75 / (1 − 0.013 × (−4.75))
-     = −4.75 / (1 + 0.062)
-     = −4.75 / 1.062
-     D_CL = −4.47 D → round to −4.50D
+ = −4.75 / (1 + 0.062)
+ = −4.75 / 1.062
+ D_CL = −4.47 D → round to −4.50D
 ```
 
 ---
@@ -655,24 +655,24 @@ D_CL = −4.75 / (1 − 0.013 × (−4.75))
 
 ```
 FORMULA:
-  Residual Astigmatism = Total (spectacle) astigmatism − Corneal astigmatism
+ Residual Astigmatism = Total (spectacle) astigmatism − Corneal astigmatism
 
-  Total astigmatism = from spectacle refraction
-  Corneal astigmatism = from keratometry (K readings)
+ Total astigmatism = from spectacle refraction
+ Corneal astigmatism = from keratometry (K readings)
 
 WHEN TORIC CL IS NEEDED:
-  If residual astigmatism > 0.75D → prescribe toric CL
-  If residual astigmatism ≤ 0.75D → spherical RGP adequate (tear lens handles the rest)
+ If residual astigmatism > 0.75D → prescribe toric CL
+ If residual astigmatism ≤ 0.75D → spherical RGP adequate (tear lens handles the rest)
 
 TYPES OF RESIDUAL ASTIGMATISM:
-  Corneal astigmatism (keratometric): corrected by tear lens with RGP
-  Lenticular (internal) astigmatism: NOT corrected by RGP; requires toric CL
-  Residual = mostly lenticular astigmatism
+ Corneal astigmatism (keratometric): corrected by tear lens with RGP
+ Lenticular (internal) astigmatism: NOT corrected by RGP; requires toric CL
+ Residual = mostly lenticular astigmatism
 
 SOFT CL AND ASTIGMATISM:
-  SCL drapes over the cornea → does NOT form a tear lens
-  SCL only corrects ≤ 0.75D of astigmatism with spherical lens
-  Any astigmatism with SCL must be corrected by a toric SCL
+ SCL drapes over the cornea → does NOT form a tear lens
+ SCL only corrects ≤ 0.75D of astigmatism with spherical lens
+ Any astigmatism with SCL must be corrected by a toric SCL
 ```
 
 ---
@@ -683,20 +683,20 @@ SOFT CL AND ASTIGMATISM:
 
 ```
 MYOPE:
-  With spectacles (-):  Accommodation demand > with CLs
-    (minus spectacles reduce vergence demand at near → eye accommodates less)
-  With CLs: accommodation demand INCREASES relative to spectacles
-    → Myope switching from specs to CLs may suddenly need reading add sooner
+ With spectacles (-): Accommodation demand > with CLs
+ (minus spectacles reduce vergence demand at near → eye accommodates less)
+ With CLs: accommodation demand INCREASES relative to spectacles
+ → Myope switching from specs to CLs may suddenly need reading add sooner
 
 HYPEROPE:
-  With spectacles (+):  Accommodation demand < with CLs
-    (plus spectacles do some of the accommodation work)
-  With CLs: accommodation demand DECREASES relative to spectacles
-    → Hyperope switching from specs to CLs may not need reading add as soon
+ With spectacles (+): Accommodation demand < with CLs
+ (plus spectacles do some of the accommodation work)
+ With CLs: accommodation demand DECREASES relative to spectacles
+ → Hyperope switching from specs to CLs may not need reading add as soon
 
-CLINICAL RULE (Dr. Viñola / MCU):
-  If a MYOPE is switched from spectacles to CLs → may precipitate need for near correction
-  If a HYPEROPE is switched from spectacles to CLs → onset of near correction may be postponed
+CLINICAL RULE (Dr. Viñola /):
+ If a MYOPE is switched from spectacles to CLs → may precipitate need for near correction
+ If a HYPEROPE is switched from spectacles to CLs → onset of near correction may be postponed
 ```
 
 ---
@@ -707,29 +707,29 @@ CLINICAL RULE (Dr. Viñola / MCU):
 
 ```
 CL MAGNIFICATION (CLM):
-  CLM = 1 − d × D_Spec
+ CLM = 1 − d × D_Spec
 
-  Where:
-    d = spectacle vertex distance (meters)
-    D_Spec = spectacle power
+ Where:
+ d = spectacle vertex distance (meters)
+ D_Spec = spectacle power
 
-  CLM < 1 for plus → CL gives LESS magnification than spectacles
-  CLM > 1 for minus → CL gives MORE magnification than spectacles
-    (i.e., less minification = bigger image with CL vs minus specs)
+ CLM < 1 for plus → CL gives LESS magnification than spectacles
+ CLM > 1 for minus → CL gives MORE magnification than spectacles
+ (i.e., less minification = bigger image with CL vs minus specs)
 
 RELATIVE SPECTACLE MAGNIFICATION (RSM):
-  Refractive ametropia:
-    With specs:  RSM = 1 + d × F_Spec
-    With CLs:    RSM ≈ 1 (d ≈ 0 at cornea)
+ Refractive ametropia:
+ With specs: RSM = 1 + d × F_Spec
+ With CLs: RSM ≈ 1 (d ≈ 0 at cornea)
 
-  Axial ametropia:
-    With specs:  RSM ≈ 1
-    With CLs:    RSM = 1 − (f_eye − 1.55) × F_Spec
+ Axial ametropia:
+ With specs: RSM ≈ 1
+ With CLs: RSM = 1 − (f_eye − 1.55) × F_Spec
 
 APPLICATION:
-  — Aphakia is REFRACTIVE ametropia → prefer CLs (reduce magnification to ~1)
-  — Axial myopia → prefer spectacles (RSM already ~1 with specs)
-  — High corneal astigmatism is REFRACTIVE → spectacles cause meridional aniseikonia → prefer CLs
+ — Aphakia is REFRACTIVE ametropia → prefer CLs (reduce magnification to ~1)
+ — Axial myopia → prefer spectacles (RSM already ~1 with specs)
+ — High corneal astigmatism is REFRACTIVE → spectacles cause meridional aniseikonia → prefer CLs
 ```
 
 ---
@@ -740,28 +740,28 @@ APPLICATION:
 
 ```
 CORNEAL MEASUREMENTS:
-  HVID (horizontal visible iris diameter) = 10–14 mm (avg 11.7 mm)
-    → determines overall lens diameter selection
-  VVID (vertical VID) = avg 10.6 mm (0.5–1.0 mm less than HVID)
-  Corneal thickness: 0.50–0.65 mm (Gullstrand = 0.50 mm)
+ HVID (horizontal visible iris diameter) = 10–14 mm (avg 11.7 mm)
+ → determines overall lens diameter selection
+ VVID (vertical VID) = avg 10.6 mm (0.5–1.0 mm less than HVID)
+ Corneal thickness: 0.50–0.65 mm (Gullstrand = 0.50 mm)
 
 CORNEAL ASPHERICITY:
-  Normal cornea = PROLATE (steepest at apex; flattens toward periphery)
-  Eccentricity (e) describes how much the cornea deviates from a sphere
-    e = 0 → perfect sphere
-    e = 0.4–0.6 → typical normal cornea
-  Post-LASIK or post-orthoK = OBLATE (flattest at apex; steeper periphery)
+ Normal cornea = PROLATE (steepest at apex; flattens toward periphery)
+ Eccentricity (e) describes how much the cornea deviates from a sphere
+ e = 0 → perfect sphere
+ e = 0.4–0.6 → typical normal cornea
+ Post-LASIK or post-orthoK = OBLATE (flattest at apex; steeper periphery)
 
 TOPOGRAPHY INSTRUMENTS:
-  Photokeratoscope / Placido disc — reflects rings off corneal surface; maps curvature
-  Keratometer — measures central 3 mm only (2 points per meridian)
-  Computer-assisted topography (CAT) — full corneal map
+ Photokeratoscope / Placido disc — reflects rings off corneal surface; maps curvature
+ Keratometer — measures central 3 mm only (2 points per meridian)
+ Computer-assisted topography (CAT) — full corneal map
 
 TOPOGRAPHY IN CL FITTING:
-  — Identify K readings for base curve selection
-  — Detect irregular corneas (keratoconus)
-  — Monitor ortho-K treatment zone
-  — Check post-refractive surgery cornea before fitting
+ — Identify K readings for base curve selection
+ — Detect irregular corneas (keratoconus)
+ — Monitor ortho-K treatment zone
+ — Check post-refractive surgery cornea before fitting
 ```
 
 ---
@@ -774,19 +774,19 @@ TOPOGRAPHY IN CL FITTING:
 
 ```
 KERATOCONUS CL FITTING:
-  Mild KC: RGP lens fit slightly steeper than K ("apical clearance" fitting)
-  Advanced KC: Scleral lens (vaults entire cornea; rests on sclera)
-  
-  RGP fitting in KC:
-    Target: "three-point touch" or "apical clearance" + peripheral alignment
-    BOZR ≈ 1 mm flatter than average K (for scleral)
-    Apical bearing fit: RGP contacts KC apex → often causes corneal scarring → avoid
+ Mild KC: RGP lens fit slightly steeper than K ("apical clearance" fitting)
+ Advanced KC: Scleral lens (vaults entire cornea; rests on sclera)
+ 
+ RGP fitting in KC:
+ Target: "three-point touch" or "apical clearance" + peripheral alignment
+ BOZR ≈ 1 mm flatter than average K (for scleral)
+ Apical bearing fit: RGP contacts KC apex → often causes corneal scarring → avoid
 
-  SIGNS OF KERATOCONUS (for CL fitting):
-    Irregular mires on keratometry
-    Oil droplet reflex on retinoscopy
-    Scissor reflex in retinoscopy
-    Fleischer ring, Vogt's striae
+ SIGNS OF KERATOCONUS (for CL fitting):
+ Irregular mires on keratometry
+ Oil droplet reflex on retinoscopy
+ Scissor reflex in retinoscopy
+ Fleischer ring, Vogt's striae
 ```
 
 #### Aphakia — Contact Lens Fitting
@@ -795,18 +795,18 @@ KERATOCONUS CL FITTING:
 
 ```
 APHAKIA + CL:
-  Power needed: typically +10.00 to +14.00D (depends on axial length)
-  Aphakia is REFRACTIVE ametropia → CLs preferred over spectacles
-    (spectacles cause ~30% image magnification + limited visual field)
-  
-  SCL for aphakia: available in high plus powers (extended wear SiHy preferred)
-  RGP for aphakia: used in pediatric aphakia (after congenital cataract surgery)
-    — RGP for infant aphakia: modified monocurve or bicurve; BOZR to match infant K
+ Power needed: typically +10.00 to +14.00D (depends on axial length)
+ Aphakia is REFRACTIVE ametropia → CLs preferred over spectacles
+ (spectacles cause ~30% image magnification + limited visual field)
+ 
+ SCL for aphakia: available in high plus powers (extended wear SiHy preferred)
+ RGP for aphakia: used in pediatric aphakia (after congenital cataract surgery)
+ — RGP for infant aphakia: modified monocurve or bicurve; BOZR to match infant K
 
-  Benefit of CL over specs in aphakia:
-    — Reduces magnification from ~30% (specs) to ~10% (CL)
-    — Reduces ring scotoma (peripheral vision loss with high plus specs)
-    — Improves binocularity in unilateral aphakia
+ Benefit of CL over specs in aphakia:
+ — Reduces magnification from ~30% (specs) to ~10% (CL)
+ — Reduces ring scotoma (peripheral vision loss with high plus specs)
+ — Improves binocularity in unilateral aphakia
 ```
 
 #### Presbyopia CL Options
@@ -817,28 +817,28 @@ APHAKIA + CL:
 PRESBYOPIA CL OPTIONS:
 
 1. MONOVISION:
-   Dominant eye → distance CL
-   Non-dominant eye → near CL
-   Patient adapts by suppressing the blurred eye's input at each distance
-   Limitation: reduces stereopsis
+ Dominant eye → distance CL
+ Non-dominant eye → near CL
+ Patient adapts by suppressing the blurred eye's input at each distance
+ Limitation: reduces stereopsis
 
 2. ALTERNATING VISION BIFOCAL CL:
-   Distance power in upper lens; near power in lower lens
-   Lens must translate (shift down) when patient looks down to read
-   Works like a bifocal spectacle
-   Best with: RGP lenses (mass and lid interaction allow translation)
+ Distance power in upper lens; near power in lower lens
+ Lens must translate (shift down) when patient looks down to read
+ Works like a bifocal spectacle
+ Best with: RGP lenses (mass and lid interaction allow translation)
 
 3. SIMULTANEOUS VISION BIFOCAL CL:
-   Distance and near power in concentric zones (center-near or center-distance)
-   Both images on retina simultaneously → brain uses the relevant one
-   Limitation: reduced contrast, ghost images
-   Types: 
-     Center-distance design — distance in center; near in ring zone
-     Center-near design — near in center; distance in surrounding zone
+ Distance and near power in concentric zones (center-near or center-distance)
+ Both images on retina simultaneously → brain uses the relevant one
+ Limitation: reduced contrast, ghost images
+ Types: 
+ Center-distance design — distance in center; near in ring zone
+ Center-near design — near in center; distance in surrounding zone
 
 4. MODIFIED MONOVISION:
-   One eye: monovision (full correction)
-   Other eye: simultaneous bifocal CL
+ One eye: monovision (full correction)
+ Other eye: simultaneous bifocal CL
 ```
 
 ---
@@ -880,6 +880,6 @@ PRESBYOPIA CL OPTIONS:
 - [x] `CL-3-Contact-Lens.md` — Toric CL designs, stabilization methods (prism ballast, truncation, peri-ballast, double slab-off), toric SCL fitting assessment
 - [x] `CL-4-Contact-Lens.md` — Presbyopia CL options (monovision, alternating, simultaneous), lens care regimen, pH of solutions, preservatives (BAK toxicity)
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS D.3 scope reference (Practical Optometry Section 7.0)
-- [x] `Contact-Lens-MCU-2024.pdf` (MCU 2024) — CL optics (surface power, equivalent power, BVP, FVP), vertex distance conversion, accommodation demand, CL vs spectacle magnification, corneal topography, special fitting (keratoconus/aphakia/presbyopia CLs)
+- [x] `Contact-Lens-2024.pdf` (2024) — CL optics (surface power, equivalent power, BVP, FVP), vertex distance conversion, accommodation demand, CL vs spectacle magnification, corneal topography, special fitting (keratoconus/aphakia/presbyopia CLs)
 
 *Note written: June 5, 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

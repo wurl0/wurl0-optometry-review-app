@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Low Vision — Consolidated Review
-**Personal study notes** | Sources: Dr. Saludes (MCU 2024), Dr. Bernardo (OLE Board Review Series)
+**Personal study notes** | Sources: Dr. Saludes (2024), Dr. Bernardo (OLE Board Review Series)
 
 ---
 
@@ -542,7 +542,7 @@ Color vision is the ability to discriminate light based on wavelength compositio
 **Anomaloscope — Most Accurate:**
 - Distinguishes dichromats from anomalous trichromats; measures severity
 - **Rayleigh match:** red + green mixture matched to yellow → tests protan/deutan axis
-  - Protan uses MORE RED; Deutan uses MORE GREEN
+ - Protan uses MORE RED; Deutan uses MORE GREEN
 - **Moreland match:** blue-green mixture → tests tritan defects
 
 ---
@@ -571,8 +571,8 @@ Patients with low vision use shorter working distances. Three methods exist:
 
 **Formula:**
 ```
-Testing distance (m)     =     x
-Letters read (M)               Desired acuity (M)
+Testing distance (m) = x
+Letters read (M) Desired acuity (M)
 
 New working distance (x) → Convert to diopters: D = 1/x
 ```
@@ -608,7 +608,7 @@ Magnification: the process of increasing the apparent size of a target relative 
 
 ```
 Magnification = Achieved VA (in M units)
-                 Goal VA (in M units)
+ Goal VA (in M units)
 ```
 
 **Example:** BCVA = 40 M; Need to read 10 M print
@@ -716,7 +716,7 @@ Where:
 Fe = power of eyepiece (ocular) lens in diopters
 Fo = power of objective lens in diopters
 
-Focal length (f) = 100 / D   (in centimeters)
+Focal length (f) = 100 / D (in centimeters)
 ```
 
 **Galilean example:**
@@ -753,7 +753,7 @@ M = Diameter of objective lens / Diameter of exit pupil
 
 ```
 M = Achieved VA (denominator) / Required VA (denominator)
-Example: VA = 6/60; Task requires 6/9 → M = 60/9 ≈ 6.7×  → select 8× telescope
+Example: VA = 6/60; Task requires 6/9 → M = 60/9 ≈ 6.7× → select 8× telescope
 ```
 
 ---
@@ -790,8 +790,8 @@ Sources: patient + family, employer, teacher, caregiver.
 - Binocular vision (motor assessment; stereopsis using Stereofly with Lea symbols)
 - Contrast sensitivity (Pelli-Robson; Hiding Heidi; Bailey-Lovie Hi-Low; Lea Flip Chart)
 - Glare testing (Brightness Acuity Testing — BAT)
-  - Disability glare: reduction in visibility caused by intense light in the field of view
-  - Discomfort glare: annoyance or pain from an overly bright source
+ - Disability glare: reduction in visibility caused by intense light in the field of view
+ - Discomfort glare: annoyance or pain from an overly bright source
 - Ocular health examination (slit lamp; BIO; fundus camera)
 - Visual field testing (Confrontation; Perimetry; Tangent screen; Amsler grid; Octopus)
 - Color vision testing (Farnsworth D-15; color matching)
@@ -832,7 +832,7 @@ Sources: patient + family, employer, teacher, caregiver.
 
 **Electronic Devices:**
 - CCTV: high magnification; contrast reversal and enhancement; zoom; binocular image possible
-  - Disadvantages: expensive; difficult to use; bulky
+ - Disadvantages: expensive; difficult to use; bulky
 - TV readers: more affordable; limited, fixed magnification
 - Pocket electronic magnifiers: popular with children and working-age adults; portable but limited magnification
 
@@ -912,9 +912,9 @@ For patients with contracted visual fields, hemianopsias, and scotomas:
 - Copper-wiring: moderate arteriosclerosis; arterioles appear orange/yellow
 - Silver-wiring: severe arteriosclerosis; arterioles appear white (occluded)
 - AV nicking: indentation of veins by sclerotic arteries
-  - Salus's sign: vein deflected at crossing
-  - Gunn's sign: vein tapers on both sides of crossing
-  - Bonnet's sign: vein banking distal to crossing
+ - Salus's sign: vein deflected at crossing
+ - Gunn's sign: vein tapers on both sides of crossing
+ - Bonnet's sign: vein banking distal to crossing
 - Flame-shaped hemorrhages (superficial)
 - Cotton-wool spots (microinfarctions from ischemia)
 - Hard exudates (lipid residues from damaged capillaries)
@@ -1315,4 +1315,4 @@ For each condition (RP, Achromatopsia, Albinism, ROP, Glaucoma, DR), write: (1) 
 ---
 
 *WAA | Board Review 2026 | Personal study notes*
-*Sources: Dr. Saludes (MCU 2024), Dr. Bernardo OLE Board Review Series (Low Vision 1–14, Scotopic/Photopic, Color Vision Reviewer)*
+*Sources: Dr. Saludes (2024), Dr. Bernardo OLE Board Review Series (Low Vision 1–14, Scotopic/Photopic, Color Vision Reviewer)*

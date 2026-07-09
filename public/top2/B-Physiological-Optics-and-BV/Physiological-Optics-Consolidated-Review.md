@@ -2,7 +2,7 @@
 ## Physiological Optics — Board Review 2026
 *Personal study notes*
 
-> Sources: Dr. A.I.V. Sumaya (2018 lecture slides) + Dr. M. De Jesus (MCU 2024 reviewer)
+> Sources: Dr. A.I.V. Sumaya (2018 lecture slides) + Dr. M. De Jesus (2024 reviewer)
 
 ---
 
@@ -56,8 +56,8 @@ The body adapts to its environment through three types of specialized cells.
 ### Effectors
 - The **responding organ** — the subject of change brought about by receptor stimulation
 - Reacts in two ways:
-  - **Reflex action** — automatic, involuntary response (e.g., pupillary light reflex)
-  - **Learned reaction** — conditioned response requiring CNS processing (e.g., reading)
+ - **Reflex action** — automatic, involuntary response (e.g., pupillary light reflex)
+ - **Learned reaction** — conditioned response requiring CNS processing (e.g., reading)
 
 **Transmission difference:** Reflex actions bypass the cortex and loop through the spinal cord or brainstem. Learned reactions always involve the cortex.
 
@@ -80,11 +80,11 @@ Nerves connecting receptors to effectors:
 - Paired pyramidal skeletal cavity in the skull, on either side of the nasal root
 - Apex directed posteriorly; base open anteriorly (quadrangular opening)
 - **Functions:**
-  - Protects the globe from mechanical injury
-  - Anchors muscles and ligaments
-  - Provides a window for neurovascular structures
-  - Orbital fat surrounds EOMs and globe as cushion, facilitating eye movement
-  - Orbital septum acts as anterior barrier preventing orbital infection spread
+ - Protects the globe from mechanical injury
+ - Anchors muscles and ligaments
+ - Provides a window for neurovascular structures
+ - Orbital fat surrounds EOMs and globe as cushion, facilitating eye movement
+ - Orbital septum acts as anterior barrier preventing orbital infection spread
 
 ### 3.2 Eyelids (Palpebra)
 
@@ -128,18 +128,18 @@ A spherical structure approximately 24mm in diameter. Composed of three concentr
 
 **Two parts:**
 1. **Retinal Pigment Epithelium (RPE)** — dark pigment layer
-   - Absorbs stray light that passes through the receptor layer
-   - Reduces light scatter and image distortion
-   - Supplies glucose and ions to the neural retina
-   - Stores vitamin A and resynthesizes photopigment
-   - Removes shed outer segment disks
+ - Absorbs stray light that passes through the receptor layer
+ - Reduces light scatter and image distortion
+ - Supplies glucose and ions to the neural retina
+ - Stores vitamin A and resynthesizes photopigment
+ - Removes shed outer segment disks
 
 2. **Neural Retina** — contains five neuron types:
-   - Visual receptor cells (rods and cones)
-   - Horizontal cells
-   - Bipolar cells
-   - Amacrine cells
-   - Retinal ganglion cells
+ - Visual receptor cells (rods and cones)
+ - Horizontal cells
+ - Bipolar cells
+ - Amacrine cells
+ - Retinal ganglion cells
 
 **The Fovea**
 - Central fixation point — where central visual field is focused
@@ -168,11 +168,11 @@ Two key determinants:
 
 1. **Index of Refraction (n)** — a measure of how much light slows down in a medium compared to a vacuum. Higher n = greater bending of light at an interface.
 
-   - Light slows down when it enters a denser medium; at the interface, it bends toward the normal
-   - The greater the difference in n between two media, the greater the refraction
+ - Light slows down when it enters a denser medium; at the interface, it bends toward the normal
+ - The greater the difference in n between two media, the greater the refraction
 
 2. **Radius of Curvature (r)** — the radius of the sphere that best fits the curved surface
-   - Shorter radius = more curved surface = greater refracting power (P = (n2 - n1) / r)
+ - Shorter radius = more curved surface = greater refracting power (P = (n2 - n1) / r)
 
 **Formula: Surface Refracting Power**
 
@@ -266,8 +266,8 @@ Because the real eye has multiple refracting surfaces, simplified models are use
 - The **first refracting surface** encountered by incoming light
 - Index: **1.336** (same as aqueous humor)
 - Clinically important for contact lens fitting:
-  - **Steep contact lens** over a flatter cornea = positive tear lens (more plus power)
-  - **Flat contact lens** over a steeper cornea = negative tear lens (more minus power)
+ - **Steep contact lens** over a flatter cornea = positive tear lens (more plus power)
+ - **Flat contact lens** over a steeper cornea = negative tear lens (more minus power)
 
 ### 4.6 The Crystalline Lens
 
@@ -383,8 +383,8 @@ Any condition where parallel rays of light do not focus on the retina at rest.
 
 **Regular vs. Irregular:**
 - **Regular** — two principal meridians, perpendicular to each other, correctable with cylinders
-  - Symmetric: equal magnitude each side of 90/180
-  - Asymmetric: unequal magnitude
+ - Symmetric: equal magnitude each side of 90/180
+ - Asymmetric: unequal magnitude
 - **Irregular** — meridians not perpendicular, not correctable with standard cylinders (e.g., keratoconus, corneal scars)
 
 ---
@@ -751,9 +751,9 @@ Spectral color = a color evoked by a single wavelength or narrow band. The tradi
 **2. Opponent Color Theory (Ewald Hering)**
 - Cones do not process color independently — their outputs are fed into opponent channels
 - Three opponent channels:
-  - Red vs. Green
-  - Blue vs. Yellow
-  - Black vs. White (luminance)
+ - Red vs. Green
+ - Blue vs. Yellow
+ - Black vs. White (luminance)
 - Explains why "reddish-green" and "yellowish-blue" are perceptually impossible — they are processed on the same opponent channel
 
 Both theories are correct at different levels: trichromacy operates at the cone level; opponency operates at the ganglion cell and lateral geniculate level.
@@ -771,21 +771,21 @@ Both theories are correct at different levels: trichromacy operates at the cone 
 Normal: Trichromacy (three normal cone types)
 
 Anomalous Trichromacy: Three cones present, one shifted
-  - Protanomaly: red cone shifted (red weakness)
-  - Deuteranomaly: green cone shifted (most common CVD, X-linked)
-  - Tritanomaly: blue cone shifted (rare)
+ - Protanomaly: red cone shifted (red weakness)
+ - Deuteranomaly: green cone shifted (most common CVD, X-linked)
+ - Tritanomaly: blue cone shifted (rare)
 
 Dichromacy: One cone type absent
-  - Protanopia: no red cones (most common dichromacy)
-  - Deuteranopia: no green cones
-  - Tritanopia: rarest dichromacy (1 in 1 million)
+ - Protanopia: no red cones (most common dichromacy)
+ - Deuteranopia: no green cones
+ - Tritanopia: rarest dichromacy (1 in 1 million)
 
 Monochromacy (Achromatopsia):
-  - Cone monochromacy (incomplete): only one cone type; VA normal
-    - S-cone, M-cone, or L-cone monochromacy
-  - Rod monochromacy (complete achromatopsia): no functional cones
-    - Not sex-linked; occurs in 0.003%
-    - Symptoms: total color blindness, reduced VA, nystagmus, hemeralopia, central scotoma
+ - Cone monochromacy (incomplete): only one cone type; VA normal
+ - S-cone, M-cone, or L-cone monochromacy
+ - Rod monochromacy (complete achromatopsia): no functional cones
+ - Not sex-linked; occurs in 0.003%
+ - Symptoms: total color blindness, reduced VA, nystagmus, hemeralopia, central scotoma
 
 Tetrachromacy: Four cone types (rare, found in some women)
 ```
@@ -891,8 +891,8 @@ Tetrachromacy: Four cone types (rare, found in some women)
 - Patient arranges discs in order
 - Classifies defects along deutan, protan, or tritan axes
 - **Dichotomous** because it separates subjects into two groups:
-  - Strongly/moderately color deficient
-  - Mildly deficient or normal
+ - Strongly/moderately color deficient
+ - Mildly deficient or normal
 - Indeterminate defects possible in retinal toxicity
 
 **Lanthony Desaturated D15**
@@ -919,8 +919,8 @@ Tetrachromacy: Four cone types (rare, found in some women)
 
 - Most accurate test for distinguishing dichromats from anomalous trichromats and grading severity
 - Based on:
-  - **Rayleigh match** — patient mixes red + green to match a yellow target
-  - **Moreland match** — blue-green mixture to test tritan defects
+ - **Rayleigh match** — patient mixes red + green to match a yellow target
+ - **Moreland match** — blue-green mixture to test tritan defects
 - Anomalous trichromats reject the normal match; their matching range indicates severity
 - Protan deficiency: uses more red to match
 - Deutan deficiency: uses more green to match
@@ -1005,9 +1005,9 @@ When disparity is too great, fusion fails:
 - Caused by latency disparity between the two visual pathways (one eye's signal is delayed)
 - Named for German physicist Carl Pulfrich (1922)
 - Clinically: usually induced by a dark filter over one eye; also occurs spontaneously with:
-  - Cataract
-  - Optic neuritis
-  - Multiple sclerosis
+ - Cataract
+ - Optic neuritis
+ - Multiple sclerosis
 - Symptom: difficulty judging paths of oncoming cars
 
 ### 13.6 Brightness Acuity Test (BAT)

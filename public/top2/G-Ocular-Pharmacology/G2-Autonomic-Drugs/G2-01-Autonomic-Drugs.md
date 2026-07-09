@@ -13,7 +13,7 @@ Almost every drug that acts on the eye works through the **autonomic nervous sys
 
 To move the pupil you can either **push your own muscle** (give an agonist) or **release the opponent** (block the other side). That single idea generates a 2x2 grid that explains every mydriatic, miotic, and cycloplegic on the board.
 
-|  | Sympathetic (adrenergic) | Parasympathetic (cholinergic) |
+| | Sympathetic (adrenergic) | Parasympathetic (cholinergic) |
 |---|---|---|
 | **Agonist** (mimic, turn ON) | Sympathomimetic → **dilate**, no cycloplegia | Parasympathomimetic → **constrict** (miosis) |
 | **Antagonist** (block, turn OFF) | Sympatholytic → **constrict** | Parasympatholytic → **dilate + cycloplegia** |
@@ -142,8 +142,8 @@ Listed strongest → weakest cycloplegic. **Atropine poisoning treatment: physos
 **The two pupil tests (commit these cold):**
 
 - **Horner's syndrome** (sympathetic lesion): ptosis (Mueller), miosis (dilator), anhidrosis.
-  - **Cocaine test:** a Horner pupil **fails to dilate** (no NE present to block reuptake of). Confirms Horner at any level.
-  - **Hydroxyamphetamine test:** localizes the lesion. Dilates in **central/preganglionic** lesions (final neuron intact, NE stores releasable); **fails to dilate in postganglionic** lesions (final neuron dead).
+ - **Cocaine test:** a Horner pupil **fails to dilate** (no NE present to block reuptake of). Confirms Horner at any level.
+ - **Hydroxyamphetamine test:** localizes the lesion. Dilates in **central/preganglionic** lesions (final neuron intact, NE stores releasable); **fails to dilate in postganglionic** lesions (final neuron dead).
 - **Adie's tonic pupil** (parasympathetic, ciliary ganglion): constricts to **0.1% pilocarpine** (supersensitive); a normal pupil needs 0.5–1%.
 
 ---
@@ -184,16 +184,16 @@ Two extra properties to know: **ISA** (intrinsic sympathomimetic activity, acts 
 ```
 THE PUPIL — A TUG OF WAR
 ─────────────────────────
-SPHINCTER (circular, parasympathetic, M3) → MIOSIS    (closes)
-DILATOR   (radial,  sympathetic,   α1)    → MYDRIASIS (opens)
+SPHINCTER (circular, parasympathetic, M3) → MIOSIS (closes)
+DILATOR (radial, sympathetic, α1) → MYDRIASIS (opens)
 
 THE 2x2 — push your muscle or release the opponent
 ──────────────────────────────────────────────────
-              SYMPATHETIC            PARASYMPATHETIC
-AGONIST    →  dilate (no cyclo)   →  constrict (miosis)
-ANTAGONIST →  constrict           →  dilate + CYCLOPLEGIA
+ SYMPATHETIC PARASYMPATHETIC
+AGONIST → dilate (no cyclo) → constrict (miosis)
+ANTAGONIST → constrict → dilate + CYCLOPLEGIA
 
-NE SYNTHESIS  (rate-limiting = first step)
+NE SYNTHESIS (rate-limiting = first step)
 ──────────────────────────────────────────
 Tyrosine → [tyrosine hydroxylase ★] → DOPA → Dopamine → NE → Epinephrine
 
@@ -341,7 +341,7 @@ Explain in three sentences why a parasympatholytic causes cycloplegia but a symp
 ---
 
 ## Sources Used
-- Ocular Pharmacology — Dr. Ado (MCU), pp.17-34
+- Ocular Pharmacology — Dr. Ado , pp.17-34
 - Cross-reference: `autonomic-pharmacology-framework` skill; F1 DPA note; G4 Therapeutic (glaucoma management); A2-04 Uveal Tract (iris muscles)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

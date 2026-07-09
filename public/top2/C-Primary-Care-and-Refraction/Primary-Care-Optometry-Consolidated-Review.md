@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Primary Care Optometry — Consolidated Review
-**Personal study notes** | Sources: Dr. Ferrer PCO Complete Notes (MCU 2024) · PCO Board Reviewer 10 Sessions · PrimaryCareOptometry Program Assessment Reviewer
+**Personal study notes** | Sources: Dr. Ferrer PCO Complete Notes (2024) · PCO Board Reviewer 10 Sessions · PrimaryCareOptometry Program Assessment Reviewer
 
 ---
 
@@ -263,10 +263,10 @@ Distance between the centres of the entrance pupils. Also called Interocular Dis
 
 **Methods:**
 1. **Anatomical Method** — using a millimetre ruler
-   - Close your RIGHT eye; patient fixates on your open LEFT eye
-   - Align zero to the nasal border of patient's RIGHT pupil
-   - Read at temporal border of patient's LEFT pupil
-   - Close your LEFT eye; patient fixates your RIGHT eye (near PD)
+ - Close your RIGHT eye; patient fixates on your open LEFT eye
+ - Align zero to the nasal border of patient's RIGHT pupil
+ - Read at temporal border of patient's LEFT pupil
+ - Close your LEFT eye; patient fixates your RIGHT eye (near PD)
 2. **Catoptric Method** — using the corneal reflection of a penlight
 
 **Near PD Formula:**
@@ -778,7 +778,7 @@ Working distance: 13 inches or 16 inches (33 cm).
 ```
 Net #4 = Gross #4 − Working Distance (WD in dioptres)
 Net #5 = Gross #5 − Lag
-          (Modified if AA < 5.00D: Modified Lag = Lag × AA/5)
+ (Modified if AA < 5.00D: Modified Lag = Lag × AA/5)
 Net #6 = Gross #6 − Lag
 Reading Add = Net #5 − Net #4
 ```
@@ -1194,8 +1194,8 @@ The relationship between the size of an object and the size of its image reflect
 
 **Sample recording:**
 ```
-R: 42.00 at 180 / 43.00 at 90   →   Corneal astigmatism: -1.00 cyl x 180
-L: 42.25 at 170 / 43.50 at 80   →   Corneal astigmatism: -1.25 cyl x 170
+R: 42.00 at 180 / 43.00 at 90 → Corneal astigmatism: -1.00 cyl x 180
+L: 42.25 at 170 / 43.50 at 80 → Corneal astigmatism: -1.25 cyl x 170
 ```
 
 ### Javal's Rule
@@ -1422,4 +1422,4 @@ Memory: **#A tests (16A, 17A) end at BLUR. #B tests (16B, 17B) end at BREAK/RECO
 
 ---
 
-*Sources: Dr. Ferrer Primary Care Optometry Complete Notes (MCU 2024, 104 pp.) · PCO Board Reviewer 10 Sessions / 20 Hours · PrimaryCareOptometry Program Assessment Reviewer (Dr. Wyrlo, Pages 5–103) · Personal consolidation for 2026 OLE Board Review*
+*Sources: Dr. Ferrer Primary Care Optometry Complete Notes (2024, 104 pp.) · PCO Board Reviewer 10 Sessions / 20 Hours · PrimaryCareOptometry Program Assessment Reviewer (Dr. Wyrlo, Pages 5–103) · Personal consolidation for 2026 OLE Board Review*

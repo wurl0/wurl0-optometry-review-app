@@ -155,20 +155,20 @@ Two half-lives to name:
 
 ```
 SYSTEMIC (reaches general circulation)
-  Alimentary (passes liver)         Parenteral (bypasses first pass)
-    Oral  - safest, first-pass         Intradermal - skin testing
-    Buccal - bypasses liver            Subcutaneous
-    Sublingual - bypasses liver        Intramuscular
-    Rectal - partial bypass            Intravenous  - no absorption step
-                                       Intra-arterial / Intracardiac (special)
+ Alimentary (passes liver) Parenteral (bypasses first pass)
+ Oral - safest, first-pass Intradermal - skin testing
+ Buccal - bypasses liver Subcutaneous
+ Sublingual - bypasses liver Intramuscular
+ Rectal - partial bypass Intravenous - no absorption step
+ Intra-arterial / Intracardiac (special)
 
 LOCAL (little systemic effect)
-    Topical - eye, nose, throat, airway, vagina, ear
-    Local injectables - nerve block, epidural, spinal
+ Topical - eye, nose, throat, airway, vagina, ear
+ Local injectables - nerve block, epidural, spinal
 
 KINETIC RULE
-  Zero-order absorption = 100% reaches blood = IV, IA, IC only
-  First-order absorption = constant fraction reaches blood = every other route
+ Zero-order absorption = 100% reaches blood = IV, IA, IC only
+ First-order absorption = constant fraction reaches blood = every other route
 ```
 
 - **Alimentary** advantages: safest, convenient, no sterile technique. Disadvantage: variable bioavailability, first-pass loss.
@@ -387,7 +387,7 @@ Write the eight parts of a prescription order in order, then label which two par
 ---
 
 ## Sources Used
-- General Pharmacology — Dr. Ado (MCU)
+- General Pharmacology — Dr. Ado 
 - Cross-reference: G2 Autonomic Drugs (receptor detail), G3 DPA (F1 note), RA 8050 (prescription law, see H1)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

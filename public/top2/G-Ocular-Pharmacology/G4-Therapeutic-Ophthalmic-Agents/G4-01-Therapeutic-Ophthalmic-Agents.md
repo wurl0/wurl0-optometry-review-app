@@ -157,22 +157,22 @@ Aminoglycosides are excellent against gram-negative bugs but are ototoxic and ne
 ```
 THE AQUEOUS EQUATION — IOP = made − drained
 ─────────────────────────────────────────────
-CUT PRODUCTION (3):  Beta blockers · Alpha-2 agonists · CAIs
-BOOST OUTFLOW  (2):  Prostaglandins → UVEOSCLERAL · Miotics → TRABECULAR
-                     "three down, two out"
+CUT PRODUCTION (3): Beta blockers · Alpha-2 agonists · CAIs
+BOOST OUTFLOW (2): Prostaglandins → UVEOSCLERAL · Miotics → TRABECULAR
+ "three down, two out"
 
 GLAUCOMA TYPE → TREATMENT
 ─────────────────────────
-OPEN angle   → medical (drops)
+OPEN angle → medical (drops)
 CLOSED angle → SURGICAL emergency: laser iridotomy (pilocarpine temporizes)
 
 INFLAMMATION CASCADE — where the drugs cut
 ───────────────────────────────────────────
 Membrane phospholipids
-   → [phospholipase A2]  ← STEROIDS block here (also stop leukotrienes)
-   → arachidonic acid
-   → [cyclooxygenase]    ← NSAIDs block here
-   → PROSTAGLANDINS
+ → [phospholipase A2] ← STEROIDS block here (also stop leukotrienes)
+ → arachidonic acid
+ → [cyclooxygenase] ← NSAIDs block here
+ → PROSTAGLANDINS
 ```
 
 ## Memory Anchors
@@ -313,7 +313,7 @@ Explain in three sentences why a CAI causes tingling and a metallic taste. Use t
 ---
 
 ## Sources Used
-- Ocular Pharmacology — Dr. Ado (MCU), pp.44-66
+- Ocular Pharmacology — Dr. Ado , pp.44-66
 - Cross-reference: [[G2-01-Autonomic-Drugs]] (miotics, beta blockers, adrenergics); E-section Ocular Disease (glaucoma, uveitis, infection); F1 DPA
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

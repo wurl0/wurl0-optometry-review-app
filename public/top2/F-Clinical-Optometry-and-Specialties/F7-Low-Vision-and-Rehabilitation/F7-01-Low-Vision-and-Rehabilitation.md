@@ -159,32 +159,32 @@ When the fovea is damaged (AMD, macular scar, macular dystrophy), the patient mu
 
 ```
 PATIENT WITH REDUCED VA
-  |
-  v
+ |
+ v
 Best corrected VA (trial frame; large lens steps for low VA patients)
-  |
-  v
+ |
+ v
 Is VA ≥ 20/70? → Conventional spectacle management
-  |
-  v
+ |
+ v
 Is VA < 20/70 → Low vision assessment
-  |
-  v
+ |
+ v
 Document: Distance VA + Near VA + Visual Field + Contrast Sensitivity
-  |
-  v
+ |
+ v
 Calculate required magnification for patient's primary task
-  |
-  v
+ |
+ v
 Select appropriate device (Near: magnifier/spectacle; Distance: telescope)
-  |
-  v
+ |
+ v
 Demonstrate device; patient trial; check VA with device
-  |
-  v
+ |
+ v
 Train: insertion, use, eccentric viewing if needed
-  |
-  v
+ |
+ v
 Follow-up: task performance, device comfort, environment modification
 ```
 
@@ -300,5 +300,5 @@ Write the low vision management flow from initial presentation to follow-up — 
 
 ---
 
-*Source: Low Vision MCU 2024 | Gap Lecture 13 (AMD) | LV Definition/Prevalence series*
+*Source: Low Vision 2024 | Gap Lecture 13 (AMD) | LV Definition/Prevalence series*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

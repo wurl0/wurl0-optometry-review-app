@@ -157,23 +157,23 @@ Rod-cone dystrophy, **rods first**. Nyctalopia → ring scotoma → tunnel visio
 ```
 SIGNATURE FUNDUS PICTURE → DIAGNOSIS
 ────────────────────────────────────
-Cherry-red spot            → CRAO (also Tay-Sachs)
-Blood-and-thunder fundus   → CRVO
+Cherry-red spot → CRAO (also Tay-Sachs)
+Blood-and-thunder fundus → CRVO
 Cotton-wool + macular star → HYPERTENSIVE retinopathy (grade III)
-Bone spicules              → RETINITIS PIGMENTOSA
-Headlight in fog           → TOXOPLASMOSIS
-Pizza pie                  → CMV retinitis
+Bone spicules → RETINITIS PIGMENTOSA
+Headlight in fog → TOXOPLASMOSIS
+Pizza pie → CMV retinitis
 
 DIABETIC RETINOPATHY — leak → starve → grow
 ───────────────────────────────────────────
 NPDR: microaneurysm (earliest) → dot-blot hge + hard exudate → cotton-wool / IRMA / venous beading
-        └── 4-2-1 = SEVERE NPDR
+ └── 4-2-1 = SEVERE NPDR
 PDR : NVD / NVE → vitreous hge / tractional RD / neovascular glaucoma → PRP + anti-VEGF
 
 SWOLLEN DISC — which one?
 ─────────────────────────
-BILATERAL, painless, vision spared early, ↑ICP  → PAPILLEDEMA
-UNILATERAL, painful, early vision loss, RAPD     → OPTIC NEURITIS (think MS)
+BILATERAL, painless, vision spared early, ↑ICP → PAPILLEDEMA
+UNILATERAL, painful, early vision loss, RAPD → OPTIC NEURITIS (think MS)
 ```
 
 ## Memory Anchors
@@ -310,7 +310,7 @@ Explain in three sentences why giant cell arteritis is treated before biopsy. Us
 ---
 
 ## Sources Used
-- Ocular Disease — Dr. Elmo Ado (MCU); Ocular-Disease-Consolidated-Review (sections 10-12)
+- Ocular Disease — Dr. Elmo Ado ; Ocular-Disease-Consolidated-Review (sections 10-12)
 - Cross-reference: [[E2-01-Anterior-Segment]]; [[E4-01-Ocular-Emergencies]]; A2-06 Retina/Optic Nerve; F4 Neuro-Optometry
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

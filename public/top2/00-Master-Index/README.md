@@ -17,63 +17,63 @@ Structure follows the official PRC Table of Specifications (TOS) so every note m
 ```
 2026 OLE Preparation - Dr Wyrlo Top 2/
 │
-├── 00-Master-Index/              ← You are here. Navigation hub + study tracker.
+├── 00-Master-Index/ ← You are here. Navigation hub + study tracker.
 │
-├── A-Visual-Biology/             10% — 100 items
-│   ├── A1-Human-Biology-Systems
-│   ├── A2-The-Human-Eye-Anatomy
-│   └── A3-Ocular-Embryology
+├── A-Visual-Biology/ 10% — 100 items
+│ ├── A1-Human-Biology-Systems
+│ ├── A2-The-Human-Eye-Anatomy
+│ └── A3-Ocular-Embryology
 │
-├── B-Physiological-Optics-and-BV/   15% — 150 items
-│   ├── B1-Visual-System-and-Ocular-Optics
-│   ├── B2-Visual-Perception-and-Sensory-Organization
-│   ├── B3-Visual-Field
-│   ├── B4-Color-Perception
-│   ├── B5-Binocular-Vision-and-Fusion
-│   ├── B6-Stereopsis-and-Depth-Perception
-│   └── B7-VIP-VPS-Cognitive-Processing
+├── B-Physiological-Optics-and-BV/ 15% — 150 items
+│ ├── B1-Visual-System-and-Ocular-Optics
+│ ├── B2-Visual-Perception-and-Sensory-Organization
+│ ├── B3-Visual-Field
+│ ├── B4-Color-Perception
+│ ├── B5-Binocular-Vision-and-Fusion
+│ ├── B6-Stereopsis-and-Depth-Perception
+│ └── B7-VIP-VPS-Cognitive-Processing
 │
-├── C-Primary-Care-and-Refraction/   15% — 150 items
-│   ├── C1-Epidemiology-and-Prevention
-│   ├── C2-Ametropia-and-Refractive-Errors
-│   ├── C3-Preliminary-Examination
-│   ├── C4-Objective-Examination
-│   ├── C5-Subjective-Examination
-│   ├── C6-Management-of-Visual-Disorders
-│   └── C7-Vision-Therapy-and-Orthoptics
+├── C-Primary-Care-and-Refraction/ 15% — 150 items
+│ ├── C1-Epidemiology-and-Prevention
+│ ├── C2-Ametropia-and-Refractive-Errors
+│ ├── C3-Preliminary-Examination
+│ ├── C4-Objective-Examination
+│ ├── C5-Subjective-Examination
+│ ├── C6-Management-of-Visual-Disorders
+│ └── C7-Vision-Therapy-and-Orthoptics
 │
-├── D-Theoretical-Optics-Dispensing-CL/   15% — 150 items
-│   ├── D1-Geometric-and-Physical-Optics
-│   ├── D2-Ophthalmic-Lenses-and-Dispensing
-│   └── D3-Contact-Lenses
+├── D-Theoretical-Optics-Dispensing-CL/ 15% — 150 items
+│ ├── D1-Geometric-and-Physical-Optics
+│ ├── D2-Ophthalmic-Lenses-and-Dispensing
+│ └── D3-Contact-Lenses
 │
-├── E-Ocular-Disease-and-Emergencies/   10% — 100 items
-│   ├── E1-Orbit-Adnexa-Eyelids
-│   ├── E2-Anterior-Segment
-│   ├── E3-Posterior-Segment-and-Retina
-│   └── E4-Ocular-Emergencies
+├── E-Ocular-Disease-and-Emergencies/ 10% — 100 items
+│ ├── E1-Orbit-Adnexa-Eyelids
+│ ├── E2-Anterior-Segment
+│ ├── E3-Posterior-Segment-and-Retina
+│ └── E4-Ocular-Emergencies
 │
-├── F-Clinical-Optometry-and-Specialties/   15% — 150 items
-│   ├── F1-DPA-Examination
-│   ├── F2-Pediatric-Optometry
-│   ├── F3-Geriatric-Optometry
-│   ├── F4-Neuro-Optometry
-│   ├── F5-Occupational-Optometry
-│   ├── F6-Sports-Vision
-│   ├── F7-Low-Vision-and-Rehabilitation
-│   └── F8-Prosthesis-and-Absorptive-Lenses
+├── F-Clinical-Optometry-and-Specialties/ 15% — 150 items
+│ ├── F1-DPA-Examination
+│ ├── F2-Pediatric-Optometry
+│ ├── F3-Geriatric-Optometry
+│ ├── F4-Neuro-Optometry
+│ ├── F5-Occupational-Optometry
+│ ├── F6-Sports-Vision
+│ ├── F7-Low-Vision-and-Rehabilitation
+│ └── F8-Prosthesis-and-Absorptive-Lenses
 │
-├── G-Ocular-Pharmacology/   10% — 100 items
-│   ├── G1-General-Pharmacology-Principles
-│   ├── G2-Autonomic-Drugs
-│   ├── G3-Diagnostic-Pharmaceutical-Agents
-│   ├── G4-Therapeutic-Ophthalmic-Agents
-│   └── G5-Special-Populations-and-Drug-Effects
+├── G-Ocular-Pharmacology/ 10% — 100 items
+│ ├── G1-General-Pharmacology-Principles
+│ ├── G2-Autonomic-Drugs
+│ ├── G3-Diagnostic-Pharmaceutical-Agents
+│ ├── G4-Therapeutic-Ophthalmic-Agents
+│ └── G5-Special-Populations-and-Drug-Effects
 │
-└── H-Jurisprudence-and-Ethics/   10% — 100 items
-    ├── H1-RA8050-Optometry-Law
-    ├── H2-Bioethics-and-Code-of-Ethics
-    └── H3-Practice-Management-and-Labor-Laws
+└── H-Jurisprudence-and-Ethics/ 10% — 100 items
+ ├── H1-RA8050-Optometry-Law
+ ├── H2-Bioethics-and-Code-of-Ethics
+ └── H3-Practice-Management-and-Labor-Laws
 ```
 
 ---
@@ -160,7 +160,7 @@ All source reviewers are in the parent folder (`2026 Boards Review`). Never copy
 | `Gap-Lectures/` | 14 gap-fill md files for thin TOS areas |
 | `2026 OLE Board Primer/` | Official primer documents per subject |
 | `Program Assessment/` | Dr. Millen + program reviewers, past exams |
-| `MCU Review 2026/` | MCU 2024 reviewer decks per subject |
+| `the 2026 review/` | 2024 reviewer decks per subject |
 
 ---
 

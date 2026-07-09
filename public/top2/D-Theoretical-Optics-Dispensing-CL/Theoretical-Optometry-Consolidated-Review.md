@@ -1,6 +1,6 @@
 # WAA — Board Review 2026
 ## Theoretical Optometry: Consolidated Review
-*Personal study notes | Sources: MCU 2024 (Dr. Viñola & Dr. De Mesa), Board Primer (Doc Gelai), MCU 2026 PPT (Dr. Baldestamon)*
+*Personal study notes | Sources: 2024 (Dr. Viñola & Dr. De Mesa), Board Primer (Doc Gelai), 2026 PPT (Dr. Baldestamon)*
 
 ---
 
@@ -233,8 +233,8 @@ Moses (1975) described 3 bundles:
 
 ```
 Minimum AOA = 15 − 0.25 × age
-Average AOA  = 18.5 − 0.30 × age
-Maximum AOA  = 25 − 0.40 × age
+Average AOA = 18.5 − 0.30 × age
+Maximum AOA = 25 − 0.40 × age
 ```
 
 **Formula depth:** These are empirical regression equations based on population data. The constant (15, 18.5, 25) is the theoretical maximum at age zero. The coefficient (0.25, 0.30, 0.40) is the rate of loss per year. By age 40, minimum AOA = 15 − 10 = 5 D — right at the clinical threshold for presbyopia.
@@ -246,8 +246,8 @@ Maximum AOA  = 25 − 0.40 × age
 Patient age 20:
 ```
 Minimum AOA = 15 − 0.25(20) = 10.00 D
-Average AOA  = 18.5 − 0.30(20) = 12.50 D
-Maximum AOA  = 25 − 0.40(20) = 17.00 D
+Average AOA = 18.5 − 0.30(20) = 12.50 D
+Maximum AOA = 25 − 0.40(20) = 17.00 D
 ```
 
 ### Presbyopia ADD Determination
@@ -304,9 +304,9 @@ The classic "nearsighted" eye — clear at near, blurry at distance.
 ### Etiology
 1. **Elongated axial length** — most common cause
 2. **Refractive system too strong** for axial length
-   - Index of refraction too high: aqueous, cornea, lens nucleus/core
-   - Index of refraction too low: lens cortex, vitreous
-   - Curvature: radius too short/steep
+ - Index of refraction too high: aqueous, cornea, lens nucleus/core
+ - Index of refraction too low: lens cortex, vitreous
+ - Curvature: radius too short/steep
 3. **Increased depth of anterior chamber**
 4. **Cataract formation** (nuclear sclerosis increases n of nucleus = myopic shift)
 5. **Diabetes mellitus** (osmotic lens changes)
@@ -389,10 +389,10 @@ Subtypes of correlative:
 - Tonic spasm of accommodation making an emmetrope or hyperope appear myopic
 - Other names: school myopia, college myopia, false myopia, refractive myopia, functional myopia
 - Approaches to management:
-  - Fogging lenses (strong plus lenses)
-  - Near point corrections (plus at near)
-  - Prism base-in corrections
-  - Orthoptic techniques
+ - Fogging lenses (strong plus lenses)
+ - Near point corrections (plus at near)
+ - Prism base-in corrections
+ - Orthoptic techniques
 
 **Night Myopia / Nocturnal Myopia**
 - Myopia that appears in dim illumination; lesser error in daylight
@@ -434,9 +434,9 @@ The classic "farsighted" eye — can often use accommodation to compensate for d
 **Simple (biological variation):**
 1. Axial length too short for focal length
 2. Refractive system too weak:
-   - Index too high: lens cortex or vitreous
-   - Index too low: aqueous, lens nucleus, or cornea
-   - Curvature: radius too long/flat
+ - Index too high: lens cortex or vitreous
+ - Index too low: aqueous, lens nucleus, or cornea
+ - Curvature: radius too long/flat
 3. Anterior chamber depth decreased (less refractive power)
 4. Old age (normal senile changes)
 
@@ -446,8 +446,8 @@ The classic "farsighted" eye — can often use accommodation to compensate for d
 3. Index of refraction: metabolic changes
 4. Absence of a component: aphakia (absent crystalline lens)
 5. Lens displacement:
-   - Anterior displacement → hyperopia decreases (present in shallow-angle glaucoma)
-   - Lateral displacement → partial aphakia, possible diplopia
+ - Anterior displacement → hyperopia decreases (present in shallow-angle glaucoma)
+ - Lateral displacement → partial aphakia, possible diplopia
 
 **Functional:**
 - Paralysis of accommodation
@@ -589,10 +589,10 @@ Considered the most common refractive error corrected today.
 The sum resultant astigmatism of all refracting surfaces:
 - Anterior corneal (primary)
 - Residual:
-  - Posterior corneal
-  - Lenticular surface
-  - Lenticular zonule
-  - Lenticular lamellae
+ - Posterior corneal
+ - Lenticular surface
+ - Lenticular zonule
+ - Lenticular lamellae
 
 **2. Corneal astigmatism** — variation of corneal curvature across meridians
 

@@ -55,22 +55,22 @@ All axes pass through the **center of rotation** — located 13.5mm behind the c
 
 ```
 Y-AXIS (Anteroposterior / Optic / Sagittal axis)
-  Length: 24mm — LONGEST (runs full depth of eyeball, cornea to posterior pole)
-  Orientation: front to back (horizontal)
-  Movement: TORSION (intorsion / extorsion)
-  Board clue: Superior oblique intorts → Y-axis
+ Length: 24mm — LONGEST (runs full depth of eyeball, cornea to posterior pole)
+ Orientation: front to back (horizontal)
+ Movement: TORSION (intorsion / extorsion)
+ Board clue: Superior oblique intorts → Y-axis
 
 X-AXIS (Transverse / Horizontal / Frontal axis)
-  Length: 22mm
-  Orientation: side to side
-  Movement: VERTICAL (elevation / depression)
-  Board clue: "X-axis = uP/doWn"
+ Length: 22mm
+ Orientation: side to side
+ Movement: VERTICAL (elevation / depression)
+ Board clue: "X-axis = uP/doWn"
 
 Z-AXIS (Vertical / Supero-infero axis)
-  Length: 22mm
-  Orientation: top to bottom
-  Movement: HORIZONTAL (adduction / abduction)
-  Board clue: "Z-axis = sideWays" — Z is the last letter, like the last direction you think of
+ Length: 22mm
+ Orientation: top to bottom
+ Movement: HORIZONTAL (adduction / abduction)
+ Board clue: "Z-axis = sideWays" — Z is the last letter, like the last direction you think of
 ```
 
 **Mnemonic: "ATV — 24-22-22"** (AP=Torsion, Transverse=Vertical, Vertical=Horizontal; AP is 24mm, others 22mm)
@@ -79,29 +79,29 @@ Z-AXIS (Vertical / Supero-infero axis)
 
 ```
 ANGLE ALPHA (α)
-  Between: Optical axis and Visual axis
-  Measured at: Nodal point
-  Normal: 5° temporal, 1.5° inferior
-  So what: Fovea sits slightly temporal/inferior to the optical axis.
-           In high myopes, alpha is larger (fovea more displaced).
+ Between: Optical axis and Visual axis
+ Measured at: Nodal point
+ Normal: 5° temporal, 1.5° inferior
+ So what: Fovea sits slightly temporal/inferior to the optical axis.
+ In high myopes, alpha is larger (fovea more displaced).
 
 ANGLE KAPPA (κ) — clinically most important
-  Between: Pupillary axis and Visual axis
-  Measured at: Pupil center
-  Normal: Small positive (pupil nasal to visual axis)
-  +Kappa: Light reflex sits TEMPORAL → looks like exotropia (pseudo-exo on Hirschberg)
-  -Kappa: Light reflex sits NASAL → looks like esotropia (pseudo-eso)
-  Board clue: "Kappa = clinical Konfusion" — cover test is negative, reflex is displaced
+ Between: Pupillary axis and Visual axis
+ Measured at: Pupil center
+ Normal: Small positive (pupil nasal to visual axis)
+ +Kappa: Light reflex sits TEMPORAL → looks like exotropia (pseudo-exo on Hirschberg)
+ -Kappa: Light reflex sits NASAL → looks like esotropia (pseudo-eso)
+ Board clue: "Kappa = clinical Konfusion" — cover test is negative, reflex is displaced
 
 ANGLE LAMBDA (λ)
-  Between: Pupillary axis and Line of sight
-  Measured at: Entrance pupil
-  Used in: Optical calculations (less tested than kappa)
+ Between: Pupillary axis and Line of sight
+ Measured at: Entrance pupil
+ Used in: Optical calculations (less tested than kappa)
 
 ANGLE GAMMA (γ)
-  Between: Fixation axis and Optical axis
-  Measured at: Center of rotation
-  Least commonly tested
+ Between: Fixation axis and Optical axis
+ Measured at: Center of rotation
+ Least commonly tested
 ```
 
 **Dark adaptation — the two-phase curve:**
@@ -109,17 +109,17 @@ ANGLE GAMMA (γ)
 ```
 THRESHOLD
 (high = less sensitive)
-  |
-  |  Phase 1 — CONES adapt (0–7 min)
-  |    \
-  |     \        KOHLRAUSCH KINK at ~7 min
-  |      '-------.
-  |               \  Phase 2 — RODS adapt (7–30+ min)
-  |                \
-  |                 '------------- (plateau ~30–40 min)
+ |
+ | Phase 1 — CONES adapt (0–7 min)
+ | \
+ | \ KOHLRAUSCH KINK at ~7 min
+ | '-------.
+ | \ Phase 2 — RODS adapt (7–30+ min)
+ | \
+ | '------------- (plateau ~30–40 min)
 (low = most sensitive)
-  |________________________ TIME (minutes)
-  0         7                   30-40
+ |________________________ TIME (minutes)
+ 0 7 30-40
 ```
 
 At full dark adaptation, rod threshold is about **3 log units** more sensitive than the cone plateau. This means rods at full dark adaptation are 1000× more sensitive than cones.
@@ -136,13 +136,13 @@ At full dark adaptation, rod threshold is about **3 log units** more sensitive t
 **The 6 Cardinal Points of the schematic eye:**
 
 ```
-OBJECT SPACE              |              IMAGE SPACE
-                          |
-    F₁                  H  H'              N  N'                    F₂
-    |                   | |                | |                      |
-    |                   | |                | |                      |
-←→ ~15mm in front ←→  1.6mm | 1.9mm   7.1mm | 7.4mm       ~24mm behind →
-   (primary focal pt)  (principal planes)  (nodal pts)    (secondary focal pt)
+OBJECT SPACE | IMAGE SPACE
+ |
+ F₁ H H' N N' F₂
+ | | | | | |
+ | | | | | |
+←→ ~15mm in front ←→ 1.6mm | 1.9mm 7.1mm | 7.4mm ~24mm behind →
+ (primary focal pt) (principal planes) (nodal pts) (secondary focal pt)
 
 F₁ = Primary focal point — object here → parallel exit rays
 F₂ = Secondary focal point — parallel rays from ∞ converge here (on retina in emmetropia)
@@ -246,25 +246,25 @@ D-W-B-R-P-B (6 factors; first two relate to the type of stimulus, last four to t
 DARK ADAPTATION CURVE
 ─────────────────────
 Threshold ↑ (less sensitive)
-   |
-   |   CONES — adapt fast (7 min)
-   |    \
-   |     '------KINK (~7 min; rods take over)
-   |              \
-   |               RODS — keep adapting (30–40 min)
-   |                 '------------ plateau
+ |
+ | CONES — adapt fast (7 min)
+ | \
+ | '------KINK (~7 min; rods take over)
+ | \
+ | RODS — keep adapting (30–40 min)
+ | '------------ plateau
 Threshold ↓ (most sensitive)
-   |_____________________________ Time (min)
-   0          7                  30-40
+ |_____________________________ Time (min)
+ 0 7 30-40
 
 CARDINAL POINTS (schematic eye cross-section)
 ─────────────────────────────────────────────
 F₁ ← ~15mm →|H H'| ← ~7mm → |N N'| ←~17mm→ F₂ = RETINA
-                  ↑              ↑
-             Principal      Nodal points
-             planes         (undeviated rays;
-             (virtual        angle α here)
-             refraction)
+ ↑ ↑
+ Principal Nodal points
+ planes (undeviated rays;
+ (virtual angle α here)
+ refraction)
 
 EOM AXES (through center of rotation, 13.5mm behind cornea)
 ────────────────────────────────────────────────────────────
@@ -440,11 +440,11 @@ Reflections (catoptric images) formed by the cornea and lens surfaces. There are
 
 ```
 Image 1: Corneal front surface → upright, virtual, bright
-         (used in keratometry — measures corneal curvature)
-Image 2: Lens front surface   → upright, virtual, dim
-         (moves forward during accommodation as anterior lens becomes more convex)
-Image 3: Lens back surface    → inverted, real, smallest
-         (moves backward slightly during accommodation)
+ (used in keratometry — measures corneal curvature)
+Image 2: Lens front surface → upright, virtual, dim
+ (moves forward during accommodation as anterior lens becomes more convex)
+Image 3: Lens back surface → inverted, real, smallest
+ (moves backward slightly during accommodation)
 ```
 
 During accommodation: Image 2 moves FORWARD and becomes SMALLER (lens front surface steepens). Image 3 moves BACKWARD slightly. Image 1 is unchanged (cornea does not change shape).
@@ -455,13 +455,13 @@ Clinical use: Helmholtz (1855) used Purkinje images to prove the lens changes sh
 
 ```
 HELMHOLTZ THEORY (1855) — accepted as correct:
-  At REST: Zonules are TAUT (stretched by ciliary ring diameter)
-           Lens is FLAT and thin (held in its thinnest form by tension)
-  During ACCOMMODATION (near):
-           Ciliary muscle CONTRACTS (annular action, ring tightens)
-           Zonules RELAX (tension released)
-           Lens springs to natural spherical shape (MORE CONVEX, more power)
-           Pupil constricts, eyes converge (the near triad)
+ At REST: Zonules are TAUT (stretched by ciliary ring diameter)
+ Lens is FLAT and thin (held in its thinnest form by tension)
+ During ACCOMMODATION (near):
+ Ciliary muscle CONTRACTS (annular action, ring tightens)
+ Zonules RELAX (tension released)
+ Lens springs to natural spherical shape (MORE CONVEX, more power)
+ Pupil constricts, eyes converge (the near triad)
 
 Why the lens springs: The elastic lens capsule is always trying to make the lens spherical.
 The taut zonules prevent this at rest. Relaxing the zonules frees the capsule → sphere.
@@ -471,23 +471,23 @@ The taut zonules prevent this at rest. Relaxing the zonules frees the capsule �
 
 ```
 FAR POINT (punctum remotum) — the point at infinity (∞) that the eye can see clearly
-  Emmetrope: far point = infinity (∞)
-  Myope: far point is at a FINITE distance IN FRONT of the eye
-         Far point distance = 100 / degree of myopia
-         Example: −3.00D myope → far point = 100/3 = 33cm in front
-  Hyperope: far point is VIRTUAL (behind the eye)
-  
+ Emmetrope: far point = infinity (∞)
+ Myope: far point is at a FINITE distance IN FRONT of the eye
+ Far point distance = 100 / degree of myopia
+ Example: −3.00D myope → far point = 100/3 = 33cm in front
+ Hyperope: far point is VIRTUAL (behind the eye)
+ 
 NEAR POINT (punctum proximum) — the closest point the eye can clearly focus (with maximum accommodation)
-  Near point distance = 100 / (far point power + AOA)
-  Normal 20-year-old (AOA ≈ 10D): near point ≈ 10cm
+ Near point distance = 100 / (far point power + AOA)
+ Normal 20-year-old (AOA ≈ 10D): near point ≈ 10cm
 
 RANGE OF ACCOMMODATION — distance between near point and far point
-  Emmetrope: from ∞ to near point
-  Myope: from far point to near point (both finite)
-  
+ Emmetrope: from ∞ to near point
+ Myope: from far point to near point (both finite)
+ 
 AMPLITUDE OF ACCOMMODATION (AOA) — vergence change from far point to near point
-  AOA = Far point power − Near point power (in diopters)
-  Decreases with age (Hofstetter: Ave = 18.5 − 0.30 × age)
+ AOA = Far point power − Near point power (in diopters)
+ Decreases with age (Hofstetter: Ave = 18.5 − 0.30 × age)
 ```
 
 **Donder's Table (clinically important values by age):**
@@ -513,23 +513,23 @@ Symptoms of eyestrain from excessive or ill-sustained accommodation. Includes: f
 
 ```
 AXIAL AMETROPIA: Abnormal axial length; refractive power is normal
-  Myopia → eye TOO LONG → focal point in front of retina
-  Hyperopia → eye TOO SHORT → focal point behind retina
+ Myopia → eye TOO LONG → focal point in front of retina
+ Hyperopia → eye TOO SHORT → focal point behind retina
 
 REFRACTIVE AMETROPIA: Normal axial length; refractive power abnormal
-  High n (aqueous, cornea, lens nucleus) → myopia
-  Low n (lens cortex, vitreous) → hyperopia
-  Changed corneal curvature → any ametropia
+ High n (aqueous, cornea, lens nucleus) → myopia
+ Low n (lens cortex, vitreous) → hyperopia
+ Changed corneal curvature → any ametropia
 
 LAW OF SILO (Index Ametropia):
-  Applies when the ametropia is due to the index of refraction of the various media:
-  Crystalline lens cortex: Lower n than average → nucleus: Higher n than average
-  Changes in lens index with disease (e.g., cataract) → can cause myopic shift
+ Applies when the ametropia is due to the index of refraction of the various media:
+ Crystalline lens cortex: Lower n than average → nucleus: Higher n than average
+ Changes in lens index with disease (e.g., cataract) → can cause myopic shift
 
 BRACHYCEPHALIA vs DOLICHOCEPHALIA:
-  Brachycephalia (short, wide skull) → associated with hyperopia
-  Dolichocephalia (long, narrow skull) → associated with myopia
-  (Skull shape affects orbital depth and axial length development)
+ Brachycephalia (short, wide skull) → associated with hyperopia
+ Dolichocephalia (long, narrow skull) → associated with myopia
+ (Skull shape affects orbital depth and axial length development)
 ```
 
 ---
@@ -566,17 +566,17 @@ Entoptic phenomena are visual perceptions generated by structures of your own ey
 
 ```
 CFF NORMAL VALUES:
-  Photopic (daylight): ~60 Hz
-  Scotopic (dim): ~15–20 Hz
-  Fovea: higher CFF than periphery (faster temporal resolution)
+ Photopic (daylight): ~60 Hz
+ Scotopic (dim): ~15–20 Hz
+ Fovea: higher CFF than periphery (faster temporal resolution)
 
 FERRY-PORTER LAW: CFF increases linearly with log luminance
 TALBOT'S LAW: When flicker rate exceeds CFF, perceived brightness = average of on/off intensities
 
 CLINICAL SIGNIFICANCE:
-  Decreased CFF → early sign of optic nerve disease, glaucoma
-  CFF testing: used to detect subclinical optic nerve dysfunction before visual field loss
-  Video/film: 24 fps appears continuous because it exceeds the CFF for those conditions
+ Decreased CFF → early sign of optic nerve disease, glaucoma
+ CFF testing: used to detect subclinical optic nerve dysfunction before visual field loss
+ Video/film: 24 fps appears continuous because it exceeds the CFF for those conditions
 ```
 
 ---
@@ -589,32 +589,32 @@ Optical illusions demonstrate that perception is not a direct recording of reali
 
 ```
 1. GEOMETRIC ILLUSIONS — size, length, or angle appear different than measured:
-   Müller-Lyer illusion: lines with arrows in vs. out appear different lengths
-   Ponzo illusion: parallel lines appear different lengths on converging railroad tracks
-   Horizontal-vertical illusion: vertical line appears longer than equal horizontal line
+ Müller-Lyer illusion: lines with arrows in vs. out appear different lengths
+ Ponzo illusion: parallel lines appear different lengths on converging railroad tracks
+ Horizontal-vertical illusion: vertical line appears longer than equal horizontal line
 
 2. AMBIGUOUS FIGURES — two interpretations exist simultaneously:
-   Necker cube: 3D cube flips orientation
-   Rubin's vase: vase or two faces alternate
+ Necker cube: 3D cube flips orientation
+ Rubin's vase: vase or two faces alternate
 
 3. AFTERIMAGE-BASED ILLUSIONS:
-   Stare at a color → look away → see the complementary color (opponent process)
-   Red fatigue → look at white → see green (red afterimage)
+ Stare at a color → look away → see the complementary color (opponent process)
+ Red fatigue → look at white → see green (red afterimage)
 
 4. MOTION ILLUSIONS:
-   Static images appear to move due to high-contrast gradients
-   
+ Static images appear to move due to high-contrast gradients
+ 
 BOARD RELEVANCE:
-  Illusions demonstrate: retinal adaptation (afterimages), opponent process (complementary colors),
-  figure-ground perception (ambiguous figures), context effects on size/distance judgment.
-  These connect to B4 (color theories) and B2 (visual perception organization).
+ Illusions demonstrate: retinal adaptation (afterimages), opponent process (complementary colors),
+ figure-ground perception (ambiguous figures), context effects on size/distance judgment.
+ These connect to B4 (color theories) and B2 (visual perception organization).
 ```
 
 ---
 
 ## Extended Topics: Phototransduction Cascade, Fixation Types, and Reference Lines of the Eye
 
-*(From BV-Binocular-Vision-Sumaya.md + General-Pathology.md — added June 6, 2026 to complete B.1 MCU face-to-face review content)*
+*(From BV-Binocular-Vision-Sumaya.md + General-Pathology.md — added June 6, 2026 to complete B.1 face-to-face review content)*
 
 ---
 
@@ -626,36 +626,36 @@ BOARD RELEVANCE:
 
 ```
 STEP 1 — AT REST (DARK)
-  11-cis retinal + opsin → RHODOPSIN (intact photopigment, purple-red)
-  cGMP-gated Na+ channels are OPEN in the dark
-  → constant Na+ influx → photoreceptor is DEPOLARIZED (dark current)
-  → continuous glutamate release onto bipolar cells
+ 11-cis retinal + opsin → RHODOPSIN (intact photopigment, purple-red)
+ cGMP-gated Na+ channels are OPEN in the dark
+ → constant Na+ influx → photoreceptor is DEPOLARIZED (dark current)
+ → continuous glutamate release onto bipolar cells
 
 STEP 2 — LIGHT STRIKES RHODOPSIN
-  Photon energy → PHOTOISOMERIZATION
-  11-cis retinal flips → ALL-TRANS RETINAL
-  Rhodopsin → METARHODOPSIN II (activated form)
-  Called "photo-bleaching" — rhodopsin loses its purple color → appears pale/yellow
+ Photon energy → PHOTOISOMERIZATION
+ 11-cis retinal flips → ALL-TRANS RETINAL
+ Rhodopsin → METARHODOPSIN II (activated form)
+ Called "photo-bleaching" — rhodopsin loses its purple color → appears pale/yellow
 
 STEP 3 — TRANSDUCIN ACTIVATION (G-protein cascade)
-  Metarhodopsin II activates TRANSDUCIN (a G-protein)
-  1 rhodopsin → activates ~500 transducin molecules
-  (amplification factor x500 — explains extreme sensitivity of rods to single photons)
+ Metarhodopsin II activates TRANSDUCIN (a G-protein)
+ 1 rhodopsin → activates ~500 transducin molecules
+ (amplification factor x500 — explains extreme sensitivity of rods to single photons)
 
 STEP 4 — PHOSPHODIESTERASE (PDE) ACTIVATION
-  Transducin activates PDE (phosphodiesterase)
-  PDE hydrolyzes cGMP → 5'-GMP (inactive)
-  cGMP levels FALL rapidly inside the photoreceptor
+ Transducin activates PDE (phosphodiesterase)
+ PDE hydrolyzes cGMP → 5'-GMP (inactive)
+ cGMP levels FALL rapidly inside the photoreceptor
 
 STEP 5 — CHANNEL CLOSURE → HYPERPOLARIZATION
-  cGMP-gated channels CLOSE (no cGMP to keep them open)
-  Na+ entry STOPS → membrane potential goes from −40mV → −70mV
-  Photoreceptor HYPERPOLARIZES in response to LIGHT
-  (Key: light causes hyperpolarization — opposite of all other neurons)
+ cGMP-gated channels CLOSE (no cGMP to keep them open)
+ Na+ entry STOPS → membrane potential goes from −40mV → −70mV
+ Photoreceptor HYPERPOLARIZES in response to LIGHT
+ (Key: light causes hyperpolarization — opposite of all other neurons)
 
 STEP 6 — SIGNAL OUTPUT CHANGE
-  Hyperpolarized photoreceptor → DECREASED glutamate release
-  Bipolar cells detect this decrease → signal passes to ganglion cells → optic nerve
+ Hyperpolarized photoreceptor → DECREASED glutamate release
+ Bipolar cells detect this decrease → signal passes to ganglion cells → optic nerve
 ```
 
 **Critical rule:** Photoreceptors are the only sensory neurons that HYPERPOLARIZE in response to their stimulus. Every other neuron depolarizes to fire a signal. This is routinely tested.
@@ -664,17 +664,17 @@ STEP 6 — SIGNAL OUTPUT CHANGE
 
 ```
 BLEACHED (all-trans retinal is released from opsin)
-    ↓
+ ↓
 All-trans retinal → ALL-TRANS RETINOL (= Vitamin A — reduced form)
-                    [carried via IRBP to RPE]
-    ↓
+ [carried via IRBP to RPE]
+ ↓
 RPE processes: all-trans retinol → 11-CIS RETINAL
-              (requires RPE isomerase enzyme)
-    ↓
+ (requires RPE isomerase enzyme)
+ ↓
 11-cis retinal returned to photoreceptor outer segment
-    ↓
+ ↓
 Recombines with opsin → RHODOPSIN regenerated
-              (ready for next photon)
+ (ready for next photon)
 
 This cycle is CONTINUOUS in the dark.
 It requires VITAMIN A (all-trans retinol) as the essential precursor.
@@ -685,16 +685,16 @@ No Vitamin A = no 11-cis retinal = no rhodopsin regeneration.
 
 ```
 Low Vitamin A intake / malabsorption
-    ↓
+ ↓
 Impaired 11-cis retinal regeneration in RPE
-    ↓
+ ↓
 Rhodopsin cannot regenerate fully between bleaching cycles
-    ↓
+ ↓
 NYCTALOPIA (night blindness) — FIRST and earliest symptom
-    ↓ (prolonged deficiency)
+ ↓ (prolonged deficiency)
 XEROPHTHALMIA — conjunctival and corneal drying
 BITOT'S SPOTS — foamy keratinized plaques on bulbar conjunctiva (temporal)
-    ↓ (severe, untreated)
+ ↓ (severe, untreated)
 KERATOMALACIA — corneal ulceration, liquefaction, melting
 BLINDNESS — irreversible corneal scarring
 ```
@@ -728,36 +728,36 @@ BLINDNESS — irreversible corneal scarring
 
 ```
 1. THE FOVEA (sensory element)
-   The target's image must fall on the foveal center (foveola)
-   Best cone packing → 2-cone separation → ~1 arcmin resolution
-   Any sustained fixation on a non-foveal area = ECCENTRIC FIXATION
+ The target's image must fall on the foveal center (foveola)
+ Best cone packing → 2-cone separation → ~1 arcmin resolution
+ Any sustained fixation on a non-foveal area = ECCENTRIC FIXATION
 
 2. THE EXTRAOCULAR MUSCLES (motor element)
-   Hold the eye steady against physiological drift
-   Produce microsaccades to prevent perceptual fading (Troxler's effect)
-   Three components of physiological nystagmus: tremor, drift, microsaccades
+ Hold the eye steady against physiological drift
+ Produce microsaccades to prevent perceptual fading (Troxler's effect)
+ Three components of physiological nystagmus: tremor, drift, microsaccades
 
 3. THE FUSION FACULTY (binocular element)
-   Maintains binocular fixation on the same point simultaneously
-   Requires normal retinal correspondence (NRC)
-   Lost in constant strabismus / deep amblyopia
+ Maintains binocular fixation on the same point simultaneously
+ Requires normal retinal correspondence (NRC)
+ Lost in constant strabismus / deep amblyopia
 ```
 
 **The six types of fixation:**
 
 ```
-TYPE              DESCRIPTION                          KEY FEATURE
-Voluntary         Conscious, directed, intentional     Requires attention; can be sustained
-Reflex            Automatic response to new peripheral Triggered by stimulus entering VF;
-(Involuntary)     stimulus entering the visual field   not under conscious control
-Saccadic          Rapid, ballistic refixation between  FASTEST (500–1000°/s); 200ms latency
-                  two targets                          Cannot be corrected mid-flight
-Smooth Pursuit    Continuous tracking of a moving      Max ~30°/s; needs a moving target
-(Pursuit)         target                               Falls apart without a target
-Scanning          Series of saccades across a static  Used in reading, scene analysis,
-                  scene                               visual search tasks
-Steady            Maintained fixation on a single      Physiological nystagmus keeps it
-                  non-moving target                   slightly active; never truly static
+TYPE DESCRIPTION KEY FEATURE
+Voluntary Conscious, directed, intentional Requires attention; can be sustained
+Reflex Automatic response to new peripheral Triggered by stimulus entering VF;
+(Involuntary) stimulus entering the visual field not under conscious control
+Saccadic Rapid, ballistic refixation between FASTEST (500–1000°/s); 200ms latency
+ two targets Cannot be corrected mid-flight
+Smooth Pursuit Continuous tracking of a moving Max ~30°/s; needs a moving target
+(Pursuit) target Falls apart without a target
+Scanning Series of saccades across a static Used in reading, scene analysis,
+ scene visual search tasks
+Steady Maintained fixation on a single Physiological nystagmus keeps it
+ non-moving target slightly active; never truly static
 ```
 
 **Board clue for fixation types:**
@@ -770,47 +770,47 @@ Steady            Maintained fixation on a single      Physiological nystagmus k
 Eight imaginary lines define how the eye relates to visual space. The board tests the differences between the most similar-sounding ones.
 
 ```
-REFERENCE LINE    DEFINITION                                ANGLE IT DEFINES
+REFERENCE LINE DEFINITION ANGLE IT DEFINES
 ────────────────────────────────────────────────────────────────────────────
-Visual axis       From fixation point → through NODAL       Angle ALPHA
-                  POINTS (N, N') → to FOVEA                 (at nodal point)
-                  "True optical line of clear sight"
+Visual axis From fixation point → through NODAL Angle ALPHA
+ POINTS (N, N') → to FOVEA (at nodal point)
+ "True optical line of clear sight"
 
-Line of sight     From fixation point → through center      Angle KAPPA
-                  of ENTRANCE PUPIL → to FOVEA              (at entrance pupil)
-                  "Clinical surrogate for visual axis"
+Line of sight From fixation point → through center Angle KAPPA
+ of ENTRANCE PUPIL → to FOVEA (at entrance pupil)
+ "Clinical surrogate for visual axis"
 
-Optic axis        Through centers of curvature of all        Used in schematic eye
-                  refracting surfaces (cornea to lens)       calculations only
-                  NOT the same as visual axis
+Optic axis Through centers of curvature of all Used in schematic eye
+ refracting surfaces (cornea to lens) calculations only
+ NOT the same as visual axis
 
-Pupillary axis    PERPENDICULAR to corneal surface,          Defines Angle KAPPA
-                  passing through the CENTER OF THE          (pupillary axis vs line
-                  ENTRANCE PUPIL                            of sight) and LAMBDA
+Pupillary axis PERPENDICULAR to corneal surface, Defines Angle KAPPA
+ passing through the CENTER OF THE (pupillary axis vs line
+ ENTRANCE PUPIL of sight) and LAMBDA
 
-Fixation axis     From fixation point → through the          Angle GAMMA
-                  CENTER OF ROTATION (13.5mm behind         (at center of rotation)
-                  cornea)                                   Rarely board-tested
+Fixation axis From fixation point → through the Angle GAMMA
+ CENTER OF ROTATION (13.5mm behind (at center of rotation)
+ cornea) Rarely board-tested
 
-Anteroposterior   From anterior pole → to posterior pole     Y-axis of Fick (torsion)
-(AP) axis         Longest axis of the eye (24mm)
+Anteroposterior From anterior pole → to posterior pole Y-axis of Fick (torsion)
+(AP) axis Longest axis of the eye (24mm)
 
-Cyclopean axis    From the CYCLOPEAN EYE (midpoint           Used in binocular space
-(median line)     between both pupils) → through            perception; not directly
-                  fixation point                            tested clinically
+Cyclopean axis From the CYCLOPEAN EYE (midpoint Used in binocular space
+(median line) between both pupils) → through perception; not directly
+ fixation point tested clinically
 
-Line of direction Connects any object point to its           Basis of retinal
-                  retinal image through the nodal point     correspondence (local sign)
+Line of direction Connects any object point to its Basis of retinal
+ retinal image through the nodal point correspondence (local sign)
 ```
 
 **The most commonly confused pair — visual axis vs line of sight:**
 
 ```
-VISUAL AXIS                          LINE OF SIGHT
-  Passes through NODAL POINTS         Passes through CENTER OF PUPIL
-  Angle ALPHA measured here           Angle KAPPA measured here
-  More theoretical construct          Clinically relevant (Hirschberg)
-  Cannot be directly observed         Hirschberg reflex tests this
+VISUAL AXIS LINE OF SIGHT
+ Passes through NODAL POINTS Passes through CENTER OF PUPIL
+ Angle ALPHA measured here Angle KAPPA measured here
+ More theoretical construct Clinically relevant (Hirschberg)
+ Cannot be directly observed Hirschberg reflex tests this
 ```
 
 **Angles summary table (complete):**
@@ -826,18 +826,18 @@ VISUAL AXIS                          LINE OF SIGHT
 
 ```
 POSITIVE KAPPA:
-  Pupil center is NASAL to the visual axis
-  → Corneal reflex falls TEMPORAL to pupil center
-  → Looks like EXOTROPIA on Hirschberg (pseudo-exo)
-  → Cover test NEGATIVE (no movement = no real tropia)
-  Normal in most people (small positive kappa is physiologic)
+ Pupil center is NASAL to the visual axis
+ → Corneal reflex falls TEMPORAL to pupil center
+ → Looks like EXOTROPIA on Hirschberg (pseudo-exo)
+ → Cover test NEGATIVE (no movement = no real tropia)
+ Normal in most people (small positive kappa is physiologic)
 
 NEGATIVE KAPPA:
-  Pupil center is TEMPORAL to the visual axis
-  → Corneal reflex falls NASAL to pupil center
-  → Looks like ESOTROPIA on Hirschberg (pseudo-eso)
-  → Cover test NEGATIVE
-  Seen in: high myopia (fovea displaced further temporal)
+ Pupil center is TEMPORAL to the visual axis
+ → Corneal reflex falls NASAL to pupil center
+ → Looks like ESOTROPIA on Hirschberg (pseudo-eso)
+ → Cover test NEGATIVE
+ Seen in: high myopia (fovea displaced further temporal)
 
 RULE: Large positive kappa = pseudo-exotropia; Negative kappa = pseudo-esotropia
 ```
@@ -876,95 +876,95 @@ These are named after Ludwig Seidel (1857) who mathematically described the 5 ty
 
 ```
 ABERRATION 1: SPHERICAL ABERRATION
-  What it is: Peripheral rays focus at a DIFFERENT point than central (paraxial) rays
-  
-  Plain version: The edge of the lens is a slightly different power than the center.
-  Peripheral rays → converge closer to the lens (short focal point)
-  Central rays → converge farther (long focal point)
-  
-  Result: A point source becomes a blurred circle ("blur circle") on the retina
-  
-  Clinical relevance:
-    - LARGER PUPIL = MORE spherical aberration (more peripheral rays enter)
-    - Pupil constriction REDUCES spherical aberration (limits entry of peripheral rays)
-    - This is why vision is slightly sharper in bright light (miotic pupil)
-    - Aspheric lens designs compensate by flattening the peripheral curve
+ What it is: Peripheral rays focus at a DIFFERENT point than central (paraxial) rays
+ 
+ Plain version: The edge of the lens is a slightly different power than the center.
+ Peripheral rays → converge closer to the lens (short focal point)
+ Central rays → converge farther (long focal point)
+ 
+ Result: A point source becomes a blurred circle ("blur circle") on the retina
+ 
+ Clinical relevance:
+ - LARGER PUPIL = MORE spherical aberration (more peripheral rays enter)
+ - Pupil constriction REDUCES spherical aberration (limits entry of peripheral rays)
+ - This is why vision is slightly sharper in bright light (miotic pupil)
+ - Aspheric lens designs compensate by flattening the peripheral curve
 
 ABERRATION 2: CHROMATIC ABERRATION
-  What it is: DIFFERENT WAVELENGTHS focus at DIFFERENT points
-  
-  Plain version: Blue light bends more than red light because it has a higher index of refraction.
-  Blue → shorter focal length → focuses IN FRONT of retina
-  Red → longer focal length → focuses BEHIND retina
-  
-  Types:
-    LONGITUDINAL chromatic aberration (LCA): focal points differ along the axis
-      Blue (short λ) → focuses ~2D more powerfully than red
-      Measured in diopters; approximately 2.5D total range in the human eye
-    
-    TRANSVERSE chromatic aberration (TCA): colored fringes at the edge of objects
-      Different wavelengths hit different retinal locations
-      Seen as colored halos around high-contrast edges
-  
-  Clinical relevance:
-    - BICHROME TEST (duochrome test) uses LCA:
-      Red and green backgrounds → if image is on retina, red/green letters are equal clarity
-      Letters clearer on RED → over-minused (push lens to red/less minus)
-      Letters clearer on GREEN → under-minused (pull lens to green/more minus)
-    - Abbe value (v-number): measures how much a lens material disperses light
-      HIGH Abbe = LOW chromatic aberration = better image quality
-      LOW Abbe = HIGH chromatic aberration = more color fringing
-      Abbe value of human cornea: ~57; crystalline lens: ~47
+ What it is: DIFFERENT WAVELENGTHS focus at DIFFERENT points
+ 
+ Plain version: Blue light bends more than red light because it has a higher index of refraction.
+ Blue → shorter focal length → focuses IN FRONT of retina
+ Red → longer focal length → focuses BEHIND retina
+ 
+ Types:
+ LONGITUDINAL chromatic aberration (LCA): focal points differ along the axis
+ Blue (short λ) → focuses ~2D more powerfully than red
+ Measured in diopters; approximately 2.5D total range in the human eye
+ 
+ TRANSVERSE chromatic aberration (TCA): colored fringes at the edge of objects
+ Different wavelengths hit different retinal locations
+ Seen as colored halos around high-contrast edges
+ 
+ Clinical relevance:
+ - BICHROME TEST (duochrome test) uses LCA:
+ Red and green backgrounds → if image is on retina, red/green letters are equal clarity
+ Letters clearer on RED → over-minused (push lens to red/less minus)
+ Letters clearer on GREEN → under-minused (pull lens to green/more minus)
+ - Abbe value (v-number): measures how much a lens material disperses light
+ HIGH Abbe = LOW chromatic aberration = better image quality
+ LOW Abbe = HIGH chromatic aberration = more color fringing
+ Abbe value of human cornea: ~57; crystalline lens: ~47
 
 ABERRATION 3: COMA
-  What it is: Off-axis point sources produce comet-shaped blur (not round)
-  
-  Plain version: When you look at a point of light that is off to the side,
-  the peripheral rays from different parts of the pupil focus at different heights.
-  The result is a smeared, comet-tail distortion — wider toward the edges of the image.
-  
-  Key feature: Coma is worst for oblique rays (off-axis objects)
-  The "tail" of the comet always points toward the center of the image
-  Board clue: Coma = off-axis comet shape
+ What it is: Off-axis point sources produce comet-shaped blur (not round)
+ 
+ Plain version: When you look at a point of light that is off to the side,
+ the peripheral rays from different parts of the pupil focus at different heights.
+ The result is a smeared, comet-tail distortion — wider toward the edges of the image.
+ 
+ Key feature: Coma is worst for oblique rays (off-axis objects)
+ The "tail" of the comet always points toward the center of the image
+ Board clue: Coma = off-axis comet shape
 
 ABERRATION 4: ASTIGMATISM OF OBLIQUE INCIDENCE (Oblique Astigmatism)
-  What it is: Oblique rays form two focal lines (like regular astigmatism)
-                but this is purely a lens geometry problem, not a corneal problem
-  
-  Plain version: When light hits a lens at an angle (not straight on),
-  the lens acts like it has two different powers — a vertical focus and a horizontal focus.
-  This happens even with a perfect spherical lens for off-axis targets.
-  
-  Distinguish from regular astigmatism:
-    Regular astigmatism = due to corneal/lens toric surface
-    Oblique astigmatism = due to angle of incidence at any surface
-    
-  Clinical relevance: Large minus lenses produce oblique astigmatism at the lens periphery
-  → "swim" phenomenon in strong minus glasses when looking off-center
+ What it is: Oblique rays form two focal lines (like regular astigmatism)
+ but this is purely a lens geometry problem, not a corneal problem
+ 
+ Plain version: When light hits a lens at an angle (not straight on),
+ the lens acts like it has two different powers — a vertical focus and a horizontal focus.
+ This happens even with a perfect spherical lens for off-axis targets.
+ 
+ Distinguish from regular astigmatism:
+ Regular astigmatism = due to corneal/lens toric surface
+ Oblique astigmatism = due to angle of incidence at any surface
+ 
+ Clinical relevance: Large minus lenses produce oblique astigmatism at the lens periphery
+ → "swim" phenomenon in strong minus glasses when looking off-center
 
 ABERRATION 5: CURVATURE OF FIELD (Petzval Field Curvature)
-  What it is: The sharpest focus of a lens lies on a CURVED surface, not a flat plane
-  
-  Plain version: Imagine focusing a projector onto a flat wall — but the sharpest image
-  actually exists on a curved surface. The center is sharp but the edges are blurry, or
-  if you focus the edges, the center goes blurry.
-  
-  In the eye: The retina is curved, which partially compensates for this aberration.
-  The eye's curved retina actually HELPS reduce the blur from curvature of field.
-  Board clue: Curvature of field is REDUCED by the curved retina of the eye
+ What it is: The sharpest focus of a lens lies on a CURVED surface, not a flat plane
+ 
+ Plain version: Imagine focusing a projector onto a flat wall — but the sharpest image
+ actually exists on a curved surface. The center is sharp but the edges are blurry, or
+ if you focus the edges, the center goes blurry.
+ 
+ In the eye: The retina is curved, which partially compensates for this aberration.
+ The eye's curved retina actually HELPS reduce the blur from curvature of field.
+ Board clue: Curvature of field is REDUCED by the curved retina of the eye
 
 ABERRATION 6: DISTORTION
-  What it is: Magnification varies across the image — straight lines appear bent
-  
-  Plain version: Objects at the edge of the image appear larger or smaller than
-  they should be relative to objects at the center.
-  
-  BARREL DISTORTION: edges appear compressed inward (like a barrel)
-    → seen with minus lenses (diverging)
-  PINCUSHION DISTORTION: edges appear expanded outward (like a pincushion)
-    → seen with plus lenses (converging)
-  
-  Board clue: "Barrel = minus; Pincushion = plus"
+ What it is: Magnification varies across the image — straight lines appear bent
+ 
+ Plain version: Objects at the edge of the image appear larger or smaller than
+ they should be relative to objects at the center.
+ 
+ BARREL DISTORTION: edges appear compressed inward (like a barrel)
+ → seen with minus lenses (diverging)
+ PINCUSHION DISTORTION: edges appear expanded outward (like a pincushion)
+ → seen with plus lenses (converging)
+ 
+ Board clue: "Barrel = minus; Pincushion = plus"
 ```
 
 ---
@@ -975,27 +975,27 @@ This is the most board-tested aberration because it has a direct clinical test:
 
 ```
 BICHROME TEST PRINCIPLE:
-  Background: Red and green (wavelengths flanking yellow focus point)
-  
-  LCA means:
-    Red letters → focal point is BEHIND the green letters' focal point
-    Green letters → focal point is in FRONT of the red letters' focal point
-    
-  Correct Rx → letters appear EQUALLY CLEAR on both halves
-  
-  Interpretation:
-    Clearer on RED (over-corrected minus / under-corrected plus):
-    → Focal point has moved TOO FAR behind the retina (over-powered)
-    → Reduce minus (or add plus) — "push toward red"
-    
-    Clearer on GREEN (under-corrected minus / over-corrected plus):  
-    → Focal point is still in front of the retina (under-powered)
-    → Add minus (or reduce plus) — "pull toward green"
-    
-  Mnemonic: "RAM GAP"
-    R = Red → Add Minus
-    G = Green → Add Plus
-    (Or: Red = Reduce minus; Green = Give more minus)
+ Background: Red and green (wavelengths flanking yellow focus point)
+ 
+ LCA means:
+ Red letters → focal point is BEHIND the green letters' focal point
+ Green letters → focal point is in FRONT of the red letters' focal point
+ 
+ Correct Rx → letters appear EQUALLY CLEAR on both halves
+ 
+ Interpretation:
+ Clearer on RED (over-corrected minus / under-corrected plus):
+ → Focal point has moved TOO FAR behind the retina (over-powered)
+ → Reduce minus (or add plus) — "push toward red"
+ 
+ Clearer on GREEN (under-corrected minus / over-corrected plus): 
+ → Focal point is still in front of the retina (under-powered)
+ → Add minus (or reduce plus) — "pull toward green"
+ 
+ Mnemonic: "RAM GAP"
+ R = Red → Add Minus
+ G = Green → Add Plus
+ (Or: Red = Reduce minus; Green = Give more minus)
 ```
 
 ---
@@ -1028,9 +1028,9 @@ BICHROME TEST PRINCIPLE:
 - [x] `TOS Review Structure/B/REVIEW GUIDE — B.md` — Original B1 content
 - [x] `PO-Physiological-Optics.md` — Entoptic phenomena (floaters, Purkinje figures, blue field, phosphenes, halos, afterimages, Moore's lightning streaks); Scheiner's experiment; contrast sensitivity
 - [x] `BV-Binocular-Vision-Sumaya.md` — Axes of Fick, angles of fixation
-- [x] `TO-MCU-2024.md` — Accommodation theories (Helmholtz), far/near point/range, Donder's table, Purkinje-Sanson images, ametropia classification (axial vs refractive), Brachycephalia/Dolichocephalia, Law of Silo
+- [x] `TO-2024.md` — Accommodation theories (Helmholtz), far/near point/range, Donder's table, Purkinje-Sanson images, ametropia classification (axial vs refractive), Brachycephalia/Dolichocephalia, Law of Silo
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.1 scope reference (Syllabi sections 2.0, 3.0, 4.5, 5.0 Iris, 8.0, 17.0)
-- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (MCU Review 2026) — Chromatic aberration, Abbe value, refractive indices, cardinal points, schematic vs reduced eye comparison; aberration overview
+- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (the 2026 review) — Chromatic aberration, Abbe value, refractive indices, cardinal points, schematic vs reduced eye comparison; aberration overview
 
 ---
 

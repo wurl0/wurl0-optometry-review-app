@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Ocular Disease — Consolidated Review
-**Personal study notes** | Sources: Dr. Ado Ocular Disease Notes (MCU 2024), Board Reviewer (8 Sessions), Smart Reviewer, Board Primer, OLE High-Yield Reviewer
+**Personal study notes** | Sources: Dr. Ado Ocular Disease Notes (2024), Board Reviewer (8 Sessions), Smart Reviewer, Board Primer, OLE High-Yield Reviewer
 
 ---
 
@@ -41,11 +41,11 @@
 ### Exophthalmos vs Proptosis
 - Both = anterior protrusion of the globe. Proptosis refers to any direction of displacement; exophthalmos specifically means anterior.
 - **Types of exophthalmos:**
-  - **Active:** thyroid ophthalmopathy (Graves disease) — soft tissue inflammation
-  - **Intermittent:** orbital varicosities; worse with Valsalva (bending forward)
-  - **Pulsating:** carotid-cavernous fistula or orbital meningocele (transmitted vascular pulse)
-  - **Unilateral:** usually neoplastic; proptosis beyond 21mm = pathologic
-  - **Bilateral:** usually systemic (thyroid, leukemia, neuroblastoma)
+ - **Active:** thyroid ophthalmopathy (Graves disease) — soft tissue inflammation
+ - **Intermittent:** orbital varicosities; worse with Valsalva (bending forward)
+ - **Pulsating:** carotid-cavernous fistula or orbital meningocele (transmitted vascular pulse)
+ - **Unilateral:** usually neoplastic; proptosis beyond 21mm = pathologic
+ - **Bilateral:** usually systemic (thyroid, leukemia, neuroblastoma)
 
 ### Orbital Cellulitis
 - Most common cause: **ethmoiditis** (direct spread from ethmoid sinuses)
@@ -192,10 +192,10 @@ Treatment for adult: **DCR (Dacryocystorhinostomy)** for chronic obstruction.
 - Cause: **Chlamydia trachomatis** (serotypes A, B, C)
 - Leading infectious cause of blindness worldwide
 - **4 Stages (IACS):**
-  - Stage I (Inflammation, follicular): follicles on upper tarsal conjunctiva
-  - Stage II (Inflammation, intense): intense hyperemia, immature follicles, limbal follicles (Herbert pits when healed)
-  - Stage III (Scarring): Arlt's line — horizontal scarring of upper tarsal conjunctiva
-  - Stage IV (Cicatricial): entropion, trichiasis, corneal scarring
+ - Stage I (Inflammation, follicular): follicles on upper tarsal conjunctiva
+ - Stage II (Inflammation, intense): intense hyperemia, immature follicles, limbal follicles (Herbert pits when healed)
+ - Stage III (Scarring): Arlt's line — horizontal scarring of upper tarsal conjunctiva
+ - Stage IV (Cicatricial): entropion, trichiasis, corneal scarring
 - **Pannus** forms at **upper limbus** (not lower — this distinguishes from other causes)
 - Treatment: **Tetracycline topically + sulfonamide/azithromycin orally**
 
@@ -203,9 +203,9 @@ Treatment for adult: **DCR (Dacryocystorhinostomy)** for chronic obstruction.
 - Bilateral, recurrent, seasonal (warm weather)
 - Affects: young males predominantly
 - Signs:
-  - **Cobblestone papillae** on upper tarsal conjunctiva
-  - Limbal follicles (Trantas dots)
-  - **Shield corneal ulcer** (sterile, flat oval ulcer at superior cornea)
+ - **Cobblestone papillae** on upper tarsal conjunctiva
+ - Limbal follicles (Trantas dots)
+ - **Shield corneal ulcer** (sterile, flat oval ulcer at superior cornea)
 - Treatment: mast cell stabilizers (sodium cromoglycate), topical steroids in acute attacks
 
 ### Giant Papillary Conjunctivitis (GPC)
@@ -260,11 +260,11 @@ Treatment for adult: **DCR (Dacryocystorhinostomy)** for chronic obstruction.
 ### Keratoconus
 - Bilateral non-inflammatory thinning and conical protrusion of the cornea
 - Signs:
-  - **Munson's sign:** V-shaped deformity of lower lid on downgaze
-  - **Scissors reflex** on retinoscopy (irregular astigmatism)
-  - **Fleischer ring:** iron deposits at base of cone (epithelial layer) — **earliest sign**
-  - Vogt's striae: vertical stress lines in Bowman's layer
-  - Oil droplet reflex on ophthalmoscopy
+ - **Munson's sign:** V-shaped deformity of lower lid on downgaze
+ - **Scissors reflex** on retinoscopy (irregular astigmatism)
+ - **Fleischer ring:** iron deposits at base of cone (epithelial layer) — **earliest sign**
+ - Vogt's striae: vertical stress lines in Bowman's layer
+ - Oil droplet reflex on ophthalmoscopy
 - Treatment: rigid GP contact lens; severe cases: **penetrating keratoplasty**; Intacs; corneal collagen crosslinking
 
 ### Corneal Opacities
@@ -524,10 +524,10 @@ Tests:
 - **Anterior uvea:** iris + ciliary body
 - **Posterior uvea:** choroid
 - **Uveitis classification (anatomic):**
-  - Anterior uveitis = iritis, iridocyclitis (most common type overall)
-  - Intermediate uveitis = pars planitis (snow balls, snow banking)
-  - Posterior uveitis = choroiditis, chorioretinitis, retinitis
-  - Panuveitis = all segments involved (e.g., sarcoidosis, Behcet's, VKH)
+ - Anterior uveitis = iritis, iridocyclitis (most common type overall)
+ - Intermediate uveitis = pars planitis (snow balls, snow banking)
+ - Posterior uveitis = choroiditis, chorioretinitis, retinitis
+ - Panuveitis = all segments involved (e.g., sarcoidosis, Behcet's, VKH)
 
 ### Anterior Uveitis (Iritis/Iridocyclitis)
 
@@ -536,8 +536,8 @@ Tests:
 - Ciliary flush (circumcorneal injection)
 - Cells and flare in anterior chamber (aqueous cell/flare)
 - Keratic precipitates (KP) on endothelium:
-  - **Fine (stellate) KP** = viral, Fuchs heterochromic cyclitis
-  - **Mutton-fat (large greasy) KP** = granulomatous uveitis (sarcoidosis, TB, VKH, leprosy)
+ - **Fine (stellate) KP** = viral, Fuchs heterochromic cyclitis
+ - **Mutton-fat (large greasy) KP** = granulomatous uveitis (sarcoidosis, TB, VKH, leprosy)
 - Posterior synechiae (iris adhesions to lens)
 - Busacca nodules (iris stroma) and Koeppe nodules (pupillary margin): granulomatous
 - Hypopyon (pus in AC): HLA-B27 diseases (Behcet's), bacterial endophthalmitis
@@ -787,15 +787,15 @@ Tests:
 ### Blow-Out Orbital Floor Fracture
 - Blunt force >5cm diameter (fist, ball) → orbital pressure → fracture at weakest point (orbital floor)
 - **Signs:**
-  - Infraorbital nerve anesthesia (lower lid, cheek, upper lip, upper teeth)
-  - Diplopia (restricted upgaze and downgaze)
-  - Enophthalmos (appears after edema resolves)
-  - Subcutaneous emphysema
+ - Infraorbital nerve anesthesia (lower lid, cheek, upper lip, upper teeth)
+ - Diplopia (restricted upgaze and downgaze)
+ - Enophthalmos (appears after edema resolves)
+ - Subcutaneous emphysema
 - **Best imaging:** CT scan with **coronal sections** (not axial)
 - **Treatment:**
-  - Conservative initially (ice, antibiotics, nasal decongestant, **NO nose blowing**)
-  - Surgery if: >1/3 of floor involved, persistent diplopia, enophthalmos >2mm
-  - Timing: repair within 2 weeks if indicated
+ - Conservative initially (ice, antibiotics, nasal decongestant, **NO nose blowing**)
+ - Surgery if: >1/3 of floor involved, persistent diplopia, enophthalmos >2mm
+ - Timing: repair within 2 weeks if indicated
 
 ### Intraocular Foreign Bodies (IOFB)
 

@@ -144,16 +144,16 @@ A simple infected sac regurgitates pus. Blood means something is eroding vessels
 ```
 ORBITAL SEPTUM — THE FIREWALL
 ─────────────────────────────
-Anterior to septum  → PRESEPTAL cellulitis  (lid swelling, milder)
-Posterior to septum → ORBITAL cellulitis    (proptosis, ↓EOM, ↓vision, brain risk)
-                          └── #1 source: ETHMOIDITIS (lamina papyracea)
+Anterior to septum → PRESEPTAL cellulitis (lid swelling, milder)
+Posterior to septum → ORBITAL cellulitis (proptosis, ↓EOM, ↓vision, brain risk)
+ └── #1 source: ETHMOIDITIS (lamina papyracea)
 
 LACRIMAL DRAINAGE — where tears exit
 ────────────────────────────────────
 PUNCTUM → CANALICULUS → common canaliculus → lacrimal SAC → NLD → nose (inferior meatus)
-   Jones I  : dye reaches nose          → system PATENT
-   Jones II : irrigate after negative I → dye recovered = partial block ABOVE sac
-                                        → clear saline   = block AT/BELOW sac
+ Jones I : dye reaches nose → system PATENT
+ Jones II : irrigate after negative I → dye recovered = partial block ABOVE sac
+ → clear saline = block AT/BELOW sac
 ```
 
 ## Memory Anchors
@@ -291,7 +291,7 @@ Explain in three sentences why a chalazion is painless but a stye hurts. Use the
 ---
 
 ## Sources Used
-- Ocular Disease — Dr. Elmo Ado (MCU); Ocular-Disease-Consolidated-Review (sections 1-3)
+- Ocular Disease — Dr. Elmo Ado ; Ocular-Disease-Consolidated-Review (sections 1-3)
 - Cross-reference: [[E2-01-Anterior-Segment]]; A2-02 Eyelids/Lacrimal anatomy; G2 autonomic (Horner's)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

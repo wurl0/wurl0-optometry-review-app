@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## C1 — Epidemiology and Prevention (Public Health Optometry)
-*Personal study notes | TOS: C Primary Care and Refraction | Source: Public Health Optometry, MCU 2024*
+*Personal study notes | TOS: C Primary Care and Refraction | Source: Public Health Optometry, 2024*
 
 ---
 
@@ -315,7 +315,7 @@ Explain in three sentences why a pair of glasses counts as a public-health inter
 ---
 
 ## Sources Used
-- Public Health Optometry — MCU 2024; WHO World Report on Vision (2019); DOH/PERI blindness data
+- Public Health Optometry — 2024; WHO World Report on Vision (2019); DOH/PERI blindness data
 - Cross-reference: [[H3-01-Practice-Management-and-Labor-Laws]] (health system); F5 Occupational, F7 Low Vision; C2 Ametropia (refractive error)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

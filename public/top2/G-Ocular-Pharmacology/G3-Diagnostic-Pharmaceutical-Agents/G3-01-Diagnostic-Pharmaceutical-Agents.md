@@ -143,15 +143,15 @@ It is an ester with very low tissue irritation and poor corneal penetration, so 
 TOPICAL ANESTHETIC — block the pain
 ────────────────────────────────────
 Weak base → only UNCHARGED form crosses nerve → blocks Na+ channel → no depolarization
-   acidic (infected) tissue → drug IONIZED → weak block
-ESTER (one "i")  → plasma pseudo-cholinesterase · less allergic · shorter
+ acidic (infected) tissue → drug IONIZED → weak block
+ESTER (one "i") → plasma pseudo-cholinesterase · less allergic · shorter
 AMIDE (two "i"s) → LIVER · longer acting
 
 DYE SORTING — what does it stain?
 ──────────────────────────────────
 Epithelial DEFECT (missing cells) → FLUORESCEIN (green under cobalt blue)
-Devitalized cells / mucus         → ROSE BENGAL / LISSAMINE (dry eye; rose BEFORE fluorescein)
-Endothelium / capsule             → TRYPAN BLUE / ICG (surgery)
+Devitalized cells / mucus → ROSE BENGAL / LISSAMINE (dry eye; rose BEFORE fluorescein)
+Endothelium / capsule → TRYPAN BLUE / ICG (surgery)
 
 FLUORESCEIN-BASED TESTS
 ───────────────────────
@@ -292,7 +292,7 @@ Explain in three sentences why fluorescein only glows where the epithelium is br
 ---
 
 ## Sources Used
-- Ocular Pharmacology — Dr. Ado (MCU), pp.34-43
+- Ocular Pharmacology — Dr. Ado , pp.34-43
 - Cross-reference: [[G2-01-Autonomic-Drugs]] (diagnostic mydriatics/cycloplegics); [[F1-01-DPA-Examination]] (RA8050 approved DPA list)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

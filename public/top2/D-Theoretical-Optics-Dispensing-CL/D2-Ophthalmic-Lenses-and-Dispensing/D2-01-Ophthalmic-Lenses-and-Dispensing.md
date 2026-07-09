@@ -52,11 +52,11 @@ Lower Abbe → more color fringing in periphery → patient complaint of "blur a
 
 ```
 n-Abbe-SG RELATIONSHIP:
-  n ↑ (higher index) → Abbe ↓ (more CA) → SG usually ↓ (lighter) or variable
-  Exception: Trivex (n=1.532, Abbe=43-45) — good middle ground
+ n ↑ (higher index) → Abbe ↓ (more CA) → SG usually ↓ (lighter) or variable
+ Exception: Trivex (n=1.532, Abbe=43-45) — good middle ground
 
 IMPACT RESISTANCE ORDER (best to worst):
-  Polycarbonate > High-index plastic > CR-39 > Crown glass
+ Polycarbonate > High-index plastic > CR-39 > Crown glass
 ```
 
 **Photochromic lens mechanism:**
@@ -78,19 +78,19 @@ LIMITATION: Car windshield blocks UV → photochromic lens does NOT activate in 
 
 ```
 CPF FILTERS (longpass — blocks everything BELOW the cutoff):
-  CPF 450 → cuts < 450 nm → light yellow → early changes
-  CPF 511 → cuts < 511 nm → yellow-orange → cataract, aniridia
-  CPF 527 → cuts < 527 nm → orange → RP, glaucoma, ARMD
-  CPF 550 → cuts < 550 nm → amber-red → achromatopsia, severe photophobia
-  Rule: Higher CPF number → longer cutoff → more filtered → darker appearance
+ CPF 450 → cuts < 450 nm → light yellow → early changes
+ CPF 511 → cuts < 511 nm → yellow-orange → cataract, aniridia
+ CPF 527 → cuts < 527 nm → orange → RP, glaucoma, ARMD
+ CPF 550 → cuts < 550 nm → amber-red → achromatopsia, severe photophobia
+ Rule: Higher CPF number → longer cutoff → more filtered → darker appearance
 
 WRATTEN FILTERS (trial filters for LV assessment):
-  #12 Yellow → ~500 nm cutoff → mild contrast enhancement
-  #15 Deep yellow → ~510 nm → moderate contrast
-  #21 Orange → ~540 nm → RP, macular disease
-  #22 Orange → ~550 nm → similar to CPF 550
-  #25 Red → ~600 nm → achromatopsia, severe cone dysfunction
-  #29 Dark red → ~640 nm → maximum filtering; profound photophobia
+ #12 Yellow → ~500 nm cutoff → mild contrast enhancement
+ #15 Deep yellow → ~510 nm → moderate contrast
+ #21 Orange → ~540 nm → RP, macular disease
+ #22 Orange → ~550 nm → similar to CPF 550
+ #25 Red → ~600 nm → achromatopsia, severe cone dysfunction
+ #29 Dark red → ~640 nm → maximum filtering; profound photophobia
 ```
 
 ---
@@ -115,42 +115,42 @@ WRATTEN FILTERS (trial filters for LV assessment):
 
 ```
 LENS FORMS (from most to least aberration):
-  Biconvex > Plano-convex > Meniscus (best for reducing marginal aberrations)
-  Mass-produced lenses use meniscus form (corrected curve)
+ Biconvex > Plano-convex > Meniscus (best for reducing marginal aberrations)
+ Mass-produced lenses use meniscus form (corrected curve)
 
 PERISCOPIC LENS:
-  Plus lenses: back surface = −1.25 D
-  Minus lenses: front surface = +1.25 D
+ Plus lenses: back surface = −1.25 D
+ Minus lenses: front surface = +1.25 D
 
 BASE CURVES (toric transposition):
-  Rx −2.25 to −4.00 D → BC 4.00 D
-  Rx +2.00 to −2.00 D → BC 6.00 D
-  Rx +2.25 to +4.50 D → BC 8.00 D
+ Rx −2.25 to −4.00 D → BC 4.00 D
+ Rx +2.00 to −2.00 D → BC 6.00 D
+ Rx +2.25 to +4.50 D → BC 8.00 D
 ```
 
 **Bifocal and multifocal designs:**
 
 ```
 FUSED BIFOCAL (Kryptok, FT-28, FT-35)
-  — Segment of higher-index glass (flint) fused into major lens (crown)
-  — Advantages: smooth upper edge, cosmetically invisible, durable
-  — Disadvantages: image jump, limited styles
+ — Segment of higher-index glass (flint) fused into major lens (crown)
+ — Advantages: smooth upper edge, cosmetically invisible, durable
+ — Disadvantages: image jump, limited styles
 
 ONE-PIECE BIFOCAL (Executive/Franklin, Ultex)
-  — Entire lens ground from one piece of glass/plastic
-  — Executive: full-width segment divides lens horizontally
-  — Advantage: wide near segment; no prismatic jump at segment top
-  — Disadvantage: heavy, thick
+ — Entire lens ground from one piece of glass/plastic
+ — Executive: full-width segment divides lens horizontally
+ — Advantage: wide near segment; no prismatic jump at segment top
+ — Disadvantage: heavy, thick
 
 PROGRESSIVE ADDITION LENS (PAL/No-line)
-  — Distance zone (top) → intermediate corridor → near zone (bottom)
-  — No visible line; intermediate vision capability
-  — Disadvantage: peripheral distortion; adaptation period required
-  — Advantage: cosmetically superior; full range of vision
+ — Distance zone (top) → intermediate corridor → near zone (bottom)
+ — No visible line; intermediate vision capability
+ — Disadvantage: peripheral distortion; adaptation period required
+ — Advantage: cosmetically superior; full range of vision
 
 BLENDED BIFOCAL
-  — Segment line ground away; intermediate zone blurred
-  — Less cosmetically appealing than PAL; no intermediate zone
+ — Segment line ground away; intermediate zone blurred
+ — Less cosmetically appealing than PAL; no intermediate zone
 ```
 
 **Slab-off (bicentric grinding) for anisometropia:**
@@ -159,19 +159,19 @@ BLENDED BIFOCAL
 PURPOSE: Correct differential vertical prismatic effect when prescriptions differ significantly between eyes
 INDICATION: Anisometropia with significant difference in sphere (typically >1.50-2.00 D vertical prism differential)
 METHOD: Front slab-off = removes minus from upper portion of weaker lens
-         Back slab-off = removes plus from upper portion of stronger lens
+ Back slab-off = removes plus from upper portion of stronger lens
 Conventional: slab-off on MORE MINUS lens (or LESS PLUS)
 ```
 
 **Prism in lenses — Prentice's rule application:**
 
 ```
-P = d × F   (d in cm, F in diopters)
+P = d × F (d in cm, F in diopters)
 
 Plus lens: base faces optical center (prism apex in periphery)
-  → Object displaced TOWARD apex (away from OC)
+ → Object displaced TOWARD apex (away from OC)
 Minus lens: apex faces optical center (prism base in periphery)
-  → Object displaced toward APEX (toward OC)
+ → Object displaced toward APEX (toward OC)
 
 Direction of image displacement: ALWAYS toward prism APEX
 Direction of prism displacement: image moves TOWARD apex; eye position moves TOWARD base
@@ -230,29 +230,29 @@ Verification: add front + back powers at each direction → must equal the origi
 
 ```
 Step 1 — plus cyl form:
-  Sph = +0.75 + (−1.00) = −0.25   Cyl = +1.00   Axis = 90 + 90 = 180°
-  → −0.25 +1.00 × 180°
+ Sph = +0.75 + (−1.00) = −0.25 Cyl = +1.00 Axis = 90 + 90 = 180°
+ → −0.25 +1.00 × 180°
 
 Step 2 — BC at axis 90° from cyl axis 180° = at axis 90°:
-  Front: +6.00 × 90°
+ Front: +6.00 × 90°
 
 Step 3 — BC + cyl at cyl axis 180°:
-  Front: +6.00 + 1.00 = +7.00 × 180°
+ Front: +6.00 + 1.00 = +7.00 × 180°
 
 Step 4 — back sphere:
-  Back = −0.25 − (+6.00) = −6.25 sph
+ Back = −0.25 − (+6.00) = −6.25 sph
 
 Result:
-  Front toric: +6.00 × 90° / +7.00 × 180°
-  Back sphere: −6.25 sph
+ Front toric: +6.00 × 90° / +7.00 × 180°
+ Back sphere: −6.25 sph
 
 Verification (optical cross):
-  +6.00 × 90° → contributes +6.00 in the 180° direction
-  +7.00 × 180° → contributes +7.00 in the 90° direction
-  Back: −6.25 in both
+ +6.00 × 90° → contributes +6.00 in the 180° direction
+ +7.00 × 180° → contributes +7.00 in the 90° direction
+ Back: −6.25 in both
 
-  Net @ 90° direction: +7.00 − 6.25 = +0.75 ✓ (Rx @ 90°: sphere = +0.75)
-  Net @ 180° direction: +6.00 − 6.25 = −0.25 ✓ (Rx @ 180°: +0.75 − 1.00 = −0.25)
+ Net @ 90° direction: +7.00 − 6.25 = +0.75 ✓ (Rx @ 90°: sphere = +0.75)
+ Net @ 180° direction: +6.00 − 6.25 = −0.25 ✓ (Rx @ 180°: +0.75 − 1.00 = −0.25)
 ```
 
 **SVTT Practice Problems (solved):**
@@ -260,14 +260,14 @@ Verification (optical cross):
 *P1: +4.50 s = −2.25 c × 90, BC 8.00*
 ```
 Plus cyl: +2.25 +2.25 × 180°
-Front: +8.00 × 90° / +10.25 × 180°  (8.00 + 2.25)
+Front: +8.00 × 90° / +10.25 × 180° (8.00 + 2.25)
 Back: +2.25 − 8.00 = −5.75 sph
 ```
 
 *P2: −2.50 s = −2.75 c × 45, BC 4.00*
 ```
 Plus cyl: −5.25 +2.75 × 135°
-Front: +4.00 × 45° / +6.75 × 135°  (4.00 + 2.75; axis 90° from 135° = 45°)
+Front: +4.00 × 45° / +6.75 × 135° (4.00 + 2.75; axis 90° from 135° = 45°)
 Back: −5.25 − 4.00 = −9.25 sph
 ```
 
@@ -293,28 +293,28 @@ Back: +1.50 − 6.00 = −4.50 sph
 
 ```
 Step 1 — minus cyl form:
-  Sph = +1.00 + 0.25 = +1.25   Cyl = −0.25   Axis = 90 + 90 = 180°
-  → +1.25 −0.25 × 180°
+ Sph = +1.00 + 0.25 = +1.25 Cyl = −0.25 Axis = 90 + 90 = 180°
+ → +1.25 −0.25 × 180°
 
 Step 2 — Front = +6.00 sph (BC, spherical, segment side)
 
 Step 3 — Back at axis 90° away from minus cyl axis 180° = at axis 90°:
-  Back = sphere − BC = +1.25 − 6.00 = −4.75 × 90°
+ Back = sphere − BC = +1.25 − 6.00 = −4.75 × 90°
 
 Step 4 — Back at minus cyl axis 180°:
-  Back = −4.75 + (−0.25) = −5.00 × 180°
+ Back = −4.75 + (−0.25) = −5.00 × 180°
 
 Result:
-  Front sphere: +6.00 sph (BC)
-  Back toric: −4.75 × 90° / −5.00 × 180°
+ Front sphere: +6.00 sph (BC)
+ Back toric: −4.75 × 90° / −5.00 × 180°
 
 Verification:
-  Front +6.00 sph → contributes +6.00 in both directions
-  Back −4.75 × 90° → contributes −4.75 in 180° direction
-  Back −5.00 × 180° → contributes −5.00 in 90° direction
+ Front +6.00 sph → contributes +6.00 in both directions
+ Back −4.75 × 90° → contributes −4.75 in 180° direction
+ Back −5.00 × 180° → contributes −5.00 in 90° direction
 
-  Net @ 90° direction: +6.00 + (−5.00) = +1.00 ✓ (Rx @ 90°: +1.00 in original)
-  Net @ 180° direction: +6.00 + (−4.75) = +1.25 ✓ (Rx @ 180°: +1.25 in original)
+ Net @ 90° direction: +6.00 + (−5.00) = +1.00 ✓ (Rx @ 90°: +1.00 in original)
+ Net @ 180° direction: +6.00 + (−4.75) = +1.25 ✓ (Rx @ 180°: +1.25 in original)
 ```
 
 **FBTT Seatwork Problems (solved):**
@@ -356,22 +356,22 @@ Step 1 — plus cyl: +2.00 +1.00 × 60° ✓ (already in plus cyl)
 Step 2 — Back = −4.00 sph (BC, concave)
 
 Step 3 — Front at axis 90° from plus cyl axis 60° = at axis 150°:
-  Front = sphere + BC = +2.00 + 4.00 = +6.00 × 150°
+ Front = sphere + BC = +2.00 + 4.00 = +6.00 × 150°
 
 Step 4 — Front at plus cyl axis 60°:
-  Front = +6.00 + 1.00 = +7.00 × 60°
+ Front = +6.00 + 1.00 = +7.00 × 60°
 
 Result:
-  Front toric: +6.00 × 150° / +7.00 × 60°
-  Back sphere: −4.00 sph (BC)
+ Front toric: +6.00 × 150° / +7.00 × 60°
+ Back sphere: −4.00 sph (BC)
 
 Verification:
-  +6.00 × 150° → contributes +6.00 in the 60° direction
-  +7.00 × 60° → contributes +7.00 in the 150° direction
-  Back: −4.00 in both
+ +6.00 × 150° → contributes +6.00 in the 60° direction
+ +7.00 × 60° → contributes +7.00 in the 150° direction
+ Back: −4.00 in both
 
-  Net @ 60° direction: +6.00 + (−4.00) = +2.00 ✓
-  Net @ 150° direction: +7.00 + (−4.00) = +3.00 ✓ (Rx @ 150°: +2.00 + 1.00 = +3.00)
+ Net @ 60° direction: +6.00 + (−4.00) = +2.00 ✓
+ Net @ 150° direction: +7.00 + (−4.00) = +3.00 ✓ (Rx @ 150°: +2.00 + 1.00 = +3.00)
 ```
 
 **UBTT Try Problem (solved):** +2.50 s = −1.50 c × 10, add 2.00 Ultex, BC 6.00
@@ -441,19 +441,19 @@ Back: −6.00 sph
 
 ```
 SVTT:
-  Form: plus cyl
-  Front (toric): BC × (90° from cyl axis) / (BC + cyl) × cyl axis
-  Back (sphere): sphere(+cyl) − BC
+ Form: plus cyl
+ Front (toric): BC × (90° from cyl axis) / (BC + cyl) × cyl axis
+ Back (sphere): sphere(+cyl) − BC
 
 FBTT:
-  Form: minus cyl
-  Front (sphere): BC
-  Back (toric): [sphere − BC] × (90° from cyl axis) / [sphere − BC + cyl] × cyl axis
+ Form: minus cyl
+ Front (sphere): BC
+ Back (toric): [sphere − BC] × (90° from cyl axis) / [sphere − BC + cyl] × cyl axis
 
 UBTT:
-  Form: plus cyl
-  Front (toric): (sphere + BC) × (90° from cyl axis) / (sphere + BC + cyl) × cyl axis
-  Back (sphere): −BC
+ Form: plus cyl
+ Front (toric): (sphere + BC) × (90° from cyl axis) / (sphere + BC + cyl) × cyl axis
+ Back (sphere): −BC
 ```
 
 ---
@@ -532,31 +532,31 @@ Always: image moves TOWARD the APEX of the prism
 ```
 LENS MATERIAL SPECTRUM (n vs Abbe)
 ────────────────────────────────────────
-HIGH ABBE (LOW CA)          LOW ABBE (HIGH CA)
+HIGH ABBE (LOW CA) LOW ABBE (HIGH CA)
 Crown glass (Abbe 58.9) ←──────────────→ Polycarbonate (Abbe 30)
-CR-39 (Abbe 58)               Trivex (Abbe 43-45) is in between
-                        n=1.49 ←──────→ n=1.586+
+CR-39 (Abbe 58) Trivex (Abbe 43-45) is in between
+ n=1.49 ←──────→ n=1.586+
 
 CPF FILTER SERIES
 ──────────────────────────────────────────────────────────────
 WAVELENGTH (nm)
-UV   400  450  500  550  600  700 (visible)
+UV 400 450 500 550 600 700 (visible)
 |----|----|----|----|----|----|
-     CPF450: cuts here
-          CPF511: cuts here
-               CPF527: cuts here
-                    CPF550: cuts here
+ CPF450: cuts here
+ CPF511: cuts here
+ CPF527: cuts here
+ CPF550: cuts here
 Higher cutoff = more filtered = darker = for more severe photophobia
 
 BIFOCAL DESIGNS
 ───────────────
-FUSED:       [DISTANCE        ]  ← segment fused into carrier
-             [______NEAR______]
-ONE-PIECE:   [DISTANCE        ]  ← one piece; Executive = full-width
-             [NEAR            ]
-PROGRESSIVE: [DISTANCE        ]
-             [  corridor  ]
-             [ NEAR ]
+FUSED: [DISTANCE ] ← segment fused into carrier
+ [______NEAR______]
+ONE-PIECE: [DISTANCE ] ← one piece; Executive = full-width
+ [NEAR ]
+PROGRESSIVE: [DISTANCE ]
+ [ corridor ]
+ [ NEAR ]
 ```
 
 ---
@@ -697,9 +697,9 @@ Draw the CPF filter spectrum. Mark the 4 CPF numbers and their cutoff wavelength
 
 Work each problem from scratch. Label front and back surfaces, show all steps, verify with optical cross.
 
-1. SVTT: `+3.00 s = −1.50 c × 90   BC 6.00`
-2. FBTT: `+2.00 s = −0.75 c × 90   add 2.00 KK   BC 6.00`
-3. UBTT: `+1.50 s = +1.00 c × 45   add 2.00 Ultex   BC 4.00`
+1. SVTT: `+3.00 s = −1.50 c × 90 BC 6.00`
+2. FBTT: `+2.00 s = −0.75 c × 90 add 2.00 KK BC 6.00`
+3. UBTT: `+1.50 s = +1.00 c × 45 add 2.00 Ultex BC 4.00`
 
 Decide the type first (SV → SVTT; Kryptok/FT → FBTT; Ultex/Executive → UBTT). Then apply the correct cylinder form. Draw the optical cross at the end and confirm the net powers match the original Rx at both meridians.
 
@@ -728,24 +728,24 @@ Decide the type first (SV → SVTT; Kryptok/FT → FBTT; Ultex/Executive → UBT
 
 ```
 EXACT FORMULA:
-  s = r − √(r² − y²)
+ s = r − √(r² − y²)
 
-  Where:
-    s = sag (depth of curve, in mm)
-    r = radius of curvature (mm)
-    y = semi-diameter of lens (half the lens size, in mm)
+ Where:
+ s = sag (depth of curve, in mm)
+ r = radius of curvature (mm)
+ y = semi-diameter of lens (half the lens size, in mm)
 
 SIMPLIFIED (for small y compared to r):
-  s ≈ y² / (2r)
+ s ≈ y² / (2r)
 
 CALIPER METHOD to find lens power:
-  D = 1000 × s × 2(n − 1) / A²
+ D = 1000 × s × 2(n − 1) / A²
 
-  Where:
-    D = surface power (diopters)
-    s = sag in mm (s = CT − ET for plus lens; s = ET − CT for minus lens)
-    n = index of refraction
-    A = semi-diameter in mm
+ Where:
+ D = surface power (diopters)
+ s = sag in mm (s = CT − ET for plus lens; s = ET − CT for minus lens)
+ n = index of refraction
+ A = semi-diameter in mm
 ```
 
 **Plus lens:** Center thicker than edge → sag = CT − ET (CT = center thickness, ET = edge thickness)
@@ -765,32 +765,32 @@ CALIPER METHOD to find lens power:
 TWO SCENARIOS:
 
 1. LENS MOVED AWAY from the eye (farther from cornea):
-   D_far = Dv / (1 − d × Dv)
+ D_far = Dv / (1 − d × Dv)
 
 2. LENS MOVED TOWARD the eye (closer to cornea):
-   D_near = Dv / (1 + d × Dv)
+ D_near = Dv / (1 + d × Dv)
 
-   Where:
-     Dv = original lens power (diopters)
-     d = change in vertex distance (METERS)
+ Where:
+ Dv = original lens power (diopters)
+ d = change in vertex distance (METERS)
 
 DIRECTION RULES:
-  Lens direction  | Plus lens effect | Minus lens effect
-  ─────────────────|──────────────────|───────────────────
-  Away from eye   | Increases power  | Decreases power
-  Toward eye      | Decreases power  | Increases power
+ Lens direction | Plus lens effect | Minus lens effect
+ ─────────────────|──────────────────|───────────────────
+ Away from eye | Increases power | Decreases power
+ Toward eye | Decreases power | Increases power
 
 Note: When the LENS moves away, EFFECTIVE power (same lens, new position) follows OPPOSITE formula:
-  Same lens moved far:  D_eff = Dv / (1 − d × Dv)
-  Same lens moved near: D_eff = Dv / (1 + d × Dv)
+ Same lens moved far: D_eff = Dv / (1 − d × Dv)
+ Same lens moved near: D_eff = Dv / (1 + d × Dv)
 ```
 
 **Sample (Dr. Viñola):** Patient has −8.00D worn at 12 mm. Repositioned to 16 mm (d = 0.004 m away):
 ```
 D_far = −8.00 / (1 − 0.004 × (−8.00))
-      = −8.00 / (1 + 0.032)
-      = −8.00 / 1.032
-      D_far = −7.75 D
+ = −8.00 / (1 + 0.032)
+ = −8.00 / 1.032
+ D_far = −7.75 D
 ```
 
 **For astigmatic lenses:** Apply vertex distance separately to each principal meridian, then draw a new optical cross and transpose.
@@ -810,16 +810,16 @@ D_CL = D_Spec / (1 − d × D_Spec)
 
 ```
 RESULTANT POWER FORMULA:
-  Combined power at any meridian = D₁sin²(θ₁) + D₂sin²(θ₂)
-  
-  For two cylinders at axes α and β, the resultant cylinder C at axis γ satisfies:
-  C = √[(D₁cos2α − D₂cos2β)² + (D₁sin2α − D₂sin2β)²]
+ Combined power at any meridian = D₁sin²(θ₁) + D₂sin²(θ₂)
+ 
+ For two cylinders at axes α and β, the resultant cylinder C at axis γ satisfies:
+ C = √[(D₁cos2α − D₂cos2β)² + (D₁sin2α − D₂sin2β)²]
 
 AXIS OF RESULTANT:
-  tan(2γ) = (D₁sin2α − D₂sin2β) / (D₁cos2α − D₂cos2β)
+ tan(2γ) = (D₁sin2α − D₂sin2β) / (D₁cos2α − D₂cos2β)
 
 RESULTANT SPHERE:
-  S_result = (D₁ + D₂ − C) / 2
+ S_result = (D₁ + D₂ − C) / 2
 ```
 
 **Board-level approach (practical):**
@@ -849,9 +849,9 @@ D(θ) = Sph + Cyl · sin²α
 **2. Resultant (oblique) prism — combine a vertical and a horizontal prism**
 
 ```
-r = √(v² + h²)          magnitude
-tan α = v / h           base direction (α from horizontal)
-v = r·sinα ,  h = r·cosα   (splitting one oblique prism back into components)
+r = √(v² + h²) magnitude
+tan α = v / h base direction (α from horizontal)
+v = r·sinα , h = r·cosα (splitting one oblique prism back into components)
 ```
 
 - **Plain version:** if a lens gives some sideways prism (h) and some up/down prism (v), the eye feels ONE prism pointing diagonally. Because v and h are at right angles, they are the legs of a right triangle and the resultant is the hypotenuse.
@@ -877,22 +877,22 @@ Then read the side off as a base label: **temporal → Base OUT, nasal → Base 
 **Worked example A (power in a meridian → prism):** Rx +5.00 −1.50 × 45, point 8 mm temporal, both eyes.
 
 ```
-Horizontal (180°) meridian:  α = |180 − 45| = 135°,  sin²135° = 0.5
-  D₁₈₀ = +5.00 + (−1.50)(0.5) = +4.25 D
-Prentice:  P = d·F = 0.8 cm × 4.25 D = 3.4Δ
+Horizontal (180°) meridian: α = |180 − 45| = 135°, sin²135° = 0.5
+ D₁₈₀ = +5.00 + (−1.50)(0.5) = +4.25 D
+Prentice: P = d·F = 0.8 cm × 4.25 D = 3.4Δ
 Base: +4.25 PLUS, point 8 mm TEMPORAL (displacement) → plus → OPPOSITE → nasal → Base In
-  Answer = 3.4Δ BI   (a keyed "3.4Δ BO" is the base-direction trap)
+ Answer = 3.4Δ BI (a keyed "3.4Δ BO" is the base-direction trap)
 ```
 
 **Worked example B (resolve into v/h, then recombine):** Rx +4.00 −3.00 × 45, decentered 6 mm out + 4 mm down.
 
 ```
 Horizontal (180°): α = 135°, sin² = 0.5 → +4.00 + (−3.00)(0.5) = +2.5 D
-  H = 0.6 cm × 2.5 = 1.5Δ ;  decentered out (decentration) → plus → SAME → Base OUT
-Vertical (90°):    α = |90 − 45| = 45°, sin² = 0.5 → +2.5 D
-  V = 0.4 cm × 2.5 = 1.0Δ ;  decentered down (decentration) → plus → SAME → Base DOWN
-Resultant:  r = √(1.0² + 1.5²) = √3.25 = 1.8Δ
-  tan α = v/h = 1.0/1.5 → α = 33.7°  (base out-and-down quadrant)
+ H = 0.6 cm × 2.5 = 1.5Δ ; decentered out (decentration) → plus → SAME → Base OUT
+Vertical (90°): α = |90 − 45| = 45°, sin² = 0.5 → +2.5 D
+ V = 0.4 cm × 2.5 = 1.0Δ ; decentered down (decentration) → plus → SAME → Base DOWN
+Resultant: r = √(1.0² + 1.5²) = √3.25 = 1.8Δ
+ tan α = v/h = 1.0/1.5 → α = 33.7° (base out-and-down quadrant)
 ```
 
 ---
@@ -931,15 +931,15 @@ Read the options first, kill the wrong numbers, then settle the flip. Each rule 
 ```
 I = h × D_add
 
-  I = image jump (prism diopters)
-  h = distance from segment top edge to segment optical center (cm)
-  D_add = reading addition power
+ I = image jump (prism diopters)
+ h = distance from segment top edge to segment optical center (cm)
+ D_add = reading addition power
 
 SEGMENT OPTICAL CENTER DISTANCES from top of segment:
-  Round-top (Kryptok)  → 11 mm → h = 1.1 cm
-  Flat top (FT-28/35)  → 7 mm  → h = 0.7 cm
-  Executive / Franklin → 0 mm  → h = 0    (NO IMAGE JUMP)
-  Ultex                → 20 mm → h = 2.0 cm
+ Round-top (Kryptok) → 11 mm → h = 1.1 cm
+ Flat top (FT-28/35) → 7 mm → h = 0.7 cm
+ Executive / Franklin → 0 mm → h = 0 (NO IMAGE JUMP)
+ Ultex → 20 mm → h = 2.0 cm
 
 Rule: Executive bifocal has ZERO image jump (OC at segment line).
 ```
@@ -947,28 +947,28 @@ Rule: Executive bifocal has ZERO image jump (OC at segment line).
 **Image displacement (at reading point):**
 ```
 Total prismatic effect at reading level:
-  Image Displacement = DIP + NIP
-  
-  DIP (Distance Induced Prism) = D_distance × h_distance  (h = distance from OC to reading point, cm)
-  NIP (Near Induced Prism)     = D_add × P_segment        (P = distance from segment OC to reading point, cm)
+ Image Displacement = DIP + NIP
+ 
+ DIP (Distance Induced Prism) = D_distance × h_distance (h = distance from OC to reading point, cm)
+ NIP (Near Induced Prism) = D_add × P_segment (P = distance from segment OC to reading point, cm)
 ```
 
 **Vertical imbalance — when to treat:**
 ```
 IF vertical imbalance ≤ 1.5Δ:
-  Correct by: Drop distance OC | Dissimilar segments
+ Correct by: Drop distance OC | Dissimilar segments
 
 IF vertical imbalance > 1.5Δ:
-  Correct by: Slab-off | Prism in segments
+ Correct by: Slab-off | Prism in segments
 
 SLAB-OFF INDICATION RULE:
-  Ground on the MOST MINUS (or LEAST PLUS) lens in the 90° meridian
-  Orientation: Base-UP prism in reading area
+ Ground on the MOST MINUS (or LEAST PLUS) lens in the 90° meridian
+ Orientation: Base-UP prism in reading area
 
 REVERSE SLAB-OFF:
-  Molded on MOST PLUS (or LEAST MINUS) lens
-  Orientation: Base-DOWN prism in reading area
-  Used in plastic lenses (cannot grind — molded instead)
+ Molded on MOST PLUS (or LEAST MINUS) lens
+ Orientation: Base-DOWN prism in reading area
+ Used in plastic lenses (cannot grind — molded instead)
 ```
 
 ---
@@ -981,32 +981,32 @@ REVERSE SLAB-OFF:
 
 ```
 SPECTACLE MAGNIFICATION (SM):
-  SM = 1 / [(1 − (t/n)D₁) × (1 − dF_v)]
+ SM = 1 / [(1 − (t/n)D₁) × (1 − dF_v)]
 
-  Where:
-    t = center thickness (meters)
-    n = index of refraction
-    D₁ = front surface power
-    d = vertex distance (meters)
-    F_v = back vertex power
+ Where:
+ t = center thickness (meters)
+ n = index of refraction
+ D₁ = front surface power
+ d = vertex distance (meters)
+ F_v = back vertex power
 
 SIMPLIFIED (shape factor × power factor):
-  Shape factor = 1 / (1 − (t/n)D₁)
-  Power factor = 1 / (1 − d × F_v)
+ Shape factor = 1 / (1 − (t/n)D₁)
+ Power factor = 1 / (1 − d × F_v)
 
 CL MAGNIFICATION (CLM) — comparing CL to spectacle correction:
-  CLM = 1 − d × D_Spec
+ CLM = 1 − d × D_Spec
 
-  Where d = spectacle vertex distance, D_Spec = spectacle power
+ Where d = spectacle vertex distance, D_Spec = spectacle power
 
 RELATIVE SPECTACLE MAGNIFICATION (RSM):
-  For REFRACTIVE ametropia:
-    RSM = 1 + d × F_Spec    (with spectacles)
-    RSM ≈ 1 (with CLs, since d ≈ 0)
+ For REFRACTIVE ametropia:
+ RSM = 1 + d × F_Spec (with spectacles)
+ RSM ≈ 1 (with CLs, since d ≈ 0)
 
-  For AXIAL ametropia:
-    RSM = 1 − g × F_Spec    (with spectacles, g ≈ 0)
-    RSM = 1 − (f_eye − 1.55) × F_Spec    (with CLs)
+ For AXIAL ametropia:
+ RSM = 1 − g × F_Spec (with spectacles, g ≈ 0)
+ RSM = 1 − (f_eye − 1.55) × F_Spec (with CLs)
 ```
 
 **Clinical rules:**
@@ -1025,15 +1025,15 @@ RELATIVE SPECTACLE MAGNIFICATION (RSM):
 ```
 Reflectance (%) = [(n' − n) / (n' + n)]² × 100
 
-  n = index of first medium (air = 1.0)
-  n' = index of lens material
+ n = index of first medium (air = 1.0)
+ n' = index of lens material
 
 Example — CR-39 (n = 1.49):
-  = [(1.49 − 1) / (1.49 + 1)]² × 100
-  = (0.49 / 2.49)² × 100
-  = (0.1968)² × 100
-  = 3.87% per surface
-  Uncoated (two surfaces): 3.87 × 2 = 7.75% lost; transmits ~92%
+ = [(1.49 − 1) / (1.49 + 1)]² × 100
+ = (0.49 / 2.49)² × 100
+ = (0.1968)² × 100
+ = 3.87% per surface
+ Uncoated (two surfaces): 3.87 × 2 = 7.75% lost; transmits ~92%
 ```
 
 **Light transmission by material:**
@@ -1051,15 +1051,15 @@ Example — CR-39 (n = 1.49):
 **AR coating types:**
 ```
 SINGLE COATING:
-  Back surface only; reduces back reflection by ~85%
-  Back surface reflection: 3.87% × 15% = 0.58%
-  Total loss: 3.87% (front) + 0.58% (back) = 4.45%
-  Transmission: ~95.5%
+ Back surface only; reduces back reflection by ~85%
+ Back surface reflection: 3.87% × 15% = 0.58%
+ Total loss: 3.87% (front) + 0.58% (back) = 4.45%
+ Transmission: ~95.5%
 
 DOUBLE (MULTICOATING):
-  Both surfaces coated; back surface reflection → ~0%
-  Total loss: ~3.87% (front only)
-  Transmission: ~96%
+ Both surfaces coated; back surface reflection → ~0%
+ Total loss: ~3.87% (front only)
+ Transmission: ~96%
 ```
 
 **Clinical indications for AR coating:**
@@ -1077,29 +1077,29 @@ DOUBLE (MULTICOATING):
 
 ```
 BENCHWORK SEQUENCE (6 stages):
-1. CENTERING   — Mark optical center, cylinder axis, prism base-apex line on lens front surface
-2. LAYOUT      — Mark proper decentration and orientation (set cylinder axis + base-apex to correct position)
-3. CUTTING     — Trace shape of frame former onto lens; cut excess glass (hand or machine)
+1. CENTERING — Mark optical center, cylinder axis, prism base-apex line on lens front surface
+2. LAYOUT — Mark proper decentration and orientation (set cylinder axis + base-apex to correct position)
+3. CUTTING — Trace shape of frame former onto lens; cut excess glass (hand or machine)
 4. CHIPPING / CRUMBLING — Remove surplus glass left after cutting (rough removal of irregular edges)
-5. EDGING      — Smooth and bevel the lens edge to exact shape (flat edging or bevel edging)
+5. EDGING — Smooth and bevel the lens edge to exact shape (flat edging or bevel edging)
 6. GLAZING / MOUNTING — Insert finished lens into frame (glazing = into channel/rimmed frame; mounting = into rimless)
 ```
 
 **Decentration (boxing system):**
 ```
-Decentration = (Frame PD − Patient PD) / 2   (per eye, in mm)
+Decentration = (Frame PD − Patient PD) / 2 (per eye, in mm)
 
 Frame PD (DBC) = A + DBL
-  A = horizontal eye size
-  DBL = distance between lenses (bridge size)
+ A = horizontal eye size
+ DBL = distance between lenses (bridge size)
 
 Patient PD = monocular PDs for each eye
 
 Prismatic effect from decentration:
-  P = d × D  (Prentice's rule; d in cm, D in diopters)
+ P = d × D (Prentice's rule; d in cm, D in diopters)
 
 To achieve prescribed prism via decentration:
-  d = P / D    (cm)
+ d = P / D (cm)
 ```
 
 ---
@@ -1141,6 +1141,6 @@ Ultex = 20mm OC → most jump; Executive = 0mm OC → zero jump.
 - [x] `PMO-5of5-Dr-Vinola.md` — Dispensing procedures, frame selection, bifocal types
 - [x] `Gap-Lectures/12-Absorptive-Lenses-Clinical-Theory.md` — UV bands, CPF filters, Wratten numbers, photochromic mechanism, clinical indications by diagnosis, UV 400 standard
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS D.2 scope reference
-- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (MCU 2024) — Sagittae formula, thick lens powers, vertex distance/effective power, image jump, vertical imbalance, slab-off rules, decentration, spectacle magnification, anti-reflection coating physics, benchwork stages, lensometer procedures, boxing system, bifocal image displacement
+- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (2024) — Sagittae formula, thick lens powers, vertex distance/effective power, image jump, vertical imbalance, slab-off rules, decentration, spectacle magnification, anti-reflection coating physics, benchwork stages, lensometer procedures, boxing system, bifocal image displacement
 
 *Note written: June 5, 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

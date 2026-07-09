@@ -268,5 +268,5 @@ Write the components of an occupational vision safety plan from memory — 6 com
 
 ---
 
-*Source: Occupational and Industrial Optometry MCU 2024 | Gap Lecture 10 (SSS/PhilHealth/Pag-IBIG)*
+*Source: Occupational and Industrial Optometry 2024 | Gap Lecture 10 (SSS/PhilHealth/Pag-IBIG)*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

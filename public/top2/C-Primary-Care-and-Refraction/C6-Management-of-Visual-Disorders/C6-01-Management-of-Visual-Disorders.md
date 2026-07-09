@@ -104,8 +104,8 @@ The vergence reserve available to compensate for a phoria must be at least twice
 
 **What each part means:**
 - Compensating fusional vergence = the vergence in the direction OPPOSITE to the deviation
-  - For exophoria: the compensating vergence is the BI (negative) fusional vergence (how far BI you can push before diplopia)
-  - For esophoria: the compensating vergence is the BO (positive) fusional vergence
+ - For exophoria: the compensating vergence is the BI (negative) fusional vergence (how far BI you can push before diplopia)
+ - For esophoria: the compensating vergence is the BO (positive) fusional vergence
 - Recovery value (not break) is used as the measure of functional reserve — the point at which the patient can re-fuse, not the point at which they lose fusion
 - Phoria = the size of the latent deviation (in Δ)
 
@@ -170,10 +170,10 @@ If demand is in the outer BI third: prescribe BO prism = (1/3 × BI break) − (
 Amplitude of Convergence = (NPD × 10) ÷ (NPC + 3)
 
 Where:
-  NPD = near pupillary distance in mm
-  NPC = near point of convergence in cm
-  +3  = correction for the distance from the spectacle plane to the center of rotation (≈ 27 mm → 3 cm)
-  Result = in prism diopters (Δ)
+ NPD = near pupillary distance in mm
+ NPC = near point of convergence in cm
+ +3 = correction for the distance from the spectacle plane to the center of rotation (≈ 27 mm → 3 cm)
+ Result = in prism diopters (Δ)
 ```
 
 **What it states in plain language:**
@@ -201,41 +201,41 @@ The maximum convergence the eyes can achieve, expressed in prism diopters, calcu
 
 ```
 VISUAL DISORDER IDENTIFIED
-         |
-         v
+ |
+ v
 RUNG 1: Correct refractive error
-         Full cycloplegic Rx if needed
-         Re-examine binocular status with new Rx
-         |
-         v
+ Full cycloplegic Rx if needed
+ Re-examine binocular status with new Rx
+ |
+ v
 Did the disorder resolve?
-  YES → Monitor
-  NO  → Continue to Rung 2
-         |
-         v
+ YES → Monitor
+ NO → Continue to Rung 2
+ |
+ v
 RUNG 2: Prism prescription
-         Sheard's or Percival's criterion not met
-         Prescribe compensating prism (exo: BI; eso: BO; hyper: BD)
-         |
-         v
+ Sheard's or Percival's criterion not met
+ Prescribe compensating prism (exo: BI; eso: BO; hyper: BD)
+ |
+ v
 Did symptoms resolve?
-  YES → Monitor + periodic VT assessment
-  NO  → Continue to Rung 3
-         |
-         v
+ YES → Monitor + periodic VT assessment
+ NO → Continue to Rung 3
+ |
+ v
 RUNG 3: Vision therapy
-         Vergence training, accommodative therapy, binocular rehab
-         For amblyopia: patching/penalization + active therapy
-         |
-         v
+ Vergence training, accommodative therapy, binocular rehab
+ For amblyopia: patching/penalization + active therapy
+ |
+ v
 Adequate improvement?
-  YES → Discharge or maintenance program
-  NO  → Continue to Rung 4
-         |
-         v
+ YES → Discharge or maintenance program
+ NO → Continue to Rung 4
+ |
+ v
 RUNG 4: Surgical referral
-         Large-angle constant tropia unresponsive to optical + VT
-         Refer to ophthalmology
+ Large-angle constant tropia unresponsive to optical + VT
+ Refer to ophthalmology
 ```
 
 ---
@@ -244,38 +244,38 @@ RUNG 4: Surgical referral
 
 ```
 AMBLYOPIA CONFIRMED
-         |
-         v
+ |
+ v
 STEP 1: CORRECT THE CAUSE
-         Deprivation → remove opacity (cataract, ptosis) first
-         Strabismic → correct refractive error; assess angle post-correction
-         Anisometropic → full refractive correction; wait 8–12 weeks for adaptation
-         |
-         v
+ Deprivation → remove opacity (cataract, ptosis) first
+ Strabismic → correct refractive error; assess angle post-correction
+ Anisometropic → full refractive correction; wait 8–12 weeks for adaptation
+ |
+ v
 STEP 2: PRESENT A CLEAR RETINAL IMAGE TO AMBLYOPIC EYE
-         Full refractive correction of the amblyopic eye (DO NOT under-correct to "avoid stress")
-         |
-         v
+ Full refractive correction of the amblyopic eye (DO NOT under-correct to "avoid stress")
+ |
+ v
 STEP 3: FORCE USE OF THE AMBLYOPIC EYE
-         |
-         +—— Passive therapy
-         |      Occlusion: opaque patch on good eye
-         |        Total vs partial (translucent patch)
-         |        Full-time vs part-time
-         |        Conventional (patch good eye) vs inverse (very brief)
-         |      Penalization: atropine in good eye (blurs near); optical penalization
-         |
-         +—— Active therapy (+ passive)
-                Pleoptics — for eccentric fixation; dazzle peripheral retina, stimulate fovea
-                CAM vision stimulator — amblyopic eye stimulated with rotating gratings 7 min/session
-                OVT (Optometric Vision Therapy) — binocular + monocular components
-                Perceptual learning — repeated practice of visual discrimination tasks
-                Pegboard stimulator — eye-hand coordination; anti-suppression
-                |
-                v
+ |
+ +—— Passive therapy
+ | Occlusion: opaque patch on good eye
+ | Total vs partial (translucent patch)
+ | Full-time vs part-time
+ | Conventional (patch good eye) vs inverse (very brief)
+ | Penalization: atropine in good eye (blurs near); optical penalization
+ |
+ +—— Active therapy (+ passive)
+ Pleoptics — for eccentric fixation; dazzle peripheral retina, stimulate fovea
+ CAM vision stimulator — amblyopic eye stimulated with rotating gratings 7 min/session
+ OVT (Optometric Vision Therapy) — binocular + monocular components
+ Perceptual learning — repeated practice of visual discrimination tasks
+ Pegboard stimulator — eye-hand coordination; anti-suppression
+ |
+ v
 STEP 4: ADDRESS BINOCULAR ANOMALY
-         Strabismus surgery if indicated (ophthalmology)
-         Binocular VT to establish/restore fusion after acuity is equalized
+ Strabismus surgery if indicated (ophthalmology)
+ Binocular VT to establish/restore fusion after acuity is equalized
 ```
 
 ---
@@ -284,39 +284,39 @@ STEP 4: ADDRESS BINOCULAR ANOMALY
 
 ```
 EXOPHORIA (eyes drift out)
-  |
-  +— CI (Convergence Insufficiency)
-  |    Near exo > far exo | Low AC/A | Receded NPC
-  |    Management: VT (convergence exercises) → plus add at near → BI prism (compensating)
-  |
-  +— DE (Divergence Excess)
-  |    Far exo > near exo | High AC/A | Normal NPC
-  |    Management: BI prism (far) → VT → minus add (controversial) → surgery if large/constant
-  |
-  +— Basic Exophoria
-       Equal exo at far and near | Normal AC/A
-       Management: BI prism → VT
+ |
+ +— CI (Convergence Insufficiency)
+ | Near exo > far exo | Low AC/A | Receded NPC
+ | Management: VT (convergence exercises) → plus add at near → BI prism (compensating)
+ |
+ +— DE (Divergence Excess)
+ | Far exo > near exo | High AC/A | Normal NPC
+ | Management: BI prism (far) → VT → minus add (controversial) → surgery if large/constant
+ |
+ +— Basic Exophoria
+ Equal exo at far and near | Normal AC/A
+ Management: BI prism → VT
 
 ESOPHORIA (eyes drift in)
-  |
-  +— CE (Convergence Excess)
-  |    Near eso > far eso | High AC/A | Often uncorrected hyperopia
-  |    Management: Full hyperopic correction FIRST → plus add at near → BO prism → VT
-  |
-  +— DI (Divergence Insufficiency)
-  |    Far eso > near eso | Low AC/A | Rule out CN6 palsy
-  |    Management: BO prism (far) → VT
-  |
-  +— Basic Esophoria
-       Equal eso at far and near | Normal AC/A
-       Management: Full hyperopic correction → BO prism → VT
+ |
+ +— CE (Convergence Excess)
+ | Near eso > far eso | High AC/A | Often uncorrected hyperopia
+ | Management: Full hyperopic correction FIRST → plus add at near → BO prism → VT
+ |
+ +— DI (Divergence Insufficiency)
+ | Far eso > near eso | Low AC/A | Rule out CN6 palsy
+ | Management: BO prism (far) → VT
+ |
+ +— Basic Esophoria
+ Equal eso at far and near | Normal AC/A
+ Management: Full hyperopic correction → BO prism → VT
 
 FUSIONAL VERGENCE DYSFUNCTION (FVD)
-  Normal phoria, reduced vergence ranges both directions
-  Management: VT (primary — build both PFV and NFV) → plus add if AI co-exists
+ Normal phoria, reduced vergence ranges both directions
+ Management: VT (primary — build both PFV and NFV) → plus add if AI co-exists
 
 VERTICAL PHORIA
-  Management: BD prism before the higher eye → VT → surgical referral for large deviations
+ Management: BD prism before the higher eye → VT → surgical referral for large deviations
 ```
 
 ---
@@ -417,24 +417,24 @@ CE = Convergence Excess = Correction first (full hyperopic Rx, then plus add)
 AMBLYOPIA TYPES — When to think of each
 
 Suppression → strabismus present?
-  YES → Strabismic amblyopia
-         Board clue: constant, unilateral squint; moderate to deep acuity loss; eccentric fixation
-  NO  → Is there significant anisometropia?
-           YES → Anisometropic amblyopia
-                  Board clue: hyperopic anisometrope with ≥1D difference; foveal fixation usually
-           NO  → Is there a media opacity or form deprivation?
-                   YES → Deprivation amblyopia (worst prognosis; treat urgently)
-                   NO  → Consider isoametropic amblyopia (bilateral high uncorrected RE) or organic
+ YES → Strabismic amblyopia
+ Board clue: constant, unilateral squint; moderate to deep acuity loss; eccentric fixation
+ NO → Is there significant anisometropia?
+ YES → Anisometropic amblyopia
+ Board clue: hyperopic anisometrope with ≥1D difference; foveal fixation usually
+ NO → Is there a media opacity or form deprivation?
+ YES → Deprivation amblyopia (worst prognosis; treat urgently)
+ NO → Consider isoametropic amblyopia (bilateral high uncorrected RE) or organic
 
 PRISM PRESCRIPTION FLOW
 
 Step 1: Measure phoria (#3 far / #13A near)
 Step 2: Measure compensating recovery (#17B for exo; #16B for eso)
 Step 3: Apply Sheard's: Recovery ≥ 2× phoria?
-   YES → Asymptomatic; prism not needed
-   NO  → Prism = (2 × phoria − recovery) ÷ 3
-          Direction: exo → BI | eso → BO | hyper → BD (higher eye)
-          Place before non-dominant eye preferentially
+ YES → Asymptomatic; prism not needed
+ NO → Prism = (2 × phoria − recovery) ÷ 3
+ Direction: exo → BI | eso → BO | hyper → BD (higher eye)
+ Place before non-dominant eye preferentially
 ```
 
 ---
@@ -606,7 +606,7 @@ Write the complete management sequence for strabismic amblyopia — from first s
 - [x] `BV-Dr-Juarez.md` — clinical classification and management of vergence dysfunction; amblyopia types, passive and active therapy; pleoptics; CAM stimulator; OVT
 - [x] `BV-Binocular-Vision-Sumaya.md` — BV disorder classification; FVD; vergence dysfunction table
 - [x] `PCO-Primary-Care-Optometry.md` — NPC interpretation; convergence insufficiency management; prism placement; amplitude of convergence formula
-- [x] `TO-MCU-2024.md` — anisometropia classification (Class I–V); strabismic and anisometropic amblyopia management; pleoptics
+- [x] `TO-2024.md` — anisometropia classification (Class I–V); strabismic and anisometropic amblyopia management; pleoptics
 - [x] `PedO-Pediatric-Optometry.md` — functional amblyopia treatment goals; strabismic and anisometropic amblyopia depth and prognosis
 - [x] `constants-and-formulas.md` — Sheard's and Percival's criteria; Morgan's norms; anisometropia risk thresholds
 

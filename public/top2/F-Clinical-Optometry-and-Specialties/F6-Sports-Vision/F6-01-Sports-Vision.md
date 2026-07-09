@@ -125,29 +125,29 @@ Sports vision is the branch of optometry that evaluates and enhances an athlete'
 
 ```
 ATHLETE PRESENTS FOR SPORTS VISION ASSESSMENT
-  |
-  v
+ |
+ v
 OCULAR HEALTH EXAM
 (Slit lamp, fundus, IOP)
-  |
-  v
+ |
+ v
 REFRACTIVE ASSESSMENT
 (Static VA, cycloplegic if needed, best correction)
-  |
-  v
+ |
+ v
 VISUAL SKILLS BATTERY
 Static VA → Dynamic VA → Contrast Sensitivity
 Depth Perception → BV (phoria, vergence) → Accommodation
 Eye-Hand Coordination → Peripheral Awareness
-  |
-  v
+ |
+ v
 IDENTIFY DEFICIENT SKILLS
-  |
-  +---> Optical correction needed → Prescribe + counsel on CL/eyewear for sport
-  +---> Visual skill deficit → Vision training program (Brock string, tranaglyphs, Wayne fixator)
-  +---> Protection needed → Sport-appropriate protective eyewear (ASTM standard)
-  |
-  v
+ |
+ +---> Optical correction needed → Prescribe + counsel on CL/eyewear for sport
+ +---> Visual skill deficit → Vision training program (Brock string, tranaglyphs, Wayne fixator)
+ +---> Protection needed → Sport-appropriate protective eyewear (ASTM standard)
+ |
+ v
 FOLLOW-UP AND PERFORMANCE MONITORING
 ```
 
@@ -269,5 +269,5 @@ Write the sports vision assessment battery in order — from baseline health exa
 
 ---
 
-*Source: Sports Vision MCU 2024*
+*Source: Sports Vision 2024*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

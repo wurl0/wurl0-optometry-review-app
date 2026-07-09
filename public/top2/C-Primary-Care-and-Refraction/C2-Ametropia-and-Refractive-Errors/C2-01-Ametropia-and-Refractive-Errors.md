@@ -69,19 +69,19 @@ Because a myope's far point is in front of the eye. At near, objects fall natura
 Every refractive state is the result of a mismatch between the eye's POWER and its LENGTH.
 
 ```
-EMMETROPIA:   POWER matches LENGTH   → F2 lands exactly on retina
-MYOPIA:       POWER too strong       → F2 in front of retina
-              OR LENGTH too long     → retina is past F2
-HYPEROPIA:    POWER too weak         → F2 would be behind retina
-              OR LENGTH too short    → retina is before F2
-ASTIGMATISM:  POWER unequal in meridians → two line foci, not one point
+EMMETROPIA: POWER matches LENGTH → F2 lands exactly on retina
+MYOPIA: POWER too strong → F2 in front of retina
+ OR LENGTH too long → retina is past F2
+HYPEROPIA: POWER too weak → F2 would be behind retina
+ OR LENGTH too short → retina is before F2
+ASTIGMATISM: POWER unequal in meridians → two line foci, not one point
 ```
 
 **Classification by mechanism:**
 - **Axial ametropia** — axial length is the variable; refractive media are normal
 - **Refractive ametropia** — axial length is normal; power of the media is wrong
-  - Curvature type: corneal or lenticular radius is abnormal
-  - Index type: index of refraction of a medium is abnormal
+ - Curvature type: corneal or lenticular radius is abnormal
+ - Index type: index of refraction of a medium is abnormal
 
 **The four causative variables (from D1-01 Gullstrand section):**
 
@@ -101,9 +101,9 @@ ASTIGMATISM:  POWER unequal in meridians → two line foci, not one point
 **Hofstetter's Formulas — Amplitude of Accommodation by Age**
 
 ```
-Minimum AOA  =  15  − 0.25 × age
-Average AOA  =  18.5 − 0.30 × age
-Maximum AOA  =  25  − 0.40 × age
+Minimum AOA = 15 − 0.25 × age
+Average AOA = 18.5 − 0.30 × age
+Maximum AOA = 25 − 0.40 × age
 
 (AOA in diopters; age in years)
 ```
@@ -150,14 +150,14 @@ The linear form works because presbyopia is not an on/off event — it is a grad
 **Donders' Table — Age-Referenced Amplitude of Accommodation**
 
 ```
-Age (yr) | AOA (D)      Age (yr) | AOA (D)
-10       | 14.00        45       | 3.50
-15       | 12.00        50       | 2.50
-20       | 10.00        55       | 1.75
-25       | 8.50         60       | 1.00
-30       | 7.00         65       | 0.50
-35       | 5.50         70       | 0.25
-40       | 4.50         75       | 0.00
+Age (yr) | AOA (D) Age (yr) | AOA (D)
+10 | 14.00 45 | 3.50
+15 | 12.00 50 | 2.50
+20 | 10.00 55 | 1.75
+25 | 8.50 60 | 1.00
+30 | 7.00 65 | 0.50
+35 | 5.50 70 | 0.25
+40 | 4.50 75 | 0.00
 ```
 
 **Plain language:** Donders' table lists the average expected amplitude by decade. It is the clinical reference before Hofstetter's formulas. Use it as a quick check when you do not want to calculate.
@@ -171,7 +171,7 @@ Age (yr) | AOA (D)      Age (yr) | AOA (D)
 ```
 AC/A = change in convergence (prism diopters) / change in accommodation (diopters)
 
-Normal: 3:1 to 5:1  (i.e., 3–5Δ of convergence per 1D of accommodation)
+Normal: 3:1 to 5:1 (i.e., 3–5Δ of convergence per 1D of accommodation)
 ```
 
 **What it states in plain language:**
@@ -230,7 +230,7 @@ The examiner is not at infinity. Light returning from the patient's retina is di
 The working distance correction is like zeroing a scale before weighing. The gross finding includes the instrument's position as part of the measurement. The correction removes the positional offset so you read the actual error.
 
 **Cross-subject connections:**
-- **C4 (Objective Examination):** The working distance correction is applied at every retinoscopy encounter. 67 cm is the standard MCU working distance (room-sized lanes); 50 cm is used in smaller exam rooms.
+- **C4 (Objective Examination):** The working distance correction is applied at every retinoscopy encounter. 67 cm is the standard standard working distance (room-sized lanes); 50 cm is used in smaller exam rooms.
 - **D1-01 (Geometric Optics):** The correction is just a vergence calculation: vergence at 0.67m = 1/0.67 = 1.50D. The same D = 1/f formula underpins both.
 
 **Reading the Result:**
@@ -250,70 +250,70 @@ The working distance correction is like zeroing a scale before weighing. The gro
 
 ```
 REFRACTIVE STATUS
-      |
-      +-- EMMETROPIA: F2 on retina, accommodation relaxed
-      |
-      +-- AMETROPIA
-            |
-            +-- BY MECHANISM
-            |     +-- Axial: length is the variable (most common)
-            |     +-- Refractive: power is the variable
-            |           +-- Curvature type (K or lens shape)
-            |           +-- Index type (n of media abnormal)
-            |
-            +-- BY CONDITION
-                  +-- MYOPIA: F2 in front of retina
-                  |     +-- Simple (correlative) — ≤6.00D, stationary
-                  |     +-- Degenerative (component) — >6.00D, progressive
-                  |     +-- Pseudomyopia — accommodative spasm, resolves with cycloplegia
-                  |     +-- Night myopia — dim light, large pupil, spherical aberration
-                  |
-                  +-- HYPEROPIA: F2 behind retina
-                  |     +-- By accommodation:
-                  |     |     Facultative (overcome by Acc) → Absolute (cannot) → Latent (hidden) → Manifest → Total
-                  |     +-- By amount: Low (0.25–3.00D) / Medium (3.00–5.00D) / High (>5.00D)
-                  |
-                  +-- ASTIGMATISM: no single point focus
-                  |     +-- Regular: 2 principal meridians at 90°
-                  |     |     +-- WTR (With-the-rule): steep meridian 60–120°
-                  |     |     +-- ATR (Against-the-rule): steep meridian 0–30° or 150–180°
-                  |     |     +-- Oblique: steep meridian 30–60° or 120–150°
-                  |     +-- Irregular: principal meridians not perpendicular
-                  |     +-- By resultant (see Comparisons section)
-                  |
-                  +-- PRESBYOPIA: insufficient amplitude (not a focus error per se)
-                        +-- Incipient: near blur under stress conditions
-                        +-- Absolute: accommodation essentially zero
-                        +-- Premature: before age 40
-                        +-- Nocturnal: dim-light reduction of apparent amplitude
+ |
+ +-- EMMETROPIA: F2 on retina, accommodation relaxed
+ |
+ +-- AMETROPIA
+ |
+ +-- BY MECHANISM
+ | +-- Axial: length is the variable (most common)
+ | +-- Refractive: power is the variable
+ | +-- Curvature type (K or lens shape)
+ | +-- Index type (n of media abnormal)
+ |
+ +-- BY CONDITION
+ +-- MYOPIA: F2 in front of retina
+ | +-- Simple (correlative) — ≤6.00D, stationary
+ | +-- Degenerative (component) — >6.00D, progressive
+ | +-- Pseudomyopia — accommodative spasm, resolves with cycloplegia
+ | +-- Night myopia — dim light, large pupil, spherical aberration
+ |
+ +-- HYPEROPIA: F2 behind retina
+ | +-- By accommodation:
+ | | Facultative (overcome by Acc) → Absolute (cannot) → Latent (hidden) → Manifest → Total
+ | +-- By amount: Low (0.25–3.00D) / Medium (3.00–5.00D) / High (>5.00D)
+ |
+ +-- ASTIGMATISM: no single point focus
+ | +-- Regular: 2 principal meridians at 90°
+ | | +-- WTR (With-the-rule): steep meridian 60–120°
+ | | +-- ATR (Against-the-rule): steep meridian 0–30° or 150–180°
+ | | +-- Oblique: steep meridian 30–60° or 120–150°
+ | +-- Irregular: principal meridians not perpendicular
+ | +-- By resultant (see Comparisons section)
+ |
+ +-- PRESBYOPIA: insufficient amplitude (not a focus error per se)
+ +-- Incipient: near blur under stress conditions
+ +-- Absolute: accommodation essentially zero
+ +-- Premature: before age 40
+ +-- Nocturnal: dim-light reduction of apparent amplitude
 ```
 
 **Retinoscopy Movement Decision Tree**
 
 ```
 Sweep retinoscope light across pupil
-        |
+ |
 Is reflex moving WITH the sweep (same direction)?
-        |
-        +-- YES: Hyperopia, emmetropia, or low myopia (less than WD equivalent)
-        |         → Add PLUS lenses until neutral
-        |
-        +-- NO (AGAINST): Myopia greater than working distance equivalent
-        |         → Add MINUS lenses until neutral
-        |
-        +-- NEUTRAL (whole pupil lights up instantly): Far point = working distance
-                  → This is the gross finding
-                  → Subtract WD correction to get net finding
+ |
+ +-- YES: Hyperopia, emmetropia, or low myopia (less than WD equivalent)
+ | → Add PLUS lenses until neutral
+ |
+ +-- NO (AGAINST): Myopia greater than working distance equivalent
+ | → Add MINUS lenses until neutral
+ |
+ +-- NEUTRAL (whole pupil lights up instantly): Far point = working distance
+ → This is the gross finding
+ → Subtract WD correction to get net finding
 ```
 
 **Accommodation Mechanism (Helmholtz Theory)**
 
 ```
 Far target (relaxed) → Ciliary muscle RELAXED → Zonules TAUT → Lens FLAT (thin) → Low plus power
-                                                                                              |
+ |
 Near target demand → Ciliary muscle CONTRACTS → Zonules RELAX → Lens ROUNDS (thick) → High plus power
-                         |
-                         (Parasympathetic: CN3 → ciliary ganglion → short ciliary nerves → ciliary muscle)
+ |
+ (Parasympathetic: CN3 → ciliary ganglion → short ciliary nerves → ciliary muscle)
 ```
 
 ---
@@ -402,8 +402,8 @@ For HYPEROPIA objective signs: **CCEV**
 
 **Resultant astigmatism memory pattern:**
 - CHA + CMA are COMPOUND (both meridians same side) — their oval image is on OPPOSITE sides
-  - CHA: (+V ATR, +H WTR) — oval is vertical in ATR
-  - CMA: (-V WTR, -H ATR) — oval is vertical in WTR — opposite of CHA
+ - CHA: (+V ATR, +H WTR) — oval is vertical in ATR
+ - CMA: (-V WTR, -H ATR) — oval is vertical in WTR — opposite of CHA
 - Simple types: one meridian on retina → straight line image
 - Mixed: one meridian each side → circle or oval
 
@@ -429,50 +429,50 @@ This is because WITH motion means the far point is behind the examiner (hyperope
 ```
 REFRACTIVE ERROR OVERVIEW
 
-                                          FAR POINT
-                                              |
-EMMETROPE:   Power = 58.64D, AL = 24.38mm → at ∞
-             Retina at F2 (24.38mm)
+ FAR POINT
+ |
+EMMETROPE: Power = 58.64D, AL = 24.38mm → at ∞
+ Retina at F2 (24.38mm)
 
-MYOPE:       Power TOO HIGH or AL TOO LONG
-                                          FAR POINT
-                                              |
-             F2 ←←←←←← RETINA             in front
-             (image focused in front)      of eye
-             Correction: MINUS lens pushes F2 to ∞ by diverging rays
+MYOPE: Power TOO HIGH or AL TOO LONG
+ FAR POINT
+ |
+ F2 ←←←←←← RETINA in front
+ (image focused in front) of eye
+ Correction: MINUS lens pushes F2 to ∞ by diverging rays
 
-HYPEROPE:    Power TOO LOW or AL TOO SHORT
-                                          FAR POINT (virtual)
-                                              |
-             RETINA →→→ F2 (virtual)       BEHIND
-             (image would focus behind)    the eye
-             Correction: PLUS lens pulls F2 forward to ∞
+HYPEROPE: Power TOO LOW or AL TOO SHORT
+ FAR POINT (virtual)
+ |
+ RETINA →→→ F2 (virtual) BEHIND
+ (image would focus behind) the eye
+ Correction: PLUS lens pulls F2 forward to ∞
 
 ASTIGMATISM: Two different powers in two meridians (90° apart)
-             
-             Steep meridian (high power) → Focal line CLOSER to cornea (front)
-             Flat meridian (low power)   → Focal line FURTHER from cornea (back)
-             
-             The region between the two focal lines = Conoid of Sturm
-             Circle of Least Confusion = midpoint between the two focal lines
+ 
+ Steep meridian (high power) → Focal line CLOSER to cornea (front)
+ Flat meridian (low power) → Focal line FURTHER from cornea (back)
+ 
+ The region between the two focal lines = Conoid of Sturm
+ Circle of Least Confusion = midpoint between the two focal lines
 
 
 ACCOMMODATION AMPLITUDE LOSS:
 
-Age 20    ████████████████████████████████████   10.00D (average)
-Age 30    ████████████████████████████           7.00D
-Age 40    ████████████████                       4.50D  ← presbyopia onset
-Age 45    █████████████                          3.50D
-Age 50    ██████████                             2.50D
-Age 60    ████                                   1.00D
-Age 70    █                                      0.25D
+Age 20 ████████████████████████████████████ 10.00D (average)
+Age 30 ████████████████████████████ 7.00D
+Age 40 ████████████████ 4.50D ← presbyopia onset
+Age 45 █████████████ 3.50D
+Age 50 ██████████ 2.50D
+Age 60 ████ 1.00D
+Age 70 █ 0.25D
 
 
 RETINOSCOPY MOVEMENT (Plane mirror, standard):
 
-Patient's far point BEHIND examiner  →  WITH motion  →  PLUS neutralizes
-Patient's far point IN FRONT         →  AGAINST motion  →  MINUS neutralizes
-Patient's far point AT examiner      →  NEUTRAL  →  Gross finding found
+Patient's far point BEHIND examiner → WITH motion → PLUS neutralizes
+Patient's far point IN FRONT → AGAINST motion → MINUS neutralizes
+Patient's far point AT examiner → NEUTRAL → Gross finding found
 ```
 
 ---
@@ -480,28 +480,28 @@ Patient's far point AT examiner      →  NEUTRAL  →  Gross finding found
 ## Board Traps
 
 - **Trap 1: "Hyperopia is far-sightedness, so hyperopes see far clearly."**
-  Wrong. ABSOLUTE hyperopes cannot see clearly at any distance without accommodation. Only FACULTATIVE hyperopes (those with enough AOA to compensate) see distance clearly. High hyperopes can be blurred at all distances.
+ Wrong. ABSOLUTE hyperopes cannot see clearly at any distance without accommodation. Only FACULTATIVE hyperopes (those with enough AOA to compensate) see distance clearly. High hyperopes can be blurred at all distances.
 
 - **Trap 2: "Latent hyperopia is less than manifest hyperopia."**
-  Wrong. Latent hyperopia is HIDDEN within the total — it is the portion masked by tonic ciliary spasm. Total hyperopia = latent + manifest. Latent can be large; manifest is only what routine refraction reveals.
+ Wrong. Latent hyperopia is HIDDEN within the total — it is the portion masked by tonic ciliary spasm. Total hyperopia = latent + manifest. Latent can be large; manifest is only what routine refraction reveals.
 
 - **Trap 3: "Pseudomyopia means the patient is pretending."**
-  Wrong. Pseudomyopia is tonic SPASM of accommodation making an emmetrope appear myopic. It is a real finding. It resolves under cycloplegia. Clue: subjective and objective findings are inconsistent, or near point of accommodation is unexpectedly close.
+ Wrong. Pseudomyopia is tonic SPASM of accommodation making an emmetrope appear myopic. It is a real finding. It resolves under cycloplegia. Clue: subjective and objective findings are inconsistent, or near point of accommodation is unexpectedly close.
 
 - **Trap 4: "Against motion always means myopia; with motion always means hyperopia."**
-  Incomplete. WITH motion = hyperopia OR emmetropia OR low myopia (less than the WD equivalent). AGAINST motion = myopia GREATER than the WD equivalent. At 67cm WD: against motion = myopia > 1.50D.
+ Incomplete. WITH motion = hyperopia OR emmetropia OR low myopia (less than the WD equivalent). AGAINST motion = myopia GREATER than the WD equivalent. At 67cm WD: against motion = myopia > 1.50D.
 
 - **Trap 5: "The Hofstetter minimum formula gives the lowest expected amplitude."**
-  Correct, but do not confuse lowest EXPECTED with clinically normal. A patient at the minimum formula is within the bottom 10th percentile of their age group — still within normal range, not pathological. Only values below the minimum formula are clinically reduced.
+ Correct, but do not confuse lowest EXPECTED with clinically normal. A patient at the minimum formula is within the bottom 10th percentile of their age group — still within normal range, not pathological. Only values below the minimum formula are clinically reduced.
 
 - **Trap 6: Compound myopic astigmatism correction is a minus sphere WITH minus cylinder.**
-  Correct only in minus cylinder form. In plus cylinder form, it is written as a more minus sphere with a plus cylinder. Both describe the same lens. Know both forms.
+ Correct only in minus cylinder form. In plus cylinder form, it is written as a more minus sphere with a plus cylinder. Both describe the same lens. Know both forms.
 
 - **Trap 7: "WTR astigmatism is more common in the elderly."**
-  Wrong direction. WTR astigmatism (steep at 90°, vertical meridian) is more common in YOUTH. ATR (steep at 180°, horizontal) becomes more common with AGE. The cornea flattens in the vertical meridian over time.
+ Wrong direction. WTR astigmatism (steep at 90°, vertical meridian) is more common in YOUTH. ATR (steep at 180°, horizontal) becomes more common with AGE. The cornea flattens in the vertical meridian over time.
 
 - **Trap 8: Presbyopia affects only the near point.**
-  Wrong. In absolute presbyopia, vision at EVERY distance degrades depending on the patient's distance error. A presbyopic hyperope has no distance vision either (needs plus for distance AND add for near). A presbyopic myope sees clearly only at their (now fixed) far point.
+ Wrong. In absolute presbyopia, vision at EVERY distance degrades depending on the patient's distance error. A presbyopic hyperope has no distance vision either (needs plus for distance AND add for near). A presbyopic myope sees clearly only at their (now fixed) far point.
 
 ---
 
@@ -645,7 +645,7 @@ Write the complete sequence for performing static retinoscopy on a new patient �
 
 ## Sources Used
 
-- [x] `TO-MCU-2024.md` — full ametropia sections: myopia, hyperopia, astigmatism, anisometropia, presbyopia, aniseikonia, amblyopia, accommodation/Hofstetter, AC/A
+- [x] `TO-2024.md` — full ametropia sections: myopia, hyperopia, astigmatism, anisometropia, presbyopia, aniseikonia, amblyopia, accommodation/Hofstetter, AC/A
 - [x] `PCO-Primary-Care-Optometry.md` — retinoscopy (static/dynamic, plane/concave mirror, movements, working distance), accommodation (push-up, Hofstetter, Donders), near point test
 - [x] `TO-Compiled-Notes.md` — basic optics reference (vergence, surface power)
 - [x] `D1-01-Geometric-and-Physical-Optics.md` — Gullstrand schematic eye, axial length → ametropia, far point, retinal conjugate points (cross-reference, not duplicated here)

@@ -151,17 +151,17 @@ They dilate the pupil. In a narrow angle, dilation bunches the iris into the dra
 SYSTEMIC DRUG → OCULAR STRUCTURE IT HITS
 ─────────────────────────────────────────
 CORNEA (verticillata) → chloroquine · amiodarone · tamoxifen · indomethacin (CATI)
-LENS (cataract)       → steroids = POSTERIOR · phenothiazines = ANTERIOR stellate
-RETINA                → chloroquine = bull's-eye · phenothiazine = pigmentary · OCP = occlusion
-OPTIC NERVE           → ethambutol · INH · chloramphenicol → neuritis
-COLOR VISION          → digitalis = YELLOW (xanthopsia) · ethambutol = red-green
-IOP / ANGLE           → steroids = open-angle · anticholinergics = angle-closure
+LENS (cataract) → steroids = POSTERIOR · phenothiazines = ANTERIOR stellate
+RETINA → chloroquine = bull's-eye · phenothiazine = pigmentary · OCP = occlusion
+OPTIC NERVE → ethambutol · INH · chloramphenicol → neuritis
+COLOR VISION → digitalis = YELLOW (xanthopsia) · ethambutol = red-green
+IOP / ANGLE → steroids = open-angle · anticholinergics = angle-closure
 
 SPECIAL POPULATIONS — one organ story
 ──────────────────────────────────────
-PREGNANCY → all Category C        → tropicamide + NLO (least exposure)
-PEDIATRIC → immature LIVER         → cyclopentolate 0.5–1% (CNS toxicity at 2%)
-GERIATRIC → failing liver/kidney   → slow clearance + polypharmacy → more toxicity
+PREGNANCY → all Category C → tropicamide + NLO (least exposure)
+PEDIATRIC → immature LIVER → cyclopentolate 0.5–1% (CNS toxicity at 2%)
+GERIATRIC → failing liver/kidney → slow clearance + polypharmacy → more toxicity
 ```
 
 ## Memory Anchors
@@ -321,7 +321,7 @@ Read the options first, kill wrong values, then settle the flip. `cue → rule �
 - Trap: "ethambutol = blue-yellow defect" — it's **red-green**.
 
 ## Sources Used
-- Ocular Pharmacology — Dr. Ado (MCU), pp.84-91
+- Ocular Pharmacology — Dr. Ado , pp.84-91
 - Cross-reference: [[G1-01-General-Pharmacology-Principles]] (special-population PK); [[G4-01-Therapeutic-Ophthalmic-Agents]] (steroid/glaucoma toxicity); [[F1-01-DPA-Examination]] (pregnancy DPA)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

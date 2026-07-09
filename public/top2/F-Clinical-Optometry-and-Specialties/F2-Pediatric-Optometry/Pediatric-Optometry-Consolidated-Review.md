@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Pediatric Optometry — Consolidated Review
-**Personal study notes** | Sources: Pediatric Optometry MCU 2024, OLE Board Primer (Pediatric), F2-01 Existing Notes
+**Personal study notes** | Sources: Pediatric Optometry 2024, OLE Board Primer (Pediatric), F2-01 Existing Notes
 
 ---
 
@@ -742,27 +742,27 @@ Modifications:
 
 ```
 Suspected amblyopia
-     |
-     v
+ |
+ v
 Cycloplegic refraction → full spectacle correction
-     |
-     v
+ |
+ v
 Wear glasses 12-16 weeks → reassess VA
-     |
-     +---> VA normalized? → glasses only (refractive amblyopia resolved)
-     |
-     +---> VA still reduced? → add patching of fellow eye
-               |
-               v
-           Foveal fixation → direct occlusion
-           Steady eccentric → inverse occlusion
-               |
-               v
-           Reassess every 4 weeks
-           No improvement after 4 weeks → modify occlusion / add active VT
-               |
-               v
-           VA plateau with spectacles + patching → atropine penalization or office-based VT
+ |
+ +---> VA normalized? → glasses only (refractive amblyopia resolved)
+ |
+ +---> VA still reduced? → add patching of fellow eye
+ |
+ v
+ Foveal fixation → direct occlusion
+ Steady eccentric → inverse occlusion
+ |
+ v
+ Reassess every 4 weeks
+ No improvement after 4 weeks → modify occlusion / add active VT
+ |
+ v
+ VA plateau with spectacles + patching → atropine penalization or office-based VT
 ```
 
 ### Key Tests Summary

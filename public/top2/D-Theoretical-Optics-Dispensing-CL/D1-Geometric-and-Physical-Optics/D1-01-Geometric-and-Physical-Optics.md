@@ -53,29 +53,29 @@ Because the material's refractive index varies by wavelength — it bends blue l
 
 ```
 1. CORPUSCULAR / EMISSION THEORY (Isaac Newton, 17th c.)
-   Light = tiny particles (corpuscles)
-   Explains: dispersion, reflection
-   Fails because: predicts light SPEEDS UP in denser media (wrong)
-   Rule: angle of incidence = angle of reflection
+ Light = tiny particles (corpuscles)
+ Explains: dispersion, reflection
+ Fails because: predicts light SPEEDS UP in denser media (wrong)
+ Rule: angle of incidence = angle of reflection
 
 2. WAVE / UNDULATORY THEORY (Christian Huygens, 17th c.)
-   Light = waves through elastic ether medium
-   Explains: diffraction, polarization, refraction, interference
-   Correct: light SLOWS DOWN in denser media (computationally confirmed)
-   Thomas Young confirmed wave nature experimentally
+ Light = waves through elastic ether medium
+ Explains: diffraction, polarization, refraction, interference
+ Correct: light SLOWS DOWN in denser media (computationally confirmed)
+ Thomas Young confirmed wave nature experimentally
 
 3. ELECTROMAGNETIC THEORY (James Clerk Maxwell, 19th c.)
-   Light = electromagnetic radiation
-   Predicted speed of light mathematically
-   Explains: full spectrum of radiant energy (radio → gamma)
-   Heinrich Hertz: experimental confirmation
-   Augustin Fresnel: experimented on longitudinal rays
+ Light = electromagnetic radiation
+ Predicted speed of light mathematically
+ Explains: full spectrum of radiant energy (radio → gamma)
+ Heinrich Hertz: experimental confirmation
+ Augustin Fresnel: experimented on longitudinal rays
 
 4. QUANTUM THEORY (Max Planck + Einstein, 1900s)
-   Light = discrete packets of energy (quanta/photons)
-   Most accurate; unifies previous theories
-   Einstein (1905): radiant energy = discrete units traveling as concentrated bundles
-   Explains: refraction, reflection, diffraction, photoelectric effect
+ Light = discrete packets of energy (quanta/photons)
+ Most accurate; unifies previous theories
+ Einstein (1905): radiant energy = discrete units traveling as concentrated bundles
+ Explains: refraction, reflection, diffraction, photoelectric effect
 ```
 
 **Speed of light formulas:**
@@ -88,13 +88,13 @@ Speed in a medium: v = c/n
 Index of refraction: n = c/v
 
 Key: Higher n → slower speed
-     Lower n → faster speed
+ Lower n → faster speed
 
 When light goes from LOW n to HIGH n:
-  → Speed DECREASES → bends TOWARD the normal
+ → Speed DECREASES → bends TOWARD the normal
 
 When light goes from HIGH n to LOW n:
-  → Speed INCREASES → bends AWAY from the normal
+ → Speed INCREASES → bends AWAY from the normal
 ```
 
 **Snell's Law:**
@@ -108,18 +108,18 @@ i = angle of incidence (from normal)
 R = angle of refraction (from normal)
 
 Air (1.0) to crown glass (1.523):
-  1.0 sin 30° = 1.523 sin R
-  sin R = 0.5/1.523 = 0.328
-  R = 19.16° (bends toward normal — entering denser medium)
+ 1.0 sin 30° = 1.523 sin R
+ sin R = 0.5/1.523 = 0.328
+ R = 19.16° (bends toward normal — entering denser medium)
 ```
 
 **Vergence formulas:**
 
 ```
-D = 1/f    (f in meters)
-D = 100/f  (f in centimeters)
+D = 1/f (f in meters)
+D = 100/f (f in centimeters)
 D = 1000/f (f in millimeters)
-D = 40/f   (f in inches)
+D = 40/f (f in inches)
 
 + vergence = converging pencil (real focus)
 − vergence = diverging pencil (virtual focus)
@@ -168,7 +168,7 @@ Max = 25 − 0.40(40) = 9.00 D
 ```
 INCREASING WAVELENGTH (nm) →
 |----UV-C----|---UV-B---|---UV-A---|----VISIBLE----|-----IR------|----->
-0    280     315       400       700              1500
+0 280 315 400 700 1500
 
 UV-C (100–280 nm): Blocked by atmosphere; most energetic; not outdoor concern
 UV-B (280–315 nm): → PHOTOKERATITIS; most dangerous outdoor UV; cataract
@@ -204,7 +204,7 @@ IR-long (>1500 nm): Mild conjunctivitis; occupational hazard
 **Critical angle formula:**
 
 ```
-sin CA = n₂/n₁    (going from dense n₁ to rare n₂)
+sin CA = n₂/n₁ (going from dense n₁ to rare n₂)
 
 Crown glass → air: sin CA = 1.0/1.523 → CA = 41.04°
 Polycarbonate → air: sin CA = 1.0/1.586 → CA = 39.27°
@@ -234,16 +234,16 @@ Transposition does NOT change what a lens does — it changes how the same presc
 
 ```
 For any sphero-cylinder prescription S = C × A:
-  At the AXIS meridian (A):   power = S only (cylinder does nothing at its own axis)
-  At the 90° meridian (A±90°): power = S + C (full cylinder added here)
+ At the AXIS meridian (A): power = S only (cylinder does nothing at its own axis)
+ At the 90° meridian (A±90°): power = S + C (full cylinder added here)
 
 Example: +2.00 −1.00 × 80
-  At 80°:   +2.00 D
-  At 170°:  +2.00 + (−1.00) = +1.00 D
+ At 80°: +2.00 D
+ At 170°: +2.00 + (−1.00) = +1.00 D
 
 After transposition to +1.00 +1.00 × 170:
-  At 170°:  +1.00 D ✓ (matches)
-  At 80°:   +1.00 + 1.00 = +2.00 D ✓ (matches)
+ At 170°: +1.00 D ✓ (matches)
+ At 80°: +1.00 + 1.00 = +2.00 D ✓ (matches)
 
 Transposition is correct. If the optical cross doesn't match → you made an error.
 ```
@@ -256,9 +256,9 @@ Use when: switching between minus cylinder and plus cylinder form, or simplifyin
 
 ```
 THREE STEPS:
-  Step 1: New sphere  = S + C  (add algebraically)
-  Step 2: New cylinder = −C   (flip the sign)
-  Step 3: New axis    = A ± 90° (add 90° if A ≤ 90°; subtract 90° if A > 90°)
+ Step 1: New sphere = S + C (add algebraically)
+ Step 2: New cylinder = −C (flip the sign)
+ Step 3: New axis = A ± 90° (add 90° if A ≤ 90°; subtract 90° if A > 90°)
 ```
 
 | Example | Working | Result |
@@ -278,9 +278,9 @@ Use when: a prescription is written as a pure cylinder with no sphere (sphere = 
 
 ```
 Plano −2.00 × 45
-  Step 1: New sphere = 0 + (−2.00) = −2.00
-  Step 2: New cylinder = +2.00
-  Step 3: New axis = 45 + 90 = 135
+ Step 1: New sphere = 0 + (−2.00) = −2.00
+ Step 2: New cylinder = +2.00
+ Step 3: New axis = 45 + 90 = 135
 
 Result: −2.00 +2.00 × 135
 ```
@@ -288,12 +288,12 @@ Result: −2.00 +2.00 × 135
 Verify with optical cross:
 ```
 Original: Plano −2.00 × 45
-  At 45°: 0.00 D
-  At 135°: 0 + (−2.00) = −2.00 D
+ At 45°: 0.00 D
+ At 135°: 0 + (−2.00) = −2.00 D
 
 Transposed: −2.00 +2.00 × 135
-  At 135°: −2.00 D ✓
-  At 45°: −2.00 + 2.00 = 0.00 D ✓
+ At 135°: −2.00 D ✓
+ At 45°: −2.00 + 2.00 = 0.00 D ✓
 ```
 
 ---
@@ -306,37 +306,37 @@ Use when: a prescription is written as two pure cylinders at right angles (no sp
 A cross cylinder looks like: −2.50 × 155 = +1.50 × 65
 
 RULE:
-  Step 1: Take ONE of the cylinders → this becomes the SPHERE of the new form
-          (use either one — your choice)
-  Step 2: Subtract the chosen cylinder from the other → this becomes the NEW CYLINDER
-          (algebraically: other cyl − chosen cyl)
-  Step 3: The new axis = the axis of whichever cylinder you did NOT use as the sphere
-          (i.e., the axis of the remaining cylinder after step 2)
+ Step 1: Take ONE of the cylinders → this becomes the SPHERE of the new form
+ (use either one — your choice)
+ Step 2: Subtract the chosen cylinder from the other → this becomes the NEW CYLINDER
+ (algebraically: other cyl − chosen cyl)
+ Step 3: The new axis = the axis of whichever cylinder you did NOT use as the sphere
+ (i.e., the axis of the remaining cylinder after step 2)
 ```
 
 Example: −2.50 × 155 = +1.50 × 65
 
 Choose −2.50 × 155 as the sphere:
 ```
-  New sphere  = −2.50
-  New cylinder = +1.50 − (−2.50) = +1.50 + 2.50 = +4.00
-  New axis    = 65 (axis of the cylinder you did NOT choose as sphere)
-  Result: −2.50 +4.00 × 65
+ New sphere = −2.50
+ New cylinder = +1.50 − (−2.50) = +1.50 + 2.50 = +4.00
+ New axis = 65 (axis of the cylinder you did NOT choose as sphere)
+ Result: −2.50 +4.00 × 65
 ```
 
 Alternatively, choose +1.50 × 65 as the sphere:
 ```
-  New sphere  = +1.50
-  New cylinder = −2.50 − (+1.50) = −4.00
-  New axis    = 155
-  Result: +1.50 −4.00 × 155
+ New sphere = +1.50
+ New cylinder = −2.50 − (+1.50) = −4.00
+ New axis = 155
+ Result: +1.50 −4.00 × 155
 ```
 
 Both results are equivalent — verify with optical cross:
 ```
 −2.50 +4.00 × 65:
-  At 65°:  −2.50 D
-  At 155°: −2.50 + 4.00 = +1.50 D
+ At 65°: −2.50 D
+ At 155°: −2.50 + 4.00 = +1.50 D
 
 Matches the original cross cylinder (−2.50 at 155° = −2.50 at 65° ✓; +1.50 at 65° ✓)
 ```
@@ -349,24 +349,24 @@ Use when: you need to split a sphero-cylinder into two pure cylinders for lens c
 
 ```
 RULE:
-  Step 1: Take the SPHERE → this becomes CYLINDER 1; its axis is 90° AWAY from the original cyl axis
-  Step 2: Take SPHERE + CYLINDER (algebraically) → this becomes CYLINDER 2; its axis is the ORIGINAL cyl axis
+ Step 1: Take the SPHERE → this becomes CYLINDER 1; its axis is 90° AWAY from the original cyl axis
+ Step 2: Take SPHERE + CYLINDER (algebraically) → this becomes CYLINDER 2; its axis is the ORIGINAL cyl axis
 ```
 
 Example: +3.25 −0.50 × 90
 
 ```
-  Cylinder 1: +3.25 × 180   (sphere becomes a cylinder; axis = 90+90 = 180°)
-  Cylinder 2: +3.25 + (−0.50) = +2.75 × 90   (sphere+cyl; original axis)
-  Result: +3.25 × 180 = +2.75 × 90
+ Cylinder 1: +3.25 × 180 (sphere becomes a cylinder; axis = 90+90 = 180°)
+ Cylinder 2: +3.25 + (−0.50) = +2.75 × 90 (sphere+cyl; original axis)
+ Result: +3.25 × 180 = +2.75 × 90
 ```
 
 Another example: −1.50 −1.00 × 60
 
 ```
-  Cylinder 1: −1.50 × 150   (sphere; axis = 60+90 = 150°)
-  Cylinder 2: −1.50 + (−1.00) = −2.50 × 60
-  Result: −1.50 × 150 = −2.50 × 60
+ Cylinder 1: −1.50 × 150 (sphere; axis = 60+90 = 150°)
+ Cylinder 2: −1.50 + (−1.00) = −2.50 × 60
+ Result: −1.50 × 150 = −2.50 × 60
 ```
 
 Verify: at 60° = −2.50 D; at 150° = −1.50 D ✓
@@ -379,35 +379,35 @@ Use when: converting a distance prescription to a reading prescription using the
 
 ```
 RULE:
-  New sphere = Distance sphere + Add power (algebraic sum)
-  Cylinder  = SAME (unchanged)
-  Axis      = SAME (unchanged)
+ New sphere = Distance sphere + Add power (algebraic sum)
+ Cylinder = SAME (unchanged)
+ Axis = SAME (unchanged)
 ```
 
 Example: Distance OD −3.00 −1.00 × 90, Add +2.25
 
 ```
-  Reading sphere = −3.00 + 2.25 = −0.75
-  Cylinder and axis unchanged
-  Reading Rx: −0.75 −1.00 × 90
+ Reading sphere = −3.00 + 2.25 = −0.75
+ Cylinder and axis unchanged
+ Reading Rx: −0.75 −1.00 × 90
 ```
 
 Example: Distance OS +1.50 −0.75 × 180, Add +2.00
 
 ```
-  Reading sphere = +1.50 + 2.00 = +3.50
-  Reading Rx: +3.50 −0.75 × 180
+ Reading sphere = +1.50 + 2.00 = +3.50
+ Reading Rx: +3.50 −0.75 × 180
 ```
 
 **Intermediate (trifocal) power:**
 
 ```
-  Intermediate sphere = Distance sphere + (½ × Add)
-  Cylinder and axis SAME
+ Intermediate sphere = Distance sphere + (½ × Add)
+ Cylinder and axis SAME
 
 Example: −1.00 −0.50 × 180, Add +2.00
-  Intermediate sphere = −1.00 + (½ × 2.00) = −1.00 + 1.00 = Plano
-  Intermediate Rx: Plano −0.50 × 180
+ Intermediate sphere = −1.00 + (½ × 2.00) = −1.00 + 1.00 = Plano
+ Intermediate Rx: Plano −0.50 × 180
 ```
 
 ---
@@ -464,22 +464,22 @@ Four factors control this:
 **Low n difference at a surface → LOW surface power**
 
 ```
-Surface power formula: D = (n₂ − n₁) / R    (R in meters)
+Surface power formula: D = (n₂ − n₁) / R (R in meters)
 
 The n step (n₂ − n₁) is the driver of power at any surface.
 
 EXAMPLE — why the cornea is powerful:
-  Front corneal surface: n₁ = 1.0 (air), n₂ = 1.376 (cornea), R = 0.0077m
-  D = (1.376 − 1.0) / 0.0077 = 0.376 / 0.0077 = +48.8 D ← LARGE because n step is large
+ Front corneal surface: n₁ = 1.0 (air), n₂ = 1.376 (cornea), R = 0.0077m
+ D = (1.376 − 1.0) / 0.0077 = 0.376 / 0.0077 = +48.8 D ← LARGE because n step is large
 
 EXAMPLE — why the posterior corneal surface is weak:
-  Back corneal surface: n₁ = 1.376 (cornea), n₂ = 1.336 (aqueous), R = 0.0068m
-  D = (1.336 − 1.376) / 0.0068 = −0.04 / 0.0068 = −5.9 D ← SMALL because n step is tiny
+ Back corneal surface: n₁ = 1.376 (cornea), n₂ = 1.336 (aqueous), R = 0.0068m
+ D = (1.336 − 1.376) / 0.0068 = −0.04 / 0.0068 = −5.9 D ← SMALL because n step is tiny
 
 EXAMPLE — why the air-lens interface is not used (in the eye):
-  The eye has NO direct air-to-lens interface — aqueous is always between cornea and lens
-  Lens front surface: n₁ = 1.336 (aqueous), n₂ = 1.386 (cortex) → n step = 0.05
-  Compare to cornea: n step = 0.376 → cornea is 7.5× more powerful per unit of curvature
+ The eye has NO direct air-to-lens interface — aqueous is always between cornea and lens
+ Lens front surface: n₁ = 1.336 (aqueous), n₂ = 1.386 (cortex) → n step = 0.05
+ Compare to cornea: n step = 0.376 → cornea is 7.5× more powerful per unit of curvature
 ```
 
 **Aha rule — "The cornea rules because its n step is 7× bigger than the lens surfaces"**
@@ -492,21 +492,21 @@ EXAMPLE — why the air-lens interface is not used (in the eye):
 **Flatter cornea (larger radius R) → LESS power → MORE hyperopic (or less myopic)**
 
 ```
-D = (n₂ − n₁) / R    ← power is INVERSELY proportional to R
+D = (n₂ − n₁) / R ← power is INVERSELY proportional to R
 
 Smaller R = tighter curve = more bending = MORE POWER
 Larger R = flatter curve = less bending = LESS POWER
 
 CLINICAL EXAMPLES:
-  Normal K: 7.7–7.8 mm RC → ~43D corneal power
-  Steep K (keratoconus): 5–6 mm RC → >50D → HIGH MYOPIA
-  Flat K (post-LASIK): 9–10 mm RC → <40D → LESS POWER → hyperopic shift
+ Normal K: 7.7–7.8 mm RC → ~43D corneal power
+ Steep K (keratoconus): 5–6 mm RC → >50D → HIGH MYOPIA
+ Flat K (post-LASIK): 9–10 mm RC → <40D → LESS POWER → hyperopic shift
 
 KERATOMETRY READING:
-  K reading = corneal curvature expressed in diopters (D) or mm radius
-  Steep K = large D number / small mm number
-  Flat K = small D number / large mm number
-  Normal: ~43D or 7.7–7.8mm
+ K reading = corneal curvature expressed in diopters (D) or mm radius
+ Steep K = large D number / small mm number
+ Flat K = small D number / large mm number
+ Normal: ~43D or 7.7–7.8mm
 ```
 
 **Aha rule — "Steep K = Strong cornea = Myope (or more myopic after penetrating keratoplasty rejection)"**
@@ -521,16 +521,16 @@ KERATOMETRY READING:
 
 ```
 WHY:
-  The eye's total power (cornea + lens) focuses parallel rays at F₂ = 24.38mm behind cornea
-  EMMETROPE: retina is at 24.38mm → image is on retina → clear vision
+ The eye's total power (cornea + lens) focuses parallel rays at F₂ = 24.38mm behind cornea
+ EMMETROPE: retina is at 24.38mm → image is on retina → clear vision
 
-  MYOPE: retina is at 26mm (too long) → image focuses at 24.38mm, blurs by 26mm
-          Near objects focus further back → myope can see near clearly
-          Far point = the finite distance where image DOES fall on retina = 1/D in meters
+ MYOPE: retina is at 26mm (too long) → image focuses at 24.38mm, blurs by 26mm
+ Near objects focus further back → myope can see near clearly
+ Far point = the finite distance where image DOES fall on retina = 1/D in meters
 
-  HYPEROPE: retina is at 22mm (too short) → image would need to focus at 22mm
-            But power of lens brings it back to 24.38mm → must accommodate even at distance
-            Far point is VIRTUAL (behind the eye)
+ HYPEROPE: retina is at 22mm (too short) → image would need to focus at 22mm
+ But power of lens brings it back to 24.38mm → must accommodate even at distance
+ Far point is VIRTUAL (behind the eye)
 ```
 
 **Aha rule — "The eye is like a camera. Myope: film too far from lens. Hyperope: film too close."**
@@ -539,16 +539,16 @@ WHY:
 
 ```
 FAR POINT (punctum remotum):
-  The point conjugate with the retina — where an EMMETROPIC eye (with full accommodation
-  relaxed) would see clearly. This is the point at optical "infinity" for the normal eye.
+ The point conjugate with the retina — where an EMMETROPIC eye (with full accommodation
+ relaxed) would see clearly. This is the point at optical "infinity" for the normal eye.
 
-  Emmetrope: far point = ∞
-  Myope −3.00D: far point = 100/3 = 33cm in front of eye
-  Hyperope +3.00D: far point = 33cm BEHIND the eye (virtual)
+ Emmetrope: far point = ∞
+ Myope −3.00D: far point = 100/3 = 33cm in front of eye
+ Hyperope +3.00D: far point = 33cm BEHIND the eye (virtual)
 
-  The CORRECTIVE LENS brings the far point to optical infinity:
-    Minus lens for myope: diverges rays so they appear to come from the far point (33cm for −3D)
-    Plus lens for hyperope: converges rays so they appear to come from optical ∞
+ The CORRECTIVE LENS brings the far point to optical infinity:
+ Minus lens for myope: diverges rays so they appear to come from the far point (33cm for −3D)
+ Plus lens for hyperope: converges rays so they appear to come from optical ∞
 ```
 
 ---
@@ -606,18 +606,18 @@ A **retinal conjugate point** is any point in space that forms a focused image e
 
 ```
 FAR POINT CIRCLE:
-  All retinal conjugate points for the relaxed eye (accommodation at zero)
-  form a sphere called the far point circle (for the whole visual field)
-  Emmetrope: far point circle is at optical infinity
-  Myope: far point circle is at a finite distance in front
+ All retinal conjugate points for the relaxed eye (accommodation at zero)
+ form a sphere called the far point circle (for the whole visual field)
+ Emmetrope: far point circle is at optical infinity
+ Myope: far point circle is at a finite distance in front
 
 NEAR POINT CIRCLE:
-  All retinal conjugate points when the eye is at MAXIMUM accommodation
-  The nearest sphere where objects still focus on the retina
+ All retinal conjugate points when the eye is at MAXIMUM accommodation
+ The nearest sphere where objects still focus on the retina
 
 CLINICAL USE:
-  These concepts are the foundation of refraction — finding the spectacle or contact lens
-  power that moves the far point circle to optical infinity for every patient
+ These concepts are the foundation of refraction — finding the spectacle or contact lens
+ power that moves the far point circle to optical infinity for every patient
 
 PRACTICAL READING RULES FOR AMETROPIA:
 ```
@@ -749,10 +749,10 @@ If Snell's law used angle directly (n₁ × i = n₂ × R), the math would only 
 **Formula 2: Vergence / Lens Power**
 
 ```
-D = 1/f       (f in meters)
-D = 100/f     (f in centimeters)
-D = 1000/f    (f in millimeters)
-D = 40/f      (f in inches)
+D = 1/f (f in meters)
+D = 100/f (f in centimeters)
+D = 1000/f (f in millimeters)
+D = 40/f (f in inches)
 ```
 
 **What each part means:**
@@ -856,8 +856,8 @@ A prism diopter is defined as 1cm of deviation at 100cm distance. For Prentice's
 
 ```
 Minimum AOA = 15 − 0.25 × age
-Average AOA  = 18.5 − 0.30 × age
-Maximum AOA  = 25 − 0.40 × age
+Average AOA = 18.5 − 0.30 × age
+Maximum AOA = 25 − 0.40 × age
 ```
 
 **What each part means:**
@@ -908,8 +908,8 @@ Because biological variation is enormous. An 8-year-old might have 14D of AOA or
 **Formula 5: Speed of Light and Index of Refraction**
 
 ```
-n = c/v         (index = speed in vacuum / speed in medium)
-v = c/n         (speed in medium = speed in vacuum / index)
+n = c/v (index = speed in vacuum / speed in medium)
+v = c/n (speed in medium = speed in vacuum / index)
 ```
 
 **What each part means:**
@@ -977,8 +977,8 @@ p = object distance (from object to lens)
 > **Quick rules by lens type:**
 > - Concave (minus) lens: ALWAYS m positive, ALWAYS |m| < 1 → always upright, always smaller, always virtual
 > - Convex (plus) lens: depends on object position
->   - Object outside F → m negative → inverted, real
->   - Object inside F → m positive, |m| > 1 → upright, magnified, virtual (magnifying glass)
+> - Object outside F → m negative → inverted, real
+> - Object inside F → m positive, |m| > 1 → upright, magnified, virtual (magnifying glass)
 >
 > **Practical exam shortcut:** If the question says "virtual image" → m is positive. If "real image" → m is negative.
 
@@ -1020,9 +1020,9 @@ Higher index → more chromatic aberration → lower Abbe value.
 SNELL'S LAW AT AN INTERFACE
 ───────────────────────────
 AIR (n=1.0)
-          ↘ i = 30°  (incident)
+ ↘ i = 30° (incident)
 ────────────────────────── BOUNDARY
-          ↘ R = 19.16°  (refracted — bends toward normal)
+ ↘ R = 19.16° (refracted — bends toward normal)
 GLASS (n=1.523)
 
 n₁ sin i = n₂ sin R → 1.0 × sin30° = 1.523 × sinR
@@ -1233,10 +1233,10 @@ Work these from scratch, then verify each with the optical cross:
 
 ```
 LASER PROPERTIES:
-  Monochromatic   — single pure wavelength (one color)
-  Coherent        — all waves in phase (in step)
-  Collimated      — parallel beam; does not spread out
-  High intensity  — large energy in a tiny spot
+ Monochromatic — single pure wavelength (one color)
+ Coherent — all waves in phase (in step)
+ Collimated — parallel beam; does not spread out
+ High intensity — large energy in a tiny spot
 ```
 
 **Clinical laser types and wavelengths:**
@@ -1269,14 +1269,14 @@ Normal light: waves vibrate in ALL planes around the axis of travel
 Polarized light: waves vibrate in ONE plane only
 
 Polarizing filter (e.g., polaroid lens):
-  — Blocks horizontally polarized light
-  — Passes vertically polarized light
-  — Result: glare eliminated (glare = horizontally polarized reflected light)
+ — Blocks horizontally polarized light
+ — Passes vertically polarized light
+ — Result: glare eliminated (glare = horizontally polarized reflected light)
 
 Clinical use:
-  — Polaroid sunglasses for glare reduction (driving, water, snow)
-  — Stereopsis testing (Randot, Titmus use polarized targets — each eye gets its own image)
-  — Phoropter distance fixation targets use polarized filters to dissociate eyes
+ — Polaroid sunglasses for glare reduction (driving, water, snow)
+ — Stereopsis testing (Randot, Titmus use polarized targets — each eye gets its own image)
+ — Phoropter distance fixation targets use polarized filters to dissociate eyes
 ```
 
 **Brewster's angle:** Reflected light is completely polarized when the reflected ray is perpendicular to the refracted ray. This is why glare from horizontal surfaces (water, road) is maximally polarized horizontally.
@@ -1291,14 +1291,14 @@ Clinical use:
 
 ```
 Clinical significance:
-  — Very small pupils (< 2.5 mm): diffraction limits resolving power
-    (Airy disc enlarges → VA ceiling decreases despite good optics)
-  — Pinhole acuity is limited by diffraction at very small pinhole sizes
-  — Diffraction = why you cannot simply make a pinhole as tiny as possible
+ — Very small pupils (< 2.5 mm): diffraction limits resolving power
+ (Airy disc enlarges → VA ceiling decreases despite good optics)
+ — Pinhole acuity is limited by diffraction at very small pinhole sizes
+ — Diffraction = why you cannot simply make a pinhole as tiny as possible
 
 Board rule: Optimal pinhole size = 1.2 mm 
-  — Smaller: diffraction degrades image
-  — Larger: aberration reduction effect diminishes
+ — Smaller: diffraction degrades image
+ — Larger: aberration reduction effect diminishes
 ```
 
 ---
@@ -1311,9 +1311,9 @@ Board rule: Optimal pinhole size = 1.2 mm
 
 ```
 Thin film interference (basis of anti-reflection coating):
-  — AR coating thickness = λ/4 (quarter wavelength of light)
-  — Light reflecting off top of coating + light reflecting off bottom of coating
-    = 180° out of phase → DESTRUCTIVE INTERFERENCE → reflection cancelled
+ — AR coating thickness = λ/4 (quarter wavelength of light)
+ — Light reflecting off top of coating + light reflecting off bottom of coating
+ = 180° out of phase → DESTRUCTIVE INTERFERENCE → reflection cancelled
 
 Result: Instead of losing 4% light per surface (uncoated), AR-coated surface loses < 0.5%
 ```
@@ -1327,31 +1327,31 @@ Result: Instead of losing 4% light per surface (uncoated), AR-coated surface los
 **Clinical term:** Three thick lens power concepts — Equivalent Power, Back Vertex Power, Front Vertex Power.
 
 ```
-THIN LENS ASSUMPTION:   D_nominal = D₁ + D₂       (ignores thickness)
+THIN LENS ASSUMPTION: D_nominal = D₁ + D₂ (ignores thickness)
 
 THICK LENS FORMULAS:
 
 1. EQUIVALENT (TRUE) POWER
-   Deq = D₁ + D₂ - (t/n)(D₁ × D₂)
-   
-   — t = center thickness in METERS
-   — n = index of refraction of lens material
-   — This is the "real" optical power of the lens
-   — Measured from the principal planes
+ Deq = D₁ + D₂ - (t/n)(D₁ × D₂)
+ 
+ — t = center thickness in METERS
+ — n = index of refraction of lens material
+ — This is the "real" optical power of the lens
+ — Measured from the principal planes
 
 2. BACK VERTEX POWER (BVP) — "Effective Power"
-   BVP = D₁ + D₂ + (t/n)(D₁)²
-   
-   — Measured from the BACK SURFACE vertex to the back focal point
-   — This is what the LENSOMETER measures when you place the lens concave-side-down
-   — Used for most clinical prescriptions
+ BVP = D₁ + D₂ + (t/n)(D₁)²
+ 
+ — Measured from the BACK SURFACE vertex to the back focal point
+ — This is what the LENSOMETER measures when you place the lens concave-side-down
+ — Used for most clinical prescriptions
 
 3. FRONT VERTEX POWER (FVP) — "Neutralizing Power"
-   FVP = D₁ + D₂ + (t/n)(D₂)²
-   
-   — Measured from the FRONT SURFACE vertex to the front focal point
-   — Lensometer reads this when convex side is placed against lens stop
-   — Used when measuring lenses for hand neutralization from the front
+ FVP = D₁ + D₂ + (t/n)(D₂)²
+ 
+ — Measured from the FRONT SURFACE vertex to the front focal point
+ — Lensometer reads this when convex side is placed against lens stop
+ — Used when measuring lenses for hand neutralization from the front
 ```
 
 **Sample problem (from Dr. Viñola):**
@@ -1359,19 +1359,19 @@ Lens: D₁ = +12.00D, D₂ = −5.00D, t = 7 mm, n = 1.6
 
 ```
 Deq = +12.00 + (−5.00) − (0.007/1.6)(+12.00 × −5.00)
-    = +7.00 − 0.004375(−60)
-    = +7.00 + 0.26
-    Deq = +7.26 D
+ = +7.00 − 0.004375(−60)
+ = +7.00 + 0.26
+ Deq = +7.26 D
 
 BVP = +12.00 + (−5.00) + (0.007/1.6)(+12.00)²
-    = +7.00 + 0.004375 × 144
-    = +7.00 + 0.63
-    BVP = +7.63 D
+ = +7.00 + 0.004375 × 144
+ = +7.00 + 0.63
+ BVP = +7.63 D
 
 FVP = +12.00 + (−5.00) + (0.007/1.6)(−5.00)²
-    = +7.00 + 0.004375 × 25
-    = +7.00 + 0.11
-    FVP = +7.11 D
+ = +7.00 + 0.004375 × 25
+ = +7.00 + 0.11
+ FVP = +7.11 D
 ```
 
 **Key rule:** BVP > Deq > FVP for plus lenses (back vertex gives the highest reading).
@@ -1391,43 +1391,43 @@ FVP = +12.00 + (−5.00) + (0.007/1.6)(−5.00)²
 
 ```
 LENSOMETER USES:
-  1. Measure back vertex power (Rx verification)
-  2. Locate optical center of lens
-  3. Measure cylinder axis
-  4. Measure prism amount and direction
-  5. Duplicate a pair of glasses
+ 1. Measure back vertex power (Rx verification)
+ 2. Locate optical center of lens
+ 3. Measure cylinder axis
+ 4. Measure prism amount and direction
+ 5. Duplicate a pair of glasses
 
 TWO TARGET PATTERNS:
-  Circle of dots → sphere lens (single meridian power)
-  Two sets of lines (perpendicular) → cylinder lens
+ Circle of dots → sphere lens (single meridian power)
+ Two sets of lines (perpendicular) → cylinder lens
 
 PROCEDURE:
-  1. Focus eyepiece for examiner (turn CCW fully, then CW until reticle is sharp)
-  2. Always test RIGHT lens first
-  3. Place concave side (back surface) against lens stop for BVP
-  4. Rotate power wheel until target sharpest → read sphere
-  5. If lines appear (not dots): rotate until one set of lines is sharpest (1st meridian) 
-     → rotate until perpendicular lines are sharpest (2nd meridian) → cylinder = difference
-  6. Mark optical center by centering target on reticle crosshairs
+ 1. Focus eyepiece for examiner (turn CCW fully, then CW until reticle is sharp)
+ 2. Always test RIGHT lens first
+ 3. Place concave side (back surface) against lens stop for BVP
+ 4. Rotate power wheel until target sharpest → read sphere
+ 5. If lines appear (not dots): rotate until one set of lines is sharpest (1st meridian) 
+ → rotate until perpendicular lines are sharpest (2nd meridian) → cylinder = difference
+ 6. Mark optical center by centering target on reticle crosshairs
 ```
 
 **Retinoscope — working principle:**
 
 ```
 RETINOSCOPE:
-  Light source projects a streak/spot onto the retina
-  The reflected reflex (streak) exits the eye at the far point
-  Examiner at working distance (typically 67 cm = 1.50D working distance)
-  
-  Reflex direction vs streak direction:
-    WITH motion → patient is hyperopic relative to working distance → add PLUS to neutralize
-    AGAINST motion → patient is myopic relative to working distance → add MINUS to neutralize
-    NEUTRAL (no motion, full field fills) → far point is AT the working distance
-  
-  Working distance correction:
-    Working at 67 cm → subtract 1.50D from neutralizing lens
-    Working at 50 cm → subtract 2.00D from neutralizing lens
-    Working at 1 m → subtract 1.00D from neutralizing lens
+ Light source projects a streak/spot onto the retina
+ The reflected reflex (streak) exits the eye at the far point
+ Examiner at working distance (typically 67 cm = 1.50D working distance)
+ 
+ Reflex direction vs streak direction:
+ WITH motion → patient is hyperopic relative to working distance → add PLUS to neutralize
+ AGAINST motion → patient is myopic relative to working distance → add MINUS to neutralize
+ NEUTRAL (no motion, full field fills) → far point is AT the working distance
+ 
+ Working distance correction:
+ Working at 67 cm → subtract 1.50D from neutralizing lens
+ Working at 50 cm → subtract 2.00D from neutralizing lens
+ Working at 1 m → subtract 1.00D from neutralizing lens
 ```
 
 **Board trap:** "The lensometer directly measures the true power of a lens" — Wrong. The lensometer measures the **back vertex power** (BVP), which equals true power only for thin lenses. For thick high-power lenses, BVP ≠ equivalent power.
@@ -1470,9 +1470,9 @@ Deq subtracts the interaction term (t/n × D₁ × D₂)
 ## Sources Used
 
 - [x] `TO-Compiled-Notes.md` — Light theories, speed of light, index of refraction table, EM spectrum, radiation effects, Snell's law, vergence, photometry, lens types, image formation, transposition (flat + toric), Prentice's rule, critical angle/TIR
-- [x] `TO-MCU-2024.md` — Schematic eye values (corneal power 43D, lens 19.11D, total 58.64D), Hofstetter's formula, accommodation theory, myopia classification
+- [x] `TO-2024.md` — Schematic eye values (corneal power 43D, lens 19.11D, total 58.64D), Hofstetter's formula, accommodation theory, myopia classification
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS D.1 scope reference
-- [x] `Theoretical Optics - Compiled Notes.pdf` (MCU 2024, Dr. Viñola & Dr. De Mesa) — Lasers, physical optics phenomena (polarization, diffraction, interference), thick lens formulas, optical instruments
-- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (MCU 2024) — Thick lens power formulas (Deq, BVP, FVP), lensometer procedure, vertex power instruments
+- [x] `Theoretical Optics - Compiled Notes.pdf` (2024, Dr. Viñola & Dr. De Mesa) — Lasers, physical optics phenomena (polarization, diffraction, interference), thick lens formulas, optical instruments
+- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (2024) — Thick lens power formulas (Deq, BVP, FVP), lensometer procedure, vertex power instruments
 
 *Note written: June 5, 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

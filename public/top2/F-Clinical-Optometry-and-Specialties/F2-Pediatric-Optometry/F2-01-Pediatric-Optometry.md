@@ -152,27 +152,27 @@ Primitive reflexes are present at birth and integrate (disappear) by specific ag
 
 ```
 Child presents with possible amblyopia
-  |
-  v
+ |
+ v
 Cycloplegic refraction (tropicamide or cyclopentolate)
-  |
-  v
+ |
+ v
 Full spectacle correction prescribed → wear 12–16 weeks
-  |
-  v
+ |
+ v
 Retest VA with correction
-  |
-  +---> VA normalized → spectacle-only (refractive amblyopia resolved)
-  |
-  +---> VA still reduced → add patching of fellow eye
-          |
-          v
-       2 hrs/day (mild) to full-time (severe)
-       Monitor VA every 4–8 weeks
-          |
-          v
-       VA improving → continue
-       VA plateau → reassess compliance, consider atropine
+ |
+ +---> VA normalized → spectacle-only (refractive amblyopia resolved)
+ |
+ +---> VA still reduced → add patching of fellow eye
+ |
+ v
+ 2 hrs/day (mild) to full-time (severe)
+ Monitor VA every 4–8 weeks
+ |
+ v
+ VA improving → continue
+ VA plateau → reassess compliance, consider atropine
 ```
 
 ---
@@ -299,5 +299,5 @@ Write the amblyopia management flow from diagnosis to resolution on a blank page
 
 ---
 
-*Source: Pediatric Optometry MCU 2024 | Dr. Sumaya BV (MCU 2024)*
+*Source: Pediatric Optometry 2024 | Dr. Sumaya BV (2024)*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

@@ -175,17 +175,17 @@ Normal IOP **10-21 mmHg**; aqueous drains trabecular (80%) and uveoscleral (20%)
 RED EYE — surface vs deep
 ─────────────────────────
 CONJUNCTIVAL injection → surface (conjunctivitis/allergy); bright, mobile, blanches
-CILIARY flush          → DEEP danger: keratitis / uveitis / acute glaucoma; violet, fixed
+CILIARY flush → DEEP danger: keratitis / uveitis / acute glaucoma; violet, fixed
 
 GLAUCOMA — the angle splits the diagnosis
 ─────────────────────────────────────────
-OPEN angle   → POAG (silent, gradual)   + phacolytic / pigmentary / steroid
-CLOSED angle → PACG (acute emergency)   + phacomorphic / iris bombe / rubeosis
+OPEN angle → POAG (silent, gradual) + phacolytic / pigmentary / steroid
+CLOSED angle → PACG (acute emergency) + phacomorphic / iris bombe / rubeosis
 
 CATARACT MATURATION
 ───────────────────
 Immature → INTUMESCENT (phacomorphic risk) → Mature → HYPERMATURE / Morgagnian (phacolytic risk)
-        → after-cataract → YAG capsulotomy
+ → after-cataract → YAG capsulotomy
 ```
 
 ## Memory Anchors
@@ -326,7 +326,7 @@ Explain in three sentences why ciliary flush is more worrying than conjunctival 
 ---
 
 ## Sources Used
-- Ocular Disease — Dr. Elmo Ado (MCU); Ocular-Disease-Consolidated-Review (sections 4-10)
+- Ocular Disease — Dr. Elmo Ado ; Ocular-Disease-Consolidated-Review (sections 4-10)
 - Cross-reference: [[E1-01-Orbit-Adnexa-Eyelids]]; [[E3-01-Posterior-Segment-and-Retina]]; [[G4-01-Therapeutic-Ophthalmic-Agents]] (glaucoma drugs); G2 (named pupils)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

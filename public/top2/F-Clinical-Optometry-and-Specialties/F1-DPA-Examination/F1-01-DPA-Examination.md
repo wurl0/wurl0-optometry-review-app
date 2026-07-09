@@ -99,34 +99,34 @@ Phenylephrine is an α1 agonist — it stimulates the dilator pupillae directly 
 
 ```
 Step 1: Take full history
-  — Confirm no contraindications (narrow angle, allergy, systemic disease)
+ — Confirm no contraindications (narrow angle, allergy, systemic disease)
 
 Step 2: Baseline assessment BEFORE instillation
-  — Anterior chamber depth (oblique flashlight / Van Herick method)
-  — Undilated fundus check if possible
-  — Document pupil size and reactivity
+ — Anterior chamber depth (oblique flashlight / Van Herick method)
+ — Undilated fundus check if possible
+ — Document pupil size and reactivity
 
 Step 3: Instill DPA
-  — Lower conjunctival fornix
-  — Tip does not touch eye or skin
-  — Apply nasolacrimal occlusion (NLO) immediately after instillation
+ — Lower conjunctival fornix
+ — Tip does not touch eye or skin
+ — Apply nasolacrimal occlusion (NLO) immediately after instillation
 
 Step 4: Nasolacrimal Occlusion (NLO)
-  — Press the inner corner of the eye (lacrimal sac area) for 2 minutes
-  — Prevents the drug from draining into the nasolacrimal duct and reaching systemic circulation
-  — Most important step for minimizing systemic side effects
+ — Press the inner corner of the eye (lacrimal sac area) for 2 minutes
+ — Prevents the drug from draining into the nasolacrimal duct and reaching systemic circulation
+ — Most important step for minimizing systemic side effects
 
 Step 5: Wait for onset
-  — Tropicamide: 20–30 min
-  — Cyclopentolate: 30–60 min
-  — Phenylephrine: 15–20 min
+ — Tropicamide: 20–30 min
+ — Cyclopentolate: 30–60 min
+ — Phenylephrine: 15–20 min
 
 Step 6: Confirm dilation and perform examination
 
 Step 7: Document
-  — Drug used, concentration, time instilled, eye(s) treated, patient response
-  — Inform patient: blurred near vision and photosensitivity until drug wears off
-  — Never drive immediately after dilation
+ — Drug used, concentration, time instilled, eye(s) treated, patient response
+ — Inform patient: blurred near vision and photosensitivity until drug wears off
+ — Never drive immediately after dilation
 ```
 
 ---
@@ -148,7 +148,7 @@ Step 7: Document
 
 - All approved DPAs are **FDA Category C** in pregnancy (risk cannot be ruled out)
 - If dilation is clinically necessary during pregnancy: **tropicamide is the preferred agent**
-  - Rationale: shortest duration of action (4–6 hours vs. 24 hours for cyclopentolate); least systemic exposure; most data available
+ - Rationale: shortest duration of action (4–6 hours vs. 24 hours for cyclopentolate); least systemic exposure; most data available
 - Always apply NLO technique to minimize systemic absorption
 - Breastfeeding: advise patient to pump and discard for 24 hours after cyclopentolate; tropicamide shorter clearance
 
@@ -158,21 +158,21 @@ Step 7: Document
 
 ```
 SYMPATHETIC PATHWAY
-  α1 receptor (dilator pupillae)
-    ├── Agonist → Phenylephrine → MYDRIASIS (no cycloplegia)
-    └── Normal: NE from sympathetics
+ α1 receptor (dilator pupillae)
+ ├── Agonist → Phenylephrine → MYDRIASIS (no cycloplegia)
+ └── Normal: NE from sympathetics
 
 PARASYMPATHETIC PATHWAY (CN3 → ciliary ganglion → short ciliary nerves)
-  M3 receptor (sphincter pupillae + ciliary muscle)
-    ├── Agonist → Pilocarpine → MIOSIS + accommodation ↑
-    └── Antagonist → Tropicamide / Cyclopentolate → MYDRIASIS + CYCLOPLEGIA
+ M3 receptor (sphincter pupillae + ciliary muscle)
+ ├── Agonist → Pilocarpine → MIOSIS + accommodation ↑
+ └── Antagonist → Tropicamide / Cyclopentolate → MYDRIASIS + CYCLOPLEGIA
 
 CORNEAL SENSORY NERVES (CN5 ophthalmic)
-  Na+ channels
-    └── Blocker → Proparacaine → TOPICAL ANESTHESIA
+ Na+ channels
+ └── Blocker → Proparacaine → TOPICAL ANESTHESIA
 
 CORNEAL EPITHELIUM
-  Fluorescein → accumulates at gaps → GREEN FLUORESCENCE under cobalt blue
+ Fluorescein → accumulates at gaps → GREEN FLUORESCENCE under cobalt blue
 ```
 
 ---
@@ -315,7 +315,7 @@ Write the complete DPA clinical examination workflow (Steps 1–7) on a blank pa
 ---
 
 ## Sources Used
-- Ocular Pharmacology — Dr. Elmo Ado (MCU 2024)
+- Ocular Pharmacology — Dr. Elmo Ado (2024)
 - Gap Lecture 08 — DPA in Pregnancy
 - RA 8050 (Revised Optometry Law of 1995)
 

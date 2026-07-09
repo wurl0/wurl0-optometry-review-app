@@ -118,24 +118,24 @@ Best imaging: **CT (axial + coronal)**.
 ```
 EMERGENCY TRIAGE — speed decides the eye
 ─────────────────────────────────────────
-TIER 1  act before history:
-   Chemical burn → IRRIGATE NOW  (alkali > acid)
+TIER 1 act before history:
+ Chemical burn → IRRIGATE NOW (alkali > acid)
 
-TIER 2  same-hour sight/life threat:
-   Acute angle-closure → lower IOP → laser IRIDOTOMY
-   CRAO (4–6 h)        → ocular massage + lower IOP → rule out GCA
-   Giant cell arteritis→ STEROIDS before biopsy
-   Open globe          → SHIELD (never patch) → NPO → surgery
-   Endophthalmitis     → INTRAVITREAL antibiotics
-   Orbital cellulitis  → IV antibiotics + CT
+TIER 2 same-hour sight/life threat:
+ Acute angle-closure → lower IOP → laser IRIDOTOMY
+ CRAO (4–6 h) → ocular massage + lower IOP → rule out GCA
+ Giant cell arteritis→ STEROIDS before biopsy
+ Open globe → SHIELD (never patch) → NPO → surgery
+ Endophthalmitis → INTRAVITREAL antibiotics
+ Orbital cellulitis → IV antibiotics + CT
 
-TIER 3  refer today:
-   Retinal detachment / Hyphema / Blow-out fracture / Traumatic optic neuropathy
+TIER 3 refer today:
+ Retinal detachment / Hyphema / Blow-out fracture / Traumatic optic neuropathy
 
 ALKALI vs ACID
 ──────────────
 ALKALI → liquefactive necrosis → penetrates DEEP → worse
-ACID   → coagulative necrosis  → self-limiting (except HF acid + ammonia)
+ACID → coagulative necrosis → self-limiting (except HF acid + ammonia)
 ```
 
 ## Memory Anchors
@@ -297,7 +297,7 @@ Read the options first, kill wrong values, then settle the flip. `cue → rule �
 - Trap: using the blindness order for a low-vision question.
 
 ## Sources Used
-- Ocular Disease — Dr. Elmo Ado (MCU); Ocular-Disease-Consolidated-Review (sections 13-14, plus emergencies across sections)
+- Ocular Disease — Dr. Elmo Ado ; Ocular-Disease-Consolidated-Review (sections 13-14, plus emergencies across sections)
 - Cross-reference: [[E1-01-Orbit-Adnexa-Eyelids]]; [[E2-01-Anterior-Segment]]; [[E3-01-Posterior-Segment-and-Retina]]; G4 (glaucoma/anti-infective drugs)
 
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*
