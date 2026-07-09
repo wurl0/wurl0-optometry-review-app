@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { computeReadiness, type OleAttempt, type Verdict } from '@/lib/readiness'
+import { ITEM_BY_ID, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
+import { canOpenItem, type Access } from '@/lib/access'
 
 export const dynamic = 'force-dynamic'
 
@@ -38,6 +40,22 @@ export default async function ReadinessPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
+  // Gated like Top 2 content: only admins or users granted this feature.
+  const { data: profRow } = await supabase
+    .from('profiles')
+    .select('approved, tier, grants')
+    .eq('user_id', user.id)
+    .single()
+  const profile = profRow as { approved: boolean; tier?: string; grants?: string[] } | null
+  if (profile && !profile.approved) redirect('/pending')
+  const access: Access = {
+    tier: profile?.tier ?? 'base',
+    grants: profile?.grants ?? [],
+    isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
+  }
+  const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
+  if (!readinessItem || !canOpenItem(access, readinessItem)) redirect('/')
+
   const { data } = await supabase
     .from('ole_attempts')
     .select('subject_code, source, percentage, created_at, area_breakdown')
@@ -72,7 +90,7 @@ export default async function ReadinessPage() {
         <div className="mb-5">
           <h1 className="text-2xl font-bold text-gray-900">Board Readiness</h1>
           <p className="text-gray-500 mt-1">
-            Theoretical area only — the 70% written block, gated at 75%. Numbers use your last 3 attempts per subject.
+            Theoretical area only, the 70% written block gated at 75%. Numbers use your last 3 attempts per subject.
           </p>
         </div>
 

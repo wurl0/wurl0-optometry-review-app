@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
-import { SUBJECTS, ITEMS, type Item } from '@/lib/reviewer-manifest'
+import { SUBJECTS, ITEMS, ITEM_BY_ID, READINESS_ITEM_ID, type Item } from '@/lib/reviewer-manifest'
 import { canOpenCockpit, canOpenItem, type Access } from '@/lib/access'
 
 // Dynamic cockpit for the Top 2 reviewer. Renders only the items a user may open
@@ -27,7 +27,9 @@ export default async function ReviewerPage() {
   if (!canOpenCockpit(access)) redirect('/')
 
   const can = (i: Item) => canOpenItem(access, i)
-  const mocks = ITEMS.filter(i => i.subject === 'GLOBAL' && can(i))
+  const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
+  const showReadiness = !!readinessItem && can(readinessItem)
+  const mocks = ITEMS.filter(i => i.subject === 'GLOBAL' && i.type === 'mock' && can(i))
   const subjects = SUBJECTS
     .map(s => ({ s, items: ITEMS.filter(i => i.subject === s.code && can(i)) }))
     .filter(g => g.items.length > 0)
@@ -46,14 +48,16 @@ export default async function ReviewerPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6">
-        <Link href="/readiness"
-          className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 mb-6 hover:border-teal-300 transition-colors">
-          <div>
-            <p className="text-sm font-bold text-gray-900">📊 Board Readiness</p>
-            <p className="text-xs text-gray-500 mt-0.5">Your weighted GWA and what to revisit, from every exam you take</p>
-          </div>
-          <span className="text-teal-600 text-lg">→</span>
-        </Link>
+        {showReadiness && (
+          <Link href="/readiness"
+            className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 mb-6 hover:border-teal-300 transition-colors">
+            <div>
+              <p className="text-sm font-bold text-gray-900">📊 Board Readiness</p>
+              <p className="text-xs text-gray-500 mt-0.5">Your weighted GWA and what to revisit, from every exam you take</p>
+            </div>
+            <span className="text-teal-600 text-lg">→</span>
+          </Link>
+        )}
 
         {mocks.length > 0 && (
           <section className="mb-7">

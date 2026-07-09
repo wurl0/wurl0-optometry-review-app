@@ -104,7 +104,7 @@ function AccessEditor({ profile, onSaved }: {
           })}
 
           <div>
-            <p className="text-xs font-semibold text-gray-700">Mock exams</p>
+            <p className="text-xs font-semibold text-gray-700">Mocks &amp; tools</p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1">
               {GLOBAL_ITEMS.map(i => (
                 <label key={i.id} className="text-xs text-gray-600 flex items-center gap-1">

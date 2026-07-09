@@ -3,10 +3,10 @@
 // Add or restructure content here; nothing else hard-codes these paths.
 
 export type ItemType =
-  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'mock' | 'interactive'
+  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'mock' | 'interactive' | 'feature'
 
-// The five per-subject content types (everything except the global mocks and interactives).
-type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive'>
+// The five per-subject content types (everything except the global mocks, interactives, and features).
+type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature'>
 
 export type Item = {
   id: string          // stable ID, e.g. "A.exam", "mock.set2"
@@ -107,6 +107,14 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.G2-Autonomic-Grid-Interactive', subject: 'G', type: 'interactive', label: 'G2 Autonomic Grid', path: '/top2/G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Grid-Interactive.html' },
 ]
 
-export const ITEMS: Item[] = [...SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS]
+// App features (not static /top2 files) that are grantable like any other item.
+// Gated in their own page, not by the /top2 middleware.
+export const READINESS_ITEM_ID = 'feature.readiness'
+const FEATURE_ITEMS: Item[] = [
+  { id: READINESS_ITEM_ID, subject: 'GLOBAL', type: 'feature', label: 'Board Readiness',
+    sub: 'Weighted GWA dashboard from exam scores', path: '/readiness' },
+]
+
+export const ITEMS: Item[] = [...SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...FEATURE_ITEMS]
 export const ITEM_BY_PATH = new Map<string, Item>(ITEMS.map(i => [i.path, i]))
 export const ITEM_BY_ID = new Map<string, Item>(ITEMS.map(i => [i.id, i]))
