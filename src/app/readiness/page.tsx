@@ -40,7 +40,9 @@ export default async function ReadinessPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  // Gated like Top 2 content: only admins or users granted this feature.
+  // Full-tier feature: readiness needs broad subject coverage to be meaningful,
+  // so it is restricted to full-tier (cockpit) users and admins, and further to
+  // those granted it. Select tier never has progress tracking.
   const { data: profRow } = await supabase
     .from('profiles')
     .select('approved, tier, grants')
@@ -54,7 +56,7 @@ export default async function ReadinessPage() {
     isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
   }
   const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
-  if (!readinessItem || !canOpenItem(access, readinessItem)) redirect('/')
+  if (!readinessItem || !canOpenCockpit(access) || !canOpenItem(access, readinessItem)) redirect('/')
 
   // Where this user's exams actually live, so the empty-state link never dead-ends.
   const examsHref = isAdmin(access) ? '/top2/index.html' : canOpenCockpit(access) ? '/reviewer' : '/'
