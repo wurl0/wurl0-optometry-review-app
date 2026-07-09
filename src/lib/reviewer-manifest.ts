@@ -80,7 +80,7 @@ const MOCK_ITEMS: Item[] = [
   { id: 'mock.2025', subject: 'GLOBAL', type: 'mock', label: 'OLE Mock Board Exam',
     sub: 'Cross-subject, weighted to TOS', path: '/top2/00-Master-Index/OLE-Mock-Board-Exam.html' },
   { id: 'mock.set2', subject: 'GLOBAL', type: 'mock', label: 'OLE Mock Board Exam — Set 2',
-    sub: 'MCU 2024 bank, weighted to TOS', path: '/top2/00-Master-Index/OLE-Mock-Board-Exam-Set2.html' },
+    sub: '2024 preboard bank, weighted to TOS', path: '/top2/00-Master-Index/OLE-Mock-Board-Exam-Set2.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
