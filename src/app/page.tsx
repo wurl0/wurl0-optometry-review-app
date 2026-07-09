@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
-import { ITEMS as REVIEWER_ITEMS, ITEM_BY_ID, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
+import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
 import { canOpenItem, isAdmin, type Access } from '@/lib/access'
 
 export default async function HomePage() {
@@ -33,10 +33,9 @@ export default async function HomePage() {
     isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
   }
   // Readiness has its own dedicated card below, so keep it out of the generic
-  // granted-item cards to avoid showing it twice.
+  // granted-item cards. Readiness is intentionally excluded from the main app
+  // home; it lives in the cockpit and the static Top 2 home only.
   const grantedItems = REVIEWER_ITEMS.filter(i => i.id !== READINESS_ITEM_ID && canOpenItem(access, i))
-  const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
-  const showReadiness = !!readinessItem && canOpenItem(access, readinessItem)
   // select tier: direct item cards. full tier: the filtered dynamic cockpit.
   // admin (tier or env): the full static index (every subject, mocks, interactives).
   const showGrantedCards = access.tier === 'select' && grantedItems.length > 0
@@ -273,21 +272,6 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        {/* Board readiness (granted feature) */}
-        {showReadiness && (
-          <div className="mt-4">
-            <Link
-              href="/readiness"
-              className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 hover:border-teal-300 transition-colors"
-            >
-              <div>
-                <p className="text-sm font-bold text-gray-900">📊 Board Readiness</p>
-                <p className="text-xs text-gray-500 mt-0.5">Weighted GWA and what to revisit, from every exam you take</p>
-              </div>
-              <span className="text-teal-600 text-lg">→</span>
-            </Link>
-          </div>
-        )}
 
         {/* Granted reviewer items (select tier: direct cards, no cockpit) */}
         {showGrantedCards && grantedItems.map(i => (
