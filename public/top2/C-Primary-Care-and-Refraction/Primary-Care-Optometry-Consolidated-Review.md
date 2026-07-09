@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Primary Care Optometry — Consolidated Review
-**Personal study notes** | Sources: Dr. Ferrer PCO Complete Notes (2024) · PCO Board Reviewer 10 Sessions · PrimaryCareOptometry Program Assessment Reviewer
+**Personal study notes** | Sources: PCO Complete Notes (2024) · PCO Board Reviewer 10 Sessions · PrimaryCareOptometry Program Assessment Reviewer
 
 ---
 
@@ -1422,4 +1422,4 @@ Memory: **#A tests (16A, 17A) end at BLUR. #B tests (16B, 17B) end at BREAK/RECO
 
 ---
 
-*Sources: Dr. Ferrer Primary Care Optometry Complete Notes (2024, 104 pp.) · PCO Board Reviewer 10 Sessions / 20 Hours · PrimaryCareOptometry Program Assessment Reviewer (Dr. Wyrlo, Pages 5–103) · Personal consolidation for 2026 OLE Board Review*
+*Sources: Primary Care Optometry Complete Notes (2024, 104 pp.) · PCO Board Reviewer 10 Sessions / 20 Hours · PrimaryCareOptometry Program Assessment Reviewer (Dr. Wyrlo, Pages 5–103) · Personal consolidation for 2026 OLE Board Review*

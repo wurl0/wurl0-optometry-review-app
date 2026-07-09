@@ -2,7 +2,7 @@
 ## Physiological Optics — Board Review 2026
 *Personal study notes*
 
-> Sources: Dr. A.I.V. Sumaya (2018 lecture slides) + Dr. M. De Jesus (2024 reviewer)
+> Sources: (2018 lecture slides) + (2024 reviewer)
 
 ---
 

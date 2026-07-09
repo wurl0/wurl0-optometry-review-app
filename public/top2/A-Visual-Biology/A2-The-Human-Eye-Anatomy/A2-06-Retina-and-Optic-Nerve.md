@@ -586,7 +586,7 @@ FINAL DRAINAGE:
 
 ## Sources Used
 
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Retinal regions, 11 histological layers, rods vs cones details, fovea and foveola measurements, optic disc/physiologic cup, C/D ratio, carotenoids (lutein, zeaxanthin), retinal blood supply, neurons of retina
+- [x] `Ocular-Anatomy.pdf` — Retinal regions, 11 histological layers, rods vs cones details, fovea and foveola measurements, optic disc/physiologic cup, C/D ratio, carotenoids (lutein, zeaxanthin), retinal blood supply, neurons of retina
 - [x] `OA-Ocular-Anatomy.md` — Ganglion cells, Müller cells functions, retinal blood supply details, ophthalmoscopy comparison (direct vs indirect)
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope. No additions.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.19, 5.20 scope reference

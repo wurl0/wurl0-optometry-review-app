@@ -549,7 +549,7 @@ Write the parasympathetic pathway from the CN7 nucleus in the pons to the lacrim
 ## Sources Used
 
 - [x] `OA-Ocular-Anatomy.md` — Eyelid layers, muscles (orbicularis, LPS, Müller's), tarsus, conjunctiva 3 parts, fornix distances, goblet cells, lacrimal sac, canaliculi dimensions, tear film layers with compositions, Schirmer's test, TBUT, Jones test, Rose Bengal
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Lacrimal gland innervation pathway (CN7 → greater petrosal → Vidian → pterygopalatine ganglion), parasympathetic vs sympathetic roles, blink types and rates, crocodile tears, eyelid gland summary
+- [x] `Ocular-Anatomy.pdf` — Lacrimal gland innervation pathway (CN7 → greater petrosal → Vidian → pterygopalatine ganglion), parasympathetic vs sympathetic roles, blink types and rates, crocodile tears, eyelid gland summary
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope only. No additions to A2-02.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.5–5.8, 5.22–5.24 scope reference
 

@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## E4 — Ocular Emergencies
-*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease, Dr. Elmo Ado + consolidated review*
+*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease + consolidated review*
 
 ---
 

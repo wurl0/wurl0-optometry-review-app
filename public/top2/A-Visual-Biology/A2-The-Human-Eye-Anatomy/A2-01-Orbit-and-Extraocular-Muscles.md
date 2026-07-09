@@ -473,7 +473,7 @@ Write the path of the superior oblique from origin to insertion — every stop i
 ## Sources Used
 
 - [x] `OA-Ocular-Anatomy.md` — Bony orbit, orbital walls, openings, EOM origins/insertions/actions/innervation
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Orbital fascia (Periorbita, Orbital septum, Tenon's capsule); Exenteration/Evisceration/Enucleation; Paranasal sinuses with orbital relationships; Lateral orbital tubercle measurement (11mm); Optic canal dimensions (4–10mm)
+- [x] `Ocular-Anatomy.pdf` — Orbital fascia (Periorbita, Orbital septum, Tenon's capsule); Exenteration/Evisceration/Enucleation; Paranasal sinuses with orbital relationships; Lateral orbital tubercle measurement (11mm); Optic canal dimensions (4–10mm)
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope only (cell biology, body systems). No additions to A2-01.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.1 and 5.2 scope reference
 

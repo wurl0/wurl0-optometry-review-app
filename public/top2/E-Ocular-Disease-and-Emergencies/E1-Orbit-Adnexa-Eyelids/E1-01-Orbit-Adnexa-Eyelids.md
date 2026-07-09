@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## E1 — Orbit, Adnexa, and Eyelids
-*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease, Dr. Elmo Ado + consolidated review*
+*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease + consolidated review*
 
 ---
 

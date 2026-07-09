@@ -439,7 +439,7 @@ Explain to a student why a pituitary tumor causes bitemporal hemianopia and not 
 ## Sources Used
 
 - [x] `GA-General-Anatomy.md` — 10 body systems, skull bones (paired + unpaired), fontanels, sutures, cranial nerve list and detail (CN1-12 with courses and functions), brain lobes and functions, paranasal sinuses, optic nerve segments, CN3/4/5/6/7 paralysis effects
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — CN course through orbit, SOF and optic canal contents, CN3 branches, CN4 characteristics (decussated, longest intracranial), CN5 branches, CN7 orbital and lacrimal function
+- [x] `Ocular-Anatomy.pdf` — CN course through orbit, SOF and optic canal contents, CN3 branches, CN4 characteristics (decussated, longest intracranial), CN5 branches, CN7 orbital and lacrimal function
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS A.1 scope (Sections 1.0–4.0 of 1994 PRC syllabi)
 
 ---

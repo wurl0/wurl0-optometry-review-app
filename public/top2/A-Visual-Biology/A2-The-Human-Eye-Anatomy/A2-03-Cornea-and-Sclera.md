@@ -513,7 +513,7 @@ Write the full mechanism of what happens when the corneal endothelium fails — 
 
 ## Sources Used
 
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Full sclera (3 layers, measurements, foramina, fluid content), full cornea (6 layers with detailed compositions, 10 reasons for transparency, wound healing stages, limbus/gonioscopy landmarks)
+- [x] `Ocular-Anatomy.pdf` — Full sclera (3 layers, measurements, foramina, fluid content), full cornea (6 layers with detailed compositions, 10 reasons for transparency, wound healing stages, limbus/gonioscopy landmarks)
 - [x] `OA-Ocular-Anatomy.md` — Sclera thickness and measurements, limbus anatomy, Schlemm's canal, trabecular meshwork, scleral spur, Schwalbe's line, gonioscopy technique
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope only. No additions to A2-03.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.9 and 5.10 scope reference

@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## G5 — Special Populations and Ocular Side Effects of Systemic Drugs
-*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, Dr. Ado pp.84-91*
+*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, pp.84-91*
 
 ---
 

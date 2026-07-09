@@ -372,7 +372,7 @@ For each of the 6 visual pathway stations, write: (1) the station name; (2) what
 
 ## Sources Used
 
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — All 6 visual pathway stations, fiber types (pupillomotor, visual, efferent, commissural), chiasmal decussation pattern, LGB laminar inputs, optic radiation quadrantanopsia patterns, area striata, Wernicke's hemianopic pupil, congruous vs incongruous definitions
+- [x] `Ocular-Anatomy.pdf` — All 6 visual pathway stations, fiber types (pupillomotor, visual, efferent, commissural), chiasmal decussation pattern, LGB laminar inputs, optic radiation quadrantanopsia patterns, area striata, Wernicke's hemianopic pupil, congruous vs incongruous definitions
 - [x] `OA-Ocular-Anatomy.md` — Additional fiber descriptions, optic radiation lateral/medial fiber patterns and quadrant field effects
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope. No additions.
 - [x] `SYLLABI-TOPIC-MAP.md` — Section 5.21 scope reference

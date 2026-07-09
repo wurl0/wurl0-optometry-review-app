@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Ocular Disease — Consolidated Review
-**Personal study notes** | Sources: Dr. Ado Ocular Disease Notes (2024), Board Reviewer (8 Sessions), Smart Reviewer, Board Primer, OLE High-Yield Reviewer
+**Personal study notes** | Sources: Ocular Disease Notes (2024), Board Reviewer (8 Sessions), Smart Reviewer, Board Primer, OLE High-Yield Reviewer
 
 ---
 

@@ -299,5 +299,5 @@ Write the amblyopia management flow from diagnosis to resolution on a blank page
 
 ---
 
-*Source: Pediatric Optometry 2024 | Dr. Sumaya BV (2024)*
+*Source: Pediatric Optometry 2024 | BV (2024)*
 *Note written: June 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*

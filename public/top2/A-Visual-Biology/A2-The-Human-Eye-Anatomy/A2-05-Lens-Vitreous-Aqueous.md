@@ -413,7 +413,7 @@ Write the IOP balance mechanism: what happens to IOP if (a) trabecular meshwork 
 
 ## Sources Used
 
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Crystalline lens (structures, measurements, compositions), zonules of Zinn, vitreous (structures, hyaloid canal, muscae volitantes), aqueous humor (production, composition, IOP, tonometry, trabecular meshwork, Schlemm's canal)
+- [x] `Ocular-Anatomy.pdf` — Crystalline lens (structures, measurements, compositions), zonules of Zinn, vitreous (structures, hyaloid canal, muscae volitantes), aqueous humor (production, composition, IOP, tonometry, trabecular meshwork, Schlemm's canal)
 - [x] `OA-Ocular-Anatomy.md` — IOP factors, AH formation mechanisms, IOP measurement (Schiotz, Goldman, NCT), Shaffer grading of angle
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope. No additions.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.16, 5.18, 5.25, 5.26, 5.27 scope reference

@@ -448,7 +448,7 @@ The map below answers: **which 1994 syllabi topics go into which folder in this 
 ### G4 — Therapeutic Ophthalmic Agents
 *Source: Not in 1994 syllabi — RA 8050 addition*
 
-> Anti-glaucoma drugs, anti-infectives, anti-inflammatories, anti-allergy, dyes. Use `Ocular-Pharmacology-Dr.-Elmo-Ado.pdf` as primary.
+> Anti-glaucoma drugs, anti-infectives, anti-inflammatories, anti-allergy, dyes. Use `Ocular-Pharmacology.pdf` as primary.
 
 ---
 

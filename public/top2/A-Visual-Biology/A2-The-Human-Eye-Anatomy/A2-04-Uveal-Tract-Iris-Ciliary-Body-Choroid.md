@@ -475,7 +475,7 @@ Clinical significance: Posterior synechiae (iris-to-lens adhesions from uveitis)
 
 ## Sources Used
 
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` — Iris histology + zones, pupillary muscles + innervation, ciliary body structure (pars plana/plicata), ciliary muscle types, choroid layers, Bruch's membrane, pupillary disorders (Adie's, Argyll-Robertson, Horner's, RAPD), blood supply of iris (GIC)
+- [x] `Ocular-Anatomy.pdf` — Iris histology + zones, pupillary muscles + innervation, ciliary body structure (pars plana/plicata), ciliary muscle types, choroid layers, Bruch's membrane, pupillary disorders (Adie's, Argyll-Robertson, Horner's, RAPD), blood supply of iris (GIC)
 - [x] `OA-Ocular-Anatomy.md` — Ciliary body functions + aqueous production, iris layers, pupil size factors, anterior chamber (volume, depth), posterior chamber (volume), trabecular meshwork detail, gonioscopy landmarks
 - [x] `GA-General-Anatomy.md` — Reviewed; A1 scope. No additions.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.11, 5.12, 5.13, 5.14, 5.15, 5.17 scope reference

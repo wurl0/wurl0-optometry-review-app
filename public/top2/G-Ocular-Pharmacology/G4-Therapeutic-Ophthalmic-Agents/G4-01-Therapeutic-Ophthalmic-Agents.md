@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## G4 — Therapeutic Ophthalmic Agents
-*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, Dr. Ado pp.44-66*
+*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, pp.44-66*
 
 ---
 

@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## G1 — General Pharmacology Principles
-*Personal study notes | TOS: G Ocular Pharmacology | Source: Gen-Pharmacology, Dr. Ado*
+*Personal study notes | TOS: G Ocular Pharmacology | Source: Gen-Pharmacology*
 
 ---
 

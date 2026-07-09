@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## G3 — Diagnostic Pharmaceutical Agents (Anesthetics & Dyes)
-*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, Dr. Ado pp.34-43*
+*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, pp.34-43*
 
 ---
 

@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## Low Vision — Consolidated Review
-**Personal study notes** | Sources: Dr. Saludes (2024), Dr. Bernardo (OLE Board Review Series)
+**Personal study notes** | Sources: (2024), (OLE Board Review Series)
 
 ---
 
@@ -1315,4 +1315,4 @@ For each condition (RP, Achromatopsia, Albinism, ROP, Glaucoma, DR), write: (1) 
 ---
 
 *WAA | Board Review 2026 | Personal study notes*
-*Sources: Dr. Saludes (2024), Dr. Bernardo OLE Board Review Series (Low Vision 1–14, Scotopic/Photopic, Color Vision Reviewer)*
+*Sources: (2024), OLE Board Review Series (Low Vision 1–14, Scotopic/Photopic, Color Vision Reviewer)*

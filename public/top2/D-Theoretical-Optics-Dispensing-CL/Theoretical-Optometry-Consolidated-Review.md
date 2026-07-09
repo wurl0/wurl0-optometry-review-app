@@ -1,6 +1,6 @@
 # WAA — Board Review 2026
 ## Theoretical Optometry: Consolidated Review
-*Personal study notes | Sources: 2024 (Dr. Viñola & Dr. De Mesa), Board Primer (Doc Gelai), 2026 PPT (Dr. Baldestamon)*
+*Personal study notes | Sources: 2024, Board Primer, 2026 PPT*
 
 ---
 

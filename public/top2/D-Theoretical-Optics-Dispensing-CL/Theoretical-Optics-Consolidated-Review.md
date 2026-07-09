@@ -1,6 +1,6 @@
 # WAA — Board Review 2026
 ## Theoretical Optics: Consolidated Review
-*Personal study notes | Sources: 2024 (Dr. Viñola & Dr. De Mesa), Board Primer, quiz bank*
+*Personal study notes | Sources: 2024, Board Primer, quiz bank*
 
 ---
 

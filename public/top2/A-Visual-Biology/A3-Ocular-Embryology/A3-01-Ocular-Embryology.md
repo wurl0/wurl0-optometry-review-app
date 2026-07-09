@@ -415,7 +415,7 @@ Read the options first, kill wrong values, then settle the flip. `cue → rule �
 ## Sources Used
 
 - [x] `Gap-Lectures/11-Ocular-Embryology-Mechanisms.md` — Full 5-stage developmental sequence, vitreous 3 generations, germ layer origins (detailed updated classification), congenital malformation–mechanism table, board pearls
-- [x] `Ocular-Anatomy-Dr.-Elmo-Ado.pdf` (page 1) — Primordia of eye (Philippine reviewer classification): neuroectoderm, surface ectoderm, neural crest, mesoderm, mixed origin for zonules
+- [x] `Ocular-Anatomy.pdf` (page 1) — Primordia of eye (Philippine reviewer classification): neuroectoderm, surface ectoderm, neural crest, mesoderm, mixed origin for zonules
 - [x] `OA-Ocular-Anatomy.md` — Germ layer derivations, hyaloid system remnants
 - [x] `GA-General-Anatomy.md` — Reviewed; germ layer general principles relevant to A1. No additions to A3.
 - [x] `SYLLABI-TOPIC-MAP.md` — Sections 5.22.1, 5.23.1, 5.23.3 scope reference

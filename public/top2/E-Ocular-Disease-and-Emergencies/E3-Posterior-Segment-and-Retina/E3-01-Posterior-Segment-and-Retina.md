@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## E3 — Posterior Segment and Retina
-*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease, Dr. Elmo Ado + consolidated review*
+*Personal study notes | TOS: E Ocular Disease | Source: Ocular Disease + consolidated review*
 
 ---
 

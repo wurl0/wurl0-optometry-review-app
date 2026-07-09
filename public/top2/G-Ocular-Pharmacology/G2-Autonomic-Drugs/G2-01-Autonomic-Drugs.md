@@ -1,6 +1,6 @@
 # WAA | Board Review 2026
 ## G2 — Autonomic (Ocular) Drugs
-*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, Dr. Ado pp.17-34 + autonomic framework*
+*Personal study notes | TOS: G Ocular Pharmacology | Source: Ocular Pharmacology, pp.17-34 + autonomic framework*
 
 ---
 

@@ -2,7 +2,7 @@
 ## Ocular Anatomy: Consolidated Review
 *Personal study notes*
 
-**Sources:** Dr. Elmo Ado (Ocular Anatomy docx, General Anatomy PDF, Ocular Anatomy PDF) | Board Primers: General Anatomy 101, Ocular Anatomy and Physiology
+**Sources:** (Ocular Anatomy docx, General Anatomy PDF, Ocular Anatomy PDF) | Board Primers: General Anatomy 101, Ocular Anatomy and Physiology
 
 ---
 
@@ -1486,4 +1486,4 @@ The thin, stagnant layer of tears covering the corneal epithelium. It provides t
 ---
 
 *WAA -- Board Review 2026 -- Personal study notes*
-*Sources: Dr. Elmo Ado (Ocular Anatomy docx + PDFs) | Board Primers: General Anatomy 101, Ocular Anatomy and Physiology*
+*Sources: (Ocular Anatomy docx + PDFs) | Board Primers: General Anatomy 101, Ocular Anatomy and Physiology*
