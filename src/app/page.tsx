@@ -269,6 +269,20 @@ export default async function HomePage() {
           </Link>
         </div>
 
+        {/* Board readiness */}
+        <div className="mt-4">
+          <Link
+            href="/readiness"
+            className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 hover:border-teal-300 transition-colors"
+          >
+            <div>
+              <p className="text-sm font-bold text-gray-900">📊 Board Readiness</p>
+              <p className="text-xs text-gray-500 mt-0.5">Weighted GWA and what to revisit, from every exam you take</p>
+            </div>
+            <span className="text-teal-600 text-lg">→</span>
+          </Link>
+        </div>
+
         {/* Granted reviewer items (select tier: direct cards, no cockpit) */}
         {showGrantedCards && grantedItems.map(i => (
           <div key={i.id} className="mt-4">

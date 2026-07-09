@@ -199,9 +199,12 @@ function results(){
  if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
    missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
  h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">New mock</button></div></div>';
+ const perSubject=Object.keys(topicStats).map(k=>({subjectCode:k.charAt(0),score:topicStats[k].c,total:topicStats[k].t}));
+ if(window.reportOleMock)window.reportOleMock(perSubject);
  body.innerHTML=h;
  document.getElementById('ag').addEventListener('click',()=>{quiz.style.display='none';intro.style.display='block';window.scrollTo(0,0);});
 }
 </script>
+<script src="/top2/_report.js"></script>
 </body>
 </html>

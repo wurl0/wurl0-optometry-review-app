@@ -144,4 +144,7 @@ function finish(){document.getElementById('s-quiz').classList.remove('active');d
     missed.forEach(q=>{h+='<div class="note" style="margin-top:8px"><b>#'+q.id+'</b> '+esc(q.q)+'<br><span style="color:#22c55e">Ans: '+(LET[q.ans]||'?')+') '+esc(q.opts[q.ans]||'')+'</span></div>';});}
   else if(cfg.mode==='quiz'&&done){h='<div class="note">Clean sweep — every answered question correct.</div>';}
   document.getElementById('missed-list').innerHTML=h;}
-</script></body></html>
+
+(function(){window.addEventListener('load',function(){try{var t=QUESTIONS.length,r=QUESTIONS.filter(function(q){return q.orig==='right'}).length;if(t&&window.reportOleScore)window.reportOleScore({score:r,total:t});}catch(e){}});})();
+</script><script src="/top2/_report.js"></script>
+</body></html>

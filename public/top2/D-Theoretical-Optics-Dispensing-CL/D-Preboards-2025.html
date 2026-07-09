@@ -242,6 +242,9 @@ function finish(){
   } else if(cfg.mode==='quiz' && done){h='<div class="note">Clean sweep — every answered question correct.</div>';}
   document.getElementById('missed-list').innerHTML=h;
 }
+
+(function(){window.addEventListener('load',function(){try{var t=QUESTIONS.length,r=QUESTIONS.filter(function(q){return q.orig==='right'}).length;if(t&&window.reportOleScore)window.reportOleScore({score:r,total:t});}catch(e){}});})();
 </script>
+<script src="/top2/_report.js"></script>
 </body>
 </html>

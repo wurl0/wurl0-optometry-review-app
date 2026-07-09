@@ -46,6 +46,15 @@ export default async function ReviewerPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6">
+        <Link href="/readiness"
+          className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 mb-6 hover:border-teal-300 transition-colors">
+          <div>
+            <p className="text-sm font-bold text-gray-900">📊 Board Readiness</p>
+            <p className="text-xs text-gray-500 mt-0.5">Your weighted GWA and what to revisit, from every exam you take</p>
+          </div>
+          <span className="text-teal-600 text-lg">→</span>
+        </Link>
+
         {mocks.length > 0 && (
           <section className="mb-7">
             <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Full board simulation</p>
