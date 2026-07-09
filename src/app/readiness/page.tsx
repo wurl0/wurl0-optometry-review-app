@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { computeReadiness, type OleAttempt, type Verdict } from '@/lib/readiness'
@@ -87,7 +86,7 @@ export default async function ReadinessPage() {
             <span className="font-bold text-gray-900">OptoPrep</span>
             <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full font-medium">Readiness</span>
           </div>
-          <Link href="/" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">Home</Link>
+          <a href={examsHref} className="text-sm text-gray-500 hover:text-gray-800 transition-colors">← Top 2</a>
         </div>
       </header>
 
