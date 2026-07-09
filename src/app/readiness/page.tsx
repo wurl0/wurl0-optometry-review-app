@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { computeReadiness, type OleAttempt, type Verdict } from '@/lib/readiness'
 import { ITEM_BY_ID, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
-import { canOpenItem, type Access } from '@/lib/access'
+import { canOpenItem, canOpenCockpit, isAdmin, type Access } from '@/lib/access'
 
 export const dynamic = 'force-dynamic'
 
@@ -56,6 +56,9 @@ export default async function ReadinessPage() {
   const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
   if (!readinessItem || !canOpenItem(access, readinessItem)) redirect('/')
 
+  // Where this user's exams actually live, so the empty-state link never dead-ends.
+  const examsHref = isAdmin(access) ? '/top2/index.html' : canOpenCockpit(access) ? '/reviewer' : '/'
+
   const { data } = await supabase
     .from('ole_attempts')
     .select('subject_code, source, percentage, created_at, area_breakdown')
@@ -101,9 +104,9 @@ export default async function ReadinessPage() {
             <p className="text-gray-500 text-sm mt-1">
               Take a Subject Exam, Preboard, or Mock Board and your readiness will appear here.
             </p>
-            <Link href="/reviewer" className="inline-block mt-4 text-sm font-medium text-teal-700 hover:underline">
-              Go to the reviewer →
-            </Link>
+            <a href={examsHref} className="inline-block mt-4 text-sm font-medium text-teal-700 hover:underline">
+              Go to your exams →
+            </a>
           </div>
         ) : (
           <>
