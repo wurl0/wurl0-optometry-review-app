@@ -137,7 +137,8 @@ function prev(){if(i>0){i--;render();}}
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 function finish(){document.getElementById('s-quiz').classList.remove('active');document.getElementById('s-res').classList.add('active');
   const done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
-  const pct=done?Math.round(corr/done*100):0;document.getElementById('ring').textContent=pct+'%';
+  const pct=done?Math.round(corr/done*100):0;
+  if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}document.getElementById('ring').textContent=pct+'%';
   document.getElementById('rdetail').textContent=cfg.mode==='study'?'Study mode — '+pool.length+' reviewed':(corr+' correct of '+done+' answered ('+pool.length+' in set)');
   const missed=pool.filter(q=>answered[q.id]===false);let h='';
   if(missed.length){h='<div class="opt-row"><div class="lbl">Review these ('+missed.length+')</div></div>';
@@ -145,7 +146,7 @@ function finish(){document.getElementById('s-quiz').classList.remove('active');d
   else if(cfg.mode==='quiz'&&done){h='<div class="note">Clean sweep — every answered question correct.</div>';}
   document.getElementById('missed-list').innerHTML=h;}
 
-(function(){window.addEventListener('load',function(){try{var t=QUESTIONS.length,r=QUESTIONS.filter(function(q){return q.orig==='right'}).length;if(t&&window.reportOleScore)window.reportOleScore({score:r,total:t});}catch(e){}});})();
+
 </script><script src="/top2/_report.js"></script>
 <!--WAA-HOME-LINK--><a href="../index.html" style="position:fixed;top:10px;left:10px;z-index:99999;background:#fff;border:1px solid #cbd5e1;border-radius:10px;padding:6px 12px;font:600 13px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#334155;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)">← Home</a>
 </body></html>

@@ -26,19 +26,8 @@ export async function POST(req: NextRequest) {
 
   const percentage = Math.round((score / total) * 100 * 100) / 100
 
-  // Preboards are a review of one past sitting: a fixed historical score. Log it
-  // once per subject so reopening the review never duplicates the data point.
-  // Subject exams and mocks are fresh attempts, so they always insert.
-  if (source === 'preboards-2025' || source === 'preboards-set2') {
-    const { count } = await supabase
-      .from('ole_attempts')
-      .select('id', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .eq('subject_code', subjectCode)
-      .eq('source', source)
-    if ((count ?? 0) > 0) return NextResponse.json({ ok: true, skipped: 'already-logged' })
-  }
-
+  // Every source is a fresh attempt now (subject exams, preboard retakes, mocks),
+  // so each one inserts and feeds the rolling average.
   const { error } = await supabase.from('ole_attempts').insert({
     user_id: user.id,
     subject_code: subjectCode,
