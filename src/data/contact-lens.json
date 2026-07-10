@@ -1,0 +1,1274 @@
+[
+ {
+  "type": "mcq",
+  "stem": "Who is credited with first describing the concept of a lens placed in contact with the eye (1508)?",
+  "options": [
+   "Kevin Tuohy",
+   "Leonardo da Vinci",
+   "Otto Wichterle",
+   "A. E. Fick"
+  ],
+  "correct": 1,
+  "explanation": "Leonardo da Vinci first described the concept of a contact lens in 1508. Fick made the first vision-correcting lens (1888); Tuohy the first PMMA corneal lens (1947); Wichterle the first soft (HEMA) lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "Otto Wichterle is credited with developing which contact lens material?",
+  "options": [
+   "PMMA",
+   "Silicone acrylate",
+   "HEMA (the first soft lens material)",
+   "Cellulose acetate butyrate"
+  ],
+  "correct": 2,
+  "explanation": "Otto Wichterle developed HEMA, the first soft (hydrogel) contact lens material. PMMA was the original rigid material (Tuohy, 1947)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A bandage (therapeutic) contact lens is used primarily to:",
+  "options": [
+   "Change the eye color",
+   "Increase myopia",
+   "Protect the cornea and promote epithelial healing",
+   "Replace spectacles for astigmatism"
+  ],
+  "correct": 2,
+  "explanation": "Bandage lenses protect the corneal surface and facilitate healing of erosions; they can also act as a drug reservoir, giving longer medication contact time than drops."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ortho-keratology lenses control myopia by:",
+  "options": [
+   "Adding plus power at near",
+   "Permanently thinning the cornea",
+   "Blocking blue light",
+   "Temporarily reshaping the corneal epithelium during overnight wear"
+  ],
+  "correct": 3,
+  "explanation": "Ortho-K gas-permeable lenses worn overnight temporarily reshape the corneal epithelium to reduce myopia and slow its progression, an alternative to daytime correction or surgery."
+ },
+ {
+  "type": "mcq",
+  "stem": "A scleral contact lens is distinguished by the fact that:",
+  "options": [
+   "It is smaller than 12 mm",
+   "The cornea bears all the lens weight",
+   "It is always soft",
+   "The sclera bears the weight and no part touches the cornea"
+  ],
+  "correct": 3,
+  "explanation": "A scleral lens vaults the cornea and rests on the sclera, which carries the lens weight; no part touches the cornea. True sclerals are about 18 mm; mini-sclerals are under 18 mm."
+ },
+ {
+  "type": "mcq",
+  "stem": "A corneal-sized contact lens is defined as one with a diameter:",
+  "options": [
+   "18 mm and above",
+   "Less than 12 mm (cornea bears the weight)",
+   "Exactly 20 mm",
+   "12-16 mm"
+  ],
+  "correct": 1,
+  "explanation": "Corneal lenses are under 12 mm and the cornea alone bears the weight. Semi-corneal/sclero-corneal lenses are 12-16 mm; sclerals are about 18 mm and up."
+ },
+ {
+  "type": "mcq",
+  "stem": "The maximum amount of astigmatism that a spherical soft contact lens can reasonably correct is about:",
+  "options": [
+   "-2.00 D",
+   "-6.00 D",
+   "-4.00 D",
+   "-0.75 D"
+  ],
+  "correct": 3,
+  "explanation": "A spherical lens masks only about -0.75 D of astigmatism; beyond that (with a favorable sphere-to-cylinder ratio you may still use the spherical equivalent) a toric lens is needed."
+ },
+ {
+  "type": "mcq",
+  "stem": "A hybrid contact lens is constructed with:",
+  "options": [
+   "A glass core",
+   "Two soft lenses fused together",
+   "A rigid gas-permeable center surrounded by a soft/silicone-hydrogel skirt",
+   "A prism-ballasted toric back"
+  ],
+  "correct": 2,
+  "explanation": "A hybrid lens combines an RGP optical center with a soft skirt, giving RGP optics with soft comfort, useful in keratoconus that cannot tolerate a full RGP."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optic zone of a contact lens must be larger than the:",
+  "options": [
+   "Pupil diameter (even when dilated)",
+   "Corneal diameter",
+   "Palpebral aperture",
+   "Lens total diameter"
+  ],
+  "correct": 0,
+  "explanation": "The optic zone must exceed the pupil diameter, including in dim light when the pupil dilates; otherwise the patient gets glare and blur, especially with small-optic-zone RGPs."
+ },
+ {
+  "type": "mcq",
+  "stem": "Compared with the central curve, the peripheral curve of a contact lens is usually:",
+  "options": [
+   "Flatter, to give edge lift, stability, and tear exchange",
+   "Steeper",
+   "The same curvature",
+   "Toric"
+  ],
+  "correct": 0,
+  "explanation": "The peripheral curve is flatter than the central curve, providing edge lift, stability on the cornea, and tear exchange behind the lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sagittal depth (sag) of a contact lens is determined by:",
+  "options": [
+   "Water content and tint",
+   "Refractive index and thickness",
+   "Wetting angle",
+   "Base curve (BOZR) and diameter"
+  ],
+  "correct": 3,
+  "explanation": "Sag is set by the base curve and the diameter. A steeper base curve or a larger diameter increases the sag and tightens the fit."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which two corneal layers are metabolically active and most dependent on oxygen supply?",
+  "options": [
+   "Anterior epithelium and endothelium",
+   "Stroma and Descemet",
+   "Bowman and stroma",
+   "Epithelium and Bowman only"
+  ],
+  "correct": 0,
+  "explanation": "The anterior epithelium (continuous regeneration) and the endothelium (pumps water out of the stroma) are metabolically active; hypoxia here causes edema and clouding."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Dk value greater than 60 is classified as:",
+  "options": [
+   "High",
+   "Medium",
+   "Low",
+   "Zero"
+  ],
+  "correct": 0,
+  "explanation": "Dk classification: low <30, medium 30-60, high >60. Higher Dk means better oxygen permeability of the material."
+ },
+ {
+  "type": "mcq",
+  "stem": "The minimum Dk/t generally recommended for daily-wear soft lenses is about:",
+  "options": [
+   "50",
+   "10",
+   "87",
+   "25"
+  ],
+  "correct": 3,
+  "explanation": "Daily wear requires a Dk/t of about 25 or more; overnight (extended) wear requires about 87 or more to avoid hypoxic complications."
+ },
+ {
+  "type": "mcq",
+  "stem": "As the water content of a hydrogel material increases, its refractive index:",
+  "options": [
+   "Stays constant",
+   "Increases",
+   "Decreases",
+   "Becomes zero"
+  ],
+  "correct": 2,
+  "explanation": "Higher water content lowers the refractive index, so higher-water materials need a thicker design to achieve a given power, affecting oxygen transmissibility."
+ },
+ {
+  "type": "mcq",
+  "stem": "A LOW modulus of elasticity in a lens material means the lens is:",
+  "options": [
+   "More flexible and better able to follow the cornea",
+   "Higher in water content",
+   "More oxygen permeable",
+   "Stiffer and harder to drape"
+  ],
+  "correct": 0,
+  "explanation": "Low modulus means more flexibility, so the lens conforms to the cornea. Early silicone hydrogels had a high modulus (stiff), causing handling and GPC problems."
+ },
+ {
+  "type": "mcq",
+  "stem": "In RGP wettability testing, a HIGHER wetting angle indicates a surface that is:",
+  "options": [
+   "Zero-charge",
+   "More wettable",
+   "Hydrophilic",
+   "Less wettable"
+  ],
+  "correct": 3,
+  "explanation": "A higher wetting angle means the surface is less wettable (water beads up). Hydrophilic soft materials have a zero wetting angle; hydrophobic silicone RGPs are often plasma-treated."
+ },
+ {
+  "type": "mcq",
+  "stem": "The predominant modern soft-lens material, valued for high oxygen and dry-eye tolerance, is:",
+  "options": [
+   "Silicone hydrogel",
+   "Cellulose acetate butyrate",
+   "PMMA",
+   "PHEMA only"
+  ],
+  "correct": 0,
+  "explanation": "Silicone hydrogel predominates because its high oxygen transmissibility reduces hypoxic complications and its silicone content limits water evaporation, aiding mild-to-moderate dry eye."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ionic soft lens materials differ from non-ionic ones in that ionic materials:",
+  "options": [
+   "Have no water content",
+   "Cannot be tinted",
+   "Take up MORE protein and are more sensitive to pH/osmolality",
+   "Take up less protein"
+  ],
+  "correct": 2,
+  "explanation": "Ionic (charged) materials attract more protein deposits and are more sensitive to pH, osmolality, and care-system components than non-ionic materials."
+ },
+ {
+  "type": "mcq",
+  "stem": "PMMA is now used almost exclusively for:",
+  "options": [
+   "Daily disposables",
+   "Extended-wear soft lenses",
+   "Bandage lenses",
+   "Diagnostic trial lenses"
+  ],
+  "correct": 3,
+  "explanation": "PMMA has excellent optics but almost zero oxygen permeability, so today it survives mainly as rigid diagnostic (trial) lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which soft lens manufacturing process injects liquid polymer into a spinning mold?",
+  "options": [
+   "Plasma treatment",
+   "Cast molding",
+   "Spin-casting",
+   "Lathe cutting"
+  ],
+  "correct": 2,
+  "explanation": "Spin-casting injects liquid polymer into a spinning mold. Lathe cutting machines a polymer rod; cast molding presses polymer between two molds under heat and pressure."
+ },
+ {
+  "type": "mcq",
+  "stem": "The surface power of a contact lens surface is given by:",
+  "options": [
+   "D = r / (n - 1)",
+   "D = (n - 1) / r",
+   "D = 1 / (n x r)",
+   "D = n x r"
+  ],
+  "correct": 1,
+  "explanation": "Surface power D = (n - 1) / r, with r the radius of curvature in meters and n the material index."
+ },
+ {
+  "type": "mcq",
+  "stem": "The equivalent power of a thick contact lens is:",
+  "options": [
+   "Deq = D1 x D2",
+   "Deq = D1 + D2 - (t/n)(D1 x D2)",
+   "Deq = D1 + D2",
+   "Deq = D1 - D2"
+  ],
+  "correct": 1,
+  "explanation": "Equivalent power Deq = D1 + D2 - (t/n)(D1 x D2) accounts for the lens thickness t and index n; the nominal power Dn = D1 + D2 ignores thickness."
+ },
+ {
+  "type": "mcq",
+  "stem": "A -6.00 D spectacle lens is worn at a 12 mm vertex distance. Its equivalent contact-lens power is closest to:",
+  "options": [
+   "-6.00 D",
+   "-6.47 D",
+   "-5.60 D",
+   "-5.00 D"
+  ],
+  "correct": 2,
+  "explanation": "D(CL) = -6.00 / [1 - 0.012 x -6.00] = -6.00 / 1.072 = -5.60 D. A minus lens needs less minus at the cornea."
+ },
+ {
+  "type": "mcq",
+  "stem": "A +8.00 D spectacle lens at a 12 mm vertex distance becomes what contact-lens power?",
+  "options": [
+   "+8.00 D",
+   "+8.85 D",
+   "+9.50 D",
+   "+7.30 D"
+  ],
+  "correct": 1,
+  "explanation": "D(CL) = +8.00 / [1 - 0.012 x 8.00] = +8.00 / 0.904 = +8.85 D. A plus lens needs more plus at the cornea (shorter vertex)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The spherical equivalent of +2.00 -1.00 x 180 is:",
+  "options": [
+   "+2.50 D",
+   "+1.50 D",
+   "+1.00 D",
+   "+0.50 D"
+  ],
+  "correct": 1,
+  "explanation": "Spherical equivalent = sphere + 1/2 cylinder = +2.00 + (-0.50) = +1.50 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Contact lens magnification is calculated as:",
+  "options": [
+   "CLM = D(spec) / d",
+   "CLM = d / D(spec)",
+   "CLM = 1 - d x D(spec)",
+   "CLM = 1 + d x D(spec)"
+  ],
+  "correct": 2,
+  "explanation": "CLM = 1 - d x D(spec). For a -10 D lens at 14 mm this is 1.14 (magnified); for +10 D it is 0.86 (minified)."
+ },
+ {
+  "type": "mcq",
+  "stem": "With contact lenses versus spectacles, a hyperope experiences a retinal image that is:",
+  "options": [
+   "Larger",
+   "Smaller",
+   "Doubled",
+   "The same size"
+  ],
+  "correct": 1,
+  "explanation": "For a plus lens CLM is less than 1, so the hyperope sees a smaller (more natural) image with contact lenses; myopes see a larger image."
+ },
+ {
+  "type": "mcq",
+  "stem": "Refractive ametropia is generally best corrected with contact lenses, whereas axial ametropia is often better corrected with:",
+  "options": [
+   "Spectacles",
+   "Prisms only",
+   "Contact lenses",
+   "Neither"
+  ],
+  "correct": 0,
+  "explanation": "By Knapp's principle, axial ametropia gives more equal retinal-image sizes when corrected with spectacles, while refractive ametropia is better with contact lenses (near the eye's plane)."
+ },
+ {
+  "type": "mcq",
+  "stem": "If a patient's keratometry readings mirror the amount of ametropia, the cause is most likely:",
+  "options": [
+   "Refractive",
+   "Unknown",
+   "Axial",
+   "Neurological"
+  ],
+  "correct": 0,
+  "explanation": "When corneal power tracks the refractive error (e.g., steep cornea with myopia), the ametropia is refractive in nature and favors contact-lens correction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is an optical ADVANTAGE of contact lenses over spectacles?",
+  "options": [
+   "No oblique astigmatism, no distortion, no field-of-view limit",
+   "Larger prismatic effects",
+   "More chromatic aberration",
+   "Spectacle-frame diplopia"
+  ],
+  "correct": 0,
+  "explanation": "Contact lenses move with the eye and sit at the corneal plane, eliminating oblique astigmatism, distortion, chromatic aberration, field-of-view limits, and frame diplopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "The gold-standard tear-VOLUME test for a contact-lens practitioner is:",
+  "options": [
+   "Fluorescein angiography",
+   "Tear break-up time",
+   "Tear meniscus (prism) height",
+   "Rose bengal staining"
+  ],
+  "correct": 2,
+  "explanation": "Tear meniscus (prism) height is the contact-lens gold standard for tear volume, though it is small (a fraction of a millimeter) and hard to measure on the slit lamp."
+ },
+ {
+  "type": "mcq",
+  "stem": "In the Schirmer test, the strip is placed toward the lateral canthus specifically to:",
+  "options": [
+   "Measure tear quality",
+   "Test drainage",
+   "Avoid touching the sensitive cornea and triggering reflex tearing",
+   "Increase the reading"
+  ],
+  "correct": 2,
+  "explanation": "Placing the strip about 5 mm from the lateral (temporal) canthus keeps it off the sensitive cornea, preventing reflex tearing that would falsely raise the volume reading."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tear break-up time (TBUT) measures which property of the tears?",
+  "options": [
+   "Volume",
+   "Quality/stability",
+   "Osmolality",
+   "Drainage patency"
+  ],
+  "correct": 1,
+  "explanation": "TBUT assesses tear quality/stability (time for the film to break up after a blink) using fluorescein. Schirmer and meniscus height measure volume; Jones test measures drainage."
+ },
+ {
+  "type": "mcq",
+  "stem": "The average tear-film pH is approximately:",
+  "options": [
+   "7.4 (slightly alkaline)",
+   "6.0",
+   "9.0 (strongly alkaline)",
+   "5.5 (acidic)"
+  ],
+  "correct": 0,
+  "explanation": "Tear film is slightly alkaline at about pH 7.4. Contact-lens solutions range 6.5-8.0; a large mismatch can burn the ocular surface."
+ },
+ {
+  "type": "mcq",
+  "stem": "The average blink rate is about:",
+  "options": [
+   "50 per minute",
+   "2 per minute",
+   "5 per minute",
+   "24 per minute"
+  ],
+  "correct": 3,
+  "explanation": "The average blink rate is about 24/min (range 10-34). Blinking spreads the tear film and keeps the lens wet and comfortable."
+ },
+ {
+  "type": "mcq",
+  "stem": "For soft-lens fitting, the total diameter is typically chosen as HVID plus:",
+  "options": [
+   "No addition",
+   "5 mm",
+   "2.0 mm (low water) to 2.5 mm (high water)",
+   "0.5 mm"
+  ],
+  "correct": 2,
+  "explanation": "Soft total diameter = HVID + 2.0 mm for low-water lenses or + 2.5 mm for high-water lenses (which shrink slightly on the eye)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A well-fitting soft lens shows how much movement on blink?",
+  "options": [
+   "3-4 mm of movement",
+   "It should slide off the cornea",
+   "No movement at all",
+   "About 0.3-0.5 mm with good centration and full coverage"
+  ],
+  "correct": 3,
+  "explanation": "A good soft fit shows full corneal coverage, good centration, and about 0.3-0.5 mm of movement on blink. No movement suggests a tight fit; excessive movement a loose fit."
+ },
+ {
+  "type": "mcq",
+  "stem": "A soft lens that shows excessive movement, poor centration, and discomfort is fitting:",
+  "options": [
+   "Toric",
+   "Flat/loose",
+   "Optimally",
+   "Steep/tight"
+  ],
+  "correct": 1,
+  "explanation": "Excessive movement, poor centration, and discomfort indicate a flat/loose fit. A steep/tight fit shows little or no movement and feels bound."
+ },
+ {
+  "type": "mcq",
+  "stem": "The recommended RGP trial-lens back vertex powers for low and high minus fits are about:",
+  "options": [
+   "-10.00 and -15.00 D",
+   "Plano and -0.50 D",
+   "-3.00 and -6.00 D",
+   "-1.00 and -2.00 D"
+  ],
+  "correct": 2,
+  "explanation": "About -3.00 D (low minus) and -6.00 D (high minus) trial powers are recommended so the trial fit resembles the ordered lens; +2.00 and +5.00 D are used for plus fits."
+ },
+ {
+  "type": "mcq",
+  "stem": "On RGP fitting, an ALIGNED (optimal) fit produces which tear lens?",
+  "options": [
+   "Plano tear lens",
+   "Plus tear lens",
+   "A negative meniscus",
+   "Minus tear lens"
+  ],
+  "correct": 0,
+  "explanation": "An aligned lens sits parallel to the cornea and shows an even thin fluorescein film, giving a plano tear lens. Flat fits give a minus tear lens; steep fits a plus tear lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "The tear lens is calculated as:",
+  "options": [
+   "CL prescription - (trial BVP + over-refraction)",
+   "Trial BVP - over-refraction",
+   "Over-refraction only",
+   "CL prescription + trial BVP + over-refraction"
+  ],
+  "correct": 0,
+  "explanation": "Tear lens = CL prescription - (trial-lens BVP + over-refraction). Rearranged, CL prescription = trial BVP + over-refraction + tear lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "During RGP fitting, why is it recommended to perform the over-refraction BEFORE the fluorescein (static) assessment?",
+  "options": [
+   "It is faster to skip fluorescein",
+   "Fluorescein is toxic",
+   "The over-refraction predicts whether the fit is flat, steep, or aligned, letting you jump to the right base curve",
+   "Over-refraction requires dilation"
+  ],
+  "correct": 2,
+  "explanation": "The over-refraction reveals the tear-lens sign (flat/steep/aligned), so you can predict and select the next base curve instead of trialing many curves, saving time."
+ },
+ {
+  "type": "mcq",
+  "stem": "An RGP lens should be allowed to settle for about how long before the fitting is assessed?",
+  "options": [
+   "20-30 minutes",
+   "1 full day",
+   "Immediately",
+   "2 hours"
+  ],
+  "correct": 0,
+  "explanation": "Allow about 20-30 minutes for adaptation and settling before assessing the fit; premature assessment causes reflex tearing and a misleading (unstable) appearance."
+ },
+ {
+  "type": "mcq",
+  "stem": "A 0.5 mm change in soft-lens total diameter is offset by roughly what change in base curve (same direction)?",
+  "options": [
+   "0.1 mm",
+   "0.6 mm",
+   "0.3 mm",
+   "1.0 mm"
+  ],
+  "correct": 2,
+  "explanation": "Rule of thumb: a 0.5 mm change in total diameter is balanced by a 0.3 mm change in BOZR in the same direction to keep a comparable fit."
+ },
+ {
+  "type": "mcq",
+  "stem": "A front-surface toric soft lens (toric front, spherical back) is designed to correct:",
+  "options": [
+   "Corneal astigmatism",
+   "No astigmatism",
+   "Residual (lenticular) astigmatism",
+   "Both corneal and residual"
+  ],
+  "correct": 2,
+  "explanation": "A front-surface toric corrects residual (lenticular) astigmatism; a back-surface toric corrects corneal astigmatism; a bitoric corrects both."
+ },
+ {
+  "type": "mcq",
+  "stem": "Average toric soft-lens rotation is about:",
+  "options": [
+   "90 degrees",
+   "30 degrees temporal",
+   "No rotation ever",
+   "5-10 degrees nasal"
+  ],
+  "correct": 3,
+  "explanation": "Average toric lens rotation is about 5-10 degrees nasal, with the upper lid as the dominant stabilizing force; individual variation requires axis compensation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which toric stabilization method aligns a flat edge with the lower lid margin?",
+  "options": [
+   "Prism ballast",
+   "Reverse prism",
+   "Double slab-off",
+   "Truncation"
+  ],
+  "correct": 3,
+  "explanation": "Truncation removes a segment (usually inferior) so the flat edge aligns with the lower lid margin; it can cause discomfort and is not always successful."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which presbyopic correction fits the dominant eye for distance and the non-dominant eye for near?",
+  "options": [
+   "Monovision",
+   "Alternating bifocal",
+   "Bitoric",
+   "Simultaneous multifocal"
+  ],
+  "correct": 0,
+  "explanation": "Monovision corrects the dominant eye for distance and the non-dominant eye for near; it is simple but reduces stereopsis."
+ },
+ {
+  "type": "mcq",
+  "stem": "In a simultaneous-vision bifocal contact lens, the patient:",
+  "options": [
+   "Uses only one eye",
+   "Switches lenses for near",
+   "Views through the distance and near portions at the same time",
+   "Looks through the top for distance and bottom for near"
+  ],
+  "correct": 2,
+  "explanation": "Simultaneous-vision designs present distance and near powers together so the retina receives both; alternating (translating) designs use separate distance-top and near-bottom zones."
+ },
+ {
+  "type": "mcq",
+  "stem": "The average osmolality of the tear film is about:",
+  "options": [
+   "900 mOsm/kg",
+   "302 mOsm/kg",
+   "500 mOsm/kg",
+   "150 mOsm/kg"
+  ],
+  "correct": 1,
+  "explanation": "Average tear osmolality is about 302 mOsm/kg; a higher value indicates dry eye (tears more concentrated in salt)."
+ },
+ {
+  "type": "mcq",
+  "stem": "An isotonic contact-lens solution contains what concentration of sodium chloride?",
+  "options": [
+   "0.9%",
+   "5.0%",
+   "2.0%",
+   "0.45%"
+  ],
+  "correct": 0,
+  "explanation": "Isotonic = 0.9% NaCl, matching cell tonicity. Hypotonic is under 0.9% (lens swells) and hypertonic is over 0.9% (lens shrinks)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which buffer pair is commonly used in contact-lens solutions?",
+  "options": [
+   "Ammonia / ammonium",
+   "Sodium hydroxide / water",
+   "Boric acid / sodium borate",
+   "Sodium bicarbonate / carbonic acid"
+  ],
+  "correct": 2,
+  "explanation": "Borate (boric acid + sodium borate), citrate, and phosphate buffer pairs resist pH change in contact-lens solutions."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which chemical burn of the ocular surface is the true emergency?",
+  "options": [
+   "Neither",
+   "Alkaline burn",
+   "Acid burn",
+   "Both equally mild"
+  ],
+  "correct": 1,
+  "explanation": "Alkaline (basic) burns penetrate deeper and are the ocular emergency; this is why the pH compatibility of a contact-lens solution matters."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sterilization, as opposed to disinfection, uses:",
+  "options": [
+   "Chemical agents such as alcohol",
+   "Surfactants",
+   "Physical means such as heat, UV, or autoclave",
+   "Preservatives only"
+  ],
+  "correct": 2,
+  "explanation": "Sterilization uses physical means (heat, UV, boiling, autoclave). Disinfection uses chemical agents (alcohol, hydrogen peroxide) to reduce microbial load."
+ },
+ {
+  "type": "mcq",
+  "stem": "Benzalkonium chloride (BAK) as a lens-care preservative has reduced efficacy against:",
+  "options": [
+   "Staphylococcus",
+   "All bacteria",
+   "Fungi only",
+   "Pseudomonas aeruginosa"
+  ],
+  "correct": 3,
+  "explanation": "BAK protects against most organisms but has reduced efficacy against Pseudomonas aeruginosa, an important cause of contact-lens microbial keratitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "A surfactant lens cleaner works by:",
+  "options": [
+   "Adding water content",
+   "Breaking protein bonds enzymatically",
+   "Dissolving loosely bound deposits so they rinse off",
+   "Neutralizing peroxide"
+  ],
+  "correct": 2,
+  "explanation": "Surfactant (surface-active) cleaners loosen and lift loosely bound surface deposits so they can be rinsed away. Enzymatic cleaners break protein bonds, mainly for conventional lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Corneal neovascularization in a contact-lens wearer is a response to:",
+  "options": [
+   "Excess oxygen",
+   "Ultraviolet light only",
+   "High tear volume",
+   "Chronic hypoxia (oxygen deprivation)"
+  ],
+  "correct": 3,
+  "explanation": "New vessels grow to supply an oxygen-starved cornea; risk rises with overwear, thick/low-Dk lenses, or stacked lenses. Manage with a higher-Dk lens and reduced wear."
+ },
+ {
+  "type": "mcq",
+  "stem": "Stacking a coloured lens on top of a clear lens is discouraged mainly because it:",
+  "options": [
+   "Costs more",
+   "Looks unnatural",
+   "Starves the central cornea of oxygen (double barrier)",
+   "Cannot be cleaned"
+  ],
+  "correct": 2,
+  "explanation": "Two lenses on the cornea double the oxygen barrier, reducing oxygen to the central cornea and risking hypoxia and neovascularization."
+ },
+ {
+  "type": "mcq",
+  "stem": "Giant papillary conjunctivitis (GPC) in a lens wearer presents with:",
+  "options": [
+   "Corneal arcus",
+   "A hyphema",
+   "Papillae on the upper tarsal conjunctiva with lens intolerance",
+   "A cherry-red macula"
+  ],
+  "correct": 2,
+  "explanation": "GPC produces large papillae on the upper tarsus from lens deposits and mechanical irritation, causing itching and contact-lens intolerance."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most SERIOUS contact-lens complication, associated with overnight wear and poor hygiene, is:",
+  "options": [
+   "Microbial keratitis (e.g., Pseudomonas, Acanthamoeba)",
+   "A visibility tint",
+   "Mild dryness",
+   "Spectacle blur"
+  ],
+  "correct": 0,
+  "explanation": "Microbial keratitis is the most sight-threatening complication; Pseudomonas and Acanthamoeba are linked to overnight wear, poor hygiene, and water exposure."
+ },
+ {
+  "type": "mcq",
+  "stem": "A. E. Fick (1888) is credited with:",
+  "options": [
+   "The first soft lens",
+   "The first RGP lens",
+   "The concept of the contact lens",
+   "The first contact lens intended to correct vision"
+  ],
+  "correct": 3,
+  "explanation": "A. E. Fick described the first contact lens intended to correct vision (a glass scleral) in 1888. Da Vinci conceived the idea (1508); Tuohy made the first PMMA corneal lens (1947)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The first plastic corneal contact lens, made from PMMA in 1947, is attributed to:",
+  "options": [
+   "John Herschel",
+   "Otto Wichterle",
+   "F. E. Muller",
+   "Kevin Tuohy"
+  ],
+  "correct": 3,
+  "explanation": "Kevin Tuohy made the first PMMA plastic corneal lens in 1947, improving durability and centration over glass scleral lenses, though still non-oxygen-permeable."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common contact-lens DESIGN, having a central curve and a peripheral curve, is the:",
+  "options": [
+   "Tricurve",
+   "Monocurve",
+   "Bicurve",
+   "Aspheric"
+  ],
+  "correct": 2,
+  "explanation": "The bicurve design (central + peripheral curve) is the most widely available. Monocurve is obsolete; tricurve suits ortho-K/irregular corneas; aspheric follows the cornea's shape."
+ },
+ {
+  "type": "mcq",
+  "stem": "An aspheric contact lens design is characterised by a:",
+  "options": [
+   "Uniform single curvature",
+   "Steeper center that flattens toward the periphery, following the cornea",
+   "Truncated edge",
+   "Toric back surface"
+  ],
+  "correct": 1,
+  "explanation": "Aspheric designs are steeper centrally and flatter peripherally to mimic the cornea's natural asphericity, which is steeper centrally and flattens toward the periphery."
+ },
+ {
+  "type": "mcq",
+  "stem": "A visibility tint on a contact lens is primarily intended to:",
+  "options": [
+   "Make the lens easier to see and handle",
+   "Change the eye color permanently",
+   "Correct astigmatism",
+   "Block ultraviolet light"
+  ],
+  "correct": 0,
+  "explanation": "A visibility (handling) tint (usually blue/green) makes the lens easier to find and handle in solution or on the eye; it does not change the apparent eye color like an opaque tint."
+ },
+ {
+  "type": "mcq",
+  "stem": "Continuous extended wear lenses are ideal as bandage lenses because they:",
+  "options": [
+   "Are the cheapest option",
+   "Have zero oxygen needs",
+   "Can be worn without removal to promote epithelial healing",
+   "Are always toric"
+  ],
+  "correct": 2,
+  "explanation": "Continuous-wear lenses can stay in place for up to two weeks without removal, making them well suited as bandage lenses that promote healing of the corneal epithelium."
+ },
+ {
+  "type": "mcq",
+  "stem": "Central corneal clouding, vertical striae, and microcysts are SHORT-TERM signs of:",
+  "options": [
+   "Corneal hypoxia from lens wear",
+   "Excess oxygen",
+   "Allergic conjunctivitis",
+   "Dry eye only"
+  ],
+  "correct": 0,
+  "explanation": "These are short-term hypoxic signs of oxygen deprivation under a lens; long-term hypoxia causes corneal distortion, endothelial disruption, and refractive change."
+ },
+ {
+  "type": "mcq",
+  "stem": "Fluoro-silicone acrylate (FSA) RGP materials are preferred over plain silicone acrylate mainly because they are:",
+  "options": [
+   "More wettable while keeping high oxygen permeability",
+   "Softer",
+   "Cheaper",
+   "Non-permeable"
+  ],
+  "correct": 0,
+  "explanation": "Adding fluorine to silicone acrylate lowers the surface charge and improves wettability while maintaining silicone-like oxygen permeability (Dk 40-100), making FSA the common modern RGP."
+ },
+ {
+  "type": "mcq",
+  "stem": "The original soft-lens material PHEMA has a water content of approximately:",
+  "options": [
+   "38%",
+   "10%",
+   "55%",
+   "75%"
+  ],
+  "correct": 0,
+  "explanation": "PHEMA (poly-HEMA) has about 38% water. It is a close relative of PMMA made hydrophilic by adding a hydroxyl group."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which physiological oxygen level is cited as the minimum safe level for daily wear (open eye)?",
+  "options": [
+   "4%",
+   "21%",
+   "9-10%",
+   "15%"
+  ],
+  "correct": 2,
+  "explanation": "About 9-10% oxygen is the minimum for safe daily (open-eye) wear and avoiding edema; roughly 12% is the minimum for extended wear and higher levels avoid microcysts and polymegethism."
+ },
+ {
+  "type": "mcq",
+  "stem": "The back vertex (effective) power of a thick contact lens is given by:",
+  "options": [
+   "Dv = Dn - (t/n)(D2)\u00b2",
+   "Dv = D1 x D2",
+   "Dv = Dn / t",
+   "Dv = Dn + (t/n)(D1)\u00b2"
+  ],
+  "correct": 3,
+  "explanation": "Back vertex (effective) power Dv = Dn + (t/n)(D1)\u00b2 uses the front-surface power squared; the front vertex (neutralizing) power uses (D2)\u00b2."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aphakia is optically considered which type of ametropia, favoring contact-lens correction?",
+  "options": [
+   "Axial",
+   "Refractive",
+   "Neurological",
+   "Purely astigmatic"
+  ],
+  "correct": 1,
+  "explanation": "Aphakia is a refractive ametropia; when IOLs are not implanted (e.g., young children with congenital cataract) contact lenses are preferred over very thick, aberration-prone aphakic spectacles."
+ },
+ {
+  "type": "mcq",
+  "stem": "High corneal astigmatism corrected with high-power spectacles tends to cause:",
+  "options": [
+   "No optical problem",
+   "Meridional aniseikonia (unequal image size in the two meridians)",
+   "Improved fusion",
+   "Reduced accommodation"
+  ],
+  "correct": 1,
+  "explanation": "Spectacle correction of high corneal astigmatism creates meridional aniseikonia (one meridian's image larger than the other), which contact lenses avoid, favoring soft toric or RGP lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Switching a hyperope from spectacles to contact lenses tends to:",
+  "options": [
+   "Precipitate the need for a near add",
+   "Cause immediate presbyopia",
+   "Postpone the need for a near add",
+   "Have no effect on accommodation"
+  ],
+  "correct": 2,
+  "explanation": "A hyperope needs LESS accommodation with contact lenses, so the need for a reading addition may be postponed. A myope needs more accommodation and may need a near add sooner."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ocular health grading systems used before contact-lens fitting include:",
+  "options": [
+   "Snellen and LogMAR",
+   "Amsler and tangent screen",
+   "Efron and Brien Holden grading scales",
+   "Ishihara and D-15"
+  ],
+  "correct": 2,
+  "explanation": "The Efron, Brien Holden, and CIBA Vision grading scales standardize documentation of anterior-segment signs at baseline and follow-up."
+ },
+ {
+  "type": "mcq",
+  "stem": "When selecting an RGP total diameter, the initial choice is often about how much smaller than the HVID?",
+  "options": [
+   "2 mm",
+   "5 mm",
+   "Equal to HVID",
+   "0.5 mm"
+  ],
+  "correct": 0,
+  "explanation": "An RGP diameter about 2 mm smaller than the HVID is a typical starting point, though lid position is a more important criterion than HVID alone."
+ },
+ {
+  "type": "mcq",
+  "stem": "For an RGP, the initial base curve (BOZR) is usually chosen at about:",
+  "options": [
+   "Within +/- 0.10 mm of the flattest corneal radius",
+   "1 mm flatter than the flattest K",
+   "2 mm steeper than the flattest K",
+   "Equal to the steepest K"
+  ],
+  "correct": 0,
+  "explanation": "The initial RGP BOZR is set at about +/- 0.10 mm of the flattest corneal radius, then refined by dynamic and static (fluorescein) fitting assessment."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a soft lens BOZR, a typical starting point is the flattest K plus about:",
+  "options": [
+   "3 mm",
+   "No addition",
+   "0.7 mm or more for thicker/low-water lenses",
+   "0.1 mm"
+  ],
+  "correct": 2,
+  "explanation": "Add about 0.7 mm or more to the flattest K for thicker, low-water lenses, and 0.3-0.6 mm for thin, high-water lenses. Typical soft BOZR range is 7.9-9.3 mm."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optimal RGP patient is one with:",
+  "options": [
+   "High motivation and a moderate-to-high prescription (or an irregular cornea)",
+   "Low prescription and low motivation",
+   "No refractive error",
+   "Severe dry eye and low motivation"
+  ],
+  "correct": 0,
+  "explanation": "RGP candidates should be highly motivated (initial discomfort) with a moderate-to-high prescription so the visual benefit justifies the adaptation; irregular corneas also benefit from RGPs."
+ },
+ {
+  "type": "mcq",
+  "stem": "A bitoric contact lens corrects astigmatism that is:",
+  "options": [
+   "Purely residual",
+   "Purely corneal",
+   "Absent",
+   "Both corneal and residual"
+  ],
+  "correct": 3,
+  "explanation": "A bitoric lens (toric on both surfaces) addresses astigmatism arising from both the corneal surface and residual/lenticular sources, though it is uncommon."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which toric stabilization method uses about 1-1.5 prism diopters base-down but reduces oxygen transmissibility?",
+  "options": [
+   "Reverse prism",
+   "Truncation",
+   "Prism ballast",
+   "Double slab-off"
+  ],
+  "correct": 2,
+  "explanation": "Prism ballast adds 1-1.5 prism diopters base-down; the extra inferior thickness stabilizes the axis but reduces oxygen and can cause lid discomfort."
+ },
+ {
+  "type": "mcq",
+  "stem": "Double slab-off toric stabilization is advantageous because the lens is:",
+  "options": [
+   "Thinner and symmetrical with thin zones superiorly and inferiorly",
+   "Truncated",
+   "Thicker and asymmetrical",
+   "Prism-ballasted"
+  ],
+  "correct": 0,
+  "explanation": "Double slab-off creates thin zones both superiorly and inferiorly, giving a thinner, symmetrical lens with better comfort and oxygen than prism ballast, held by lid forces."
+ },
+ {
+  "type": "mcq",
+  "stem": "Osmolality of a lens-care solution refers to its:",
+  "options": [
+   "Preservative strength",
+   "Thickness",
+   "Total salt concentration",
+   "pH"
+  ],
+  "correct": 2,
+  "explanation": "Osmolality describes the total salt concentration (mOsm/kg). Tonicity describes the solution's effect on cell shape (hypotonic, isotonic, hypertonic)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A viscosity-enhancing agent is added to a lens-care product mainly to:",
+  "options": [
+   "Add oxygen",
+   "Kill bacteria",
+   "Increase the contact time of the solution on the lens/eye",
+   "Lower the pH"
+  ],
+  "correct": 2,
+  "explanation": "Viscosity-enhancing agents thicken solutions so they stay on the lens/ocular surface longer, improving daily-cleaner rubbing action and rewetting-drop contact time."
+ },
+ {
+  "type": "mcq",
+  "stem": "Thimerosal and BAK belong to which category of lens-care ingredient?",
+  "options": [
+   "Buffers",
+   "Viscosity agents",
+   "Bacteriostatic preservatives",
+   "Surfactants"
+  ],
+  "correct": 2,
+  "explanation": "Thimerosal, BAK, chlorhexidine, sorbic acid/EDTA, Dymed, and Polyquad are bacteriostatic preservatives/antimicrobials in lens-care products."
+ },
+ {
+  "type": "mcq",
+  "stem": "Enzymatic cleaners remove which type of contact-lens deposit?",
+  "options": [
+   "Lipid",
+   "Iron",
+   "Calcium",
+   "Protein (by breaking protein bonds)"
+  ],
+  "correct": 3,
+  "explanation": "Enzymatic cleaners break the bonds holding protein deposits together; they were mainly used for conventional lenses and are largely obsolete with disposables."
+ },
+ {
+  "type": "mcq",
+  "stem": "A hypotonic contact-lens solution (less than 0.9% NaCl) causes a soft lens to:",
+  "options": [
+   "Discolor",
+   "Shrink",
+   "Keep its shape",
+   "Swell (gain water)"
+  ],
+  "correct": 3,
+  "explanation": "In a hypotonic solution water moves into the lens (higher internal salt), so the lens swells and gains water; a hypertonic solution shrinks it."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optical DISADVANTAGE of a decentered contact lens is:",
+  "options": [
+   "No prismatic effect",
+   "Improved centration",
+   "Ghosting of images",
+   "Wider field of view"
+  ],
+  "correct": 2,
+  "explanation": "A decentered lens produces ghosting; a rotating toric lens produces a toric over-refraction and reduced vision, and moving lenses cause visual disturbances."
+ },
+ {
+  "type": "mcq",
+  "stem": "Peripheral curve width (PCW) chiefly affects:",
+  "options": [
+   "Patient comfort (a wider PCW is more comfortable)",
+   "Refractive index",
+   "Water content",
+   "Optical power"
+  ],
+  "correct": 0,
+  "explanation": "The peripheral curve contacts the sclera/peripheral cornea; a larger peripheral curve width generally improves comfort."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optic zone of an RGP lens becomes SMALLER as the base curve becomes:",
+  "options": [
+   "Steeper",
+   "Toric",
+   "Flatter",
+   "Wider"
+  ],
+  "correct": 0,
+  "explanation": "As the RGP base curve steepens, its optic zone shrinks; if the optic zone becomes smaller than the pupil, the patient experiences glare and blur, especially at night."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which modern smart contact lens is designed to monitor intraocular pressure in glaucoma patients?",
+  "options": [
+   "iOptik lens",
+   "Wink-activated telescope lens",
+   "Google glucose lens",
+   "Triggerfish sensor lens"
+  ],
+  "correct": 3,
+  "explanation": "The SENSIMED Triggerfish is a soft disposable lens with an embedded micro-sensor that monitors IOP-related changes in glaucoma patients. The Google lens monitored tear glucose."
+ },
+ {
+  "type": "mcq",
+  "stem": "The 4:1 rule in contact-lens prescribing refers to the:",
+  "options": [
+   "Ratio of diameter to base curve",
+   "Ratio of water to polymer",
+   "Ratio of Dk to thickness",
+   "Sphere-to-cylinder ratio that permits a spherical-equivalent lens"
+  ],
+  "correct": 3,
+  "explanation": "The 4:1 rule means the sphere must be at least four times the cylinder (with cylinder under 1.00 D) to justify prescribing a spherical lens using the spherical equivalent."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which lens type produces 'spectacle blur' and must not be worn for about 3 weeks before LASIK?",
+  "options": [
+   "Daily disposable soft",
+   "PMMA / rigid lenses",
+   "Bandage soft lens",
+   "Silicone hydrogel"
+  ],
+  "correct": 1,
+  "explanation": "Rigid (PMMA) lenses mold the cornea, causing transient spectacle blur and corneal warpage, so they are stopped ~3 weeks before refractive surgery and before keratometry/topography."
+ },
+ {
+  "type": "mcq",
+  "stem": "Silicone hydrogel first-generation lenses had problems with high modulus of elasticity, which caused:",
+  "options": [
+   "Excessive water loss",
+   "Low oxygen",
+   "Stiffness making them hard to remove, plus giant papillary conjunctivitis",
+   "Dissolving in saline"
+  ],
+  "correct": 2,
+  "explanation": "First-generation silicone hydrogels had a high (stiff) modulus, so they were rubbery and hard to remove and caused mechanical GPC; later generations added wetting surface treatments."
+ },
+ {
+  "type": "mcq",
+  "stem": "Corneal astigmatism of about 1.00 D or more can often be corrected by a spherical RGP because of:",
+  "options": [
+   "Prism ballast",
+   "The lens material",
+   "Truncation",
+   "The tear (fluid) lens formed beneath the rigid lens"
+  ],
+  "correct": 3,
+  "explanation": "A rigid lens creates a tear (fluid) lens between its spherical back surface and the toric cornea, neutralizing corneal astigmatism without a toric lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "When a rigid-lens over-refraction yields a significant cylinder, the practitioner should consider:",
+  "options": [
+   "A larger diameter only",
+   "A toric RGP lens",
+   "Stopping lens wear",
+   "A flatter base curve only"
+  ],
+  "correct": 1,
+  "explanation": "A significant residual cylinder on over-refraction indicates that a spherical RGP is not fully correcting the astigmatism, so a toric RGP (or bitoric) should be considered."
+ },
+ {
+  "type": "mcq",
+  "stem": "For extended or flexible wear, a hydrogel lens should ideally be made:",
+  "options": [
+   "With prism ballast",
+   "With low water content",
+   "As thick as possible",
+   "Thin, to provide sufficient oxygen to the cornea"
+  ],
+  "correct": 3,
+  "explanation": "For extended/flexible wear a hydrogel lens should be thin to raise Dk/t and supply enough oxygen overnight; silicone hydrogel is preferred for its high oxygen."
+ },
+ {
+  "type": "mcq",
+  "stem": "HVID stands for and is used to determine:",
+  "options": [
+   "High-velocity impact damage",
+   "Horizontal vertex iris distance; the base curve",
+   "Horizontal visible iris diameter; the lens total diameter",
+   "Hydrated volume index of diameter"
+  ],
+  "correct": 2,
+  "explanation": "HVID (horizontal visible iris diameter) is measured (PD rule, graticule, or comparator) to help select the lens total diameter."
+ },
+ {
+  "type": "mcq",
+  "stem": "In the LARS rule for adjusting a rotated toric lens, you:",
+  "options": [
+   "Always add 10 degrees",
+   "Reverse the cylinder sign",
+   "Ignore rotation",
+   "Left Add, Right Subtract the observed rotation"
+  ],
+  "correct": 3,
+  "explanation": "LARS: if the lens rotates Left (anticlockwise), Add that amount to the axis; if it rotates Right (clockwise), Subtract, to compensate the ordered axis for lens rotation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The endothelium's key metabolic role, disrupted by chronic hypoxia, is to:",
+  "options": [
+   "Secrete mucin",
+   "Pump water out of the corneal stroma to keep it clear",
+   "Produce tears",
+   "Regenerate epithelial cells"
+  ],
+  "correct": 1,
+  "explanation": "The endothelium pumps water out of the stroma to maintain corneal clarity; when hypoxia impairs this pump, fluid accumulates and the cornea develops edema."
+ },
+ {
+  "type": "mcq",
+  "stem": "Compared with high-water lenses, low-water-content lenses generally have:",
+  "options": [
+   "Higher tensile strength and lower protein uptake",
+   "More discoloration",
+   "Higher oxygen permeability",
+   "Lower tensile strength"
+  ],
+  "correct": 0,
+  "explanation": "Low-water lenses have higher tensile strength, lower protein uptake (longer life), and good stability, and do not absorb preservatives; high-water lenses have higher oxygen but lower strength."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which tear test checks the patency of the lacrimal drainage system?",
+  "options": [
+   "Jones test",
+   "Schirmer test",
+   "Osmolality",
+   "TBUT"
+  ],
+  "correct": 0,
+  "explanation": "The Jones test assesses lacrimal drainage patency. Schirmer and meniscus height measure volume; TBUT measures quality; osmolality measures salt concentration."
+ },
+ {
+  "type": "mcq",
+  "stem": "A truncated toric lens is stabilized by aligning the flat edge with the:",
+  "options": [
+   "Limbus",
+   "Pupil",
+   "Lower lid margin",
+   "Upper lid margin"
+  ],
+  "correct": 2,
+  "explanation": "Truncation aligns the flat (truncated) inferior edge with the lower lid margin to resist rotation, at the cost of some discomfort."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a plus-power RGP lens, centration is aided by making the lens:",
+  "options": [
+   "Prism-ballasted",
+   "Much smaller than average",
+   "Slightly larger than average (up to ~0.5 mm)",
+   "Truncated"
+  ],
+  "correct": 2,
+  "explanation": "Plus lenses are heavier centrally and ride low, so making them up to about 0.5 mm larger than average improves centration; high-BVP lenses (> +/-8 D) are also made larger for lenticulation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is the correct order for assessing an RGP fit after insertion?",
+  "options": [
+   "Fluorescein first, then let it settle",
+   "Only fluorescein, never over-refract",
+   "Refract immediately, no settling",
+   "Let it settle 20-30 min, do over-refraction, then fluorescein assessment"
+  ],
+  "correct": 3,
+  "explanation": "Insert and let the lens settle 20-30 minutes, perform the over-refraction (to predict flat/steep/aligned), then confirm with the fluorescein assessment; this is faster and more reliable."
+ }
+]

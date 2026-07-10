@@ -14,6 +14,7 @@ import { ocularPharmacologyNotes } from '@/data/notes/ocular-pharmacology'
 import { practicalMechanicalOpticsNotes } from '@/data/notes/practical-mechanical-optics'
 import { lowVisionNotes } from '@/data/notes/low-vision'
 import { pediatricOptometryNotes } from '@/data/notes/pediatric-optometry'
+import { contactLensNotes } from '@/data/notes/contact-lens'
 import physioQuiz from '@/data/notes-quiz/physiologic-optics'
 import bvQuiz from '@/data/notes-quiz/binocular-vision'
 import theoreticalOpticsQuiz from '@/data/notes-quiz/theoretical-optics'
@@ -27,6 +28,7 @@ import { ocularPharmacologyQuiz } from '@/data/notes-quiz/ocular-pharmacology'
 import { practicalMechanicalOpticsQuiz } from '@/data/notes-quiz/practical-mechanical-optics'
 import { lowVisionQuiz } from '@/data/notes-quiz/low-vision'
 import { pediatricOptometryQuiz } from '@/data/notes-quiz/pediatric-optometry'
+import { contactLensQuiz } from '@/data/notes-quiz/contact-lens'
 import { NotesData } from '@/lib/notes-types'
 import { NotesQuizData } from '@/lib/notes-quiz-types'
 
@@ -44,6 +46,7 @@ const NOTES_MAP: Record<string, NotesData> = {
   'practical-mechanical-optics': practicalMechanicalOpticsNotes,
   'low-vision': lowVisionNotes,
   'pediatric-optometry': pediatricOptometryNotes,
+  'contact-lens': contactLensNotes,
 }
 
 const QUIZ_MAP: Record<string, NotesQuizData> = {
@@ -60,6 +63,7 @@ const QUIZ_MAP: Record<string, NotesQuizData> = {
   'practical-mechanical-optics': practicalMechanicalOpticsQuiz,
   'low-vision': lowVisionQuiz,
   'pediatric-optometry': pediatricOptometryQuiz,
+  'contact-lens': contactLensQuiz,
 }
 
 export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {

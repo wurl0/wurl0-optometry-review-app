@@ -140,6 +140,15 @@ export const SUBJECTS: Subject[] = [
     icon: '🧸',
     hasExam: true,
   },
+  {
+    slug: 'contact-lens',
+    name: 'Contact Lens',
+    description: 'Lens types and materials, oxygen performance, optics and formulas, tear assessment, soft and RGP fitting, fluorescein patterns, toric lenses, and lens care.',
+    color: 'violet',
+    questionCount: 106,
+    icon: '🫧',
+    hasExam: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {
