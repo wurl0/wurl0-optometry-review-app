@@ -101,6 +101,91 @@
   .toggle{display:flex;gap:8px;justify-content:center;margin:4px 0 2px}
   .toggle button{cursor:pointer;background:none;border:1px solid var(--line);color:var(--mut);border-radius:20px;padding:4px 12px;font-size:12px}
   .toggle button.on{color:var(--txt);border-color:var(--optic)}
+
+  /* ---------- slice technique ---------- */
+  .slice-stage{position:relative;display:flex;justify-content:center;align-items:center;
+    height:300px;overflow:visible;margin-top:6px}
+  .fruit{position:relative;width:180px;height:180px}
+  .fruit.mode-horizontal{--cut:var(--warn)}
+  .fruit.mode-median{--cut:var(--vert)}
+  .fruit.mode-equatorial{--cut:var(--trans)}
+
+  .half{position:absolute;overflow:hidden;transition:transform .6s cubic-bezier(.22,1,.36,1),box-shadow .4s}
+  .ball{position:absolute;width:180px;height:180px;border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, #fbfdff 0%, #e7eef5 38%, #c4d0db 70%, #93a4b4 100%);
+    box-shadow:inset -14px -12px 30px rgba(40,55,70,.5)}
+
+  /* top / bottom split */
+  .tb .half-a{left:0;top:0;width:180px;height:90px;border-radius:90px 90px 0 0}
+  .tb .half-a .ball{left:0;top:0}
+  .tb .half-b{left:0;top:90px;width:180px;height:90px;border-radius:0 0 90px 90px}
+  .tb .half-b .ball{left:0;top:-90px}
+  .tb.open .half-a{transform:translateY(-32px);box-shadow:inset 0 -5px 0 0 var(--cut),0 8px 16px rgba(0,0,0,.4)}
+  .tb.open .half-b{transform:translateY(32px);box-shadow:inset 0 5px 0 0 var(--cut),0 8px 16px rgba(0,0,0,.4)}
+
+  /* left / right split */
+  .lr .half-a{left:0;top:0;width:90px;height:180px;border-radius:90px 0 0 90px}
+  .lr .half-a .ball{left:0;top:0}
+  .lr .half-b{left:90px;top:0;width:90px;height:180px;border-radius:0 90px 90px 0}
+  .lr .half-b .ball{left:-90px;top:0}
+  .lr.open .half-a{transform:translateX(-34px);box-shadow:inset -5px 0 0 0 var(--cut),8px 0 16px rgba(0,0,0,.4)}
+  .lr.open .half-b{transform:translateX(34px);box-shadow:inset 5px 0 0 0 var(--cut),-8px 0 16px rgba(0,0,0,.4)}
+
+  /* cornea, front views: central disc that splits with the ball */
+  .cornea-c{position:absolute;width:66px;height:66px;left:57px;top:57px;border-radius:50%;
+    background:radial-gradient(circle at 50% 50%, #6fb6ff 0%, #2f74c0 55%, #1d4f88 100%)}
+  .cornea-c .p{position:absolute;width:24px;height:24px;left:21px;top:21px;border-radius:50%;background:#0c1116}
+  /* equatorial: front view, the anterior cap lifts off the posterior bowl */
+  .fruit.eq .half,.fruit.eq .knife{display:none}
+  .eq-bowl,.eq-cap,.eq-cut{display:none;position:absolute;left:0;top:0}
+  .fruit.eq .eq-bowl,.fruit.eq .eq-cap,.fruit.eq .eq-cut{display:block}
+  .eq-bowl{width:180px;height:180px;border-radius:50%;
+    background:radial-gradient(circle at 50% 44%, #6b7a89 0%, #47535f 46%, #2b333c 78%, #171d24 100%);
+    box-shadow:inset 12px 14px 30px rgba(0,0,0,.65),inset -6px -6px 18px rgba(120,140,160,.22)}
+  .eq-rim{position:absolute;left:5px;top:5px;right:5px;bottom:5px;border-radius:50%;
+    border:3px solid var(--trans);opacity:.9;box-shadow:0 0 10px rgba(63,185,80,.55)}
+  .eq-cap{width:180px;height:180px;border-radius:50%;z-index:3;
+    background:radial-gradient(circle at 38% 32%, #fbfdff 0%, #e7eef5 38%, #c4d0db 70%, #93a4b4 100%);
+    box-shadow:inset -14px -12px 30px rgba(40,55,70,.5);
+    transition:transform .7s cubic-bezier(.22,1,.36,1),box-shadow .5s}
+  .eq-iris{position:absolute;width:66px;height:66px;left:57px;top:57px;border-radius:50%;
+    background:radial-gradient(circle at 50% 50%, #6fb6ff 0%, #2f74c0 55%, #1d4f88 100%)}
+  .eq-iris .p{position:absolute;width:24px;height:24px;left:21px;top:21px;border-radius:50%;background:#0c1116}
+  .fruit.eq.open .eq-cap{transform:translate(74px,-26px) rotate(7deg);
+    box-shadow:inset -14px -12px 30px rgba(40,55,70,.5),-12px 16px 26px rgba(0,0,0,.5)}
+  /* the ring the knife traces around the equator before the cap lifts */
+  .eq-cut{width:172px;height:172px;left:4px;top:4px;border-radius:50%;z-index:5;pointer-events:none;
+    border:3px solid #fff;box-shadow:0 0 12px #fff;opacity:0}
+  .fruit.eq.cutting .eq-cut{animation:eqcut .6s ease-out}
+  @keyframes eqcut{0%{opacity:0;transform:scale(.62)}25%{opacity:1}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+
+  /* the knife */
+  .knife{position:absolute;opacity:0;pointer-events:none;border-radius:3px;
+    background:linear-gradient(90deg,#c8d2dc,#ffffff,#c8d2dc);box-shadow:0 0 10px rgba(255,255,255,.85)}
+  .tb .knife{left:-16px;top:88px;width:212px;height:4px;transform-origin:left center}
+  .lr .knife{top:-16px;left:88px;height:212px;width:4px;transform-origin:center top}
+  .fruit.tb.cutting .knife{animation:knifeH .6s ease-out forwards}
+  .fruit.lr.cutting .knife{animation:knifeV .6s ease-out forwards}
+  @keyframes knifeH{0%{opacity:0;transform:scaleX(0)}20%{opacity:1}70%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(1)}}
+  @keyframes knifeV{0%{opacity:0;transform:scaleY(0)}20%{opacity:1}70%{opacity:1;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+
+  /* half labels */
+  .halflabel{position:absolute;z-index:8;opacity:0;white-space:nowrap;
+    font:700 12px ui-monospace,Menlo,monospace;color:#fff;background:var(--cut);
+    padding:2px 8px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+  .fruit.open .halflabel{animation:lblIn .35s ease forwards}
+  @keyframes lblIn{from{opacity:0}to{opacity:1}}
+  .tb .lbl-a{left:50%;top:-30px;transform:translateX(-50%)}
+  .tb .lbl-b{left:50%;bottom:-30px;transform:translateX(-50%)}
+  .lr .lbl-a{left:2px;top:6px}
+  .lr .lbl-b{right:2px;top:6px}
+  .eq .lbl-a{right:2px;top:14px}      /* Anterior, sits on the lifted front cap */
+  .eq .lbl-b{left:8px;bottom:22px}    /* Posterior, sits on the bowl */
+
+  .fruitline{text-align:center;font-size:13px;color:var(--mut);margin-top:4px;min-height:20px}
+  .slice-again{cursor:pointer;background:none;border:1px solid var(--line);color:var(--mut);
+    border-radius:20px;padding:4px 14px;font-size:12px;display:block;margin:10px auto 0}
+  .slice-again:hover{border-color:var(--mut);color:var(--txt)}
 </style>
 </head>
 <body>
@@ -235,6 +320,36 @@
     <p class="hint" style="margin-bottom:0">Quick check: the plane and its dividing line are always named for the axis that is <i>missing</i>. Equatorial leaves out the optic (front-back) axis, so it splits front from back.</p>
   </div>
 
+  <!-- ============ SLICE TECHNIQUE ============ -->
+  <h2>The Slice Technique: cut the eye like fruit</h2>
+  <p class="hint">Same three planes, but now watch the knife pass through and the two halves fall apart. The flat face you expose <b>is</b> the plane, and it is always named for the axis it leaves out. Tap a plane to slice.</p>
+
+  <div class="card">
+    <div class="toggle" id="sliceToggle">
+      <button class="slice-btn b-warn"  data-slice="horizontal">Horizontal</button>
+      <button class="slice-btn b-vert"  data-slice="median">Median</button>
+      <button class="slice-btn b-trans" data-slice="equatorial">Equatorial</button>
+    </div>
+
+    <div class="slice-stage">
+      <div class="fruit" id="fruit">
+        <div class="half half-a"><div class="ball"><div class="cornea-c"><div class="p"></div></div></div></div>
+        <div class="half half-b"><div class="ball"><div class="cornea-c"><div class="p"></div></div></div></div>
+        <div class="knife"></div>
+        <!-- equatorial: posterior bowl (back) + anterior cap (front, with iris) -->
+        <div class="eq-bowl"><div class="eq-rim"></div></div>
+        <div class="eq-cap"><div class="eq-iris"><div class="p"></div></div></div>
+        <div class="eq-cut"></div>
+        <span class="halflabel lbl-a" id="lblA"></span>
+        <span class="halflabel lbl-b" id="lblB"></span>
+      </div>
+    </div>
+
+    <div class="readout" id="sliceReadout">Pick a plane above to make the cut.</div>
+    <div class="fruitline" id="fruitline"></div>
+    <button class="slice-again" id="sliceAgain" style="display:none">Slice again</button>
+  </div>
+
   <footer>WAA · Board Review 2026 · Personal study notes · Ocular Anatomy / Visual Biology</footer>
 </div>
 
@@ -304,6 +419,67 @@
     rx=Math.max(-80,Math.min(80,rx));
     lx=e.clientX; ly=e.clientY; setView();
   });
+
+  // ---------- slice technique ----------
+  var fruit = document.getElementById('fruit');
+  var sliceBtns = document.querySelectorAll('.slice-btn');
+  var sliceReadout = document.getElementById('sliceReadout');
+  var fruitline = document.getElementById('fruitline');
+  var lblA = document.getElementById('lblA');
+  var lblB = document.getElementById('lblB');
+  var sliceAgain = document.getElementById('sliceAgain');
+  var sliceTimer = null, currentSlice = null;
+
+  var sliceCfg = {
+    horizontal: {layout:'tb', a:'Superior', b:'Inferior',
+      read:'Horizontal cut → a <b>superior</b> lid lifts off an <b>inferior</b> base. The exposed cut face is the horizontal plane (optic + transverse axes).',
+      fruit:'Fruit hack: like halving a burger bun through the middle, so the top comes off and the bottom stays.',
+      miss:'It leaves out the <b>vertical</b> axis, so it can only divide up from down.'},
+    median: {layout:'lr', a:'Left', b:'Right',
+      read:'Vertical cut down the midline → a <b>left</b> hemisphere and a <b>right</b> hemisphere. The cut face is the median plane (optic + vertical axes).',
+      fruit:'Fruit hack: like splitting an apple straight down into two even cheeks.',
+      miss:'It leaves out the <b>transverse</b> axis, so it can only divide left from right.'},
+    equatorial: {layout:'eq', a:'Anterior', b:'Posterior',
+      read:'The cut runs around the equator, the widest part of the globe, well <i>behind</i> the iris. So the whole front cap (cornea, iris, lens) lifts off in one piece as the <b>anterior</b> segment, leaving the <b>posterior</b> bowl (vitreous, retina) behind. The iris is never sliced here, which is exactly what sets this plane apart from the other two.',
+      fruit:'Fruit hack: like popping the cap off an acorn, the whole front comes away from the back.',
+      miss:'It leaves out the <b>optic</b> (front-back) axis, so it divides front from back.'}
+  };
+
+  function playSlice(mode){
+    var c = sliceCfg[mode];
+    currentSlice = mode;
+    clearTimeout(sliceTimer);
+    sliceBtns.forEach(function(b){ b.classList.toggle('on', b.dataset.slice===mode); });
+
+    // reset, then set mode + layout classes
+    fruit.className = 'fruit';
+    lblA.textContent = c.a; lblB.textContent = c.b;
+    void fruit.offsetWidth; // force reflow so the animation restarts cleanly
+    fruit.classList.add('mode-'+mode, c.layout, 'cutting');
+
+    sliceReadout.innerHTML = c.read;
+    fruitline.innerHTML = c.fruit + ' &nbsp;·&nbsp; ' + c.miss;
+    sliceAgain.style.display = 'block';
+
+    // let the knife wipe first, then part the halves
+    sliceTimer = setTimeout(function(){ fruit.classList.add('open'); }, 400);
+  }
+
+  sliceBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){ playSlice(btn.dataset.slice); });
+  });
+  sliceAgain.addEventListener('click', function(){ if(currentSlice) playSlice(currentSlice); });
+
+  // gentle auto-play the first slice once, when the section scrolls into view
+  if('IntersectionObserver' in window){
+    var seen = false;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting && !seen){ seen = true; if(!currentSlice) playSlice('horizontal'); io.disconnect(); }
+      });
+    }, {threshold:.5});
+    io.observe(document.querySelector('.slice-stage'));
+  }
 </script>
 </body>
 </html>
