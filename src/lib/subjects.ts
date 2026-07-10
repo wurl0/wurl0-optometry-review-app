@@ -75,9 +75,10 @@ export const SUBJECTS: Subject[] = [
     name: 'Ocular Disease',
     description: 'Eyelid disorders, conjunctiva, cornea, uvea, glaucoma, retinal diseases, and neuro-ophthalmology.',
     color: 'red',
-    questionCount: 150,
+    questionCount: 106,
     icon: '🔴',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'general-pharmacology',

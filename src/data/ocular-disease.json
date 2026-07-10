@@ -1,0 +1,1274 @@
+[
+ {
+  "type": "mcq",
+  "stem": "A small eye with completely normal internal structures, thickened sclera and choroid, high hyperopia, and normal lens volume describes:",
+  "options": [
+   "Microphthalmos",
+   "Nanophthalmos",
+   "Anophthalmos",
+   "Buphthalmos"
+  ],
+  "correct": 1,
+  "explanation": "Nanophthalmos is a small eye with NORMAL internal structures, thickened sclera/choroid, and high hyperopia. Microphthalmos is a small MALFORMED eye associated with colobomas and cysts."
+ },
+ {
+  "type": "mcq",
+  "stem": "Buphthalmos differs from exophthalmos in that buphthalmos:",
+  "options": [
+   "Is a genuinely enlarged eyeball, and is associated with congenital glaucoma",
+   "Is the eyeball pushed forward",
+   "Is always unilateral and endocrine",
+   "Is degenerative shrinkage of the globe"
+  ],
+  "correct": 0,
+  "explanation": "Buphthalmos ('bull eye') is true enlargement of the globe in congenital glaucoma. Exophthalmos is anterior displacement (protrusion), classically bilateral in Grave's disease."
+ },
+ {
+  "type": "mcq",
+  "stem": "Degenerative shrinkage and disorganisation of the eyeball following trauma is termed:",
+  "options": [
+   "Phthisis bulbi",
+   "Proptosis",
+   "Macrophthalmia",
+   "Nanophthalmos"
+  ],
+  "correct": 0,
+  "explanation": "Phthisis bulbi is the degenerative shrinkage/disorganisation of the globe after injury. Macrophthalmia is enlargement; proptosis is protrusion."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bilateral exophthalmos is most characteristically associated with:",
+  "options": [
+   "Carotid-cavernous fistula",
+   "Orbital floor fracture",
+   "Orbital cellulitis",
+   "Grave's disease (thyrotoxic ophthalmopathy)"
+  ],
+  "correct": 3,
+  "explanation": "Bilateral exophthalmos points to an endocrine cause, classically Grave's disease. Orbital cellulitis and floor fracture are unilateral; a carotid-cavernous fistula gives pulsating proptosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "A PULSATING proptosis most suggests:",
+  "options": [
+   "Thyroid eye disease",
+   "Mucocele",
+   "Orbital cellulitis",
+   "Carotid-cavernous sinus fistula"
+  ],
+  "correct": 3,
+  "explanation": "Pulsating proptosis is classic for a carotid-cavernous sinus fistula (also a vascular tumour, aneurysm, or transmitted cerebral pulsation)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common overall benign orbital tumour is:",
+  "options": [
+   "Glioma of the optic nerve",
+   "Hemangioma",
+   "Meningioma",
+   "Rhabdomyosarcoma"
+  ],
+  "correct": 1,
+  "explanation": "Hemangioma is the most common benign orbital tumour. Rhabdomyosarcoma is the most common malignant orbital tumour of childhood."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common malignant orbital tumour in male children, affecting skeletal extraocular muscle, is:",
+  "options": [
+   "Rhabdomyosarcoma",
+   "Carcinoma of the orbit",
+   "Hemangioma",
+   "Neurofibroma"
+  ],
+  "correct": 0,
+  "explanation": "Rhabdomyosarcoma is the most common primary orbital malignancy of childhood, arising from skeletal muscle tissue."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common etiology of orbital cellulitis is:",
+  "options": [
+   "Ethmoiditis",
+   "Dacryoadenitis",
+   "Frontal sinusitis",
+   "Maxillary sinusitis"
+  ],
+  "correct": 0,
+  "explanation": "Ethmoiditis is the most common source of orbital cellulitis because the thin lamina papyracea separates the ethmoid sinus from the orbit."
+ },
+ {
+  "type": "mcq",
+  "stem": "Enophthalmos (recession of the globe within the orbit) is classically caused by:",
+  "options": [
+   "An orbital floor (blow-out) fracture",
+   "Grave's disease",
+   "A vascular tumour",
+   "Congenital glaucoma"
+  ],
+  "correct": 0,
+  "explanation": "Enophthalmos follows an orbital floor fracture (also fat atrophy or surgical decompression), as orbital contents prolapse and the globe sinks back."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common congenital eyelid anomaly, a crescentic skin fold at the inner canthus that simulates esotropia, is:",
+  "options": [
+   "Blepharophimosis",
+   "Coloboma",
+   "Distichiasis",
+   "Epicanthus"
+  ],
+  "correct": 3,
+  "explanation": "Epicanthus is the most common congenital lid anomaly, a bilateral vertical skin fold at the inner canthus producing pseudostrabismus (pseudo-esotropia)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A supernumerary second row of lashes emerging from the Meibomian gland orifices is:",
+  "options": [
+   "Trichiasis",
+   "Madarosis",
+   "Distichiasis",
+   "Poliosis"
+  ],
+  "correct": 2,
+  "explanation": "Distichiasis is an extra row of lashes from the Meibomian orifices; the misdirected second row often causes trichiasis (corneal rubbing)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Horner's syndrome classically presents with which triad?",
+  "options": [
+   "Mydriasis, anhidrosis, ptosis",
+   "Ptosis, mydriasis, exophthalmos",
+   "Ptosis, miosis, proptosis",
+   "Ptosis, miosis, anhidrosis"
+  ],
+  "correct": 3,
+  "explanation": "Horner's (sympathetic paralysis of Mueller's muscle and the dilator pupillae) gives the triad of partial ptosis, miosis, and facial anhidrosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which lid inflammation is ACUTE, PAINFUL, and MOVABLE, arising from the glands of Zeis and Moll?",
+  "options": [
+   "Xanthelasma",
+   "Chalazion",
+   "Hordeolum",
+   "Meibomitis"
+  ],
+  "correct": 2,
+  "explanation": "A hordeolum (stye) is an acute, painful, movable staphylococcal infection of the glands of Zeis/Moll. A chalazion is chronic, painless, and fixed to the tarsus."
+ },
+ {
+  "type": "mcq",
+  "stem": "A chronic, painless, hard lid mass fixed to the tarsus that can induce astigmatism is a:",
+  "options": [
+   "Keratoacanthoma",
+   "Milia",
+   "Chalazion",
+   "Hordeolum"
+  ],
+  "correct": 2,
+  "explanation": "A chalazion is a chronic lipogranuloma of an obstructed Meibomian gland: painless, fixed to the tarsus, and able to press on the cornea to cause astigmatism."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anterior blepharitis is most commonly caused by:",
+  "options": [
+   "Staphylococcus aureus",
+   "Meibomian gland dysfunction",
+   "Chlamydia trachomatis",
+   "Demodex only"
+  ],
+  "correct": 0,
+  "explanation": "Anterior blepharitis (crusting and collarettes at the lash line) is most commonly staphylococcal or seborrheic. Posterior blepharitis is Meibomian gland dysfunction."
+ },
+ {
+  "type": "mcq",
+  "stem": "The MOST COMMON type of hordeolum is the external hordeolum, which involves the:",
+  "options": [
+   "Gland of Krause",
+   "Meibomian gland",
+   "Gland of Zeis",
+   "Lacrimal gland"
+  ],
+  "correct": 2,
+  "explanation": "The external hordeolum (stye), the most common type, is an acute infection of the gland of Zeis at the outer lid margin. The internal hordeolum involves a Meibomian gland."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common cause of involutional entropion is:",
+  "options": [
+   "Atrophy/laxity of the lower eyelid retractors",
+   "Seventh nerve palsy",
+   "Scarring of the conjunctiva",
+   "Orbicularis spasm"
+  ],
+  "correct": 0,
+  "explanation": "Involutional (atonic) entropion, the most common form, results from age-related atrophy and laxity of the lower lid retractors, letting the lid roll inward."
+ },
+ {
+  "type": "mcq",
+  "stem": "Lagophthalmos (inadequate lid closure) is most directly caused by weakness of which cranial nerve?",
+  "options": [
+   "CN VII",
+   "CN IV",
+   "CN V",
+   "CN III"
+  ],
+  "correct": 0,
+  "explanation": "CN VII (facial nerve) innervates the orbicularis oculi; its weakness causes lagophthalmos and risks corneal exposure."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common malignant tumour of the eyelids, which does NOT metastasise, is:",
+  "options": [
+   "Melanoma",
+   "Squamous cell carcinoma",
+   "Basal cell carcinoma",
+   "Sebaceous carcinoma"
+  ],
+  "correct": 2,
+  "explanation": "Basal cell carcinoma is the most common eyelid malignancy; it is locally invasive but does not metastasise."
+ },
+ {
+  "type": "mcq",
+  "stem": "Yellowish, slightly elevated lipid plaques at the inner upper and lower eyelids of an older woman are:",
+  "options": [
+   "Xanthelasma",
+   "Keratoacanthoma",
+   "Syringomas",
+   "Milia"
+  ],
+  "correct": 0,
+  "explanation": "Xanthelasma are cutaneous lipid deposits at the medial lids, common in older women, sometimes signalling hyperlipidemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Mikulicz's syndrome is defined as chronic bilateral swelling of the:",
+  "options": [
+   "Meibomian and Zeis glands",
+   "Eyelids and conjunctiva",
+   "Lacrimal and salivary glands",
+   "Lacrimal sac and nasolacrimal duct"
+  ],
+  "correct": 2,
+  "explanation": "Mikulicz's syndrome is chronic bilateral enlargement of the lacrimal AND salivary glands, seen with reticuloendothelial diseases."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common benign lacrimal gland tumour, a painless slowly progressive mass in patients under 35, is:",
+  "options": [
+   "Adenoid cystic carcinoma",
+   "Malignant mixed tumour",
+   "Pleomorphic adenoma (benign mixed tumour)",
+   "Lymphoma"
+  ],
+  "correct": 2,
+  "explanation": "Pleomorphic adenoma (benign mixed tumour) is the most common benign lacrimal gland tumour, presenting as painless upper-orbital fullness in younger patients."
+ },
+ {
+  "type": "mcq",
+  "stem": "PAIN with proptosis is the key clue distinguishing which malignant lacrimal gland tumour from benign disease?",
+  "options": [
+   "Adenoid cystic carcinoma (cylindroma)",
+   "Dermoid cyst",
+   "Pleomorphic adenoma",
+   "Hemangioma"
+  ],
+  "correct": 0,
+  "explanation": "Adenoid cystic carcinoma (cylindroma) classically produces painful proptosis (it invades nerve/bone), unlike the painless pleomorphic adenoma. Pain is the differentiator."
+ },
+ {
+  "type": "mcq",
+  "stem": "Epiphora is defined as overflow of tears due to:",
+  "options": [
+   "Reflex secretion",
+   "Overproduction of tears",
+   "Obstruction of the drainage system",
+   "Corneal irritation"
+  ],
+  "correct": 2,
+  "explanation": "Epiphora is tear overflow from OBSTRUCTION of drainage (e.g., punctal scarring, NLD block), not from overproduction (which is lacrimation)."
+ },
+ {
+  "type": "mcq",
+  "stem": "On pressure over the lacrimal sac, regurgitation of PUS indicates:",
+  "options": [
+   "Dacryoadenitis",
+   "Chronic dacryocystitis",
+   "Acute dacryocystitis",
+   "Canaliculitis"
+  ],
+  "correct": 2,
+  "explanation": "Acute dacryocystitis regurgitates PUS on pressure over the sac; chronic dacryocystitis regurgitates BLOOD. This pus-vs-blood contrast is a classic trap."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dacryocystitis in the newborn is characteristically:",
+  "options": [
+   "Bilateral, caused by Pneumococcus",
+   "Unilateral, caused by Staphylococcus",
+   "Unilateral, caused by tuberculosis",
+   "Bilateral, caused by Chlamydia"
+  ],
+  "correct": 0,
+  "explanation": "Neonatal dacryocystitis is typically bilateral, caused by Pneumococcus, from debris or failure of the epithelial tube (valve of Hasner) to open."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which finding reliably indicates CILIARY (rather than conjunctival) injection?",
+  "options": [
+   "Vessels marked at the fornix",
+   "Bright brick-red vessels that move with the conjunctiva",
+   "Mucopurulent discharge",
+   "A pink-lilac flush at the limbus that does NOT move and does NOT blanch with epinephrine"
+  ],
+  "correct": 3,
+  "explanation": "Ciliary injection is a pink/lilac flush maximal at the limbus, does not move with the conjunctiva, and does not blanch with 1:1000 epinephrine, signalling keratitis, uveitis, or glaucoma."
+ },
+ {
+  "type": "mcq",
+  "stem": "A yellowish raised bulbar conjunctival spot on the nasal side that STOPS at the limbus (does not invade the cornea) is a:",
+  "options": [
+   "Phlycten",
+   "Pinguecula",
+   "Pannus",
+   "Pterygium"
+  ],
+  "correct": 1,
+  "explanation": "A pinguecula is a benign yellowish nasal bulbar lesion that stops at the limbus. A pterygium invades the cornea and destroys Bowman's membrane."
+ },
+ {
+  "type": "mcq",
+  "stem": "A pterygium is distinguished from a pinguecula chiefly because it:",
+  "options": [
+   "Invades the cornea and destroys Bowman's membrane",
+   "Occurs only temporally",
+   "Is always painful",
+   "Never relates to UV exposure"
+  ],
+  "correct": 0,
+  "explanation": "The pterygium is a fibrovascular growth that crosses the limbus onto the cornea and destroys Bowman's membrane; UV/sunlight exposure is the main risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cellular infiltrate predominates in ALLERGIC conjunctivitis?",
+  "options": [
+   "Lymphocytes",
+   "Neutrophils (PMN)",
+   "Eosinophils",
+   "Plasma cells"
+  ],
+  "correct": 2,
+  "explanation": "Allergic conjunctivitis shows eosinophils. Bacterial shows neutrophils (PMN); viral shows lymphocytes."
+ },
+ {
+  "type": "mcq",
+  "stem": "The presence of FOLLICLES with preauricular lymphadenopathy most points to which conjunctivitis?",
+  "options": [
+   "Bacterial",
+   "Allergic",
+   "Chemical",
+   "Viral"
+  ],
+  "correct": 3,
+  "explanation": "Follicles plus periauricular lymphadenopathy are hallmarks of viral conjunctivitis. Allergic shows papillae and itching without lymphadenopathy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hyperacute purulent conjunctivitis that can penetrate an intact corneal epithelium is most commonly caused by:",
+  "options": [
+   "Adenovirus",
+   "Haemophilus influenzae",
+   "Neisseria gonorrhoeae",
+   "Staphylococcus aureus"
+  ],
+  "correct": 2,
+  "explanation": "Neisseria gonorrhoeae causes hyperacute conjunctivitis with profuse purulent discharge and is one of few organisms that penetrate intact corneal epithelium, threatening perforation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Trachoma is caused by Chlamydia trachomatis and characteristically shows follicles at the:",
+  "options": [
+   "Limbus only",
+   "Caruncle",
+   "Inferior palpebral conjunctiva",
+   "Upper tarsal conjunctiva"
+  ],
+  "correct": 3,
+  "explanation": "Trachoma shows follicles at the UPPER tarsal conjunctiva, whereas adult inclusion (chlamydial) conjunctivitis shows follicles at the INFERIOR palpebral conjunctiva."
+ },
+ {
+  "type": "mcq",
+  "stem": "Crede's prophylaxis for ophthalmia neonatorum uses:",
+  "options": [
+   "1-2% silver nitrate",
+   "Tetracycline drops",
+   "Erythromycin ointment",
+   "Povidone-iodine"
+  ],
+  "correct": 0,
+  "explanation": "Crede's prophylaxis is 1-2% silver nitrate, which itself can cause a mild chemical conjunctivitis at 12-24 hours. It historically prevented gonococcal ophthalmia neonatorum."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cobblestone (giant) papillae on the upper tarsus with shield corneal ulcers in a young male in a warm dry climate suggest:",
+  "options": [
+   "Trachoma",
+   "Giant papillary conjunctivitis",
+   "Seasonal allergic conjunctivitis",
+   "Vernal keratoconjunctivitis"
+  ],
+  "correct": 3,
+  "explanation": "Vernal keratoconjunctivitis (VKC) affects young males, is IgE-mediated, shows cobblestone papillae, and can cause shield ulcers. GPC is anchored to contact-lens/prosthesis wear."
+ },
+ {
+  "type": "mcq",
+  "stem": "Atopic keratoconjunctivitis is associated in about 95% of cases with:",
+  "options": [
+   "Atopic dermatitis (eczema)",
+   "Tuberculosis",
+   "Cat-scratch disease",
+   "Contact lens wear"
+  ],
+  "correct": 0,
+  "explanation": "AKC is chronic and about 95% associated with atopic dermatitis, frequently with corneal involvement (punctate erosions, filaments, defects)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Parinaud oculoglandular syndrome (granulomatous conjunctivitis with preauricular lymphadenopathy) is classically caused by:",
+  "options": [
+   "Chlamydia",
+   "Adenovirus",
+   "Cat-scratch disease (Bartonella henselae)",
+   "Gonorrhea"
+  ],
+  "correct": 2,
+  "explanation": "Parinaud oculoglandular syndrome is a unilateral granulomatous conjunctivitis with ipsilateral preauricular lymphadenopathy, classically from cat-scratch disease (Bartonella henselae)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A limbal nodule (phlycten) representing a hypersensitivity reaction to bacterial antigens such as TB or Staph describes:",
+  "options": [
+   "Pinguecula",
+   "Pterygium",
+   "Phlyctenular conjunctivitis",
+   "Episcleritis"
+  ],
+  "correct": 2,
+  "explanation": "Phlyctenular conjunctivitis is a delayed hypersensitivity to bacterial antigens (TB, Staph) producing a limbal phlycten that may migrate onto the cornea, with photophobia and lacrimation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The EARLIEST sign of keratoconus, an iron ring best seen with cobalt blue light, is:",
+  "options": [
+   "Fleischer ring",
+   "Hudson-Stahli line",
+   "Vogt's striae",
+   "Munson's sign"
+  ],
+  "correct": 0,
+  "explanation": "The Fleischer ring, iron (hemosiderin) at the base of the cone, is the earliest sign of keratoconus, best seen with cobalt blue light. Munson's sign is a later external finding."
+ },
+ {
+  "type": "mcq",
+  "stem": "A vertical melanin spindle on the corneal ENDOTHELIUM, part of pigment dispersion syndrome, is the:",
+  "options": [
+   "Ferry line",
+   "Kayser-Fleischer ring",
+   "Stocker line",
+   "Krukenberg spindle"
+  ],
+  "correct": 3,
+  "explanation": "The Krukenberg spindle is a vertical melanin deposit on the endothelium in pigment dispersion syndrome (the vertical shape follows the aqueous convection current)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A copper ring at the periphery of Descemet's membrane, associated with hepatolenticular degeneration, is the:",
+  "options": [
+   "Krukenberg spindle",
+   "Kayser-Fleischer ring",
+   "Hudson-Stahli line",
+   "Fleischer ring"
+  ],
+  "correct": 1,
+  "explanation": "The Kayser-Fleischer ring is copper deposited at Descemet's membrane in Wilson's disease; about 95% of those with it have neurologic signs."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which iron corneal line is associated with normal aging (over 50) and lies horizontally in the epithelium?",
+  "options": [
+   "Ferry line",
+   "Stocker line",
+   "Fleischer ring",
+   "Hudson-Stahli line"
+  ],
+  "correct": 3,
+  "explanation": "The Hudson-Stahli line is a horizontal epithelial iron line of normal aging. Ferry (filtering bleb), Stocker (pterygium head), and Fleischer (keratoconus) are the other epithelial iron lines."
+ },
+ {
+  "type": "mcq",
+  "stem": "A vertical iron line at the leading edge (head) of a pterygium is the:",
+  "options": [
+   "Ferry line",
+   "Kayser-Fleischer ring",
+   "Hudson-Stahli line",
+   "Stocker line"
+  ],
+  "correct": 3,
+  "explanation": "The Stocker line is a vertical iron line at the advancing head of a pterygium. Ferry line sits at a filtering bleb."
+ },
+ {
+  "type": "mcq",
+  "stem": "Of the corneal opacities, which is the FAINTEST, visible only with oblique illumination?",
+  "options": [
+   "Nebula",
+   "Macula",
+   "Staphyloma",
+   "Leukoma"
+  ],
+  "correct": 0,
+  "explanation": "A nebula is the faintest, cloud-like corneal opacity, seen only with oblique illumination. Macula is a grayish daytime opacity; leukoma is the densest, white opacity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Megalocornea (anterior keratoglobus) is defined by a corneal diameter greater than:",
+  "options": [
+   "13.5 mm",
+   "10 mm",
+   "16 mm",
+   "11.5 mm"
+  ],
+  "correct": 0,
+  "explanation": "Megalocornea has a corneal diameter greater than 13.5 mm with normal refraction and no glaucoma (deeper AC, enlarged lens). Microcornea is under 10 mm and hyperopic with glaucoma risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "Arcus senilis is a corneal deposit of:",
+  "options": [
+   "Copper",
+   "Calcium salts",
+   "Iron",
+   "Extracellular lipid"
+  ],
+  "correct": 3,
+  "explanation": "Arcus senilis (gerontoxon) is a peripheral corneal ring of extracellular lipid (neutral fats, triglycerides, phospholipids, sterols) separated from the sclera by a clear zone; common with hypercholesterolemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Band keratopathy is caused by deposition of:",
+  "options": [
+   "Melanin",
+   "Lipid",
+   "Iron",
+   "Calcium salts at the epithelium/Bowman's membrane"
+  ],
+  "correct": 3,
+  "explanation": "Band keratopathy is a horizontal band of calcium salts at the epithelium/Bowman's membrane, seen with hypercalcemia, hyperparathyroidism, or excess vitamin D."
+ },
+ {
+  "type": "mcq",
+  "stem": "In keratoconjunctivitis sicca, a mucin deficiency (rather than aqueous deficiency) is caused by:",
+  "options": [
+   "Lacrimal gland extirpation",
+   "Sjogren syndrome",
+   "Stevens-Johnson syndrome / ocular pemphigoid",
+   "Facial nerve palsy"
+  ],
+  "correct": 2,
+  "explanation": "Mucin-deficiency dry eye follows loss of conjunctival goblet cells in cicatrising disease such as Stevens-Johnson syndrome, ocular pemphigoid, and erythema multiforme. Sjogren causes aqueous deficiency."
+ },
+ {
+  "type": "mcq",
+  "stem": "Compared with episcleritis, scleritis is typically:",
+  "options": [
+   "Deeper and bilateral, associated with tuberculosis, and can cause secondary open-angle glaucoma",
+   "Painless and self-limiting",
+   "Superficial and unilateral, associated with RA",
+   "Confined to the cornea"
+  ],
+  "correct": 0,
+  "explanation": "Scleritis is deeper (scleral stroma), often bilateral, associated with PTB, and can cause secondary open-angle glaucoma. Episcleritis is superficial, unilateral, and often tied to RA/CTD."
+ },
+ {
+  "type": "mcq",
+  "stem": "Posterior staphyloma (scleral ectasia) is most associated with:",
+  "options": [
+   "Hyperopia",
+   "High myopia with myopic chorioretinal degeneration",
+   "Keratoconus",
+   "Congenital glaucoma"
+  ],
+  "correct": 1,
+  "explanation": "Posterior staphyloma, a bulging of thinned posterior sclera, is associated with high (pathologic) myopia and myopic degeneration of the retina and choroid."
+ },
+ {
+  "type": "mcq",
+  "stem": "Normal intraocular pressure ranges approximately:",
+  "options": [
+   "5-9 mmHg",
+   "30-40 mmHg",
+   "22-30 mmHg",
+   "10-21 mmHg"
+  ],
+  "correct": 3,
+  "explanation": "Normal IOP is about 10-21 mmHg, with a daily fluctuation of 2-5 mmHg. IOP is typically highest in the morning."
+ },
+ {
+  "type": "mcq",
+  "stem": "Primary angle-closure glaucoma classically presents as:",
+  "options": [
+   "Gradual painless peripheral field loss",
+   "Bilateral slow blurring",
+   "Sudden painful red eye with a mid-dilated non-reactive pupil, cloudy cornea, and halos",
+   "Optic disc cupping without symptoms"
+  ],
+  "correct": 2,
+  "explanation": "PACG is an emergency: sudden severe pain, a mid-dilated fixed pupil, corneal edema, halos, and often nausea/vomiting. POAG is the gradual, painless 'silent thief.'"
+ },
+ {
+  "type": "mcq",
+  "stem": "In primary open-angle glaucoma, the trabecular meshwork provides what share of aqueous outflow resistance?",
+  "options": [
+   "50%",
+   "25%",
+   "95%",
+   "75%"
+  ],
+  "correct": 3,
+  "explanation": "The trabecular meshwork accounts for about 75% of outflow resistance into the canal of Schlemm, so trabecular dysfunction underlies raised IOP in POAG."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which beta-blocker is cardio-selective and therefore SAFER in a patient with asthma?",
+  "options": [
+   "Betaxolol",
+   "Levobunolol",
+   "Carteolol",
+   "Timolol"
+  ],
+  "correct": 0,
+  "explanation": "Betaxolol is cardio-selective (beta-1), safer in asthma/COPD than the non-selective timolol, which is contraindicated in asthma and heart block."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common side effect of oral acetazolamide is:",
+  "options": [
+   "Paresthesia (tingling of mouth and extremities)",
+   "Bradycardia",
+   "Bronchospasm",
+   "Miosis"
+  ],
+  "correct": 0,
+  "explanation": "Acetazolamide (a carbonic anhydrase inhibitor) most commonly causes paresthesia; other effects include kidney stones, potassium loss, and transient myopia from ciliary swelling."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which osmotic anti-glaucoma agent is CONTRAINDICATED in a diabetic because it raises blood glucose?",
+  "options": [
+   "Glycerol",
+   "Acetazolamide",
+   "Isosorbide",
+   "Mannitol"
+  ],
+  "correct": 0,
+  "explanation": "Oral glycerol is metabolised and transiently raises blood glucose, so it is contraindicated in diabetes. Isosorbide is the diabetes-safe oral osmotic."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which osmotic agent is given IV only, has a large molecular weight that keeps it in the blood, and is safe in renal disease?",
+  "options": [
+   "Glycerol",
+   "Mannitol",
+   "Isosorbide",
+   "Urea"
+  ],
+  "correct": 1,
+  "explanation": "Mannitol is IV-only, stays intravascular due to its large molecular weight, and is safe in renal disease. Urea (IV) is contraindicated in renal disease."
+ },
+ {
+  "type": "mcq",
+  "stem": "Latanoprost lowers IOP mainly by:",
+  "options": [
+   "Causing miosis",
+   "Reducing aqueous production",
+   "Increasing uveoscleral outflow",
+   "Blocking beta receptors"
+  ],
+  "correct": 2,
+  "explanation": "Latanoprost, a prostaglandin analogue, increases uveoscleral outflow. It can also cause iris and lash pigmentation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Rubeosis iridis (e.g., in diabetes or after vitrectomy) causes which type of secondary glaucoma?",
+  "options": [
+   "Closed angle WITHOUT pupillary block",
+   "Closed angle WITH pupillary block",
+   "Congenital",
+   "Open angle"
+  ],
+  "correct": 0,
+  "explanation": "Neovascularisation on the iris (rubeosis) drags a fibrovascular membrane across the angle, closing it WITHOUT pupillary block (neovascular glaucoma)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Phacolytic glaucoma is an OPEN-angle secondary glaucoma caused by:",
+  "options": [
+   "Pigment on the endothelium",
+   "A swollen intumescent lens pushing the iris forward",
+   "Protein leaking from a hypermature cataract with macrophages blocking the trabeculum",
+   "Posterior synechiae"
+  ],
+  "correct": 2,
+  "explanation": "Phacolytic glaucoma is open-angle: lens protein leaks from a hypermature cataract and macrophages clog the trabecular meshwork. Phacomorphic glaucoma (swollen lens) is closed-angle."
+ },
+ {
+  "type": "mcq",
+  "stem": "A bilateral pupil that fails to constrict to light but retains constriction to accommodation/convergence ('accommodates but does not react') indicates:",
+  "options": [
+   "Horner's syndrome",
+   "Marcus Gunn pupil",
+   "Argyll-Robertson pupil",
+   "Adie's tonic pupil"
+  ],
+  "correct": 2,
+  "explanation": "The Argyll-Robertson pupil is bilateral, light-near dissociated, and highly specific for neurosyphilis (tabes dorsalis)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A tonic pupil that is dilated, reacts very slowly, and constricts to dilute 0.1% pilocarpine (denervation supersensitivity) is:",
+  "options": [
+   "Marcus Gunn pupil",
+   "Argyll-Robertson pupil",
+   "Adie's tonic pupil",
+   "Amaurotic pupil"
+  ],
+  "correct": 2,
+  "explanation": "Adie's tonic pupil results from ciliary ganglion / postganglionic parasympathetic damage; denervation supersensitivity makes it constrict to 0.1% pilocarpine that would not affect a normal pupil."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the swinging-flashlight test, the affected pupil DILATES when the light is swung to it. This is:",
+  "options": [
+   "Horner's syndrome",
+   "A relative afferent pupillary defect (Marcus Gunn)",
+   "Hippus",
+   "Argyll-Robertson pupil"
+  ],
+  "correct": 1,
+  "explanation": "A relative afferent pupillary defect (Marcus Gunn pupil) reflects an afferent (optic nerve or severe retinal) lesion; the affected pupil dilates on direct light because its afferent signal is weaker."
+ },
+ {
+  "type": "mcq",
+  "stem": "Spasmodic rhythmic pupil dilation and constriction independent of any light stimulus is termed:",
+  "options": [
+   "Anisocoria",
+   "Hippus",
+   "Polycoria",
+   "Corectopia"
+  ],
+  "correct": 1,
+  "explanation": "Hippus is rhythmic, involuntary pupillary oscillation unrelated to light or accommodation. Anisocoria is unequal pupils; corectopia is a displaced pupil."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ectopia lentis in Marfan syndrome typically displaces the lens:",
+  "options": [
+   "Upward (superior)",
+   "Nasally",
+   "Temporally",
+   "Downward (inferior)"
+  ],
+  "correct": 0,
+  "explanation": "In Marfan syndrome the lens dislocates UP (superiorly). In homocystinuria it dislocates DOWN. 'Marfan = up, Homocystinuria = down' is the classic trap."
+ },
+ {
+  "type": "mcq",
+  "stem": "Homocystinuria dislocates the lens in which direction?",
+  "options": [
+   "Anteriorly into the AC",
+   "Down",
+   "Up",
+   "It does not dislocate"
+  ],
+  "correct": 1,
+  "explanation": "Homocystinuria (cystathionine beta-synthase deficiency) dislocates the lens DOWN (inferiorly). Marfan dislocates it up."
+ },
+ {
+  "type": "mcq",
+  "stem": "A cataract patient who can suddenly read without glasses ('second sight' / senopia) most likely has:",
+  "options": [
+   "Nuclear sclerosis",
+   "Galactosemic cataract",
+   "Cortical cataract",
+   "Posterior subcapsular cataract"
+  ],
+  "correct": 0,
+  "explanation": "Nuclear sclerosis increases lens index and induces a myopic shift, giving transient 'second sight' (senopia) that lets a presbyope read without glasses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cataract type is both the most common age-related type AND the one caused by steroids?",
+  "options": [
+   "Anterior polar",
+   "Posterior subcapsular",
+   "Cortical",
+   "Nuclear"
+  ],
+  "correct": 1,
+  "explanation": "Posterior subcapsular cataract (PSC) is the most common age-related type and the classic steroid-induced cataract; steroids also cause open-angle glaucoma."
+ },
+ {
+  "type": "mcq",
+  "stem": "A diabetic 'snowflake' cataract is notable because it can mature in as little as:",
+  "options": [
+   "1 week",
+   "1 year",
+   "1 month",
+   "72 hours"
+  ],
+  "correct": 3,
+  "explanation": "The true diabetic (snowflake) cataract is bilateral and can mature within 72 hours, driven by osmotic sorbitol accumulation."
+ },
+ {
+  "type": "mcq",
+  "stem": "A galactosemic cataract classically shows which appearance from dulcitol accumulation?",
+  "options": [
+   "Sunflower",
+   "Rosette",
+   "Oil droplet",
+   "Christmas tree"
+  ],
+  "correct": 2,
+  "explanation": "Galactosemia produces an oil-droplet cataract as dulcitol (galactitol) accumulates in the lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "After extracapsular cataract extraction, opacification of the retained posterior capsule ('after-cataract' / PCO) is treated with:",
+  "options": [
+   "Topical steroids",
+   "YAG laser capsulotomy",
+   "Repeat ECCE",
+   "Trabeculectomy"
+  ],
+  "correct": 1,
+  "explanation": "Posterior capsule opacification after ECCE is treated with Nd:YAG laser capsulotomy, opening the cloudy capsule behind the IOL."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bilateral granulomatous uveitis in the uninjured eye following a penetrating injury to the fellow eye is:",
+  "options": [
+   "Phacolytic uveitis",
+   "Posterior vitreous detachment",
+   "Sympathetic ophthalmia",
+   "Endophthalmitis"
+  ],
+  "correct": 2,
+  "explanation": "Sympathetic ophthalmia is bilateral granulomatous uveitis affecting the sympathizing (uninjured) eye weeks to years after a penetrating injury to the other eye."
+ },
+ {
+  "type": "mcq",
+  "stem": "A sudden, painless loss of vision with a cherry-red spot at the macula and a pale retina indicates:",
+  "options": [
+   "Retinal detachment",
+   "Central retinal vein occlusion",
+   "Central retinal artery occlusion",
+   "Vitreous hemorrhage"
+  ],
+  "correct": 2,
+  "explanation": "CRAO gives sudden painless vision loss, a pale ischemic retina, and a cherry-red spot at the macula (the thin fovea reveals the intact choroidal circulation). Treat within ~90 minutes."
+ },
+ {
+  "type": "mcq",
+  "stem": "A 'blood and thunder' fundus with flame hemorrhages in all four quadrants is the hallmark of:",
+  "options": [
+   "CRVO",
+   "ARMD",
+   "Retinitis pigmentosa",
+   "CRAO"
+  ],
+  "correct": 0,
+  "explanation": "Central retinal vein occlusion (CRVO) produces the classic 'blood and thunder' fundus: diffuse flame hemorrhages, dilated tortuous veins, and disc edema."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common type of retinal detachment is:",
+  "options": [
+   "Serous",
+   "Rhegmatogenous",
+   "Exudative",
+   "Tractional"
+  ],
+  "correct": 1,
+  "explanation": "Rhegmatogenous retinal detachment, from a retinal break allowing fluid under the neurosensory retina, is the most common type. Symptoms include flashes, floaters, and a curtain over vision."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bone-spicule pigmentation with early nyctalopia and progressive peripheral field loss describes:",
+  "options": [
+   "ARMD",
+   "Choroideremia",
+   "Retinitis pigmentosa",
+   "Diabetic retinopathy"
+  ],
+  "correct": 2,
+  "explanation": "Retinitis pigmentosa is a hereditary rod-cone dystrophy: bone-spicule pigment, night blindness early, and progressive peripheral (tunnel) field loss."
+ },
+ {
+  "type": "mcq",
+  "stem": "An intraocular iron foreign body causes siderosis; which imaging modality is CONTRAINDICATED?",
+  "options": [
+   "MRI",
+   "CT scan",
+   "Plain radiograph",
+   "Ultrasound"
+  ],
+  "correct": 0,
+  "explanation": "MRI is contraindicated with a ferrous (iron) intraocular foreign body because the magnetic field can move it; CT is used instead. Siderosis attenuates the ERG b-wave and causes heterochromia."
+ },
+ {
+  "type": "mcq",
+  "stem": "'Mutton-fat' keratic precipitates on the corneal endothelium suggest which type of uveitis?",
+  "options": [
+   "Purely allergic",
+   "Traumatic only",
+   "Granulomatous (e.g., sarcoidosis, TB)",
+   "Non-granulomatous"
+  ],
+  "correct": 2,
+  "explanation": "Large greasy 'mutton-fat' KPs indicate granulomatous uveitis, seen in sarcoidosis and tuberculosis, versus the fine KPs of non-granulomatous uveitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "In an orbital blow-out fracture, anesthesia of the lower lid, cheek, and upper lip indicates injury to the:",
+  "options": [
+   "Infraorbital nerve",
+   "Optic nerve",
+   "Supraorbital nerve",
+   "Frontal nerve"
+  ],
+  "correct": 0,
+  "explanation": "The orbital floor fracture involves the infraorbital canal, so infraorbital nerve anesthesia (lower lid, cheek, upper lip, upper teeth) is characteristic, along with diplopia and enophthalmos."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient with an orbital floor fracture should be specifically advised NOT to:",
+  "options": [
+   "Sleep upright",
+   "Take antibiotics",
+   "Blow the nose",
+   "Apply ice packs"
+  ],
+  "correct": 2,
+  "explanation": "Patients must not blow the nose, which can force infected sinus contents (and air) through the fracture into the orbit, causing orbital emphysema or infection."
+ },
+ {
+  "type": "mcq",
+  "stem": "A ring of iris pigment imprinted on the anterior lens after blunt trauma (from momentary miosis at impact) is:",
+  "options": [
+   "Weiss ring",
+   "Vossius ring",
+   "Fleischer ring",
+   "Kayser-Fleischer ring"
+  ],
+  "correct": 1,
+  "explanation": "The Vossius ring is pigment transferred from the iris to the anterior lens capsule during blunt trauma, marking transient forceful miosis at the moment of impact."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bilateral multilayered retinal hemorrhages in an infant under 2 with high mortality classically indicate:",
+  "options": [
+   "Shaken baby syndrome",
+   "Persistent fetal vasculature",
+   "Retinopathy of prematurity",
+   "Coats disease"
+  ],
+  "correct": 0,
+  "explanation": "Shaken baby syndrome causes bilateral, multilayered retinal hemorrhages extending to the periphery from rotational acceleration-deceleration, with mortality over 25%."
+ },
+ {
+  "type": "mcq",
+  "stem": "With normal ageing, anterior chamber depth changes approximately from:",
+  "options": [
+   "4.5 mm to 4.0 mm",
+   "2.5 mm to 2.0 mm",
+   "3.0 mm to 3.6 mm",
+   "3.6 mm (age 15-20) to 3.0 mm (age 70)"
+  ],
+  "correct": 3,
+  "explanation": "AC depth decreases from about 3.6 mm in youth to about 3.0 mm by age 70 as the lens enlarges and bows the iris forward, narrowing the angle and raising PACG risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aqueous humour production changes with age by roughly:",
+  "options": [
+   "Staying constant lifelong",
+   "Decreasing 25% per decade after age 30",
+   "Increasing 25% per decade after 30",
+   "Doubling by age 70"
+  ],
+  "correct": 1,
+  "explanation": "Aqueous production falls about 25% per decade after age 30 as the ciliary body thickens and shortens."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bilateral optic disc swelling from raised intracranial pressure, with preserved early acuity and an enlarged blind spot, is:",
+  "options": [
+   "Papillitis",
+   "Papilledema",
+   "Retrobulbar neuritis",
+   "Optic atrophy"
+  ],
+  "correct": 1,
+  "explanation": "Papilledema is bilateral disc swelling from raised ICP; central vision is spared early and the blind spot enlarges, with headache, vomiting, and possible sixth nerve palsy."
+ },
+ {
+  "type": "mcq",
+  "stem": "'The patient sees nothing and the doctor sees nothing' (vision loss with a normal-appearing disc) describes:",
+  "options": [
+   "Papilledema",
+   "Optic atrophy",
+   "Retrobulbar neuritis",
+   "Papillitis"
+  ],
+  "correct": 2,
+  "explanation": "Retrobulbar neuritis is optic neuritis behind the globe, so the disc looks normal initially despite marked vision loss; it is strongly associated with multiple sclerosis, with later disc pallor."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lesion at the optic chiasm classically produces:",
+  "options": [
+   "Homonymous hemianopia",
+   "Central scotoma",
+   "Monocular blindness",
+   "Bitemporal hemianopia"
+  ],
+  "correct": 3,
+  "explanation": "A central chiasmal lesion (e.g., pituitary tumour) compresses crossing nasal fibres, producing bitemporal hemianopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lesion of Meyer's loop (temporal optic radiation) produces:",
+  "options": [
+   "Inferior homonymous quadrantanopia (pie on the floor)",
+   "Monocular blindness",
+   "Bitemporal hemianopia",
+   "Superior homonymous quadrantanopia (pie in the sky)"
+  ],
+  "correct": 3,
+  "explanation": "Meyer's loop carries inferior retinal fibres (superior field); its lesion gives a superior homonymous quadrantanopia, 'pie in the sky.'"
+ },
+ {
+  "type": "mcq",
+  "stem": "An occipital cortex (area 17) lesion classically causes homonymous hemianopia WITH:",
+  "options": [
+   "Bitemporal loss",
+   "RAPD",
+   "Macular sparing",
+   "Central scotoma"
+  ],
+  "correct": 2,
+  "explanation": "Occipital lesions produce homonymous hemianopia with macular sparing, attributed to the dual (middle cerebral) blood supply to the macular cortex."
+ },
+ {
+  "type": "mcq",
+  "stem": "A complete CN III (oculomotor) palsy classically shows:",
+  "options": [
+   "Vertical diplopia with head tilt",
+   "Esotropia with horizontal diplopia",
+   "Ptosis, an eye 'down and out', and a fixed dilated pupil",
+   "Inability to close the eye"
+  ],
+  "correct": 2,
+  "explanation": "Complete third-nerve palsy gives ptosis, a 'down and out' eye (unopposed LR and SO), and a fixed dilated pupil (parasympathetic involvement)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cranial nerve palsy is the classic 'false localising sign' in raised intracranial pressure?",
+  "options": [
+   "CN VI",
+   "CN VII",
+   "CN IV",
+   "CN III"
+  ],
+  "correct": 0,
+  "explanation": "CN VI (abducens) has the longest intracranial course and is the first to fail with raised ICP, producing esotropia and horizontal diplopia as a false localising sign."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which paranasal sinus infection produces NO ocular manifestations?",
+  "options": [
+   "Maxillary sinusitis",
+   "Sphenoid sinusitis",
+   "Frontal sinusitis",
+   "Ethmoiditis"
+  ],
+  "correct": 0,
+  "explanation": "Maxillary sinusitis has no ocular manifestations. Ethmoiditis causes orbital cellulitis, frontal sinusitis causes upper-inner orbital swelling, and sphenoid sinusitis can cause optic neuritis and atrophy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Diabetic retinopathy is the most common cause of blindness in which group?",
+  "options": [
+   "Newborns",
+   "Working-age adults",
+   "Children under 5",
+   "People over 75"
+  ],
+  "correct": 1,
+  "explanation": "Diabetic retinopathy is the leading cause of blindness in working-age adults; proliferative disease brings neovascularisation, vitreous hemorrhage, and tractional detachment."
+ },
+ {
+  "type": "mcq",
+  "stem": "Age-related macular degeneration primarily causes loss of which part of vision?",
+  "options": [
+   "Peripheral vision",
+   "Central vision",
+   "Superior field only",
+   "Color vision only"
+  ],
+  "correct": 1,
+  "explanation": "ARMD damages the macula and causes central vision loss (blurred, distorted), in contrast to glaucoma which takes peripheral vision first."
+ },
+ {
+  "type": "mcq",
+  "stem": "Adhesion between the palpebral conjunctiva of the eyelid and the bulbar conjunctiva of the eyeball is:",
+  "options": [
+   "Ankyloblepharon",
+   "Symblepharon",
+   "Distichiasis",
+   "Blepharophimosis"
+  ],
+  "correct": 1,
+  "explanation": "Symblepharon is adhesion between the inner eyelid (palpebral conjunctiva) and the globe (bulbar conjunctiva), often from chemical/alkali burns or trachoma. Ankyloblepharon is adhesion of the lid margins to each other."
+ },
+ {
+  "type": "mcq",
+  "stem": "Trichiasis differs from distichiasis in that trichiasis is:",
+  "options": [
+   "Inward misdirection of normally sited lashes rubbing the cornea",
+   "White lashes",
+   "An extra row of lashes from Meibomian orifices",
+   "Absence of lashes"
+  ],
+  "correct": 0,
+  "explanation": "Trichiasis is inward misdirection of normally positioned lashes (from entropion, trachoma, scarring). Distichiasis is an extra (supernumerary) row of lashes arising from the Meibomian orifices."
+ },
+ {
+  "type": "mcq",
+  "stem": "Keratoplasty that replaces only the superficial corneal layers without entering the anterior chamber is:",
+  "options": [
+   "Lamellar (non-penetrating) keratoplasty",
+   "Penetrating keratoplasty",
+   "Keratomileusis",
+   "Trabeculectomy"
+  ],
+  "correct": 0,
+  "explanation": "Lamellar (non-penetrating) keratoplasty replaces only superficial corneal layers and does not enter the AC. Penetrating keratoplasty replaces the full corneal thickness."
+ },
+ {
+  "type": "mcq",
+  "stem": "In pigment dispersion syndrome, pigment deposited on the trabecular meshwork forms which named line?",
+  "options": [
+   "Schwalbe's line",
+   "Sampaolesi's line",
+   "Ferry line",
+   "Hudson-Stahli line"
+  ],
+  "correct": 1,
+  "explanation": "Sampaolesi's line is trabecular pigment deposition in pigment dispersion syndrome, which can raise IOP (pigmentary glaucoma). The triad also includes the Krukenberg spindle and iris transillumination defects."
+ },
+ {
+  "type": "mcq",
+  "stem": "Weill-Marchesani syndrome (spherophakia) predisposes to angle-closure glaucoma because the lens is:",
+  "options": [
+   "Small, round, and highly curved with high refractive power",
+   "Large and flat",
+   "Dislocated superiorly",
+   "Absent"
+  ],
+  "correct": 0,
+  "explanation": "In Weill-Marchesani the microspherophakic lens is small, round, and highly curved (high plus power, myopia), and can block the pupil to cause angle-closure with pupillary block."
+ },
+ {
+  "type": "mcq",
+  "stem": "Iris bombe produces angle-closure glaucoma by which mechanism?",
+  "options": [
+   "Neovascular membrane over the angle",
+   "A swollen lens",
+   "Trabecular pigment",
+   "360\u00b0 posterior synechiae blocking aqueous at the pupil, bowing the iris forward"
+  ],
+  "correct": 3,
+  "explanation": "Iris bombe is angle closure WITH pupillary block: the pupil margin is bound to the lens by posterior synechiae, aqueous collects behind the iris, and the peripheral iris bows forward onto the meshwork."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hutchinson's sign (vesicles on the tip of the nose) in herpes zoster ophthalmicus predicts:",
+  "options": [
+   "Chronic dacryocystitis",
+   "Cataract",
+   "Facial nerve palsy",
+   "Ocular involvement (nasociliary nerve)"
+  ],
+  "correct": 3,
+  "explanation": "Hutchinson's sign reflects nasociliary nerve involvement and predicts ocular involvement in herpes zoster ophthalmicus (V1 distribution)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The cicatricial stage of trachoma (stage III) is characterised by:",
+  "options": [
+   "Complete healing with no residua",
+   "Scar (fibrous) tissue as follicles disappear",
+   "Minute early follicles",
+   "Intense acute inflammation with purulent discharge"
+  ],
+  "correct": 1,
+  "explanation": "Trachoma stage III (cicatricial) shows scar tissue forming as follicles disappear; sequelae include trichiasis, entropion, symblepharon, and corneal opacity. Tetracycline is the topical drug of choice."
+ },
+ {
+  "type": "mcq",
+  "stem": "Endophthalmitis is best described as:",
+  "options": [
+   "Corneal arcus",
+   "A benign vitreous floater",
+   "A severe intraocular infection, often after surgery or trauma, needing urgent treatment",
+   "A superficial lid infection"
+  ],
+  "correct": 2,
+  "explanation": "Endophthalmitis is a severe infection of the intraocular cavities, a complication of surgery, penetrating trauma, or hematogenous spread, and is an emergency."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aphakia produces which refractive state?",
+  "options": [
+   "Severe hyperopia",
+   "Simple astigmatism",
+   "High myopia",
+   "Emmetropia"
+  ],
+  "correct": 0,
+  "explanation": "Loss of the lens (aphakia) removes about +15 to +20 D of power, leaving severe hyperopia that must be corrected with a strong plus lens, contact lens, or IOL."
+ },
+ {
+  "type": "mcq",
+  "stem": "Corticosteroid-induced glaucoma is which angle type?",
+  "options": [
+   "Closed angle with pupillary block",
+   "Neovascular",
+   "Congenital",
+   "Open angle (trabecular outflow reduced)"
+  ],
+  "correct": 3,
+  "explanation": "Chronic corticosteroids raise IOP by an open-angle mechanism (reduced trabecular outflow). Steroids also cause posterior subcapsular cataracts."
+ },
+ {
+  "type": "mcq",
+  "stem": "A CN IV (trochlear) palsy typically causes vertical diplopia that the patient compensates for by:",
+  "options": [
+   "Closing both eyes",
+   "Tilting the head toward the affected side",
+   "Turning the face down",
+   "Tilting the head to the opposite (contralateral) side"
+  ],
+  "correct": 3,
+  "explanation": "In superior oblique (CN IV) palsy the patient tilts the head to the opposite shoulder to reduce vertical diplopia (a positive Bielschowsky head-tilt test on the affected side)."
+ }
+]

@@ -231,10 +231,58 @@ export function RetinalDetachmentDiagram() {
   )
 }
 
+// ─── 4. Visual Pathway Field Defects ──────────────────────────────────────────
+
+export function VisualPathwayDiagram() {
+  // each defect drawn as a pair of field circles (OD, OS); black = lost
+  const rows = [
+    { n: '1', site: 'Optic nerve', defect: 'Monocular blindness (that eye)', od: 'full', os: 'empty' },
+    { n: '2', site: 'Optic chiasm', defect: 'Bitemporal hemianopia', od: 'temporalOD', os: 'temporalOS' },
+    { n: '3', site: 'Optic tract', defect: 'Contralateral homonymous hemianopia', od: 'rightHalf', os: 'rightHalf' },
+    { n: '4', site: 'Occipital cortex', defect: 'Homonymous hemianopia, macular sparing', od: 'rightHalfSpare', os: 'rightHalfSpare' },
+  ]
+  function eye(cx: number, cy: number, kind: string) {
+    const r = 15
+    const black = '#111827'
+    const shapes: Record<string, React.ReactNode> = {
+      full: <circle cx={cx} cy={cy} r={r} fill="#fff" stroke="#9ca3af" />,
+      empty: <circle cx={cx} cy={cy} r={r} fill={black} stroke="#9ca3af" />,
+      temporalOD: <><circle cx={cx} cy={cy} r={r} fill="#fff" stroke="#9ca3af" /><path d={`M ${cx} ${cy - r} A ${r} ${r} 0 0 0 ${cx} ${cy + r} Z`} fill={black} /></>,
+      temporalOS: <><circle cx={cx} cy={cy} r={r} fill="#fff" stroke="#9ca3af" /><path d={`M ${cx} ${cy - r} A ${r} ${r} 0 0 1 ${cx} ${cy + r} Z`} fill={black} /></>,
+      rightHalf: <><circle cx={cx} cy={cy} r={r} fill="#fff" stroke="#9ca3af" /><path d={`M ${cx} ${cy - r} A ${r} ${r} 0 0 1 ${cx} ${cy + r} Z`} fill={black} /></>,
+      rightHalfSpare: <><circle cx={cx} cy={cy} r={r} fill="#fff" stroke="#9ca3af" /><path d={`M ${cx} ${cy - r} A ${r} ${r} 0 0 1 ${cx} ${cy + r} Z`} fill={black} /><circle cx={cx} cy={cy} r="4" fill="#fff" /></>,
+    }
+    return shapes[kind]
+  }
+  return (
+    <DiagramShell caption="Where the lesion hits the visual pathway determines the field defect. Black = field lost. Chiasm compression (e.g., pituitary tumour) gives bitemporal loss; post-chiasmal lesions give homonymous defects; the occipital cortex spares the macula (dual blood supply).">
+      <svg viewBox="0 0 460 250" className="w-full">
+        <rect width="460" height="250" fill="#f9fafb" />
+        <text x="230" y="20" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#111827">Visual Pathway Field Defects</text>
+        <text x="150" y="40" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="#6b7280">OD    OS</text>
+        {rows.map((r, i) => {
+          const y = 70 + i * 46
+          return (
+            <g key={i}>
+              <circle cx="28" cy={y} r="10" fill="#e0e7ff" stroke="#6366f1" />
+              <text x="28" y={y + 3.5} textAnchor="middle" fontSize="9" fontWeight="bold" fill="#4338ca">{r.n}</text>
+              {eye(120, y, r.od)}
+              {eye(180, y, r.os)}
+              <text x="215" y={y - 3} fontSize="9.5" fontWeight="bold" fill="#111827">{r.site}</text>
+              <text x="215" y={y + 9} fontSize="8" fill="#6b7280">{r.defect}</text>
+            </g>
+          )
+        })}
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'od-glaucoma-angles': GlaucomaDiagram,
   'od-cataract-types': CataractDiagram,
   'od-retinal-detachment': RetinalDetachmentDiagram,
+  'od-visual-pathway': VisualPathwayDiagram,
 }

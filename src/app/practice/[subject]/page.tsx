@@ -9,9 +9,9 @@ import phoroQ from '@/data/phorometry.json'
 import pecQ from '@/data/primary-eye-care.json'
 import pmoQ from '@/data/practical-mechanical-optics.json'
 import lvQ from '@/data/low-vision.json'
+import odQ from '@/data/ocular-disease.json'
 import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
-import { ocularDiseaseQuiz } from '@/data/notes-quiz/ocular-disease'
 import { generalPharmacologyQuiz } from '@/data/notes-quiz/general-pharmacology'
 import { ocularPharmacologyQuiz } from '@/data/notes-quiz/ocular-pharmacology'
 import { QuizQuestion } from '@/lib/notes-quiz-types'
@@ -37,7 +37,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'primary-eye-care': pecQ,
   'general-anatomy': convertQuizQuestions(generalAnatomyQuiz.questions),
   'ocular-anatomy': convertQuizQuestions(ocularAnatomyQuiz.questions),
-  'ocular-disease': convertQuizQuestions(ocularDiseaseQuiz.questions),
+  'ocular-disease': odQ,
   'general-pharmacology': convertQuizQuestions(generalPharmacologyQuiz.questions),
   'ocular-pharmacology': convertQuizQuestions(ocularPharmacologyQuiz.questions),
   'practical-mechanical-optics': pmoQ,

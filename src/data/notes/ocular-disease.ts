@@ -1018,6 +1018,10 @@ export const ocularDiseaseNotes: NotesData = {
           title: 'Visual Field Defects by Location',
           blocks: [
             {
+              kind: 'diagram',
+              id: 'od-visual-pathway',
+            },
+            {
               kind: 'table',
               headers: ['Location of Lesion', 'Visual Field Defect'],
               rows: [
