@@ -120,12 +120,12 @@ export const SUBJECTS: Subject[] = [
   {
     slug: 'low-vision',
     name: 'Low Vision',
-    description: 'Magnification types, low power lens table, telescope formulas, relative distance and size magnification.',
+    description: 'Definitions and classification, colour vision, visual fields, contrast sensitivity, magnification, telescopes, reading adds, and low vision devices.',
     color: 'emerald',
-    questionCount: 0,
+    questionCount: 104,
     icon: '🔍',
     olePrep: true,
-    isBonus: true,
+    hasExam: true,
   },
 ]
 

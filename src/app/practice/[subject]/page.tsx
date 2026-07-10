@@ -8,6 +8,7 @@ import theoQ from '@/data/theoretical-optics.json'
 import phoroQ from '@/data/phorometry.json'
 import pecQ from '@/data/primary-eye-care.json'
 import pmoQ from '@/data/practical-mechanical-optics.json'
+import lvQ from '@/data/low-vision.json'
 import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { ocularDiseaseQuiz } from '@/data/notes-quiz/ocular-disease'
@@ -40,6 +41,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'general-pharmacology': convertQuizQuestions(generalPharmacologyQuiz.questions),
   'ocular-pharmacology': convertQuizQuestions(ocularPharmacologyQuiz.questions),
   'practical-mechanical-optics': pmoQ,
+  'low-vision': lvQ,
 }
 
 export default async function PracticePage({ params }: { params: Promise<{ subject: string }> }) {

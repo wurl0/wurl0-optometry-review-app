@@ -8,6 +8,7 @@ import phoroQ from '@/data/phorometry.json'
 import pecQ from '@/data/primary-eye-care.json'
 import oaQ from '@/data/ocular-anatomy.json'
 import pmoQ from '@/data/practical-mechanical-optics.json'
+import lvQ from '@/data/low-vision.json'
 
 const QUESTION_MAP: Record<string, unknown[]> = {
   'physiologic-optics': physioQ,
@@ -17,6 +18,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'primary-eye-care': pecQ,
   'ocular-anatomy': oaQ,
   'practical-mechanical-optics': pmoQ,
+  'low-vision': lvQ,
 }
 
 export default async function ExamPage({ params }: { params: Promise<{ subject: string }> }) {

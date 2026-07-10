@@ -1,0 +1,1250 @@
+[
+ {
+  "type": "mcq",
+  "stem": "WHO blindness is defined as best-corrected visual acuity of 20/200 or less in the better eye, or a visual field of:",
+  "options": [
+   "Less than 5\u00b0 from fixation",
+   "Less than 20\u00b0 from fixation",
+   "Less than 10\u00b0 from fixation",
+   "20\u00b0 in the widest meridian"
+  ],
+  "correct": 2,
+  "explanation": "WHO blindness uses a visual field less than 10\u00b0 from fixation (with VA 20/200 or worse). WHO low vision uses less than 20\u00b0, and legal blindness uses 20\u00b0 or less in the widest meridian."
+ },
+ {
+  "type": "mcq",
+  "stem": "WHO low vision is best-corrected visual acuity worse than 20/70 in the better eye together with a visual field:",
+  "options": [
+   "Less than 20\u00b0 from fixation",
+   "Of exactly 20\u00b0",
+   "Greater than 30\u00b0",
+   "Less than 10\u00b0 from fixation"
+  ],
+  "correct": 0,
+  "explanation": "WHO low vision is VA worse than 20/70 with a field less than 20\u00b0 from fixation. The 10\u00b0 cutoff belongs to WHO blindness."
+ },
+ {
+  "type": "mcq",
+  "stem": "Legal blindness is defined by an acuity of 20/200 or less in the better eye, or a visual field of:",
+  "options": [
+   "20\u00b0 or less in the widest meridian of the better eye",
+   "Less than 10\u00b0 from fixation",
+   "40\u00b0 or less",
+   "Less than 30\u00b0"
+  ],
+  "correct": 0,
+  "explanation": "Legal blindness uses a visual field of 20\u00b0 or less in the widest meridian of the better eye (correction including contact lenses), or VA 20/200 or less. Note it uses the widest meridian, unlike the WHO field cutoffs measured from fixation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The acuity threshold of 20/200 in the better eye is shared by which two definitions?",
+  "options": [
+   "WHO low vision and WHO blindness",
+   "ICD-11 mild and moderate",
+   "WHO low vision and legal blindness",
+   "WHO blindness and legal blindness"
+  ],
+  "correct": 3,
+  "explanation": "Both WHO blindness and legal blindness use the 20/200 acuity threshold. WHO low vision instead uses worse than 20/70."
+ },
+ {
+  "type": "mcq",
+  "stem": "A functional definition of low vision emphasises that the impairment:",
+  "options": [
+   "Is limited to a visual field defect",
+   "Is always congenital",
+   "Cannot be fully remediated by conventional spectacles, contact lenses, or medical intervention and restricts everyday life",
+   "Always progresses to blindness"
+  ],
+  "correct": 2,
+  "explanation": "The functional definition centres on impairment of visual function that conventional correction or medical treatment cannot fully remedy and that restricts the person's daily life. It is task- and function-based, not a single acuity number."
+ },
+ {
+  "type": "mcq",
+  "stem": "Under ICD-11 (2018), mild distance vision impairment spans which acuity range?",
+  "options": [
+   "Worse than 20/60 to 20/200",
+   "Worse than 20/200 to 20/400",
+   "20/25 to 20/40",
+   "20/40 (6/12) to 20/60 (6/18)"
+  ],
+  "correct": 3,
+  "explanation": "ICD-11 mild impairment is 20/40 (6/12) to 20/60 (6/18). Moderate is worse than 20/60 to 20/200; severe is worse than 20/200 to 20/400; blindness is worse than 20/400."
+ },
+ {
+  "type": "mcq",
+  "stem": "A best-corrected acuity of 20/300 falls into which ICD-11 category?",
+  "options": [
+   "Moderate",
+   "Blindness",
+   "Severe",
+   "Mild"
+  ],
+  "correct": 2,
+  "explanation": "Severe impairment is worse than 20/200 (6/60) to 20/400 (3/60); 20/300 lies in this band. Moderate stops at 20/200 and blindness begins worse than 20/400."
+ },
+ {
+  "type": "mcq",
+  "stem": "ICD-11 near vision impairment is defined as near acuity worse than:",
+  "options": [
+   "M1.0 at 40 cm",
+   "N6 or M.08 at 40 cm",
+   "N8 at 33 cm",
+   "N12 at 25 cm"
+  ],
+  "correct": 1,
+  "explanation": "ICD-11 defines near vision impairment as near VA worse than N6 or M.08 at 40 cm."
+ },
+ {
+  "type": "mcq",
+  "stem": "Habilitation, rather than rehabilitation, is the appropriate term for a patient whose visual loss is:",
+  "options": [
+   "Congenital",
+   "Due to cataract",
+   "Acquired in adulthood",
+   "Due to trauma"
+  ],
+  "correct": 0,
+  "explanation": "Habilitation applies to congenital loss (developing skills never had). Rehabilitation applies to acquired loss (restoring previously present skills)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The psychosocial and economic consequences of visual loss, producing barriers in the physical and social environment, best describe:",
+  "options": [
+   "Visual disability",
+   "Visual disorder",
+   "Visual handicap",
+   "Visual impairment"
+  ],
+  "correct": 2,
+  "explanation": "Visual handicap refers to the psychosocial and economic consequences. A visual disorder is the anatomical change; disability is the change in measurable skills; handicap is the resulting life impact."
+ },
+ {
+  "type": "mcq",
+  "stem": "A visual disorder is best defined as:",
+  "options": [
+   "A refractive error only",
+   "A change in the person's measurable skills",
+   "An anatomical change in the visual organs",
+   "The economic impact of vision loss"
+  ],
+  "correct": 2,
+  "explanation": "A visual disorder gives rise to anatomical changes in the visual organs (e.g., early glaucoma), which may be unnoticed. It can cause functional loss, then disability, then handicap."
+ },
+ {
+  "type": "mcq",
+  "stem": "Globally, the leading cause of visual impairment (not blindness specifically) is:",
+  "options": [
+   "Age-related macular degeneration",
+   "Uncorrected refractive error",
+   "Glaucoma",
+   "Cataract"
+  ],
+  "correct": 1,
+  "explanation": "Uncorrected refractive error is the leading cause of visual impairment worldwide. Cataract is the leading cause of blindness in low- and middle-income countries."
+ },
+ {
+  "type": "mcq",
+  "stem": "Among adults over 50, the single largest cause of blindness is:",
+  "options": [
+   "Corneal opacity (0.9%)",
+   "Glaucoma (5.8%)",
+   "Refractive error (19.7%)",
+   "Cataract (62.6%)"
+  ],
+  "correct": 3,
+  "explanation": "In the over-50 group cataract accounts for about 62.6% of blindness, far ahead of refractive error (19.7%) and glaucoma (5.8%)."
+ },
+ {
+  "type": "mcq",
+  "stem": "In children, the leading cause of blindness in the cited data is:",
+  "options": [
+   "Congenital eye anomalies",
+   "Vitamin A deficiency",
+   "Refractive error",
+   "Retinal degeneration"
+  ],
+  "correct": 2,
+  "explanation": "In children refractive error leads at about 33.3%, followed by congenital eye anomalies (25%), retinal degeneration (16.7%), and vitamin A deficiency (8.3%)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Of the estimated 285 million visually impaired people worldwide, approximately how many are blind?",
+  "options": [
+   "246 million",
+   "5 million",
+   "100 million",
+   "39 million"
+  ],
+  "correct": 3,
+  "explanation": "Of 285 million visually impaired people, about 39 million are blind and 246 million have low vision. Roughly 80% of blindness is considered avoidable."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common colour vision deficiency overall is:",
+  "options": [
+   "Protanomaly",
+   "Deuteranomaly",
+   "Tritanomaly",
+   "Tritanopia"
+  ],
+  "correct": 1,
+  "explanation": "Deuteranomaly (green-weak, reduced M-cone sensitivity) is the most common colour vision deficiency, an X-linked trait affecting about 5% of white males."
+ },
+ {
+  "type": "mcq",
+  "stem": "Protanomaly is best described as:",
+  "options": [
+   "Blue-weakness",
+   "Total colour blindness",
+   "Green-weakness",
+   "Red-weakness"
+  ],
+  "correct": 3,
+  "explanation": "Protanomaly is red-weakness: the L (red) cone has reduced sensitivity, so reds look weaker and orange, yellow, and yellow-green appear paler."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient who completely lacks functioning M cones has:",
+  "options": [
+   "Deuteranomaly",
+   "Protanopia",
+   "Deuteranopia",
+   "Tritanopia"
+  ],
+  "correct": 2,
+  "explanation": "Absence of green (M) cone function is deuteranopia, a dichromacy. Deuteranomaly is only reduced M-cone sensitivity, not absence."
+ },
+ {
+  "type": "mcq",
+  "stem": "The rarest form of dichromacy, confusing yellow and blue, is:",
+  "options": [
+   "Deuteranomaly",
+   "Protanopia",
+   "Tritanopia",
+   "Deuteranopia"
+  ],
+  "correct": 2,
+  "explanation": "Tritanopia (absent S/blue cones) is the rarest dichromacy, roughly 10 per million, and causes yellow-blue confusion. Protanopia is the most common dichromacy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cone type has decreased sensitivity in tritanomaly?",
+  "options": [
+   "Rod",
+   "Green (M)",
+   "Blue (S)",
+   "Red (L)"
+  ],
+  "correct": 2,
+  "explanation": "Tritanomaly is blue-weakness from reduced S (blue) cone sensitivity. It is very rare (< 0.01%)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Complete achromatopsia (rod monochromacy) is characterised by all of the following EXCEPT:",
+  "options": [
+   "Reduced visual acuity",
+   "Hemeralopia and a central scotoma",
+   "Nystagmus",
+   "Preserved normal visual acuity"
+  ],
+  "correct": 3,
+  "explanation": "Rod monochromacy has reduced VA, nystagmus, hemeralopia (day blindness), and a central scotoma. Preserved normal acuity is a feature of cone monochromacy, the milder incomplete form."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cone monochromacy (incomplete achromatopsia) differs from rod monochromacy chiefly because:",
+  "options": [
+   "Visual acuity remains near normal",
+   "It is sex-linked",
+   "It only affects women",
+   "It causes total blindness"
+  ],
+  "correct": 0,
+  "explanation": "In cone monochromacy a single cone type still functions, so visual acuity remains near normal, unlike rod monochromacy where acuity is markedly reduced."
+ },
+ {
+  "type": "mcq",
+  "stem": "The prefixes Protan, Deutan, and Tritan denote:",
+  "options": [
+   "Only achromatopsia",
+   "Only anomalous trichromacy",
+   "Both the anomalous (weak) and dichromatic (absent) forms",
+   "Only dichromacy"
+  ],
+  "correct": 2,
+  "explanation": "Protan, Deutan, and Tritan each cover both the anomalous trichromatic (weak) and the dichromatic (absent) versions of that cone defect."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which colour vision test is considered the reference standard, matching a red-green mixture to a yellow?",
+  "options": [
+   "Anomaloscope",
+   "Ishihara plates",
+   "Farnsworth Lantern (FALANT)",
+   "Farnsworth D-15"
+  ],
+  "correct": 0,
+  "explanation": "The anomaloscope is the reference standard: the subject matches a red-green mixture to a standard yellow. Ishihara is a screening plate test; D-15 is an arrangement test; FALANT is a lantern test."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Farnsworth D-15 belongs to which category of colour vision test?",
+  "options": [
+   "Lantern test",
+   "Pseudoisochromatic plate",
+   "Colour arrangement test",
+   "Anomaloscope"
+  ],
+  "correct": 2,
+  "explanation": "The Farnsworth D-15 (dichotomous) and the Lanthony test are colour arrangement tests. Ishihara and HRR are pseudoisochromatic plates; FALANT and Holmes-Wright are lantern tests."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which pair are both lantern tests for colour vision?",
+  "options": [
+   "Anomaloscope and Ishihara",
+   "Farnsworth Lantern (FALANT) and Holmes-Wright",
+   "D-15 and Lanthony",
+   "Ishihara and HRR"
+  ],
+  "correct": 1,
+  "explanation": "FALANT and the Holmes-Wright lantern are lantern tests, often used for occupational screening. Ishihara/HRR are plates; D-15/Lanthony are arrangement tests."
+ },
+ {
+  "type": "mcq",
+  "stem": "Red-green colour vision defects (protan and deutan) are:",
+  "options": [
+   "Autosomal dominant",
+   "X-linked and far more common than blue-yellow defects",
+   "Equally common in both sexes",
+   "Only acquired"
+  ],
+  "correct": 1,
+  "explanation": "Protan and deutan defects are X-linked, so they are far more common in males and much more common than the rare blue-yellow (tritan) defects."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lesion of the temporal retina produces a defect in which part of the visual field?",
+  "options": [
+   "Temporal field",
+   "Nasal field",
+   "Superior field",
+   "Central field"
+  ],
+  "correct": 1,
+  "explanation": "The temporal retina maps to the nasal field (and nasal retina to the temporal field), because the optics of the eye invert the field onto the retina."
+ },
+ {
+  "type": "mcq",
+  "stem": "Macular disease such as AMD most characteristically causes:",
+  "options": [
+   "Arcuate scotoma",
+   "Central scotoma",
+   "Bitemporal hemianopia",
+   "Peripheral constriction"
+  ],
+  "correct": 1,
+  "explanation": "Loss of foveal/macular function produces a central scotoma. Peripheral constriction points to retinitis pigmentosa and arcuate defects to glaucoma."
+ },
+ {
+  "type": "mcq",
+  "stem": "Scattered scotomas across the visual field are most typical of:",
+  "options": [
+   "Retinitis pigmentosa",
+   "Glaucoma",
+   "Diabetic or hypertensive retinopathy",
+   "Macular hole"
+  ],
+  "correct": 2,
+  "explanation": "Multiple discrete retinal lesions in diabetic or hypertensive retinopathy produce scattered scotomas. A macular hole gives a central scotoma."
+ },
+ {
+  "type": "mcq",
+  "stem": "A scotoma is defined as:",
+  "options": [
+   "Doubling of the image",
+   "An area of depressed vision surrounded by a normal field",
+   "Complete loss of the entire field",
+   "A generalised dimming of the whole field"
+  ],
+  "correct": 1,
+  "explanation": "A scotoma is an area of depressed or absent vision surrounded by a comparatively normal field. It is classified positive vs negative and absolute vs relative."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optic disc corresponds to which normal feature of the visual field?",
+  "options": [
+   "Point of fixation",
+   "Peripheral rim",
+   "Blind spot",
+   "Nasal step"
+  ],
+  "correct": 2,
+  "explanation": "The optic disc, having no photoreceptors, corresponds to the physiological blind spot. The fovea corresponds to the point of fixation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is NOT a standard visual field test named in the reviewer?",
+  "options": [
+   "Pelli-Robson chart",
+   "Tangent screen",
+   "Amsler grid",
+   "Perimeter"
+  ],
+  "correct": 0,
+  "explanation": "Amsler grid, tangent screen, perimeter, and confrontation are field tests. The Pelli-Robson chart measures contrast sensitivity, not the visual field."
+ },
+ {
+  "type": "mcq",
+  "stem": "Contrast sensitivity is best defined as the ability of the visual system to:",
+  "options": [
+   "Distinguish an object from its background",
+   "Adapt to darkness",
+   "Resolve fine high-contrast detail",
+   "Perceive colour differences"
+  ],
+  "correct": 0,
+  "explanation": "Contrast sensitivity is the ability to distinguish an object from its background. Contrast threshold is the smallest contrast needed to see a target."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Pelli-Robson score of 2.0 corresponds to:",
+  "options": [
+   "Visual impairment",
+   "Normal contrast sensitivity (100%)",
+   "Visual disability",
+   "Complete loss"
+  ],
+  "correct": 1,
+  "explanation": "A score of 2.0 equals log contrast sensitivity 2, i.e., 100% (normal). Scores below 1.5 indicate impairment and below 1.0 indicate disability."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the Pelli-Robson test, a score below which value is considered consistent with visual disability?",
+  "options": [
+   "1.5",
+   "0.5",
+   "2.0",
+   "1.0"
+  ],
+  "correct": 3,
+  "explanation": "Below 1.0 represents visual disability; below 1.5 represents visual impairment; 2.0 is normal."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Pelli-Robson chart varies contrast while holding what constant?",
+  "options": [
+   "The letter size (a single 20/60 optotype)",
+   "The viewing distance to 6 m",
+   "The illumination only",
+   "The number of colours"
+  ],
+  "correct": 0,
+  "explanation": "Pelli-Robson uses a single large letter size (20/60) and varies contrast across letter triples in 0.15 log-unit steps, testing low spatial frequency contrast sensitivity at 1 m."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which contrast sensitivity test uses sine-wave gratings at five spatial frequencies (1.5 to 18 c/deg) and is often called the gold standard?",
+  "options": [
+   "VCTS (Vistech)",
+   "Bailey-Lovie",
+   "Cambridge low-contrast gratings",
+   "Pelli-Robson"
+  ],
+  "correct": 0,
+  "explanation": "The Vision Contrast Test System (VCTS/Vistech) uses circular sine-wave gratings across five spatial frequencies and is frequently cited as the gold standard for contrast sensitivity."
+ },
+ {
+  "type": "mcq",
+  "stem": "The FACT chart (developed by Arthur Ginsburg) is performed at what distance?",
+  "options": [
+   "1 metre",
+   "3 metres",
+   "10 feet",
+   "6 metres"
+  ],
+  "correct": 2,
+  "explanation": "Functional Acuity Contrast Testing (FACT) is done at 10 feet, testing five spatial frequencies and nine contrast levels with sine-wave gratings."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Hiding Heidi test is designed to assess low-contrast vision in:",
+  "options": [
+   "Adults with cataract",
+   "Glaucoma suspects",
+   "Colour-deficient drivers",
+   "Infants and non-verbal patients using preferential looking"
+  ],
+  "correct": 3,
+  "explanation": "Hiding Heidi uses low-contrast face cards (black, 25, 10, 5, 2.5, 1.25%) with preferential looking, suited to infants and others who cannot respond verbally."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Bailey-Lovie contrast test evaluates distance acuity at which two contrast levels, useful for predicting night-driving vision?",
+  "options": [
+   "100% and 10%",
+   "90% and 45%",
+   "50% and 25%",
+   "100% and 2%"
+  ],
+  "correct": 0,
+  "explanation": "The Bailey-Lovie chart tests VA at 100% (high) and 10% (low) contrast, so it estimates acuity under both bright and dim conditions relevant to night driving."
+ },
+ {
+  "type": "mcq",
+  "stem": "For mild uncorrected refractive error, contrast sensitivity first declines at:",
+  "options": [
+   "Only the middle frequencies",
+   "All frequencies equally",
+   "Lower spatial frequencies (large gratings)",
+   "Higher spatial frequencies (fine detail)"
+  ],
+  "correct": 3,
+  "explanation": "Mild refractive error first reduces contrast sensitivity at higher spatial frequencies (fine detail); as the error grows, middle and then lower frequencies are affected."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which condition is NOT listed among the factors that reduce contrast sensitivity?",
+  "options": [
+   "Optic neuropathy",
+   "Emmetropia with clear media",
+   "Cataract",
+   "Glaucoma"
+  ],
+  "correct": 1,
+  "explanation": "Refractive error, age, cataract, contact lenses, refractive surgery, glaucoma, diabetic retinopathy, optic neuropathy, pituitary adenoma, drugs, and toxic chemicals all reduce contrast sensitivity. A healthy emmetropic eye with clear media does not."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient reports trouble seeing traffic lights at night and spots on dishes, yet has 20/20 Snellen acuity. This pattern most suggests:",
+  "options": [
+   "Colour blindness",
+   "A field defect",
+   "Uncorrected astigmatism",
+   "Reduced contrast sensitivity"
+  ],
+  "correct": 3,
+  "explanation": "These are classic contrast-sensitivity-related problems (night vision, reading, spotting low-contrast marks). High-contrast Snellen acuity can be normal while real-world low-contrast function is impaired."
+ },
+ {
+  "type": "mcq",
+  "stem": "For low vision, distance and near acuity are best recorded using:",
+  "options": [
+   "Decimal notation",
+   "Jaeger only",
+   "LogMAR without reference distance",
+   "M-notation"
+  ],
+  "correct": 3,
+  "explanation": "M-notation is recommended for recording low vision acuity, and Louise Sloan introduced the M-unit to avoid confusion with D (diopters). LogMAR requires stating the reference distance."
+ },
+ {
+  "type": "mcq",
+  "stem": "For print of unknown size, the letter size can be converted to M-units using:",
+  "options": [
+   "Letter size (cm) / 2.5",
+   "Letter size (mm) x 1.45",
+   "1 / letter size (mm)",
+   "Letter size (mm) / 1.45 mm"
+  ],
+  "correct": 3,
+  "explanation": "The M value equals the letter size in mm divided by 1.45 mm, allowing unknown reading material to be recorded in M-notation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Moving the acuity chart from 6 metres to 3 metres to extend the low-vision measurement range gains a factor of:",
+  "options": [
+   "Two",
+   "Three",
+   "Five",
+   "Ten"
+  ],
+  "correct": 0,
+  "explanation": "Halving the test distance from 6 m to 3 m doubles the effective range, gaining a factor of two while keeping the same chart."
+ },
+ {
+  "type": "mcq",
+  "stem": "Radical retinoscopy in low vision refers to:",
+  "options": [
+   "Retinoscopy through a telescope",
+   "Retinoscopy performed off the visual axis",
+   "Retinoscopy under cycloplegia",
+   "Retinoscopy at a shorter working distance, then subtracting the working-distance value from the gross finding"
+  ],
+  "correct": 3,
+  "explanation": "Radical retinoscopy shortens the working distance to brighten a dim reflex; the dioptric value of that shorter distance is then subtracted from the gross result."
+ },
+ {
+  "type": "mcq",
+  "stem": "Off-axis retinoscopy is particularly useful for patients with:",
+  "options": [
+   "High astigmatism",
+   "Central cataract, because a brighter reflex is obtained off the line of sight",
+   "Nystagmus only",
+   "Normal media"
+  ],
+  "correct": 1,
+  "explanation": "Taking the reflex off the patient's line of sight (off-axis) can yield a brighter reflex when a central cataract or central corneal scar blocks the axial reflex."
+ },
+ {
+  "type": "mcq",
+  "stem": "Why is the traditional phoropter refraction discouraged for most low vision clients?",
+  "options": [
+   "It is too fast",
+   "It cannot measure astigmatism",
+   "Poor fixation, eccentric viewing posture, and media opacities make it unreliable; a trial frame with wide-aperture lenses is preferred",
+   "It requires cycloplegia"
+  ],
+  "correct": 2,
+  "explanation": "Poor fixation, eccentric viewing, and media opacity undermine the phoropter. A trial frame with wide-aperture trial lenses and the bracketing technique (large power steps) is preferred."
+ },
+ {
+  "type": "mcq",
+  "stem": "Kestenbaum's rule estimates the near add as the reciprocal of the distance Snellen acuity. For 20/200 the add is:",
+  "options": [
+   "+20.00 D",
+   "+2.50 D",
+   "+10.00 D",
+   "+5.00 D"
+  ],
+  "correct": 2,
+  "explanation": "Kestenbaum: reciprocal of 20/200 is 200/20 = +10.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "By Kestenbaum's rule, a distance acuity of 20/400 predicts a starting add of:",
+  "options": [
+   "+20.00 D",
+   "+4.00 D",
+   "+40.00 D",
+   "+10.00 D"
+  ],
+  "correct": 0,
+  "explanation": "Reciprocal of 20/400 = 400/20 = +20.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the reciprocal-of-vision method, a patient seeing 20/200 who wants 20/50 near needs an add of (ratio x +2.50):",
+  "options": [
+   "+2.50 D",
+   "+5.00 D",
+   "+8.00 D",
+   "+10.00 D"
+  ],
+  "correct": 3,
+  "explanation": "200/50 x +2.50 = 4 x 2.50 = +10.00 D. The +2.50 reflects the 40 cm reference working distance."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using reciprocal of vision, a patient with 20/160 distance who wants 20/40 near needs:",
+  "options": [
+   "+6.25 D",
+   "+2.50 D",
+   "+10.00 D",
+   "+4.00 D"
+  ],
+  "correct": 2,
+  "explanation": "160/40 x +2.50 = 4 x 2.50 = +10.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the starting-near-acuity method, a patient reading 4M at 40 cm who needs 1M requires an add of:",
+  "options": [
+   "+10.00 D",
+   "+2.50 D",
+   "+16.00 D",
+   "+4.00 D"
+  ],
+  "correct": 0,
+  "explanation": "0.4/4 = x/1, so x = 0.1 m; D = 1/0.1 = +10.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the starting-near-acuity method, a patient reading 8M at 40 cm who needs 2M requires an add of:",
+  "options": [
+   "+2.50 D",
+   "+20.00 D",
+   "+10.00 D",
+   "+5.00 D"
+  ],
+  "correct": 2,
+  "explanation": "0.4/8 = x/2, so x = 0.1 m; D = 1/0.1 = +10.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which reading-add method needs no distance acuity and is described as the most accurate?",
+  "options": [
+   "Starting near visual acuity",
+   "Reciprocal of vision",
+   "Trial-and-error only",
+   "Kestenbaum's rule"
+  ],
+  "correct": 0,
+  "explanation": "The starting-near-acuity method uses near testing distance and near acuity directly, needing no distance VA, and is described as the most accurate of the three."
+ },
+ {
+  "type": "mcq",
+  "stem": "For spot reading (identifying single words), the goal acuity is set how much better than threshold?",
+  "options": [
+   "1 line smaller",
+   "Equal to threshold",
+   "5 lines smaller",
+   "3 lines smaller"
+  ],
+  "correct": 0,
+  "explanation": "Spot reading needs a 1-line reserve; fluent reading needs 3 lines; maximum reading needs 5 lines smaller than threshold."
+ },
+ {
+  "type": "mcq",
+  "stem": "Maximum (fast, accurate) reading requires a reserve acuity of:",
+  "options": [
+   "1 line smaller",
+   "3 lines smaller",
+   "No reserve",
+   "5 lines smaller"
+  ],
+  "correct": 3,
+  "explanation": "Maximum reading (about 320 wpm) needs a 5-line reserve so text is well above threshold."
+ },
+ {
+  "type": "mcq",
+  "stem": "A shorter working distance for near tasks implies that the required reading add is:",
+  "options": [
+   "Stronger",
+   "Unchanged",
+   "Weaker",
+   "Always +2.50 D"
+  ],
+  "correct": 0,
+  "explanation": "A shorter working distance corresponds to a shorter focal length and therefore a stronger (higher-plus) add, since D = 1/f."
+ },
+ {
+  "type": "mcq",
+  "stem": "Relative distance magnification is especially practical for which patients using unaided near vision?",
+  "options": [
+   "Older hyperopes",
+   "Aphakes",
+   "Young children with high accommodation and myopes",
+   "Pseudophakes"
+  ],
+  "correct": 2,
+  "explanation": "Bringing the object closer relies on accommodation or myopia; children with strong accommodation and myopes using unaided vision manage it, while most others need a high plus add."
+ },
+ {
+  "type": "mcq",
+  "stem": "Required magnification is calculated as:",
+  "options": [
+   "Achieved acuity x goal acuity",
+   "Goal acuity / achieved acuity",
+   "Achieved (best-corrected) acuity / goal acuity",
+   "Goal acuity minus achieved acuity"
+  ],
+  "correct": 2,
+  "explanation": "Magnification needed = achieved VA / goal VA, using matching notation. For 20/200 wanting 20/40, that is 200/40 = 5x."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient with a BCVA of 40M who must read 10M print needs how much magnification?",
+  "options": [
+   "5x",
+   "10x",
+   "2x",
+   "4x"
+  ],
+  "correct": 3,
+  "explanation": "40M/10M = 4x."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient with 20/200 acuity who needs to read 20/40 requires:",
+  "options": [
+   "8x",
+   "2x",
+   "4x",
+   "5x"
+  ],
+  "correct": 3,
+  "explanation": "200/40 = 5x."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient with 6/60 acuity needs to read a blackboard at 6/12. The required magnification is:",
+  "options": [
+   "6x",
+   "5x",
+   "10x",
+   "2x"
+  ],
+  "correct": 1,
+  "explanation": "60/12 = 5x (achieved/goal using the same notation)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The three clinical goals of magnification are to make the target:",
+  "options": [
+   "Wider, thinner, farther",
+   "Bigger, bolder, brighter",
+   "Darker, dimmer, distant",
+   "Smaller, sharper, closer"
+  ],
+  "correct": 1,
+  "explanation": "Magnification aims to make the target BIGGER, BOLDER, and BRIGHTER."
+ },
+ {
+  "type": "mcq",
+  "stem": "Relative size magnification (RSM) is given by:",
+  "options": [
+   "S2 / S1",
+   "r / d",
+   "screen image / object",
+   "Fe / Fo"
+  ],
+  "correct": 0,
+  "explanation": "RSM = S2/S1, the new object size divided by the original size, achieved by physically enlarging the object (large print)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Enlarging 3M print to 15M gives what relative size magnification?",
+  "options": [
+   "3x",
+   "5x",
+   "15x",
+   "10x"
+  ],
+  "correct": 1,
+  "explanation": "RSM = 15/3 = 5x."
+ },
+ {
+  "type": "mcq",
+  "stem": "Relative distance magnification (RDM) is given by:",
+  "options": [
+   "Fe / Fo",
+   "r / d",
+   "object / screen image",
+   "S2 / S1"
+  ],
+  "correct": 1,
+  "explanation": "RDM = r/d, the reference (original) working distance divided by the new, closer working distance."
+ },
+ {
+  "type": "mcq",
+  "stem": "A page originally read at 40 cm is moved to 10 cm. The relative distance magnification is:",
+  "options": [
+   "4x",
+   "2x",
+   "10x",
+   "8x"
+  ],
+  "correct": 0,
+  "explanation": "RDM = 40/10 = 4x. Bringing the object closer enlarges the retinal image proportionally."
+ },
+ {
+  "type": "mcq",
+  "stem": "How close must a book be held to give 8x relative distance magnification using a 40 cm reference?",
+  "options": [
+   "5 cm",
+   "20 cm",
+   "10 cm",
+   "8 cm"
+  ],
+  "correct": 0,
+  "explanation": "d = r/RDM = 40/8 = 5 cm."
+ },
+ {
+  "type": "mcq",
+  "stem": "For spectacle magnifiers, the standard reference distance and the power of a 1x magnifier are:",
+  "options": [
+   "33 cm and +3.00 D",
+   "50 cm and +2.00 D",
+   "25 cm and +4.00 D",
+   "40 cm and +2.50 D"
+  ],
+  "correct": 3,
+  "explanation": "Spectacle magnifiers use a 40 cm reference, where 1x = +2.50 D. Hand and stand magnifiers use a 25 cm reference, where 1x = +4.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hand and stand magnifiers conventionally use which reference distance, making 1x equal to:",
+  "options": [
+   "25 cm; +4.00 D",
+   "40 cm; +2.50 D",
+   "10 cm; +10.00 D",
+   "20 cm; +5.00 D"
+  ],
+  "correct": 0,
+  "explanation": "Hand and stand magnifiers use a 25 cm reference, so 1x = +4.00 D (the power focusing at 25 cm)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the 40 cm reference, what lens power provides 4x magnification?",
+  "options": [
+   "+2.50 D",
+   "+16.00 D",
+   "+10.00 D",
+   "+5.00 D"
+  ],
+  "correct": 2,
+  "explanation": "At 40 cm, 1x = +2.50 D, so 4x = 4 x 2.50 = +10.00 D (object at 10 cm)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the 25 cm reference, what lens power provides 4x magnification?",
+  "options": [
+   "+20.00 D",
+   "+12.50 D",
+   "+10.00 D",
+   "+16.00 D"
+  ],
+  "correct": 3,
+  "explanation": "At 25 cm, 1x = +4.00 D, so 4x = 4 x 4.00 = +16.00 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "As magnifier power increases, its focal length and field of view:",
+  "options": [
+   "Both increase",
+   "Both decrease",
+   "Focal length increases, field decreases",
+   "Focal length decreases, field increases"
+  ],
+  "correct": 1,
+  "explanation": "Higher power means a shorter focal length and a smaller field of view (and, for hand magnifiers, more weight and distortion)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Angular magnification is used when the object:",
+  "options": [
+   "Can be brought closer",
+   "Is already at 40 cm",
+   "Can be easily enlarged",
+   "Is too far or too large to move or resize, so a lens system is interposed"
+  ],
+  "correct": 3,
+  "explanation": "Angular (optical) magnification interposes a lens system (magnifier or telescope) without moving or resizing the object, for targets too far or too large to change."
+ },
+ {
+  "type": "mcq",
+  "stem": "Projection magnification is expressed as size of screen image / size of object, and its most familiar clinical aid is the:",
+  "options": [
+   "Galilean telescope",
+   "Closed-circuit television (CCTV)",
+   "Typoscope",
+   "Hand magnifier"
+  ],
+  "correct": 1,
+  "explanation": "Projection magnification throws an enlarged image onto a screen; the CCTV is the familiar low-vision example. PM = screen-image size / object size."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Galilean telescope uses which lens combination?",
+  "options": [
+   "Concave objective, convex eyepiece",
+   "Convex objective, convex eyepiece",
+   "Concave objective, concave eyepiece",
+   "Convex objective, concave eyepiece"
+  ],
+  "correct": 3,
+  "explanation": "The Galilean (terrestrial) telescope pairs a convex (+) objective with a concave (-) eyepiece, forming an erect virtual image with no prism needed."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Keplerian telescope forms which type of image, and how is it corrected?",
+  "options": [
+   "Inverted image; an internal prism re-inverts it",
+   "Erect image; no correction needed",
+   "Virtual erect image; a mirror corrects it",
+   "Real erect image; a minus lens corrects it"
+  ],
+  "correct": 0,
+  "explanation": "The Keplerian (astronomical) telescope uses two convex lenses and forms an inverted image, so an internal prism is added to re-invert the view."
+ },
+ {
+  "type": "mcq",
+  "stem": "Telescope magnification is calculated as:",
+  "options": [
+   "Fo / Fe",
+   "Fe / Fo",
+   "Fo x Fe",
+   "Fo + Fe"
+  ],
+  "correct": 1,
+  "explanation": "M = Fe/Fo, the dioptric power of the eyepiece divided by that of the objective."
+ },
+ {
+  "type": "mcq",
+  "stem": "A telescope has an objective of +8.00 D and an eyepiece of 32.00 D. Its magnification is:",
+  "options": [
+   "4x",
+   "0.25x",
+   "6x",
+   "2x"
+  ],
+  "correct": 0,
+  "explanation": "M = Fe/Fo = 32/8 = 4x."
+ },
+ {
+  "type": "mcq",
+  "stem": "The length of a telescope equals:",
+  "options": [
+   "The sum of the focal lengths (in cm) of objective and eyepiece",
+   "The difference of the focal lengths",
+   "The product of the powers",
+   "The eyepiece focal length only"
+  ],
+  "correct": 0,
+  "explanation": "Length = f(objective) + f(eyepiece) in cm, with f = 100/D. The sign of the eyepiece focal length determines whether the design is short (Galilean) or long (Keplerian)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Galilean telescope has a +10.00 D objective and a -30.00 D eyepiece. Its length is:",
+  "options": [
+   "10.00 cm",
+   "6.67 cm",
+   "13.33 cm",
+   "3.33 cm"
+  ],
+  "correct": 1,
+  "explanation": "f(obj) = 100/10 = 10 cm; f(eye) = 100/-30 = -3.33 cm; length = 10 + (-3.33) = 6.67 cm. The negative eyepiece shortens the tube."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Keplerian telescope has a +10.00 D objective and a +30.00 D eyepiece. Its length is:",
+  "options": [
+   "3.33 cm",
+   "10.00 cm",
+   "6.67 cm",
+   "13.33 cm"
+  ],
+  "correct": 3,
+  "explanation": "f(obj) = 10 cm; f(eye) = 100/30 = 3.33 cm; length = 10 + 3.33 = 13.33 cm. Same 3x magnification as the Galilean but physically longer."
+ },
+ {
+  "type": "mcq",
+  "stem": "If a telescope's lens powers are unknown, magnification can be found from:",
+  "options": [
+   "Objective diameter x exit pupil",
+   "Objective diameter / exit pupil diameter",
+   "Exit pupil / objective diameter",
+   "Field of view / magnification"
+  ],
+  "correct": 1,
+  "explanation": "M = diameter of the objective lens / diameter of the exit pupil. A 20 mm objective with a 2 mm exit pupil gives 10x."
+ },
+ {
+  "type": "mcq",
+  "stem": "A telescope with a 24 mm objective produces a 3 mm exit pupil. Its magnification is:",
+  "options": [
+   "72x",
+   "8x",
+   "3x",
+   "6x"
+  ],
+  "correct": 1,
+  "explanation": "M = 24/3 = 8x."
+ },
+ {
+  "type": "mcq",
+  "stem": "In the telescope notation 4 x 12, 12.5\u00b0, the 12 refers to:",
+  "options": [
+   "The field of view",
+   "The objective lens diameter in millimetres",
+   "The eyepiece power",
+   "The magnification"
+  ],
+  "correct": 1,
+  "explanation": "In 4 x 12, 12.5\u00b0: 4 is magnification, 12 is the objective diameter (mm), and 12.5\u00b0 is the field of view."
+ },
+ {
+  "type": "mcq",
+  "stem": "Compared with the Keplerian, the Galilean telescope generally offers:",
+  "options": [
+   "Higher magnification and wider field",
+   "Up to 20x magnification",
+   "Inverted images",
+   "A brighter image but a smaller field of view, up to about 4x"
+  ],
+  "correct": 3,
+  "explanation": "The Galilean is available up to about 4x, with a brighter image but a smaller field. The Keplerian reaches up to ~20x with a wider field but less light transmission."
+ },
+ {
+  "type": "mcq",
+  "stem": "As the magnification power of a telescope increases, its field of view:",
+  "options": [
+   "Decreases",
+   "Doubles",
+   "Increases",
+   "Stays the same"
+  ],
+  "correct": 0,
+  "explanation": "Magnification and field of view trade off inversely: higher magnification narrows the field of view."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which near device keeps a fixed lens-to-object distance and suits patients with tremor or Parkinson disease?",
+  "options": [
+   "Stand magnifier",
+   "Spectacle magnifier",
+   "Hand-held telescope",
+   "Hand magnifier"
+  ],
+  "correct": 0,
+  "explanation": "A stand magnifier holds the lens at a fixed distance from the page, so no steady grip is needed, ideal for tremor, Parkinson disease, or cerebral palsy."
+ },
+ {
+  "type": "mcq",
+  "stem": "A key advantage of the spectacle (microscopic) magnifier is:",
+  "options": [
+   "Built-in inversion",
+   "A long working distance",
+   "Unlimited binocular high power",
+   "Hands-free use with a wide field, good for prolonged reading"
+  ],
+  "correct": 3,
+  "explanation": "Spectacle magnifiers are hands-free, portable, give a wide field, and suit prolonged reading; the trade-off is a fixed, very close working distance, and binocularity fails at high power."
+ },
+ {
+  "type": "mcq",
+  "stem": "For low-power binocular spectacle magnifiers, what is incorporated to allow comfortable near viewing?",
+  "options": [
+   "Base-up prism",
+   "No prism",
+   "Base-out prism",
+   "Base-in prism"
+  ],
+  "correct": 3,
+  "explanation": "Base-in prism is incorporated so the two eyes can converge comfortably on the near target through low-power binocular spectacle magnifiers."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hand-held telescopes are most appropriate for:",
+  "options": [
+   "Mobility while walking",
+   "Prolonged hands-free reading",
+   "Sustained near work",
+   "Short-term viewing or spotting activities"
+  ],
+  "correct": 3,
+  "explanation": "Hand-held telescopes suit brief spotting tasks; for extended or hands-free viewing a spectacle-mounted system is indicated."
+ },
+ {
+  "type": "mcq",
+  "stem": "A telemicroscope's main advantage over a spectacle magnifier is:",
+  "options": [
+   "Wider field of view",
+   "Erecting prism",
+   "A greater working distance while remaining hands-free",
+   "Lower cost"
+  ],
+  "correct": 2,
+  "explanation": "The telemicroscope gives a greater working distance than a spectacle magnifier and is hands-free, helping posture; its drawback is a narrow field of view."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which device provides high magnification with contrast reversal and enhancement, best for long sustained reading?",
+  "options": [
+   "Reverse telescope",
+   "Stand magnifier",
+   "Typoscope",
+   "CCTV"
+  ],
+  "correct": 3,
+  "explanation": "A CCTV offers high magnification, zoom, and contrast reversal/enhancement with comfortable posture and possible binocularity, best for prolonged reading despite cost and bulk."
+ },
+ {
+  "type": "mcq",
+  "stem": "Field expanders (prisms, mirrors, reverse telescopes, minus lenses) are used for patients with:",
+  "options": [
+   "Refractive error",
+   "Constricted fields, hemianopsias, and scotomas",
+   "Cataract",
+   "Presbyopia"
+  ],
+  "correct": 1,
+  "explanation": "Field expanders help relocate or compress a wider field into the seeing area for patients with contracted fields, hemianopsias, and scotomas; they do not magnify."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which lighting type is directional, dimmable, and common, but runs hot and is costlier to replace?",
+  "options": [
+   "Natural light",
+   "Fluorescent",
+   "Halogen",
+   "Incandescent bulb"
+  ],
+  "correct": 3,
+  "explanation": "Incandescent bulbs are common, directional, and dimmable with a yellowish light, but they run hot and need frequent replacement. Fluorescent scatters light for general illumination."
+ },
+ {
+  "type": "mcq",
+  "stem": "For creating contrast enhancement, the highest contrast combination is:",
+  "options": [
+   "Grey on light blue",
+   "Blue on green",
+   "Black on white",
+   "Yellow on white"
+  ],
+  "correct": 2,
+  "explanation": "Black on white gives the highest contrast. Advice is to choose colours differing in saturation and to avoid pairing white or grey with other light colours."
+ },
+ {
+  "type": "mcq",
+  "stem": "A typoscope is best categorised as a:",
+  "options": [
+   "Glare-reduction / reading aid (non-optical)",
+   "Telescope",
+   "Field expander",
+   "Magnifier"
+  ],
+  "correct": 0,
+  "explanation": "A typoscope is a non-optical aid (a slit card) used to reduce glare and guide reading. It falls under glare-reduction and contrast/reading aids."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sight substitution for low vision includes:",
+  "options": [
+   "Bioptic telescopes",
+   "Stand magnifiers",
+   "Yellow filters",
+   "Braille, tactile devices, and talking books"
+  ],
+  "correct": 3,
+  "explanation": "Sight substitution replaces vision with other senses: Braille and other tactile devices, and talking books, newspapers, and magazines."
+ },
+ {
+  "type": "mcq",
+  "stem": "Two devices can be combined to multiply magnification. A 3x spectacle magnifier used with an 8x hand/stand magnifier gives:",
+  "options": [
+   "1.7x",
+   "5x",
+   "24x",
+   "11x"
+  ],
+  "correct": 2,
+  "explanation": "Combined magnification multiplies: 3x x 8x = 24x."
+ },
+ {
+  "type": "mcq",
+  "stem": "Electronic head-mounted magnification systems are useful for distance and near but are specifically NOT recommended for:",
+  "options": [
+   "Watching television",
+   "Contrast enhancement",
+   "Mobility needs",
+   "Reading"
+  ],
+  "correct": 2,
+  "explanation": "Head-mounted electronic systems help with distance and near tasks but are not currently recommended for mobility needs."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which distance-aid feature makes a stand magnifier disadvantageous?",
+  "options": [
+   "It requires steady hands",
+   "It cannot be illuminated",
+   "Fixed focus",
+   "It can block the reading light and has a narrow field, and is bulky"
+  ],
+  "correct": 3,
+  "explanation": "Stand magnifiers have a narrow field, can block the reading light, and are bulky. Their fixed lens-to-object distance is actually an advantage for unsteady hands."
+ }
+]
