@@ -1,0 +1,1226 @@
+[
+ {
+  "type": "mcq",
+  "stem": "The two central diseases of pediatric optometry, whose outcome depends on early detection during the critical period, are:",
+  "options": [
+   "Cataract and glaucoma",
+   "Myopia and hyperopia",
+   "Conjunctivitis and blepharitis",
+   "Amblyopia and strabismus"
+  ],
+  "correct": 3,
+  "explanation": "Amblyopia and strabismus are the core pediatric concerns; early detection matters because the visual cortex has a critical period of plasticity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Peak sensitivity of the critical period for visual plasticity is:",
+  "options": [
+   "Birth to age 3",
+   "Age 3 to 7",
+   "Age 12 to 18",
+   "Age 7 to 12"
+  ],
+  "correct": 0,
+  "explanation": "Peak plasticity is birth to age 3; the functional window extends to about age 7-8, with diminishing response afterward."
+ },
+ {
+  "type": "mcq",
+  "stem": "Optometric vision therapy differs from orthoptics in that vision therapy:",
+  "options": [
+   "Rewires the visual pathway through repetitive stimulation",
+   "Uses only surgery",
+   "Is identical to orthoptics",
+   "Only strengthens the eye muscles"
+  ],
+  "correct": 0,
+  "explanation": "Vision therapy is drug-free treatment that rewires the visual pathway (tracking, focusing, teaming). Orthoptics focuses on strengthening eye muscles."
+ },
+ {
+  "type": "mcq",
+  "stem": "Visual acuity at birth is approximately:",
+  "options": [
+   "20/50",
+   "20/20",
+   "20/800",
+   "20/200"
+  ],
+  "correct": 2,
+  "explanation": "Acuity at birth is about 6/240 (20/800): blurry, shadowy vision with no coordinated eye movements."
+ },
+ {
+  "type": "mcq",
+  "stem": "Adult visual acuity (20/20) is typically reached at about:",
+  "options": [
+   "1 year",
+   "6 months",
+   "5 years",
+   "3 years"
+  ],
+  "correct": 3,
+  "explanation": "Acuity reaches adult 20/20 (6/6) at about age 3, when letter-matching tests such as Sheridan Gardiner become usable."
+ },
+ {
+  "type": "mcq",
+  "stem": "Emmetropization describes the tendency of the growing eye to:",
+  "options": [
+   "Develop astigmatism",
+   "Become amblyopic",
+   "Become progressively more hyperopic",
+   "Reduce refractive error toward emmetropia as the eye grows"
+  ],
+  "correct": 3,
+  "explanation": "Neonates are typically hyperopic (+2.00 to +3.00 D); the eye grows to match its optics, reducing error toward emmetropia, with most hyperopia gone by age 4."
+ },
+ {
+  "type": "mcq",
+  "stem": "Retinopathy of prematurity (historically retrolental fibroplasia) is caused by:",
+  "options": [
+   "Congenital cataract",
+   "Maternal rubella only",
+   "Vitamin A deficiency",
+   "Prematurity combined with supplemental oxygen"
+  ],
+  "correct": 3,
+  "explanation": "ROP/RLF arises from prematurity plus supplemental oxygen, producing abnormal retinal vessels that can leak, scar, and detach the retina."
+ },
+ {
+  "type": "mcq",
+  "stem": "The pupillary light reaction first develops at about:",
+  "options": [
+   "6 months postnatal",
+   "2 months postnatal",
+   "20 weeks gestation",
+   "30 weeks gestation"
+  ],
+  "correct": 3,
+  "explanation": "The pupillary light reaction develops at about 30 weeks gestation. Foveal maturation occurs around 4 months and optic nerve myelination from 7 months to 2 years."
+ },
+ {
+  "type": "mcq",
+  "stem": "Convergence and depth perception are normally present by about:",
+  "options": [
+   "1 month",
+   "6 months",
+   "3 years",
+   "1 year"
+  ],
+  "correct": 1,
+  "explanation": "By 6 months the infant reaches accurately for toys and has convergence and depth perception; acuity is about 20/200 at that age."
+ },
+ {
+  "type": "mcq",
+  "stem": "A primitive reflex that PERSISTS beyond its expected integration age signals:",
+  "options": [
+   "A refractive error",
+   "Incomplete CNS maturation (linked to learning/attention/visual problems)",
+   "Normal maturation",
+   "Amblyopia"
+  ],
+  "correct": 1,
+  "explanation": "Persistence of a primitive reflex indicates incomplete CNS maturation and can contribute to ADHD, learning disability, and visual problems. Absence when it should be present signals a neurological problem."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Moro (startle) reflex normally integrates by about:",
+  "options": [
+   "5-6 months",
+   "2 years",
+   "3 months",
+   "1 year"
+  ],
+  "correct": 0,
+  "explanation": "The Moro reflex integrates by 5-6 months. It is triggered by a sudden sound or movement and tests hearing; persistence is linked to ADHD and sensory processing difficulties."
+ },
+ {
+  "type": "mcq",
+  "stem": "The grasp (palmar) reflex is notable because it is:",
+  "options": [
+   "Absent in premature babies",
+   "Never present at birth",
+   "Stronger in premature babies; its absence signals a neurological problem",
+   "Pathological in infants"
+  ],
+  "correct": 2,
+  "explanation": "The palmar grasp reflex is stronger in premature babies and integrates by about 5-6 months; its absence indicates a neurological problem."
+ },
+ {
+  "type": "mcq",
+  "stem": "The asymmetric tonic neck reflex is also known as the:",
+  "options": [
+   "Stepping reflex",
+   "Startle reflex",
+   "Rooting reflex",
+   "Fencing reflex"
+  ],
+  "correct": 3,
+  "explanation": "The ATNR is the 'fencing reflex': turning the head extends the face-side limbs. Persistence disrupts reading/tracking and can mimic convergence insufficiency."
+ },
+ {
+  "type": "mcq",
+  "stem": "An absent Landau reflex suggests:",
+  "options": [
+   "Amblyopia",
+   "A refractive error",
+   "A motor development issue such as cerebral palsy",
+   "Normal development"
+  ],
+  "correct": 2,
+  "explanation": "Absence of the Landau reflex indicates a motor development problem such as cerebral palsy or generalised intellectual impairment. It normally integrates by 1-3 years."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which reflex, when persistent, most classically disrupts near vision and eye-hand coordination?",
+  "options": [
+   "Babinski",
+   "Moro",
+   "Galant",
+   "STNR (symmetric tonic neck reflex)"
+  ],
+  "correct": 3,
+  "explanation": "Persistence of the STNR causes near-vision problems, poor eye-hand coordination, and difficulty copying tasks. It normally integrates by 9-11 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "The best time to perform visual acuity and ocular motility testing on an infant is when the infant is:",
+  "options": [
+   "Crying",
+   "Asleep",
+   "Drowsy after feeding",
+   "Awake and attentive"
+  ],
+  "correct": 3,
+  "explanation": "Acuity and motility are assessed when the infant is alert and attentive. Direct ophthalmoscopy is easier when the infant is drowsy, ideally while being fed."
+ },
+ {
+  "type": "mcq",
+  "stem": "Why should an infant NOT be fed immediately before the eye examination?",
+  "options": [
+   "It dilates the pupils",
+   "Infants become drowsy after feeding, reducing cooperation for acuity/motility",
+   "It raises IOP",
+   "It causes vomiting"
+  ],
+  "correct": 1,
+  "explanation": "Infants become drowsy after feeding, which impairs cooperation for the alert-state tests of acuity and motility (though drowsiness helps ophthalmoscopy)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A white pupillary reflex (leukocoria) in an infant is a red flag for:",
+  "options": [
+   "Blocked tear duct",
+   "Retinoblastoma",
+   "Conjunctivitis",
+   "Refractive error"
+  ],
+  "correct": 1,
+  "explanation": "Leukocoria (a white pupil) can indicate retinoblastoma and requires urgent referral; other causes include congenital cataract."
+ },
+ {
+  "type": "mcq",
+  "stem": "Per AOA guidance, a low-risk child should first be examined at:",
+  "options": [
+   "6 months of age",
+   "1st grade",
+   "Birth",
+   "3 years of age"
+  ],
+  "correct": 0,
+  "explanation": "The AOA recommends a first examination at 6 months for both at-risk and low-risk infants; then at 3 years, and before first grade for low-risk school-age children."
+ },
+ {
+  "type": "mcq",
+  "stem": "The examiner in a pediatric exam is advised NOT to:",
+  "options": [
+   "Use cartoons for decoration",
+   "Use a bright room",
+   "Wear a white coat",
+   "Keep the room child-friendly"
+  ],
+  "correct": 2,
+  "explanation": "The examiner should avoid a white coat, which can frighten the child; the room should be bright, pleasant, and child-friendly but not over-decorated."
+ },
+ {
+  "type": "mcq",
+  "stem": "In Weymouth and Riggs' classification, resolution acuity is tested by:",
+  "options": [
+   "Letter charts",
+   "Vernier displacement tasks",
+   "Catford drum",
+   "Preferential looking gratings / Lea gratings"
+  ],
+  "correct": 3,
+  "explanation": "Resolution acuity is the minimum separable, tested with gratings (preferential looking cards, Lea gratings). Detection uses the Catford drum/Stycar balls; recognition uses letter/picture charts."
+ },
+ {
+  "type": "mcq",
+  "stem": "The optokinetic nystagmus (OKN) drum is most useful for estimating vision in which age group?",
+  "options": [
+   "2-3 years",
+   "0-3 months",
+   "5 years and up",
+   "3-6 years"
+  ],
+  "correct": 1,
+  "explanation": "The OKN drum elicits involuntary nystagmus to moving stripes in infants 0-3 months; a present response confirms the infant can see."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Sheridan Gardiner (HOTV) test asks the child to:",
+  "options": [
+   "Follow a moving light",
+   "Match H, O, T, or V to a keycard",
+   "Name colors",
+   "Report the gap in a circle"
+  ],
+  "correct": 1,
+  "explanation": "The Sheridan Gardiner HOTV test is a matching task (H, O, T, V) using a keycard, suitable for ages 2-5, tested at 6 meters."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Lea symbol chart specifically incorporates which optical phenomenon important in amblyopia testing?",
+  "options": [
+   "Polarization",
+   "The crowding phenomenon",
+   "Stereopsis",
+   "Chromatic aberration"
+  ],
+  "correct": 1,
+  "explanation": "The Lea symbol chart uses the crowding phenomenon, in which closely spaced optotypes are harder to resolve, revealing amblyopia that single optotypes might miss."
+ },
+ {
+  "type": "mcq",
+  "stem": "Allen figures are typically presented at which test distance?",
+  "options": [
+   "40 cm",
+   "6 meters",
+   "3 meters",
+   "1 meter"
+  ],
+  "correct": 2,
+  "explanation": "Allen figures (familiar object pictures) are named or pointed at, tested at 3 meters, for children about 2-3 years old."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which test requires the child to already know the alphabet, limiting it to about age 5 and up?",
+  "options": [
+   "Tumbling E",
+   "Lea symbols",
+   "Snellen chart",
+   "Teller Acuity Cards"
+  ],
+  "correct": 2,
+  "explanation": "The Snellen chart requires letter knowledge, so it is used from about age 5. Younger children use matching or orientation tests (Lea, HOTV, Tumbling E)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The average refractive error of a healthy 3-month-old infant is about:",
+  "options": [
+   "-2.00 D",
+   "+3.00 D",
+   "+1.00 D",
+   "Plano"
+  ],
+  "correct": 1,
+  "explanation": "Infant refraction is predominantly hyperopic; the average at 3 months is about +3.00 D, decreasing toward +0.50 D by ages 4-6 (emmetropization)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dynamic retinoscopy differs from static retinoscopy because it:",
+  "options": [
+   "Requires a dark room",
+   "Measures only astigmatism",
+   "Evaluates the accommodative system while the child actively accommodates on a near target",
+   "Uses cycloplegia"
+  ],
+  "correct": 2,
+  "explanation": "Dynamic retinoscopy has the child accommodate on a near target attached to the retinoscope, assessing the accommodative response rather than measuring refractive error."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a persistent astigmatism in a child over 12-18 months, spectacles are generally indicated above:",
+  "options": [
+   "3.50 D",
+   "1.50 D",
+   "0.50 D",
+   "5.00 D"
+  ],
+  "correct": 1,
+  "explanation": "Persistent astigmatism greater than 1.50 D is a prescribing threshold. Hyperopia over +3.50 D and anisometropia over 1.00 D are the other key thresholds; any amount of myopia is corrected."
+ },
+ {
+  "type": "mcq",
+  "stem": "When first prescribing for a hyperopic child, the recommended approach is to:",
+  "options": [
+   "Under-correct with minus lenses",
+   "Give the full plus at once",
+   "Prescribe bifocals",
+   "Give partial correction of the hyperopia"
+  ],
+  "correct": 3,
+  "explanation": "First prescriptions for hyperopia use PARTIAL correction (to allow emmetropization and comfort), while anisometropia is corrected FULLY in both eyes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anisometropia in a child should be:",
+  "options": [
+   "Left uncorrected",
+   "Corrected only in the better eye",
+   "Corrected fully in both eyes",
+   "Partially corrected only"
+  ],
+  "correct": 2,
+  "explanation": "Anisometropia should be corrected fully in both eyes to give each eye a clear, equal image and prevent anisometropic amblyopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the Hirschberg test, a corneal reflex at the pupillary MARGIN (edge) corresponds to about:",
+  "options": [
+   "30 prism diopters",
+   "7 prism diopters",
+   "15 prism diopters",
+   "45 prism diopters"
+  ],
+  "correct": 2,
+  "explanation": "A reflex at the pupil edge (~2 mm) is about 15 prism diopters. 1 mm ~7 pd, mid pupil-to-limbus ~30 pd, and the limbus ~45 pd."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Krimsky test is used specifically to:",
+  "options": [
+   "Assess stereopsis",
+   "Measure IOP",
+   "Confirm color vision",
+   "Measure the angle of deviation with prisms when cover testing is not possible"
+  ],
+  "correct": 3,
+  "explanation": "The Krimsky test neutralises the corneal reflex with prism over the deviating eye to quantify a strabismic deviation when the child cannot cooperate with a cover test."
+ },
+ {
+  "type": "mcq",
+  "stem": "The normal MEM retinoscopy value (accommodative lag) is:",
+  "options": [
+   "+1.50 to +2.00 D",
+   "-0.50 D",
+   "Plano",
+   "+0.50 to +0.75 D"
+  ],
+  "correct": 3,
+  "explanation": "The normal accommodative lag on MEM retinoscopy is +0.50 to +0.75 D. A high lag suggests esophoria at near or accommodative insufficiency."
+ },
+ {
+  "type": "mcq",
+  "stem": "A high accommodative lag (for example +2.00 D) on MEM retinoscopy is associated with:",
+  "options": [
+   "Exophoria at near",
+   "Spasm of accommodation",
+   "Esophoria at near / accommodative insufficiency",
+   "Emmetropia"
+  ],
+  "correct": 2,
+  "explanation": "A high lag suggests esophoria at near, accommodative insufficiency/infacility, an over-minused patient, or an uncorrected hyperope. A low lag or lead suggests exophoria or accommodative spasm."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Lang stereotest is advantageous in young children because it:",
+  "options": [
+   "Needs no special glasses",
+   "Uses cycloplegia",
+   "Measures refractive error",
+   "Requires red-green glasses"
+  ],
+  "correct": 0,
+  "explanation": "The Lang stereotest uses a random-dot stereogram on a card that needs no special glasses, so it conveniently confirms stereopsis and fusion in young children."
+ },
+ {
+  "type": "mcq",
+  "stem": "Compared with red/green filters, Polaroid filters in vision therapy provide:",
+  "options": [
+   "A shadow-free but less vivid image",
+   "A stronger stimulus to fusion, more natural viewing, and no anisometropia risk",
+   "No depth perception",
+   "Weaker fusion stimulus and risk of anisometropia"
+  ],
+  "correct": 1,
+  "explanation": "Polaroid (vectographic) targets give more natural viewing, a stronger fusion stimulus, more vivid depth, and no anisometropia risk, though head tilt influences the result. Red/green filters are less natural and may induce anisometropia."
+ },
+ {
+  "type": "mcq",
+  "stem": "In the SILO phenomenon used in vision therapy, an object appears SMALLER as it:",
+  "options": [
+   "Is blurred",
+   "Moves away (base-out demand)",
+   "Comes closer (base-in demand)",
+   "Is occluded"
+  ],
+  "correct": 2,
+  "explanation": "SILO ('Small In, Large Out'): with a base-in (convergence-relaxing) demand the target appears smaller and closer; with a base-out demand it appears larger and farther."
+ },
+ {
+  "type": "mcq",
+  "stem": "The three broad components of the visual system are visual integrity, visual efficiency, and:",
+  "options": [
+   "Visual acuity",
+   "Visual information processing",
+   "Color vision",
+   "Visual field"
+  ],
+  "correct": 1,
+  "explanation": "The visual system comprises visual integrity (eye health/refraction), visual efficiency (oculomotor, accommodation, vergence, fusion), and visual information processing (perceptual and visual-motor skills)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A child who loses their place on the page and is distracted by a busy background most likely has a deficit in:",
+  "options": [
+   "Figure-ground",
+   "Visual closure",
+   "Visual sequential memory",
+   "Form constancy"
+  ],
+  "correct": 0,
+  "explanation": "Figure-ground is selecting an object from a busy background; a deficit causes losing place, skipping words, and distraction by surroundings."
+ },
+ {
+  "type": "mcq",
+  "stem": "Difficulty spelling because letters cannot be recalled in the correct order reflects a deficit in:",
+  "options": [
+   "Visual discrimination",
+   "Visual closure",
+   "Figure-ground",
+   "Visual sequential memory"
+  ],
+  "correct": 3,
+  "explanation": "Visual sequential memory is remembering a series of forms in order; a deficit impairs spelling and sequencing letters within words."
+ },
+ {
+  "type": "mcq",
+  "stem": "Skeffington's circle that answers the question 'Where is it?' is:",
+  "options": [
+   "Identification",
+   "Centering",
+   "Speech-Language",
+   "Antigravity"
+  ],
+  "correct": 1,
+  "explanation": "In Skeffington's four circles, Centering answers 'Where is it?' Antigravity is 'Where am I?', Identification is 'What is it?', and Speech-Language is 'What about it?'"
+ },
+ {
+  "type": "mcq",
+  "stem": "Directionality is important for reading because it allows the child to:",
+  "options": [
+   "Fuse the two images",
+   "Project left/right/up/down into external space so letters are oriented correctly",
+   "See fine detail",
+   "Accommodate at near"
+  ],
+  "correct": 1,
+  "explanation": "Directionality projects directional concepts into external space, which is essential for correct letter orientation; poor directionality produces letter reversals (b/d, p/q)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Amblyopia is best defined as decreased best-corrected acuity due to abnormal visual experience during the critical period:",
+  "options": [
+   "Only in adults",
+   "With an obvious structural lesion",
+   "Without structural pathology that accounts for the loss",
+   "Only from cataract"
+  ],
+  "correct": 2,
+  "explanation": "Amblyopia is reduced best-corrected acuity from abnormal early visual experience, with no structural pathology to explain the loss; the cortex never received adequate stimulation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The MOST COMMON type of amblyopia seen in clinical practice is:",
+  "options": [
+   "Strabismic",
+   "Anisometropic",
+   "Meridional",
+   "Deprivation"
+  ],
+  "correct": 0,
+  "explanation": "Strabismic amblyopia (from constant unilateral strabismus with cortical suppression of the deviating eye) is the most common in clinical practice."
+ },
+ {
+  "type": "mcq",
+  "stem": "Meridional amblyopia results from:",
+  "options": [
+   "Uncorrected astigmatism blurring one meridian",
+   "A large anisometropia in sphere",
+   "A media opacity",
+   "Constant strabismus"
+  ],
+  "correct": 0,
+  "explanation": "Meridional amblyopia comes from uncorrected astigmatism, in which one meridian is consistently blurred during development."
+ },
+ {
+  "type": "mcq",
+  "stem": "Eccentric fixation, most often seen in strabismic amblyopia, is managed with:",
+  "options": [
+   "No treatment",
+   "Direct occlusion",
+   "Inverse occlusion",
+   "Atropine to the amblyopic eye"
+  ],
+  "correct": 2,
+  "explanation": "Eccentric fixation (using a parafoveal locus instead of the fovea) is managed with inverse occlusion to encourage foveal fixation. Direct occlusion suits foveal and unsteady eccentric fixators."
+ },
+ {
+  "type": "mcq",
+  "stem": "How long should full spectacle correction be worn before adding occlusion in amblyopia therapy?",
+  "options": [
+   "1 year",
+   "4-6 weeks",
+   "1-2 weeks",
+   "12-16 weeks"
+  ],
+  "correct": 3,
+  "explanation": "Full spectacle correction is worn for 12-16 weeks before adding patching, because some (especially anisometropic) amblyopes improve with glasses alone. Reassess acuity every 4 weeks."
+ },
+ {
+  "type": "mcq",
+  "stem": "Atropine penalization for amblyopia works by:",
+  "options": [
+   "Paralyzing the amblyopic eye",
+   "Blurring near vision in the FELLOW (good) eye to force use of the amblyopic eye",
+   "Dilating the amblyopic eye",
+   "Constricting the pupil"
+  ],
+  "correct": 1,
+  "explanation": "1% atropine placed in the fellow (good) eye blurs its near vision, forcing the child to use the amblyopic eye. It is useful when patching compliance is poor."
+ },
+ {
+  "type": "mcq",
+  "stem": "Deep amblyopia is defined as best-corrected acuity of:",
+  "options": [
+   "20/80 to 20/200",
+   "Better than 20/25",
+   "Worse than 20/200",
+   "20/30 to 20/60"
+  ],
+  "correct": 2,
+  "explanation": "Amblyopia depth: shallow 20/30 to 20/60, moderate 20/80 to 20/200, deep worse than 20/200."
+ },
+ {
+  "type": "mcq",
+  "stem": "If a child's amblyopia acuity improves with monocular therapy but the underlying binocular anomaly is not resolved, the gains will:",
+  "options": [
+   "Never occur",
+   "Not be permanent",
+   "Cause strabismus",
+   "Be permanent"
+  ],
+  "correct": 1,
+  "explanation": "Unless the underlying strabismus or anisometropia is resolved, acuity gains during monocular therapy tend not to be permanent; the binocular cause must be treated."
+ },
+ {
+  "type": "mcq",
+  "stem": "Infantile (congenital) esotropia is defined by onset:",
+  "options": [
+   "In adulthood",
+   "Before 6 months of age",
+   "At puberty",
+   "After age 3"
+  ],
+  "correct": 1,
+  "explanation": "Infantile esotropia begins before 6 months, with a large angle (over 30 pd), often alternating fixation, and associated DVD and inferior oblique overaction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Accommodative esotropia typically has its onset at about:",
+  "options": [
+   "6 years",
+   "Birth",
+   "10 years",
+   "2-3 years"
+  ],
+  "correct": 3,
+  "explanation": "Accommodative esotropia usually appears at 2-3 years as accommodative demand increases; it is associated with moderate-to-high hyperopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Accommodative esotropia is associated with which refractive state?",
+  "options": [
+   "Emmetropia",
+   "High myopia",
+   "Moderate-to-high hyperopia",
+   "Simple astigmatism"
+  ],
+  "correct": 2,
+  "explanation": "In accommodative esotropia the hyperope accommodates excessively, driving accommodative convergence and inward deviation. Full plus correction relieves it."
+ },
+ {
+  "type": "mcq",
+  "stem": "The definitive first treatment of accommodative esotropia is:",
+  "options": [
+   "Patching only",
+   "Prism only",
+   "Full cycloplegic (full plus) spectacle correction",
+   "Surgery"
+  ],
+  "correct": 2,
+  "explanation": "Full cycloplegic (full plus) correction is the first and often definitive treatment; surgery is reserved for a residual non-accommodative deviation."
+ },
+ {
+  "type": "mcq",
+  "stem": "In pseudostrabismus, the Hirschberg corneal reflexes are:",
+  "options": [
+   "Brighter in one eye",
+   "Displaced nasally",
+   "Absent",
+   "Symmetric and centered (no true deviation)"
+  ],
+  "correct": 3,
+  "explanation": "Pseudostrabismus shows symmetric, centered corneal reflexes because there is no true deviation; the crossed appearance is from epicanthal folds or a flat nasal bridge and resolves with growth."
+ },
+ {
+  "type": "mcq",
+  "stem": "A manifest deviation present without disruption of fusion (revealed by the unilateral cover test) is a:",
+  "options": [
+   "Phoria",
+   "Vergence",
+   "Tropia",
+   "Fixation disparity"
+  ],
+  "correct": 2,
+  "explanation": "A tropia is a manifest deviation demonstrated by the unilateral cover test. A phoria is a latent deviation revealed only by the cover-uncover test."
+ },
+ {
+  "type": "mcq",
+  "stem": "Infantile esotropia surgery is ideally performed to align the eyes before age:",
+  "options": [
+   "5",
+   "7",
+   "1 (to establish a binocularity window)",
+   "2"
+  ],
+  "correct": 3,
+  "explanation": "Surgical alignment of infantile esotropia is aimed for before about age 2 to establish a window for developing binocularity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Gross motor development proceeds in which direction?",
+  "options": [
+   "Distal to proximal",
+   "Top-down (cephalocaudal): head control first, then trunk, then legs",
+   "Bottom-up (caudocephalic)",
+   "Randomly"
+  ],
+  "correct": 1,
+  "explanation": "Gross motor development is cephalocaudal (top-down): head control develops first, then shoulders/arms, trunk, hips, and legs."
+ },
+ {
+  "type": "mcq",
+  "stem": "In pediatric age ranges, children aged 3-5 years are classified as:",
+  "options": [
+   "Grade-schoolers",
+   "Toddlers",
+   "Pre-schoolers",
+   "Infants"
+  ],
+  "correct": 2,
+  "explanation": "0-2 years are infants/toddlers, 3-5 years are pre-schoolers, and 6-10 years are grade-schoolers."
+ },
+ {
+  "type": "mcq",
+  "stem": "The representational (symbolic) area of child development refers to the ability to:",
+  "options": [
+   "Move in response to sensory input",
+   "Express emotions",
+   "Take turns in conversation",
+   "Grasp that a sound or picture can represent something"
+  ],
+  "correct": 3,
+  "explanation": "The representational (symbolic) area is understanding that a symbol (a picture or sound) can stand for something, converting short-term to long-term memory."
+ },
+ {
+  "type": "mcq",
+  "stem": "The rooting reflex is triggered by:",
+  "options": [
+   "Turning the head to one side",
+   "Stroking the corner of the baby's mouth",
+   "Stroking the sole of the foot",
+   "A loud sound"
+  ],
+  "correct": 1,
+  "explanation": "Stroking the corner of the mouth makes the head turn toward the stimulus with the mouth opening, helping the baby find the breast/bottle. It integrates by 3-4 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Galant reflex, elicited by stroking beside the spine, when persistent is associated with:",
+  "options": [
+   "Bedwetting and difficulty sitting still",
+   "Photophobia",
+   "Feeding problems",
+   "Toe fanning"
+  ],
+  "correct": 0,
+  "explanation": "Persistence of the Galant reflex is linked to bedwetting, fatigue, attention difficulties, and difficulty sitting still. It integrates by about 9 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "Detection acuity (minimum visible) is classically tested with the:",
+  "options": [
+   "Lea gratings",
+   "Catford drum / Stycar balls",
+   "Snellen chart",
+   "Landolt C"
+  ],
+  "correct": 1,
+  "explanation": "Detection acuity is the minimum size that can be seen; it is tested with the Catford drum or Stycar balls. Resolution uses gratings; recognition uses letter/picture charts."
+ },
+ {
+  "type": "mcq",
+  "stem": "Localization (Vernier) acuity refers to the ability to detect:",
+  "options": [
+   "Grating orientation",
+   "The smallest visible dot",
+   "Lateral displacement of lines placed end to end",
+   "Letter identity"
+  ],
+  "correct": 2,
+  "explanation": "Vernier (localization) acuity is the ability to detect a small lateral misalignment of line segments placed end to end, a hyperacuity."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Cardiff Acuity Cards are designed for which age group?",
+  "options": [
+   "5 years and up",
+   "Newborns only",
+   "1-3 years",
+   "Adults"
+  ],
+  "correct": 2,
+  "explanation": "Cardiff Acuity Cards use vanishing-optotype pictures and preferential looking for children about 1-3 years old."
+ },
+ {
+  "type": "mcq",
+  "stem": "The fixation preference test detects a difference between the eyes by:",
+  "options": [
+   "Measuring IOP",
+   "Using red-green glasses",
+   "Recording an ERG",
+   "Observing whether the child objects when the better eye is covered"
+  ],
+  "correct": 3,
+  "explanation": "The fixation preference test covers each eye in turn; a child with reduced vision in one eye objects when the better eye is occluded, indicating a preference and possible amblyopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sensory fusion refers to:",
+  "options": [
+   "Suppression",
+   "Movement of the eyes to align images",
+   "Accommodation at near",
+   "Simultaneous stimulation of corresponding retinal areas producing a single percept"
+  ],
+  "correct": 3,
+  "explanation": "Sensory fusion is the simultaneous stimulation of corresponding retinal areas that yields a single combined image; motor fusion is the vergence movement that maintains it."
+ },
+ {
+  "type": "mcq",
+  "stem": "Accommodative infacility is difficulty with:",
+  "options": [
+   "The amplitude of accommodation",
+   "The flexibility of changing focus between distances",
+   "Stereopsis",
+   "Convergence only"
+  ],
+  "correct": 1,
+  "explanation": "Accommodative infacility is difficulty changing focus flexibly (near-to-far and far-to-near). Accommodative insufficiency is a reduced amplitude; accommodative spasm/excess is difficulty relaxing accommodation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Accommodative spasm (excess) can produce:",
+  "options": [
+   "Presbyopia",
+   "Astigmatism",
+   "Hyperopia",
+   "Pseudomyopia"
+  ],
+  "correct": 3,
+  "explanation": "An accommodative spasm/excess is difficulty releasing accommodation and can produce pseudomyopia (a false myopic refraction that relaxes under cycloplegia)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Saccades are best described as:",
+  "options": [
+   "Vergence movements",
+   "Slow smooth tracking of a moving target",
+   "Rapid eye movements jumping from one fixation point to another",
+   "Fixation stability"
+  ],
+  "correct": 2,
+  "explanation": "Saccades are rapid movements that jump between fixation points, driven by a shift in attention. Pursuits are slow smooth movements following a moving object."
+ },
+ {
+  "type": "mcq",
+  "stem": "Losing one's place while reading and needing a finger to track is a sign of dysfunction in:",
+  "options": [
+   "Ocular motility (pursuits/saccades)",
+   "Stereopsis",
+   "Color vision",
+   "Accommodation amplitude"
+  ],
+  "correct": 0,
+  "explanation": "Ocular motility dysfunction produces line-skipping, losing place, needing a marker, and confusion on the return sweep during reading."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Piaget Right-Left Awareness Test assesses:",
+  "options": [
+   "Directionality",
+   "Accommodation",
+   "Laterality",
+   "Stereopsis"
+  ],
+  "correct": 2,
+  "explanation": "The Piaget test (and the Stickman test) assesses laterality, the internal awareness of the two body sides. Gardner Reversals and Jordan tests assess directionality."
+ },
+ {
+  "type": "mcq",
+  "stem": "Letter reversals such as writing b for d most directly reflect a problem with:",
+  "options": [
+   "Directionality / visual spatial relations",
+   "Color vision",
+   "Convergence",
+   "Accommodation"
+  ],
+  "correct": 0,
+  "explanation": "Persistent letter reversals (b/d, p/q) reflect poor directionality and visual spatial relations, projecting directional concepts incorrectly into space."
+ },
+ {
+  "type": "mcq",
+  "stem": "In combined anisostrabismic amblyopia, the strabismic eye generally has:",
+  "options": [
+   "No refractive error",
+   "The higher refractive error",
+   "Perfect acuity",
+   "The lower refractive error"
+  ],
+  "correct": 1,
+  "explanation": "When strabismus and anisometropia coexist, the strabismic eye generally carries the higher refractive error, compounding the amblyopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "The PRIMARY objective of amblyopia treatment is:",
+  "options": [
+   "Reducing IOP",
+   "Elimination of the epicanthal folds",
+   "Improvement of visual acuity",
+   "Cosmetic alignment"
+  ],
+  "correct": 2,
+  "explanation": "The primary objective is improving visual acuity, followed by eliminating eccentric fixation/abnormal localization and resolving the binocular anomaly causing the amblyopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a child with MILD amblyopia, a typical patching dose is:",
+  "options": [
+   "No patching ever",
+   "Full-time (all waking hours)",
+   "About 2 hours per day",
+   "10 minutes per week"
+  ],
+  "correct": 2,
+  "explanation": "Mild amblyopia is often treated with about 2 hours/day of patching; moderate-to-severe amblyopia uses full-time (all waking hours) patching, with VA monitored every 4-8 weeks."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dichoptic treatment for amblyopia works by:",
+  "options": [
+   "Surgery",
+   "Fully occluding the good eye",
+   "Using atropine in both eyes",
+   "Stimulating both eyes simultaneously at different contrast levels (e.g., games/apps)"
+  ],
+  "correct": 3,
+  "explanation": "Dichoptic (emerging) treatment presents images to both eyes at different contrast levels, combining suppression treatment with active binocular stimulation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The average refractive error of a healthy 1-year-old is about:",
+  "options": [
+   "-1.00 D",
+   "+2.00 D",
+   "+3.50 D",
+   "Plano"
+  ],
+  "correct": 1,
+  "explanation": "Average refraction at 1 year is about +2.00 D, decreasing from +3.00 D at 3 months toward +0.50 D by ages 4-6."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a child over 2 years, myopia is generally corrected when it reaches at least:",
+  "options": [
+   "Any trace",
+   "-0.75 D or greater",
+   "-3.00 D or greater",
+   "-5.00 D or greater"
+  ],
+  "correct": 1,
+  "explanation": "In children over 2 years, myopia of -0.75 D or greater is a prescribing threshold; hyperopia at +3.00 D or greater and isolated astigmatism at 2.50 D or greater are the others."
+ },
+ {
+  "type": "mcq",
+  "stem": "Optic nerve myelination in the developing infant occurs from:",
+  "options": [
+   "Birth to 1 month",
+   "3 to 5 years",
+   "Only after age 7",
+   "7 months to 2 years"
+  ],
+  "correct": 3,
+  "explanation": "Optic nerve myelination proceeds from about 7 months to 2 years of age. Foveal maturation is around 4 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "Smooth pursuit eye movements first appear at about:",
+  "options": [
+   "2 years",
+   "1 year",
+   "6-8 weeks",
+   "6 months"
+  ],
+  "correct": 2,
+  "explanation": "Smooth pursuit develops at about 6-8 weeks; saccades at 1-3 months; optokinetic nystagmus at 2-4 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Denver Developmental Screening Test (DDST) is used to:",
+  "options": [
+   "Measure stereopsis",
+   "Screen general developmental milestones in pre-schoolers",
+   "Measure IOP",
+   "Measure visual acuity"
+  ],
+  "correct": 1,
+  "explanation": "The Denver DDST screens developmental milestones (motor, language, social) in pre-schoolers as supplemental pediatric testing."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which supplemental infant test is an objective electrodiagnostic recording of retinal or cortical function requiring no verbal response?",
+  "options": [
+   "Cover test",
+   "Snellen",
+   "VEP/ERG (electronic diagnostic testing)",
+   "Allen figures"
+  ],
+  "correct": 2,
+  "explanation": "Electronic diagnostic tests (VEP, ERG) objectively assess the visual pathway/retina without cooperation, useful in infants."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anisometropic amblyopia is most often first discovered:",
+  "options": [
+   "In old age",
+   "At school vision screening",
+   "Never",
+   "At birth"
+  ],
+  "correct": 1,
+  "explanation": "Anisometropic amblyopia usually has normal alignment and is picked up at school vision screening, since there is no obvious strabismus to prompt earlier referral."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Tumbling E and Landolt C tests are suited to children who:",
+  "options": [
+   "Cannot yet read letters but can indicate orientation/direction",
+   "Know the full alphabet",
+   "Have no vision",
+   "Are under 1 year"
+  ],
+  "correct": 0,
+  "explanation": "The Tumbling E and Landolt C require only indicating the orientation/gap direction, so they suit ages 3-6 who cannot yet name letters."
+ },
+ {
+  "type": "mcq",
+  "stem": "The tonic labyrinthine reflex (TLR), when persistent, is associated with:",
+  "options": [
+   "Excellent posture",
+   "Toe fanning",
+   "Slouched posture, low muscle tone, and balance/visual-perceptual difficulties",
+   "Photophobia"
+  ],
+  "correct": 2,
+  "explanation": "Persistence of the TLR causes slouched posture, low muscle tone, poor balance, and visual-perceptual difficulties. It integrates at about 4 months postnatally."
+ },
+ {
+  "type": "mcq",
+  "stem": "Motor fusion is best described as:",
+  "options": [
+   "Simultaneous stimulation of corresponding retinal points",
+   "The vergence movement of the eyes that maintains single binocular vision",
+   "A suppression scotoma",
+   "Accommodation"
+  ],
+  "correct": 1,
+  "explanation": "Motor fusion is the physical vergence movement that aligns the eyes so sensory fusion can be maintained."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which near visual acuity estimate uses progressively smaller edible beads at 40 cm?",
+  "options": [
+   "Candy beads test",
+   "Dot test",
+   "Catford drum",
+   "Kay picture test"
+  ],
+  "correct": 0,
+  "explanation": "The candy beads test estimates near acuity at 40 cm using progressively smaller candy beads; the dot test similarly uses shrinking isolated dots at 40 cm."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Sjogren hand test is an alternative to which chart, using an isolated hand figure?",
+  "options": [
+   "Tumbling E",
+   "Snellen",
+   "Amsler grid",
+   "Ishihara"
+  ],
+  "correct": 0,
+  "explanation": "The Sjogren hand test replaces the Tumbling E's letter with an isolated hand figure whose orientation the child indicates."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bilateral integration is the ability to:",
+  "options": [
+   "Use both sides of the body separately and simultaneously (e.g., typing, cycling)",
+   "Accommodate at near",
+   "Fuse two images into one",
+   "See fine detail"
+  ],
+  "correct": 0,
+  "explanation": "Bilateral integration is awareness and coordinated use of both body sides separately and together; tests include chalkboard circles and body knowledge/control."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which infant alignment test uses a direct ophthalmoscope into both pupils simultaneously at 1 meter?",
+  "options": [
+   "Hirschberg",
+   "Bruckner",
+   "Cover-uncover",
+   "Krimsky"
+  ],
+  "correct": 1,
+  "explanation": "The Bruckner test shines a direct ophthalmoscope into both pupils at 1 m; a brighter, whiter reflex marks the deviating or amblyopic eye."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is NOT one of the four types of amblyopia?",
+  "options": [
+   "Deprivation",
+   "Presbyopic",
+   "Strabismic",
+   "Anisometropic"
+  ],
+  "correct": 1,
+  "explanation": "The four types are strabismic, anisometropic, meridional, and deprivation. Presbyopia is an age-related accommodative loss, not a form of amblyopia."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Lea symbol chart and Sheridan Gardiner test share which response format?",
+  "options": [
+   "Matching to a keycard",
+   "Naming colors",
+   "Reporting motion",
+   "Reading aloud"
+  ],
+  "correct": 0,
+  "explanation": "Both are matching tasks: the child points to the matching symbol/letter on a keycard, which works before a child can name optotypes."
+ },
+ {
+  "type": "mcq",
+  "stem": "The red flag of 'eyes not moving together' in an infant most suggests:",
+  "options": [
+   "Conjunctivitis",
+   "An eye muscle control problem (possible strabismus)",
+   "A blocked tear duct",
+   "Refractive error"
+  ],
+  "correct": 1,
+  "explanation": "Eyes not moving together indicates an eye-muscle control problem such as strabismus, which after 3-4 months of age is pathological."
+ },
+ {
+  "type": "mcq",
+  "stem": "A persistent grasp reflex may contribute to:",
+  "options": [
+   "Photophobia",
+   "Improved handwriting",
+   "Swallowing problems and delayed speech",
+   "Better balance"
+  ],
+  "correct": 2,
+  "explanation": "A persistent palmar grasp reflex can be associated with swallowing problems and delayed speech; its complete absence signals a neurological problem."
+ },
+ {
+  "type": "mcq",
+  "stem": "Visual efficiency, one of the three components of the visual system, comprises:",
+  "options": [
+   "Eye health and refraction",
+   "Color vision only",
+   "The oculomotor system, accommodation, vergence, and sensory fusion",
+   "Perceptual and visual-motor skills"
+  ],
+  "correct": 2,
+  "explanation": "Visual efficiency is the input channel: oculomotor control, accommodation, vergence, and sensory fusion. Visual integrity is eye health/refraction; visual information processing is perceptual/visual-motor."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which test/technique measures the maximum convergence ability of a child's eyes?",
+  "options": [
+   "Bruckner",
+   "NPC (near point of convergence)",
+   "MEM retinoscopy",
+   "Hirschberg"
+  ],
+  "correct": 1,
+  "explanation": "The near point of convergence (NPC) measures the closest point to which the eyes can converge, part of binocular vision/motility assessment."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the vision-therapy anaglyph setup, the eye wearing the RED filter sees:",
+  "options": [
+   "Both targets",
+   "Nothing",
+   "The red target",
+   "The green target"
+  ],
+  "correct": 3,
+  "explanation": "With red/green (anaglyph) filters, the red-filter eye sees the green target and the green-filter eye sees the red target, because each filter absorbs its own color."
+ },
+ {
+  "type": "mcq",
+  "stem": "Foveal maturation is completed at about:",
+  "options": [
+   "1 year",
+   "4 months of age",
+   "30 weeks gestation",
+   "3 years"
+  ],
+  "correct": 1,
+  "explanation": "Foveal maturation completes at about 4 months of age, contributing to the rapid acuity gains over the first year."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which condition is treated with observation and reassurance rather than glasses, surgery, or patching?",
+  "options": [
+   "Infantile esotropia",
+   "Pseudostrabismus",
+   "Accommodative esotropia",
+   "Deprivation amblyopia"
+  ],
+  "correct": 1,
+  "explanation": "Pseudostrabismus needs no treatment: the corneal reflexes are symmetric and the crossed appearance resolves as the nasal bridge develops. Reassure the parents."
+ },
+ {
+  "type": "mcq",
+  "stem": "For steady eccentric fixation that does not improve after 4 weeks of direct occlusion, the recommended change is to:",
+  "options": [
+   "Switch to inverse occlusion",
+   "Proceed straight to surgery",
+   "Stop all treatment",
+   "Double the glasses power"
+  ],
+  "correct": 0,
+  "explanation": "If direct occlusion with unsteady/eccentric fixation fails to improve after 4 weeks, switching to inverse occlusion is recommended to develop foveal fixation."
+ }
+]

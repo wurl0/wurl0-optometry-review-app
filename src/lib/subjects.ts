@@ -131,6 +131,15 @@ export const SUBJECTS: Subject[] = [
     olePrep: true,
     hasExam: true,
   },
+  {
+    slug: 'pediatric-optometry',
+    name: 'Pediatric Optometry',
+    description: 'Visual development, primitive reflexes, pediatric exam and acuity tests, refraction, binocular vision, amblyopia, and childhood strabismus.',
+    color: 'rose',
+    questionCount: 102,
+    icon: '🧸',
+    hasExam: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {

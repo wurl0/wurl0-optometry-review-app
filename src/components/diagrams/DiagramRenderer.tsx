@@ -9,8 +9,9 @@ import { DIAGRAM_REGISTRY as GP } from './GeneralPharmacologyDiagrams'
 import { DIAGRAM_REGISTRY as OP } from './OcularPharmacologyDiagrams'
 import { DIAGRAM_REGISTRY as PMO } from './PracticalMechanicalOpticsDiagrams'
 import { DIAGRAM_REGISTRY as LV } from './LowVisionDiagrams'
+import { DIAGRAM_REGISTRY as PEDS } from './PediatricOptometryDiagrams'
 
-const ALL_DIAGRAMS: Record<string, React.ComponentType> = { ...PHYSIO, ...BV, ...TO, ...PH, ...OA, ...GA, ...OD, ...GP, ...OP, ...PMO, ...LV }
+const ALL_DIAGRAMS: Record<string, React.ComponentType> = { ...PHYSIO, ...BV, ...TO, ...PH, ...OA, ...GA, ...OD, ...GP, ...OP, ...PMO, ...LV, ...PEDS }
 
 export function DiagramRenderer({ id, caption }: { id: string; caption?: string }) {
   const Component = ALL_DIAGRAMS[id]
