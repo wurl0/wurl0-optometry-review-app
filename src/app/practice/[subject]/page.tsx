@@ -7,12 +7,12 @@ import bvQ from '@/data/binocular-vision.json'
 import theoQ from '@/data/theoretical-optics.json'
 import phoroQ from '@/data/phorometry.json'
 import pecQ from '@/data/primary-eye-care.json'
+import pmoQ from '@/data/practical-mechanical-optics.json'
 import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { ocularDiseaseQuiz } from '@/data/notes-quiz/ocular-disease'
 import { generalPharmacologyQuiz } from '@/data/notes-quiz/general-pharmacology'
 import { ocularPharmacologyQuiz } from '@/data/notes-quiz/ocular-pharmacology'
-import { practicalMechanicalOpticsQuiz } from '@/data/notes-quiz/practical-mechanical-optics'
 import { QuizQuestion } from '@/lib/notes-quiz-types'
 import { Question } from '@/lib/types'
 
@@ -39,7 +39,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'ocular-disease': convertQuizQuestions(ocularDiseaseQuiz.questions),
   'general-pharmacology': convertQuizQuestions(generalPharmacologyQuiz.questions),
   'ocular-pharmacology': convertQuizQuestions(ocularPharmacologyQuiz.questions),
-  'practical-mechanical-optics': convertQuizQuestions(practicalMechanicalOpticsQuiz.questions),
+  'practical-mechanical-optics': pmoQ,
 }
 
 export default async function PracticePage({ params }: { params: Promise<{ subject: string }> }) {

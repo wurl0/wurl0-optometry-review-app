@@ -102,9 +102,10 @@ export const SUBJECTS: Subject[] = [
     name: 'Practical and Mechanical Optics',
     description: 'Lenses, prisms, optical instruments, retinoscopy, keratometry, and lens prescriptions.',
     color: 'lime',
-    questionCount: 120,
+    questionCount: 127,
     icon: '🔭',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'optometry-constants',

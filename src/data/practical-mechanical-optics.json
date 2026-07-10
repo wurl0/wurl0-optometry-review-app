@@ -1,0 +1,1526 @@
+[
+ {
+  "type": "mcq",
+  "stem": "A manufacturer needs a glass with the highest refractive index for a thin high-power segment. Based on standard ophthalmic glasses, which would be selected?",
+  "options": [
+   "Barium crown (1.701)",
+   "Dense flint (1.616)",
+   "Light barium crown (1.573)",
+   "Ophthalmic crown (1.523)"
+  ],
+  "correct": 0,
+  "explanation": "Barium crown glass has an index of about 1.701, the highest among the standard ophthalmic glasses listed, and barium raises index without adding as much chromatic dispersion as lead. Crown is 1.523, dense flint about 1.616, light barium crown 1.573."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lens laboratory describes a material as roughly 70% silica with 14 to 16% sodium oxide and 11 to 13% calcium oxide. This is the standard glass for single-vision lenses. It is:",
+  "options": [
+   "Extra dense flint",
+   "Ophthalmic crown",
+   "Dense flint",
+   "Barium crown"
+  ],
+  "correct": 1,
+  "explanation": "Ophthalmic crown glass is about 70% silica (sand), 14 to 16% sodium oxide, 11 to 13% calcium oxide, with traces of potassium, borax, and antimony. It is the standard material for single-vision glass lenses and the distance portion of glass multifocals. Flint glasses are lead-based; barium crown is barium-based."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which statement about flint glass is correct?",
+  "options": [
+   "It is used mainly for the segment of certain fused bifocals because of its higher index",
+   "It is a plastic, not a glass",
+   "It has the highest Abbe value of all ophthalmic glasses",
+   "It is the standard material for single-vision distance lenses"
+  ],
+  "correct": 0,
+  "explanation": "Flint glass (45 to 65% lead oxide) has a high index but low Abbe value (more dispersion), so it is used for the higher-index segment fused into some bifocals, not for the main single-vision lens. Its high dispersion is exactly why fused flint segments add chromatic aberration."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient wants the original lightweight plastic lens material historically sold as Perspex or Plexiglas. This refers to:",
+  "options": [
+   "Polycarbonate",
+   "PMMA",
+   "CR-39",
+   "Trivex"
+  ],
+  "correct": 1,
+  "explanation": "PMMA (also called Perspex, Transpex, or Plexiglas) was the original plastic lens material, about half the weight of crown glass. CR-39 (allyl diglycol carbonate) is the later hard-resin plastic that is harder and more scratch-resistant. The two are frequently confused."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ranking impact resistance from most to least, which order is correct?",
+  "options": [
+   "Polycarbonate > high-index plastic > CR-39 > ordinary glass",
+   "CR-39 > polycarbonate > glass > high-index plastic",
+   "High-index plastic > polycarbonate > glass > CR-39",
+   "Ordinary glass > CR-39 > high-index plastic > polycarbonate"
+  ],
+  "correct": 0,
+  "explanation": "Impact resistance runs polycarbonate > high-index plastic > CR-39 > toughened glass > ordinary glass. Polycarbonate is roughly ten times more impact resistant than glass, which is why it is preferred for children and sports."
+ },
+ {
+  "type": "mcq",
+  "stem": "The FDA drop-ball test for impact resistance uses which parameters?",
+  "options": [
+   "A 5/8-inch steel ball dropped from 50 inches",
+   "A 1/2-inch ball dropped from 25 inches",
+   "A 5/8-inch ball dropped from 100 inches",
+   "A 1-inch ball dropped from 100 inches"
+  ],
+  "correct": 0,
+  "explanation": "The standard FDA drop-ball test drops a 5/8-inch steel ball onto the lens from a height of 50 inches. The lens must not fracture to pass."
+ },
+ {
+  "type": "mcq",
+  "stem": "A dispenser must choose the lightest lens for a heavy prescription. By specific gravity, which is lightest?",
+  "options": [
+   "Crown glass (2.54)",
+   "Polycarbonate (1.20)",
+   "CR-39 (1.32)",
+   "Trivex (1.11)"
+  ],
+  "correct": 3,
+  "explanation": "Trivex has the lowest specific gravity (about 1.11), lighter than polycarbonate (1.20) and CR-39 (1.32), and far lighter than crown glass (2.54). Lower specific gravity means a lighter finished lens of the same volume."
+ },
+ {
+  "type": "mcq",
+  "stem": "Why can specific gravity alone fail to predict the weight of a finished lens?",
+  "options": [
+   "Because denser (higher specific gravity) materials often have a higher index, allowing a thinner lens",
+   "Because all materials have the same specific gravity when edged",
+   "Because thicker lenses always weigh less",
+   "Because specific gravity changes with tint"
+  ],
+  "correct": 0,
+  "explanation": "Specific gravity is weight per unit volume, but a denser material often has a higher refractive index, which lets the lens be made thinner. The reduced volume can offset the higher density, so the finished weights are closer than specific gravity alone suggests."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient notices color fringes when looking through the periphery of new polycarbonate lenses. The property responsible is:",
+  "options": [
+   "Its high specific gravity",
+   "Its high impact resistance",
+   "Its low Abbe value (about 30)",
+   "Its UV absorption"
+  ],
+  "correct": 2,
+  "explanation": "Polycarbonate's chief optical drawback is its low Abbe value (about 30), meaning high dispersion and noticeable chromatic aberration (color fringing) in peripheral gaze. Abbe value is the reciprocal of dispersive power, so a low Abbe means more color spread."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the Moh's hardness scale used for scratch resistance, most ophthalmic lens materials rate:",
+  "options": [
+   "Between 8 and 9",
+   "Exactly 10",
+   "Between 1 and 2",
+   "Between 4 and 5"
+  ],
+  "correct": 3,
+  "explanation": "The Moh's hardness scale is the oldest and most quoted scratch-resistance test. Most ophthalmic lens materials fall between 4 and 5 on it, which is why plastic lenses usually need a hard (scratch-resistant) coating."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Thermodyne test, developed by Chance-Pilkington, evaluates which lens property?",
+  "options": [
+   "Refractive index",
+   "Chemical resistance",
+   "Chromatic dispersion",
+   "Impact resistance"
+  ],
+  "correct": 1,
+  "explanation": "The Thermodyne test measures chemical resistance by simulating prolonged atmospheric exposure using heat and humidity. It hints at a lens material's life expectancy and its resistance to solvents."
+ },
+ {
+  "type": "mcq",
+  "stem": "Comparing glass and plastic lenses, which is TRUE regarding fogging?",
+  "options": [
+   "Glass never fogs because it is inorganic",
+   "Neither material fogs",
+   "Glass fogs more easily and demists slowly due to its thermal conductivity",
+   "Plastic fogs more easily and demists slowly"
+  ],
+  "correct": 2,
+  "explanation": "Glass fogs easily and demists slowly because of its thermal conductivity, while plastic is slower to fog and quicker to demist. This is one practical advantage of plastic in humid or temperature-changing environments."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using R = 100(n-1)^2 / (n+1)^2, the reflectance of a single uncoated CR-39 surface (n = 1.49) is approximately:",
+  "options": [
+   "10.40%",
+   "3.87%",
+   "1.99%",
+   "7.80%"
+  ],
+  "correct": 1,
+  "explanation": "R = 100(0.49/2.49)^2 = 100(0.1968)^2 = 3.87% per surface. This is why an uncoated CR-39 surface transmits about 96.13% (100 minus 3.87)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A single AR-coated lens surface is assigned a transmission of 99%. A single mirror-coated surface is assigned:",
+  "options": [
+   "50%",
+   "35%",
+   "85%",
+   "99%"
+  ],
+  "correct": 0,
+  "explanation": "By the lecture's reference values, a mirror-coated surface transmits about 50% (it reflects roughly half the light), while an AR-coated surface transmits about 99%. Tints A/B/C transmit 85/65/35%."
+ },
+ {
+  "type": "mcq",
+  "stem": "An uncoated CR-39 lens has two surfaces, each transmitting 96.13%. The total transmission is:",
+  "options": [
+   "96.13%",
+   "92.40%",
+   "88.60%",
+   "99.00%"
+  ],
+  "correct": 1,
+  "explanation": "Transmission through elements in sequence multiplies: T_total = 0.9613 x 0.9613 = 0.9241, or 92.40%. Every surface, tint, and coating in the light path contributes its own factor."
+ },
+ {
+  "type": "mcq",
+  "stem": "A CR-39 lens has an AR coating on the front (99%) and an uncoated back surface (96.13%). Total transmission is closest to:",
+  "options": [
+   "99.00%",
+   "96.13%",
+   "92.40%",
+   "95.17%"
+  ],
+  "correct": 3,
+  "explanation": "T_total = 0.99 x 0.9613 = 0.9517, or about 95.17%. The AR front raises the front-surface transmission from about 96% to 99%, while the uncoated back stays at 96.13%."
+ },
+ {
+  "type": "mcq",
+  "stem": "A filter transmits 50% of light (T = 0.50). Using OD = log10(1/T), its optical density is:",
+  "options": [
+   "0.301",
+   "0.700",
+   "0.495",
+   "0.194"
+  ],
+  "correct": 0,
+  "explanation": "OD = log10(1/0.50) = log10(2) = 0.301. Optical density is a logarithmic measure of light blocking, so denser (darker) filters add up in OD."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the assigned tint grades transmits the LEAST light?",
+  "options": [
+   "Tint B (medium) at 65%",
+   "All transmit equally",
+   "Tint A (light) at 85%",
+   "Tint C (dark) at 35%"
+  ],
+  "correct": 3,
+  "explanation": "Tint grades describe absorption through the lens material: Tint A (light) transmits 85%, Tint B (medium) 65%, and Tint C (dark) 35%. The darker the tint, the lower the transmission."
+ },
+ {
+  "type": "mcq",
+  "stem": "Opacity is defined as the reciprocal of transmission. A medium transmitting T = 0.25 has an opacity of:",
+  "options": [
+   "0.75",
+   "4.0",
+   "2.0",
+   "0.25"
+  ],
+  "correct": 1,
+  "explanation": "Opacity = 1/T = 1/0.25 = 4.0. Opacity rises as transmission falls, describing how strongly a medium blocks light."
+ },
+ {
+  "type": "mcq",
+  "stem": "A crown glass lens (each uncoated surface 95.70%) is mirror-coated on the front (50%) and carries Tint B (65%). Total transmission is closest to:",
+  "options": [
+   "65.0%",
+   "50.0%",
+   "31.1%",
+   "95.7%"
+  ],
+  "correct": 2,
+  "explanation": "Multiply every element: 0.50 (mirror front) x 0.957 (uncoated back) x 0.65 (Tint B) = 0.311, about 31.1%. Adding any absorbing element always lowers the combined transmission."
+ },
+ {
+  "type": "mcq",
+  "stem": "In spherical aberration, how do peripheral rays behave relative to central (paraxial) rays?",
+  "options": [
+   "Peripheral rays focus farther from the lens than paraxial rays",
+   "Peripheral and paraxial rays focus at the same point",
+   "Peripheral rays are not refracted at all",
+   "Peripheral rays focus sooner (closer to the lens) than paraxial rays"
+  ],
+  "correct": 3,
+  "explanation": "In spherical aberration the peripheral rays are refracted more strongly and focus sooner (nearer the lens) than the paraxial rays, so a point images as a blur. Aspheric lens design is the standard correction."
+ },
+ {
+  "type": "mcq",
+  "stem": "A comet-shaped image of a point source formed by oblique rays striking the lens periphery describes which aberration?",
+  "options": [
+   "Coma",
+   "Chromatic aberration",
+   "Curvature of field",
+   "Distortion"
+  ],
+  "correct": 0,
+  "explanation": "Coma is essentially off-axis spherical aberration: oblique rays refracted by the lens periphery form a comet-shaped image of a point source. It is reduced by eliminating peripheral rays or adjusting lens shape."
+ },
+ {
+  "type": "mcq",
+  "stem": "Oblique astigmatism is also known by which name, and how is it best corrected in a spectacle lens?",
+  "options": [
+   "Marginal (radial) astigmatism; corrected with a corrected-curve meniscus lens",
+   "Chromatism; corrected with an achromatic doublet",
+   "Distortion; corrected with a prism",
+   "Coma; corrected with a plano-convex lens"
+  ],
+  "correct": 0,
+  "explanation": "Oblique astigmatism, also called marginal or radial astigmatism, arises when a narrow beam enters obliquely and the refracted rays form the interval of Sturm. Best-form (corrected-curve) meniscus or aspheric lenses correct it, which is why modern lenses are curved."
+ },
+ {
+  "type": "mcq",
+  "stem": "The circle of least confusion is located:",
+  "options": [
+   "Exactly midway between the two focal lines",
+   "At the optical center of the lens",
+   "At the anterior focal line",
+   "At the posterior focal line"
+  ],
+  "correct": 0,
+  "explanation": "The circle of least confusion is the smallest blur circle in the interval of Sturm, located exactly midway between the two (sagittal and tangential) focal lines."
+ },
+ {
+  "type": "mcq",
+  "stem": "Why is curvature of field rarely a clinical problem for spectacle wearers?",
+  "options": [
+   "Because the pupil blocks the curved rays",
+   "Because the retina is a curved surface that compensates for the curved image",
+   "Because spectacle lenses never produce it",
+   "Because it only affects minus lenses"
+  ],
+  "correct": 1,
+  "explanation": "Curvature of field images a flat object on a curved (Petzval) surface concave toward the lens. The retina is itself curved, so it compensates, making this aberration a bigger issue for camera makers who need a flat image plane."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient's high-plus lenses make straight lines bow inward (pincushion). Which lens power and distortion pairing is correct?",
+  "options": [
+   "High plus power produces barrel distortion",
+   "Distortion never occurs in plus lenses",
+   "High plus power produces pincushion distortion",
+   "High minus power produces pincushion distortion"
+  ],
+  "correct": 2,
+  "explanation": "High-power plus lenses produce pincushion distortion, while high-power minus lenses produce barrel distortion. Distortion changes image shape and lateral position but not clarity; a distortion-free lens is called orthoscopic."
+ },
+ {
+  "type": "mcq",
+  "stem": "Chromatic aberration occurs because different wavelengths refract unequally. Which is refracted the MOST?",
+  "options": [
+   "All wavelengths refract equally",
+   "Green waves only",
+   "Short violet waves",
+   "Long red waves"
+  ],
+  "correct": 2,
+  "explanation": "Short violet wavelengths are refracted most and long red wavelengths least, with intermediate hues in between. This unequal refraction is chromatic aberration (chromatism)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which correction specifically targets chromatic aberration rather than a monochromatic aberration?",
+  "options": [
+   "Achromatic doublet",
+   "Corrected-curve meniscus",
+   "Aspheric surface",
+   "Limiting the aperture to paraxial rays"
+  ],
+  "correct": 0,
+  "explanation": "An achromatic doublet pairs two lenses so that each partially offsets the other's chromatic aberration. Choosing a higher-Abbe material also helps. Aspheric surfaces, aperture limits, and corrected curves address monochromatic aberrations."
+ },
+ {
+  "type": "mcq",
+  "stem": "In longitudinal (axial) chromatic aberration:",
+  "options": [
+   "Only green is affected",
+   "Different colors focus at different distances along the optical axis",
+   "All colors focus in one plane but off the optical axis",
+   "There is no color separation"
+  ],
+  "correct": 1,
+  "explanation": "Longitudinal (axial) chromatic aberration focuses different spectral hues at different distances along the optical axis. Lateral chromatic aberration instead places the colors in the same plane but off the axis."
+ },
+ {
+  "type": "mcq",
+  "stem": "How does lens power relate to the amount of chromatic aberration a patient experiences?",
+  "options": [
+   "Higher lens power produces greater chromatic aberration",
+   "Lens power has no effect on chromatic aberration",
+   "Only plano lenses show chromatic aberration",
+   "Lower lens power produces greater chromatic aberration"
+  ],
+  "correct": 0,
+  "explanation": "The higher the lens power, the greater the chromatic aberration. This compounds the effect of a low Abbe material, so strong polycarbonate prescriptions show the most color fringing."
+ },
+ {
+  "type": "mcq",
+  "stem": "A thick lens has a +14.00 D front surface and a -6.00 D back surface. Its nominal power (as read by a lens clock) is:",
+  "options": [
+   "-8.00 D",
+   "+20.00 D",
+   "+6.00 D",
+   "+8.00 D"
+  ],
+  "correct": 3,
+  "explanation": "Nominal power Dn = D1 + D2 = +14.00 + (-6.00) = +8.00 D. Nominal power simply adds the surface powers and ignores thickness, which is what a lens clock reads."
+ },
+ {
+  "type": "mcq",
+  "stem": "For D1 = +15.00, D2 = -5.00, center thickness 8.5 mm, and n = 1.523, the equivalent (true) power is closest to:",
+  "options": [
+   "+10.00 D",
+   "+11.20 D",
+   "+9.58 D",
+   "+10.42 D"
+  ],
+  "correct": 3,
+  "explanation": "Deq = D1 + D2 - (t/n)(D1 x D2) = +10.00 - (0.0085/1.523)(-75) = +10.00 + 0.42 = +10.42 D. Equivalent power accounts for thickness and is the true thin-lens-equivalent power."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a lens with D1 = +12.00, D2 = -4.00, t = 8 mm, and n = 1.6, the back vertex power is:",
+  "options": [
+   "+8.00 D",
+   "+8.08 D",
+   "+8.72 D",
+   "+9.00 D"
+  ],
+  "correct": 2,
+  "explanation": "BVP = D1 + D2 + (t/n)(D1)^2 = +8.00 + (0.008/1.6)(144) = +8.00 + 0.72 = +8.72 D. Back vertex power uses the front surface power squared and is the lensometer's standard reading."
+ },
+ {
+  "type": "mcq",
+  "stem": "For the same lens (D1 = +12.00, D2 = -4.00, t = 8 mm, n = 1.6), the front vertex (neutralizing) power is:",
+  "options": [
+   "+8.08 D",
+   "+7.28 D",
+   "+8.72 D",
+   "+8.00 D"
+  ],
+  "correct": 0,
+  "explanation": "FVP = D1 + D2 + (t/n)(D2)^2 = +8.00 + (0.008/1.6)(16) = +8.00 + 0.08 = +8.08 D. Front vertex power uses the back surface power squared and is the neutralizing power measured with the convex side against the stop."
+ },
+ {
+  "type": "mcq",
+  "stem": "To read front vertex (neutralizing) power on a lensometer, the lens is placed with:",
+  "options": [
+   "The convex (front) surface against the lens stop",
+   "Either surface, since it does not matter",
+   "The concave (back) surface against the lens stop",
+   "The lens held away from the stop"
+  ],
+  "correct": 0,
+  "explanation": "Front vertex power is measured with the convex (front) surface against the lens stop. The default lensometer reading is back vertex power, taken with the concave (back) surface against the stop."
+ },
+ {
+  "type": "mcq",
+  "stem": "A -10.00 D spectacle lens is worn at a 12 mm vertex distance. The equivalent contact lens power (vertex distance 0) is closest to:",
+  "options": [
+   "-8.93 D",
+   "-10.00 D",
+   "-9.50 D",
+   "-11.36 D"
+  ],
+  "correct": 0,
+  "explanation": "F_cl = F/(1 - dF) = -10.00/(1 - 0.012 x -10.00) = -10.00/1.12 = -8.93 D. A minus lens moved toward the eye (onto the cornea) becomes less minus, so the contact lens power is weaker than the spectacle power."
+ },
+ {
+  "type": "mcq",
+  "stem": "A +10.00 D spectacle lens is worn at a 12 mm vertex distance. The equivalent contact lens power is closest to:",
+  "options": [
+   "+10.00 D",
+   "+8.93 D",
+   "+11.36 D",
+   "+9.00 D"
+  ],
+  "correct": 2,
+  "explanation": "F_cl = F/(1 - dF) = +10.00/(1 - 0.012 x 10.00) = +10.00/0.88 = +11.36 D. A plus lens moved toward the eye becomes more plus, so the contact lens power is stronger than the spectacle power."
+ },
+ {
+  "type": "mcq",
+  "stem": "Vertex-distance compensation of the prescribed power generally becomes necessary above about:",
+  "options": [
+   "Plus or minus 1.00 D",
+   "Plus or minus 10 D",
+   "Plus or minus 4 to 5 D",
+   "Any power, always"
+  ],
+  "correct": 2,
+  "explanation": "Effective (vertex) power change is clinically significant for lenses stronger than about plus or minus 4 to 5 D. Below that the change with a few millimeters of vertex distance is negligible."
+ },
+ {
+  "type": "mcq",
+  "stem": "A -3.00 x 180 cylinder is evaluated in the 40 degree meridian. Its power there is approximately (D = Fc x sin^2 a):",
+  "options": [
+   "-1.24 D",
+   "-3.00 D",
+   "-2.30 D",
+   "-0.76 D"
+  ],
+  "correct": 0,
+  "explanation": "The angle from the axis is a = 180 - 40 = 140 degrees. D = Fc x sin^2(140) = -3.00 x (0.643)^2 = -3.00 x 0.413 = -1.24 D. A cylinder has no power along its axis and full power 90 degrees away."
+ },
+ {
+  "type": "mcq",
+  "stem": "A cylinder exerts what fraction of its full power in the meridian 45 degrees from its axis?",
+  "options": [
+   "Full power",
+   "One-half",
+   "Three-fourths",
+   "One-fourth"
+  ],
+  "correct": 1,
+  "explanation": "By the sin^2 rule, a cylinder shows one-fourth power at 30 degrees, one-half at 45 degrees, three-fourths at 60 degrees, and full power at 90 degrees from its axis."
+ },
+ {
+  "type": "mcq",
+  "stem": "A +5.00 = -2.00 x 70 lens is evaluated in the 130 degree meridian. Its power there (D = Fs + Fc x sin^2 a) is:",
+  "options": [
+   "+4.00 D",
+   "+3.50 D",
+   "+5.00 D",
+   "+3.00 D"
+  ],
+  "correct": 1,
+  "explanation": "a = 70 - 130 = 60 degrees (magnitude). D = +5.00 + (-2.00)(sin^2 60) = +5.00 + (-2.00)(0.75) = +5.00 - 1.50 = +3.50 D."
+ },
+ {
+  "type": "mcq",
+  "stem": "A -8.00 D lens (n = 1.6) is tilted 10 degrees pantoscopically. Using S' = S[1 + sin^2(theta)/3], the new sphere is closest to:",
+  "options": [
+   "-8.80 D",
+   "-8.08 D",
+   "-8.00 D",
+   "-7.92 D"
+  ],
+  "correct": 1,
+  "explanation": "S' = -8.00[1 + sin^2(10)/3] = -8.00[1 + 0.0301/3] = -8.00(1.01) = -8.08 D. Tilting a lens always increases the magnitude of the sphere and induces cylinder along the tilt axis."
+ },
+ {
+  "type": "mcq",
+  "stem": "For every 1 degree of pantoscopic tilt, the optical center should be lowered by about:",
+  "options": [
+   "0.1 mm",
+   "1 mm",
+   "0.5 mm",
+   "2 mm"
+  ],
+  "correct": 2,
+  "explanation": "The rule of thumb is to lower the optical center 0.5 mm (half a millimeter) for each degree of pantoscopic tilt, keeping the visual axis near the optical center to limit induced astigmatism."
+ },
+ {
+  "type": "mcq",
+  "stem": "Face-form (wrap) tilt induces sphere and cylinder changes along which meridian?",
+  "options": [
+   "No meridian; it has no optical effect",
+   "The 180 degree meridian",
+   "The 45 degree meridian",
+   "The 90 degree meridian"
+  ],
+  "correct": 3,
+  "explanation": "Face-form tilt induces power changes along the 90 degree meridian, whereas pantoscopic and retroscopic tilt act along the 180 degree meridian. This is why a face-form problem is first transposed to axis 90."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient is switched from spectacles to contact lenses. The vertex distance used in the effectivity calculation for the contact lens is:",
+  "options": [
+   "14 mm",
+   "12 mm",
+   "Equal to the spectacle vertex distance",
+   "Zero"
+  ],
+  "correct": 3,
+  "explanation": "A contact lens sits on the cornea, so its vertex distance is zero. Spectacle lenses are normally set 12 to 14 mm from the corneal vertex to sit near the eye's anterior nodal point."
+ },
+ {
+  "type": "mcq",
+  "stem": "A -8.00 D lens is decentered 3 mm. By Prentice's rule, the induced prism is:",
+  "options": [
+   "24 prism diopters",
+   "0.24 prism diopters",
+   "0.375 prism diopters",
+   "2.4 prism diopters"
+  ],
+  "correct": 3,
+  "explanation": "Prentice's rule: P = h(cm) x D = 0.3 cm x 8.00 = 2.4 prism diopters. Decentration must be converted to centimeters (3 mm = 0.3 cm) before multiplying by the lens power."
+ },
+ {
+  "type": "mcq",
+  "stem": "A +5.00 D lens must deliver 2 prism diopters base-out. What decentration is required and in which direction?",
+  "options": [
+   "0.4 mm outward",
+   "4 mm outward (temporal)",
+   "10 mm outward",
+   "4 mm inward (nasal)"
+  ],
+  "correct": 1,
+  "explanation": "h = P/D = 2/5.00 = 0.4 cm = 4 mm. For a plus lens, decentering outward (temporal) gives base-out prism. A common trap is confusing centimeters with millimeters or reversing the base direction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Image jump depends on which two factors?",
+  "options": [
+   "The reading add and the distance from the segment top to its optical pole",
+   "The frame PD and the vertex distance",
+   "The distance prescription and the lens material",
+   "The Abbe value and the tint"
+  ],
+  "correct": 0,
+  "explanation": "Image jump = h x D, where h is the distance from the segment top to the segment optical pole (in cm) and D is the add power. The distance prescription does not affect image jump."
+ },
+ {
+  "type": "mcq",
+  "stem": "A flat-top bifocal has its optical pole 7 mm below the segment top. With a +2.50 add, the image jump is:",
+  "options": [
+   "3.50 prism diopters",
+   "0.7 prism diopters",
+   "1.75 prism diopters",
+   "2.50 prism diopters"
+  ],
+  "correct": 2,
+  "explanation": "Image jump = h x D = 0.7 cm x 2.50 = 1.75 prism diopters. Flat-top segments have less image jump than round segments because their optical pole sits nearer the segment top."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which bifocal segment produces NO image jump, and why?",
+  "options": [
+   "Ultex, because it is one-piece",
+   "Executive, because its optical pole lies on the dividing line (h = 0)",
+   "Flat-top, because it is fused",
+   "Round Kryptok, because it is circular"
+  ],
+  "correct": 1,
+  "explanation": "The executive (monocentric) bifocal has its optical center on the dividing line, so h = 0 and image jump = 0. Its distance and near optical centers both sit on the segment line."
+ },
+ {
+  "type": "mcq",
+  "stem": "Among common bifocals, which produces the GREATEST image jump?",
+  "options": [
+   "Ultex",
+   "Flat-top (D-seg)",
+   "Round Kryptok (22 mm)",
+   "Executive"
+  ],
+  "correct": 0,
+  "explanation": "The Ultex has its optical pole about 19 to 20 mm below the segment top, giving the largest h and therefore the greatest image jump. Executive has zero, flat-top is small, and round Kryptok is intermediate."
+ },
+ {
+  "type": "mcq",
+  "stem": "Two prisms act at right angles: 3 prism diopters base-out combined with 4 prism diopters base-up. The resultant magnitude is:",
+  "options": [
+   "5 prism diopters",
+   "12 prism diopters",
+   "7 prism diopters",
+   "1 prism diopter"
+  ],
+  "correct": 0,
+  "explanation": "For perpendicular prisms the resultant magnitude is R = sqrt(H^2 + V^2) = sqrt(3^2 + 4^2) = sqrt(25) = 5 prism diopters. The base direction is found from the arctangent of vertical over horizontal."
+ },
+ {
+  "type": "mcq",
+  "stem": "A vertical imbalance of more than 1.5 prism diopters at the reading level is best managed by:",
+  "options": [
+   "Ignoring it; it is within tolerance",
+   "Switching to a larger frame",
+   "Slab-off (bicentric grinding) or prism-segment lenses",
+   "Dropping the distance optical center only"
+  ],
+  "correct": 2,
+  "explanation": "Imbalance under 1.5 prism diopters can be handled by dropping the distance optical center or using dissimilar segments. Above 1.5 prism diopters, slab-off (bicentric grinding) or prism in the segments is needed."
+ },
+ {
+  "type": "mcq",
+  "stem": "Regular slab-off creates which prism in the reading area, and it is ground on which lens?",
+  "options": [
+   "Base-down prism, on the most-plus lens",
+   "Base-in prism, on either lens",
+   "Base-out prism, on the most-minus lens",
+   "Base-up prism, on the most-minus (or least-plus) lens"
+  ],
+  "correct": 3,
+  "explanation": "Regular slab-off is bicentric grinding that creates base-up prism in the reading area and is applied to the lens with the most minus (or least plus) power on the 90 degree meridian. Reverse slab-off creates base-down prism and goes on the most-plus lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "A trifocal has a distance power of +1.00 D and a +2.40 D add. Its intermediate power is:",
+  "options": [
+   "+2.40 D",
+   "+1.00 D",
+   "+3.40 D",
+   "+2.20 D"
+  ],
+  "correct": 3,
+  "explanation": "Intermediate power = distance power + (1/2 x add) = +1.00 + 1.20 = +2.20 D. The intermediate zone is designed to cover the working distance between distance and near."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Risley (rotary) prism produces a resultant of 2(delta)sin(theta) because it uses:",
+  "options": [
+   "A single fixed prism",
+   "A prism plus a cylinder",
+   "Two counter-rotating prisms whose bases oppose at the zero position",
+   "A mirror and a prism"
+  ],
+  "correct": 2,
+  "explanation": "A Risley prism combines two counter-rotating prisms. At the zero position the bases oppose and cancel; as they rotate the resultant is 2 x delta x sin(theta), allowing a continuously variable prism."
+ },
+ {
+  "type": "mcq",
+  "stem": "For a +3.00 add in a 22 mm round segment (optical pole about 11 mm below the top), the image jump is:",
+  "options": [
+   "1.1 prism diopters",
+   "3.3 prism diopters",
+   "2.2 prism diopters",
+   "0.33 prism diopters"
+  ],
+  "correct": 1,
+  "explanation": "Image jump = h x D = 1.1 cm x 3.00 = 3.3 prism diopters. The round segment's optical pole is at its center, about 11 mm (its radius) below the top of a 22 mm segment."
+ },
+ {
+  "type": "mcq",
+  "stem": "Who is credited with inventing the bifocal lens, and in what year?",
+  "options": [
+   "Benjamin Franklin, 1784",
+   "Isaac Schnaitman, 1837",
+   "Irvin Rips, 1955",
+   "John Isaac Hawkins, 1826"
+  ],
+  "correct": 0,
+  "explanation": "Benjamin Franklin invented the bifocal in 1784 (the Franklin split bifocal). Hawkins introduced the trifocal in 1826; Schnaitman made the first one-piece (solid upcurve) bifocal in 1837; Rips made the blended bifocal in 1955."
+ },
+ {
+  "type": "mcq",
+  "stem": "The first fused bifocal was the:",
+  "options": [
+   "Executive",
+   "Perfection bifocal",
+   "Kryptok",
+   "Ultex"
+  ],
+  "correct": 2,
+  "explanation": "The Kryptok, introduced by John Borsch Jr. in 1908, was the first fused bifocal. The Ultex (O'Conner, 1910) and executive (American Optical, 1954) came later."
+ },
+ {
+  "type": "mcq",
+  "stem": "The first commercially successful progressive addition lens, Varilux, was introduced by:",
+  "options": [
+   "John Borsch Jr. in 1908",
+   "American Optical in 1954",
+   "Zeiss in 1970",
+   "Essilor of France in 1958 to 1959"
+  ],
+  "correct": 3,
+  "explanation": "Essilor of France introduced Varilux, the first progressive multifocal lens, in 1958 to 1959. It eliminated the visible segment line of bifocals."
+ },
+ {
+  "type": "mcq",
+  "stem": "A split (Franklin) two-piece bifocal has which notable advantage?",
+  "options": [
+   "It has no vertical image jump because the optical centers lie at the dividing line",
+   "Its segment never collects dust",
+   "It has the highest add powers available",
+   "It is the lightest bifocal made"
+  ],
+  "correct": 0,
+  "explanation": "The Franklin split bifocal holds two half-lenses edge to edge with their optical centers at the dividing line, so there is no vertical image jump. Its drawbacks are that the halves come apart and the dividing line reflects and collects dust."
+ },
+ {
+  "type": "mcq",
+  "stem": "A fused bifocal's main optical disadvantage comes from its flint segment. That disadvantage is:",
+  "options": [
+   "Loss of the segment over time",
+   "Poor scratch resistance",
+   "Excess weight",
+   "High chromatic aberration"
+  ],
+  "correct": 3,
+  "explanation": "The higher-index flint segment fused into the crown major lens has a low Abbe value, so it produces high chromatic aberration. An advantage is that the fused segment does not collect dirt, discolor, or chip."
+ },
+ {
+  "type": "mcq",
+  "stem": "Inspecting a bifocal edge, you see a distinct ledge at the segment. This indicates a:",
+  "options": [
+   "Cemented bifocal",
+   "Progressive lens",
+   "Fused bifocal",
+   "One-piece (solid) bifocal"
+  ],
+  "correct": 3,
+  "explanation": "A visible ledge marks a solid one-piece bifocal. Cemented and fused bifocals show no ledge; the fused type instead shows a segment of denser, higher-index glass."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which adhesive was historically used to bond the wafer in a cemented bifocal?",
+  "options": [
+   "Cyanoacrylate",
+   "Canada Balsam",
+   "UV-curing cement",
+   "Epoxy resin"
+  ],
+  "correct": 1,
+  "explanation": "Canada Balsam was the adhesive used to cement the small wafer segment to the major crown-glass lens. Its drawback was that temperature changes could loosen the wafer."
+ },
+ {
+  "type": "mcq",
+  "stem": "A trifocal is labeled 7 x 28. What do these numbers mean?",
+  "options": [
+   "7 mm bridge, 28 mm eye size",
+   "7 mm add height, 28 D total power",
+   "7 diopter intermediate, 28 diopter near",
+   "7 mm segment depth and 28 mm near-segment width"
+  ],
+  "correct": 3,
+  "explanation": "In trifocal notation such as 7 x 28, the first number is the segment (intermediate) depth and the second is the diameter or width of the near segment. Common sizes include 7 x 28, 8 x 35, 10 x 35, and 14 x 35."
+ },
+ {
+  "type": "mcq",
+  "stem": "The minimum segment height recommended for any lined trifocal is about:",
+  "options": [
+   "18 to 19 mm",
+   "13 to 14 mm",
+   "10 to 11 mm",
+   "25 mm"
+  ],
+  "correct": 0,
+  "explanation": "A lined trifocal needs a minimum segment height of about 18 to 19 mm so that both the intermediate and near zones fit usefully in the lens."
+ },
+ {
+  "type": "mcq",
+  "stem": "A librarian who must see near objects on shelves above eye level is best served by which occupational lens?",
+  "options": [
+   "Double-D trifocal",
+   "Rede-Rite (minus-add upcurve)",
+   "Golfer's bifocal",
+   "Executive single-vision"
+  ],
+  "correct": 0,
+  "explanation": "The double-D trifocal (librarian lens) places flat-top segments at both the top and bottom, giving near or intermediate vision above and below distance. It suits librarians and pilots who view near objects overhead."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Rede-Rite (dental upcurve) bifocal is distinctive because:",
+  "options": [
+   "It has no near correction",
+   "The distance segment sits on top and the main body of the lens is the near zone",
+   "It has three segments",
+   "The near zone is a small round segment low in the lens"
+  ],
+  "correct": 1,
+  "explanation": "The Rede-Rite (also called the minus-add upcurve or dental bifocal) puts the distance portion in a segment on top, with the main body of the lens being the near zone. It suits workers who view near objects above them."
+ },
+ {
+  "type": "mcq",
+  "stem": "A right-handed golfer wants to read a scorecard without disturbing distance vision. The golfer's bifocal is designed with:",
+  "options": [
+   "A full executive segment",
+   "A progressive corridor",
+   "A small round near segment low in the outer corner of one lens",
+   "Two flat-top segments"
+  ],
+  "correct": 2,
+  "explanation": "The golfer's bifocal places a small round near segment low in the outer corner of a single lens (the right lens for a right-handed golfer), keeping the rest of both lenses clear for distance play."
+ },
+ {
+  "type": "mcq",
+  "stem": "An aspheric lens differs from a standard spherical lens chiefly because it:",
+  "options": [
+   "Has two segments",
+   "Uses conical curves (such as ellipsoids) to become flatter and thinner while reducing aberrations",
+   "Is always made of glass",
+   "Cannot correct astigmatism"
+  ],
+  "correct": 1,
+  "explanation": "Aspheric lenses use conical curves, notably ellipsoids, producing a flatter, thinner, lighter lens and reducing spherical aberration, oblique astigmatism, and distortion. They are commonly made in high-index plastic."
+ },
+ {
+  "type": "mcq",
+  "stem": "A hard-design progressive lens is characterized by:",
+  "options": [
+   "No unwanted astigmatism anywhere",
+   "A wide corridor with gradual astigmatism and small clear zones",
+   "Identical zones to a soft design",
+   "Wide distance and near zones with a narrow corridor and rapid increase in unwanted astigmatism"
+  ],
+  "correct": 3,
+  "explanation": "Hard-design progressives give wide distance and near zones but a narrow, short intermediate corridor, with a rapid rise in unwanted peripheral astigmatism. Soft designs spread the astigmatism over a wider corridor at the cost of smaller clear zones."
+ },
+ {
+  "type": "mcq",
+  "stem": "On a progressive lens, which markings are permanent (micro-engraved)?",
+  "options": [
+   "The horizontal locators (about 34 mm apart), the lens logo, and the add power",
+   "The pantoscopic angle",
+   "The fitting cross and prism reference point",
+   "The distance and near reference circles"
+  ],
+  "correct": 0,
+  "explanation": "Permanent micro-engravings are the two horizontal locators (about 34 mm apart), the manufacturer's logo, and the add power. The fitting cross, reference circles, and prism reference point are temporary ink markings."
+ },
+ {
+  "type": "mcq",
+  "stem": "The temporary progressive marking that must be aligned directly in front of the patient's pupil is the:",
+  "options": [
+   "Near reference circle",
+   "Distance reference circle",
+   "Prism reference point",
+   "Fitting cross"
+  ],
+  "correct": 3,
+  "explanation": "The fitting cross is the ink-stamped point aligned directly in front of the pupil in primary gaze. The distance circle reads distance power, the near circle checks the add, and the prism reference point checks prism."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which progressive marking is used to check for unwanted prism in the lens?",
+  "options": [
+   "Prism reference point",
+   "Fitting cross",
+   "Horizontal locator",
+   "Distance reference circle"
+  ],
+  "correct": 0,
+  "explanation": "The prism reference point is the temporary marking used to verify the presence or amount of prism. The distance and near circles are for reading powers, and the fitting cross is for pupil alignment."
+ },
+ {
+  "type": "mcq",
+  "stem": "A gray tint is the most popular protection tint mainly because it:",
+  "options": [
+   "Is the darkest available",
+   "Blocks all blue light",
+   "Transmits evenly across the visible spectrum, preserving true color perception",
+   "Enhances contrast more than any other tint"
+  ],
+  "correct": 2,
+  "explanation": "Gray transmits evenly across the visible spectrum, so it reduces intensity without distorting color, giving true color perception. That neutrality makes it the most popular general-purpose protection tint."
+ },
+ {
+  "type": "mcq",
+  "stem": "A prescriber selects a tint specifically because a neurological condition is present. Which tint is the classic choice?",
+  "options": [
+   "Pink (rose)",
+   "Yellow",
+   "Green",
+   "Gray"
+  ],
+  "correct": 0,
+  "explanation": "Pink (rose) is described as the color of choice when a neurological condition is present. It attenuates light pleasantly and absorbs in the UV and blue-light regions."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which tint is most often recommended for night driving because it brightens the road and cuts headlight glare?",
+  "options": [
+   "Gray",
+   "Green",
+   "Blue",
+   "Amber"
+  ],
+  "correct": 3,
+  "explanation": "Amber improves contrast and depth perception, brightening the darkness ahead while reducing glare from oncoming headlights, which suits night driving. Gray and green are neutral daytime tints."
+ },
+ {
+  "type": "mcq",
+  "stem": "A red tint can be clinically useful for a patient with color deficiency because it:",
+  "options": [
+   "Strongly blocks blue-green wavelengths, sharpening contrast and aiding hue discrimination",
+   "Blocks only UV",
+   "Adds no optical effect",
+   "Eliminates all color perception"
+  ],
+  "correct": 0,
+  "explanation": "Red strongly blocks blue-green wavelengths, producing sharp contrast and improving depth perception in low light. This can aid hue discrimination in some color-deficient patients."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which metal oxide is used to tint glass GREEN?",
+  "options": [
+   "Cobalt oxide",
+   "Gold oxide",
+   "Ferrous oxide",
+   "Manganese oxide"
+  ],
+  "correct": 2,
+  "explanation": "Ferrous oxide tints glass green. Cobalt oxide gives blue, gold oxide gives red, and manganese oxide gives violet. Glass is tinted by adding these metal oxides during manufacture."
+ },
+ {
+  "type": "mcq",
+  "stem": "Photochromic lenses often fail to darken adequately inside a car because:",
+  "options": [
+   "Car glass reflects the lenses",
+   "The cabin is too warm",
+   "They only respond to infrared",
+   "The windshield blocks the UV that triggers darkening"
+  ],
+  "correct": 3,
+  "explanation": "Photochromic darkening is triggered by UV, and a car windshield blocks most UV, so the lenses stay relatively clear inside a vehicle. They also darken more in cold and less in heat."
+ },
+ {
+  "type": "mcq",
+  "stem": "Polarized (Polaroid) lenses reduce glare from a horizontal reflective surface by:",
+  "options": [
+   "Blocking all light equally",
+   "Blocking vertically aligned light and passing horizontal light",
+   "Darkening only in sunlight",
+   "Blocking horizontally aligned light and passing vertical light"
+  ],
+  "correct": 3,
+  "explanation": "Reflection off a horizontal surface aligns light horizontally, creating glare. Polarized lenses block that horizontally aligned light while allowing vertically aligned light through, cutting glare while preserving useful vision."
+ },
+ {
+  "type": "mcq",
+  "stem": "Mirror-coated sunglasses reduce eyestrain by blocking roughly what fraction of incident light?",
+  "options": [
+   "1 to 5%",
+   "80 to 95%",
+   "10 to 60%",
+   "Exactly 50% always"
+  ],
+  "correct": 2,
+  "explanation": "Mirror coatings, applied by vacuum deposition of oxides or metals on the front surface, block about 10 to 60% of light transmission and also cosmetically shield the eyes. They suit bright, reflective settings like water and snow."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anti-reflective (AR) coatings are especially indicated on high-index lenses because those lenses:",
+  "options": [
+   "Are more scratch resistant",
+   "Are always tinted",
+   "Reflect more light at each surface (higher index means higher reflectance)",
+   "Absorb more UV"
+  ],
+  "correct": 2,
+  "explanation": "Reflectance rises with refractive index, so high-index lenses reflect more light at each surface. AR coatings use destructive interference to cut those reflections, sharpening vision and reducing distracting ghost images."
+ },
+ {
+  "type": "mcq",
+  "stem": "An anti-fog coating works primarily by:",
+  "options": [
+   "Adding a mirror layer",
+   "Increasing the refractive index",
+   "Heating the lens electrically",
+   "Creating a hydrophilic surface or applying a surfactant film so water does not bead"
+  ],
+  "correct": 3,
+  "explanation": "Anti-fog coatings prevent water from condensing as tiny droplets by making the surface hydrophilic or by applying a surfactant film, so moisture spreads into a clear layer instead of scattering fog."
+ },
+ {
+  "type": "mcq",
+  "stem": "UV-protective coatings are particularly recommended for which patients?",
+  "options": [
+   "Only children under 5",
+   "Patients who never go outdoors",
+   "Night-shift office workers only",
+   "Skiers, mountaineers, astronomers, and pseudophakic patients"
+  ],
+  "correct": 3,
+  "explanation": "UV coatings suit those with high UV exposure or added risk, including skiers, mountaineers, and astronomers, and pseudophakic patients whose natural lens no longer filters UV. UV exposure contributes to cataract and macular degeneration."
+ },
+ {
+  "type": "mcq",
+  "stem": "Regarding how tint interacts with lens material, which statement is correct?",
+  "options": [
+   "Polycarbonate tint can be modified after the initial application, unlike glass",
+   "Glass is tinted by dyeing",
+   "Glass tint can be freely changed after dispensing",
+   "CR-39 cannot be tinted at all"
+  ],
+  "correct": 0,
+  "explanation": "Polycarbonate tint can be modified after the initial application. Glass tint is permanent (a color change means new lenses), and CR-39 is dyed, so re-darkening an old tinted CR-39 lens can reveal scratches or ruin it."
+ },
+ {
+  "type": "mcq",
+  "stem": "Beneficial blue light exposure is associated with which effect?",
+  "options": [
+   "Regulation of circadian rhythm, alertness, and mood",
+   "Digital eyestrain",
+   "Immediate retinal burns",
+   "Cataract formation"
+  ],
+  "correct": 0,
+  "explanation": "Beneficial blue light helps regulate the circadian rhythm, boosts alertness, and elevates mood. Excessive blue-light exposure, by contrast, is linked with digital eyestrain, which blue-light coatings aim to reduce."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient who dislikes the glassy look and ghost images of high-index lenses would benefit MOST from:",
+  "options": [
+   "An anti-reflective coating",
+   "A thicker lens",
+   "A mirror coating",
+   "A darker tint"
+  ],
+  "correct": 0,
+  "explanation": "Anti-reflective coating increases transmittance and reduces surface reflection, cutting the glassy appearance and ghost images that are most noticeable on high-index lenses. It also helps night drivers and computer users."
+ },
+ {
+  "type": "mcq",
+  "stem": "When neutralizing an unknown lens by hand, an 'against' movement of the cross target indicates the lens is:",
+  "options": [
+   "A prism only",
+   "Plano",
+   "Minus power in that meridian, neutralized with a minus trial lens",
+   "Plus power in that meridian, neutralized with a plus trial lens"
+  ],
+  "correct": 3,
+  "explanation": "Against motion indicates plus power in that meridian, neutralized by adding a plus trial lens. With motion indicates minus power, neutralized with a minus lens. Neutralization is reached when there is no movement."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hand (trial-case) neutralization measures which power, and when is it most appropriate?",
+  "options": [
+   "Equivalent power; only for toric lenses",
+   "Back vertex power; when a lensometer is available",
+   "Nominal power; for progressive lenses",
+   "Front vertex power; when no lensometer is available, and better for low-power than toric lenses"
+  ],
+  "correct": 3,
+  "explanation": "Hand neutralization measures front vertex power and is used when a lensometer is unavailable. It works better for low-power spheres than for toric lenses, whose rotational motion complicates the reading."
+ },
+ {
+  "type": "mcq",
+  "stem": "A Geneva (lens) clock reads surface curvature assuming a glass index of about 1.53. To find the true power of a lens made of a different index you must:",
+  "options": [
+   "Use the lens clock only on the back surface",
+   "Ignore the difference",
+   "Double the reading",
+   "Apply the true-and-marked-power correction T = [(n - 1)/0.530] x D"
+  ],
+  "correct": 3,
+  "explanation": "The Geneva lens clock is calibrated for index 1.530. For other materials, true power T = [(n - 1)/0.530] x D corrects the marked (clock) reading to the actual power for that material."
+ },
+ {
+  "type": "mcq",
+  "stem": "On a lensometer, a target of a circle of dots indicates a spherical lens, whereas two sets of perpendicular lines indicate:",
+  "options": [
+   "A plano lens",
+   "A progressive lens",
+   "A cylindrical (toric) lens",
+   "A prism"
+  ],
+  "correct": 2,
+  "explanation": "In the lensometer mires, a circle of dots corresponds to a spherical lens, while two perpendicular sets of lines indicate a cylindrical (toric) lens. The cylinder power is the difference between the two meridian readings."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is NOT a standard use of the lensometer?",
+  "options": [
+   "Measuring the patient's interpupillary distance",
+   "Locating the optical center",
+   "Neutralizing an unknown prescription",
+   "Measuring prism amount"
+  ],
+  "correct": 0,
+  "explanation": "The lensometer neutralizes, verifies, and duplicates prescriptions, locates the optical center, and measures prism. It does not measure the patient's interpupillary distance, which is taken with a PD rule or pupillometer."
+ },
+ {
+  "type": "mcq",
+  "stem": "In the boxing system, the 'A' measurement refers to:",
+  "options": [
+   "The vertical depth of the lens",
+   "The bridge width",
+   "The distance between optical centers",
+   "The horizontal eye size, between the vertical sides of the box"
+  ],
+  "correct": 3,
+  "explanation": "The 'A' measurement is the horizontal distance between the furthest temporal and nasal edges of the lens (the vertical sides of the box), commonly called the eye size. The 'B' measurement is the vertical depth."
+ },
+ {
+  "type": "mcq",
+  "stem": "The DBL (distance between lenses) in the boxing system corresponds to the:",
+  "options": [
+   "Frame PD",
+   "Segment height",
+   "Effective diameter",
+   "Bridge size"
+  ],
+  "correct": 3,
+  "explanation": "The DBL is the shortest distance between the nasal edges of the two lenses and corresponds to the bridge size. The frame PD is the DBC (distance between centers), which equals A plus DBL."
+ },
+ {
+  "type": "mcq",
+  "stem": "Using the boxing system, how is the frame PD (DBC) related to the 'A' measurement and DBL?",
+  "options": [
+   "DBC = A x DBL",
+   "DBC = A - DBL",
+   "DBC = A + DBL",
+   "DBC = DBL - A"
+  ],
+  "correct": 2,
+  "explanation": "In theory the distance between centers (frame PD) equals the eye size plus the bridge: DBC = A + DBL. The practical measured value can differ slightly from this calculation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The effective diameter (ED) of a lens shape is used mainly to:",
+  "options": [
+   "Measure vertex distance",
+   "Determine the add power",
+   "Select the minimum blank size that will cut out for the frame",
+   "Set the tint density"
+  ],
+  "correct": 2,
+  "explanation": "The effective diameter is twice the distance from the geometric center to the furthest edge of the lens shape. Combined with the decentration, it is used to choose the smallest lens blank that will cut out for a given frame."
+ },
+ {
+  "type": "mcq",
+  "stem": "The mechanical center of a lens, around which it is cut and edged, sits where relative to the geometric center?",
+  "options": [
+   "2 mm above the geometric center",
+   "At the nasal edge",
+   "5 mm below the geometric center",
+   "At the geometric center"
+  ],
+  "correct": 0,
+  "explanation": "The mechanical center is placed about 2 mm above the geometric center; the lens is cut and edged around this point to account for the typical position of the eye in the frame."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which part of a spectacle frame is designed to bear roughly 90% of the frame's weight?",
+  "options": [
+   "The hinges",
+   "The bridge",
+   "The temples",
+   "The end pieces"
+  ],
+  "correct": 1,
+  "explanation": "The bridge, the arched part resting on the nose, supports about 90% of the frame's weight and largely determines the fit. A saddle bridge spreads that weight for heavy frames or pressure-sensitive patients."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient with a pressure-sensitive nose and heavy lenses would be best fitted with which bridge type?",
+  "options": [
+   "Double bridge",
+   "Saddle bridge",
+   "No bridge",
+   "Keyhole bridge"
+  ],
+  "correct": 1,
+  "explanation": "A saddle bridge spreads the weight across the sides and top of the nose, making it comfortable for heavy glasses or pressure-sensitive patients. A keyhole bridge instead rests on the sides of the upper nose for small or flat bridges."
+ },
+ {
+  "type": "mcq",
+  "stem": "Comfort-cable temples are most appropriate for which wearers?",
+  "options": [
+   "Patients with very large heads",
+   "Children and sports participants who need the frame to stay on",
+   "Adults wanting easy on-and-off reading glasses",
+   "Patients needing the lightest possible temple"
+  ],
+  "correct": 1,
+  "explanation": "Comfort-cable temples wrap behind the ear with a flexible metal cable, holding the frame securely, which suits children and sports use. Library (paddle) temples are the straight, easy on-and-off style for reading glasses."
+ },
+ {
+  "type": "mcq",
+  "stem": "The boxing system of frame measurement was adopted by the Optical Manufacturers Association in:",
+  "options": [
+   "1948",
+   "1908",
+   "1984",
+   "1962"
+  ],
+  "correct": 3,
+  "explanation": "The boxing system was adopted in 1962. It draws an imaginary box around each lens shape and uses the box sides as the reference points for all standard frame and lens measurements."
+ },
+ {
+  "type": "mcq",
+  "stem": "During benchwork, all centering marks (optical center, cylinder axis, base-apex line) are placed on which surface of the lens?",
+  "options": [
+   "The front (convex) surface",
+   "The back (concave) surface",
+   "The edge",
+   "Either surface"
+  ],
+  "correct": 0,
+  "explanation": "Centering marks the optical center, cylinder axis, and base-apex line on the front surface of the lens, using a centering device or lensometer. Keeping all marks on the front surface keeps the layout consistent."
+ },
+ {
+  "type": "mcq",
+  "stem": "In benchwork, 'glazing' refers to:",
+  "options": [
+   "Applying an anti-reflective coating",
+   "Grinding the surface curves",
+   "Drilling holes for a rimless mount",
+   "Placing the finished lens into the channeled eye wire"
+  ],
+  "correct": 3,
+  "explanation": "Glazing (insertion) is placing the lens into the channeled eye wire. Mounting refers to seating the lens in a full-rim frame, and drilling is boring holes for rimless or three-piece mountings."
+ },
+ {
+  "type": "mcq",
+  "stem": "A dispenser wants a bifocal segment that is nearly invisible cosmetically but accepts more image jump and a narrower reading area. This describes the:",
+  "options": [
+   "Round (Kryptok) segment",
+   "Double-D segment",
+   "Flat-top (D) segment",
+   "Executive segment"
+  ],
+  "correct": 0,
+  "explanation": "The round Kryptok segment is the least visible cosmetically, but its optical pole sits about 11 mm below the top, giving more image jump, and the circular shape is often too narrow for comfortable reading."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which single-vision lens design is described as a simple meniscus or toric lens with a spherical front and spherical or toroidal back, available in most materials?",
+  "options": [
+   "Executive lens",
+   "Aspheric lens",
+   "Spherical/toroidal lens",
+   "Lenticular lens"
+  ],
+  "correct": 2,
+  "explanation": "The spherical and toroidal single-vision lenses are the most common design: a meniscus or toric form with a spherical positive front and a spherical or toroidal negative back, available in most materials. Aspheric lenses instead use conical curves."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient asks why their high-index lenses look more reflective than their old CR-39 lenses. The correct explanation is that:",
+  "options": [
+   "High-index lenses have a higher Abbe value",
+   "Higher refractive index increases surface reflectance",
+   "High-index materials absorb more UV",
+   "High-index lenses are always thicker"
+  ],
+  "correct": 1,
+  "explanation": "Reflectance rises with refractive index (R = 100(n-1)^2/(n+1)^2), so higher-index lenses reflect more light per surface and look more reflective. This is exactly why AR coating is strongly recommended for high-index lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Ultex bifocal is ground from a single blank with a central disk of about 38 mm that is then cut, giving each finished lens a segment height of about:",
+  "options": [
+   "19 mm",
+   "7 mm",
+   "11 mm",
+   "28 mm"
+  ],
+  "correct": 0,
+  "explanation": "The Ultex is a one-piece crown-glass bifocal ground with a roughly 38 mm central disk; after the blank is cut in two, each lens has a segment height of about 19 mm. Its large segment gives a wide reading field but the greatest image jump."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which statement about the executive (full-width) bifocal is a genuine disadvantage?",
+  "options": [
+   "Its optical centers are far from the segment line",
+   "It creates image jump",
+   "It is thick, heavy, and its crevice collects dirt",
+   "It has a narrow reading field"
+  ],
+  "correct": 2,
+  "explanation": "The executive segment gives the widest near field and zero image jump, but it is thick and heavy, cosmetically obvious, and its deep cleft collects dirt while the segment edge can chip. Its optical centers sit on the dividing line."
+ },
+ {
+  "type": "mcq",
+  "stem": "A soft-design progressive lens is preferred for a patient who:",
+  "options": [
+   "Wants a wider, more gradual intermediate corridor and better adaptation, accepting smaller clear zones",
+   "Needs a lined segment",
+   "Needs the widest possible distance and near zones and accepts a narrow corridor",
+   "Cannot tolerate any peripheral blur at all"
+  ],
+  "correct": 0,
+  "explanation": "Soft-design progressives use a wider, longer corridor with a more gradual increase in unwanted astigmatism, which aids adaptation, at the cost of smaller clear distance and near zones. Hard designs do the opposite."
+ },
+ {
+  "type": "mcq",
+  "stem": "A blended (invisible/seamless) bifocal such as the Younger design was introduced by Irvin Rips in 1955. Its defining feature is:",
+  "options": [
+   "A flint fused segment",
+   "A round segment whose edge is blended so no line is visible",
+   "A visible ledge at the segment",
+   "Two separate lens pieces"
+  ],
+  "correct": 1,
+  "explanation": "The blended bifocal blends the round segment edge so the dividing line is cosmetically invisible, at the cost of a blurred blend zone. Rips introduced it in 1955; it is also called the invisible, seamless, or Younger bifocal."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient's chief complaint is peripheral color fringing that worsens with stronger power. Beyond changing to a higher-Abbe material, the classic optical device that corrects this is the:",
+  "options": [
+   "Aspheric surface",
+   "Corrected-curve meniscus",
+   "Plano-convex lens",
+   "Achromatic doublet"
+  ],
+  "correct": 3,
+  "explanation": "The complaint is chromatic aberration, which worsens with higher power and lower Abbe value. The achromatic doublet pairs two lenses so their chromatic aberrations cancel; switching to a higher-Abbe material also reduces it."
+ },
+ {
+  "type": "mcq",
+  "stem": "Curvature of field is a bigger problem for camera makers than for spectacle makers because:",
+  "options": [
+   "Cameras use plastic lenses",
+   "Film (or a sensor) is flat while the retina is curved and compensates",
+   "Spectacle lenses are always aspheric",
+   "Curvature of field does not exist in cameras"
+  ],
+  "correct": 1,
+  "explanation": "Curvature of field forms the image on a curved Petzval surface. The curved retina compensates in spectacle wear, but a camera's flat film or sensor cannot, so instrument makers must correct it carefully."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lens is described as orthoscopic. This means it is:",
+  "options": [
+   "Free from chromatic aberration",
+   "Free from reflection",
+   "Free from scratches",
+   "Free from distortion"
+  ],
+  "correct": 3,
+  "explanation": "Orthoscopic means free from distortion, so straight lines image as straight lines. Distortion affects image shape and lateral position but not clarity, and is most evident in high-power plus and minus lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "A dispenser must correct a 2.0 prism-diopter vertical imbalance in the reading zone with a plastic lens, preferring a molded solution. The appropriate technique is:",
+  "options": [
+   "Dropping the distance optical center",
+   "A larger frame",
+   "Reverse slab-off molded on the convex side of the most-plus lens",
+   "Regular slab-off on the most-minus lens"
+  ],
+  "correct": 2,
+  "explanation": "Because the imbalance exceeds 1.5 prism diopters, slab-off is indicated. Reverse slab-off is molded on the convex side of a plastic lens, creating base-down prism, and is applied to the lens with the most plus (or least minus) power on the 90 degree meridian."
+ },
+ {
+  "type": "mcq",
+  "stem": "When measuring a toric lens on the lensometer, the cylinder power is found by:",
+  "options": [
+   "Taking the difference between the two perpendicular meridian readings",
+   "Adding the two meridian readings",
+   "Reading a single meridian only",
+   "Reading the circle of dots"
+  ],
+  "correct": 0,
+  "explanation": "For a toric lens, you focus the perpendicular line targets at one meridian, rotate 90 degrees to the second, and the cylinder power is the difference between the two sphere readings. A circle of dots indicates a pure sphere."
+ },
+ {
+  "type": "mcq",
+  "stem": "A high-plus aspheric lens is chosen partly to control spherical aberration. Aspheric surfaces achieve this because their peripheral curvature is:",
+  "options": [
+   "Randomly varied",
+   "Steeper than the central curvature",
+   "Flatter than the central curvature (aplanatic principle)",
+   "Identical to the central curvature"
+  ],
+  "correct": 2,
+  "explanation": "Aspheric (aplanatic) surfaces flatten the peripheral curvature relative to the center so peripheral rays are not over-refracted, controlling spherical aberration while also making the lens thinner and flatter."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which lens material, made of a glass front bonded to a plastic back, is about 25% thinner and lighter than an all-glass lens?",
+  "options": [
+   "Corlon (C-Lite)",
+   "Barium crown",
+   "Trivex",
+   "PMMA"
+  ],
+  "correct": 0,
+  "explanation": "Corlon (C-Lite) bonds a glass front to a plastic back, giving roughly 25% reduction in both thickness and weight compared with an all-glass lens, combining the scratch resistance of glass with reduced weight."
+ },
+ {
+  "type": "mcq",
+  "stem": "Retroscopic tilt is achieved by angling the bottom of the frame front away from the face. Its usual purpose is to:",
+  "options": [
+   "Add base-down prism",
+   "Increase pantoscopic effect",
+   "Clear the lower rim from a protruding cheek",
+   "Lower the optical center"
+  ],
+  "correct": 2,
+  "explanation": "Retroscopic tilt angles the bottom rim away from the face, generally to keep the lower rim off a protruding cheek. Like pantoscopic tilt it acts along the 180 degree meridian."
+ },
+ {
+  "type": "mcq",
+  "stem": "The 'B' measurement in the boxing system is the:",
+  "options": [
+   "Temple length",
+   "Bridge width",
+   "Horizontal eye size",
+   "Vertical distance between the top and bottom edges of the lens shape"
+  ],
+  "correct": 3,
+  "explanation": "The 'B' measurement is the vertical distance between the furthest top and bottom edges of the lens shape, that is, between the horizontal sides of the box. The 'A' measurement is the horizontal eye size."
+ },
+ {
+  "type": "mcq",
+  "stem": "Seg drop differs from seg height in that seg drop is measured from the:",
+  "options": [
+   "Top of the box to the optical center",
+   "Bottom of the box to the segment top",
+   "Nasal edge to the segment",
+   "Datum line to the segment top"
+  ],
+  "correct": 3,
+  "explanation": "Seg drop is the vertical distance from the datum line (horizontal midline) to the top of the segment, whereas seg height is measured from the bottom edge of the box to the segment top."
+ },
+ {
+  "type": "mcq",
+  "stem": "A patient viewing a distant cross through an unknown lens sees the horizontal limb move against the direction the lens is moved. This meridian contains:",
+  "options": [
+   "Minus power",
+   "Prism only",
+   "No power",
+   "Plus power"
+  ],
+  "correct": 3,
+  "explanation": "Against motion signals plus power in that meridian, so it is neutralized with a plus trial lens. Observing the horizontal limb while moving the lens vertically isolates that meridian's power."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which coating is specifically recommended for plastic lenses to compensate for their low surface hardness?",
+  "options": [
+   "Scratch-resistant (hard) coating",
+   "Mirror coating",
+   "Anti-fog coating",
+   "Photochromic treatment"
+  ],
+  "correct": 0,
+  "explanation": "Plastic lenses have low scratch resistance (Moh's 4 to 5), so a scratch-resistant hard coating is recommended to protect the surface. Glass is inherently more scratch resistant and does not always require it."
+ },
+ {
+  "type": "mcq",
+  "stem": "An AR coating is contraindicated as an add-on in which situation described in the notes?",
+  "options": [
+   "A night driver who keeps lenses clean",
+   "A patient with high-index lenses",
+   "A computer user",
+   "A patient wearing polycarbonate expecting strong photochromic activation, since PC already blocks UV"
+  ],
+  "correct": 3,
+  "explanation": "On polycarbonate, which already blocks UV, an accompanying photochromic may not activate well, so AR is a poor pairing there. AR otherwise benefits computer users, high-index wearers, and night drivers who keep the coating clean."
+ },
+ {
+  "type": "mcq",
+  "stem": "The purpose of the datum line in the boxing system is to mark the:",
+  "options": [
+   "Nasal edge of each lens",
+   "Horizontal line through the vertical center of the frame",
+   "Vertical center line of the frame",
+   "Top of the segment"
+  ],
+  "correct": 1,
+  "explanation": "The datum line is the horizontal line running through the vertical center of the frame. Its intersection with the horizontal center of each lens defines the geometric (box) center."
+ },
+ {
+  "type": "mcq",
+  "stem": "Photochromic glass lenses darken through the action of which chemistry?",
+  "options": [
+   "Liquid crystal alignment",
+   "Electrochromic voltage",
+   "Organic dye molecules that open and close",
+   "Silver halide (silver chloride) crystals reacting to UV"
+  ],
+  "correct": 3,
+  "explanation": "Glass photochromics rely on silver halide (silver chloride) crystals that react to UV and darken, then clear when UV is removed. Plastic photochromics instead use organic dye molecules that change structure. The reaction is reversible and repeatable."
+ },
+ {
+  "type": "mcq",
+  "stem": "A single uncoated polycarbonate surface (n = 1.59) reflects more than a CR-39 surface. Its per-surface transmission is closest to which reference value?",
+  "options": [
+   "99.00%",
+   "96.13%",
+   "95.70%",
+   "94.81%"
+  ],
+  "correct": 3,
+  "explanation": "Polycarbonate (n = 1.59) reflects about 5.19% per surface, giving a per-surface transmission near 94.81%, lower than CR-39 (96.13%) and crown glass (95.70%) because higher index reflects more."
+ }
+]
