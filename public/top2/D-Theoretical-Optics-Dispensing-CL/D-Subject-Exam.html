@@ -276,5 +276,39 @@ function results(){
 }
 </script>
 <script src="/top2/_report.js"></script>
-<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="D-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><a href="D-Strategy.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Strategy</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#d99a16;color:#fff;">Exam</span></div><!--/WAA-LAYER-NAV--></body>
+<!--WAA-LAYER-NAV--><div style="position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #d9dee5;border-radius:11px;padding:4px;box-shadow:0 2px 12px rgba(0,0,0,.13);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;"><a href="../index.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Home</a><a href="D-Reviewer.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Reviewer</a><a href="D-Strategy.html" style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;color:#5d6b7a;">Strategy</a><span style="padding:7px 12px;border-radius:8px;font-size:13px;font-weight:600;background:#d99a16;color:#fff;">Exam</span></div><!--/WAA-LAYER-NAV--><script>
+/* EXAM-END-GUARD: confirm before ending an exam early to stop accidental "End & see results" clicks */
+(function(){
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var btn = (t && t.closest) ? t.closest('.btn-quit, #quitBtn, .quit') : null;
+    if(!btn) return;
+    var total = null, ans = null;
+    try {
+      if (typeof pool !== 'undefined' && pool && pool.length && typeof answered !== 'undefined') {
+        total = pool.length; ans = Object.keys(answered).length;
+      } else if (typeof Q !== 'undefined' && Q && Q.length) {
+        total = Q.length;
+        ans = (typeof topicStats !== 'undefined' && topicStats)
+              ? Object.values(topicStats).reduce(function(x,y){return x + (y.t||0);}, 0)
+              : (typeof i !== 'undefined' ? i : 0);
+      }
+    } catch(_){}
+    var msg;
+    if (total != null && ans != null) {
+      var rem = total - ans;
+      msg = rem > 0
+        ? 'You still have ' + rem + ' unanswered question' + (rem===1?'':'s') + ' out of ' + total + '.\n\nEnd the exam now and see your results anyway?'
+        : 'End the exam and see your results now?';
+    } else {
+      msg = 'End the exam and see your results now? You will not be able to answer more questions.';
+    }
+    if (!window.confirm(msg)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+})();
+</script>
+</body>
 </html>

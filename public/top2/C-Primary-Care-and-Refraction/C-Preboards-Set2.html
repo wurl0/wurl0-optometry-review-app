@@ -148,4 +148,38 @@ function finish(){document.getElementById('s-quiz').classList.remove('active');d
 
 </script><script src="/top2/_report.js"></script>
 <!--WAA-HOME-LINK--><a href="../index.html" style="position:fixed;top:10px;left:10px;z-index:99999;background:#fff;border:1px solid #cbd5e1;border-radius:10px;padding:6px 12px;font:600 13px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#334155;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)">← Home</a>
+<script>
+/* EXAM-END-GUARD: confirm before ending an exam early to stop accidental "End & see results" clicks */
+(function(){
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var btn = (t && t.closest) ? t.closest('.btn-quit, #quitBtn, .quit') : null;
+    if(!btn) return;
+    var total = null, ans = null;
+    try {
+      if (typeof pool !== 'undefined' && pool && pool.length && typeof answered !== 'undefined') {
+        total = pool.length; ans = Object.keys(answered).length;
+      } else if (typeof Q !== 'undefined' && Q && Q.length) {
+        total = Q.length;
+        ans = (typeof topicStats !== 'undefined' && topicStats)
+              ? Object.values(topicStats).reduce(function(x,y){return x + (y.t||0);}, 0)
+              : (typeof i !== 'undefined' ? i : 0);
+      }
+    } catch(_){}
+    var msg;
+    if (total != null && ans != null) {
+      var rem = total - ans;
+      msg = rem > 0
+        ? 'You still have ' + rem + ' unanswered question' + (rem===1?'':'s') + ' out of ' + total + '.\n\nEnd the exam now and see your results anyway?'
+        : 'End the exam and see your results now?';
+    } else {
+      msg = 'End the exam and see your results now? You will not be able to answer more questions.';
+    }
+    if (!window.confirm(msg)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+})();
+</script>
 </body></html>
