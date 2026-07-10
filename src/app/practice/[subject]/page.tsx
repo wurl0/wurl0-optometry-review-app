@@ -12,7 +12,7 @@ import lvQ from '@/data/low-vision.json'
 import odQ from '@/data/ocular-disease.json'
 import opQ from '@/data/ocular-pharmacology.json'
 import gpQ from '@/data/general-pharmacology.json'
-import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
+import gaQ from '@/data/general-anatomy.json'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { QuizQuestion } from '@/lib/notes-quiz-types'
 import { Question } from '@/lib/types'
@@ -35,7 +35,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'theoretical-optics': theoQ,
   'phorometry': phoroQ,
   'primary-eye-care': pecQ,
-  'general-anatomy': convertQuizQuestions(generalAnatomyQuiz.questions),
+  'general-anatomy': gaQ,
   'ocular-anatomy': convertQuizQuestions(ocularAnatomyQuiz.questions),
   'ocular-disease': odQ,
   'general-pharmacology': gpQ,

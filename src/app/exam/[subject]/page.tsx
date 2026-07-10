@@ -12,6 +12,7 @@ import lvQ from '@/data/low-vision.json'
 import odQ from '@/data/ocular-disease.json'
 import opQ from '@/data/ocular-pharmacology.json'
 import gpQ from '@/data/general-pharmacology.json'
+import gaQ from '@/data/general-anatomy.json'
 
 const QUESTION_MAP: Record<string, unknown[]> = {
   'physiologic-optics': physioQ,
@@ -25,6 +26,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'ocular-disease': odQ,
   'ocular-pharmacology': opQ,
   'general-pharmacology': gpQ,
+  'general-anatomy': gaQ,
 }
 
 export default async function ExamPage({ params }: { params: Promise<{ subject: string }> }) {

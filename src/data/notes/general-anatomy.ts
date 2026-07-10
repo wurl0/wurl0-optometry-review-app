@@ -411,6 +411,10 @@ export const generalAnatomyNotes: NotesData = {
           title: 'Brain: Parts and Functions',
           blocks: [
             {
+              kind: 'diagram',
+              id: 'ga-brain-lobes',
+            },
+            {
               kind: 'bullets',
               items: [
                 'Cerebrum — largest; divided into 2 hemispheres by longitudinal fissure; 4 lobes: Frontal (thinking, planning, motor execution), Parietal (somatosensory, visual-spatial), Temporal (language, auditory, long-term memory, emotion), Occipital (visual perception)',

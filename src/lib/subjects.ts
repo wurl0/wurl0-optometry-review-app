@@ -66,9 +66,10 @@ export const SUBJECTS: Subject[] = [
     name: 'General Anatomy',
     description: 'Cell biology, integumentary, skeletal, muscular, nervous, circulatory, respiratory, digestive systems',
     color: 'amber',
-    questionCount: 100,
+    questionCount: 104,
     icon: '🦴',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'ocular-disease',

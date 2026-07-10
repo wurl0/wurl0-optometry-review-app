@@ -1,0 +1,1250 @@
+[
+ {
+  "type": "mcq",
+  "stem": "Which organelle is the 'powerhouse' of the cell, producing ATP?",
+  "options": [
+   "Rough endoplasmic reticulum",
+   "Golgi complex",
+   "Mitochondria",
+   "Lysosome"
+  ],
+  "correct": 2,
+  "explanation": "Mitochondria generate ATP (the powerhouse). The Golgi handles carbohydrate metabolism, rough ER handles protein synthesis, and lysosomes hold digestive enzymes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Protein synthesis in the cell occurs primarily at the:",
+  "options": [
+   "Smooth ER",
+   "Golgi complex",
+   "Lysosome",
+   "Rough endoplasmic reticulum (via ribosomes)"
+  ],
+  "correct": 3,
+  "explanation": "The rough ER, studded with ribosomes, is the main site of protein synthesis. The smooth ER handles lipid metabolism."
+ },
+ {
+  "type": "mcq",
+  "stem": "Lysosomes contain which digestive enzymes?",
+  "options": [
+   "Catalase only",
+   "Amylase and lipase",
+   "Lysozyme and hydrolase",
+   "Pepsin and trypsin"
+  ],
+  "correct": 2,
+  "explanation": "Lysosomes contain digestive enzymes such as lysozyme and hydrolase, used for intracellular digestion."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which type of cell division produces sex cells (gametes)?",
+  "options": [
+   "Amitosis",
+   "Mitosis",
+   "Binary fission",
+   "Meiosis"
+  ],
+  "correct": 3,
+  "explanation": "Meiosis produces sex cells (gametes), halving the chromosome number. Mitosis produces somatic cells."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the four fundamental tissue types lines hollow organs and covers body surfaces?",
+  "options": [
+   "Epithelial",
+   "Muscular",
+   "Connective",
+   "Nervous"
+  ],
+  "correct": 0,
+  "explanation": "Epithelial tissue covers surfaces and lines hollow organs/cavities. Connective tissue supports; muscular contracts; nervous conducts impulses."
+ },
+ {
+  "type": "mcq",
+  "stem": "The plane that divides the body ACCURATELY into equal left and right halves is the:",
+  "options": [
+   "Transverse",
+   "Median (mid-sagittal)",
+   "Sagittal",
+   "Coronal"
+  ],
+  "correct": 1,
+  "explanation": "The median (mid-sagittal) plane divides the body accurately into equal left and right halves. A sagittal plane divides it unequally."
+ },
+ {
+  "type": "mcq",
+  "stem": "The coronal (frontal) plane divides the body into:",
+  "options": [
+   "Anterior (ventral) and posterior (dorsal)",
+   "Superior and inferior",
+   "Proximal and distal",
+   "Left and right"
+  ],
+  "correct": 0,
+  "explanation": "The coronal/frontal plane divides the body into anterior (ventral) and posterior (dorsal) parts. The transverse plane divides superior from inferior."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which directional term means 'nearer the point of origin'?",
+  "options": [
+   "Superficial",
+   "Distal",
+   "Proximal",
+   "Caudal"
+  ],
+  "correct": 2,
+  "explanation": "Proximal means nearer the point of origin/attachment; distal means farther from it."
+ },
+ {
+  "type": "mcq",
+  "stem": "The cranial and spinal cavities together form the:",
+  "options": [
+   "Abdominopelvic cavity",
+   "Dorsal cavity",
+   "Thoracic cavity",
+   "Ventral cavity"
+  ],
+  "correct": 1,
+  "explanation": "The dorsal (posterior) cavity comprises the cranial cavity (brain) and spinal cavity (spinal cord). The ventral cavity holds the thoracic and abdominopelvic cavities."
+ },
+ {
+  "type": "mcq",
+  "stem": "The vermiform appendix is located in which abdominal quadrant?",
+  "options": [
+   "Left upper quadrant",
+   "Right lower quadrant",
+   "Right upper quadrant",
+   "Left lower quadrant"
+  ],
+  "correct": 1,
+  "explanation": "The vermiform appendix lies in the right lower quadrant (RLQ). The liver/gallbladder are RUQ; the spleen is LUQ."
+ },
+ {
+  "type": "mcq",
+  "stem": "The mediastinum, part of the thoracic cavity, contains all of the following EXCEPT:",
+  "options": [
+   "Trachea and esophagus",
+   "Thymus",
+   "Spleen",
+   "Heart"
+  ],
+  "correct": 2,
+  "explanation": "The mediastinum contains the heart, trachea, bronchi, esophagus, and thymus. The spleen is an abdominal (LUQ) organ."
+ },
+ {
+  "type": "mcq",
+  "stem": "The largest organ of the body is the:",
+  "options": [
+   "Lung",
+   "Brain",
+   "Liver",
+   "Skin"
+  ],
+  "correct": 3,
+  "explanation": "The skin is the largest organ of the body. The liver is the largest gland/internal organ."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which epidermal layer is present ONLY in thick skin (palms and soles)?",
+  "options": [
+   "Stratum lucidum",
+   "Stratum spinosum",
+   "Stratum corneum",
+   "Stratum granulosum"
+  ],
+  "correct": 0,
+  "explanation": "The stratum lucidum (eleidin layer) is found only in thick skin (palms and soles) and is absent in thin skin."
+ },
+ {
+  "type": "mcq",
+  "stem": "Melanin, which protects against UV, is produced in which epidermal layer?",
+  "options": [
+   "Stratum granulosum",
+   "Stratum corneum",
+   "Stratum germinativum (basale)",
+   "Stratum lucidum"
+  ],
+  "correct": 2,
+  "explanation": "Melanin is contained in the stratum germinativum (basale), the deepest, mitotically active layer."
+ },
+ {
+  "type": "mcq",
+  "stem": "From outer to inner, the correct order of the epidermal layers is:",
+  "options": [
+   "Lucidum, corneum, granulosum, spinosum, germinativum",
+   "Germinativum, spinosum, granulosum, lucidum, corneum",
+   "Corneum, lucidum, granulosum, spinosum, germinativum",
+   "Corneum, granulosum, lucidum, spinosum, germinativum"
+  ],
+  "correct": 2,
+  "explanation": "Outer to inner: Corneum, Lucidum, Granulosum, Spinosum, Germinativum ('Come Let's Get Some Guys')."
+ },
+ {
+  "type": "mcq",
+  "stem": "The stratum spinosum is also called the 'prickle cell layer' because of its:",
+  "options": [
+   "Intercellular bridges (cytodesmata)",
+   "Dead flat cells",
+   "Eleidin content",
+   "Keratohyalin granules"
+  ],
+  "correct": 0,
+  "explanation": "The stratum spinosum has polyhedral cells joined by intercellular bridges (cytodesmata), giving a prickly appearance; it is mitotically active."
+ },
+ {
+  "type": "mcq",
+  "stem": "The adult human skeleton contains how many bones?",
+  "options": [
+   "305",
+   "270",
+   "206",
+   "365"
+  ],
+  "correct": 2,
+  "explanation": "The adult skeleton has 206 bones; a neonate/infant has 270-305 that later fuse."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which bone is the smallest in the human body?",
+  "options": [
+   "Malleus",
+   "Lacrimal",
+   "Stapes (stirrup)",
+   "Coccyx"
+  ],
+  "correct": 2,
+  "explanation": "The stapes (stirrup), a middle-ear ossicle, is the smallest bone in the body. The stapedius is the smallest skeletal muscle."
+ },
+ {
+  "type": "mcq",
+  "stem": "The femur is best described as the:",
+  "options": [
+   "Largest, longest, strongest, and heaviest bone",
+   "Smallest bone",
+   "Only sesamoid bone",
+   "Longest but not strongest bone"
+  ],
+  "correct": 0,
+  "explanation": "The femur is the largest, longest, strongest, and heaviest bone in the body. The patella is a sesamoid bone."
+ },
+ {
+  "type": "mcq",
+  "stem": "Pneumatic bones such as the maxilla and frontal bone are characterised by:",
+  "options": [
+   "Being cube-shaped",
+   "Containing air sinuses (radiolucent on x-ray)",
+   "Developing within tendons",
+   "Being purely spongy"
+  ],
+  "correct": 1,
+  "explanation": "Pneumatic bones contain air-filled sinuses and appear radiolucent on x-ray (maxilla, frontal, ethmoid, sphenoid). Sesamoid bones (patella) develop within tendons."
+ },
+ {
+  "type": "mcq",
+  "stem": "How many pairs of bones in the skull are PAIRED?",
+  "options": [
+   "5",
+   "8",
+   "12",
+   "28"
+  ],
+  "correct": 1,
+  "explanation": "The skull has 8 paired bones (palatine, parietal, temporal, inferior nasal concha, maxilla, nasal, zygomatic, lacrimal) and 5 unpaired (frontal, ethmoid, sphenoid, occipital, vomer)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The anterior (bregmatic) fontanel is diamond-shaped and normally closes at:",
+  "options": [
+   "18-24 months",
+   "6 months",
+   "5 years",
+   "2 months"
+  ],
+  "correct": 0,
+  "explanation": "The anterior fontanel is the largest (diamond-shaped) and closes at 18-24 months. The posterior fontanel closes at about 2 months."
+ },
+ {
+  "type": "mcq",
+  "stem": "A suture (as between skull bones) is which class of joint?",
+  "options": [
+   "Amphiarthrosis (slightly movable)",
+   "Symphysis",
+   "Synarthrosis (immovable)",
+   "Diarthrosis (freely movable)"
+  ],
+  "correct": 2,
+  "explanation": "A suture is a synarthrosis (immovable joint). Gomphosis (teeth) and synchondrosis (epiphyseal plate) are also synarthroses."
+ },
+ {
+  "type": "mcq",
+  "stem": "The pubic symphysis and intervertebral discs are examples of which joint class?",
+  "options": [
+   "Amphiarthrosis (slightly movable)",
+   "Suture",
+   "Diarthrosis",
+   "Synarthrosis"
+  ],
+  "correct": 0,
+  "explanation": "Amphiarthroses are slightly movable joints, including symphyses (pubic symphysis, intervertebral discs) and syndesmoses."
+ },
+ {
+  "type": "mcq",
+  "stem": "A lumbar puncture is typically performed at which level, corresponding to the iliac crests?",
+  "options": [
+   "L3-L4 or L4-L5",
+   "S2-S3",
+   "L5-S1",
+   "T12-L1"
+  ],
+  "correct": 0,
+  "explanation": "Lumbar puncture is done at L3-L4 or L4-L5; the L4 vertebra lies at the level of the iliac crests, safely below the spinal cord."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which vertebra is known as the 'atlas' (C1) that supports the skull?",
+  "options": [
+   "C2",
+   "C1",
+   "C7",
+   "T1"
+  ],
+  "correct": 1,
+  "explanation": "C1 is the atlas, which supports the skull. C2 is the axis (dens), and C7 is the vertebra prominens."
+ },
+ {
+  "type": "mcq",
+  "stem": "True ribs are which of the following?",
+  "options": [
+   "T8-T10, attaching via a costal arch",
+   "T1-T7, attaching directly to the sternum",
+   "T11-T12, with no attachment",
+   "All 12 pairs"
+  ],
+  "correct": 1,
+  "explanation": "True ribs (T1-T7) attach directly to the sternum. False ribs (T8-T10) attach via the costal arch, and floating ribs (T11-T12) have no anterior attachment."
+ },
+ {
+  "type": "mcq",
+  "stem": "The contractile unit of a muscle, located between two successive Z-lines, is the:",
+  "options": [
+   "Sarcolemma",
+   "Sarcoplasmic reticulum",
+   "Myofibril",
+   "Sarcomere"
+  ],
+  "correct": 3,
+  "explanation": "The sarcomere, spanning two Z-lines, is the contractile unit of skeletal muscle."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which troponin subunit binds calcium during muscle contraction?",
+  "options": [
+   "Troponin T",
+   "Troponin C",
+   "Tropomyosin",
+   "Troponin I"
+  ],
+  "correct": 1,
+  "explanation": "Troponin C has affinity for calcium. Troponin T binds tropomyosin, and troponin I binds actin."
+ },
+ {
+  "type": "mcq",
+  "stem": "Calcium for muscle contraction is released from the:",
+  "options": [
+   "Sarcolemma",
+   "Mitochondria",
+   "Sarcoplasmic reticulum",
+   "Golgi complex"
+  ],
+  "correct": 2,
+  "explanation": "The sarcoplasmic reticulum releases calcium during the spike potential, triggering contraction; the calcium binds troponin C."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which structural feature is PRESENT in cardiac muscle but ABSENT in skeletal and smooth muscle?",
+  "options": [
+   "Intercalated discs",
+   "Striations",
+   "Involuntary control",
+   "Central nucleus"
+  ],
+  "correct": 0,
+  "explanation": "Intercalated discs are unique to cardiac muscle, allowing synchronised contraction. Cardiac and skeletal muscle are both striated; cardiac and smooth are both involuntary."
+ },
+ {
+  "type": "mcq",
+  "stem": "Skeletal muscle nuclei are located at the:",
+  "options": [
+   "Center of the cell",
+   "Intercalated disc",
+   "Sarcomere",
+   "Periphery of the cell"
+  ],
+  "correct": 3,
+  "explanation": "Skeletal muscle is multinucleated with peripheral nuclei. Cardiac and smooth muscle have single, centrally located nuclei."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is the smallest and weakest skeletal muscle in the body?",
+  "options": [
+   "Stapedius",
+   "Sartorius",
+   "Styloglossus",
+   "Tensor tympani"
+  ],
+  "correct": 0,
+  "explanation": "The stapedius (in the middle ear) is the smallest and weakest skeletal muscle. Sartorius is the longest; quadriceps femoris is the strongest."
+ },
+ {
+  "type": "mcq",
+  "stem": "Mueller's muscle, located in the eyelids, is notable as the:",
+  "options": [
+   "Widest skeletal muscle",
+   "Longest skeletal muscle",
+   "Shortest smooth muscle",
+   "Strongest skeletal muscle"
+  ],
+  "correct": 2,
+  "explanation": "Mueller's muscle (superior tarsal muscle) in the eyelids is the shortest smooth muscle, sympathetically innervated (its loss contributes to Horner's ptosis)."
+ },
+ {
+  "type": "mcq",
+  "stem": "In an isometric contraction, the muscle:",
+  "options": [
+   "Undergoes a single twitch",
+   "Shortens and thickens while lifting a load",
+   "Partially contracts in rotation",
+   "Does not shorten because it contracts against a load it cannot move"
+  ],
+  "correct": 3,
+  "explanation": "In isometric contraction the muscle develops tension but does not shorten (it contracts against an immovable load), so no external work is done. Isotonic contraction shortens the muscle."
+ },
+ {
+  "type": "mcq",
+  "stem": "The 'all-or-none' law states that a nerve or muscle fiber:",
+  "options": [
+   "Requires two stimuli to respond",
+   "Never fully contracts",
+   "Responds proportionally to stimulus strength",
+   "Responds maximally or not at all once the threshold is reached"
+  ],
+  "correct": 3,
+  "explanation": "By the all-or-none law, a fiber responds maximally or not at all once the stimulus reaches threshold; sub-threshold stimuli produce no response."
+ },
+ {
+  "type": "mcq",
+  "stem": "The largest part of the brain, divided into two hemispheres by the longitudinal fissure, is the:",
+  "options": [
+   "Brainstem",
+   "Cerebellum",
+   "Diencephalon",
+   "Cerebrum"
+  ],
+  "correct": 3,
+  "explanation": "The cerebrum is the largest brain part, split into hemispheres by the longitudinal fissure, with four lobes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Primary visual perception is a function of which cerebral lobe?",
+  "options": [
+   "Parietal",
+   "Temporal",
+   "Occipital",
+   "Frontal"
+  ],
+  "correct": 2,
+  "explanation": "The occipital lobe handles visual perception (primary visual cortex, Brodmann area 17). The frontal lobe handles motor/planning."
+ },
+ {
+  "type": "mcq",
+  "stem": "Brodmann area 17 corresponds to the:",
+  "options": [
+   "Broca's area",
+   "Primary motor cortex",
+   "Primary visual cortex (calcarine fissure)",
+   "Wernicke's area"
+  ],
+  "correct": 2,
+  "explanation": "Brodmann area 17 is the primary visual cortex at the calcarine fissure of the medial occipital lobe; injury causes cortical blindness."
+ },
+ {
+  "type": "mcq",
+  "stem": "The frontal eye fields, controlling conscious eye movements, correspond to which Brodmann area?",
+  "options": [
+   "Area 17",
+   "Area 4",
+   "Area 44",
+   "Area 8"
+  ],
+  "correct": 3,
+  "explanation": "Brodmann area 8 is the frontal eye fields, governing conscious (voluntary) control of eye movements."
+ },
+ {
+  "type": "mcq",
+  "stem": "Visual agnosia (inability to recognise objects by sight while touch recognition is preserved) results from injury to:",
+  "options": [
+   "Brodmann area 18",
+   "Brodmann area 17",
+   "Brodmann area 19",
+   "Brodmann area 22"
+  ],
+  "correct": 2,
+  "explanation": "Brodmann area 19 (associative visual/visuo-psychic cortex) injury causes visual agnosia. Area 17 injury causes cortical blindness."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Edinger-Westphal nucleus (parasympathetic to the pupil via CN III) is located in the:",
+  "options": [
+   "Midbrain",
+   "Medulla oblongata",
+   "Pons",
+   "Cerebellum"
+  ],
+  "correct": 0,
+  "explanation": "The Edinger-Westphal nucleus lies in the midbrain, providing parasympathetic fibres to CN III for the pupillary light reflex. The midbrain houses CN III and IV nuclei."
+ },
+ {
+  "type": "mcq",
+  "stem": "Vital centers for heart rate, blood pressure, and respiration are located in the:",
+  "options": [
+   "Thalamus",
+   "Midbrain",
+   "Pons",
+   "Medulla oblongata"
+  ],
+  "correct": 3,
+  "explanation": "The medulla oblongata contains the vital cardiac, vasomotor, and respiratory centers, plus reflexes for coughing, vomiting, and swallowing."
+ },
+ {
+  "type": "mcq",
+  "stem": "How many pairs of spinal nerves are there?",
+  "options": [
+   "33",
+   "12",
+   "31",
+   "24"
+  ],
+  "correct": 2,
+  "explanation": "There are 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal. Cranial nerves number 12 pairs."
+ },
+ {
+  "type": "mcq",
+  "stem": "The cerebellum coordinates voluntary motor activity and maintains balance; it acts on which side of the body?",
+  "options": [
+   "It has no motor role",
+   "Contralateral",
+   "Bilateral only",
+   "Ipsilateral (same side)"
+  ],
+  "correct": 3,
+  "explanation": "The cerebellum coordinates voluntary movement ipsilaterally (same side) and maintains balance and posture."
+ },
+ {
+  "type": "mcq",
+  "stem": "Grey matter of the CNS is grey-brown largely because of:",
+  "options": [
+   "Neuronal cell bodies with Nissl (tigroid) bodies and capillary blood",
+   "Myelin sheaths",
+   "Adipose tissue",
+   "Cerebrospinal fluid"
+  ],
+  "correct": 0,
+  "explanation": "Grey matter contains neuronal cell bodies, dendrites, and unmyelinated axons with Nissl/tigroid bodies (rough ER); white matter is white due to myelinated tracts."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which substance is secreted by the substantia nigra of the basal ganglia?",
+  "options": [
+   "GABA",
+   "Dopamine",
+   "Acetylcholine",
+   "Serotonin"
+  ],
+  "correct": 1,
+  "explanation": "The substantia nigra secretes dopamine; its degeneration is associated with Parkinson's disease. The basal ganglia control motor activity."
+ },
+ {
+  "type": "mcq",
+  "stem": "The left atrioventricular valve of the heart is the:",
+  "options": [
+   "Tricuspid valve",
+   "Aortic semilunar valve",
+   "Pulmonary semilunar valve",
+   "Bicuspid (mitral) valve"
+  ],
+  "correct": 3,
+  "explanation": "The bicuspid (mitral) valve is the left atrioventricular valve. The tricuspid valve is the right atrioventricular valve."
+ },
+ {
+  "type": "mcq",
+  "stem": "The right side of the heart pumps blood into which circuit?",
+  "options": [
+   "Portal circuit",
+   "Systemic circuit",
+   "Pulmonary circuit (to the lungs)",
+   "Coronary circuit only"
+  ],
+  "correct": 2,
+  "explanation": "The right heart pumps deoxygenated blood to the lungs (pulmonary circuit). The left heart pumps oxygenated blood to the body (systemic circuit)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which blood vessel carries blood AWAY from the heart and generally carries oxygenated blood (except the pulmonary artery)?",
+  "options": [
+   "Venule",
+   "Vein",
+   "Artery",
+   "Capillary"
+  ],
+  "correct": 2,
+  "explanation": "Arteries carry blood away from the heart, usually oxygenated (the pulmonary artery is the exception, carrying deoxygenated blood to the lungs)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The liquid portion of blood, making up about 55%, is the:",
+  "options": [
+   "Lymph",
+   "Plasma",
+   "Buffy coat",
+   "Serum"
+  ],
+  "correct": 1,
+  "explanation": "Plasma (about 55% of blood) is the liquid portion containing water, proteins (albumin, globulin, fibrinogen), electrolytes, and hormones. Formed elements are ~45%."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which formed element carries oxygen and lacks a nucleus in its mature form?",
+  "options": [
+   "Leukocyte",
+   "Thrombocyte",
+   "Erythrocyte (RBC)",
+   "Monocyte"
+  ],
+  "correct": 2,
+  "explanation": "Erythrocytes (RBCs) carry oxygen via hemoglobin, lack a nucleus when mature, and live about 120 days."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which electrolyte is dominant in the intracellular fluid (ICF)?",
+  "options": [
+   "Potassium (K+)",
+   "Sodium (Na+)",
+   "Chloride (Cl-)",
+   "Calcium (Ca2+)"
+  ],
+  "correct": 0,
+  "explanation": "Potassium (K+) is the dominant intracellular electrolyte; sodium and chloride dominate the extracellular fluid (ECF)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Approximately what fraction of total body weight is water?",
+  "options": [
+   "One-quarter",
+   "Two-thirds (about 66%)",
+   "One-half",
+   "One-third"
+  ],
+  "correct": 1,
+  "explanation": "About two-thirds (66%) of total body weight is water, split into intracellular (40%) and extracellular (20%) compartments."
+ },
+ {
+  "type": "mcq",
+  "stem": "Surfactant, which reduces alveolar surface tension, is produced by:",
+  "options": [
+   "Goblet cells",
+   "Type II pneumocytes",
+   "Type I pneumocytes",
+   "Ciliated cells"
+  ],
+  "correct": 1,
+  "explanation": "Type II pneumocytes secrete surfactant; its deficiency causes respiratory distress syndrome (RDS) in premature infants."
+ },
+ {
+  "type": "mcq",
+  "stem": "Inhaled foreign bodies are more likely to lodge in the right primary bronchus because it is:",
+  "options": [
+   "Narrower and more horizontal",
+   "Longer than the left",
+   "Cartilage-free",
+   "Wider, shorter, and more vertical"
+  ],
+  "correct": 3,
+  "explanation": "The right primary bronchus is wider, shorter, and more vertical, so aspirated foreign bodies tend to lodge there."
+ },
+ {
+  "type": "mcq",
+  "stem": "The right lung has how many lobes?",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "2"
+  ],
+  "correct": 1,
+  "explanation": "The right lung has 3 lobes (upper, middle, lower); the left lung has 2 (upper, lower) to accommodate the heart."
+ },
+ {
+  "type": "mcq",
+  "stem": "The trachea bifurcates at the carina, which lies at the level of the:",
+  "options": [
+   "Cricoid cartilage",
+   "Sternal angle of Louis (T4-T5)",
+   "Xiphoid process",
+   "Hyoid bone"
+  ],
+  "correct": 1,
+  "explanation": "The trachea bifurcates at the carina at the sternal angle of Louis (T4-T5)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Intrinsic factor, needed for vitamin B12 absorption, is produced by the:",
+  "options": [
+   "Stomach",
+   "Small intestine",
+   "Pancreas",
+   "Liver"
+  ],
+  "correct": 0,
+  "explanation": "The stomach produces intrinsic factor (from parietal cells) for vitamin B12 absorption, along with HCl and pepsin."
+ },
+ {
+  "type": "mcq",
+  "stem": "The major site of nutrient absorption in the GI tract is the:",
+  "options": [
+   "Stomach",
+   "Large intestine",
+   "Esophagus",
+   "Small intestine"
+  ],
+  "correct": 3,
+  "explanation": "The small intestine is the major site of digestion and absorption, aided by villi and microvilli that increase surface area."
+ },
+ {
+  "type": "mcq",
+  "stem": "Insulin is produced by which pancreatic cells?",
+  "options": [
+   "Delta cells",
+   "Alpha cells",
+   "Beta cells (islets of Langerhans)",
+   "Acinar cells"
+  ],
+  "correct": 2,
+  "explanation": "Beta cells of the islets of Langerhans produce insulin (lowers blood glucose). Alpha cells produce glucagon (raises blood glucose)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The largest gland/internal organ of the body, which produces bile, is the:",
+  "options": [
+   "Liver",
+   "Spleen",
+   "Pancreas",
+   "Gallbladder"
+  ],
+  "correct": 0,
+  "explanation": "The liver is the largest gland/internal organ; it produces bile (emulsifies fats), detoxifies, and stores glycogen."
+ },
+ {
+  "type": "mcq",
+  "stem": "The largest salivary gland, innervated by CN IX, is the:",
+  "options": [
+   "Submandibular",
+   "Buccal",
+   "Sublingual",
+   "Parotid"
+  ],
+  "correct": 3,
+  "explanation": "The parotid is the largest salivary gland, innervated by CN IX (glossopharyngeal)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The functional unit of the kidney is the:",
+  "options": [
+   "Ureter",
+   "Collecting duct",
+   "Glomerulus",
+   "Nephron"
+  ],
+  "correct": 3,
+  "explanation": "The nephron is the functional unit of the kidney (about 1 million per kidney); it filters blood and forms urine."
+ },
+ {
+  "type": "mcq",
+  "stem": "The right kidney sits slightly lower than the left because of the:",
+  "options": [
+   "Stomach",
+   "Liver",
+   "Pancreas",
+   "Spleen"
+  ],
+  "correct": 1,
+  "explanation": "The right kidney is slightly lower than the left due to the large liver above it. The kidneys are retroperitoneal at about T12-L3."
+ },
+ {
+  "type": "mcq",
+  "stem": "The 'master gland' of the endocrine system, controlling other endocrine glands, is the:",
+  "options": [
+   "Pituitary",
+   "Pineal",
+   "Adrenal",
+   "Thyroid"
+  ],
+  "correct": 0,
+  "explanation": "The pituitary is the master gland (GH, TSH, ACTH, FSH, LH, ADH, oxytocin), regulating other endocrine glands."
+ },
+ {
+  "type": "mcq",
+  "stem": "Parathyroid hormone (PTH) affects blood calcium by:",
+  "options": [
+   "Raising it by stimulating osteoclasts",
+   "Lowering it via calcitonin",
+   "Having no effect on calcium",
+   "Storing it in muscle"
+  ],
+  "correct": 0,
+  "explanation": "PTH raises blood calcium by stimulating osteoclasts (bone resorption). Calcitonin from the thyroid lowers blood calcium."
+ },
+ {
+  "type": "mcq",
+  "stem": "Melatonin, which regulates the sleep-wake cycle, is secreted by the:",
+  "options": [
+   "Thyroid",
+   "Pineal gland",
+   "Adrenal medulla",
+   "Pituitary"
+  ],
+  "correct": 1,
+  "explanation": "The pineal gland secretes melatonin, regulating the sleep-wake (circadian) cycle."
+ },
+ {
+  "type": "mcq",
+  "stem": "The adrenal medulla secretes which hormones for the fight-or-flight response?",
+  "options": [
+   "Insulin and glucagon",
+   "Cortisol and aldosterone",
+   "T3 and T4",
+   "Epinephrine and norepinephrine"
+  ],
+  "correct": 3,
+  "explanation": "The adrenal medulla secretes epinephrine and norepinephrine (fight-or-flight). The adrenal cortex secretes cortisol and aldosterone."
+ },
+ {
+  "type": "mcq",
+  "stem": "Broca's area, responsible for speech production, corresponds to Brodmann areas:",
+  "options": [
+   "22",
+   "44 and 45",
+   "41",
+   "3, 1, 2"
+  ],
+  "correct": 1,
+  "explanation": "Broca's area (Brodmann 44/45) in the dominant frontal lobe governs speech production. Wernicke's area (area 22) handles language comprehension."
+ },
+ {
+  "type": "mcq",
+  "stem": "Wernicke's area, for spoken-language comprehension, is Brodmann area:",
+  "options": [
+   "4",
+   "17",
+   "22",
+   "8"
+  ],
+  "correct": 2,
+  "explanation": "Brodmann area 22 is Wernicke's area, for language comprehension and semantic processing. Broca's area (44/45) is for speech production."
+ },
+ {
+  "type": "mcq",
+  "stem": "The pneumotaxic center that helps regulate respiratory rhythm is located in the:",
+  "options": [
+   "Cerebellum",
+   "Pons Varolii",
+   "Medulla oblongata",
+   "Midbrain"
+  ],
+  "correct": 1,
+  "explanation": "The pons contains the pneumotaxic center (with apneustic and expiration centers). The medulla contains the basic respiratory rhythm center."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cranial nerve nuclei are found in the pons?",
+  "options": [
+   "CN I and II",
+   "CN V through VIII",
+   "CN IX through XII",
+   "CN III and IV"
+  ],
+  "correct": 1,
+  "explanation": "The pons houses the nuclei of CN V through VIII. The midbrain has CN III and IV; the medulla has CN IX through XII."
+ },
+ {
+  "type": "mcq",
+  "stem": "Semantic memory refers to the recall of:",
+  "options": [
+   "Childhood autobiography",
+   "Motor skills without conscious recall",
+   "Numbers and words for language (facts)",
+   "Personal experiences at a specific time and place"
+  ],
+  "correct": 2,
+  "explanation": "Semantic memory is recall of facts, numbers, and words for language. Episodic memory is personal experiences; procedural memory is skills without conscious recall."
+ },
+ {
+  "type": "mcq",
+  "stem": "The strongest bone of the pelvic girdle is the:",
+  "options": [
+   "Sacrum",
+   "Ischium",
+   "Pubis",
+   "Ilium"
+  ],
+  "correct": 1,
+  "explanation": "The ischium is the strongest pelvic bone; the ilium is the largest, and the pubis is the most anterior (fused at the symphysis pubis)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The longest skeletal muscle in the body is the:",
+  "options": [
+   "Sartorius",
+   "Quadriceps femoris",
+   "Latissimus dorsi",
+   "Gastrocnemius"
+  ],
+  "correct": 0,
+  "explanation": "The sartorius is the longest skeletal muscle. The quadriceps femoris is the strongest, and the latissimus dorsi is the widest."
+ },
+ {
+  "type": "mcq",
+  "stem": "The tendon of Achilles, the largest tendon, connects which muscle to the calcaneus?",
+  "options": [
+   "Tibialis anterior",
+   "Quadriceps",
+   "Sartorius",
+   "Gastrocnemius"
+  ],
+  "correct": 3,
+  "explanation": "The Achilles (calcaneal) tendon connects the gastrocnemius to the calcaneus and is the largest tendon in the body."
+ },
+ {
+  "type": "mcq",
+  "stem": "A ball-and-socket joint (enarthrosis), such as the shoulder or hip, belongs to which joint class?",
+  "options": [
+   "Synarthrosis",
+   "Suture",
+   "Amphiarthrosis",
+   "Diarthrosis (freely movable)"
+  ],
+  "correct": 3,
+  "explanation": "Ball-and-socket (enarthrosis) joints are diarthroses (freely movable), like the shoulder and hip. Hinge, pivot, condyloid, and saddle joints are also diarthroses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Gomphosis, the articulation of a tooth in its socket, is which class of joint?",
+  "options": [
+   "Diarthrosis",
+   "Synarthrosis (immovable)",
+   "Symphysis",
+   "Amphiarthrosis"
+  ],
+  "correct": 1,
+  "explanation": "Gomphosis (tooth in socket) is a synarthrosis (immovable joint), like sutures and synchondroses."
+ },
+ {
+  "type": "mcq",
+  "stem": "The axial skeleton contains how many bones?",
+  "options": [
+   "126",
+   "33",
+   "80",
+   "206"
+  ],
+  "correct": 2,
+  "explanation": "The axial skeleton has 80 bones; the appendicular skeleton has 126, totalling 206."
+ },
+ {
+  "type": "mcq",
+  "stem": "Osteoclasts function to:",
+  "options": [
+   "Store fat",
+   "Destroy/resorb bone",
+   "Produce red blood cells",
+   "Build new bone"
+  ],
+  "correct": 1,
+  "explanation": "Osteoclasts are bone destroyers (resorption); osteoblasts are bone builders. Their balance controls bone remodelling."
+ },
+ {
+  "type": "mcq",
+  "stem": "Red bone marrow is the site of:",
+  "options": [
+   "Fat storage",
+   "Calcium storage only",
+   "Hematopoiesis (blood cell formation)",
+   "Bile production"
+  ],
+  "correct": 2,
+  "explanation": "Red bone marrow contains stem cells and produces blood cells (hematopoiesis). Yellow marrow is mostly fat."
+ },
+ {
+  "type": "mcq",
+  "stem": "The inorganic component of bone (about two-thirds), providing hardness and rigidity, is primarily:",
+  "options": [
+   "Calcium phosphate",
+   "Cartilage",
+   "Elastin",
+   "Collagen protein"
+  ],
+  "correct": 0,
+  "explanation": "The inorganic portion (~2/3) is calcium phosphate, giving bone hardness, rigidity, and radiographic opacity; the organic third (protein) gives resilience."
+ },
+ {
+  "type": "mcq",
+  "stem": "Complete (fused) tetanus occurs when the stimulation frequency exceeds about:",
+  "options": [
+   "20 stimuli/sec",
+   "5 stimuli/sec",
+   "100 stimuli/sec",
+   "1 stimulus/sec"
+  ],
+  "correct": 0,
+  "explanation": "Complete tetanus (fully fused contractions) occurs above about 20 stimuli/sec; incomplete tetanus is below 20/sec."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Treppe (staircase) phenomenon refers to:",
+  "options": [
+   "Complete muscle relaxation",
+   "Summation where successive twitches progressively increase in strength",
+   "Isometric contraction",
+   "A single twitch"
+  ],
+  "correct": 1,
+  "explanation": "The Treppe or staircase phenomenon is a form of summation in which successive twitches grow stronger as the muscle 'warms up.'"
+ },
+ {
+  "type": "mcq",
+  "stem": "Smooth muscle contracts similarly to skeletal muscle but lacks which protein?",
+  "options": [
+   "Tropomyosin",
+   "Actin",
+   "Myosin",
+   "Troponin"
+  ],
+  "correct": 3,
+  "explanation": "Smooth muscle lacks troponin; it uses calmodulin instead to regulate the actin-myosin interaction, but the sliding mechanism is otherwise similar."
+ },
+ {
+  "type": "mcq",
+  "stem": "The dominant electrolytes of the extracellular fluid (ECF) are:",
+  "options": [
+   "Potassium and phosphate",
+   "Sodium and chloride",
+   "Calcium and magnesium",
+   "Bicarbonate only"
+  ],
+  "correct": 1,
+  "explanation": "Sodium (Na+) and chloride (Cl-) dominate the ECF; potassium (K+) dominates the ICF."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aqueous humor and cerebrospinal fluid are examples of which body-fluid category?",
+  "options": [
+   "Intracellular fluid",
+   "Transcellular fluid (part of ECF)",
+   "Plasma",
+   "Lymph only"
+  ],
+  "correct": 1,
+  "explanation": "Aqueous humor, CSF, and endolymph are transcellular fluids, a subset of the extracellular fluid compartment."
+ },
+ {
+  "type": "mcq",
+  "stem": "Osmosis is the movement of water:",
+  "options": [
+   "From low to high solute concentration",
+   "From high to low solute concentration",
+   "Against a pressure gradient using carriers",
+   "Only with ATP"
+  ],
+  "correct": 0,
+  "explanation": "Osmosis moves water from an area of low solute concentration to high solute concentration (down its own concentration gradient), requiring no energy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Active transport across a membrane is characterised by movement:",
+  "options": [
+   "Only for gases",
+   "Only by filtration",
+   "Down the gradient without energy",
+   "From low to high concentration, requiring ATP"
+  ],
+  "correct": 3,
+  "explanation": "Active transport moves solutes from low to high concentration against the gradient and requires ATP and a carrier."
+ },
+ {
+  "type": "mcq",
+  "stem": "The epiglottis functions to:",
+  "options": [
+   "Filter inhaled air",
+   "Prevent food from entering the airway during swallowing",
+   "Warm inhaled air",
+   "Produce voice"
+  ],
+  "correct": 1,
+  "explanation": "The epiglottis covers the laryngeal opening during swallowing to prevent food from entering the airway."
+ },
+ {
+  "type": "mcq",
+  "stem": "Salivary amylase begins the digestion of which nutrient in the mouth?",
+  "options": [
+   "Protein",
+   "Nucleic acid",
+   "Carbohydrate",
+   "Fat"
+  ],
+  "correct": 2,
+  "explanation": "Salivary amylase begins carbohydrate (starch) digestion in the mouth. Protein digestion begins in the stomach (pepsin); fat digestion mainly in the small intestine."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bile, which emulsifies fats, is produced by the liver and stored/concentrated in the:",
+  "options": [
+   "Pancreas",
+   "Duodenum",
+   "Gallbladder",
+   "Spleen"
+  ],
+  "correct": 2,
+  "explanation": "Bile is produced by the liver and stored/concentrated in the gallbladder before release into the duodenum."
+ },
+ {
+  "type": "mcq",
+  "stem": "The male urethra differs from the female urethra in that it:",
+  "options": [
+   "Does not carry urine",
+   "Is longer (~20 cm) and also carries semen",
+   "Has no sphincter",
+   "Is shorter (~4 cm)"
+  ],
+  "correct": 1,
+  "explanation": "The male urethra is about 20 cm and carries both urine and semen; the female urethra is about 4 cm and carries only urine."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which hormone from the thyroid lowers blood calcium?",
+  "options": [
+   "Cortisol",
+   "Calcitonin",
+   "Parathyroid hormone",
+   "T3"
+  ],
+  "correct": 1,
+  "explanation": "Calcitonin from the thyroid lowers blood calcium (opposing PTH). T3/T4 regulate metabolism."
+ },
+ {
+  "type": "mcq",
+  "stem": "Erythropoietin, which stimulates red blood cell production, is produced mainly by the:",
+  "options": [
+   "Spleen",
+   "Bone marrow",
+   "Kidneys",
+   "Liver"
+  ],
+  "correct": 2,
+  "explanation": "The kidneys produce erythropoietin, stimulating red blood cell production in the bone marrow, alongside their filtration role."
+ },
+ {
+  "type": "mcq",
+  "stem": "The unpaired facial bone forming part of the nasal septum is the:",
+  "options": [
+   "Maxilla",
+   "Nasal",
+   "Vomer",
+   "Palatine"
+  ],
+  "correct": 2,
+  "explanation": "The vomer is an unpaired bone forming the inferior nasal septum. Maxilla, palatine, and nasal bones are paired."
+ },
+ {
+  "type": "mcq",
+  "stem": "The vertebral column of an adult contains how many vertebrae?",
+  "options": [
+   "26",
+   "33",
+   "24",
+   "31"
+  ],
+  "correct": 0,
+  "explanation": "The adult has 26 vertebrae (with sacral and coccygeal fusions); a child has 33 before fusion."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which lung structure is the actual site of gas exchange?",
+  "options": [
+   "Bronchioles",
+   "Alveoli",
+   "Trachea",
+   "Bronchi"
+  ],
+  "correct": 1,
+  "explanation": "The alveoli (about 300 million) are the site of gas exchange, with thin walls adjacent to capillaries."
+ },
+ {
+  "type": "mcq",
+  "stem": "The heart is located within the:",
+  "options": [
+   "Pleural cavity",
+   "Mediastinum",
+   "Cranial cavity",
+   "Abdominal cavity"
+  ],
+  "correct": 1,
+  "explanation": "The heart lies in the mediastinum (the central compartment of the thoracic cavity), enclosed by the pericardium."
+ },
+ {
+  "type": "mcq",
+  "stem": "The duodenum is the major site of chemical digestion because it receives:",
+  "options": [
+   "Only gastric acid",
+   "Bile and pancreatic juice",
+   "Lymph",
+   "Only saliva"
+  ],
+  "correct": 1,
+  "explanation": "The duodenum receives bile (from the liver/gallbladder) and pancreatic juice (enzymes), making it the major site of chemical digestion in the small intestine."
+ },
+ {
+  "type": "mcq",
+  "stem": "The primary function of the large intestine is:",
+  "options": [
+   "Water and electrolyte reabsorption",
+   "Nutrient absorption",
+   "Protein digestion",
+   "Bile production"
+  ],
+  "correct": 0,
+  "explanation": "The large intestine reabsorbs water and electrolytes, compacts waste, and houses gut flora. Most nutrient absorption occurs in the small intestine."
+ },
+ {
+  "type": "mcq",
+  "stem": "A pivot (trochoid) joint, such as between the atlas and axis, allows which movement?",
+  "options": [
+   "Rotation",
+   "Flexion and extension only",
+   "Gliding only",
+   "No movement"
+  ],
+  "correct": 0,
+  "explanation": "A pivot (trochoid) joint, like the atlanto-axial joint, permits rotation. It is a type of diarthrosis (freely movable joint)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cerebrospinal fluid and the transcellular fluids belong to which compartment?",
+  "options": [
+   "Plasma exclusively",
+   "Extracellular fluid",
+   "Neither",
+   "Intracellular fluid"
+  ],
+  "correct": 1,
+  "explanation": "Transcellular fluids (CSF, aqueous humor, endolymph) are part of the extracellular fluid compartment, which is about 20% of total body water."
+ }
+]

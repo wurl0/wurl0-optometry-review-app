@@ -265,6 +265,39 @@ export function SarcomereDiagram() {
   )
 }
 
+// ─── Cerebral Lobes & Functions ───────────────────────────────────────────────
+
+export function BrainLobesDiagram() {
+  return (
+    <DiagramShell caption="The four cerebral lobes at a glance. The occipital lobe (visual perception, Brodmann area 17) is the eye-care high-yield region; a lesion there causes cortical blindness.">
+      <svg viewBox="0 0 460 260" className="w-full">
+        <rect width="460" height="260" fill="#f9fafb" />
+        <text x="230" y="20" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#111827">Cerebral Lobes (left hemisphere)</text>
+        {/* brain silhouette facing left */}
+        <path d="M 120 150 C 95 95, 150 55, 220 60 C 290 60, 350 80, 360 120 C 366 145, 350 165, 320 168 L 315 185 C 312 200, 295 205, 285 192 C 250 200, 175 200, 150 185 C 128 178, 112 170, 120 150 Z"
+          fill="#eef2ff" stroke="#6366f1" strokeWidth="1.5" />
+        {/* central sulcus */}
+        <path d="M 225 62 L 210 150" stroke="#a5b4fc" strokeWidth="1.5" strokeDasharray="3,3" />
+        {/* lateral sulcus */}
+        <path d="M 150 160 Q 210 150 260 158" stroke="#a5b4fc" strokeWidth="1.5" strokeDasharray="3,3" />
+        {/* labels */}
+        <text x="165" y="105" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#1d4ed8">Frontal</text>
+        <text x="165" y="118" textAnchor="middle" fontSize="7.5" fill="#475569">thinking · motor</text>
+        <text x="262" y="100" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#0f766e">Parietal</text>
+        <text x="262" y="113" textAnchor="middle" fontSize="7.5" fill="#475569">somatosensory</text>
+        <text x="335" y="128" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#b91c1c">Occipital</text>
+        <text x="335" y="141" textAnchor="middle" fontSize="7.5" fill="#475569">vision (17)</text>
+        <text x="215" y="182" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#a16207">Temporal</text>
+        <text x="215" y="194" textAnchor="middle" fontSize="7.5" fill="#475569">hearing · memory</text>
+        {/* cerebellum */}
+        <ellipse cx="345" cy="185" rx="30" ry="20" fill="#dcfce7" stroke="#16a34a" strokeWidth="1.3" />
+        <text x="345" y="188" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#15803d">cerebellum</text>
+        <text x="115" y="235" fontSize="8" fill="#6b7280">Central sulcus (of Rolando) separates frontal from parietal; lateral sulcus (Sylvian) borders the temporal lobe.</text>
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
@@ -272,4 +305,5 @@ export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'ga-epidermis-layers': EpidermisLayersDiagram,
   'ga-muscle-types': MuscleTypesDiagram,
   'ga-sarcomere': SarcomereDiagram,
+  'ga-brain-lobes': BrainLobesDiagram,
 }
