@@ -138,6 +138,7 @@ export const SUBJECTS: Subject[] = [
     color: 'rose',
     questionCount: 102,
     icon: '🧸',
+    olePrep: true,
     hasExam: true,
   },
   {
@@ -147,6 +148,7 @@ export const SUBJECTS: Subject[] = [
     color: 'violet',
     questionCount: 106,
     icon: '🫧',
+    olePrep: true,
     hasExam: true,
   },
 ]

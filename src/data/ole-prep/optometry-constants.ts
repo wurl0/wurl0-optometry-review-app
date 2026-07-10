@@ -796,5 +796,34 @@ export const optometryConstantsData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'peds-constants',
+      title: 'Pediatric Optometry Constants',
+      icon: '🧸',
+      items: [
+        {
+          kind: 'formula' as const,
+          title: 'Visual Acuity by Age',
+          formula: 'Birth = 20/800\n1 mo  = 20/400\n6 mo  = 20/200\n1 yr  = 20/50\n3 yr  = 20/20',
+          notes: 'Adult acuity is reached at age 3, not 1 year. Eyes must be straight by 3-4 months.',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Hirschberg Reflex → Deviation',
+          formula: '1 mm displacement ≈ 7 prism diopters\npupil edge ≈ 15 pd | mid ≈ 30 pd | limbus ≈ 45 pd',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Refraction Norms & Rx Thresholds',
+          formula: '3 mo +3.00D → 4-6 yr +0.50D (emmetropization)\nRx if: hyperopia > +3.50 D, astig > 1.50 D,\naniso > 1.00 D, or any myopia',
+        },
+        {
+          kind: 'formula' as const,
+          title: 'Critical Period & MEM',
+          formula: 'Plasticity: peak birth-3 yr, window to 7-8 yr\nNormal MEM lag = +0.50 to +0.75 D (WITH = lag)',
+          notes: 'Amblyopia order: cycloplegic refraction → full glasses 12-16 wk → patching. Patching is not first.',
+        },
+      ],
+    },
   ],
 }
