@@ -1,0 +1,1250 @@
+[
+ {
+  "type": "mcq",
+  "stem": "Why can a systemically administered drug fail to reach the anterior segment of the eye?",
+  "options": [
+   "The blood-aqueous barrier blocks it",
+   "It is too lipophilic",
+   "It is destroyed by tears",
+   "The cornea is avascular"
+  ],
+  "correct": 0,
+  "explanation": "The blood-aqueous barrier (between the ciliary body capillary and the iris/ciliary epithelium) prevents most systemic drugs from reaching the anterior segment, so topical dosing gives higher anterior-segment concentration."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which route delivers drug directly into the anterior aqueous chamber, as used for endophthalmitis?",
+  "options": [
+   "Subconjunctival",
+   "Sub-Tenon",
+   "Retrobulbar",
+   "Intracameral"
+  ],
+  "correct": 3,
+  "explanation": "Intracameral injection places drug directly into the anterior chamber (e.g., intracameral antibiotics for endophthalmitis prophylaxis). Intravitreal targets the vitreous."
+ },
+ {
+  "type": "mcq",
+  "stem": "Benzalkonium chloride (BAK) enhances corneal penetration of lipid-insoluble drugs because it is a:",
+  "options": [
+   "Cationic surfactant/wetting agent that also acts as a bactericidal preservative",
+   "Viscosity agent",
+   "Chelating antioxidant",
+   "Bacteriostatic mercurial"
+  ],
+  "correct": 0,
+  "explanation": "BAK is a cationic surfactant and wetting agent that disrupts the epithelium to enhance penetration of lipid-insoluble drugs such as carbachol, and is also a bactericidal preservative."
+ },
+ {
+  "type": "mcq",
+  "stem": "An ophthalmic solution is best tolerated when its pH lies between:",
+  "options": [
+   "5.0 and 6.0",
+   "3.0 and 5.0",
+   "6.6 and 7.8",
+   "8.5 and 9.5"
+  ],
+  "correct": 2,
+  "explanation": "Solutions with pH below 6.6 or above 7.8 cause discomfort; buffering agents (commonly boric acid salts) keep the pH tolerable."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common buffering agent in ophthalmic solutions is:",
+  "options": [
+   "Citric acid salts",
+   "Acetic acid salts",
+   "Phosphoric acid salts",
+   "Boric acid salts"
+  ],
+  "correct": 3,
+  "explanation": "Boric acid salts are the most common ophthalmic buffering agents."
+ },
+ {
+  "type": "mcq",
+  "stem": "Thimerosal, an ophthalmic preservative, is classified as:",
+  "options": [
+   "Bacteriostatic",
+   "A wetting agent",
+   "An antioxidant",
+   "Bactericidal"
+  ],
+  "correct": 0,
+  "explanation": "Thimerosal is a bacteriostatic mercurial preservative; side effects include allergy and band keratopathy. BAK, by contrast, is bactericidal."
+ },
+ {
+  "type": "mcq",
+  "stem": "An oily solution vehicle (e.g., for DFP) is chosen when the drug:",
+  "options": [
+   "Needs maximal wetting",
+   "Is very water soluble",
+   "Is rapidly destroyed by water",
+   "Requires shaking before use"
+  ],
+  "correct": 2,
+  "explanation": "Oily solutions are used for drugs rapidly hydrolysed in water, such as diisopropyl fluorophosphate (DFP)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Ocusert (Pilo-20) is a delivery device that:",
+  "options": [
+   "Is a corneal collagen shield",
+   "Is a single-use paper strip",
+   "Releases pilocarpine slowly (20 mcg/hr for 7 days) from a hydrophilic plastic reservoir",
+   "Is an ointment base"
+  ],
+  "correct": 2,
+  "explanation": "The Ocusert is an ovoid hydrophilic device placed in the fornix that releases pilocarpine at 20 mcg/hr for about 7 days."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which viscoelastic is a high-molecular-weight, non-allergenic natural shock absorber used during IOL implantation?",
+  "options": [
+   "Chondroitin sulfate alone",
+   "Trypan blue",
+   "Hydroxypropyl methylcellulose",
+   "Sodium hyaluronate"
+  ],
+  "correct": 3,
+  "explanation": "Sodium hyaluronate is a high-MW, high-viscosity, non-allergenic viscoelastic (a natural component of vitreous/aqueous) used to protect the endothelium during ECCE/IOL surgery."
+ },
+ {
+  "type": "mcq",
+  "stem": "Rose Bengal must be instilled BEFORE fluorescein because:",
+  "options": [
+   "It stains contact lenses",
+   "It has a longer shelf life",
+   "It is more expensive",
+   "Anesthetic used with fluorescein can devitalise cells and cause false-positive staining"
+  ],
+  "correct": 3,
+  "explanation": "Rose Bengal is used before fluorescein/anesthetic to avoid false-positive dry-eye staining from anesthetic-devitalised cells. Rose Bengal stains devitalised cells and mucus and has antiviral property."
+ },
+ {
+  "type": "mcq",
+  "stem": "Fluorescein should NOT be used with soft contact lenses in place because it:",
+  "options": [
+   "Dissolves the lens",
+   "Permanently stains the soft lens",
+   "Causes miosis",
+   "Is toxic to the cornea"
+  ],
+  "correct": 1,
+  "explanation": "Sodium fluorescein permanently stains soft contact lenses; fluorexon (high MW) is the alternative that does not stain most soft lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which dye is used intravenously and is best for imaging choroidal neovascular membranes?",
+  "options": [
+   "Fluorescein",
+   "Indocyanine green (ICG)",
+   "Lissamine green",
+   "Rose Bengal"
+  ],
+  "correct": 1,
+  "explanation": "Indocyanine green (ICG), with peak fluorescence in the infrared (~835 nm), penetrates the RPE better than fluorescein and is best for choroidal neovascular membranes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Deferoxamine is a chelating agent used ophthalmically to remove:",
+  "options": [
+   "Calcium in band keratopathy",
+   "Arsenic",
+   "Corneal iron (ferric) rust stains",
+   "Copper deposits"
+  ],
+  "correct": 2,
+  "explanation": "Deferoxamine binds ferric ions (Fe3+) and is used to remove corneal metallic rust stains (siderosis). EDTA removes calcium in band keratopathy; penicillamine binds copper."
+ },
+ {
+  "type": "mcq",
+  "stem": "EDTA is used to treat band keratopathy because it chelates:",
+  "options": [
+   "Iron",
+   "Copper",
+   "Calcium",
+   "Arsenic"
+  ],
+  "correct": 2,
+  "explanation": "EDTA chelates calcium (and other divalent cations), removing calcium from Bowman's membrane in band keratopathy; it also inhibits collagenase and preserves solutions."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is the strongest and longest-acting cycloplegic, with cycloplegia lasting up to 14 days?",
+  "options": [
+   "Homatropine",
+   "Atropine",
+   "Cyclopentolate",
+   "Tropicamide"
+  ],
+  "correct": 1,
+  "explanation": "Atropine is the strongest, longest-acting cycloplegic (up to 14 days), the prototype anticholinergic, and the DOC for uveitis and cycloplegic refraction in young children."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for ROUTINE mydriasis is:",
+  "options": [
+   "Tropicamide",
+   "Atropine",
+   "Cyclopentolate",
+   "Scopolamine"
+  ],
+  "correct": 0,
+  "explanation": "Tropicamide is the DOC (and most commonly used) for routine mydriasis: fast onset, short duration (4-6 hrs), weak cycloplegia, and safe in cardiovascular patients."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for ROUTINE cycloplegia is:",
+  "options": [
+   "Homatropine",
+   "Cyclopentolate",
+   "Tropicamide",
+   "Atropine"
+  ],
+  "correct": 1,
+  "explanation": "Cyclopentolate is the DOC for routine cycloplegia. In children, 2% can cause CNS effects (drowsiness, hallucination, seizures), so 0.5-1% with punctal occlusion is used."
+ },
+ {
+  "type": "mcq",
+  "stem": "Systemic atropine toxicity is classically described as:",
+  "options": [
+   "Bradycardia and salivation",
+   "Mad as a hatter, red as a beet, dry as a bone, blind as a bat, hot as a hare",
+   "Cold, wet, and constricted pupils",
+   "Miosis and diarrhea"
+  ],
+  "correct": 1,
+  "explanation": "Antimuscarinic (atropine) toxicity gives the anticholinergic toxidrome: delirium, flushing, dry skin/mucosa, blurred vision (cycloplegia/mydriasis), and hyperthermia. Physostigmine 1-4 mg IV is the treatment."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tropicamide-induced mydriasis can be reversed with:",
+  "options": [
+   "Atropine",
+   "2% pilocarpine or 0.5% dapiprazole",
+   "Phenylephrine 10%",
+   "Timolol"
+  ],
+  "correct": 1,
+  "explanation": "Mydriasis from tropicamide is reversed within about 90 minutes by 2% pilocarpine (a miotic) or 0.5% dapiprazole (an alpha-1 blocker, REV-EYES)."
+ },
+ {
+  "type": "mcq",
+  "stem": "All approved topical ophthalmic anesthetics belong to which chemical class?",
+  "options": [
+   "Glycopeptide",
+   "Amino-amide type",
+   "Ester type",
+   "Amide type"
+  ],
+  "correct": 2,
+  "explanation": "The approved topical ophthalmic anesthetics (proparacaine, benoxinate, tetracaine, cocaine) are all ester-type local anesthetics."
+ },
+ {
+  "type": "mcq",
+  "stem": "The topical anesthetic of choice for tonometry is:",
+  "options": [
+   "Lidocaine",
+   "Tetracaine",
+   "Cocaine 4%",
+   "Proparacaine 0.5%"
+  ],
+  "correct": 3,
+  "explanation": "Proparacaine 0.5% is the most common topical ophthalmic anesthetic and the DOC for tonometry. Benoxinate is combined with fluorescein in Fluress."
+ },
+ {
+  "type": "mcq",
+  "stem": "Botulinum toxin A lowers muscle activity by:",
+  "options": [
+   "Blocking norepinephrine reuptake",
+   "Inhibiting acetylcholinesterase",
+   "Blocking acetylcholine release at the neuromuscular junction",
+   "Antagonising muscarinic receptors"
+  ],
+  "correct": 2,
+  "explanation": "Botulinum toxin A blocks ACh release at the neuromuscular junction (inhibiting calcium-dependent exocytosis), producing temporary paralysis (~3 months) used for strabismus and blepharospasm."
+ },
+ {
+  "type": "mcq",
+  "stem": "Prostaglandin analogues such as latanoprost lower IOP by:",
+  "options": [
+   "Osmotic dehydration",
+   "Increasing uveoscleral outflow",
+   "Increasing trabecular outflow via miosis",
+   "Decreasing aqueous secretion"
+  ],
+  "correct": 1,
+  "explanation": "Prostaglandin analogues (latanoprost, travoprost, bimatoprost) increase uveoscleral outflow and are first-line for open-angle glaucoma (once-daily, few systemic effects). Cap colour is turquoise."
+ },
+ {
+  "type": "mcq",
+  "stem": "A well-known ocular side effect of latanoprost is:",
+  "options": [
+   "Corneal edema",
+   "Miosis",
+   "Cataract",
+   "Increased iris pigmentation and eyelash growth"
+  ],
+  "correct": 3,
+  "explanation": "Latanoprost causes increased iris brown pigmentation (heterochromia) and longer, darker lashes, plus redness and photosensitivity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Non-selective topical beta-blockers such as timolol are CONTRAINDICATED in:",
+  "options": [
+   "Diabetes insipidus",
+   "Migraine",
+   "Bronchial asthma and COPD",
+   "Hypertension"
+  ],
+  "correct": 2,
+  "explanation": "Non-selective beta-blockers (timolol) block bronchial beta-2 receptors, risking bronchoconstriction, so they are contraindicated in asthma/COPD (and can mask hypoglycemia in diabetes)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Beta-blockers lower IOP by which mechanism?",
+  "options": [
+   "Inhibiting adenylate cyclase to decrease aqueous secretion",
+   "Osmotic gradient",
+   "Increasing uveoscleral outflow",
+   "Opening the trabeculum by miosis"
+  ],
+  "correct": 0,
+  "explanation": "Beta-blockers inhibit adenylate cyclase at the ciliary process, decreasing aqueous humour secretion."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common side effect of acetazolamide is:",
+  "options": [
+   "Bronchospasm",
+   "Bradycardia",
+   "Paresthesia (tingling of mouth and extremities)",
+   "Hypertension"
+  ],
+  "correct": 2,
+  "explanation": "Acetazolamide (a systemic CAI) most commonly causes paresthesia; other effects include kidney stones, potassium loss, transient myopia, metabolic acidosis, and rarely aplastic anemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which topical CAI is commonly combined with timolol (Cosopt)?",
+  "options": [
+   "Acetazolamide",
+   "Methazolamide",
+   "Brinzolamide",
+   "Dorzolamide"
+  ],
+  "correct": 3,
+  "explanation": "Dorzolamide 2% is a topical CAI combined with timolol (Cosopt) for enhanced IOP lowering. Brinzolamide is another topical CAI."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which alpha-2 agonist lowers IOP after laser without affecting blood pressure or pulse rate, and is used to prevent post-laser IOP spikes?",
+  "options": [
+   "Naphazoline",
+   "Clonidine",
+   "Phenylephrine",
+   "Apraclonidine"
+  ],
+  "correct": 3,
+  "explanation": "Apraclonidine (an alpha-1/alpha-2 agonist with no MSA) lowers IOP without systemic BP/PR effects and is used after argon laser trabeculoplasty, iridotomy, or YAG capsulotomy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Pilocarpine lowers IOP in open-angle glaucoma by:",
+  "options": [
+   "Contracting the ciliary (Brucke's) muscle to open the trabecular meshwork",
+   "Decreasing aqueous secretion",
+   "Increasing uveoscleral outflow",
+   "Osmotic dehydration"
+  ],
+  "correct": 0,
+  "explanation": "Pilocarpine, a direct cholinergic agonist, contracts the ciliary muscle, pulling on the scleral spur to open the trabecular meshwork and increase conventional outflow."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which miotic is an IRREVERSIBLE organophosphate used for accommodative esotropia and can cause iris cysts?",
+  "options": [
+   "Physostigmine",
+   "Carbachol",
+   "Pilocarpine",
+   "Echothiophate"
+  ],
+  "correct": 3,
+  "explanation": "Echothiophate is a long-acting irreversible organophosphate anticholinesterase used for accommodative esotropia; it can cause iris cysts (reversed by 2.5% phenylephrine)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Miotics are CONTRAINDICATED in all of the following EXCEPT:",
+  "options": [
+   "Retinal detachment",
+   "Open-angle glaucoma",
+   "Cataract",
+   "Neovascular/uveitic glaucoma"
+  ],
+  "correct": 1,
+  "explanation": "Miotics are used in open-angle (and angle-closure) glaucoma. They are contraindicated in cataract, patients under 40, neovascular/uveitic glaucoma, retinal detachment, and asthma."
+ },
+ {
+  "type": "mcq",
+  "stem": "Stimulation of which receptor on the iris dilator pupillae produces mydriasis?",
+  "options": [
+   "Muscarinic M3",
+   "Beta-2",
+   "Alpha-2",
+   "Alpha-1"
+  ],
+  "correct": 3,
+  "explanation": "Alpha-1 receptors on the iris dilator pupillae mediate mydriasis. Phenylephrine (alpha-1 agonist) dilates without cycloplegia."
+ },
+ {
+  "type": "mcq",
+  "stem": "The ciliary process carries both alpha-2 and beta-2 receptors. Stimulating the beta-2 receptor:",
+  "options": [
+   "Decreases aqueous secretion",
+   "Opens the trabeculum",
+   "Causes miosis",
+   "Increases aqueous secretion"
+  ],
+  "correct": 3,
+  "explanation": "Beta-2 stimulation at the ciliary process INCREASES aqueous secretion, while alpha-2 stimulation DECREASES it. Timolol blocks beta-2 there, lowering aqueous production."
+ },
+ {
+  "type": "mcq",
+  "stem": "Phenylephrine is a:",
+  "options": [
+   "Indirect sympathomimetic",
+   "Muscarinic antagonist",
+   "Direct alpha-1 agonist",
+   "Beta-2 agonist"
+  ],
+  "correct": 2,
+  "explanation": "Phenylephrine is a selective direct alpha-1 agonist: 2.5-10% for mydriasis, 0.12% as a decongestant; it produces mydriasis without cycloplegia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dapiprazole (REV-EYES) reverses diagnostic mydriasis because it is a:",
+  "options": [
+   "Cholinesterase inhibitor",
+   "Muscarinic agonist",
+   "Beta-blocker",
+   "Selective alpha-1 blocker"
+  ],
+  "correct": 3,
+  "explanation": "Dapiprazole 0.5% is a selective alpha-1 blocker that reverses the mydriasis of phenylephrine and tropicamide."
+ },
+ {
+  "type": "mcq",
+  "stem": "On the Horner's syndrome cocaine test, the affected pupil:",
+  "options": [
+   "Shows hippus",
+   "Fails to dilate at all lesion levels",
+   "Dilates widely",
+   "Constricts"
+  ],
+  "correct": 1,
+  "explanation": "Cocaine 4% blocks NE reuptake; a Horner's (sympathetically denervated) pupil fails to dilate at any lesion level, confirming the diagnosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hydroxyamphetamine 1% is used in Horner's syndrome to:",
+  "options": [
+   "Reverse the mydriasis",
+   "Measure IOP",
+   "Confirm the diagnosis at any level",
+   "Localise the lesion: it dilates central/preganglionic lesions but FAILS to dilate a postganglionic lesion"
+  ],
+  "correct": 3,
+  "explanation": "Hydroxyamphetamine releases NE from intact postganglionic terminals, so it dilates central/preganglionic Horner's but fails to dilate a postganglionic (3rd-order) lesion, localising it."
+ },
+ {
+  "type": "mcq",
+  "stem": "Epinephrine is contraindicated in an aphakic eye because it can cause:",
+  "options": [
+   "Cataract",
+   "Cystoid macular edema",
+   "Corneal ulcer",
+   "Miosis"
+  ],
+  "correct": 1,
+  "explanation": "Epinephrine can cause cystoid macular edema in aphakic eyes; it is also contraindicated in angle-closure glaucoma, cardiovascular disease, and hyperthyroidism, and causes adrenochrome deposits."
+ },
+ {
+  "type": "mcq",
+  "stem": "Neostigmine, a reversible cholinesterase inhibitor, is the drug of choice for:",
+  "options": [
+   "Glaucoma",
+   "Uveitis",
+   "Dry eye",
+   "Myasthenia gravis"
+  ],
+  "correct": 3,
+  "explanation": "Neostigmine (Prostigmin) is the DOC for myasthenia gravis treatment; edrophonium (Tensilon test) is used for its diagnosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Fluoroquinolones (e.g., moxifloxacin) act by inhibiting:",
+  "options": [
+   "DNA gyrase (topoisomerase II)",
+   "Phospholipase A2",
+   "Cell wall transpeptidase",
+   "The 30S ribosomal subunit"
+  ],
+  "correct": 0,
+  "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase (topoisomerase II), blocking DNA replication; they have broad spectrum and excellent corneal penetration."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which antibiotic class is preferred for Pseudomonas coverage, with tobramycin the favoured ophthalmic agent?",
+  "options": [
+   "Macrolides",
+   "Glycopeptides",
+   "Aminoglycosides",
+   "Sulfonamides"
+  ],
+  "correct": 2,
+  "explanation": "Aminoglycosides (gentamicin, tobramycin) cover gram-negatives including Pseudomonas; they bind the 30S ribosome. Prolonged use can cause superficial keratitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Chloramphenicol's most feared systemic toxicity is:",
+  "options": [
+   "Aplastic anemia",
+   "Nephrotoxicity",
+   "Photosensitivity",
+   "Ototoxicity"
+  ],
+  "correct": 0,
+  "explanation": "Chloramphenicol (a 50S protein-synthesis inhibitor) can cause aplastic anemia (bone marrow toxicity) and gray baby syndrome in neonates."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sulfonamides inhibit bacterial growth by acting as analogues of:",
+  "options": [
+   "PABA, blocking dihydropteroate synthetase (folate synthesis)",
+   "Ergosterol",
+   "Folic acid end-product",
+   "D-Ala-D-Ala"
+  ],
+  "correct": 0,
+  "explanation": "Sulfonamides are PABA analogues that inhibit dihydropteroate synthetase, blocking bacterial folic acid synthesis (bacteriostatic)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Vancomycin (intravitreal for endophthalmitis) inhibits cell wall synthesis by binding:",
+  "options": [
+   "Penicillin-binding proteins",
+   "The 50S ribosome",
+   "DNA gyrase",
+   "D-Ala-D-Ala terminus of peptidoglycan"
+  ],
+  "correct": 3,
+  "explanation": "Vancomycin, a glycopeptide, binds the D-Ala-D-Ala terminus of peptidoglycan precursors (a different site than beta-lactams), and is reserved for gram-positive endophthalmitis including MRSA."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for herpes simplex epithelial keratitis is:",
+  "options": [
+   "Natamycin",
+   "Ganciclovir",
+   "Idoxuridine",
+   "Trifluridine (TFT) 1%"
+  ],
+  "correct": 3,
+  "explanation": "Trifluridine (TFT) 1% is the DOC for HSV epithelial keratitis; idoxuridine is the historical, more toxic first agent. Ganciclovir treats CMV retinitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for filamentous fungal keratitis (Fusarium, Aspergillus) is:",
+  "options": [
+   "Natamycin 5%",
+   "Amphotericin B",
+   "Trifluridine",
+   "Fluconazole"
+  ],
+  "correct": 0,
+  "explanation": "Natamycin 5%, a polyene, is the DOC for filamentous fungal keratitis, despite having the poorest corneal penetration. Amphotericin B is the DOC for Candida keratitis/endophthalmitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ganciclovir (including intravitreal implant) is used to treat:",
+  "options": [
+   "HSV epithelial keratitis",
+   "Bacterial conjunctivitis",
+   "Fungal keratitis",
+   "CMV retinitis"
+  ],
+  "correct": 3,
+  "explanation": "Ganciclovir, a guanosine analogue, treats CMV retinitis (e.g., AIDS-related), available as an intravitreal implant, oral, or IV."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which topical corticosteroid has the best corneal penetration and is the DOC for intraocular inflammation?",
+  "options": [
+   "Fluorometholone 0.1%",
+   "Prednisolone acetate 1%",
+   "Medrysone 1%",
+   "Loteprednol 0.2%"
+  ],
+  "correct": 1,
+  "explanation": "Prednisolone acetate 1% (a suspension, must be shaken) has the best corneal penetration and is the DOC for intraocular inflammation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Corticosteroids reduce inflammation by inhibiting:",
+  "options": [
+   "Carbonic anhydrase",
+   "DNA gyrase",
+   "Phospholipase A2",
+   "Cyclooxygenase"
+  ],
+  "correct": 2,
+  "explanation": "Corticosteroids inhibit phospholipase A2, reducing arachidonic acid release and thus prostaglandins and leukotrienes. NSAIDs instead inhibit cyclooxygenase (COX)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which corticosteroid has poor anterior-chamber penetration and minimal IOP elevation, making it safer for surface use?",
+  "options": [
+   "Fluorometholone (FML)",
+   "Dexamethasone",
+   "Betamethasone",
+   "Prednisolone acetate"
+  ],
+  "correct": 0,
+  "explanation": "Fluorometholone (FML) penetrates the AC poorly and causes less IOP rise, so it is used for anterior/surface inflammation with lower glaucoma risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "The key intraoperative use of ophthalmic NSAIDs (flurbiprofen, suprofen) is:",
+  "options": [
+   "Reversing mydriasis",
+   "Lowering IOP",
+   "Treating fungal keratitis",
+   "Preventing intraoperative miosis"
+  ],
+  "correct": 3,
+  "explanation": "NSAIDs inhibit COX and prostaglandin-mediated miosis, so they are added to irrigation or given pre-op to prevent intraoperative miosis. Ketorolac is the most-used ophthalmic NSAID."
+ },
+ {
+  "type": "mcq",
+  "stem": "Two classic ocular side effects of prolonged topical corticosteroids are:",
+  "options": [
+   "Miosis and myopia",
+   "Nyctalopia and xerosis",
+   "Corneal arcus and pterygium",
+   "Posterior subcapsular cataract and open-angle glaucoma"
+  ],
+  "correct": 3,
+  "explanation": "Prolonged corticosteroids cause posterior subcapsular cataract and open-angle glaucoma (reduced trabecular outflow), plus corneal thinning and infection risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cyclosporine A 0.05% (Restasis) treats dry eye by:",
+  "options": [
+   "Blocking beta receptors",
+   "Reducing T-cell-mediated inflammation to increase tear production",
+   "Adding a lipid layer",
+   "Osmotic dehydration"
+  ],
+  "correct": 1,
+  "explanation": "Topical cyclosporine A is an immunomodulator that reduces T-cell-mediated ocular surface inflammation, increasing tear production over 3-6 months of BID use."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following systemic drugs is a recognised cause of dry eye?",
+  "options": [
+   "Prostaglandins",
+   "Pilocarpine",
+   "Antihistamines (e.g., diphenhydramine)",
+   "Beta-agonists"
+  ],
+  "correct": 2,
+  "explanation": "Antihistamines (anticholinergic effect) reduce tear production and cause dry eye, as do oral retinoids, anticholinergics, and diuretics."
+ },
+ {
+  "type": "mcq",
+  "stem": "Chloroquine/hydroxychloroquine toxicity classically produces which retinal finding?",
+  "options": [
+   "Roth spots",
+   "Cherry-red spot",
+   "Bull's-eye maculopathy",
+   "Bone-spicule pigment"
+  ],
+  "correct": 2,
+  "explanation": "Chloroquine/hydroxychloroquine cause a bull's-eye maculopathy, plus whorl-like corneal (cornea verticillata) deposits and tritan color defects."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ethambutol, used for tuberculosis, characteristically causes:",
+  "options": [
+   "Angle-closure glaucoma",
+   "Cherry-red spot",
+   "Cataract",
+   "Optic neuritis with red-green color defect"
+  ],
+  "correct": 3,
+  "explanation": "Ethambutol causes a dose-related optic neuritis/neuropathy with a red-green color defect; INH can cause similar optic nerve toxicity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Amiodarone characteristically deposits in the cornea as:",
+  "options": [
+   "Band keratopathy",
+   "Whorl-like epithelial deposits (cornea verticillata)",
+   "A Kayser-Fleischer ring",
+   "Krukenberg spindle"
+  ],
+  "correct": 1,
+  "explanation": "Amiodarone produces whorl-like corneal epithelial deposits (cornea verticillata) and can cause colored halos and optic neuropathy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Phenothiazines (e.g., chlorpromazine) classically cause which lens change?",
+  "options": [
+   "Posterior subcapsular cataract",
+   "Oil-droplet cataract",
+   "Anterior subcapsular stellate cataract",
+   "Rosette cataract"
+  ],
+  "correct": 2,
+  "explanation": "Phenothiazines cause anterior subcapsular (stellate) cataract, corneal endothelial dusting, and pigmentary retinopathy at high doses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Digitalis toxicity classically causes which color disturbance?",
+  "options": [
+   "Red-green defect",
+   "Blue-yellow defect",
+   "Xanthopsia (yellow vision), 'snowy vision'",
+   "Total color loss"
+  ],
+  "correct": 2,
+  "explanation": "Digitalis produces xanthopsia (objects appear yellow) and 'snowy vision.'"
+ },
+ {
+  "type": "mcq",
+  "stem": "Which ocular side effect is shared by echothiophate, DFP, and phenothiazines?",
+  "options": [
+   "Corneal arcus",
+   "Posterior subcapsular cataract",
+   "Anterior subcapsular cataract",
+   "Bull's-eye maculopathy"
+  ],
+  "correct": 2,
+  "explanation": "Echothiophate and DFP (indirect miotics) and phenothiazines all cause anterior subcapsular cataract; corticosteroids cause posterior subcapsular cataract."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which injection route delivers drug to the retrobulbar space and is used for anesthesia during intraocular surgery?",
+  "options": [
+   "Intracameral",
+   "Retrobulbar",
+   "Subconjunctival",
+   "Topical"
+  ],
+  "correct": 1,
+  "explanation": "Retrobulbar injection places anesthetic behind the globe within the muscle cone, used for akinesia and anesthesia in intraocular surgery."
+ },
+ {
+  "type": "mcq",
+  "stem": "A cream preparation (e.g., betamethasone cream) should be applied to:",
+  "options": [
+   "The corneal surface",
+   "The eyelid skin only, not the cul-de-sac",
+   "The conjunctival fornix",
+   "The lacrimal punctum"
+  ],
+  "correct": 1,
+  "explanation": "Creams are water-miscible and meant for eyelid SKIN only; they are not placed in the cul-de-sac. Ointments are the semisolid used inside the fornix."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which tear-film additive increases contact time in the cul-de-sac to improve absorption?",
+  "options": [
+   "Methylcellulose (a viscosity agent)",
+   "Benzalkonium chloride",
+   "Thimerosal",
+   "EDTA"
+  ],
+  "correct": 0,
+  "explanation": "Viscosity agents such as methylcellulose and polyvinyl alcohol prolong contact time in the cul-de-sac, improving drug absorption."
+ },
+ {
+  "type": "mcq",
+  "stem": "Isotonic ophthalmic solutions match the tonicity of:",
+  "options": [
+   "5% NaCl",
+   "0.9% NaCl",
+   "0.45% NaCl",
+   "10% NaCl"
+  ],
+  "correct": 1,
+  "explanation": "Isotonic solutions are ~0.9% NaCl; the eye tolerates 0.6-1.8% NaCl. 5% NaCl reduces corneal edema; over 10% NaCl causes permanent damage."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is one of the five DPAs approved for optometric use as a mydriatic WITHOUT cycloplegia?",
+  "options": [
+   "1% Tropicamide",
+   "0.5% Cyclopentolate",
+   "1% Atropine",
+   "2.5% Phenylephrine"
+  ],
+  "correct": 3,
+  "explanation": "2.5% phenylephrine is the approved DPA mydriatic without cycloplegia. Tropicamide and cyclopentolate are the approved mydriatics with cycloplegia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Scopolamine differs from atropine in that its cycloplegic duration is about:",
+  "options": [
+   "4 hours",
+   "24 hours",
+   "6 hours",
+   "14 days"
+  ],
+  "correct": 1,
+  "explanation": "Scopolamine (second strongest) has a cycloplegic duration of about 24 hours, versus atropine's 14 days. It can cause somnolence and hallucination."
+ },
+ {
+  "type": "mcq",
+  "stem": "Rose Bengal preferentially stains:",
+  "options": [
+   "Endothelium only",
+   "Basement membrane only",
+   "Devitalised cells and mucus",
+   "Healthy epithelium"
+  ],
+  "correct": 2,
+  "explanation": "Rose Bengal stains devitalised (dead/degenerated) cells and mucus and has antiviral property; it helps diagnose KCS, herpes, and Sjogren's."
+ },
+ {
+  "type": "mcq",
+  "stem": "Trypan blue 0.1% is used during phacoemulsification to:",
+  "options": [
+   "Lower IOP",
+   "Stain the anterior lens capsule for capsulorhexis",
+   "Reverse mydriasis",
+   "Anesthetise the cornea"
+  ],
+  "correct": 1,
+  "explanation": "Trypan blue stains the anterior capsule to improve visualisation during capsulorhexis in mature/white cataracts, and marks corneal endothelial integrity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Penicillamine is the chelating agent used to remove:",
+  "options": [
+   "Copper deposits (Wilson's disease/chalcosis)",
+   "Calcium",
+   "Arsenic",
+   "Iron rust stains"
+  ],
+  "correct": 0,
+  "explanation": "Penicillamine binds copper (and lead, zinc, mercury) and is used for copper deposits in Wilson's disease/chalcosis and gold deposits (chrysiasis)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which osmotic agent is safe in diabetes because it is NOT metabolised to glucose?",
+  "options": [
+   "Mannitol only via glucose",
+   "Glycerol",
+   "Isosorbide",
+   "Glycerin"
+  ],
+  "correct": 2,
+  "explanation": "Isosorbide is the oral osmotic that is safe in diabetes (not metabolised to glucose). Oral glycerin/glycerol raises blood glucose and is contraindicated in diabetes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Osmotic agents lower IOP by:",
+  "options": [
+   "Increasing uveoscleral outflow",
+   "Creating an osmotic gradient that draws fluid from the eye and reduces aqueous",
+   "Blocking aqueous secretion enzymes",
+   "Opening the trabeculum"
+  ],
+  "correct": 1,
+  "explanation": "Osmotic agents raise plasma osmolality, drawing water from the vitreous/aqueous and lowering IOP; they are used for acute angle-closure and pre-op IOP reduction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which agent is a very selective alpha-2 agonist that lowers IOP by decreasing aqueous secretion AND increasing uveoscleral outflow?",
+  "options": [
+   "Timolol",
+   "Apraclonidine",
+   "Phenylephrine",
+   "Brimonidine"
+  ],
+  "correct": 3,
+  "explanation": "Brimonidine is a highly selective alpha-2 agonist with a dual mechanism: decreased aqueous secretion plus increased uveoscleral outflow."
+ },
+ {
+  "type": "mcq",
+  "stem": "Carbachol requires combination with BAK because it has:",
+  "options": [
+   "Excessive lipid solubility",
+   "No miotic effect",
+   "A short shelf life",
+   "Poor corneal penetration"
+  ],
+  "correct": 3,
+  "explanation": "Carbachol penetrates the cornea poorly, so it is combined with benzalkonium chloride (a wetting agent) to improve penetration; it is used for pilocarpine-resistant cases and post-cataract miosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which reversible cholinesterase inhibitor is the ANTIDOTE for atropine overdose?",
+  "options": [
+   "Pilocarpine",
+   "Neostigmine",
+   "Physostigmine",
+   "Edrophonium"
+  ],
+  "correct": 2,
+  "explanation": "Physostigmine, a reversible carbamate anticholinesterase that crosses into the CNS, is the antidote for atropine (anticholinergic) overdose."
+ },
+ {
+  "type": "mcq",
+  "stem": "The Tensilon (edrophonium) test is used to diagnose:",
+  "options": [
+   "Glaucoma",
+   "Adie's pupil",
+   "Horner's syndrome",
+   "Myasthenia gravis"
+  ],
+  "correct": 3,
+  "explanation": "Edrophonium (Tensilon), a short-acting reversible anticholinesterase, briefly improves ptosis/diplopia in the diagnosis of myasthenia gravis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Methacholine 2.5% is used diagnostically for:",
+  "options": [
+   "Marcus Gunn pupil",
+   "Horner's syndrome",
+   "Argyll-Robertson pupil",
+   "Adie's tonic pupil"
+  ],
+  "correct": 3,
+  "explanation": "Methacholine (and dilute 0.1% pilocarpine) constricts the denervation-supersensitive Adie's tonic pupil, aiding its diagnosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Macrolides such as erythromycin and azithromycin inhibit protein synthesis at the:",
+  "options": [
+   "30S ribosomal subunit",
+   "DNA gyrase",
+   "Cell wall",
+   "50S ribosomal subunit"
+  ],
+  "correct": 3,
+  "explanation": "Macrolides bind the 23S rRNA of the 50S ribosomal subunit; they cover gram-positives and Chlamydia. Azithromycin has an extended tissue half-life."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tetracyclines are useful for meibomian gland dysfunction and chlamydial disease but can cause which side effect in children?",
+  "options": [
+   "Aplastic anemia",
+   "Brown tooth staining",
+   "Optic neuritis",
+   "Xanthopsia"
+  ],
+  "correct": 1,
+  "explanation": "Tetracyclines chelate calcium and stain developing teeth brown in children; they can also induce transient myopia. They bind the 30S ribosome."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bacitracin inhibits bacterial:",
+  "options": [
+   "Cell wall synthesis (lipid carrier dephosphorylation)",
+   "DNA gyrase",
+   "Folic acid synthesis",
+   "30S ribosome"
+  ],
+  "correct": 0,
+  "explanation": "Bacitracin blocks the lipid carrier that transports peptidoglycan precursors, inhibiting cell wall synthesis; it covers gram-positives and is too toxic for systemic use."
+ },
+ {
+  "type": "mcq",
+  "stem": "Idoxuridine (IDU), the first ocular antiviral, is now less used than trifluridine because it:",
+  "options": [
+   "Is toxic to normal corneal epithelium and less effective",
+   "Causes cataract",
+   "Is far more expensive",
+   "Cannot be made topically"
+  ],
+  "correct": 0,
+  "explanation": "Idoxuridine is toxic to normal corneal epithelium and less effective than trifluridine, which replaced it as the DOC for HSV keratitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Amphotericin B is the drug of choice for which fungal ocular infection?",
+  "options": [
+   "Candida keratitis and endophthalmitis",
+   "Herpes keratitis",
+   "Fusarium keratitis",
+   "Aspergillus keratitis"
+  ],
+  "correct": 0,
+  "explanation": "Amphotericin B (a polyene binding ergosterol) is the DOC for Candida keratitis and endophthalmitis. Natamycin is preferred for filamentous fungi (Fusarium/Aspergillus)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Loteprednol is described as the DOC for allergic conjunctivitis because its retrometabolism gives it:",
+  "options": [
+   "No anti-inflammatory action",
+   "Antifungal activity",
+   "Maximal corneal thinning",
+   "Minimal IOP elevation with good efficacy"
+  ],
+  "correct": 3,
+  "explanation": "Loteprednol is metabolised to an inactive form soon after acting, giving good anti-inflammatory effect with minimal IOP elevation, making it well suited to allergic conjunctivitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "The provocative test for open-angle glaucoma uses topical dexamethasone/betamethasone TID for 4-6 weeks to detect:",
+  "options": [
+   "Corticosteroid-induced IOP elevation",
+   "Cataract formation",
+   "Corneal edema",
+   "Miosis"
+  ],
+  "correct": 0,
+  "explanation": "Steroid responders develop elevated IOP with 0.1% dexamethasone/betamethasone TID over 4-6 weeks, used as a provocative test for POAG susceptibility."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ketorolac 0.5% is used after surgery primarily to:",
+  "options": [
+   "Lower IOP",
+   "Manage pain and prevent cystoid macular edema",
+   "Treat fungal infection",
+   "Reverse mydriasis"
+  ],
+  "correct": 1,
+  "explanation": "Ketorolac, the most-used ophthalmic NSAID, controls post-op pain and helps prevent cystoid macular edema; its cap colour is gray."
+ },
+ {
+  "type": "mcq",
+  "stem": "Oral contraceptives are associated with which serious ocular vascular complication?",
+  "options": [
+   "Bull's-eye maculopathy",
+   "Anterior cataract",
+   "Cornea verticillata",
+   "Retinal vascular occlusion (CRAO/CRVO)"
+  ],
+  "correct": 3,
+  "explanation": "Oral contraceptives increase thrombotic risk and are associated with retinal vascular occlusive disease (CRAO, CRVO), optic neuritis, and papilledema."
+ },
+ {
+  "type": "mcq",
+  "stem": "Excess vitamin A (hypervitaminosis A) can cause which neuro-ophthalmic sign?",
+  "options": [
+   "Papilledema (pseudotumor cerebri)",
+   "Cherry-red spot",
+   "Bone-spicule pigment",
+   "Kayser-Fleischer ring"
+  ],
+  "correct": 0,
+  "explanation": "Vitamin A excess can raise intracranial pressure (pseudotumor cerebri) with papilledema, plus dry eyes and blepharoconjunctivitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Gold salt therapy deposits gold in ocular tissues, a condition termed:",
+  "options": [
+   "Argyrosis",
+   "Chalcosis",
+   "Chrysiasis",
+   "Siderosis"
+  ],
+  "correct": 2,
+  "explanation": "Gold deposition is chrysiasis; silver deposition is argyrosis; iron is siderosis; copper is chalcosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which drug class is known to precipitate acute angle-closure glaucoma via mydriasis?",
+  "options": [
+   "Carbonic anhydrase inhibitors",
+   "Prostaglandin analogues",
+   "Anticholinergics/tricyclic antidepressants",
+   "Beta-blockers"
+  ],
+  "correct": 2,
+  "explanation": "Anticholinergics, tricyclic antidepressants, scopolamine, antihistamines, and related agents dilate the pupil and can precipitate angle-closure in predisposed eyes. Beta-blockers, CAIs, and prostaglandins lower IOP."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which fluoroquinolone generation first provided ophthalmic preparations (e.g., ciprofloxacin, ofloxacin)?",
+  "options": [
+   "2nd generation",
+   "1st generation",
+   "4th generation",
+   "3rd generation"
+  ],
+  "correct": 0,
+  "explanation": "Second-generation fluoroquinolones (ciprofloxacin, ofloxacin, norfloxacin) were the first with ophthalmic preparations. Moxifloxacin and gatifloxacin are later-generation ophthalmic agents with expanded gram-positive cover."
+ },
+ {
+  "type": "mcq",
+  "stem": "The blood-retinal barrier is formed between the retinal capillary (choriocapillaris) and the:",
+  "options": [
+   "Lens capsule",
+   "Ciliary muscle",
+   "Corneal endothelium",
+   "Retinal pigment epithelium (RPE)"
+  ],
+  "correct": 3,
+  "explanation": "The blood-retinal barrier lies between the choriocapillaris/retinal capillary and the RPE (outer barrier) with tight junctions, controlling drug access to the retina."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cocaine 4%, besides testing for Horner's syndrome, is used in dacryocystorhinostomy for its:",
+  "options": [
+   "IOP-lowering effect",
+   "Miotic effect",
+   "Nasal vasoconstriction and local anesthesia",
+   "Antifungal effect"
+  ],
+  "correct": 2,
+  "explanation": "Cocaine blocks NE reuptake (indirect sympathomimetic) causing vasoconstriction, and is a local anesthetic, useful for nasal mucosa preparation in DCR."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which agent is a prodrug converted to epinephrine by ocular esterases, giving fewer side effects?",
+  "options": [
+   "Brimonidine",
+   "Phenylephrine",
+   "Apraclonidine",
+   "Dipivefrin"
+  ],
+  "correct": 3,
+  "explanation": "Dipivefrin (dipivalyl epinephrine) is a lipophilic prodrug converted to epinephrine intraocularly, giving better penetration and fewer systemic effects than epinephrine."
+ },
+ {
+  "type": "mcq",
+  "stem": "Prolonged use (>5 days) of topical nasal/ocular decongestants such as oxymetazoline can cause:",
+  "options": [
+   "Optic neuritis",
+   "Cataract",
+   "Rebound congestion (rhinitis medicamentosa)",
+   "Corneal ulcer"
+  ],
+  "correct": 2,
+  "explanation": "Overuse of alpha-1 decongestants (naphazoline, oxymetazoline, tetrahydrozoline) beyond a few days causes rebound congestion (rhinitis medicamentosa)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which topical anesthetic combination is found in Fluress?",
+  "options": [
+   "Cocaine + fluorescein",
+   "Benoxinate 0.4% + fluorescein 0.25%",
+   "Proparacaine + fluorescein",
+   "Tetracaine + rose bengal"
+  ],
+  "correct": 1,
+  "explanation": "Fluress combines benoxinate 0.4% with fluorescein 0.25% (plus chlorobutanol, EDTA, boric acid), used for applanation tonometry."
+ },
+ {
+  "type": "mcq",
+  "stem": "Indocyanine green is preferred over fluorescein for choroidal imaging because it:",
+  "options": [
+   "Stains epithelial defects",
+   "Fluoresces in the infrared and penetrates the RPE better",
+   "Is applied topically",
+   "Has a shorter wavelength"
+  ],
+  "correct": 1,
+  "explanation": "ICG fluoresces in the infrared (peak ~835 nm), penetrating the RPE and blood better than fluorescein, so it images the choroidal circulation and neovascular membranes."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aminoglycosides bind which ribosomal subunit?",
+  "options": [
+   "23S",
+   "30S",
+   "50S",
+   "70S whole ribosome only"
+  ],
+  "correct": 1,
+  "explanation": "Aminoglycosides bind the 30S ribosomal subunit (as do tetracyclines and glycylcyclines), inhibiting bacterial protein synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which corticosteroid preparation must be shaken before use because it is a suspension?",
+  "options": [
+   "Dexamethasone solution",
+   "Prednisolone acetate 1%",
+   "Betamethasone cream",
+   "Fluorometholone solution"
+  ],
+  "correct": 1,
+  "explanation": "Prednisolone acetate 1% is a suspension and must be shaken to resuspend the drug for consistent dosing and its excellent penetration."
+ },
+ {
+  "type": "mcq",
+  "stem": "Apraclonidine's typical clinical use is to:",
+  "options": [
+   "Provide anesthesia",
+   "Prevent the IOP spike after laser procedures",
+   "Reverse mydriasis",
+   "Treat fungal keratitis"
+  ],
+  "correct": 1,
+  "explanation": "Apraclonidine is used to blunt the IOP spike after argon laser trabeculoplasty, iridotomy, or YAG capsulotomy, without affecting BP or pulse."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which anti-infective is reserved as intravitreal therapy for gram-positive (MRSA) endophthalmitis?",
+  "options": [
+   "Natamycin",
+   "Tobramycin",
+   "Trifluridine",
+   "Vancomycin"
+  ],
+  "correct": 3,
+  "explanation": "Vancomycin is reserved for gram-positive endophthalmitis, including MRSA and resistant cocci, given intravitreally."
+ },
+ {
+  "type": "mcq",
+  "stem": "Latanoprost, travoprost, and bimatoprost share which cap colour?",
+  "options": [
+   "Orange",
+   "Turquoise",
+   "Green",
+   "Pink"
+  ],
+  "correct": 1,
+  "explanation": "Prostaglandin analogues carry a turquoise cap. Miotics are green, CAIs orange, corticosteroids pink."
+ },
+ {
+  "type": "mcq",
+  "stem": "Betaxolol is preferred over timolol in an asthmatic glaucoma patient because betaxolol is:",
+  "options": [
+   "An alpha agonist",
+   "A prostaglandin",
+   "Beta-1 (cardio) selective, sparing bronchial beta-2 receptors",
+   "Non-selective"
+  ],
+  "correct": 2,
+  "explanation": "Betaxolol is beta-1 (cardio) selective, so it largely spares bronchial beta-2 receptors, making it safer than the non-selective timolol in asthma/COPD."
+ },
+ {
+  "type": "mcq",
+  "stem": "Physostigmine and echothiophate both lower IOP by inhibiting:",
+  "options": [
+   "Acetylcholinesterase, so ACh accumulates and stimulates the ciliary muscle",
+   "Phospholipase A2",
+   "Adenylate cyclase",
+   "Carbonic anhydrase"
+  ],
+  "correct": 0,
+  "explanation": "Both are anticholinesterases (physostigmine reversible, echothiophate irreversible); accumulated ACh stimulates the ciliary muscle to open the trabeculum (indirect miotics)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which vital dye screens for vitamin A deficiency/xerophthalmia and has antiviral property at 0.06%?",
+  "options": [
+   "Rose Bengal",
+   "Trypan blue",
+   "Lissamine green",
+   "Argyrol"
+  ],
+  "correct": 2,
+  "explanation": "Lissamine green stains devitalised cells and mucus, screens for xerophthalmia, and has antiviral property at 0.06% with little stinging."
+ }
+]

@@ -10,10 +10,10 @@ import pecQ from '@/data/primary-eye-care.json'
 import pmoQ from '@/data/practical-mechanical-optics.json'
 import lvQ from '@/data/low-vision.json'
 import odQ from '@/data/ocular-disease.json'
+import opQ from '@/data/ocular-pharmacology.json'
 import { generalAnatomyQuiz } from '@/data/notes-quiz/general-anatomy'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { generalPharmacologyQuiz } from '@/data/notes-quiz/general-pharmacology'
-import { ocularPharmacologyQuiz } from '@/data/notes-quiz/ocular-pharmacology'
 import { QuizQuestion } from '@/lib/notes-quiz-types'
 import { Question } from '@/lib/types'
 
@@ -39,7 +39,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'ocular-anatomy': convertQuizQuestions(ocularAnatomyQuiz.questions),
   'ocular-disease': odQ,
   'general-pharmacology': convertQuizQuestions(generalPharmacologyQuiz.questions),
-  'ocular-pharmacology': convertQuizQuestions(ocularPharmacologyQuiz.questions),
+  'ocular-pharmacology': opQ,
   'practical-mechanical-optics': pmoQ,
   'low-vision': lvQ,
 }

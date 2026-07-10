@@ -97,6 +97,10 @@ export const ocularPharmacologyNotes: NotesData = {
               kind: 'pearl',
               content: 'Drug cap colors are board-tested: Mydriatics/cycloplegics = RED. Beta blockers = YELLOW/BLUE. Miotics = GREEN. NSAIDs = GRAY. Anti-infectives = BROWN/TAN. Corticosteroids = PINK. Adrenergics = PURPLE. CAIs = ORANGE. Prostaglandin analogs = TURQUOISE.',
             },
+            {
+              kind: 'diagram',
+              id: 'op-cap-colors',
+            },
           ],
         },
         {

@@ -213,10 +213,57 @@ export function AutonomicEyeDiagram() {
   )
 }
 
+// ─── Drug Cap Color Code ──────────────────────────────────────────────────────
+
+export function CapColorDiagram() {
+  const caps = [
+    { cls: 'Mydriatics / Cycloplegics', color: '#dc2626', label: 'RED', text: '#fff' as string, color2: '', label2: '' },
+    { cls: 'Beta-blockers', color: '#eab308', label: 'YELLOW', text: '#111827', color2: '#2563eb', label2: 'BLUE' },
+    { cls: 'Miotics', color: '#16a34a', label: 'GREEN', text: '#fff', color2: '', label2: '' },
+    { cls: 'NSAIDs', color: '#9ca3af', label: 'GRAY', text: '#111827', color2: '', label2: '' },
+    { cls: 'Anti-infectives', color: '#92400e', label: 'BROWN / TAN', text: '#fff', color2: '', label2: '' },
+    { cls: 'Corticosteroids', color: '#ec4899', label: 'PINK', text: '#fff', color2: '', label2: '' },
+    { cls: 'Adrenergic agonists', color: '#7c3aed', label: 'PURPLE', text: '#fff', color2: '', label2: '' },
+    { cls: 'Carbonic anhydrase inhibitors', color: '#ea580c', label: 'ORANGE', text: '#fff', color2: '', label2: '' },
+    { cls: 'Prostaglandin analogs', color: '#14b8a6', label: 'TURQUOISE', text: '#fff', color2: '', label2: '' },
+  ]
+  return (
+    <DiagramShell caption="Standardised bottle-cap colours let you identify an eye-drop class at a glance. These colour codes are frequently tested on the boards.">
+      <svg viewBox="0 0 460 300" className="w-full">
+        <rect width="460" height="300" fill="#f9fafb" />
+        <text x="230" y="20" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#111827">Eye-Drop Cap Colour Code</text>
+        {caps.map((c, i) => {
+          const y = 36 + i * 28
+          return (
+            <g key={i}>
+              <rect x="20" y={y} width="230" height="22" rx="4" fill="#fff" stroke="#e5e7eb" />
+              <text x="28" y={y + 15} fontSize="9.5" fill="#111827">{c.cls}</text>
+              {c.color2 ? (
+                <>
+                  <rect x="262" y={y} width="90" height="22" rx="4" fill={c.color} />
+                  <text x="307" y={y + 15} textAnchor="middle" fontSize="8.5" fontWeight="bold" fill={c.text}>{c.label}</text>
+                  <rect x="356" y={y} width="84" height="22" rx="4" fill={c.color2} />
+                  <text x="398" y={y + 15} textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="#fff">{c.label2}</text>
+                </>
+              ) : (
+                <>
+                  <rect x="262" y={y} width="178" height="22" rx="4" fill={c.color} />
+                  <text x="351" y={y + 15} textAnchor="middle" fontSize="9" fontWeight="bold" fill={c.text}>{c.label}</text>
+                </>
+              )}
+            </g>
+          )
+        })}
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'op-drug-delivery': OcularDrugDeliveryDiagram,
   'op-antiglaucoma': AntiGlaucomaDiagram,
   'op-autonomic-eye': AutonomicEyeDiagram,
+  'op-cap-colors': CapColorDiagram,
 }

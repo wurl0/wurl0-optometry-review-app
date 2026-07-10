@@ -94,9 +94,10 @@ export const SUBJECTS: Subject[] = [
     name: 'Ocular Pharmacology',
     description: 'Diagnostic agents, anti-glaucoma drugs, anti-infectives, steroids, and autonomic agents in eye care.',
     color: 'cyan',
-    questionCount: 150,
+    questionCount: 104,
     icon: '👁️‍🗨️',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'practical-mechanical-optics',
