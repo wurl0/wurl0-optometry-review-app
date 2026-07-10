@@ -193,10 +193,48 @@ export function ANSDrugsDiagram() {
   )
 }
 
+// ─── Ligand Efficacy Spectrum ─────────────────────────────────────────────────
+
+export function LigandSpectrumDiagram() {
+  const ligands = [
+    { name: 'Full agonist', act: 1.0, color: '#16a34a', note: 'max response' },
+    { name: 'Partial agonist', act: 0.5, color: '#65a30d', note: 'submaximal' },
+    { name: 'Antagonist', act: 0.0, color: '#6b7280', note: 'blocks only' },
+    { name: 'Inverse agonist', act: -0.6, color: '#dc2626', note: 'below baseline' },
+  ]
+  const baseY = 150 // zero (baseline) line
+  const unit = 90 // pixels per unit activity
+  return (
+    <DiagramShell caption="Intrinsic activity separates the ligand types: full agonist (maximal), partial agonist (submaximal), antagonist (zero, blocks the agonist), and inverse agonist (negative, drives activity below baseline).">
+      <svg viewBox="0 0 460 250" className="w-full">
+        <rect width="460" height="250" fill="#f9fafb" />
+        <text x="230" y="20" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#111827">Drug Ligand Efficacy (Intrinsic Activity)</text>
+        {/* baseline */}
+        <line x1="40" y1={baseY} x2="440" y2={baseY} stroke="#9ca3af" strokeWidth="1" strokeDasharray="4,3" />
+        <text x="44" y={baseY - 4} fontSize="7.5" fill="#6b7280">baseline (0)</text>
+        {ligands.map((l, i) => {
+          const x = 70 + i * 95
+          const h = Math.abs(l.act) * unit
+          const y = l.act >= 0 ? baseY - h : baseY
+          return (
+            <g key={i}>
+              <rect x={x - 26} y={y} width="52" height={h} rx="3" fill={l.color} opacity="0.85" />
+              <text x={x} y={l.act >= 0 ? y - 5 : y + h + 12} textAnchor="middle" fontSize="8" fill="#374151">{l.note}</text>
+              <text x={x} y="212" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="#111827">{l.name}</text>
+            </g>
+          )
+        })}
+        <text x="34" y="70" fontSize="7.5" fill="#6b7280" transform="rotate(-90 34 70)">+ activity</text>
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'gp-pharmacokinetics': Pharmacokinetics,
   'gp-dose-response': DoseResponseCurve,
   'gp-ans-drugs': ANSDrugsDiagram,
+  'gp-ligand-spectrum': LigandSpectrumDiagram,
 }

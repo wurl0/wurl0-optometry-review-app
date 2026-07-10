@@ -1,0 +1,1226 @@
+[
+ {
+  "type": "mcq",
+  "stem": "Pharmacokinetics is best described as:",
+  "options": [
+   "The study of poisons",
+   "The study of drug dosage",
+   "What the body does to the drug (ADME)",
+   "What the drug does to the body"
+  ],
+  "correct": 2,
+  "explanation": "Pharmacokinetics is 'what the body does to the drug' (absorption, distribution, metabolism, excretion). Pharmacodynamics is 'what the drug does to the body.'"
+ },
+ {
+  "type": "mcq",
+  "stem": "The study of the biological and therapeutic effects of drugs on the body is:",
+  "options": [
+   "Pharmacodynamics",
+   "Pharmacognosy",
+   "Pharmacokinetics",
+   "Posology"
+  ],
+  "correct": 0,
+  "explanation": "Pharmacodynamics studies drug effects and mechanisms on the body. Pharmacognosy identifies natural crude drugs; posology is the study of dosage."
+ },
+ {
+  "type": "mcq",
+  "stem": "Potency refers to the:",
+  "options": [
+   "Time to reach steady state",
+   "Duration of drug action",
+   "Maximum effect a drug can produce",
+   "Lowest concentration needed to produce the desired effect (EC50/ED50)"
+  ],
+  "correct": 3,
+  "explanation": "Potency is the lowest concentration/dose needed for the desired effect (EC50/ED50). Efficacy is the maximum effect achievable (Emax)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Efficacy is defined as the:",
+  "options": [
+   "Volume of distribution",
+   "Rate of metabolism",
+   "Dose producing 50% response",
+   "Maximum effect a drug can produce (Emax)"
+  ],
+  "correct": 3,
+  "explanation": "Efficacy is the maximal response a drug can produce (Emax). A drug can be very potent yet have low efficacy."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tachyphylaxis is:",
+  "options": [
+   "Increased sensitivity from denervation",
+   "An idiosyncratic reaction",
+   "Reduced sensitivity from antibody formation",
+   "Tolerance developing rapidly after only a few doses"
+  ],
+  "correct": 3,
+  "explanation": "Tachyphylaxis is rapidly developing tolerance after just a few doses. Tolerance in general is reduced response from prior exposure (often via enzyme induction)."
+ },
+ {
+  "type": "mcq",
+  "stem": "An untoward drug reaction with no obvious pharmacodynamic cause, not attributable to hypersensitivity, is termed:",
+  "options": [
+   "Tolerance",
+   "Idiosyncratic reaction",
+   "Tachyphylaxis",
+   "Supersensitivity"
+  ],
+  "correct": 1,
+  "explanation": "An idiosyncratic reaction is an unexpected response with no clear pharmacodynamic or hypersensitivity basis, often genetically determined."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which controlled-substance schedule has HIGH abuse potential and NO accepted medical use?",
+  "options": [
+   "Schedule IV",
+   "Schedule I",
+   "Schedule III",
+   "Schedule II"
+  ],
+  "correct": 1,
+  "explanation": "Schedule I (marijuana, heroin, LSD, mescaline) has high abuse potential and no accepted medical use, so it is not available for therapeutic use."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which clinical trial phase is the ONLY one conducted AFTER NDA approval (post-marketing surveillance)?",
+  "options": [
+   "Phase III",
+   "Phase II",
+   "Phase IV",
+   "Phase I"
+  ],
+  "correct": 2,
+  "explanation": "Phase IV is post-approval surveillance in the general population, monitoring for problems after the New Drug Application is approved."
+ },
+ {
+  "type": "mcq",
+  "stem": "A palliative therapeutic drug is one that:",
+  "options": [
+   "Limits damage from the process",
+   "Prevents the disease",
+   "Reverses the basic pathologic process",
+   "Relieves symptoms without modifying the causal process"
+  ],
+  "correct": 3,
+  "explanation": "A palliative drug relieves symptoms without changing the underlying cause. A curative drug reverses the pathology; a protective drug limits damage."
+ },
+ {
+  "type": "mcq",
+  "stem": "Intravenous administration provides which bioavailability?",
+  "options": [
+   "About 50%",
+   "Variable and unpredictable",
+   "100%",
+   "Less than 10%"
+  ],
+  "correct": 2,
+  "explanation": "IV administration delivers 100% bioavailability (zero-order absorption kinetics), bypassing first-pass metabolism, with rapid onset and short duration."
+ },
+ {
+  "type": "mcq",
+  "stem": "First-pass metabolism most affects which route?",
+  "options": [
+   "Inhalational",
+   "Sublingual",
+   "Intravenous",
+   "Oral"
+  ],
+  "correct": 3,
+  "explanation": "Orally administered drugs pass through the liver before reaching systemic circulation, so they undergo first-pass metabolism. IV and sublingual routes largely bypass it."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which membrane transport mechanism moves a drug AGAINST its concentration gradient and requires ATP?",
+  "options": [
+   "Facilitated diffusion",
+   "Passive diffusion",
+   "Active transport",
+   "Filtration"
+  ],
+  "correct": 2,
+  "explanation": "Active transport moves drug against the gradient using ATP and a carrier, and is saturable. Passive diffusion needs no energy or carrier."
+ },
+ {
+  "type": "mcq",
+  "stem": "Only the free (unbound) fraction of a drug is:",
+  "options": [
+   "A prodrug",
+   "Pharmacologically active and able to reach the site of action",
+   "A metabolite",
+   "Bound to albumin"
+  ],
+  "correct": 1,
+  "explanation": "The free/unbound drug is active and can leave the blood to act; the albumin-bound fraction is inactive until released."
+ },
+ {
+  "type": "mcq",
+  "stem": "The primary organ of drug biotransformation is the:",
+  "options": [
+   "Spleen",
+   "Lung",
+   "Kidney",
+   "Liver (cytochrome P450 system)"
+  ],
+  "correct": 3,
+  "explanation": "The liver, via the cytochrome P450 microsomal enzyme system, is the primary site of drug metabolism."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common Stage I (non-synthetic) biotransformation reaction is:",
+  "options": [
+   "Oxidation",
+   "Acetylation",
+   "Conjugation",
+   "Methylation"
+  ],
+  "correct": 0,
+  "explanation": "Oxidation (addition of O2 or removal of hydrogen) is the most common Stage I reaction, carried out by cytochrome P450. Stage II is conjugation."
+ },
+ {
+  "type": "mcq",
+  "stem": "Phenobarbital is an example of a drug that:",
+  "options": [
+   "Induces microsomal oxidation enzymes",
+   "Inhibits microsomal oxidation",
+   "Has zero bioavailability",
+   "Is excreted unchanged"
+  ],
+  "correct": 0,
+  "explanation": "Phenobarbital (and chlorpromazine) induce microsomal oxidation enzymes, increasing metabolism. Metronidazole is an inhibitor."
+ },
+ {
+  "type": "mcq",
+  "stem": "Steady-state drug concentration is reached after approximately how many half-lives of regular dosing?",
+  "options": [
+   "1-2",
+   "10-12",
+   "20",
+   "4-5"
+  ],
+  "correct": 3,
+  "explanation": "Steady state (dynamic equilibrium between intake and elimination) is reached after about 4-5 half-lives."
+ },
+ {
+  "type": "mcq",
+  "stem": "In first-order elimination, the rate of elimination is:",
+  "options": [
+   "Zero",
+   "Constant regardless of concentration",
+   "Independent of clearance",
+   "Proportional to the drug's plasma concentration"
+  ],
+  "correct": 3,
+  "explanation": "First-order elimination removes a constant FRACTION per unit time, so the rate is proportional to plasma concentration. Zero-order removes a constant amount regardless of concentration."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which pharmacokinetic parameter is the volume of plasma cleared of drug per unit time?",
+  "options": [
+   "Half-life",
+   "Clearance",
+   "Volume of distribution",
+   "AUC"
+  ],
+  "correct": 1,
+  "explanation": "Clearance (Cl) is the volume of plasma cleared of drug per unit time. Volume of distribution relates concentration to total drug in the body."
+ },
+ {
+  "type": "mcq",
+  "stem": "An antagonist is characterised by:",
+  "options": [
+   "High intrinsic activity",
+   "Submaximal activity",
+   "Negative intrinsic activity",
+   "Zero intrinsic activity \u2014 it blocks the agonist but has no effect alone"
+  ],
+  "correct": 3,
+  "explanation": "An antagonist has affinity but ZERO intrinsic activity: it blocks agonist binding and has no effect alone. An inverse agonist has NEGATIVE intrinsic activity."
+ },
+ {
+  "type": "mcq",
+  "stem": "An inverse agonist differs from an antagonist because it:",
+  "options": [
+   "Produces a maximal response",
+   "Has no affinity",
+   "Has negative intrinsic activity, actively opposing baseline receptor activity",
+   "Is always irreversible"
+  ],
+  "correct": 2,
+  "explanation": "An inverse agonist has negative intrinsic activity, reducing receptor activity below baseline even without an agonist present. An antagonist merely blocks (zero intrinsic activity)."
+ },
+ {
+  "type": "mcq",
+  "stem": "A partial agonist can antagonise a full agonist because it:",
+  "options": [
+   "Is metabolised faster",
+   "Has no affinity",
+   "Binds a different receptor",
+   "Occupies the receptor but produces only a submaximal effect"
+  ],
+  "correct": 3,
+  "explanation": "A partial agonist binds with full affinity but low intrinsic activity, so it produces a submaximal effect and competes with (thus reduces) the action of a full agonist."
+ },
+ {
+  "type": "mcq",
+  "stem": "Competitive (surmountable) antagonism can be overcome by:",
+  "options": [
+   "Chemical neutralisation",
+   "Increasing the agonist dose",
+   "Lowering the agonist dose",
+   "Adding an inverse agonist"
+  ],
+  "correct": 1,
+  "explanation": "Competitive antagonists bind reversibly at the same active site, so increasing agonist concentration can overcome (surmount) the block. Non-competitive antagonism cannot be overcome this way."
+ },
+ {
+  "type": "mcq",
+  "stem": "A drug interaction described by 1 + 1 = 3 (combined effect greater than the sum) is:",
+  "options": [
+   "Synergism",
+   "Potentiation",
+   "Antagonism",
+   "Addition"
+  ],
+  "correct": 0,
+  "explanation": "Synergism is a supra-additive effect (1+1=3). Potentiation is 0+1=2 (a drug with no effect alone enhances another); addition is 1+1=2."
+ },
+ {
+  "type": "mcq",
+  "stem": "The therapeutic index (TI) is calculated as:",
+  "options": [
+   "Emax / EC50",
+   "TD50 / ED50",
+   "LD50 x ED50",
+   "ED50 / TD50"
+  ],
+  "correct": 1,
+  "explanation": "TI = TD50 / ED50. A larger TI means a wider safety margin; drugs like digoxin, warfarin, and lithium have low TIs."
+ },
+ {
+  "type": "mcq",
+  "stem": "A drug with a LOW therapeutic index (e.g., digoxin, warfarin, lithium):",
+  "options": [
+   "Cannot cause toxicity",
+   "Has a narrow margin of safety and needs careful monitoring",
+   "Has no toxic dose",
+   "Is very safe with a wide margin"
+  ],
+  "correct": 1,
+  "explanation": "A low therapeutic index means the toxic and effective doses are close, so a narrow margin of safety requires monitoring."
+ },
+ {
+  "type": "mcq",
+  "stem": "The quantal dose-response curve is used primarily to:",
+  "options": [
+   "Determine half-life",
+   "Show maximal efficacy of a drug",
+   "Assess a drug's margin of safety across a population",
+   "Measure receptor affinity"
+  ],
+  "correct": 2,
+  "explanation": "The quantal dose-response plots the percentage of a population responding versus dose and is used to assess the margin of safety (ED50, TD50, LD50)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The part of a prescription bearing the symbol Rx ('take thou') is the:",
+  "options": [
+   "Subscription",
+   "Signa",
+   "Superscription",
+   "Inscription"
+  ],
+  "correct": 2,
+  "explanation": "The superscription is the Rx symbol. The inscription names the drug and strength; the subscription directs the dispenser; the signa directs the patient."
+ },
+ {
+  "type": "mcq",
+  "stem": "The abbreviation 'h.s.' on a prescription means:",
+  "options": [
+   "Every hour",
+   "As needed",
+   "At bedtime",
+   "Before meals"
+  ],
+  "correct": 2,
+  "explanation": "'h.s.' (hora somni) means at bedtime. 'q.h.' is every hour, 'a.c.' is before meals, 'p.r.n.' is as needed."
+ },
+ {
+  "type": "mcq",
+  "stem": "The abbreviation 'O.U.' means:",
+  "options": [
+   "Left eye",
+   "Every hour",
+   "Each/both eyes",
+   "Right eye"
+  ],
+  "correct": 2,
+  "explanation": "'O.U.' (oculo utro/uterque) means each or both eyes. O.D. is right eye, O.S. is left eye."
+ },
+ {
+  "type": "mcq",
+  "stem": "The antidote for acetaminophen (paracetamol) overdose is:",
+  "options": [
+   "N-acetylcysteine",
+   "Flumazenil",
+   "Naloxone",
+   "Sodium bicarbonate"
+  ],
+  "correct": 0,
+  "explanation": "N-acetylcysteine is the antidote for acetaminophen hepatotoxicity, effective when given 8-24 hours after ingestion. Aspirin overdose is managed with sodium bicarbonate."
+ },
+ {
+  "type": "mcq",
+  "stem": "Naloxone is used to treat:",
+  "options": [
+   "Acetaminophen toxicity",
+   "Digitalis toxicity",
+   "Benzodiazepine overdose",
+   "Acute opioid overdose"
+  ],
+  "correct": 3,
+  "explanation": "Naloxone is an opioid antagonist used for acute opioid overdose. Naltrexone is a maintenance agent for opioid addiction programs."
+ },
+ {
+  "type": "mcq",
+  "stem": "Opioid analgesics classically produce which ocular sign?",
+  "options": [
+   "Nystagmus",
+   "Mydriasis",
+   "Cycloplegia only",
+   "Miosis (pinpoint pupils)"
+  ],
+  "correct": 3,
+  "explanation": "Opioids cause miosis (pinpoint pupils), plus decreased accommodation and a myopic shift."
+ },
+ {
+  "type": "mcq",
+  "stem": "Local anesthetics block nerve conduction by:",
+  "options": [
+   "Opening calcium channels",
+   "Decreasing sodium permeability of the nerve membrane, preventing depolarisation",
+   "Increasing potassium permeability",
+   "Blocking acetylcholinesterase"
+  ],
+  "correct": 1,
+  "explanation": "Local anesthetics decrease Na+ permeability, blocking depolarisation and nerve conduction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ester-type local anesthetics are metabolised by:",
+  "options": [
+   "The liver",
+   "The lung",
+   "Plasma (blood) esterases",
+   "The kidney"
+  ],
+  "correct": 2,
+  "explanation": "Esters are hydrolysed by plasma esterases and have shorter action; amides are metabolised by the liver and act longer."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which local anesthetic property is TRUE at an acidic pH (as in purulent inflammation)?",
+  "options": [
+   "Both are equally active",
+   "Amides remain active while esters do not",
+   "Neither works at all",
+   "Esters remain fully active"
+  ],
+  "correct": 1,
+  "explanation": "Amides remain active in the acidic environment of purulent inflammation, whereas esters are not active there."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most common topical ophthalmic anesthetic, with rapid onset and few side effects, is:",
+  "options": [
+   "Tetracaine",
+   "Benzocaine",
+   "Proparacaine 0.5%",
+   "Cocaine"
+  ],
+  "correct": 2,
+  "explanation": "Proparacaine 0.5% is the most common topical ophthalmic anesthetic: fast onset (5-15 sec), short duration, and least irritating."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cocaine is NOT used for tonometry because it:",
+  "options": [
+   "Has no anesthetic effect",
+   "Causes miosis",
+   "Softens the cornea and gives falsely low IOP readings",
+   "Is too weak"
+  ],
+  "correct": 2,
+  "explanation": "Cocaine softens the corneal epithelium, producing falsely low IOP values, so it is unsuitable for tonometry. It is the only natural local anesthetic and has adrenergic (mydriatic, vasoconstrictive) effects."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which additive prolongs the action of an injected local anesthetic by causing vasoconstriction?",
+  "options": [
+   "Epinephrine",
+   "Bicarbonate",
+   "Hyaluronidase",
+   "Sodium chloride"
+  ],
+  "correct": 0,
+  "explanation": "Epinephrine causes local vasoconstriction, reducing systemic absorption and prolonging anesthesia. Hyaluronidase spreads the drug; bicarbonate raises the non-ionised fraction."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most serious early (excitatory) CNS effect of local anesthetic systemic toxicity is:",
+  "options": [
+   "Bradycardia",
+   "Convulsive seizures",
+   "Hypotension",
+   "Drowsiness"
+  ],
+  "correct": 1,
+  "explanation": "Convulsive seizures are the most serious early excitatory CNS sign of local anesthetic toxicity, before the late depressive phase (coma, respiratory failure)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Lidocaine is classified as which type of local anesthetic?",
+  "options": [
+   "Inorganic salt",
+   "Ester",
+   "Amide",
+   "Natural alkaloid"
+  ],
+  "correct": 2,
+  "explanation": "Lidocaine (Xylocaine) is an amide, the most common injectable local anesthetic; it is also used IV for ventricular arrhythmias."
+ },
+ {
+  "type": "mcq",
+  "stem": "The side effect common to nearly all antihypertensive classes (except diuretics and antihyperlipidemics) is:",
+  "options": [
+   "Orthostatic hypotension",
+   "Weight gain",
+   "Bradycardia",
+   "Hyperkalemia"
+  ],
+  "correct": 0,
+  "explanation": "Orthostatic (postural) hypotension is common to most antihypertensive classes because of their vasodilatory/sympatholytic actions."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most commonly used antihypertensive diuretic is:",
+  "options": [
+   "Hydrochlorothiazide",
+   "Mannitol",
+   "Spironolactone",
+   "Furosemide"
+  ],
+  "correct": 0,
+  "explanation": "Hydrochlorothiazide (a thiazide) is the most commonly used antihypertensive diuretic and is often combined with ACE inhibitors, beta-blockers, or ARBs."
+ },
+ {
+  "type": "mcq",
+  "stem": "ACE inhibitors (e.g., captopril, enalapril) lower blood pressure by:",
+  "options": [
+   "Blocking beta-1 receptors",
+   "Blocking calcium channels",
+   "Direct arteriolar dilation",
+   "Inhibiting the angiotensin-converting enzyme and reducing sodium/water retention"
+  ],
+  "correct": 3,
+  "explanation": "ACE inhibitors block conversion of angiotensin I to II, reducing vasoconstriction and aldosterone-driven sodium/water retention."
+ },
+ {
+  "type": "mcq",
+  "stem": "Arteriolar vasodilators such as hydralazine and minoxidil must be combined with diuretics and beta-blockers because they:",
+  "options": [
+   "Cause hyperkalemia",
+   "Cause sodium and water retention (and reflex tachycardia)",
+   "Are too weak alone",
+   "Cause hypoglycemia"
+  ],
+  "correct": 1,
+  "explanation": "Direct vasodilators cause reflex sodium/water retention and tachycardia, so they are paired with diuretics and beta-blockers. Minoxidil is also used as a hair grower."
+ },
+ {
+  "type": "mcq",
+  "stem": "Statins (HMG-CoA reductase inhibitors) lower cholesterol by inhibiting the enzyme that catalyses cholesterol synthesis; a key side effect is:",
+  "options": [
+   "Gout",
+   "Hyperkalemia",
+   "Bradycardia",
+   "Elevated liver enzymes (ALT/SGOT)"
+  ],
+  "correct": 3,
+  "explanation": "Statins inhibit HMG-CoA reductase in the liver and can elevate hepatic transaminases (ALT/SGOT), requiring monitoring."
+ },
+ {
+  "type": "mcq",
+  "stem": "The '3 D' management of congestive heart failure consists of:",
+  "options": [
+   "Diet, Diuretics, Digitalis",
+   "Diet, Dobutamine, Dialysis",
+   "Digoxin, Dopamine, Diltiazem",
+   "Diuretics, Dilators, Dobutamine"
+  ],
+  "correct": 0,
+  "explanation": "The classic 3-D management of CHF is Diet, Diuretics, and Digitalis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cardiac glycosides (digitalis) act by inhibiting which membrane pump in myocardial cells?",
+  "options": [
+   "The chloride channel",
+   "The sodium-potassium (Na-K) ATPase pump",
+   "The calcium pump",
+   "The proton pump"
+  ],
+  "correct": 1,
+  "explanation": "Digitalis inhibits the myocardial Na-K ATPase, raising intracellular calcium for a positive inotropic effect (and slows the heart, a negative chronotropic effect)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The EARLIEST symptom of digitalis intoxication is usually:",
+  "options": [
+   "Seizure",
+   "Anorexia",
+   "Xanthopsia",
+   "Arrhythmia"
+  ],
+  "correct": 1,
+  "explanation": "Anorexia is typically the earliest sign of digitalis toxicity, followed by nausea and vomiting. Xanthopsia is the classic ocular sign."
+ },
+ {
+  "type": "mcq",
+  "stem": "The classic ocular sign of digitalis toxicity is:",
+  "options": [
+   "Red-green defect",
+   "Bull's-eye maculopathy",
+   "Cornea verticillata",
+   "Xanthopsia (yellow vision) with a glare phenomenon"
+  ],
+  "correct": 3,
+  "explanation": "Digitalis toxicity causes xanthopsia (yellow vision), colored halos, and a 'glare phenomenon' (objects appear brown-orange or snow-covered)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for variant (Prinzmetal) angina, which is caused by coronary vasospasm, is:",
+  "options": [
+   "Digoxin",
+   "Aspirin",
+   "Beta-blockers",
+   "Calcium channel blockers"
+  ],
+  "correct": 3,
+  "explanation": "Prinzmetal (variant) angina from coronary vasospasm is best treated with calcium channel blockers (plus organic nitrates). Beta-blockers can worsen vasospasm."
+ },
+ {
+  "type": "mcq",
+  "stem": "Organic nitrates relieve angina by generating nitric oxide, which:",
+  "options": [
+   "Increases cGMP to relax vascular smooth muscle",
+   "Blocks beta receptors",
+   "Blocks calcium channels directly",
+   "Inhibits the Na-K pump"
+  ],
+  "correct": 0,
+  "explanation": "Nitrates are metabolised to nitric oxide, which raises cGMP and relaxes vascular smooth muscle, reducing preload and cardiac oxygen demand."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which class IB antiarrhythmic is the drug of choice for ventricular arrhythmias?",
+  "options": [
+   "Quinidine",
+   "Amiodarone",
+   "Verapamil",
+   "Lidocaine"
+  ],
+  "correct": 3,
+  "explanation": "Lidocaine is the class IB sodium-channel blocker and DOC for ventricular arrhythmias. Amiodarone is class III; verapamil is class IV."
+ },
+ {
+  "type": "mcq",
+  "stem": "The parasympathetic (cholinergic) division of the ANS is also called:",
+  "options": [
+   "Thoraco-lumbar",
+   "Adrenergic",
+   "Sympathomimetic",
+   "Cranio-sacral"
+  ],
+  "correct": 3,
+  "explanation": "The parasympathetic division is cranio-sacral (cholinergic). The sympathetic division is thoraco-lumbar (adrenergic)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which sympathomimetic is a selective beta-1 agonist used in CHF for positive inotropy without much vasoconstriction?",
+  "options": [
+   "Dobutamine",
+   "Epinephrine",
+   "Phenylephrine",
+   "Norepinephrine"
+  ],
+  "correct": 0,
+  "explanation": "Dobutamine selectively stimulates beta-1 receptors, improving contractility in CHF without significant vasoconstriction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Clonidine lowers blood pressure by stimulating which receptor?",
+  "options": [
+   "Muscarinic M2",
+   "Alpha-1",
+   "Central alpha-2 (inhibitory)",
+   "Beta-1"
+  ],
+  "correct": 2,
+  "explanation": "Clonidine is a central alpha-2 agonist; stimulating the inhibitory alpha-2 pathway decreases sympathetic outflow and lowers blood pressure."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cholinergic receptor mediates sphincter pupillae contraction (miosis) and ciliary muscle contraction (accommodation)?",
+  "options": [
+   "M2",
+   "M1",
+   "NM",
+   "M3"
+  ],
+  "correct": 3,
+  "explanation": "M3 muscarinic receptors (Gq pathway) mediate sphincter and ciliary muscle contraction, producing miosis, accommodation, and opening of the trabecular meshwork."
+ },
+ {
+  "type": "mcq",
+  "stem": "M2 muscarinic receptors, found at the SA and AV nodes, act through which pathway to slow the heart?",
+  "options": [
+   "Gq \u2192 phospholipase C",
+   "Gi \u2192 inhibit adenylyl cyclase \u2192 decrease cAMP",
+   "Gs \u2192 increase cAMP",
+   "Direct ion channel only"
+  ],
+  "correct": 1,
+  "explanation": "Cardiac M2 receptors use the Gi pathway (inhibiting adenylyl cyclase, decreasing cAMP), slowing heart rate and AV conduction."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which beta-blocker property makes a drug UNSUITABLE for topical ophthalmic use because it damages the cornea?",
+  "options": [
+   "Beta-1 selectivity",
+   "Intrinsic sympathomimetic activity (ISA)",
+   "Lipophilicity",
+   "Membrane-stabilising activity (MSA)"
+  ],
+  "correct": 3,
+  "explanation": "Membrane-stabilising activity (MSA), a local-anesthetic-like effect, damages corneal epithelium, so MSA-possessing beta-blockers (labetalol, propranolol, metoprolol) are not used topically in the eye."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ganglionic blockers such as hexamethonium and trimethaphan act by blocking:",
+  "options": [
+   "Beta-2 receptors",
+   "Muscarinic M3 receptors",
+   "Nicotinic (NN) receptors in BOTH sympathetic and parasympathetic ganglia",
+   "Alpha-1 receptors"
+  ],
+  "correct": 2,
+  "explanation": "Ganglionic blockers block nicotinic neuronal (NN) receptors in both autonomic ganglia, arresting the entire ANS, producing complex effects and rare clinical use."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cyclopentolate is the drug of choice for cycloplegic refraction in:",
+  "options": [
+   "Aphakic eyes",
+   "Glaucoma patients",
+   "Adults over 40",
+   "Children"
+  ],
+  "correct": 3,
+  "explanation": "Cyclopentolate is the DOC for cycloplegic refraction in children (with 0.5-1% to limit CNS effects). Atropine is used when maximum cycloplegia is needed."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which agent is the maintenance drug used in opioid addiction treatment programs (not for acute overdose)?",
+  "options": [
+   "Naloxone",
+   "Methadone only IV",
+   "Naltrexone",
+   "Flumazenil"
+  ],
+  "correct": 2,
+  "explanation": "Naltrexone is used for maintenance in opioid-dependence programs; naloxone is the acute overdose reversal agent."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aminoglycosides, tetracyclines, and glycylcyclines all inhibit bacterial protein synthesis at the:",
+  "options": [
+   "30S ribosomal subunit",
+   "Cell wall",
+   "DNA gyrase",
+   "50S ribosomal subunit"
+  ],
+  "correct": 0,
+  "explanation": "These classes bind the 30S ribosomal subunit. Chloramphenicol, macrolides, and lincosamides bind the 50S subunit."
+ },
+ {
+  "type": "mcq",
+  "stem": "Beta-lactam antibiotics (penicillins, cephalosporins) kill bacteria by inhibiting:",
+  "options": [
+   "Protein synthesis at 50S",
+   "Folic acid synthesis",
+   "DNA gyrase",
+   "Cell wall synthesis (transpeptidase/PBP)"
+  ],
+  "correct": 3,
+  "explanation": "Beta-lactams inhibit the transpeptidase (penicillin-binding proteins) that cross-links peptidoglycan, blocking cell wall synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Fluoroquinolones inhibit which bacterial enzyme?",
+  "options": [
+   "RNA polymerase",
+   "Dihydrofolate reductase",
+   "DNA gyrase (topoisomerase II)",
+   "Carbonic anhydrase"
+  ],
+  "correct": 2,
+  "explanation": "Fluoroquinolones inhibit DNA gyrase (topoisomerase II), preventing DNA supercoiling and replication."
+ },
+ {
+  "type": "mcq",
+  "stem": "Sulfonamides act as competitive analogues of which substrate in folate synthesis?",
+  "options": [
+   "Tetrahydrofolate",
+   "Dihydrofolate",
+   "Thymidine",
+   "PABA (para-aminobenzoic acid)"
+  ],
+  "correct": 3,
+  "explanation": "Sulfonamides are PABA analogues that competitively inhibit dihydropteroate synthetase, blocking bacterial folate synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Corticosteroids reduce inflammation by inhibiting which enzyme?",
+  "options": [
+   "Lipoxygenase only",
+   "Carbonic anhydrase",
+   "Phospholipase A2",
+   "Cyclooxygenase"
+  ],
+  "correct": 2,
+  "explanation": "Corticosteroids inhibit phospholipase A2, reducing arachidonic acid and therefore both prostaglandins and leukotrienes. NSAIDs inhibit cyclooxygenase only."
+ },
+ {
+  "type": "mcq",
+  "stem": "NSAIDs exert their effect by inhibiting:",
+  "options": [
+   "Acetylcholinesterase",
+   "Phospholipase A2",
+   "Cyclooxygenase (COX)",
+   "The Na-K pump"
+  ],
+  "correct": 2,
+  "explanation": "NSAIDs inhibit cyclooxygenase (COX), decreasing prostaglandin synthesis, giving analgesic, antipyretic, and anti-inflammatory effects."
+ },
+ {
+  "type": "mcq",
+  "stem": "The generic name of a drug is:",
+  "options": [
+   "The name only used in research",
+   "The manufacturer's trademark",
+   "A shortened scientific name based on the active ingredient",
+   "The complete chemical structure description"
+  ],
+  "correct": 2,
+  "explanation": "The generic name is a shortened scientific name based on the active ingredient and is widely used. The chemical name describes the full structure; the brand/trade name is the manufacturer's."
+ },
+ {
+  "type": "mcq",
+  "stem": "The half-life (t1/2) of a drug is the time for the plasma concentration to:",
+  "options": [
+   "Reach its peak",
+   "Reach steady state",
+   "Decrease by 50%",
+   "Double"
+  ],
+  "correct": 2,
+  "explanation": "Half-life is the time for the plasma concentration to fall by 50% after discontinuation (rate constant = 0.693/t1/2)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Supersensitivity to a drug most classically results from:",
+  "options": [
+   "Enzyme induction",
+   "Rapid dosing",
+   "Antibody formation",
+   "Denervation"
+  ],
+  "correct": 3,
+  "explanation": "Supersensitivity is increased sensitivity resulting from denervation. Tolerance comes from enzyme induction; immunity from antibody formation."
+ },
+ {
+  "type": "mcq",
+  "stem": "The strongest (irreversible) drug-receptor bond is the:",
+  "options": [
+   "Hydrogen bond",
+   "Covalent bond",
+   "Van der Waals bond",
+   "Ionic bond"
+  ],
+  "correct": 1,
+  "explanation": "The covalent bond is the strongest and produces an irreversible effect. Van der Waals bonds are weakest but most common; ionic and hydrogen bonds are reversible."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bioavailability compares a non-IV route to IV administration of the same drug; this is specifically:",
+  "options": [
+   "Relative bioavailability",
+   "Volume of distribution",
+   "Clearance",
+   "Absolute bioavailability"
+  ],
+  "correct": 3,
+  "explanation": "Absolute bioavailability compares a non-IV route to the IV route (100%). Relative bioavailability compares two non-IV formulations of the same drug."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which local anesthetic is preferred for electroretinography (ERG)?",
+  "options": [
+   "Tetracaine",
+   "Benoxinate",
+   "Cocaine",
+   "Proparacaine"
+  ],
+  "correct": 0,
+  "explanation": "Tetracaine is preferred for ERG. Proparacaine or benoxinate are used for applanation tonometry and gonioscopy; cocaine is used for corneal epithelial debridement and Horner's testing."
+ },
+ {
+  "type": "mcq",
+  "stem": "For diagnosis of Horner's syndrome, the preferred local anesthetic agent is:",
+  "options": [
+   "Benzocaine",
+   "Lidocaine 2%",
+   "Cocaine 4-10%",
+   "Proparacaine 0.5%"
+  ],
+  "correct": 2,
+  "explanation": "Cocaine 4-10% is used to diagnose Horner's syndrome (it fails to dilate the sympathetically denervated pupil)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tetracaine's potency and toxicity are best described as:",
+  "options": [
+   "Weaker than procaine and less toxic",
+   "About 10x more potent than cocaine and 10x more toxic than procaine",
+   "Non-toxic",
+   "Equal to lidocaine"
+  ],
+  "correct": 1,
+  "explanation": "Tetracaine is roughly 10x more potent than cocaine and 10x more toxic than procaine, used for surface anesthesia only."
+ },
+ {
+  "type": "mcq",
+  "stem": "Beta-blockers with intrinsic sympathomimetic activity (ISA), such as pindolol and acebutolol, are advantageous because they cause:",
+  "options": [
+   "More resting bradycardia",
+   "Bronchospasm",
+   "Less resting bradycardia and less rebound hypertension on withdrawal",
+   "Corneal damage"
+  ],
+  "correct": 2,
+  "explanation": "ISA (partial agonist) beta-blockers cause less resting bradycardia, fewer adverse lipid effects, and less rebound hypertension on withdrawal."
+ },
+ {
+  "type": "mcq",
+  "stem": "The first (prototype) non-selective beta-blocker is:",
+  "options": [
+   "Propranolol",
+   "Metoprolol",
+   "Betaxolol",
+   "Atenolol"
+  ],
+  "correct": 0,
+  "explanation": "Propranolol is the prototype non-selective beta-blocker. Practolol was the first cardioselective agent."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which antiarrhythmic class prolongs the repolarisation phase and includes amiodarone?",
+  "options": [
+   "Class III",
+   "Class I",
+   "Class IV",
+   "Class II"
+  ],
+  "correct": 0,
+  "explanation": "Class III antiarrhythmics prolong repolarisation and include amiodarone and bretylium. Class I are Na-channel blockers, class II beta-blockers, class IV calcium channel blockers."
+ },
+ {
+  "type": "mcq",
+  "stem": "Verapamil and diltiazem are class IV antiarrhythmics that act by:",
+  "options": [
+   "Prolonging repolarisation",
+   "Blocking sodium channels",
+   "Blocking voltage-gated calcium channels",
+   "Blocking beta receptors"
+  ],
+  "correct": 2,
+  "explanation": "Class IV antiarrhythmics block voltage-gated calcium channels; verapamil is more effective for supraventricular arrhythmias."
+ },
+ {
+  "type": "mcq",
+  "stem": "Digitalis intoxication is treated with all of the following EXCEPT:",
+  "options": [
+   "Antiarrhythmic agents (lidocaine, phenytoin)",
+   "More digitalis",
+   "Potassium administration",
+   "Discontinuing the drug"
+  ],
+  "correct": 1,
+  "explanation": "Treatment of digitalis toxicity is to stop the drug, give K+ (and K+-sparing diuretics), and use antiarrhythmics. Giving more digitalis would worsen toxicity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which drug used in angina inhibits adenosine uptake by red blood cells and inhibits platelet aggregation?",
+  "options": [
+   "Dipyridamole",
+   "Verapamil",
+   "Nitroglycerin",
+   "Aspirin"
+  ],
+  "correct": 0,
+  "explanation": "Dipyridamole inhibits adenosine uptake by RBCs (coronary vasodilation) and inhibits platelet aggregation. Aspirin also inhibits platelet aggregation but via COX."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which additive to a local anesthetic acts as a 'spreading factor', enhancing tissue infiltration?",
+  "options": [
+   "Sodium chloride",
+   "Hyaluronidase",
+   "Epinephrine",
+   "Bicarbonate"
+  ],
+  "correct": 1,
+  "explanation": "Hyaluronidase is the spreading factor that enhances the infiltration and dispersion of injected anesthetic, giving a more effective motor block."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which drug of abuse is detected in urine as benzoylecgonine?",
+  "options": [
+   "Cocaine",
+   "Marijuana",
+   "Amphetamine",
+   "Methamphetamine"
+  ],
+  "correct": 0,
+  "explanation": "Cocaine is detected in urine as its metabolite benzoylecgonine. Methamphetamine's metabolite is amphetamine."
+ },
+ {
+  "type": "mcq",
+  "stem": "Aspirin overdose classically produces which acid-base disturbance, treated with sodium bicarbonate?",
+  "options": [
+   "No acid-base change",
+   "Metabolic alkalosis only",
+   "Mixed metabolic acidosis and respiratory alkalosis",
+   "Pure respiratory acidosis"
+  ],
+  "correct": 2,
+  "explanation": "Salicylate (aspirin) overdose causes a mixed metabolic acidosis and respiratory alkalosis, with fever and coma; treatment includes sodium bicarbonate."
+ },
+ {
+  "type": "mcq",
+  "stem": "The drug of choice for myasthenia gravis treatment (a reversible anticholinesterase) is:",
+  "options": [
+   "Echothiophate",
+   "Neostigmine",
+   "Physostigmine",
+   "Pilocarpine"
+  ],
+  "correct": 1,
+  "explanation": "Neostigmine is the reversible anticholinesterase used to treat myasthenia gravis and to reverse neuromuscular blockade."
+ },
+ {
+  "type": "mcq",
+  "stem": "Non-depolarising neuromuscular blockers such as pancuronium and d-tubocurarine act by:",
+  "options": [
+   "Inhibiting acetylcholinesterase",
+   "Blocking calcium channels",
+   "Depolarising the motor end plate persistently",
+   "Competitively blocking nicotinic (NM) receptors at the neuromuscular junction"
+  ],
+  "correct": 3,
+  "explanation": "Non-depolarising blockers (curare, pancuronium, vecuronium, atracurium) competitively antagonise nicotinic NM receptors. Succinylcholine is the depolarising blocker."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which beta-blocker combines alpha-1 and beta blockade and is used IV in hypertensive emergencies?",
+  "options": [
+   "Atenolol",
+   "Betaxolol",
+   "Labetalol",
+   "Esmolol"
+  ],
+  "correct": 2,
+  "explanation": "Labetalol (and carvedilol) block both alpha-1 and beta receptors, giving vasodilation plus reduced cardiac output, useful in hypertensive emergencies."
+ },
+ {
+  "type": "mcq",
+  "stem": "Fibric acid derivatives (e.g., gemfibrozil) are used primarily for:",
+  "options": [
+   "High LDL cholesterol only",
+   "Arrhythmia",
+   "Elevated triglycerides",
+   "Hypertension"
+  ],
+  "correct": 2,
+  "explanation": "Fibric acids lower elevated triglycerides (and LDL) by increasing peripheral lipase activity; gemfibrozil can cause cholelithiasis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Potassium-sparing diuretics such as spironolactone are useful in CHF and also to treat:",
+  "options": [
+   "Opioid overdose",
+   "Angle-closure glaucoma",
+   "Fungal infection",
+   "Digitalis intoxication"
+  ],
+  "correct": 3,
+  "explanation": "K+-sparing diuretics (spironolactone, amiloride, triamterene) help treat digitalis intoxication and provide modest antihypertensive effect with minimal potassium loss."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which antihypertensive vasodilator is considered safe in pre-eclampsia?",
+  "options": [
+   "Nitroprusside",
+   "Diazoxide",
+   "Minoxidil",
+   "Hydralazine"
+  ],
+  "correct": 3,
+  "explanation": "Hydralazine, a direct arteriolar vasodilator, is considered safe in pre-eclampsia. Minoxidil is also used as a hair grower."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which statement about zero-order absorption kinetics is correct?",
+  "options": [
+   "A constant fraction is absorbed",
+   "It applies to oral drugs",
+   "It applies only to IV, intra-arterial, and intracardiac routes where 100% reaches the blood",
+   "It never reaches the systemic circulation"
+  ],
+  "correct": 2,
+  "explanation": "Zero-order absorption (100% reaching blood) applies to IV, intra-arterial, and intracardiac routes. All other routes follow first-order kinetics (constant fraction)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The signa (transcription) portion of a prescription contains:",
+  "options": [
+   "The Rx symbol",
+   "Directions to the dispenser",
+   "The drug name and strength",
+   "Directions to the patient"
+  ],
+  "correct": 3,
+  "explanation": "The signa (Sig.) gives directions to the patient. The superscription is Rx; the inscription is the drug/strength; the subscription directs the dispenser."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which agent is used as an antidote for atropine (anticholinergic) poisoning?",
+  "options": [
+   "Naloxone",
+   "Neostigmine",
+   "Pralidoxime",
+   "Physostigmine"
+  ],
+  "correct": 3,
+  "explanation": "Physostigmine, a reversible anticholinesterase that crosses into the CNS, is the antidote for atropine poisoning."
+ },
+ {
+  "type": "mcq",
+  "stem": "A drug interaction described by 0 + 1 = 2, where a drug with no effect alone enhances another, is:",
+  "options": [
+   "Antagonism",
+   "Synergism",
+   "Potentiation",
+   "Addition"
+  ],
+  "correct": 2,
+  "explanation": "Potentiation (0+1=2) is when a drug with no effect of its own enhances the effect of another drug."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which receptor bond is the weakest but most common in drug binding?",
+  "options": [
+   "Van der Waals",
+   "Ionic",
+   "Hydrogen",
+   "Covalent"
+  ],
+  "correct": 0,
+  "explanation": "Van der Waals forces are the weakest but the most common drug-receptor interaction; most drugs contain cationic and anionic groups."
+ },
+ {
+  "type": "mcq",
+  "stem": "Loop diuretics such as furosemide inhibit which transporter?",
+  "options": [
+   "Aldosterone receptor",
+   "Na-Cl cotransporter in the distal tubule",
+   "Na-K-2Cl cotransporter in the loop of Henle",
+   "Carbonic anhydrase"
+  ],
+  "correct": 2,
+  "explanation": "Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending loop of Henle, making them potent diuretics though weaker antihypertensives."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which CNS effect is the LATE (depressive) phase of local anesthetic systemic toxicity?",
+  "options": [
+   "Tinnitus",
+   "Restlessness and tremor",
+   "Convulsive seizures",
+   "Coma and respiratory failure"
+  ],
+  "correct": 3,
+  "explanation": "The late depressive phase of local anesthetic CNS toxicity includes drowsiness, unconsciousness, coma, and respiratory failure, following the early excitatory phase (seizures)."
+ },
+ {
+  "type": "mcq",
+  "stem": "The forced duction test uses which anesthetic agent(s)?",
+  "options": [
+   "Benzocaine",
+   "Cocaine or lidocaine",
+   "Tetracaine",
+   "Benoxinate"
+  ],
+  "correct": 1,
+  "explanation": "The forced duction test is performed with cocaine or lidocaine anesthesia. Tetracaine is used for ERG; proparacaine/benoxinate for tonometry."
+ },
+ {
+  "type": "mcq",
+  "stem": "Norepinephrine's principal clinical use is as a:",
+  "options": [
+   "Mydriatic",
+   "Vasopressor to raise blood pressure",
+   "Antiarrhythmic",
+   "Bronchodilator"
+  ],
+  "correct": 1,
+  "explanation": "Norepinephrine acts on alpha-1, alpha-2, and beta-1 receptors and is used as a vasopressor to raise blood pressure in shock."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which cardioselective beta-blocker is ultra-short-acting and given IV?",
+  "options": [
+   "Esmolol",
+   "Betaxolol",
+   "Atenolol",
+   "Metoprolol"
+  ],
+  "correct": 0,
+  "explanation": "Esmolol is an ultra-short-acting cardioselective (beta-1) blocker given IV, useful for acute rate control."
+ },
+ {
+  "type": "mcq",
+  "stem": "Reserpine lowers blood pressure by:",
+  "options": [
+   "Stimulating beta-1 receptors",
+   "Inhibiting storage and release of norepinephrine",
+   "Blocking calcium channels",
+   "Blocking angiotensin receptors"
+  ],
+  "correct": 1,
+  "explanation": "Reserpine is a pre-ganglionic adrenergic blocker that depletes norepinephrine by inhibiting its storage and release."
+ }
+]

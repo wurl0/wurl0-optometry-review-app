@@ -355,6 +355,10 @@ export const generalPharmacologyNotes: NotesData = {
           title: 'Types of Drug Ligands',
           blocks: [
             {
+              kind: 'diagram',
+              id: 'gp-ligand-spectrum',
+            },
+            {
               kind: 'table',
               headers: ['Ligand', 'Affinity', 'Intrinsic Activity', 'Effect'],
               rows: [

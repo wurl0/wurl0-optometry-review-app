@@ -85,9 +85,10 @@ export const SUBJECTS: Subject[] = [
     name: 'General Pharmacology',
     description: 'Pharmacokinetics, pharmacodynamics, ANS drugs, anti-infectives, CNS agents, and drug interactions.',
     color: 'indigo',
-    questionCount: 120,
+    questionCount: 102,
     icon: '💊',
     olePrep: true,
+    hasExam: true,
   },
   {
     slug: 'ocular-pharmacology',
