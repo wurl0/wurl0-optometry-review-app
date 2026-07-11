@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import { Block, NotesData, Section } from '@/lib/notes-types'
 import { Subject } from '@/lib/types'
@@ -14,11 +14,32 @@ interface Props {
   quiz?: NotesQuizData
 }
 
+// Render lightweight inline emphasis: **bold** and *italic*. Emphasis spans
+// inherit the surrounding text color (so they work inside colored callouts too).
+function inline(text: string): ReactNode {
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g)
+  return parts.map((p, i) => {
+    if (p.startsWith('**') && p.endsWith('**')) {
+      return <strong key={i} className="font-semibold">{p.slice(2, -2)}</strong>
+    }
+    if (p.startsWith('*') && p.endsWith('*') && p.length > 2) {
+      return <em key={i}>{p.slice(1, -1)}</em>
+    }
+    return p
+  })
+}
+
+const CALLOUT_STYLES = {
+  why: { wrap: 'bg-blue-50 border-blue-200', icon: '💡', label: 'Why it works', accent: 'text-blue-700', body: 'text-blue-900' },
+  trap: { wrap: 'bg-rose-50 border-rose-200', icon: '⚠️', label: 'Board trap', accent: 'text-rose-700', body: 'text-rose-900' },
+  mnemonic: { wrap: 'bg-violet-50 border-violet-200', icon: '🧠', label: 'Memory hook', accent: 'text-violet-700', body: 'text-violet-900' },
+} as const
+
 function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
   const [open, setOpen] = useState(true)
 
   if (block.kind === 'text') {
-    return <p className="text-sm text-gray-700 leading-relaxed">{block.content}</p>
+    return <p className="text-sm text-gray-700 leading-relaxed">{inline(block.content)}</p>
   }
 
   if (block.kind === 'bullets') {
@@ -27,7 +48,7 @@ function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
         {block.items.map((item, i) => (
           <li key={i} className="flex gap-2 text-sm text-gray-700">
             <span className="text-gray-400 mt-0.5 flex-shrink-0">•</span>
-            <span>{item}</span>
+            <span>{inline(item)}</span>
           </li>
         ))}
       </ul>
@@ -52,7 +73,7 @@ function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
               <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                 {row.map((cell, ci) => (
                   <td key={ci} className="px-3 py-2 text-gray-700 border border-gray-200 align-top">
-                    {cell}
+                    {inline(cell)}
                   </td>
                 ))}
               </tr>
@@ -67,7 +88,22 @@ function BlockRenderer({ block, depth = 0 }: { block: Block; depth?: number }) {
     return (
       <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 flex gap-3">
         <span className="text-amber-500 flex-shrink-0 mt-0.5">⭐</span>
-        <p className="text-sm text-amber-900 leading-relaxed">{block.content}</p>
+        <p className="text-sm text-amber-900 leading-relaxed">{inline(block.content)}</p>
+      </div>
+    )
+  }
+
+  if (block.kind === 'callout') {
+    const s = CALLOUT_STYLES[block.variant]
+    return (
+      <div className={`${s.wrap} border rounded-xl px-4 py-3`}>
+        <div className="flex items-center gap-1.5 mb-1">
+          <span className="text-sm leading-none">{s.icon}</span>
+          <span className={`text-[11px] font-bold uppercase tracking-wide ${s.accent}`}>
+            {block.title ?? s.label}
+          </span>
+        </div>
+        <p className={`text-sm leading-relaxed ${s.body}`}>{inline(block.content)}</p>
       </div>
     )
   }
