@@ -188,86 +188,86 @@ export default async function HomePage() {
                     const c = COLOR_MAP[subject.color]
                     const stats = statsBySubject[subject.slug]
                     return (
-              <div
-                key={subject.slug}
-                className="bg-white rounded-2xl overflow-hidden border border-gray-200"
-              >
-                {/* Gradient header */}
-                <div className={`bg-gradient-to-br ${c.gradient} px-5 pt-5 pb-4`}>
-                  <div className="flex items-start justify-between">
-                    <span className="text-4xl">{subject.icon}</span>
-                  </div>
-                  <h3 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h3>
-                  {stats && (
-                    <div className="mt-2">
-                      <div className="flex justify-between text-xs text-white/70 mb-1">
-                        <span>Best score</span>
-                        <span className="font-semibold text-white">{Math.round(stats.best)}%</span>
-                      </div>
-                      <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
-                        <div className="h-full bg-white/80 rounded-full" style={{ width: `${stats.best}%` }} />
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                {/* Card body */}
-                <div className="px-5 py-4">
-                  <p className="text-xs text-gray-500 leading-relaxed mb-4">{subject.description}</p>
-                  {/* Level progress pips */}
-                  <div className="flex items-center gap-1.5 mb-3">
-                    {[1, 2, 3].map(lvl => {
-                      const passed = levelMap[subject.slug]?.[lvl]
-                      return (
-                        <div key={lvl} className="flex items-center gap-1">
-                          <div className={`w-4 h-4 rounded-full text-[9px] font-bold flex items-center justify-center ${passed ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
-                            {lvl}
-                          </div>
-                          {lvl < 3 && <div className={`w-3 h-0.5 ${passed ? 'bg-green-400' : 'bg-gray-200'}`} />}
-                        </div>
-                      )
-                    })}
-                    <span className="text-xs text-gray-400 ml-1">
-                      {!subject.hasExam
-                        ? '· Exam coming soon'
-                        : examUnlocked(subject.slug) ? '· Exam unlocked ✓' : '· Complete all levels to unlock exam'}
-                    </span>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Link
-                      href={`/notes/${subject.slug}`}
-                      className={`block w-full text-center text-xs font-semibold py-2 rounded-lg border ${c.border} ${c.text} hover:${c.bg} transition-colors`}
-                    >
-                      📖 Notes & Reviewer
-                    </Link>
-                    <div className="flex gap-2">
-                      <Link
-                        href={`/practice/${subject.slug}`}
-                        className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+                      <div
+                        key={subject.slug}
+                        className="bg-white rounded-2xl overflow-hidden border border-gray-200"
                       >
-                        Levels & Practice
-                      </Link>
-                      {!subject.hasExam ? (
-                        <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
-                          Exam soon
+                        {/* Gradient header */}
+                        <div className={`bg-gradient-to-br ${c.gradient} px-5 pt-5 pb-4`}>
+                          <div className="flex items-start justify-between">
+                            <span className="text-4xl">{subject.icon}</span>
+                          </div>
+                          <h3 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h3>
+                          {stats && (
+                            <div className="mt-2">
+                              <div className="flex justify-between text-xs text-white/70 mb-1">
+                                <span>Best score</span>
+                                <span className="font-semibold text-white">{Math.round(stats.best)}%</span>
+                              </div>
+                              <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
+                                <div className="h-full bg-white/80 rounded-full" style={{ width: `${stats.best}%` }} />
+                              </div>
+                            </div>
+                          )}
                         </div>
-                      ) : examUnlocked(subject.slug) ? (
-                        <Link
-                          href={`/exam/${subject.slug}`}
-                          className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
-                        >
-                          Full Exam
-                        </Link>
-                      ) : (
-                        <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
-                          🔒 Full Exam
+
+                        {/* Card body */}
+                        <div className="px-5 py-4">
+                          <p className="text-xs text-gray-500 leading-relaxed mb-4">{subject.description}</p>
+                          {/* Level progress pips */}
+                          <div className="flex items-center gap-1.5 mb-3">
+                            {[1, 2, 3].map(lvl => {
+                              const passed = levelMap[subject.slug]?.[lvl]
+                              return (
+                                <div key={lvl} className="flex items-center gap-1">
+                                  <div className={`w-4 h-4 rounded-full text-[9px] font-bold flex items-center justify-center ${passed ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
+                                    {lvl}
+                                  </div>
+                                  {lvl < 3 && <div className={`w-3 h-0.5 ${passed ? 'bg-green-400' : 'bg-gray-200'}`} />}
+                                </div>
+                              )
+                            })}
+                            <span className="text-xs text-gray-400 ml-1">
+                              {!subject.hasExam
+                                ? '· Exam coming soon'
+                                : examUnlocked(subject.slug) ? '· Exam unlocked ✓' : '· Complete all levels to unlock exam'}
+                            </span>
+                          </div>
+
+                          <div className="space-y-2">
+                            <Link
+                              href={`/notes/${subject.slug}`}
+                              className={`block w-full text-center text-xs font-semibold py-2 rounded-lg border ${c.border} ${c.text} hover:${c.bg} transition-colors`}
+                            >
+                              📖 Notes & Reviewer
+                            </Link>
+                            <div className="flex gap-2">
+                              <Link
+                                href={`/practice/${subject.slug}`}
+                                className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+                              >
+                                Levels & Practice
+                              </Link>
+                              {!subject.hasExam ? (
+                                <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
+                                  Exam soon
+                                </div>
+                              ) : examUnlocked(subject.slug) ? (
+                                <Link
+                                  href={`/exam/${subject.slug}`}
+                                  className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                                >
+                                  Full Exam
+                                </Link>
+                              ) : (
+                                <div className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed select-none">
+                                  🔒 Full Exam
+                                </div>
+                              )}
+                            </div>
+                          </div>
                         </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </div>
                     )
                   })}
                 </div>
