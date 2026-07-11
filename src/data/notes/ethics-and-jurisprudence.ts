@@ -202,21 +202,37 @@ export const ethicsAndJurisprudenceNotes: NotesData = {
         {
           kind: 'text',
           content:
-            'The exam is given at least once a year. The General Weighted Average Rating (GWA) = 70% written (theoretical) + 30% clinical skills assessment (performance).',
+            'The exam is given at least once a year (now computer-based). RA 8050 itself (Sec. 18) does NOT fix subject weights; the Board prescribes the scope, and the weights come from the current PRC Program of Examination. Under the IRR (Sec. 26), the General Weighted Average Rating (GWA) = 70% written (theoretical) + 30% practical (clinical skills / performance).',
         },
         {
           kind: 'table',
-          headers: ['Written (Theoretical) subject', 'Weight'],
+          headers: ['Written (Theoretical) subject — current PRC program', 'Weight'],
           rows: [
-            ['Visual Biology', '10%'],
-            ['Physiological Optics', '10%'],
-            ['Binocular Vision & Perception, Low Vision', '10%'],
             ['Ocular Pharmacology', '10%'],
+            ['Ocular (Visual) Biology', '10%'],
+            ['Clinical Optometry & Sub-Specialty Areas', '15%'],
+            ['Physiological Optics, Binocular Vision & Perception', '15%'],
+            ['Primary Care & Refraction', '15%'],
             ['Ocular Diseases & Ocular Emergencies', '10%'],
-            ['Jurisprudence, Ethics, Practice Management & Public Health', '10%'],
-            ['Primary Care & Refraction', '20%'],
-            ['Practical, Theoretical Optics & Ophthalmic Dispensing (incl. Contact Lens)', '20%'],
+            ['Ethics, Jurisprudence, Practice Management & Public Health', '10%'],
+            ['Theoretical, Practical Optics & Ophthalmic Dispensing', '15%'],
           ],
+        },
+        {
+          kind: 'table',
+          headers: ['Practical (performance) component', 'Weight'],
+          rows: [
+            ['Objective Examination', '20%'],
+            ['Subjective Examination', '20%'],
+            ['Ophthalmic Lens Laboratory', '20%'],
+            ['Clinical Optometry', '20%'],
+            ['Contact Lens Practice', '20%'],
+          ],
+        },
+        {
+          kind: 'pearl',
+          content:
+            'The written subjects total 100% among themselves, then count as 70% of the GWA; the 5 practical components (20% each) count as the other 30%. Ethics/Jurisprudence stays at 10% of the written exam.',
         },
         {
           kind: 'sub',
@@ -315,8 +331,9 @@ export const ethicsAndJurisprudenceNotes: NotesData = {
         {
           kind: 'bullets',
           items: [
+            'RA 8050 (1995) originally listed only FIVE agents: Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Oxybuprocaine 0.4%, and Fluorescein. The 2008 IRR added Cyclopentolate HCl 1.0% (and restated Oxybuprocaine as Benoxinate) for the current SIX.',
             'Benoxinate and Oxybuprocaine are the SAME drug (the IRR says Benoxinate; the RA 8050 statutory text says Oxybuprocaine).',
-            'Optometrists admitted BEFORE RA 8050 must take a CHED pharmacology course and pass a special certification exam before using DPAs.',
+            'Optometrists admitted BEFORE RA 8050 must take a CHED pharmacology course and pass a special certification exam before using DPAs. Six-year-course graduates are authorized to use DPAs without a separate certification.',
             'Special-cert requirements include: certificate of registration, current PIC, proof of the pharmacology course, and preceptorial hours under a Diplomate in Ophthalmology and a DPA-licensed optometrist.',
             'Using DPAs while non-certified/untrained is an unlawful act, whether or not injury results.',
           ],
@@ -407,7 +424,12 @@ export const ethicsAndJurisprudenceNotes: NotesData = {
         {
           kind: 'text',
           content:
-            'Administrative cases: the Board is assisted by the PRC Legal/Investigation Office. Three (3) Board votes render a decision, which becomes final after fifteen (15) days unless appealed to the Commission. Appeals of Code-of-Ethics decisions rise to the PRC (through the Commissioner) and ultimately the Office of the President.',
+            'Administrative cases: the Board is assisted by the PRC Legal/Investigation Office. Three (3) Board votes render a decision, which becomes final after fifteen (15) days unless appealed to the Commission (a motion for reconsideration is filed within 15 days). Appeals of Code-of-Ethics decisions rise to the PRC (through the Commissioner) and ultimately the Office of the President.',
+        },
+        {
+          kind: 'pearl',
+          content:
+            'Criminal penalty under RA 8050 (Sec. 33): imprisonment of 1 to 8 years, or a fine of P10,000 to P40,000, or both, at the court’s discretion. Do not confuse this with the RA 8981 exam-tampering penalty (6 years and 1 day to 12 years). RA 8050 is a SPECIAL law and is enforceable against ANYONE, not just optometrists (e.g., unauthorized practice by non-licensees).',
         },
       ],
     },

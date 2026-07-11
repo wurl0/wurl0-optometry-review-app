@@ -1642,5 +1642,1050 @@
     ],
     "correct": 3,
     "explanation": "AIPO stands for the Accredited and Integrated Professional Organization — the PRC-recognized national organization (IPAO for optometry) that promulgates the Code of Ethics and represents the profession."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a ground for the suspension or revocation of an optometrist's certificate of registration?",
+    "options": [
+      "Unprofessional conduct",
+      "Unauthorized practice of optometry",
+      "Malpractice",
+      "Unethical conduct"
+    ],
+    "correct": 1,
+    "explanation": "Malpractice and unprofessional/unethical conduct are grounds for disciplinary action against a REGISTERED optometrist. 'Unauthorized practice of optometry' is a criminal act by non-licensees (or acting beyond one's authority), prosecuted in the regular courts, not a ground for suspending an existing certificate."
+  },
+  {
+    "type": "mcq",
+    "stem": "On what date was the Revised Optometry Law (RA 8050) signed into law?",
+    "options": [
+      "June 1, 1992",
+      "August 1, 1995",
+      "June 7, 1995",
+      "June 1, 1998"
+    ],
+    "correct": 2,
+    "explanation": "RA 8050 was signed on June 7, 1995 by President Fidel V. Ramos."
+  },
+  {
+    "type": "mcq",
+    "stem": "Philippine Optometry Week is celebrated annually every:",
+    "options": [
+      "August 1-7",
+      "May 1-7",
+      "June 1-7",
+      "July 1-7"
+    ],
+    "correct": 2,
+    "explanation": "Philippine Optometry Week is June 1-7 (Proclamation No. 985, signed by President Fidel V. Ramos on March 26, 1997)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Philippine President who signed RA 8050 into law was:",
+    "options": [
+      "Fidel V. Ramos",
+      "Joseph Ejercito Estrada",
+      "Benigno Simeon Aquino III",
+      "Gloria Macapagal Arroyo"
+    ],
+    "correct": 0,
+    "explanation": "RA 8050 (June 7, 1995) was signed by President Fidel V. Ramos. (RA 8981, the PRC Modernization Act, was later signed by Estrada in 2000.)"
+  },
+  {
+    "type": "mcq",
+    "stem": "The integrated national organization of optometrists accredited by the PRC since 1976, representing the profession, is the:",
+    "options": [
+      "Integrated Philippine Association of Optometrists, Inc.",
+      "Philippine Academy of Optometry",
+      "Philippine College of Optometrists",
+      "Philippine Council of Optometry"
+    ],
+    "correct": 0,
+    "explanation": "The Integrated Philippine Association of Optometrists, Inc. (IPAO), formerly the Samahan ng mga Optometrist sa Pilipinas (SOP, established 1976), is the PRC-accredited integrated national organization."
+  },
+  {
+    "type": "mcq",
+    "stem": "The inherent power of the State to regulate the practice of optometry is:",
+    "options": [
+      "Eminent domain",
+      "Executive power",
+      "Police power",
+      "Taxation"
+    ],
+    "correct": 2,
+    "explanation": "Police power is the inherent power of the State to enact reasonable laws for public welfare, and is the basis for regulating professions."
+  },
+  {
+    "type": "mcq",
+    "stem": "The practice of professions in the Philippines is a:",
+    "options": [
+      "Right",
+      "Obligation",
+      "Privilege",
+      "Duty"
+    ],
+    "correct": 2,
+    "explanation": "The practice of a profession is a privilege granted by the State (through licensure), not a natural right, and may be regulated or withdrawn."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which evidence of authority to practice expires every three years?",
+    "options": [
+      "Professional license",
+      "Certificate of registration",
+      "Professional identification card",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "The Professional Identification Card (PIC) is the renewable card that expires every three years; the certificate of registration is permanent."
+  },
+  {
+    "type": "mcq",
+    "stem": "Non-payment of the optometrist's annual registration fee for five years results in the optometrist being:",
+    "options": [
+      "A delinquent professional",
+      "Dropped from the roster of optometrists in good standing",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "After five or more consecutive years of unpaid annual registration fees, the optometrist is both considered delinquent AND dropped from the Roll of Registered Optometrists in Good Standing."
+  },
+  {
+    "type": "mcq",
+    "stem": "The requirement for attendance in continuing education programs for license renewal was repealed by:",
+    "options": [
+      "RA No. 1998",
+      "RA No. 9711",
+      "RA No. 8050",
+      "RA No. 8981"
+    ],
+    "correct": 3,
+    "explanation": "RA 8981 (PRC Modernization Act of 2000) removed the mandatory continuing-education requirement for renewal; CPD was later made mandatory again by RA 10912 (2016)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the FDA Act of 2009, before medical devices may be sold, distributed, or marketed, they must be:",
+    "options": [
+      "Licensed by the BFAD",
+      "Registered with the FDA",
+      "Authorized for sale by FDA-DOH",
+      "Certified by the FDA"
+    ],
+    "correct": 1,
+    "explanation": "Medical devices must be registered with the FDA (Certificate of Product Registration); the establishment handling them needs a License to Operate."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist who intends to dispense contact lenses in his/her clinic must obtain a:",
+    "options": [
+      "License to fit",
+      "Disclosure of authority to practice",
+      "License to practice",
+      "License to operate"
+    ],
+    "correct": 3,
+    "explanation": "Contact lenses are regulated medical devices; the clinic/establishment needs an FDA License to Operate (LTO) under RA 9711."
+  },
+  {
+    "type": "mcq",
+    "stem": "The law prohibits the following acts by an optometrist, EXCEPT:",
+    "options": [
+      "Use of pharmaceutical agents other than those authorized",
+      "Aiding and abetting the unlawful practice of optometry",
+      "Advertisement in media outlets implying superiority",
+      "Engaging in unauthorized practice of optometry as defined in Section 5, RA 8050"
+    ],
+    "correct": 3,
+    "explanation": "A licensed optometrist performing optometric acts is authorized, so 'unauthorized practice' (a crime aimed at non-licensees) is not a prohibition directed at a licensed optometrist. The other three are expressly prohibited acts."
+  },
+  {
+    "type": "mcq",
+    "stem": "An office/clinic maintained for optometric practice must have the following equipment, EXCEPT a:",
+    "options": [
+      "Slit-lamp",
+      "Dispensing tools",
+      "Tonometer",
+      "Ophthalmoscope"
+    ],
+    "correct": 2,
+    "explanation": "The minimum required equipment is VA charts, trial lenses/phoropter, ophthalmoscope and retinoscope, ophthalmic chair, slit-lamp biomicroscope, and dispensing tools. A tonometer is not on the minimum required list."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which persons are NOT exempted from the prohibition on the unauthorized practice of optometry?",
+    "options": [
+      "EENT specialists",
+      "Physicians in the course of physical examination of patients",
+      "Foreigners under the principle of reciprocity",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "Exempted are physicians with postgraduate eye training (e.g., EENT specialists) and physicians examining the eye during a physical exam. Reciprocity only lets a qualified foreigner be admitted to the board exam; it is not an exemption to practice without a license."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which law prescribes the powers and functions of the Commission and the professional regulatory boards?",
+    "options": [
+      "RA No. 7160",
+      "PD No. 223",
+      "RA No. 9711",
+      "RA No. 8981"
+    ],
+    "correct": 3,
+    "explanation": "RA 8981 (PRC Modernization Act of 2000) prescribes the powers and functions of the PRC and the professional regulatory boards. (PD 223 originally created the PRC.)"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Commission may investigate motu proprio, without need of a verified complaint, if the case involves:",
+    "options": [
+      "A corporation",
+      "A member of the Board of Optometry",
+      "A non-optometrist",
+      "An optometrist"
+    ],
+    "correct": 1,
+    "explanation": "The PRC may investigate on its own initiative (motu proprio) an erring member of the Board of Optometry."
+  },
+  {
+    "type": "mcq",
+    "stem": "The use of billboard advertisements to promote an optometrist's practice is:",
+    "options": [
+      "Prohibited by the rules and regulations of RA 8050 only",
+      "Prohibited by the Local Government Code",
+      "Not prohibited by any law or rules",
+      "Prohibited by the optometry law only"
+    ],
+    "correct": 0,
+    "explanation": "Self-promotional advertising is prohibited by the IRR (rules and regulations) of RA 8050, which details unethical advertising; the statute itself does not enumerate it."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist's prescription or endorsement of products other than those approved by the DTI and FDA-DOH is:",
+    "options": [
+      "Not prohibited",
+      "Prohibited by the rules and regulations of RA 8050 only",
+      "Prohibited by the optometry law only",
+      "Prohibited by the FDA Act of 2009 only"
+    ],
+    "correct": 1,
+    "explanation": "This is prohibited by the IRR of RA 8050 (Sec. 45), which bars prescribing or endorsing doubtful products not approved by the FDA (BFAD) and DTI."
+  },
+  {
+    "type": "mcq",
+    "stem": "Associating with an optometrist whose license has been suspended or revoked exposes the offending optometrist to:",
+    "options": [
+      "Imprisonment and/or fine at the discretion of the court",
+      "Reprimand, suspension, or revocation of his/her professional license",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "It is a prohibited act carrying both a possible criminal penalty (Sec. 33) and administrative sanctions (reprimand, suspension, or revocation)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Code of Ethics is promulgated by the:",
+    "options": [
+      "Integrated national organization of optometrists",
+      "Board of Optometry",
+      "Professional Regulation Commission",
+      "All of the above"
+    ],
+    "correct": 0,
+    "explanation": "Under RA 8050 (Sec. 40), the integrated national organization of optometrists promulgates the Code of Ethics (adopted by the Board upon PRC approval)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Rules and Regulations implementing RA 8050 are promulgated by the:",
+    "options": [
+      "Integrated national organization of optometrists",
+      "Board of Optometry",
+      "Professional Regulation Commission",
+      "All of the above"
+    ],
+    "correct": 1,
+    "explanation": "The Board of Optometry promulgates the rules and regulations, subject to approval by the Commission."
+  },
+  {
+    "type": "mcq",
+    "stem": "The scope of optometry practice is embodied in:",
+    "options": [
+      "Sections 3 & 4 of the Optometry Law",
+      "Sections 3, 4 & 5 of the Optometry Law",
+      "Pertinent provisions of both the law and the rules and regulations",
+      "All of the above"
+    ],
+    "correct": 2,
+    "explanation": "The scope is set out in RA 8050 and elaborated in its IRR — the pertinent provisions of both the law and the rules and regulations."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which diagnostic agent(s) was/were added for optometric use in the 2008 IRR, beyond the original RA 8050 list?",
+    "options": [
+      "Oxybuprocaine HCl",
+      "Cyclopentolate HCl",
+      "Benoxinate HCl",
+      "a & b",
+      "b & c"
+    ],
+    "correct": 4,
+    "explanation": "RA 8050's original list already included Oxybuprocaine 0.4%. The 2008 IRR added Cyclopentolate HCl 1.0% and restated the anesthetic as Benoxinate 0.4% (Benoxinate = Oxybuprocaine), so the additions are read as b & c."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8050, who may NOT be appointed to the Board of Optometry under any circumstance?",
+    "options": [
+      "A faculty member/lecturer of a school teaching optometry",
+      "An owner or stockholder of a school teaching optometry",
+      "An officer of an optometric association",
+      "None of the above"
+    ],
+    "correct": 3,
+    "explanation": "Each listed disqualification is curable: a faculty member or one with pecuniary interest may relinquish it, and an association officer may resign, before taking the oath. None is an absolute, uncurable bar."
+  },
+  {
+    "type": "mcq",
+    "stem": "The dispensing of optical devices to low-vision patients by persons involved in the government's blindness prevention program is:",
+    "options": [
+      "Allowed by exemption under Section 5, RA 8050",
+      "Unprofessional",
+      "Illegal",
+      "Unethical"
+    ],
+    "correct": 2,
+    "explanation": "Public health workers in the blindness-prevention program may perform ONLY visual acuity tests and visual screening. Dispensing optical devices is beyond that exemption and constitutes illegal (unauthorized) practice."
+  },
+  {
+    "type": "mcq",
+    "stem": "After passing the licensure examination, a Doctor of Optometry may practice once all of the following are complied with, EXCEPT:",
+    "options": [
+      "Taking his oath",
+      "Certification from the Commission to use authorized DPAs",
+      "Issuance of the certificate of registration and professional license",
+      "Payment of the annual registration fee"
+    ],
+    "correct": 1,
+    "explanation": "Six-year-course graduates are authorized to use DPAs without a separate certification. Taking the oath, paying fees, and issuance of the certificate/PIC are what is required to begin practice."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which document is proof that an optometrist is qualified to practice optometry in the Philippines?",
+    "options": [
+      "Professional identification card",
+      "Diploma from the optometry school",
+      "CPE credit units",
+      "Certificate of registration"
+    ],
+    "correct": 3,
+    "explanation": "The certificate of registration is the permanent proof that the registrant is qualified to practice; the PIC is proof of good standing/authority to practice at a given time."
+  },
+  {
+    "type": "mcq",
+    "stem": "A member of the Board of Optometry may continue serving beyond the end of the term only in a:",
+    "options": [
+      "Carry-over capacity",
+      "Hold-over capacity",
+      "Re-appointment by the President",
+      "Term extension by the President"
+    ],
+    "correct": 1,
+    "explanation": "A Board member holds office until a successor is appointed and qualifies — a hold-over capacity. The term itself is non-renewable."
+  },
+  {
+    "type": "mcq",
+    "stem": "An erring member of the Board of Optometry, after due process, may be suspended or removed only by the:",
+    "options": [
+      "Majority vote of the Commission",
+      "Secretary of Labor",
+      "Chairperson of the PRC",
+      "President of the Philippines"
+    ],
+    "correct": 3,
+    "explanation": "The power to suspend or remove a Board member (after due process) rests with the President of the Philippines."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a ground for the suspension or removal of a member of the Board of Optometry?",
+    "options": [
+      "Unethical conduct",
+      "Unprofessional conduct",
+      "Criminal negligence",
+      "Immorality"
+    ],
+    "correct": 2,
+    "explanation": "Grounds are neglect of duty, incompetence, malpractice, and unprofessional/unethical/immoral or dishonorable conduct. 'Criminal negligence' is not among the enumerated grounds."
+  },
+  {
+    "type": "mcq",
+    "stem": "The basis for the scope of the optometry licensure examination is the:",
+    "options": [
+      "Policies and standards on optometry education",
+      "Competency standards for optometry",
+      "Table of specifications",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "The Table of Specifications (syllabi/scope prepared by the Board) is the basis for the coverage of the licensure examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "A person who passes the licensure examination may be denied admission to practice for all of the following, EXCEPT:",
+    "options": [
+      "Failure to take his/her professional oath",
+      "Failure to pay the registration fee",
+      "Having been found guilty by the courts of immoral or dishonorable conduct",
+      "None of the above"
+    ],
+    "correct": 3,
+    "explanation": "All three listed circumstances bar admission to practice, so 'none of the above' is the exception (there is no additional exception)."
+  },
+  {
+    "type": "mcq",
+    "stem": "A former Filipino optometrist, previously licensed here, who has renounced Philippine citizenship may practice optometry in the Philippines by virtue of:",
+    "options": [
+      "A special permit",
+      "Foreign reciprocity",
+      "PD No. 541",
+      "PD No. 223"
+    ],
+    "correct": 2,
+    "explanation": "PD 541 allows former Filipino professionals (who lost their citizenship) to practice their professions in the Philippines."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist who reveals a patient's medical records to the public without consent commits:",
+    "options": [
+      "Violation of his oath",
+      "Unethical conduct",
+      "Illegal conduct",
+      "Malpractice"
+    ],
+    "correct": 1,
+    "explanation": "Breaching patient confidentiality is unethical conduct — a violation of the duty of confidentiality and privileged communication."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which is NOT among the general powers of administrative agencies?",
+    "options": [
+      "Law-making power",
+      "Determinative power",
+      "Adjudicatory power",
+      "Rule-making power"
+    ],
+    "correct": 0,
+    "explanation": "Administrative agencies exercise rule-making (quasi-legislative), adjudicatory (quasi-judicial), and determinative/investigative powers. Law-making belongs to the legislature."
+  },
+  {
+    "type": "mcq",
+    "stem": "Based on RA 8981, the renewal of the professional identification card is:",
+    "options": [
+      "Mandatory",
+      "Discretionary",
+      "Optional",
+      "All of the above"
+    ],
+    "correct": 0,
+    "explanation": "Renewal of the PIC is mandatory; an optometrist cannot lawfully practice with an expired card."
+  },
+  {
+    "type": "mcq",
+    "stem": "To disclose authority to practice, an optometrist may display in a conspicuous place in the clinic the:",
+    "options": [
+      "Original certificate of registration/professional license and PRC ID",
+      "Duplicate certificate of registration/professional license and PRC ID",
+      "Photocopy of the certificate of registration/professional license and PRC ID",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "A photocopy (ideally a scanned/certified copy) is displayed so the originals are kept safe, while still disclosing authority to practice."
+  },
+  {
+    "type": "mcq",
+    "stem": "The examination of patients by an optometrist outside the regular clinic is NOT allowed when it is:",
+    "options": [
+      "Endorsed by church organizations",
+      "With the permission of IPAO or its local chapter",
+      "Because the patient is unable to visit the regular clinic",
+      "None of the above"
+    ],
+    "correct": 0,
+    "explanation": "Outside-clinic exams are allowed for non-ambulant patients (upon unsolicited request) or under public-health/IPAO auspices. A church endorsement is not, by itself, a valid basis."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist convicted by final judgment of estafa may face disciplinary action on the ground of:",
+    "options": [
+      "Declaration by a court of being mentally unsound",
+      "Dishonorable conduct",
+      "Immoral conduct",
+      "Being guilty of a crime involving moral turpitude"
+    ],
+    "correct": 3,
+    "explanation": "Estafa is a crime involving moral turpitude; conviction by final judgment is a ground for disciplinary action."
+  },
+  {
+    "type": "mcq",
+    "stem": "When a penalty of suspension is imposed on an optometrist, the suspension period commences:",
+    "options": [
+      "When the decision becomes final and executory",
+      "From the moment the license is surrendered to the PRC",
+      "When the optometrist does not appeal",
+      "Upon the lapse of the period to file a motion for reconsideration"
+    ],
+    "correct": 0,
+    "explanation": "The suspension takes effect when the decision becomes final and executory."
+  },
+  {
+    "type": "mcq",
+    "stem": "When did the 2008 Rules and Regulations (Board Resolution No. 01, s. 2008) take effect?",
+    "options": [
+      "July 17",
+      "July 16",
+      "June 7",
+      "June 30"
+    ],
+    "correct": 1,
+    "explanation": "Board of Optometry Resolution No. 01, Series of 2008 is dated July 16, 2008 (its effectivity clause provides for 30 days after publication)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The term of office of PRC Commissioners is a:",
+    "options": [
+      "Non-renewable term of 5 years",
+      "Non-renewable term of 6 years",
+      "Non-renewable term of 8 years",
+      "Non-renewable term of 7 years"
+    ],
+    "correct": 3,
+    "explanation": "Under RA 8981, the PRC Chairperson and Commissioners serve a non-renewable term of seven (7) years."
+  },
+  {
+    "type": "mcq",
+    "stem": "The procedure for the nomination of members of the various regulatory boards is prescribed in:",
+    "options": [
+      "EO No. 496",
+      "RA No. 8050",
+      "PD No. 223",
+      "RA No. 8981"
+    ],
+    "correct": 0,
+    "explanation": "Executive Order No. 496 (s. 1991) prescribes the nomination procedure for members of the professional regulatory boards, as referenced by RA 8981."
+  },
+  {
+    "type": "mcq",
+    "stem": "A party aggrieved by a decision of the Board of Optometry may file a motion for reconsideration within:",
+    "options": [
+      "30 days from receipt",
+      "15 days from receipt",
+      "10 days from receipt",
+      "5 days from receipt"
+    ],
+    "correct": 1,
+    "explanation": "A motion for reconsideration is filed within 15 days from receipt of the decision; otherwise the decision becomes final and executory."
+  },
+  {
+    "type": "mcq",
+    "stem": "The FDA Act of 2009 (RA 9711) amended provisions of:",
+    "options": [
+      "RA No. 3720",
+      "RA No. 8981",
+      "RA No. 5720",
+      "RA No. 9711"
+    ],
+    "correct": 0,
+    "explanation": "RA 9711 amended RA 3720, the original Food, Drug, and Cosmetic Act, and reorganized the former BFAD into the FDA."
+  },
+  {
+    "type": "mcq",
+    "stem": "Colored (cosmetic) contact lenses are classified as a:",
+    "options": [
+      "Medical device",
+      "Health-related device",
+      "Cosmetic device",
+      "Radiation device"
+    ],
+    "correct": 0,
+    "explanation": "All contact lenses, including plano/cosmetic colored lenses, are regulated as medical devices under the FDA."
+  },
+  {
+    "type": "mcq",
+    "stem": "The following are mandatory remittances required by law, EXCEPT:",
+    "options": [
+      "PhilHealth",
+      "Home Development Mutual Fund (Pag-IBIG)",
+      "SSS",
+      "Provident fund"
+    ],
+    "correct": 3,
+    "explanation": "The mandatory government remittances are SSS, PhilHealth, and Pag-IBIG (which is itself the Home Development Mutual Fund / provident fund). 'Provident fund' listed separately is redundant."
+  },
+  {
+    "type": "mcq",
+    "stem": "Renewal of the certificate of registration is due every:",
+    "options": [
+      "5 years",
+      "Never",
+      "3 years",
+      "Birth date of the optometrist"
+    ],
+    "correct": 1,
+    "explanation": "The certificate of registration is permanent and is never renewed; only the professional identification card is renewed (every 3 years, on the birth month)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Jurisdiction over persons engaged in the unauthorized practice of optometry (non-optometrists) rests with the:",
+    "options": [
+      "NBI-DOJ",
+      "Board of Optometry-PRC",
+      "IPAO",
+      "Regular courts"
+    ],
+    "correct": 3,
+    "explanation": "Unauthorized practice by a non-licensee is a criminal matter tried in the regular courts. The Board-PRC has administrative jurisdiction over registered optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "The current minimum wage in Metro Manila is set at:",
+    "options": [
+      "P380",
+      "P400",
+      "P420",
+      "None of the above"
+    ],
+    "correct": 3,
+    "explanation": "None of the above — the NCR daily minimum wage has since risen well above these figures (over P600). Always check the latest NCR Wage Order."
+  },
+  {
+    "type": "mcq",
+    "stem": "A written summons commanding a respondent to appear and testify is called a:",
+    "options": [
+      "Subpoena duces tecum",
+      "Interlocutory order",
+      "Subpoena ad testificandum",
+      "Writ of execution"
+    ],
+    "correct": 2,
+    "explanation": "A subpoena ad testificandum commands a person to appear and give oral testimony. A subpoena duces tecum commands a person to appear and bring documents."
+  },
+  {
+    "type": "mcq",
+    "stem": "When a violation is committed by a corporation, criminal liability attaches to the:",
+    "options": [
+      "Board of directors",
+      "Executive committee",
+      "Managing officer responsible for its commission",
+      "President and CEO of the corporation"
+    ],
+    "correct": 2,
+    "explanation": "Liability attaches to the responsible officer — the managing officer/head who is responsible for the commission of the offense."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 8050 is a:",
+    "options": [
+      "General law",
+      "Criminal statute",
+      "Special law",
+      "Codification of all optometry statutes"
+    ],
+    "correct": 2,
+    "explanation": "RA 8050 is a special law — it regulates a specific profession, as opposed to a general law of universal application."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 8050 is enforceable against:",
+    "options": [
+      "Optometrists only",
+      "Professionals only",
+      "Anybody",
+      "The public at large only"
+    ],
+    "correct": 2,
+    "explanation": "As a special law that also penalizes unauthorized practice by non-licensees, RA 8050 is enforceable against anybody, not just optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "Malpractice cases may result in:",
+    "options": [
+      "Criminal prosecution",
+      "Civil cases",
+      "Administrative sanctions",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "A single act of malpractice can give rise to criminal, civil, and administrative liability simultaneously."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Professional Tax Receipt (PTR) is a:",
+    "options": [
+      "An annual regulatory fee paid to the national government as tax",
+      "An annual regulatory fee paid to the PRC as a registration fee",
+      "An annual regulatory fee paid to the local government as tax",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "The PTR is a professional tax paid annually to the local government (city/municipality) where the professional practices."
+  },
+  {
+    "type": "mcq",
+    "stem": "The sales of non-VAT-registered persons or entities are subject to a:",
+    "options": [
+      "Percentage tax of 2%",
+      "Percentage tax of 5%",
+      "Percentage tax of 12%",
+      "None of the above"
+    ],
+    "correct": 3,
+    "explanation": "None of the above — the percentage (non-VAT) tax under Sec. 116 of the Tax Code is 3% (temporarily reduced to 1% during the CREATE-law period), not 2%, 5%, or 12%."
+  },
+  {
+    "type": "mcq",
+    "stem": "Jurisdiction over registered optometrists who violate the rules and regulations rests with the:",
+    "options": [
+      "Regular courts",
+      "NBI-DOJ",
+      "IPAO",
+      "Board of Optometry-PRC"
+    ],
+    "correct": 3,
+    "explanation": "The Board of Optometry-PRC has administrative jurisdiction over registered optometrists who violate the law or the rules and regulations (contrast: non-licensees go to the regular courts)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following leave privileges is expressly prescribed by the Labor Code?",
+    "options": [
+      "Service incentive leave",
+      "Vacation leave",
+      "Sick leave",
+      "Paternity leave"
+    ],
+    "correct": 0,
+    "explanation": "The Labor Code mandates a 5-day Service Incentive Leave. Vacation and sick leave are not statutory (they are company-granted); paternity leave is under a separate law (RA 8187)."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist employed on a part-time basis, performing work usually necessary to the business, is classified as a:",
+    "options": [
+      "Regular employee",
+      "Contractual employee",
+      "Seasonal employee",
+      "Casual employee"
+    ],
+    "correct": 0,
+    "explanation": "Regularity of employment depends on the nature of the work, not the number of hours; a part-timer performing work necessary or desirable to the business can be a regular employee."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist's decision to engage in specialty practice is consistent with the right to:",
+    "options": [
+      "Choose his/her patient",
+      "Limit his/her practice",
+      "Perform certain services only",
+      "All of the above"
+    ],
+    "correct": 1,
+    "explanation": "Choosing to specialize is an exercise of the optometrist's right to limit his/her practice to a particular field or set of services."
+  },
+  {
+    "type": "mcq",
+    "stem": "A professional fee measured by the length of time rather than the quality or quantity of services, with no employer-employee relationship, is a:",
+    "options": [
+      "Contingent fee",
+      "Salary",
+      "Retainer fee",
+      "Dichotomous fee"
+    ],
+    "correct": 2,
+    "explanation": "A retainer fee is a fixed fee for a professional's availability over a period of time, without an employer-employee relationship."
+  },
+  {
+    "type": "mcq",
+    "stem": "The lack of ability, fitness, or adequate expertise to discharge a required duty is called:",
+    "options": [
+      "Negligence",
+      "Malpractice",
+      "Ignorance",
+      "Incompetence"
+    ],
+    "correct": 3,
+    "explanation": "Incompetence is the lack of ability, fitness, or adequate expertise to perform a required duty or specific act."
+  },
+  {
+    "type": "mcq",
+    "stem": "An entire disregard for, and indifference to, the safety and welfare of others is:",
+    "options": [
+      "Simple negligence",
+      "Gross ignorance",
+      "Reckless imprudence",
+      "Gross negligence"
+    ],
+    "correct": 3,
+    "explanation": "Gross negligence is the want of even slight care — an entire disregard of and indifference to the safety and welfare of others."
+  },
+  {
+    "type": "mcq",
+    "stem": "The failure to exercise a reasonable degree of skill and care in the treatment of a patient is:",
+    "options": [
+      "Malpractice",
+      "Incompetence",
+      "Ignorance",
+      "Negligence"
+    ],
+    "correct": 0,
+    "explanation": "Malpractice is professional negligence — the failure to exercise the reasonable degree of skill and care expected of the practitioner in treating the patient."
+  },
+  {
+    "type": "mcq",
+    "stem": "The responsibility of a non-negligent person for the wrongful conduct or negligence of another is the:",
+    "options": [
+      "Doctrine of proximate cause",
+      "Doctrine of last clear chance",
+      "Doctrine of common fault",
+      "Doctrine of vicarious liability"
+    ],
+    "correct": 3,
+    "explanation": "Vicarious liability (respondeat superior) holds a non-negligent person (e.g., an employer) responsible for the negligence of another (e.g., an employee)."
+  },
+  {
+    "type": "mcq",
+    "stem": "When the immediate and proximate cause of the injury is the defendant's lack of due care but the plaintiff also contributed, the plaintiff may recover reduced (mitigated) damages under the:",
+    "options": [
+      "Doctrine of vicarious liability",
+      "Borrowed-servant doctrine",
+      "Doctrine of contributory negligence",
+      "Captain-of-the-ship doctrine"
+    ],
+    "correct": 2,
+    "explanation": "Under contributory negligence (Art. 2179, Civil Code), the plaintiff may still recover, but the court shall mitigate the damages because the plaintiff's own negligence contributed to the injury."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Price Tag Law, requiring consumer products sold in retail to bear a price tag, is:",
+    "options": [
+      "RA No. 7160",
+      "RA No. 8981",
+      "RA No. 8424",
+      "RA No. 7394"
+    ],
+    "correct": 3,
+    "explanation": "The Price Tag requirement is found in RA 7394, the Consumer Act of the Philippines."
+  },
+  {
+    "type": "mcq",
+    "stem": "The patient's right to know all the pertinent facts and information about his/her ailment is the:",
+    "options": [
+      "Disclosure of authority to practice",
+      "Right to confidential information",
+      "Right to privacy",
+      "Right to disclosure of information"
+    ],
+    "correct": 3,
+    "explanation": "The right to disclosure of information is the patient's right to be told all pertinent facts about his/her condition (the basis of informed consent)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The right of the patient to keep the subject matter of the professional relationship from being testified to in court is:",
+    "options": [
+      "Right to information",
+      "Right to privacy",
+      "Right to confidential information",
+      "Privileged communication"
+    ],
+    "correct": 3,
+    "explanation": "Privileged communication protects the confidential subject matter of the practitioner-patient relationship from being disclosed as testimony in court."
+  },
+  {
+    "type": "mcq",
+    "stem": "The pecuniary compensation recoverable by an injured party for the breach of a duty or violation of a right is called:",
+    "options": [
+      "Damages",
+      "Fine",
+      "Claims",
+      "Awards"
+    ],
+    "correct": 0,
+    "explanation": "Damages are the pecuniary compensation recoverable for a breach of duty or a violation of a right recognized by law. A fine, by contrast, is paid to the State as a penalty."
+  },
+  {
+    "type": "mcq",
+    "stem": "Adequate compensation only for the pecuniary loss actually suffered and duly proven is:",
+    "options": [
+      "Liquidated damages",
+      "Actual damages",
+      "Moral damages",
+      "Temperate damages"
+    ],
+    "correct": 1,
+    "explanation": "Actual (compensatory) damages compensate only for the pecuniary loss actually suffered and duly proven."
+  },
+  {
+    "type": "mcq",
+    "stem": "Damages for physical suffering, mental anguish, fright, anxiety, besmirched reputation, wounded feelings, and social humiliation are:",
+    "options": [
+      "Actual damages",
+      "Moral damages",
+      "Temperate damages",
+      "Liquidated damages"
+    ],
+    "correct": 1,
+    "explanation": "Moral damages compensate for physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, and social humiliation."
+  },
+  {
+    "type": "mcq",
+    "stem": "The deadline for filing annual income tax returns (individuals, partnerships, and corporations on a calendar year) with the BIR is:",
+    "options": [
+      "March 15",
+      "January 15",
+      "April 15",
+      "February 15"
+    ],
+    "correct": 2,
+    "explanation": "Annual income tax returns are due on or before April 15 of the following year (calendar-year taxpayers)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Another name for the income statement is the:",
+    "options": [
+      "Profit and loss statement",
+      "Balance sheet",
+      "Cash flow statement",
+      "Statement of account"
+    ],
+    "correct": 0,
+    "explanation": "The income statement is also called the profit and loss (P&L) statement; it reports revenues and expenses over a period."
+  },
+  {
+    "type": "mcq",
+    "stem": "The science and art of preventing disease, prolonging life, and promoting health through organized community efforts is:",
+    "options": [
+      "Public health",
+      "Occupational health and safety",
+      "Sanitation",
+      "Hygiene"
+    ],
+    "correct": 0,
+    "explanation": "This is the classic Winslow definition of public health — preventing disease, prolonging life, and promoting health through organized community effort."
+  },
+  {
+    "type": "mcq",
+    "stem": "Based on global blindness surveys, the primary cause of blindness in adults is:",
+    "options": [
+      "Glaucoma",
+      "Trauma",
+      "Vitamin A deficiency",
+      "Cataract"
+    ],
+    "correct": 3,
+    "explanation": "Cataract is the leading cause of blindness worldwide; it is treatable/reversible, which is why blindness-prevention programs prioritize it."
+  },
+  {
+    "type": "mcq",
+    "stem": "A tort or quasi-delict is:",
+    "options": [
+      "A quasi-contract",
+      "Criminal in nature",
+      "Independent of contract",
+      "Based on contract"
+    ],
+    "correct": 2,
+    "explanation": "A quasi-delict (culpa aquiliana, Art. 2176) arises from fault or negligence and is independent of any pre-existing contractual relation."
+  },
+  {
+    "type": "mcq",
+    "stem": "The set of rules of procedure adopted by the PRC for administrative cases is:",
+    "options": [
+      "Resolution No. 06-342(A), series of 2006",
+      "Resolution No. 03, series of 1997",
+      "Resolution No. 01, series of 2008",
+      "Resolution No. 02-137, series of 2004"
+    ],
+    "correct": 0,
+    "explanation": "PRC Resolution No. 06-342(A), series of 2006, provides the rules of procedure in administrative investigations."
+  },
+  {
+    "type": "mcq",
+    "stem": "The science that deals with the study of the origin and spread of disease is:",
+    "options": [
+      "Toxicology",
+      "Epidemiology",
+      "Health",
+      "Hygiene"
+    ],
+    "correct": 1,
+    "explanation": "Epidemiology studies the distribution, origin, and spread (determinants) of disease in populations."
+  },
+  {
+    "type": "mcq",
+    "stem": "A major disadvantage of using a corporation to establish a practice is the probability that:",
+    "options": [
+      "Credit standing is unreliable",
+      "Professional judgment may be influenced by business decisions",
+      "Operations wind up upon dissolution",
+      "Financial management is not transparent"
+    ],
+    "correct": 1,
+    "explanation": "A key concern with corporate/commercial practice is that professional (clinical) judgment may be influenced or compromised by business/profit decisions."
+  },
+  {
+    "type": "mcq",
+    "stem": "A member of the Board of Optometry under administrative investigation may be suspended by the President of the Philippines for a maximum of:",
+    "options": [
+      "45 days",
+      "15 days",
+      "60 days",
+      "30 days"
+    ],
+    "correct": 2,
+    "explanation": "During investigation, the President may suspend the Board member for a period not exceeding sixty (60) days and appoint a temporary member."
+  },
+  {
+    "type": "mcq",
+    "stem": "The source of the rule-making power of the Board of Optometry-PRC is:",
+    "options": [
+      "Legislative power",
+      "Subordinate legislation",
+      "Police power",
+      "Delegated legislative power"
+    ],
+    "correct": 3,
+    "explanation": "The Board's authority to issue rules comes from delegated legislative power (the legislature delegates rule-making to the administrative body). The rules themselves are the resulting 'subordinate legislation.'"
+  },
+  {
+    "type": "mcq",
+    "stem": "The limit to the Board's rule-making power is:",
+    "options": [
+      "The provisions of the rules and regulations of RA 8050",
+      "Guidelines set by the Chairperson of the Board",
+      "Guidelines set by the Commission",
+      "The provisions of the optometry law"
+    ],
+    "correct": 3,
+    "explanation": "Administrative rules cannot exceed, expand, or contravene the enabling statute; the optometry law itself is the limit on the Board's rule-making power."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Chairperson of the Board of Optometry is appointed to that position by the:",
+    "options": [
+      "Succession",
+      "Chairperson of the PRC",
+      "Operation of law",
+      "President of the Philippines"
+    ],
+    "correct": 3,
+    "explanation": "The President of the Philippines appoints the members and the Chairperson of the Board of Optometry (upon PRC recommendation)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The imposable penalty for violating the prohibited acts under RA 8050 is imprisonment of:",
+    "options": [
+      "6 months and 1 day to 6 years",
+      "1 to 10 years",
+      "1 to 8 years",
+      "6 years and 1 day to 12 years"
+    ],
+    "correct": 2,
+    "explanation": "RA 8050 (Sec. 33) imposes imprisonment of 1 to 8 years, or a fine of P10,000 to P40,000, or both, at the court's discretion. Do not confuse this with the RA 8981 exam-tampering penalty of 6 years and 1 day to 12 years."
   }
 ]

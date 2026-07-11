@@ -154,9 +154,9 @@ export const SUBJECTS: Subject[] = [
   {
     slug: 'ethics-and-jurisprudence',
     name: 'Ethics and Jurisprudence',
-    description: 'RA 8050 and its IRR, the Board of Optometry and PRC, licensure and registration, DPAs, CPD, professional practice, unlawful acts, ethics, and practice management.',
+    description: 'RA 8050 and its IRR, the Board of Optometry and PRC, licensure and registration, DPAs, CPD, professional practice, unlawful acts, ethics, malpractice, and practice management.',
     color: 'indigo',
-    questionCount: 137,
+    questionCount: 224,
     icon: '⚖️',
     olePrep: true,
     hasExam: true,
