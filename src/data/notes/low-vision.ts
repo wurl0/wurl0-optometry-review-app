@@ -32,7 +32,12 @@ export const lowVisionNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Do not confuse the field cut-offs: WHO blindness uses field < 10°, WHO low vision uses field < 20°, and legal blindness uses a field of 20° or less in the widest meridian. VA 20/200 is the shared acuity threshold for both WHO blindness and legal blindness.',
+              content: 'Do not confuse the field cut-offs: **WHO blindness uses field < 10°**, **WHO low vision uses field < 20°**, and **legal blindness uses a field of 20° or less** in the widest meridian. **VA 20/200** is the shared acuity threshold for both WHO blindness and legal blindness.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Lock the shared numbers: **legal blindness = "20/200 or 20°"** — either the acuity **or** the field triggers it, whichever fails first. Don\'t mix the WHO field cutoffs with it: **WHO blindness < 10°, WHO low vision < 20°**. And remember the two "leading cause" answers differ: **uncorrected refractive error** leads visual *impairment*, but **cataract** leads *blindness* in low-income countries.',
             },
           ],
         },
@@ -305,6 +310,11 @@ export const lowVisionNotes: NotesData = {
                 ['Maximum reading (fast, accurate)', '~320 wpm', '5 lines smaller'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why aim for print **bigger than threshold**? Threshold size is what the patient can barely resolve **one letter at a time** — useless for flowing sentences. Real reading needs a **reserve** so the eye isn\'t working at its limit: **1 line** of margin lets them spot a word, **3 lines** gives fluent reading, **5 lines** gives fast fluent reading. That is why goal acuity (and therefore the magnification you prescribe) is always set **larger** than the smallest print they can technically see.',
+            },
           ],
         },
         {
@@ -320,8 +330,13 @@ export const lowVisionNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Kestenbaum\'s rule is just the **reciprocal of the Snellen fraction**: an add of **denominator/numerator** diopters. **20/200 → 200/20 = +10 D**; **20/100 → +5 D**. It works because that add places the focal plane exactly where a 20/20 eye would need the print enlarged to match this patient\'s acuity. Treat it as a **starting point** — verify with a trial frame, since eccentric viewing and contrast needs shift the final add.',
+            },
+            {
               kind: 'pearl',
-              content: 'Worked example (starting near VA): 4M read at 40 cm, goal 1M. 0.4/4 = x/1, so x = 0.1 m. D = 1/0.1 = +10.00 D add. A shorter working distance always means a stronger add, and the add creates its own fixed focal working distance.',
+              content: 'Worked example (starting near VA): 4M read at 40 cm, goal 1M. 0.4/4 = x/1, so x = 0.1 m. D = 1/0.1 = **+10.00 D** add. A shorter working distance always means a stronger add, and the add creates its own fixed focal working distance.',
             },
           ],
         },
@@ -386,6 +401,11 @@ export const lowVisionNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The X-notation on a magnifier depends on **which reference distance the maker used** — so the same +10 D lens is **4× at the 40 cm reference (D/2.5)** but **2.5× at the 25 cm reference (D/4)**. Spectacle/reading adds use **40 cm (÷2.5)**; hand/stand magnifiers use **25 cm (÷4)**. Always convert to **dioptric power** before comparing devices, or the "×" numbers will mislead you.',
+            },
+            {
               kind: 'table',
               headers: ['At 40 cm reference', 'Mag', 'At 25 cm reference', 'Mag'],
               rows: [
@@ -439,6 +459,16 @@ export const lowVisionNotes: NotesData = {
                 ['Field / light', 'Brighter but smaller field', 'Wider field but less light transmission'],
                 ['Build', 'Small, light, cheap, easy to make', 'Heavier, costlier, complex, harder to use'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**"Galilean = minus eyepiece, erect, short; Keplerian = plus eyepiece, inverted (needs prisms), long."** Galilean\'s **concave (−)** eyepiece keeps the image **upright** with no prisms, so it stays small and cheap but low-power (~≤4×). Keplerian\'s **convex (+)** eyepiece inverts the image (prisms re-erect it), giving **higher power and a wider field** at the cost of length and weight. Concave = casual, Convex = capable.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Magnification and field of view **always trade off** in a telescope: raising power (a stronger eyepiece relative to the objective) shrinks the **field of view** and dims the image, because you\'re spreading the same light over a bigger retinal image seen through a narrower window. That is why a high-power telescope is great for **reading a distant sign** but hopeless for **walking** — the tiny, jittery field makes mobility unsafe. Match the power to the task.',
             },
           ],
         },

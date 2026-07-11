@@ -25,6 +25,11 @@ export const pediatricOptometryNotes: NotesData = {
                 'Behavioral/developmental optometrist studies how vision and behavior affect each other; vision therapy rewires the visual pathway (it does not simply strengthen muscles, which is orthoptics)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The **critical period is why pediatric eye care is a race against the clock.** During peak plasticity (**birth–3 yr**) the visual cortex wires itself based on the images it receives; a blurred or suppressed eye during this window fails to build normal cortical connections → **amblyopia**. After ~**7–8 yr** the wiring largely sets, so the **same problem caught at 3 is reversible but at 10 often is not**. Every screening, refraction, and patching decision is really "is the window still open?"',
+            },
           ],
         },
         {
@@ -50,7 +55,12 @@ export const pediatricOptometryNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Board trap: acuity is about 20/50 at 1 year and does NOT reach 20/20 until about age 3. Any persistent ocular deviation after 3-4 months of age is pathological and needs referral.',
+              content: 'Board trap: acuity is about **20/50 at 1 year** and does NOT reach **20/20 until about age 3**. Any persistent ocular deviation after **3-4 months** of age is pathological and needs referral.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Three numbers carry most milestone questions: **"straight by 3–4 months, 20/50 at 1 year, 20/20 by 3 years."** Before 3–4 months a wandering eye can be normal; **after** that it is strabismus until proven otherwise. And a **white pupil (leukocoria)** at any age is never normal — rule out **retinoblastoma** urgently.',
             },
           ],
         },
@@ -67,6 +77,11 @@ export const pediatricOptometryNotes: NotesData = {
                 'Emmetropization: neonates are typically hyperopic (+2.00 to +3.00 D); the eye grows to reduce error toward emmetropia, with most hyperopia resolved by age 4',
                 'Retinopathy of prematurity (ROP), historically retrolental fibroplasia (RLF): abnormal retinal vessels from prematurity plus supplemental oxygen; can scar and detach the retina',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why not just correct a baby\'s **+2.50 D** hyperopia? Because **emmetropization** is an active feedback process — the eye uses retinal blur as a growth signal to lengthen toward emmetropia by ~age 4. Fully correcting normal infant hyperopia can **remove that blur signal and stall the process**. This is exactly why pediatric prescribing gives **partial** hyperopic correction and reserves full plus for cases like **accommodative esotropia**, where the convergence risk outweighs the growth signal.',
             },
           ],
         },
@@ -220,6 +235,16 @@ export const pediatricOptometryNotes: NotesData = {
                 'Mohindra (dark room) retinoscopy: non-cycloplegic in total darkness; ADD -1.25 D to the result to convert to manifest refraction',
                 'Dynamic retinoscopy: the child actively accommodates on a near target attached to the retinoscope; evaluates the accommodative system, not the refractive error',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Children have **enormous accommodation**, so a dry retinoscopy lets them "focus through" and **hide their full hyperopia** — you\'d under-plus them and miss the driver of accommodative esotropia. **Cycloplegia paralyzes the ciliary muscle**, unmasking the true (latent) hyperopia. It is the single most important pediatric refraction because the whole treatment plan hinges on the **full** plus number.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Two non-cycloplegic tricks with fixed corrections you must not forget: **Mohindra (dark room) → subtract 1.25 D** from the gross to convert to manifest refraction; standard **static retinoscopy → subtract your working-distance dioptric value** (e.g., −2.00 D at 50 cm). Forgetting the constant leaves you **too plus**. Mohindra is the go-to when drops aren\'t an option.',
             },
           ],
         },
@@ -401,8 +426,13 @@ export const pediatricOptometryNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Glasses come **before** the patch because a large share of amblyopia is simply the eye receiving a **blurred image** — clear that blur and the cortex often improves on its own (**"refractive adaptation," 12–16 weeks**). Patch a still-blurred eye and you fight the very defocus you never fixed. So the sequence is **correct → adapt → then occlude only the residual gap**, and finish with binocular vision therapy so the gains actually stick.',
+            },
+            {
               kind: 'pearl',
-              content: 'Board trap: patching is NOT the first step. Cycloplegic refraction plus full spectacle wear (12-16 weeks) comes first; patching is added only if acuity has not normalised. If the underlying binocular anomaly is not resolved, acuity gains during monocular therapy will not be permanent.',
+              content: 'Board trap: patching is NOT the first step. **Cycloplegic refraction plus full spectacle wear (12-16 weeks) comes first**; patching is added only if acuity has not normalised. If the underlying binocular anomaly is not resolved, acuity gains during monocular therapy will not be permanent.',
             },
           ],
         },
@@ -430,8 +460,13 @@ export const pediatricOptometryNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Accommodative esotropia is **hyperopia converting into a crossed eye.** The uncorrected hyperope must **accommodate hard** just to clear distance, and accommodation drags **convergence** along (the AC/A link) → the eyes over-turn inward. Give the **full plus** and the eye no longer needs to accommodate, so the convergence drive relaxes and the eyes straighten — **no surgery needed** unless a non-accommodative residual angle remains. Operating first would leave the accommodative cause untouched.',
+            },
+            {
               kind: 'pearl',
-              content: 'Two classic traps: (1) accommodative esotropia is treated first with full plus glasses, NOT surgery; (2) pseudostrabismus needs no treatment because the corneal reflexes are symmetric (no true deviation). The cover-uncover test reveals a phoria; the unilateral cover test reveals a tropia.',
+              content: 'Two classic traps: (1) accommodative esotropia is treated first with **full plus glasses, NOT surgery**; (2) pseudostrabismus needs no treatment because the corneal reflexes are **symmetric** (no true deviation). The cover-uncover test reveals a phoria; the unilateral cover test reveals a tropia.',
             },
           ],
         },
