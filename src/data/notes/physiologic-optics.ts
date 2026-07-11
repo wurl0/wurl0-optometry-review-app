@@ -21,7 +21,7 @@ const data: NotesData = {
           kind: 'sub',
           title: 'Stimulus-Response Phenomenon',
           blocks: [
-            { kind: 'text', content: 'Differentiates animate from inanimate. Animate bodies have the power to adjust to environmental changes. The response is adaptive — made possible by 3 distinct organ types:' },
+            { kind: 'text', content: 'Differentiates **animate** from **inanimate**. Animate bodies have the power to adjust to environmental changes. The response is **adaptive** — made possible by 3 distinct organ types:' },
             {
               kind: 'table',
               headers: ['Organ', 'Also Called', 'Function'],
@@ -45,7 +45,7 @@ const data: NotesData = {
           headers: ['Property', 'Value'],
           rows: [
             ['Shape', 'Slightly elongated sphere'],
-            ['Axial length (A-P)', '24 mm'],
+            ['Axial length (A-P)', '**24 mm**'],
             ['Other diameters', '22 mm'],
             ['Weight', '10 grams'],
             ['Volume', '6.5 mL (aqueous + vitreous)'],
@@ -53,8 +53,9 @@ const data: NotesData = {
           ],
         },
         {
-          kind: 'pearl',
-          content: 'The eyeball has 3 tunics: Fibrous (outermost) → Uveal/Vascular (middle) → Nervous/Functional (innermost). Remember: F-U-N.',
+          kind: 'callout',
+          variant: 'mnemonic',
+          content: 'The 3 tunics, outer → inner: **F**ibrous → **U**veal/Vascular → **N**ervous/Functional. Remember **F-U-N**.',
         },
         {
           kind: 'sub',
@@ -64,8 +65,8 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Structure', 'Coverage', 'Key Functions'],
               rows: [
-                ['Sclera', '5/6 of eyeball', 'Contains & protects the eyeball; maintains globular shape; attachment for muscles; opaque (excludes extraneous light)'],
-                ['Cornea', '1/6 of eyeball', 'Main refractive apparatus; transparent; refract light; gives constant shape; extreme sensitivity protects eye'],
+                ['Sclera', '**5/6** of eyeball', 'Contains & protects the eyeball; maintains globular shape; attachment for muscles; opaque (excludes extraneous light)'],
+                ['Cornea', '**1/6** of eyeball', 'Main refractive apparatus; transparent; refract light; gives constant shape; extreme sensitivity protects eye'],
                 ['Limbus', 'Junction zone', 'Transition between sclera and cornea (sclero-corneal junction)'],
               ],
             },
@@ -80,7 +81,7 @@ const data: NotesData = {
               headers: ['Structure', 'Description', 'Key Functions'],
               rows: [
                 ['Choroid', 'Thin, dark membrane (melanocytes); covers 5/6 of interior', 'Nourishes RPE & photoreceptors; provides dark chamber; prevents light dispersion'],
-                ['Ciliary Body', 'Prolongation/thickening of choroid; blood-rich', 'Produces aqueous humor; helps in accommodation; attachment for zonular fibers'],
+                ['Ciliary Body', 'Prolongation/thickening of choroid; blood-rich', 'Produces **aqueous humor**; helps in **accommodation**; attachment for zonular fibers'],
                 ['Iris', 'Thin circular membrane; pupil at center', 'Reduces chromatic & spherical aberrations; regulates light entering eye; increases depth of focus'],
               ],
             },
@@ -90,13 +91,13 @@ const data: NotesData = {
           kind: 'sub',
           title: 'Nervous / Functional Coat (Innermost)',
           blocks: [
-            { kind: 'text', content: 'RETINA — thin, transparent membrane where images are cast and nerve impulses are generated.' },
+            { kind: 'text', content: '**RETINA** — thin, transparent membrane where images are cast and nerve impulses are generated.' },
             {
               kind: 'table',
               headers: ['Cell Type', 'Function'],
               rows: [
-                ['Rods', 'Dim illumination / scotopic vision'],
-                ['Cones', 'Day illumination / photopic vision; color perception'],
+                ['Rods', '**Dim** illumination / scotopic vision'],
+                ['Cones', '**Day** illumination / photopic vision; color perception'],
                 ['Nerve fibers', 'Transmission of visual and pupillary impulses'],
               ],
             },
@@ -110,11 +111,17 @@ const data: NotesData = {
       blocks: [
         {
           kind: 'text',
-          content: "A schematic eye is a mathematical model representing the basic optical features of the real eye using average values. Gullstrand (1924) made a 6-surface model; Emsley (1952) simplified to a single surface.",
+          content: "A schematic eye is a mathematical model representing the basic optical features of the real eye using average values. **Gullstrand (1924)** made a 6-surface model; **Emsley (1952)** simplified it to a single surface (the reduced eye).",
+        },
+        { kind: 'diagram', id: 'schematic-eye-cardinal' },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content: 'Why do we care about **nodal points**? They are the optical center of the eye: a ray aimed at the primary nodal point (N) emerges from the secondary nodal point (N′) with its **direction unchanged**. That undeviated ray is what lets us predict where an image lands on the retina.',
         },
         {
           kind: 'pearl',
-          content: "High-yield table — memorize Gullstrand's values. These numbers appear frequently in board exams.",
+          content: "High-yield: **memorize Gullstrand's values** below — these numbers appear frequently on the boards.",
         },
         {
           kind: 'sub',
@@ -127,7 +134,7 @@ const data: NotesData = {
                 ['Cornea', '1.376'],
                 ['Aqueous Humor', '1.336'],
                 ['Crystalline Lens (cortex)', '1.386'],
-                ['Crystalline Lens (nucleus)', '1.406'],
+                ['Crystalline Lens (nucleus)', '**1.406**'],
                 ['Vitreous Humor', '1.336'],
               ],
             },
@@ -157,9 +164,9 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Structure', 'Power'],
               rows: [
-                ['Cornea', '43.05 D'],
+                ['Cornea', '**43.05 D**'],
                 ['Lens (unaccommodated)', '19.11 D'],
-                ['Complete Eye (unaccommodated)', '58.64 D'],
+                ['Complete Eye (unaccommodated)', '**58.64 D**'],
               ],
             },
           ],
@@ -183,10 +190,6 @@ const data: NotesData = {
             },
           ],
         },
-        {
-          kind: 'text',
-          content: 'Nodal points are the optical center of the lens — two points on the axis where an incident ray directed toward the primary nodal point exits through the secondary nodal point with unchanged direction.',
-        },
       ],
     },
     {
@@ -197,10 +200,15 @@ const data: NotesData = {
           kind: 'table',
           headers: ['Structure', 'Contribution to Refraction', 'Key Detail'],
           rows: [
-            ['Tear Film', 'First refracting surface', 'Where cornea owes its clear optical surface; index = 1.336'],
-            ['Cornea', '2/3 of total eye refraction', 'Power: 36–50 D (avg 43 D); index = 1.376'],
-            ['Crystalline Lens', '1/3 of total eye refraction', 'Located 3.6 mm behind corneal apex; main structure for accommodation'],
+            ['Tear Film', '**First** refracting surface', 'Where cornea owes its clear optical surface; index = 1.336'],
+            ['Cornea', '**2/3** of total eye refraction', 'Power: 36–50 D (avg 43 D); index = 1.376'],
+            ['Crystalline Lens', '**1/3** of total eye refraction', 'Located 3.6 mm behind corneal apex; main structure for accommodation'],
           ],
+        },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content: 'Why does the cornea out-refract the lens, even though the lens looks like the "real" lens? Because the **biggest bend happens where the index jumps the most** — the air-to-tear/cornea interface (1.00 → 1.376). Inside the eye, the media differ only slightly (≈1.33–1.40), so the lens adds far less power.',
         },
         {
           kind: 'sub',
@@ -210,9 +218,14 @@ const data: NotesData = {
               kind: 'table',
               headers: ['CL vs Tear Layer', 'Effect on Tear Layer', 'Effect on Corneal Power', 'Focus', 'Correction Change'],
               rows: [
-                ['Steeper CL (shorter RC)', 'Steepens tear radius', 'Increases corneal power', 'In front of retina', 'Increase minus'],
-                ['Flatter CL (longer RC)', 'Flattens tear radius', 'Decreases corneal power', 'Behind retina', 'Increase plus'],
+                ['Steeper CL (shorter RC)', 'Steepens tear radius', 'Increases corneal power', 'In front of retina', 'Increase **minus**'],
+                ['Flatter CL (longer RC)', 'Flattens tear radius', 'Decreases corneal power', 'Behind retina', 'Increase **plus**'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**SAM-FAP**: **S**teeper **A**dd **M**inus · **F**latter **A**dd **P**lus. A steeper fit creates a plus tear lens, so you compensate with more minus in the CL power.',
             },
           ],
         },
@@ -221,13 +234,18 @@ const data: NotesData = {
           title: 'Accommodation',
           blocks: [
             { kind: 'diagram', id: 'accommodation-mechanism' },
-            { kind: 'text', content: 'Process by which the crystalline lens varies its focal length in response to changes in vergence of incident light. Primary stimulus: BLUR. Other stimulus: near target.' },
+            { kind: 'text', content: 'Process by which the crystalline lens varies its focal length in response to changes in vergence of incident light. **Primary stimulus: BLUR.** Other stimulus: a near target.' },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why is **blur** the trigger and not "distance"? The eye cannot measure distance directly — it only senses that the retinal image is out of focus. Blur is the error signal that drives the ciliary muscle to adjust the lens until the image sharpens.',
+            },
             {
               kind: 'table',
               headers: ['Term', 'Definition'],
               rows: [
-                ['Lag of Accommodation', 'Accommodation is insufficient → focus falls behind the retina'],
-                ['Lead of Accommodation', 'Accommodation exceeds requirement → focus falls in front of the retina'],
+                ['Lag of Accommodation', 'Accommodation is **insufficient** → focus falls **behind** the retina'],
+                ['Lead of Accommodation', 'Accommodation **exceeds** requirement → focus falls **in front** of the retina'],
               ],
             },
           ],
@@ -241,19 +259,24 @@ const data: NotesData = {
         { kind: 'diagram', id: 'refractive-status' },
         {
           kind: 'text',
-          content: 'Describes the relationship between the posterior principal focus, the eye\'s refractive mechanism, and the retina — with accommodation RELAXED.',
+          content: 'Describes the relationship between the posterior principal focus, the eye\'s refractive mechanism, and the retina — with accommodation **RELAXED**.',
         },
         {
           kind: 'bullets',
           items: [
-            'Factors influencing refractive status: length of eyeball, power of cornea, power of lens, depth of anterior chamber',
-            'Emmetropia: posterior principal focus is ON the retina with accommodation relaxed',
-            'Ametropia: variation from emmetropia (error of refraction) — focus is in front of or behind the retina',
+            'Factors influencing refractive status: **length of eyeball**, power of cornea, power of lens, depth of anterior chamber',
+            '**Emmetropia**: posterior principal focus is **ON** the retina with accommodation relaxed',
+            '**Ametropia**: variation from emmetropia (error of refraction) — focus is in front of or behind the retina',
           ],
         },
         {
+          kind: 'callout',
+          variant: 'why',
+          content: 'Why does a **minus** lens fix myopia and a **plus** lens fix hyperopia? The myopic eye focuses **in front** of the retina (too much converging power), so a diverging (minus) lens pushes the focus back onto it. The hyperopic eye focuses **behind** the retina, so a converging (plus) lens pulls the focus forward.',
+        },
+        {
           kind: 'pearl',
-          content: 'Refractive status & accommodation table — this comparison is board-tested:',
+          content: 'Refractive status & accommodation — this comparison grid is board-tested:',
         },
         {
           kind: 'table',
@@ -272,7 +295,7 @@ const data: NotesData = {
       blocks: [
         {
           kind: 'text',
-          content: 'Refractive condition in which, with accommodation relaxed, parallel rays of light converge to focus IN FRONT of the retina.',
+          content: 'Refractive condition in which, with accommodation relaxed, parallel rays of light converge to focus **IN FRONT of the retina**.',
         },
         {
           kind: 'sub',
@@ -282,7 +305,7 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Category', 'Cause'],
               rows: [
-                ['Axial', 'Long axial length'],
+                ['Axial', '**Long** axial length'],
                 ['Refractive', 'Too strong refractive system for axial length; short/steep corneal curvature'],
                 ['Index (too HIGH)', 'Aqueous, cornea, lens nucleus/core'],
                 ['Index (too LOW)', 'Lens cortex, vitreous'],
@@ -301,7 +324,7 @@ const data: NotesData = {
               rows: [
                 ['Low', '0.25 – 3.00 D'],
                 ['Medium', '3.00 – 6.00 D'],
-                ['High', '6.00 D and above'],
+                ['High', '**6.00 D and above**'],
               ],
             },
             {
@@ -341,7 +364,7 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Symptoms', 'Signs'],
               rows: [
-                ['Blurred vision at far distance', 'Dilated pupil'],
+                ['Blurred vision at **far** distance', 'Dilated pupil'],
                 ['Asthenopia', 'Squinting'],
                 ['', 'Staring expression'],
                 ['', 'Exophthalmos (high myopia)'],
@@ -358,7 +381,7 @@ const data: NotesData = {
       blocks: [
         {
           kind: 'text',
-          content: 'Refractive condition in which, with accommodation relaxed, parallel rays of light converge to focus BEHIND the retina.',
+          content: 'Refractive condition in which, with accommodation relaxed, parallel rays of light converge to focus **BEHIND the retina**.',
         },
         {
           kind: 'sub',
@@ -368,7 +391,7 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Category', 'Cause'],
               rows: [
-                ['Axial', 'Short axial length'],
+                ['Axial', '**Short** axial length'],
                 ['Refractive', 'Too weak refractive system; long/flat corneal curvature'],
                 ['Index (too HIGH)', 'Lens cortex, vitreous'],
                 ['Index (too LOW)', 'Aqueous, cornea, lens nucleus/core'],
@@ -382,18 +405,19 @@ const data: NotesData = {
           title: 'Classification by Accommodation',
           blocks: [
             {
-              kind: 'pearl',
-              content: 'The accommodation-based classification is high-yield. Know Total = Manifest + Latent, and that Latent requires cycloplegic refraction.',
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Know **Total = Manifest + Latent**. **Latent** hyperopia is hidden by accommodation and is revealed only by **cycloplegic refraction** — a routine (non-cycloplegic) exam will under-measure the true amount.',
             },
             {
               kind: 'table',
               headers: ['Type', 'Description'],
               rows: [
-                ['Total Hyperopia', 'Entire amount that actually exists = Manifest + Latent'],
+                ['Total Hyperopia', 'Entire amount that actually exists = **Manifest + Latent**'],
                 ['Manifest Hyperopia', 'Revealed by ordinary routine examination'],
                 ['Facultative Hyperopia', 'Overcome by accommodation; VA is 20/20'],
                 ['Absolute Hyperopia', 'Cannot be overcome by accommodation'],
-                ['Latent Hyperopia', 'Hidden; requires cycloplegic refraction; revealed at presbyopic age'],
+                ['Latent Hyperopia', 'Hidden; requires **cycloplegic refraction**; revealed at presbyopic age'],
                 ['Tonic Latent', 'Relatively fixed/permanent spasm'],
                 ['Clonic Latent', 'Temporary state of spasm'],
               ],
@@ -408,7 +432,7 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Symptoms', 'Signs'],
               rows: [
-                ['Blurred vision at near', 'Constricted pupil'],
+                ['Blurred vision at **near**', 'Constricted pupil'],
                 ['Frontal and temporal headaches', 'Convergent strabismus'],
                 ['Asthenopia', 'Vertical brow / wrinkles'],
                 ['', 'Enophthalmos'],
@@ -424,14 +448,20 @@ const data: NotesData = {
       blocks: [
         {
           kind: 'text',
-          content: 'Refractive condition in which a point focus of light CANNOT be formed on the retina — instead there are MULTIPLE FOCI. Exists because of variation in powers in different meridians. Most common refractive error corrected today.',
+          content: 'Refractive condition in which a point focus of light **CANNOT** be formed on the retina — instead there are **MULTIPLE FOCI**. It exists because of variation in power between different meridians. The most common refractive error corrected today.',
+        },
+        { kind: 'diagram', id: 'conoid-of-sturm' },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content: 'Why "multiple foci"? A toric surface has two meridians of different power, so it forms **two focal lines** (not a point) at right angles to each other. Between them lies the **circle of least confusion** — the best-focus compromise, and the target we place on the retina when prescribing the spherical equivalent.',
         },
         {
           kind: 'table',
           headers: ['Meridian', 'Characteristic'],
           rows: [
-            ['Axis meridian', 'Meridian with LEAST power'],
-            ['Power meridian', 'Meridian with GREATEST power'],
+            ['Axis meridian', 'Meridian with **LEAST** power'],
+            ['Power meridian', 'Meridian with **GREATEST** power'],
           ],
         },
         {
@@ -446,17 +476,18 @@ const data: NotesData = {
           blocks: [
             { kind: 'diagram', id: 'astigmatism-meridian' },
             {
-              kind: 'pearl',
-              content: 'WTR vs ATR — the axis of correction is perpendicular to the power meridian. WTR has power near vertical; ATR has power near horizontal.',
-            },
-            {
               kind: 'table',
               headers: ['Type', 'Power Meridian', 'Axis of Correction'],
               rows: [
-                ['With-the-Rule (WTR)', 'Near vertical (60–120°)', 'Near horizontal (0–30°, 150–180°)'],
-                ['Against-the-Rule (ATR)', 'Near horizontal (0–30°, 150–180°)', 'Near vertical (60–120°)'],
+                ['With-the-Rule (WTR)', 'Near **vertical** (60–120°)', 'Near horizontal (0–30°, 150–180°)'],
+                ['Against-the-Rule (ATR)', 'Near **horizontal** (0–30°, 150–180°)', 'Near vertical (60–120°)'],
                 ['Oblique', 'Between 30–60° or 120–150°', 'Oblique axis'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The **axis of correction is perpendicular to the power meridian** — do not read the power meridian as the axis. WTR: power near **vertical**, so the correcting minus-cyl axis is near **horizontal**.',
             },
             {
               kind: 'table',
@@ -478,16 +509,12 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Type', 'Focus Position', 'Image', 'Correction'],
               rows: [
-                ['Compound Hyperopic', 'Both meridians behind retina', 'Oval', '+sph with +cyl'],
+                ['Compound Hyperopic', 'Both meridians **behind** retina', 'Oval', '+sph with +cyl'],
                 ['Simple Hyperopic', 'One on retina, one behind', 'Straight line', '+cyl only'],
-                ['Compound Myopic', 'Both meridians in front of retina', 'Oval', '−sph with −cyl'],
+                ['Compound Myopic', 'Both meridians **in front** of retina', 'Oval', '−sph with −cyl'],
                 ['Simple Myopic', 'One on retina, one in front', 'Straight line', '−cyl only'],
                 ['Mixed', 'One in front, one behind', 'Circle (equal) or oval (unequal)', 'Opposite sign sphere + higher cyl'],
               ],
-            },
-            {
-              kind: 'pearl',
-              content: 'WTR astigmatism: vertical power meridian → image is horizontal line → compound myopic (oval vertical). ATR: horizontal power → image is vertical line.',
             },
           ],
         },
@@ -536,16 +563,17 @@ const data: NotesData = {
           items: [
             'Retina',
             'Optic Nerve',
-            'Optic Chiasma — nasal fibers cross; temporal fibers stay ipsilateral',
+            'Optic Chiasma — **nasal fibers cross**; temporal fibers stay ipsilateral',
             'Optic Tract — nasal fibers of one eye + temporal fibers of opposite eye',
             'Lateral Geniculate Body (LGB) — subcortical relay station',
             'Optic Radiations',
-            'Area Striata / Broadman Area #17 — visual cortex; medial aspect of occipital lobe',
+            'Area Striata / Broadman Area **#17** — visual cortex; medial aspect of occipital lobe',
           ],
         },
         {
-          kind: 'pearl',
-          content: 'Rule: Lesion on retina or optic nerve = MONOCULAR defect. Lesion from chiasma to Area 17 = BINOCULAR defect.',
+          kind: 'callout',
+          variant: 'why',
+          content: 'Why is a lesion **before** the chiasm monocular but **after** it binocular? Up to the optic nerve, all fibers belong to one eye. At the chiasm the nasal fibers cross, so from the optic tract onward each side carries fibers from **both** eyes — one lesion now clips the **same half of the field in both eyes** (homonymous).',
         },
         {
           kind: 'sub',
@@ -555,8 +583,8 @@ const data: NotesData = {
               kind: 'table',
               headers: ['Lesion Site', 'Visual Field Defect', 'Key Note'],
               rows: [
-                ['Optic Nerve (R)', 'Total blindness of the right eye', 'Monocular'],
-                ['Optic Nerve (L)', 'Total blindness of the left eye', 'Monocular'],
+                ['Optic Nerve (R)', 'Total blindness of the right eye', '**Monocular**'],
+                ['Optic Nerve (L)', 'Total blindness of the left eye', '**Monocular**'],
                 ['Optic Chiasma (crossed)', 'Bitemporal heteronymous hemianopsia', 'Most classic chiasmal lesion'],
                 ['Optic Chiasma (uncrossed)', 'Binasal heteronymous hemianopsia', ''],
                 ['One side of chiasma', 'Nasal hemianopsia (same side)', ''],
@@ -570,8 +598,9 @@ const data: NotesData = {
               ],
             },
             {
-              kind: 'pearl',
-              content: 'Congruous = closer to brain (LGB, OR, Area 17). Incongruous = farther from brain (optic tract).',
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Congruous = Closer** to the brain (LGB, optic radiation, Area 17 → the two eyes\' defects match). **Incongruous = farther** (optic tract → defects mismatch).',
             },
           ],
         },
@@ -596,14 +625,14 @@ const data: NotesData = {
             ['By Location', 'Central', 'Involves the point of fixation'],
             ['By Location', 'Peripheral', 'Involves peripheral areas'],
             ['Special', 'Scintillating', 'Common in migraine'],
-            ['Special', 'Arcuate', 'Arch-like extension of blindspot; early sign of glaucoma'],
+            ['Special', 'Arcuate', 'Arch-like extension of blindspot; **early sign of glaucoma**'],
             ['Special', 'Nasal-step', 'Nasal field step defect'],
             ['Special', 'Centro-cecal', 'Connects fixation point to blindspot'],
           ],
         },
         {
           kind: 'pearl',
-          content: 'The blindspot is an example of an absolute AND negative scotoma.',
+          content: 'The **blindspot** is the classic example of an **absolute AND negative** scotoma.',
         },
       ],
     },
@@ -614,8 +643,8 @@ const data: NotesData = {
         {
           kind: 'bullets',
           items: [
-            'Miosis = pupil smaller in size',
-            'Mydriasis = pupil larger in size',
+            '**Miosis** = pupil smaller in size',
+            '**Mydriasis** = pupil larger in size',
             'Entrance pupil (apparent pupil): virtual, enlarged image of real pupil due to corneal/lens refraction — located ~0.5 mm from cornea',
             'Exit pupil: magnified image viewed from behind the eye',
             'Pupils appear black due to conjugate foci',
@@ -625,16 +654,22 @@ const data: NotesData = {
           kind: 'sub',
           title: 'Pupillary Reflexes',
           blocks: [
+            { kind: 'diagram', id: 'pupillary-light-reflex' },
             {
               kind: 'table',
               headers: ['Reflex', 'Stimulus', 'Response'],
               rows: [
-                ['Direct Light Reflex', 'Light to one retina', 'Miosis of the same eye'],
-                ['Consensual (Indirect) Light Reflex', 'Light to one retina', 'Miosis of the opposite eye'],
+                ['Direct Light Reflex', 'Light to one retina', 'Miosis of the **same** eye'],
+                ['Consensual (Indirect) Light Reflex', 'Light to one retina', 'Miosis of the **opposite** eye'],
                 ['Accommodation-Near Reflex', 'Near target', 'Convergence + miosis + ciliary contraction + zonule relaxation + increased lens convexity'],
                 ['Trigeminal Reflex', 'Stimulation of CN V (cornea, conjunctiva, facial skin)', 'Miosis'],
                 ['Psychic Reflex', 'Sympathetic stimulation', 'Mydriasis'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why does light in **one** eye constrict **both** pupils (direct + consensual)? Because the afferent signal reaches **both** Edinger-Westphal nuclei — the pretectal nucleus projects to the EW nucleus on each side. So both CN III efferents fire, and both sphincters constrict together.',
             },
           ],
         },
@@ -645,16 +680,16 @@ const data: NotesData = {
             {
               kind: 'bullets',
               items: [
-                'Retina → Optic Nerve (afferent) → Optic Chiasma → Optic Tract',
+                'Retina → Optic Nerve (**afferent**) → Optic Chiasma → Optic Tract',
                 '→ Pre-tectal Nucleus',
-                '→ Edinger-Westphal Nucleus (ipsilateral AND contralateral)',
+                '→ Edinger-Westphal Nucleus (**ipsilateral AND contralateral**)',
                 '→ Pre-ganglionic fiber → Ciliary Ganglion',
                 '→ Post-ganglionic fiber → Sphincter Pupillae & Ciliary Muscles',
               ],
             },
             {
               kind: 'pearl',
-              content: 'CN II = afferent limb (senses light). CN III = efferent limb (drives sphincter pupillae to constrict).',
+              content: '**CN II = afferent** limb (senses light). **CN III = efferent** limb (drives the sphincter pupillae to constrict).',
             },
           ],
         },
@@ -698,7 +733,7 @@ const data: NotesData = {
                 ['Hippus', 'Rhythmic pupil oscillation'],
                 ['Amaurotic pupils', 'Pupils of a blind eye'],
                 ["Adie's Syndrome", 'Tonic pupil — dilated, near-light dissociation'],
-                ['Argyll-Robertson Pupil', 'Miotic, irregular; accommodates but does not react to light (syphilis)'],
+                ['Argyll-Robertson Pupil', 'Miotic, irregular; **accommodates but does not react to light** (syphilis)'],
                 ["Horner's Syndrome", 'Miosis, ptosis, anhidrosis (sympathetic chain lesion)'],
               ],
             },

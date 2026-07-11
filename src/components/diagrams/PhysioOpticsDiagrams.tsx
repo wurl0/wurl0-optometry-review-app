@@ -402,6 +402,171 @@ export function AccommodationDiagram() {
   )
 }
 
+// ─── 6. Schematic Eye — Cardinal Points ────────────────────────────────────────
+
+export function SchematicEyeCardinalPointsDiagram() {
+  const ax = 112             // y of optical axis
+  const cornea = 170         // x of cornea (front of eye)
+  const mmToPx = 6
+  const F = cornea - 15.7 * mmToPx   // ≈ 76  anterior focal point
+  const P = cornea + 1.5 * mmToPx    // ≈ 179 principal points
+  const N = cornea + 7.2 * mmToPx    // ≈ 213 nodal points
+  const Fp = cornea + 24.4 * mmToPx  // ≈ 316 posterior focal pt = retina
+  return (
+    <DiagramShell caption="Cardinal points of the schematic eye — a ray aimed at N leaves through N′ undeviated">
+      <svg viewBox="0 0 430 210" className="w-full">
+        <rect width="430" height="210" fill="#f9fafb" />
+
+        {/* optical axis */}
+        <line x1={30} y1={ax} x2={405} y2={ax} stroke="#9ca3af" strokeWidth={1} strokeDasharray="4,3" />
+        <text x={408} y={ax + 3} fontSize={8.5} fill="#9ca3af">axis</text>
+
+        {/* eyeball */}
+        <ellipse cx={(cornea + Fp) / 2} cy={ax} rx={(Fp - cornea) / 2} ry={62} fill="#eff6ff" stroke="#374151" strokeWidth={1.5} />
+        {/* cornea (front bulge) */}
+        <path d={`M ${cornea} ${ax - 40} Q ${cornea - 14} ${ax} ${cornea} ${ax + 40}`} fill="none" stroke="#3b82f6" strokeWidth={2} />
+        {/* crystalline lens */}
+        <ellipse cx={cornea + 20} cy={ax} rx={7} ry={26} fill="#dbeafe" stroke="#93c5fd" strokeWidth={1} />
+        {/* retina */}
+        <path d={`M ${Fp} ${ax - 40} Q ${Fp + 10} ${ax} ${Fp} ${ax + 40}`} fill="none" stroke="#dc2626" strokeWidth={2.5} />
+
+        {/* nodal ray: aimed at N, emerges from N′ with same slope */}
+        <line x1={112} y1={ax - 52} x2={N} y2={ax} stroke="#14b8a6" strokeWidth={1.4} />
+        <line x1={N} y1={ax} x2={Fp} y2={ax + 47} stroke="#14b8a6" strokeWidth={1.4} strokeDasharray="1,0" />
+        <text x={120} y={ax - 56} fontSize={8} fill="#0d9488">incident ray</text>
+
+        {/* cardinal point ticks + labels */}
+        {[
+          { x: F, top: 'F', bot: 'ant. focal', sub: '15.7 mm', color: '#b45309' },
+          { x: P, top: 'P P′', bot: 'principal', sub: '', color: '#6b7280' },
+          { x: N, top: 'N N′', bot: 'nodal', sub: '7.1 / 7.3', color: '#0d9488' },
+          { x: Fp, top: 'F′', bot: 'post. focal', sub: '24.4 mm', color: '#b91c1c' },
+        ].map((p, i) => (
+          <g key={i}>
+            <line x1={p.x} y1={ax - 7} x2={p.x} y2={ax + 7} stroke={p.color} strokeWidth={2} />
+            <circle cx={p.x} cy={ax} r={2.6} fill={p.color} />
+            <text x={p.x} y={ax - 12} textAnchor="middle" fontSize={9.5} fontWeight="bold" fill={p.color}>{p.top}</text>
+            <text x={p.x} y={ax + 20} textAnchor="middle" fontSize={7.5} fill="#6b7280">{p.bot}</text>
+            {p.sub && <text x={p.x} y={ax + 30} textAnchor="middle" fontSize={7.5} fill="#9ca3af">{p.sub}</text>}
+          </g>
+        ))}
+
+        <text x={cornea} y={ax + 56} textAnchor="middle" fontSize={7.5} fill="#3b82f6">cornea</text>
+        <text x={215} y={196} textAnchor="middle" fontSize={8.5} fill="#6b7280">distances measured from the corneal apex</text>
+      </svg>
+    </DiagramShell>
+  )
+}
+
+// ─── 7. Conoid of Sturm (astigmatic bundle) ────────────────────────────────────
+
+export function ConoidOfSturmDiagram() {
+  const cy = 112
+  const lens = 48, afl = 175, clc = 250, pfl = 330
+  return (
+    <DiagramShell caption="Astigmatism forms two perpendicular focal lines, not a point — the interval of Sturm">
+      <svg viewBox="0 0 440 220" className="w-full">
+        <rect width="440" height="220" fill="#f9fafb" />
+
+        {/* toric lens */}
+        <ellipse cx={lens} cy={cy} rx={9} ry={58} fill="#dbeafe" stroke="#3b82f6" strokeWidth={1.5} />
+        <text x={lens} y={cy + 78} textAnchor="middle" fontSize={8.5} fill="#3b82f6">toric lens</text>
+
+        {/* vertical-extent envelope: tall at lens → horizontal line at AFL → tall vertical line at PFL */}
+        <path d={`M ${lens} ${cy - 55} L ${afl} ${cy} L ${pfl} ${cy - 52}`} fill="none" stroke="#14b8a6" strokeWidth={1.4} />
+        <path d={`M ${lens} ${cy + 55} L ${afl} ${cy} L ${pfl} ${cy + 52}`} fill="none" stroke="#14b8a6" strokeWidth={1.4} />
+        <path d={`M ${pfl} ${cy - 52} L 415 ${cy - 66}`} fill="none" stroke="#14b8a6" strokeWidth={1} opacity={0.4} strokeDasharray="3,2" />
+        <path d={`M ${pfl} ${cy + 52} L 415 ${cy + 66}`} fill="none" stroke="#14b8a6" strokeWidth={1} opacity={0.4} strokeDasharray="3,2" />
+
+        {/* anterior focal line (horizontal) */}
+        <line x1={afl - 22} y1={cy} x2={afl + 22} y2={cy} stroke="#dc2626" strokeWidth={3} strokeLinecap="round" />
+        <text x={afl} y={cy - 60} textAnchor="middle" fontSize={8.5} fontWeight="bold" fill="#b91c1c">anterior</text>
+        <text x={afl} y={cy - 50} textAnchor="middle" fontSize={8} fill="#b91c1c">focal line</text>
+        <text x={afl} y={cy + 74} textAnchor="middle" fontSize={7.5} fill="#6b7280">vertical meridian</text>
+
+        {/* circle of least confusion */}
+        <circle cx={clc} cy={cy} r={17} fill="none" stroke="#7c3aed" strokeWidth={2} />
+        <text x={clc} y={cy - 60} textAnchor="middle" fontSize={8.5} fontWeight="bold" fill="#6d28d9">circle of</text>
+        <text x={clc} y={cy - 50} textAnchor="middle" fontSize={8} fill="#6d28d9">least confusion</text>
+
+        {/* posterior focal line (vertical) */}
+        <line x1={pfl} y1={cy - 22} x2={pfl} y2={cy + 22} stroke="#dc2626" strokeWidth={3} strokeLinecap="round" />
+        <text x={pfl + 4} y={cy - 40} textAnchor="middle" fontSize={8.5} fontWeight="bold" fill="#b91c1c">posterior</text>
+        <text x={pfl + 4} y={cy - 30} textAnchor="middle" fontSize={8} fill="#b91c1c">focal line</text>
+        <text x={pfl} y={cy + 74} textAnchor="middle" fontSize={7.5} fill="#6b7280">horizontal meridian</text>
+
+        {/* interval of Sturm bracket */}
+        <line x1={afl} y1={188} x2={pfl} y2={188} stroke="#374151" strokeWidth={1} />
+        <line x1={afl} y1={183} x2={afl} y2={193} stroke="#374151" strokeWidth={1} />
+        <line x1={pfl} y1={183} x2={pfl} y2={193} stroke="#374151" strokeWidth={1} />
+        <text x={(afl + pfl) / 2} y={205} textAnchor="middle" fontSize={8.5} fill="#374151">interval of Sturm</text>
+      </svg>
+    </DiagramShell>
+  )
+}
+
+// ─── 8. Pupillary Light Reflex (direct + consensual) ───────────────────────────
+
+export function PupillaryLightReflexDiagram() {
+  const Lx = 130, Rx = 330, eyeY = 250
+  return (
+    <DiagramShell caption="Light in one eye constricts BOTH pupils — the afferent signal reaches both Edinger-Westphal nuclei">
+      <svg viewBox="0 0 460 300" className="w-full">
+        <rect width="460" height="300" fill="#f9fafb" />
+
+        {/* Edinger-Westphal (bilateral) */}
+        <rect x={150} y={44} width={160} height={30} rx={7} fill="#dcfce7" stroke="#16a34a" strokeWidth={1.5} />
+        <text x={230} y={60} textAnchor="middle" fontSize={9} fontWeight="bold" fill="#166534">Edinger-Westphal nuclei</text>
+        <text x={230} y={70} textAnchor="middle" fontSize={7.5} fill="#166534">(left + right — bilateral)</text>
+
+        {/* Pretectal nucleus */}
+        <rect x={170} y={92} width={120} height={26} rx={7} fill="#fef9c3" stroke="#ca8a04" strokeWidth={1.5} />
+        <text x={230} y={108} textAnchor="middle" fontSize={9} fontWeight="bold" fill="#92400e">pretectal nucleus</text>
+
+        {/* afferent CN II (blue): right eye → chiasm → both pretectal */}
+        <line x1={Rx} y1={eyeY - 20} x2={278} y2={170} stroke="#2563eb" strokeWidth={2} />
+        <line x1={278} y1={170} x2={230} y2={132} stroke="#2563eb" strokeWidth={2} />
+        <line x1={230} y1={132} x2={230} y2={118} stroke="#2563eb" strokeWidth={2} />
+        <text x={300} y={150} fontSize={8.5} fontWeight="bold" fill="#2563eb">CN II</text>
+        <text x={300} y={160} fontSize={7.5} fill="#2563eb">afferent</text>
+
+        {/* pretectal → EW (both) */}
+        <line x1={200} y1={92} x2={200} y2={74} stroke="#16a34a" strokeWidth={1.6} />
+        <line x1={260} y1={92} x2={260} y2={74} stroke="#16a34a" strokeWidth={1.6} />
+
+        {/* efferent CN III (green): EW → both eyes */}
+        <line x1={180} y1={74} x2={Lx} y2={eyeY - 22} stroke="#16a34a" strokeWidth={2} />
+        <line x1={280} y1={74} x2={Rx} y2={eyeY - 22} stroke="#16a34a" strokeWidth={2} />
+        <text x={95} y={168} fontSize={8.5} fontWeight="bold" fill="#16a34a">CN III</text>
+        <text x={95} y={178} fontSize={7.5} fill="#16a34a">efferent</text>
+        <text x={Lx - 8} y={eyeY - 55} textAnchor="middle" fontSize={7} fill="#166534">ciliary ganglion</text>
+
+        {/* eyes with constricted pupils */}
+        {[{ x: Lx, lbl: 'consensual' }, { x: Rx, lbl: 'direct' }].map((e, i) => (
+          <g key={i}>
+            <ellipse cx={e.x} cy={eyeY} rx={30} ry={19} fill="#eff6ff" stroke="#374151" strokeWidth={1.5} />
+            <circle cx={e.x} cy={eyeY} r={11} fill="#bfdbfe" stroke="#3b82f6" strokeWidth={1} />
+            <circle cx={e.x} cy={eyeY} r={4.5} fill="#111827" />
+            <text x={e.x} y={eyeY + 34} textAnchor="middle" fontSize={9} fontWeight="bold" fill="#111827">{e.lbl}</text>
+            <text x={e.x} y={eyeY + 45} textAnchor="middle" fontSize={7.5} fill="#6b7280">pupil constricts</text>
+          </g>
+        ))}
+        <text x={Lx} y={eyeY - 26} textAnchor="middle" fontSize={8} fill="#374151">Left eye</text>
+        <text x={Rx} y={eyeY - 26} textAnchor="middle" fontSize={8} fill="#374151">Right eye</text>
+
+        {/* light into right eye */}
+        <line x1={425} y1={eyeY + 6} x2={Rx + 30} y2={eyeY} stroke="#f59e0b" strokeWidth={2.5} markerEnd="url(#plrArrow)" />
+        <text x={415} y={eyeY + 22} textAnchor="middle" fontSize={8.5} fontWeight="bold" fill="#b45309">light</text>
+        <defs>
+          <marker id="plrArrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#f59e0b" />
+          </marker>
+        </defs>
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ──────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
@@ -410,6 +575,9 @@ export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'astigmatism-meridian':      AstigmatismMeridianDiagram,
   'eye-layers':                EyeLayersDiagram,
   'accommodation-mechanism':   AccommodationDiagram,
+  'schematic-eye-cardinal':    SchematicEyeCardinalPointsDiagram,
+  'conoid-of-sturm':           ConoidOfSturmDiagram,
+  'pupillary-light-reflex':    PupillaryLightReflexDiagram,
 }
 
 export function DiagramRenderer({ id, caption }: { id: string; caption?: string }) {
