@@ -85,6 +85,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Transverse / Horizontal', 'Superior (upper) and inferior (lower)'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The board splits hairs here: **median (mid-sagittal) = EXACTLY equal** left/right halves; a plain **sagittal** plane is parallel but **unequal**. So every median plane is sagittal, but not every sagittal plane is median. **Coronal = front/back, Transverse = top/bottom.**',
+            },
           ],
         },
         {
@@ -244,6 +249,11 @@ export const generalAnatomyNotes: NotesData = {
                 'Ossicles (ear): 3 pairs — Malleus (hammer), Incus (anvil), Stapes (stirrup = smallest bone in body)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Tie this back to the eye: **7 bones form the orbit** — Frontal, Sphenoid, Ethmoid, Lacrimal, Maxilla, Palatine, Zygomatic. Of the skull\'s **13 total** (8 paired + 5 unpaired), these seven build the socket. **Stapes = smallest bone; Femur = biggest** — the two extremes examiners love to pair.',
+            },
           ],
         },
         {
@@ -273,6 +283,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Antero-lateral/Sphenoid', '—', 'Frontal + parietal + temporal + sphenoid', '2 months'],
                 ['Postero-lateral/Mastoid', '—', 'Parietal + temporal + occipital', '2 months'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Anterior fontanel = biggest, closes LAST (18–24 months); all the others close by ~2 months.** "Anterior is A-1: largest and last." Its diamond shape and late closure make it the clinical window — a bulging one signals raised intracranial pressure, a sunken one dehydration.',
             },
           ],
         },
@@ -336,6 +351,11 @@ export const generalAnatomyNotes: NotesData = {
           ],
         },
         {
+          kind: 'callout',
+          variant: 'why',
+          content: '**Calcium is the switch.** At rest, tropomyosin physically **covers actin\'s binding sites** so nothing happens. Ca²⁺ binding to **troponin C** pulls tropomyosin off the sites, letting myosin grab and drag. That is why anything raising intracellular Ca²⁺ strengthens contraction — and why **smooth muscle** (no troponin) uses a **calmodulin** pathway instead, the detail examiners use to separate the two.',
+        },
+        {
           kind: 'diagram',
           id: 'ga-muscle-types',
         },
@@ -375,6 +395,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Quadriceps femoris', 'Strongest skeletal muscle'],
                 ['Tendon of Achilles', 'Largest tendon — connects gastrocnemius to calcaneus'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Two "shortest" traps that show up in eye questions: **Müller\'s muscle = shortest SMOOTH muscle (eyelid)**, while **Stapedius = smallest/weakest SKELETAL muscle (ear)**. Don\'t swap "smooth" and "skeletal." Longest skeletal = **Sartorius**; strongest = **quadriceps femoris**.',
             },
           ],
         },
@@ -450,7 +475,12 @@ export const generalAnatomyNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Visual agnosia = inability to recognize objects by sight while retaining ability to recognize by touch. Caused by injury to Brodmann area #19.',
+              content: 'Visual agnosia = inability to recognize objects by sight while retaining ability to recognize by touch. Caused by injury to Brodmann area **#19**.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'The visual trio climbs **17 → 18 → 19** with rising complexity: **#17 = primary visual cortex** (raw sight; lesion = cortical blindness), **#18 = secondary/optico-motor** (lesion disturbs eye movements), **#19 = association/visuo-psychic** (lesion = visual agnosia — you *see* but can\'t *recognize*). "See it at 17, move to it at 18, understand it at 19."',
             },
           ],
         },
@@ -466,6 +496,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Pons Varolii', 'CN#5–CN#8', 'Pneumotaxic center (apneustic + expiration centers); bridge between midbrain and medulla'],
                 ['Medulla Oblongata', 'CN#9–CN#12', 'Vital centers: heart rate, blood pressure, respiratory, coughing, vomiting, swallowing; fiber tract crossing to contralateral side'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'CN nuclei climb down the brainstem in order: **Midbrain = 3, 4** · **Pons = 5, 6, 7, 8** · **Medulla = 9, 10, 11, 12.** So the eye-movement nerves live up top — **CN3/4 in the midbrain, CN6 in the pons** — which is why a midbrain stroke hits pupils and vertical gaze while a pontine lesion knocks out abduction (CN6) and the face (CN7).',
             },
           ],
         },
@@ -555,6 +590,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Capillaries', 'Between arteries and veins', 'Single-cell thick endothelium; site of gas and nutrient exchange'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: '**Arteries carry blood AWAY from the heart; veins carry it TOWARD** — that is the true definition, not "oxygenated vs deoxygenated." The **pulmonary artery carries deoxygenated blood** (to lungs) and the **pulmonary vein carries oxygenated blood** (back to heart). The direction never has an exception; the oxygen content does.',
+            },
           ],
         },
         {
@@ -623,6 +663,11 @@ export const generalAnatomyNotes: NotesData = {
                 'Lungs: R lung (3 lobes: upper, middle, lower), L lung (2 lobes: upper, lower); covered by visceral pleura',
                 'Surfactant — produced by type II pneumocytes; reduces surface tension; deficiency = respiratory distress syndrome (RDS) in premature infants',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Aspirated objects lodge in the **RIGHT main bronchus** because it is **wider, shorter, and more vertical** — a straighter shot down. And **surfactant** (type II pneumocytes) is the answer to premature-infant RDS: too little surface-tension reducer means the alveoli collapse on each breath.',
             },
           ],
         },
@@ -730,6 +775,11 @@ export const generalAnatomyNotes: NotesData = {
                 ['Pancreas (alpha cells)', 'Glucagon', 'Raises blood glucose; promotes glycogenolysis'],
                 ['Pineal gland', 'Melatonin', 'Sleep-wake cycle regulation'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Beta = Build (insulin stores glucose, lowers blood sugar); Alpha = Attack (glucagon raises it).** "B for Bank it, A for spend it." Diabetes-related retinopathy traces back to chronic high glucose from the insulin side failing — the endocrine fact with the biggest optometric payoff.',
             },
           ],
         },

@@ -92,7 +92,12 @@ export const ocularAnatomyNotes: NotesData = {
         },
         {
           kind: 'pearl',
-          content: 'Memory tip: Neural ectoderm = retina + optic nerve + pupil muscles. Surface ectoderm = lens + glands. Neural crest = trabecular meshwork + orbit bones. Mesoderm = muscles + Tenon\'s capsule.',
+          content: 'Memory tip: **Neural ectoderm** = retina + optic nerve + pupil muscles. **Surface ectoderm** = lens + glands. **Neural crest** = trabecular meshwork + orbit bones. **Mesoderm** = muscles + Tenon\'s capsule.',
+        },
+        {
+          kind: 'callout',
+          variant: 'trap',
+          content: 'The board trap: the **pupil muscles (sphincter + dilator) come from NEURAL ectoderm**, not mesoderm — they are the only muscles in the body of ectodermal origin. And most orbital connective tissue and the **trabecular meshwork are NEURAL CREST**, not true mesoderm. If an answer choice says "mesoderm" for the iris muscles, it is wrong.',
         },
       ],
     },
@@ -153,6 +158,11 @@ export const ocularAnatomyNotes: NotesData = {
                 ['Lateral/Outer Wall', 'Triangular (thickest & strongest)', 'Greater wing of sphenoid + Zygomatic bone', 'Lateral orbital tubercle (11mm from fronto-zygomatic suture); attachment for check ligament LR, Ligament of Lockwood, lateral palpebral ligament, aponeurosis of LPS'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Two walls break first because they are paper-thin: the **medial wall** (lamina papyracea of the ethmoid — literally "paper layer," next to the ethmoid sinus) and the **floor** (over the maxillary sinus). A **blowout fracture** of the floor traps the **inferior rectus/IO**, causing **restricted upgaze and enophthalmos**. The lateral wall is thickest and strongest — it protects, it does not blow out.',
+            },
           ],
         },
         {
@@ -169,6 +179,11 @@ export const ocularAnatomyNotes: NotesData = {
                 ['Anterior & Posterior Ethmoidal Foramen', 'Fronto-ethmoidal suture', 'Ethmoidal nerves'],
                 ['Nasolacrimal Canal', 'Extends from lacrimal fossa to inferior meatus of nose', 'Nasolacrimal duct'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'What runs through the **superior orbital fissure**: **"Lazy French Tarts Sit Naked In Anticipation"** → **L**acrimal, **F**rontal, **T**rochlear (CN4), **S**uperior division of CN3, **N**asociliary, **I**nferior division of CN3, **A**bducens (CN6). Also remember the **optic canal** carries only CN2 + ophthalmic artery — CN2 does NOT pass the SOF.',
             },
           ],
         },
@@ -319,6 +334,11 @@ export const ocularAnatomyNotes: NotesData = {
                 "Sympathetic nerve — for Muller's Muscle",
                 'CN #5 — ophthalmic and maxillary divisions (sensation)',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Two different nerves lift the lid, which is why ptosis has two flavors. **LPS (CN3)** does the heavy lifting; **Müller\'s muscle (sympathetic)** adds the last **1–2 mm**. So a **CN3 palsy = complete ptosis** (lid fully down), while **Horner\'s = mild 1–2 mm ptosis** (only Müller\'s is lost). The amount of droop tells you which nerve failed.',
             },
           ],
         },
@@ -519,6 +539,16 @@ export const ocularAnatomyNotes: NotesData = {
                 '6. Corneal Endothelium — single layer of mesothelial hexagonal (cuboidal) cells bathing Descemet\'s; responsible for deturgescence via Na-K+ pump (Na-K ATPase); Ouabain inhibits ATPase; damage causes permanent marked swelling and loss of transparency (Fuch\'s endothelial dystrophy)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The stroma is **75–80% water and wants to swell**; the **endothelial Na-K ATPase pump** constantly bails that water out into the aqueous (deturgescence). Because the **endothelium canNOT regenerate**, every lost cell is permanent — when density drops too far the pump fails, the stroma floods, and the cornea clouds (Fuch\'s dystrophy, bullous keratopathy). This is also why endothelial cell counts matter before cataract surgery.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Which corneal layers regenerate is a favorite: **Epithelium YES, Bowman\'s NO, Stroma (scars, not true regen), Descemet\'s YES, Endothelium NO.** So **Bowman\'s and the endothelium heal by scar/spread, never by true regeneration** — damage there is permanent, whereas an epithelial abrasion resurfaces in a day or two.',
+            },
           ],
         },
         {
@@ -634,6 +664,11 @@ export const ocularAnatomyNotes: NotesData = {
                     '  3. Circular (Müller\'s) — innermost; parallel to lens equator; site of attachment of zonular fibers',
                   ],
                 },
+                {
+                  kind: 'callout',
+                  variant: 'why',
+                  content: 'This is the same counterintuitive move as accommodation: the ciliary muscle **contracts to LOOSEN the zonules**. Its circular fibers act like a **sphincter** — contracting shrinks the ring, which **slackens the zonule of Zinn**, and the freed lens rounds up (more biconvex, more plus) to focus near. Relax the muscle and the ring widens, zonules pull taut, lens flattens for distance. Muscle working = near.',
+                },
               ],
             },
             {
@@ -678,6 +713,11 @@ export const ocularAnatomyNotes: NotesData = {
                     '2. Dilator Pupillae (Radial Muscles) — runs radially in iris stroma (ciliary zone); contraction causes dilation >5 mm (mydriasis); innervated by SYMPATHETIC nerve',
                     'Normal pupil size: 3–4 mm',
                   ],
+                },
+                {
+                  kind: 'callout',
+                  variant: 'mnemonic',
+                  content: '**Sphincter = Circular = Parasympathetic = Small pupil** (all the "constrict" words group together, via CN3). **Dilator = Radial = Sympathetic = big pupil** ("fight-or-flight blows the pupil open"). This is why a **CN3 palsy gives a blown, fixed dilated pupil** (sphincter offline) and **Horner\'s gives miosis** (dilator offline).',
                 },
               ],
             },
@@ -772,6 +812,16 @@ export const ocularAnatomyNotes: NotesData = {
                 ["Horner's Syndrome", 'Lesion at superior cervical sympathetic ganglion; Signs: Muller\'s Muscle → partial blepharoptosis (1–2 mm droop), Dilator Pupillae → miosis, Sweat Glands → facial anhidrosis; Cocaine test (5–10%): affected pupil will NOT dilate; 1% Hydroxyamphetamine distinguishes central/pre-ganglionic (dilates) from post-ganglionic (does not dilate)'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Argyll Robertson "Accommodates but does not React"** — light-near dissociation, **bilateral, small, irregular**, think **neurosyphilis**. **Adie\'s** is the opposite profile: **unilateral, large, tonic**, sluggish, **young woman + lost knee-jerk**, and it **super-constricts to dilute 0.125% pilocarpine** (denervation hypersensitivity). "**A**rgyll = **A**ccommodation spared, syphilis; **A**die = **A**tonic, big, benign."',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'In an **RAPD (Marcus-Gunn)** the swinging flashlight makes the affected pupil appear to **dilate to light** — not because the sphincter is weak, but because that eye\'s **afferent (CN2) signal is diminished**, so when the light swings onto it the brain "sees less light" and both pupils relax from the stronger consensual drive of the good eye. The efferent path is intact; the **defect is in the input**, which is why the *other* eye\'s response localizes it.',
+            },
           ],
         },
         {
@@ -787,6 +837,11 @@ export const ocularAnatomyNotes: NotesData = {
                 ['Contralateral Direct', 'INTACT', 'INTACT'],
                 ['Contralateral Consensual', 'LOST', 'INTACT'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Work it from "afferent vs efferent." A **CN2 (optic) lesion is a sensory/input problem** — shine light in the bad eye and **neither** pupil reacts (no signal gets in), but the bad eye still constricts when you light the *good* eye (its efferent CN3 works). A **CN3 lesion is a motor/output problem** — that pupil **never constricts** to any light, direct or consensual, but shining light in the bad eye still constricts the *other* pupil. Afferent kills input, efferent kills that pupil\'s output.',
             },
           ],
         },
@@ -849,13 +904,23 @@ export const ocularAnatomyNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Site of retinal detachment: between RPE and photoreceptor layer. Permanent loss of vision occurs within 24–72 hours if not repaired.',
+              content: 'Site of retinal detachment: between **RPE and photoreceptor layer** (the embryonic cleft — RPE from outer optic cup, photoreceptors from inner). Permanent loss of vision occurs within **24–72 hours** if the macula detaches.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Rods = Rhodopsin, Rods Rule the Right (dim) conditions** — **~130 million**, peripheral, one pigment (**507 nm**), scotopic/night, high sensitivity but no color. **Cones = Color + Central**, **~6 million**, three pigments (R/G/B), photopic/day, sharp acuity. "Rods for the dark and the edges, cones for color and the center."',
             },
           ],
         },
         {
           kind: 'diagram',
           id: 'oa-retinal-layers',
+        },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content: 'The retina is **inverted (back-to-front)**: light must pass through all the inner neural layers **before** reaching the rods and cones sitting at the very back against the RPE. That is exactly why the **fovea is a pit** — the inner layers are swept aside so light hits the densely packed cones directly, giving the sharpest vision. It also explains the **blind spot**: where axons exit as the optic nerve, there is no room for photoreceptors.',
         },
         {
           kind: 'sub',
@@ -987,6 +1052,11 @@ export const ocularAnatomyNotes: NotesData = {
           content: 'Move the eye in vertical and horizontal directions and to rotate the eye. There are 6 EOMs: 4 Recti muscles (all originate from Annulus of Zinn, inserted in front of equator of sclera) and 2 Obliques (both inserted behind equator of sclera). Herring\'s Law: yoke muscles receive equal and simultaneous innervation. Sherrington\'s Law: increased innervation to agonist = decreased innervation to antagonist.',
         },
         {
+          kind: 'callout',
+          variant: 'mnemonic',
+          content: '**Hering = two eyes (Handshake between yoke muscles across both eyes get equal innervation). Sherrington = one eye (agonist ↑ so antagonist ↓ in the SAME eye — reciprocal inhibition).** Hering explains why a paretic muscle causes the *other* eye to overshoot; Sherrington explains why the direct antagonist relaxes as a muscle contracts.',
+        },
+        {
           kind: 'diagram',
           id: 'oa-eom-cardinal',
         },
@@ -1005,6 +1075,16 @@ export const ocularAnatomyNotes: NotesData = {
                 ['Superior Oblique (longest EOM including tendon)', '7–18 mm', 'Intorsion', 'Depression', 'Abduction', 'CN #4'],
                 ['Inferior Oblique (shortest EOM)', '5–14 mm', 'Extorsion', 'Elevation', 'Abduction', 'CN #3'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The obliques feel backwards because they approach the eye **from the front-nasal side and pull posteriorly**. So the **Superior Oblique DEPRESSES** and the **Inferior Oblique ELEVATES** — opposite to what their names suggest. Their primary action is actually **torsion** (SO intorts, IO extorts); vertical action only shows up in **adduction**, when the muscle\'s line of pull lines up with the visual axis. That is why you test SO by asking the adducted eye to look **down**.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Innervation: **LR6 (SO4) rest 3** — Lateral Rectus = CN**6**, Superior Oblique = CN**4**, everything else = CN**3**. Vertical-recti rule: the **Superior Rectus IN**torts and the **Inferior Rectus EX**torts (recti and their same-name obliques oppose in torsion). Elevators = **SR + IO**; depressors = **IR + SO**.',
             },
           ],
         },
@@ -1039,6 +1119,11 @@ export const ocularAnatomyNotes: NotesData = {
                 'CN#4 (trochlear) — thinnest and most slender; 2,150–3,400 fibers; innervates contralateral SO; only CN that completely decussates; enters via lateral part of SOF; longest intracranial course (75 mm)',
                 'CN#6 (abducens) — shortest intracranial course; 3,600 nerve fibers; innervates ipsilateral LR; enters via medial part of SOF',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: '**CN4 collects the "only" superlatives:** thinnest CN, fewest fibers, only one to **completely decussate** (so it innervates the **contralateral** SO), only CN to exit the **dorsal** brainstem, and longest intracranial course. Its long, thin, crossed path is why it is the **most easily damaged by head trauma**, producing vertical diplopia worse on downgaze (reading, stairs) and a compensatory head tilt.',
             },
           ],
         },
