@@ -309,7 +309,12 @@ export const ocularDiseaseNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Ciliary injection NEVER moves with the conjunctiva and NEVER responds to epinephrine. It always signals something deeper and more serious — keratitis, uveitis, or glaucoma.',
+              content: 'Ciliary injection **NEVER moves** with the conjunctiva and **NEVER responds to epinephrine**. It always signals something deeper and more serious — keratitis, uveitis, or glaucoma.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The two injections trace **different vessel beds**, and that anatomy is the whole triage. Superficial **conjunctival** vessels move when you push the lid and **blanch with a vasoconstrictor** — a benign, movable, brick-red congestion of conjunctivitis. **Ciliary (circumcorneal)** vessels are deep perilimbal branches of the anterior ciliary arteries; they don\'t budge and don\'t blanch, so a **violet flush hugging the limbus** means the problem is inside the eye — keratitis, uveitis, or acute glaucoma. Deep and fixed = dangerous.',
             },
           ],
         },
@@ -484,6 +489,11 @@ export const ocularDiseaseNotes: NotesData = {
                 'Keratoplasty types: Penetrating (entire corneal thickness replaced); Non-penetrating/Lamellar (superficial layer only, no anterior chamber entry)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Keratoconus signs spell the cone from earliest to latest: **Fleischer ring** (iron at the cone base — EARLIEST) → **Vogt striae** (vertical stress lines that vanish on pressure) → **Munson sign** (V-shaped lower-lid indentation on downgaze — LATE). "**F-V-M**: iron first, stripes next, lid-bulge last." The refraction clue is **high myopia + irregular (scissoring) astigmatism** best fixed with a rigid CL.',
+            },
           ],
         },
         {
@@ -506,7 +516,12 @@ export const ocularDiseaseNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Mnemonic for iron lines: "Hitch a Ferry to Florida\'s Stocker" — Hudson-Stahli, Ferry line, Fleischer ring, Stocker line. ALL iron lines sit in the epithelium. Kayser-Fleischer (copper) sits at Descemet\'s membrane — deepest. Krukenberg spindle (melanin) is on the endothelium.',
+              content: 'Mnemonic for iron lines: **"Hitch a Ferry to Florida\'s Stocker"** — Hudson-Stahli, Ferry line, Fleischer ring, Stocker line. **ALL iron lines sit in the epithelium.** Kayser-Fleischer (copper) sits at Descemet\'s membrane — deepest. Krukenberg spindle (melanin) is on the endothelium.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Don\'t confuse the metals: **iron = the four epithelial lines** (Hudson-Stahli, Fleischer, Ferry, Stocker); **copper = Kayser-Fleischer ring at Descemet\'s** (Wilson\'s disease — order LFTs + serum ceruloplasmin, it signals systemic copper overload); **melanin = Krukenberg spindle on the endothelium** (pigment dispersion). Depth tracks the metal: iron shallow, melanin mid, copper deepest.',
             },
           ],
         },
@@ -642,7 +657,12 @@ export const ocularDiseaseNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Normal IOP = 10-21 mmHg (fluctuates 2-5 mmHg daily). Low tension glaucoma = optic nerve damage and visual field loss despite normal or low IOP (idiopathic). Highest IOP is in the AM and falls at night.',
+              content: 'Normal IOP = **10-21 mmHg** (fluctuates 2-5 mmHg daily). Low tension glaucoma = optic nerve damage and visual field loss despite normal or low IOP (idiopathic). Highest IOP is in the AM and falls at night.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The difference between "silent thief" and "emergency" is **how fast the drain clogs**. In **POAG** the trabecular meshwork slowly stiffens — pressure creeps up over years, so vision erodes from the periphery painlessly. In **PACG** the iris suddenly flops against the meshwork and **outflow stops in minutes** — IOP spikes to 40–60, the cornea edemas (halos), and the eye is red and painful with a **mid-dilated fixed pupil**. Slow clog = chronic drops; sudden clog = laser iridotomy NOW.',
             },
           ],
         },
@@ -700,6 +720,11 @@ export const ocularDiseaseNotes: NotesData = {
                 ['Urea (Osmotic)', 'IV only', 'C/I in renal disease'],
                 ['Latanoprost (Prostaglandin)', 'Topical', 'Increases uveo-scleral outflow'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Two osmotic traps and one CAI trap the board loves: **Glycerol raises blood glucose → avoid in diabetics** (use isosorbide instead); **Urea and mannitol are IV-only**, and **urea is contraindicated in renal disease** (mannitol is safer). **Acetazolamide** (oral CAI) classically causes **paresthesia** (tingling lips/fingers) plus kidney stones, K⁺ loss, and a transient **myopic shift** from ciliary swelling. It is a sulfonamide — ask about sulfa allergy.',
             },
           ],
         },
@@ -813,8 +838,13 @@ export const ocularDiseaseNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: '"Second sight" is a **trap dressed as good news**. As the nucleus scleroses it **raises the lens\'s refractive index**, adding minus-power (a **myopic shift**) — so a presbyopic hyperope can suddenly read without glasses. It is not recovery; it is a **progressing nuclear cataract**, and their distance vision is quietly worsening. Also remember **steroids hit two structures**: PSC cataract *and* open-angle glaucoma.',
+            },
+            {
               kind: 'pearl',
-              content: 'PSC (Posterior Subcapsular Cataract) = most common age-related type AND the type caused by steroids. Same posterior location, different causes. Steroids also cause open angle glaucoma.',
+              content: 'PSC (Posterior Subcapsular Cataract) = **most common age-related type AND the type caused by steroids**. Same posterior location, different causes. Steroids also cause open angle glaucoma.',
             },
           ],
         },
@@ -829,6 +859,11 @@ export const ocularDiseaseNotes: NotesData = {
                 'PHAcolytic — hypermature lens LEAKS protein → macrophages block trabeculum → OPEN angle glaucoma; associated with lens-induced uveitis',
                 'PHAcogenic — rapid lens swelling or capsule rupture → lens matter in trabeculum → OPEN angle glaucoma',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Sort the 3 PHAs by **mechanical vs chemical**: **PhacoMORPHIC = MORPH/shape** — a swollen intumescent lens physically **pushes the iris forward → CLOSED angle**. The other two spill lens material and **clog the meshwork → OPEN angle**: **phacoLYTIC** (protein LEAKS from a hypermature lens) and **phacogenic/phacoantigenic**. "Big lens closes the angle; leaky lens clogs it open."',
             },
           ],
         },
@@ -893,6 +928,11 @@ export const ocularDiseaseNotes: NotesData = {
                 'Retinitis pigmentosa — hereditary; bone-spicule pigmentation; progressive peripheral vision loss; nyctalopia (night blindness) early symptom',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Match the fundus to the disease at a glance: **CRAO = cherry-red spot + pale retina** (artery starved, macula shows the choroid through thin retina; a **90-minute** window); **CRVO = "blood and thunder"** flame hemorrhages in all four quadrants (backed-up vein); **RP = bone-spicule** pigment + waxy pale disc; **ARMD = central** distortion (drusen). Artery = pale, Vein = bloody, RP = spicules, ARMD = center.',
+            },
           ],
         },
         {
@@ -922,6 +962,11 @@ export const ocularDiseaseNotes: NotesData = {
                 ['Copper (low, alloy)', 'Kayser-Fleischer ring; sunflower cataract; golden retinal plaques', 'Chalcosis (mild)', 'Less retinotoxic; similar to Wilson\'s presentation'],
                 ['Gold, glass, silver, most plastics', 'None — inert', '—', 'No toxic effect'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'If a **metallic (iron/steel) intraocular foreign body** is suspected, **MRI is contraindicated — order CT.** The magnet can drag a ferrous fragment through the eye. Iron IOFBs cause **siderosis** (progressive ERG b-wave loss, heterochromia, cataract); high-copper fragments cause a **violent chalcosis**; gold, glass, silver, and most plastics are inert.',
             },
           ],
         },
@@ -1033,6 +1078,11 @@ export const ocularDiseaseNotes: NotesData = {
                 ['Occipital cortex (Area #17)', 'Homonymous hemianopia WITH macular sparing (blood supply from MCA spares macula)'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**"PITS": Parietal = Inferior defect, Temporal = Superior defect.** Meyer\'s loop swings through the **temporal** lobe carrying **superior** field fibers → a lesion there gives **"pie in the sky"** (superior quadrantanopia); the **parietal** radiations carry inferior fibers → **"pie on the floor."** And the deeper/more posterior the lesion, the **more congruous** (matching) the two eyes\' defects become.',
+            },
           ],
         },
         {
@@ -1048,6 +1098,11 @@ export const ocularDiseaseNotes: NotesData = {
                 ['CN#6 (Abducens)', 'Lateral rectus', 'Esotropia (eye turns in); horizontal diplopia worse at distance; first CN to show in raised ICP (false localizing sign)'],
                 ['CN#7 (Facial)', 'Orbicularis oculi', 'Lagophthalmos (cannot close eye); ectropion; Bell\'s palsy; corneal exposure risk'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The **"down and out" eye** of a CN3 palsy is just the two muscles CN3 does NOT control taking over: the **lateral rectus (CN6) pulls it OUT**, the **superior oblique (CN4) pulls it DOWN.** Add the ptosis (LPS) and dilated pupil (sphincter) for the full picture. The **pupil is the alarm bell**: a **blown pupil = compressive** cause (aneurysm/herniation — emergency), a **pupil-sparing** palsy = ischemic (diabetes) because superficial pupillary fibers keep their blood supply.',
             },
           ],
         },
