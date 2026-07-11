@@ -151,6 +151,16 @@ export const SUBJECTS: Subject[] = [
     olePrep: true,
     hasExam: true,
   },
+  {
+    slug: 'ethics-and-jurisprudence',
+    name: 'Ethics and Jurisprudence',
+    description: 'RA 8050 and its IRR, the Board of Optometry and PRC, licensure and registration, DPAs, CPD, professional practice, unlawful acts, ethics, and practice management.',
+    color: 'indigo',
+    questionCount: 137,
+    icon: '⚖️',
+    olePrep: true,
+    hasExam: true,
+  },
 ]
 
 export const COLOR_MAP: Record<string, {

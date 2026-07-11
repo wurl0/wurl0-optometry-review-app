@@ -19,6 +19,7 @@ import { optometryConstantsData } from '@/data/ole-prep/optometry-constants'
 import { lowVisionData } from '@/data/ole-prep/low-vision'
 import { pediatricOptometryData } from '@/data/ole-prep/pediatric-optometry'
 import { contactLensData } from '@/data/ole-prep/contact-lens'
+import { ethicsAndJurisprudenceData } from '@/data/ole-prep/ethics-and-jurisprudence'
 
 const DATA_MAP: Record<string, OlePrepData> = {
   'physiologic-optics': physiologicOpticsData,
@@ -36,6 +37,7 @@ const DATA_MAP: Record<string, OlePrepData> = {
   'low-vision': lowVisionData,
   'pediatric-optometry': pediatricOptometryData,
   'contact-lens': contactLensData,
+  'ethics-and-jurisprudence': ethicsAndJurisprudenceData,
 }
 
 const REGULAR_SUBJECT_SLUGS = SUBJECTS.filter(s => !s.isBonus).map(s => s.slug)

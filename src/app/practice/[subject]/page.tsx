@@ -15,6 +15,7 @@ import gpQ from '@/data/general-pharmacology.json'
 import gaQ from '@/data/general-anatomy.json'
 import pedsQ from '@/data/pediatric-optometry.json'
 import clQ from '@/data/contact-lens.json'
+import ejQ from '@/data/ethics-and-jurisprudence.json'
 import { ocularAnatomyQuiz } from '@/data/notes-quiz/ocular-anatomy'
 import { QuizQuestion } from '@/lib/notes-quiz-types'
 import { Question } from '@/lib/types'
@@ -46,6 +47,7 @@ const QUESTION_MAP: Record<string, unknown[]> = {
   'low-vision': lvQ,
   'pediatric-optometry': pedsQ,
   'contact-lens': clQ,
+  'ethics-and-jurisprudence': ejQ,
 }
 
 export default async function PracticePage({ params }: { params: Promise<{ subject: string }> }) {

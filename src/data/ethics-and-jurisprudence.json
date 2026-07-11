@@ -1,0 +1,1646 @@
+[
+  {
+    "type": "mcq",
+    "stem": "The word \"jurisprudence\" comes from the Latin juris prudentia. What does it mean?",
+    "options": [
+      "The study, knowledge, or science of law",
+      "The power of the state to punish",
+      "The moral duty of a professional",
+      "The practice of medicine"
+    ],
+    "correct": 0,
+    "explanation": "Jurisprudence derives from the Latin juris prudentia, meaning the study, knowledge, or science of law."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which term refers to the moral principles that govern a person's behavior or the conduct of an activity?",
+    "options": [
+      "Jurisprudence",
+      "Ethics",
+      "Litigation",
+      "Legislation"
+    ],
+    "correct": 1,
+    "explanation": "Ethics is the branch of knowledge that deals with moral principles; it governs conduct. Jurisprudence is the science of law."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the schools of jurisprudence, which position argues that there is NO connection between law and morality, and that the only sources of law are rules expressly enacted by a governmental entity or court?",
+    "options": [
+      "Positivism",
+      "Formalism",
+      "Legal realism",
+      "Naturalism"
+    ],
+    "correct": 0,
+    "explanation": "Positivists hold that law and morality are separate, and the only law is that expressly enacted. Naturalists, by contrast, include morality, religion, and reason as sources of law."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which school of jurisprudence treats law like mathematics or science, applying rules in a rigid, logical way?",
+    "options": [
+      "Legal realism",
+      "Positivism",
+      "Naturalism",
+      "Formalism (conceptualism)"
+    ],
+    "correct": 3,
+    "explanation": "Formalism, or conceptualism, treats law like math or science. Legal realism holds that judges must balance interests and draw an arbitrary line."
+  },
+  {
+    "type": "mcq",
+    "stem": "The power vested in the legislature to enact wholesome and reasonable laws (as long as they do not violate the Constitution), which is the basis for regulating the practice of optometry, is called:",
+    "options": [
+      "Police power",
+      "Judicial power",
+      "Eminent domain",
+      "Executive privilege"
+    ],
+    "correct": 0,
+    "explanation": "Police power is the power of the legislature to enact reasonable laws for public welfare; it is the constitutional basis for regulating professions like optometry."
+  },
+  {
+    "type": "mcq",
+    "stem": "What was the FIRST regulatory law of optometry in the Philippines?",
+    "options": [
+      "The Optometry Law of 1917",
+      "RA 8050",
+      "Public Act No. 2245",
+      "RA 1998"
+    ],
+    "correct": 0,
+    "explanation": "The Optometry Law of 1917 was the first regulatory law in Philippine optometry; it was later amended in 1919."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Optometry Law of 1917 was amended in what year?",
+    "options": [
+      "1918",
+      "1932",
+      "1913",
+      "1919"
+    ],
+    "correct": 3,
+    "explanation": "The Optometry Law of 1917 was amended in 1919."
+  },
+  {
+    "type": "mcq",
+    "stem": "By virtue of Public Act No. 2245 (enacted February 11, 1913), which body was created?",
+    "options": [
+      "The Board of Optical Examiners",
+      "The Board of Optometry",
+      "The Junta Examinadora",
+      "The Professional Regulation Commission"
+    ],
+    "correct": 0,
+    "explanation": "Public Act No. 2245 (Feb 11, 1913) created the Board of Optical Examiners, originally under the Department of Interior (later under the Department of Public Instruction after the 1932 reorganization)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Republic Act No. 1998 (1957) was significant because it:",
+    "options": [
+      "Regulated the practice of optometry, amending the Optometry Law of 1917",
+      "Established the six-year optometry course",
+      "Created the PRC",
+      "Created the CPD Council"
+    ],
+    "correct": 0,
+    "explanation": "RA 1998 (June 22, 1957) regulated the practice of optometry, amending/repealing the earlier optometry law. It was later repealed and superseded by RA 8050."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which law is the current governing statute for the practice of optometry in the Philippines?",
+    "options": [
+      "RA 10912",
+      "RA 8050",
+      "RA 1998",
+      "RA 8981"
+    ],
+    "correct": 1,
+    "explanation": "RA 8050, the Revised Optometry Law of 1995, is the current law regulating optometry. It replaced RA 1998."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 8050 is officially cited as:",
+    "options": [
+      "The Revised Optometry Law of 1995",
+      "The Optometry Modernization Act",
+      "The Optometry Law of 1917",
+      "The PRC Modernization Act"
+    ],
+    "correct": 0,
+    "explanation": "RA 8050 shall be known and cited as the Revised Optometry Law of 1995."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the full title of RA 8050?",
+    "options": [
+      "An Act Modernizing the Professional Regulation Commission",
+      "An Act Providing for Continuing Professional Development",
+      "An Act Regulating the Practice of Optometry, Upgrading Optometric Education, Integrating Optometrists, and for Other Purposes",
+      "An Act to Regulate the Practice of Optometry in the Philippines"
+    ],
+    "correct": 2,
+    "explanation": "RA 8050 is titled 'An Act Regulating the Practice of Optometry, Upgrading Optometric Education, Integrating Optometrists, and for Other Purposes.'"
+  },
+  {
+    "type": "mcq",
+    "stem": "A major education reform introduced by RA 8050 was:",
+    "options": [
+      "Making optometry a graduate-only degree",
+      "A two-year associate course",
+      "Upgrading the optometry course from four years to a six-year program",
+      "Removing pharmacology from the curriculum"
+    ],
+    "correct": 2,
+    "explanation": "RA 8050 upgraded optometric education by providing for a six-year Doctor of Optometry course. The first year of implementation began in SY 1998-1999."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which Board resolution provides the Implementing Rules and Regulations (IRR) of RA 8050?",
+    "options": [
+      "Board of Optometry Resolution No. 01, Series of 2008",
+      "PRC Resolution No. 1032, Series of 2017",
+      "Board Resolution No. 07, Series of 1995",
+      "PRC Resolution No. 2019-1146"
+    ],
+    "correct": 0,
+    "explanation": "Board of Optometry Resolution No. 01, Series of 2008 is the Rules and Regulations governing the examination, registration, and practice of optometrists (the IRR of RA 8050)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8050, which body actually promulgates the Code of Professional Ethics for optometrists?",
+    "options": [
+      "The Supreme Court",
+      "The Department of Health",
+      "The Professional Regulation Commission",
+      "The duly integrated and accredited national organization of optometrists (adopted by the Board upon PRC approval)"
+    ],
+    "correct": 3,
+    "explanation": "The Code of Professional Ethics is prescribed by the duly integrated and accredited national organization of optometrists (IPAO), then adopted and promulgated by the Board of Optometry upon approval by the Commission."
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Optometry\" is best defined as:",
+    "options": [
+      "The science and art of examining the human eye and analyzing ocular function, prescribing and dispensing lenses, and using authorized DPAs, among other measures",
+      "The dispensing of medicines for the eye",
+      "The manufacture and sale of eyeglasses only",
+      "The surgical treatment of eye disease"
+    ],
+    "correct": 0,
+    "explanation": "Under RA 8050, optometry is the science and art of examining the human eye, analyzing ocular function, prescribing and dispensing ophthalmic devices, conducting vision training, installing prosthetics, and using authorized DPAs, among other measures."
+  },
+  {
+    "type": "mcq",
+    "stem": "An \"Optometrist\" under RA 8050 is:",
+    "options": [
+      "Any graduate of a Doctor of Optometry course",
+      "A natural person certified by the Board of Optometry and registered with the PRC as qualified to practice optometry in the Philippines",
+      "Anyone who dispenses eyeglasses",
+      "A physician with eye training"
+    ],
+    "correct": 1,
+    "explanation": "An optometrist is a natural person who has been certified by the Board of Optometry and registered with the PRC as qualified to practice optometry in the Philippines."
+  },
+  {
+    "type": "mcq",
+    "stem": "An \"optometrist in good standing\" is one who holds:",
+    "options": [
+      "Only a valid professional identification card",
+      "A diploma from an accredited school",
+      "A valid certificate of registration AND a valid professional identification card (professional license)",
+      "Only a valid certificate of registration"
+    ],
+    "correct": 2,
+    "explanation": "An optometrist in good standing is authorized to practice by virtue of BOTH a valid certificate of registration and a valid professional identification card (professional license)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The \"Certificate of Registration\" of an optometrist is best described as a document that is:",
+    "options": [
+      "Renewed every three years",
+      "Issued annually with the PTR",
+      "Valid only in the region of practice",
+      "Permanent, signed by the PRC Chairperson and the Board, serving as proof the registrant is qualified to practice"
+    ],
+    "correct": 3,
+    "explanation": "The Certificate of Registration is a permanent (non-expiring) document, signed by the PRC Chairperson and all Board members, that serves as proof the registrant is qualified to practice. The PIC, by contrast, is the renewable card."
+  },
+  {
+    "type": "mcq",
+    "stem": "The \"Professional Identification Card\" (professional license) of an optometrist is:",
+    "options": [
+      "The same as the certificate of registration",
+      "A renewable card issued by the PRC, evidence that the bearer is an optometrist in good standing",
+      "Issued by the Board of Optometry only",
+      "A permanent, non-expiring document"
+    ],
+    "correct": 1,
+    "explanation": "The PIC is a renewable card issued by the Commission (PRC) indicating the holder is competent and authorized to practice; it is evidence of good standing until its expiration."
+  },
+  {
+    "type": "mcq",
+    "stem": "How often must the Professional Identification Card of an optometrist be renewed?",
+    "options": [
+      "Every year",
+      "Every five years",
+      "Every two years",
+      "Every three years, on the birth month of the optometrist"
+    ],
+    "correct": 3,
+    "explanation": "The PIC is renewed every three (3) years on the birth month of the registered optometrist, upon payment of the annual registration fees for three years."
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Canvassing\" under the Revised Optometry Law refers to:",
+    "options": [
+      "Advertising in newspapers",
+      "Offering free eye screenings in a hospital",
+      "Conducting eye examinations while carrying optical merchandise for concurrent sale, going place to place selling to potential customers",
+      "Displaying the certificate of registration"
+    ],
+    "correct": 2,
+    "explanation": "Canvassing is when a person or optometrist conducts eye examinations, carries optical merchandise for concurrent sale and delivery, and goes from place to place selling to potential customers (often using audiovisual devices, public address systems, or shouting). It is a prohibited/unethical act."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT included in the scope of practice of optometry under RA 8050?",
+    "options": [
+      "Prescription and dispensing of ophthalmic lenses and contact lenses",
+      "Counseling patients on vision and eye hygiene",
+      "Surgical excision of a pterygium",
+      "Conduct of ocular exercises and vision training"
+    ],
+    "correct": 2,
+    "explanation": "Surgery is outside the optometric scope. RA 8050 covers examination, prescribing/dispensing, ocular exercises/vision training/orthoptics, prosthetics, counseling, and establishing offices and collecting professional fees."
+  },
+  {
+    "type": "mcq",
+    "stem": "Diagnostic Pharmaceutical Agents (DPAs) authorized for optometrists are approved through which pathway?",
+    "options": [
+      "By the PRC Commissioner",
+      "By the Board of Optometry, upon approval by the Secretary of the DOH and recommendation of the BFAD (now FDA)",
+      "By the Department of Trade and Industry",
+      "By the Board of Optometry alone"
+    ],
+    "correct": 1,
+    "explanation": "DPAs are specified by the Board of Optometry upon approval by the Secretary of the Department of Health (DOH) and upon recommendation of the Bureau of Food and Drugs (BFAD, now the FDA)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT among the authorized Diagnostic Pharmaceutical Agents for Filipino optometrists?",
+    "options": [
+      "Phenylephrine 2.5%",
+      "Timolol 0.5%",
+      "Tropicamide 0.5%",
+      "Proparacaine 0.5%"
+    ],
+    "correct": 1,
+    "explanation": "Timolol is a therapeutic anti-glaucoma beta-blocker, not a DPA. The authorized DPAs are Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Benoxinate (Oxybuprocaine) HCl 0.4%, Cyclopentolate HCl 1.0%, and Fluorescein strips."
+  },
+  {
+    "type": "mcq",
+    "stem": "Among the authorized DPAs, which is the cycloplegic agent?",
+    "options": [
+      "Proparacaine 0.5%",
+      "Fluorescein",
+      "Phenylephrine 2.5%",
+      "Cyclopentolate HCl 1.0%"
+    ],
+    "correct": 3,
+    "explanation": "Cyclopentolate HCl 1.0% is the cycloplegic. Tropicamide 0.5% is primarily a mydriatic (weak cycloplegic); Phenylephrine 2.5% is a mydriatic; Proparacaine and Benoxinate are anesthetics; Fluorescein is a dye."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the authorized DPA list, Benoxinate HCl 0.4% is the same drug as:",
+    "options": [
+      "Oxybuprocaine",
+      "Proparacaine",
+      "Lidocaine",
+      "Tetracaine"
+    ],
+    "correct": 0,
+    "explanation": "Benoxinate is another name for Oxybuprocaine, a topical anesthetic. The RA 8050 statutory list uses 'Oxybuprocaine HCl 0.4%,' while the IRR list uses 'Benoxinate HCl 0.4%' — the same agent."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which authorized DPA is a topical anesthetic used, for example, before Goldmann applanation tonometry?",
+    "options": [
+      "Proparacaine 0.5%",
+      "Tropicamide",
+      "Phenylephrine",
+      "Cyclopentolate"
+    ],
+    "correct": 0,
+    "explanation": "Proparacaine 0.5% (and Benoxinate/Oxybuprocaine 0.4%) are the authorized topical anesthetics. Phenylephrine, Tropicamide, and Cyclopentolate are mydriatic/cycloplegic agents."
+  },
+  {
+    "type": "mcq",
+    "stem": "Persons admitted to the practice of optometry BEFORE the passage of RA 8050 must do what before they may use DPAs?",
+    "options": [
+      "Take a pharmacology course prescribed by CHED and pass a special certification examination administered by the Board",
+      "Apply for a new certificate of registration",
+      "Nothing; they are automatically authorized",
+      "Re-take the entire licensure examination"
+    ],
+    "correct": 0,
+    "explanation": "Optometrists admitted before RA 8050 (typically four-year-course graduates) must take a pharmacology course prescribed by CHED and pass a special certification examination given by the Board before using DPAs."
+  },
+  {
+    "type": "mcq",
+    "stem": "The first batch of six-year-curriculum optometrists (who graduated in 2004) were significant because they were:",
+    "options": [
+      "Exempt from the licensure exam",
+      "The first authorized by law to use diagnostic pharmaceutical agents (DPAs) in practice",
+      "The first to take the PRC licensure exam",
+      "The first to be integrated into one organization"
+    ],
+    "correct": 1,
+    "explanation": "The first graduates of the six-year curriculum (2004) were authorized by law to use DPAs in their practice, since pharmacology was integrated into their curriculum."
+  },
+  {
+    "type": "mcq",
+    "stem": "How many members compose the Board of Optometry?",
+    "options": [
+      "Seven (7)",
+      "Three (3)",
+      "Five (5)",
+      "Nine (9)"
+    ],
+    "correct": 2,
+    "explanation": "The Board of Optometry is composed of five (5) members appointed by the President of the Philippines."
+  },
+  {
+    "type": "mcq",
+    "stem": "Members of the Board of Optometry are appointed by the President from a list of how many nominees submitted by the accredited national organization?",
+    "options": [
+      "Five (5) nominees",
+      "Fifteen (15) nominees",
+      "Three (3) nominees",
+      "Ten (10) nominees"
+    ],
+    "correct": 3,
+    "explanation": "The President appoints Board members, upon PRC recommendation, from a list of ten (10) nominees submitted by the duly integrated and accredited national organization of optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a qualification for a Board of Optometry member?",
+    "options": [
+      "At least 35 years of age at the time of appointment",
+      "A natural-born citizen of the Philippines",
+      "In active practice for at least ten (10) years prior to appointment",
+      "A resident of Metro Manila"
+    ],
+    "correct": 3,
+    "explanation": "There is no residency requirement. A Board member must be a natural-born Filipino, a registered optometrist in good standing, at least 35 years old, of good moral character, and in active practice for at least 10 years before appointment."
+  },
+  {
+    "type": "mcq",
+    "stem": "A person is DISQUALIFIED from appointment to the Board of Optometry if he/she:",
+    "options": [
+      "Owns an optical shop",
+      "Is a faculty member of, or has pecuniary interest in, a school teaching optometry, OR is an officer of an optometric association (unless he relinquishes such before taking oath)",
+      "Is over 60 years old",
+      "Has been in practice for more than 20 years"
+    ],
+    "correct": 1,
+    "explanation": "A faculty member or one with pecuniary interest in an optometry school, or an officer of an optometric association, is disqualified unless he/she relinquishes the position/interest before or upon taking the oath as Board member."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the term of office of a Board of Optometry member?",
+    "options": [
+      "Coterminous with the President",
+      "Five (5) years, non-renewable",
+      "Seven (7) years, non-renewable",
+      "Three (3) years, renewable once"
+    ],
+    "correct": 1,
+    "explanation": "Board members serve a non-renewable term of five (5) years, starting on the date of appointment and until their successors are appointed."
+  },
+  {
+    "type": "mcq",
+    "stem": "How many members constitute a quorum for the Board of Optometry to transact business?",
+    "options": [
+      "Three (3)",
+      "Four (4)",
+      "All five (5)",
+      "Two (2)"
+    ],
+    "correct": 0,
+    "explanation": "The attendance of at least three (3) members constitutes a quorum for the Board to officially transact business."
+  },
+  {
+    "type": "mcq",
+    "stem": "How many votes of the Board are required to render a decision in an administrative case against an erring optometrist?",
+    "options": [
+      "Four (4)",
+      "Three (3)",
+      "A unanimous vote",
+      "Two (2)"
+    ],
+    "correct": 1,
+    "explanation": "The vote of three (3) members of the Board is necessary to render a decision in an administrative case."
+  },
+  {
+    "type": "mcq",
+    "stem": "A decision of the Board in an administrative case becomes final and executory after how many days from receipt of notice, unless appealed?",
+    "options": [
+      "Thirty (30) days",
+      "Fifteen (15) days",
+      "Sixty (60) days",
+      "Ten (10) days"
+    ],
+    "correct": 1,
+    "explanation": "The Board's decision in an administrative case becomes final and executory fifteen (15) days after receipt of the notice of judgment/decision, unless appealed to the Commission."
+  },
+  {
+    "type": "mcq",
+    "stem": "A member of the Board under administrative investigation may be suspended by the President of the Philippines for a period not exceeding:",
+    "options": [
+      "Sixty (60) days",
+      "Ninety (90) days",
+      "Thirty (30) days",
+      "One hundred twenty (120) days"
+    ],
+    "correct": 0,
+    "explanation": "During investigation, the President may suspend the Board member for a period not more than sixty (60) days and appoint a temporary member in his place."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which agency exercises general supervision over the Board of Optometry?",
+    "options": [
+      "The Professional Regulation Commission (PRC)",
+      "The Supreme Court",
+      "The Commission on Higher Education",
+      "The Department of Health"
+    ],
+    "correct": 0,
+    "explanation": "The Professional Regulation Commission (PRC) exercises general supervision over the Board of Optometry and all professional regulatory boards."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Professional Regulation Commission was originally created by which issuance?",
+    "options": [
+      "Republic Act No. 8981",
+      "Presidential Decree No. 223 (as amended by P.D. 657)",
+      "Republic Act No. 8050",
+      "Public Act No. 2245"
+    ],
+    "correct": 1,
+    "explanation": "The PRC was created by Presidential Decree No. 223 (as amended by P.D. 657), which transferred supervision of the regulatory boards from the Bureau of Civil Service to the PRC. RA 8981 later modernized it."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 8981 is known as the:",
+    "options": [
+      "Continuing Professional Development Act of 2016",
+      "PRC Modernization Act of 2000",
+      "Revised Optometry Law of 1995",
+      "FDA Act of 2009"
+    ],
+    "correct": 1,
+    "explanation": "RA 8981 (approved December 5, 2000) is the PRC Modernization Act of 2000, which repealed P.D. 223 and modernized the Commission."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8981, the Professional Regulation Commission is a:",
+    "options": [
+      "Five-man commission",
+      "Single-commissioner office",
+      "Board of seven commissioners",
+      "Three-man commission (one Chairperson and two Commissioners)"
+    ],
+    "correct": 3,
+    "explanation": "RA 8981 created a three-man Commission: one full-time Chairperson and two full-time Commissioners, appointed by the President."
+  },
+  {
+    "type": "mcq",
+    "stem": "The term of office of the PRC Chairperson and Commissioners under RA 8981 is:",
+    "options": [
+      "Seven (7) years, without reappointment",
+      "Three (3) years",
+      "Five (5) years, renewable",
+      "Coterminous with the appointing President"
+    ],
+    "correct": 0,
+    "explanation": "The Chairperson and Commissioners of the PRC serve a term of seven (7) years without reappointment."
+  },
+  {
+    "type": "mcq",
+    "stem": "One minimum qualification for a PRC Chairperson or Commissioner under RA 8981 is that he/she must be:",
+    "options": [
+      "At least 40 years of age",
+      "At least 35 years of age",
+      "At least 50 years of age",
+      "At least 45 years of age"
+    ],
+    "correct": 0,
+    "explanation": "A PRC Chairperson or Commissioner must be at least forty (40) years of age, with a valid certificate of registration and PIC (or valid certificate of competency/professional license)."
+  },
+  {
+    "type": "mcq",
+    "stem": "How often must the optometry licensure examination be given?",
+    "options": [
+      "At least once every two years",
+      "Only when there are enough applicants",
+      "At least once a year",
+      "Twice a year without exception"
+    ],
+    "correct": 2,
+    "explanation": "The licensure examination is given at least once a year, in places and on dates designated by the Commission."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the optometry licensure examination, the written (theoretical) component and the clinical skills assessment (performance) are weighted, respectively, as:",
+    "options": [
+      "80% and 20%",
+      "60% and 40%",
+      "70% and 30%",
+      "50% and 50%"
+    ],
+    "correct": 2,
+    "explanation": "The written/theoretical examinations are weighted 70% and the clinical skills assessment (performance) 30% of the General Weighted Average Rating."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the percentage weight of Jurisprudence, Ethics, Practice Management, and Public Health in the written licensure examination?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "5%"
+    ],
+    "correct": 0,
+    "explanation": "Jurisprudence, Ethics, Practice Management, and Public Health carries a 10% weight in the written (theoretical) licensure examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "To PASS the optometry licensure examination, an examinee must obtain a General Weighted Average Rating of:",
+    "options": [
+      "At least 75% with no subject below 60%",
+      "At least 70% with no subject below 50%",
+      "At least 75% with no subject rating below 50%",
+      "At least 80% with no subject below 60%"
+    ],
+    "correct": 2,
+    "explanation": "To pass, the examinee must obtain a GWA of at least seventy-five percent (75%) with no subject rating below fifty percent (50%)."
+  },
+  {
+    "type": "mcq",
+    "stem": "An examinee who obtains a GWA of 75% or higher but has one or more subject ratings below 50% is considered:",
+    "options": [
+      "Failed",
+      "Passed",
+      "Conditioned (must retake only the deficient subject/s)",
+      "Disqualified"
+    ],
+    "correct": 2,
+    "explanation": "Such an examinee is CONDITIONED and must retake only the subject/s in which he/she scored below 50%."
+  },
+  {
+    "type": "mcq",
+    "stem": "An examinee is deemed FAILED when he/she obtains a General Weighted Average Rating below 75% on:",
+    "options": [
+      "The practical examination only",
+      "BOTH the theoretical and practical examinations",
+      "The theoretical examination only",
+      "Any single subject"
+    ],
+    "correct": 1,
+    "explanation": "An examinee is deemed FAILED when the GWA is below 75% on both the theoretical and practical examinations."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a qualification for an applicant to take the optometry licensure examination?",
+    "options": [
+      "Of good moral character",
+      "At least 21 years old",
+      "In active practice for at least 10 years",
+      "A Filipino citizen"
+    ],
+    "correct": 2,
+    "explanation": "Ten years of active practice is a qualification for BOARD MEMBERS, not exam applicants. An applicant must be a Filipino citizen, at least 21 years old, of good moral character, and a holder of a Doctor of Optometry degree from an accredited institution."
+  },
+  {
+    "type": "mcq",
+    "stem": "An applicant should file the application for the licensure examination at least how many days before the first day of examination?",
+    "options": [
+      "Twenty (20) days",
+      "Thirty (30) days",
+      "Ten (10) days",
+      "Sixty (60) days"
+    ],
+    "correct": 0,
+    "explanation": "The application for examination must be filed at least twenty (20) days before or prior to the first day of the examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "An applicant who fails the board examination for the THIRD time shall not be allowed to take the next examination unless he/she:",
+    "options": [
+      "Obtains a waiver from the PRC Chairperson",
+      "Submits proof of having taken a refresher course in a duly accredited institution",
+      "Re-enrolls in the entire optometry course",
+      "Waits five years"
+    ],
+    "correct": 1,
+    "explanation": "After a third failure, the applicant must submit proof of having taken a refresher course in a duly accredited institution before being allowed to take the succeeding examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "A successful examinee becomes entitled to practice only after:",
+    "options": [
+      "Publication of results",
+      "Joining IPAO",
+      "Taking the oath as an optometrist and payment of the required fees, then registration in the Roster of Optometrists",
+      "Receiving a passing letter by mail"
+    ],
+    "correct": 2,
+    "explanation": "A successful examinee must take the oath before the Board (or an authorized officer), pay the required fees, and be registered/enrolled in the Roster of Optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "A registered optometrist who fails to pay the annual registration fees continuously for how many years is considered delinquent and dropped from the Roll of Optometrists in Good Standing?",
+    "options": [
+      "Three (3) or more years",
+      "Two (2) or more years",
+      "Ten (10) or more years",
+      "Five (5) or more years"
+    ],
+    "correct": 3,
+    "explanation": "Failure to pay the annual registration fees continuously for five (5) or more years renders an optometrist delinquent, and he/she is dropped from the Roll of Registered Optometrists in Good Standing."
+  },
+  {
+    "type": "mcq",
+    "stem": "On a prescription written and signed by an optometrist, which of the following must appear?",
+    "options": [
+      "The patient's PhilHealth number",
+      "Only the optometrist's name",
+      "The certificate of registration number, the PTR (professional tax receipt) number, and the PIC expiry date",
+      "Only the clinic address"
+    ],
+    "correct": 2,
+    "explanation": "The optometrist's certificate of registration number, professional tax receipt (PTR) number, and the expiry date of the professional identification card must appear on prescriptions and documents he issues."
+  },
+  {
+    "type": "mcq",
+    "stem": "For how long must an optometrist keep a patient's records after the last consultation?",
+    "options": [
+      "A minimum of five (5) years",
+      "Three (3) years",
+      "Ten (10) years",
+      "One (1) year"
+    ],
+    "correct": 0,
+    "explanation": "An optometrist must keep a record of the patient's data, findings, examination results, and services for a minimum of five (5) years after the last consultation."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which persons are allowed limited performance of acts constituting the practice of optometry?",
+    "options": [
+      "Foreign optometrists on tourist visas",
+      "Any optical shop employee",
+      "Ophthalmic technicians and opticians",
+      "Registered physicians with postgraduate eye training; physicians examining the eye during a physical exam; and trained public health workers doing only VA testing and visual screening"
+    ],
+    "correct": 3,
+    "explanation": "Allowed limited practice: physicians with postgraduate training in diagnosis/treatment of eye disease; physicians examining the eye as part of a physical exam; and public health workers (blindness-prevention program) who may conduct only visual acuity tests and visual screening."
+  },
+  {
+    "type": "mcq",
+    "stem": "Public health workers involved in the government's blindness prevention program may perform which act(s) only?",
+    "options": [
+      "Fit contact lenses",
+      "Use diagnostic pharmaceutical agents",
+      "Prescribe and dispense spectacles",
+      "Conduct only visual acuity tests and visual screening"
+    ],
+    "correct": 3,
+    "explanation": "Trained public health workers may conduct only visual acuity tests and visual screening under the government's blindness prevention program."
+  },
+  {
+    "type": "mcq",
+    "stem": "In advertising, an optometrist must use only information that is:",
+    "options": [
+      "Emphasizing free services and discounts",
+      "True, honest, fair, dignified, and objective statements of fact",
+      "Focused on the lowest fees",
+      "Self-laudatory and competitive"
+    ],
+    "correct": 1,
+    "explanation": "An optometrist making known his services shall use only true, honest, fair, dignified, and objective information or statements of fact."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following advertising practices is considered UNPROFESSIONAL and unethical?",
+    "options": [
+      "Stating lower fees than customary rates, or advertising free examinations, discounts, and prizes to attract patronage",
+      "Listing office hours",
+      "Indicating the optometrist's degree",
+      "Displaying the clinic name and services offered"
+    ],
+    "correct": 0,
+    "explanation": "Referring to fees (especially lower-than-customary), advertising free/gratuitous services, bonuses, premiums, discounts, sales, or prizes to attract patronage is unprofessional and unethical."
+  },
+  {
+    "type": "mcq",
+    "stem": "The standards of professional conduct for registered optometrists, according to the IRR, are:",
+    "options": [
+      "Set solely by each optometrist",
+      "Higher than, and not to be placed on the same level as, the standards of practice in the marketplace",
+      "Lower than commercial standards",
+      "Equal to the standards of the marketplace"
+    ],
+    "correct": 1,
+    "explanation": "The standards of professional conduct for optometrists are higher than, and shall not be placed on the same level as, the standards of practice in the marketplace."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist must notify the Board of the location of his office/clinic within how many days from securing the premises?",
+    "options": [
+      "Thirty (30) days",
+      "Fifteen (15) days",
+      "Sixty (60) days",
+      "Ninety (90) days"
+    ],
+    "correct": 0,
+    "explanation": "The optometrist must notify the Board of the location of his office/clinic within thirty (30) days from securing the premises, and any subsequent change of location must likewise be reported."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a MINIMUM instrument/equipment requirement for an optometric clinic under the IRR?",
+    "options": [
+      "A slit-lamp biomicroscope (or equivalent)",
+      "A fundus camera",
+      "A visual field analyzer",
+      "An OCT machine"
+    ],
+    "correct": 0,
+    "explanation": "Required equipment includes visual acuity charts, trial lenses/phoropter, ophthalmoscope and retinoscope, ophthalmic chair, a slit-lamp biomicroscope (or equivalent), and dispensing tools."
+  },
+  {
+    "type": "mcq",
+    "stem": "May an optometrist use mobile units to examine or dispense eyeglasses?",
+    "options": [
+      "Only with permission and under the auspices of public health officials and/or the accredited association through its local chapter, for public service",
+      "Only in shopping malls",
+      "No, never under any circumstance",
+      "Yes, without any restriction"
+    ],
+    "correct": 0,
+    "explanation": "Mobile units may be used only with permission and under the auspices of national/local public health officials and/or the accredited and integrated association (through its local chapter) in relation to public services."
+  },
+  {
+    "type": "mcq",
+    "stem": "Using DPAs by a non-DPA-certified or untrained optometrist, whether or not injury results, is:",
+    "options": [
+      "Permitted with patient consent",
+      "Permitted if supervised",
+      "Allowed for emergencies only",
+      "An unlawful/prohibited act"
+    ],
+    "correct": 3,
+    "explanation": "The use of DPAs by a non-DPA-certified or untrained optometrist, whether or not it results in patient injury, is expressly an unlawful and prohibited act."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a prohibited act under the Unlawful Practice provisions?",
+    "options": [
+      "Collecting professional fees",
+      "Establishment or ownership of an optical clinic by foreigners, optical suppliers, or ophthalmic technicians",
+      "Displaying the certificate of registration",
+      "Keeping patient records for five years"
+    ],
+    "correct": 1,
+    "explanation": "Establishment or ownership of an optical clinic by foreigners, optical suppliers, or ophthalmic technicians is a prohibited act. Owning such a clinic is reserved to qualified optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist who aids or abets a non-optometrist in the unlawful practice of optometry is:",
+    "options": [
+      "Committing a prohibited act and is subject to disciplinary action",
+      "Exempt if he supervised the non-optometrist",
+      "Not liable, since he did not personally practice illegally",
+      "Only liable if the patient is injured"
+    ],
+    "correct": 0,
+    "explanation": "An optometrist who aids or abets any natural or juridical person in the unlawful practice of optometry commits a prohibited act and is subject to disciplinary action."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a ground for disciplinary action against an optometrist?",
+    "options": [
+      "Conviction of a crime involving moral turpitude",
+      "Charging the customary professional fee",
+      "Advertising office hours",
+      "Referring a patient to an ophthalmologist"
+    ],
+    "correct": 0,
+    "explanation": "Grounds include unprofessional/unethical conduct, malpractice, violations of RA 8050 or Board rules, conviction of a crime involving moral turpitude, immoral or dishonorable conduct, unauthorized practice, gross negligence/incompetence, chronic inebriety or drug habituation, and being declared mentally unsound."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a ground for DISQUALIFICATION from registration as an optometrist?",
+    "options": [
+      "Being a new graduate",
+      "Being over 60 years old",
+      "Owning a single optical shop",
+      "Having been convicted by final judgment of a crime involving moral turpitude, or declared of unsound mind"
+    ],
+    "correct": 3,
+    "explanation": "Grounds for disqualification include failing the licensure exam, conviction by final judgment of a crime involving moral turpitude, being found guilty of immoral/dishonorable conduct, or being declared of unsound mind."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 10912 is known as the:",
+    "options": [
+      "Universal Health Care Act",
+      "Continuing Professional Development (CPD) Act of 2016",
+      "Revised Optometry Law",
+      "PRC Modernization Act"
+    ],
+    "correct": 1,
+    "explanation": "RA 10912 is the Continuing Professional Development (CPD) Act of 2016, which made CPD mandatory for renewal of the professional license."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the current (amended) requirement, how many CPD credit units must an optometrist earn to renew the Professional Identification Card?",
+    "options": [
+      "Sixty (60) units",
+      "One hundred twenty (120) units",
+      "Forty-five (45) units",
+      "Fifteen (15) units"
+    ],
+    "correct": 3,
+    "explanation": "The requirement was reduced to fifteen (15) CPD credit units for renewal of the PIC. (The original IRR figure of 60 units, later 45, was amended down to 15 units; Senior Citizens and PWDs need only 10 units.)"
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the amended CPD rules, Senior Citizen and PWD optometrists are required to present how many CPD credit units for renewal?",
+    "options": [
+      "They are fully exempt",
+      "Fifteen (15) units",
+      "Ten (10) units",
+      "Five (5) units"
+    ],
+    "correct": 2,
+    "explanation": "Senior Citizens and differently abled persons/PWDs are required to present ten (10) CPD credit units for renewal, versus 15 for other optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which optometrists are NOT covered by the CPD requirement?",
+    "options": [
+      "Registered and licensed optometrists working overseas, and newly registered optometrists during their first renewal cycle",
+      "Optometrists over 40 years old",
+      "All optometrists in private practice",
+      "Optometrists who own optical shops"
+    ],
+    "correct": 0,
+    "explanation": "Optometrists working overseas are not covered by the CPD requirement (as long as renewal falls within the 3-year period), and newly registered optometrists are not covered for their first renewal cycle (3 years) after obtaining their license."
+  },
+  {
+    "type": "mcq",
+    "stem": "The CPD Council for a profession is composed of how many members?",
+    "options": [
+      "Two",
+      "Three (one Chairperson and two members)",
+      "Seven",
+      "Five"
+    ],
+    "correct": 1,
+    "explanation": "The CPD Council is a three-person body: one Chairperson (a member of the Professional Regulatory Board) and two members (one from the AIPO/APO and one from the national organization of deans)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT a recognized nature/type of CPD program under RA 10912?",
+    "options": [
+      "Passive membership without activity",
+      "Online learning activities and professional work experience",
+      "Formal learning",
+      "Informal and self-directed learning"
+    ],
+    "correct": 0,
+    "explanation": "Recognized CPD program types include formal, non-formal, informal, self-directed, online learning activities, and professional work experience. Mere passive membership is not a CPD activity."
+  },
+  {
+    "type": "mcq",
+    "stem": "The integrated national organization of Filipino optometrists is the:",
+    "options": [
+      "Samahan ng mga Optical Retailers",
+      "Integrated Philippine Association of Optometrists, Inc. (IPAO)",
+      "Philippine Optometric Association (POA)",
+      "Optometric Association of the Philippines (OAP)"
+    ],
+    "correct": 1,
+    "explanation": "The Integrated Philippine Association of Optometrists, Inc. (IPAO) is the PRC-integrated, accredited national organization of optometrists. It was formerly known as the Samahan ng mga Optometrist sa Pilipinas (SOP)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The IPAO was formerly known as the:",
+    "options": [
+      "Samahan ng mga Optometrist sa Pilipinas (SOP)",
+      "Optometric Association of the Philippines",
+      "Philippine College of Optometrists",
+      "Philippine Association of Optometrists"
+    ],
+    "correct": 0,
+    "explanation": "The IPAO was formerly the Samahan ng mga Optometrist sa Pilipinas (SOP), established in 1976. It adopted the name IPAO in 1998 upon integration."
+  },
+  {
+    "type": "mcq",
+    "stem": "The primary purpose of integrating optometrists into one national organization is to:",
+    "options": [
+      "Promulgate the Code of Ethics, define professional responsibilities, ensure adherence to ethics, and improve professional standards",
+      "Control the price of eyeglasses",
+      "Limit the number of practicing optometrists",
+      "Increase membership dues"
+    ],
+    "correct": 0,
+    "explanation": "The integrated national organization promulgates the Code of Ethics, defines the professional responsibilities of members, ensures adherence to ethics, improves professional standards, and enables optometrists to discharge their public responsibility."
+  },
+  {
+    "type": "mcq",
+    "stem": "Does the integration of optometrists into one national organization prohibit the creation of other optometric associations?",
+    "options": [
+      "Yes, it strictly prohibits all other associations",
+      "No; integration does not prohibit the creation of other associations organized by optometrists themselves",
+      "Only optical-retailer associations are allowed",
+      "Other associations require Supreme Court approval"
+    ],
+    "correct": 1,
+    "explanation": "Integration into one national organization does not prohibit the creation of other associations of optometrists organized by the optometrists themselves."
+  },
+  {
+    "type": "mcq",
+    "stem": "Philippine Optometry Week is celebrated every:",
+    "options": [
+      "January 1-7",
+      "March 26-31",
+      "June 16-22",
+      "June 1-7"
+    ],
+    "correct": 3,
+    "explanation": "Philippine Optometry Week is June 1-7 every year, per Presidential Proclamation No. 985 signed by President Fidel V. Ramos on March 26, 1997."
+  },
+  {
+    "type": "mcq",
+    "stem": "According to PRC records, Certificate of Registration No. 1 for optometry was issued to:",
+    "options": [
+      "Dr. Federico Sarabia, Sr.",
+      "Dr. Manuel Sabater (March 11, 1918)",
+      "Dr. Justo Gonzales",
+      "Dr. G. T. Herrmann"
+    ],
+    "correct": 1,
+    "explanation": "PRC records show that Certificate of Registration No. 1 was issued to Dr. Manuel Sabater on March 11, 1918. (The claim that Dr. Federico Sarabia, Sr. held No. 001 is common knowledge but NOT valid per PRC information.)"
+  },
+  {
+    "type": "mcq",
+    "stem": "Appeals of Board of Optometry decisions on administrative cases involving the Code of Ethics are elevated in what order?",
+    "options": [
+      "Directly to the Supreme Court",
+      "To the PRC (through the Commissioner), and ultimately to the Office of the President",
+      "To the Court of Appeals only",
+      "To the Department of Health"
+    ],
+    "correct": 1,
+    "explanation": "Administrative-case decisions (Code of Ethics violations) by the Board are appealed to the Commission (PRC), through the Commissioner, and ultimately may reach the Office of the President. Court cases (civil/criminal) go through the Court of Appeals to the Supreme Court."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which court is the court of final appeal in the Philippine judicial system?",
+    "options": [
+      "Regional Trial Court",
+      "Metropolitan Trial Court",
+      "Supreme Court",
+      "Court of Appeals"
+    ],
+    "correct": 2,
+    "explanation": "The Supreme Court is the highest court and the final appellate authority in the Philippine judicial hierarchy."
+  },
+  {
+    "type": "mcq",
+    "stem": "A writ ordering a person to attend court AND bring relevant documents is a:",
+    "options": [
+      "Subpoena duces tecum",
+      "Subpoena ad testificandum",
+      "Warrant of arrest",
+      "Summons"
+    ],
+    "correct": 0,
+    "explanation": "A subpoena duces tecum orders a person to attend court and bring relevant documents ('duces tecum' = bring with you). A subpoena ad testificandum orders a person to give oral testimony."
+  },
+  {
+    "type": "mcq",
+    "stem": "A subpoena ad testificandum is a writ ordering a person to:",
+    "options": [
+      "Bring documents to court",
+      "Provide oral testimony (to testify)",
+      "Cease practicing",
+      "Pay a fine"
+    ],
+    "correct": 1,
+    "explanation": "A subpoena ad testificandum orders a person to provide oral testimony in response to questions at a deposition or trial ('ad testificandum' = to testify)."
+  },
+  {
+    "type": "mcq",
+    "stem": "How does a summons differ from a subpoena?",
+    "options": [
+      "They are identical",
+      "A summons is issued only by the Board",
+      "A summons is an order to appear (an invitation to respond); a subpoena is a court order compelling attendance once a case is filed",
+      "A summons compels documents; a subpoena compels testimony"
+    ],
+    "correct": 2,
+    "explanation": "A summons is essentially an order/invitation to appear before a judge or to respond to a case; a subpoena is a court writ compelling a person to attend court (issued once a case is underway)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The four (4) essential elements that must be proven in a professional malpractice/negligence case are commonly summarized as the \"4 Ds.\" These are:",
+    "options": [
+      "Duty, Diligence, Discretion, and Discipline",
+      "Duty, Dereliction, Direct causation, and Damages",
+      "Damages, Deceit, Default, and Delay",
+      "Diagnosis, Documentation, Disclosure, and Defense"
+    ],
+    "correct": 1,
+    "explanation": "The 4 Ds of malpractice/negligence are: Duty (a professional relationship existed), Dereliction (breach of the standard of care), Direct causation (the breach caused the harm), and Damages (actual injury resulted)."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the 4 Ds of malpractice, \"dereliction\" refers to:",
+    "options": [
+      "The actual injury suffered by the patient",
+      "The financial loss to the practitioner",
+      "The breach or failure to meet the accepted standard of care",
+      "The existence of a doctor-patient relationship"
+    ],
+    "correct": 2,
+    "explanation": "Dereliction is the breach of duty: the practitioner failed to meet the accepted standard of care. Duty establishes the relationship, direct causation links breach to harm, and damages is the actual injury."
+  },
+  {
+    "type": "mcq",
+    "stem": "The simplest and most common form of business ownership, in which a single individual owns the practice and is personally liable for its debts, is a:",
+    "options": [
+      "Corporation",
+      "Cooperative",
+      "Sole proprietorship",
+      "Partnership"
+    ],
+    "correct": 2,
+    "explanation": "A sole proprietorship is owned by one person who has full control and unlimited personal liability for the practice's obligations. It is the simplest and most common form."
+  },
+  {
+    "type": "mcq",
+    "stem": "A form of practice ownership in which two or more persons combine resources and share profits, losses, and liabilities is a:",
+    "options": [
+      "Franchise",
+      "Partnership",
+      "Trust",
+      "Sole proprietorship"
+    ],
+    "correct": 1,
+    "explanation": "A partnership is an association of two or more persons who contribute to a common fund and divide profits (and share liabilities). Compare with a corporation, which is a separate juridical entity."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which government agency licenses medical device establishments (including those selling contact lenses and ophthalmic lenses) under RA 9711?",
+    "options": [
+      "The Food and Drug Administration (FDA)",
+      "The Securities and Exchange Commission",
+      "The Bureau of Customs",
+      "The Department of Trade and Industry"
+    ],
+    "correct": 0,
+    "explanation": "RA 9711 (the FDA Act of 2009) empowers the Food and Drug Administration to require Medical Device Establishments a License to Operate (LTO). This helps limit dispensing of ophthalmic medical devices to licensed optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 9711 is known as the:",
+    "options": [
+      "PRC Modernization Act",
+      "CPD Act of 2016",
+      "FDA Act of 2009",
+      "Universal Health Care Act"
+    ],
+    "correct": 2,
+    "explanation": "RA 9711 is the Food and Drug Administration (FDA) Act of 2009, which reorganized and strengthened the former Bureau of Food and Drugs (BFAD)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which body was created to upgrade optometric education by setting minimum curriculum and teaching standards for optometry schools?",
+    "options": [
+      "The Technical Panel on Optometric Education (under CHED)",
+      "The Board of Optometry",
+      "The IPAO Board of Governors",
+      "The CPD Council"
+    ],
+    "correct": 0,
+    "explanation": "The Technical Panel on Optometric Education, organized under the Commission on Higher Education (CHED) pursuant to RA 8050, sets minimum curriculum and teaching standards and evaluates optometry schools."
+  },
+  {
+    "type": "mcq",
+    "stem": "Regarding foreign reciprocity, a foreigner may be admitted to the Philippine optometric board examinations only if:",
+    "options": [
+      "He passes an English proficiency test",
+      "He has resided in the Philippines for 10 years",
+      "His home country, by specific provision of law, admits Filipinos to practice optometry on terms of strict and absolute equality",
+      "He is endorsed by the IPAO"
+    ],
+    "correct": 2,
+    "explanation": "Under foreign reciprocity, a foreigner is admitted to the board exam only if his country, by specific law, admits Filipino citizens to practice optometry without restriction or on terms of strict and absolute equality (including recognition of prerequisite degrees)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The declaration of state policy in RA 8050 recognizes optometric services as:",
+    "options": [
+      "A purely commercial activity",
+      "A regular component of the primary health care system",
+      "An optional wellness service",
+      "A specialty of ophthalmology"
+    ],
+    "correct": 1,
+    "explanation": "RA 8050 declares that the State recognizes the essential role of optometry and that optometric services shall be promoted as a regular component of the primary health care system."
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Dispensing\" under RA 8050 refers to:",
+    "options": [
+      "Prescribing oral medications",
+      "Examining the eye with DPAs",
+      "The act of filling, translating, or fitting of spectacles, contact lenses, visual aids, prosthetics, and low-vision aids for the aid, correction, or relief of the human eye",
+      "Performing surgery"
+    ],
+    "correct": 2,
+    "explanation": "Dispensing is the act of filling, translating, or fitting spectacles/eyeglasses, contact lenses (with accessories and solutions), visual aids, prosthetics, low-vision aids, and other corrective optical devices for the aid, correction, rehabilitation, or relief of the human eye."
+  },
+  {
+    "type": "mcq",
+    "stem": "A \"Doctor of Optometry\" degree, per RA 8050, is one obtained from an institution whose course of study is:",
+    "options": [
+      "Offered for at least four years",
+      "Accredited by the IPAO only",
+      "Recognized internationally only",
+      "Duly accredited by the Board and the government (CHED)"
+    ],
+    "correct": 3,
+    "explanation": "A Doctor of Optometry is a degree from a school, college, university, or institution whose course of study has been duly accredited by the Board and the government (through CHED), after passing an optometry course."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following BEST characterizes the practice premises required for optometry under the IRR?",
+    "options": [
+      "Any retail space shared with unrelated businesses",
+      "Premises used exclusively for optometric practice, conducive to independent clinical judgment",
+      "A mobile van as the primary clinic",
+      "A residential kitchen"
+    ],
+    "correct": 1,
+    "explanation": "The practice of optometry shall be conducted only in premises used exclusively for optometric practice (a regular clinic/office) that is maintained to professional standards and conducive to the exercise of independent clinical judgment."
+  },
+  {
+    "type": "mcq",
+    "stem": "May an optometrist hold office or clinic together with members of allied health professions?",
+    "options": [
+      "Only in government hospitals",
+      "No, never",
+      "Only with physicians",
+      "Yes; an optometrist may hold office/clinic together with members of allied health professions"
+    ],
+    "correct": 3,
+    "explanation": "The IRR expressly allows an optometrist to hold office/clinic together with members of allied health professions, and permits multi-disciplinary management."
+  },
+  {
+    "type": "mcq",
+    "stem": "Prescribing and endorsing doubtful products NOT approved by the FDA (BFAD) and DTI is:",
+    "options": [
+      "Encouraged for cost savings",
+      "A prohibited/unlawful act",
+      "Allowed if the patient consents",
+      "Permitted for imported products only"
+    ],
+    "correct": 1,
+    "explanation": "Prescribing or endorsing doubtful products other than those approved by the Bureau of Food and Drugs (FDA) and the Department of Trade and Industry (DTI) is an unlawful/prohibited act."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist should display which documents in a conspicuous area of the clinic?",
+    "options": [
+      "Marketing banners with fees",
+      "Only price lists",
+      "The Certificate of Registration and the Professional Identification Card (plus documents attesting to competence and educational qualifications)",
+      "Personal photographs"
+    ],
+    "correct": 2,
+    "explanation": "The optometrist must prominently display the Certificate of Registration and PIC, and the clinic shall display only certificates, diplomas, and similar documents attesting to the competence and educational qualifications earned by the optometrist."
+  },
+  {
+    "type": "mcq",
+    "stem": "Manipulating or leaking licensure examination questions or tampering with grades is penalized under RA 8981 by imprisonment of:",
+    "options": [
+      "Not less than 6 years and 1 day to 12 years, or a fine, or both",
+      "1 to 3 years only",
+      "Not less than 6 months and 1 day to 6 years",
+      "A fine only, with no imprisonment"
+    ],
+    "correct": 0,
+    "explanation": "Under RA 8981, manipulating exam results, leaking questions, or tampering with grades is punished by imprisonment of not less than six (6) years and one (1) day to not more than twelve (12) years, or a fine of P50,000 to P100,000, or both."
+  },
+  {
+    "type": "mcq",
+    "stem": "If a PRC officer or Board member is the one who manipulates exam results, the additional penalty imposed is:",
+    "options": [
+      "A one-year suspension",
+      "A written warning",
+      "Community service",
+      "Removal from office and perpetual absolute disqualification from public office"
+    ],
+    "correct": 3,
+    "explanation": "Under RA 8981, if the offender is a PRC officer/employee or a regulatory board member, he/she shall be removed from office and suffer perpetual absolute disqualification from public office, in addition to the criminal penalties."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Board of Optometry shall report the ratings obtained by each candidate to the Commission within how many days after the last examination day (unless extended)?",
+    "options": [
+      "Ten (10) days",
+      "Sixty (60) days",
+      "Thirty (30) days",
+      "Ninety (90) days"
+    ],
+    "correct": 1,
+    "explanation": "The Board shall report the ratings to the Commission within sixty (60) days after the last examination day, unless extended by the Commission. (Note: under RA 8981's general rule, boards submit results within 10 days; the optometry IRR specifies 60 days for the report of results.)"
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Certificate of Registration\" and \"Professional License (PIC)\" differ primarily in that:",
+    "options": [
+      "They are interchangeable terms",
+      "The Certificate of Registration is permanent while the PIC is renewable/expiring",
+      "The PIC is permanent while the Certificate of Registration expires",
+      "Both must be renewed yearly"
+    ],
+    "correct": 1,
+    "explanation": "The Certificate of Registration is a permanent, non-expiring proof of qualification; the PIC (professional license) is the renewable card that expires and must be renewed every 3 years."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is the correct chronological order of Philippine optometry regulatory laws?",
+    "options": [
+      "RA 8050 → Optometry Law of 1917 → RA 1998",
+      "Optometry Law of 1917 → RA 1998 (1957) → RA 8050 (1995)",
+      "RA 8050 → RA 1998 → Optometry Law of 1917",
+      "RA 1998 → Optometry Law of 1917 → RA 8050"
+    ],
+    "correct": 1,
+    "explanation": "The correct order: the Optometry Law of 1917 (first, amended 1919), then RA 1998 (1957), then RA 8050 (the Revised Optometry Law of 1995, current)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who among the following is recognized as the \"Father of the SOP\" (now IPAO)?",
+    "options": [
+      "Dr. Charlie Ho",
+      "Dr. Vigan delos Reyes",
+      "Dr. Manuel Sabater",
+      "Dr. Justo Gonzales"
+    ],
+    "correct": 1,
+    "explanation": "Dr. Vigan delos Reyes is recognized as the Father of the SOP (Samahan ng mga Optometrist sa Pilipinas), which led the integration period and became the IPAO."
+  },
+  {
+    "type": "mcq",
+    "stem": "The examination given \"de gracia\" (as a grace) one year prior to March 11, 1917 was administered by the:",
+    "options": [
+      "Board of Optometry",
+      "Junta Examinadora (Board of Examiners)",
+      "Professional Regulation Commission",
+      "Supreme Court"
+    ],
+    "correct": 1,
+    "explanation": "The Junta Examinadora (Board of Examiners) administered the 'examination de gracia' one year prior to March 11, 1917, in the early history of Philippine optometry regulation."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a legitimate role an optometrist may hold, per the IRR (Sec. 42)?",
+    "options": [
+      "An owner of a foreign-controlled optical clinic",
+      "A consultant to optical/ophthalmic manufacturing and distribution business/industry, or a staff optometrist/administrator for government, research, or health institutions",
+      "A canvasser selling door-to-door",
+      "An unlicensed dispenser"
+    ],
+    "correct": 1,
+    "explanation": "An optometrist may be engaged as a consultant to optical/ophthalmic manufacturing and distribution business/industry, or as a staff optometrist/optometric administrator for government offices, research organizations, educational institutions, insurance companies, or licensed health facilities/hospitals."
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Clinical Skills Assessment/Examination\" (the modern term replacing 'practical') is developed, prepared, and graded by the:",
+    "options": [
+      "Commission on Higher Education",
+      "Board of Optometry",
+      "Professional Regulation Commission",
+      "IPAO"
+    ],
+    "correct": 1,
+    "explanation": "The Clinical Skills Assessment/Examination is the clinical competency examination developed, prepared, and scored/graded by the Board of Optometry as the clinical component of the licensure examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which component is part of the Clinical Skills Assessment (performance) of the licensure examination?",
+    "options": [
+      "Physiological Optics",
+      "Contact Lens Practice",
+      "Jurisprudence and Ethics",
+      "General Anatomy"
+    ],
+    "correct": 1,
+    "explanation": "The Clinical Skills Assessment (30%) includes Subjective Clinical Procedures, Objective Clinical Procedures, Contact Lens Practice, Binocular Vision and Low Vision Clinical Skills, and Ophthalmic Laboratory and Dispensing. Jurisprudence, Ethics, and Physiological Optics are written (theoretical) subjects."
+  },
+  {
+    "type": "mcq",
+    "stem": "Entering into a contract with a patient that compromises the optometrist's professional judgment or prevents the patient from obtaining redress for negligence is:",
+    "options": [
+      "A valid business practice",
+      "Required for liability protection",
+      "Allowed with a lawyer present",
+      "A prohibited/unlawful act"
+    ],
+    "correct": 3,
+    "explanation": "Entering into contracts that compromise the optometrist's professional judgment/diagnosis, or that prevent a patient from obtaining due treatment or redress for gross negligence causing injury, is an unlawful/prohibited act."
+  },
+  {
+    "type": "mcq",
+    "stem": "The moral, ethical, and professional obligations that optometrists owe to their patients, the public, and fellow optometrists are primarily embodied in the:",
+    "options": [
+      "Civil Code",
+      "Revised Penal Code",
+      "Code of Professional Ethics for Optometrists",
+      "Labor Code"
+    ],
+    "correct": 2,
+    "explanation": "The Code of Professional Ethics for Optometrists prescribes the standards of conduct, integrity, and moral duties toward patients, the public, and fellow optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which agency administers and conducts the licensure examinations of the various regulatory boards?",
+    "options": [
+      "The Professional Regulation Commission",
+      "The Civil Service Commission",
+      "The Department of Labor and Employment",
+      "The Commission on Higher Education"
+    ],
+    "correct": 0,
+    "explanation": "The PRC administers and conducts the licensure examinations of the various regulatory boards in accordance with its rules, and admits successful examinees to the practice of the profession."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following statements about the DPA list is MOST accurate?",
+    "options": [
+      "It includes therapeutic agents such as antibiotics",
+      "It is set by the DTI",
+      "It is limited to diagnostic agents (mydriatics, cycloplegics, anesthetics, and a dye)",
+      "It includes oral analgesics"
+    ],
+    "correct": 2,
+    "explanation": "The authorized agents are strictly DIAGNOSTIC: mydriatics (Phenylephrine, Tropicamide), a cycloplegic (Cyclopentolate), anesthetics (Proparacaine, Benoxinate/Oxybuprocaine), and a dye (Fluorescein). Therapeutic agents like antibiotics or anti-glaucoma drugs are not DPAs."
+  },
+  {
+    "type": "mcq",
+    "stem": "The requirement that CPD be mandatory for renewal of PRC licenses was introduced by which law?",
+    "options": [
+      "RA 10912",
+      "RA 8050",
+      "RA 9711",
+      "RA 8981"
+    ],
+    "correct": 0,
+    "explanation": "RA 10912 (the CPD Act of 2016) made CPD mandatory for the renewal of PRC professional licenses."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist examining a non-ambulant patient at the patient's home is permissible when:",
+    "options": [
+      "There is an unsolicited request because the patient, for health or occupational reasons, cannot visit the regular clinic",
+      "The patient prefers privacy",
+      "The optometrist advertises house calls",
+      "It is more profitable"
+    ],
+    "correct": 0,
+    "explanation": "An optometrist shall not examine patients outside the regular clinic UNLESS there is an unsolicited request for patients who are not ambulant or who, for health or occupational reasons, are unable to visit the regular office/clinic."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following correctly pairs a regulatory concept with its scope?",
+    "options": [
+      "Licensure law governs entry into and the standards of the profession",
+      "Civil law imposes imprisonment for professional violations",
+      "Public opinion law is enacted by Congress",
+      "Criminal law governs contracts between optometrists"
+    ],
+    "correct": 0,
+    "explanation": "Licensure law governs entry into and the standards/regulation of the profession. The regulatory framework of optometry includes licensure laws, the code of ethics, criminal law, civil law, optometric-society rules, and public opinion."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is the accredited and integrated professional organization (AIPO) whose Code of Ethics binds Filipino optometrists?",
+    "options": [
+      "The Asia Optometric Congress",
+      "The Philippine Optical Retailers Association",
+      "The Optometric Association of the Philippines",
+      "The Integrated Philippine Association of Optometrists (IPAO)"
+    ],
+    "correct": 3,
+    "explanation": "The IPAO is the PRC-accredited and integrated professional organization (AIPO) that promulgates the Code of Ethics for Filipino optometrists."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the hierarchy of Philippine trial courts, which handles the majority of cases as the principal second-level trial court?",
+    "options": [
+      "Metropolitan/Municipal Trial Court",
+      "Regional Trial Court (RTC)",
+      "Barangay (Lupong Tagapamayapa)",
+      "Court of Appeals"
+    ],
+    "correct": 1,
+    "explanation": "The Regional Trial Courts (RTCs) are the principal second-level trial courts. Below them are the first-level courts (Metropolitan/Municipal Trial Courts) and barangay-level dispute resolution; above them are the Court of Appeals and the Supreme Court."
+  },
+  {
+    "type": "mcq",
+    "stem": "\"Moral turpitude,\" a ground affecting registration and discipline, refers to:",
+    "options": [
+      "Failure to renew the PIC on time",
+      "Conduct that is base, vile, or depraved and contrary to accepted moral standards",
+      "A billing dispute",
+      "A minor traffic violation"
+    ],
+    "correct": 1,
+    "explanation": "Moral turpitude is conduct that is base, vile, or depraved and contrary to the accepted rules of morality. Conviction of a crime involving moral turpitude is a ground for disqualification and disciplinary action."
+  },
+  {
+    "type": "mcq",
+    "stem": "An optometrist who accepts employment with, or associates himself with, an optometrist whose certificate has been suspended or revoked (during the suspension/revocation period) is:",
+    "options": [
+      "Only civilly liable",
+      "Committing a prohibited act",
+      "Exempt if unaware of the suspension",
+      "Acting lawfully"
+    ],
+    "correct": 1,
+    "explanation": "Accepting employment or associating with an optometrist whose certificate of registration is suspended or revoked, during the period of such suspension or revocation, is a prohibited/unlawful act."
+  },
+  {
+    "type": "mcq",
+    "stem": "The DOH Prevention of Blindness Program prioritizes which condition as a public health issue that optometrists help address?",
+    "options": [
+      "Color vision defects",
+      "Cataract surgery backlog",
+      "Diabetic retinopathy screening only",
+      "Uncorrected refractive error (URE)"
+    ],
+    "correct": 3,
+    "explanation": "The DOH Prevention of Blindness Program prioritizes uncorrected refractive error (URE) as a public health issue, with optometrists in the frontline of providing refractive services and eyeglasses."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is TRUE about the certificate of registration signatories?",
+    "options": [
+      "Signed by the DOH Secretary",
+      "Signed only by the Board chairman",
+      "Signed by the President of the Philippines",
+      "Signed by the PRC Chairperson and by the chairman and all members of the Board of Optometry, bearing its seal"
+    ],
+    "correct": 3,
+    "explanation": "The Certificate of Registration is signed by the Chairperson of the PRC and by the chairman and all members of the Board of Optometry, and bears its seal."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the IRR, the practice of optometry must promote:",
+    "options": [
+      "Shared ownership with technicians",
+      "Maximum sales volume",
+      "Dependence on optical suppliers",
+      "Autonomy of management and the exercise of independent clinical judgment"
+    ],
+    "correct": 3,
+    "explanation": "The clinic environment must be conducive to the exercise of independent clinical judgment and shall promote autonomy of management procedures (except in multi-disciplinary management with allied health professionals)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The optometry curriculum's integration of pharmacology (enabling DPA use for new graduates) is mandated by which body?",
+    "options": [
+      "The IPAO Board of Governors",
+      "The Supreme Court",
+      "The Department of Health",
+      "The Technical Panel on Optometry Education (under RA 8050 / CHED)"
+    ],
+    "correct": 3,
+    "explanation": "The Technical Panel on Optometry Education, created pursuant to RA 8050, integrates the pharmacology course into the six-year optometry curriculum, enabling qualified new graduates to use DPAs."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which is the BEST description of the relationship between RA 8050 and Board Resolution No. 01, Series of 2008?",
+    "options": [
+      "RA 8050 is the IRR of the Board Resolution",
+      "The Board Resolution repealed RA 8050",
+      "The Board Resolution is the Implementing Rules and Regulations (IRR) that operationalize RA 8050",
+      "They are unrelated laws"
+    ],
+    "correct": 2,
+    "explanation": "Board of Optometry Resolution No. 01, Series of 2008 is the IRR of RA 8050 — the detailed rules and regulations implementing the Revised Optometry Law of 1995."
+  },
+  {
+    "type": "mcq",
+    "stem": "The reinstatement of a revoked certificate of registration typically requires, among others:",
+    "options": [
+      "Sworn statements attesting to good conduct and non-practice during revocation, plus an NBI clearance, and a Board resolution approved by the Commission",
+      "Approval by the Supreme Court",
+      "A new licensure examination",
+      "Only payment of a fee"
+    ],
+    "correct": 0,
+    "explanation": "Reinstatement requires sworn statements (from a recognized practitioner and an incumbent officer of the accredited association) attesting to good conduct and that the applicant never practiced during revocation, an NBI clearance, and a Board resolution subject to Commission approval."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which statement about optometric advertising is CORRECT?",
+    "options": [
+      "Vulgar advertising is acceptable if effective",
+      "Self-laudatory advertising claiming superiority of methods or exclusivity is unethical",
+      "Optometrists may claim superiority over other practitioners",
+      "Advertising the lowest fees is encouraged"
+    ],
+    "correct": 1,
+    "explanation": "Self-laudatory advertising regarding performance, exclusivity, or superiority of methods and instrumentation is unethical, as are deceptive, undignified, immodest, or vulgar advertisements and fee-based inducements."
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient's right to have their optometric records and personal information kept confidential is an example of the optometrist's duty of:",
+    "options": [
+      "Canvassing",
+      "Delegation",
+      "Confidentiality (privileged communication)",
+      "Advertising"
+    ],
+    "correct": 2,
+    "explanation": "Maintaining confidentiality of patient records and information is a core ethical duty of the optometrist toward the patient, reflecting the privileged nature of the professional relationship."
+  },
+  {
+    "type": "mcq",
+    "stem": "The requirement that all licensure-examination subjects be taught only by holders of valid certificates of registration and licenses of that profession is found in:",
+    "options": [
+      "RA 8050",
+      "The Labor Code",
+      "RA 10912",
+      "RA 8981 (PRC Modernization Act)"
+    ],
+    "correct": 3,
+    "explanation": "RA 8981 provides that all subjects for licensure examinations shall be taught by persons who hold valid certificates of registration and valid professional licenses of the profession and who comply with CHED requirements."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following newly added schools/programs reflects the recent expansion of optometry education in the Philippines?",
+    "options": [
+      "Only Centro Escolar University offers optometry",
+      "No new schools have been added since 1951",
+      "Only medical schools may offer optometry",
+      "Programs such as Emilio Aguinaldo College, National University, and CEU-Malolos are recent additions"
+    ],
+    "correct": 3,
+    "explanation": "Recent additions to optometry education include Emilio Aguinaldo College, Lyceum of the Philippines, National University, and CEU-Malolos, alongside long-standing schools like Centro Escolar University and Manila Central University."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Board of Optometry is vested with the authority to:",
+    "options": [
+      "Appoint the PRC Commissioners",
+      "Promulgate rules for the practice of optometry (subject to PRC approval), enforce them, and prepare/rate the licensure examinations",
+      "Try criminal cases in court",
+      "Enact national laws"
+    ],
+    "correct": 1,
+    "explanation": "The Board promulgates rules and regulations for optometric practice (subject to PRC approval and consistent with RA 8050), administers and enforces them, and determines/prepares/checks/rates the licensure examinations."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following BEST reflects an optometrist's ethical duty toward FELLOW optometrists?",
+    "options": [
+      "Undercutting their fees to win patients",
+      "Refraining from maligning colleagues and avoiding unfair competition",
+      "Advertising superiority over them",
+      "Soliciting their patients through canvassing"
+    ],
+    "correct": 1,
+    "explanation": "Ethical duty toward colleagues includes refraining from maligning or disparaging fellow optometrists, avoiding unfair competition and solicitation of their patients, and upholding the dignity of the profession."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is the correct expansion of \"AIPO\" as used in optometric regulation?",
+    "options": [
+      "Allied Interdisciplinary Practice of Optometry",
+      "Asian Institute of Professional Optometry",
+      "Association of Independent Practicing Optometrists",
+      "Accredited and Integrated Professional Organization"
+    ],
+    "correct": 3,
+    "explanation": "AIPO stands for the Accredited and Integrated Professional Organization — the PRC-recognized national organization (IPAO for optometry) that promulgates the Code of Ethics and represents the profession."
+  }
+]
