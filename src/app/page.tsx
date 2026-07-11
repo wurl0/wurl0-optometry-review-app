@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
-import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
+import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
 import { canOpenItem, isAdmin, type Access } from '@/lib/access'
@@ -168,12 +168,26 @@ export default async function HomePage() {
           </div>
         )}
 
-        {/* Subject cards */}
-        <div className="grid sm:grid-cols-2 gap-4">
-          {SUBJECTS.filter(s => !s.isBonus).map(subject => {
-            const c = COLOR_MAP[subject.color]
-            const stats = statsBySubject[subject.slug]
+        {/* Subject cards, grouped by the 8 board areas */}
+        <div className="space-y-8">
+          {SUBJECT_GROUPS.map(group => {
+            const groupSubjects = group.slugs
+              .map(slug => SUBJECTS.find(s => s.slug === slug))
+              .filter((s): s is (typeof SUBJECTS)[number] => !!s && !s.isBonus)
+            if (groupSubjects.length === 0) return null
             return (
+              <section key={group.id}>
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <h2 className="text-sm font-bold text-gray-700 leading-tight">{group.title}</h2>
+                  <span className="shrink-0 text-[11px] font-semibold text-gray-500 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-full">
+                    {group.weight}% of written exam
+                  </span>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {groupSubjects.map(subject => {
+                    const c = COLOR_MAP[subject.color]
+                    const stats = statsBySubject[subject.slug]
+                    return (
               <div
                 key={subject.slug}
                 className="bg-white rounded-2xl overflow-hidden border border-gray-200"
@@ -183,7 +197,7 @@ export default async function HomePage() {
                   <div className="flex items-start justify-between">
                     <span className="text-4xl">{subject.icon}</span>
                   </div>
-                  <h2 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h2>
+                  <h3 className="text-base font-bold text-white mt-3 leading-tight">{subject.name}</h3>
                   {stats && (
                     <div className="mt-2">
                       <div className="flex justify-between text-xs text-white/70 mb-1">
@@ -254,6 +268,10 @@ export default async function HomePage() {
                   </div>
                 </div>
               </div>
+                    )
+                  })}
+                </div>
+              </section>
             )
           })}
         </div>
@@ -324,7 +342,7 @@ export default async function HomePage() {
         {/* Coming soon */}
         <div className="mt-4 bg-gray-100 rounded-2xl p-5 border border-dashed border-gray-300">
           <p className="text-sm font-semibold text-gray-400">Coming soon</p>
-          <p className="text-xs text-gray-400 mt-0.5">Ethics · Special Areas</p>
+          <p className="text-xs text-gray-400 mt-0.5">Special Areas</p>
         </div>
 
         {/* Changelog */}
