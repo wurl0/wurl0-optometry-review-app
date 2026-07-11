@@ -57,7 +57,12 @@ export const generalPharmacologyNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Potency vs Efficacy distinction is a board favorite. Potency = lowest dose for effect (EC50). Efficacy = maximum effect a drug can produce (Emax). A drug can be highly potent (small dose needed) but have low efficacy (weak maximal effect).',
+              content: 'Potency vs Efficacy distinction is a board favorite. **Potency = lowest dose for effect (EC50)**. **Efficacy = maximum effect a drug can produce (Emax)**. A drug can be highly potent (small dose needed) but have low efficacy (weak maximal effect).',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Think **left-vs-up on the dose-response curve.** **Potency** is how far **left** the curve sits — a more potent drug reaches its effect at a **smaller dose** (lower EC50); it only tells you the dose, not the ceiling. **Efficacy** is how **high** the curve climbs — the **maximum** effect possible (Emax). Classic example: a low-dose "potent" opioid and morphine may relieve the same pain (equal efficacy), while ibuprofen simply **cannot** reach morphine\'s ceiling no matter the dose (lower efficacy). Efficacy usually matters more clinically.',
             },
           ],
         },
@@ -174,6 +179,11 @@ export const generalPharmacologyNotes: NotesData = {
                 'IV drugs bypass first-pass effect and enter systemic circulation directly',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why does an **oral** dose need to be bigger than an **IV** dose? Blood from the gut drains through the **portal vein into the liver first**, where much of the drug is metabolized **before** it ever reaches the body — the **first-pass effect**. So oral bioavailability is <100%. Routes that dodge the liver on entry — **IV, sublingual, and rectal (partly)** — preserve more drug, which is why **sublingual nitroglycerin** works fast for angina while a swallowed tablet would be destroyed.',
+            },
           ],
         },
         {
@@ -221,6 +231,11 @@ export const generalPharmacologyNotes: NotesData = {
                     'First-order kinetics: constant FRACTION of drug reaches blood; applies to all routes except IV, IA, IC',
                     'Zero-order kinetics: 100% of drug reaches blood; applies to IV, IA, IC routes only',
                   ],
+                },
+                {
+                  kind: 'callout',
+                  variant: 'trap',
+                  content: 'Don\'t let the names mislead you. In **first-order** kinetics a constant **fraction (%)** is handled per unit time — the rate rises and falls **with concentration** (most drugs). In **zero-order** a constant **amount** is handled regardless of concentration — the enzymes are **saturated**. The board\'s favorite zero-order examples are **ethanol, phenytoin, and aspirin (high dose)**: their clearance maxes out, so small dose increases cause dangerous, disproportionate spikes.',
                 },
               ],
             },
@@ -300,6 +315,11 @@ export const generalPharmacologyNotes: NotesData = {
                 'Inductors of microsomal oxidation (increase enzyme activity): Phenobarbital, Chlorpromazine',
                 'Inhibitors of microsomal oxidation (decrease enzyme activity): Metronidazole',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'CYP450 **induction and inhibition move drug levels in OPPOSITE directions** — the root of most dangerous interactions. An **inducer** (phenobarbital, rifampin, chronic alcohol, carbamazepine) revs the liver, **clearing other drugs faster → sub-therapeutic** levels (a reason oral contraceptives fail on rifampin). An **inhibitor** (metronidazole, cimetidine, azoles, grapefruit) slows metabolism, so co-drugs **stack up → toxicity**. Inducers weaken partners, inhibitors poison them.',
             },
           ],
         },
@@ -403,6 +423,11 @@ export const generalPharmacologyNotes: NotesData = {
                     'Non-competitive (non-surmountable) antagonism — antagonist acts at a site beyond the active site; cannot be overcome by increasing agonist',
                   ],
                 },
+                {
+                  kind: 'callout',
+                  variant: 'why',
+                  content: 'The dose-response curve tells you which is which. A **competitive** antagonist fights for the **same seat**, so pouring in more agonist eventually **out-competes it** — the curve shifts **right but still reaches Emax** (surmountable). A **non-competitive** antagonist binds **elsewhere or covalently**, effectively removing receptors — no amount of agonist restores the ceiling, so **Emax drops** (non-surmountable). "Same seat = beatable; different seat = permanent."',
+                },
               ],
             },
             {
@@ -432,6 +457,11 @@ export const generalPharmacologyNotes: NotesData = {
                 ['Synergism', '1 + 1 = 3', 'Response of combined drugs is greater than the sum of individual responses'],
                 ['Potentiation', '0 + 1 = 2', 'Drug A has no effect alone but enhances the effect of Drug B'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'The arithmetic IS the mnemonic. **Synergism = 1 + 1 = 3** (two active drugs together beat their sum). **Potentiation = 0 + 1 = 2** (a drug that does **nothing alone** boosts its partner). The tell for potentiation is the **zero** — one ingredient has no effect by itself but amplifies the other (e.g., a CYP inhibitor "potentiating" a second drug by blocking its breakdown).',
             },
           ],
         },
@@ -980,6 +1010,11 @@ export const generalPharmacologyNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: '**M3 is the eye\'s muscarinic receptor** — it explains the entire cholinergic ocular picture. Stimulating M3 (via Gq → IP3/DAG → Ca²⁺) contracts three muscles at once: **sphincter pupillae** (miosis), **ciliary muscle** (accommodation), and **Brücke\'s muscle** (opens the trabeculum → lowers IOP). So pilocarpine\'s miosis, accommodative spasm, and IOP drop are all **one receptor**. Blocking M3 (atropine) does the reverse — mydriasis + cycloplegia. **M2** is the **cardiac** slow-down receptor, a different job entirely.',
+            },
+            {
               kind: 'pearl',
               content: 'M3 receptors (Gq pathway → phospholipase C → IP3/DAG → increased Ca²⁺) mediate: sphincter pupillae contraction (miosis), ciliary muscle contraction (accommodation), Brucke\'s muscle contraction (opens trabecular meshwork → lowers IOP). M2 receptors use Gi pathway (inhibit adenylyl cyclase → decrease cAMP) — classic for cardiac slowing.',
             },
@@ -998,6 +1033,11 @@ export const generalPharmacologyNotes: NotesData = {
                 ['Alpha + Beta blockade', 'Labetalol, Carvedilol', 'Vasodilation (alpha-1 block) + decreased cardiac output (beta block); used in hypertensive emergencies'],
                 ['Cardioselective (B1 only)', 'Betaxolol, Bisoprolol, Esmolol, Atenolol, Acebutolol, Metoprolol, Nebivolol (BEAM NC)', 'Safe in asthma, COPD; use with caution in DM (still mask hypoglycemia tachycardia partially)'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The ophthalmic catch: a beta-blocker with **membrane-stabilizing activity (MSA)** acts like a local anesthetic on the cornea, so those agents **cannot be used as eye drops** — they damage the epithelium. That is why **timolol (no MSA)** is the glaucoma workhorse and propranolol is not a topical eye drug. Separately, **ISA** (partial agonist) blockers cause **less resting bradycardia** — handy systemically, but ISA is not why a drug is or isn\'t used in the eye.',
             },
             {
               kind: 'pearl',
@@ -1057,6 +1097,11 @@ export const generalPharmacologyNotes: NotesData = {
                 'Naloxone — treatment of acute opioid overdose (antidote)',
                 'Naltrexone — maintenance drug for opioid addicts in treatment programs',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: '**Pinpoint pupils** are the ocular giveaway of opioids. Opioids **stimulate the Edinger-Westphal nucleus**, driving parasympathetic (CN3) tone to the sphincter → intense **miosis** — and unlike most CNS depressants, tolerance to this effect barely develops, so it persists even in chronic users. A comatose overdose patient with **pinpoint pupils + slow breathing** is the classic triad that points to naloxone.',
             },
           ],
         },

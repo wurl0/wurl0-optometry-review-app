@@ -34,6 +34,11 @@ export const ocularPharmacologyNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The cornea is a **"fat-water-fat" sandwich**: lipid epithelium → watery stroma → lipid endothelium. A drug must be **both lipid- and water-soluble (biphasic)** to cross all three — purely water-soluble drugs stall at the epithelium. That is why **BAK (a surfactant)** is added: it loosens the epithelial tight junctions and lets lipid-insoluble drugs like carbachol through. It also explains why **systemic dosing can\'t reach the anterior segment** — the blood-aqueous barrier blocks it, so topical wins there.',
+            },
+            {
               kind: 'pearl',
               content: 'Systemic routes do NOT penetrate the anterior segment due to the blood-aqueous barrier. Topical administration achieves higher concentration in the anterior segment than systemic dosing.',
             },
@@ -186,7 +191,12 @@ export const ocularPharmacologyNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Mnemonic for cycloplegic strength: "All Snakes Have Cute Tails" = Atropine > Scopolamine > Homatropine > Cyclopentolate > Tropicamide. Tropicamide is the most commonly used mydriatic. Cyclopentolate is the DOC for routine cycloplegia. Atropine is the DOC for uveitis, young children, and amblyopia penalization.',
+              content: 'Mnemonic for cycloplegic strength: **"All Snakes Have Cute Tails"** = Atropine > Scopolamine > Homatropine > Cyclopentolate > Tropicamide. Tropicamide = most commonly used mydriatic. Cyclopentolate = DOC for routine cycloplegia. Atropine = DOC for uveitis, young children, amblyopia penalization.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Three different "DOC" answers hang on the same drug list — keep them straight: **routine mydriasis → Tropicamide** (weakest, shortest, safest); **routine cycloplegia (refraction) → Cyclopentolate**; **uveitis / young children / amblyopia penalization → Atropine** (strongest, 14-day). The board picks whichever purpose the stem names. Watch the pediatric trap: **2% cyclopentolate can cause CNS effects** (drowsiness, hallucinations, seizures) in kids — use 0.5–1% with punctal occlusion.',
             },
           ],
         },
@@ -274,6 +284,11 @@ export const ocularPharmacologyNotes: NotesData = {
           content: 'Glaucoma is defined as intraocular pressure (IOP) >21 mmHg. Normal IOP = 10–21 mmHg (fluctuates 2–5 mmHg daily). Anti-glaucoma therapy aims to either decrease aqueous humor (AH) secretion or enhance AH outflow at the trabecular (80%) or uveo-scleral (10–20%) pathways.',
         },
         {
+          kind: 'callout',
+          variant: 'mnemonic',
+          content: 'Every anti-glaucoma drug does one of two things — **turn down the tap (make less AH)** or **open the drain (let more out)**. **Make LESS AH: beta-blockers, CAIs, alpha-2 agonists** (and osmotics pull water out). **Drain MORE: prostaglandins** (uveo-scleral) and **miotics** (trabecular). Alpha-2 agonists cleverly do **both**. Sort any drug into "tap or drain" first and its mechanism, side effects, and combos follow.',
+        },
+        {
           kind: 'sub',
           title: 'Prostaglandin Analogs',
           blocks: [
@@ -323,6 +338,11 @@ export const ocularPharmacologyNotes: NotesData = {
                 'Systemic S/E: bronchoconstriction (non-selective), cardiac failure, hypoglycemia (non-selective), bradycardia, hypotension (most common).',
                 'Combination: Timolol + pilocarpine, Timolol + acetazolamide, Timolol + dipivefrin.',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why is **timolol dangerous in asthma but betaxolol safer**? The ciliary process makes AH through **beta-2** receptors, and the bronchi relax through those same **beta-2** receptors. **Non-selective timolol** blocks beta-2 everywhere — great for lowering AH, but it also **constricts bronchi** (asthma attack) and blunts the beta-2 rescue of hypoglycemia in diabetics. **Betaxolol is beta-1 selective**, so it spares the lungs. Even eye drops drain systemically, so ask about asthma/COPD/heart block before prescribing.',
             },
           ],
         },
@@ -382,6 +402,11 @@ export const ocularPharmacologyNotes: NotesData = {
                 'DFP (diisopropylfluorophosphate — irreversible): used for aphakic glaucoma, accommodative esotropia, pediculosis.',
                 'C/I for all miotics: cataract, age <40 years, neovascular/uveitis glaucoma, retinal detachment, bronchial asthma.',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Pilocarpine lowers IOP **mechanically, not by shrinking the pupil.** It contracts the **ciliary (Brücke\'s) muscle**, whose fibers insert on the **scleral spur**; that pull **stretches the trabecular meshwork open**, so aqueous drains faster. The miosis is a side effect (via the sphincter). This is also why it works in **angle-closure** — pulling the peripheral iris taut can drag it off the drainage angle. But in **malignant glaucoma it is contraindicated** — there the ciliary contraction makes things worse.',
             },
           ],
         },
@@ -549,6 +574,11 @@ export const ocularPharmacologyNotes: NotesData = {
                 ['Epinephrine 0.1% (vs 1%)', 'Direct agonist', 'Horner\'s dilates at 0.1%; normal requires 1%', 'Alternative confirmation'],
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The two-drug workup exploits **where norepinephrine comes from.** **Cocaine blocks NE reuptake**, so it only dilates if the sympathetic nerve is already firing NE — a **Horner\'s pupil (any level) fails to dilate**, confirming the diagnosis. **Hydroxyamphetamine forces NE release from the postganglionic terminal**, so it dilates a healthy 3rd-order neuron but **fails when that neuron is dead (postganglionic Horner\'s)** — localizing the lesion. Reuptake-blocker confirms; releaser localizes.',
+            },
           ],
         },
         {
@@ -680,6 +710,11 @@ export const ocularPharmacologyNotes: NotesData = {
                 'Fluconazole (oral): azole antifungal; good for Candida; poor for filamentous.',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Lock the drug-of-choice pairings the board reuses: **HSV keratitis → Trifluridine** (thymidine analog); **filamentous fungal keratitis (Fusarium/Aspergillus) → Natamycin**; **Candida keratitis/endophthalmitis → Amphotericin B**; **Pseudomonas → an aminoglycoside (tobramycin)** or fluoroquinolone; **CMV retinitis → Ganciclovir**. "Trees (TFT) fight herpes, Nata fights filaments, Ampho fights Candida."',
+            },
           ],
         },
       ],
@@ -717,6 +752,11 @@ export const ocularPharmacologyNotes: NotesData = {
                 'Uses: uveitis, allergic conjunctivitis, corneal inflammation, post-operative inflammation, vernal/atopic keratoconjunctivitis.',
                 'Corticosteroid-induced IOP elevation: 0.1% dexamethasone or betamethasone TID × 4–6 weeks elevates IOP (used as provocative test for POAG).',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Steroids buy anti-inflammatory power at a price — memorize the **two-hit rule: PSC cataract + open-angle glaucoma** (plus delayed healing, corneal melt, and reactivation of **herpes simplex** — never give steroids to a dendritic ulcer). To dodge the IOP hit, use a **"soft" steroid**: **loteprednol** (retro-metabolized) or **fluorometholone** (poor AC penetration) barely raise pressure. Potency vs safety is the trade-off the stem is testing.',
             },
           ],
         },
@@ -843,8 +883,13 @@ export const ocularPharmacologyNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Anchor the five most-tested systemic toxicities to a signature sign: **Chloroquine → bull\'s-eye maculopathy**; **Ethambutol → optic neuritis (red-green loss)** — "**E**thambutol hits the **E**ye nerve"; **Amiodarone → cornea verticillata (whorls)**; **Phenothiazines → stellate anterior cataract**; **Digitalis → xanthopsia (yellow "snowy" vision)** — remember Van Gogh\'s yellows. Sign first, drug second.',
+            },
+            {
               kind: 'pearl',
-              content: 'Cornea verticillata (whorl-like epithelial deposits): Chloroquine (midline), Amiodarone (anterior/periphery), Indomethacin, Tamoxifen, Suramin. Drugs causing angle-closure glaucoma: benztropine, diazepam, chlorpheniramine, tricyclics, scopolamine, amphetamines. Drugs lowering IOP: beta-blockers, diuretics, CAIs, marijuana.',
+              content: 'Cornea verticillata (whorl-like epithelial deposits): **Chloroquine** (midline), **Amiodarone** (anterior/periphery), Indomethacin, Tamoxifen, Suramin. Drugs causing angle-closure glaucoma: benztropine, diazepam, chlorpheniramine, tricyclics, scopolamine, amphetamines. Drugs lowering IOP: beta-blockers, diuretics, CAIs, marijuana.',
             },
           ],
         },
