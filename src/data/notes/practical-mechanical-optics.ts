@@ -57,7 +57,12 @@ export const practicalMechanicalOpticsNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Impact resistance ranking (most to least): Polycarbonate > High-Index Plastic > CR-39 > Ordinary Glass. FDA drop-ball test: 5/8-inch steel ball dropped from 50 inches onto the lens.',
+              content: 'Impact resistance ranking (most to least): **Polycarbonate > High-Index Plastic > CR-39 > Ordinary Glass.** FDA drop-ball test: **5/8-inch** steel ball dropped from **50 inches** onto the lens.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Polycarbonate = the safety champ that lies about color.** Toughest, lightest, blocks 100% UV — but its **Abbe is only 30** (worst chromatic dispersion of common materials). So it is first choice for **kids, sports, and monocular patients**, yet a high-power PC wearer may notice colored fringes at the lens edge.',
             },
           ],
         },
@@ -87,7 +92,7 @@ export const practicalMechanicalOpticsNotes: NotesData = {
               kind: 'bullets',
               items: [
                 'Index of Refraction (n): ratio of speed of light in vacuum to speed in the medium; higher RI = thinner lens; mid-index = 1.523 to 1.57; high-index = 1.58 and above',
-                'Abbe Value (nu value): reciprocal of dispersive power; measures ability of material to hold the spectrum together; higher Abbe = less chromatic aberration; Abbe 60 = least aberration, Abbe 30 = most aberration; standard plastic = 58, polycarbonate = 30',
+                'Abbe Value (nu value): reciprocal of dispersive power; measures ability of material to hold the spectrum together; **higher Abbe = less chromatic aberration**; Abbe 60 = least aberration, Abbe 30 = most aberration; standard plastic = 58, polycarbonate = 30',
                 'Specific Gravity: ratio of 1 cm³ of material to 1 cm³ of water (g/cm³); higher SG = heavier lens; cannot accurately predict finished-lens weight because denser materials often have higher RI (crown glass 2.51 to 2.54, CR-39 1.31 to 1.32)',
                 'Reflectance: percentage of light reflected at each lens surface; formula: R = 100(n-1)² / (n+1)²; higher RI = more reflectance: n=1.5 gives 7.8%, n=1.6 gives 10.4%, n=1.7 gives 12.3%, n=1.8 gives 15.7%, n=1.9 gives 18.3%',
                 'Absorption: light reduced by lens material; follows Lambert\'s law (exponential with thickness); significant in tinted/photochromic lenses',
@@ -95,6 +100,11 @@ export const practicalMechanicalOpticsNotes: NotesData = {
                 'Chemical Resistance: indicates life expectancy and solvent resistance (polycarbonate resists solvents poorly, notably acetone); tested by the Thermodyne test (developed by Chance-Pilkington), which simulates prolonged atmospheric exposure using heat and humidity',
                 'Transparency: a function of RI; higher RI gives lower transmittance (more light lost to surface reflection); good transparency reduces ghost images and the glassy look while raising transmittance',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The board loves the **high-index tradeoff**: raising the index makes the lens **thinner** but almost always **drops the Abbe value** (more chromatic aberration) and **raises surface reflectance** (more ghosting). That is exactly why high-index lenses are the ones that most **need an AR coating**. Thin is not free.',
             },
           ],
         },
@@ -203,6 +213,16 @@ export const practicalMechanicalOpticsNotes: NotesData = {
                 'Distortion types: pincushion distortion is seen in high-power PLUS lenses; barrel distortion is seen in high-power MINUS lenses',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Plus Pinches, Minus Bulges.** High **plus** → **pincushion** (sides pulled in, like a pincushion); high **minus** → **barrel** (sides bulge out, like a barrel). Both alliterate with their sign — plus/pincushion, minus/... (minus is the one left, the barrel).',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The **circle of least confusion** sits **midway between the two focal lines** because that is where the spreading cone of rays is narrowest — past one focal line the beam has collapsed to a line and is re-expanding. Placing this circle **on the retina** (the spherical equivalent) gives the sharpest possible uncorrected image in astigmatism.',
+            },
           ],
         },
         {
@@ -252,7 +272,12 @@ export const practicalMechanicalOpticsNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Lensometer default = BACK VERTEX POWER (concave side against lens stop). Front vertex power = convex side against lens stop. The effective power of a high-plus lens changes significantly with vertex distance, so always verify at the prescribed vertex distance.',
+              content: 'Lensometer default = **BACK VERTEX POWER** (concave side against lens stop). Front vertex power = convex side against lens stop. The effective power of a high-plus lens changes significantly with vertex distance, so always verify at the prescribed vertex distance.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why does the **back** vertex become the standard? The lensometer must report power at the surface **nearest the eye** — that is the plane where the correction actually acts. Vertex distance only matters above ~**±4 D**: move a strong **plus** lens away and it acts **stronger** (needs less power), move a strong **minus** away and it acts **weaker** — the reason a high myope\'s contact lens Rx is less minus than their spectacle Rx.',
             },
           ],
         },
@@ -424,7 +449,12 @@ export const practicalMechanicalOpticsNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Executive bifocals have zero image jump because the optical pole is at the dividing line (h = 0). Flat top bifocals are the most cosmetically popular and have less image jump than round (KK) segments. The distance portion power does NOT affect image jump; only the add power and h matter.',
+              content: 'Executive bifocals have **zero image jump** because the optical pole is at the dividing line (h = 0). Flat top bifocals are the most cosmetically popular and have less image jump than round (KK) segments. The distance portion power does NOT affect image jump; only the add power and h matter.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Separate **image jump** from **image displacement**. **Jump** depends only on the **add** and where the segment\'s optical pole sits (its **h**) — so **Executive = 0 jump** (pole on the line), **Ultex = worst** (pole 20 mm away). **Displacement** is the total prism at the reading point and *does* include the distance Rx (DIP + NIP). A question that mentions the distance power is testing displacement, not jump.',
             },
           ],
         },
@@ -452,6 +482,11 @@ export const practicalMechanicalOpticsNotes: NotesData = {
                 'Seg height formula for slab-off: v/2 − 2 (where v = vertical height of rim)',
                 'Mnemonic for slab-off: MOST MINUS = slab-off (regular); MOST PLUS = reverse slab-off',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Vertical imbalance happens because at the **reading level** the eye looks **below** each optical center, so each lens induces its own vertical prism by Prentice\'s rule — and if the two lenses differ in power (anisometropia), the prisms differ and the image splits. **Slab-off grinds base-up into the reading zone of the more-minus lens** to cancel that difference. Remember **"most minus gets the slab."**',
             },
           ],
         },
@@ -510,6 +545,11 @@ export const practicalMechanicalOpticsNotes: NotesData = {
             {
               kind: 'pearl',
               content: 'Earlier history: the first eyeglasses (Italy/Venetians, ~1285 to 1289) corrected only hyperopia and presbyopia; biconcave lenses for myopia appeared in the 14th century; Sir George Airy designed the first astigmatic lens in 1825.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Anchor four dates and the rest hang off them: **Franklin bifocal 1784** → **Hawkins trifocal 1826** → **Executive (AO) 1954** → **Varilux progressive 1958**. "**F**ranklin **F**irst, then **T**rifocal, then the big **E**xecutive, then the seamless **V**arilux." Franklin is the one everyone tests.',
             },
           ],
         },
@@ -608,6 +648,11 @@ export const practicalMechanicalOpticsNotes: NotesData = {
                 'Pantoscopic tilt of 8 to 12° is critical for proper progressive lens fitting',
                 'Fitting height (seg height): vertical distance from bottom of frame to patient\'s pupil in primary gaze',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Peripheral astigmatism in a PAL is **unavoidable** — the power has to change smoothly down the lens, and that gradient mathematically forces blur into the sides. A **hard design** crowds that blur into small, intense zones to keep the distance and near areas **wide** (good for first-time wearers who want clear zones); a **soft design** smears it gently over a **wider corridor** (easier adaptation, but narrower clear zones). You are only choosing *where* the blur goes, never whether it exists.',
             },
             {
               kind: 'table',
@@ -782,6 +827,16 @@ export const practicalMechanicalOpticsNotes: NotesData = {
                 'No movement with trial lens in contact = neutralization (combined power = zero)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Watch which power each method reports: **hand (trial-case) neutralization measures FRONT vertex power**, while the **lensometer defaults to BACK vertex power**. For thin/low lenses the two barely differ, but on a thick high-plus lens they diverge — a classic distractor pairing on the board.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**"With = weak, Against = add."** In hand neutralization, **WITH** motion means the meridian is **minus** (neutralize with minus); **AGAINST** motion means **plus**. Same rule as retinoscopy — if it moves with you, you have not caught up to it yet.',
+            },
           ],
         },
         {
@@ -857,6 +912,15 @@ export const practicalMechanicalOpticsNotes: NotesData = {
             {
               kind: 'text',
               content: 'The boxing system (adopted by Optical Manufacturers Association in 1962) draws an imaginary box around the frame/lens and uses the box sides as measurement reference points.',
+            },
+            {
+              kind: 'diagram',
+              id: 'pmo-boxing-system',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**DBC = A + DBL.** The frame PD (center-to-center) is just one eye size plus the bridge — walk it across the frame: edge → across lens (**A**) → across bridge (**DBL**) → you land on the next center. And **A is horizontal, B is vertical** ("**A** cross, **B** down"). Mechanical center sits **2 mm above** GC.',
             },
             {
               kind: 'table',

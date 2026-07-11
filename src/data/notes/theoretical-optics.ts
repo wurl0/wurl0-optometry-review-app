@@ -32,7 +32,13 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Aqueous = Vitreous = 1.336. Cornea (1.376) < Cortex (1.386) < Nucleus (1.406). The gradient in the lens helps reduce spherical aberration.',
+                '**Aqueous = Vitreous = 1.336.** Cornea (1.376) < Cortex (1.386) < Nucleus (1.406). The gradient in the lens helps reduce spherical aberration.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content:
+                'Why does the **cornea** out-refract the lens? Power is created wherever the index jumps the most. The **air → cornea** step is huge (1.000 → 1.376), so the cornea does ~**2/3** of the work. Inside the eye the media barely differ (aqueous 1.336, lens 1.386–1.406), so the lens adds only ~**1/3**. And because **aqueous = vitreous = 1.336**, the media on either side of the lens are matched — all the lens power comes from its curved surfaces, not an index jump.',
             },
           ],
         },
@@ -129,7 +135,13 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Johannes Kepler (1611) gave the first actual definition of myopia. Donders (1866) classified it. Axial myopia is the most common form — each 1 mm increase in axial length adds ~3 D of myopia.',
+                'Johannes Kepler (1611) gave the first actual definition of myopia. Donders (1866) classified it. **Axial myopia is the most common form** — each **1 mm** increase in axial length adds ~**3 D** of myopia.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content:
+                '**1 mm ≈ 3 D.** A normal eye is ~24 mm. So a 26 mm eye is roughly **−6 D** of axial myopia. This one ratio lets you eyeball the error from axial length on the board.',
             },
           ],
         },
@@ -145,6 +157,12 @@ const notes: NotesData = {
                 'Nocturnal myopia: occurs in reduced illumination (pupil dilates, spherical aberration increases)',
                 'Pseudomyopia: accommodative spasm causing apparent myopia; resolves with cycloplegia',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                '**Pseudomyopia is not true myopia.** The eye is normal length and power — a ciliary spasm just over-focuses it. **Cycloplegia relaxes the spasm and the "myopia" disappears.** Prescribe minus to a pseudomyope and you lock in the spasm. Suspect it in young patients with variable, worse-with-fatigue minus.',
             },
           ],
         },
@@ -195,7 +213,19 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Formula chain: Total = Manifest + Latent | Manifest = Absolute + Facultative. Kastner (1855) first identified hyperopia; Helmholtz (1859) coined the term; Donders (1858) classified it.',
+                'Formula chain: **Total = Manifest + Latent** | **Manifest = Absolute + Facultative.** Kastner (1855) first identified hyperopia; Helmholtz (1859) coined the term; Donders (1858) classified it.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content:
+                'Nest the terms from the outside in: **Total** is everything → split into **Manifest** (what you can measure without drops) + **Latent** (hidden by ciliary tone). Manifest then splits into **Facultative** (accommodation can beat it) + **Absolute** (accommodation cannot). So the least severe hides (latent), the most severe cannot be overcome at all (absolute).',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                'Only **cycloplegic refraction** reveals **latent** (and therefore **total**) hyperopia. A routine dry retinoscopy captures manifest hyperopia only and **under-measures** the true amount — the classic reason a young hyperope reads 20/20 yet still gets asthenopia.',
             },
           ],
         },
@@ -257,7 +287,19 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'WTR is most common in children and young adults. ATR becomes more common with age. Oblique astigmatism tends to cause more distortion and is harder to adapt to.',
+                '**WTR** is most common in children and young adults. **ATR** becomes more common with age. Oblique astigmatism tends to cause more distortion and is harder to adapt to.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content:
+                '**"With the Rule = the steep meridian stands upright (Vertical)."** WTR minus-cyl axis sits **horizontal** (~180°); ATR minus-cyl axis sits **vertical** (~90°). Age flattens the vertical cornea, so the young are WTR and the old drift ATR — think "**young stands up, old lies down.**"',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                'The **cyl axis is 90° away from the power meridian** — never read the strong meridian as the axis. In WTR the power is near vertical (90°), so the correcting **minus-cyl axis is near 180°**. Mixing these up flips your prescription onto the wrong meridian.',
             },
           ],
         },
@@ -324,6 +366,12 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content:
+                'The counterintuitive part: the ciliary muscle **contracts to relax the lens\'s tether.** The muscle is a sphincter — when it contracts, its ring **shrinks**, which **slackens** the zonules. Freed from tension, the elastic lens rounds up on its own and gains power. So "muscle working = zonules loose = lens fat = near focus." At rest the opposite holds: relaxed muscle, taut zonules, flat lens, distance focus.',
+            },
+            {
               kind: 'pearl',
               content:
                 'Christopher Scheiner (1619) proved accommodation exists using the Scheiner disc (two pinholes). Helmholtz later described the mechanism via the ciliary muscle–zonule–lens relationship.',
@@ -368,7 +416,13 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Presbyopia typically manifests clinically at 45 years (range: 40–50). Symptoms appear when amplitude falls below 5.00 D. Uncorrected hyperopes develop symptoms EARLIER than myopes — the hyperope is already using accommodative reserve just to see clearly at distance.',
+                'Presbyopia typically manifests clinically at **45 years** (range: 40–50). Symptoms appear when amplitude falls below **5.00 D**. Uncorrected hyperopes develop symptoms EARLIER than myopes — the hyperope is already using accommodative reserve just to see clearly at distance.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                'Presbyopia arrives **earliest in hyperopes, latest in myopes.** The hyperope already spends accommodation just to clear distance, so little is left for near. The low myope has the opposite luxury — a **−2 to −3 D** eye focuses at 33–50 cm with **zero** accommodation, so they read fine by simply removing their glasses well past 45.',
             },
           ],
         },
@@ -398,6 +452,12 @@ const notes: NotesData = {
           kind: 'text',
           content:
             'Anisometropia refers to a significant difference in refractive error between the two eyes. The clinical threshold varies by source, but both definitions are testable.',
+        },
+        {
+          kind: 'callout',
+          variant: 'trap',
+          content:
+            'Two thresholds are both fair game: **≥1.00 D (Grosvenor)** and **≥2.00 D (Borish)**. Roughly **1 D of anisometropia = 1% aniseikonia** (unequal retinal image sizes), and the fusion system tolerates only ~**5%** before it breaks — which is why large anisometropia is a top cause of amblyopia and why **contact lenses** (which sit at the eye\'s plane) beat spectacles by cutting the image-size difference and the induced prism on downgaze.',
         },
         {
           kind: 'table',

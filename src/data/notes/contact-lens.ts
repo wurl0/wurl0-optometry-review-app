@@ -45,6 +45,11 @@ export const contactLensNotes: NotesData = {
                 'By purpose: optical (spherical, toric, presbyopic), therapeutic (bandage, ortho-K), cosmetic (tinted, prosthetic)',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Notice the logic in the size scale: **the bigger the lens, the less it touches the sensitive cornea.** A small **corneal** lens rests on the cornea itself; a huge **scleral** lens **vaults over the cornea entirely** and lands on the insensitive sclera, trapping a tear reservoir underneath. That is exactly why sclerals are the go-to for **keratoconus and severe dry eye** — comfort and a smooth optical surface without corneal bearing.',
+            },
           ],
         },
         {
@@ -93,7 +98,12 @@ export const contactLensNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Sag is the master variable of fit: a deeper sag fits tighter, a shallower sag fits looser. Sag increases with a STEEPER base curve (lower BOZR number) and with a LARGER diameter. Steeper front surface = heavier lens and more decentration.',
+              content: 'Sag is the master variable of fit: a **deeper sag fits tighter**, a shallower sag fits looser. Sag increases with a **STEEPER** base curve (lower BOZR number) and with a **LARGER** diameter. Steeper front surface = heavier lens and more decentration.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: 'Two knobs deepen the sag and **tighten** the fit: **Steeper base curve** (a *smaller* BC number — 8.4 is steeper than 8.6) **or a Bigger diameter.** So "**Steeper or Bigger = Tighter**," and the reverse "**Flatter or Smaller = Looser**." Whenever a lens fits too tight, back off *either* knob.',
             },
           ],
         },
@@ -123,7 +133,12 @@ export const contactLensNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'The thicker the lens, the LOWER the oxygen transmissibility (especially in hydrogels). High-water lenses have high permeability but dehydrate on the eye (pervaporation) and pull water FROM the cornea, so they are poor for dry eye. Silicone hydrogel gives high oxygen and tolerates mild-to-moderate dry eye because silicone limits evaporation.',
+              content: 'The thicker the lens, the **LOWER** the oxygen transmissibility (especially in hydrogels). High-water lenses have high permeability but dehydrate on the eye (pervaporation) and pull water FROM the cornea, so they are poor for dry eye. Silicone hydrogel gives high oxygen and tolerates mild-to-moderate dry eye because silicone limits evaporation.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The **high-water paradox**: in a *hydrogel*, water carries the oxygen, so more water = more Dk — but that same lens must be made **thicker** to stay durable, and it **dehydrates on-eye and steals tears from the cornea**. So high-water hydrogels are a poor pick for dry eye. **Silicone hydrogel breaks the rule** — oxygen rides the silicone, not the water, so it delivers high Dk at *low* water content.',
             },
           ],
         },
@@ -243,6 +258,16 @@ export const contactLensNotes: NotesData = {
                 'Optical advantages of contact lenses: no oblique astigmatism, no distortion, no chromatic aberration, no field-of-view limit, no frame diplopia. Disadvantages: decentration ghosting, toric rotation over-refraction, movement disturbances',
               ],
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Contacts change the **near workload** because they sit at the eye\'s own plane. The **myope** loses the near-help that minus spectacles gave (the spectacle plane pre-diverged light), so on contacts they **accommodate and converge more** — near tasks feel harder and presbyopia seems to arrive early. The **hyperope** is the opposite: plus spectacles used to add to their near demand, so contacts **ease it**, sometimes delaying the first reading add.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Image size with contacts vs glasses: "Myope Magnifies, Hyperope shrinks."** Take off a myope\'s minus spectacles (which minify) and put on contacts → the world looks **bigger**; a hyperope\'s plus spectacles magnified, so contacts make things look **smaller**. Either way the contact-lens image is closer to the eye\'s **natural retinal image size**.',
+            },
           ],
         },
       ],
@@ -286,7 +311,12 @@ export const contactLensNotes: NotesData = {
             },
             {
               kind: 'pearl',
-              content: 'Tear film pH is slightly alkaline (~7.4). Place the Schirmer strip toward the lateral (temporal) canthus so it does not touch the sensitive cornea and trigger reflex tearing, which would falsely raise the reading.',
+              content: 'Tear film pH is slightly alkaline (**~7.4**). Place the Schirmer strip toward the lateral (temporal) canthus so it does not touch the sensitive cornea and trigger reflex tearing, which would falsely raise the reading.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Separate what each test measures: **meniscus height and Schirmer = tear VOLUME** (quantity); **TBUT = tear QUALITY/stability**. A patient can have a normal Schirmer yet a short TBUT (evaporative dry eye). Also remember the placement logic — strip at the **temporal** canthus, away from the cornea, or reflex tearing inflates the number.',
             },
           ],
         },
@@ -336,6 +366,16 @@ export const contactLensNotes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**SAM-FAP** — **S**teeper **A**dd **M**inus, **F**latter **A**dd **P**lus. A **steep** lens pools tears centrally = a **plus** tear lens, so you **add minus** to the CL power to compensate; a **flat** lens gives a **minus** tear lens, so you **add plus**. The tear lens and your compensation always have opposite signs.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why does a tear lens form at all? An RGP does not drape onto the cornea like a soft lens — it holds its own back curve and traps a lens-shaped film of tears (n ≈ 1.336) beneath it. A **steep** lens leaves a thick center pool that acts like a **plus** lens; a **flat** lens leaves a thin center with thick edges, acting like a **minus** lens. **0.1 mm of base curve ≈ 0.50 D** of tear-lens power, which is how you convert a fit change into a power change.',
+            },
+            {
               kind: 'pearl',
               content: 'Let the lens settle 20-30 minutes before assessing, and do the over-refraction before the fluorescein assessment: the over-refraction predicts whether the fit is flat, steep, or aligned and lets you jump to the right base curve rather than trialing many curves. High-riding = tight lid; low-riding = loose lid.',
             },
@@ -371,6 +411,11 @@ export const contactLensNotes: NotesData = {
                 'Reference marks show orientation only; they do NOT mark the axis. Average lens rotation is about 5-10 degrees nasal, with the upper lid the dominant stabilizer',
                 'Fit assessment: good fit returns quickly to axis if mislocated; a loose fit rotates unstably; the LARS rule (Left Add, Right Subtract) adjusts for measured rotation',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**LARS: Left Add, Right Subtract.** If the lens marking has rotated to the patient\'s **left** (from your view, clockwise), **add** that many degrees to the ordered axis; if it rotated **right**, **subtract**. Example: axis 180, lens sits 10° left → order 190. The rotation is only the *marking* moving; the axis correction chases it back.',
             },
           ],
         },
@@ -440,6 +485,11 @@ export const contactLensNotes: NotesData = {
                 'Giant papillary conjunctivitis (GPC): papillae on the upper tarsus from lens deposits and mechanical irritation',
                 'Microbial keratitis: the most serious complication (Pseudomonas, Acanthamoeba); linked to overnight wear, poor hygiene, and water exposure',
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: '**Hydrogen peroxide MUST be neutralized before the lens touches the eye** — un-neutralized peroxide causes an immediate, intense stinging/chemical injury. Once neutralized it is simply saline. Also flag the toxic preservatives the board loves: **thimerosal contains mercury** (sensitizer) and **BAK is weak against Pseudomonas** and can bind to soft lenses.',
             },
             {
               kind: 'pearl',

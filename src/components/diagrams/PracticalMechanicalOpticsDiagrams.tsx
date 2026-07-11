@@ -264,10 +264,71 @@ export function OpticalInstrumentsDiagram() {
   )
 }
 
+// ─── 4. Boxing System ─────────────────────────────────────────────────────────
+
+export function BoxingSystemDiagram() {
+  return (
+    <DiagramShell caption="A = eye size (box width) · B = frame depth (box height) · DBL = bridge · DBC = A + DBL (frame PD) · GC = box center · ED = 2× GC-to-farthest-edge">
+      <svg viewBox="0 0 440 280" className="w-full">
+        <rect width="440" height="280" fill="#f9fafb" />
+        <text x="220" y="18" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#111827">Boxing System — Frame &amp; Lens Measurements</text>
+
+        {/* Left lens box */}
+        <rect x="40" y="70" width="130" height="100" fill="none" stroke="#9ca3af" strokeWidth="1" strokeDasharray="4,3" />
+        {/* Left lens shape (rounded) */}
+        <path d="M 55 90 Q 105 62 155 90 Q 168 120 155 150 Q 105 178 55 150 Q 42 120 55 90 Z" fill="#dbeafe" stroke="#3b82f6" strokeWidth="1.6" />
+        {/* Right lens box */}
+        <rect x="270" y="70" width="130" height="100" fill="none" stroke="#9ca3af" strokeWidth="1" strokeDasharray="4,3" />
+        <path d="M 285 90 Q 335 62 385 90 Q 398 120 385 150 Q 335 178 285 150 Q 272 120 285 90 Z" fill="#dbeafe" stroke="#3b82f6" strokeWidth="1.6" />
+
+        {/* Datum line (horizontal center) */}
+        <line x1="40" y1="120" x2="400" y2="120" stroke="#10b981" strokeWidth="0.8" strokeDasharray="5,3" />
+        <text x="405" y="123" fontSize="7" fill="#065f46" fontWeight="bold">Datum</text>
+
+        {/* GC markers */}
+        <circle cx="105" cy="120" r="2.5" fill="#dc2626" />
+        <text x="98" y="135" fontSize="7" fill="#dc2626" fontWeight="bold">GC</text>
+        <circle cx="335" cy="120" r="2.5" fill="#dc2626" />
+        <text x="328" y="135" fontSize="7" fill="#dc2626" fontWeight="bold">GC</text>
+
+        {/* A measurement (width) */}
+        <line x1="40" y1="185" x2="170" y2="185" stroke="#7c3aed" strokeWidth="1" markerStart="url(#pmo-arr-l)" markerEnd="url(#pmo-arr-r)" />
+        <text x="105" y="197" textAnchor="middle" fontSize="8" fill="#5b21b6" fontWeight="bold">A (eye size)</text>
+
+        {/* B measurement (height) */}
+        <line x1="28" y1="70" x2="28" y2="170" stroke="#ea580c" strokeWidth="1" markerStart="url(#pmo-arr-u)" markerEnd="url(#pmo-arr-d)" />
+        <text x="24" y="120" textAnchor="middle" fontSize="8" fill="#9a3412" fontWeight="bold" transform="rotate(-90 24 120)">B (depth)</text>
+
+        {/* DBL (bridge, between boxes) */}
+        <line x1="170" y1="120" x2="270" y2="120" stroke="#0ea5e9" strokeWidth="1" markerStart="url(#pmo-arr-l)" markerEnd="url(#pmo-arr-r)" />
+        <rect x="188" y="108" width="64" height="16" rx="3" fill="white" stroke="#0ea5e9" strokeWidth="0.6" />
+        <text x="220" y="119" textAnchor="middle" fontSize="8" fill="#0369a1" fontWeight="bold">DBL</text>
+
+        {/* DBC (GC to GC) */}
+        <line x1="105" y1="215" x2="335" y2="215" stroke="#be123c" strokeWidth="1" markerStart="url(#pmo-arr-l)" markerEnd="url(#pmo-arr-r)" />
+        <text x="220" y="227" textAnchor="middle" fontSize="8" fill="#9f1239" fontWeight="bold">DBC = A + DBL  (frame PD)</text>
+
+        {/* Formula box */}
+        <rect x="70" y="242" width="300" height="30" rx="6" fill="#fef3c7" stroke="#d97706" />
+        <text x="220" y="255" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#92400e">Mechanical center = 2 mm ABOVE GC · Seg drop measured from datum</text>
+        <text x="220" y="266" textAnchor="middle" fontSize="7.5" fill="#92400e">ED (effective diameter) = 2 × (GC → farthest lens edge) → sets min blank size</text>
+
+        <defs>
+          <marker id="pmo-arr-r" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#6b7280" /></marker>
+          <marker id="pmo-arr-l" markerWidth="6" markerHeight="6" refX="1" refY="3" orient="auto"><path d="M6,0 L6,6 L0,3 z" fill="#6b7280" /></marker>
+          <marker id="pmo-arr-u" markerWidth="6" markerHeight="6" refX="3" refY="1" orient="auto"><path d="M0,6 L6,6 L3,0 z" fill="#6b7280" /></marker>
+          <marker id="pmo-arr-d" markerWidth="6" markerHeight="6" refX="3" refY="5" orient="auto"><path d="M0,0 L6,0 L3,6 z" fill="#6b7280" /></marker>
+        </defs>
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'pmo-lens-types': LensTypesDiagram,
   'pmo-prism': PrismDiagram,
   'pmo-instruments': OpticalInstrumentsDiagram,
+  'pmo-boxing-system': BoxingSystemDiagram,
 }
