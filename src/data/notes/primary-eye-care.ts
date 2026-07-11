@@ -131,7 +131,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Board trap: High blood sugar → inflamed lens → focus in FRONT of retina → MORE MYOPIC, LESS HYPEROPIC. Low blood sugar → MORE HYPEROPIC, LESS MYOPIC. Hypertension: capillaries constrict, increases IOP, changes refractive error.',
+                'Board trap: High blood sugar → swollen lens → focus in FRONT of retina → **MORE MYOPIC, LESS HYPEROPIC**. Low blood sugar → **MORE HYPEROPIC, LESS MYOPIC**. Hypertension: capillaries constrict, increases IOP, changes refractive error.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Why does uncontrolled diabetes cause a **myopic shift**? High blood glucose draws water **into the crystalline lens** (osmosis), swelling it and **increasing its plus power** — so the focus lands **in front** of the retina. This is why a new diabetic may complain of blurred distance vision, and why you **never finalize a refraction until blood sugar is stable** — correct the transient myopia and they will be over-minused once glucose normalizes.',
             },
           ],
         },
@@ -257,7 +262,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'If pinhole IMPROVES vision → not fully corrected (refractive cause). If pinhole does NOT improve or worsens vision → fully corrected OR non-refractive cause. Always done MONOCULARLY.',
+                'If pinhole IMPROVES vision → **not fully corrected (refractive cause)**. If pinhole does NOT improve or worsens vision → **fully corrected OR non-refractive (pathology)**. Always done MONOCULARLY.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'A pinhole works by **blocking all but the central rays**, so blur circles from any uncorrected refractive error shrink to near-points on the retina. That is why **pinhole improving VA points to refractive error** (you just optically corrected it) and **pinhole NOT improving points to pathology** — a cataract or macular lesion still blocks those central rays. Caveat: a very small pupil in dim light can worsen it via diffraction.',
             },
           ],
         },
@@ -357,7 +367,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Board traps: Break point = patient reports DIPLOPIA. Recovery point = patient reports SINGLE vision again. No doubling during NPC = "wandering attention" or SUPPRESSION (not normal NPC). Management for convergence insufficiency = convergence exercises (vision therapy) + prism/lenses.',
+                'Board traps: **Break point = patient reports DIPLOPIA**. **Recovery point = SINGLE vision returns**. No doubling during NPC = "wandering attention" or SUPPRESSION (not normal NPC). Management for convergence insufficiency = convergence exercises (vision therapy) + prism/lenses.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**A RECEDED NPC (> 10 cm, "can\'t pull the eyes in close") = Convergence INSUFFICIENCY** — the far number is the failure. A **very close NPC (< 5 cm) = Convergence EXCESS.** "Insufficiency is far, excess is near." CI is the one you actually treat with push-ups/vision therapy and it classically pairs with **exophoria at near** and occipital headaches.',
             },
             {
               kind: 'sub',
@@ -435,9 +450,14 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The reflex sits **opposite the direction the eye is turned**, which flips the intuition. A **temporal** reflex means the eye is turned **IN (esotropia)**; an **exotropic** eye (turned out) throws the reflex **nasally**. Think of it as the light "left behind" on the side the cornea rotated away from. Each **1 mm of decentration ≈ 22Δ (≈ 7°)** by the Hirschberg estimate.',
+            },
+            {
               kind: 'pearl',
               content:
-                'Angle kappa: Positive angle kappa = nasally displaced corneal reflex (physiologic up to 5 degrees / 10Δ). Negative angle kappa = TEMPORAL displacement. Hyperopic eyes: reflex slightly more nasal. Highly myopic: reflex near centre or temporal.',
+                'Angle kappa: **Positive** angle kappa = nasally displaced corneal reflex (physiologic up to 5 degrees / 10Δ). **Negative** angle kappa = TEMPORAL displacement. Hyperopic eyes: reflex slightly more nasal. Highly myopic: reflex near centre or temporal.',
             },
           ],
         },
@@ -509,9 +529,14 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The recovery movement on the cover-uncover test names the **opposite** of where the eye drifted. Under cover an **esophoria** eye rotates **inward (nasal)**; uncover it and fusion snaps it back **outward** — so "**moves OUT = eso**." Likewise "moves IN = exo." You are watching the eye *return to alignment*, so the direction you see is the reverse of the underlying deviation.',
+            },
+            {
               kind: 'pearl',
               content:
-                'A TROPIA IS NEVER NORMAL. Phoria: movement seen in ALTERNATE cover test but NOT in unilateral cover test. Tropia: movements seen in BOTH unilateral and alternate cover test. BO prism: moves image NASALLY, measures ESO. BI prism: moves image TEMPORALLY, measures EXO.',
+                'A **TROPIA IS NEVER NORMAL**. Phoria: movement seen in ALTERNATE cover test but NOT in unilateral cover test. Tropia: movements seen in BOTH unilateral and alternate cover test. BO prism: moves image NASALLY, measures ESO. BI prism: moves image TEMPORALLY, measures EXO.',
             },
           ],
         },
@@ -629,7 +654,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Ishihara: <4 incorrect = normal; ≥5 incorrect = defective red-green. Ishihara screens PROTAN and DEUTAN ONLY — cannot detect tritan (blue) defects. HRR (Hardy Rand Rittler) can detect protan, deutan AND tritan. Farnsworth D-15: pass = mild; fail = severe. Test distance: 75cm; plates perpendicular to visual axis; 3–5 seconds viewing time; done MONOCULARLY.',
+                'Ishihara: **<4 incorrect = normal; ≥5 incorrect = defective red-green**. Ishihara screens **PROTAN and DEUTAN ONLY** — cannot detect tritan (blue) defects. **HRR** (Hardy Rand Rittler) detects protan, deutan AND tritan. Farnsworth D-15: pass = mild; fail = severe. Test distance: 75cm; plates perpendicular to visual axis; 3–5 seconds viewing time; done MONOCULARLY.',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Two favorites: **Deutan (green) is the most common** inherited defect, not protan — and **Ishihara only screens red-green, so it MISSES tritan (blue-yellow)** defects entirely. If a question involves an **acquired blue-yellow** loss (e.g., from a choroidal or retinal lesion, or glaucoma), Ishihara is the wrong tool — reach for HRR or D-15. Inherited defects are usually **red-green**; **acquired** ones are often **blue-yellow**.',
             },
             {
               kind: 'table',
@@ -709,9 +739,18 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'diagram',
+              id: 'pec-retinoscopy-motion',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**With = add plus, Against = add minus (WITH a PLan, aGAINST the MINes).** With a **plane mirror**: "with" motion means the far-point is behind you → add **plus**; "against" means far-point between you and the eye (myopia beyond your working distance) → add **minus**. **Neutral** = far-point is at your eye. A **concave mirror reverses everything.**',
+            },
+            {
               kind: 'pearl',
               content:
-                'SLOW reflex = large uncorrected myopia or hyperopia. FASTER reflex = approaching neutrality. At NEUTRALITY = infinitely fast, whole pupil illuminated simultaneously. Streak orientation: ALWAYS at right angles to the meridian being scoped. Scoping vertical meridian: streak oriented HORIZONTALLY, instrument moved VERTICALLY. Working distance lens (standard 50cm) = −2.00D deducted from gross finding.',
+                'SLOW reflex = large uncorrected myopia or hyperopia. FASTER reflex = approaching neutrality. At **NEUTRALITY = infinitely fast**, whole pupil illuminated simultaneously. Streak orientation: ALWAYS at right angles to the meridian being scoped. Scoping vertical meridian: streak oriented HORIZONTALLY, instrument moved VERTICALLY. Working distance lens (standard 50cm) = **−2.00D** deducted from gross finding.',
             },
             {
               kind: 'sub',
@@ -770,6 +809,11 @@ const notes: NotesData = {
               content:
                 'Javal\'s Rule: At = p(Ac) + k\nwhere: At = total refractive astigmatism | Ac = corneal astigmatism | p = 1.25 | k = −0.50 Cyl × 90 (physiologic ATR)\nSimplified: At = 1.25(Ac) + (−0.50 Cyl × 90)',
             },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'Javal\'s rule exists because the **cornea is not the whole story** — the crystalline lens adds a roughly constant **0.50 D of against-the-rule** internal (residual) astigmatism. So total astigmatism = a bit more than the corneal reading (×1.25) **minus** that fixed lenticular ATR. This is why a purely WTR cornea often nets slightly less WTR at the spectacle plane — the lens is quietly pulling the other way.',
+            },
           ],
         },
       ],
@@ -818,6 +862,10 @@ const notes: NotesData = {
                 'Based on chromatic aberration: shorter wavelengths focus sooner than longer ones. Green = shorter wavelength = focuses IN FRONT of retina. Red = longer wavelength = focuses BEHIND retina.',
             },
             {
+              kind: 'diagram',
+              id: 'pec-duochrome',
+            },
+            {
               kind: 'table',
               headers: ['Finding', 'Patient Type', 'Action'],
               rows: [
@@ -829,9 +877,14 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**"Let the RAM sit on GAP": Red Add Minus, Green Add Plus.** If **red** is clearer, add **minus** (or reduce plus); if **green** is clearer, add **plus** (or reduce minus). It works because the eye has no chromatic correction — green focuses in front, red behind, and you are steering the yellow mean onto the retina.',
+            },
+            {
               kind: 'pearl',
               content:
-                'GOAL: equalise red and green clarity (emmetropia endpoint). If NO equality reached: leave GREEN CLEARER (indicates more plus = less minus = safer). If cylinder correction too WEAK: original blackest line remains blackest. If cylinder correction too STRONG: original blurred line becomes blackest.',
+                'GOAL: equalise red and green clarity (emmetropia endpoint). If NO equality reached: **leave GREEN CLEARER** (more plus = less minus = safer, avoids over-minusing). If cylinder correction too WEAK: original blackest line remains blackest. If cylinder correction too STRONG: original blurred line becomes blackest.',
             },
           ],
         },
@@ -953,7 +1006,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Grade 0 = CLOSED angle = ACUTE GLAUCOMA ATTACK — emergency. Grade 1 = risky narrow angle = at risk for closure. Specular reflection: angle of incidence = angle of reflection (60° setup).',
+                '**Grade 0 = CLOSED angle = ACUTE GLAUCOMA ATTACK** — emergency. **Grade 1** = risky narrow angle = at risk for closure. Specular reflection: angle of incidence = angle of reflection (60° setup).',
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'Higher grade = SAFER here, which reverses the usual "grade 4 = bad" instinct. **Grade 4/3 = open and safe to dilate; Grade 2 = narrow, caution; Grade 1/0 = do NOT dilate** (risk of precipitating angle closure). The Van Herick number tracks the **shadow-to-beam ratio** on the iris, so a wide shadow (deep chamber) is the reassuring finding.',
             },
           ],
         },
@@ -978,7 +1036,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Higher condensing lens power = LOWER magnification + LARGER field of view. Normal A:V ratio = 2:3 (Artery:Vein). Fovea appears DARKER than surrounding retina. Optic disc: 1.5–1.7mm diameter; round to oval; red-yellow color. Arteries: light red, straight, white reflex stripes. Veins: dark red, tortuous, pulsating.',
+                'Higher condensing lens power = **LOWER magnification + LARGER field of view**. Normal A:V ratio = **2:3** (Artery:Vein). Fovea appears DARKER than surrounding retina. Optic disc: 1.5–1.7mm diameter; round to oval; red-yellow color. Arteries: light red, straight, white reflex stripes. Veins: dark red, tortuous, pulsating.',
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content: '**Direct = one eye, magnified, upright, narrow.** **Indirect = both eyes (stereo), wide, inverted, real image.** Trade-off to memorize: "**more power, less zoom**" — a stronger condensing lens (+20 D) gives a **wider field but lower magnification** than a +14 D. Direct wins on magnification (~15×); indirect wins on field, stereopsis, and seeing the periphery.',
             },
           ],
         },

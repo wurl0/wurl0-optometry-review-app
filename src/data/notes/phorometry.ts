@@ -43,7 +43,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'Large exophoria + low PFR (#16B) = symptom-producing binocular vision problem. The patient looks fine in a snapshot but fatigues after 30–60 minutes of near work. Uncorrected hyperopes hit presbyopic symptoms earlier for the same reason.',
+                'Large **exophoria + low PFR (#16B)** = symptom-producing binocular vision problem. The patient looks fine in a snapshot but fatigues after 30–60 minutes of near work. Uncorrected hyperopes hit presbyopic symptoms earlier for the same reason.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'A **buffer is unused capacity held in reserve.** An **exophore** rests slightly diverged, so they have spare **convergence** to spend — that is the convergence buffer. But if the phoria is large and the **positive fusional reserve (PFR)** to back it up is small, the reserve runs dry after sustained near work and symptoms appear. Comfort depends on the reserve being **at least twice the phoria** (Sheard\'s criterion) — the demand-vs-supply logic behind every BV diagnosis.',
             },
           ],
         },
@@ -90,7 +95,12 @@ const notes: NotesData = {
             {
               kind: 'pearl',
               content:
-                'In Base-Out (BO) prism tests, blur appears BEFORE break because convergence drives accommodation through this shared pathway. The accommodation system hits its limit first, causing blur, while vergence can still maintain fusion momentarily.',
+                'In Base-Out (BO) prism tests, **blur appears BEFORE break** because convergence drives accommodation through this shared pathway. The accommodation system hits its limit first, causing blur, while vergence can still maintain fusion momentarily.',
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The whole logic of BO tests falls out of the **shared Edinger-Westphal pathway**: forcing more **convergence** with base-out prism also drags **accommodation** along (convergence-driven accommodation). So the eye over-focuses and the target **blurs (accommodation exhausted) BEFORE it doubles (vergence exhausted)**. That is why **#16A stops at blur** (relative convergence, capped by accommodation) and **#16B keeps going to break** (true fusional reserve, capped by the vergence system).',
             },
           ],
         },
@@ -104,6 +114,11 @@ const notes: NotesData = {
           kind: 'text',
           content:
             'Understanding WHY each probe body does what it does is the key to mastering phorometry. The pattern is consistent: inhibit = object moves away = appears bigger; stimulate = object moves closer = appears smaller.',
+        },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content: 'Every probe body is really **relocating the image**. A **plus lens** (or base-in prism) does some of the eye\'s work, so the system behaves as if the target **moved farther away** — less effort needed, and by angular magnification it looks **bigger**. A **minus lens** (or base-out prism) demands **more** effort, mimicking a **closer** target, which looks **smaller**. Nail this one sentence — "inhibit = away = bigger, stimulate = closer = smaller" — and all four probe bodies decode themselves.',
         },
         {
           kind: 'sub',
@@ -202,9 +217,14 @@ const notes: NotesData = {
               ],
             },
             {
+              kind: 'callout',
+              variant: 'why',
+              content: 'The dissociating prism is placed **perpendicular to the phoria you want to read** so the two effects don\'t collide. To measure a **lateral (horizontal)** phoria you separate the images **vertically** — now any horizontal drift is free to show up cleanly against a vertical reference, and you re-align with a horizontal measuring prism. Put the dissociating prism in the *same* direction as the phoria and you\'d contaminate the very thing you\'re measuring.',
+            },
+            {
               kind: 'pearl',
               content:
-                'Memory trick: to measure LATERAL phoria, use VERTICAL dissociating prism (they are perpendicular to each other). To measure VERTICAL phoria, use HORIZONTAL dissociating prism.',
+                'Memory trick: to measure **LATERAL** phoria, use **VERTICAL** dissociating prism (they are perpendicular). To measure **VERTICAL** phoria, use **HORIZONTAL** dissociating prism.',
             },
           ],
         },
@@ -278,6 +298,11 @@ const notes: NotesData = {
                 ['Measures', 'Lag of accommodation (dissociated)', 'Lag of accommodation (fused)'],
                 ['Clinical note', 'Dim illumination used', 'Dim illumination used'],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content: 'The one difference that flips the answer: **#14A has the 3△BU/3△BD dissociating prisms IN place (eyes split apart); #14B removes them (eyes fused).** Both use the cross-cylinder in dim light to read the **lag of accommodation** and both accept the **highest plus** — but #14A measures it dissociated and #14B measures it binocularly. Also note #14B\'s gross lenses feed forward into #15B, #20, and #21.',
             },
           ],
         },
