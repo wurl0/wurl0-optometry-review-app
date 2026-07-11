@@ -394,6 +394,99 @@ export function DipliopiaTypesDiagram() {
   )
 }
 
+// ─── 6. Near Triad ────────────────────────────────────────────────────────────
+
+export function NearTriadDiagram() {
+  return (
+    <DiagramShell caption="Looking at a near target triggers three responses at once — accommodation, convergence, and miosis">
+      <svg viewBox="0 0 440 240" className="w-full">
+        <rect width="440" height="240" fill="#f9fafb" />
+
+        {/* near target */}
+        <circle cx={220} cy={40} r={6} fill="#f59e0b" />
+        <text x={220} y={26} textAnchor="middle" fontSize={9} fontWeight="bold" fill="#b45309">near target</text>
+
+        {/* lines of sight converging */}
+        <line x1={150} y1={150} x2={220} y2={46} stroke="#14b8a6" strokeWidth={1.4} strokeDasharray="3,2" />
+        <line x1={290} y1={150} x2={220} y2={46} stroke="#14b8a6" strokeWidth={1.4} strokeDasharray="3,2" />
+
+        {/* two eyes turned inward */}
+        {[{ x: 150, dir: 1 }, { x: 290, dir: -1 }].map((e, i) => (
+          <g key={i}>
+            <ellipse cx={e.x} cy={168} rx={34} ry={23} fill="#eff6ff" stroke="#374151" strokeWidth={1.5} />
+            {/* thick (accommodated) lens */}
+            <ellipse cx={e.x + e.dir * 22} cy={168} rx={7} ry={17} fill="#bfdbfe" stroke="#3b82f6" strokeWidth={1.2} />
+            {/* iris + constricted pupil, shifted nasally = convergence */}
+            <circle cx={e.x + e.dir * 12} cy={168} r={11} fill="#dbeafe" stroke="#3b82f6" strokeWidth={1} />
+            <circle cx={e.x + e.dir * 12} cy={168} r={4} fill="#111827" />
+            {/* convergence arrow */}
+            <path d={`M ${e.x + e.dir * 30} ${196} q ${e.dir * -10} 6 ${e.dir * -20} 4`} fill="none" stroke="#7c3aed" strokeWidth={1.6} markerEnd="url(#ntArrow)" />
+          </g>
+        ))}
+        <text x={150} y={214} textAnchor="middle" fontSize={8} fill="#374151">Left eye</text>
+        <text x={290} y={214} textAnchor="middle" fontSize={8} fill="#374151">Right eye</text>
+
+        {/* numbered legend */}
+        {[
+          { n: '1', t: 'Accommodation', s: 'lens thickens', c: '#3b82f6' },
+          { n: '2', t: 'Convergence', s: 'eyes turn in', c: '#7c3aed' },
+          { n: '3', t: 'Miosis', s: 'pupils constrict', c: '#111827' },
+        ].map((r, i) => (
+          <g key={i}>
+            <circle cx={30} cy={70 + i * 34} r={9} fill={r.c} />
+            <text x={30} y={73 + i * 34} textAnchor="middle" fontSize={9} fontWeight="bold" fill="white">{r.n}</text>
+            <text x={45} y={67 + i * 34} fontSize={10} fontWeight="bold" fill="#374151">{r.t}</text>
+            <text x={45} y={79 + i * 34} fontSize={8.5} fill="#6b7280">{r.s}</text>
+          </g>
+        ))}
+
+        <defs>
+          <marker id="ntArrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed" />
+          </marker>
+        </defs>
+      </svg>
+    </DiagramShell>
+  )
+}
+
+// ─── 7. Compensatory Head Tilt (oblique palsy) ─────────────────────────────────
+
+export function HeadTiltDiagram() {
+  const face = (cx: number, tilt: number) => (
+    <g transform={`rotate(${tilt} ${cx} 96)`}>
+      <line x1={cx} y1={140} x2={cx} y2={116} stroke="#9ca3af" strokeWidth={6} strokeLinecap="round" />
+      <circle cx={cx} cy={90} r={40} fill="#fef3c7" stroke="#d97706" strokeWidth={1.6} />
+      <circle cx={cx - 15} cy={84} r={5.5} fill="#fff" stroke="#374151" strokeWidth={1.2} />
+      <circle cx={cx + 15} cy={84} r={5.5} fill="#fff" stroke="#374151" strokeWidth={1.2} />
+      <circle cx={cx - 15} cy={84} r={2.2} fill="#111827" />
+      <circle cx={cx + 15} cy={84} r={2.2} fill="#111827" />
+      <path d={`M ${cx - 12} 108 Q ${cx} 116 ${cx + 12} 108`} fill="none" stroke="#374151" strokeWidth={1.4} />
+    </g>
+  )
+  return (
+    <DiagramShell caption="Superior oblique palsy → head tilts to the OPPOSITE shoulder; inferior oblique → SAME side">
+      <svg viewBox="0 0 440 200" className="w-full">
+        <rect width="440" height="200" fill="#f9fafb" />
+
+        {/* shoulders baseline */}
+        <line x1={30} y1={150} x2={200} y2={150} stroke="#e5e7eb" strokeWidth={2} />
+        <line x1={240} y1={150} x2={410} y2={150} stroke="#e5e7eb" strokeWidth={2} />
+
+        {face(115, -18)}
+        {face(325, 18)}
+
+        <text x={115} y={172} textAnchor="middle" fontSize={10} fontWeight="bold" fill="#374151">Right SO palsy</text>
+        <text x={115} y={186} textAnchor="middle" fontSize={9} fill="#6b7280">head tilts LEFT (opposite)</text>
+        <text x={325} y={172} textAnchor="middle" fontSize={10} fontWeight="bold" fill="#374151">Right IO palsy</text>
+        <text x={325} y={186} textAnchor="middle" fontSize={9} fill="#6b7280">head tilts RIGHT (same)</text>
+
+        <text x={220} y={26} textAnchor="middle" fontSize={9.5} fontWeight="bold" fill="#7c3aed">SO → opposite · IO → same</text>
+      </svg>
+    </DiagramShell>
+  )
+}
+
 // ─── Registry ──────────────────────────────────────────────────────────────────
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
@@ -402,4 +495,6 @@ export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   'horopter-panum':      HoropterDiagram,
   'worth-grades':        WorthGradesDiagram,
   'diplopia-types':      DipliopiaTypesDiagram,
+  'near-triad':          NearTriadDiagram,
+  'head-tilt-palsy':     HeadTiltDiagram,
 }

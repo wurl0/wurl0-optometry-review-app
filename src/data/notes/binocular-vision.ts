@@ -12,7 +12,7 @@ const notes: NotesData = {
         {
           kind: 'text',
           content:
-            'Binocular vision (BV) is the coordinated, integrated, and simultaneous function of both eyes to produce a single mental image. The word comes from Latin: bin = two, oculus = eye. BV implies FUSION — the blending of the two ocular images into one single percept.',
+            'Binocular vision (BV) is the coordinated, integrated, and simultaneous function of both eyes to produce a **single mental image**. From Latin: *bin* = two, *oculus* = eye. BV implies **fusion** — the blending of the two ocular images into one single percept.',
         },
         {
           kind: 'sub',
@@ -88,7 +88,7 @@ const notes: NotesData = {
         {
           kind: 'pearl',
           content:
-            'Single vision is the FIRST and foremost advantage of binocular vision. Stereopsis is the HIGHEST form — it is Grade 3 fusion.',
+            '**Single vision** is the first and foremost advantage of binocular vision. **Stereopsis** is the highest form — it is **Grade 3** fusion.',
         },
       ],
     },
@@ -187,9 +187,10 @@ const notes: NotesData = {
               ],
             },
             {
-              kind: 'pearl',
+              kind: 'callout',
+              variant: 'mnemonic',
               content:
-                'All EOMs originate from the annulus of Zinn EXCEPT the inferior oblique. All EOMs are innervated by CN III EXCEPT the superior oblique (CN IV) and lateral rectus (CN VI). Mnemonic: SO4, LR6, all others 3.',
+                'Innervation: **SO4** (superior oblique = CN IV) · **LR6** (lateral rectus = CN VI) · **all others = CN III**. Origin: every EOM starts at the **annulus of Zinn except the inferior oblique**.',
             },
           ],
         },
@@ -214,6 +215,12 @@ const notes: NotesData = {
                   'Supraduction: SR contracts, IR relaxes',
                 ],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'why',
+              content:
+                'Easy way to keep them apart: **Hering is between the two eyes** (yoke muscles get equal drive, so the eyes move together), while **Sherrington is within one eye** (as the agonist fires, its own antagonist lets go). One law coordinates the pair; the other coordinates a single eye.',
             },
           ],
         },
@@ -330,6 +337,12 @@ const notes: NotesData = {
             ['Right temporal retina', '= Left nasal retina'],
             ['Right nasal retina', '= Left temporal retina'],
           ],
+        },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content:
+            'Why do nasal and temporal retinas pair up crossed? Because the two eyes sit side by side and view the world from slightly different angles — a single object lands on the **nasal retina of one eye and the temporal retina of the other**. Those points share one visual direction, so the brain reads them as **one**. Land the images on non-matching (disparate) points instead and you get **diplopia**.',
         },
         {
           kind: 'sub',
@@ -531,9 +544,15 @@ const notes: NotesData = {
           ],
         },
         {
+          kind: 'callout',
+          variant: 'why',
+          content:
+            'Why can only **two** eyes give true stereopsis? Because the eyes are ~6 cm apart, each sees a slightly different view — this **retinal disparity** is the raw material the cortex converts into depth. One eye has no second view to compare, so all monocular "depth" is really inference (size, overlap, perspective).',
+        },
+        {
           kind: 'pearl',
           content:
-            'Stereopsis is the ONLY exclusively binocular cue for depth perception. It requires retinal disparity (slightly different images in each eye). Stereoacuity is measured in arc seconds — the better the BV, the smaller the threshold.',
+            'Stereopsis is the **only exclusively binocular** cue for depth. It needs **retinal disparity**. Stereoacuity is measured in **arc seconds** — the better the BV, the smaller the threshold.',
         },
       ],
     },
@@ -576,6 +595,12 @@ const notes: NotesData = {
                   'Strabismus, cataract, proptosis, multiple sclerosis, myasthenia gravis',
                 ],
               ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                'Keep the pairs straight: **crossed** diplopia = objects **nearer** than fixation, associated with **exo**. **Uncrossed** = objects **farther** than fixation, associated with **eso**. (Think: eXo → Xrossed.)',
             },
           ],
         },
@@ -698,10 +723,17 @@ const notes: NotesData = {
             },
           ],
         },
+        { kind: 'diagram', id: 'near-triad' },
+        {
+          kind: 'callout',
+          variant: 'why',
+          content:
+            'Why do these three fire **together**? They share one brainstem command for "look near." That is also why they are clinically linked — a high **AC/A** ratio means each diopter of accommodation drags along extra convergence, and near work that over-accommodates can over-converge too.',
+        },
         {
           kind: 'pearl',
           content:
-            'The near triad: Accommodation + Convergence + Pupillary miosis. All three occur simultaneously when looking at a near target.',
+            'The **near triad**: **Accommodation + Convergence + Pupillary miosis** — all three occur together when looking at a near target.',
         },
       ],
     },
@@ -864,9 +896,10 @@ const notes: NotesData = {
           ],
         },
         {
-          kind: 'pearl',
+          kind: 'callout',
+          variant: 'trap',
           content:
-            'Convergence Excess esophoria is most commonly associated with a HIGH AC/A ratio — the classic indication for bifocals/PALs in pediatric esophoria. Fusional vergence dysfunction has NORMAL phorias but reduced vergence amplitudes.',
+            '**Convergence Excess** esophoria goes with a **high AC/A** ratio — the classic reason to add bifocals/PALs in pediatric esophoria. Do not confuse it with **Fusional Vergence Dysfunction**, which has **normal** phorias and AC/A but **reduced vergence amplitudes**.',
         },
       ],
     },
@@ -883,20 +916,22 @@ const notes: NotesData = {
           kind: 'sub',
           title: 'Head Tilting (Oblique Muscle Problems)',
           blocks: [
+            { kind: 'diagram', id: 'head-tilt-palsy' },
             {
               kind: 'table',
               headers: ['Muscle Affected', 'Compensatory Head Tilt'],
               rows: [
-                ['Right Inferior Oblique (RIO) damaged', 'Head tilts to the RIGHT (same side)'],
-                ['Left Inferior Oblique (LIO) damaged', 'Head tilts to the LEFT (same side)'],
-                ['Right Superior Oblique (RSO) damaged', 'Head tilts to the LEFT (opposite side)'],
-                ['Left Superior Oblique (LSO) damaged', 'Head tilts to the RIGHT (opposite side)'],
+                ['Right Inferior Oblique (RIO) damaged', 'Head tilts to the **RIGHT** (same side)'],
+                ['Left Inferior Oblique (LIO) damaged', 'Head tilts to the **LEFT** (same side)'],
+                ['Right Superior Oblique (RSO) damaged', 'Head tilts to the **LEFT** (opposite side)'],
+                ['Left Superior Oblique (LSO) damaged', 'Head tilts to the **RIGHT** (opposite side)'],
               ],
             },
             {
-              kind: 'pearl',
+              kind: 'callout',
+              variant: 'mnemonic',
               content:
-                'IO damage: head tilts to the SAME side. SO damage: head tilts to the OPPOSITE side. Superior oblique palsy is the most common cause of acquired vertical diplopia — head tilt toward opposite shoulder is classic.',
+                '**IO → SAME** side · **SO → OPPOSITE** side. Superior oblique palsy is the most common cause of acquired vertical diplopia — the head tilt toward the **opposite** shoulder is classic (and the basis of the Bielschowsky head-tilt test).',
             },
           ],
         },
