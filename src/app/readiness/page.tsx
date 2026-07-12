@@ -18,6 +18,7 @@ const VERDICT: Record<Verdict, { label: string; cls: string }> = {
   READY: { label: 'Board-ready', cls: 'bg-emerald-100 text-emerald-800 border-emerald-200' },
   BORDERLINE: { label: 'Borderline', cls: 'bg-amber-100 text-amber-800 border-amber-200' },
   NOT_READY: { label: 'Not ready yet', cls: 'bg-rose-100 text-rose-800 border-rose-200' },
+  BUILDING: { label: 'Building your picture', cls: 'bg-slate-100 text-slate-700 border-slate-200' },
 }
 
 // Colour a score against the 75 line.
@@ -111,27 +112,40 @@ export default async function ReadinessPage() {
           </div>
         ) : (
           <>
-            {/* Hero: weighted GWA + verdict */}
+            {/* Hero: projected GWA + avg-on-tested, side by side, + verdict */}
             <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-4">
               <div className="flex items-start justify-between gap-4 flex-wrap">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500">Weighted theoretical GWA</p>
-                  <div className="flex items-end gap-2 mt-1">
-                    <span className={`text-5xl font-extrabold ${scoreColor(r.gwa)}`}>{r.gwa ?? '—'}</span>
-                    <span className="text-2xl font-bold text-gray-400 mb-1">%</span>
+                <div className="flex flex-wrap items-end gap-x-10 gap-y-4">
+                  {/* Projected: the honest floor (untested = 0) */}
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500">Projected theoretical GWA</p>
+                    <div className="flex items-end gap-1.5 mt-1">
+                      <span className={`text-5xl font-extrabold ${scoreColor(r.projectedGwa)}`}>{r.projectedGwa ?? '—'}</span>
+                      <span className="text-2xl font-bold text-gray-400 mb-1">%</span>
+                    </div>
+                    <p className="text-[11px] text-gray-400 mt-0.5">untested subjects count as 0</p>
+                    {r.margin !== null && (
+                      <p className="text-sm text-gray-500 mt-1">
+                        {r.margin >= 0 ? `+${r.margin}` : r.margin} vs the 75 line
+                      </p>
+                    )}
                   </div>
-                  {r.margin !== null && (
-                    <p className="text-sm text-gray-500 mt-1">
-                      {r.margin >= 0 ? `+${r.margin}` : r.margin} vs the 75 line
-                    </p>
-                  )}
+                  {/* Average across only the subjects tested so far */}
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500">Avg on subjects tested</p>
+                    <div className="flex items-end gap-1.5 mt-1">
+                      <span className={`text-3xl font-bold ${scoreColor(r.gwa)}`}>{r.gwa ?? '—'}</span>
+                      <span className="text-lg font-bold text-gray-400 mb-0.5">%</span>
+                    </div>
+                    <p className="text-[11px] text-gray-400 mt-0.5">{r.measuredCount} of 8 subjects only</p>
+                  </div>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1.5 rounded-full border ${verdict.cls}`}>
                   {verdict.label}
                 </span>
               </div>
 
-              {/* Coverage: how much of the exam this number actually reflects */}
+              {/* Coverage: how much of the exam these numbers actually reflect */}
               <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-x-8 gap-y-2 text-sm">
                 <div>
                   <span className="text-gray-500">Coverage: </span>
@@ -150,9 +164,9 @@ export default async function ReadinessPage() {
                   </div>
                 )}
               </div>
-              {r.measuredCount < 8 && (
-                <p className="text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mt-3">
-                  {8 - r.measuredCount} subject{8 - r.measuredCount > 1 ? 's' : ''} untested. Your GWA only reflects what you have measured so far.
+              {!r.coverageMet && (
+                <p className="text-xs text-slate-700 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 mt-3">
+                  {8 - r.measuredCount} of 8 subject{8 - r.measuredCount > 1 ? 's' : ''} still untested — a readiness verdict is held until you have taken all 8. The big number is your <span className="font-semibold">projected</span> GWA with untested subjects counted as 0; it climbs as you finish more.
                 </p>
               )}
             </div>

@@ -33,7 +33,8 @@ export interface SubjectReadiness {
   weakAreas: AreaScore[] // sub-areas below 75, weakest first
 }
 
-export type Verdict = 'READY' | 'BORDERLINE' | 'NOT_READY'
+// BUILDING = not enough of the exam tested yet to judge readiness (coverage gate).
+export type Verdict = 'READY' | 'BORDERLINE' | 'NOT_READY' | 'BUILDING'
 
 export interface DrillItem {
   code: string
@@ -45,11 +46,13 @@ export interface DrillItem {
 }
 
 export interface Readiness {
-  gwa: number | null // weighted theoretical GWA over measured subjects
+  gwa: number | null // average across the subjects TESTED so far (weighted among themselves)
+  projectedGwa: number | null // honest floor: same weighted sum but over the FULL exam weight, so untested subjects count as 0
   verdict: Verdict
-  margin: number | null // gwa - 75
+  margin: number | null // projectedGwa - 75 (distance to the line on the honest basis)
   measuredWeight: number // sum of weights actually tested (out of 100)
   measuredCount: number // subjects with at least one attempt (of 8)
+  coverageMet: boolean // every subject has at least one attempt — required before a readiness verdict
   mockGwa: number | null // latest mock's overall %, the exam-day reality check
   subjects: SubjectReadiness[]
   drillList: DrillItem[] // what to revisit, most impactful first
@@ -102,12 +105,18 @@ function subjectReadiness(def: SubjectDef, attempts: OleAttempt[]): SubjectReadi
 
 export function computeReadiness(attempts: OleAttempt[]): Readiness {
   const subjects = SUBJECTS.map(def => subjectReadiness(def, attempts))
+  const totalWeight = SUBJECTS.reduce((sum, d) => sum + d.weight, 0) // 100 across the 8 areas
 
   const measured = subjects.filter(s => s.avg !== null)
   const measuredWeight = measured.reduce((sum, s) => sum + s.weight, 0)
   const weighted = measured.reduce((sum, s) => sum + s.weight * (s.avg as number), 0)
+  // gwa = average over what you have tested (denominator = tested weight only).
   const gwa = measuredWeight > 0 ? round1(weighted / measuredWeight) : null
-  const margin = gwa !== null ? round1(gwa - PASS) : null
+  // projectedGwa = the honest floor: untested subjects contribute 0, so the
+  // denominator is the FULL exam weight. Equals gwa once all 8 are tested.
+  const projectedGwa = measured.length > 0 ? round1(weighted / totalWeight) : null
+  const coverageMet = measured.length === SUBJECTS.length
+  const margin = projectedGwa !== null ? round1(projectedGwa - PASS) : null
 
   // Mock reality check: the closest thing to an exam-day GWA. A mock logs one
   // row per subject, so weight each subject's most recent mock score.
@@ -124,13 +133,19 @@ export function computeReadiness(attempts: OleAttempt[]): Readiness {
   }
   const mockGwa = mockWeight > 0 ? round1(mockWeighted / mockWeight) : null
 
-  // Verdict: theoretical-only. Ready needs a real buffer above the line AND
-  // every measured subject clearing 75 on its own; anything positive but thin
-  // is borderline; below the line is not ready.
+  // Verdict: theoretical-only, and coverage-gated. Until every subject has at
+  // least one attempt there is not enough of the exam measured to call it, so
+  // the verdict is BUILDING regardless of how high the tested subjects score
+  // (this is what stops a "Board-ready" at 2/8). Once fully covered, gwa equals
+  // projectedGwa: Ready needs a real buffer above 75 AND every subject clearing
+  // 75 on its own; positive but thin is borderline; below the line is not ready.
   const allMeasuredPass = measured.length > 0 && measured.every(s => s.passed)
-  let verdict: Verdict = 'NOT_READY'
-  if (gwa !== null && gwa >= PASS) {
-    verdict = margin !== null && margin >= 5 && allMeasuredPass ? 'READY' : 'BORDERLINE'
+  let verdict: Verdict = 'BUILDING'
+  if (coverageMet) {
+    verdict = 'NOT_READY'
+    if (gwa !== null && gwa >= PASS) {
+      verdict = margin !== null && margin >= 5 && allMeasuredPass ? 'READY' : 'BORDERLINE'
+    }
   }
 
   // Drill list: subjects below 75 ranked by weight * deficit. Untested subjects
@@ -149,10 +164,12 @@ export function computeReadiness(attempts: OleAttempt[]): Readiness {
 
   return {
     gwa,
+    projectedGwa,
     verdict,
     margin,
     measuredWeight,
     measuredCount: measured.length,
+    coverageMet,
     mockGwa,
     subjects,
     drillList,
@@ -165,5 +182,6 @@ export function computeReadiness(attempts: OleAttempt[]): Readiness {
 //     { subjectCode: 'D', source: 'preboards-2025', percentage: 72, createdAt: '2026-07-05' },
 //     { subjectCode: 'H', source: 'subject-exam', percentage: 88, createdAt: '2026-07-04' },
 //   ])
-//   -> gwa over the 25% measured (D 15 + H 10), D flagged in drillList with its
-//      Contact Lens area as weakAreas, verdict NOT_READY (coverage tiny, D < 75).
+//   -> gwa ~= avg over the 25% measured (D 15 + H 10); projectedGwa much lower
+//      (untested 75% counts as 0); verdict BUILDING (only 2 of 8 covered); D
+//      flagged in drillList with its Contact Lens area as weakAreas.
