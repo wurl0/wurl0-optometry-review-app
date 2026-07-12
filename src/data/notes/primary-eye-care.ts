@@ -429,6 +429,10 @@ const notes: NotesData = {
                 'Used to determine the presence of strabismus. Light held at 40cm. Reflex normally located 0.5mm NASAL to centre of pupil.',
             },
             {
+              kind: 'diagram',
+              id: 'pec-hirschberg',
+            },
+            {
               kind: 'table',
               headers: ['Reflex Location', 'Interpretation'],
               rows: [
@@ -500,6 +504,10 @@ const notes: NotesData = {
           kind: 'sub',
           title: '6. Cover-Uncover Test',
           blocks: [
+            {
+              kind: 'diagram',
+              id: 'pec-cover-test',
+            },
             {
               kind: 'table',
               headers: ['Test Type', 'Purpose'],
@@ -676,6 +684,10 @@ const notes: NotesData = {
           kind: 'sub',
           title: '11. Visual Field Test',
           blocks: [
+            {
+              kind: 'diagram',
+              id: 'pec-field-defects',
+            },
             {
               kind: 'table',
               headers: ['Test', 'Purpose'],
@@ -991,6 +1003,10 @@ const notes: NotesData = {
             {
               kind: 'text',
               content: 'Angle: 60 degrees. Estimates depth of anterior chamber by comparing shadow width on iris to corneal optic section width.',
+            },
+            {
+              kind: 'diagram',
+              id: 'pec-van-herick',
             },
             {
               kind: 'table',
