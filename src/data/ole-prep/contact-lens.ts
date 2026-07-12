@@ -119,5 +119,108 @@ export const contactLensData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'cl-mnemonics',
+      title: 'Mnemonics & Memory Hooks',
+      icon: '🧠',
+      items: [
+        {
+          kind: 'mnemonic' as const,
+          term: 'RGP tear-lens compensation',
+          device: 'SAM-FAP — Steeper Add Minus, Flatter Add Plus',
+          breakdown: 'A STEEP lens pools tears centrally = a PLUS tear lens, so you add MINUS to the CL power. A FLAT lens = a MINUS tear lens, so you add PLUS. The tear lens and your compensation always have opposite signs.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Toric axis correction for lens rotation',
+          device: 'LARS — Left Add, Right Subtract',
+          breakdown: 'If the lens marking rotates to the patient\'s LEFT (clockwise from your view), ADD that many degrees to the ordered axis; if it rotates RIGHT, SUBTRACT. Example: axis 180, lens sits 10° left → order 190. Only the marking moves; the axis chases it back.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Material naming (filcon vs focon)',
+          device: '-filcon = soft (fluid-loving) · -focon = rigid',
+          breakdown: 'Hydrophilic SOFT materials (water ≥10%) get "-filcon" names; hydrophobic RIGID materials (<10%) get "-focon". "Fil" fills with fluid.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Lens size vs corneal bearing',
+          device: 'Bigger lens = less cornea touched',
+          breakdown: 'Corneal (<12 mm) rests on the cornea; sclero-corneal (12-16 mm) shares the load; SCLERAL (>~18 mm) vaults over the cornea entirely onto the insensitive sclera. That is why sclerals are the comfort / keratoconus / severe-dry-eye choice — no corneal bearing.',
+        },
+      ],
+    },
+    {
+      id: 'cl-toric-presbyopia',
+      title: 'Toric, Presbyopia & Optical Effects',
+      icon: '🎯',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: 'TORIC STABILISATION',
+          content: 'Prism ballast (1-1.5Δ base-down; reduces oxygen, can cause lid discomfort), truncation, peri-ballast, and double slab-off (thin zones top and bottom). Average rotation ~5-10° nasal, upper lid the main stabiliser. Reference marks show ORIENTATION only — they are NOT the axis.',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'A −8.00 D myope switches from glasses to contact lenses. Does the retinal image get larger or smaller?',
+          wrong: 'Smaller — a strong minus lens makes things look small',
+          correct: 'LARGER. Minus spectacles minify; moving the correction to the eye\'s plane enlarges the image toward its natural retinal size.',
+          why: 'Spectacle magnification depends on vertex distance. Minus specs minify, so contacts look bigger to a myope; plus specs magnify, so a hyperope sees a smaller, more natural image with contacts. "Myope magnifies, hyperope shrinks."',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Switching a myope from glasses to contact lenses changes the near demand how?',
+          answer: 'The myope must accommodate and converge MORE on contacts (may precipitate presbyopia). A hyperope must accommodate/converge LESS (may postpone a near add). Contacts sit at the eye\'s own plane, removing the near-help minus specs used to give.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Presbyopic contact-lens options?',
+          answer: 'Monovision (dominant eye distance, non-dominant near — simple but reduces stereopsis); alternating (translating) bifocal; simultaneous bifocal; multifocal (center-near, center-distance, or modified monovision).',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'Axial vs refractive ametropia — which is better corrected with contact lenses (Knapp\'s rule)?',
+          wrong: 'Axial ametropia — contacts sit closer to the eye',
+          correct: 'REFRACTIVE ametropia is best with contacts; AXIAL ametropia is often better with spectacles (Knapp\'s rule).',
+          why: 'Knapp\'s rule minimises retinal image-size differences. If K readings mirror the ametropia, the cause is refractive (better with contacts).',
+        },
+      ],
+    },
+    {
+      id: 'cl-complications-history',
+      title: 'Complications, Care & History',
+      icon: '⚠️',
+      items: [
+        {
+          kind: 'trap' as const,
+          question: 'What is the most sight-threatening contact-lens complication?',
+          wrong: 'Giant papillary conjunctivitis (GPC)',
+          correct: 'Microbial keratitis (Pseudomonas, Acanthamoeba) — it can ulcerate and perforate the cornea.',
+          why: 'GPC is uncomfortable but not sight-threatening. Microbial keratitis is linked to overnight wear, poor hygiene, and water exposure; Acanthamoeba is classically from tap/well-water exposure.',
+        },
+        {
+          kind: 'fact' as const,
+          highlight: 'HYPOXIA LADDER',
+          content: 'Chronic lens hypoxia: central corneal clouding → striae → microcysts → epithelial/stromal thinning → neovascularisation. Manage with a higher-Dk (silicone hydrogel) lens and reduced wear. Never stack a coloured lens over a clear one — it starves the central cornea of oxygen.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'What is "spectacle blur" and why does it matter clinically?',
+          answer: 'After removing PMMA/rigid lenses, glasses of the same power look blurry for ~15-20 minutes (corneal warpage). So do NOT refract or take K-readings on a rigid-lens wearer immediately — wait 30+ minutes, and stop rigid lenses ~3 weeks before refractive surgery.',
+        },
+        {
+          kind: 'table' as const,
+          title: 'History milestones (high-yield)',
+          headers: ['Who / Year', 'Contribution'],
+          rows: [
+            ['Leonardo da Vinci (1508)', 'First described the concept of a contact lens'],
+            ['A. E. Fick (1888)', 'First contact lens to correct vision (glass scleral)'],
+            ['Kevin Tuohy (1947)', 'First plastic corneal lens (PMMA)'],
+            ['Otto Wichterle', 'Developed HEMA — the first soft lens material'],
+            ['1971 / 1999-2002', 'First FDA-approved soft lens / silicone hydrogel introduced'],
+          ],
+        },
+      ],
+    },
   ],
 }

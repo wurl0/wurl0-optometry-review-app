@@ -140,5 +140,67 @@ export const pediatricOptometryData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'peds-refraction',
+      title: 'Refraction & Prescribing',
+      icon: '🔬',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: 'CYCLOPLEGIC IS KING',
+          content: 'Cycloplegic retinoscopy is the single most important pediatric refraction. Children have huge accommodation and can "focus through" a dry retinoscopy, hiding their full hyperopia; cycloplegia paralyses the ciliary muscle and unmasks the latent error the treatment plan depends on.',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'Mohindra (dark-room) retinoscopy is non-cycloplegic. What must you do to the gross finding?',
+          wrong: 'Nothing — read it directly',
+          correct: 'Subtract 1.25 D from the gross to convert to the manifest refraction.',
+          why: 'Mohindra is done in total darkness at 50 cm; the fixed 1.25 D accounts for the dark-focus (tonic) accommodation. Forgetting it leaves the child over-plussed. (Standard static retinoscopy: subtract your working-distance value instead, e.g. −2.00 D at 50 cm.)',
+        },
+        {
+          kind: 'table' as const,
+          title: 'When to prescribe (children over 12-18 months)',
+          headers: ['Refractive error', 'Threshold to prescribe'],
+          rows: [
+            ['Hyperopia', '> +3.50 D any meridian (> +2.00 D from age 4)'],
+            ['Astigmatism (persistent)', '> 1.50 D'],
+            ['Anisometropia (persistent)', '> 1.00 D'],
+            ['Myopia', 'Any amount'],
+          ],
+          notes: 'Give PARTIAL correction of hyperopia at first, but correct anisometropia FULLY in both eyes. Reassess every 4 weeks during active amblyopia therapy.',
+        },
+      ],
+    },
+    {
+      id: 'peds-mnemonics-redflags',
+      title: 'Mnemonics & Red Flags',
+      icon: '🚩',
+      items: [
+        {
+          kind: 'mnemonic' as const,
+          term: 'Development milestones',
+          device: '"Straight by 3-4 mo, 20/50 at 1 yr, 20/20 by 3 yr"',
+          breakdown: 'Before 3-4 months a wandering eye can be normal; after that it is strabismus until proven otherwise. Acuity reaches adult 20/20 at age 3, not at 1 year.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Why pediatric care is a race against time',
+          device: 'Window: peak 0-3, treatable to 7-8, closing by 12',
+          breakdown: 'The visual cortex wires itself from the images it receives. A blurred or suppressed eye during the window → amblyopia. The same problem caught at 3 is reversible; at 10 it often is not.',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'A white pupil (leukocoria) in an infant is usually a harmless variant. True or False?',
+          wrong: 'True — it is usually just a reflection off the retina',
+          correct: 'False — leukocoria is retinoblastoma until proven otherwise and needs urgent referral (also cataract, ROP, Coats disease).',
+          why: 'Retinoblastoma is the most common intraocular malignancy of childhood and is life-threatening. A white reflex is never dismissed.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Name the infant ocular red flags that warrant urgent referral.',
+          answer: 'Leukocoria (retinoblastoma); any constant deviation after 4 months; nystagmus; photophobia with a cloudy/enlarged cornea (congenital glaucoma / buphthalmos); persistent excessive tearing (blocked nasolacrimal duct).',
+        },
+      ],
+    },
   ],
 }

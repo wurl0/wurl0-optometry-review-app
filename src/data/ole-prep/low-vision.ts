@@ -139,5 +139,91 @@ export const lowVisionData: OlePrepData = {
         },
       ],
     },
+    {
+      id: 'lv-definitions',
+      title: 'Definitions & Classification',
+      icon: '📊',
+      items: [
+        {
+          kind: 'fact' as const,
+          highlight: 'LEGAL BLINDNESS',
+          content: 'VA 20/200 (6/60) or worse in the BETTER eye with best correction, OR a visual field ≤20° in the widest meridian. Either one qualifies — acuity OR field.',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'WHO blindness is defined by a visual field narrower than which value?',
+          wrong: 'Under 20° from fixation',
+          correct: 'Under 10° from fixation. (WHO low vision uses under 20°; legal blindness uses 20° or less.)',
+          why: 'Three different field cutoffs: WHO blindness <10°, WHO low vision <20°, legal blindness ≤20°. VA 20/200 is the shared acuity threshold for WHO blindness and legal blindness.',
+        },
+        {
+          kind: 'trap' as const,
+          question: 'What is the leading cause of visual IMPAIRMENT worldwide?',
+          wrong: 'Cataract',
+          correct: 'Uncorrected refractive error. (Cataract leads BLINDNESS in low- and middle-income countries.)',
+          why: 'Impairment vs blindness differ: uncorrected refractive error leads impairment; cataract leads blindness. Both are largely avoidable.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Define functional low vision, and habilitation vs rehabilitation.',
+          answer: 'Functional low vision = impairment not fully corrected by conventional specs, contacts, or medical/surgical treatment, that restricts everyday life. Habilitation = congenital loss (build skills never had); rehabilitation = acquired loss (restore lost skills).',
+        },
+      ],
+    },
+    {
+      id: 'lv-mnemonics',
+      title: 'Mnemonics & Quick Rules',
+      icon: '🧠',
+      items: [
+        {
+          kind: 'mnemonic' as const,
+          term: 'Starting reading add',
+          device: 'Kestenbaum — add = reciprocal of the Snellen fraction',
+          breakdown: 'Add (D) = denominator ÷ numerator of the distance VA. 20/200 → 200/20 = +10 D; 20/100 → +5 D. It is a STARTING add — verify with a trial frame.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Legal blindness threshold',
+          device: '"20/200 or 20°"',
+          breakdown: 'Either the acuity (20/200 or worse, better eye, best-corrected) OR the field (≤20° widest meridian) triggers it — whichever fails first.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'X-notation depends on the reference distance',
+          device: 'Spectacle ÷2.5 (40 cm) · Hand/Stand ÷4 (25 cm)',
+          breakdown: 'The same +10 D lens is 4× at the 40 cm reference (D/2.5) but 2.5× at the 25 cm reference (D/4). Always convert to DIOPTRES before comparing devices, or the "×" numbers mislead you.',
+        },
+        {
+          kind: 'mnemonic' as const,
+          term: 'Goal acuity is bigger than threshold',
+          device: 'Spot 1, Fluent 3, Max 5 (lines of reserve)',
+          breakdown: 'Reading needs print larger than the smallest resolvable letter: 1 line of reserve to spot a word, 3 lines for fluent reading, 5 for fast fluent. That reserve is why you magnify beyond threshold.',
+        },
+      ],
+    },
+    {
+      id: 'lv-devices-contrast-field',
+      title: 'Devices, Contrast & Visual Field',
+      icon: '🔦',
+      items: [
+        {
+          kind: 'trap' as const,
+          question: 'A patient with 20/20 high-contrast acuity cannot have a functional vision problem. True or False?',
+          wrong: 'True — 20/20 is normal vision',
+          correct: 'False — poor CONTRAST sensitivity causes real handicap (night driving, recognising faces, low-contrast text) despite 20/20 acuity.',
+          why: 'Acuity charts are high-contrast; the real world is mostly grey. Early cataract and refractive error drop contrast at high spatial frequencies first. Pelli-Robson measures contrast sensitivity.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Match the low-vision device to the task.',
+          answer: 'Spectacle magnifier: hands-free, wide field, but fixed very close working distance. Hand magnifier: variable WD, good for spot reading, needs steady hands. Stand magnifier: fixed lens-to-object distance — good for tremor/Parkinson. CCTV: high magnification + contrast reversal, best for sustained reading. Telescope: distance tasks.',
+        },
+        {
+          kind: 'recall' as const,
+          prompt: 'Characteristic visual-field defect for macular disease, retinitis pigmentosa, and glaucoma?',
+          answer: 'Macular disease / AMD → central scotoma (central vision loss). Retinitis pigmentosa → peripheral constriction (tunnel vision). Glaucoma → arcuate scotoma. Amsler grid detects metamorphopsia (macular distortion).',
+        },
+      ],
+    },
   ],
 }
