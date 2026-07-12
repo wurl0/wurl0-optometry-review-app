@@ -177,10 +177,10 @@ export default async function HomePage() {
             if (groupSubjects.length === 0) return null
             const gc = COLOR_MAP[group.accent]
             return (
-              <section key={group.id} className={`rounded-3xl border ${gc.border} p-4 sm:p-5`}>
+              <section key={group.id} className={`rounded-3xl border ${gc.border} ${gc.bg} p-4 sm:p-5`}>
                 <div className="flex items-center justify-between gap-3 mb-3">
                   <h2 className={`text-sm font-bold ${gc.text} leading-tight`}>{group.title}</h2>
-                  <span className="shrink-0 text-[11px] font-semibold text-gray-500 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-full">
+                  <span className="shrink-0 text-[11px] font-semibold text-gray-600 bg-white/70 border border-gray-200 px-2 py-0.5 rounded-full">
                     {group.weight}% of written exam
                   </span>
                 </div>
