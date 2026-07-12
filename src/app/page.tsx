@@ -175,11 +175,12 @@ export default async function HomePage() {
               .map(slug => SUBJECTS.find(s => s.slug === slug))
               .filter((s): s is (typeof SUBJECTS)[number] => !!s && !s.isBonus)
             if (groupSubjects.length === 0) return null
+            const gc = COLOR_MAP[group.accent]
             return (
-              <section key={group.id}>
+              <section key={group.id} className={`rounded-3xl border ${gc.border} ${gc.bg} p-4 sm:p-5`}>
                 <div className="flex items-center justify-between gap-3 mb-3">
-                  <h2 className="text-sm font-bold text-gray-700 leading-tight">{group.title}</h2>
-                  <span className="shrink-0 text-[11px] font-semibold text-gray-500 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-full">
+                  <h2 className={`text-sm font-bold ${gc.text} leading-tight`}>{group.title}</h2>
+                  <span className="shrink-0 text-[11px] font-semibold text-gray-600 bg-white/70 border border-gray-200 px-2 py-0.5 rounded-full">
                     {group.weight}% of written exam
                   </span>
                 </div>
@@ -354,6 +355,12 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.19', date: 'Jul 2026', note: 'Board-area color accents — each subject group on the home screen now sits in its own tinted, bordered box for faster visual scanning.' },
+                { version: 'v0.18', date: 'Jul 2026', note: 'In-subject keyword search — every Notes reviewer now has a search box that filters to the sections containing your term, highlights every match, and shows a match count.' },
+                { version: 'v0.17', date: 'Jul 2026', note: 'Notes visual upgrade finished — the callout + bold treatment (plus new diagrams: boxing system, retinoscopy motion, duochrome) rolled out to the remaining 12 subjects: Theoretical & Practical Optics, Contact Lens, Ocular & General Anatomy, Primary Eye Care, Phorometry, Ocular Disease, Ocular & General Pharmacology, Low Vision, and Pediatric Optometry.' },
+                { version: 'v0.16', date: 'Jul 2026', note: 'Notes reasoning layer — new color-coded callout boxes (💡 why it works, ⚠️ board trap, 🧠 memory hook) plus inline bold/italic emphasis. First applied to Ethics, Physiological Optics, and Binocular Vision, with 5 new inline SVG diagrams.' },
+                { version: 'v0.15', date: 'Jul 2026', note: 'Home screen reorganized into the 8 PRC board areas, each labeled with its share of the written exam.' },
+                { version: 'v0.14', date: 'Jul 2026', note: 'New subject: Ethics & Jurisprudence — 224-item bank, notes reviewer, quiz, and OLE prep, verified against current PH optometry law (RA 8050).' },
                 { version: 'v0.13', date: 'May 2026', note: "Formula display mode — new formula card with styled boxes, inline SVG diagrams, and variable breakdowns. T.O. new sections: speed of light, IOR values, photometry, Snell's law, shadows, mirrors, toric transpositions. Practical/CL: surface power, vertex distance, CL power types. New Low Vision subject: magnification types, LV table, telescope formulas. Optometry Constants: photometry, CL, LV, mirror/shadow formula constants." },
                 { version: 'v0.12', date: 'May 2026', note: 'OLE Prep expanded — new sections added to Binocular Vision (EOM anatomy, visual axes, diplopia, accommodative dysfunction, compensatory postures), General Pharmacology (glaucoma drugs, CNS/neuro, anti-inflammatories), and Optometry Constants (fusion amplitudes, Spiral of Tillaux, Axes of Fick, pharmacology time constants). Sourced from 2024 preboard and pharmacology materials.' },
                 { version: 'v0.11', date: 'Apr 2026', note: 'Practical & Mechanical Optics — notes reviewer, OLE prep, and quiz covering lenses, prisms, and optical instruments' },

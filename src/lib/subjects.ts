@@ -166,24 +166,26 @@ export const SUBJECTS: Subject[] = [
 // Subjects grouped by the 8 board areas of the optometry licensure exam
 // (RA 8050 IRR / current PRC Program of Examination). `weight` is the area's
 // percentage of the written (theoretical) exam. Drives the grouped home page.
-export type SubjectGroup = { id: string; title: string; weight: number; slugs: string[] }
+// `accent` is a COLOR_MAP key used to tint each area's container box on the
+// home page (distinct per area, independent of the individual subject colors).
+export type SubjectGroup = { id: string; title: string; weight: number; accent: string; slugs: string[] }
 
 export const SUBJECT_GROUPS: SubjectGroup[] = [
-  { id: 'visual-biology', title: 'Ocular & Visual Biology', weight: 10,
+  { id: 'visual-biology', title: 'Ocular & Visual Biology', weight: 10, accent: 'emerald',
     slugs: ['ocular-anatomy', 'general-anatomy'] },
-  { id: 'physio-bv', title: 'Physiological Optics, Binocular Vision & Perception', weight: 15,
+  { id: 'physio-bv', title: 'Physiological Optics, Binocular Vision & Perception', weight: 15, accent: 'blue',
     slugs: ['physiologic-optics', 'binocular-vision'] },
-  { id: 'optics-dispensing', title: 'Theoretical, Practical Optics & Ophthalmic Dispensing', weight: 15,
+  { id: 'optics-dispensing', title: 'Theoretical, Practical Optics & Ophthalmic Dispensing', weight: 15, accent: 'amber',
     slugs: ['theoretical-optics', 'practical-mechanical-optics', 'contact-lens'] },
-  { id: 'primary-care', title: 'Primary Care & Refraction', weight: 15,
+  { id: 'primary-care', title: 'Primary Care & Refraction', weight: 15, accent: 'rose',
     slugs: ['primary-eye-care', 'phorometry'] },
-  { id: 'ocular-disease', title: 'Ocular Diseases & Ocular Emergencies', weight: 10,
+  { id: 'ocular-disease', title: 'Ocular Diseases & Ocular Emergencies', weight: 10, accent: 'red',
     slugs: ['ocular-disease'] },
-  { id: 'pharmacology', title: 'Ocular Pharmacology', weight: 10,
+  { id: 'pharmacology', title: 'Ocular Pharmacology', weight: 10, accent: 'violet',
     slugs: ['ocular-pharmacology', 'general-pharmacology'] },
-  { id: 'clinical-optometry', title: 'Clinical Optometry & Sub-Specialties', weight: 15,
+  { id: 'clinical-optometry', title: 'Clinical Optometry & Sub-Specialties', weight: 15, accent: 'cyan',
     slugs: ['low-vision', 'pediatric-optometry'] },
-  { id: 'ethics', title: 'Ethics, Jurisprudence, Practice Management & Public Health', weight: 10,
+  { id: 'ethics', title: 'Ethics, Jurisprudence, Practice Management & Public Health', weight: 10, accent: 'indigo',
     slugs: ['ethics-and-jurisprudence'] },
 ]
 
