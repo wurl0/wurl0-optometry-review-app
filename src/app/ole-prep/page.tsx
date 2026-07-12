@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
-import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
+import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 
 export default async function OlePrepPage() {
   const supabase = await createClient()
@@ -53,29 +53,48 @@ export default async function OlePrepPage() {
           </ul>
         </div>
 
-        {/* Regular subject cards */}
-        <div className="grid sm:grid-cols-2 gap-4">
-          {regularSubjects.map(subject => {
-            const c = COLOR_MAP[subject.color]
+        {/* Subject cards, grouped by the 8 board areas (mirrors the home page) */}
+        <div className="space-y-8">
+          {SUBJECT_GROUPS.map(group => {
+            const groupSubjects = group.slugs
+              .map(slug => SUBJECTS.find(s => s.slug === slug))
+              .filter((s): s is (typeof SUBJECTS)[number] => !!s && !!s.olePrep && !s.isBonus)
+            if (groupSubjects.length === 0) return null
+            const gc = COLOR_MAP[group.accent]
             return (
-              <Link
-                key={subject.slug}
-                href={`/ole-prep/${subject.slug}`}
-                className="block bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-md transition-shadow"
-              >
-                <div className={`bg-gradient-to-br ${c.gradient} px-5 py-4`}>
-                  <span className="text-3xl">{subject.icon}</span>
-                  <h2 className="text-base font-bold text-white mt-2 leading-tight">{subject.name}</h2>
+              <section key={group.id} className={`rounded-3xl border ${gc.border} ${gc.bg} p-4 sm:p-5`}>
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <h2 className={`text-sm font-bold ${gc.text} leading-tight`}>{group.title}</h2>
+                  <span className="shrink-0 text-[11px] font-semibold text-gray-600 bg-white/70 border border-gray-200 px-2 py-0.5 rounded-full">
+                    {group.weight}% of written exam
+                  </span>
                 </div>
-                <div className="px-5 py-4">
-                  <div className="flex flex-wrap gap-1.5">
-                    {['Mnemonics', 'High-Yield', 'Board Traps', 'Active Recall'].map(tag => (
-                      <span key={tag} className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${c.badge}`}>{tag}</span>
-                    ))}
-                  </div>
-                  <p className="text-xs text-gray-500 mt-2">{subject.description}</p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {groupSubjects.map(subject => {
+                    const c = COLOR_MAP[subject.color]
+                    return (
+                      <Link
+                        key={subject.slug}
+                        href={`/ole-prep/${subject.slug}`}
+                        className="block bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-md transition-shadow"
+                      >
+                        <div className={`bg-gradient-to-br ${c.gradient} px-5 py-4`}>
+                          <span className="text-3xl">{subject.icon}</span>
+                          <h3 className="text-base font-bold text-white mt-2 leading-tight">{subject.name}</h3>
+                        </div>
+                        <div className="px-5 py-4">
+                          <div className="flex flex-wrap gap-1.5">
+                            {['Mnemonics', 'High-Yield', 'Board Traps', 'Active Recall'].map(tag => (
+                              <span key={tag} className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${c.badge}`}>{tag}</span>
+                            ))}
+                          </div>
+                          <p className="text-xs text-gray-500 mt-2">{subject.description}</p>
+                        </div>
+                      </Link>
+                    )
+                  })}
                 </div>
-              </Link>
+              </section>
             )
           })}
         </div>
