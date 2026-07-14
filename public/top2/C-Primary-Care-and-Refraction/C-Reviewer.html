@@ -84,7 +84,24 @@ body.hy-only .sec:not(.hy){display:none;}
 body.hy-only .nav-sec:not(.hy){display:none;}
 .topic.hidden,.nav-topic.hidden{display:none;}
 @media(max-width:820px){.wrap{grid-template-columns:1fr;}aside{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}main{padding:20px 16px 90px;}}
-</style></head><body>
+.waa-print-btn{position:fixed;right:20px;bottom:20px;z-index:100000;display:inline-flex;align-items:center;gap:7px;background:var(--accent,#2e9e5b);color:#fff;border:none;border-radius:999px;padding:11px 17px;font:600 13px/1 -apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.22);cursor:pointer;}
+.waa-print-btn:hover{filter:brightness(.93);}
+.waa-print-btn:active{transform:translateY(1px);}
+.waa-print-footer{display:none;}
+@media print{
+  aside,.layers-bar,.search,.topbar .toggle,.nav-chips,[style*="position:fixed"],.waa-print-btn{display:none!important;}
+  .wrap{display:block!important;max-width:100%!important;margin:0!important;}
+  main{width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;}
+  .topbar{position:static!important;}
+  .blueprint{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .term,.tile,.trap,.blueprint,.rule,.mnem,.num,.chip,.sec-h,table,tr,figure,img{break-inside:avoid!important;}
+  h1,h2,h3,h4,.sec-h{break-after:avoid;}
+  #waa-wm-layer{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .waa-print-footer{display:block!important;position:fixed;left:0;right:0;bottom:5mm;z-index:2147483600;text-align:center;pointer-events:none;font:600 9.5px/1.2 -apple-system,"Segoe UI",Roboto,sans-serif;color:#8a93a0;letter-spacing:.04em;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{background:#fff!important;}
+  @page{margin:14mm;}
+}
+</style></head><body><button class="waa-print-btn" onclick="waaPrint()" title="Print or save as PDF" aria-label="Print or save as PDF">🖨️ Print / Save PDF</button><div class="waa-print-footer" aria-hidden="true">WAA · Board Review 2026 · Personal study notes</div>
 <div class="wrap">
 <aside>
 <div class="brand"><b>WAA</b> · BOARD REVIEW 2026</div>
@@ -925,4 +942,33 @@ N=[].slice.call(document.querySelectorAll('.nav-topic'));
 s.addEventListener('input',function(){var q=s.value.trim().toLowerCase();
  T.forEach(function(t,i){var h=!q||t.textContent.toLowerCase().indexOf(q)!==-1;
  t.classList.toggle('hidden',!h);if(N[i])N[i].classList.toggle('hidden',!h);});});
+</script><script>
+(function(){
+  function openAll(){var o=[];document.querySelectorAll('details:not([open])').forEach(function(d){d.open=true;o.push(d);});return o;}
+  function restore(o){o.forEach(function(d){try{d.open=false;}catch(e){}});}
+  function addWM(){
+    if(document.getElementById('waa-wm-layer'))return;
+    var h=Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+    var layer=document.createElement('div');
+    layer.id='waa-wm-layer';layer.setAttribute('aria-hidden','true');
+    layer.style.cssText='position:absolute;top:0;left:0;width:100%;height:'+h+'px;z-index:2147483000;pointer-events:none;';
+    for(var y=190;y<h;y+=500){
+      var s=document.createElement('div');
+      s.style.cssText='position:absolute;left:0;right:0;top:'+y+'px;text-align:center;transform:rotate(-28deg);color:#1d2733;opacity:.07;';
+      s.innerHTML="<div style=\"font:800 96px/1 Helvetica,Arial,sans-serif;letter-spacing:.14em;\">WAA</div><div style=\"font:700 18px/1.3 Helvetica,Arial,sans-serif;letter-spacing:.1em;margin-top:8px;\">Board Review 2026 · Personal study notes</div>";
+      layer.appendChild(s);
+    }
+    document.body.appendChild(layer);
+  }
+  function rmWM(){var l=document.getElementById('waa-wm-layer');if(l)l.parentNode.removeChild(l);}
+  window.waaPrint=function(){
+    var o=openAll();
+    setTimeout(function(){
+      addWM();
+      setTimeout(function(){window.print();setTimeout(function(){rmWM();restore(o);},500);},40);
+    },90);
+  };
+  window.addEventListener('beforeprint',function(){window.__waaO=openAll();addWM();});
+  window.addEventListener('afterprint',function(){rmWM();if(window.__waaO){restore(window.__waaO);window.__waaO=null;}});
+})();
 </script></body></html>
