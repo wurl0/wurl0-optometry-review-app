@@ -2687,5 +2687,461 @@
     ],
     "correct": 2,
     "explanation": "RA 8050 (Sec. 33) imposes imprisonment of 1 to 8 years, or a fine of P10,000 to P40,000, or both, at the court's discretion. Do not confuse this with the RA 8981 exam-tampering penalty of 6 years and 1 day to 12 years."
+  },
+  {
+    "type": "mcq",
+    "stem": "What was the first regulatory law governing optometry in the Philippines?",
+    "options": [
+      "Republic Act 1998",
+      "The Optometry Law of 1917",
+      "Republic Act 8050",
+      "Presidential Decree 223"
+    ],
+    "correct": 1,
+    "explanation": "The Optometry Law of 1917 was the first regulatory law (written in Spanish, amended 1919). It was later amended by RA 1998 (1957), which was in turn replaced by RA 8050 (1995)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The 1917 Optometry Law created the examining body originally called the:",
+    "options": [
+      "Board of Optometry",
+      "Junta Examinadora (Board of Examiners)",
+      "Professional Regulation Commission",
+      "Council of Deans"
+    ],
+    "correct": 1,
+    "explanation": "The 1917 law created the 'Junta Examinadora' (Board of Examiners). Under PD 223 (amended by PD 657) the 'Board of Examiners in Optometry' was later renamed the 'Board of Optometry.'"
+  },
+  {
+    "type": "mcq",
+    "stem": "According to PRC records, Registration Certificate No. 1 in optometry was issued on March 11, 1918 to:",
+    "options": [
+      "Dr. Federico Sarabia Sr.",
+      "Dr. Manuel Sabater",
+      "Dr. Justo Gonzalez",
+      "Dr. Claro M. Cinco"
+    ],
+    "correct": 1,
+    "explanation": "PRC records show Registration Certificate No. 1 was issued March 11, 1918 to Dr. Manuel Sabater. Federico Sarabia Sr. is often cited as the reputed first and was the first Filipino to study optometry in the US (1905)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which school was the first university-affiliated optometry college in the Philippines?",
+    "options": [
+      "Manila Central University",
+      "Centro Escolar University (1928)",
+      "De Ocampo Memorial College",
+      "Philippine College of Optometry"
+    ],
+    "correct": 1,
+    "explanation": "Centro Escolar University established the first university-affiliated optometry college in 1928, with Dr. Roy A. Thorson as its first dean."
+  },
+  {
+    "type": "mcq",
+    "stem": "The 1st Asian-Pacific Optometric Congress (Manila, 1978) founded which organization?",
+    "options": [
+      "APCO",
+      "WCO",
+      "IFAPAO",
+      "IOOL"
+    ],
+    "correct": 2,
+    "explanation": "The 1st APOC in Manila (July 1978) founded IFAPAO (International Federation of Asian and Pacific Associations of Optometrists), which later became APCO. Its first president was Dr. Claro M. Cinco."
+  },
+  {
+    "type": "mcq",
+    "stem": "In 1979 the OAP, PODA, and PROA merged into a single national organization known as:",
+    "options": [
+      "Optometric Association of the Philippines",
+      "Samahan Ng Optometrist Sa Pilipinas (SOP)",
+      "Philippine Association of Optometrists",
+      "Philippine College of Optometrists"
+    ],
+    "correct": 1,
+    "explanation": "In 1979, to meet the PRC's requirement of one national association, the OAP, PODA, and PROA merged into the Samahan Ng Optometrist Sa Pilipinas (SOP)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the official short title of Republic Act 8050?",
+    "options": [
+      "The Optometry Law of 1917",
+      "The Revised Optometry Law of 1995",
+      "The PRC Modernization Act",
+      "The Philippine Optometry Act"
+    ],
+    "correct": 1,
+    "explanation": "RA 8050 is cited as the 'Revised Optometry Law of 1995.' It repealed RA 1998 and was approved June 7, 1995 by President Fidel V. Ramos."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8050, optometry is declared a regular component of what system?",
+    "options": [
+      "The tertiary health care system",
+      "The primary health care system",
+      "The social security system",
+      "The public education system"
+    ],
+    "correct": 1,
+    "explanation": "Section 2 (Declaration of State Policy) promotes optometric services as a regular component of the primary health care system."
+  },
+  {
+    "type": "mcq",
+    "stem": "As originally listed in RA 8050, which set of diagnostic pharmaceutical agents and concentrations is correct?",
+    "options": [
+      "Phenylephrine 10%, Tropicamide 1%, Atropine 1%",
+      "Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Oxybuprocaine 0.4%, Fluorescein strips",
+      "Pilocarpine 2%, Timolol 0.5%, Proparacaine 0.5%",
+      "Cyclopentolate 1%, Phenylephrine 2.5%, Tetracaine 0.5%"
+    ],
+    "correct": 1,
+    "explanation": "RA 8050 as written lists five DPAs: Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Oxybuprocaine HCl 0.4%, and Fluorescein strips. The 2008 IRR later added Cyclopentolate, making the current list six."
+  },
+  {
+    "type": "mcq",
+    "stem": "Who approves the diagnostic pharmaceutical agents an optometrist may use, and on whose recommendation?",
+    "options": [
+      "The PRC, on the Board's recommendation",
+      "The DOH, on the recommendation of the BFAD",
+      "The CHED, on the Board's recommendation",
+      "The President, on the DOH's recommendation"
+    ],
+    "correct": 1,
+    "explanation": "The DPA list is set by the Board of Optometry but is approved by the Secretary of the Department of Health (DOH) on the recommendation of the Bureau of Food and Drugs (BFAD)."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Board of Optometry is composed of how many members, chosen from how many nominees?",
+    "options": [
+      "3 members from 6 nominees",
+      "5 members from 10 nominees",
+      "7 members from 14 nominees",
+      "5 members from 15 nominees"
+    ],
+    "correct": 1,
+    "explanation": "Under Sec. 7, the Board has five (5) members appointed by the President from a list of ten (10) nominees submitted by the integrated national organization."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the minimum age and minimum years of active practice for a Board of Optometry member?",
+    "options": [
+      "30 years old and 5 years of practice",
+      "35 years old and 10 years of practice",
+      "40 years old and 10 years of practice",
+      "35 years old and 5 years of practice"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 8 requires a Board member to be at least 35 years old at appointment and in active practice for at least 10 years prior."
+  },
+  {
+    "type": "mcq",
+    "stem": "The term of office of a Board of Optometry member is:",
+    "options": [
+      "3 years, renewable once",
+      "5 years, non-renewable",
+      "7 years, non-renewable",
+      "6 years, renewable"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 9 provides a five-year, non-renewable term. Terms are staggered so one seat opens each year, and the member in his last year automatically becomes chairperson."
+  },
+  {
+    "type": "mcq",
+    "stem": "How many Board members constitute a quorum, and how many votes are needed to decide an administrative case?",
+    "options": [
+      "2 for quorum, 3 to decide",
+      "3 for quorum, 3 to decide",
+      "3 for quorum, 4 to decide",
+      "4 for quorum, 3 to decide"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 13 sets the quorum at three members, and Sec. 14 requires the vote of three members to render a decision in an administrative case."
+  },
+  {
+    "type": "mcq",
+    "stem": "To pass the optometry licensure examination, an applicant must obtain:",
+    "options": [
+      "A general average of 70% with none below 50%",
+      "A general average of at least 75% with no grade below 50%",
+      "A general average of 80% with none below 60%",
+      "A general average of 75% with no grade below 60%"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 20 requires a general average of at least 75% in all subjects, with no rating below 50% in any single subject."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8050, an applicant who fails the board examination a third time must do what before taking it again?",
+    "options": [
+      "Wait one full year",
+      "Submit proof of a refresher course from an accredited institution",
+      "Re-enroll in the entire O.D. program",
+      "Obtain a special permit from the President"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 22 requires an applicant who fails a third time to submit proof of a refresher course from a duly accredited institution before the next examination."
+  },
+  {
+    "type": "mcq",
+    "stem": "A revocation or suspension by the Board of Optometry becomes final unless appealed to the PRC within:",
+    "options": [
+      "10 days",
+      "15 days",
+      "30 days",
+      "60 days"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 27 provides that the Board's revocation or suspension becomes final unless appealed to the PRC within 15 days from receipt of the decision."
+  },
+  {
+    "type": "mcq",
+    "stem": "How often must an optometrist's professional license be renewed under RA 8050?",
+    "options": [
+      "Every year",
+      "Every 2 years",
+      "Every 3 years",
+      "Every 5 years"
+    ],
+    "correct": 2,
+    "explanation": "Sec. 29 makes the professional license renewable every three (3) years. Note that Sec. 29's continuing-education-for-renewal requirement was repealed by Sec. 20 of RA 8981 (PRC Modernization Act of 2000)."
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the penalty under the penal provision (Sec. 33) of RA 8050?",
+    "options": [
+      "6 months to 6 years, or a fine up to P5,000",
+      "1 to 8 years, or a fine of P10,000 to P40,000, or both",
+      "2 to 10 years and a fine of P50,000",
+      "6 years and 1 day to 12 years"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 33 imposes imprisonment of not less than 1 year and not more than 8 years, or a fine of P10,000 to P40,000, or both, at the court's discretion, plus applicable administrative penalties."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is a PROHIBITED act under Sec. 32 of RA 8050?",
+    "options": [
+      "Displaying your certificate of registration in the clinic",
+      "Advertising that you charge lower fees or sell cheaper frames than other optometrists",
+      "Referring a patient to an ophthalmologist",
+      "Collecting a professional fee for an eye examination"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 32 prohibits advertising that one optometrist is better than others or that he collects lower fees or sells cheaper frames or lenses. Comparative and price advertising is a classic prohibited act."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under Sec. 5 of RA 8050, government-trained public health workers in the blindness-prevention program may perform only:",
+    "options": [
+      "Contact lens fitting",
+      "Visual acuity testing and visual screening",
+      "Refraction and prescription of lenses",
+      "Use of diagnostic pharmaceutical agents"
+    ],
+    "correct": 1,
+    "explanation": "The Sec. 5 exemption limits trained public health workers to visual acuity testing and visual screening only; anything beyond that would be unauthorized practice."
+  },
+  {
+    "type": "mcq",
+    "stem": "A certificate of registration in optometry is signed by:",
+    "options": [
+      "The President and the DOH Secretary",
+      "The PRC Commissioner and all members of the Board of Optometry",
+      "The Board chairperson alone",
+      "The CHED chairperson and the Board secretary"
+    ],
+    "correct": 1,
+    "explanation": "Sec. 3(e) defines the certificate of registration as a document signed by the PRC Commissioner and by all members of the Board of Optometry, bearing the official seal."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the Code of Ethics, what should the optometrist consider his PRIMARY responsibility?",
+    "options": [
+      "Maximizing professional income",
+      "The visual welfare of the public",
+      "Advancing his own reputation",
+      "Expanding his clientele"
+    ],
+    "correct": 1,
+    "explanation": "The first duty in the Code is to consider as his primary responsibility the visual welfare of the public."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is considered an UNETHICAL or unprofessional act for an optometrist?",
+    "options": [
+      "Referring a patient for medical attention when indicated",
+      "Employing lay persons to perform the visual examination",
+      "Keeping patient information confidential",
+      "Continuing professional education"
+    ],
+    "correct": 1,
+    "explanation": "Employing lay persons to perform the visual examination is expressly listed as unethical. Others include advertising superiority, house-to-house canvassing, and using 'Doctor' without qualifying it with 'optometry.'"
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the Code of Ethics, when an optometrist uses the title 'Doctor' or 'Dr.,' he must:",
+    "options": [
+      "Use it without any qualification",
+      "Qualify it with the word 'optometry' or 'optometrist'",
+      "Use it only in academic settings",
+      "Avoid it entirely"
+    ],
+    "correct": 1,
+    "explanation": "It is unethical to use the title 'Doctor' or 'Dr.' without qualifying it with 'optometry' or 'optometrist,' to avoid misleading the public."
+  },
+  {
+    "type": "mcq",
+    "stem": "When an optometrist is called in as a consultant on a colleague's patient, it is his responsibility to:",
+    "options": [
+      "Take over the patient permanently",
+      "Return the patient to the original optometrist for subsequent care",
+      "Refer the patient to a physician",
+      "Report the original optometrist to the Board"
+    ],
+    "correct": 1,
+    "explanation": "A consultant must ensure the patient is returned to the original (attending) optometrist for any subsequent care the patient needs."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the Code of Ethics, an optometrist who discovers a corrupt or dishonest colleague should:",
+    "options": [
+      "Ignore it to preserve collegiality",
+      "Expose the matter to the Board of Optometry",
+      "Confront the colleague publicly",
+      "Report only to the patient"
+    ],
+    "correct": 1,
+    "explanation": "The Code obliges the optometrist to expose corrupt or dishonest members to the Board of Optometry, helping safeguard the profession against the unfit."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which Presidential Decree created the PRC and changed 'Board of Examiners in Optometry' to 'Board of Optometry'?",
+    "options": [
+      "PD 996",
+      "PD 223 (as amended by PD 657)",
+      "PD 3573",
+      "PD 649"
+    ],
+    "correct": 1,
+    "explanation": "PD 223 (as amended by PD 657) created the Professional Regulation Commission and renamed the 'Board of Examiners in Optometry' to the 'Board of Optometry.' PD 223 was later repealed by RA 8981."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Professional Regulation Commission is headed by:",
+    "options": [
+      "A single Commissioner appointed for life",
+      "One Chairperson and two Commissioners appointed for a 7-year term with no reappointment",
+      "Three co-equal Commissioners for 5-year terms",
+      "The Secretary of Health"
+    ],
+    "correct": 1,
+    "explanation": "Under RA 8981, the PRC is headed by one full-time Chairperson and two full-time Commissioners, appointed by the President for a seven-year term without reappointment."
+  },
+  {
+    "type": "mcq",
+    "stem": "The right of the State to regulate the practice of optometry is founded on its:",
+    "options": [
+      "Power of taxation",
+      "Police power",
+      "Power of eminent domain",
+      "Power of judicial review"
+    ],
+    "correct": 1,
+    "explanation": "The right to regulate professions rests on the police power of the State (People v. Pomar, 46 Phil. 440; US v. Gomez Jesus, 31 Phil. 218), the power to enact reasonable laws for public welfare, health, morality, and safety."
+  },
+  {
+    "type": "mcq",
+    "stem": "RA 8981, which reorganized the PRC and repealed PD 223, is known as the:",
+    "options": [
+      "Revised Optometry Law",
+      "PRC Modernization Act of 2000",
+      "Higher Education Act",
+      "Generics Act"
+    ],
+    "correct": 1,
+    "explanation": "RA 8981 is the PRC Modernization Act of 2000. Its Sec. 20 also repealed the continuing-education-for-renewal requirement that RA 8050's Sec. 29 had imposed."
+  },
+  {
+    "type": "mcq",
+    "stem": "The classic Test for Negligence, 'Would a prudent man foresee harm?', comes from which case?",
+    "options": [
+      "People v. Pomar",
+      "Picart v. Smith (37 Phil. 809)",
+      "Schloendorff v. Society of NY Hospital",
+      "Safian v. Aetna"
+    ],
+    "correct": 1,
+    "explanation": "Picart v. Smith (37 Phil. 809) states the reasonable/prudent-man test: if a prudent person in the actor's position would foresee harm, the law imposes a duty to take precaution, and failing to do so is negligence."
+  },
+  {
+    "type": "mcq",
+    "stem": "In defamation, a written imputation is called libel; an oral one is called:",
+    "options": [
+      "Perjury",
+      "Slander",
+      "Malice",
+      "Contempt"
+    ],
+    "correct": 1,
+    "explanation": "Under the Revised Penal Code, written defamation is libel (Art. 355) and oral defamation is slander. Elements of defamation: an imputation causing dishonor, malice, and bad faith."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under Art. 2176 of the Civil Code, fault or negligence causing damage where there is NO pre-existing contract is called a:",
+    "options": [
+      "Breach of contract",
+      "Quasi-delict (tort)",
+      "Criminal felony",
+      "Administrative offense"
+    ],
+    "correct": 1,
+    "explanation": "Art. 2176 defines quasi-delict: whoever by act or omission causes damage to another through fault or negligence, with no pre-existing contractual relation, is obliged to pay for the damage done."
+  },
+  {
+    "type": "mcq",
+    "stem": "The principle that 'every human being of adult years and sound mind has the right to determine what shall be done with his own body' (the basis of informed consent) was stated by Justice Cardozo in:",
+    "options": [
+      "Picart v. Smith",
+      "Schloendorff v. Society of New York Hospital",
+      "People v. Wendel",
+      "Salpa v. Leland Stanford"
+    ],
+    "correct": 1,
+    "explanation": "Justice Cardozo articulated the right to self-determination in Schloendorff v. Society of New York Hospital (1914), a foundation of the informed-consent doctrine."
+  },
+  {
+    "type": "mcq",
+    "stem": "In which situation is a patient's consent NOT required before a procedure?",
+    "options": [
+      "Routine refraction of a competent adult",
+      "A genuine emergency where the patient is unconscious, or a procedure the law compels for public health such as immunization",
+      "Fitting contact lenses on a willing patient",
+      "Any procedure the optometrist judges beneficial"
+    ],
+    "correct": 1,
+    "explanation": "Consent is not needed in a true emergency (patient unconscious, no representative available) or where the law compels the procedure for public health, such as compulsory immunization under RA 3573 and PD 996."
+  },
+  {
+    "type": "mcq",
+    "stem": "If a patient dies or becomes incapacitated, RA-related civil rules say the claim for professional fees may be made, in order, against the:",
+    "options": [
+      "Employer, then the government",
+      "Spouse, then descendant of nearest degree, then ascendant of nearest degree, then brothers and sisters",
+      "Brothers and sisters first, then the spouse",
+      "Nearest optometric society"
+    ],
+    "correct": 1,
+    "explanation": "Following the Civil Code support rules (Arts. 290-291), the claim runs in order against the spouse, then the descendant of nearest degree, then the ascendant of nearest degree, then brothers and sisters."
+  },
+  {
+    "type": "mcq",
+    "stem": "In a suit based on BREACH OF CONTRACT against an optometrist (as opposed to negligence), which statement is TRUE?",
+    "options": [
+      "Expert testimony is always required",
+      "The optometrist is liable only if he specifically stipulated a cure or result and failed, and 'pain and suffering' is not an element",
+      "Pain and suffering is the main element",
+      "The optometrist is automatically liable for any failure to cure"
+    ],
+    "correct": 1,
+    "explanation": "Liability for breach of contract requires that the optometrist specifically promised a cure or result and failed. Expert testimony is not required and pain and suffering is not an element. The prudent rule is never to guarantee results."
   }
 ]
