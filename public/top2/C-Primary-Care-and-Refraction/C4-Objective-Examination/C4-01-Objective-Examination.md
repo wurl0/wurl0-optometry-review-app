@@ -269,6 +269,65 @@ Instruct patient to move eye:
 
 ---
 
+### The Biomicroscope — Systems, Optics, and Settings
+
+Most notes teach what the slit lamp *shows* you. This section teaches how the instrument itself is built and how you drive it, because that is exactly what procedure-style drills test and it rarely appears in finding-based reviewers.
+
+**Three systems make up the slit lamp:**
+- **Illumination system** — the light source, condenser, slit aperture, and filters. This is what you tilt to create the beam.
+- **Observation (viewing) system** — the microscope: eyepieces, magnification changer, and objective. This is what you look through.
+- **Mechanical system** — the joystick, the base that slides on the table, the chin/forehead rest, and the patient-positioning frame. The light source is part of the *illumination* system, not the mechanical one.
+
+**Two illumination brands, sorted by where the lamp sits:**
+```
+ILLUMINATION SOURCE LOCATION
+  Haag-Streit ──── light comes from the TOP (bulb above, mirror sends beam down)
+  Zeiss ────────── light comes from the BASE (bulb below)
+```
+
+**Two viewing (microscope) designs, sorted by how you change power:**
+```
+MAGNIFICATION CHANGER
+  Greenough (converging tubes) ── magnification changed by a drum/lever (continuous feel)
+  Galilean (telescopic) ───────── magnification changed by flipping fixed telescopes in/out (stepped)
+```
+(Board framing keys the "lever to change magnification" to the Greenough system; the Galilean changes power in discrete flip steps. Know both — the drill just wants the Greenough/Galilean split.)
+
+**The magnifier optics — two lenses set the range:**
+```
+Eyepiece (ocular) lens ──── +10 D
+Objective lens ─────────── +22 D
+Rule: high magnification → SMALLER (decreased) field of view, and less depth of focus
+```
+
+**Suggested working magnification, by what you are looking at:**
+```
+STRUCTURE                     MAGNIFICATION
+  Ocular adnexa ───────────── 6x   (low power, wide survey)
+  Lids and lashes ─────────── 6x–10x
+  Cornea ──────────────────── 16x
+  Van Herick angle estimate ─ 16x   (illumination arm at 60°, gray/diffuser filter OFF)
+  Iris ────────────────────── 16x
+  Anterior chamber (cells/flare) 25x–40x (room fully DARK)
+```
+
+**Alignment and scanning technique — the steps a drill will quiz:**
+- Set the **illumination arm to 0°** (coaxial with the microscope) before focusing when you use the focusing rod/bar.
+- **Scan left to right**, and view the **lids and lashes in sections** — not in one quick sweep (you miss the lid margin, meibomian orifices, and lash bases otherwise).
+- **Dim** the overhead room light — do **not** switch it fully off for the whole exam (you still need some light to position the patient and instrument); the room goes fully dark only for the anterior-chamber cell/flare check.
+- To read the **cornea**, **remove the filter** so you have full white light on the tissue.
+- To **evert the upper lid**, create the crease **above the tarsal plate** (press at the superior tarsal border while the patient looks down).
+
+**Anterior chamber — cells vs flare (the Tyndall pair):**
+```
+Beam in a dark room, high mag, small bright square in the AC:
+  FLARE ─── haze/"headlight-in-fog" ─── PROTEIN leaked into aqueous
+  CELLS ── discrete floating dots ───── inflammatory white blood cells
+```
+Van Herick estimates the *angle*; the cell/flare check estimates *active inflammation*. If the Van Herick beam is set at **less than 60°**, it **underestimates** the true angle.
+
+---
+
 ### Comparisons That Matter
 
 **Direct vs Indirect Ophthalmoscopy**
@@ -327,6 +386,17 @@ Instruct patient to move eye:
 | Javal's internal astigmatism constant | −0.50 Cyl × 90° | Fixed ATR component |
 | Zeiss slit lamp: light source location | Base of instrument | |
 | Haag-Streit slit lamp: light source location | Top of instrument | |
+| Slit lamp eyepiece (ocular) lens power | +10 D | Fixed magnifier |
+| Slit lamp objective lens power | +22 D | Fixed magnifier |
+| Magnification: ocular adnexa | 6x | Low-power survey |
+| Magnification: lids and lashes | 6x–10x | View in sections, not one sweep |
+| Magnification: cornea | 16x | Full light, filter removed |
+| Magnification: Van Herick angle | 16x | Arm at 60°, filter OFF |
+| Magnification: iris | 16x | |
+| Magnification: anterior chamber (cells/flare) | 25x–40x | Room fully dark |
+| Van Herick illumination angle | 60° | <60° underestimates the angle |
+| Aqueous FLARE | Protein in aqueous | Tyndall haze |
+| Aqueous CELLS | Inflammatory white blood cells | Discrete floating dots |
 | Cobalt blue filter | Used with fluorescein | Visualizes corneal staining |
 | Red-free filter | Enhances blood vessels | Blood vessels appear very dark |
 
@@ -344,6 +414,18 @@ Instruct patient to move eye:
 **Slit lamp illumination angle rules:**
 - Most techniques: **30–45°** between illumination and microscope
 - Specular reflection and Van Herick: **60°** (angle of incidence = angle of reflection)
+
+**Which brand's lamp is where — "HAAG hangs high":**
+- **Haag**-Streit = light from the **top** (hangs high); **Zeiss** = light from the **base** (down at zero/base).
+
+**Slit lamp lens powers — "10 in, 22 out":**
+- Eye**p**iece = +**10** D (the one you peer through); objective = +**22** D (the one facing the patient).
+
+**Magnification ladder — "6 outside, 16 middle, 40 deepest":**
+- **6x** for the outside (adnexa, lids) → **16x** for the middle layers (cornea, iris, Van Herick) → **25–40x** for the deepest, dimmest job (anterior chamber cells and flare).
+
+**Flare vs cells — "Flare = Fluid protein, Cells = inflammatory Cells":**
+- **F**lare = **F**og of leaked **protein**; cells = discrete floating white blood cells. Both read in a fully dark room at high mag.
 
 **Javal's rule shorthand:**
 ```
@@ -431,6 +513,21 @@ OBJECTIVE EXAMINATION — OVERVIEW
 - **Trap 7: "The keratometer measures total corneal power."**
   Wrong. The keratometer measures ANTERIOR corneal surface power only, using a simplified refractive index (1.3375 or 1.336 depending on instrument design). It does not measure the posterior corneal surface. This is why Javal's rule is needed to estimate total astigmatism.
 
+- **Trap 8: "The light source is part of the slit lamp's mechanical system."**
+  Wrong. The light source belongs to the ILLUMINATION system. The mechanical system is the joystick, the sliding base/table, and the patient-positioning frame (chin and forehead rest). This is a classic "which one is NOT part of the mechanical system" trap — the answer is the light source.
+
+- **Trap 9: "Higher magnification gives you a bigger field of view."**
+  Wrong. Higher magnification always gives a SMALLER (decreased) field of view and less depth of focus. You trade width for detail. Start low (6x) to find the target, then zoom in.
+
+- **Trap 10: "Flare and cells are the same anterior-chamber finding."**
+  Wrong. FLARE is protein leaked into the aqueous (a hazy "headlight-in-fog" beam). CELLS are discrete floating white blood cells. Flare = protein; cells = inflammatory cells. Both are graded in a fully dark room at high magnification (25–40x).
+
+- **Trap 11: "Keep the overhead light off for the whole slit lamp exam."**
+  Wrong. You DIM the room light, not kill it, for most of the exam — you still need light to position the patient and align the instrument. The room goes fully dark only for the anterior-chamber cell/flare assessment.
+
+- **Trap 12: "Sweep the lids and lashes once and move on."**
+  Wrong. The lids and lashes are examined in SECTIONS, not one quick sweep. A single pass misses the lid margin, meibomian orifices, and lash-base pathology (a hidden internal hordeolum of the meibomian gland, early trichiasis).
+
 ---
 
 ## High-Yield Summary
@@ -457,6 +554,13 @@ OBJECTIVE EXAMINATION — OVERVIEW
 | Opacity parallax: posterior | Moves SAME direction as scope |
 | Zeiss slit lamp light source | At base |
 | Haag-Streit slit lamp light source | At top |
+| Greenough vs Galilean microscope | Greenough = drum/lever; Galilean = flip steps |
+| Slit lamp eyepiece / objective power | +10 D / +22 D |
+| Magnification: adnexa / lids | 6x / 6–10x |
+| Magnification: cornea / iris / Van Herick | 16x |
+| Magnification: anterior chamber | 25–40x (dark room) |
+| Higher magnification effect | Smaller field of view |
+| Aqueous flare vs cells | Flare = protein; cells = WBCs |
 | Normal V:A ratio (fundus vessels) | 3:2 (veins larger) |
 | Normal optic disc diameter | 1.5–1.7mm |
 
@@ -501,6 +605,54 @@ Working through the cross-cylinder: −2.50 Cyl × 180 = −2.50 Cyl × 180; and
 
 **B. Dilate with caution and monitor for angle closure.**
 A shadow width equal to 1/4 of the corneal optic section width corresponds to **Van Herick Grade 2** (ratio 1:4). This indicates a narrow anterior chamber angle — not closed, but at risk. Dilation is not absolutely contraindicated but must be done with caution, the patient should be monitored, and the IOP checked after dilation. Grade 0–1 = absolute contraindication. Grades 3–4 = safe to dilate. Grade 2 = proceed with caution.
+
+</details>
+
+---
+
+**3.** Which of the following is NOT part of the slit lamp's mechanical system?
+
+- A. Joystick
+- B. Light source
+- C. Motorized table
+- D. Patient-positioning frame
+
+<details>
+<summary>Answer</summary>
+
+**B. Light source.** The light source belongs to the ILLUMINATION system (source, condenser, slit, filters). The mechanical system moves and steadies the instrument and patient: the joystick, the sliding/motorized base and table, and the positioning frame (chin and forehead rest). Watch for this "which is NOT mechanical" phrasing — the light source is the trap answer.
+
+</details>
+
+---
+
+**4.** You need to survey a patient's ocular adnexa, then examine the cornea, then check the anterior chamber for cells and flare. Which magnification progression is most appropriate?
+
+- A. 40x → 16x → 6x
+- B. 6x → 16x → 25–40x
+- C. 16x → 16x → 16x
+- D. 25x → 6x → 40x
+
+<details>
+<summary>Answer</summary>
+
+**B. 6x → 16x → 25–40x.** Adnexa is a wide low-power survey (**6x**), the cornea is a middle-layer view (**16x**), and cells/flare in the anterior chamber need the highest magnification in a fully dark room (**25–40x**). Remember: higher magnification always means a **smaller** field of view, so you start low to find the target and zoom in for detail. The Van Herick angle estimate sits in the middle at 16x with the arm at 60°.
+
+</details>
+
+---
+
+**5.** On slit lamp exam in a dark room, the beam through the anterior chamber shows a hazy "headlight-in-fog" glow with no discrete particles. What does this indicate?
+
+- A. Inflammatory white blood cells (cells)
+- B. Protein leaked into the aqueous (flare)
+- C. Pigment on the corneal endothelium
+- D. A closed anterior chamber angle
+
+<details>
+<summary>Answer</summary>
+
+**B. Protein leaked into the aqueous (flare).** Flare is the Tyndall haze of leaked protein — a diffuse glow with no distinct particles. CELLS are discrete floating white blood cells that look like dust in a sunbeam. Flare = protein; cells = inflammatory cells. Both are assessed at high magnification (25–40x) in a fully dark room. This is separate from Van Herick, which grades the angle, not inflammation.
 
 </details>
 

@@ -76,6 +76,14 @@ It is an ester with very low tissue irritation and poor corneal penetration, so 
 
 **Key uses by procedure:** Goldmann applanation = proparacaine or benoxinate. ERG = tetracaine. Forced duction test = cocaine or lidocaine. Corneal epithelial debridement = cocaine.
 
+**Comparison drill — the "which anesthetic" questions (commonly tested, easy to miss):**
+- **Most toxic to the corneal epithelium:** tetracaine (most potent → most epithelial-toxic and most stinging).
+- **Least stinging / gentlest:** proparacaine (the routine tonometry drop).
+- **Least bactericidal:** proparacaine. Benoxinate, by contrast, carries an antibacterial property. Low antibacterial activity is actually the desirable trait right before culturing.
+- **Highest convulsion risk if it reaches the bloodstream:** tetracaine (most potent → greatest CNS-excitation/seizure risk; any agent can do this at high systemic levels).
+- **Concentration is not depth:** past the effective concentration, adding more does NOT deepen anesthesia — it only adds toxicity and stinging.
+- **Culture BEFORE the anesthetic:** anesthetic drops and their preservatives are bacteriostatic and suppress organism growth, giving a false-negative culture.
+
 **Injectable note:** add **epinephrine** (1:100,000–1:200,000) to prolong the block by vasoconstriction; add **bicarbonate** to raise the non-ionized fraction and speed absorption; add **hyaluronidase** (spreading factor) to widen tissue spread.
 
 **Side effects:** mild stinging/burning (most common), shortened TBUT, reduced reflex tearing and blinking, slowed epithelial healing. **Never prescribe for home use** (masks pain → corneal damage, see [[F1-01-DPA-Examination]]). Systemic toxicity is CNS (excitation then seizures, the most serious) and CVS (arrhythmia, hypotension).
@@ -118,6 +126,10 @@ It is an ester with very low tissue irritation and poor corneal penetration, so 
 - **Indocyanine green:** protein-bound, infrared, better for choroidal neovascular membranes than fluorescein.
 - **Trypan blue:** anionic, no side effects; checks endothelial integrity for grafting and stains the capsule in phaco.
 - **Lissamine green:** gentler alternative to rose bengal; screens xerophthalmia.
+
+**Negative staining (fluorescein):** dye pools AROUND a raised area and is displaced off the elevated surface, so the bump reads dark against the surrounding green. It signals **elevated** epithelium (e.g. epithelial basement membrane dystrophy) — NOT pits or pockets. Positive staining, by contrast, is dye filling a true defect/depression.
+
+**True dendrite vs pseudodendrite (rose bengal pattern):** a true HSV dendrite stains at its **margins / ulcer bed** (a real ulcer with terminal end-bulbs). Rose bengal filling the **center** of the lesion points to a **pseudodendrite** (herpes zoster, healing epithelium, drug toxicity) — raised, heaped epithelium rather than a true ulcer. Rose bengal is the classic **conjunctival** stain and has the stronger **antiviral** property; lissamine green stains the same devitalized cells but is far gentler.
 
 ---
 
@@ -178,6 +190,10 @@ TBUT → tear stability · Seidel → wound leak · Jones I/II → lacrimal drai
 - **Trap:** rose bengal is read under cobalt blue like fluorescein. Wrong. It is a red dye seen in white light; it does not depend on fluorescence the way fluorescein does.
 - **Trap:** apply fluorescein first, then rose bengal. Wrong order for dry eye. **Rose bengal first**, then fluorescein.
 - **Trap:** amides are metabolized by plasma cholinesterase. Wrong. Amides are metabolized by the **liver**; esters by plasma pseudo-cholinesterase.
+- **Trap:** a higher-concentration anesthetic drop gives deeper anesthesia. Wrong. Past the effective concentration, more only adds toxicity and stinging — depth does not keep climbing.
+- **Trap:** take the culture after numbing the eye for comfort. Wrong. **Culture first** — the anesthetic and its preservative are bacteriostatic and cause a false-negative.
+- **Trap:** negative staining means pits or pockets in the epithelium. Wrong. Negative staining marks an **elevated** area (dye displaced off a raised surface); pits/depressions give **positive** staining.
+- **Trap:** proparacaine is antibacterial like benoxinate. Wrong. Proparacaine is the **least** bactericidal; benoxinate carries the antibacterial property.
 
 ---
 

@@ -1206,5 +1206,117 @@
     "correct": 1,
     "explanation": "Occupational and lifestyle visual demands (working distance, near vs. distance tasks, outdoor exposure) directly determine the appropriate spectacle design, lens type, and add power. This guides the prescription to functional real-world needs.",
     "module": "Module 2: Case History"
+  },
+  {
+    "type": "mcq",
+    "stem": "On which slit lamp does the illumination come from the TOP of the instrument?",
+    "options": ["Zeiss", "Haag-Streit", "Both are bottom-illuminated", "Neither uses a top light"],
+    "correct": 1,
+    "explanation": "On the Haag-Streit the light source sits at the TOP (a mirror throws the beam down); on the Zeiss it sits at the BASE. Memory hook: 'Haag hangs high.'",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "In which slit lamp microscope design is magnification changed by a drum/lever mechanism?",
+    "options": ["Galilean (telescopic)", "Greenough (converging tubes)", "Keplerian", "Indirect condensing system"],
+    "correct": 1,
+    "explanation": "The Greenough microscope uses two converging tubes and changes power with a rotating drum/lever. The Galilean (telescopic) design changes power by flipping fixed telescopes in and out, giving stepped magnifications. The drill point is the Greenough vs Galilean split.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Which of the following is NOT part of the slit lamp's mechanical system?",
+    "options": ["Joystick", "Light source", "Motorized/sliding table", "Patient-positioning frame"],
+    "correct": 1,
+    "explanation": "The light source belongs to the ILLUMINATION system (source, condenser, slit, filters). The mechanical system steadies and moves the instrument and patient: the joystick, the sliding/motorized base and table, and the chin/forehead positioning frame.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the power of the slit lamp eyepiece (ocular) lens?",
+    "options": ["-10 D", "+10 D", "+20 D", "+22 D"],
+    "correct": 1,
+    "explanation": "The eyepiece (ocular) is a +10 D magnifier and the objective is +22 D. Memory hook: '10 in, 22 out' (you peer through the +10, the +22 faces the patient).",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the power of the slit lamp objective lens?",
+    "options": ["+10 D", "+12 D", "+20 D", "+22 D"],
+    "correct": 3,
+    "explanation": "The objective lens (facing the patient) is +22 D; the eyepiece you look through is +10 D.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Increasing the magnification on the slit lamp has what effect on the field of view?",
+    "options": ["Field of view increases", "Field of view decreases", "No change to field of view", "It first increases then decreases"],
+    "correct": 1,
+    "explanation": "Higher magnification always gives a SMALLER (decreased) field of view and less depth of focus. Start low (6x) to find the target, then zoom in for detail.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "When focusing the slit lamp with the focusing rod/bar, the illumination arm should be at what angle?",
+    "options": ["0 degrees (coaxial with the microscope)", "30 degrees", "45 degrees", "60 degrees"],
+    "correct": 0,
+    "explanation": "The illumination arm is set to 0 degrees (coaxial with the viewing microscope) when you focus on the focusing rod, so the beam and the oculars share one focal plane before you begin.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "What is the appropriate slit lamp magnification for a general survey of the ocular adnexa?",
+    "options": ["6x", "16x", "25x", "40x"],
+    "correct": 0,
+    "explanation": "The adnexa and a lids/lashes survey use LOW power, about 6x (lids and lashes 6x-10x), for a wide field. The cornea, iris, and Van Herick sit at 16x; anterior-chamber cells and flare need 25x-40x.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "What slit lamp magnification is appropriate for examining the cornea?",
+    "options": ["6x", "10x", "16x", "40x"],
+    "correct": 2,
+    "explanation": "The cornea is viewed at about 16x (the same middle magnification used for the iris and the Van Herick angle estimate). Adnexa/lids sit lower at 6x-10x; anterior-chamber cells and flare go higher at 25x-40x.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "Grading anterior-chamber cells and flare requires which magnification and room condition?",
+    "options": ["6x in a bright room", "16x with the overhead light on", "25x-40x in a fully dark room", "40x with the cobalt blue filter"],
+    "correct": 2,
+    "explanation": "Cells and flare are dim, subtle findings, so they need high magnification (25x-40x) and a fully DARK room. This is the one part of the exam where the overhead light is switched completely off.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "The Van Herick technique uses which illumination angle, and what happens if a smaller angle is used?",
+    "options": ["30 degrees; it overestimates the angle", "45 degrees; no effect", "60 degrees; a smaller angle underestimates the angle", "90 degrees; it overestimates the angle"],
+    "correct": 2,
+    "explanation": "Van Herick uses a 60-degree illumination angle (with the diffuser/gray filter OFF). Setting the beam at LESS than 60 degrees distorts the shadow-to-section ratio and UNDERestimates the true angle.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "On slit lamp exam in a dark room, the anterior-chamber beam shows a hazy 'headlight-in-fog' glow with no discrete particles. This finding is:",
+    "options": ["Cells (inflammatory white blood cells)", "Flare (protein leaked into the aqueous)", "Pigment on the endothelium", "A closed anterior chamber angle"],
+    "correct": 1,
+    "explanation": "Flare is the Tyndall haze of leaked PROTEIN, a diffuse glow with no distinct particles. CELLS are discrete floating white blood cells (like dust in a sunbeam). Flare = protein; cells = inflammatory cells.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "When everting the upper eyelid, the crease used to flip the lid is created where relative to the tarsal plate?",
+    "options": ["Below the tarsal plate", "Above the tarsal plate (at the superior tarsal border)", "Directly over the lid margin", "At the medial canthus"],
+    "correct": 1,
+    "explanation": "To evert the upper lid you press at the SUPERIOR tarsal border (above the tarsal plate) while the patient looks down, then flip the lid over that fulcrum.",
+    "module": "Module 5: Ocular Examination Techniques"
+  },
+  {
+    "type": "mcq",
+    "stem": "How should the lids and lashes be examined at the slit lamp?",
+    "options": ["In one quick horizontal sweep", "In sections, scanning systematically", "Only with the cobalt blue filter", "At the highest available magnification"],
+    "correct": 1,
+    "explanation": "The lids and lashes are examined in SECTIONS, not one quick sweep. A single pass misses the lid margin, meibomian orifices, and lash-base pathology (an internal hordeolum of the meibomian gland, early trichiasis).",
+    "module": "Module 5: Ocular Examination Techniques"
   }
 ]

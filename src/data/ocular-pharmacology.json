@@ -1246,5 +1246,103 @@
   ],
   "correct": 2,
   "explanation": "Lissamine green stains devitalised cells and mucus, screens for xerophthalmia, and has antiviral property at 0.06% with little stinging."
- }
+ },
+  {
+    "type": "mcq",
+    "stem": "For topical ocular anesthesia, does simply increasing the drug concentration produce deeper anesthesia?",
+    "options": ["Yes, depth is directly proportional to concentration", "No, beyond the effective concentration depth does not keep increasing", "Yes, but only for amide anesthetics", "No, concentration has no effect at all"],
+    "correct": 1,
+    "explanation": "Once an effective concentration is reached, raising it further does not deepen surface anesthesia; it mainly increases toxicity and stinging. Onset, potency, and duration are set by the drug and tissue pH, not by piling on concentration."
+  },
+  {
+    "type": "mcq",
+    "stem": "The commonly used TOPICAL OPHTHALMIC anesthetics (proparacaine, tetracaine, benoxinate, cocaine) belong to which chemical class?",
+    "options": ["Amides", "Esters", "A mix of amides and esters", "Neither"],
+    "correct": 1,
+    "explanation": "The topical ophthalmic anesthetics in routine use are all ESTERS (metabolized by plasma pseudo-cholinesterase). Contrast with injectable amides such as lidocaine and bupivacaine (liver-metabolized). The 'all anesthetics are esters' claim is only true when scoped to topical ophthalmics."
+  },
+  {
+    "type": "mcq",
+    "stem": "When both a corneal culture and topical anesthesia are needed, which is done first?",
+    "options": ["Anesthetic first, then culture", "Culture first, then anesthetic", "Order does not matter", "Never culture an anesthetized eye"],
+    "correct": 1,
+    "explanation": "Take the CULTURE BEFORE instilling the anesthetic. Anesthetic drops (and their preservatives) are bacteriostatic and can suppress organism growth, giving a false-negative culture."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which topical ophthalmic anesthetic is considered the MOST toxic to the corneal epithelium?",
+    "options": ["Proparacaine", "Benoxinate", "Tetracaine", "They are equally toxic"],
+    "correct": 2,
+    "explanation": "Tetracaine is the most potent and most epithelial-toxic (and most stinging) of the topical ophthalmic anesthetics, which is why proparacaine is preferred for routine tonometry."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which topical ophthalmic anesthetic causes the LEAST stinging on instillation?",
+    "options": ["Tetracaine", "Benoxinate", "Proparacaine", "Cocaine"],
+    "correct": 2,
+    "explanation": "Proparacaine stings the least and acts fast (onset 5-15 sec, duration ~20 min), making it the everyday drop for tonometry and gonioscopy. Tetracaine stings the most."
+  },
+  {
+    "type": "mcq",
+    "stem": "Among the topical ophthalmic anesthetics, which is the most potent and most likely to cause CNS excitation/convulsions if it reaches the bloodstream?",
+    "options": ["Proparacaine", "Benoxinate", "Tetracaine", "None can cause CNS effects"],
+    "correct": 2,
+    "explanation": "Systemic local-anesthetic toxicity is CNS excitation then seizures. Tetracaine is the most potent of these agents, so it carries the greatest convulsion risk if it enters the circulation. Any local anesthetic can do this at high systemic levels; tetracaine is simply the most potent of the three."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which topical ophthalmic anesthetic is the LEAST bactericidal?",
+    "options": ["Benoxinate", "Proparacaine", "Tetracaine", "All are equally bactericidal"],
+    "correct": 1,
+    "explanation": "Proparacaine has the least intrinsic antibacterial effect. Benoxinate carries an antibacterial property (combined with fluorescein in Fluress). Low bactericidal activity is actually preferred just before culturing, though the culture is still taken before any drop."
+  },
+  {
+    "type": "mcq",
+    "stem": "Sodium fluorescein dye (on the strip/as concentrate) is what color, and what color does it fluoresce in a broken epithelium under cobalt blue light?",
+    "options": ["Green dye; fluoresces orange-red", "Orange-red dye; fluoresces green-yellow", "Blue dye; fluoresces red", "Yellow dye; fluoresces blue"],
+    "correct": 1,
+    "explanation": "The dye itself is orange-red. Where the epithelium is broken it floods the defect and fluoresces bright green-yellow under cobalt blue light. Intact epithelium is a lipid barrier the water-soluble dye cannot cross, so it does not stain."
+  },
+  {
+    "type": "mcq",
+    "stem": "What does NEGATIVE fluorescein staining indicate?",
+    "options": ["Depressed pockets or pits in the epithelium", "An elevated/raised area of epithelium where dye is displaced", "A full-thickness epithelial defect", "Normal endothelium"],
+    "correct": 1,
+    "explanation": "Negative staining marks an ELEVATED area: dye pools around a raised bump and is displaced from its surface, so the elevation reads dark against the surrounding green (seen in epithelial basement membrane dystrophy). It does not indicate pockets/pits; that is a common trap."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which dye is the agent of choice for evaluating overall ocular surface integrity (epithelial defects)?",
+    "options": ["Rose bengal", "Lissamine green", "Sodium fluorescein", "Indocyanine green"],
+    "correct": 2,
+    "explanation": "Sodium fluorescein is the workhorse for epithelial integrity: it pools in any break in the epithelium and glows under cobalt blue. Rose bengal and lissamine green instead stain devitalized cells and mucus."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which dye(s) preferentially stain necrotic/devitalized cells rather than epithelial defects?",
+    "options": ["Sodium fluorescein only", "Rose bengal and lissamine green", "Indocyanine green only", "Trypan blue only"],
+    "correct": 1,
+    "explanation": "Rose bengal and lissamine green stain DEVITALIZED (dead/dying) cells and mucus, making them the dry-eye and surface-damage dyes. Fluorescein stains where cells are missing (defects), not the dead cells themselves. Sort every dye by: living defect (fluorescein) vs dead tissue (rose bengal/lissamine)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Below which tear break-up time (TBUT) is the tear film generally considered abnormally unstable?",
+    "options": ["Less than 3 seconds", "Less than 10 seconds", "Less than 15 seconds", "Less than 20 seconds"],
+    "correct": 1,
+    "explanation": "A TBUT under about 10 seconds indicates an unstable tear film (evaporative/dry-eye pattern); a healthy film is typically 10 seconds or more. Some drills quote a single 'normal' figure like 12 seconds, but the tested threshold is the <10-second cutoff for abnormal."
+  },
+  {
+    "type": "mcq",
+    "stem": "Rose bengal that stains the CENTER of a corneal lesion (rather than only its margins) suggests:",
+    "options": ["A true herpetic dendrite", "A pseudodendrite", "A healed scar", "Normal epithelium"],
+    "correct": 1,
+    "explanation": "A true HSV dendrite stains at its margins/ulcer bed; when rose bengal fills the CENTER of the lesion the picture favors a PSEUDODENDRITE (herpes zoster, healing epithelium, toxicity), which is raised heaped epithelium rather than a true ulcer."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which vital dye is more commonly used for CONJUNCTIVAL staining and carries the stronger antiviral property?",
+    "options": ["Sodium fluorescein", "Lissamine green", "Rose bengal", "Indocyanine green"],
+    "correct": 2,
+    "explanation": "Rose bengal is the classic conjunctival stain for devitalized cells and mucus and has a notable antiviral (anti-HSV) property. Lissamine green stains the same devitalized cells but is far gentler/less stinging; fluorescein is for corneal epithelial defects."
+  }
 ]
