@@ -59,6 +59,18 @@ Five-year non-renewable terms, with one member rotating out each year, keep the 
 - **State policy:** optometry is an essential profession and a regular component of the **primary health care system**.
 - **Optometry (definition):** the science and art of examining the eye, analyzing ocular function, prescribing and dispensing lenses/prisms/contact lenses/low-vision aids, conducting ocular exercises and orthoptics, installing prosthetics, using authorized DPAs, and other measures for the aid, correction, or relief of the human eye.
 
+### Historical Milestones (jurisprudence background)
+
+The board loves "firsts" and the law lineage. Source: Cinco, "Optometry: Legal and Professional Aspects."
+
+- **Law lineage:** Optometry Law of **1917** (first, written in Spanish; amended 1919) to **RA 1998** (1957) to **RA 8050** (1995). The 1917 law created the **Junta Examinadora** (Board of Examiners), later renamed the **Board of Optometry** by PD 223 (as amended by PD 657).
+- **First optometric clinic with refraction + first lens-grinding shop:** R.M. Clark, Manila, **1902**.
+- **First optometry school:** Philippine College of Optometry (to 1925). **First university-affiliated college:** Centro Escolar University, **1928** (first dean Dr. Roy A. Thorson).
+- **Registration Certificate No. 1** (per PRC records): issued **March 11, 1918 to Dr. Manuel Sabater**.
+- **Associations:** OAP (1936, Justo Gonzalez first president) + PODA + PROA merged in **1979** into **Samahan Ng Optometrist Sa Pilipinas (SOP)**, the integrated national body.
+- **Regional/world:** **IFAPAO** founded at the 1st APOC (Manila, **1978**); later became **APCO**. IOOL became the **WCO**. First **International Optometrist of the Year** (1988) was **Dr. Claro M. Cinco**.
+- Deeper coverage in the **Law Book (full)** reviewer linked from the H reviewer bar.
+
 ### Acts Constituting Practice (Sec 4)
 
 (a) Examining the eye (subjective + objective, with DPAs and instruments); (b) prescribing and dispensing lenses, prisms, contact lenses, frames; (c) ocular exercises, vision training, orthoptics, prosthetics; (d) counseling on vision and eye care; (e) establishing offices/clinics; (f) collecting professional fees for acts a to d.
@@ -174,6 +186,9 @@ Public health worker         → VA + screening ONLY
 - **Trap:** license renews every 5 years (like the Board term). Wrong. **3 years**.
 - **Trap:** advertising lower fees is allowed if true. Wrong. Comparative and price advertising is a **prohibited act**.
 - **Trap:** appeals have 30 days. Wrong. **15 days** to the PRC.
+- **Trap:** Registration Certificate No. 1 went to the reputed "first," Federico Sarabia. Wrong per PRC records. It was issued to **Dr. Manuel Sabater** (March 11, 1918).
+- **Trap:** RA 8050 lists 6 DPAs. As originally written it lists **5**; the **6th (Cyclopentolate)** came from the **2008 IRR**. Match the count to what the question asks.
+- **Trap:** RA 8050 still requires CPD to renew a license. That Sec. 29 requirement was **repealed by Sec. 20 of RA 8981** (PRC Modernization Act of 2000).
 
 ---
 
