@@ -2692,12 +2692,12 @@
     "type": "mcq",
     "stem": "What was the first regulatory law governing optometry in the Philippines?",
     "options": [
-      "Republic Act 1998",
       "The Optometry Law of 1917",
+      "Republic Act 1998",
       "Republic Act 8050",
       "Presidential Decree 223"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "The Optometry Law of 1917 was the first regulatory law (written in Spanish, amended 1919). It was later amended by RA 1998 (1957), which was in turn replaced by RA 8050 (1995)."
   },
   {
@@ -2717,11 +2717,11 @@
     "stem": "According to PRC records, Registration Certificate No. 1 in optometry was issued on March 11, 1918 to:",
     "options": [
       "Dr. Federico Sarabia Sr.",
-      "Dr. Manuel Sabater",
       "Dr. Justo Gonzalez",
+      "Dr. Manuel Sabater",
       "Dr. Claro M. Cinco"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "PRC records show Registration Certificate No. 1 was issued March 11, 1918 to Dr. Manuel Sabater. Federico Sarabia Sr. is often cited as the reputed first and was the first Filipino to study optometry in the US (1905)."
   },
   {
@@ -2729,23 +2729,23 @@
     "stem": "Which school was the first university-affiliated optometry college in the Philippines?",
     "options": [
       "Manila Central University",
-      "Centro Escolar University (1928)",
       "De Ocampo Memorial College",
-      "Philippine College of Optometry"
+      "Philippine College of Optometry",
+      "Centro Escolar University (1928)"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Centro Escolar University established the first university-affiliated optometry college in 1928, with Dr. Roy A. Thorson as its first dean."
   },
   {
     "type": "mcq",
     "stem": "The 1st Asian-Pacific Optometric Congress (Manila, 1978) founded which organization?",
     "options": [
+      "IFAPAO",
       "APCO",
       "WCO",
-      "IFAPAO",
       "IOOL"
     ],
-    "correct": 2,
+    "correct": 0,
     "explanation": "The 1st APOC in Manila (July 1978) founded IFAPAO (International Federation of Asian and Pacific Associations of Optometrists), which later became APCO. Its first president was Dr. Claro M. Cinco."
   },
   {
@@ -2765,11 +2765,11 @@
     "stem": "What is the official short title of Republic Act 8050?",
     "options": [
       "The Optometry Law of 1917",
-      "The Revised Optometry Law of 1995",
       "The PRC Modernization Act",
+      "The Revised Optometry Law of 1995",
       "The Philippine Optometry Act"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "RA 8050 is cited as the 'Revised Optometry Law of 1995.' It repealed RA 1998 and was approved June 7, 1995 by President Fidel V. Ramos."
   },
   {
@@ -2777,23 +2777,23 @@
     "stem": "Under RA 8050, optometry is declared a regular component of what system?",
     "options": [
       "The tertiary health care system",
-      "The primary health care system",
       "The social security system",
-      "The public education system"
+      "The public education system",
+      "The primary health care system"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Section 2 (Declaration of State Policy) promotes optometric services as a regular component of the primary health care system."
   },
   {
     "type": "mcq",
     "stem": "As originally listed in RA 8050, which set of diagnostic pharmaceutical agents and concentrations is correct?",
     "options": [
-      "Phenylephrine 10%, Tropicamide 1%, Atropine 1%",
       "Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Oxybuprocaine 0.4%, Fluorescein strips",
+      "Phenylephrine 10%, Tropicamide 1%, Atropine 1%",
       "Pilocarpine 2%, Timolol 0.5%, Proparacaine 0.5%",
       "Cyclopentolate 1%, Phenylephrine 2.5%, Tetracaine 0.5%"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "RA 8050 as written lists five DPAs: Phenylephrine 2.5%, Tropicamide 0.5%, Proparacaine 0.5%, Oxybuprocaine HCl 0.4%, and Fluorescein strips. The 2008 IRR later added Cyclopentolate, making the current list six."
   },
   {
@@ -2813,11 +2813,11 @@
     "stem": "The Board of Optometry is composed of how many members, chosen from how many nominees?",
     "options": [
       "3 members from 6 nominees",
-      "5 members from 10 nominees",
       "7 members from 14 nominees",
+      "5 members from 10 nominees",
       "5 members from 15 nominees"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "Under Sec. 7, the Board has five (5) members appointed by the President from a list of ten (10) nominees submitted by the integrated national organization."
   },
   {
@@ -2825,23 +2825,23 @@
     "stem": "What is the minimum age and minimum years of active practice for a Board of Optometry member?",
     "options": [
       "30 years old and 5 years of practice",
-      "35 years old and 10 years of practice",
       "40 years old and 10 years of practice",
-      "35 years old and 5 years of practice"
+      "35 years old and 5 years of practice",
+      "35 years old and 10 years of practice"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Sec. 8 requires a Board member to be at least 35 years old at appointment and in active practice for at least 10 years prior."
   },
   {
     "type": "mcq",
     "stem": "The term of office of a Board of Optometry member is:",
     "options": [
-      "3 years, renewable once",
       "5 years, non-renewable",
+      "3 years, renewable once",
       "7 years, non-renewable",
       "6 years, renewable"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Sec. 9 provides a five-year, non-renewable term. Terms are staggered so one seat opens each year, and the member in his last year automatically becomes chairperson."
   },
   {
@@ -2861,11 +2861,11 @@
     "stem": "To pass the optometry licensure examination, an applicant must obtain:",
     "options": [
       "A general average of 70% with none below 50%",
-      "A general average of at least 75% with no grade below 50%",
       "A general average of 80% with none below 60%",
+      "A general average of at least 75% with no grade below 50%",
       "A general average of 75% with no grade below 60%"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "Sec. 20 requires a general average of at least 75% in all subjects, with no rating below 50% in any single subject."
   },
   {
@@ -2873,23 +2873,23 @@
     "stem": "Under RA 8050, an applicant who fails the board examination a third time must do what before taking it again?",
     "options": [
       "Wait one full year",
-      "Submit proof of a refresher course from an accredited institution",
       "Re-enroll in the entire O.D. program",
-      "Obtain a special permit from the President"
+      "Obtain a special permit from the President",
+      "Submit proof of a refresher course from an accredited institution"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Sec. 22 requires an applicant who fails a third time to submit proof of a refresher course from a duly accredited institution before the next examination."
   },
   {
     "type": "mcq",
     "stem": "A revocation or suspension by the Board of Optometry becomes final unless appealed to the PRC within:",
     "options": [
-      "10 days",
       "15 days",
+      "10 days",
       "30 days",
       "60 days"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Sec. 27 provides that the Board's revocation or suspension becomes final unless appealed to the PRC within 15 days from receipt of the decision."
   },
   {
@@ -2897,11 +2897,11 @@
     "stem": "How often must an optometrist's professional license be renewed under RA 8050?",
     "options": [
       "Every year",
-      "Every 2 years",
       "Every 3 years",
+      "Every 2 years",
       "Every 5 years"
     ],
-    "correct": 2,
+    "correct": 1,
     "explanation": "Sec. 29 makes the professional license renewable every three (3) years. Note that Sec. 29's continuing-education-for-renewal requirement was repealed by Sec. 20 of RA 8981 (PRC Modernization Act of 2000)."
   },
   {
@@ -2909,11 +2909,11 @@
     "stem": "What is the penalty under the penal provision (Sec. 33) of RA 8050?",
     "options": [
       "6 months to 6 years, or a fine up to P5,000",
-      "1 to 8 years, or a fine of P10,000 to P40,000, or both",
       "2 to 10 years and a fine of P50,000",
+      "1 to 8 years, or a fine of P10,000 to P40,000, or both",
       "6 years and 1 day to 12 years"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "Sec. 33 imposes imprisonment of not less than 1 year and not more than 8 years, or a fine of P10,000 to P40,000, or both, at the court's discretion, plus applicable administrative penalties."
   },
   {
@@ -2921,23 +2921,23 @@
     "stem": "Which of the following is a PROHIBITED act under Sec. 32 of RA 8050?",
     "options": [
       "Displaying your certificate of registration in the clinic",
-      "Advertising that you charge lower fees or sell cheaper frames than other optometrists",
       "Referring a patient to an ophthalmologist",
-      "Collecting a professional fee for an eye examination"
+      "Collecting a professional fee for an eye examination",
+      "Advertising that you charge lower fees or sell cheaper frames than other optometrists"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Sec. 32 prohibits advertising that one optometrist is better than others or that he collects lower fees or sells cheaper frames or lenses. Comparative and price advertising is a classic prohibited act."
   },
   {
     "type": "mcq",
     "stem": "Under Sec. 5 of RA 8050, government-trained public health workers in the blindness-prevention program may perform only:",
     "options": [
-      "Contact lens fitting",
       "Visual acuity testing and visual screening",
+      "Contact lens fitting",
       "Refraction and prescription of lenses",
       "Use of diagnostic pharmaceutical agents"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "The Sec. 5 exemption limits trained public health workers to visual acuity testing and visual screening only; anything beyond that would be unauthorized practice."
   },
   {
@@ -2957,11 +2957,11 @@
     "stem": "Under the Code of Ethics, what should the optometrist consider his PRIMARY responsibility?",
     "options": [
       "Maximizing professional income",
-      "The visual welfare of the public",
       "Advancing his own reputation",
+      "The visual welfare of the public",
       "Expanding his clientele"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "The first duty in the Code is to consider as his primary responsibility the visual welfare of the public."
   },
   {
@@ -2969,23 +2969,23 @@
     "stem": "Which of the following is considered an UNETHICAL or unprofessional act for an optometrist?",
     "options": [
       "Referring a patient for medical attention when indicated",
-      "Employing lay persons to perform the visual examination",
       "Keeping patient information confidential",
-      "Continuing professional education"
+      "Continuing professional education",
+      "Employing lay persons to perform the visual examination"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Employing lay persons to perform the visual examination is expressly listed as unethical. Others include advertising superiority, house-to-house canvassing, and using 'Doctor' without qualifying it with 'optometry.'"
   },
   {
     "type": "mcq",
     "stem": "Under the Code of Ethics, when an optometrist uses the title 'Doctor' or 'Dr.,' he must:",
     "options": [
-      "Use it without any qualification",
       "Qualify it with the word 'optometry' or 'optometrist'",
+      "Use it without any qualification",
       "Use it only in academic settings",
       "Avoid it entirely"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "It is unethical to use the title 'Doctor' or 'Dr.' without qualifying it with 'optometry' or 'optometrist,' to avoid misleading the public."
   },
   {
@@ -3005,11 +3005,11 @@
     "stem": "Under the Code of Ethics, an optometrist who discovers a corrupt or dishonest colleague should:",
     "options": [
       "Ignore it to preserve collegiality",
-      "Expose the matter to the Board of Optometry",
       "Confront the colleague publicly",
+      "Expose the matter to the Board of Optometry",
       "Report only to the patient"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "The Code obliges the optometrist to expose corrupt or dishonest members to the Board of Optometry, helping safeguard the profession against the unfit."
   },
   {
@@ -3017,23 +3017,23 @@
     "stem": "Which Presidential Decree created the PRC and changed 'Board of Examiners in Optometry' to 'Board of Optometry'?",
     "options": [
       "PD 996",
-      "PD 223 (as amended by PD 657)",
       "PD 3573",
-      "PD 649"
+      "PD 649",
+      "PD 223 (as amended by PD 657)"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "PD 223 (as amended by PD 657) created the Professional Regulation Commission and renamed the 'Board of Examiners in Optometry' to the 'Board of Optometry.' PD 223 was later repealed by RA 8981."
   },
   {
     "type": "mcq",
     "stem": "The Professional Regulation Commission is headed by:",
     "options": [
-      "A single Commissioner appointed for life",
       "One Chairperson and two Commissioners appointed for a 7-year term with no reappointment",
+      "A single Commissioner appointed for life",
       "Three co-equal Commissioners for 5-year terms",
       "The Secretary of Health"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Under RA 8981, the PRC is headed by one full-time Chairperson and two full-time Commissioners, appointed by the President for a seven-year term without reappointment."
   },
   {
@@ -3053,11 +3053,11 @@
     "stem": "RA 8981, which reorganized the PRC and repealed PD 223, is known as the:",
     "options": [
       "Revised Optometry Law",
-      "PRC Modernization Act of 2000",
       "Higher Education Act",
+      "PRC Modernization Act of 2000",
       "Generics Act"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "RA 8981 is the PRC Modernization Act of 2000. Its Sec. 20 also repealed the continuing-education-for-renewal requirement that RA 8050's Sec. 29 had imposed."
   },
   {
@@ -3065,23 +3065,23 @@
     "stem": "The classic Test for Negligence, 'Would a prudent man foresee harm?', comes from which case?",
     "options": [
       "People v. Pomar",
-      "Picart v. Smith (37 Phil. 809)",
       "Schloendorff v. Society of NY Hospital",
-      "Safian v. Aetna"
+      "Safian v. Aetna",
+      "Picart v. Smith (37 Phil. 809)"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Picart v. Smith (37 Phil. 809) states the reasonable/prudent-man test: if a prudent person in the actor's position would foresee harm, the law imposes a duty to take precaution, and failing to do so is negligence."
   },
   {
     "type": "mcq",
     "stem": "In defamation, a written imputation is called libel; an oral one is called:",
     "options": [
-      "Perjury",
       "Slander",
+      "Perjury",
       "Malice",
       "Contempt"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Under the Revised Penal Code, written defamation is libel (Art. 355) and oral defamation is slander. Elements of defamation: an imputation causing dishonor, malice, and bad faith."
   },
   {
@@ -3101,11 +3101,11 @@
     "stem": "The principle that 'every human being of adult years and sound mind has the right to determine what shall be done with his own body' (the basis of informed consent) was stated by Justice Cardozo in:",
     "options": [
       "Picart v. Smith",
-      "Schloendorff v. Society of New York Hospital",
       "People v. Wendel",
+      "Schloendorff v. Society of New York Hospital",
       "Salpa v. Leland Stanford"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "Justice Cardozo articulated the right to self-determination in Schloendorff v. Society of New York Hospital (1914), a foundation of the informed-consent doctrine."
   },
   {
@@ -3113,23 +3113,23 @@
     "stem": "In which situation is a patient's consent NOT required before a procedure?",
     "options": [
       "Routine refraction of a competent adult",
-      "A genuine emergency where the patient is unconscious, or a procedure the law compels for public health such as immunization",
       "Fitting contact lenses on a willing patient",
-      "Any procedure the optometrist judges beneficial"
+      "Any procedure the optometrist judges beneficial",
+      "A genuine emergency where the patient is unconscious, or a procedure the law compels for public health such as immunization"
     ],
-    "correct": 1,
+    "correct": 3,
     "explanation": "Consent is not needed in a true emergency (patient unconscious, no representative available) or where the law compels the procedure for public health, such as compulsory immunization under RA 3573 and PD 996."
   },
   {
     "type": "mcq",
     "stem": "If a patient dies or becomes incapacitated, RA-related civil rules say the claim for professional fees may be made, in order, against the:",
     "options": [
-      "Employer, then the government",
       "Spouse, then descendant of nearest degree, then ascendant of nearest degree, then brothers and sisters",
+      "Employer, then the government",
       "Brothers and sisters first, then the spouse",
       "Nearest optometric society"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Following the Civil Code support rules (Arts. 290-291), the claim runs in order against the spouse, then the descendant of nearest degree, then the ascendant of nearest degree, then brothers and sisters."
   },
   {
