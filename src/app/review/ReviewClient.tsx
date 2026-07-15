@@ -18,6 +18,7 @@ const SOURCE_LABEL: Record<string, string> = {
   'practice': 'Practice',
   'exam': 'Subject exam',
   'notes-quiz': 'Notes quiz',
+  'drill': '10-minute drill',
   'subject-exam': 'Top 2 subject exam',
   'preboards-2025': 'Preboards Set 1',
   'preboards-set2': 'Preboards Set 2',

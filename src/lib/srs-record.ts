@@ -17,7 +17,10 @@ export interface RecordItem {
   correct: number | boolean
   explanation: string
   subject: string
-  source: 'practice' | 'exam' | 'notes-quiz'
+  // A drill can replay a card that first entered from a Top 2 reviewer, so it carries
+  // that card's original source through rather than relabelling it.
+  source: 'practice' | 'exam' | 'notes-quiz' | 'drill'
+    | 'subject-exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'mock'
   wasCorrect: boolean
 }
 

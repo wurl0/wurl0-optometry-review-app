@@ -15,7 +15,7 @@ import { questionId, schedule, todayStr, type QuestionPayload } from '@/lib/srs'
 const MAX_ITEMS = 400
 
 const SOURCES = new Set([
-  'practice', 'exam', 'notes-quiz',
+  'practice', 'exam', 'notes-quiz', 'drill',
   'subject-exam', 'preboards-2025', 'preboards-set2', 'preboards-set3', 'mock',
 ])
 

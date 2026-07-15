@@ -117,6 +117,25 @@ export default async function HomePage() {
           <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
 
+        {/* The 10-minute drill: the lowest-friction way in. Deliberately the first thing
+            on the page and the only one that needs no decision to start — picking a
+            subject and a level is where a study session dies. */}
+        <Link
+          href="/drill"
+          className="block bg-teal-600 rounded-2xl p-4 mb-4 hover:bg-teal-500 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">⏱️</span>
+            <div className="flex-1">
+              <p className="text-sm font-bold text-white">Just 10 minutes</p>
+              <p className="text-xs text-teal-50 mt-0.5">
+                Mixed subjects, no setup. Stop at the buzzer or keep going.
+              </p>
+            </div>
+            <span className="text-xs font-semibold text-white bg-white/20 px-3 py-1.5 rounded-lg">Start →</span>
+          </div>
+        </Link>
+
         {/* Review queue — questions you missed, back on their spaced schedule.
             Shown whenever anything is tracked, not only when due: a card that appears
             only on firing days gives no way to tell the queue is collecting at all. */}
