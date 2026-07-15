@@ -60,8 +60,10 @@ export default async function DrillPage() {
       .eq('user_id', user.id)
       .eq('retired', false)
       .lte('due_on', todayStr())
+      // Oldest-due first, but fetched as a generous window rather than exactly what the
+      // drill needs: the pick below samples from it so repeat drills vary.
       .order('due_on', { ascending: true })
-      .limit(MAX_DUE_IN_DRILL * 2), // headroom: some may fail the access re-check below
+      .limit(60),
     supabase
       .from('exam_attempts')
       .select('subject, percentage, created_at')
@@ -72,8 +74,12 @@ export default async function DrillPage() {
   // Due review cards, carrying their original subject/source so grading them here feeds
   // the same schedule as /review would. Re-authorised against CURRENT access: a card
   // stores a snapshot of its question, so a revoked grant must stop it surfacing here.
-  const dueItems: DrillItem[] = (dueRes.data ?? [])
-    .filter(r => canServeCard(access, r.subject, r.source))
+  // Sampled, not taken in order. Everything due today is equally overdue, so the database
+  // order carries no meaning — and taking the first N from it opened every drill with the
+  // same card. Shuffling before the slice varies which cards appear, not just their order.
+  const dueItems: DrillItem[] = shuffle(
+    (dueRes.data ?? []).filter(r => canServeCard(access, r.subject, r.source)),
+  )
     .slice(0, MAX_DUE_IN_DRILL)
     .map(r => {
       const p = r.payload as QuestionPayload
@@ -122,6 +128,7 @@ export default async function DrillPage() {
   // Due cards lead (highest-value retrievals first), then fresh material. Both halves are
   // interleaved by subject in their own right — grouping the due cards by subject first
   // matters, since a run of misses usually comes from the same exam.
+  //
   const dueBySubject = new Map<string, DrillItem[]>()
   for (const d of dueItems) {
     const list = dueBySubject.get(d.subject) ?? []

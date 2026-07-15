@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
@@ -59,9 +59,14 @@ export default function DrillClient({ pool, dueCount }: Props) {
   // lands between questions.
   const timeUp = !overtime && remaining === 0
 
-  const finish = useCallback(async (answered: boolean[]) => {
-    setSaving(true)
-    const items: RecordItem[] = pool.slice(0, answered.length).map((q, i) => ({
+  // Each answer is sent the moment it is given, not batched to the end. Batching meant an
+  // abandoned drill recorded nothing, so its due cards never rotated and the next drill
+  // reopened on the same ones. /review already grades card-by-card; this matches it.
+  const pending = useRef<Promise<unknown>[]>([])
+  const totals = useRef({ added: 0, advanced: 0, reset: 0 })
+
+  const recordOne = useCallback((q: DrillItem, wasCorrect: boolean) => {
+    const item: RecordItem = {
       stem: q.stem,
       options: q.options,
       correct: q.correct,
@@ -70,9 +75,23 @@ export default function DrillClient({ pool, dueCount }: Props) {
       // wherever it was answered; fresh material is tagged 'drill'.
       subject: q.subject,
       source: (q.isReview ? q.source : 'drill') as RecordItem['source'],
-      wasCorrect: answered[i],
-    }))
-    setSrsResult(await recordSession(items))
+      wasCorrect,
+    }
+    const p = recordSession([item]).then(r => {
+      if (r) {
+        totals.current.added += r.added
+        totals.current.advanced += r.advanced
+        totals.current.reset += r.reset
+      }
+    })
+    pending.current.push(p)
+  }, [])
+
+  const finish = useCallback(async (answered: boolean[]) => {
+    setSaving(true)
+    // Answers were sent as they happened; wait for the stragglers so the summary is real.
+    await Promise.allSettled(pending.current)
+    setSrsResult({ ...totals.current })
 
     const score = answered.filter(Boolean).length
     try {
@@ -90,7 +109,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
     } catch {}
     setSaving(false)
     setPhase('done')
-  }, [pool])
+  }, [])
 
   if (!pool.length) {
     return (
@@ -112,6 +131,8 @@ export default function DrillClient({ pool, dueCount }: Props) {
     if (revealed) return
     setSelected(val)
     setRevealed(true)
+    // Recorded here, at the moment of the answer, so walking away still counts it.
+    recordOne(q, val === q.correct)
   }
 
   async function handleNext() {
