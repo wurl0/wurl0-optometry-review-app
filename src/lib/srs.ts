@@ -58,14 +58,31 @@ export function questionId(stem: string): string {
   return h.toString(16).padStart(8, '0') + '-' + s.length.toString(36)
 }
 
+// The study day runs on Manila time, not UTC.
+//
+// This exam and everyone sitting it are in the Philippines (UTC+8, and no DST, so a fixed
+// offset is exact rather than an approximation). Dating the queue in UTC put the day
+// boundary at 8am local: at 7am you were still "yesterday", so a card scheduled for today
+// stayed hidden until 8, and a card missed at 9pm came back 11 hours later instead of the
+// next day — shortening the first interval it depends on.
+//
+// If the app ever has users outside PH, this is the thing to revisit: the boundary would
+// have to come from the user rather than a constant.
+const MANILA_OFFSET_MS = 8 * 60 * 60 * 1000
+
+// Shift the instant so its UTC calendar date IS the Manila calendar date.
+function manila(at: Date): Date {
+  return new Date(at.getTime() + MANILA_OFFSET_MS)
+}
+
 export function addDays(from: Date, days: number): string {
-  const d = new Date(from)
-  d.setDate(d.getDate() + days)
+  const d = manila(from)
+  d.setUTCDate(d.getUTCDate() + days)
   return d.toISOString().split('T')[0]
 }
 
 export function todayStr(now: Date = new Date()): string {
-  return now.toISOString().split('T')[0]
+  return manila(now).toISOString().split('T')[0]
 }
 
 // Where a card goes after being graded. `box` is its current rung; a brand new card
