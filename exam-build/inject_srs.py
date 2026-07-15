@@ -6,7 +6,7 @@ Each page already calls window.reportOleScore(...) to send its final SCORE to
 individual QUESTIONS to /api/srs/record, so every miss comes back on the spaced
 schedule instead of being forgotten after the results screen.
 
-Two engines are handled, matched on their exact reportOleScore call:
+Three engines are handled, matched on their exact reporting call:
 
   subject-exam : items live in Q[], misses in missed[] keyed by 1-based n, per-topic
                  counts in topicStats. Users answer sequentially, so the answered set is
@@ -14,9 +14,11 @@ Two engines are handled, matched on their exact reportOleScore call:
   preboards    : items live in pool[] with {id,q,opts,ans,rat}, outcomes in answered{}
                  keyed by id. Study mode is skipped: it shows the answers up front, so
                  nothing there is a real retrieval.
-
-The cross-subject mocks are deliberately left alone — their items carry a subject LABEL
-rather than an A-H code, so they need a mapping this script does not have.
+  mock         : same engine as subject-exam, but cross-subject, so each item carries its
+                 own subject rather than inheriting one from the filename. Item .t holds a
+                 label like "A Visual Biology"; its first character is the A-H code, which
+                 is how the page's own reportOleMock call already derives subjectCode.
+                 Non A-H codes are filtered out rather than stored as junk subjects.
 
 Idempotent: reruns skip anything already carrying the WAA-SRS marker.
 Usage: python3 exam-build/inject_srs.py [--dry-run]
@@ -62,11 +64,25 @@ PRE_INJECT = (
     "wasCorrect:answered[x.id]===true})));}"
 )
 
-ENGINES = [("subject-exam", EXAM_ANCHOR, EXAM_INJECT), ("preboards", PRE_ANCHOR, PRE_INJECT)]
+# --- cross-subject mocks -----------------------------------------------------------
+MOCK_ANCHOR = " if(window.reportOleMock)window.reportOleMock(perSubject);"
+MOCK_INJECT = (
+    MARKER
+    + "if(window.reportSrsItems){"
+    "const nAns=Object.values(topicStats).reduce((x,y)=>x+y.t,0);"
+    "const missedN=new Set(missed.map(x=>x.n));"
+    "window.reportSrsItems(Q.slice(0,nAns).map((it,idx)=>({"
+    "stem:it.q,options:it.o,correct:it.a,explanation:it.w||'',"
+    "subjectCode:(it.t||'').charAt(0),"
+    "wasCorrect:!missedN.has(idx+1)}))"
+    ".filter(x=>/^[A-H]$/.test(x.subjectCode)));}"
+)
 
-
-def is_mock(path: Path) -> bool:
-    return "Mock-Board" in path.name
+ENGINES = [
+    ("subject-exam", EXAM_ANCHOR, EXAM_INJECT),
+    ("preboards", PRE_ANCHOR, PRE_INJECT),
+    ("mock", MOCK_ANCHOR, MOCK_INJECT),
+]
 
 
 def patch(path: Path, dry: bool) -> str:
@@ -111,10 +127,6 @@ def main() -> int:
     wired = skipped = 0
     for p in targets:
         rel = p.relative_to(TOP2)
-        if is_mock(p):
-            print(f"  skip (mock)     {rel}")
-            skipped += 1
-            continue
         status = patch(p, dry)
         print(f"  {status:<22} {rel}")
         if status.startswith("wired"):
