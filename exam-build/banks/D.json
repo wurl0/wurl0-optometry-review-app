@@ -5,12 +5,12 @@
   "t": "D1 Physical Optics",
   "q": "Which theorist's model of light correctly predicted that light slows down in a denser medium?",
   "o": [
-   "Einstein",
    "Huygens",
+   "Newton",
    "Planck",
-   "Newton"
+   "Einstein"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Huygens' wave theory correctly predicted light slows in dense media; Newton's corpuscular theory wrongly predicted it would speed up.",
   "k": "Huygens (wave) = light slows in dense media.",
   "src": "legacy"
@@ -21,12 +21,12 @@
   "t": "D1 Physical Optics",
   "q": "The four classical theories of light, in order (NHMP), are:",
   "o": [
-   "Newton, Huygens, Maxwell, Planck",
-   "Huygens, Newton, Einstein, Bohr",
    "Maxwell, Planck, Newton, Huygens",
+   "Huygens, Newton, Einstein, Bohr",
+   "Newton, Huygens, Maxwell, Planck",
    "Planck, Einstein, Newton, Maxwell"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Corpuscular (Newton) → Wave (Huygens) → Electromagnetic (Maxwell) → Quantum (Planck).",
   "k": "Light theories: Newton-Huygens-Maxwell-Planck.",
   "src": "legacy"
@@ -37,12 +37,12 @@
   "t": "D1 Physical Optics",
   "q": "Snell's law is correctly written as:",
   "o": [
-   "n₁/n₂ = sin R/sin i",
-   "n₁ cos i = n₂ cos R",
+   "i = R",
    "n₁ sin i = n₂ sin R",
-   "i = R"
+   "n₁ cos i = n₂ cos R",
+   "n₁/n₂ = sin R/sin i"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Snell's law: n₁ sin i = n₂ sin R relates the indices and angles at refraction.",
   "k": "n₁ sin i = n₂ sin R.",
   "src": "legacy"
@@ -53,12 +53,12 @@
   "t": "D1 Physical Optics",
   "q": "The speed of light in a medium relates to its index by:",
   "o": [
-   "v = c/n",
    "v = n/c",
+   "v = c/n",
    "v = c + n",
    "v = c × n"
   ],
-  "a": 0,
+  "a": 1,
   "w": "v = c/n; a higher refractive index means slower light.",
   "k": "v = c/n.",
   "src": "legacy"
@@ -69,12 +69,12 @@
   "t": "D1 Physical Optics",
   "q": "Diverging light (from a point source) carries what vergence sign?",
   "o": [
-   "Positive",
-   "Negative",
    "Undefined",
-   "Zero"
+   "Zero",
+   "Negative",
+   "Positive"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Diverging light = negative vergence; converging light = positive vergence.",
   "k": "Diverging (−), converging (+).",
   "src": "legacy"
@@ -85,12 +85,12 @@
   "t": "D1 Physical Optics",
   "q": "As refractive index increases, the critical angle:",
   "o": [
-   "Increases",
-   "Decreases",
+   "Doubles",
    "Stays the same",
-   "Doubles"
+   "Increases",
+   "Decreases"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Higher n → lower critical angle. Diamond (~24.44°) has the lowest of common materials.",
   "k": "Higher n → lower critical angle.",
   "src": "legacy"
@@ -102,11 +102,11 @@
   "q": "Total internal reflection occurs when the angle of incidence:",
   "o": [
    "Is less than the critical angle",
-   "Exceeds the critical angle",
    "Equals the refractive index",
+   "Exceeds the critical angle",
    "Equals zero"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Going from dense to rare medium, when incidence exceeds the critical angle, all light reflects internally.",
   "k": "Incidence > critical angle = TIR.",
   "src": "legacy"
@@ -117,9 +117,9 @@
   "t": "D1 Physical Optics",
   "q": "The keratometer converts radius to power using which index and formula?",
   "o": [
-   "n = 1.5; D = 500/r",
-   "n = 1.376; D = 337.5/r",
    "n = 1.336; D = 1000/r",
+   "n = 1.376; D = 337.5/r",
+   "n = 1.5; D = 500/r",
    "n = 1.3375; D = 337.5/r"
   ],
   "a": 3,
@@ -133,12 +133,12 @@
   "t": "D1 Physical Optics",
   "q": "The cornea provides about what fraction of the eye's total refractive power?",
   "o": [
-   "One-third",
-   "One-half",
+   "All of it",
    "Two-thirds",
-   "All of it"
+   "One-third",
+   "One-half"
   ],
-  "a": 2,
+  "a": 1,
   "w": "The cornea (~43 D) supplies about two-thirds of the eye's ~58.64 D total power.",
   "k": "Cornea ~43 D = 2/3 of total.",
   "src": "legacy"
@@ -150,9 +150,9 @@
   "q": "The total power of Gullstrand's exact schematic eye versus the reduced (Emsley) eye is:",
   "o": [
    "60 D vs 58.64 D",
-   "43 D vs 60 D",
+   "58.64 D vs 58.64 D",
    "58.64 D vs 60 D",
-   "58.64 D vs 58.64 D"
+   "43 D vs 60 D"
   ],
   "a": 2,
   "w": "Gullstrand's exact eye = 58.64 D; the reduced (Emsley) eye = 60 D.",
@@ -165,12 +165,12 @@
   "t": "D1 Physical Optics",
   "q": "How do refractive index and Abbe value relate?",
   "o": [
-   "Higher index → lower Abbe → more chromatic aberration",
-   "Higher index → higher Abbe → less chromatic aberration",
    "Both increase together",
-   "They are unrelated"
+   "Higher index → lower Abbe → more chromatic aberration",
+   "They are unrelated",
+   "Higher index → higher Abbe → less chromatic aberration"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Index and Abbe value move oppositely: higher index means lower Abbe and more chromatic aberration.",
   "k": "Higher n → lower Abbe → more CA.",
   "src": "legacy"
@@ -181,12 +181,12 @@
   "t": "D1 Physical Optics",
   "q": "Which UV band causes photokeratitis ('welder's flash')?",
   "o": [
+   "UV-C only",
    "UV-A",
    "Infrared",
-   "UV-B",
-   "UV-C only"
+   "UV-B"
   ],
-  "a": 2,
+  "a": 3,
   "w": "UV-B causes photokeratitis; UV-A penetrates deeper and is linked to cataract.",
   "k": "UV-B = photokeratitis.",
   "src": "legacy"
@@ -197,12 +197,12 @@
   "t": "D1 Physical Optics",
   "q": "Compared with photochemical damage, thermal radiation damage is:",
   "o": [
+   "Permanent",
    "Limited to the lens",
    "Reversible",
-   "Always milder",
-   "Permanent"
+   "Always milder"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Thermal injury is permanent; photochemical injury is often reversible.",
   "k": "Thermal = permanent; photochemical = reversible.",
   "src": "legacy"
@@ -214,11 +214,11 @@
   "q": "In flat transposition, the new sphere is:",
   "o": [
    "S − C",
-   "−C",
    "S only",
-   "S + C"
+   "S + C",
+   "−C"
   ],
-  "a": 3,
+  "a": 2,
   "w": "New Sph = S + C; New Cyl = −C; New Axis ±90°.",
   "k": "New sphere = S + C (transposition).",
   "src": "legacy"
@@ -261,12 +261,12 @@
   "t": "D1 Physical Optics",
   "q": "Why does the posterior corneal surface have minus power?",
   "o": [
+   "It is concave toward the front",
    "Index drops across a convex surface",
    "It is completely avascular",
-   "It has no measurable curvature",
-   "It is concave toward the front"
+   "It has no measurable curvature"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Index falls from cornea to aqueous at a forward-convex surface, so the surface diverges light (minus).",
   "k": "Posterior cornea: n drops at convex surface → minus.",
   "src": "sanitized"
@@ -325,12 +325,12 @@
   "t": "D1 Physical Optics",
   "q": "Vergence (in diopters) for light from a point is calculated by:",
   "o": [
-   "D = 100/f",
-   "D = f × 100",
    "D = 1/f",
-   "D = f/100"
+   "D = f × 100",
+   "D = f/100",
+   "D = 100/f"
   ],
-  "a": 0,
+  "a": 3,
   "w": "D = 100/f when f is in centimeters (or 1/f in meters).",
   "k": "D = 100/f (cm).",
   "src": "legacy"
@@ -341,12 +341,12 @@
   "t": "D1 Physical Optics",
   "q": "Higher-index lens materials tend to produce more of which aberration?",
   "o": [
-   "Spherical aberration only",
    "Chromatic aberration",
    "No aberration",
-   "Astigmatism"
+   "Astigmatism",
+   "Spherical aberration only"
   ],
-  "a": 1,
+  "a": 0,
   "w": "High index = low Abbe = more chromatic aberration (color fringing).",
   "k": "High index materials = more chromatic aberration.",
   "src": "legacy"
@@ -358,11 +358,11 @@
   "q": "The visible spectrum spans approximately:",
   "o": [
    "200–400 nm",
-   "700–1000 nm",
+   "400–700 nm",
    "100–200 nm",
-   "400–700 nm"
+   "700–1000 nm"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Visible light is ~400–700 nm; below 400 is UV, above 700 is infrared.",
   "k": "Visible 400–700 nm.",
   "src": "legacy"
@@ -373,12 +373,12 @@
   "t": "D1 Physical Optics",
   "q": "A 'UV 400' lens blocks:",
   "o": [
-   "All UV below 400 nm",
    "Infrared",
-   "Only UV-C",
-   "Only visible light"
+   "All UV below 400 nm",
+   "Only visible light",
+   "Only UV-C"
   ],
-  "a": 0,
+  "a": 1,
   "w": "UV 400 blocks all UV below 400 nm, the gold standard for UV protection.",
   "k": "UV 400 = blocks all UV < 400 nm.",
   "src": "legacy"
@@ -406,11 +406,11 @@
   "q": "A plane (flat) mirror forms an image that is:",
   "o": [
    "Real, inverted, same size",
-   "Virtual, upright, same size",
    "Real, upright, magnified",
+   "Virtual, upright, same size",
    "Virtual, upright, minified"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Plane mirror images are virtual, upright, same size, and as far behind as the object is in front.",
   "k": "Plane mirror = virtual, upright, same size.",
   "src": "sanitized"
@@ -421,8 +421,8 @@
   "t": "D1 Geometric Optics",
   "q": "A convex mirror forms what kind of image, regardless of object position?",
   "o": [
-   "Real, magnified",
    "Virtual, magnified",
+   "Real, magnified",
    "Virtual, upright, minified",
    "Real, inverted"
   ],
@@ -437,12 +437,12 @@
   "t": "D1 Geometric Optics",
   "q": "The focal length of a concave mirror is:",
   "o": [
-   "Negative",
    "Positive",
    "Infinite",
-   "Zero"
+   "Zero",
+   "Negative"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Concave mirrors converge (positive f); convex mirrors diverge (negative f).",
   "k": "Concave mirror f positive; convex negative.",
   "src": "legacy"
@@ -453,12 +453,12 @@
   "t": "D1 Geometric Optics",
   "q": "In the mirror/lens equation, a negative image distance (q) means:",
   "o": [
+   "A virtual image",
    "No image",
    "A real image",
-   "A virtual image",
    "An inverted image"
   ],
-  "a": 2,
+  "a": 0,
   "w": "q negative = virtual image (behind a mirror or same side as object for a lens). q positive = real.",
   "k": "q negative = virtual image.",
   "src": "legacy"
@@ -470,9 +470,9 @@
   "q": "A negative magnification (m) indicates the image is:",
   "o": [
    "Inverted",
-   "Upright",
+   "Virtual",
    "Minified",
-   "Virtual"
+   "Upright"
   ],
   "a": 0,
   "w": "Negative m = inverted; positive m = upright. The magnitude gives the size.",
@@ -485,12 +485,12 @@
   "t": "D1 Geometric Optics",
   "q": "A concave (minus) lens forms what image for any object position?",
   "o": [
-   "Virtual, upright, minified",
-   "Real, inverted, magnified",
    "Real, upright",
-   "Virtual, magnified"
+   "Virtual, magnified",
+   "Virtual, upright, minified",
+   "Real, inverted, magnified"
   ],
-  "a": 0,
+  "a": 2,
   "w": "A minus lens always gives a virtual, upright, minified image.",
   "k": "Minus lens = always virtual, upright, minified.",
   "src": "legacy"
@@ -501,12 +501,12 @@
   "t": "D1 Geometric Optics",
   "q": "A convex lens with the object INSIDE the focal length produces:",
   "o": [
+   "A real, minified image",
    "A virtual, magnified image",
    "No image at all",
-   "A real, minified image",
    "A real, inverted image"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Object inside F of a plus lens gives a virtual, upright, magnified image (a simple magnifier).",
   "k": "Plus lens, object inside F = virtual, magnified.",
   "src": "sanitized"
@@ -518,11 +518,11 @@
   "q": "With a prism, light bends toward the ___ and the image displaces toward the ___:",
   "o": [
    "base; base",
+   "apex; base",
    "apex; apex",
-   "base; apex",
-   "apex; base"
+   "base; apex"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Light bends toward the base; the image is displaced toward the apex (opposite directions).",
   "k": "Light to base, image to apex.",
   "src": "legacy"
@@ -533,12 +533,12 @@
   "t": "D1 Geometric Optics",
   "q": "Esotropia is corrected with which prism orientation?",
   "o": [
-   "Base in",
-   "Base out",
+   "Base down",
    "Base up",
-   "Base down"
+   "Base in",
+   "Base out"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Esotropia (eye turned in) is corrected with base-out prism; exotropia with base-in.",
   "k": "Esotropia → base out; exotropia → base in.",
   "src": "legacy"
@@ -549,10 +549,10 @@
   "t": "D1 Geometric Optics",
   "q": "One degree of ocular deviation equals about how many prism diopters?",
   "o": [
-   "2.5Δ",
+   "1.0Δ",
    "1.75Δ",
    "0.5Δ",
-   "1.0Δ"
+   "2.5Δ"
   ],
   "a": 1,
   "w": "1° ≈ 1.75Δ (a useful conversion between angular and prism-diopter deviation).",
@@ -565,12 +565,12 @@
   "t": "D1 Geometric Optics",
   "q": "A plane refractor (flat glass slab) does what to a transmitted ray?",
   "o": [
-   "Reverses its direction",
-   "Converges it to a focus",
    "Displaces it laterally only",
-   "Adds plus power to it"
+   "Adds plus power to it",
+   "Converges it to a focus",
+   "Reverses its direction"
   ],
-  "a": 2,
+  "a": 0,
   "w": "A flat slab only displaces the ray laterally; the exit ray is parallel to the entrance ray (no dioptric power).",
   "k": "Plane slab = lateral shift, no power.",
   "src": "sanitized"
@@ -581,9 +581,9 @@
   "t": "D1 Geometric Optics",
   "q": "Surface refracting power depends on:",
   "o": [
-   "The index difference only",
-   "Both radius and index change",
    "Neither radius nor index",
+   "Both radius and index change",
+   "The index difference only",
    "The radius of curvature only"
   ],
   "a": 1,
@@ -597,12 +597,12 @@
   "t": "D1 Geometric Optics",
   "q": "An object submerged in water appears nearer than it is. The apparent depth equals:",
   "o": [
-   "Actual depth × n",
-   "Actual depth ÷ n",
+   "Actual depth + n",
    "Actual depth unchanged",
-   "Actual depth + n"
+   "Actual depth ÷ n",
+   "Actual depth × n"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Apparent depth = actual depth ÷ n (the shallowing effect of denser media).",
   "k": "Apparent depth = actual ÷ n.",
   "src": "legacy"
@@ -613,12 +613,12 @@
   "t": "D1 Geometric Optics",
   "q": "On the lens neutralization (movement) test, a PLUS lens shows:",
   "o": [
-   "Scissors movement",
+   "No movement",
    "WITH movement",
-   "AGAINST movement",
-   "No movement"
+   "Scissors movement",
+   "AGAINST movement"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Plus lenses show 'against' movement; minus lenses show 'with' movement.",
   "k": "Plus = against; minus = with.",
   "src": "legacy"
@@ -629,12 +629,12 @@
   "t": "D1 Geometric Optics",
   "q": "For a curved mirror, the focal length relates to the radius by:",
   "o": [
+   "f = R/2",
    "f = R²",
    "f = R",
-   "f = 2R",
-   "f = R/2"
+   "f = 2R"
   ],
-  "a": 3,
+  "a": 0,
   "w": "For mirrors, f = R/2.",
   "k": "Mirror f = R/2.",
   "src": "legacy"
@@ -645,10 +645,10 @@
   "t": "D1 Geometric Optics",
   "q": "A concave mirror with the object beyond the center of curvature produces an image that is:",
   "o": [
-   "Real, upright, same size",
+   "Virtual, minified",
    "Virtual, upright, magnified",
    "Real, inverted, minified",
-   "Virtual, minified"
+   "Real, upright, same size"
   ],
   "a": 2,
   "w": "Object beyond C in a concave mirror → real, inverted, minified image (between F and C).",
@@ -661,8 +661,8 @@
   "t": "D1 Geometric Optics",
   "q": "The law of reflection states:",
   "o": [
-   "Reflection changes wavelength",
    "Reflected light bends toward the normal",
+   "Reflection changes wavelength",
    "The angle of incidence equals the angle of reflection",
    "The angle of incidence is twice the angle of reflection"
   ],
@@ -677,12 +677,12 @@
   "t": "D1 Geometric Optics",
   "q": "Why does a contact lens reduce the effective refractive power needed compared with spectacles in high myopia?",
   "o": [
-   "It is a thicker lens overall",
-   "It removes the vertex distance",
    "It blocks ultraviolet light",
-   "It changes corneal curvature"
+   "It is a thicker lens overall",
+   "It changes corneal curvature",
+   "It removes the vertex distance"
   ],
-  "a": 1,
+  "a": 3,
   "w": "At the corneal plane, the vertex-distance effect is eliminated, so a high minus needs less power than at the spectacle plane.",
   "k": "CL at corneal plane removes vertex effect.",
   "src": "sanitized"
@@ -694,9 +694,9 @@
   "q": "A dentist's mouth mirror magnifies a tooth held just inside its focal length because it is a:",
   "o": [
    "Concave mirror",
-   "Convex mirror",
    "Plano lens",
-   "Plane mirror"
+   "Plane mirror",
+   "Convex mirror"
   ],
   "a": 0,
   "w": "A concave mirror with the object inside F gives a virtual, upright, magnified image.",
@@ -709,12 +709,12 @@
   "t": "D1 Geometric Optics",
   "q": "Exotropia is corrected with which prism?",
   "o": [
-   "Base out",
    "Base in",
    "Base up",
-   "Base down"
+   "Base down",
+   "Base out"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Exotropia (eye turned out) is corrected with base-in prism; esotropia with base-out.",
   "k": "Exotropia → base in.",
   "src": "legacy"
@@ -725,12 +725,12 @@
   "t": "D1 Geometric Optics",
   "q": "An object at the center of curvature (2F) of a concave mirror forms an image that is:",
   "o": [
-   "At infinity",
-   "Upright and minified",
+   "Virtual and magnified",
    "Real, inverted, same size, at C",
-   "Virtual and magnified"
+   "At infinity",
+   "Upright and minified"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Object at C → image at C, real, inverted, same size.",
   "k": "Object at C → real, inverted, same size.",
   "src": "legacy"
@@ -741,12 +741,12 @@
   "t": "D1 Geometric Optics",
   "q": "The mirror and thin-lens equation is:",
   "o": [
-   "p + q = f",
-   "1/p − 1/q = 1/f",
    "1/p + 1/q = 1/f",
-   "p × q = f"
+   "1/p − 1/q = 1/f",
+   "p × q = f",
+   "p + q = f"
   ],
-  "a": 2,
+  "a": 0,
   "w": "1/p + 1/q = 1/f (object distance, image distance, focal length).",
   "k": "1/p + 1/q = 1/f.",
   "src": "legacy"
@@ -757,12 +757,12 @@
   "t": "D1 Geometric Optics",
   "q": "A surface separating two media of equal index (n₁ = n₂) has:",
   "o": [
+   "Power set by radius alone",
    "Zero power at any curvature",
    "Negative refracting power",
-   "Maximum refracting power",
-   "Power set by radius alone"
+   "Maximum refracting power"
   ],
-  "a": 0,
+  "a": 1,
   "w": "With no index difference, the surface bends no light, so power is zero whatever the curvature.",
   "k": "No Δn = zero surface power.",
   "src": "sanitized"
@@ -774,9 +774,9 @@
   "q": "Which common lens material has the LOWEST Abbe value (most chromatic aberration)?",
   "o": [
    "Polycarbonate",
-   "Trivex",
    "Crown glass",
-   "CR-39"
+   "CR-39",
+   "Trivex"
   ],
   "a": 0,
   "w": "Polycarbonate has Abbe ~30 (most CA); crown glass ~58.9 (least).",
@@ -789,12 +789,12 @@
   "t": "D2 Dispensing",
   "q": "Which lens material is the most impact resistant?",
   "o": [
-   "High-index glass",
-   "CR-39",
    "Crown glass",
-   "Polycarbonate"
+   "Polycarbonate",
+   "CR-39",
+   "High-index glass"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Polycarbonate is the most impact resistant, the safety/sports lens of choice.",
   "k": "Polycarbonate = most impact resistant.",
   "src": "legacy"
@@ -805,8 +805,8 @@
   "t": "D2 Dispensing",
   "q": "Polycarbonate's UV protection is:",
   "o": [
-   "Present only with a mirror coat",
    "Limited to the UV-C band",
+   "Present only with a mirror coat",
    "Inherent, no coating needed",
    "Absent unless it is coated"
   ],
@@ -822,11 +822,11 @@
   "q": "Why do photochromic lenses fail to darken inside a car?",
   "o": [
    "They react only to heat",
-   "The windshield blocks the UV",
+   "The lens stays too cold",
    "Car interior light is too dim",
-   "The lens stays too cold"
+   "The windshield blocks the UV"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Photochromics need UV to activate; windshields block UV, so they stay clear while driving.",
   "k": "Windshield blocks UV → photochromics don't darken in cars.",
   "src": "sanitized"
@@ -838,8 +838,8 @@
   "q": "Among CPF (corning) filters, a higher CPF number means the lens is:",
   "o": [
    "Photochromic",
-   "Clearer",
    "Lighter",
+   "Clearer",
    "Darker"
   ],
   "a": 3,
@@ -853,12 +853,12 @@
   "t": "D2 Dispensing",
   "q": "In anisometropia, conventional slab-off prism is ground on the:",
   "o": [
-   "More plus lens",
-   "Lens with better acuity",
+   "More minus lens",
    "Either lens equally",
-   "More minus lens"
+   "More plus lens",
+   "Lens with better acuity"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Conventional slab-off goes on the more minus/less plus lens to create compensating base-up prism at near.",
   "k": "Slab-off on the more minus / less plus lens.",
   "src": "legacy"
@@ -869,12 +869,12 @@
   "t": "D2 Dispensing",
   "q": "Prentice's rule for prism induced by decentration is:",
   "o": [
-   "P = d(mm) × F",
    "P = F / d(cm)",
-   "P = d(cm)² × F",
-   "P = d(cm) × F"
+   "P = d(cm) × F",
+   "P = d(mm) × F",
+   "P = d(cm)² × F"
   ],
-  "a": 3,
+  "a": 1,
   "w": "P = d(cm) × F. The decentration must be in centimeters.",
   "k": "Prentice: P = d(cm) × F.",
   "src": "sanitized"
@@ -901,12 +901,12 @@
   "t": "D2 Dispensing",
   "q": "Which lens material is the lightest (lowest specific gravity)?",
   "o": [
-   "Trivex",
-   "High-index glass",
+   "Crown glass",
    "Polycarbonate",
-   "Crown glass"
+   "Trivex",
+   "High-index glass"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Trivex (SG ~1.11) is the lightest; polycarbonate ~1.20.",
   "k": "Trivex is the lightest lens.",
   "src": "legacy"
@@ -917,12 +917,12 @@
   "t": "D2 Dispensing",
   "q": "A fused bifocal segment requires which type of glass for the segment?",
   "o": [
-   "No index difference",
-   "Higher index than the major lens",
    "Lower index than the major",
-   "The same index"
+   "The same index",
+   "Higher index than the major lens",
+   "No index difference"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The fused segment uses a higher-index 'button' set into the lower-index major lens to add plus power.",
   "k": "Fused bifocal = higher-index segment button.",
   "src": "legacy"
@@ -933,10 +933,10 @@
   "t": "D2 Dispensing",
   "q": "The notation '+6.00 × 90' on an optical cross means the surface contributes +6.00 in which meridian?",
   "o": [
-   "90°",
+   "45°",
    "Both meridians",
    "180°",
-   "45°"
+   "90°"
   ],
   "a": 2,
   "w": "Like cylinder notation, '× 90' means the +6.00 power acts in the 180° meridian (perpendicular to the stated axis).",
@@ -949,12 +949,12 @@
   "t": "D2 Dispensing",
   "q": "Which filter is typically recommended for a retinitis pigmentosa patient?",
   "o": [
+   "Yellow/amber",
    "Dark red CPF 550",
-   "Polarized gray",
    "Clear UV 400 only",
-   "Yellow/amber"
+   "Polarized gray"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Yellow/amber filters (CPF 511/527) enhance contrast and reduce glare for RP patients.",
   "k": "RP → yellow/amber CPF 511/527.",
   "src": "legacy"
@@ -966,9 +966,9 @@
   "q": "The FBTT (front-toric) bifocal is made in which cylinder form?",
   "o": [
    "Minus cylinder",
-   "Plus cylinder",
    "No cylinder",
-   "Bitoric"
+   "Bitoric",
+   "Plus cylinder"
   ],
   "a": 0,
   "w": "FBTT uses minus cyl because the cylinder is on the back surface, opposite the front segment.",
@@ -998,8 +998,8 @@
   "q": "At what vertical prism differential is slab-off (rather than dropping the OC) generally indicated?",
   "o": [
    "Greater than 0.5Δ",
-   "Any amount",
    "Greater than 5Δ",
+   "Any amount",
    "Greater than ~1.5Δ"
   ],
   "a": 3,
@@ -1013,12 +1013,12 @@
   "t": "D2 Dispensing",
   "q": "A patient does sustained near work and wants minimal color fringing. Best material:",
   "o": [
-   "Polycarbonate",
    "High-index glass",
    "CR-39",
+   "Polycarbonate",
    "1.74 high-index plastic"
   ],
-  "a": 2,
+  "a": 1,
   "w": "For optical quality in sustained near gaze, the high Abbe value of CR-39 minimizes chromatic aberration.",
   "k": "Near-work optics → high-Abbe CR-39.",
   "src": "legacy"
@@ -1029,12 +1029,12 @@
   "t": "D2 Dispensing",
   "q": "Which describes a UBTT (one-piece, back-toric) bifocal?",
   "o": [
-   "No base curve",
-   "Cylinder on front; sphere on back",
    "Fused higher-index segment",
-   "Base curve on the back surface; plus-cyl form"
+   "Base curve on the back surface; plus-cyl form",
+   "No base curve",
+   "Cylinder on front; sphere on back"
   ],
-  "a": 3,
+  "a": 1,
   "w": "In UBTT the base curve is the back surface (−BC) and it uses plus-cyl form; one-piece bifocals include Ultex and Executive.",
   "k": "UBTT = base curve on back, plus cyl.",
   "src": "legacy"
@@ -1045,12 +1045,12 @@
   "t": "D2 Dispensing",
   "q": "The recommended filter approach for achromatopsia is:",
   "o": [
-   "Dark red",
-   "Yellow CPF 511",
    "Polarized only",
-   "Clear lenses"
+   "Clear lenses",
+   "Yellow CPF 511",
+   "Dark red"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Achromats are extremely light-sensitive; dark red filters (CPF 550, Wratten #25/#29) cut the cone-overload glare.",
   "k": "Achromatopsia → dark red filter.",
   "src": "legacy"
@@ -1078,11 +1078,11 @@
   "q": "Examples of fused bifocals include:",
   "o": [
    "Progressive lenses",
+   "Kryptok, FT-28, FT-35",
    "Slab-off lenses",
-   "Ultex and Executive",
-   "Kryptok, FT-28, FT-35"
+   "Ultex and Executive"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Fused bifocals: Kryptok, FT-28, FT-35. One-piece bifocals: Ultex, Executive.",
   "k": "Fused = Kryptok/FT-28/FT-35.",
   "src": "legacy"
@@ -1094,11 +1094,11 @@
   "q": "Which statement about polycarbonate is FALSE?",
   "o": [
    "It is the most impact resistant",
-   "It has the highest Abbe value",
    "It is used for safety eyewear",
-   "It blocks UV without a coating"
+   "It blocks UV without a coating",
+   "It has the highest Abbe value"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Polycarbonate has the LOWEST Abbe value (30), not the highest. The other statements are true.",
   "k": "Polycarbonate Abbe is lowest, not highest.",
   "src": "legacy"
@@ -1109,12 +1109,12 @@
   "t": "D2 Dispensing",
   "q": "Trivex's Abbe value is approximately:",
   "o": [
-   "30",
    "58",
    "43–45",
+   "30",
    "20"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Trivex Abbe ~43–45, between polycarbonate (30) and CR-39 (58), with good impact resistance and light weight.",
   "k": "Trivex Abbe ~43–45.",
   "src": "legacy"
@@ -1125,12 +1125,12 @@
   "t": "D2 Dispensing",
   "q": "SVTT (single-vision toric) lenses are made in which form, with the base curve on which surface?",
   "o": [
-   "Plus cyl; base curve on front",
+   "No cylinder; flat front",
    "Minus cyl; base curve on back",
-   "Bitoric; both surfaces toric",
-   "No cylinder; flat front"
+   "Plus cyl; base curve on front",
+   "Bitoric; both surfaces toric"
   ],
-  "a": 0,
+  "a": 2,
   "w": "SVTT uses plus-cyl with the base curve on the front; the back surface is derived (sph + cyl) − BC.",
   "k": "SVTT = plus cyl, BC on front.",
   "src": "legacy"
@@ -1141,12 +1141,12 @@
   "t": "D3 Contact Lens",
   "q": "Vertex-distance power correction becomes clinically necessary above what power?",
   "o": [
-   "±4.00 D",
    "±1.00 D",
-   "±2.00 D",
-   "±8.00 D"
+   "±8.00 D",
+   "±4.00 D",
+   "±2.00 D"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Above ±4.00 D, the vertex distance meaningfully changes effective power; below it, spectacle ≈ CL power.",
   "k": "Vertex correction matters above ±4.00 D.",
   "src": "legacy"
@@ -1157,12 +1157,12 @@
   "t": "D3 Contact Lens",
   "q": "A −6.50 D spectacle Rx at 14 mm vertex converts to a contact lens power of about:",
   "o": [
-   "−6.50 D",
-   "−7.00 D",
    "−5.00 D",
-   "−6.00 D"
+   "−6.00 D",
+   "−7.00 D",
+   "−6.50 D"
   ],
-  "a": 3,
+  "a": 1,
   "w": "D_CL = D_spec/(1 − d·D_spec) = −6.50/1.091 ≈ −5.96 → −6.00 D. A high minus needs less minus at the cornea.",
   "k": "High minus → less minus as a CL.",
   "src": "legacy"
@@ -1173,12 +1173,12 @@
   "t": "D3 Contact Lens",
   "q": "Silicone hydrogel contact lenses transmit oxygen primarily through:",
   "o": [
-   "Surface pores",
    "The silicone polymer matrix",
+   "Surface pores",
    "Tear exchange only",
    "Their water content"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Silicone hydrogels carry O₂ through the silicone matrix, so high Dk does not require high water content.",
   "k": "SiHy O₂ via silicone polymer, not water.",
   "src": "legacy"
@@ -1189,12 +1189,12 @@
   "t": "D3 Contact Lens",
   "q": "Which is TRUE of PMMA contact lenses?",
   "o": [
-   "They are silicone hydrogels",
-   "They are highly gas permeable",
    "They were the first soft lenses",
-   "They are non-gas-permeable"
+   "They are silicone hydrogels",
+   "They are non-gas-permeable",
+   "They are highly gas permeable"
   ],
-  "a": 3,
+  "a": 2,
   "w": "PMMA is hard and non-gas-permeable. RGP lenses use different oxygen-permeable polymers.",
   "k": "PMMA = non-gas-permeable hard lens.",
   "src": "legacy"
@@ -1205,12 +1205,12 @@
   "t": "D3 Contact Lens",
   "q": "A steep-fitting contact lens tends to cause:",
   "o": [
-   "Too little movement → hypoxia and edema",
    "Excess movement and mechanical trauma",
-   "No effect",
-   "Improved tear exchange"
+   "Improved tear exchange",
+   "Too little movement → hypoxia and edema",
+   "No effect"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Steep fit restricts movement and tear exchange → hypoxia/edema. Flat fit causes excess movement and mechanical trauma.",
   "k": "Steep = hypoxia; flat = mechanical trauma.",
   "src": "legacy"
@@ -1221,12 +1221,12 @@
   "t": "D3 Contact Lens",
   "q": "The most common organism in contact-lens-related microbial keratitis is:",
   "o": [
+   "Acanthamoeba",
    "Pseudomonas aeruginosa",
-   "Candida",
    "Staphylococcus aureus",
-   "Acanthamoeba"
+   "Candida"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Pseudomonas aeruginosa is the most common bacterial cause; Acanthamoeba is associated with tap water/swimming and extended wear.",
   "k": "Pseudomonas = most common CL keratitis organism.",
   "src": "legacy"
@@ -1237,12 +1237,12 @@
   "t": "D3 Contact Lens",
   "q": "Acanthamoeba keratitis is most associated with:",
   "o": [
-   "Polycarbonate spectacle lenses",
-   "Daily disposable lens use",
+   "Wearing reading glasses",
    "Tap water exposure in lens wear",
-   "Wearing reading glasses"
+   "Daily disposable lens use",
+   "Polycarbonate spectacle lenses"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Acanthamoeba is linked to extended wear and water exposure (tap water rinsing, swimming). It is very hard to treat.",
   "k": "Acanthamoeba = water exposure + extended wear.",
   "src": "sanitized"
@@ -1253,12 +1253,12 @@
   "t": "D3 Contact Lens",
   "q": "Polymegethism (variable endothelial cell size from chronic CL hypoxia) is:",
   "o": [
-   "Reversible with better lenses",
    "Irreversible",
+   "A type of infection",
    "Caused by over-cleaning",
-   "A type of infection"
+   "Reversible with better lenses"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Polymegethism is a permanent endothelial change marking chronic hypoxic stress, even after stopping lens wear.",
   "k": "Polymegethism = irreversible hypoxia marker.",
   "src": "legacy"
@@ -1269,12 +1269,12 @@
   "t": "D3 Contact Lens",
   "q": "In monovision contact lens fitting, the dominant eye is corrected for:",
   "o": [
-   "Near",
-   "Distance",
+   "Astigmatism only",
    "Intermediate",
-   "Astigmatism only"
+   "Distance",
+   "Near"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The dominant eye gets distance correction; the non-dominant eye is set for near.",
   "k": "Monovision: dominant eye = distance.",
   "src": "legacy"
@@ -1301,12 +1301,12 @@
   "t": "D3 Contact Lens",
   "q": "What is the approximate upper limit of myopia treatable with ortho-K?",
   "o": [
-   "No limit",
-   "−2.00 D",
    "−6.00 D",
-   "−10.00 D"
+   "−2.00 D",
+   "−10.00 D",
+   "No limit"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Ortho-K is generally effective up to about −6.00 D of myopia and −2.00 D of astigmatism.",
   "k": "Ortho-K myopia limit ~ −6.00 D.",
   "src": "legacy"
@@ -1317,12 +1317,12 @@
   "t": "D3 Contact Lens",
   "q": "Why should benzalkonium chloride (BAK) never be used with soft contact lenses?",
   "o": [
-   "It dissolves the lens matrix",
-   "It has no effect on lenses",
    "It discolors the lens material",
-   "It binds the lens and is toxic"
+   "It has no effect on lenses",
+   "It binds the lens and is toxic",
+   "It dissolves the lens matrix"
   ],
-  "a": 3,
+  "a": 2,
   "w": "BAK is epithelial-toxic and accumulates in soft lens material, so it is contraindicated with soft CLs.",
   "k": "BAK is toxic with soft lenses.",
   "src": "sanitized"
@@ -1334,11 +1334,11 @@
   "q": "Giant papillary conjunctivitis (GPC) in lens wearers is caused by:",
   "o": [
    "Ultraviolet light exposure",
-   "Lens deposits and friction",
    "Bacterial infection of the lid",
+   "Lens deposits and friction",
    "Corneal hypoxia alone"
   ],
-  "a": 1,
+  "a": 2,
   "w": "GPC is an immune/mechanical reaction to deposits and friction on the upper tarsus, seen with both soft and RGP wear.",
   "k": "GPC = deposits + upper-tarsus friction.",
   "src": "sanitized"
@@ -1349,12 +1349,12 @@
   "t": "D3 Contact Lens",
   "q": "A soft contact lens diameter is typically chosen relative to the HVID (~11.7 mm) as:",
   "o": [
-   "Exactly HVID",
-   "HVID − 2 mm",
    "HVID + 2 mm",
-   "Double HVID"
+   "Double HVID",
+   "HVID − 2 mm",
+   "Exactly HVID"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Soft lens total diameter ≈ HVID + 2 mm so the lens vaults onto the sclera for stability.",
   "k": "SCL diameter ≈ HVID + 2 mm.",
   "src": "legacy"
@@ -1365,12 +1365,12 @@
   "t": "D3 Contact Lens",
   "q": "For toric soft lens stabilization, prism ballast is typically:",
   "o": [
+   "3–5Δ base up",
    "1–1.5Δ base down",
    "No prism",
-   "5Δ base in",
-   "3–5Δ base up"
+   "5Δ base in"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Prism ballast of ~1–1.5Δ base-down uses gravity/lid forces to keep the toric lens oriented.",
   "k": "Prism ballast ~1–1.5Δ base down.",
   "src": "legacy"
@@ -1382,11 +1382,11 @@
   "q": "Who developed the first soft (HEMA) contact lens?",
   "o": [
    "George Bier",
-   "Adolf Fick",
    "Otto Wichterle",
-   "Kevin Touhy"
+   "Kevin Touhy",
+   "Adolf Fick"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Otto Wichterle developed HEMA soft lenses; FDA approval came in 1971. Kevin Touhy made the first PMMA corneal lens (1947).",
   "k": "Wichterle = soft (HEMA) lens; Touhy = PMMA.",
   "src": "legacy"
@@ -1397,10 +1397,10 @@
   "t": "D3 Contact Lens",
   "q": "A white corneal infiltrate with fluorescein staining and pain in a CL wearer is, until proven otherwise:",
   "o": [
-   "Dry eye",
+   "Giant papillary conjunctivitis",
    "Microbial keratitis",
    "A normal finding",
-   "Giant papillary conjunctivitis"
+   "Dry eye"
   ],
   "a": 1,
   "w": "An infiltrate plus staining and pain is microbial keratitis, a sight-threatening emergency requiring lens removal and referral.",
@@ -1414,9 +1414,9 @@
   "q": "Daily disposable lenses were introduced mainly to address:",
   "o": [
    "Patient non-compliance with cleaning",
-   "Higher oxygen transmission",
+   "Better optics",
    "Lower cost",
-   "Better optics"
+   "Higher oxygen transmission"
   ],
   "a": 0,
   "w": "Daily disposables solve poor cleaning compliance by discarding the lens each day, improving hygiene.",
@@ -1429,12 +1429,12 @@
   "t": "D3 Contact Lens",
   "q": "For a low astigmatic prescription (cyl < 1.00 D) fitted with a spherical soft lens, the power is set using:",
   "o": [
-   "The spherical equivalent",
-   "The full cylinder",
    "Sphere only",
+   "The full cylinder",
+   "The spherical equivalent",
    "Double the cylinder"
   ],
-  "a": 0,
+  "a": 2,
   "w": "For small cylinders, the spherical equivalent (sph + ½ cyl), rounded to 0.25 D, is used.",
   "k": "Low cyl → spherical equivalent (sph + ½ cyl).",
   "src": "legacy"
@@ -1445,12 +1445,12 @@
   "t": "D3 Contact Lens",
   "q": "Compared with soft lenses, RGP lenses generally require:",
   "o": [
-   "A diagnostic trial fitting",
+   "No fitting at all",
    "Daily disposal",
    "Only keratometry",
-   "No fitting at all"
+   "A diagnostic trial fitting"
   ],
-  "a": 0,
+  "a": 3,
   "w": "RGP success depends on trial-lens fitting and evaluation; soft lenses can often be fit empirically.",
   "k": "RGP = trial fitting; soft = empirical.",
   "src": "legacy"
@@ -1462,11 +1462,11 @@
   "q": "Corneal edema of 7–14% in a conventional extended-wear hydrogel indicates:",
   "o": [
    "Optimal fit",
+   "Dehydration",
    "Normal daily wear",
-   "Excessive edema",
-   "Dehydration"
+   "Excessive edema"
   ],
-  "a": 2,
+  "a": 3,
   "w": "7–14% edema is excessive and reflects hypoxia; daily-wear hydrogel is ~2–7% and silicone-hydrogel EW ~2–4%.",
   "k": "Conventional EW 7–14% edema = excessive.",
   "src": "legacy"
@@ -1477,12 +1477,12 @@
   "t": "D3 Contact Lens",
   "q": "Which best describes the flat-fitting RGP lens behavior?",
   "o": [
+   "Excess movement, decentered",
    "Too little lens movement",
-   "Perfect central positioning",
    "It steepens the cornea",
-   "Excess movement, decentered"
+   "Perfect central positioning"
   ],
-  "a": 3,
+  "a": 0,
   "w": "A flat fit moves and decenters too much, causing mechanical trauma; a steep fit traps the lens and causes hypoxia.",
   "k": "Flat fit = excess movement/decentration.",
   "src": "sanitized"
@@ -1494,11 +1494,11 @@
   "q": "The first PMMA corneal contact lens is credited to:",
   "o": [
    "Thomas Young",
-   "Leonardo da Vinci",
    "Otto Wichterle",
-   "Kevin Touhy"
+   "Kevin Touhy",
+   "Leonardo da Vinci"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Kevin Touhy patented the first PMMA corneal lens in 1947; Wichterle developed soft HEMA lenses later.",
   "k": "Touhy 1947 = first PMMA corneal lens.",
   "src": "legacy"
@@ -1509,12 +1509,12 @@
   "t": "D1 Physical Optics",
   "q": "The four classical theories of light, in order (NHMP), were proposed by:",
   "o": [
+   "Newton, Huygens, Maxwell, Planck",
    "Huygens, Newton, Planck, Maxwell",
    "Newton, Planck, Maxwell, Huygens",
-   "Maxwell, Newton, Huygens, Planck",
-   "Newton, Huygens, Maxwell, Planck"
+   "Maxwell, Newton, Huygens, Planck"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Newton's corpuscular, Huygens' wave, Maxwell's electromagnetic and Planck's quantum theories, remembered as NHMP.",
   "k": "Light theories: Newton, Huygens, Maxwell, Planck.",
   "src": "authored"
@@ -1525,12 +1525,12 @@
   "t": "D1 Physical Optics",
   "q": "The speed of light in a medium relates to its refractive index by:",
   "o": [
-   "v = c/n",
    "v = c + n",
+   "v = n/c",
    "v = c × n",
-   "v = n/c"
+   "v = c/n"
   ],
-  "a": 0,
+  "a": 3,
   "w": "v = c/n, so a higher index means slower light. This slowing at an interface is what bends the ray and produces refraction.",
   "k": "v = c/n; higher n = slower light.",
   "src": "authored"
@@ -1541,12 +1541,12 @@
   "t": "D1 Physical Optics",
   "q": "Which waveband is responsible for photokeratitis (welder's flash)?",
   "o": [
-   "UV-B",
    "Visible blue",
+   "UV-B",
    "Infrared",
    "UV-A"
   ],
-  "a": 0,
+  "a": 1,
   "w": "UV-B drives photokeratitis, a photochemical and therefore reversible injury that heals in 24–48 hours. Thermal (infrared) damage is the permanent kind.",
   "k": "UV-B = photokeratitis, reversible.",
   "src": "authored"
@@ -1557,12 +1557,12 @@
   "t": "D1 Physical Optics",
   "q": "Compared with photochemical radiation damage, thermal damage is:",
   "o": [
-   "Limited to the conjunctiva",
-   "Reversible and milder",
    "Permanent",
+   "Reversible and milder",
+   "Limited to the conjunctiva",
    "Caused only by UV-C"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Thermal injury coagulates tissue and is permanent; photochemical injury such as photokeratitis is reversible. This is why IR exposure is the more dangerous occupationally.",
   "k": "Thermal = permanent; photochemical = reversible.",
   "src": "authored"
@@ -1589,12 +1589,12 @@
   "t": "D1 Physical Optics",
   "q": "An image formed by a concave (minus) lens is always:",
   "o": [
-   "Virtual, inverted, magnified",
-   "Virtual, erect, minified",
    "Real, inverted, minified",
-   "Real, erect, same size"
+   "Real, erect, same size",
+   "Virtual, erect, minified",
+   "Virtual, inverted, magnified"
   ],
-  "a": 1,
+  "a": 2,
   "w": "A minus lens diverges light and can never form a real image of a real object: the image is always virtual, erect and minified.",
   "k": "Concave lens: always virtual, erect, minified.",
   "src": "authored"
@@ -1607,8 +1607,8 @@
   "o": [
    "A higher Abbe and less chromatic aberration",
    "A lower Abbe and more chromatic aberration",
-   "No change in Abbe value",
-   "A higher Abbe and more chromatic aberration"
+   "A higher Abbe and more chromatic aberration",
+   "No change in Abbe value"
   ],
   "a": 1,
   "w": "Index and Abbe run opposite: high-index materials disperse more, so they show more chromatic aberration. This is the trade-off in thinning a strong prescription.",
@@ -1621,12 +1621,12 @@
   "t": "D1 Physical Optics",
   "q": "The keratometer converts radius to power using the constant:",
   "o": [
-   "337.5 with n = 1.336",
-   "337.5 with n = 1.3375",
    "1.000",
-   "1.3375 with a constant of 1000"
+   "337.5 with n = 1.336",
+   "1.3375 with a constant of 1000",
+   "337.5 with n = 1.3375"
   ],
-  "a": 1,
+  "a": 3,
   "w": "D = 337.5/r using the keratometric index 1.3375, a fictional index that already allows for the cornea's minus posterior surface.",
   "k": "Keratometry: D = 337.5/r, n = 1.3375.",
   "src": "authored"
@@ -1637,12 +1637,12 @@
   "t": "D1 Geometric Optics",
   "q": "In flat transposition, the new cylinder is:",
   "o": [
-   "The original sign reversed",
-   "The sum of sphere and cylinder",
+   "The same sign as the original",
    "Half the original power",
-   "The same sign as the original"
+   "The original sign reversed",
+   "The sum of sphere and cylinder"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Flat transposition: new sphere = S + C, new cylinder = −C, new axis = old axis ± 90°.",
   "k": "Transpose: S+C, −C, axis ±90°.",
   "src": "sanitized"
@@ -1653,12 +1653,12 @@
   "t": "D2 Dispensing",
   "q": "Which lens material has the LOWEST Abbe value and therefore the most chromatic aberration?",
   "o": [
-   "Trivex",
-   "CR-39",
    "Crown glass",
-   "Polycarbonate"
+   "CR-39",
+   "Polycarbonate",
+   "Trivex"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Polycarbonate's Abbe value of 30 is the lowest in common use, so it disperses most. Crown glass at 58.9 is the highest, with CR-39 close behind at 58.",
   "k": "Polycarbonate Abbe 30 (worst); crown glass 58.9 (best).",
   "src": "authored"
@@ -1686,11 +1686,11 @@
   "q": "The most impact-resistant spectacle lens material is:",
   "o": [
    "CR-39",
+   "Crown glass",
    "Polycarbonate",
-   "High-index plastic",
-   "Crown glass"
+   "High-index plastic"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Polycarbonate is the standard for safety, sports and monocular patients, and blocks UV below 385 nm without any coating.",
   "k": "Polycarbonate = most impact resistant.",
   "src": "authored"
@@ -1733,12 +1733,12 @@
   "t": "D2 Dispensing",
   "q": "A slab-off is prescribed to correct:",
   "o": [
-   "Excess edge thickness",
    "Peripheral spherical aberration",
    "Vertical prism imbalance",
+   "Excess edge thickness",
    "Chromatic aberration at near"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Anisometropia produces unequal vertical prism at near. Slab-off removes base-down prism from the more minus lens to rebalance the reading position.",
   "k": "Slab-off = vertical prism imbalance in anisometropia.",
   "src": "sanitized"
@@ -1749,12 +1749,12 @@
   "t": "D2 Dispensing",
   "q": "A fused bifocal such as an FT-28 or Kryptok is made in which cylinder form?",
   "o": [
+   "Plano-cylindrical",
    "UBTT",
    "FBTT",
-   "Plano-cylindrical",
    "SVTT"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Fused bifocals (Kryptok, FT-28, FT-35) are front base toric, made in minus cylinder with the toric on the back. One-piece designs like Ultex and Executive are UBTT.",
   "k": "Fused bifocals = FBTT; one-piece = UBTT.",
   "src": "authored"
@@ -1767,10 +1767,10 @@
   "o": [
    "Dark red CPF 550",
    "A clear UV 400 lens",
-   "Yellow-amber CPF 511 or 527",
-   "A grey polarized lens"
+   "A grey polarized lens",
+   "Yellow-amber CPF 511 or 527"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Amber filters (CPF 511/527) cut short-wavelength scatter and help RP, macular disease and glaucoma. CPF 550 or Wratten #25/#29 dark red suits achromatopsia.",
   "k": "RP = amber CPF 511/527; achromatopsia = dark red.",
   "src": "authored"
@@ -1782,11 +1782,11 @@
   "q": "The first corneal PMMA contact lens is credited to:",
   "o": [
    "Otto Wichterle",
+   "Kevin Touhy",
    "Adolf Fick",
-   "William Feinbloom",
-   "Kevin Touhy"
+   "William Feinbloom"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Kevin Touhy patented the corneal PMMA lens in 1947. Otto Wichterle later developed the HEMA soft lens, FDA-approved in 1971.",
   "k": "Touhy 1947 PMMA; Wichterle HEMA soft.",
   "src": "authored"
@@ -1813,12 +1813,12 @@
   "t": "D3 Contact Lens",
   "q": "Silicone hydrogel lenses improve oxygen delivery because oxygen passes:",
   "o": [
-   "Through the silicone polymer itself",
-   "Around the lens edge",
    "Through the water content",
-   "Through surface pores"
+   "Through surface pores",
+   "Through the silicone polymer itself",
+   "Around the lens edge"
   ],
-  "a": 0,
+  "a": 2,
   "w": "In conventional hydrogels oxygen rides through water, so Dk is capped by water content. Silicone carries oxygen through the polymer, decoupling Dk from water and allowing safe extended wear.",
   "k": "SiHy: O2 through polymer, not water.",
   "src": "authored"
@@ -1829,12 +1829,12 @@
   "t": "D3 Contact Lens",
   "q": "Toric soft lenses are commonly stabilized with prism ballast of:",
   "o": [
-   "4–5Δ base-in",
-   "3Δ base-up",
    "1–1.5Δ base-down",
-   "0.25Δ base-down"
+   "4–5Δ base-in",
+   "0.25Δ base-down",
+   "3Δ base-up"
   ],
-  "a": 2,
+  "a": 0,
   "w": "About 1–1.5Δ base-down uses gravity and lid action to keep the cylinder axis oriented.",
   "k": "Prism ballast = 1–1.5Δ base-down.",
   "src": "authored"
@@ -1845,12 +1845,12 @@
   "t": "D3 Contact Lens",
   "q": "The most common organism in contact-lens microbial keratitis is:",
   "o": [
-   "Pseudomonas aeruginosa",
-   "Candida albicans",
+   "Acanthamoeba",
    "Staphylococcus aureus",
-   "Acanthamoeba"
+   "Candida albicans",
+   "Pseudomonas aeruginosa"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Pseudomonas is the commonest and most aggressive cause, capable of perforating a cornea within 24–48 hours. Microbial keratitis is the most dangerous lens complication.",
   "k": "CL keratitis = Pseudomonas most common.",
   "src": "authored"
@@ -1861,12 +1861,12 @@
   "t": "D3 Contact Lens",
   "q": "A steep-fitting RGP lens produces:",
   "o": [
-   "Inferior dropping of the lens",
    "Too little movement",
-   "Marked lens decentration",
-   "Excessive lens movement"
+   "Excessive lens movement",
+   "Inferior dropping of the lens",
+   "Marked lens decentration"
   ],
-  "a": 1,
+  "a": 0,
   "w": "A steep lens grips the cornea, restricting movement and tear exchange, so debris accumulates and the cornea swells. A flat lens moves too much and causes mechanical trauma.",
   "k": "Steep = too little movement, hypoxia.",
   "src": "sanitized"
@@ -1878,11 +1878,11 @@
   "q": "In monovision, the dominant eye is normally corrected for:",
   "o": [
    "Intermediate",
-   "Distance",
+   "Whichever eye is more ametropic",
    "Near",
-   "Whichever eye is more ametropic"
+   "Distance"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The dominant eye takes the distance correction and the non-dominant eye the near, which patients tolerate better.",
   "k": "Monovision: dominant eye = distance.",
   "src": "authored"
@@ -1893,12 +1893,12 @@
   "t": "D3 Contact Lens",
   "q": "Orthokeratology is generally effective up to a myopia of about:",
   "o": [
-   "−10.00 D",
    "−6.00 D",
-   "−15.00 D",
-   "−2.00 D"
+   "−2.00 D",
+   "−10.00 D",
+   "−15.00 D"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Ortho-K reshapes the cornea temporarily and controls myopia progression, but the effect is insufficient beyond about −6.00 D of myopia or −2.00 D of astigmatism.",
   "k": "Ortho-K limits: −6.00 D sphere, −2.00 D cyl.",
   "src": "authored"
@@ -1909,12 +1909,12 @@
   "t": "D3 Contact Lens",
   "q": "Vertex distance correction becomes clinically necessary beyond about:",
   "o": [
-   "±2.00 D",
    "±4.00 D",
-   "±8.00 D",
-   "±1.00 D"
+   "±2.00 D",
+   "±1.00 D",
+   "±8.00 D"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Below ±4.00 D the spectacle and contact lens powers are effectively equal. Above it, use D_CL = D_spec ÷ (1 − 0.012 × D_spec).",
   "k": "Vertex matters beyond ±4.00 D.",
   "src": "authored"
@@ -1925,12 +1925,12 @@
   "t": "D3 Contact Lens",
   "q": "A soft contact lens diameter is normally chosen as:",
   "o": [
-   "HVID minus 2 mm",
-   "Equal to the HVID",
    "HVID plus 2 mm",
-   "Twice the pupil diameter"
+   "HVID minus 2 mm",
+   "Twice the pupil diameter",
+   "Equal to the HVID"
   ],
-  "a": 2,
+  "a": 0,
   "w": "With a typical HVID of 11.7 mm, a soft lens runs about 14 mm so it vaults the limbus and stays centered.",
   "k": "SCL diameter ≈ HVID + 2 mm.",
   "src": "authored"
@@ -1941,9 +1941,9 @@
   "t": "D3 Contact Lens",
   "q": "Polymegethism in a long-term lens wearer signifies:",
   "o": [
+   "Normal aging of the tear film",
    "Temporary stromal thinning",
    "Reversible epithelial edema",
-   "Normal aging of the tear film",
    "Irreversible endothelial change"
   ],
   "a": 3,
@@ -1957,12 +1957,12 @@
   "t": "D3 Contact Lens",
   "q": "Normal corneal edema for daily-wear hydrogel lenses is:",
   "o": [
-   "7–14%",
-   "2–7%",
+   "15–20%",
    "0%",
-   "15–20%"
+   "2–7%",
+   "7–14%"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Daily-wear hydrogels give 2–7% edema, and silicone hydrogel extended wear stays at 2–4%. Conventional extended wear at 7–14% is excessive.",
   "k": "DW hydrogel edema 2–7%; conventional EW 7–14% (excessive).",
   "src": "authored"
@@ -1973,12 +1973,12 @@
   "t": "D3 Contact Lens",
   "q": "Which fitting can be done empirically, without a trial lens?",
   "o": [
+   "RGP lenses",
    "Soft contact lenses",
    "Orthokeratology lenses",
-   "Scleral lenses",
-   "RGP lenses"
+   "Scleral lenses"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Soft lenses can be ordered empirically from K readings and refraction. RGPs must be trial fitted because the fluorescein pattern cannot be predicted reliably.",
   "k": "SCL empirical; RGP needs trial fitting.",
   "src": "authored"
@@ -1989,12 +1989,12 @@
   "t": "D1 Physical Optics",
   "q": "Newton's corpuscular theory was disproved because it predicted that light in a denser medium would:",
   "o": [
-   "Stop entirely",
-   "Slow down",
+   "Speed up",
    "Change color",
-   "Speed up"
+   "Slow down",
+   "Stop entirely"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Newton's corpuscular theory predicted light speeds up in a denser medium. Measurement showed the opposite, vindicating Huygens' wave theory: v = c/n, so light slows.",
   "k": "Newton predicted speeding up; Huygens (correctly) slowing.",
   "src": "authored"
@@ -2005,12 +2005,12 @@
   "t": "D1 Physical Optics",
   "q": "As refractive index rises, the critical angle:",
   "o": [
+   "Rises",
    "Falls",
-   "Stays constant",
    "Rises then falls",
-   "Rises"
+   "Stays constant"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Index and critical angle move oppositely. Diamond, with the highest common index, has the lowest critical angle at 24.44°, which is why it traps and sparkles with light.",
   "k": "Higher n = lower critical angle (diamond 24.44°).",
   "src": "authored"
@@ -2039,10 +2039,10 @@
   "o": [
    "Matches the tear film exactly",
    "Is easier to calculate with",
-   "Absorbs the posterior surface",
-   "Corrects for the tear prism"
+   "Corrects for the tear prism",
+   "Absorbs the posterior surface"
   ],
-  "a": 2,
+  "a": 3,
   "w": "The true corneal index is 1.376. The simplified keratometric index 1.3375 folds in the minus posterior surface, so one anterior measurement yields total corneal power via D = 337.5/r.",
   "k": "1.3375 is a fiction that absorbs the posterior surface.",
   "src": "sanitized"
@@ -2053,9 +2053,9 @@
   "t": "D1 Physical Optics",
   "q": "Light diverging from a point source carries vergence that is:",
   "o": [
+   "Positive",
    "Zero",
    "Undefined",
-   "Positive",
    "Negative"
   ],
   "a": 3,
@@ -2070,8 +2070,8 @@
   "q": "Light passing through a prism bends toward the base, while the image moves toward the:",
   "o": [
    "Optical center",
-   "Nearest edge",
    "Base as well",
+   "Nearest edge",
    "Apex"
   ],
   "a": 3,
@@ -2085,12 +2085,12 @@
   "t": "D1 Geometric Optics",
   "q": "The correcting prism for esotropia is:",
   "o": [
-   "Base up",
-   "Base out",
+   "Base in",
    "Base down",
-   "Base in"
+   "Base out",
+   "Base up"
   ],
-  "a": 1,
+  "a": 2,
   "w": "An esotropic eye turns inward, so the base points outward to draw the gaze back out. Exotropia takes base in. Light bends to the base, but the image shifts to the apex.",
   "k": "Esotropia = base out; exotropia = base in.",
   "src": "authored"
@@ -2101,12 +2101,12 @@
   "t": "D1 Geometric Optics",
   "q": "On the lens movement test, a plus lens shows:",
   "o": [
-   "No movement",
-   "With movement",
    "Rotational movement",
-   "Against movement"
+   "No movement",
+   "Against movement",
+   "With movement"
   ],
-  "a": 3,
+  "a": 2,
   "w": "A plus lens shows against movement, where the target travels opposite the lens. A minus lens shows with movement. Students routinely reverse this.",
   "k": "Plus = against movement; minus = with.",
   "src": "authored"
@@ -2117,12 +2117,12 @@
   "t": "D1 Geometric Optics",
   "q": "A convex mirror forms an image that is:",
   "o": [
-   "Real and magnified",
+   "Virtual and minified",
    "Real and inverted",
-   "Virtual and magnified",
-   "Virtual and minified"
+   "Real and magnified",
+   "Virtual and magnified"
   ],
-  "a": 3,
+  "a": 0,
   "w": "A convex mirror always gives a virtual, upright, minified image whatever the object position, which is why it is used as a wide-view security mirror.",
   "k": "Convex mirror: always virtual, upright, minified.",
   "src": "authored"
@@ -2133,12 +2133,12 @@
   "t": "D1 Geometric Optics",
   "q": "An object submerged in water appears:",
   "o": [
-   "Laterally displaced only",
-   "At its true depth",
    "Shallower than it is",
-   "Deeper than it is"
+   "Deeper than it is",
+   "Laterally displaced only",
+   "At its true depth"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Refraction makes objects in a denser medium appear closer to the observer. Apparent depth = actual depth ÷ n, the shallowing effect that makes pools look shallow.",
   "k": "Apparent depth = actual depth ÷ n.",
   "src": "authored"
@@ -2149,12 +2149,12 @@
   "t": "D2 Dispensing",
   "q": "Among CPF absorptive filters, a higher CPF number means the lens is:",
   "o": [
-   "Darker",
-   "Unchanged in tint",
+   "More reflective",
    "Lighter",
-   "More reflective"
+   "Unchanged in tint",
+   "Darker"
   ],
-  "a": 0,
+  "a": 3,
   "w": "A higher CPF number filters more and looks darker: CPF 450 is lightest, CPF 550 darkest. So CPF 527 is darker than CPF 450, not lighter.",
   "k": "Higher CPF number = darker lens.",
   "src": "authored"
@@ -2165,12 +2165,12 @@
   "t": "D2 Dispensing",
   "q": "Conventional slab-off is applied to which lens in anisometropia?",
   "o": [
+   "Either lens equally",
    "The more plus lens",
-   "The more minus lens",
    "The dominant eye's lens",
-   "Either lens equally"
+   "The more minus lens"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Slab-off removes base-down prism from the more minus (or less plus) lens, correcting the vertical imbalance at the reading level.",
   "k": "Slab-off goes on the more minus lens.",
   "src": "authored"
@@ -2182,9 +2182,9 @@
   "q": "In a front base toric (FBTT) lens, the base curve is:",
   "o": [
    "On the front, and spherical",
-   "On the front, and toric",
    "On the back, and toric",
-   "On the back, and spherical"
+   "On the back, and spherical",
+   "On the front, and toric"
   ],
   "a": 0,
   "w": "In FBTT the BC is on the front (segment side) and must be spherical, leaving the back toric. This is why FBTT is made in minus cylinder form.",
@@ -2197,12 +2197,12 @@
   "t": "D2 Dispensing",
   "q": "In an ultex base toric (UBTT) lens, which surface is the base curve?",
   "o": [
+   "The back",
    "The front, spherical",
    "Neither; both are toric",
-   "The back",
    "The front, calculated"
   ],
-  "a": 2,
+  "a": 0,
   "w": "In UBTT the BC is the back surface (−BC) and the front is derived. In SVTT it is the reverse: the BC is the front and the back is calculated.",
   "k": "UBTT: BC is the back; SVTT: BC is the front.",
   "src": "authored"
@@ -2213,12 +2213,12 @@
   "t": "D2 Dispensing",
   "q": "Which lens material has the HIGHER Abbe value?",
   "o": [
-   "They are identical",
    "CR-39",
+   "They are identical",
    "Neither has an Abbe value",
    "Polycarbonate"
   ],
-  "a": 1,
+  "a": 0,
   "w": "CR-39's Abbe value of 58 is far higher than polycarbonate's 30, so CR-39 shows much less chromatic aberration. Polycarbonate wins on impact resistance, not optics.",
   "k": "CR-39 Abbe 58 vs polycarbonate 30.",
   "src": "authored"
@@ -2229,13 +2229,13 @@
   "t": "D3 Contact Lens",
   "q": "PMMA is best described as:",
   "o": [
+   "A silicone hydrogel",
    "Moderately gas permeable",
-   "Non-gas permeable",
    "Highly gas permeable",
-   "A silicone hydrogel"
+   "Non-gas permeable"
   ],
-  "a": 1,
-  "w": "PMMA transmits no oxygen, which is why it caused corneal oedema and has been replaced by RGP materials whose different polymers do permit gas exchange.",
+  "a": 3,
+  "w": "PMMA transmits no oxygen, which is why it caused corneal edema and has been replaced by RGP materials whose different polymers do permit gas exchange.",
   "k": "PMMA = non-gas permeable; RGP = permeable.",
   "src": "authored"
  },
@@ -2245,12 +2245,12 @@
   "t": "D3 Contact Lens",
   "q": "Giant papillary conjunctivitis occurs in:",
   "o": [
+   "Soft lens wearers only",
    "Both soft and RGP wearers",
    "RGP wearers only",
-   "Extended wear only",
-   "Soft lens wearers only"
+   "Extended wear only"
   ],
-  "a": 0,
+  "a": 1,
   "w": "GPC/CLPC arises from lens deposits plus mechanical friction on the upper tarsus, so it affects both modalities. It is not exclusive to RGP.",
   "k": "GPC affects both soft and RGP wearers.",
   "src": "authored"
@@ -2263,10 +2263,10 @@
   "o": [
    "Superior comfort",
    "Better optics",
-   "Lower cost",
-   "Poor cleaning compliance"
+   "Poor cleaning compliance",
+   "Lower cost"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The driver in 1987 was hygiene: patients did not clean lenses reliably, so discarding them daily removed the deposit and solution problem altogether.",
   "k": "Daily disposables = hygiene, not comfort.",
   "src": "authored"
@@ -2309,12 +2309,12 @@
   "t": "D1 Physical Optics",
   "q": "A patient's spectacle prescription is OD −3.00 −1.00 × 90. The patient's pupillary distance is 30mm from the OC of the right lens. What is the prismatic effect?",
   "o": [
+   "0.9Δ base up",
    "1.5Δ base in",
    "1.2Δ base out",
-   "0.9Δ base in",
-   "0.9Δ base up"
+   "0.9Δ base in"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Using Prentice's rule: P = d × F = 3.0 cm × ... Wait — the question asks about a sphero-cylindrical lens. The prismatic effect at a given point depends on the meridional power in the direction of decentration. If the 3mm decentration is horizontal (temporal), we use the horizontal meridian power. For −3.00 −1.00 × 90: horizontal meridian (180°) = sphere = −3.00 D. P = 0.3 cm × 3.00 = 0.9Δ. For a minus lens, the prism base is AWAY from the optical center (toward the apex in the direction of displacement). With temporal decentration on OD, the base is temporal (outward) for plus lenses but for minus lenses the base is nasal (inward). Answer: 0.9Δ base in (nasal = toward nose). (Note: verify meridional power direction in exam context.)",
   "k": "Using Prentice's rule: P = d × F = 3.0 cm × ...",
   "src": "authored"
@@ -2325,12 +2325,12 @@
   "t": "D1 Physical Optics",
   "q": "A ray of light travels from crown glass (n = 1.523) into air at an angle of incidence of 50°. What happens?",
   "o": [
-   "Total internal reflection occurs",
-   "Light is completely absorbed",
    "Light refracts and bends toward the normal",
-   "Light refracts normally and bends away from the normal"
+   "Light refracts normally and bends away from the normal",
+   "Total internal reflection occurs",
+   "Light is completely absorbed"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The critical angle for crown glass → air is 41.04° (sin CA = 1.0/1.523). Since the angle of incidence (50°) exceeds the critical angle (41.04°), no light is transmitted into the air — total internal reflection occurs. This principle is applied in retinoscopy, prism design, and fiber optics.04°.",
   "k": "The critical angle for crown glass → air is 41.04° (sin CA = 1.0/1.523).",
   "src": "authored"
@@ -2357,12 +2357,12 @@
   "t": "D1 Geometric Optics",
   "q": "A dentist uses a concave mirror with radius of curvature 40mm to examine a tooth positioned 15mm from the mirror. What type of image is formed and what is the magnification?",
   "o": [
-   "Real, inverted, minified",
    "Virtual, upright, magnified",
+   "Virtual, upright, minified",
    "Real, inverted, magnified",
-   "Virtual, upright, minified"
+   "Real, inverted, minified"
   ],
-  "a": 1,
+  "a": 0,
   "w": "F = R/2 = 40/2 = 20mm. Object at 15mm = inside the focal length (15 < 20). When the object is between F and the mirror, the concave mirror produces a virtual, upright, magnified image behind the mirror (same as a magnifying mirror). Using the formula: 1/15 + 1/q = 1/20 → 1/q = 1/20 − 1/15 = 3/60 − 4/60 = −1/60 → q = −60mm (negative = virtual, behind mirror). M = −q/p = −(−60)/15 = +4. Positive m = upright; |m| = 4 = magnified 4×. This is exactly how dentist's mouth mirrors work — they are concave mirrors used with the tooth just inside the focal length to produce a magnified virtual image.",
   "k": "F = R/2 = 40/2 = 20mm.",
   "src": "authored"
@@ -2373,12 +2373,12 @@
   "t": "D1 Geometric Optics",
   "q": "A prism is prescribed for a patient with 8△ of right exotropia. The correct prism for the right eye is:",
   "o": [
-   "8△ Base Out right eye",
-   "8△ Base In right eye",
+   "4△ Base In each eye",
    "4△ Base Out each eye",
-   "4△ Base In each eye"
+   "8△ Base Out right eye",
+   "8△ Base In right eye"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Exotropia means the right eye deviates outward (temporally). To correct it, the prism must redirect the visual axis inward (nasally). A Base In prism has its apex temporal — light bends toward the base (nasal), and the eye follows the image toward the apex (temporal). Wait — re-reading: image displaces toward APEX. Apex is temporal → image appears temporal → eye moves toward apex (temporal). That would increase the exotropia. Let me reconsider. Correction: For exotropia (eye turns OUT), the correcting prism is Base IN. Here's the reasoning: the prism must move the image nasally (inward) so the eye moves inward to fixate it. With Base IN, the base faces nasally — light bends toward the nasal base — the image displaces toward the temporal APEX. The eye follows TOWARD THE APEX (temporal)... This seems wrong. Clarification: The rule is — the CORRECTING prism base points toward the deviated direction. Right exotropia = eye deviated OUT (temporal). Correcting prism base points INWARD (nasal) = Base IN. This places the base between the deviated eye and the image, bending light toward it. Answer: B (Base In right eye) or D (split equally). The Board most commonly asks for the full prism on the affected eye: B.",
   "k": "Exotropia means the right eye deviates outward (temporally).",
   "src": "authored"
@@ -2389,10 +2389,10 @@
   "t": "D1 Geometric Optics",
   "q": "A coin sits 40cm below the surface of water (n=1.33). Where does the coin appear to an observer directly above the water?",
   "o": [
+   "53 cm below the surface",
    "40 cm below the surface",
-   "27 cm below the surface",
    "30 cm below the surface",
-   "53 cm below the surface"
+   "27 cm below the surface"
   ],
   "a": 2,
   "w": "Using the shallowing formula for an observer in air (n' = 1.0): q = p × (n'/n) = 40 × (1.0/1.33) = 40/1.33 = 30.08 ≈ 30 cm. The coin appears 30cm deep, not 40cm. This is the shallowing effect — objects in denser media always appear closer to the observer due to refraction at the surface. The ratio 1/n = 1/1.33 = 0.75 means objects in water appear at 75% of their actual depth. This is also why pools appear shallower than they are, and why slit-lamp depth measurements must be corrected by dividing by the medium's index.",
@@ -2405,12 +2405,12 @@
   "t": "D2 Dispensing",
   "q": "A 35-year-old graphic designer spends 10 hours daily reading fine print on a computer. He is myopic (−2.50 D OU) and wants thin lenses. Which lens material would you prioritize?",
   "o": [
-   "CR-39",
-   "High-index glass",
    "Trivex",
+   "High-index glass",
+   "CR-39",
    "Polycarbonate"
   ],
-  "a": 0,
+  "a": 2,
   "w": "For a sedentary professional spending hours reading through lenses — especially at a monitor where off-axis gaze is constant — optical quality (Abbe value) is the priority. CR-39 has Abbe=58, producing minimal color fringing even in peripheral gaze. While polycarbonate would be thinner, its Abbe=30 produces significant color aberration during sustained near work, causing visual fatigue. High-index glass is thinner but has lower Abbe (36) and is heavier. Trivex (Abbe 43-45) is a reasonable compromise but costs more without significant advantage here. For −2.50 D, the lens is already relatively thin in CR-39. Safety is not a primary concern for this patient in a seated work environment.",
   "k": "For a sedentary professional spending hours reading through lenses — especially at a monitor where off-axis…",
   "src": "authored"
@@ -2421,12 +2421,12 @@
   "t": "D2 Dispensing",
   "q": "A patient with anisometropia (OD +1.00D, OS +4.50D) looks down 8mm below the optical centers while reading. What is the vertical prism differential at the reading level, and which method should be used to correct it?",
   "o": [
-   "2.8Δ differential; slab-off on OS",
    "2.8Δ differential; drop the distance OC",
+   "2.8Δ differential; slab-off on OS",
    "0.8Δ differential; dissimilar segments",
    "3.6Δ differential; slab-off on OD"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Using Prentice's rule for each eye at 8mm (0.8cm) below OC: OD prism = 0.8 × 1.00 = 0.8Δ BU; OS prism = 0.8 × 4.50 = 3.6Δ BU. Differential = 3.6 − 0.8 = 2.8Δ. Since 2.8Δ > 1.5Δ, slab-off is indicated. For two plus lenses, slab-off is ground on the MOST PLUS lens (OS = +4.50). Slab-off creates base-up prism in the reading zone to neutralize the differential. Drop OC is only used for differentials ≤ 1.5Δ.",
   "k": "Using Prentice's rule for each eye at 8mm (0.8cm) below OC: OD prism = 0.8 × 1.00 = 0.8Δ BU; OS prism = 0.8 ×…",
   "src": "authored"
@@ -2455,10 +2455,10 @@
   "o": [
    "Corneal abrasion from flat-fitting lens",
    "GPC from protein deposits",
-   "Microbial keratitis",
-   "Corneal neovascularization from chronic hypoxia"
+   "Corneal neovascularization from chronic hypoxia",
+   "Microbial keratitis"
   ],
-  "a": 2,
+  "a": 3,
   "w": "A white infiltrate with fluorescein staining in a CL wearer is microbial keratitis until proven otherwise — this is the most serious CL complication and a potential sight-threatening emergency. The combination of pain, infiltrate, and staining requires immediate removal of the lens and urgent referral to an ophthalmologist for culture, scraping, and topical antibiotics. Extended or continuous wear, poor hygiene, and swimming with lenses are major risk factors. Pseudomonas aeruginosa is the most common organism in CL-related infectious keratitis. GPC presents as cobblestone papillae under the upper lid (not infiltrate). Neovascularization is asymptomatic initially. Abrasion would not typically present with a white infiltrate.",
   "k": "A white infiltrate with fluorescein staining in a CL wearer is microbial keratitis until proven otherwise…",
   "src": "authored"
@@ -2469,12 +2469,12 @@
   "t": "D3 Contact Lens",
   "q": "A patient's spectacle refraction is −6.50D at a vertex distance of 14mm. What is the appropriate contact lens power to prescribe?",
   "o": [
-   "−6.25D",
    "−5.75D",
    "−6.50D",
-   "−6.00D"
+   "−6.00D",
+   "−6.25D"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Using the vertex distance formula: D_CL = D_Spec / (1 − d × D_Spec) = −6.50 / (1 − 0.014 × (−6.50)) = −6.50 / (1 + 0.091) = −6.50 / 1.091 = −5.96D → round to −6.00D. The vertex distance effect is significant here because |Rx| > 4.00D. Moving a minus lens from 14mm (spectacle plane) to 0mm (corneal plane) reduces the effective minus power needed. If you prescribed the same −6.50D as a CL, the patient would be overcorrected (too much minus at the cornea).",
   "k": "Using the vertex distance formula: D_CL = D_Spec / (1 − d × D_Spec) = −6.50 / (1 − 0.014 × (−6.50)) = −6.50 /…",
   "src": "authored"
@@ -2501,9 +2501,9 @@
   "t": "D1 Geometric Optics",
   "q": "In the mirror and lens formula, a POSITIVE image distance q indicates:",
   "o": [
-   "An upright image",
-   "A minified image",
    "A virtual image",
+   "A minified image",
+   "An upright image",
    "A real image"
   ],
   "a": 3,
@@ -2517,12 +2517,12 @@
   "t": "D1 Geometric Optics",
   "q": "A NEGATIVE magnification m indicates an image that is:",
   "o": [
-   "Virtual",
    "Minified",
-   "Upright",
-   "Inverted"
+   "Virtual",
+   "Inverted",
+   "Upright"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The sign of m gives orientation, not size: negative is inverted, positive is upright. The magnitude of m gives the size.",
   "k": "m negative = inverted; m positive = upright.",
   "src": "authored"
@@ -2533,12 +2533,12 @@
   "t": "D1 Geometric Optics",
   "q": "The focal length of a convex mirror is:",
   "o": [
-   "Zero",
    "Positive, since it converges",
    "Negative, since it diverges",
+   "Zero",
    "Equal to its radius"
   ],
-  "a": 2,
+  "a": 1,
   "w": "A convex mirror diverges, so f is negative and the image is always virtual, upright and minified. A concave mirror converges and has a positive f.",
   "k": "Convex mirror f negative; concave f positive.",
   "src": "authored"
@@ -2549,10 +2549,10 @@
   "t": "D1 Geometric Optics",
   "q": "One degree of deviation equals how many prism dioptres?",
   "o": [
-   "1.00Δ",
    "0.57Δ",
+   "2.00Δ",
    "1.75Δ",
-   "2.00Δ"
+   "1.00Δ"
   ],
   "a": 2,
   "w": "1° ≈ 1.75Δ. The reciprocal is also worth knowing: 1Δ ≈ 0.57°. Board questions convert between the two.",
@@ -2565,9 +2565,9 @@
   "t": "D1 Geometric Optics",
   "q": "The laws of reflection state that the angle of incidence equals the angle of reflection, and that:",
   "o": [
+   "The ray speeds up on reflection",
    "The image is always real",
    "The reflected ray bends toward the normal",
-   "The ray speeds up on reflection",
    "Incident ray, normal and reflected ray are coplanar"
   ],
   "a": 3,
@@ -2582,9 +2582,9 @@
   "q": "Why does a contact lens reduce the cornea's contribution to refractive power?",
   "o": [
    "It removes the air-to-cornea index step",
+   "It flattens the corneal curvature",
    "It sits closer to the nodal point",
-   "It absorbs part of the incident light",
-   "It flattens the corneal curvature"
+   "It absorbs part of the incident light"
   ],
   "a": 0,
   "w": "The tear layer under the lens abolishes the large air-cornea index jump that supplies most of the cornea's 43 D. The step is re-created at the contact lens front surface instead.",
@@ -2691,7 +2691,7 @@
   "id": "D0169",
   "sec": "D1-CONSTANTS",
   "t": "D1 Physical Optics",
-  "q": "The eye's centre of rotation lies approximately how far behind the corneal apex?",
+  "q": "The eye's center of rotation lies approximately how far behind the corneal apex?",
   "o": [
    "7.08 mm",
    "7.33 mm",
@@ -2699,7 +2699,7 @@
    "24 mm"
   ],
   "a": 2,
-  "w": "The centre of rotation sits about 13.5 mm behind the corneal apex. The nodal points are far more anterior at 7.08 mm and 7.33 mm.",
+  "w": "The center of rotation sits about 13.5 mm behind the corneal apex. The nodal points are far more anterior at 7.08 mm and 7.33 mm.",
   "k": "Centre of rotation 13.5 mm; nodal points 7.08/7.33 mm.",
   "src": "authored"
  },
@@ -2709,12 +2709,12 @@
   "t": "D1 Physical Optics",
   "q": "The primary and secondary nodal points of the eye lie at:",
   "o": [
+   "24.0 mm and 24.4 mm",
    "7.08 mm and 7.33 mm",
    "13.5 mm and 14.0 mm",
-   "24.0 mm and 24.4 mm",
    "1.35 mm and 1.60 mm"
   ],
-  "a": 0,
+  "a": 1,
   "w": "N sits at 7.08 mm and N' at 7.33 mm behind the corneal apex. A ray aimed at the nodal point emerges undeviated, which is what makes them the reference for angle alpha.",
   "k": "Nodal points: N 7.08 mm, N' 7.33 mm.",
   "src": "authored"
@@ -2725,9 +2725,9 @@
   "t": "D1 Physical Optics",
   "q": "Which term describes n₁ sin i = n₂ sin R; governs bending at every optical interface?",
   "o": [
+   "Diopter",
    "TIR",
    "Prentice's Rule",
-   "Diopter",
    "Snell's Law"
   ],
   "a": 3,
@@ -2741,10 +2741,10 @@
   "t": "D1 Physical Optics",
   "q": "Which term describes light going dense→rare beyond critical angle is fully reflected?",
   "o": [
-   "Diopter",
+   "Prentice's Rule",
    "TIR",
    "Snell's Law",
-   "Prentice's Rule"
+   "Diopter"
   ],
   "a": 1,
   "w": "TIR: Total Internal Reflection. Light going dense→rare beyond critical angle is fully reflected",
@@ -2758,9 +2758,9 @@
   "q": "Which term describes unit of vergence and lens power = 1/f (meters)?",
   "o": [
    "Diopter",
+   "TIR",
    "Prentice's Rule",
-   "Snell's Law",
-   "TIR"
+   "Snell's Law"
   ],
   "a": 0,
   "w": "Diopter: Named after Greek dioptron. Unit of vergence and lens power = 1/f (meters)",
@@ -2773,12 +2773,12 @@
   "t": "D1 Physical Optics",
   "q": "Which term describes prismatic effect P = d × F; d = distance from OC in cm, F = power in D?",
   "o": [
-   "Snell's Law",
-   "TIR",
+   "Prentice's Rule",
    "Diopter",
-   "Prentice's Rule"
+   "Snell's Law",
+   "TIR"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Prentice's Rule: Named after Charles Prentice. Prismatic effect P = d × F; d = distance from OC in cm, F = power in D",
   "k": "Prentice's Rule = Prismatic effect P = d × F; d = distance from OC in cm, F = power in D",
   "src": "authored"
@@ -2789,12 +2789,12 @@
   "t": "D1 Physical Optics",
   "q": "Which term describes measure of chromatic aberration; higher = less dispersion = better optical quality?",
   "o": [
-   "Snell's Law",
-   "TIR",
    "Abbe value",
-   "Diopter"
+   "Diopter",
+   "Snell's Law",
+   "TIR"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Abbe value: Named after Ernst Abbe. Measure of chromatic aberration; higher = less dispersion = better optical quality",
   "k": "Abbe value = Measure of chromatic aberration; higher = less dispersion = better optical quality",
   "src": "authored"
@@ -2870,8 +2870,8 @@
   "q": "The trivex Abbe is:",
   "o": [
    "1.498",
-   "1.20",
    "1.586",
+   "1.20",
    "43–45"
   ],
   "a": 3,
@@ -2917,12 +2917,12 @@
   "t": "D2 Dispensing",
   "q": "Which term describes lens that darkens on UV exposure via silver halide reaction?",
   "o": [
-   "CPF filter",
+   "Photochromic",
    "Wratten filter",
    "Specific gravity",
-   "Photochromic"
+   "CPF filter"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Photochromic: Greek photos + chroma. Lens that darkens on UV exposure via silver halide reaction",
   "k": "Photochromic = Lens that darkens on UV exposure via silver halide reaction",
   "src": "authored"
@@ -2949,12 +2949,12 @@
   "t": "D2 Dispensing",
   "q": "Which term describes gelatin/glass trial filter for low vision assessment?",
   "o": [
-   "CPF filter",
    "Specific gravity",
-   "Photochromic",
-   "Wratten filter"
+   "CPF filter",
+   "Wratten filter",
+   "Photochromic"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Wratten filter: Named after Frederick Wratten. Gelatin/glass trial filter for low vision assessment",
   "k": "Wratten filter = Gelatin/glass trial filter for low vision assessment",
   "src": "authored"
@@ -2965,10 +2965,10 @@
   "t": "D3 Contact Lens",
   "q": "The first soft CL FDA approval is:",
   "o": [
-   "1987",
    "7.4",
+   "1999–2002",
    "1971",
-   "1999–2002"
+   "1987"
   ],
   "a": 2,
   "w": "First soft CL FDA approval: 1971. Hydrogel CL mainstream availability",
@@ -2983,10 +2983,10 @@
   "o": [
    "7.4",
    "1999–2002",
-   "1987",
-   "1971"
+   "1971",
+   "1987"
   ],
-  "a": 2,
+  "a": 3,
   "w": "First disposable CL: 1987. Hygiene improvement",
   "k": "First disposable CL = 1987",
   "src": "authored"
@@ -2997,10 +2997,10 @@
   "t": "D3 Contact Lens",
   "q": "The first silicone hydrogel is:",
   "o": [
-   "1987",
+   "7.4",
    "1999–2002",
-   "1971",
-   "7.4"
+   "1987",
+   "1971"
   ],
   "a": 1,
   "w": "First silicone hydrogel: 1999–2002. O2 breakthrough",
@@ -3014,9 +3014,9 @@
   "q": "The SCL diameter is:",
   "o": [
    "13.5–15 mm",
+   "Flatter than K by ~0.8–1.0 mm",
    "11.7 mm average",
-   "8–10 mm",
-   "Flatter than K by ~0.8–1.0 mm"
+   "8–10 mm"
   ],
   "a": 0,
   "w": "SCL diameter: 13.5–15 mm. Covers limbus",
@@ -3029,9 +3029,9 @@
   "t": "D3 Contact Lens",
   "q": "The RGP diameter is:",
   "o": [
-   "Flatter than K by ~0.8–1.0 mm",
    "13.5–15 mm",
    "11.7 mm average",
+   "Flatter than K by ~0.8–1.0 mm",
    "8–10 mm"
   ],
   "a": 3,
@@ -3047,8 +3047,8 @@
   "o": [
    "Steeper than K by 0.8–1.0 mm",
    "Flatter than K by 0.8–1.0 mm",
-   "Equal to the flattest K",
-   "Flatter than K by 3.0 mm"
+   "Flatter than K by 3.0 mm",
+   "Equal to the flattest K"
   ],
   "a": 1,
   "w": "SCL typical BC: Flatter than K by ~0.8–1.0 mm. Starting point for empirical fit",
@@ -3062,11 +3062,11 @@
   "q": "The tear film pH is:",
   "o": [
    "1971",
+   "7.4",
    "1999–2002",
-   "1987",
-   "7.4"
+   "1987"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Tear film pH: 7.4. CL solution target range",
   "k": "Tear film pH = 7.4",
   "src": "authored"
@@ -3093,10 +3093,10 @@
   "t": "D3 Contact Lens",
   "q": "The HVID is:",
   "o": [
-   "13.5–15 mm",
+   "Flatter than K by ~0.8–1.0 mm",
    "8–10 mm",
    "11.7 mm average",
-   "Flatter than K by ~0.8–1.0 mm"
+   "13.5–15 mm"
   ],
   "a": 2,
   "w": "HVID: 11.7 mm average. Horizontal visible iris diameter; SCL diameter = HVID + ~2 mm",
@@ -3109,12 +3109,12 @@
   "t": "D3 Contact Lens",
   "q": "The VVID is:",
   "o": [
-   "Flatter than K by ~0.8–1.0 mm",
    "13.5–15 mm",
    "8–10 mm",
-   "10.6 mm average"
+   "10.6 mm average",
+   "Flatter than K by ~0.8–1.0 mm"
   ],
-  "a": 3,
+  "a": 2,
   "w": "VVID: 10.6 mm average. Vertical visible iris diameter",
   "k": "VVID = 10.6 mm average",
   "src": "authored"
@@ -3125,12 +3125,12 @@
   "t": "D3 Contact Lens",
   "q": "The vertex distance correction threshold is:",
   "o": [
-   "> ±4.00 D",
    "−2.00 D",
-   "D_CL = Sph + ½ Cyl",
-   "−6.00 D"
+   "−6.00 D",
+   "> ±4.00 D",
+   "D_CL = Sph + ½ Cyl"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Vertex distance correction threshold: > ±4.00 D. Below this, CL power = spectacle power",
   "k": "Vertex distance correction threshold = > ±4.00 D",
   "src": "authored"
@@ -3141,12 +3141,12 @@
   "t": "D3 Contact Lens",
   "q": "The spherical equivalent rule is:",
   "o": [
-   "D_CL = Sph + ½ Cyl",
    "−2.00 D",
    "> ±4.00 D",
-   "−6.00 D"
+   "−6.00 D",
+   "D_CL = Sph + ½ Cyl"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Spherical equivalent rule: D_CL = Sph + ½ Cyl (if cyl < 1.00 D). \"4:1 rule\"; round to nearest 0.25 D",
   "k": "Spherical equivalent rule = D_CL = Sph + ½ Cyl (if cyl < 1.00 D)",
   "src": "authored"
@@ -3157,12 +3157,12 @@
   "t": "D3 Contact Lens",
   "q": "The SCL BOZR selection is:",
   "o": [
-   "8–10 mm",
    "13.5–15 mm",
-   "Flattest K + 0.3–0.9 mm",
-   "Flatter than K by ~0.8–1.0 mm"
+   "Flatter than K by ~0.8–1.0 mm",
+   "8–10 mm",
+   "Flattest K + 0.3–0.9 mm"
   ],
-  "a": 2,
+  "a": 3,
   "w": "SCL BOZR selection: Flattest K + 0.3–0.9 mm. Starting point; steepen if steep fit, flatten if flat fit",
   "k": "SCL BOZR selection = Flattest K + 0.3–0.9 mm",
   "src": "authored"
@@ -3173,12 +3173,12 @@
   "t": "D3 Contact Lens",
   "q": "The soft lens TD/BOZR rule is:",
   "o": [
-   "Flatter than K by ~0.8–1.0 mm",
-   "13.5–15 mm",
    "ΔTD 0.5 mm = ΔBOZR 0.3 mm",
+   "13.5–15 mm",
+   "Flatter than K by ~0.8–1.0 mm",
    "8–10 mm"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Soft lens TD/BOZR rule: ΔTD 0.5 mm = ΔBOZR 0.3 mm. Change diameter → compensate BOZR",
   "k": "Soft lens TD/BOZR rule = ΔTD 0.5 mm = ΔBOZR 0.3 mm",
   "src": "authored"
@@ -3189,12 +3189,12 @@
   "t": "D3 Contact Lens",
   "q": "The ortho-K max myopia is:",
   "o": [
-   "> ±4.00 D",
-   "−2.00 D",
    "−6.00 D",
-   "D_CL = Sph + ½ Cyl"
+   "D_CL = Sph + ½ Cyl",
+   "−2.00 D",
+   "> ±4.00 D"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Ortho-K max myopia: −6.00 D. Beyond this, insufficient corneal flattening",
   "k": "Ortho-K max myopia = −6.00 D",
   "src": "authored"
@@ -3205,8 +3205,8 @@
   "t": "D3 Contact Lens",
   "q": "The ortho-K max astigmatism is:",
   "o": [
-   "D_CL = Sph + ½ Cyl",
    "> ±4.00 D",
+   "D_CL = Sph + ½ Cyl",
    "−6.00 D",
    "−2.00 D"
   ],
@@ -3221,12 +3221,12 @@
   "t": "D3 Contact Lens",
   "q": "Which term describes dk ÷ lens thickness (t); the actual oxygen delivery to the cornea?",
   "o": [
-   "Base curve",
    "Dk/t",
    "PMMA",
+   "Base curve",
    "HEMA"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Dk/t: Oxygen transmissibility. Dk ÷ lens thickness (t); the actual oxygen delivery to the cornea",
   "k": "Dk/t = Dk ÷ lens thickness (t); the actual oxygen delivery to the cornea",
   "src": "authored"
@@ -3237,12 +3237,12 @@
   "t": "D3 Contact Lens",
   "q": "Which term describes must approximate the corneal curvature for proper fit?",
   "o": [
-   "Dk/t",
-   "PMMA",
+   "HEMA",
    "Base curve",
-   "HEMA"
+   "PMMA",
+   "Dk/t"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Base curve (BC): Radius of curvature of the back surface. Must approximate the corneal curvature for proper fit",
   "k": "Base curve (BC) = Must approximate the corneal curvature for proper fit",
   "src": "authored"
@@ -3253,9 +3253,9 @@
   "t": "D3 Contact Lens",
   "q": "Which term describes monomer developed by Wichterle; basis of all hydrogel soft CL?",
   "o": [
-   "PMMA",
-   "Dk/t",
    "Base curve",
+   "Dk/t",
+   "PMMA",
    "HEMA"
   ],
   "a": 3,
@@ -3269,12 +3269,12 @@
   "t": "D3 Contact Lens",
   "q": "Which term describes first plastic CL material; non-gas permeable; Kevin Touhy (1947)?",
   "o": [
+   "HEMA",
    "Dk/t",
    "Base curve",
-   "PMMA",
-   "HEMA"
+   "PMMA"
   ],
-  "a": 2,
+  "a": 3,
   "w": "PMMA: Polymethyl methacrylate. First plastic CL material; non-gas permeable; Kevin Touhy (1947)",
   "k": "PMMA = First plastic CL material; non-gas permeable; Kevin Touhy (1947)",
   "src": "authored"
@@ -3286,11 +3286,11 @@
   "q": "Which term describes hard lens that transmits oxygen through the polymer?",
   "o": [
    "HEMA",
-   "RGP",
    "Dk/t",
-   "Base curve"
+   "Base curve",
+   "RGP"
   ],
-  "a": 1,
+  "a": 3,
   "w": "RGP: Rigid Gas Permeable. Hard lens that transmits oxygen through the polymer",
   "k": "RGP = Hard lens that transmits oxygen through the polymer",
   "src": "authored"
@@ -3301,14 +3301,110 @@
   "t": "D3 Contact Lens",
   "q": "Which term describes overnight wear of specially designed RGP to temporarily reshape cornea; corrects myopia?",
   "o": [
-   "Ortho-K",
-   "Base curve",
+   "Dk/t",
    "HEMA",
-   "Dk/t"
+   "Base curve",
+   "Ortho-K"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Ortho-K: Orthokeratology. Overnight wear of specially designed RGP to temporarily reshape cornea; corrects myopia",
   "k": "Ortho-K = Overnight wear of specially designed RGP to temporarily reshape cornea; corrects myopia",
+  "src": "authored"
+ },
+ {
+  "id": "D0208",
+  "sec": "D-consolidated",
+  "t": "D1 Physical Optics",
+  "q": "Ametropia arising from normal biological variation, largely hereditary and generally under 6.00 D, is termed:",
+  "o": [
+   "Acquired ametropia",
+   "Correlative ametropia",
+   "Component ametropia",
+   "Pathological ametropia"
+  ],
+  "a": 1,
+  "w": "Correlative (simple) ametropia comes from normal variation in otherwise normal components, runs about 0.25 to 6.00 D and is not progressive beyond normal growth. Component (pathological) ametropia comes from abnormal development or disease, can exceed 6.00 D and can keep progressing.",
+  "k": "Correlative = simple, <6 D, normal variation; component = pathological, >6 D.",
+  "src": "authored"
+ },
+ {
+  "id": "D0209",
+  "sec": "D-consolidated",
+  "t": "D1 Physical Optics",
+  "q": "Ametropia due to abnormal development or acquired disease, able to progress beyond 6.00 D, is termed:",
+  "o": [
+   "Correlative ametropia",
+   "Component ametropia",
+   "Physiological ametropia",
+   "Simple ametropia"
+  ],
+  "a": 1,
+  "w": "Component ametropia is the pathological form: one ocular component is genuinely abnormal, so the error can exceed 6.00 D and progress. Correlative ametropia is normal variation and stays under about 6.00 D.",
+  "k": "Component = pathological, can exceed 6 D and progress.",
+  "src": "authored"
+ },
+ {
+  "id": "D0210",
+  "sec": "D-consolidated",
+  "t": "D1 Physical Optics",
+  "q": "Axial length increases by roughly how much from birth to age 3?",
+  "o": [
+   "0.5 mm",
+   "1 mm",
+   "5 mm",
+   "10 mm"
+  ],
+  "a": 2,
+  "w": "The globe grows about 5 mm in the first three years, the fastest phase, then about 1 mm per year from 3 to 13. This rapid early growth is what emmetropization has to track.",
+  "k": "Axial length: +5 mm birth to 3; ~1 mm/yr from 3 to 13.",
+  "src": "authored"
+ },
+ {
+  "id": "D0211",
+  "sec": "D-consolidated",
+  "t": "D1 Physical Optics",
+  "q": "Between ages 3 and 13, axial length increases by approximately:",
+  "o": [
+   "3 mm per year",
+   "0.1 mm per year",
+   "5 mm per year",
+   "1 mm per year"
+  ],
+  "a": 3,
+  "w": "About 1 mm per year from 3 to 13, against roughly 5 mm total in the first three years. The globe grows most rapidly pre-school.",
+  "k": "Axial growth 3–13 years ≈ 1 mm/year.",
+  "src": "authored"
+ },
+ {
+  "id": "D0212",
+  "sec": "D-consolidated",
+  "t": "D2 Dispensing",
+  "q": "Aniseikonia in which one ocular image is larger in a single meridian only is called:",
+  "o": [
+   "Asymmetrical",
+   "Meridional symmetrical",
+   "Compound symmetrical",
+   "Overall symmetrical"
+  ],
+  "a": 1,
+  "w": "Meridional symmetrical aniseikonia enlarges one meridian, usually vertical or horizontal, and typically follows meridional (cylindrical) correction. Overall symmetrical enlarges all dimensions equally; compound combines the two.",
+  "k": "Meridional = one meridian only; overall = all dimensions.",
+  "src": "authored"
+ },
+ {
+  "id": "D0213",
+  "sec": "D-consolidated",
+  "t": "D2 Dispensing",
+  "q": "Aniseikonia in which one image is symmetrically larger in ALL dimensions is called:",
+  "o": [
+   "Meridional symmetrical",
+   "Overall symmetrical",
+   "Compound symmetrical",
+   "Cylindrical"
+  ],
+  "a": 1,
+  "w": "Overall symmetrical aniseikonia scales the whole image and typically follows spherical anisometropia. Meridional affects one meridian; compound is a combination of both.",
+  "k": "Overall symmetrical = image scaled in every dimension.",
   "src": "authored"
  }
 ]

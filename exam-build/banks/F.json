@@ -6,11 +6,11 @@
   "q": "Which DPA produces mydriasis WITHOUT cycloplegia?",
   "o": [
    "Proparacaine",
+   "Cyclopentolate",
    "Phenylephrine 2.5%",
-   "Tropicamide",
-   "Cyclopentolate"
+   "Tropicamide"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Phenylephrine is an α1 agonist on the dilator; the ciliary muscle has no α1, so accommodation is untouched.",
   "k": "Phenylephrine dilates without cycloplegia.",
   "src": "legacy"
@@ -21,12 +21,12 @@
   "t": "F1 DPA",
   "q": "Why does phenylephrine spare accommodation?",
   "o": [
-   "α1 agonist; ciliary muscle has no α1",
+   "It blocks M3 only on the sphincter",
    "It relaxes the ciliary muscle directly",
    "It inhibits acetylcholinesterase",
-   "It blocks M3 only on the sphincter"
+   "α1 agonist; ciliary muscle has no α1"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Phenylephrine acts on sympathetic α1 (dilator); the ciliary muscle is purely M3, so it is unaffected.",
   "k": "α1 dilator only; ciliary muscle is M3.",
   "src": "sanitized"
@@ -37,12 +37,12 @@
   "t": "F1 DPA",
   "q": "The preferred dilating agent in pregnancy is:",
   "o": [
-   "Atropine 1%",
-   "Cyclopentolate 1%",
    "Phenylephrine 10%",
-   "Tropicamide 0.5%"
+   "Atropine 1%",
+   "Tropicamide 0.5%",
+   "Cyclopentolate 1%"
   ],
-  "a": 3,
+  "a": 2,
   "w": "All DPAs are FDA Category C; tropicamide has the shortest duration and least systemic exposure.",
   "k": "Pregnancy dilator = tropicamide.",
   "src": "legacy"
@@ -53,12 +53,12 @@
   "t": "F1 DPA",
   "q": "Pressing the inner canthus for 2 minutes after instillation (nasolacrimal occlusion) serves to:",
   "o": [
+   "Reduce systemic drug absorption",
    "Speed onset",
-   "Reduce stinging",
    "Stop the drug working on the eye",
-   "Reduce systemic drug absorption"
+   "Reduce stinging"
   ],
-  "a": 3,
+  "a": 0,
   "w": "NLO blocks drainage through the nasolacrimal duct, limiting systemic side effects.",
   "k": "NLO = 2 min, limits systemic absorption.",
   "src": "legacy"
@@ -69,12 +69,12 @@
   "t": "F1 DPA",
   "q": "Which DPA should NEVER be prescribed for home use, because it masks corneal damage?",
   "o": [
+   "Phenylephrine",
    "Proparacaine",
    "Tropicamide",
-   "Fluorescein",
-   "Phenylephrine"
+   "Fluorescein"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Proparacaine abolishes corneal sensation; chronic use lets injury progress unfelt (neurotrophic keratopathy).",
   "k": "Proparacaine = office only.",
   "src": "legacy"
@@ -85,12 +85,12 @@
   "t": "F1 DPA",
   "q": "Fluorescein must NOT be used when the patient is wearing:",
   "o": [
-   "Rigid gas-permeable lenses",
    "Soft contact lenses",
-   "An eye patch",
-   "Spectacles"
+   "Rigid gas-permeable lenses",
+   "Spectacles",
+   "An eye patch"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Fluorescein permanently stains hydrogel (soft) lenses; remove them first.",
   "k": "Fluorescein stains soft lenses.",
   "src": "legacy"
@@ -102,9 +102,9 @@
   "q": "All mydriatic DPAs share which absolute contraindication?",
   "o": [
    "Narrow / angle-closure glaucoma",
+   "Hypertension",
    "Open-angle glaucoma",
-   "Dry eye",
-   "Hypertension"
+   "Dry eye"
   ],
   "a": 0,
   "w": "Dilation can push the iris into the angle and trigger acute angle-closure.",
@@ -117,12 +117,12 @@
   "t": "F1 DPA",
   "q": "The strongest cycloplegic among the routinely used DPAs for pediatric refraction is:",
   "o": [
-   "Tropicamide",
-   "Proparacaine",
+   "Phenylephrine",
    "Cyclopentolate",
-   "Phenylephrine"
+   "Proparacaine",
+   "Tropicamide"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Cyclopentolate gives stronger, more reliable cycloplegia than tropicamide (atropine is stronger but not a routine DPA).",
   "k": "Cyclopentolate = strongest routine cycloplegic.",
   "src": "legacy"
@@ -133,12 +133,12 @@
   "t": "F1 DPA",
   "q": "Tropicamide and cyclopentolate dilate the pupil by:",
   "o": [
-   "Constricting conjunctival vessels",
-   "Stimulating α1 on the dilator muscle",
    "Inhibiting acetylcholinesterase",
-   "Blocking M3 so the sphincter relaxes"
+   "Blocking M3 so the sphincter relaxes",
+   "Stimulating α1 on the dilator muscle",
+   "Constricting conjunctival vessels"
   ],
-  "a": 3,
+  "a": 1,
   "w": "As M3 antagonists they relax the sphincter; the unopposed dilator opens the pupil (and the ciliary muscle relaxes = cycloplegia).",
   "k": "M3 block = sphincter relaxes, dilator opens.",
   "src": "sanitized"
@@ -149,12 +149,12 @@
   "t": "F1 DPA",
   "q": "Proparacaine works by:",
   "o": [
+   "Blocking sodium channels",
    "Fluorescing under blue light",
-   "Blocking M3 receptors",
    "Stimulating α1 receptors",
-   "Blocking sodium channels"
+   "Blocking M3 receptors"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Proparacaine is a sodium-channel blocking ester anesthetic with rapid onset and short duration.",
   "k": "Proparacaine blocks Na+ channels.",
   "src": "sanitized"
@@ -165,12 +165,12 @@
   "t": "F1 DPA",
   "q": "Fluorescein fluoresces best under which light?",
   "o": [
+   "Red-free light",
    "Cobalt blue",
    "Infrared",
-   "Red-free light",
    "White light"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Fluorescein absorbs blue near 465 nm and emits green, so defects glow under cobalt blue.",
   "k": "Fluorescein + cobalt blue (465 nm).",
   "src": "legacy"
@@ -197,12 +197,12 @@
   "t": "F1 DPA",
   "q": "Cyclopentolate at 2% in a young child risks which adverse effect?",
   "o": [
-   "Photokeratitis",
+   "Dry eye",
    "Bradycardia",
-   "CNS toxicity",
-   "Dry eye"
+   "Photokeratitis",
+   "CNS toxicity"
   ],
-  "a": 2,
+  "a": 3,
   "w": "A child's immature liver lets the drug accumulate and cross into the CNS; use 0.5–1% and apply NLO.",
   "k": "Cyclopentolate 2% in kids = CNS toxicity.",
   "src": "legacy"
@@ -214,9 +214,9 @@
   "q": "By what age should an infant's eyes be consistently straight?",
   "o": [
    "3–4 months",
-   "1 month",
+   "9 months",
    "2 years",
-   "9 months"
+   "1 month"
   ],
   "a": 0,
   "w": "Stable ocular alignment is expected by 3–4 months; persistent deviation beyond this warrants evaluation.",
@@ -229,12 +229,12 @@
   "t": "F2 Pediatric",
   "q": "Which visual acuity test is used for non-verbal infants?",
   "o": [
-   "Ishihara",
    "Preferential looking",
    "Snellen chart",
-   "HOTV"
+   "HOTV",
+   "Ishihara"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Preferential looking (Teller cards) measures infant VA by gaze preference for a grating.",
   "k": "Infant VA = preferential looking (Teller).",
   "src": "legacy"
@@ -245,12 +245,12 @@
   "t": "F2 Pediatric",
   "q": "For a cooperative 3–5 year old, an appropriate VA test is:",
   "o": [
-   "Snellen letter chart",
    "Pelli-Robson chart",
    "HOTV or Lea Symbols",
+   "Snellen letter chart",
    "Teller acuity cards"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Matching/picture tests (HOTV, Lea Symbols, Allen) suit preschoolers who cannot read letters.",
   "k": "Preschool VA = HOTV / Lea / Allen.",
   "src": "sanitized"
@@ -261,12 +261,12 @@
   "t": "F2 Pediatric",
   "q": "Which amblyopia type has the WORST prognosis?",
   "o": [
+   "Deprivation",
    "Anisometropic",
    "Meridional",
-   "Strabismic",
-   "Deprivation"
+   "Strabismic"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Deprivation amblyopia (cataract, ptosis) has the worst prognosis and must be treated within the critical period.",
   "k": "Deprivation amblyopia = worst prognosis.",
   "src": "legacy"
@@ -277,12 +277,12 @@
   "t": "F2 Pediatric",
   "q": "The first treatment step for amblyopia is:",
   "o": [
+   "Full spectacle correction",
    "Early strabismus surgery",
    "Atropine penalization",
-   "Full spectacle correction",
    "Immediate part-time patching"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Full spectacle correction comes first; patching is added only if VA does not normalize with glasses alone.",
   "k": "Amblyopia: refract + glasses first.",
   "src": "sanitized"
@@ -309,12 +309,12 @@
   "t": "F2 Pediatric",
   "q": "The first management of accommodative esotropia is:",
   "o": [
-   "Full hyperopic correction",
-   "Base-out prism at near",
    "Early strabismus surgery",
-   "Patching the sound eye"
+   "Patching the sound eye",
+   "Base-out prism at near",
+   "Full hyperopic correction"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Full plus removes the accommodative drive; surgery is reserved for residual deviation after maximal correction.",
   "k": "Accommodative ET = full cycloplegic plus.",
   "src": "sanitized"
@@ -325,12 +325,12 @@
   "t": "F2 Pediatric",
   "q": "The critical period for amblyopia treatment peaks and closes at about:",
   "o": [
-   "Peaks at 2, closes at 4",
-   "Open lifelong, never closes",
    "Peaks 5–7, closes at 15",
-   "Peaks 1–3, closes at 7–8"
+   "Peaks 1–3, closes at 7–8",
+   "Peaks at 2, closes at 4",
+   "Open lifelong, never closes"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Sensitivity peaks 1–3 years and largely closes by 7–8, with limited gains possible to ~12.",
   "k": "Critical period peaks 1–3, closes ~7–8.",
   "src": "sanitized"
@@ -341,12 +341,12 @@
   "t": "F2 Pediatric",
   "q": "A 4-year-old has 20/80 OS, 20/20 OD, and a 3.50 D hyperopic difference. The diagnosis and first step:",
   "o": [
+   "Anisometropic amblyopia; correct first",
    "Deprivation amblyopia; operate",
    "Strabismic amblyopia; patch now",
-   "Anisometropic amblyopia; correct first",
    "Pseudoamblyopia; simply reassure"
   ],
-  "a": 2,
+  "a": 0,
   "w": "A large refractive difference with reduced VA in the more ametropic eye is anisometropic amblyopia; correct first, then add patching if needed.",
   "k": "Aniso amblyopia → correct first.",
   "src": "sanitized"
@@ -357,12 +357,12 @@
   "t": "F2 Pediatric",
   "q": "Patching in amblyopia is added:",
   "o": [
-   "It is never indicated",
    "Always as the very first step",
+   "Only if glasses alone fail",
    "Only after strabismus surgery",
-   "Only if glasses alone fail"
+   "It is never indicated"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Glasses are trialed for 12–16 weeks; patching is added if VA does not normalize with correction alone.",
   "k": "Patch only if glasses don't normalize VA.",
   "src": "sanitized"
@@ -373,9 +373,9 @@
   "t": "F2 Pediatric",
   "q": "Amblyopia improvement is still possible up to about what age (less effectively)?",
   "o": [
-   "Age 20",
-   "Age 12",
    "Age 5",
+   "Age 12",
+   "Age 20",
    "Age 40"
   ],
   "a": 1,
@@ -390,11 +390,11 @@
   "q": "Which condition needs NO treatment, only reassurance?",
   "o": [
    "Deprivation amblyopia",
+   "Accommodative esotropia",
    "Pseudostrabismus",
-   "Infantile esotropia",
-   "Accommodative esotropia"
+   "Infantile esotropia"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Pseudostrabismus resolves with facial growth; the others all require active management.",
   "k": "Pseudostrabismus = reassure only.",
   "src": "legacy"
@@ -405,12 +405,12 @@
   "t": "F3 Geriatric",
   "q": "The frequency of dry vs wet age-related macular degeneration is:",
   "o": [
-   "15% dry / 85% wet",
+   "85% dry / 15% wet",
    "50% / 50%",
-   "All dry",
-   "85% dry / 15% wet"
+   "15% dry / 85% wet",
+   "All dry"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Dry (atrophic) is ~85%, but wet (~15%) causes the majority of SEVERE vision loss.",
   "k": "AMD: 85% dry, 15% wet.",
   "src": "legacy"
@@ -438,8 +438,8 @@
   "q": "AREDS2 supplements:",
   "o": [
    "Reduce progression to advanced AMD",
-   "Treat and clear cataract",
    "Cure established wet AMD",
+   "Treat and clear cataract",
    "Reverse existing AMD damage"
   ],
   "a": 0,
@@ -454,9 +454,9 @@
   "q": "In hypertensive retinopathy, AV nicking corresponds to which Keith-Wagener-Barker grade?",
   "o": [
    "Grade 4",
-   "Grade 1",
+   "Grade 3",
    "Grade 2",
-   "Grade 3"
+   "Grade 1"
   ],
   "a": 2,
   "w": "AV nicking (and silver wiring) is grade 2; grade 4 adds papilledema (hypertensive emergency).",
@@ -469,12 +469,12 @@
   "t": "F3 Geriatric",
   "q": "Grade 4 hypertensive retinopathy is defined by:",
   "o": [
-   "AV nicking",
    "Flame hemorrhages only",
-   "Papilledema",
-   "Copper wiring"
+   "Copper wiring",
+   "AV nicking",
+   "Papilledema"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Papilledema marks grade 4 = malignant/accelerated hypertension, an emergency.",
   "k": "HTR grade 4 = papilledema.",
   "src": "legacy"
@@ -485,12 +485,12 @@
   "t": "F3 Geriatric",
   "q": "The most common cause of vision loss in diabetic retinopathy is:",
   "o": [
+   "Proliferative DR neovascularization",
    "Cataract",
    "Diabetic macular edema",
-   "Vitreous hemorrhage",
-   "Proliferative DR neovascularization"
+   "Vitreous hemorrhage"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Diabetic macular edema (which can occur at any DR stage) is the most common cause of vision loss.",
   "k": "DR vision loss = diabetic macular edema.",
   "src": "legacy"
@@ -501,12 +501,12 @@
   "t": "F3 Geriatric",
   "q": "Wet AMD is treated with:",
   "o": [
-   "Intravitreal anti-VEGF",
+   "AREDS2 only",
    "Laser iridotomy",
    "Cycloplegics",
-   "AREDS2 only"
+   "Intravitreal anti-VEGF"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Anti-VEGF agents (bevacizumab, ranibizumab, aflibercept) are first-line for neovascular AMD.",
   "k": "Wet AMD → anti-VEGF.",
   "src": "legacy"
@@ -518,11 +518,11 @@
   "q": "The drusen type carrying the highest risk of progression to advanced AMD is:",
   "o": [
    "Calcified",
-   "Hard, small, discrete",
    "Soft, large, confluent",
+   "Hard, small, discrete",
    "None"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Soft confluent drusen carry higher conversion risk than small hard drusen.",
   "k": "Soft drusen = higher AMD risk.",
   "src": "legacy"
@@ -533,12 +533,12 @@
   "t": "F3 Geriatric",
   "q": "Clinically significant macular edema (CSME) is defined by retinal thickening within:",
   "o": [
-   "500 µm of the fovea",
-   "1 mm of the disc",
+   "2 disc diameters",
    "The whole posterior pole",
-   "2 disc diameters"
+   "1 mm of the disc",
+   "500 µm of the fovea"
   ],
-  "a": 0,
+  "a": 3,
   "w": "CSME includes thickening or hard exudates within 500 µm of the foveal center; refer for anti-VEGF.",
   "k": "CSME = within 500 µm of fovea.",
   "src": "legacy"
@@ -549,10 +549,10 @@
   "t": "F3 Geriatric",
   "q": "Sudden metamorphopsia with subretinal fluid and hemorrhage at the macula in an elderly patient is:",
   "o": [
-   "Glaucoma",
+   "Cataract",
    "Wet AMD",
-   "Dry AMD",
-   "Cataract"
+   "Glaucoma",
+   "Dry AMD"
   ],
   "a": 1,
   "w": "Acute distortion plus subretinal fluid/blood is wet AMD until proven otherwise; refer urgently for anti-VEGF.",
@@ -565,12 +565,12 @@
   "t": "F3 Geriatric",
   "q": "The normal retinal artery-to-vein (A:V) caliber ratio is:",
   "o": [
-   "3:1",
-   "1:4",
    "1:1",
-   "2:3"
+   "1:4",
+   "2:3",
+   "3:1"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Normal A:V is about 2:3 (arteries narrower than veins); narrowing occurs in hypertension.",
   "k": "Normal A:V ratio 2:3.",
   "src": "legacy"
@@ -582,11 +582,11 @@
   "q": "Severe non-proliferative diabetic retinopathy is identified by the:",
   "o": [
    "ISNT rule",
-   "4-2-1 rule",
+   "20-20-20 rule",
    "ABCD rule",
-   "20-20-20 rule"
+   "4-2-1 rule"
   ],
-  "a": 1,
+  "a": 3,
   "w": "4-2-1: hemorrhages in 4 quadrants, OR venous beading in 2, OR IRMA in 1.",
   "k": "Severe NPDR = 4-2-1 rule.",
   "src": "legacy"
@@ -598,11 +598,11 @@
   "q": "A pupil-involving CN3 palsy is a neurosurgical emergency because it suggests:",
   "o": [
    "Ocular myasthenia gravis",
-   "A communicating artery aneurysm",
    "Ophthalmoplegic migraine",
-   "Diabetic microvascular palsy"
+   "Diabetic microvascular palsy",
+   "A communicating artery aneurysm"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Pupillomotor fibers run on the outside of CN3, so compression (PCA aneurysm) blows the pupil early.",
   "k": "Pupil-involving CN3 = PCA aneurysm.",
   "src": "sanitized"
@@ -629,12 +629,12 @@
   "t": "F4 Neuro",
   "q": "Infantile (congenital) nystagmus syndrome is characteristically:",
   "o": [
-   "Rotary in all gaze positions",
-   "Present only on upgaze",
+   "Vertical in all gaze positions",
    "Horizontal, dampens on convergence",
-   "Vertical in all gaze positions"
+   "Present only on upgaze",
+   "Rotary in all gaze positions"
   ],
-  "a": 2,
+  "a": 1,
   "w": "INS is horizontal in all gaze and lessens with convergence (so patients read up close); vertical nystagmus is always acquired.",
   "k": "INS = horizontal, dampens with convergence.",
   "src": "sanitized"
@@ -647,8 +647,8 @@
   "o": [
    "Always congenital",
    "Always acquired",
-   "Normal in infants",
-   "A sign of refractive error"
+   "A sign of refractive error",
+   "Normal in infants"
   ],
   "a": 1,
   "w": "Vertical nystagmus is always acquired and warrants neurological workup; INS is horizontal.",
@@ -662,11 +662,11 @@
   "q": "Latent nystagmus is best handled during monocular VA testing by:",
   "o": [
    "Using strong cycloplegia",
-   "Dimming the room lights",
    "Patching one eye fully",
-   "Fogging with a +5.00 lens"
+   "Fogging with a +5.00 lens",
+   "Dimming the room lights"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Occlusion triggers latent nystagmus and worsens VA; fog the eye with +5.00 to keep both eyes open.",
   "k": "Latent nystagmus: fog, don't patch.",
   "src": "sanitized"
@@ -678,8 +678,8 @@
   "q": "Cortical visual impairment (CVI) is most commonly caused by:",
   "o": [
    "Perinatal hypoxia-ischemia",
-   "Glaucoma",
    "Refractive error",
+   "Glaucoma",
    "Cataract"
   ],
   "a": 0,
@@ -693,12 +693,12 @@
   "t": "F4 Neuro",
   "q": "In CVI, the eye examination shows:",
   "o": [
-   "Optic atrophy",
-   "Structurally normal eyes",
    "Retinal detachment",
-   "Cataract"
+   "Cataract",
+   "Structurally normal eyes",
+   "Optic atrophy"
   ],
-  "a": 1,
+  "a": 2,
   "w": "CVI vision loss is cortical; the anterior and posterior segments and pupils are normal.",
   "k": "CVI = structurally normal eyes.",
   "src": "legacy"
@@ -709,10 +709,10 @@
   "t": "F4 Neuro",
   "q": "A CN4 (superior oblique) palsy causes vertical diplopia that is worst:",
   "o": [
+   "On lateral gaze only",
    "At distance only",
-   "On upgaze",
    "On downgaze",
-   "On lateral gaze only"
+   "On upgaze"
   ],
   "a": 2,
   "w": "SO depresses the adducted eye, so its palsy causes vertical diplopia worst on downgaze and reading.",
@@ -725,12 +725,12 @@
   "t": "F4 Neuro",
   "q": "The head posture adopted in a CN4 palsy is a tilt:",
   "o": [
-   "Chin up, face turned",
    "Away from the affected eye",
    "Toward the affected eye",
-   "No abnormal head posture"
+   "No abnormal head posture",
+   "Chin up, face turned"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Patients tilt the head away from the affected side (and chin down) to reduce the vertical deviation.",
   "k": "CN4: head tilt away, chin down.",
   "src": "sanitized"
@@ -741,12 +741,12 @@
   "t": "F4 Neuro",
   "q": "The 3-step test used to localize a cyclovertical muscle palsy is the:",
   "o": [
-   "Maddox rod test",
-   "Hirschberg reflex test",
    "Worth 4-dot test",
-   "Parks-Bielschowsky test"
+   "Parks-Bielschowsky test",
+   "Hirschberg reflex test",
+   "Maddox rod test"
   ],
-  "a": 3,
+  "a": 1,
   "w": "The Parks-Bielschowsky 3-step localizes the paretic cyclovertical muscle (commonly CN4/SO).",
   "k": "Parks-Bielschowsky = cyclovertical 3-step.",
   "src": "sanitized"
@@ -757,10 +757,10 @@
   "t": "F4 Neuro",
   "q": "Jerk nystagmus is named according to the direction of its:",
   "o": [
-   "Slow phase",
+   "Convergence",
    "Fast phase",
-   "Null point",
-   "Convergence"
+   "Slow phase",
+   "Null point"
   ],
   "a": 1,
   "w": "Jerk nystagmus is named for the fast phase direction; this is not how cranial nerve palsies are named.",
@@ -773,12 +773,12 @@
   "t": "F4 Neuro",
   "q": "A 2-year-old with periventricular leukomalacia on MRI, normal-looking eyes, and poor visual responses most likely has:",
   "o": [
-   "Latent nystagmus",
    "Cortical visual impairment",
+   "Latent nystagmus",
    "Infantile esotropia",
    "Congenital cataract"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Neurological insult + behavioral visual difficulty + normal ocular structures = CVI.",
   "k": "PVL + normal eyes + poor vision = CVI.",
   "src": "legacy"
@@ -790,9 +790,9 @@
   "q": "A chemical solvent splash into the eye is first managed by:",
   "o": [
    "Identifying the chemical, then irrigating",
-   "Instilling proparacaine and referring without irrigation",
+   "Applying a bandage contact lens",
    "Immediate irrigation with water/saline for 20–30 minutes",
-   "Applying a bandage contact lens"
+   "Instilling proparacaine and referring without irrigation"
   ],
   "a": 2,
   "w": "Irrigation is the first and most critical action regardless of the chemical; history follows.",
@@ -806,8 +806,8 @@
   "q": "The CVS (computer vision syndrome) '20-20-20 rule' means:",
   "o": [
    "20 hours, 20 breaks, 20 days",
-   "20 lux, 20 inches, 20 minutes",
    "20 blinks every 20 seconds",
+   "20 lux, 20 inches, 20 minutes",
    "Every 20 min, 20 feet, 20 sec"
   ],
   "a": 3,
@@ -821,12 +821,12 @@
   "t": "F5 Occupational",
   "q": "Under RA 11210 (2019), maternity leave in the Philippines is:",
   "o": [
-   "120 days",
-   "78 days",
+   "105 days",
    "60 days",
-   "105 days"
+   "78 days",
+   "120 days"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The Expanded Maternity Leave Law (RA 11210) provides 105 days.",
   "k": "Maternity leave (RA 11210) = 105 days.",
   "src": "legacy"
@@ -838,9 +838,9 @@
   "q": "Paternity leave under RA 8187 is:",
   "o": [
    "30 days",
-   "14 days",
+   "3 days",
    "7 working days",
-   "3 days"
+   "14 days"
   ],
   "a": 2,
   "w": "RA 8187 grants 7 working days of paternity leave.",
@@ -853,10 +853,10 @@
   "t": "F5 Occupational",
   "q": "The best lens material for protective (safety) eyewear is:",
   "o": [
-   "Crown glass",
-   "Polycarbonate",
    "CR-39",
-   "High-index glass"
+   "Polycarbonate",
+   "High-index glass",
+   "Crown glass"
   ],
   "a": 1,
   "w": "Polycarbonate is the most impact-resistant material, the choice for safety eyewear.",
@@ -870,11 +870,11 @@
   "q": "Welding without protection classically causes:",
   "o": [
    "Retinal burns",
-   "Cataract from infrared",
    "Photokeratitis from UV",
+   "Cataract from infrared",
    "Glaucoma"
   ],
-  "a": 2,
+  "a": 1,
   "w": "UV exposure in arc welding causes photokeratitis; infrared exposure (glassblowing) causes lens cataract.",
   "k": "Welding UV = photokeratitis.",
   "src": "legacy"
@@ -885,10 +885,10 @@
   "t": "F5 Occupational",
   "q": "Infrared (IR) occupational exposure (e.g., glassblowing) classically causes:",
   "o": [
-   "Loss of color vision",
    "Acute photokeratitis",
+   "Evaporative dry eye",
    "Thermal IR cataract",
-   "Evaporative dry eye"
+   "Loss of color vision"
   ],
   "a": 2,
   "w": "IR causes thermal damage and the glassblower's cataract (posterior subcapsular).",
@@ -901,12 +901,12 @@
   "t": "F5 Occupational",
   "q": "The Occupational Safety and Health Standards (OSHS) in the Philippines fall under which agency?",
   "o": [
-   "PRC",
-   "DOLE",
+   "DOH",
    "DTI",
-   "DOH"
+   "DOLE",
+   "PRC"
   ],
-  "a": 1,
+  "a": 2,
   "w": "OSHS is administered by the Department of Labor and Employment (DOLE).",
   "k": "OSHS under DOLE.",
   "src": "legacy"
@@ -917,12 +917,12 @@
   "t": "F5 Occupational",
   "q": "For a chemical splash hazard, a face shield should be used:",
   "o": [
-   "Instead of goggles",
-   "Never",
+   "Only if goggles are unavailable",
    "In addition to sealed splash goggles",
-   "Only if goggles are unavailable"
+   "Instead of goggles",
+   "Never"
   ],
-  "a": 2,
+  "a": 1,
   "w": "A face shield protects the face but does not seal the eyes; it is used WITH splash goggles, not instead.",
   "k": "Face shield + goggles (not a replacement).",
   "src": "legacy"
@@ -933,12 +933,12 @@
   "t": "F5 Occupational",
   "q": "Which is NOT appropriate management for computer vision syndrome?",
   "o": [
-   "Anti-reflection coated lenses",
-   "Daily home cycloplegic drops",
+   "Task-specific near correction",
    "The 20-20-20 rule",
-   "Task-specific near correction"
+   "Daily home cycloplegic drops",
+   "Anti-reflection coated lenses"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Cycloplegics are diagnostic agents; daily home use abolishes accommodation and is never appropriate.",
   "k": "Never prescribe daily home cycloplegics.",
   "src": "legacy"
@@ -951,10 +951,10 @@
   "o": [
    "GSIS = private; SSS = government",
    "Both cover government",
-   "Both cover private",
-   "GSIS = government; SSS = private"
+   "GSIS = government; SSS = private",
+   "Both cover private"
   ],
-  "a": 3,
+  "a": 2,
   "w": "GSIS covers government employees; SSS covers the private sector.",
   "k": "GSIS = government; SSS = private.",
   "src": "legacy"
@@ -966,11 +966,11 @@
   "q": "A professional driver's occupational eye exam must specifically include:",
   "o": [
    "Accommodative facility only",
+   "Visual fields and color vision",
    "Tonometry only",
-   "Stereoacuity only",
-   "Visual fields and color vision"
+   "Stereoacuity only"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Drivers need adequate visual fields and color vision (signals); exams are tailored to job demands.",
   "k": "Driver exam = fields + color vision.",
   "src": "legacy"
@@ -981,9 +981,9 @@
   "t": "F6 Sports Vision",
   "q": "Which tint best improves visibility in fog, haze, and low light?",
   "o": [
-   "Gray",
-   "Blue",
    "Dark green",
+   "Blue",
+   "Gray",
    "Yellow"
   ],
   "a": 3,
@@ -997,12 +997,12 @@
   "t": "F6 Sports Vision",
   "q": "Which tint best enhances depth perception for golf or tennis?",
   "o": [
-   "Gray",
    "Clear",
    "Brown or amber",
+   "Gray",
    "Blue"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Brown/amber tints contain a red element that enhances contrast and depth judgment.",
   "k": "Brown/amber = depth perception.",
   "src": "legacy"
@@ -1013,12 +1013,12 @@
   "t": "F6 Sports Vision",
   "q": "A gray tint is best described as:",
   "o": [
-   "A blue blocker",
-   "A neutral density filter",
    "A polarizer",
-   "A contrast-enhancing filter"
+   "A contrast-enhancing filter",
+   "A neutral density filter",
+   "A blue blocker"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Gray reduces overall brightness without changing color balance or improving contrast.",
   "k": "Gray = neutral density (no contrast gain).",
   "src": "legacy"
@@ -1029,12 +1029,12 @@
   "t": "F6 Sports Vision",
   "q": "Difficulty tracking a fast-moving ball despite 20/20 static VA indicates a deficit in:",
   "o": [
-   "Stereopsis",
-   "Contrast sensitivity",
    "Color vision",
-   "Dynamic visual acuity"
+   "Dynamic visual acuity",
+   "Stereopsis",
+   "Contrast sensitivity"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Dynamic VA (moving targets) is independent of static VA and is tested with a tachistoscope or Marsden ball.",
   "k": "Moving-target trouble = dynamic VA.",
   "src": "legacy"
@@ -1045,12 +1045,12 @@
   "t": "F6 Sports Vision",
   "q": "Which instrument assesses dynamic visual acuity?",
   "o": [
-   "Ishihara plates",
    "Pelli-Robson chart",
    "Tachistoscope or Marsden ball",
+   "Ishihara plates",
    "Stereo Fly"
   ],
-  "a": 2,
+  "a": 1,
   "w": "The tachistoscope (brief target presentation) and the Marsden ball (3D moving target) assess dynamic VA.",
   "k": "Dynamic VA = tachistoscope / Marsden ball.",
   "src": "legacy"
@@ -1061,12 +1061,12 @@
   "t": "F6 Sports Vision",
   "q": "The Wayne Saccadic Fixator is used to train:",
   "o": [
-   "Eye-hand reaction time",
    "Accommodative facility",
    "Color discrimination",
-   "Peripheral visual fields"
+   "Peripheral visual fields",
+   "Eye-hand reaction time"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The Wayne Saccadic Fixator trains eye-hand coordination, peripheral awareness, and reaction speed.",
   "k": "Wayne Saccadic Fixator = eye-hand coordination.",
   "src": "sanitized"
@@ -1077,9 +1077,9 @@
   "t": "F6 Sports Vision",
   "q": "Contrast sensitivity in sports vision is measured with the:",
   "o": [
-   "Snellen chart",
-   "Pelli-Robson chart",
    "Hirschberg",
+   "Pelli-Robson chart",
+   "Snellen chart",
    "Worth 4-dot"
   ],
   "a": 1,
@@ -1093,12 +1093,12 @@
   "t": "F6 Sports Vision",
   "q": "The ASTM F803 protective eyewear standard applies specifically to:",
   "o": [
-   "Racquet sports",
    "Cycling",
-   "All sports",
-   "Swimming"
+   "Racquet sports",
+   "Swimming",
+   "All sports"
   ],
-  "a": 0,
+  "a": 1,
   "w": "ASTM F803 governs racquet-sport eye protectors; other sports use their own standards.",
   "k": "ASTM F803 = racquet sports.",
   "src": "legacy"
@@ -1109,12 +1109,12 @@
   "t": "F6 Sports Vision",
   "q": "Do contact lenses provide impact or UV protection in sports?",
   "o": [
-   "Neither; eyewear is needed",
    "They give impact protection",
+   "Yes, they fully protect",
    "They give UV protection only",
-   "Yes, they fully protect"
+   "Neither; eyewear is needed"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Contact lenses offer no impact protection, so protective eyewear must still be worn.",
   "k": "CLs give no protection; still need eyewear.",
   "src": "sanitized"
@@ -1125,12 +1125,12 @@
   "t": "F6 Sports Vision",
   "q": "A static VA of 20/20 in an athlete does NOT guarantee good:",
   "o": [
+   "Refractive accuracy",
    "Contact lens fit",
    "Dynamic VA and depth",
-   "Ultraviolet protection",
-   "Refractive accuracy"
+   "Ultraviolet protection"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Dynamic VA, depth perception, eye-hand coordination, and peripheral awareness are independent of static VA.",
   "k": "20/20 ≠ good dynamic/peripheral sports vision.",
   "src": "sanitized"
@@ -1141,12 +1141,12 @@
   "t": "F6 Sports Vision",
   "q": "The best protective eyewear lens material for athletes is:",
   "o": [
-   "Polycarbonate",
-   "High-index glass",
+   "CR-39",
    "Glass",
-   "CR-39"
+   "Polycarbonate",
+   "High-index glass"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Polycarbonate's impact resistance makes it the standard for sports eye protection.",
   "k": "Sports protection = polycarbonate.",
   "src": "legacy"
@@ -1157,12 +1157,12 @@
   "t": "F6 Sports Vision",
   "q": "The Marsden ball trains and tests primarily:",
   "o": [
-   "Color discrimination",
    "Pursuit and tracking",
+   "Color discrimination",
    "Peripheral visual fields",
    "Intraocular pressure"
   ],
-  "a": 1,
+  "a": 0,
   "w": "A suspended moving ball trains pursuit tracking and dynamic visual acuity.",
   "k": "Marsden ball = tracking / dynamic VA.",
   "src": "sanitized"
@@ -1189,12 +1189,12 @@
   "t": "F7 Low Vision",
   "q": "The WHO definition of BLINDNESS is best-corrected acuity in the better eye of:",
   "o": [
-   "20/400 or worse",
-   "20/100 or worse",
    "20/200 or worse",
-   "20/70 or worse"
+   "20/70 or worse",
+   "20/400 or worse",
+   "20/100 or worse"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Blindness is defined as 20/200 or worse in the better eye.",
   "k": "Blindness = 20/200 or worse.",
   "src": "legacy"
@@ -1205,12 +1205,12 @@
   "t": "F7 Low Vision",
   "q": "The reference standard relating magnification to add power is:",
   "o": [
+   "4 D = 1×",
    "10 D = 1×",
-   "1 D = 1×",
    "2 D = 1×",
-   "4 D = 1×"
+   "1 D = 1×"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The reference is 4 D = 1×, so equivalent add = M × 4.",
   "k": "4 D = 1× (equivalent add = M×4).",
   "src": "legacy"
@@ -1221,12 +1221,12 @@
   "t": "F7 Low Vision",
   "q": "Required magnification is calculated as:",
   "o": [
-   "Required VA / Present VA",
    "4 / Present VA",
-   "Present VA / Required VA",
-   "Present VA × Required VA"
+   "Required VA / Present VA",
+   "Present VA × Required VA",
+   "Present VA / Required VA"
   ],
-  "a": 0,
+  "a": 1,
   "w": "M = required VA / present VA (e.g., N32 → N8 = 32/8 = 4×).",
   "k": "M = required VA / present VA.",
   "src": "legacy"
@@ -1237,12 +1237,12 @@
   "t": "F7 Low Vision",
   "q": "A patient reads N32 and needs N8. The magnification and equivalent add are:",
   "o": [
-   "4×, +16 D",
-   "3×, +12 D",
    "2×, +12 D",
+   "3×, +12 D",
+   "4×, +16 D",
    "2×, +8 D"
   ],
-  "a": 0,
+  "a": 2,
   "w": "M = 32/8 = 4×; equivalent add = 4 × 4 = +16 D (working distance 100/16 ≈ 6.25 cm).",
   "k": "N32→N8 = 4×, +16 D add.",
   "src": "legacy"
@@ -1255,10 +1255,10 @@
   "o": [
    "Pinhole VA",
    "Uncorrected VA",
-   "Best-corrected VA",
-   "Near point only"
+   "Near point only",
+   "Best-corrected VA"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Always refract first; magnification is based on best-corrected acuity, not uncorrected.",
   "k": "Calculate magnification from best-corrected VA.",
   "src": "legacy"
@@ -1269,12 +1269,12 @@
   "t": "F7 Low Vision",
   "q": "The goal of low vision rehabilitation is:",
   "o": [
-   "Maximize function for the task",
-   "Restore 20/20 acuity",
    "Replace glasses with a magnifier",
-   "Treat only those above 20/200"
+   "Maximize function for the task",
+   "Treat only those above 20/200",
+   "Restore 20/20 acuity"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Low vision care maximizes functional use of remaining vision with optical and non-optical aids; 20/20 is not the goal.",
   "k": "Goal = functional vision, not 20/20.",
   "src": "sanitized"
@@ -1285,9 +1285,9 @@
   "t": "F7 Low Vision",
   "q": "Eccentric viewing training is appropriate for:",
   "o": [
-   "Color deficiency",
    "Peripheral field loss",
    "Only AMD",
+   "Color deficiency",
    "Any central scotoma"
   ],
   "a": 3,
@@ -1301,12 +1301,12 @@
   "t": "F7 Low Vision",
   "q": "For a patient with hand tremor needing sustained reading, the best magnifier is a:",
   "o": [
-   "Stand magnifier",
    "Pocket loupe",
+   "Hand-held magnifier",
    "Telescope",
-   "Hand-held magnifier"
+   "Stand magnifier"
   ],
-  "a": 0,
+  "a": 3,
   "w": "A stand magnifier rests on the page at a fixed focal distance, avoiding the instability of a hand-held device.",
   "k": "Tremor + sustained reading = stand magnifier.",
   "src": "legacy"
@@ -1317,12 +1317,12 @@
   "t": "F7 Low Vision",
   "q": "Telescopes in low vision are primarily for:",
   "o": [
-   "Peripheral field expansion",
+   "Distance tasks",
    "Near reading",
    "Color enhancement",
-   "Distance tasks"
+   "Peripheral field expansion"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Telescopes magnify for distance; most low vision patients need near magnification first.",
   "k": "Telescopes = distance tasks.",
   "src": "legacy"
@@ -1333,12 +1333,12 @@
   "t": "F7 Low Vision",
   "q": "The most common cause of blindness worldwide is:",
   "o": [
-   "Cataract",
-   "Trachoma",
    "Diabetic retinopathy",
+   "Trachoma",
+   "Cataract",
    "Glaucoma"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Cataract is the leading cause of blindness globally, and over 80% of blindness is avoidable.",
   "k": "Cataract = leading global blindness cause.",
   "src": "legacy"
@@ -1381,12 +1381,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "A scleral shell is used:",
   "o": [
-   "To replace a conformer permanently",
-   "After enucleation",
    "For contact lens fitting",
-   "Over an existing but shrunken globe"
+   "To replace a conformer permanently",
+   "Over an existing but shrunken globe",
+   "After enucleation"
   ],
-  "a": 3,
+  "a": 2,
   "w": "A scleral shell fits over a present but shrunken eye; after enucleation the globe is gone and a custom prosthesis sits over the orbital implant.",
   "k": "Scleral shell = over a shrunken globe.",
   "src": "legacy"
@@ -1397,9 +1397,9 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "Immediately after eye-removal surgery, a clear placeholder that prevents socket contraction is a:",
   "o": [
-   "Bandage lens",
    "Scleral shell",
    "Custom prosthesis",
+   "Bandage lens",
    "Conformer"
   ],
   "a": 3,
@@ -1413,12 +1413,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The standard of care for a definitive ocular prosthesis is:",
   "o": [
-   "A conformer left in place",
-   "A scleral contact lens",
    "A stock shell off the shelf",
-   "A custom PMMA prosthesis"
+   "A custom PMMA prosthesis",
+   "A scleral contact lens",
+   "A conformer left in place"
   ],
-  "a": 3,
+  "a": 1,
   "w": "A custom PMMA prosthesis fitted by a certified ocularist gives the best fit and cosmesis; stock shells cause chronic irritation.",
   "k": "Definitive prosthesis = custom PMMA (ocularist).",
   "src": "sanitized"
@@ -1430,11 +1430,11 @@
   "q": "An ocular prosthesis should be professionally polished about every:",
   "o": [
    "5 years",
+   "6–12 months",
    "10 years",
-   "Week",
-   "6–12 months"
+   "Week"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Polishing every 6–12 months removes deposits and surface roughness; replace the prosthesis every 5–7 years.",
   "k": "Polish prosthesis every 6–12 months.",
   "src": "legacy"
@@ -1447,8 +1447,8 @@
   "o": [
    "5–7 years",
    "1 year",
-   "15 years",
-   "Never"
+   "Never",
+   "15 years"
   ],
   "a": 0,
   "w": "Adults replace prostheses about every 5–7 years (children more often as the orbit grows).",
@@ -1463,8 +1463,8 @@
   "o": [
    "Use as normal sunglasses",
    "Retinitis pigmentosa, maculopathy",
-   "Mild photophobia alone",
-   "Albinism and nothing else"
+   "Albinism and nothing else",
+   "Mild photophobia alone"
   ],
   "a": 1,
   "w": "CPF 527 cuts below 527 nm to enhance contrast and reduce glare in RP, macular disease, and glaucoma.",
@@ -1477,12 +1477,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "For an achromatopsia (rod monochromat) patient with severe photophobia, the best filter is:",
   "o": [
-   "Gray neutral density",
-   "Light yellow",
    "Deep orange or red",
-   "Blue tint"
+   "Light yellow",
+   "Blue tint",
+   "Gray neutral density"
   ],
-  "a": 2,
+  "a": 0,
   "w": "A deep red/orange longpass filter cuts the short/mid wavelengths that overwhelm rods, easing photophobia.",
   "k": "Achromatopsia = deep orange/red filter.",
   "src": "legacy"
@@ -1493,9 +1493,9 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "Recommended eyewear for an albinism patient is:",
   "o": [
+   "Photochromic for driving",
    "Yellow only",
    "Clear lenses only",
-   "Photochromic for driving",
    "Deep absorptive tint with UV 400"
   ],
   "a": 3,
@@ -1525,8 +1525,8 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "An ocular prosthesis should be soaked in:",
   "o": [
-   "Alcohol",
    "Tap water",
+   "Alcohol",
    "Sterile saline",
    "Hydrogen peroxide"
   ],
@@ -1541,12 +1541,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "A patient 6 months post-enucleation wears a stock prosthesis with chronic discharge and irritation. Next step:",
   "o": [
+   "Switch to a scleral shell",
    "Refer for a custom prosthesis",
    "Antibiotics and reassurance",
-   "Switch to a scleral shell",
    "Stop wearing the prosthesis"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Chronic irritation from a poorly fitting stock shell is corrected by a custom PMMA prosthesis; healing is complete by 6 months.",
   "k": "Stock shell irritation → custom PMMA prosthesis.",
   "src": "sanitized"
@@ -1589,12 +1589,12 @@
   "t": "F1 DPA",
   "q": "Nasolacrimal occlusion should be maintained for:",
   "o": [
-   "5 minutes",
    "2 minutes",
-   "10 seconds",
-   "30 seconds"
+   "5 minutes",
+   "30 seconds",
+   "10 seconds"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Two minutes of punctal pressure cuts systemic absorption through the nasal mucosa and keeps the drug on the eye, which matters most in children, pregnancy and cardiac patients.",
   "k": "NLO = 2 minutes.",
   "src": "authored"
@@ -1605,12 +1605,12 @@
   "t": "F1 DPA",
   "q": "The absolute contraindication to any mydriatic is:",
   "o": [
+   "A narrow or occludable angle",
    "Cataract",
    "Diabetes mellitus",
-   "Dry eye",
-   "A narrow or occludable angle"
+   "Dry eye"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Dilating a narrow angle can trigger acute angle-closure. Van Herick or gonioscopy comes before the drop.",
   "k": "Narrow angle = absolute mydriatic contraindication.",
   "src": "authored"
@@ -1621,12 +1621,12 @@
   "t": "F1 DPA",
   "q": "Which agent must never be dispensed for home use?",
   "o": [
-   "Proparacaine",
-   "Artificial tears",
    "Fluorescein",
-   "Tropicamide"
+   "Artificial tears",
+   "Tropicamide",
+   "Proparacaine"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Repeated topical anesthetic abolishes the protective blink and corneal sensation, causing epithelial breakdown and a neurotrophic ulcer. It is used in clinic only.",
   "k": "Never send anesthetics home.",
   "src": "authored"
@@ -1637,12 +1637,12 @@
   "t": "F1 DPA",
   "q": "Fluorescein must not be instilled in a patient wearing:",
   "o": [
-   "A prosthetic shell",
-   "RGP lenses",
+   "Spectacles",
    "Soft contact lenses",
-   "Spectacles"
+   "RGP lenses",
+   "A prosthetic shell"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Fluorescein is absorbed by hydrogel and permanently stains it. Lenses come out first, and go back in only after about an hour.",
   "k": "No fluorescein with soft lenses in.",
   "src": "authored"
@@ -1670,9 +1670,9 @@
   "q": "The appropriate acuity test for a pre-verbal infant is:",
   "o": [
    "Preferential looking",
-   "HOTV matching",
+   "The Pelli-Robson chart",
    "Snellen letters",
-   "The Pelli-Robson chart"
+   "HOTV matching"
   ],
   "a": 0,
   "w": "Preferential looking with Teller acuity cards uses an infant's innate preference for pattern over blank. HOTV and Lea suit cooperative 3–5 year olds.",
@@ -1685,12 +1685,12 @@
   "t": "F2 Pediatric",
   "q": "Which type of amblyopia carries the WORST visual prognosis?",
   "o": [
-   "Deprivation",
-   "Strabismic",
    "Anisometropic",
-   "Meridional"
+   "Meridional",
+   "Deprivation",
+   "Strabismic"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Deprivation amblyopia from a dense congenital cataract or complete ptosis blocks all form vision during the critical period, so it is the densest and least reversible.",
   "k": "Deprivation amblyopia = worst prognosis.",
   "src": "authored"
@@ -1701,12 +1701,12 @@
   "t": "F2 Pediatric",
   "q": "On Hirschberg testing, pseudostrabismus shows:",
   "o": [
+   "An asymmetric temporal reflex",
    "An asymmetric nasal reflex",
    "Symmetric reflexes",
-   "An asymmetric temporal reflex",
    "No reflex at all"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Pseudostrabismus, usually from prominent epicanthal folds or a wide nasal bridge, looks like esotropia but the corneal reflexes are symmetric, proving there is no true deviation.",
   "k": "Pseudostrabismus = symmetric reflexes.",
   "src": "authored"
@@ -1718,11 +1718,11 @@
   "q": "The approximate split between dry and wet age-related macular degeneration is:",
   "o": [
    "60% dry / 40% wet",
-   "85% dry / 15% wet",
    "95% dry / 5% wet",
-   "50% dry / 50% wet"
+   "50% dry / 50% wet",
+   "85% dry / 15% wet"
   ],
-  "a": 1,
+  "a": 3,
   "w": "About 85% is dry and 15% wet, though the wet minority causes most of the severe central vision loss.",
   "k": "AMD: 85% dry, 15% wet.",
   "src": "authored"
@@ -1750,11 +1750,11 @@
   "q": "The normal retinal arteriole-to-venule ratio is:",
   "o": [
    "3:2",
+   "1:2",
    "1:1",
-   "2:3",
-   "1:2"
+   "2:3"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Normal AV ratio is 2:3. Arteriolar narrowing in hypertensive retinopathy drops it toward 1:2 or 1:3.",
   "k": "Normal AV ratio = 2:3.",
   "src": "authored"
@@ -1765,12 +1765,12 @@
   "t": "F3 Geriatric",
   "q": "The commonest cause of vision loss in diabetic retinopathy is:",
   "o": [
-   "Tractional detachment",
+   "Diabetic macular edema",
    "Vitreous hemorrhage",
-   "Neovascular glaucoma",
-   "Diabetic macular edema"
+   "Tractional detachment",
+   "Neovascular glaucoma"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Macular edema is the leading cause of diabetic visual loss and can occur at any retinopathy stage, including mild NPDR.",
   "k": "DME = commonest diabetic vision loss.",
   "src": "authored"
@@ -1781,12 +1781,12 @@
   "t": "F3 Geriatric",
   "q": "Which drusen type carries the highest risk of progression?",
   "o": [
-   "Hard drusen",
-   "Calcified drusen",
    "Basal laminar drusen",
-   "Soft, large confluent drusen"
+   "Soft, large confluent drusen",
+   "Calcified drusen",
+   "Hard drusen"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Soft, large and confluent drusen mark high risk of progression to advanced AMD. Small hard drusen are common with age and low risk.",
   "k": "Soft confluent drusen = high risk.",
   "src": "authored"
@@ -1797,12 +1797,12 @@
   "t": "F4 Neuro",
   "q": "CN6 palsy is a false localizing sign because raised intracranial pressure compresses the nerve along the:",
   "o": [
-   "Annulus of Zinn",
+   "Superior orbital fissure",
    "Cavernous sinus",
-   "Clivus",
-   "Superior orbital fissure"
+   "Annulus of Zinn",
+   "Clivus"
   ],
-  "a": 2,
+  "a": 3,
   "w": "CN6 has a long course over the petrous ridge and clivus, so raised ICP from any cause stretches it. The palsy therefore does not localize the lesion.",
   "k": "CN6 false localizing = long clival course.",
   "src": "authored"
@@ -1813,12 +1813,12 @@
   "t": "F4 Neuro",
   "q": "The commonest cause of cortical visual impairment in children is:",
   "o": [
-   "Retinopathy of prematurity",
    "Optic nerve hypoplasia",
    "Perinatal hypoxia-ischemia",
+   "Retinopathy of prematurity",
    "Congenital cataract"
   ],
-  "a": 2,
+  "a": 1,
   "w": "CVI follows perinatal hypoxic-ischemic injury. The eyes are structurally normal, so the diagnosis rests on inconsistent visual behavior rather than fundus findings.",
   "k": "CVI = perinatal hypoxia; eyes look normal.",
   "src": "authored"
@@ -1829,12 +1829,12 @@
   "t": "F4 Neuro",
   "q": "In cortical visual impairment the ocular examination shows:",
   "o": [
-   "Dense cataract",
-   "Pigmentary retinopathy",
    "Optic atrophy",
-   "Structurally normal eyes"
+   "Dense cataract",
+   "Structurally normal eyes",
+   "Pigmentary retinopathy"
   ],
-  "a": 3,
+  "a": 2,
   "w": "CVI is a brain problem, so the globes look normal and pupils react. Vision fluctuates with fatigue and complexity, which distinguishes it from ocular disease.",
   "k": "CVI: eyes structurally normal.",
   "src": "authored"
@@ -1846,9 +1846,9 @@
   "q": "Irrigation of a chemical burn should continue for:",
   "o": [
    "20–30 minutes",
-   "5 minutes",
+   "2–3 minutes",
    "60 seconds",
-   "2–3 minutes"
+   "5 minutes"
   ],
   "a": 0,
   "w": "Irrigate 20–30 minutes and recheck pH until neutral. Alkali keeps penetrating until diluted, so time matters more than the fluid used.",
@@ -1863,10 +1863,10 @@
   "o": [
    "60 days",
    "90 days",
-   "105 days",
-   "7 working days"
+   "7 working days",
+   "105 days"
   ],
-  "a": 2,
+  "a": 3,
   "w": "RA 11210, the Expanded Maternity Leave Law, grants 105 days. RA 8187 gives 7 working days of paternity leave.",
   "k": "Maternity 105 days (RA 11210); paternity 7 days (RA 8187).",
   "src": "authored"
@@ -1879,8 +1879,8 @@
   "o": [
    "DOLE",
    "DOH",
-   "DTI",
-   "PRC"
+   "PRC",
+   "DTI"
   ],
   "a": 0,
   "w": "OSHS sits with the Department of Labor and Employment, which sets workplace eye protection requirements.",
@@ -1895,8 +1895,8 @@
   "o": [
    "Yellow",
    "Grey",
-   "Dark green",
-   "Blue"
+   "Blue",
+   "Dark green"
   ],
   "a": 0,
   "w": "Yellow filters short-wavelength scatter and lifts contrast in fog, haze and flat light. Brown or amber suits depth judgment in golf and tennis.",
@@ -1909,12 +1909,12 @@
   "t": "F6 Sports Vision",
   "q": "The protective eyewear standard for racquet sports is:",
   "o": [
+   "ASTM F1587",
    "ISO 12312",
    "ASTM F803",
-   "ANSI Z87.1",
-   "ASTM F1587"
+   "ANSI Z87.1"
   ],
-  "a": 1,
+  "a": 2,
   "w": "ASTM F803 covers racquet sports eye protection. ANSI Z87.1 is the general industrial standard.",
   "k": "Racquet sports = ASTM F803.",
   "src": "authored"
@@ -1925,10 +1925,10 @@
   "t": "F6 Sports Vision",
   "q": "Contrast sensitivity in an athlete is measured with the:",
   "o": [
+   "Titmus stereotest",
    "Ishihara plates",
-   "Snellen chart",
    "Pelli-Robson chart",
-   "Titmus stereotest"
+   "Snellen chart"
   ],
   "a": 2,
   "w": "The Pelli-Robson chart measures contrast sensitivity, which can be reduced even when Snellen acuity reads 20/20.",
@@ -1941,12 +1941,12 @@
   "t": "F7 Low Vision",
   "q": "The WHO acuity cutoff defining low vision in the better eye is:",
   "o": [
-   "< 20/70",
-   "< 20/40",
+   "< 20/60",
    "≤ 20/200",
-   "< 20/60"
+   "< 20/70",
+   "< 20/40"
   ],
-  "a": 0,
+  "a": 2,
   "w": "WHO sets low vision below 20/70 and blindness at 20/200 or worse in the better eye with best correction.",
   "k": "Low vision <20/70; blindness ≤20/200.",
   "src": "authored"
@@ -1973,12 +1973,12 @@
   "t": "F7 Low Vision",
   "q": "The magnification a low vision patient requires is calculated as:",
   "o": [
-   "Required VA ÷ Present VA",
    "Required VA + 4",
+   "Required VA ÷ Present VA",
    "Present VA ÷ Required VA",
    "Required VA × Present VA"
   ],
-  "a": 0,
+  "a": 1,
   "w": "M = required VA ÷ present VA. A patient at 20/200 needing 20/40 requires 200/40 = 5×, i.e. a 20 D equivalent add.",
   "k": "M = required VA / present VA.",
   "src": "authored"
@@ -1989,12 +1989,12 @@
   "t": "F7 Low Vision",
   "q": "The best magnifier for sustained reading in a patient with a hand tremor is a:",
   "o": [
+   "Stand magnifier",
    "Hand magnifier",
-   "Pocket magnifier",
    "Telescope",
-   "Stand magnifier"
+   "Pocket magnifier"
   ],
-  "a": 3,
+  "a": 0,
   "w": "A stand magnifier rests on the page and fixes the focal distance, so tremor or arthritis does not blur the image. A hand magnifier demands a steady grip.",
   "k": "Tremor: stand magnifier for reading.",
   "src": "authored"
@@ -2005,12 +2005,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The purpose of a conformer after enucleation is to:",
   "o": [
-   "Prevent socket contraction",
-   "Reduce infection risk",
    "Restore some vision",
-   "Improve cosmesis immediately"
+   "Prevent socket contraction",
+   "Improve cosmesis immediately",
+   "Reduce infection risk"
   ],
-  "a": 0,
+  "a": 1,
   "w": "The conformer holds the fornices open until the definitive custom prosthesis is fitted; without it the socket contracts and may no longer take a prosthesis.",
   "k": "Conformer prevents socket contraction.",
   "src": "authored"
@@ -2021,12 +2021,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "An ocular prosthesis should be professionally polished every:",
   "o": [
+   "Month",
    "6–12 months",
    "2 years",
-   "5–7 years",
-   "Month"
+   "5–7 years"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Polishing every 6–12 months removes protein deposits and surface roughness that cause discharge and giant papillary reaction. Adults replace the prosthesis every 5–7 years.",
   "k": "Polish 6–12 months; replace every 5–7 years.",
   "src": "authored"
@@ -2037,12 +2037,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The tint of choice in achromatopsia is:",
   "o": [
+   "Deep red or orange",
    "Light grey",
-   "Clear UV 400",
    "Yellow-amber",
-   "Deep red or orange"
+   "Clear UV 400"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Achromats are rod-only and dazzled by ordinary light, so a deep red or orange filter (CPF 550, Wratten #25/#29) cuts the flood and improves function.",
   "k": "Achromatopsia = deep red/orange filter.",
   "src": "authored"
@@ -2053,12 +2053,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "Besides photokeratitis, chronic UV-B exposure is associated with:",
   "o": [
-   "Cataract",
    "Keratoconus",
-   "Optic neuritis",
-   "Retinal detachment"
+   "Cataract",
+   "Retinal detachment",
+   "Optic neuritis"
   ],
-  "a": 0,
+  "a": 1,
   "w": "UV-B causes acute photokeratitis and, cumulatively, cortical cataract and pterygium, which is the argument for UV 400 protection.",
   "k": "UV-B: photokeratitis acutely, cataract chronically.",
   "src": "authored"
@@ -2069,12 +2069,12 @@
   "t": "F1 DPA",
   "q": "Nasolacrimal occlusion after instilling a drop:",
   "o": [
+   "Shortens the ocular effect",
    "Stops the drug working",
    "Blocks systemic drainage",
-   "Speeds systemic absorption",
-   "Shortens the ocular effect"
+   "Speeds systemic absorption"
   ],
-  "a": 1,
+  "a": 2,
   "w": "NLO keeps the drug on the eye and out of the nasal mucosa. It does not weaken the ocular effect: it improves it while cutting systemic load.",
   "k": "NLO cuts systemic absorption, not ocular effect.",
   "src": "sanitized"
@@ -2101,12 +2101,12 @@
   "t": "F1 DPA",
   "q": "Diagnostic pharmaceutical agents in pregnancy are:",
   "o": [
-   "Category C, used if needed",
-   "Category A, entirely safe",
    "Permitted after delivery only",
-   "Absolutely contraindicated"
+   "Category A, entirely safe",
+   "Absolutely contraindicated",
+   "Category C, used if needed"
   ],
-  "a": 0,
+  "a": 3,
   "w": "DPAs are Category C, meaning risk is not ruled out rather than proven. When dilation is genuinely needed, tropicamide with NLO is the preferred choice; blanket avoidance is wrong.",
   "k": "DPAs Category C: tropicamide preferred when needed.",
   "src": "sanitized"
@@ -2117,12 +2117,12 @@
   "t": "F2 Pediatric",
   "q": "Pseudostrabismus in an infant requires:",
   "o": [
-   "Immediate part-time patching",
-   "No treatment; it resolves",
    "Early surgical correction",
-   "Prism spectacles at near"
+   "Prism spectacles at near",
+   "No treatment; it resolves",
+   "Immediate part-time patching"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Pseudostrabismus comes from a wide nasal bridge or epicanthal folds and resolves as the face grows. Hirschberg shows symmetric reflexes, proving no true deviation.",
   "k": "Pseudostrabismus: reassure, no treatment.",
   "src": "sanitized"
@@ -2133,12 +2133,12 @@
   "t": "F2 Pediatric",
   "q": "Amblyopia treatment after age 7 is:",
   "o": [
+   "Completely futile after 7",
    "As effective as before age 7",
-   "Reduced, but useful to ~12",
    "Effective only with surgery",
-   "Completely futile after 7"
+   "Reduced, but useful to ~12"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The critical period closes around 7 to 8, and response falls off, but useful gains remain possible to roughly age 12. Beyond that gains are minimal. Never write a child off at 7.",
   "k": "Amblyopia: reduced response after 7, some gain to ~12.",
   "src": "sanitized"
@@ -2149,10 +2149,10 @@
   "t": "F2 Pediatric",
   "q": "After prescribing full spectacle correction for amblyopia, you should observe for:",
   "o": [
+   "6 months minimum",
    "48 hours",
-   "1 to 2 weeks",
    "12 to 16 weeks",
-   "6 months minimum"
+   "1 to 2 weeks"
   ],
   "a": 2,
   "w": "Spectacles alone normalize many amblyopes given 12 to 16 weeks of adaptation. Patching is added only if acuity plateaus short of normal.",
@@ -2165,12 +2165,12 @@
   "t": "F2 Pediatric",
   "q": "Surgery for accommodative esotropia is indicated only when:",
   "o": [
-   "The glasses are refused",
    "A residual remains on plus",
    "The child has turned five",
-   "The deviation exceeds 10Δ"
+   "The deviation exceeds 10Δ",
+   "The glasses are refused"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Full cycloplegic plus is the treatment: the eso is driven by accommodation. Only the non-accommodative residual, still present in the correct glasses, is a surgical target.",
   "k": "Operate only on the residual after full plus.",
   "src": "sanitized"
@@ -2181,12 +2181,12 @@
   "t": "F3 Geriatric",
   "q": "Most SEVERE vision loss in age-related macular degeneration is caused by:",
   "o": [
-   "Dry AMD, being the commonest",
    "Drusen alone",
-   "Wet AMD, despite being the minority",
-   "Geographic atrophy only"
+   "Geographic atrophy only",
+   "Dry AMD, being the commonest",
+   "Wet AMD, despite being the minority"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Dry AMD is 85% of cases but creeps. Wet AMD is only 15% yet causes most severe loss, because choroidal neovascularization destroys central vision in weeks. Common and dangerous are different questions.",
   "k": "Dry = commonest; wet = most severe loss.",
   "src": "authored"
@@ -2197,13 +2197,13 @@
   "t": "F3 Geriatric",
   "q": "AV nicking corresponds to which grade of hypertensive retinopathy?",
   "o": [
-   "Grade 1",
    "Grade 4",
-   "Grade 2",
-   "Grade 3"
+   "Grade 3",
+   "Grade 1",
+   "Grade 2"
   ],
-  "a": 2,
-  "w": "Grade 1 is arteriolar narrowing, Grade 2 AV nicking, Grade 3 haemorrhages and exudates, Grade 4 papilledema. Only Grade 4 is the emergency.",
+  "a": 3,
+  "w": "Grade 1 is arteriolar narrowing, Grade 2 AV nicking, Grade 3 hemorrhages and exudates, Grade 4 papilledema. Only Grade 4 is the emergency.",
   "k": "HTR: 1 narrowing, 2 nicking, 3 exudates, 4 papilledema.",
   "src": "authored"
  },
@@ -2213,12 +2213,12 @@
   "t": "F3 Geriatric",
   "q": "AREDS2 supplements are correctly described as:",
   "o": [
-   "A treatment for existing AMD",
-   "A cure for wet AMD",
+   "Slowed progression to advanced",
    "Effective in early AMD only",
-   "Slowed progression to advanced"
+   "A treatment for existing AMD",
+   "A cure for wet AMD"
   ],
-  "a": 3,
+  "a": 0,
   "w": "AREDS2 slows progression by about 25% in intermediate disease. It treats nothing and reverses nothing, and has no proven role in early AMD.",
   "k": "AREDS2 slows progression; it does not treat.",
   "src": "sanitized"
@@ -2229,12 +2229,12 @@
   "t": "F4 Neuro",
   "q": "Why is a patch the wrong way to test acuity in latent nystagmus?",
   "o": [
-   "It is uncomfortable for a child",
    "It causes deep suppression",
+   "Occlusion triggers the jerk",
    "It blocks the fixating eye",
-   "Occlusion triggers the jerk"
+   "It is uncomfortable for a child"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Latent nystagmus appears the moment one eye is occluded, so patching produces a falsely poor result. Fogging with a +5.00 lens blurs the eye without triggering the reflex.",
   "k": "Latent nystagmus: fog with +5.00, never patch.",
   "src": "sanitized"
@@ -2245,10 +2245,10 @@
   "t": "F4 Neuro",
   "q": "In cortical visual impairment, the pupils and OCT are:",
   "o": [
-   "Sluggish, with a thin retina",
+   "Normal pupils but abnormal OCT",
    "Fixed, with disc pallor",
    "Both entirely normal",
-   "Normal pupils but abnormal OCT"
+   "Sluggish, with a thin retina"
   ],
   "a": 2,
   "w": "CVI is a brain injury: pupils react normally and OCT shows normal retina. A normal examination in a child who clearly does not see is the diagnostic clue.",
@@ -2261,13 +2261,13 @@
   "t": "F6 Sports Vision",
   "q": "A grey tint affects vision by:",
   "o": [
+   "Sharpening moving targets",
    "Cutting all wavelengths equally",
-   "Enhancing depth perception",
    "Improving contrast markedly",
-   "Sharpening moving targets"
+   "Enhancing depth perception"
   ],
-  "a": 0,
-  "w": "Grey is a neutral density filter: it dims without altering colour balance, so contrast is unchanged. Brown and amber lift contrast by selectively cutting short wavelengths.",
+  "a": 1,
+  "w": "Grey is a neutral density filter: it dims without altering color balance, so contrast is unchanged. Brown and amber lift contrast by selectively cutting short wavelengths.",
   "k": "Grey = neutral density, no contrast gain.",
   "src": "authored"
  },
@@ -2277,12 +2277,12 @@
   "t": "F6 Sports Vision",
   "q": "The ASTM F803 standard applies specifically to:",
   "o": [
-   "All sports equally",
    "Racquet sports",
+   "All sports equally",
    "Baseball batting helmets",
    "Ice hockey visors"
   ],
-  "a": 1,
+  "a": 0,
   "w": "F803 covers racquet sports. Hockey visors and batting helmets fall under their own standards, so quoting F803 for every sport is wrong.",
   "k": "ASTM F803 = racquet sports only.",
   "src": "authored"
@@ -2295,8 +2295,8 @@
   "o": [
    "Best-corrected acuity",
    "Uncorrected acuity",
-   "Habitual acuity in old glasses",
-   "Pinhole acuity"
+   "Pinhole acuity",
+   "Habitual acuity in old glasses"
   ],
   "a": 0,
   "w": "Always refract first. Calculating from uncorrected acuity overestimates the magnification needed and lands the patient with a device far stronger and clumsier than necessary.",
@@ -2309,12 +2309,12 @@
   "t": "F7 Low Vision",
   "q": "The first magnification need of most low vision patients is for:",
   "o": [
-   "Peripheral awareness, via prisms",
    "Distance, via a telescope",
-   "Intermediate, via a computer lens",
-   "Near, for reading"
+   "Near, for reading",
+   "Peripheral awareness, via prisms",
+   "Intermediate, via a computer lens"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Most patients present wanting to read again, so near magnification comes first. Telescopes address distance tasks and are not a universal starting point.",
   "k": "Most low vision patients need near magnification first.",
   "src": "authored"
@@ -2325,9 +2325,9 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "A scleral shell is correctly used for:",
   "o": [
-   "A normal phakic eye",
-   "A shrunken but present globe",
    "A socket after exenteration",
+   "A shrunken but present globe",
+   "A normal phakic eye",
    "An empty socket after enucleation"
   ],
   "a": 1,
@@ -2341,12 +2341,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The definitive custom prosthesis is fitted after enucleation at about:",
   "o": [
-   "6 to 8 weeks",
+   "The same day",
    "6 months",
    "2 weeks",
-   "The same day"
+   "6 to 8 weeks"
   ],
-  "a": 0,
+  "a": 3,
   "w": "A clear conformer holds the socket immediately after surgery, and the custom PMMA prosthesis is fitted at 6 to 8 weeks once swelling settles and healing is complete.",
   "k": "Conformer first; custom prosthesis at 6–8 weeks.",
   "src": "authored"
@@ -2358,11 +2358,11 @@
   "q": "For mild photophobia or early lens changes, the appropriate filter is:",
   "o": [
    "CPF 550",
-   "CPF 527",
    "A dark red Wratten #29",
-   "CPF 450"
+   "CPF 450",
+   "CPF 527"
   ],
-  "a": 3,
+  "a": 2,
   "w": "CPF 450, a light yellow, suits mild photophobia. CPF 527 is reserved for RP, macular disease and glaucoma, and darker filters for achromatopsia. Higher CPF number means darker.",
   "k": "CPF 450 mild photophobia; CPF 527 RP/macular/glaucoma.",
   "src": "authored"
@@ -2373,12 +2373,12 @@
   "t": "F1 DPA",
   "q": "A 32-year-old pregnant patient needs a dilated fundus exam. Which DPA is most appropriate?",
   "o": [
+   "Proparacaine 0.5%",
    "Cyclopentolate 1%",
    "Tropicamide 0.5%",
-   "Proparacaine 0.5%",
    "Phenylephrine 10%"
   ],
-  "a": 1,
+  "a": 2,
   "w": "All DPAs are FDA Category C in pregnancy. When dilation is clinically necessary, tropicamide is the preferred agent because it has the shortest duration of action and least systemic exposure. Phenylephrine 10% is avoided due to its systemic cardiovascular risks. Cyclopentolate has a longer duration and more systemic exposure. Proparacaine is a local anesthetic, not a mydriatic.",
   "k": "All DPAs are FDA Category C in pregnancy.",
   "src": "authored"
@@ -2389,12 +2389,12 @@
   "t": "F1 DPA",
   "q": "Which of the following best explains why phenylephrine produces mydriasis without cycloplegia?",
   "o": [
-   "It blocks acetylcholinesterase, preventing ACh from contracting the ciliary muscle",
+   "It acts on M3 receptors selectively on the sphincter pupillae only",
    "It directly relaxes the ciliary muscle through a non-receptor mechanism",
-   "It acts on α1 receptors on the dilator pupillae; the ciliary muscle has no α1 receptors",
-   "It acts on M3 receptors selectively on the sphincter pupillae only"
+   "It blocks acetylcholinesterase, preventing ACh from contracting the ciliary muscle",
+   "It acts on α1 receptors on the dilator pupillae; the ciliary muscle has no α1 receptors"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Phenylephrine is an α1 agonist that stimulates the dilator pupillae. The ciliary muscle is under purely parasympathetic (M3) control — it has no α1 receptors. Therefore, phenylephrine produces mydriasis without any effect on accommodation.",
   "k": "Phenylephrine is an α1 agonist that stimulates the dilator pupillae.",
   "src": "authored"
@@ -2405,12 +2405,12 @@
   "t": "F2 Pediatric",
   "q": "A 4-year-old with a best corrected VA of 20/80 in the left eye and 20/20 in the right eye is found to have a 3.50D hyperopic difference between the eyes. What is the most likely diagnosis and first treatment step?",
   "o": [
-   "Anisometropic amblyopia; full correction, observe",
-   "Strabismic amblyopia; patch the right eye now",
    "Pseudoamblyopia; reassure and retest in 1 year",
+   "Strabismic amblyopia; patch the right eye now",
+   "Anisometropic amblyopia; full correction, observe",
    "Deprivation amblyopia; remove the media opacity"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Anisometropic amblyopia — significant refractive difference (> 1.50D) between eyes, reduced VA in the more ametropic eye, normal alignment. First step is always cycloplegic refraction and full spectacle correction. Patching is added only if VA does not normalize after 12–16 weeks of spectacle wear.",
   "k": "Anisometropic amblyopia — significant refractive difference (> 1.50D) between eyes, reduced VA in the more…",
   "src": "sanitized"
@@ -2422,11 +2422,11 @@
   "q": "A parent brings in a 2-year-old whose eyes appear to cross. On Hirschberg testing, both corneal reflexes are centered symmetrically. What is the most likely diagnosis?",
   "o": [
    "Strabismic amblyopia — patch the preferred eye",
-   "Accommodative esotropia — prescribe full plus correction",
    "Pseudostrabismus — reassure; no treatment needed",
+   "Accommodative esotropia — prescribe full plus correction",
    "Infantile esotropia — refer for surgical alignment"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Symmetric Hirschberg reflexes rule out true strabismus. The appearance of crossed eyes with normal reflexes is pseudostrabismus, caused by wide epicanthal folds. It resolves as the nasal bridge develops. No treatment is needed.",
   "k": "Symmetric Hirschberg reflexes rule out true strabismus.",
   "src": "authored"
@@ -2438,8 +2438,8 @@
   "q": "A 68-year-old patient with a 10-year history of diabetes presents with best corrected VA of 20/50 in the right eye. Fundus shows thickening of the retina within 500 µm of the fovea with adjacent hard exudates. What is the diagnosis and appropriate management?",
   "o": [
    "Proliferative DR; pan-retinal photocoagulation",
-   "Moderate NPDR; observe and recheck in 12 months",
    "Dry AMD with macular drusen; AREDS2 supplements",
+   "Moderate NPDR; observe and recheck in 12 months",
    "Clinically significant macular edema; anti-VEGF"
   ],
   "a": 3,
@@ -2454,11 +2454,11 @@
   "q": "A 72-year-old patient reports sudden onset of central distortion (wavy lines) in the right eye over 2 days. Fundus exam shows subretinal fluid and hemorrhage near the fovea. What is the most likely diagnosis?",
   "o": [
    "Diabetic macular edema",
-   "Wet AMD with choroidal neovascularization",
+   "Hypertensive retinopathy grade 3",
    "Dry AMD with geographic atrophy",
-   "Hypertensive retinopathy grade 3"
+   "Wet AMD with choroidal neovascularization"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Sudden onset of metamorphopsia (wavy lines) + subretinal fluid and hemorrhage at the macula = wet AMD with choroidal neovascularization until proven otherwise. This is urgent — refer for anti-VEGF injection. Dry AMD progresses gradually; DME is associated with diabetes and has a different fundus picture; HTR grade 3 shows flame hemorrhages and cotton wool spots but not subretinal hemorrhage.",
   "k": "Sudden onset of metamorphopsia (wavy lines) + subretinal fluid and hemorrhage at the macula = wet AMD with…",
   "src": "authored"
@@ -2470,9 +2470,9 @@
   "q": "A 45-year-old diabetic patient reports vertical diplopia that is worst when going down stairs and when reading. On examination, the right eye is hypertropic and the patient tilts the head to the left. Bielschowsky head tilt test worsens the hypertropia when tilted right. What is the diagnosis?",
   "o": [
    "Right CN4 palsy",
+   "Right CN3 palsy",
    "Right CN6 palsy",
-   "Left CN4 palsy",
-   "Right CN3 palsy"
+   "Left CN4 palsy"
   ],
   "a": 0,
   "w": "Vertical diplopia worst on downgaze + right hypertropia + head tilt to the left (away from affected side) + positive Bielschowsky when tilted toward the hypertropic (right) eye = right superior oblique palsy = right CN4 palsy.",
@@ -2486,9 +2486,9 @@
   "q": "A 2-year-old child is referred for poor visual tracking. The parents note that she uses one eye more than the other and has difficulty looking at complex images. MRI shows periventricular leukomalacia. VA testing with preferential looking shows reduced responses. Which diagnosis best fits?",
   "o": [
    "Cortical visual impairment",
-   "Congenital cataract",
    "Infantile esotropia with amblyopia",
-   "Latent nystagmus"
+   "Latent nystagmus",
+   "Congenital cataract"
   ],
   "a": 0,
   "w": "History of neurological insult (periventricular leukomalacia — white matter damage) + behavioral visual characteristics (preference, difficulty with complexity, visual latency) + normal-appearing anterior and posterior segments + reduced VEP-based VA = CVI. The diagnosis is behavioral and neuroimaging-based, not based on ocular structural findings.",
@@ -2501,12 +2501,12 @@
   "t": "F5 Occupational",
   "q": "A worker splashes a chemical solvent into their eye. What is the immediate correct action?",
   "o": [
-   "Apply a bandage contact lens to protect the cornea",
    "Irrigate with clean water or saline for at least 20–30 minutes immediately",
-   "Instill proparacaine and refer to the emergency room without irrigation",
-   "Identify the chemical first, then call poison control before irrigating"
+   "Apply a bandage contact lens to protect the cornea",
+   "Identify the chemical first, then call poison control before irrigating",
+   "Instill proparacaine and refer to the emergency room without irrigation"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Irrigation is the first and most critical action regardless of the chemical involved. Alkali burns (especially) continue to penetrate deeper every second without irrigation. History and identification are done AFTER starting irrigation.",
   "k": "Irrigation is the first and most critical action regardless of the chemical involved.",
   "src": "authored"
@@ -2517,12 +2517,12 @@
   "t": "F5 Occupational",
   "q": "A graphic designer working 10 hours daily on a computer complains of eye strain, headache, and blurred vision at the end of the day. Which of the following is NOT part of the management?",
   "o": [
+   "Prescribing cycloplegic drops for daily use to relax the ciliary muscle",
    "Prescribing a slightly reduced near add for screen distance if presbyopic",
    "Prescribing anti-reflection coated lenses",
-   "Advising the 20-20-20 rule",
-   "Prescribing cycloplegic drops for daily use to relax the ciliary muscle"
+   "Advising the 20-20-20 rule"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Cycloplegic drops are diagnostic agents — never prescribed for daily home use. They abolish accommodation, which would make near work impossible and cause photophobia. Management of CVS includes AR coating, the 20-20-20 rule, workstation optimization, and possibly task-specific lenses.",
   "k": "Cycloplegic drops are diagnostic agents — never prescribed for daily home use.",
   "src": "authored"
@@ -2533,12 +2533,12 @@
   "t": "F6 Sports Vision",
   "q": "A tennis player with 20/20 static VA reports difficulty tracking the ball on serve. Which visual skill is most likely deficient and what instrument would you use to assess it?",
   "o": [
+   "Contrast sensitivity; Pelli-Robson chart",
    "Dynamic visual acuity; Tachistoscope or Marsden Ball",
-   "Stereopsis; Stereo Fly Test",
    "Color vision; Ishihara plates",
-   "Contrast sensitivity; Pelli-Robson chart"
+   "Stereopsis; Stereo Fly Test"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Difficulty tracking a moving ball despite normal static VA indicates a dynamic visual acuity problem. The tachistoscope (presents targets for 0.01 seconds) or the Marsden Ball (moving target in three dimensions) is used to assess dynamic VA.",
   "k": "Difficulty tracking a moving ball despite normal static VA indicates a dynamic visual acuity problem.",
   "src": "authored"
@@ -2549,9 +2549,9 @@
   "t": "F6 Sports Vision",
   "q": "A golfer asks what tint would best help them on partly cloudy to sunny days and improve their depth perception for distance judgment. What would you recommend?",
   "o": [
-   "Yellow",
-   "Blue",
    "Gray",
+   "Blue",
+   "Yellow",
    "Brown or amber"
   ],
   "a": 3,
@@ -2565,9 +2565,9 @@
   "t": "F7 Low Vision",
   "q": "A patient with AMD has best corrected near VA of N32 at 40 cm. Their goal is to read N8 print. What magnification and add power are needed?",
   "o": [
+   "2×; +8.00D add",
    "2×; +12.00D add",
    "3×; +12.00D add",
-   "2×; +8.00D add",
    "4×; +16.00D add"
   ],
   "a": 3,
@@ -2581,12 +2581,12 @@
   "t": "F7 Low Vision",
   "q": "Which of the following best describes the goal of low vision rehabilitation?",
   "o": [
+   "Replace all spectacles with one magnifier system",
    "Train only patients with VA better than 20/200",
-   "Maximize function for the patient's daily tasks",
    "Restore best corrected VA to 20/20 with lenses",
-   "Replace all spectacles with one magnifier system"
+   "Maximize function for the patient's daily tasks"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Low vision rehabilitation aims to maximize the patient's functional use of remaining vision — not restore normal VA. It is task-specific and uses a combination of optical devices, non-optical aids, environmental modifications, and eccentric viewing training based on the patient's needs.",
   "k": "Low vision rehabilitation aims to maximize the patient's functional use of remaining vision — not restore…",
   "src": "sanitized"
@@ -2597,12 +2597,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "A patient with achromatopsia (complete rod monochromacy) is extremely photophobic and reports glare and difficulty in any lit environment. Which absorptive lens is most appropriate?",
   "o": [
-   "Green tint for general outdoor use",
-   "Gray",
+   "Light yellow",
    "Deep orange or red tint",
-   "Light yellow"
+   "Gray",
+   "Green tint for general outdoor use"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Achromatopsia patients have non-functional cones and rely entirely on rods. Rods are most sensitive in the mid-spectrum (peak ~507 nm) and are overwhelmed by bright light. A deep orange or red longpass filter (CPF 527 or darker) eliminates the short and mid-wavelength stimulation that causes overwhelming photophobia and allows the remaining rod function to operate comfortably. Light yellow (CPF 450) is not sufficient. Gray reduces all wavelengths equally without targeted relief.",
   "k": "Achromatopsia patients have non-functional cones and rely entirely on rods.",
   "src": "authored"
@@ -2613,12 +2613,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "A patient's eye was surgically removed 6 months ago. They are now wearing a stock prosthesis and report daily discharge and socket irritation. What is the next step?",
   "o": [
-   "Prescribe topical antibiotics and reassure",
-   "Instruct the patient to stop wearing the prosthesis to allow the socket to heal",
    "Switch to a scleral shell",
-   "Refer for a custom PMMA prosthesis fitted by a certified ocularist"
+   "Instruct the patient to stop wearing the prosthesis to allow the socket to heal",
+   "Refer for a custom PMMA prosthesis fitted by a certified ocularist",
+   "Prescribe topical antibiotics and reassure"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The stock (ready-made) prosthesis is a poor fit — it cannot conform to the individual socket, which leads to chronic discharge and irritation. The standard of care is a custom PMMA prosthesis fitted by a certified ocularist. Six months is sufficient healing time for proper fitting. Stopping prosthesis wear risks contracted socket, not healing.",
   "k": "The stock (ready-made) prosthesis is a poor fit — it cannot conform to the individual socket, which leads to…",
   "src": "authored"
@@ -2629,8 +2629,8 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The UV-B range is:",
   "o": [
-   "315–400 nm",
    "Blocks all UV below 400 nm",
+   "315–400 nm",
    "< 527 nm",
    "280–315 nm"
   ],
@@ -2645,12 +2645,12 @@
   "t": "F8 Prosthesis/Absorptive",
   "q": "The UV-A range is:",
   "o": [
-   "< 527 nm",
    "315–400 nm",
    "280–315 nm",
+   "< 527 nm",
    "Blocks all UV below 400 nm"
   ],
-  "a": 1,
+  "a": 0,
   "w": "UV-A range: 315–400 nm.",
   "k": "UV-A range = 315–400 nm",
   "src": "authored"
@@ -2662,11 +2662,11 @@
   "q": "The UV 400 label is:",
   "o": [
    "280–315 nm",
+   "315–400 nm",
    "< 527 nm",
-   "< 400 nm",
-   "315–400 nm"
+   "< 400 nm"
   ],
-  "a": 2,
+  "a": 3,
   "w": "UV 400 label: Blocks all UV below 400 nm.",
   "k": "UV 400 label = Blocks all UV below 400 nm",
   "src": "authored"
@@ -2678,8 +2678,8 @@
   "q": "The CPF 527 cutoff is:",
   "o": [
    "< 527 nm",
-   "Blocks all UV below 400 nm",
    "280–315 nm",
+   "Blocks all UV below 400 nm",
    "315–400 nm"
   ],
   "a": 0,
@@ -2694,8 +2694,8 @@
   "q": "Under the WHO/ICD-11 classification, MODERATE visual impairment is:",
   "o": [
    "Worse than 6/12 to 6/18",
-   "Worse than 3/60",
    "Worse than 6/60 to 3/60",
+   "Worse than 3/60",
    "Worse than 6/18 to 6/60"
   ],
   "a": 3,
@@ -2725,12 +2725,12 @@
   "t": "F7 Low Vision",
   "q": "In the disorder-to-handicap chain, the psychosocial and economic consequences of vision loss are the:",
   "o": [
-   "Visual impairment",
    "Visual handicap",
    "Visual disorder",
-   "Visual disability"
+   "Visual disability",
+   "Visual impairment"
   ],
-  "a": 1,
+  "a": 0,
   "w": "The chain runs disorder (anatomical change), impairment (functional loss), disability (lost skill or ability), handicap (psychosocial and economic fallout such as job loss or isolation). Rehabilitation targets the disability and handicap ends.",
   "k": "Disorder → impairment → disability → handicap.",
   "src": "authored"
@@ -2741,10 +2741,10 @@
   "t": "F7 Low Vision",
   "q": "In the disorder-to-handicap chain, an anatomical change in the visual organ is the:",
   "o": [
+   "Visual handicap",
    "Visual disability",
-   "Visual impairment",
    "Visual disorder",
-   "Visual handicap"
+   "Visual impairment"
   ],
   "a": 2,
   "w": "In glaucoma the disorder is the optic neuropathy itself; the impairment is the reduced field, the disability is being unable to read signage, and the handicap is the job loss or isolation that follows.",
@@ -2757,12 +2757,12 @@
   "t": "F7 Low Vision",
   "q": "How many people worldwide have vision impairment?",
   "o": [
+   "About 500 million",
    "About 250 million",
-   "At least 2.2 billion",
    "About 8 billion",
-   "About 500 million"
+   "At least 2.2 billion"
   ],
-  "a": 1,
+  "a": 3,
   "w": "WHO puts it at 2.2 billion or more, of whom at least 1 billion have impairment that was preventable or remains unaddressed. Prevalence in low- and middle-income regions runs about 4 times higher than in high-income regions.",
   "k": "2.2 billion with VI; 1 billion preventable/unaddressed.",
   "src": "authored"
@@ -2773,12 +2773,12 @@
   "t": "F7 Low Vision",
   "q": "Vision impairment in low- and middle-income regions is more prevalent than in high-income regions by roughly:",
   "o": [
-   "10 times",
    "2 times",
-   "No difference",
-   "4 times"
+   "10 times",
+   "4 times",
+   "No difference"
   ],
-  "a": 3,
+  "a": 2,
   "w": "WHO estimates about a fourfold higher prevalence, which is why 80% of all blindness is considered avoidable: the burden concentrates where cataract surgery and refractive correction are least available.",
   "k": "LMIC prevalence ≈ 4× high-income; 80% of blindness avoidable.",
   "src": "authored"
@@ -2790,11 +2790,11 @@
   "q": "An acuity of 20/200 corresponds to which M-unit size at 6 metres?",
   "o": [
    "6 M",
-   "60 M",
    "30 M",
-   "12 M"
+   "12 M",
+   "60 M"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The M scale tracks the Snellen denominator: 20/200 = 60 M, 20/100 = 30 M, 20/40 = 12 M, 20/20 = 6 M. M units let you convert a threshold straight into the print size a patient can manage.",
   "k": "20/200 = 60 M; 20/20 = 6 M.",
   "src": "authored"
@@ -2821,12 +2821,12 @@
   "t": "F7 Low Vision",
   "q": "Which method of predicting a reading add is the MOST accurate?",
   "o": [
-   "The reciprocal of vision method",
-   "Kestenbaum's rule",
    "Halving the distance VA denominator",
-   "Starting from near visual acuity"
+   "Kestenbaum's rule",
+   "Starting from near visual acuity",
+   "The reciprocal of vision method"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Working from measured near VA is most accurate because it uses the near threshold directly and needs no distance VA at all. Kestenbaum and the reciprocal method are both estimates derived from distance acuity.",
   "k": "Most accurate add: start from measured near VA.",
   "src": "authored"
@@ -2837,12 +2837,12 @@
   "t": "F7 Low Vision",
   "q": "For FLUENT reading (about 160 wpm), the acuity reserve needed is:",
   "o": [
-   "No reserve is needed",
    "1 line smaller than threshold",
-   "3 lines smaller than threshold",
-   "5 lines smaller than threshold"
+   "No reserve is needed",
+   "5 lines smaller than threshold",
+   "3 lines smaller than threshold"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Spot reading (~80 wpm) needs 1 line of reserve, fluent reading (~160 wpm) needs 3, and maximum reading (~320 wpm) needs 5. Prescribing at threshold gives a patient who can decode letters but cannot actually read.",
   "k": "Reserve: spot 1 line, fluent 3 lines, max 5 lines.",
   "src": "authored"
@@ -2853,12 +2853,12 @@
   "t": "F7 Low Vision",
   "q": "Enlarging print from 2 M to 8 M is which type of magnification?",
   "o": [
-   "Relative size magnification",
+   "Relative distance magnification",
    "Projection magnification",
-   "Angular magnification",
-   "Relative distance magnification"
+   "Relative size magnification",
+   "Angular magnification"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Relative size magnification enlarges the object itself: 8/2 = 4×. Relative distance magnification instead moves the object closer, and angular magnification uses a lens.",
   "k": "RSM = enlarge the object (8 M / 2 M = 4×).",
   "src": "authored"
@@ -2869,12 +2869,12 @@
   "t": "F7 Low Vision",
   "q": "Moving a book from 40 cm to 10 cm achieves 4× by which mechanism?",
   "o": [
-   "Relative distance magnification",
-   "Angular magnification",
    "Relative size magnification",
-   "Projection magnification"
+   "Projection magnification",
+   "Angular magnification",
+   "Relative distance magnification"
   ],
-  "a": 0,
+  "a": 3,
   "w": "RDM, or approach magnification, is the free magnification of getting closer: 40/10 = 4×. It costs accommodation or an add, which is why children do it effortlessly and presbyopes cannot.",
   "k": "RDM = move closer (40 cm → 10 cm = 4×).",
   "src": "authored"
@@ -2902,11 +2902,11 @@
   "q": "As magnification rises, the field of view:",
   "o": [
    "Stays the same",
-   "Widens then narrows",
    "Narrows",
+   "Widens then narrows",
    "Widens"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Higher magnification means a shorter focal length and a smaller field of view. This is the central trade-off of low vision prescribing: the strongest aid the patient can hold is rarely the most usable one.",
   "k": "More magnification = shorter focal length = smaller field.",
   "src": "authored"
@@ -2917,12 +2917,12 @@
   "t": "F7 Low Vision",
   "q": "Which device widens the apparent visual field for a patient with severe field constriction?",
   "o": [
-   "A stand magnifier",
-   "A high-add bifocal",
    "A reverse telescope",
-   "A closed-circuit television"
+   "A high-add bifocal",
+   "A closed-circuit television",
+   "A stand magnifier"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Field-expansion devices minify: reverse telescopes and minus lenses shrink the image to fit more into the remaining field. Prisms and mirrors relocate peripheral information instead. Magnifiers do the opposite and make constriction worse.",
   "k": "Field loss: minify (reverse telescope, minus lens); prisms relocate.",
   "src": "authored"
@@ -2934,11 +2934,11 @@
   "q": "The stated goal of low vision device prescribing is summarised as:",
   "o": [
    "Clearer, darker, nearer",
-   "Stronger, longer, wider",
    "Sharper, smaller, closer",
-   "Bigger, bolder, brighter"
+   "Bigger, bolder, brighter",
+   "Stronger, longer, wider"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Bigger (magnification), bolder (contrast), brighter (illumination). Contrast and light are as important as magnification and are far cheaper.",
   "k": "Low vision goal: bigger, bolder, brighter.",
   "src": "authored"
@@ -2949,12 +2949,12 @@
   "t": "F7 Low Vision",
   "q": "Which lighting type gives high intensity, directional light and a longer life than ordinary bulbs?",
   "o": [
-   "Fluorescent",
-   "Incandescent",
    "Halogen",
-   "Natural daylight"
+   "Fluorescent",
+   "Natural daylight",
+   "Incandescent"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Halogen is high-intensity and directional with long life. Fluorescent is cheapest but scatters light; incandescent is directional and dimmable but hot; natural light is free but uncontrollable.",
   "k": "Halogen = high intensity, directional, long life.",
   "src": "authored"
@@ -2965,12 +2965,12 @@
   "t": "F7 Low Vision",
   "q": "Contrast sensitivity loss in GLAUCOMA falls mainly at which spatial frequencies?",
   "o": [
-   "High frequencies only",
-   "Middle frequencies",
    "All frequencies equally",
-   "Low frequencies only"
+   "Low frequencies only",
+   "High frequencies only",
+   "Middle frequencies"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Glaucoma hits mid spatial frequencies, as does pituitary adenoma. Diabetic retinopathy degrades all grating sizes, while mild refractive error costs only the high frequencies.",
   "k": "Glaucoma CS loss = middle spatial frequencies.",
   "src": "authored"
@@ -2981,12 +2981,12 @@
   "t": "F7 Low Vision",
   "q": "After refractive surgery, contrast sensitivity typically:",
   "o": [
-   "Is unaffected throughout",
-   "Returns to the pre-surgery level",
    "Does not recover to the pre-surgery level",
-   "Improves beyond baseline"
+   "Returns to the pre-surgery level",
+   "Improves beyond baseline",
+   "Is unaffected throughout"
   ],
-  "a": 2,
+  "a": 0,
   "w": "CS does not fully return to its pre-operative level even when Snellen acuity does, which is why a patient can read 20/20 and still complain about night driving and haze.",
   "k": "Post-refractive-surgery CS does not fully recover.",
   "src": "authored"
@@ -2997,12 +2997,12 @@
   "t": "F7 Low Vision",
   "q": "Retinitis pigmentosa classically produces which field defect sequence?",
   "o": [
-   "Central scotoma then metamorphopsia",
-   "Ring scotoma then tunnel vision",
    "Bitemporal hemianopsia",
-   "Arcuate scotoma then nasal step"
+   "Arcuate scotoma then nasal step",
+   "Ring scotoma then tunnel vision",
+   "Central scotoma then metamorphopsia"
   ],
-  "a": 1,
+  "a": 2,
   "w": "RP constricts the field: a mid-peripheral ring scotoma closes inward to tunnel vision. Glaucoma's sequence is arcuate scotoma, then nasal step, then tunnel vision, reaching a similar endpoint by a different route.",
   "k": "RP: ring scotoma → tunnel vision.",
   "src": "authored"
@@ -3013,13 +3013,13 @@
   "t": "F7 Low Vision",
   "q": "A macular hole produces which visual field defect?",
   "o": [
-   "Central scotoma",
    "Arcuate scotoma",
-   "Homonymous hemianopsia",
-   "Ring scotoma"
+   "Ring scotoma",
+   "Central scotoma",
+   "Homonymous hemianopsia"
   ],
-  "a": 0,
-  "w": "A macular hole knocks out the centre, giving a central scotoma. Scattered scotomas suggest diabetic or hypertensive retinopathy; homonymous hemianopsia points behind the chiasm.",
+  "a": 2,
+  "w": "A macular hole knocks out the center, giving a central scotoma. Scattered scotomas suggest diabetic or hypertensive retinopathy; homonymous hemianopsia points behind the chiasm.",
   "k": "Macular hole = central scotoma.",
   "src": "authored"
  },
@@ -3029,10 +3029,10 @@
   "t": "F7 Low Vision",
   "q": "A whitish pupil (leukocoria) in a child should raise suspicion of:",
   "o": [
+   "Aphakia",
    "Normal variation",
-   "Nuclear cataract",
    "Retinoblastoma",
-   "Aphakia"
+   "Nuclear cataract"
   ],
   "a": 2,
   "w": "A whitish pupil suggests retinoblastoma or pseudoglioma and is a same-day referral. Greyish-white suggests cataract and brown suggests a nuclear cataract; black is normal.",
@@ -3061,12 +3061,12 @@
   "t": "F2 Pediatric",
   "q": "Visual acuity reaches adult level (about 20/20) at approximately:",
   "o": [
-   "6 months",
+   "1 year",
    "5 years",
-   "3 years",
-   "1 year"
+   "6 months",
+   "3 years"
   ],
-  "a": 2,
+  "a": 3,
   "w": "VA is about 20/50 at one year and reaches 6/6 by three, when letter matching (Sheridan Gardiner) becomes possible. By five a child can usually manage a Snellen chart by naming.",
   "k": "Adult VA ≈ age 3; 20/50 at 1 year.",
   "src": "authored"
@@ -3077,12 +3077,12 @@
   "t": "F2 Pediatric",
   "q": "The pupillary light reaction first appears at:",
   "o": [
-   "2 months",
    "Birth",
-   "30 weeks gestation",
-   "6 months"
+   "6 months",
+   "2 months",
+   "30 weeks gestation"
   ],
-  "a": 2,
+  "a": 3,
   "w": "The pupil light reaction is present from about 30 weeks gestation, before birth. Fixation follows at 2 months, smooth pursuit at 6 to 8 weeks, and OKN at 2 to 4 months.",
   "k": "Pupil light reaction = 30 weeks gestation.",
   "src": "authored"
@@ -3093,12 +3093,12 @@
   "t": "F2 Pediatric",
   "q": "Foveal maturation is complete at about:",
   "o": [
-   "2 years",
-   "4 months",
    "Birth",
-   "1 month"
+   "2 years",
+   "1 month",
+   "4 months"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The fovea matures by about 4 months, which is why acuity climbs steeply over the first half-year. Optic nerve myelination continues far longer, from 7 months to 2 years.",
   "k": "Foveal maturation ≈ 4 months; myelination to age 2.",
   "src": "authored"
@@ -3109,12 +3109,12 @@
   "t": "F2 Pediatric",
   "q": "Which structure is the LAST to develop, at about the 8th month?",
   "o": [
-   "The neural retina",
    "The ocular blood vessels",
-   "The crystalline lens",
-   "The corneal stroma"
+   "The corneal stroma",
+   "The neural retina",
+   "The crystalline lens"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Roughly: orbit 2nd month, optic nerve and choroid 3rd, cornea and vitreous 4th, lids and lacrimal 5th, iris, ciliary body and retina 6th, lens onset 7th, blood vessels 8th. Late vascular development is why prematurity plus oxygen produces ROP.",
   "k": "Blood vessels develop last (8th month) → ROP risk.",
   "src": "sanitized"
@@ -3125,12 +3125,12 @@
   "t": "F2 Pediatric",
   "q": "Retrolental fibroplasia is an older term for:",
   "o": [
-   "Retinopathy of prematurity",
-   "Persistent fetal vasculature",
    "Coats' disease",
+   "Persistent fetal vasculature",
+   "Retinopathy of prematurity",
    "Congenital cataract"
   ],
-  "a": 0,
+  "a": 2,
   "w": "RLF describes the fibrous tissue behind the lens in premature infants given high oxygen, the same entity now called ROP: prematurity plus supplemental oxygen drives abnormal vessel growth, leakage, scarring and detachment.",
   "k": "RLF = the old name for ROP.",
   "src": "authored"
@@ -3141,9 +3141,9 @@
   "t": "F2 Pediatric",
   "q": "A persistent ATNR (fencing) reflex beyond 6 to 7 months classically disrupts:",
   "o": [
-   "Feeding",
    "Bladder control",
    "Hearing",
+   "Feeding",
    "Reading and writing"
   ],
   "a": 3,
@@ -3157,12 +3157,12 @@
   "t": "F2 Pediatric",
   "q": "Which primitive reflex is tested to screen hearing, and suggests ADHD if it persists?",
   "o": [
+   "The Landau reflex",
    "The Galant reflex",
    "The Moro reflex",
-   "The rooting reflex",
-   "The Landau reflex"
+   "The rooting reflex"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The Moro or startle reflex should integrate by 5 to 6 months; it needs an intact auditory pathway, so it doubles as a hearing screen, and persistence is linked to ADHD.",
   "k": "Moro = startle, hearing screen, integrates 5–6 months.",
   "src": "sanitized"
@@ -3189,12 +3189,12 @@
   "t": "F2 Pediatric",
   "q": "The suck reflex is characteristically ABSENT in babies born before:",
   "o": [
-   "32 weeks",
+   "37 weeks",
    "36 weeks",
    "28 weeks",
-   "37 weeks"
+   "32 weeks"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The suck reflex is typically absent below about 32 weeks gestation, so very premature infants cannot feed unaided. The grasp reflex runs the other way and is stronger in premature babies.",
   "k": "Suck absent below ~32 weeks gestation.",
   "src": "authored"
@@ -3205,12 +3205,12 @@
   "t": "F2 Pediatric",
   "q": "An ABSENT Landau reflex between 1 and 3 years indicates:",
   "o": [
-   "A hearing deficit",
-   "Normal integration",
    "A motor development problem",
-   "A visual field defect"
+   "A visual field defect",
+   "Normal integration",
+   "A hearing deficit"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Landau is the exception: most primitive reflexes are a concern when they persist, but Landau is a concern when it is absent, signalling a motor development issue.",
   "k": "Landau: absence (not persistence) is the red flag.",
   "src": "authored"
@@ -3221,12 +3221,12 @@
   "t": "F3 Geriatric",
   "q": "After 20 years of Type 1 diabetes, roughly what proportion have PROLIFERATIVE retinopathy?",
   "o": [
-   "10%",
-   "Virtually all",
+   "25%",
    "50%",
-   "25%"
+   "Virtually all",
+   "10%"
   ],
-  "a": 2,
+  "a": 1,
   "w": "In Type 1: about 60% show some retinopathy past 10 years, virtually all past 15 years (25% proliferative), and about 50% have PDR past 20 years. Duration is the dominant risk factor.",
   "k": "Type 1 >20 years: ~50% have PDR.",
   "src": "authored"
@@ -3237,9 +3237,9 @@
   "t": "F3 Geriatric",
   "q": "In Type 2 diabetes, what proportion already have retinopathy AT DIAGNOSIS?",
   "o": [
-   "Virtually all",
-   "About 20%",
    "50%",
+   "About 20%",
+   "Virtually all",
    "0%"
   ],
   "a": 1,

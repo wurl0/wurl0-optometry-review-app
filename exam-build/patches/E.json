@@ -214,5 +214,14 @@
       "Anterior uveitis; topical steroid"
     ],
     "a": 2
+  },
+  "E0225": {
+    "o": [
+      "Gradual painless peripheral loss",
+      "A normal, briskly reactive pupil",
+      "Cupping as the earliest sign",
+      "Sudden pain with a fixed pupil"
+    ],
+    "a": 3
   }
 }

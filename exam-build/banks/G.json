@@ -6,8 +6,8 @@
   "q": "Pharmacokinetics describes:",
   "o": [
    "What the body does to the drug",
-   "Only drug side effects",
    "Receptor binding",
+   "Only drug side effects",
    "What the drug does to the body"
   ],
   "a": 0,
@@ -21,12 +21,12 @@
   "t": "G1 Principles",
   "q": "The main organ of drug metabolism, and its main enzyme system, are:",
   "o": [
-   "Liver; cytochrome P-450",
+   "Kidney; glomerulus",
    "Lung; surfactant",
-   "Spleen; macrophages",
-   "Kidney; glomerulus"
+   "Liver; cytochrome P-450",
+   "Spleen; macrophages"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The liver metabolizes most drugs via cytochrome P-450; the kidney is the main organ of excretion.",
   "k": "Liver metabolizes (P-450); kidney excretes.",
   "src": "legacy"
@@ -38,11 +38,11 @@
   "q": "Working at a low dose describes which property?",
   "o": [
    "Tolerance",
-   "High efficacy",
    "High potency",
+   "High efficacy",
    "High bioavailability"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Potency = how little drug is needed; efficacy = the maximum effect achievable. They are independent.",
   "k": "Potency = low dose; efficacy = max effect.",
   "src": "legacy"
@@ -53,10 +53,10 @@
   "t": "G1 Principles",
   "q": "Which route gives 100% bioavailability (zero-order, no absorption step)?",
   "o": [
-   "Rectal",
+   "Sublingual",
    "Intravenous",
    "Oral",
-   "Sublingual"
+   "Rectal"
   ],
   "a": 1,
   "w": "IV (and IA, IC) bypasses absorption entirely, so bioavailability is 100%.",
@@ -70,11 +70,11 @@
   "q": "The constant 0.693 in the half-life relationship represents:",
   "o": [
    "Plasma protein binding",
-   "The speed of light",
    "The natural log of 2",
+   "The speed of light",
    "A safety margin"
   ],
-  "a": 2,
+  "a": 1,
   "w": "k = 0.693/t½; 0.693 is ln 2, the mathematical value of halving in exponential decay.",
   "k": "0.693 = ln 2 (half-life constant).",
   "src": "legacy"
@@ -85,12 +85,12 @@
   "t": "G1 Principles",
   "q": "The therapeutic index is calculated as:",
   "o": [
-   "LD50 / ED50",
    "Potency / efficacy",
-   "ED50 / LD50",
-   "Vd × Ke"
+   "Vd × Ke",
+   "LD50 / ED50",
+   "ED50 / LD50"
   ],
-  "a": 0,
+  "a": 2,
   "w": "TI = LD50/ED50: a wider ratio means a safer drug.",
   "k": "Therapeutic index = LD50/ED50.",
   "src": "legacy"
@@ -101,12 +101,12 @@
   "t": "G1 Principles",
   "q": "A competitive antagonist differs from a non-competitive one because it:",
   "o": [
-   "Is reversible and overcome by more agonist",
    "Forms an inactive compound",
    "Forms an irreversible covalent bond",
+   "Is reversible and overcome by more agonist",
    "Binds a different receptor"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Competitive antagonists use weak reversible (Van der Waals) bonds at the same site, beaten by more agonist; non-competitive ones bond covalently.",
   "k": "Competitive = reversible; non-competitive = covalent.",
   "src": "legacy"
@@ -117,12 +117,12 @@
   "t": "G1 Principles",
   "q": "A drug with no effect of its own that boosts a second drug's effect shows:",
   "o": [
-   "Synergism",
-   "Potentiation",
+   "Additive effect",
    "Antagonism",
-   "Additive effect"
+   "Potentiation",
+   "Synergism"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Potentiation = 0 + 1 > 1; additive = sum of two active drugs; synergism = more than the sum.",
   "k": "Potentiation = inactive boosts active (0+1>1).",
   "src": "legacy"
@@ -135,8 +135,8 @@
   "o": [
    "Uncharged, lipid-soluble",
    "Bound to plasma protein",
-   "Polar and water-soluble",
-   "Charged and ionized"
+   "Charged and ionized",
+   "Polar and water-soluble"
   ],
   "a": 0,
   "w": "The uncharged (non-ionized, lipid-soluble) form crosses membranes; the environment's pH determines how much is in this form.",
@@ -149,12 +149,12 @@
   "t": "G1 Principles",
   "q": "The most important pharmacokinetic parameter is:",
   "o": [
-   "Clearance",
-   "Volume of distribution",
    "Half-life",
-   "Bioavailability"
+   "Bioavailability",
+   "Volume of distribution",
+   "Clearance"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Volume of distribution estimates how much drug localizes in tissue versus plasma.",
   "k": "Vd = most important PK parameter.",
   "src": "legacy"
@@ -181,12 +181,12 @@
   "t": "G1 Principles",
   "q": "The symbol Rx on a prescription comes from the Latin word meaning:",
   "o": [
-   "Write",
-   "Take",
+   "Cure",
    "Dispense",
-   "Cure"
+   "Write",
+   "Take"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Rx is the superscription, from recipe = 'to take'.",
   "k": "Rx = recipe ('to take').",
   "src": "legacy"
@@ -197,12 +197,12 @@
   "t": "G1 Principles",
   "q": "Which controlled-substance schedule has high abuse potential and NO accepted medical use?",
   "o": [
-   "Schedule IV",
-   "Schedule III",
    "Schedule I",
+   "Schedule III",
+   "Schedule IV",
    "Schedule V"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Schedule I (heroin, LSD) has no accepted medical use; abuse potential falls as the number rises.",
   "k": "Schedule I = no medical use.",
   "src": "legacy"
@@ -213,12 +213,12 @@
   "t": "G1 Principles",
   "q": "Phase I biotransformation most commonly involves which reaction?",
   "o": [
-   "Methylation",
-   "Conjugation",
    "Glucuronidation",
-   "Oxidation"
+   "Methylation",
+   "Oxidation",
+   "Conjugation"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Phase I unmasks/adds a polar group, most often by oxidation via P-450; Phase II is conjugation.",
   "k": "Phase I = oxidation (P-450).",
   "src": "legacy"
@@ -229,12 +229,12 @@
   "t": "G1 Principles",
   "q": "Tolerance that develops rapidly after only a few doses is called:",
   "o": [
-   "Potentiation",
    "Hypersensitivity",
-   "Tachyphylaxis",
-   "Idiosyncrasy"
+   "Potentiation",
+   "Idiosyncrasy",
+   "Tachyphylaxis"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Tachyphylaxis is rapid tolerance after a few doses; tolerance generally is reduced effect after repeated exposure.",
   "k": "Tachyphylaxis = rapid tolerance.",
   "src": "legacy"
@@ -245,12 +245,12 @@
   "t": "G1 Principles",
   "q": "The strongest (irreversible) drug-receptor bond is:",
   "o": [
-   "Hydrogen",
    "Covalent",
    "Ionic",
+   "Hydrogen",
    "Van der Waals"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Covalent bonds are strongest and irreversible; Van der Waals are weakest but most common (reversible).",
   "k": "Covalent = strongest, irreversible.",
   "src": "legacy"
@@ -261,12 +261,12 @@
   "t": "G1 Principles",
   "q": "Body clearance is expressed as:",
   "o": [
-   "ED50/LD50",
-   "Vd × Ke",
    "Vd / dose",
-   "100/f"
+   "100/f",
+   "Vd × Ke",
+   "ED50/LD50"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Clearance = Vd × Ke, the plasma volume cleared of drug per unit time.",
   "k": "Clearance = Vd × Ke.",
   "src": "legacy"
@@ -277,12 +277,12 @@
   "t": "G1 Principles",
   "q": "Which route bypasses the hepatic first-pass effect?",
   "o": [
+   "Sublingual",
    "Oral",
-   "Both undergo first pass",
    "Neither reaches blood",
-   "Sublingual"
+   "Both undergo first pass"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Sublingual (and buccal, parenteral) absorption bypasses the liver's first-pass metabolism; oral does not.",
   "k": "Sublingual bypasses first-pass; oral does not.",
   "src": "legacy"
@@ -293,12 +293,12 @@
   "t": "G2 Autonomic",
   "q": "The iris sphincter (miosis) and the iris dilator (mydriasis) are controlled by which receptors?",
   "o": [
-   "Sphincter M3; dilator α1",
    "Both M3",
-   "Both α1",
-   "Sphincter α1; dilator M3"
+   "Sphincter α1; dilator M3",
+   "Sphincter M3; dilator α1",
+   "Both α1"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The sphincter is parasympathetic (M3); the dilator is sympathetic (α1).",
   "k": "Sphincter M3; dilator α1.",
   "src": "legacy"
@@ -309,8 +309,8 @@
   "t": "G2 Autonomic",
   "q": "In the autonomic 'number rule', receptor 1 versus receptor 2 generally:",
   "o": [
-   "Both dilate",
    "Both constrict",
+   "Both dilate",
    "1 dilates, 2 constricts",
    "1 constricts/contracts, 2 dilates"
   ],
@@ -325,12 +325,12 @@
   "t": "G2 Autonomic",
   "q": "Pilocarpine lowers IOP by:",
   "o": [
+   "Decreasing aqueous production",
    "Increasing uveoscleral outflow",
    "Contracting the ciliary muscle",
-   "Blocking adenylate cyclase",
-   "Decreasing aqueous production"
+   "Blocking adenylate cyclase"
   ],
-  "a": 1,
+  "a": 2,
   "w": "As an M3 agonist, pilocarpine contracts the ciliary (Brucke's) muscle, pulling the trabeculum open to increase outflow.",
   "k": "Pilocarpine opens the trabeculum (ciliary contraction).",
   "src": "sanitized"
@@ -341,12 +341,12 @@
   "t": "G2 Autonomic",
   "q": "Which is the strongest and longest-acting cycloplegic?",
   "o": [
-   "Homatropine",
    "Tropicamide",
-   "Cyclopentolate",
-   "Atropine"
+   "Homatropine",
+   "Atropine",
+   "Cyclopentolate"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Atropine is the strongest cycloplegic with a 14-day duration; tropicamide is the weakest/shortest (4–6 h).",
   "k": "Atropine = strongest/longest cycloplegic.",
   "src": "legacy"
@@ -357,10 +357,10 @@
   "t": "G2 Autonomic",
   "q": "The routine cycloplegic of choice (reliable cycloplegia, shorter than atropine) is:",
   "o": [
+   "Proparacaine",
    "Atropine",
-   "Phenylephrine",
    "Cyclopentolate",
-   "Proparacaine"
+   "Phenylephrine"
   ],
   "a": 2,
   "w": "Cyclopentolate gives reliable cycloplegia with a much shorter duration than atropine.",
@@ -374,11 +374,11 @@
   "q": "An Adie's tonic pupil constricts to which dilute agent (denervation supersensitivity)?",
   "o": [
    "4% cocaine",
-   "0.1% pilocarpine",
    "1% pilocarpine",
-   "2.5% phenylephrine"
+   "2.5% phenylephrine",
+   "0.1% pilocarpine"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Adie's pupil constricts to 0.1% pilocarpine, a dose too weak to affect a normal pupil.",
   "k": "Adie's pupil constricts to 0.1% pilocarpine.",
   "src": "legacy"
@@ -389,12 +389,12 @@
   "t": "G2 Autonomic",
   "q": "In Horner's syndrome, which agent CONFIRMS the diagnosis (the pupil fails to dilate)?",
   "o": [
-   "Cocaine",
+   "Pilocarpine",
    "Atropine",
-   "Hydroxyamphetamine",
-   "Pilocarpine"
+   "Cocaine",
+   "Hydroxyamphetamine"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Cocaine blocks NE reuptake; a Horner pupil has no NE to potentiate, so it fails to dilate. Hydroxyamphetamine then localizes the lesion.",
   "k": "Cocaine confirms Horner; hydroxyamphetamine localizes.",
   "src": "legacy"
@@ -405,12 +405,12 @@
   "t": "G2 Autonomic",
   "q": "Iris cysts are a side effect of which miotics, reversed by 2.5% phenylephrine?",
   "o": [
-   "Atropine and homatropine",
-   "Pilocarpine and carbachol",
    "Timolol and betaxolol",
-   "Echothiopate and DFP"
+   "Atropine and homatropine",
+   "Echothiopate and DFP",
+   "Pilocarpine and carbachol"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The irreversible AChE inhibitors echothiopate and DFP cause iris cysts; 2.5% phenylephrine prevents/reverses them.",
   "k": "Echothiopate/DFP = iris cysts (phenylephrine reverses).",
   "src": "legacy"
@@ -421,12 +421,12 @@
   "t": "G2 Autonomic",
   "q": "The antidote for organophosphate (AChE inhibitor) poisoning is:",
   "o": [
+   "Timolol",
    "Atropine",
-   "Physostigmine",
    "Pilocarpine",
-   "Timolol"
+   "Physostigmine"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Atropine, an antimuscarinic, reverses the cholinergic crisis of organophosphate poisoning.",
   "k": "Organophosphate poisoning antidote = atropine.",
   "src": "legacy"
@@ -437,12 +437,12 @@
   "t": "G2 Autonomic",
   "q": "Which beta blocker is safer in a glaucoma patient with asthma?",
   "o": [
-   "Carteolol",
    "Betaxolol",
+   "Carteolol",
    "Levobunolol",
    "Timolol"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Cardio-selective betaxolol spares airway β2 receptors, safer in asthma/COPD than non-selective blockers.",
   "k": "Asthma + glaucoma = betaxolol (cardio-selective).",
   "src": "legacy"
@@ -453,12 +453,12 @@
   "t": "G2 Autonomic",
   "q": "Alpha-2 agonists such as brimonidine lower IOP by:",
   "o": [
+   "Decreasing aqueous production",
    "Causing mydriasis",
-   "Opening the trabeculum mechanically",
    "Increasing aqueous production",
-   "Decreasing aqueous production"
+   "Opening the trabeculum mechanically"
   ],
-  "a": 3,
+  "a": 0,
   "w": "α2 agonists decrease aqueous secretion (and add some outflow).",
   "k": "α2 agonists decrease aqueous secretion.",
   "src": "legacy"
@@ -470,9 +470,9 @@
   "q": "Dapiprazole and thymoxamine are used to:",
   "o": [
    "Reverse pharmacologic mydriasis",
+   "Dilate the pupil",
    "Stain the cornea",
-   "Anesthetize the cornea",
-   "Dilate the pupil"
+   "Anesthetize the cornea"
   ],
   "a": 0,
   "w": "As α1 blockers they reverse the mydriasis of phenylephrine/tropicamide (miotic effect).",
@@ -501,12 +501,12 @@
   "t": "G2 Autonomic",
   "q": "The rate-limiting step of norepinephrine synthesis is:",
   "o": [
-   "Dopamine → NE",
-   "NE → epinephrine",
+   "DOPA → dopamine",
    "Tyrosine → DOPA",
-   "DOPA → dopamine"
+   "NE → epinephrine",
+   "Dopamine → NE"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Tyrosine → DOPA by tyrosine hydroxylase is the rate-limiting step in NE synthesis.",
   "k": "NE synthesis rate-limiting: tyrosine → DOPA.",
   "src": "legacy"
@@ -518,9 +518,9 @@
   "q": "By the suffix decoder, a drug ending in '-olol' is a:",
   "o": [
    "Beta blocker",
+   "AChE inhibitor",
    "Prostaglandin",
-   "Alpha-2 agonist",
-   "AChE inhibitor"
+   "Alpha-2 agonist"
   ],
   "a": 0,
   "w": "-olol = beta blocker; -onidine = α2 agonist; -zoline = α1 decongestant; -stigmine = AChE inhibitor.",
@@ -533,10 +533,10 @@
   "t": "G2 Autonomic",
   "q": "Phenylephrine produces mydriasis without cycloplegia because:",
   "o": [
-   "It inhibits acetylcholinesterase",
-   "α1 agonist; ciliary muscle has no α1",
    "It blocks M3 on the sphincter",
-   "It acts as a local anesthetic"
+   "α1 agonist; ciliary muscle has no α1",
+   "It acts as a local anesthetic",
+   "It inhibits acetylcholinesterase"
   ],
   "a": 1,
   "w": "Phenylephrine stimulates α1 on the dilator; the ciliary muscle is pure M3, so accommodation is spared.",
@@ -550,9 +550,9 @@
   "q": "The routine MYDRIATIC of choice (weak cycloplegic, short, safe) is:",
   "o": [
    "Tropicamide",
-   "Atropine",
+   "Scopolamine",
    "Cyclopentolate",
-   "Scopolamine"
+   "Atropine"
   ],
   "a": 0,
   "w": "Tropicamide is the most common routine mydriatic with the shortest action and no vasopressor effect.",
@@ -566,8 +566,8 @@
   "q": "Which is a non-selective beta blocker contraindicated in asthma and insulin-dependent diabetes?",
   "o": [
    "Timolol",
-   "Brimonidine",
    "Metoprolol",
+   "Brimonidine",
    "Betaxolol"
   ],
   "a": 0,
@@ -581,12 +581,12 @@
   "t": "G2 Autonomic",
   "q": "Cocaine and hydroxyamphetamine are both INDIRECT sympathomimetics because they:",
   "o": [
-   "Block M3",
-   "Change norepinephrine levels",
    "Constrict the pupil",
-   "Bind α1 directly"
+   "Bind α1 directly",
+   "Block M3",
+   "Change norepinephrine levels"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Cocaine blocks NE reuptake; hydroxyamphetamine releases stored NE. Neither binds the receptor directly.",
   "k": "Cocaine blocks reuptake; hydroxyamphetamine releases NE.",
   "src": "legacy"
@@ -597,12 +597,12 @@
   "t": "G3 Diagnostic",
   "q": "Local anesthetics produce numbness by:",
   "o": [
-   "Fluorescing in blue light",
-   "Stimulating α1 receptors",
+   "Blocking M3 receptors",
    "Blocking sodium channels",
-   "Blocking M3 receptors"
+   "Stimulating α1 receptors",
+   "Fluorescing in blue light"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Anesthetics block Na+ channels, stopping depolarization and pain conduction.",
   "k": "Anesthetics block Na+ channels.",
   "src": "sanitized"
@@ -613,12 +613,12 @@
   "t": "G3 Diagnostic",
   "q": "How do you tell an ester anesthetic from an amide?",
   "o": [
-   "Esters always have two i's",
+   "One i = ester, two i's = amide",
    "All -caines are amides",
-   "By the color of the bottle",
-   "One i = ester, two i's = amide"
+   "Esters always have two i's",
+   "By the color of the bottle"
   ],
-  "a": 3,
+  "a": 0,
   "w": "One 'i' before -caine = ester (cocaine, procaine, tetracaine, proparacaine); two i's = amide (lidocaine, bupivacaine).",
   "k": "One i = ester; two i's = amide.",
   "src": "sanitized"
@@ -629,12 +629,12 @@
   "t": "G3 Diagnostic",
   "q": "The most commonly used topical ocular anesthetic is:",
   "o": [
+   "Lidocaine",
    "Proparacaine 0.5%",
    "Tetracaine",
-   "Lidocaine",
    "Cocaine"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Proparacaine (onset 5–15 sec, duration ~20 min) is the least irritating, everyday anesthetic for tonometry/gonioscopy.",
   "k": "Proparacaine 0.5% = everyday anesthetic.",
   "src": "legacy"
@@ -645,12 +645,12 @@
   "t": "G3 Diagnostic",
   "q": "Why is cocaine NOT used for tonometry?",
   "o": [
-   "It is far too short-acting",
+   "It softens the corneal surface",
    "It does not numb at all",
    "It permanently stains cornea",
-   "It softens the corneal surface"
+   "It is far too short-acting"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Cocaine softens the corneal epithelium, lowering the applanation reading; it is used to diagnose Horner's instead.",
   "k": "Cocaine softens cornea (avoid for tonometry).",
   "src": "sanitized"
@@ -661,12 +661,12 @@
   "t": "G3 Diagnostic",
   "q": "Why does a topical anesthetic fail in an infected, inflamed eye?",
   "o": [
+   "Acidic tissue ionizes the drug",
    "Inflammation speeds metabolism",
    "Infection destroys the drug",
-   "Bacteria absorb the drug",
-   "Acidic tissue ionizes the drug"
+   "Bacteria absorb the drug"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Anesthetics cross nerves in their uncharged form; acidic (infected) tissue shifts them to the charged form, weakening the block.",
   "k": "Acidic infected tissue ionizes anesthetic → weak block.",
   "src": "sanitized"
@@ -679,10 +679,10 @@
   "o": [
    "Corneal endothelium",
    "Normal epithelium",
-   "Devitalized cells and mucus",
-   "Epithelial defects"
+   "Epithelial defects",
+   "Devitalized cells and mucus"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Fluorescein floods epithelial defects and glows green under cobalt blue; rose bengal/lissamine stain devitalized cells.",
   "k": "Fluorescein stains epithelial defects.",
   "src": "legacy"
@@ -693,12 +693,12 @@
   "t": "G3 Diagnostic",
   "q": "Which dye stains devitalized cells and is used before fluorescein in a dry-eye workup?",
   "o": [
-   "Fluorexon",
-   "Trypan blue",
+   "Rose bengal",
    "Indocyanine green",
-   "Rose bengal"
+   "Fluorexon",
+   "Trypan blue"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Rose bengal stains devitalized cells/mucus (early KCS/Sjogren's) and is applied before fluorescein.",
   "k": "Rose bengal = devitalized cells (before fluorescein).",
   "src": "legacy"
@@ -709,12 +709,12 @@
   "t": "G3 Diagnostic",
   "q": "Indocyanine green (ICG) angiography is preferred for imaging:",
   "o": [
-   "The corneal epithelium",
-   "Choroidal neovascular membranes",
+   "The tear film",
    "The anterior chamber angle",
-   "The tear film"
+   "Choroidal neovascular membranes",
+   "The corneal epithelium"
   ],
-  "a": 1,
+  "a": 2,
   "w": "ICG is protein-bound and infrared (805 nm), better than fluorescein for choroidal circulation.",
   "k": "ICG = choroidal angiography (infrared).",
   "src": "legacy"
@@ -726,11 +726,11 @@
   "q": "A green stream of dye flowing from a post-cataract wound against the orange background is a positive:",
   "o": [
    "Jones I test",
-   "Seidel test",
    "TBUT",
-   "Schirmer test"
+   "Schirmer test",
+   "Seidel test"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The Seidel test detects an aqueous leak: diluted aqueous streams green against the concentrated dye.",
   "k": "Seidel test = aqueous wound leak.",
   "src": "legacy"
@@ -741,12 +741,12 @@
   "t": "G3 Diagnostic",
   "q": "Lissamine green is used to:",
   "o": [
-   "Stain devitalized cells",
-   "Image the choroidal vessels",
    "Anesthetize the cornea",
+   "Image the choroidal vessels",
+   "Stain devitalized cells",
    "Stain epithelial defects"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Lissamine green stains devitalized cells/mucus with less stinging than rose bengal and screens xerophthalmia.",
   "k": "Lissamine green = devitalized cells (gentle).",
   "src": "sanitized"
@@ -757,12 +757,12 @@
   "t": "G3 Diagnostic",
   "q": "Esters are metabolized by ___ and amides by ___:",
   "o": [
-   "Both by kidney",
    "Both by liver",
-   "Plasma pseudo-cholinesterase; liver",
-   "Liver; plasma cholinesterase"
+   "Liver; plasma cholinesterase",
+   "Both by kidney",
+   "Plasma pseudo-cholinesterase; liver"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Esters are broken down by plasma pseudo-cholinesterase; amides are metabolized by the liver.",
   "k": "Esters = plasma cholinesterase; amides = liver.",
   "src": "legacy"
@@ -773,12 +773,12 @@
   "t": "G3 Diagnostic",
   "q": "Trypan blue is used during surgery to:",
   "o": [
-   "Stain the anterior capsule",
    "Numb the corneal surface",
-   "Image the retinal surface",
-   "Reverse surgical mydriasis"
+   "Stain the anterior capsule",
+   "Reverse surgical mydriasis",
+   "Image the retinal surface"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Trypan blue (anionic, no side effects) stains the capsule for capsulorhexis and assesses endothelial integrity.",
   "k": "Trypan blue = capsule/endothelium staining.",
   "src": "sanitized"
@@ -790,11 +790,11 @@
   "q": "Adding epinephrine to an injectable anesthetic:",
   "o": [
    "Causes mydriasis only",
-   "Shortens the block time",
    "Prolongs the block",
+   "Shortens the block time",
    "Neutralizes the drug"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Epinephrine vasoconstricts, keeping the anesthetic in place longer; bicarbonate speeds onset; hyaluronidase spreads it.",
   "k": "Epinephrine prolongs the anesthetic block.",
   "src": "sanitized"
@@ -805,12 +805,12 @@
   "t": "G3 Diagnostic",
   "q": "Tetracaine is approximately how potent compared with cocaine?",
   "o": [
-   "10 times as potent",
    "100 times",
    "Half as potent",
-   "Equal"
+   "Equal",
+   "10 times as potent"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Tetracaine is about 10x as potent as cocaine and longer acting, but stings more than proparacaine.",
   "k": "Tetracaine ≈ 10x cocaine potency.",
   "src": "legacy"
@@ -821,12 +821,12 @@
   "t": "G3 Diagnostic",
   "q": "Fluorescein is best viewed under which light?",
   "o": [
-   "White",
-   "Infrared",
    "Red-free green",
-   "Cobalt blue"
+   "Cobalt blue",
+   "Infrared",
+   "White"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Fluorescein absorbs blue near 465 nm and emits green, so defects glow under cobalt blue.",
   "k": "Fluorescein = cobalt blue (465 nm).",
   "src": "legacy"
@@ -837,12 +837,12 @@
   "t": "G3 Diagnostic",
   "q": "Which agent diagnoses Horner's syndrome and also has anesthetic and mydriatic properties?",
   "o": [
-   "Cocaine",
    "Tetracaine",
    "Benoxinate",
+   "Cocaine",
    "Proparacaine"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Cocaine is the only natural anesthetic; it blocks NE reuptake (Horner test), numbs, and dilates.",
   "k": "Cocaine = anesthetic + mydriatic + Horner test.",
   "src": "legacy"
@@ -853,12 +853,12 @@
   "t": "G4 Therapeutic",
   "q": "The first-line glaucoma drug class, acting by increasing uveoscleral outflow, is:",
   "o": [
-   "Prostaglandin analogs",
-   "Carbonic anhydrase inhibitors",
+   "Alpha-2 agonists",
    "Beta blockers",
-   "Alpha-2 agonists"
+   "Carbonic anhydrase inhibitors",
+   "Prostaglandin analogs"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Prostaglandin analogs (latanoprost) open uveoscleral outflow and are first-line; the others cut production.",
   "k": "Prostaglandins = first-line (uveoscleral outflow).",
   "src": "legacy"
@@ -869,12 +869,12 @@
   "t": "G4 Therapeutic",
   "q": "Which classes lower IOP by DECREASING aqueous production?",
   "o": [
-   "Osmotic agents only",
    "Beta blockers, alpha-2s, CAIs",
-   "Prostaglandins and miotics",
-   "Miotics and osmotics"
+   "Miotics and osmotics",
+   "Osmotic agents only",
+   "Prostaglandins and miotics"
   ],
-  "a": 1,
+  "a": 0,
   "w": "'Three down': beta blockers, α2 agonists, and CAIs reduce production. 'Two out': prostaglandins and miotics boost outflow.",
   "k": "Decrease production: beta blockers, α2, CAIs.",
   "src": "sanitized"
@@ -886,11 +886,11 @@
   "q": "Acetazolamide is a carbonic anhydrase inhibitor contraindicated in:",
   "o": [
    "Diabetes",
-   "Asthma",
    "Sulfa allergy",
+   "Asthma",
    "Penicillin allergy"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Acetazolamide is a sulfonamide; avoid in sulfa allergy. Side effects: paresthesia, stones, metallic taste, acidosis.",
   "k": "Acetazolamide (CAI) = avoid in sulfa allergy.",
   "src": "legacy"
@@ -901,12 +901,12 @@
   "t": "G4 Therapeutic",
   "q": "Beta blockers lower IOP by:",
   "o": [
-   "Decreasing aqueous production",
+   "Opening the trabeculum mechanically",
    "Dilating the pupil",
    "Increasing uveoscleral outflow",
-   "Opening the trabeculum mechanically"
+   "Decreasing aqueous production"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Beta blockers cut aqueous production via adenylate cyclase blockade.",
   "k": "Beta blockers decrease aqueous production.",
   "src": "legacy"
@@ -933,12 +933,12 @@
   "t": "G4 Therapeutic",
   "q": "The drug of choice for trachoma is:",
   "o": [
-   "Polymyxin B",
-   "Penicillin",
    "Gentamicin",
-   "Tetracycline"
+   "Penicillin",
+   "Tetracycline",
+   "Polymyxin B"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Tetracycline is the DOC for trachoma and inclusion conjunctivitis; avoid in children and pregnancy.",
   "k": "Trachoma DOC = tetracycline.",
   "src": "legacy"
@@ -949,12 +949,12 @@
   "t": "G4 Therapeutic",
   "q": "Aminoglycoside antibiotics are toxic in which way beyond 5 days of use?",
   "o": [
-   "Hepatotoxic",
-   "Neurotoxic to the optic nerve",
    "Cardiotoxic",
-   "Ototoxic and nephrotoxic"
+   "Ototoxic and nephrotoxic",
+   "Hepatotoxic",
+   "Neurotoxic to the optic nerve"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Aminoglycosides (gentamicin, tobramycin) become ototoxic and nephrotoxic with prolonged use.",
   "k": "Aminoglycosides = oto/nephrotoxic >5 days.",
   "src": "legacy"
@@ -982,8 +982,8 @@
   "q": "The two classic ocular side effects of long-term steroids are:",
   "o": [
    "Nystagmus and diplopia",
-   "Miosis and induced myopia",
    "Dry eye and lid ptosis",
+   "Miosis and induced myopia",
    "Glaucoma and PSC cataract"
   ],
   "a": 3,
@@ -998,8 +998,8 @@
   "q": "The safest steroid for an eye prone to high IOP is:",
   "o": [
    "Dexamethasone",
-   "Betamethasone",
    "Prednisolone",
+   "Betamethasone",
    "Fluorometholone"
   ],
   "a": 3,
@@ -1013,12 +1013,12 @@
   "t": "G4 Therapeutic",
   "q": "The topical antifungal of choice for filamentary fungi (Fusarium, Aspergillus) is:",
   "o": [
-   "Acyclovir",
-   "Tetracycline",
+   "Amphotericin B IV",
    "Natamycin",
-   "Amphotericin B IV"
+   "Acyclovir",
+   "Tetracycline"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Natamycin (polyene) is the topical workhorse for filamentary fungal keratitis; amphotericin B is for systemic disease.",
   "k": "Filamentary fungal keratitis = natamycin.",
   "src": "legacy"
@@ -1029,12 +1029,12 @@
   "t": "G4 Therapeutic",
   "q": "Which antibiotic carries a risk of aplastic anemia?",
   "o": [
+   "Ciprofloxacin",
    "Chloramphenicol",
    "Erythromycin",
-   "Ciprofloxacin",
    "Bacitracin"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Chloramphenicol (DOC for typhoid) risks aplastic anemia.",
   "k": "Chloramphenicol = aplastic anemia risk.",
   "src": "legacy"
@@ -1045,12 +1045,12 @@
   "t": "G4 Therapeutic",
   "q": "Acute angle-closure glaucoma is definitively treated by:",
   "o": [
-   "Laser peripheral iridotomy",
    "Antibiotics",
-   "Anti-VEGF",
-   "Topical steroids"
+   "Laser peripheral iridotomy",
+   "Topical steroids",
+   "Anti-VEGF"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Angle-closure is a surgical emergency: lower IOP medically, then perform laser peripheral iridotomy.",
   "k": "Angle-closure = lower IOP then iridotomy.",
   "src": "legacy"
@@ -1061,12 +1061,12 @@
   "t": "G4 Therapeutic",
   "q": "Topical antivirals for herpetic epithelial keratitis include:",
   "o": [
+   "Natamycin and amphotericin",
    "Trifluridine and acyclovir",
-   "Latanoprost",
    "Gentamicin and tobramycin",
-   "Natamycin and amphotericin"
+   "Latanoprost"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Trifluridine, vidarabine, and acyclovir treat HSV/VZV epithelial disease; ganciclovir/foscarnet treat CMV.",
   "k": "Herpes keratitis = trifluridine / acyclovir.",
   "src": "legacy"
@@ -1077,10 +1077,10 @@
   "t": "G4 Therapeutic",
   "q": "Mast-cell stabilizing cromolyn sodium is used for:",
   "o": [
-   "Filamentary fungal keratitis",
-   "Vernal conjunctivitis",
    "Bacterial conjunctivitis",
-   "Open-angle glaucoma"
+   "Vernal conjunctivitis",
+   "Open-angle glaucoma",
+   "Filamentary fungal keratitis"
   ],
   "a": 1,
   "w": "Cromolyn stabilizes mast cells (prevents calcium influx/degranulation) for vernal/atopic allergic conjunctivitis.",
@@ -1094,11 +1094,11 @@
   "q": "Which antibiotic class inhibits bacterial DNA gyrase (nucleic acid synthesis)?",
   "o": [
    "Sulfonamides",
-   "Quinolones",
    "Aminoglycosides",
-   "Penicillins"
+   "Penicillins",
+   "Quinolones"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Quinolones inhibit DNA gyrase; penicillins block cell wall; aminoglycosides/tetracyclines block protein synthesis; sulfonamides block folic acid.",
   "k": "Quinolones inhibit DNA gyrase.",
   "src": "legacy"
@@ -1109,12 +1109,12 @@
   "t": "G4 Therapeutic",
   "q": "The corticosteroid potency ladder, weakest to strongest, is:",
   "o": [
-   "Fluorometholone < cortisone",
    "All equal",
-   "Cortisone < prednisolone < dexamethasone",
-   "Dexamethasone < prednisolone < cortisone"
+   "Dexamethasone < prednisolone < cortisone",
+   "Fluorometholone < cortisone",
+   "Cortisone < prednisolone < dexamethasone"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Cortisone (weakest) < prednisolone (~10x) < dexamethasone/betamethasone (30–50x cortisone).",
   "k": "Cortisone < prednisolone < dexamethasone.",
   "src": "legacy"
@@ -1125,9 +1125,9 @@
   "t": "G5 Side Effects",
   "q": "Long-term hydroxychloroquine causes which classic fundus finding?",
   "o": [
+   "Cherry-red spot",
    "Disc neovascularization",
    "Cotton-wool spots",
-   "Cherry-red spot",
    "Bull's-eye maculopathy"
   ],
   "a": 3,
@@ -1142,11 +1142,11 @@
   "q": "A cardiac patient on digitalis sees everything with a yellow tinge. This is:",
   "o": [
    "Cyanopsia",
-   "Erythropsia",
    "Xanthopsia",
-   "Chloropsia"
+   "Chloropsia",
+   "Erythropsia"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Xanthopsia (yellow vision, 'snowy') is the classic digitalis effect.",
   "k": "Digitalis = xanthopsia (yellow vision).",
   "src": "legacy"
@@ -1158,8 +1158,8 @@
   "q": "Ethambutol and isoniazid (anti-TB drugs) classically cause:",
   "o": [
    "Rhegmatogenous detachment",
-   "Posterior subcapsular cataract",
    "Acute angle-closure",
+   "Posterior subcapsular cataract",
    "Optic neuritis, red-green defect"
   ],
   "a": 3,
@@ -1174,11 +1174,11 @@
   "q": "Amiodarone classically causes which corneal and visual findings?",
   "o": [
    "A macular cherry-red spot",
+   "Nuclear cataract only",
    "A bull's-eye maculopathy",
-   "Cornea verticillata, halos",
-   "Nuclear cataract only"
+   "Cornea verticillata, halos"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Amiodarone deposits as anterior whorl keratopathy and causes colored halos; watch for optic neuropathy.",
   "k": "Amiodarone = cornea verticillata + colored halos.",
   "src": "sanitized"
@@ -1189,8 +1189,8 @@
   "t": "G5 Side Effects",
   "q": "Phenothiazines (e.g., thioridazine) cause which lens finding?",
   "o": [
-   "Posterior subcapsular cataract",
    "No cataract",
+   "Posterior subcapsular cataract",
    "Stellate ANTERIOR subcapsular cataract",
    "Snowflake cataract"
   ],
@@ -1206,9 +1206,9 @@
   "q": "The preferred dilating agent in a pregnant patient is:",
   "o": [
    "Tropicamide",
+   "Cyclopentolate 2%",
    "Phenylephrine 10%",
-   "Atropine",
-   "Cyclopentolate 2%"
+   "Atropine"
   ],
   "a": 0,
   "w": "All DPAs are Category C; tropicamide has the shortest duration and least exposure, with NLO.",
@@ -1221,12 +1221,12 @@
   "t": "G5 Side Effects",
   "q": "A child given 2% cyclopentolate becomes disoriented and hallucinates because:",
   "o": [
-   "It is an allergic reaction",
-   "It precipitated angle-closure",
    "An immature liver lets it build",
+   "It precipitated angle-closure",
+   "It is an allergic reaction",
    "It is an anesthetic overdose"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Children's immature hepatic metabolism causes systemic anticholinergic CNS toxicity; use 0.5–1% with lacrimal occlusion.",
   "k": "Cyclopentolate 2% in kids = CNS toxicity.",
   "src": "sanitized"
@@ -1237,10 +1237,10 @@
   "t": "G5 Side Effects",
   "q": "Drugs causing transient (acute) myopia include:",
   "o": [
-   "Topical prostaglandins",
+   "Topical beta blockers",
    "Sulfonamides and acetazolamide",
-   "Systemic aminoglycosides",
-   "Topical beta blockers"
+   "Topical prostaglandins",
+   "Systemic aminoglycosides"
   ],
   "a": 1,
   "w": "Sulfonamides, topiramate, acetazolamide, and steroids can cause ciliary-body swelling and transient myopia/angle closure.",
@@ -1254,8 +1254,8 @@
   "q": "Which group of drugs can precipitate ACUTE ANGLE-CLOSURE glaucoma by dilating the pupil?",
   "o": [
    "Systemic aminoglycosides",
-   "Beta blockers and CAIs",
    "Topical prostaglandins",
+   "Beta blockers and CAIs",
    "Anticholinergics and TCAs"
   ],
   "a": 3,
@@ -1270,11 +1270,11 @@
   "q": "Excess vitamin A is associated with:",
   "o": [
    "Posterior subcapsular cataract",
+   "A bull's-eye maculopathy",
    "A red-green color defect",
-   "Pseudotumor cerebri",
-   "A bull's-eye maculopathy"
+   "Pseudotumor cerebri"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Hypervitaminosis A (and oral contraceptives, tetracycline) can cause pseudotumor cerebri with papilledema.",
   "k": "Excess vitamin A = pseudotumor cerebri.",
   "src": "sanitized"
@@ -1285,12 +1285,12 @@
   "t": "G5 Side Effects",
   "q": "Oral contraceptives are associated with which ocular vascular risk?",
   "o": [
-   "Dry eye",
-   "Cherry-red spot",
    "Retinal vascular occlusion",
-   "Cataract"
+   "Cataract",
+   "Dry eye",
+   "Cherry-red spot"
   ],
-  "a": 2,
+  "a": 0,
   "w": "OCPs increase thrombotic risk, including retinal vein/artery occlusion, and can cause pseudotumor cerebri.",
   "k": "OCPs = retinal vascular occlusion risk.",
   "src": "legacy"
@@ -1301,10 +1301,10 @@
   "t": "G5 Side Effects",
   "q": "Drugs that LOWER intraocular pressure include:",
   "o": [
-   "Systemic antihistamines",
    "Steroids and anticholinergics",
+   "Sulfonamide antibiotics",
    "Beta blockers and diuretics",
-   "Sulfonamide antibiotics"
+   "Systemic antihistamines"
   ],
   "a": 2,
   "w": "Beta blockers, diuretics, carbonic anhydrase inhibitors, and marijuana all lower IOP.",
@@ -1317,12 +1317,12 @@
   "t": "G5 Side Effects",
   "q": "Cornea verticillata (whorl keratopathy) is caused by which group (CATI)?",
   "o": [
-   "Chloroquine and amiodarone",
-   "Beta blockers, diuretics",
+   "Steroids and oral NSAIDs",
    "Penicillin, gentamicin",
-   "Steroids and oral NSAIDs"
+   "Chloroquine and amiodarone",
+   "Beta blockers, diuretics"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The whorl pattern is caused by amphiphilic drugs: chloroquine, amiodarone, tamoxifen, indomethacin (and chlorpromazine).",
   "k": "Cornea verticillata 'CATI'.",
   "src": "sanitized"
@@ -1334,11 +1334,11 @@
   "q": "Tamoxifen classically causes which retinal finding?",
   "o": [
    "Cherry-red spot",
-   "Crystalline retinopathy",
    "Bull's-eye macula",
-   "Cotton-wool spots"
+   "Cotton-wool spots",
+   "Crystalline retinopathy"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Tamoxifen causes crystalline retinopathy and cornea verticillata.",
   "k": "Tamoxifen = crystalline retinopathy.",
   "src": "legacy"
@@ -1349,12 +1349,12 @@
   "t": "G5 Side Effects",
   "q": "In a geriatric patient, drug toxicity risk is higher mainly because of:",
   "o": [
-   "Better gut absorption",
    "Faster hepatic metabolism",
-   "Larger resting pupils",
-   "Declining liver and kidney"
+   "Declining liver and kidney",
+   "Better gut absorption",
+   "Larger resting pupils"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Aging liver and kidney clear drugs slowly, so drugs accumulate; polypharmacy adds interaction risk.",
   "k": "Geriatric: slowed clearance → accumulation.",
   "src": "sanitized"
@@ -1365,12 +1365,12 @@
   "t": "G5 Side Effects",
   "q": "Isotretinoin (oral retinoid for acne) commonly causes:",
   "o": [
-   "Posterior subcapsular cataract",
-   "A red-green color defect",
+   "Acute angle-closure glaucoma",
    "Dry eye and lens intolerance",
-   "Acute angle-closure glaucoma"
+   "Posterior subcapsular cataract",
+   "A red-green color defect"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Isotretinoin dries mucous membranes, causing dry eye, CLI (8–10%), and meibomitis/blepharoconjunctivitis.",
   "k": "Isotretinoin = dry eye + CLI.",
   "src": "sanitized"
@@ -1383,8 +1383,8 @@
   "o": [
    "Aplastic anemia, neuritis",
    "Cataract and glaucoma",
-   "A bull's-eye maculopathy",
-   "Xanthopsia and halos"
+   "Xanthopsia and halos",
+   "A bull's-eye maculopathy"
   ],
   "a": 0,
   "w": "Chloramphenicol can cause aplastic anemia and optic neuritis/atrophy.",
@@ -1397,12 +1397,12 @@
   "t": "G1 Principles",
   "q": "The principal organ of drug metabolism is the:",
   "o": [
+   "Liver",
    "Kidney",
    "Lung",
-   "Spleen",
-   "Liver"
+   "Spleen"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The liver metabolizes drugs through the cytochrome P-450 system. The kidney is the main organ of excretion, which is why failing liver or kidney function raises toxicity risk in the elderly.",
   "k": "Liver metabolizes (P-450); kidney excretes.",
   "src": "authored"
@@ -1429,12 +1429,12 @@
   "t": "G1 Principles",
   "q": "Which route gives 100% bioavailability?",
   "o": [
-   "Subcutaneous",
-   "Intravenous",
+   "Topical",
    "Oral",
-   "Topical"
+   "Subcutaneous",
+   "Intravenous"
   ],
-  "a": 1,
+  "a": 3,
   "w": "IV, IA and IC routes place the drug directly in the circulation, bypassing absorption, so bioavailability is complete by definition.",
   "k": "IV = 100% bioavailability.",
   "src": "authored"
@@ -1445,12 +1445,12 @@
   "t": "G1 Principles",
   "q": "The strongest and effectively irreversible drug-receptor bond is:",
   "o": [
-   "Van der Waals",
+   "Covalent",
    "Ionic",
-   "Hydrogen",
-   "Covalent"
+   "Van der Waals",
+   "Hydrogen"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Covalent bonding is strongest and irreversible, so the effect lasts until new receptor is synthesized. Van der Waals forces are weakest but the most important clinically because they are reversible.",
   "k": "Covalent strongest/irreversible; Van der Waals weakest/reversible.",
   "src": "authored"
@@ -1462,11 +1462,11 @@
   "q": "A Schedule I drug is defined as one with:",
   "o": [
    "High abuse risk but accepted medical use",
+   "No accepted medical use",
    "Accepted use with severe restrictions",
-   "Low abuse potential",
-   "No accepted medical use"
+   "Low abuse potential"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Schedule I drugs such as heroin and LSD have high abuse potential and no accepted medical use, so they cannot be prescribed at all.",
   "k": "Schedule I = no accepted medical use.",
   "src": "authored"
@@ -1477,12 +1477,12 @@
   "t": "G1 Principles",
   "q": "The symbol Rx on a prescription stands for:",
   "o": [
-   "Prescribed treatment",
    "Recipe",
+   "Prescription",
    "Registered examination",
-   "Prescription"
+   "Prescribed treatment"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Rx is the Latin recipe, meaning 'take thou', the instruction that historically opened the prescription.",
   "k": "Rx = recipe, 'to take'.",
   "src": "authored"
@@ -1494,11 +1494,11 @@
   "q": "The routine cycloplegic of choice is:",
   "o": [
    "Atropine",
-   "Scopolamine",
    "Cyclopentolate",
-   "Tropicamide"
+   "Tropicamide",
+   "Scopolamine"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Cyclopentolate is the routine cycloplegic, giving reliable cycloplegia within 30–45 minutes. Tropicamide is the routine mydriatic; atropine is reserved for dense amblyopia work-ups.",
   "k": "Cyclopentolate = routine cycloplegic; tropicamide = routine mydriatic.",
   "src": "authored"
@@ -1509,12 +1509,12 @@
   "t": "G2 Autonomic",
   "q": "The strongest and longest-acting cycloplegic is atropine, whose effect lasts up to:",
   "o": [
-   "24 hours",
-   "14 days",
+   "6 hours",
    "3 days",
-   "6 hours"
+   "24 hours",
+   "14 days"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Atropine's cycloplegia can persist up to 14 days, which is why it is reserved for dense hyperopic accommodative esotropia and penalization rather than routine refraction.",
   "k": "Atropine cycloplegia up to 14 days.",
   "src": "authored"
@@ -1526,8 +1526,8 @@
   "q": "Which drug CONFIRMS the diagnosis of Horner's syndrome?",
   "o": [
    "Phenylephrine 10%",
-   "Dilute pilocarpine",
    "Hydroxyamphetamine",
+   "Dilute pilocarpine",
    "Cocaine"
   ],
   "a": 3,
@@ -1541,12 +1541,12 @@
   "t": "G2 Autonomic",
   "q": "Iris cysts caused by echothiophate are reversed with:",
   "o": [
+   "Phenylephrine",
    "Pilocarpine",
    "Atropine",
-   "Phenylephrine",
    "Timolol"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Echothiophate and DFP, both long-acting anticholinesterases, cause iris cysts that phenylephrine prevents or reverses.",
   "k": "Echothiophate iris cysts: reverse with phenylephrine.",
   "src": "authored"
@@ -1557,12 +1557,12 @@
   "t": "G2 Autonomic",
   "q": "The antidote for organophosphate poisoning is:",
   "o": [
-   "Pilocarpine",
-   "Physostigmine",
    "Atropine",
-   "Naloxone"
+   "Pilocarpine",
+   "Naloxone",
+   "Physostigmine"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Organophosphates irreversibly inhibit acetylcholinesterase, flooding muscarinic receptors. Atropine blocks those receptors and reverses the cholinergic crisis.",
   "k": "Organophosphate poisoning: atropine.",
   "src": "authored"
@@ -1574,11 +1574,11 @@
   "q": "Myasthenia gravis is confirmed pharmacologically with:",
   "o": [
    "Atropine",
-   "Edrophonium",
+   "Pilocarpine",
    "Cocaine",
-   "Pilocarpine"
+   "Edrophonium"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Edrophonium (Tensilon), a short-acting anticholinesterase, transiently raises the ptotic lid in myasthenia.",
   "k": "Myasthenia = Tensilon (edrophonium) test.",
   "src": "authored"
@@ -1589,12 +1589,12 @@
   "t": "G3 Diagnostic",
   "q": "The everyday anesthetic for applanation tonometry is:",
   "o": [
-   "Proparacaine 0.5%",
-   "Cocaine 4%",
    "Lidocaine 2%",
-   "Tetracaine 1%"
+   "Tetracaine 1%",
+   "Cocaine 4%",
+   "Proparacaine 0.5%"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Proparacaine 0.5% stings least and acts in 15 seconds. Cocaine is never used for tonometry because it softens the epithelium and gives a falsely low reading.",
   "k": "Tonometry = proparacaine 0.5%.",
   "src": "authored"
@@ -1605,12 +1605,12 @@
   "t": "G3 Diagnostic",
   "q": "Which stain is used before fluorescein in a dry eye work-up?",
   "o": [
-   "Methylene blue",
-   "Indocyanine green",
    "Rose bengal",
-   "Trypan blue"
+   "Trypan blue",
+   "Methylene blue",
+   "Indocyanine green"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Rose bengal stains devitalized cells and mucus and is instilled first, because fluorescein's bright pooling would mask the subtler rose bengal pattern.",
   "k": "Rose bengal before fluorescein in dry eye.",
   "src": "authored"
@@ -1621,12 +1621,12 @@
   "t": "G3 Diagnostic",
   "q": "The Seidel test uses fluorescein to detect:",
   "o": [
-   "Endothelial cell loss",
    "Lacrimal obstruction",
    "Epithelial abrasion",
-   "An aqueous wound leak"
+   "An aqueous wound leak",
+   "Endothelial cell loss"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Concentrated fluorescein over a wound turns bright green as leaking aqueous dilutes it, revealing a full-thickness leak and therefore an open globe.",
   "k": "Seidel = aqueous wound leak.",
   "src": "authored"
@@ -1637,12 +1637,12 @@
   "t": "G3 Diagnostic",
   "q": "The Jones I and II tests assess:",
   "o": [
-   "Lacrimal drainage",
    "Corneal sensitivity",
    "Endothelial function",
-   "Aqueous production"
+   "Aqueous production",
+   "Lacrimal drainage"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Jones I and II use fluorescein to test whether the nasolacrimal system drains, and if not, whether the block is functional or anatomical.",
   "k": "Jones I/II = lacrimal drainage.",
   "src": "authored"
@@ -1653,10 +1653,10 @@
   "t": "G3 Diagnostic",
   "q": "Indocyanine green is used principally to image the:",
   "o": [
-   "Trabecular meshwork",
-   "Choroidal circulation",
    "Corneal endothelium",
-   "Retinal nerve fiber layer"
+   "Choroidal circulation",
+   "Retinal nerve fiber layer",
+   "Trabecular meshwork"
   ],
   "a": 1,
   "w": "ICG fluoresces in the infrared, so it penetrates the RPE and shows choroidal vessels that fluorescein cannot reach.",
@@ -1669,12 +1669,12 @@
   "t": "G4 Therapeutic",
   "q": "The first-line drug class for primary open-angle glaucoma is:",
   "o": [
-   "Carbonic anhydrase inhibitors",
    "Beta blockers",
+   "Prostaglandin analogs",
    "Miotics",
-   "Prostaglandin analogs"
+   "Carbonic anhydrase inhibitors"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Prostaglandin analogs are first-line: once-daily dosing, the greatest IOP reduction, and few systemic effects because they act by increasing uveoscleral outflow.",
   "k": "POAG first-line = prostaglandin analog.",
   "src": "authored"
@@ -1685,12 +1685,12 @@
   "t": "G4 Therapeutic",
   "q": "Which glaucoma drug increases TRABECULAR outflow?",
   "o": [
-   "Pilocarpine",
-   "Brimonidine",
+   "Latanoprost",
    "Timolol",
-   "Latanoprost"
+   "Brimonidine",
+   "Pilocarpine"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Miotics contract the ciliary muscle, pulling the scleral spur and opening the trabecular meshwork. Prostaglandins work on the uveoscleral route instead.",
   "k": "Miotics = trabecular outflow; prostaglandins = uveoscleral.",
   "src": "authored"
@@ -1701,12 +1701,12 @@
   "t": "G4 Therapeutic",
   "q": "The safer beta blocker in a patient with asthma is:",
   "o": [
+   "Timolol",
    "Carteolol",
-   "Betaxolol",
    "Levobunolol",
-   "Timolol"
+   "Betaxolol"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Betaxolol is cardioselective (β1), so it is less likely to provoke bronchospasm than non-selective timolol. Even so, caution remains warranted.",
   "k": "Betaxolol = cardioselective, safer in asthma.",
   "src": "authored"
@@ -1717,12 +1717,12 @@
   "t": "G4 Therapeutic",
   "q": "Acetazolamide must be used with caution in patients allergic to:",
   "o": [
-   "Iodine",
    "Sulfa drugs",
+   "Penicillin",
    "Aspirin",
-   "Penicillin"
+   "Iodine"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Acetazolamide is a carbonic anhydrase inhibitor with a sulfonamide structure, so a sulfa allergy is a contraindication.",
   "k": "CAIs are sulfa drugs.",
   "src": "authored"
@@ -1733,12 +1733,12 @@
   "t": "G4 Therapeutic",
   "q": "The osmotic agent used intravenously in acute angle-closure is:",
   "o": [
+   "Mannitol",
    "Acetazolamide",
    "Pilocarpine",
-   "Mannitol",
    "Glycerin"
   ],
-  "a": 2,
+  "a": 0,
   "w": "IV mannitol raises plasma osmolarity and draws water from the vitreous, dropping IOP fast when drops alone will not.",
   "k": "Acute angle-closure: IV mannitol.",
   "src": "authored"
@@ -1750,11 +1750,11 @@
   "q": "The steroid least likely to raise intraocular pressure is:",
   "o": [
    "Prednisolone acetate",
-   "Fluorometholone",
+   "Betamethasone",
    "Dexamethasone",
-   "Betamethasone"
+   "Fluorometholone"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Fluorometholone has the lowest IOP-raising tendency, making it the choice for a known steroid responder or for prolonged use.",
   "k": "Fluorometholone = safest steroid for IOP.",
   "src": "authored"
@@ -1765,12 +1765,12 @@
   "t": "G4 Therapeutic",
   "q": "Topical aminoglycosides become oto- and nephrotoxic when used beyond:",
   "o": [
-   "5 days",
    "24 hours",
-   "2 weeks",
-   "3 days"
+   "3 days",
+   "5 days",
+   "2 weeks"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Beyond about 5 days aminoglycosides accumulate and risk oto- and nephrotoxicity, on top of their corneal epithelial toxicity.",
   "k": "Aminoglycosides toxic beyond 5 days.",
   "src": "authored"
@@ -1781,12 +1781,12 @@
   "t": "G5 Side Effects",
   "q": "Yellow vision (xanthopsia) is classically caused by:",
   "o": [
-   "Chloroquine",
-   "Amiodarone",
    "Digitalis",
+   "Amiodarone",
+   "Chloroquine",
    "Ethambutol"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Digitalis toxicity produces xanthopsia, a yellow tinge to vision, often with halos, and warns of systemic toxicity.",
   "k": "Xanthopsia = digitalis.",
   "src": "authored"
@@ -1797,10 +1797,10 @@
   "t": "G5 Side Effects",
   "q": "An anterior stellate (star-shaped) cataract suggests:",
   "o": [
-   "Amiodarone",
+   "Chloroquine",
    "Phenothiazines",
-   "Corticosteroids",
-   "Chloroquine"
+   "Amiodarone",
+   "Corticosteroids"
   ],
   "a": 1,
   "w": "Phenothiazines such as chlorpromazine deposit pigment in the anterior lens capsule in a stellate pattern. Steroids instead give a posterior subcapsular cataract.",
@@ -1814,9 +1814,9 @@
   "q": "Besides excess vitamin A, pseudotumor cerebri is associated with:",
   "o": [
    "Topical beta blockers",
-   "Digitalis glycosides",
+   "Sulfonamide antibiotics",
    "Tetracycline and OCPs",
-   "Sulfonamide antibiotics"
+   "Digitalis glycosides"
   ],
   "a": 2,
   "w": "Vitamin A excess, tetracyclines and oral contraceptives all raise intracranial pressure, producing papilledema in a young patient.",
@@ -1829,12 +1829,12 @@
   "t": "G5 Side Effects",
   "q": "The pediatric strength of cyclopentolate is:",
   "o": [
-   "2%",
    "4%",
    "0.5–1%",
-   "0.1%"
+   "0.1%",
+   "2%"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Children get 0.5–1%; 2% risks CNS toxicity because an immature liver cannot clear the absorbed drug, causing disorientation and hallucination.",
   "k": "Pediatric cyclopentolate 0.5–1%, never 2%.",
   "src": "authored"
@@ -1845,12 +1845,12 @@
   "t": "G5 Side Effects",
   "q": "Bull's-eye maculopathy is caused by:",
   "o": [
-   "Hydroxychloroquine",
-   "Ethambutol",
    "Chloramphenicol",
-   "Digitalis"
+   "Ethambutol",
+   "Digitalis",
+   "Hydroxychloroquine"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Chloroquine and hydroxychloroquine deposit in the RPE and produce a bull's-eye maculopathy, which is why long-term users need baseline and periodic screening.",
   "k": "Bull's-eye maculopathy = (hydroxy)chloroquine.",
   "src": "authored"
@@ -1861,12 +1861,12 @@
   "t": "G1 Principles",
   "q": "Potency and efficacy differ in that potency describes:",
   "o": [
-   "The speed of onset",
-   "The maximum effect possible",
+   "How little drug is needed",
    "The duration of action",
-   "How little drug is needed"
+   "The speed of onset",
+   "The maximum effect possible"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Potency is the dose required; efficacy is the ceiling of effect achievable. A drug can be very potent yet have low efficacy, so the two are not interchangeable.",
   "k": "Potency = how little; efficacy = how much effect.",
   "src": "authored"
@@ -1877,12 +1877,12 @@
   "t": "G1 Principles",
   "q": "Competitive antagonism can be overcome by:",
   "o": [
-   "Adding more agonist",
-   "Adding a second antagonist",
+   "Nothing; it is irreversible",
    "Waiting for receptor turnover",
-   "Nothing; it is irreversible"
+   "Adding more agonist",
+   "Adding a second antagonist"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Competitive antagonism uses reversible Van der Waals bonding, so more agonist outcompetes it. Non-competitive antagonism is covalent and irreversible, and cannot be overcome this way.",
   "k": "Competitive = reversible, beaten by more agonist.",
   "src": "authored"
@@ -1909,9 +1909,9 @@
   "t": "G1 Principles",
   "q": "Atropine is eliminated principally by being:",
   "o": [
-   "Metabolized by the liver first",
-   "Excreted unchanged in urine",
    "Excreted in bile",
+   "Excreted unchanged in urine",
+   "Metabolized by the liver first",
    "Broken down by plasma esterases"
   ],
   "a": 1,
@@ -1941,12 +1941,12 @@
   "t": "G2 Autonomic",
   "q": "In a positive cocaine test for Horner's syndrome, the affected pupil:",
   "o": [
-   "Dilates more than the normal pupil",
-   "Constricts markedly",
    "Dilates equally with the fellow eye",
-   "Fails to dilate"
+   "Fails to dilate",
+   "Constricts markedly",
+   "Dilates more than the normal pupil"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Cocaine blocks noradrenaline reuptake, so it needs stored NE to work. In Horner's there is no NE release, so the pupil fails to dilate, and that failure is the positive result.",
   "k": "Horner's: cocaine fails to dilate the pupil.",
   "src": "authored"
@@ -1958,11 +1958,11 @@
   "q": "Stimulating β2 receptors on the ciliary processes:",
   "o": [
    "Has no effect on IOP",
-   "Increases aqueous secretion",
    "Decreases aqueous secretion",
-   "Opens the trabecular meshwork"
+   "Opens the trabecular meshwork",
+   "Increases aqueous secretion"
   ],
-  "a": 1,
+  "a": 3,
   "w": "β2 stimulation raises aqueous secretion, so it raises IOP. The adrenergic routes that lower IOP are α2 agonism (brimonidine) and beta blockade, not beta stimulation.",
   "k": "β2 stimulation raises aqueous; beta blockade lowers it.",
   "src": "authored"
@@ -1974,11 +1974,11 @@
   "q": "Pilocarpine is contraindicated in which condition?",
   "o": [
    "Accommodative esotropia",
-   "Acute angle-closure glaucoma",
+   "Malignant glaucoma",
    "Primary open-angle glaucoma",
-   "Malignant glaucoma"
+   "Acute angle-closure glaucoma"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Pilocarpine is used in angle-closure, where it pulls the iris out of the angle. Its contraindication is malignant (aqueous misdirection) glaucoma. The mydriatics are what you withhold in angle-closure.",
   "k": "Pilocarpine contraindicated in malignant glaucoma, not angle-closure.",
   "src": "authored"
@@ -2005,12 +2005,12 @@
   "t": "G3 Diagnostic",
   "q": "Fluorescein stains:",
   "o": [
+   "Mucus strands",
    "Epithelial defects",
-   "The corneal endothelium",
    "Devitalized cells",
-   "Mucus strands"
+   "The corneal endothelium"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Fluorescein pools where cells are missing, staining defects. Rose bengal and lissamine green stain dead and devitalized cells, which is a different target entirely.",
   "k": "Fluorescein = defects; rose bengal = dead cells.",
   "src": "authored"
@@ -2021,12 +2021,12 @@
   "t": "G3 Diagnostic",
   "q": "Rose bengal is viewed under:",
   "o": [
-   "Cobalt blue light",
+   "Red-free green light",
    "Infrared illumination",
-   "White light",
-   "Red-free green light"
+   "Cobalt blue light",
+   "White light"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Rose bengal is a red dye read in white light and does not rely on fluorescence. Only fluorescein needs the cobalt blue filter.",
   "k": "Rose bengal = white light; fluorescein = cobalt blue.",
   "src": "authored"
@@ -2037,12 +2037,12 @@
   "t": "G3 Diagnostic",
   "q": "Amide anesthetics are metabolized by the:",
   "o": [
+   "Kidney",
    "Liver",
    "Corneal epithelium",
-   "Plasma pseudo-cholinesterase",
-   "Kidney"
+   "Plasma pseudo-cholinesterase"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Amides are metabolized hepatically; esters are broken down by plasma pseudo-cholinesterase. Count the i's to tell them apart: one i means ester.",
   "k": "Amides = liver; esters = plasma cholinesterase.",
   "src": "authored"
@@ -2053,12 +2053,12 @@
   "t": "G3 Diagnostic",
   "q": "Raising the concentration of an anesthetic drop beyond the effective dose:",
   "o": [
+   "Deepens the block further",
    "Shortens the onset time",
    "Extends the duration safely",
-   "Adds only toxicity and stinging",
-   "Deepens the block further"
+   "Adds only toxicity and stinging"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Past the effective concentration the depth of block plateaus while epithelial toxicity and stinging keep climbing, so more is simply worse.",
   "k": "More concentrated anesthetic ≠ deeper block.",
   "src": "authored"
@@ -2069,12 +2069,12 @@
   "t": "G3 Diagnostic",
   "q": "When a corneal ulcer needs culturing, the anesthetic should be instilled:",
   "o": [
-   "Before the culture, for comfort",
-   "At the same time as the swab",
    "Only if the patient objects",
-   "After the culture is taken"
+   "At the same time as the swab",
+   "After the culture is taken",
+   "Before the culture, for comfort"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Anesthetics and their preservatives are bacteriostatic and produce false negatives, so the culture always comes first.",
   "k": "Culture first, anesthetic after.",
   "src": "authored"
@@ -2085,12 +2085,12 @@
   "t": "G3 Diagnostic",
   "q": "Negative staining with fluorescein indicates an area that is:",
   "o": [
-   "Depressed or pitted",
-   "Fully denuded",
+   "Elevated",
    "Infected",
-   "Elevated"
+   "Depressed or pitted",
+   "Fully denuded"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Dye runs off a raised surface, so an elevated area stains negatively. Pits and depressions collect dye and stain positively.",
   "k": "Negative staining = elevated; positive = depressed.",
   "src": "authored"
@@ -2101,12 +2101,12 @@
   "t": "G3 Diagnostic",
   "q": "Which topical anesthetic carries an antibacterial property?",
   "o": [
-   "Benoxinate",
-   "Tetracaine",
    "Lidocaine",
-   "Proparacaine"
+   "Proparacaine",
+   "Benoxinate",
+   "Tetracaine"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Benoxinate is antibacterial, while proparacaine is the least bactericidal of the group. Either way, the culture is still taken before any anesthetic.",
   "k": "Benoxinate antibacterial; proparacaine least bactericidal.",
   "src": "authored"
@@ -2117,12 +2117,12 @@
   "t": "G4 Therapeutic",
   "q": "Definitive treatment of acute angle-closure glaucoma is:",
   "o": [
-   "Intravenous mannitol",
+   "Laser peripheral iridotomy",
    "Oral acetazolamide",
-   "Topical beta blockers",
-   "Laser peripheral iridotomy"
+   "Intravenous mannitol",
+   "Topical beta blockers"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Angle-closure is a surgical emergency. Drops, acetazolamide and mannitol are temporizing measures to break the attack; the iridotomy is what fixes the mechanism.",
   "k": "Angle-closure: drops temporize, iridotomy cures.",
   "src": "authored"
@@ -2133,13 +2133,13 @@
   "t": "G4 Therapeutic",
   "q": "The earliest sign of chloroquine toxicity is:",
   "o": [
-   "Cornea verticillata",
-   "Optic disc pallor",
    "The bull's-eye maculopathy",
+   "Optic disc pallor",
+   "Cornea verticillata",
    "Reduced acuity and color change"
   ],
   "a": 3,
-  "w": "Functional loss comes first: falling acuity and a colour (tritan) defect. The bull's-eye maculopathy is the classic but LATE fundus finding, by which point damage is done.",
+  "w": "Functional loss comes first: falling acuity and a color (tritan) defect. The bull's-eye maculopathy is the classic but LATE fundus finding, by which point damage is done.",
   "k": "Chloroquine: functional loss first, bull's-eye late.",
   "src": "authored"
  },
@@ -2149,10 +2149,10 @@
   "t": "G4 Therapeutic",
   "q": "Steroids and NSAIDs differ in that NSAIDs block:",
   "o": [
-   "Leukotriene synthesis",
+   "Both COX and lipoxygenase",
    "Phospholipase A2",
    "Cyclo-oxygenase only",
-   "Both COX and lipoxygenase"
+   "Leukotriene synthesis"
   ],
   "a": 2,
   "w": "NSAIDs block COX alone, so the leukotriene arm continues. Steroids act upstream on phospholipase A2 and shut down both prostaglandins and leukotrienes.",
@@ -2165,10 +2165,10 @@
   "t": "G5 Side Effects",
   "q": "The amiodarone effect that genuinely threatens sight is:",
   "o": [
+   "Cornea verticillata",
    "Colored halos",
-   "Anterior stellate cataract",
    "Optic neuropathy",
-   "Cornea verticillata"
+   "Anterior stellate cataract"
   ],
   "a": 2,
   "w": "Whorl keratopathy is common, dose-related and reversible, and rarely forces stopping the drug. Optic neuropathy is the dangerous effect to watch for.",
@@ -2181,12 +2181,12 @@
   "t": "G5 Side Effects",
   "q": "Corticosteroids classically cause which cataract?",
   "o": [
-   "Nuclear sclerotic",
    "Posterior subcapsular",
-   "Anterior stellate",
-   "Cortical spoke"
+   "Nuclear sclerotic",
+   "Cortical spoke",
+   "Anterior stellate"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Steroids cause posterior subcapsular cataract, together with open-angle glaucoma. The anterior stellate cataract belongs to the phenothiazines.",
   "k": "Steroids = PSC; phenothiazines = anterior stellate.",
   "src": "authored"
@@ -2197,12 +2197,12 @@
   "t": "G5 Side Effects",
   "q": "Which dilating agent is AVOIDED in pregnancy?",
   "o": [
-   "Fluorescein strips",
    "Phenylephrine 10%",
    "Cyclopentolate 0.5%",
-   "Tropicamide 0.5%"
+   "Tropicamide 0.5%",
+   "Fluorescein strips"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Phenylephrine 10% risks maternal hypertension, so tropicamide with nasolacrimal occlusion is preferred. Not all dilators are equally safe.",
   "k": "Avoid phenylephrine 10% in pregnancy.",
   "src": "authored"
@@ -2213,12 +2213,12 @@
   "t": "G1 Principles",
   "q": "A drug produces its maximum possible effect at a relatively low dose. Which two properties does this describe?",
   "o": [
+   "Low potency, low efficacy",
    "Low potency, high efficacy",
-   "High potency, high efficacy",
    "High potency, low efficacy",
-   "Low potency, low efficacy"
+   "High potency, high efficacy"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Acting at a low dose describes high potency. Reaching the maximum possible effect describes high efficacy. The two are independent: potency is about the dose needed, efficacy is about the size of the effect.",
   "k": "Acting at a low dose describes high potency.",
   "src": "authored"
@@ -2230,11 +2230,11 @@
   "q": "Which route of administration delivers 100% of the drug to the systemic circulation?",
   "o": [
    "Oral",
-   "Sublingual",
    "Intravenous",
+   "Sublingual",
    "Rectal"
   ],
-  "a": 2,
+  "a": 1,
   "w": "IV (along with intra-arterial and intracardiac) bypasses absorption entirely, so bioavailability is 100% and follows zero-order kinetics. The other routes all involve an absorption step and a constant fraction reaching the blood (first-order).",
   "k": "IV (along with intra-arterial and intracardiac) bypasses absorption entirely, so bioavailability is 100% and…",
   "src": "authored"
@@ -2245,12 +2245,12 @@
   "t": "G1 Principles",
   "q": "A drug is excreted unchanged in the urine and forms the basis of a urine toxicity test. Which drug?",
   "o": [
+   "Tropicamide",
    "Atropine",
    "Penicillin",
-   "Tropicamide",
    "Phenobarbital"
   ],
-  "a": 0,
+  "a": 1,
   "w": "It is excreted unchanged in urine, the basis of the atropine toxicity (\"cat eye\") test. Penicillin is also renally excreted but is the classic example of a drug not metabolized by the liver, not the toxicity-test drug. Phenobarbital is excreted unchanged too but the source ties the urine test specifically to atropine.",
   "k": "It is excreted unchanged in urine, the basis of the atropine toxicity (\"cat eye\") test.",
   "src": "authored"
@@ -2261,10 +2261,10 @@
   "t": "G1 Principles",
   "q": "Two drugs are given together. Drug X has no effect of its own but increases the effect of Drug Y. This is:",
   "o": [
+   "Synergism",
    "Additive effect",
-   "Antagonism",
    "Potentiation",
-   "Synergism"
+   "Antagonism"
   ],
   "a": 2,
   "w": "A drug lacking its own effect that boosts another is potentiation (0 + 1 > 1). Additive is sum of two active drugs; synergism is two active drugs producing more than their sum.",
@@ -2277,12 +2277,12 @@
   "t": "G1 Principles",
   "q": "Which best describes a competitive antagonist?",
   "o": [
-   "Reversibly competes at the same receptor and is overcome by more agonist",
    "Combines with the agonist to form an inactive compound",
    "Binds a different receptor to produce an opposite effect",
-   "Forms an irreversible covalent bond and cannot be displaced"
+   "Forms an irreversible covalent bond and cannot be displaced",
+   "Reversibly competes at the same receptor and is overcome by more agonist"
   ],
-  "a": 0,
+  "a": 3,
   "w": "A competitive antagonist uses a weak, reversible Van der Waals bond at the same receptor, so adding more agonist overcomes it.",
   "k": "A competitive antagonist uses a weak, reversible Van der Waals bond at the same receptor, so adding more…",
   "src": "authored"
@@ -2294,9 +2294,9 @@
   "q": "A drug dilates the pupil but the patient's near vision stays sharp. The drug most likely acts on:",
   "o": [
    "M3 muscarinic receptors",
-   "Nicotinic receptors",
+   "β2 receptors",
    "α1 adrenergic receptors",
-   "β2 receptors"
+   "Nicotinic receptors"
   ],
   "a": 2,
   "w": "Mydriasis with intact accommodation means the ciliary muscle was untouched. Only the sympathetic α1 dilator pathway (phenylephrine) does this. M3 blockade would also paralyze the ciliary muscle and cause cycloplegia.",
@@ -2309,12 +2309,12 @@
   "t": "G2 Autonomic",
   "q": "A tonic, poorly reactive pupil constricts briskly to 0.1% pilocarpine. The diagnosis is:",
   "o": [
-   "Third nerve palsy",
-   "Adie's tonic pupil",
    "Argyll Robertson pupil",
-   "Horner's syndrome"
+   "Horner's syndrome",
+   "Third nerve palsy",
+   "Adie's tonic pupil"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Denervation supersensitivity at the ciliary ganglion makes it constrict to a dose (0.1%) too weak to affect a normal pupil. Horner's is a sympathetic lesion tested with cocaine/hydroxyamphetamine.",
   "k": "Denervation supersensitivity at the ciliary ganglion makes it constrict to a dose (0.1%) too weak to affect a…",
   "src": "authored"
@@ -2326,9 +2326,9 @@
   "q": "In a suspected Horner's syndrome, which result confirms the diagnosis?",
   "o": [
    "The affected pupil dilates widely with 4% cocaine",
-   "Both pupils dilate equally with hydroxyamphetamine",
+   "The affected pupil constricts with pilocarpine",
    "The affected pupil fails to dilate with 4% cocaine",
-   "The affected pupil constricts with pilocarpine"
+   "Both pupils dilate equally with hydroxyamphetamine"
   ],
   "a": 2,
   "w": "Cocaine blocks NE reuptake, but a Horner eye is not releasing NE, so there is nothing to potentiate and the pupil fails to dilate. Hydroxyamphetamine is then used to localize the lesion level.",
@@ -2341,12 +2341,12 @@
   "t": "G2 Autonomic",
   "q": "Which agent is the drug of choice for routine cycloplegic refraction, balancing strength and duration?",
   "o": [
-   "Tropicamide 1%",
    "Atropine 1%",
    "Cyclopentolate 1%",
-   "Phenylephrine 2.5%"
+   "Phenylephrine 2.5%",
+   "Tropicamide 1%"
   ],
-  "a": 2,
+  "a": 1,
   "w": "It gives reliable cycloplegia with a far shorter duration than atropine (14 days). Tropicamide is too weak a cycloplegic; phenylephrine has none.",
   "k": "It gives reliable cycloplegia with a far shorter duration than atropine (14 days).",
   "src": "authored"
@@ -2357,12 +2357,12 @@
   "t": "G2 Autonomic",
   "q": "A glaucoma patient with asthma needs an IOP-lowering beta blocker. The safest choice is:",
   "o": [
-   "Carteolol",
-   "Levobunolol",
    "Timolol",
-   "Betaxolol"
+   "Betaxolol",
+   "Carteolol",
+   "Levobunolol"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Cardio-selective (β1) blockers spare the β2 receptors in the airway, so they are safer in asthma and COPD. Non-selective blockers risk bronchoconstriction.",
   "k": "Cardio-selective (β1) blockers spare the β2 receptors in the airway, so they are safer in asthma and COPD.",
   "src": "authored"
@@ -2373,12 +2373,12 @@
   "t": "G3 Diagnostic",
   "q": "A topical anesthetic fails to numb a heavily infected, inflamed cornea. The best explanation is:",
   "o": [
-   "Bacteria metabolize the anesthetic",
-   "Acidic tissue ionizes the drug",
+   "Inflammation washes the drug away",
    "Infection destroys the sodium channels",
-   "Inflammation washes the drug away"
+   "Acidic tissue ionizes the drug",
+   "Bacteria metabolize the anesthetic"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Anesthetics cross the nerve in their uncharged form. Acidic (infected) tissue shifts the weak base to its charged form, reducing penetration and weakening the block.",
   "k": "Anesthetics cross the nerve in their uncharged form.",
   "src": "sanitized"
@@ -2389,10 +2389,10 @@
   "t": "G3 Diagnostic",
   "q": "Which dye is best for detecting the devitalized cells of early keratoconjunctivitis sicca?",
   "o": [
-   "Trypan blue",
+   "Fluorescein",
    "Rose bengal",
-   "Indocyanine green",
-   "Fluorescein"
+   "Trypan blue",
+   "Indocyanine green"
   ],
   "a": 1,
   "w": "It stains devitalized cells and mucus, the early marker of dry eye/Sjogren's. Fluorescein stains epithelial defects, not dead cells; ICG and trypan blue are for endothelium/surgery.",
@@ -2405,12 +2405,12 @@
   "t": "G3 Diagnostic",
   "q": "For Goldmann applanation tonometry, the appropriate anesthetic and dye combination is:",
   "o": [
-   "Cocaine and rose bengal",
-   "Lidocaine and lissamine green",
    "Tetracaine and ICG",
-   "Proparacaine and fluorescein"
+   "Lidocaine and lissamine green",
+   "Proparacaine and fluorescein",
+   "Cocaine and rose bengal"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Applanation needs a fast gentle anesthetic (proparacaine or benoxinate, the latter pre-mixed with fluorescein as Fluress) plus fluorescein to define the tear meniscus and applanation area. Cocaine is contraindicated (softens cornea).",
   "k": "Applanation needs a fast gentle anesthetic (proparacaine or benoxinate, the latter pre-mixed with fluorescein…",
   "src": "authored"
@@ -2421,12 +2421,12 @@
   "t": "G3 Diagnostic",
   "q": "A patient has a post-cataract wound. You instill fluorescein and see a green stream flowing from the incision against a yellow-orange background. This is a positive:",
   "o": [
-   "Jones I test",
+   "Seidel test",
    "TBUT",
    "Schirmer test",
-   "Seidel test"
+   "Jones I test"
   ],
-  "a": 3,
+  "a": 0,
   "w": "A streaming green flow of diluted aqueous against the concentrated dye background confirms a wound leak.",
   "k": "A streaming green flow of diluted aqueous against the concentrated dye background confirms a wound leak.",
   "src": "authored"
@@ -2437,12 +2437,12 @@
   "t": "G3 Diagnostic",
   "q": "Which statement about ester versus amide anesthetics is correct?",
   "o": [
-   "Amides are metabolized by plasma cholinesterase",
    "Amides are shorter acting than esters",
    "Esters are metabolized by plasma cholinesterase",
+   "Amides are metabolized by plasma cholinesterase",
    "Esters have two i's in their generic name"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Esters (one \"i\") are broken down by plasma pseudo-cholinesterase and tend to be less toxic per the source. Amides (two \"i\"s) are liver-metabolized and longer acting.",
   "k": "Esters (one \"i\") are broken down by plasma pseudo-cholinesterase and tend to be less toxic per the source.",
   "src": "sanitized"
@@ -2453,12 +2453,12 @@
   "t": "G4 Therapeutic",
   "q": "Which glaucoma drug class lowers IOP by increasing uveoscleral outflow?",
   "o": [
-   "Prostaglandin analogs",
-   "Alpha-2 agonists",
+   "Beta blockers",
    "Carbonic anhydrase inhibitors",
-   "Beta blockers"
+   "Alpha-2 agonists",
+   "Prostaglandin analogs"
   ],
-  "a": 0,
+  "a": 3,
   "w": "They open the uveoscleral route and are first-line. The other three all reduce aqueous production.",
   "k": "They open the uveoscleral route and are first-line.",
   "src": "authored"
@@ -2469,12 +2469,12 @@
   "t": "G4 Therapeutic",
   "q": "A patient on long-term topical dexamethasone develops gradually rising IOP and a posterior subcapsular cataract. The mechanism of the pressure rise is:",
   "o": [
+   "GAG buildup in the meshwork",
    "Pupillary block from iris bombe",
-   "Swelling of the ciliary body",
    "Increased aqueous production",
-   "GAG buildup in the meshwork"
+   "Swelling of the ciliary body"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Steroids cause GAG buildup in the trabecular meshwork, reducing outflow (steroid-response glaucoma after 4 to 6 weeks). Posterior subcapsular cataract is the classic lens side effect.",
   "k": "Steroids cause GAG buildup in the trabecular meshwork, reducing outflow (steroid-response glaucoma after 4 to…",
   "src": "sanitized"
@@ -2485,12 +2485,12 @@
   "t": "G4 Therapeutic",
   "q": "Which antibiotic is the drug of choice for trachoma?",
   "o": [
+   "Gentamicin",
    "Penicillin",
    "Tetracycline",
-   "Polymyxin B",
-   "Gentamicin"
+   "Polymyxin B"
   ],
-  "a": 1,
+  "a": 2,
   "w": "It is the DOC for trachoma and inclusion conjunctivitis. Avoid in children and pregnancy.",
   "k": "It is the DOC for trachoma and inclusion conjunctivitis.",
   "src": "authored"
@@ -2501,12 +2501,12 @@
   "t": "G4 Therapeutic",
   "q": "A glaucoma patient with a sulfa allergy should avoid which agent?",
   "o": [
-   "Timolol",
-   "Acetazolamide",
+   "Pilocarpine",
    "Latanoprost",
-   "Pilocarpine"
+   "Acetazolamide",
+   "Timolol"
   ],
-  "a": 1,
+  "a": 2,
   "w": "It is a sulfonamide (carbonic anhydrase inhibitor), contraindicated in sulfa allergy. The others are unrelated chemically.",
   "k": "It is a sulfonamide (carbonic anhydrase inhibitor), contraindicated in sulfa allergy.",
   "src": "authored"
@@ -2517,12 +2517,12 @@
   "t": "G4 Therapeutic",
   "q": "Which steroid is preferred when an anti-inflammatory is needed in an eye prone to high IOP?",
   "o": [
-   "Fluorometholone",
-   "Betamethasone",
+   "Dexamethasone",
    "Prednisolone",
-   "Dexamethasone"
+   "Fluorometholone",
+   "Betamethasone"
   ],
-  "a": 0,
+  "a": 2,
   "w": "It produces the least IOP elevation, making it the safer choice in steroid responders and glaucoma-prone eyes.",
   "k": "It produces the least IOP elevation, making it the safer choice in steroid responders and glaucoma-prone eyes.",
   "src": "authored"
@@ -2533,12 +2533,12 @@
   "t": "G5 Side Effects",
   "q": "A patient on long-term hydroxychloroquine for lupus reports trouble with central vision. The classic fundus finding is:",
   "o": [
+   "Cherry-red spot",
    "Bull's-eye maculopathy",
-   "Cotton-wool spots",
    "Disc neovascularization",
-   "Cherry-red spot"
+   "Cotton-wool spots"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Chloroquine and hydroxychloroquine cause a ring of RPE depigmentation around a spared center. Early change is reduced VA and tritan color loss.",
   "k": "Chloroquine and hydroxychloroquine cause a ring of RPE depigmentation around a spared center.",
   "src": "authored"
@@ -2549,12 +2549,12 @@
   "t": "G5 Side Effects",
   "q": "A cardiac patient on digitalis complains that everything looks yellow (\"snowy\"). This is:",
   "o": [
-   "Xanthopsia",
-   "Cyanopsia",
+   "Chloropsia",
    "Erythropsia",
-   "Chloropsia"
+   "Cyanopsia",
+   "Xanthopsia"
   ],
-  "a": 0,
+  "a": 3,
   "w": "A yellow tinge to vision is the classic digitalis effect.",
   "k": "A yellow tinge to vision is the classic digitalis effect.",
   "src": "authored"
@@ -2566,11 +2566,11 @@
   "q": "A TB patient on ethambutol reports dimming vision and trouble telling red from green. The toxicity is:",
   "o": [
    "Pigmentary retinopathy",
-   "Posterior subcapsular cataract",
    "Acute angle-closure glaucoma",
-   "Optic neuritis, red-green defect"
+   "Optic neuritis, red-green defect",
+   "Posterior subcapsular cataract"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Ethambutol (and INH) cause optic neuritis/neuropathy with a red-green color defect. This is a reason to monitor color vision and fields in patients on anti-TB therapy.",
   "k": "Ethambutol (and INH) cause optic neuritis/neuropathy with a red-green color defect.",
   "src": "sanitized"
@@ -2581,12 +2581,12 @@
   "t": "G5 Side Effects",
   "q": "Which drug is preferred when a pregnant patient requires pupil dilation?",
   "o": [
-   "Cyclopentolate 2%",
-   "Tropicamide 0.5%",
+   "Atropine 1%",
    "Phenylephrine 10%",
-   "Atropine 1%"
+   "Cyclopentolate 2%",
+   "Tropicamide 0.5%"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Shortest duration and least systemic exposure among Category C agents. Add nasolacrimal occlusion.",
   "k": "Shortest duration and least systemic exposure among Category C agents.",
   "src": "authored"
@@ -2597,12 +2597,12 @@
   "t": "G5 Side Effects",
   "q": "A child given 2% cyclopentolate becomes disoriented and hallucinates. The cause is:",
   "o": [
-   "Local anesthetic overdose",
-   "An allergic drug reaction",
    "Acute angle-closure glaucoma",
-   "Anticholinergic CNS toxicity"
+   "Local anesthetic overdose",
+   "Anticholinergic CNS toxicity",
+   "An allergic drug reaction"
   ],
-  "a": 3,
+  "a": 2,
   "w": "A child's immature liver lets the drug accumulate and cross into the CNS, producing anticholinergic toxicity. Use 0.5 to 1% and apply lacrimal sac pressure.",
   "k": "A child's immature liver lets the drug accumulate and cross into the CNS, producing anticholinergic toxicity.",
   "src": "sanitized"
@@ -2614,11 +2614,11 @@
   "q": "Which term describes pupil constriction; M3 agonist or α1 antagonist?",
   "o": [
    "Parasympatholytic",
+   "Sympathomimetic",
    "Miosis",
-   "Cycloplegia",
-   "Sympathomimetic"
+   "Cycloplegia"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Miosis: Greek meioun = to lessen. Pupil constriction; M3 agonist or α1 antagonist",
   "k": "Miosis = Pupil constriction; M3 agonist or α1 antagonist",
   "src": "authored"
@@ -2629,12 +2629,12 @@
   "t": "G2 Autonomic",
   "q": "Which term describes ciliary muscle paralysis; loss of accommodation?",
   "o": [
-   "Parasympatholytic",
    "Cycloplegia",
    "Sympathomimetic",
-   "Miosis"
+   "Miosis",
+   "Parasympatholytic"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Cycloplegia: kyklos = circle + plege = paralysis. Ciliary muscle paralysis; loss of accommodation",
   "k": "Cycloplegia = Ciliary muscle paralysis; loss of accommodation",
   "src": "authored"
@@ -2646,11 +2646,11 @@
   "q": "Which term describes adrenergic agonist; dilates without cycloplegia?",
   "o": [
    "Parasympatholytic",
-   "Miosis",
    "Sympathomimetic",
-   "Cycloplegia"
+   "Cycloplegia",
+   "Miosis"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Sympathomimetic: mimics the sympathetic system. Adrenergic agonist; dilates without cycloplegia",
   "k": "Sympathomimetic = Adrenergic agonist; dilates without cycloplegia",
   "src": "authored"
@@ -2661,12 +2661,12 @@
   "t": "G2 Autonomic",
   "q": "Which term describes binds and activates the receptor (\"push your muscle\")?",
   "o": [
-   "Sympathomimetic",
    "Miosis",
    "Agonist",
-   "Cycloplegia"
+   "Cycloplegia",
+   "Sympathomimetic"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Agonist: Greek agon = contest. Binds and activates the receptor (\"push your muscle\")",
   "k": "Agonist = Binds and activates the receptor (\"push your muscle\")",
   "src": "authored"
@@ -2677,9 +2677,9 @@
   "t": "G2 Autonomic",
   "q": "Which term describes blocks the receptor (\"release the opponent\")?",
   "o": [
-   "Sympathomimetic",
-   "Miosis",
    "Cycloplegia",
+   "Miosis",
+   "Sympathomimetic",
    "Antagonist"
   ],
   "a": 3,
@@ -2694,11 +2694,11 @@
   "q": "Which term describes why an Adie's pupil responds to weak 0.1% pilocarpine?",
   "o": [
    "Cycloplegic action",
-   "Pharmacologic miosis",
    "Sympathomimetic effect",
-   "Denervation supersensitivity"
+   "Denervation supersensitivity",
+   "Pharmacologic miosis"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Denervation supersensitivity: upregulated receptors. Why an Adie's pupil responds to weak 0.1% pilocarpine",
   "k": "Denervation supersensitivity = Why an Adie's pupil responds to weak 0.1% pilocarpine",
   "src": "authored"
@@ -2709,12 +2709,12 @@
   "t": "G2 Autonomic",
   "q": "Which term describes a beta blocker that also acts as a partial agonist?",
   "o": [
+   "ISA",
    "Miosis",
    "Cycloplegia",
-   "ISA",
    "Sympathomimetic"
   ],
-  "a": 2,
+  "a": 0,
   "w": "ISA: intrinsic sympathomimetic activity. A beta blocker that also acts as a partial agonist",
   "k": "ISA = A beta blocker that also acts as a partial agonist",
   "src": "authored"
@@ -2725,12 +2725,12 @@
   "t": "G2 Autonomic",
   "q": "Which term describes local-anesthetic property of some beta blockers?",
   "o": [
+   "MSA",
    "Cycloplegia",
    "Miosis",
-   "Sympathomimetic",
-   "MSA"
+   "Sympathomimetic"
   ],
-  "a": 3,
+  "a": 0,
   "w": "MSA: membrane-stabilizing activity. Local-anesthetic property of some beta blockers",
   "k": "MSA = Local-anesthetic property of some beta blockers",
   "src": "authored"
@@ -2741,12 +2741,12 @@
   "t": "G2 Autonomic",
   "q": "Which term describes α1 agonist that blanches conjunctival vessels?",
   "o": [
-   "Miosis",
    "Cycloplegia",
    "Decongestant",
+   "Miosis",
    "Sympathomimetic"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Decongestant: vasoconstrictor. α1 agonist that blanches conjunctival vessels",
   "k": "Decongestant = α1 agonist that blanches conjunctival vessels",
   "src": "authored"
@@ -2758,11 +2758,11 @@
   "q": "Which term describes plasma pseudo-cholinesterase; less allergenic, shorter acting?",
   "o": [
    "Fluorescein",
-   "Non-ionized form",
+   "Ester anesthetic",
    "Amide anesthetic",
-   "Ester anesthetic"
+   "Non-ionized form"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Ester anesthetic: one \"i\" before -caine. Plasma pseudo-cholinesterase; less allergenic, shorter acting",
   "k": "Ester anesthetic = Plasma pseudo-cholinesterase; less allergenic, shorter acting",
   "src": "authored"
@@ -2773,12 +2773,12 @@
   "t": "G3 Diagnostic",
   "q": "Which term describes liver-metabolized; more potent, longer acting?",
   "o": [
-   "Non-ionized form",
    "Amide anesthetic",
-   "Ester anesthetic",
-   "Fluorescein"
+   "Fluorescein",
+   "Non-ionized form",
+   "Ester anesthetic"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Amide anesthetic: two \"i\"s before -caine. Liver-metabolized; more potent, longer acting",
   "k": "Amide anesthetic = Liver-metabolized; more potent, longer acting",
   "src": "authored"
@@ -2790,9 +2790,9 @@
   "q": "Which term describes the only form that crosses the nerve membrane?",
   "o": [
    "Non-ionized form",
+   "Ester anesthetic",
    "Fluorescein",
-   "Amide anesthetic",
-   "Ester anesthetic"
+   "Amide anesthetic"
   ],
   "a": 0,
   "w": "Non-ionized form: uncharged base. The only form that crosses the nerve membrane",
@@ -2805,9 +2805,9 @@
   "t": "G3 Diagnostic",
   "q": "Which term describes stains epithelial defects; glows under cobalt blue?",
   "o": [
-   "Amide anesthetic",
    "Ester anesthetic",
    "Non-ionized form",
+   "Amide anesthetic",
    "Fluorescein"
   ],
   "a": 3,
@@ -2822,9 +2822,9 @@
   "q": "Which term describes stains devitalized cells and mucus; early dry eye?",
   "o": [
    "Amide anesthetic",
-   "Non-ionized form",
+   "Ester anesthetic",
    "Rose bengal",
-   "Ester anesthetic"
+   "Non-ionized form"
   ],
   "a": 2,
   "w": "Rose bengal: brilliant red dye. Stains devitalized cells and mucus; early dry eye",
@@ -2837,12 +2837,12 @@
   "t": "G3 Diagnostic",
   "q": "Which term describes the dry-eye target stained by rose bengal / lissamine?",
   "o": [
-   "Devitalized cells",
    "Ester anesthetic",
    "Amide anesthetic",
-   "Non-ionized form"
+   "Non-ionized form",
+   "Devitalized cells"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Devitalized cells: dead/dying cells. The dry-eye target stained by rose bengal / lissamine",
   "k": "Devitalized cells = The dry-eye target stained by rose bengal / lissamine",
   "src": "authored"
@@ -2853,9 +2853,9 @@
   "t": "G3 Diagnostic",
   "q": "Which term describes occurs above pH 8 or above ~0.001% concentration?",
   "o": [
-   "Non-ionized form",
-   "Amide anesthetic",
    "Ester anesthetic",
+   "Amide anesthetic",
+   "Non-ionized form",
    "Quenching"
   ],
   "a": 3,
@@ -2870,9 +2870,9 @@
   "q": "Which term describes time to first dry spot; measures tear film stability?",
   "o": [
    "Amide anesthetic",
-   "Ester anesthetic",
+   "Non-ionized form",
    "TBUT",
-   "Non-ionized form"
+   "Ester anesthetic"
   ],
   "a": 2,
   "w": "TBUT: tear break-up time. Time to first dry spot; measures tear film stability",
@@ -2886,11 +2886,11 @@
   "q": "Which term describes goldmann tonometry; needs fluorescein plus anesthetic?",
   "o": [
    "Non-ionized form",
+   "Amide anesthetic",
    "Applanation",
-   "Ester anesthetic",
-   "Amide anesthetic"
+   "Ester anesthetic"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Applanation: flattening the cornea. Goldmann tonometry; needs fluorescein plus anesthetic",
   "k": "Applanation = Goldmann tonometry; needs fluorescein plus anesthetic",
   "src": "authored"
@@ -2901,12 +2901,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes cuts aqueous secretion; a sulfonamide (sulfa caution)?",
   "o": [
-   "Uveoscleral outflow",
    "Prostaglandin analog",
-   "Carbonic anhydrase inhibitor",
-   "Osmotic agent"
+   "Osmotic agent",
+   "Uveoscleral outflow",
+   "Carbonic anhydrase inhibitor"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Carbonic anhydrase inhibitor: blocks the enzyme. Cuts aqueous secretion; a sulfonamide (sulfa caution)",
   "k": "Carbonic anhydrase inhibitor = Cuts aqueous secretion; a sulfonamide (sulfa caution)",
   "src": "authored"
@@ -2917,12 +2917,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes pulls water from the eye in acute angle-closure?",
   "o": [
-   "Uveoscleral outflow",
    "Prostaglandin analog",
+   "Osmotic agent",
    "Carbonic anhydrase inhibitor",
-   "Osmotic agent"
+   "Uveoscleral outflow"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Osmotic agent: osmotic gradient. Pulls water from the eye in acute angle-closure",
   "k": "Osmotic agent = Pulls water from the eye in acute angle-closure",
   "src": "authored"
@@ -2934,9 +2934,9 @@
   "q": "Which term describes bypasses the trabecular meshwork; prostaglandin target?",
   "o": [
    "Uveoscleral outflow",
+   "Prostaglandin analog",
    "Osmotic agent",
-   "Carbonic anhydrase inhibitor",
-   "Prostaglandin analog"
+   "Carbonic anhydrase inhibitor"
   ],
   "a": 0,
   "w": "Uveoscleral outflow: alternate drain. Bypasses the trabecular meshwork; prostaglandin target",
@@ -2949,12 +2949,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes inhibits phospholipase A2; risks glaucoma + PSC cataract?",
   "o": [
+   "Osmotic agent",
    "Prostaglandin analog",
    "Corticosteroid",
-   "Osmotic agent",
    "Carbonic anhydrase inhibitor"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Corticosteroid: adrenal steroid. Inhibits phospholipase A2; risks glaucoma + PSC cataract",
   "k": "Corticosteroid = Inhibits phospholipase A2; risks glaucoma + PSC cataract",
   "src": "authored"
@@ -2965,12 +2965,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes inhibits cyclooxygenase; no IOP change?",
   "o": [
-   "Carbonic anhydrase inhibitor",
-   "Prostaglandin analog",
    "NSAID",
-   "Osmotic agent"
+   "Osmotic agent",
+   "Prostaglandin analog",
+   "Carbonic anhydrase inhibitor"
   ],
-  "a": 2,
+  "a": 0,
   "w": "NSAID: non-steroidal anti-inflammatory. Inhibits cyclooxygenase; no IOP change",
   "k": "NSAID = Inhibits cyclooxygenase; no IOP change",
   "src": "authored"
@@ -2981,9 +2981,9 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes steroid target; blocking it stops PGs and leukotrienes?",
   "o": [
-   "Prostaglandin analog",
-   "Phospholipase A2",
    "Osmotic agent",
+   "Phospholipase A2",
+   "Prostaglandin analog",
    "Carbonic anhydrase inhibitor"
   ],
   "a": 1,
@@ -2997,12 +2997,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes open-angle IOP rise after 4–6 weeks of steroids?",
   "o": [
-   "Steroid-response glaucoma",
    "Carbonic anhydrase inhibitor",
-   "Prostaglandin analog",
-   "Osmotic agent"
+   "Steroid-response glaucoma",
+   "Osmotic agent",
+   "Prostaglandin analog"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Steroid-response glaucoma: GAG buildup in TM. Open-angle IOP rise after 4–6 weeks of steroids",
   "k": "Steroid-response glaucoma = Open-angle IOP rise after 4–6 weeks of steroids",
   "src": "authored"
@@ -3013,12 +3013,12 @@
   "t": "G4 Therapeutic",
   "q": "Which term describes gram-negative cover; oto/nephrotoxic beyond 5 days?",
   "o": [
-   "Carbonic anhydrase inhibitor",
-   "Aminoglycoside",
+   "Osmotic agent",
    "Prostaglandin analog",
-   "Osmotic agent"
+   "Aminoglycoside",
+   "Carbonic anhydrase inhibitor"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Aminoglycoside: protein-synthesis inhibitor. Gram-negative cover; oto/nephrotoxic beyond 5 days",
   "k": "Aminoglycoside = Gram-negative cover; oto/nephrotoxic beyond 5 days",
   "src": "authored"
@@ -3030,9 +3030,9 @@
   "q": "Which term describes cromolyn; prevents calcium influx in allergy?",
   "o": [
    "Mast-cell stabilizer",
-   "Prostaglandin analog",
    "Osmotic agent",
-   "Carbonic anhydrase inhibitor"
+   "Carbonic anhydrase inhibitor",
+   "Prostaglandin analog"
   ],
   "a": 0,
   "w": "Mast-cell stabilizer: blocks degranulation. Cromolyn; prevents calcium influx in allergy",
@@ -3061,12 +3061,12 @@
   "t": "G5 Side Effects",
   "q": "Which term describes classic late chloroquine retinal finding?",
   "o": [
-   "Xanthopsia",
-   "Pseudotumor cerebri",
    "Bull's-eye maculopathy",
-   "Amphiphilic drug"
+   "Amphiphilic drug",
+   "Pseudotumor cerebri",
+   "Xanthopsia"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Bull's-eye maculopathy: ring of RPE depigmentation. Classic late chloroquine retinal finding",
   "k": "Bull's-eye maculopathy = Classic late chloroquine retinal finding",
   "src": "authored"
@@ -3077,12 +3077,12 @@
   "t": "G5 Side Effects",
   "q": "Which term describes papilledema from vitamin A excess, OCPs, tetracycline?",
   "o": [
-   "Bull's-eye maculopathy",
    "Amphiphilic drug",
    "Xanthopsia",
-   "Pseudotumor cerebri"
+   "Pseudotumor cerebri",
+   "Bull's-eye maculopathy"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Pseudotumor cerebri: raised ICP, no mass. Papilledema from vitamin A excess, OCPs, tetracycline",
   "k": "Pseudotumor cerebri = Papilledema from vitamin A excess, OCPs, tetracycline",
   "src": "authored"
@@ -3094,11 +3094,11 @@
   "q": "Which term describes binds lipids; deposits in cornea (verticillata)?",
   "o": [
    "Pseudotumor cerebri",
-   "Amphiphilic drug",
    "Xanthopsia",
+   "Amphiphilic drug",
    "Bull's-eye maculopathy"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Amphiphilic drug: lipid- and water-loving. Binds lipids; deposits in cornea (verticillata)",
   "k": "Amphiphilic drug = Binds lipids; deposits in cornea (verticillata)",
   "src": "authored"
@@ -3109,12 +3109,12 @@
   "t": "G5 Side Effects",
   "q": "Which term describes the class of all ocular drugs in pregnancy?",
   "o": [
-   "FDA Category C",
-   "Pseudotumor cerebri",
+   "Xanthopsia",
    "Bull's-eye maculopathy",
-   "Xanthopsia"
+   "Pseudotumor cerebri",
+   "FDA Category C"
   ],
-  "a": 0,
+  "a": 3,
   "w": "FDA Category C: risk not ruled out. The class of all ocular drugs in pregnancy",
   "k": "FDA Category C = The class of all ocular drugs in pregnancy",
   "src": "authored"
@@ -3126,9 +3126,9 @@
   "q": "Which term describes e.g. a mydriatic paradoxically causing miosis?",
   "o": [
    "Idiosyncratic reaction",
-   "Xanthopsia",
    "Pseudotumor cerebri",
-   "Bull's-eye maculopathy"
+   "Bull's-eye maculopathy",
+   "Xanthopsia"
   ],
   "a": 0,
   "w": "Idiosyncratic reaction: illogical response. e.g. a mydriatic paradoxically causing miosis",
@@ -3141,12 +3141,12 @@
   "t": "G5 Side Effects",
   "q": "Which term describes earliest color change in several drug toxicities?",
   "o": [
+   "Xanthopsia",
    "Pseudotumor cerebri",
    "Bull's-eye maculopathy",
-   "Tritan defect",
-   "Xanthopsia"
+   "Tritan defect"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Tritan defect: blue-yellow color loss. Earliest color change in several drug toxicities",
   "k": "Tritan defect = Earliest color change in several drug toxicities",
   "src": "authored"
@@ -3173,12 +3173,12 @@
   "t": "G5 Side Effects",
   "q": "Which term describes ethambutol / INH optic toxicity pattern?",
   "o": [
-   "Pseudotumor cerebri",
    "Retrobulbar neuritis",
    "Xanthopsia",
+   "Pseudotumor cerebri",
    "Bull's-eye maculopathy"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Retrobulbar neuritis: inflammation behind the globe. Ethambutol / INH optic toxicity pattern",
   "k": "Retrobulbar neuritis = Ethambutol / INH optic toxicity pattern",
   "src": "authored"

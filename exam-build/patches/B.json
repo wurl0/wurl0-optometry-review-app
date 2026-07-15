@@ -133,5 +133,23 @@
       "Suppression of the right eye"
     ],
     "a": 0
+  },
+  "B0214": {
+    "o": [
+      "Light entering the pupil normally",
+      "Diffraction at the cornea",
+      "Vitreous floaters drifting",
+      "Ganglion cells stimulated directly"
+    ],
+    "a": 3
+  },
+  "B0215": {
+    "o": [
+      "Corneal epithelial edema",
+      "Raised intraocular pressure",
+      "Vitreous syneresis with age",
+      "Lens fibers diffracting light"
+    ],
+    "a": 3
   }
 }
