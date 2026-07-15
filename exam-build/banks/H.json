@@ -5,10 +5,10 @@
   "t": "H1 RA 8050",
   "q": "RA 8050 is commonly known as the:",
   "o": [
-   "Professional Regulation Act",
-   "Revised Optometry Law of 1995",
    "Optometry Law of 1955",
-   "Philippine Health Act"
+   "Revised Optometry Law of 1995",
+   "Philippine Health Act",
+   "Professional Regulation Act"
   ],
   "a": 1,
   "w": "RA 8050 is the Revised Optometry Law of 1995; it repealed the older RA 1998.",
@@ -21,12 +21,12 @@
   "t": "H1 RA 8050",
   "q": "RA 8050 repealed which earlier law?",
   "o": [
-   "RA 9484",
-   "RA 1998",
+   "RA 7722",
    "RA 8051",
-   "RA 7722"
+   "RA 9484",
+   "RA 1998"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Despite the confusing numbers, RA 8050 (1995) is the current law and it repealed RA 1998.",
   "k": "RA 8050 repealed RA 1998.",
   "src": "legacy"
@@ -70,11 +70,11 @@
   "q": "The term of office of a Board of Optometry member is:",
   "o": [
    "3 years, renewable",
-   "6 years, renewable",
    "4 years, non-renewable",
-   "5 years, non-renewable"
+   "5 years, non-renewable",
+   "6 years, renewable"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Members serve a 5-year non-renewable term, staggered so one rotates out yearly.",
   "k": "Board term = 5 years, non-renewable.",
   "src": "legacy"
@@ -101,12 +101,12 @@
   "t": "H1 RA 8050",
   "q": "To pass the licensure examination, a candidate must obtain:",
   "o": [
+   "A 75% average, none below 50%",
    "An 80% average, none below 70%",
-   "A 75% average, none below 60%",
    "A 70% average, none below 50%",
-   "A 75% average, none below 50%"
+   "A 75% average, none below 60%"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Section 20: at least a 75% general average AND no subject below 50%.",
   "k": "Pass = 75% avg, none below 50%.",
   "src": "sanitized"
@@ -117,12 +117,12 @@
   "t": "H1 RA 8050",
   "q": "A candidate who fails the board exam how many times must take a refresher course?",
   "o": [
+   "Four times",
    "Three times",
-   "Twice",
    "Five times",
-   "Four times"
+   "Twice"
   ],
-  "a": 0,
+  "a": 1,
   "w": "After failing three times, a refresher course is required before re-examination.",
   "k": "Fail 3x → refresher course.",
   "src": "legacy"
@@ -133,12 +133,12 @@
   "t": "H1 RA 8050",
   "q": "The professional license of an optometrist is renewed every:",
   "o": [
-   "1 year",
    "5 years",
-   "10 years",
-   "3 years"
+   "3 years",
+   "1 year",
+   "10 years"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Licenses renew every 3 years, requiring continuing education and fees.",
   "k": "License renewal every 3 years.",
   "src": "legacy"
@@ -149,12 +149,12 @@
   "t": "H1 RA 8050",
   "q": "A revocation or suspension may be appealed to the PRC within:",
   "o": [
-   "60 days",
-   "15 days",
+   "30 days",
    "90 days",
-   "30 days"
+   "15 days",
+   "60 days"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Section 27: appeal within 15 days of receiving the Board's decision.",
   "k": "Appeal window = 15 days.",
   "src": "legacy"
@@ -165,12 +165,12 @@
   "t": "H1 RA 8050",
   "q": "The penalty for violating RA 8050 (prohibited acts) is:",
   "o": [
-   "1–8 years, P10,000–40,000, or both",
-   "Imprisonment of 10–20 years",
    "License suspension only",
-   "A fine only, up to P5,000"
+   "1–8 years, P10,000–40,000, or both",
+   "A fine only, up to P5,000",
+   "Imprisonment of 10–20 years"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Section 33: 1 to 8 years imprisonment, or P10,000 to P40,000 fine, or both, plus administrative penalties.",
   "k": "Penalty: 1–8 years, P10,000–40,000, or both.",
   "src": "sanitized"
@@ -181,12 +181,12 @@
   "t": "H1 RA 8050",
   "q": "Under RA 8050, a public health worker in the blindness-prevention program may perform:",
   "o": [
-   "Visual acuity screening only",
-   "Instillation of DPAs",
    "Cataract extraction surgery",
-   "Full refraction and dispensing"
+   "Visual acuity screening only",
+   "Full refraction and dispensing",
+   "Instillation of DPAs"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Section 5 limits trained public health workers to visual acuity and screening only.",
   "k": "Public health workers: VA + screening only.",
   "src": "sanitized"
@@ -197,12 +197,12 @@
   "t": "H1 RA 8050",
   "q": "Which agency supervises the Board of Optometry?",
   "o": [
-   "Department of Labor and Employment",
+   "Professional Regulation Commission",
    "Department of Health",
-   "Philippine Drug Enforcement Agency",
-   "Professional Regulation Commission"
+   "Department of Labor and Employment",
+   "Philippine Drug Enforcement Agency"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The Board operates under the general supervision of the PRC.",
   "k": "Board is under the PRC.",
   "src": "sanitized"
@@ -213,12 +213,12 @@
   "t": "H1 RA 8050",
   "q": "An optometrist who advertises that they charge 'lower fees than any other clinic' is:",
   "o": [
-   "Allowed with Board approval",
-   "Committing a prohibited act",
    "Allowed only in print",
-   "Allowed if the claim is true"
+   "Allowed if the claim is true",
+   "Committing a prohibited act",
+   "Allowed with Board approval"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Section 32(c) prohibits comparative/price advertising; truth is no defense.",
   "k": "Comparative/price advertising = prohibited act.",
   "src": "legacy"
@@ -229,12 +229,12 @@
   "t": "H1 RA 8050",
   "q": "To be eligible for the licensure exam, an applicant must hold a Doctor of Optometry degree after a:",
   "o": [
-   "6-year course",
-   "4-year course",
    "2-year course",
-   "5-year course"
+   "5-year course",
+   "4-year course",
+   "6-year course"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Section 19 requires a Filipino citizen of good moral character with a 6-year O.D. degree.",
   "k": "6-year O.D. course required.",
   "src": "legacy"
@@ -245,12 +245,12 @@
   "t": "H1 RA 8050",
   "q": "Who may legally examine the human eye WITHOUT an optometry license under RA 8050?",
   "o": [
-   "A licensed optician",
    "A physician with eye training",
    "A contact lens vendor",
+   "A licensed optician",
    "A registered pharmacist"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Section 5 exempts physicians with post-graduate training in eye disease; their physical-exam eye check is not 'practicing optometry'.",
   "k": "Physician with eye training is exempt.",
   "src": "sanitized"
@@ -261,12 +261,12 @@
   "t": "H1 RA 8050",
   "q": "Before an optometrist trained before the law may use DPAs, Section 31 requires:",
   "o": [
-   "A one-year surgical fellowship",
-   "No extra requirement at all",
    "A course and certification exam",
-   "A second optometry degree"
+   "A second optometry degree",
+   "A one-year surgical fellowship",
+   "No extra requirement at all"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Those admitted before the law must pass a special pharmacology certification before using DPAs.",
   "k": "DPA use needs pharmacology certification (Sec 31).",
   "src": "sanitized"
@@ -277,12 +277,12 @@
   "t": "H1 RA 8050",
   "q": "Board members are appointed by:",
   "o": [
-   "The President of the Philippines",
-   "The PRC Commissioner alone",
    "The national optometric organization directly",
-   "The DOH Secretary"
+   "The DOH Secretary",
+   "The President of the Philippines",
+   "The PRC Commissioner alone"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The President appoints the 5 members on PRC recommendation from the organization's 10 nominees.",
   "k": "Board appointed by the President.",
   "src": "legacy"
@@ -294,11 +294,11 @@
   "q": "The licensure examination is given at least:",
   "o": [
    "On demand",
-   "Once every 5 years",
    "Once a year",
-   "Twice a year"
+   "Twice a year",
+   "Once every 5 years"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Section 17: the Board gives the examination at least once every year.",
   "k": "Licensure exam at least once a year.",
   "src": "legacy"
@@ -309,12 +309,12 @@
   "t": "H1 RA 8050",
   "q": "The Board reports examination ratings to the PRC within:",
   "o": [
-   "60 days",
-   "90 days",
    "15 days",
-   "30 days"
+   "30 days",
+   "90 days",
+   "60 days"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Section 21: ratings are reported within 60 days after the last examination day.",
   "k": "Results to PRC within 60 days.",
   "src": "legacy"
@@ -341,12 +341,12 @@
   "t": "H1 RA 8050",
   "q": "All optometrists are integrated into:",
   "o": [
-   "The PRC staff",
-   "Multiple competing boards",
    "One national organization",
-   "No organization"
+   "Multiple competing boards",
+   "No organization",
+   "The PRC staff"
   ],
-  "a": 2,
+  "a": 0,
   "w": "RA 8050 integrates optometrists into one national organization that promulgates the Code of Ethics.",
   "k": "Integration into one national organization.",
   "src": "legacy"
@@ -357,12 +357,12 @@
   "t": "H1 RA 8050",
   "q": "An optometrist must, on documents, indicate the license number and expiry, and in the clinic must:",
   "o": [
-   "Display the certificate",
-   "Keep the certificate hidden",
+   "Display only the diplomas",
    "Display nothing at all",
-   "Display only the diplomas"
+   "Display the certificate",
+   "Keep the certificate hidden"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Section 6 (disclosure) requires displaying the COR conspicuously and stating the license number/expiry on documents.",
   "k": "Display the COR; state license number.",
   "src": "sanitized"
@@ -375,10 +375,10 @@
   "o": [
    "The PRC clerk",
    "A court only",
-   "The President of the Philippines",
-   "The national organization"
+   "The national organization",
+   "The President of the Philippines"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Section 10: the President may remove a member for cause after due process by the PRC.",
   "k": "Board member removed by the President (for cause).",
   "src": "legacy"
@@ -389,12 +389,12 @@
   "t": "H1 RA 8050",
   "q": "The State policy in RA 8050 declares optometry to be:",
   "o": [
+   "An optional health service",
    "A purely commercial trade",
    "A surgical subspecialty",
-   "Part of primary health care",
-   "An optional health service"
+   "Part of primary health care"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Section 2 recognizes optometry as essential and part of primary health care.",
   "k": "Optometry = part of primary health care.",
   "src": "sanitized"
@@ -405,12 +405,12 @@
   "t": "H1 RA 8050",
   "q": "Engaging in optometry without a license (unauthorized practice) is addressed in:",
   "o": [
-   "Not covered",
-   "Section 19",
    "Section 40 only",
-   "Section 5"
+   "Section 19",
+   "Section 5",
+   "Not covered"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Unauthorized practice is prohibited under Section 5 and is a punishable prohibited act under Section 32.",
   "k": "Unauthorized practice = prohibited (Sec 5/32).",
   "src": "legacy"
@@ -437,12 +437,12 @@
   "t": "H1 RA 8050",
   "q": "After passing and before registration, the successful examinee must:",
   "o": [
+   "Join the PRC as staff",
    "Open a clinic immediately",
-   "Take an oath before the Board",
    "Pay a facilitation fee",
-   "Join the PRC as staff"
+   "Take an oath before the Board"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Section 23: successful examinees take their oath before the certificate of registration is issued.",
   "k": "Oath taken before registration.",
   "src": "sanitized"
@@ -453,12 +453,12 @@
   "t": "H1 RA 8050",
   "q": "A requirement to sit the licensure exam is that the applicant be a:",
   "o": [
-   "Filipino of good moral character",
-   "Licensed medical physician",
    "Permanent resident alien",
-   "Foreign optometry expert"
+   "Filipino of good moral character",
+   "Foreign optometry expert",
+   "Licensed medical physician"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Section 19 requires Filipino citizenship, good moral character, and the 6-year O.D. degree.",
   "k": "Applicant must be a Filipino citizen.",
   "src": "sanitized"
@@ -470,11 +470,11 @@
   "q": "Which best states the relationship between latent and total hyperopia in the law's scope? (Trick: which is a LAW fact, not a clinical one?)",
   "o": [
    "WTR is steep at 90°",
-   "RA 8050 sets the Board at 5 members",
    "Hyperopia needs plus lenses",
+   "RA 8050 sets the Board at 5 members",
    "Latent + manifest = total"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The Board of Optometry has five members, appointed by the President from ten nominees. The other choices are clinical facts from other subjects, not jurisprudence.",
   "k": "Board of Optometry = 5 members from 10 nominees.",
   "src": "legacy"
@@ -485,10 +485,10 @@
   "t": "H1 RA 8050",
   "q": "Comparative advertising and offering free examinations are:",
   "o": [
-   "Allowed once every year",
-   "Prohibited, degrading acts",
    "Encouraged for competition",
-   "Required by the PRC rules"
+   "Prohibited, degrading acts",
+   "Required by the PRC rules",
+   "Allowed once every year"
   ],
   "a": 1,
   "w": "Both comparative/price advertising and free-service inducements are prohibited (Sec 32 and Board resolutions).",
@@ -501,12 +501,12 @@
   "t": "H1 RA 8050",
   "q": "A violation of the Code of Professional Ethics is treated as:",
   "o": [
-   "Unethical, punishable conduct",
    "A criminal felony only",
    "Not a punishable matter",
-   "A minor private matter"
+   "A minor private matter",
+   "Unethical, punishable conduct"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Section 40 states a Code violation is unethical conduct, punishable by suspension/prohibition under Section 26.",
   "k": "Code violation → suspension (Sec 26).",
   "src": "sanitized"
@@ -517,12 +517,12 @@
   "t": "H2 Bioethics",
   "q": "The four core bioethical principles are:",
   "o": [
-   "Honesty, charity, courage, loyalty",
-   "Autonomy, beneficence, non-maleficence, justice",
+   "Diagnosis, treatment, billing, referral",
    "Profit, efficiency, speed, comfort",
-   "Diagnosis, treatment, billing, referral"
+   "Honesty, charity, courage, loyalty",
+   "Autonomy, beneficence, non-maleficence, justice"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Beauchamp and Childress: autonomy, beneficence, non-maleficence, justice.",
   "k": "Four principles: autonomy, beneficence, non-maleficence, justice.",
   "src": "legacy"
@@ -533,9 +533,9 @@
   "t": "H2 Bioethics",
   "q": "Informed consent is the direct expression of which principle?",
   "o": [
-   "Non-maleficence",
-   "Beneficence",
    "Justice",
+   "Beneficence",
+   "Non-maleficence",
    "Autonomy"
   ],
   "a": 3,
@@ -549,12 +549,12 @@
   "t": "H2 Bioethics",
   "q": "'Primum non nocere' (first, do no harm) is the principle of:",
   "o": [
-   "Autonomy",
-   "Justice",
+   "Beneficence",
    "Non-maleficence",
-   "Beneficence"
+   "Autonomy",
+   "Justice"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Non-maleficence is the obligation to avoid harm; benefit must outweigh harm.",
   "k": "Primum non nocere = non-maleficence.",
   "src": "legacy"
@@ -565,12 +565,12 @@
   "t": "H2 Bioethics",
   "q": "Treating a charity (PhilHealth) patient with a quicker, lesser exam than a private patient violates:",
   "o": [
-   "Justice",
-   "Non-maleficence",
    "Beneficence",
-   "Autonomy"
+   "Justice",
+   "Autonomy",
+   "Non-maleficence"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Justice requires the same standard of care regardless of ability to pay or status.",
   "k": "Unequal care = justice violation.",
   "src": "legacy"
@@ -582,11 +582,11 @@
   "q": "Instilling a DPA without explaining the effects or obtaining permission violates:",
   "o": [
    "Beneficence",
-   "Autonomy",
    "Justice",
-   "Collegiality"
+   "Collegiality",
+   "Autonomy"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Failing to disclose and obtain consent denies the patient's right to decide (autonomy).",
   "k": "No consent for DPA = autonomy violation.",
   "src": "legacy"
@@ -614,11 +614,11 @@
   "q": "Informed consent requires that the patient understands all EXCEPT:",
   "o": [
    "The diagnosis and implications",
-   "The clinician's personal income",
    "The treatment options and risks",
+   "The clinician's personal income",
    "The alternatives"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Consent requires disclosure of diagnosis, options, risks, and alternatives, with voluntary agreement; not the clinician's income.",
   "k": "Consent = diagnosis, options, risks, alternatives.",
   "src": "legacy"
@@ -629,12 +629,12 @@
   "t": "H2 Bioethics",
   "q": "For a minor patient, consent is provided by:",
   "o": [
-   "The minor alone",
    "A parent or guardian",
-   "No one is needed",
-   "The optometrist"
+   "The optometrist",
+   "The minor alone",
+   "No one is needed"
   ],
-  "a": 1,
+  "a": 0,
   "w": "A parent or guardian consents; assent is sought from older children.",
   "k": "Minor: guardian consents, child assents.",
   "src": "legacy"
@@ -645,12 +645,12 @@
   "t": "H2 Bioethics",
   "q": "In a true emergency where delay would cause serious harm, informed consent:",
   "o": [
-   "May be ignored in all cases",
-   "Is still mandatory in writing",
    "May be waived under the doctrine",
+   "Is still mandatory in writing",
+   "May be ignored in all cases",
    "Must be obtained from the PRC"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Consent may be waived in emergencies when delay would cause serious harm.",
   "k": "Emergency: consent may be waived.",
   "src": "sanitized"
@@ -661,12 +661,12 @@
   "t": "H2 Bioethics",
   "q": "A competent adult refuses your referral for a suspicious optic disc. The most ethical action is to:",
   "o": [
-   "Override and refer anyway",
-   "Report them to the Board",
    "Discharge the patient",
-   "Document, re-counsel, monitor"
+   "Document, re-counsel, monitor",
+   "Override and refer anyway",
+   "Report them to the Board"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Autonomy allows refusal, but beneficence/non-maleficence require continued care, not abandonment.",
   "k": "Refusal: document, re-counsel, do not abandon.",
   "src": "sanitized"
@@ -677,12 +677,12 @@
   "t": "H2 Bioethics",
   "q": "Declining not to fit risky extended-wear lenses in a non-compliant patient with prior keratitis reflects:",
   "o": [
-   "Non-maleficence",
    "Justice",
+   "Autonomy",
    "Confidentiality",
-   "Autonomy"
+   "Non-maleficence"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Avoiding a foreseeable harm whose risk outweighs benefit is non-maleficence.",
   "k": "Avoiding foreseeable harm = non-maleficence.",
   "src": "legacy"
@@ -693,12 +693,12 @@
   "t": "H2 Bioethics",
   "q": "Non-maleficence means:",
   "o": [
-   "Benefit must outweigh harm",
-   "Treating everyone identically",
    "Never accepting any risk",
+   "Treating everyone identically",
+   "Benefit must outweigh harm",
    "Always referring onward"
   ],
-  "a": 0,
+  "a": 2,
   "w": "It is a balance, not a ban; doing nothing is also a choice with consequences.",
   "k": "Non-maleficence = benefit must beat harm.",
   "src": "sanitized"
@@ -711,10 +711,10 @@
   "o": [
    "Florence Nightingale",
    "Hippocrates",
-   "RA 8050",
-   "Beauchamp and Childress"
+   "Beauchamp and Childress",
+   "RA 8050"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Beauchamp and Childress described the four-principle framework of biomedical ethics.",
   "k": "Four principles = Beauchamp & Childress.",
   "src": "legacy"
@@ -725,10 +725,10 @@
   "t": "H2 Bioethics",
   "q": "Keeping patient records and diagnoses private is the duty of:",
   "o": [
-   "Justice",
-   "Confidentiality",
    "Collegiality",
-   "Beneficence"
+   "Confidentiality",
+   "Beneficence",
+   "Justice"
   ],
   "a": 1,
   "w": "Confidentiality protects privileged patient information; it is a specific application of trust/autonomy.",
@@ -741,12 +741,12 @@
   "t": "H2 Bioethics",
   "q": "Referring a condition that exceeds your competence reflects which principle?",
   "o": [
+   "Confidentiality",
    "Non-maleficence",
    "Autonomy",
-   "Justice",
-   "Confidentiality"
+   "Justice"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Referring when a condition is beyond your scope prevents harm (non-maleficence).",
   "k": "Refer beyond scope = non-maleficence.",
   "src": "legacy"
@@ -758,11 +758,11 @@
   "q": "A company offers a gift to prescribe their lenses exclusively. Declining is supported mainly by:",
   "o": [
    "Confidentiality",
-   "Autonomy",
+   "Justice and beneficence",
    "Collegiality",
-   "Justice and beneficence"
+   "Autonomy"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Lens selection must follow patient need (beneficence) and fairness (justice), not kickbacks.",
   "k": "Reject kickbacks: beneficence + justice.",
   "src": "legacy"
@@ -773,10 +773,10 @@
   "t": "H2 Bioethics",
   "q": "Informed consent is best described as:",
   "o": [
-   "A signature on a form",
    "The optometrist's own decision",
+   "A legal loophole for the clinic",
    "Agreement based on understanding",
-   "A legal loophole for the clinic"
+   "A signature on a form"
   ],
   "a": 2,
   "w": "Consent requires genuine understanding, not just a signature; it is the expression of autonomy.",
@@ -806,11 +806,11 @@
   "q": "The Section 40 duty 'consider the visual welfare of the public as the primary responsibility' maps to:",
   "o": [
    "Justice",
+   "Autonomy",
    "Beneficence",
-   "Confidentiality",
-   "Autonomy"
+   "Confidentiality"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Acting in the patient's/public's best interest is beneficence.",
   "k": "Visual welfare of public = beneficence.",
   "src": "legacy"
@@ -821,12 +821,12 @@
   "t": "H2 Bioethics",
   "q": "A minor arrives alone requesting a contact lens fitting. The correct action is to:",
   "o": [
-   "Fit the lenses immediately",
    "Defer until a guardian consents",
-   "Report the parents to DSWD",
-   "Refuse all care outright"
+   "Fit the lenses immediately",
+   "Refuse all care outright",
+   "Report the parents to DSWD"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Autonomy/consent rules require parent or guardian consent for a minor; defer the fitting.",
   "k": "Minor alone → defer for guardian consent.",
   "src": "sanitized"
@@ -837,12 +837,12 @@
   "t": "H2 Bioethics",
   "q": "The legal doctrine 'let the master answer', making a superior responsible for a subordinate's actions, is:",
   "o": [
-   "Informed consent",
-   "Caveat emptor",
    "Habeas corpus",
-   "Respondeat superior"
+   "Respondeat superior",
+   "Caveat emptor",
+   "Informed consent"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Respondeat superior holds the supervising professional responsible for delegated acts.",
   "k": "Respondeat superior = 'let the master answer'.",
   "src": "legacy"
@@ -853,8 +853,8 @@
   "t": "H2 Bioethics",
   "q": "The obligation to keep current through continuing education is the principle of:",
   "o": [
-   "Confidentiality",
    "Autonomy",
+   "Confidentiality",
    "Justice",
    "Continuous competence"
   ],
@@ -869,10 +869,10 @@
   "t": "H2 Bioethics",
   "q": "Law and ethics differ in that:",
   "o": [
-   "Ethics is enforced by courts",
+   "They are wholly identical",
    "Law is enforceable; ethics moral",
-   "Law carries no penalties",
-   "They are wholly identical"
+   "Ethics is enforced by courts",
+   "Law carries no penalties"
   ],
   "a": 1,
   "w": "Law tells you what you must do under penalty; ethics tells you what you ought to do (though RA 8050 makes Code violations punishable).",
@@ -885,12 +885,12 @@
   "t": "H2 Bioethics",
   "q": "Which principle is most commonly tested through scenarios about contraindications and referral?",
   "o": [
-   "Justice",
    "Non-maleficence",
-   "Collegiality",
-   "Confidentiality"
+   "Justice",
+   "Confidentiality",
+   "Collegiality"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Non-maleficence (avoid harm, refer, respect contraindications) and autonomy (consent) are the most tested.",
   "k": "Contraindication/referral scenarios = non-maleficence.",
   "src": "legacy"
@@ -902,11 +902,11 @@
   "q": "The correct order to register a sole-proprietorship optometry clinic is:",
   "o": [
    "Mayor → DTI → BIR → Barangay",
+   "Barangay → BIR → DTI → Mayor",
    "DTI → Barangay → Mayor → BIR",
-   "BIR → Mayor → Barangay → DTI",
-   "Barangay → BIR → DTI → Mayor"
+   "BIR → Mayor → Barangay → DTI"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Register the name (DTI), clear the location (Barangay), get the permit (Mayor), then register for taxes (BIR).",
   "k": "Setup: DTI → Barangay → Mayor → BIR.",
   "src": "legacy"
@@ -917,12 +917,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The DTI registration provides the:",
   "o": [
-   "Tax identification number",
-   "Mayor's permit",
    "Barangay clearance",
-   "Business name registration"
+   "Business name registration",
+   "Tax identification number",
+   "Mayor's permit"
   ],
-  "a": 3,
+  "a": 1,
   "w": "DTI registers the business name; the certificate is valid for 5 years.",
   "k": "DTI = business name (5-year cert).",
   "src": "legacy"
@@ -933,12 +933,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Registration with the BIR provides the:",
   "o": [
-   "The CPD certificate",
-   "Registered business name",
    "TIN and books of accounts",
-   "The sanitary permit"
+   "Registered business name",
+   "The sanitary permit",
+   "The CPD certificate"
   ],
-  "a": 2,
+  "a": 0,
   "w": "The BIR issues the certificate of registration, TIN, and registers the books of accounts for taxes.",
   "k": "BIR = TIN + books of accounts.",
   "src": "sanitized"
@@ -950,9 +950,9 @@
   "q": "Under Board Resolution No. 11 (2016), an optometrist must notify the Board of the clinic location within:",
   "o": [
    "30 days",
-   "60 days",
    "15 days",
-   "1 year"
+   "1 year",
+   "60 days"
   ],
   "a": 0,
   "w": "The clinic location (with photographs) must be reported to the Board within 30 days of securing the premises.",
@@ -965,12 +965,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The minimum examination room area required is:",
   "o": [
-   "10 sq m",
+   "20 sq m",
    "5 sq m",
-   "8 sq m",
-   "20 sq m"
+   "10 sq m",
+   "8 sq m"
   ],
-  "a": 0,
+  "a": 2,
   "w": "The exam/treatment room must be at least 10 square meters with a test distance of at least 3 meters.",
   "k": "Exam room ≥ 10 sq m.",
   "src": "legacy"
@@ -1013,12 +1013,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Permissible optometric advertising must be:",
   "o": [
-   "Anything that attracts patients",
-   "Focused on the lowest prices",
    "Self-laudatory and competitive",
-   "True, honest, fair, dignified"
+   "Focused on the lowest prices",
+   "True, honest, fair, dignified",
+   "Anything that attracts patients"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Only true, honest, dignified, objective information is allowed; price and superiority claims are prohibited.",
   "k": "Advertising: true, honest, dignified, objective.",
   "src": "sanitized"
@@ -1029,12 +1029,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which advertisement is PROHIBITED?",
   "o": [
-   "The optometrist's name and specialization",
-   "Clinic hours and location",
+   "A dignified statement of services offered",
    "'Free eye exam with every purchase'",
-   "A dignified statement of services offered"
+   "Clinic hours and location",
+   "The optometrist's name and specialization"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Advertising free or discounted services (and price/superiority claims) is prohibited.",
   "k": "Free-service / price ads are prohibited.",
   "src": "legacy"
@@ -1045,12 +1045,12 @@
   "t": "H3 Practice Mgmt",
   "q": "An optometry clinic must display all of the following EXCEPT:",
   "o": [
-   "Competitors' price lists",
-   "Updated professional ID cards",
    "Valid certificates of registration",
-   "CPD certificates of completion"
+   "Updated professional ID cards",
+   "CPD certificates of completion",
+   "Competitors' price lists"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Display CORs, PICs, Certificates of Good Standing, and CPD certificates; only optometry-related documents.",
   "k": "Display COR, PIC, COGS, CPD (only optometry docs).",
   "src": "legacy"
@@ -1061,12 +1061,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The product (frames/sunglasses) display area must:",
   "o": [
-   "Be the largest area",
    "Be the main feature identifying the practice",
    "NOT be used to highlight or identify the practice",
+   "Be the largest area",
    "Replace the exam room"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Products must not be used to identify the practice, to protect optometry's professional image.",
   "k": "Product display ≠ identify the practice.",
   "src": "legacy"
@@ -1077,12 +1077,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Mandatory employee government contributions in a Philippine clinic include:",
   "o": [
-   "PRC, DOH, and PDEA dues",
+   "No contributions are required",
    "DTI, BIR, and SEC fees",
-   "SSS, PhilHealth, Pag-IBIG",
-   "No contributions are required"
+   "PRC, DOH, and PDEA dues",
+   "SSS, PhilHealth, Pag-IBIG"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Employers must remit SSS, PhilHealth, and Pag-IBIG contributions for staff.",
   "k": "Employee benefits: SSS, PhilHealth, Pag-IBIG.",
   "src": "sanitized"
@@ -1095,10 +1095,10 @@
   "o": [
    "DOH",
    "DTI",
-   "PRC",
-   "DOLE"
+   "DOLE",
+   "PRC"
   ],
-  "a": 3,
+  "a": 2,
   "w": "OSHS falls under the Department of Labor and Employment (DOLE).",
   "k": "OSHS under DOLE.",
   "src": "legacy"
@@ -1109,10 +1109,10 @@
   "t": "H3 Practice Mgmt",
   "q": "Maternity leave under RA 11210 is:",
   "o": [
-   "120 days",
-   "105 days",
    "78 days",
-   "60 days"
+   "105 days",
+   "60 days",
+   "120 days"
   ],
   "a": 1,
   "w": "The Expanded Maternity Leave Law (RA 11210) grants 105 days.",
@@ -1125,12 +1125,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Paternity leave under RA 8187 is:",
   "o": [
-   "3 days",
-   "30 days",
    "14 days",
-   "7 working days"
+   "7 working days",
+   "30 days",
+   "3 days"
   ],
-  "a": 3,
+  "a": 1,
   "w": "RA 8187 grants 7 working days of paternity leave.",
   "k": "Paternity leave = 7 days (RA 8187).",
   "src": "legacy"
@@ -1141,12 +1141,12 @@
   "t": "H3 Practice Mgmt",
   "q": "GSIS covers which workers, and SSS which?",
   "o": [
+   "GSIS = government; SSS = private",
    "Both private",
    "Both government",
-   "GSIS = government; SSS = private",
    "GSIS = private; SSS = government"
   ],
-  "a": 2,
+  "a": 0,
   "w": "GSIS covers government employees; SSS covers the private sector.",
   "k": "GSIS = government; SSS = private.",
   "src": "legacy"
@@ -1157,12 +1157,12 @@
   "t": "H3 Practice Mgmt",
   "q": "During operating hours, the optometry clinic must be:",
   "o": [
-   "Closed for exams",
    "Manned by a licensed optometrist",
    "Left unattended",
-   "Run by a salesperson"
+   "Run by a salesperson",
+   "Closed for exams"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Board Resolution No. 11 requires a licensed optometrist on-site during regular operating hours.",
   "k": "Clinic manned by a licensed optometrist.",
   "src": "legacy"
@@ -1173,12 +1173,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Required instruments for ocular examination include all EXCEPT:",
   "o": [
-   "A cash register",
-   "Retinoscope and phoropter",
    "Slit-lamp biomicroscope",
-   "Direct ophthalmoscope"
+   "Direct ophthalmoscope",
+   "Retinoscope and phoropter",
+   "A cash register"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Required instruments are clinical (slit lamp, ophthalmoscope, retinoscope, phoropter, trial set, VA chart, Ishihara, Amsler); a cash register is not clinical equipment.",
   "k": "Clinical instruments required (not retail equipment).",
   "src": "sanitized"
@@ -1191,10 +1191,10 @@
   "o": [
    "Open-plan with sales counters",
    "Shared with a retail store",
-   "Inside a supermarket aisle",
-   "Exclusive, enclosed, separate"
+   "Exclusive, enclosed, separate",
+   "Inside a supermarket aisle"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Board Resolution No. 11 requires an enclosed, exclusive professional setup separate from commercial concerns.",
   "k": "Clinic used exclusively for optometry.",
   "src": "sanitized"
@@ -1205,8 +1205,8 @@
   "t": "H3 Practice Mgmt",
   "q": "A non-optometrist staff member may:",
   "o": [
-   "Sign prescriptions",
    "Conduct the subjective refraction independently",
+   "Sign prescriptions",
    "Perform the acts constituting the practice of optometry",
    "Not perform acts that constitute the practice of optometry"
   ],
@@ -1222,11 +1222,11 @@
   "q": "Solicitation of patients by canvassing or employing agents/solicitors is:",
   "o": [
    "Required by the law",
+   "Prohibited, unprofessional",
    "Encouraged by the Board",
-   "Allowed once every year",
-   "Prohibited, unprofessional"
+   "Allowed once every year"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Board resolutions prohibit soliciting patients via canvassing, agents, entertainers, or organizations.",
   "k": "Soliciting patients (canvassing) is prohibited.",
   "src": "sanitized"
@@ -1238,8 +1238,8 @@
   "q": "The local business permit to operate the clinic is issued by:",
   "o": [
    "The Mayor's office",
-   "The BIR",
    "The DTI",
+   "The BIR",
    "The Barangay"
   ],
   "a": 0,
@@ -1253,12 +1253,12 @@
   "t": "H1 RA 8050",
   "q": "The Board of Optometry is composed of how many members, chosen from how many nominees?",
   "o": [
-   "3 members from 6 nominees",
    "5 members from 10 nominees",
-   "7 members from 14 nominees",
-   "5 members from 15 nominees"
+   "3 members from 6 nominees",
+   "5 members from 15 nominees",
+   "7 members from 14 nominees"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Five members are appointed by the President from ten nominees submitted by the accredited professional organization through the PRC.",
   "k": "Board = 5 members from 10 nominees.",
   "src": "authored"
@@ -1269,12 +1269,12 @@
   "t": "H1 RA 8050",
   "q": "The term of a Board of Optometry member is:",
   "o": [
-   "5 years, renewable once",
-   "3 years, renewable once",
+   "5 years, non-renewable",
    "2 years, renewable twice",
-   "5 years, non-renewable"
+   "3 years, renewable once",
+   "5 years, renewable once"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Members serve a single non-renewable five-year term, which protects Board independence.",
   "k": "Board term = 5 years, non-renewable.",
   "src": "authored"
@@ -1285,12 +1285,12 @@
   "t": "H1 RA 8050",
   "q": "An optometrist's professional license must be renewed every:",
   "o": [
-   "3 years",
    "10 years",
    "5 years",
+   "3 years",
    "Year"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Renewal runs on a three-year cycle with the CPD units required by the PRC.",
   "k": "License renewal every 3 years.",
   "src": "authored"
@@ -1301,12 +1301,12 @@
   "t": "H1 RA 8050",
   "q": "A candidate who fails the licensure examination three times must:",
   "o": [
-   "Wait five years",
    "Take a refresher course",
+   "Be permanently barred",
    "Repeat the whole degree",
-   "Be permanently barred"
+   "Wait five years"
   ],
-  "a": 1,
+  "a": 0,
   "w": "After three failures the candidate must complete a refresher course before being readmitted to the examination.",
   "k": "Fail 3× = refresher course.",
   "src": "authored"
@@ -1317,12 +1317,12 @@
   "t": "H1 RA 8050",
   "q": "The window to appeal a Board decision is:",
   "o": [
-   "60 days",
    "15 days",
-   "30 days",
-   "5 days"
+   "60 days",
+   "5 days",
+   "30 days"
   ],
-  "a": 1,
+  "a": 0,
   "w": "An appeal must be filed within 15 days of the decision, first to the PRC and then to the Court of Appeals.",
   "k": "Appeal window = 15 days.",
   "src": "authored"
@@ -1333,12 +1333,12 @@
   "t": "H1 RA 8050",
   "q": "The Board of Optometry operates under which agency?",
   "o": [
-   "The Department of Education",
-   "The Professional Regulation Commission",
    "The Department of Health",
-   "The Commission on Higher Education"
+   "The Commission on Higher Education",
+   "The Professional Regulation Commission",
+   "The Department of Education"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The Board sits under the PRC, which supervises all the professional regulatory boards.",
   "k": "Board of Optometry under the PRC.",
   "src": "authored"
@@ -1350,11 +1350,11 @@
   "q": "The four principles of biomedical ethics were formulated by:",
   "o": [
    "Winslow and Snow",
-   "Hippocrates and Galen",
    "Kant and Mill",
-   "Beauchamp and Childress"
+   "Beauchamp and Childress",
+   "Hippocrates and Galen"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Beauchamp and Childress set out autonomy, beneficence, non-maleficence and justice as the working framework of biomedical ethics.",
   "k": "Four principles = Beauchamp and Childress.",
   "src": "authored"
@@ -1365,12 +1365,12 @@
   "t": "H2 Bioethics",
   "q": "Informed consent is chiefly an expression of which principle?",
   "o": [
-   "Justice",
-   "Non-maleficence",
    "Autonomy",
-   "Beneficence"
+   "Beneficence",
+   "Non-maleficence",
+   "Justice"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Consent exists to protect the patient's right to decide for themselves, which is autonomy. Beneficence is acting for their good; justice is fair distribution.",
   "k": "Informed consent = autonomy.",
   "src": "authored"
@@ -1381,12 +1381,12 @@
   "t": "H2 Bioethics",
   "q": "'Primum non nocere' translates as:",
   "o": [
-   "Treat all alike",
-   "Do good always",
    "First, do no harm",
-   "Respect the patient's wishes"
+   "Respect the patient's wishes",
+   "Treat all alike",
+   "Do good always"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Primum non nocere is the Latin of non-maleficence: the duty to avoid inflicting harm, which includes referring beyond your competence.",
   "k": "Primum non nocere = first, do no harm.",
   "src": "authored"
@@ -1397,12 +1397,12 @@
   "t": "H2 Bioethics",
   "q": "Referring a patient whose condition is beyond your scope of practice expresses:",
   "o": [
-   "Autonomy",
    "Non-maleficence",
+   "Justice",
    "Veracity",
-   "Justice"
+   "Autonomy"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Practising past your competence risks harm, so referring on is the non-maleficent act.",
   "k": "Refer beyond scope = non-maleficence.",
   "src": "authored"
@@ -1413,12 +1413,12 @@
   "t": "H2 Bioethics",
   "q": "Treating every patient equally regardless of social or economic status is:",
   "o": [
-   "Autonomy",
-   "Beneficence",
    "Distributive justice",
+   "Beneficence",
+   "Autonomy",
    "Fidelity"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Distributive justice concerns the fair allocation of care and attention, without regard to a patient's standing or ability to pay.",
   "k": "Equal care regardless of status = justice.",
   "src": "authored"
@@ -1429,12 +1429,12 @@
   "t": "H2 Bioethics",
   "q": "When a minor is treated, the parent gives consent and the child gives:",
   "o": [
-   "Written consent",
-   "A waiver",
    "Nothing further",
-   "Assent"
+   "A waiver",
+   "Assent",
+   "Written consent"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The guardian holds legal consent, but the child's developmentally appropriate agreement, assent, should still be sought as a matter of respect.",
   "k": "Parent consents; child assents.",
   "src": "authored"
@@ -1445,12 +1445,12 @@
   "t": "H2 Bioethics",
   "q": "The Code of Professional Ethics for optometrists is found in:",
   "o": [
-   "RA 8050 Section 40",
-   "RA 8050 Section 32",
+   "RA 8050 Section 26",
    "RA 8050 Section 31",
-   "RA 8050 Section 26"
+   "RA 8050 Section 32",
+   "RA 8050 Section 40"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Section 40 contains the Code of Ethics. Section 26 carries the penalty for violating it: suspension or prohibition from practice.",
   "k": "Code of Ethics = RA 8050 Sec 40; penalty Sec 26.",
   "src": "authored"
@@ -1461,12 +1461,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The correct order for setting up a practice as a business is:",
   "o": [
-   "BIR → DTI → Mayor → Barangay",
    "DTI → Barangay → Mayor → BIR",
    "Mayor → DTI → BIR → Barangay",
+   "BIR → DTI → Mayor → Barangay",
    "Barangay → BIR → DTI → Mayor"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Register the business name with DTI, clear the barangay, secure the mayor's permit, then register with BIR for the TIN and books of accounts.",
   "k": "DTI → Barangay → Mayor → BIR.",
   "src": "authored"
@@ -1477,12 +1477,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The DTI issues a business name certificate valid for:",
   "o": [
-   "3 years",
-   "10 years",
    "1 year",
-   "5 years"
+   "10 years",
+   "5 years",
+   "3 years"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The DTI certificate of business name registration runs five years and is then renewed.",
   "k": "DTI business name = 5-year certificate.",
   "src": "authored"
@@ -1493,12 +1493,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The Board must be notified of a change of clinic location within:",
   "o": [
-   "7 days",
-   "15 days",
+   "60 days",
    "30 days",
-   "60 days"
+   "15 days",
+   "7 days"
   ],
-  "a": 2,
+  "a": 1,
   "w": "A change of practice address must reach the Board within 30 days so the register stays accurate.",
   "k": "Notify Board of location change within 30 days.",
   "src": "authored"
@@ -1509,9 +1509,9 @@
   "t": "H3 Practice Mgmt",
   "q": "The minimum floor area for an optometric examination room is:",
   "o": [
-   "20 sq m",
    "15 sq m",
    "5 sq m",
+   "20 sq m",
    "10 sq m"
   ],
   "a": 3,
@@ -1541,12 +1541,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Optometric office standards are governed by:",
   "o": [
-   "Board Resolution No. 1",
    "RA 8050 Section 40",
-   "Board Resolution No. 11",
-   "Board Resolution No. 5"
+   "Board Resolution No. 1",
+   "Board Resolution No. 5",
+   "Board Resolution No. 11"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Board Resolution No. 11 (2016) governs office standards. Advertising is governed by Board Resolution No. 1 (2008) together with RA 8050 Section 32.",
   "k": "Office standards = BR 11 (2016); advertising = BR 1 (2008).",
   "src": "sanitized"
@@ -1573,12 +1573,12 @@
   "t": "H1 RA 8050",
   "q": "The DPA list is set by the Board and approved by the DOH on the recommendation of the:",
   "o": [
-   "CHED",
-   "PRC",
+   "DOLE",
    "BFAD",
-   "DOLE"
+   "PRC",
+   "CHED"
   ],
-  "a": 2,
+  "a": 1,
   "w": "The Board sets the list, BFAD recommends, and the DOH approves. The PRC supervises the Board but does not approve the drug list.",
   "k": "DPA list: Board sets, BFAD recommends, DOH approves.",
   "src": "authored"
@@ -1589,12 +1589,12 @@
   "t": "H1 RA 8050",
   "q": "RA 8050 was approved on June 7, 1995 by President:",
   "o": [
+   "Fidel V. Ramos",
    "Joseph Estrada",
    "Ferdinand Marcos",
-   "Corazon Aquino",
-   "Fidel V. Ramos"
+   "Corazon Aquino"
   ],
-  "a": 3,
+  "a": 0,
   "w": "President Fidel V. Ramos approved RA 8050 on 7 June 1995, consolidating House Bill 14100 and Senate Bill 1998.",
   "k": "RA 8050 approved June 7, 1995 by Ramos.",
   "src": "authored"
@@ -1621,12 +1621,12 @@
   "t": "H1 RA 8050",
   "q": "A Board of Optometry member must have been in active practice for at least:",
   "o": [
-   "5 years",
    "3 years",
-   "10 years",
-   "15 years"
+   "15 years",
+   "5 years",
+   "10 years"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Ten years of active practice is required, alongside the minimum age of 35 and good standing.",
   "k": "Board member: 10 years active practice.",
   "src": "authored"
@@ -1637,12 +1637,12 @@
   "t": "H1 RA 8050",
   "q": "Which person is DISQUALIFIED from sitting on the Board of Optometry?",
   "o": [
-   "A natural-born Filipino optometrist",
-   "A practitioner aged 40",
    "An officer of an optometric association",
-   "An optometrist in private practice"
+   "An optometrist in private practice",
+   "A natural-born Filipino optometrist",
+   "A practitioner aged 40"
   ],
-  "a": 2,
+  "a": 0,
   "w": "An officer of any optometric association is disqualified. A faculty member, or anyone with a financial interest in an optometry school, must give that up first.",
   "k": "Association officers are disqualified from the Board.",
   "src": "authored"
@@ -1670,11 +1670,11 @@
   "q": "The President may suspend a Board member during an investigation for up to:",
   "o": [
    "15 days",
+   "90 days",
    "60 days",
-   "30 days",
-   "90 days"
+   "30 days"
   ],
-  "a": 1,
+  "a": 2,
   "w": "The President appoints and may remove or suspend a Board member, with suspension capped at 60 days pending investigation.",
   "k": "Board member suspension during probe = up to 60 days.",
   "src": "authored"
@@ -1686,11 +1686,11 @@
   "q": "A Board member in the LAST year of his term automatically becomes:",
   "o": [
    "A PRC Commissioner",
-   "Ineligible to vote",
    "Chairperson",
+   "Ineligible to vote",
    "Vice-chairperson"
   ],
-  "a": 2,
+  "a": 1,
   "w": "The first appointees were staggered so one seat opens each year, and the member in his final year automatically chairs the Board.",
   "k": "Member in last year of term = chairperson.",
   "src": "authored"
@@ -1701,12 +1701,12 @@
   "t": "H1 RA 8050",
   "q": "Board examination ratings must be reported to the PRC within:",
   "o": [
-   "30 days",
-   "90 days",
    "60 days",
-   "15 days"
+   "90 days",
+   "15 days",
+   "30 days"
   ],
-  "a": 2,
+  "a": 0,
   "w": "The Board reports ratings to the PRC within 60 days of the last examination day, and the PRC then publishes the passers alphabetically without ratings.",
   "k": "Ratings to PRC within 60 days.",
   "src": "authored"
@@ -1719,8 +1719,8 @@
   "o": [
    "Every two years",
    "Once a year",
-   "Every quarter",
-   "Twice a year"
+   "Twice a year",
+   "Every quarter"
   ],
   "a": 1,
   "w": "Section 17 requires the examination at least once a year, at places and dates the PRC sets.",
@@ -1733,12 +1733,12 @@
   "t": "H1 RA 8050",
   "q": "To sit the licensure examination, the candidate's Doctor of Optometry degree must come from a course lasting:",
   "o": [
-   "5 years",
+   "6 years",
    "8 years",
    "4 years",
-   "6 years"
+   "5 years"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Section 19 requires an O.D. from an accredited school after a six-year course. The Council of Deans, chaired by Claro M. Cinco, pushed the course from four years to six in 1980.",
   "k": "O.D. = 6-year course.",
   "src": "authored"
@@ -1749,10 +1749,10 @@
   "t": "H1 RA 8050",
   "q": "Which is a ground for DISQUALIFICATION from registration under Section 24?",
   "o": [
-   "Practicing outside Metro Manila",
    "Being under 35 years of age",
+   "Not belonging to an association",
    "Conviction of moral turpitude",
-   "Not belonging to an association"
+   "Practicing outside Metro Manila"
   ],
   "a": 2,
   "w": "Section 24 disqualifies those lacking Section 19 qualifications, who failed the exam, who were convicted by final judgment of a crime involving moral turpitude, who were found guilty of immoral conduct, or who are of unsound mind.",
@@ -1765,12 +1765,12 @@
   "t": "H1 RA 8050",
   "q": "The certificate of registration is signed by all Board members and the:",
   "o": [
-   "CHED Chairperson",
    "DOH Secretary",
-   "President of the Philippines",
-   "PRC Commissioner"
+   "CHED Chairperson",
+   "PRC Commissioner",
+   "President of the Philippines"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The certificate carries the signatures of the PRC Commissioner and all Board members, plus the seal. The professional license is the renewable card the PRC issues.",
   "k": "Certificate signed by PRC Commissioner + all Board members.",
   "src": "authored"
@@ -1782,9 +1782,9 @@
   "q": "Under Section 5, an optometry student or graduate may examine patients only:",
   "o": [
    "Under a registered optometrist",
-   "Inside government clinics only",
    "After passing the board exam",
-   "During supervised summer terms"
+   "During supervised summer terms",
+   "Inside government clinics only"
   ],
   "a": 0,
   "w": "Section 5 exempts a student or graduate working under the direct supervision and control of a registered optometrist, along with trained physicians, public health workers doing screening only, reciprocity foreigners and known foreign experts.",
@@ -1798,11 +1798,11 @@
   "q": "Whether an act counts as the practice of optometry depends on:",
   "o": [
    "Whether DPAs were instilled",
+   "Whether payment was received",
    "Whether a clinic was used",
-   "The nature of the act itself",
-   "Whether payment was received"
+   "The nature of the act itself"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Section 4 is explicit that doing the act for free does not stop it being practice. Free screening by an unlicensed person is still illegal practice.",
   "k": "Practice is defined by the act, not by whether it was paid.",
   "src": "authored"
@@ -1813,12 +1813,12 @@
   "t": "H1 RA 8050",
   "q": "Section 30's Technical Panel on Optometric Education is convened by:",
   "o": [
-   "CHED",
-   "The DOH",
    "The Board of Optometry",
-   "The PRC"
+   "The PRC",
+   "The DOH",
+   "CHED"
   ],
-  "a": 0,
+  "a": 3,
   "w": "CHED convenes the Technical Panel under Section 12 of RA 7722, the Higher Education Act. It sets the minimum curriculum and monitors schools.",
   "k": "Technical Panel convened by CHED (RA 7722).",
   "src": "authored"
@@ -1829,12 +1829,12 @@
   "t": "H1 RA 8050",
   "q": "Under Section 33, if a corporation violates RA 8050, who is held liable?",
   "o": [
-   "Its managing officers",
-   "The corporation's shareholders",
+   "No one, it is a juridical person",
    "The PRC",
-   "No one, it is a juridical person"
+   "Its managing officers",
+   "The corporation's shareholders"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Section 33 pins liability on the managing officers when the violator is a company or corporation, so a lay corporation cannot hide behind its legal personality.",
   "k": "Corporate violation: managing officers are liable.",
   "src": "authored"
@@ -1846,11 +1846,11 @@
   "q": "Which is a prohibited act under Section 32?",
   "o": [
    "Charging a professional fee",
-   "Referring a patient onward",
    "Advertising that one charges lower fees",
+   "Referring a patient onward",
    "Displaying the registration certificate"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Section 32 bars advertising that one optometrist is better than others or charges less, posing as registered, false evidence, untrained DPA use, and unauthorized practice.",
   "k": "Sec 32: no superiority or lower-fee advertising.",
   "src": "authored"
@@ -1861,12 +1861,12 @@
   "t": "H1 RA 8050",
   "q": "Rules and regulations under RA 8050 take effect how long after publication?",
   "o": [
+   "30 days",
    "60 days",
    "15 days",
-   "30 days",
    "Immediately"
   ],
-  "a": 2,
+  "a": 0,
   "w": "The IRR takes effect 30 days after publication, while the law itself took effect 15 days after publication. Do not swap the two.",
   "k": "IRR effective 30 days; law effective 15 days.",
   "src": "authored"
@@ -1878,11 +1878,11 @@
   "q": "Already-registered optometrists were given how long to join the integrated national organization?",
   "o": [
    "1 year",
-   "3 years",
    "5 years",
-   "10 years"
+   "10 years",
+   "3 years"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Section 36 integrates all optometrists into one national organization, with a three-year window for those already registered.",
   "k": "Integration window = 3 years.",
   "src": "authored"
@@ -1893,12 +1893,12 @@
   "t": "H1 RA 8050",
   "q": "A foreigner may sit the Philippine licensure examination only if:",
   "o": [
-   "His country reciprocates",
+   "He holds a Philippine O.D. degree",
    "He is over 35 years of age",
-   "He is endorsed by the DOH",
-   "He holds a Philippine O.D. degree"
+   "His country reciprocates",
+   "He is endorsed by the DOH"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Section 34 rests on reciprocity. Separately, the Board may grant a special permit to an internationally known foreign expert.",
   "k": "Foreigners sit the exam only on reciprocity.",
   "src": "sanitized"
@@ -1941,12 +1941,12 @@
   "t": "H1 RA 8050",
   "q": "Jose Rizal trained in ophthalmology in Paris under:",
   "o": [
+   "R.M. Clark",
    "Otto Becker",
    "Louis de Wecker",
-   "R.M. Clark",
    "Ernst Fuchs"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Rizal trained under Louis de Wecker in Paris in 1885, and also under Otto Becker in Germany and Ernst Fuchs in Vienna. He operated on his mother Teodora Alonzo's cataract.",
   "k": "Rizal trained under Louis de Wecker (Paris, 1885).",
   "src": "authored"
@@ -1957,12 +1957,12 @@
   "t": "H1 RA 8050",
   "q": "The first optometric clinic doing refraction and the first lens-grinding shop in Manila were established in 1902 by:",
   "o": [
-   "R.M. Clark",
+   "Justo Gonzalez",
    "Federico Sarabia Sr.",
-   "William G. Moore",
-   "Justo Gonzalez"
+   "R.M. Clark",
+   "William G. Moore"
   ],
-  "a": 0,
+  "a": 2,
   "w": "R.M. Clark set up the first refracting clinic and lens-grinding shop in Manila in 1902, fifteen years before the profession was regulated.",
   "k": "R.M. Clark, 1902: first refracting clinic.",
   "src": "authored"
@@ -1973,12 +1973,12 @@
   "t": "H1 RA 8050",
   "q": "The first university-affiliated optometry college in the Philippines was:",
   "o": [
-   "Centro Escolar University",
    "De Ocampo Memorial College",
    "Manila College of Optometry",
+   "Centro Escolar University",
    "The Philippine College of Optometry"
   ],
-  "a": 0,
+  "a": 2,
   "w": "CEU opened the first university-affiliated optometry college in 1928, with Dr. Roy A. Thorson as first dean. The Philippine College of Optometry was the first school overall.",
   "k": "CEU 1928 = first university-affiliated college.",
   "src": "authored"
@@ -1990,9 +1990,9 @@
   "q": "Registration Certificate No. 1 was issued in 1918 to:",
   "o": [
    "Dr. Manuel Sabater",
-   "Federico Sarabia Sr.",
+   "Bibiana Roxas de Jesus",
    "Justo Gonzalez",
-   "Bibiana Roxas de Jesus"
+   "Federico Sarabia Sr."
   ],
   "a": 0,
   "w": "PRC records show Certificate No. 1 issued 11 March 1918 to Dr. Manuel Sabater. Federico Sarabia Sr. is often cited as the reputed first, being the first Filipino to study optometry in the US.",
@@ -2006,11 +2006,11 @@
   "q": "The 1979 merger of OAP, PODA and PROA produced:",
   "o": [
    "APCO",
+   "WCO",
    "IFAPAO",
-   "SOP",
-   "WCO"
+   "SOP"
   ],
-  "a": 2,
+  "a": 3,
   "w": "The PRC wanted a single association, so OAP, PODA and PROA merged into SOP in 1979, with about 37 OAP chapters joining.",
   "k": "1979: OAP + PODA + PROA = SOP.",
   "src": "sanitized"
@@ -2021,12 +2021,12 @@
   "t": "H1 RA 8050",
   "q": "IFAPAO was founded at the 1st Asian-Pacific Optometric Congress held in 1978 in:",
   "o": [
-   "Manila",
+   "Toronto",
    "Bali",
    "Sydney",
-   "Toronto"
+   "Manila"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The 1st APOC in Manila, July 1978, founded IFAPAO, which later became APCO. Its first president, elected at the 2nd APOC in Bali, was Claro M. Cinco.",
   "k": "IFAPAO founded 1978, 1st APOC Manila.",
   "src": "authored"
@@ -2039,10 +2039,10 @@
   "o": [
    "Svein Hommerstad",
    "Henry W. Hofstetter",
-   "Justo Gonzalez",
-   "Claro M. Cinco"
+   "Claro M. Cinco",
+   "Justo Gonzalez"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Dr. Claro M. Cinco received the first award in 1988. Later recipients include Svein Hommerstad and Henry W. Hofstetter, of the Hofstetter amplitude formulas.",
   "k": "First International Optometrist of the Year: Claro M. Cinco (1988).",
   "src": "authored"
@@ -2053,12 +2053,12 @@
   "t": "H2 Bioethics",
   "q": "Under the Code of Ethics, using the title 'Doctor' is unethical unless it is:",
   "o": [
-   "Preceded by the license number",
-   "Used only inside the clinic",
    "Approved by the Board first",
-   "Qualified with 'optometrist'"
+   "Qualified with 'optometrist'",
+   "Preceded by the license number",
+   "Used only inside the clinic"
   ],
-  "a": 3,
+  "a": 1,
   "w": "The Code requires 'Dr.' to be qualified so the public is not misled into thinking the practitioner is a physician.",
   "k": "'Dr.' must be qualified with optometry/optometrist.",
   "src": "sanitized"
@@ -2069,12 +2069,12 @@
   "t": "H2 Bioethics",
   "q": "Displaying a name or title at street level is unethical when the letters exceed:",
   "o": [
-   "Two inches",
-   "Twelve inches",
    "Six inches",
-   "Four inches"
+   "Two inches",
+   "Four inches",
+   "Twelve inches"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Letters larger than six inches at street level are treated as advertising that degrades the professional image, as are signboards with pictures of eyes or eyeglasses.",
   "k": "Street-level lettering limit = six inches.",
   "src": "authored"
@@ -2085,12 +2085,12 @@
   "t": "H2 Bioethics",
   "q": "A consultant who receives a referred patient must:",
   "o": [
-   "Report the referrer to the Board",
    "Return the patient to the referrer",
-   "Take over the patient's care",
-   "Bill the referring optometrist"
+   "Bill the referring optometrist",
+   "Report the referrer to the Board",
+   "Take over the patient's care"
   ],
-  "a": 1,
+  "a": 0,
   "w": "The Code requires the consultant to return the patient. Treating a colleague's patient in an emergency is allowed, but the patient is returned afterward.",
   "k": "Consultant returns the patient to the referrer.",
   "src": "sanitized"
@@ -2101,12 +2101,12 @@
   "t": "H2 Bioethics",
   "q": "Under the Code, a patient's character flaws learned during care are:",
   "o": [
-   "Held in trust, disclosed only by law",
    "Shared with the next practitioner",
    "Reportable to the association",
-   "Recorded in the public register"
+   "Recorded in the public register",
+   "Held in trust, disclosed only by law"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The AOA supplement holds such knowledge in trust. Confidentiality yields only to a legal requirement.",
   "k": "Patient's character flaws held in trust.",
   "src": "sanitized"
@@ -2117,12 +2117,12 @@
   "t": "H2 Bioethics",
   "q": "Which act is expressly unethical under the Code?",
   "o": [
+   "Letting a lay person examine",
    "Referring a difficult case onward",
-   "Joining a professional association",
    "Charging by skill and time spent",
-   "Letting a lay person examine"
+   "Joining a professional association"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The list of unethical acts includes lay examiners, soliciting patients, house-to-house canvassing, mobile canvassing units, advertising fees, and practicing under a name other than the one on the certificate.",
   "k": "Lay persons must never do the visual examination.",
   "src": "sanitized"
@@ -2133,12 +2133,12 @@
   "t": "H2 Bioethics",
   "q": "Under the Code, an optometrist discovering a corrupt or dishonest colleague should:",
   "o": [
-   "Advertise the fact publicly",
    "Say nothing, out of collegiality",
-   "Confront them privately only",
-   "Expose them to the Board"
+   "Advertise the fact publicly",
+   "Expose them to the Board",
+   "Confront them privately only"
   ],
-  "a": 3,
+  "a": 2,
   "w": "The duty toward other optometrists includes exposing corrupt or dishonest members to the Board, alongside cooperation and avoiding derogatory hints about colleagues.",
   "k": "Duty to expose dishonest colleagues to the Board.",
   "src": "authored"
@@ -2149,12 +2149,12 @@
   "t": "H2 Bioethics",
   "q": "May an optometrist refuse to accept a patient, even as the only practitioner in town?",
   "o": [
-   "Yes, he chooses his patients",
+   "Only with prior Board approval",
    "No, refusal is always unethical",
    "No, never in an emergency",
-   "Only with prior Board approval"
+   "Yes, he chooses his patients"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The privilege to practice does not compel him to accept anyone; nothing in the Code forces service even in an emergency. Once he accepts a case needing continuing care, though, he must see it through.",
   "k": "Right to choose patients is inherent in the privilege.",
   "src": "sanitized"
@@ -2167,10 +2167,10 @@
   "o": [
    "Owned by the PRC",
    "Transferable only to optometrists",
-   "Taxable as inventory",
-   "Exempt from execution as tools of the trade"
+   "Exempt from execution as tools of the trade",
+   "Taxable as inventory"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Exemption of instruments and library from execution is a right incidental to the privilege to practice, protecting the tools of the trade from creditors.",
   "k": "Instruments and library exempt from execution.",
   "src": "authored"
@@ -2181,12 +2181,12 @@
   "t": "H2 Bioethics",
   "q": "The classic statement of a patient's right to self-determination comes from:",
   "o": [
-   "Picart v. Smith",
    "People v. Pomar",
+   "Schloendorff",
    "Safian v. Aetna",
-   "Schloendorff"
+   "Picart v. Smith"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Justice Cardozo wrote in Schloendorff (1914) that every adult of sound mind has the right to determine what shall be done with his own body. Natanson v. Kline and Salgo v. Leland Stanford developed it further.",
   "k": "Schloendorff (Cardozo, 1914) = right to self-determination.",
   "src": "sanitized"
@@ -2197,12 +2197,12 @@
   "t": "H2 Bioethics",
   "q": "The optometrist-patient relationship is described as fiduciary, meaning it is built on:",
   "o": [
+   "Professional courtesy",
    "A written fee agreement",
    "Trust and full disclosure",
-   "Professional courtesy",
    "Statutory duty alone"
   ],
-  "a": 1,
+  "a": 2,
   "w": "A fiduciary relationship obliges the optometrist to disclose the true facts; misrepresentation makes him liable. The relationship is also contractual, so a procedure outside that contract is void.",
   "k": "Fiduciary = built on trust, duty to disclose.",
   "src": "sanitized"
@@ -2213,12 +2213,12 @@
   "t": "H2 Bioethics",
   "q": "Consent is NOT required when the law itself compels a procedure, such as:",
   "o": [
-   "A contact lens fitting",
    "Compulsory immunization",
-   "A vision screening",
-   "A cycloplegic refraction"
+   "A cycloplegic refraction",
+   "A contact lens fitting",
+   "A vision screening"
   ],
-  "a": 1,
+  "a": 0,
   "w": "Compulsory immunization under RA 3573 and PD 996 is compelled by law under the state's police power, and refusal is punishable. The other exception is a genuine emergency.",
   "k": "Compulsory immunization (RA 3573, PD 996) needs no consent.",
   "src": "authored"
@@ -2229,10 +2229,10 @@
   "t": "H2 Bioethics",
   "q": "A competent patient who refuses sight-saving care:",
   "o": [
-   "Loses the right to any care",
+   "May be reported to the Board",
    "May refuse; he is master of his own body",
-   "Must be treated anyway",
-   "May be reported to the Board"
+   "Loses the right to any care",
+   "Must be treated anyway"
   ],
   "a": 1,
   "w": "The right to refuse holds even when treatment could save life or sight. The state can still compel narrow public-health measures such as immunization under police power.",
@@ -2246,8 +2246,8 @@
   "q": "When an optometrist withdraws from a case, he must:",
   "o": [
    "Continue care for 30 days",
-   "Refund all fees already paid",
    "Obtain Board clearance first",
+   "Refund all fees already paid",
    "Hand over records and inform"
   ],
   "a": 3,
@@ -2261,12 +2261,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The PRC is composed of one Chairperson and how many Commissioners?",
   "o": [
-   "One",
-   "Four",
    "Two",
+   "Four",
+   "One",
    "Three"
   ],
-  "a": 2,
+  "a": 0,
   "w": "One full-time Chairperson and two full-time Commissioners, appointed by the President for a seven-year term with no reappointment.",
   "k": "PRC = 1 Chair + 2 Commissioners.",
   "src": "authored"
@@ -2277,12 +2277,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The term of a PRC Chairperson or Commissioner is:",
   "o": [
+   "7 years, no reappointment",
    "6 years, renewable once",
-   "3 years, renewable",
    "5 years, non-renewable",
-   "7 years, no reappointment"
+   "3 years, renewable"
   ],
-  "a": 3,
+  "a": 0,
   "w": "The PRC term is seven years with no reappointment. Do not swap this with the Board of Optometry's five-year non-renewable term: it is a classic trap.",
   "k": "PRC term 7 years; Board term 5 years.",
   "src": "authored"
@@ -2309,12 +2309,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The PRC was created by which decree?",
   "o": [
-   "PD 223",
+   "PD 996",
    "RA 7722",
    "RA 3573",
-   "PD 996"
+   "PD 223"
   ],
-  "a": 0,
+  "a": 3,
   "w": "PD 223, as amended by PD 657, created the PRC and moved supervision of the boards from the Bureau of Civil Service. RA 8981, the PRC Modernization Act of 2000, later reorganized it and repealed PD 223.",
   "k": "PRC created by PD 223; modernized by RA 8981 (2000).",
   "src": "authored"
@@ -2325,12 +2325,12 @@
   "t": "H3 Practice Mgmt",
   "q": "The 'Board of Examiners in Optometry' was renamed the 'Board of Optometry' by:",
   "o": [
+   "RA 8050",
    "PD 223",
-   "RA 1998",
    "RA 8981",
-   "RA 8050"
+   "RA 1998"
   ],
-  "a": 0,
+  "a": 1,
   "w": "PD 223 as amended by PD 657 renamed the body. RA 8050 governs the Board's present composition and functions but did not rename it.",
   "k": "PD 223/657 renamed it the Board of Optometry.",
   "src": "sanitized"
@@ -2342,9 +2342,9 @@
   "q": "An administrative decision of the Board, once appealed to the PRC, may be elevated to the:",
   "o": [
    "Office of the President",
-   "Regional Trial Court",
    "Supreme Court",
-   "Court of Appeals"
+   "Court of Appeals",
+   "Regional Trial Court"
   ],
   "a": 0,
   "w": "Administrative cases run Board → PRC (within 15 days) → Office of the President. Criminal and civil cases go through the courts and appeal to the Court of Appeals.",
@@ -2357,12 +2357,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Under PMA v. Dr. Cruz, the President is:",
   "o": [
-   "Not bound by the association's nominees",
-   "Required to consult the DOH",
+   "Barred from rejecting nominees",
    "Bound to appoint the top nominee",
-   "Barred from rejecting nominees"
+   "Required to consult the DOH",
+   "Not bound by the association's nominees"
   ],
-  "a": 0,
+  "a": 3,
   "w": "The Court held a recommendation is only advice, so the President is not bound by the list the integrated organization submits.",
   "k": "PMA v. Cruz: nominations only advise the President.",
   "src": "authored"
@@ -2390,11 +2390,11 @@
   "q": "The practice of optometry is a privilege the state grants under its:",
   "o": [
    "Power of eminent domain",
-   "Parens patriae doctrine",
    "Police power",
+   "Parens patriae doctrine",
    "Power of taxation"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Police power is the legislature's power to pass reasonable laws for public welfare, health, morality and safety. People v. Pomar and US v. Gomez Jesus are the classic cases.",
   "k": "Practice is a privilege under police power.",
   "src": "authored"
@@ -2405,12 +2405,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Why can a corporation not practice optometry?",
   "o": [
-   "It cannot own instruments",
    "It is barred by the Corporation Code",
-   "It cannot meet the personal qualifications",
-   "It cannot afford the license fees"
+   "It cannot own instruments",
+   "It cannot afford the license fees",
+   "It cannot meet the personal qualifications"
   ],
-  "a": 2,
+  "a": 3,
   "w": "A corporation cannot hold good moral character, a degree or an oath, so it cannot practice directly, and it may not do indirectly what it cannot do directly by hiring optometrists to sell lenses.",
   "k": "Corporation cannot practice: no personal qualifications.",
   "src": "authored"
@@ -2421,12 +2421,12 @@
   "t": "H3 Practice Mgmt",
   "q": "An optometrist employed by a non-optometrist may lawfully serve:",
   "o": [
+   "Walk-in patients only",
    "Anyone, if a license is shown",
    "The employer's own employees",
-   "The general public in the store",
-   "Walk-in patients only"
+   "The general public in the store"
   ],
-  "a": 1,
+  "a": 2,
   "w": "An in-house or retainer optometrist may serve the employer's own employees, not the general public. An optometrist who aids or abets a lay corporation's practice risks suspension or revocation.",
   "k": "In-house optometrist serves employees, not the public.",
   "src": "sanitized"
@@ -2437,12 +2437,12 @@
   "t": "H3 Practice Mgmt",
   "q": "A faith healer who prays over a patient's eyes, then picks up diagnostic instruments, is:",
   "o": [
-   "Committing only an ethical breach",
    "Engaged in illegal practice",
-   "Protected by religious freedom",
-   "Exempt under RA 8050 Section 5"
+   "Committing only an ethical breach",
+   "Exempt under RA 8050 Section 5",
+   "Protected by religious freedom"
   ],
-  "a": 1,
+  "a": 0,
   "w": "The Constitution protects the freedom to believe absolutely and the freedom to act conditionally. Prayer alone is religion; using diagnostic instruments or optical devices crosses into illegal practice.",
   "k": "Prayer is religion; instruments make it illegal practice.",
   "src": "authored"
@@ -2454,11 +2454,11 @@
   "q": "The test for negligence, from Picart v. Smith, asks whether:",
   "o": [
    "A specialist would have done better",
-   "The patient consented",
    "A prudent person would have foreseen the harm",
+   "The patient consented",
    "The result was unfavorable"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Picart v. Smith sets the reasonable-person standard: if a prudent person in the actor's place would foresee harm, the law imposes a duty to take precaution, and failing to do so is negligence.",
   "k": "Picart v. Smith: the prudent-person foreseeability test.",
   "src": "authored"
@@ -2470,9 +2470,9 @@
   "q": "An optometrist is liable for breach of contract only if he:",
   "o": [
    "Charged an excessive fee",
-   "Failed to cure the patient",
+   "Did not refer promptly",
    "Specifically promised a cure or result",
-   "Did not refer promptly"
+   "Failed to cure the patient"
   ],
   "a": 2,
   "w": "Safian v. Aetna: failing to cure is not a breach when no cure was ever contracted. In a breach-of-contract suit expert testimony is not required and pain and suffering is not an element. Never guarantee results.",
@@ -2485,12 +2485,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Damage caused by fault or negligence where no prior contract exists is a:",
   "o": [
+   "Quasi-delict",
    "Administrative offence only",
    "Breach of contract",
-   "Quasi-delict",
    "Criminal felony"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Article 2176 of the Civil Code: whoever by act or omission causes damage through fault or negligence must pay, and absent a prior contract that fault is a quasi-delict, or tort.",
   "k": "No contract + negligence = quasi-delict (Art. 2176).",
   "src": "authored"
@@ -2501,12 +2501,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Written defamation is libel; spoken defamation is:",
   "o": [
-   "Perjury",
-   "Deceit",
    "Slander",
-   "Fraud"
+   "Fraud",
+   "Perjury",
+   "Deceit"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Article 353 of the Revised Penal Code defines defamation as a public and malicious imputation causing dishonor. Libel is written (Art. 355), slander is oral, and the elements include malice and bad faith.",
   "k": "Libel written; slander oral.",
   "src": "authored"
@@ -2517,12 +2517,12 @@
   "t": "H3 Practice Mgmt",
   "q": "If a patient dies owing fees, the claim runs first against the:",
   "o": [
-   "Nearest ascendant",
    "Nearest descendant",
    "Spouse",
+   "Nearest ascendant",
    "Brothers and sisters"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Article 291 of the Civil Code orders the claim: spouse, then descendant of nearest degree, then ascendant of nearest degree, then brothers and sisters. Medical care counts as 'support' under Article 290.",
   "k": "Fee claim order: spouse → descendant → ascendant → siblings.",
   "src": "authored"
@@ -2533,9 +2533,9 @@
   "t": "H3 Practice Mgmt",
   "q": "A patient may lawfully refuse to pay when:",
   "o": [
-   "The result was disappointing",
    "He has no money at present",
    "A third party promised to pay",
+   "The result was disappointing",
    "A contingent fee did not succeed"
   ],
   "a": 3,
@@ -2550,11 +2550,11 @@
   "q": "On a referral, the fee of the consultant is owed by:",
   "o": [
    "The integrated organization",
-   "The patient",
    "The PRC",
-   "The referring optometrist"
+   "The referring optometrist",
+   "The patient"
   ],
-  "a": 1,
+  "a": 3,
   "w": "The attending optometrist is not liable for the consultant's fee. The patient, being of legal age and sound mind, is primarily liable.",
   "k": "Consultant's fee is owed by the patient, not the referrer.",
   "src": "authored"
@@ -2567,10 +2567,10 @@
   "o": [
    "PD 223",
    "RA 8050",
-   "RA 8981",
-   "RA 7722"
+   "RA 7722",
+   "RA 8981"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Section 20 of RA 8981, the PRC Modernization Act of 2000, repealed the CPD-for-renewal rule as RA 8050 first wrote it, so CPD is not a hard statutory condition of base renewal. The three-year cycle itself remains.",
   "k": "RA 8981 repealed Sec 29's CPD-for-renewal rule.",
   "src": "authored"
@@ -2582,11 +2582,11 @@
   "q": "A candidate scores a 78% general average but gets 48% in one subject. Under RA 8050, the candidate:",
   "o": [
    "Passes",
-   "Fails",
    "Passes conditionally",
+   "Fails",
    "Must retake only that subject"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Section 20 requires at least a 75% average AND no rating below 50% in any subject. The 48% disqualifies despite the high average.",
   "k": "Section 20 requires at least a 75% average AND no rating below 50% in any subject.",
   "src": "authored"
@@ -2597,12 +2597,12 @@
   "t": "H1 RA 8050",
   "q": "The Board of Optometry is composed of how many members, and from how many nominees?",
   "o": [
-   "5 members from 10 nominees",
    "3 members from 6 nominees",
    "7 members from 14 nominees",
-   "5 members from 5 nominees"
+   "5 members from 5 nominees",
+   "5 members from 10 nominees"
   ],
-  "a": 0,
+  "a": 3,
   "w": ", appointed by the President on PRC recommendation, from the accredited national organization's list.",
   "k": ", appointed by the President on PRC recommendation, from the accredited national organization's list.",
   "src": "authored"
@@ -2614,11 +2614,11 @@
   "q": "An optometrist places an ad claiming \"lower fees than any clinic in town.\" Under RA 8050 this is:",
   "o": [
    "Allowed only in print media",
-   "Allowed if the claim is true",
    "Allowed with Board approval",
-   "A prohibited act"
+   "A prohibited act",
+   "Allowed if the claim is true"
   ],
-  "a": 3,
+  "a": 2,
   "w": "Section 32(c) prohibits advertising conveying that one optometrist is better or charges lower fees. Truth is no defense.",
   "k": "Section 32(c) prohibits advertising conveying that one optometrist is better or charges lower fees.",
   "src": "authored"
@@ -2629,12 +2629,12 @@
   "t": "H1 RA 8050",
   "q": "A person convicted of unauthorized practice of optometry faces what penalty?",
   "o": [
-   "A fine only, up to P5,000",
-   "1–8 years or P10,000–40,000",
    "Community service order",
-   "License suspension only"
+   "License suspension only",
+   "1–8 years or P10,000–40,000",
+   "A fine only, up to P5,000"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Section 33 sets imprisonment of 1 to 8 years, or a fine of P10,000 to P40,000, or both, at the court's discretion, plus applicable administrative penalties.",
   "k": "Section 33 sets imprisonment of 1 to 8 years, or a fine of P10,000 to P40,000, or both, at the court's…",
   "src": "sanitized"
@@ -2645,12 +2645,12 @@
   "t": "H2 Bioethics",
   "q": "An optometrist instills a dilating drop without telling the patient it will blur near vision and cause light sensitivity, and without asking permission. Which principle is violated?",
   "o": [
-   "Justice",
    "Collegiality",
-   "Beneficence",
-   "Autonomy"
+   "Autonomy",
+   "Justice",
+   "Beneficence"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Failing to disclose effects and obtain consent violates the patient's right to make an informed decision.",
   "k": "Failing to disclose effects and obtain consent violates the patient's right to make an informed decision.",
   "src": "authored"
@@ -2677,12 +2677,12 @@
   "t": "H2 Bioethics",
   "q": "A competent adult refuses referral for a suspicious optic disc. The most ethical action is:",
   "o": [
-   "Override the refusal and refer anyway",
    "Refuse to see the patient again",
-   "Document, re-counsel, keep monitoring",
-   "Report the patient to the Board"
+   "Report the patient to the Board",
+   "Override the refusal and refer anyway",
+   "Document, re-counsel, keep monitoring"
   ],
-  "a": 2,
+  "a": 3,
   "w": "Autonomy allows refusal, but beneficence and non-maleficence require continued care: document, re-counsel, and keep monitoring.",
   "k": "Autonomy allows refusal, but beneficence and non-maleficence require continued care: document, re-counsel…",
   "src": "sanitized"
@@ -2693,12 +2693,12 @@
   "t": "H2 Bioethics",
   "q": "Providing a faster, lesser examination to a PhilHealth patient than to a private patient with the same complaint violates:",
   "o": [
-   "Justice",
    "Beneficence",
    "Non-maleficence",
+   "Justice",
    "Autonomy"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Distributive justice requires the same standard of care regardless of ability to pay or status.",
   "k": "Distributive justice requires the same standard of care regardless of ability to pay or status.",
   "src": "authored"
@@ -2709,12 +2709,12 @@
   "t": "H2 Bioethics",
   "q": "Under RA 8050 Section 40, which duty corresponds most directly to the principle of non-maleficence?",
   "o": [
-   "Render services with equal diligence to all",
-   "Respect confidentiality",
    "Consider the visual welfare of the public as the primary responsibility",
-   "Refer for medical attention when indicated"
+   "Refer for medical attention when indicated",
+   "Respect confidentiality",
+   "Render services with equal diligence to all"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Referring when a condition exceeds your competence prevents harm, the core of non-maleficence. Visual welfare is beneficence; equal diligence is justice; confidentiality protects trust/autonomy.",
   "k": "Referring when a condition exceeds your competence prevents harm, the core of non-maleficence.",
   "src": "authored"
@@ -2725,12 +2725,12 @@
   "t": "H3 Practice Mgmt",
   "q": "What is the correct order of registrations to open a sole-proprietorship optometry clinic?",
   "o": [
-   "DTI → Barangay → Mayor → BIR",
    "Mayor → DTI → BIR → Barangay",
-   "BIR → Mayor → Barangay → DTI",
-   "Barangay → BIR → DTI → Mayor"
+   "DTI → Barangay → Mayor → BIR",
+   "Barangay → BIR → DTI → Mayor",
+   "BIR → Mayor → Barangay → DTI"
   ],
-  "a": 0,
+  "a": 1,
   "w": "Register the name (DTI), clear the location (Barangay), get the permit (Mayor), then register for taxes (BIR).",
   "k": "Register the name (DTI), clear the location (Barangay), get the permit (Mayor), then register for taxes (BIR).",
   "src": "authored"
@@ -2741,12 +2741,12 @@
   "t": "H3 Practice Mgmt",
   "q": "An optical owner instructs the optometrist to limit each eye exam to ten minutes to serve more customers. This violates:",
   "o": [
-   "Chair time is the doctor's discretion",
    "Nothing; the owner runs the business",
    "Labor law on working hours",
+   "Chair time is the doctor's discretion",
    "Advertising rules on service claims"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Board Resolution No. 11 (Sec 48) makes chair time, method, and procedure the sole discretion of the optometrist, free from external influence by owners or managers.",
   "k": "Board Resolution No.",
   "src": "sanitized"
@@ -2757,12 +2757,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which advertisement is permitted under the rules?",
   "o": [
-   "\"Free eye exam with every purchase\"",
-   "A dignified statement of services",
    "\"The best optometrist in the region\"",
-   "\"Lowest eyeglass prices in the city\""
+   "\"Lowest eyeglass prices in the city\"",
+   "\"Free eye exam with every purchase\"",
+   "A dignified statement of services"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Only true, honest, dignified, objective information is allowed. Price claims, free-service offers, and self-laudatory superiority claims are prohibited.",
   "k": "Only true, honest, dignified, objective information is allowed.",
   "src": "sanitized"
@@ -2773,8 +2773,8 @@
   "t": "H3 Practice Mgmt",
   "q": "The minimum examination room area and test distance required are:",
   "o": [
-   "8 sq m and 4 m",
    "5 sq m and 6 m",
+   "8 sq m and 4 m",
    "20 sq m and 6 m",
    "10 sq m and 3 m"
   ],
@@ -2789,12 +2789,12 @@
   "t": "H3 Practice Mgmt",
   "q": "After securing clinic premises, within how many days must the optometrist notify the Board of the location?",
   "o": [
+   "15 days",
    "60 days",
-   "30 days",
    "90 days",
-   "15 days"
+   "30 days"
   ],
-  "a": 1,
+  "a": 3,
   "w": ", with photographs, to allow inspection and monitoring.",
   "k": ", with photographs, to allow inspection and monitoring.",
   "src": "authored"
@@ -2806,11 +2806,11 @@
   "q": "Which term describes government body that supervises the Board of Optometry?",
   "o": [
    "Professional license",
-   "Board of Optometry",
    "Certificate of registration",
-   "PRC"
+   "PRC",
+   "Board of Optometry"
   ],
-  "a": 3,
+  "a": 2,
   "w": "PRC: Professional Regulation Commission. Government body that supervises the Board of Optometry",
   "k": "PRC = Government body that supervises the Board of Optometry",
   "src": "authored"
@@ -2821,12 +2821,12 @@
   "t": "H1 RA 8050",
   "q": "Which term describes 5 members, 5-year non-renewable term, under the PRC?",
   "o": [
-   "Professional license",
-   "Board of Optometry",
    "Certificate of registration",
-   "PRC"
+   "PRC",
+   "Board of Optometry",
+   "Professional license"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Board of Optometry: regulatory board. 5 members, 5-year non-renewable term, under the PRC",
   "k": "Board of Optometry = 5 members, 5-year non-renewable term, under the PRC",
   "src": "authored"
@@ -2839,8 +2839,8 @@
   "o": [
    "Certificate of registration",
    "PRC",
-   "Board of Optometry",
-   "Professional license"
+   "Professional license",
+   "Board of Optometry"
   ],
   "a": 0,
   "w": "Certificate of registration: proof of registration. Issued by PRC after the oath; displayed in the clinic",
@@ -2853,12 +2853,12 @@
   "t": "H1 RA 8050",
   "q": "Which term describes renewed every 3 years with continuing education?",
   "o": [
-   "Certificate of registration",
-   "PRC",
    "Professional license",
-   "Board of Optometry"
+   "Board of Optometry",
+   "PRC",
+   "Certificate of registration"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Professional license: renewable credential. Renewed every 3 years with continuing education",
   "k": "Professional license = Renewed every 3 years with continuing education",
   "src": "authored"
@@ -2869,12 +2869,12 @@
   "t": "H1 RA 8050",
   "q": "Which term describes requires pharmacology certification (Sec 31) to use?",
   "o": [
-   "DPA",
-   "PRC",
    "Certificate of registration",
-   "Board of Optometry"
+   "Board of Optometry",
+   "PRC",
+   "DPA"
   ],
-  "a": 0,
+  "a": 3,
   "w": "DPA: Diagnostic Pharmaceutical Agent. Requires pharmacology certification (Sec 31) to use",
   "k": "DPA = Requires pharmacology certification (Sec 31) to use",
   "src": "authored"
@@ -2886,11 +2886,11 @@
   "q": "Which term describes eye-muscle and vision training within optometry's scope?",
   "o": [
    "Board of Optometry",
+   "Certificate of registration",
    "Orthoptics",
-   "PRC",
-   "Certificate of registration"
+   "PRC"
   ],
-  "a": 1,
+  "a": 2,
   "w": "Orthoptics: Greek orthos = straight + optikos = sight. Eye-muscle and vision training within optometry's scope",
   "k": "Orthoptics = Eye-muscle and vision training within optometry's scope",
   "src": "authored"
@@ -2902,11 +2902,11 @@
   "q": "Which term describes rA 8050 declares optometry a regular component of it?",
   "o": [
    "PRC",
-   "Primary health care",
    "Board of Optometry",
-   "Certificate of registration"
+   "Certificate of registration",
+   "Primary health care"
   ],
-  "a": 1,
+  "a": 3,
   "w": "Primary health care: first-contact care. RA 8050 declares optometry a regular component of it",
   "k": "Primary health care = RA 8050 declares optometry a regular component of it",
   "src": "authored"
@@ -2917,12 +2917,12 @@
   "t": "H1 RA 8050",
   "q": "Which term describes all ODs integrated; it promulgates the Code of Ethics?",
   "o": [
-   "Integration",
-   "Board of Optometry",
    "Certificate of registration",
+   "Board of Optometry",
+   "Integration",
    "PRC"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Integration (Sec 36): one national organization. All ODs integrated; it promulgates the Code of Ethics",
   "k": "Integration (Sec 36) = All ODs integrated; it promulgates the Code of Ethics",
   "src": "authored"
@@ -2933,12 +2933,12 @@
   "t": "H1 RA 8050",
   "q": "Which term describes e.g. comparative/price advertising, untrained DPA use?",
   "o": [
-   "PRC",
    "Certificate of registration",
    "Prohibited act",
-   "Board of Optometry"
+   "Board of Optometry",
+   "PRC"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Prohibited act (Sec 32): forbidden conduct. e.g. comparative/price advertising, untrained DPA use",
   "k": "Prohibited act (Sec 32) = e.g. comparative/price advertising, untrained DPA use",
   "src": "authored"
@@ -2949,12 +2949,12 @@
   "t": "H2 Bioethics",
   "q": "Which term describes acting in the patient's best interest?",
   "o": [
-   "Beneficence",
-   "Informed consent",
+   "Justice",
    "Non-maleficence",
-   "Justice"
+   "Informed consent",
+   "Beneficence"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Beneficence: Latin bene = good + facere = to do. Acting in the patient's best interest",
   "k": "Beneficence = Acting in the patient's best interest",
   "src": "authored"
@@ -2965,9 +2965,9 @@
   "t": "H2 Bioethics",
   "q": "Which term describes \"Do no harm\"; benefit must outweigh harm?",
   "o": [
-   "Justice",
    "Informed consent",
    "Beneficence",
+   "Justice",
    "Non-maleficence"
   ],
   "a": 3,
@@ -2982,9 +2982,9 @@
   "q": "Which term describes equal standard of care regardless of status?",
   "o": [
    "Non-maleficence",
-   "Beneficence",
+   "Informed consent",
    "Justice",
-   "Informed consent"
+   "Beneficence"
   ],
   "a": 2,
   "w": "Justice: Latin justitia = fairness. Equal standard of care regardless of status",
@@ -2998,11 +2998,11 @@
   "q": "Which term describes understanding diagnosis, options, risks; not just a signature?",
   "o": [
    "Justice",
-   "Non-maleficence",
+   "Informed consent",
    "Beneficence",
-   "Informed consent"
+   "Non-maleficence"
   ],
-  "a": 3,
+  "a": 1,
   "w": "Informed consent: knowing agreement. Understanding diagnosis, options, risks; not just a signature",
   "k": "Informed consent = Understanding diagnosis, options, risks; not just a signature",
   "src": "authored"
@@ -3013,12 +3013,12 @@
   "t": "H2 Bioethics",
   "q": "Which term describes a child's agreement alongside parental consent?",
   "o": [
-   "Non-maleficence",
-   "Beneficence",
    "Assent",
+   "Beneficence",
+   "Non-maleficence",
    "Justice"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Assent: Latin assentire = agree. A child's agreement alongside parental consent",
   "k": "Assent = A child's agreement alongside parental consent",
   "src": "authored"
@@ -3029,12 +3029,12 @@
   "t": "H2 Bioethics",
   "q": "Which term describes patient records and diagnoses are privileged?",
   "o": [
-   "Beneficence",
-   "Justice",
    "Confidentiality",
+   "Justice",
+   "Beneficence",
    "Non-maleficence"
   ],
-  "a": 2,
+  "a": 0,
   "w": "Confidentiality: Latin confidere = to trust. Patient records and diagnoses are privileged",
   "k": "Confidentiality = Patient records and diagnoses are privileged",
   "src": "authored"
@@ -3061,12 +3061,12 @@
   "t": "H2 Bioethics",
   "q": "Which term describes originated the four-principles model of bioethics?",
   "o": [
-   "Beauchamp & Childress",
-   "Beneficence",
    "Justice",
-   "Non-maleficence"
+   "Non-maleficence",
+   "Beneficence",
+   "Beauchamp & Childress"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Beauchamp & Childress: framework authors. Originated the four-principles model of bioethics",
   "k": "Beauchamp & Childress = Originated the four-principles model of bioethics",
   "src": "authored"
@@ -3078,8 +3078,8 @@
   "q": "Which term describes registers TIN and books of accounts (taxes)?",
   "o": [
    "BIR",
-   "TIN",
    "Mayor's permit",
+   "TIN",
    "Barangay clearance"
   ],
   "a": 0,
@@ -3093,12 +3093,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes clears the clinic's location to operate?",
   "o": [
-   "TIN",
+   "Barangay clearance",
    "Mayor's permit",
    "BIR",
-   "Barangay clearance"
+   "TIN"
   ],
-  "a": 3,
+  "a": 0,
   "w": "Barangay clearance: local location clearance. Clears the clinic's location to operate",
   "k": "Barangay clearance = Clears the clinic's location to operate",
   "src": "authored"
@@ -3109,9 +3109,9 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes allows operation after fire/sanitation inspections?",
   "o": [
+   "TIN",
    "BIR",
    "Barangay clearance",
-   "TIN",
    "Mayor's permit"
   ],
   "a": 3,
@@ -3126,11 +3126,11 @@
   "q": "Which term describes proof of registration; displayed in the clinic?",
   "o": [
    "TIN",
-   "COR",
+   "Barangay clearance",
    "BIR",
-   "Barangay clearance"
+   "COR"
   ],
-  "a": 1,
+  "a": 3,
   "w": "COR: Certificate of Registration. Proof of registration; displayed in the clinic",
   "k": "COR = Proof of registration; displayed in the clinic",
   "src": "authored"
@@ -3141,12 +3141,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes current PRC ID; displayed and kept updated?",
   "o": [
-   "PIC",
    "TIN",
+   "PIC",
    "Barangay clearance",
    "BIR"
   ],
-  "a": 0,
+  "a": 1,
   "w": "PIC: Professional Identification Card. Current PRC ID; displayed and kept updated",
   "k": "PIC = Current PRC ID; displayed and kept updated",
   "src": "authored"
@@ -3157,12 +3157,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes certificates displayed; supports 3-year renewal?",
   "o": [
-   "CPD",
-   "TIN",
+   "Barangay clearance",
    "BIR",
-   "Barangay clearance"
+   "CPD",
+   "TIN"
   ],
-  "a": 0,
+  "a": 2,
   "w": "CPD: Continuing Professional Development. Certificates displayed; supports 3-year renewal",
   "k": "CPD = Certificates displayed; supports 3-year renewal",
   "src": "authored"
@@ -3173,12 +3173,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes optometrist is responsible for delegated staff acts?",
   "o": [
-   "Respondeat superior",
    "Barangay clearance",
    "TIN",
-   "BIR"
+   "BIR",
+   "Respondeat superior"
   ],
-  "a": 0,
+  "a": 3,
   "w": "Respondeat superior: Latin \"let the master answer\". Optometrist is responsible for delegated staff acts",
   "k": "Respondeat superior = Optometrist is responsible for delegated staff acts",
   "src": "authored"
@@ -3189,12 +3189,12 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes res 11 (2016) clinic rules; Res 1 (2008) advertising?",
   "o": [
-   "Barangay clearance",
    "BIR",
    "Board Resolution",
+   "Barangay clearance",
    "TIN"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Board Resolution: PRC Board issuance. Res 11 (2016) clinic rules; Res 1 (2008) advertising",
   "k": "Board Resolution = Res 11 (2016) clinic rules; Res 1 (2008) advertising",
   "src": "authored"
@@ -3205,14 +3205,190 @@
   "t": "H3 Practice Mgmt",
   "q": "Which term describes what the office and advertising rules guard against?",
   "o": [
-   "Barangay clearance",
    "BIR",
    "Commercialization",
-   "TIN"
+   "TIN",
+   "Barangay clearance"
   ],
-  "a": 2,
+  "a": 1,
   "w": "Commercialization: turning care into retail. What the office and advertising rules guard against",
   "k": "Commercialization = What the office and advertising rules guard against",
+  "src": "authored"
+ },
+ {
+  "id": "H0202",
+  "sec": "OPTOLAWBOOK P8",
+  "t": "H3 Practice Mgmt",
+  "q": "The fee principle 'good result, good pay' refers to which determinant?",
+  "o": [
+   "The cost of materials",
+   "The optometrist's standing",
+   "The value of the result to the patient",
+   "The customary local fee"
+  ],
+  "a": 2,
+  "w": "Fee determinants include labor and time, the responsibility of the case, the optometrist's standing, the VALUE OF THE RESULT to the patient ('good result, good pay'), the patient's financial ability, the peso's purchasing power, the local customary fee, and the cost of materials dispensed.",
+  "k": "'Good result, good pay' = value of the result to the patient.",
+  "src": "authored"
+ },
+ {
+  "id": "H0203",
+  "sec": "OPTOLAWBOOK P8",
+  "t": "H3 Practice Mgmt",
+  "q": "Charity work is expected of the optometrist because fee-setting must account for the patient's:",
+  "o": [
+   "Level of education",
+   "Financial ability",
+   "Choice of frame",
+   "Social standing"
+  ],
+  "a": 1,
+  "w": "The patient's financial ability is an explicit determinant of the fee, and the Code holds that no one should be denied care over money. Charity work is therefore an expectation, not a favor.",
+  "k": "Fee accounts for financial ability; no one denied care for money.",
+  "src": "authored"
+ },
+ {
+  "id": "H0204",
+  "sec": "OPTOLAWBOOK P8",
+  "t": "H3 Practice Mgmt",
+  "q": "Under Article 290 of the Civil Code, medical and optometric care counts as:",
+  "o": [
+   "A luxury expense",
+   "Support",
+   "A commercial debt",
+   "A gratuitous act"
+  ],
+  "a": 1,
+  "w": "Care counts as 'support' under Article 290, which is what makes the fee claim run against family members in the Article 291 order (spouse, descendant, ascendant, siblings) if the patient dies or becomes incapable.",
+  "k": "Care = 'support' (Art. 290) → Art. 291 claim order.",
+  "src": "authored"
+ },
+ {
+  "id": "H0205",
+  "sec": "OPTOLAWBOOK P9",
+  "t": "H3 Practice Mgmt",
+  "q": "Which is a valid formal defense against a claim for professional fees?",
+  "o": [
+   "The patient changed optometrists",
+   "The optometrist was negligent",
+   "The patient is unemployed",
+   "The result was merely disappointing"
+  ],
+  "a": 1,
+  "w": "The ten formal defenses include an exorbitant charge, no service rendered, the wrong defendant, absence of consent, negligence by the optometrist, and breach of the contract by the optometrist.",
+  "k": "Negligence by the optometrist defeats the fee claim.",
+  "src": "authored"
+ },
+ {
+  "id": "H0206",
+  "sec": "OPTOLAWBOOK P6",
+  "t": "H2 Bioethics",
+  "q": "An optometrist may limit his practice by specialty, location, days and hours, or by:",
+  "o": [
+   "The dictates of his conscience",
+   "The PRC's annual directive",
+   "The patient's ability to pay",
+   "The referring doctor's request"
+  ],
+  "a": 0,
+  "w": "The right to limit practice covers specialty, location or clinic, days and hours, and the dictates of conscience. The limit has one boundary: a case already accepted that needs continuing care must be seen through, even outside usual hours.",
+  "k": "May limit by specialty, location, hours, or conscience.",
+  "src": "authored"
+ },
+ {
+  "id": "H0207",
+  "sec": "OPTOLAWBOOK P6",
+  "t": "H2 Bioethics",
+  "q": "Having accepted a case that needs continuing care, the optometrist:",
+  "o": [
+   "May stop at any time without notice",
+   "Must transfer it to a specialist",
+   "Must see it through, even outside usual hours",
+   "May only continue during clinic hours"
+  ],
+  "a": 2,
+  "w": "The right to limit practice by days and hours yields once a case is accepted: continuing care must be provided, even outside those hours. Withdrawal then requires handing records to a successor and informing the patient.",
+  "k": "Once accepted, a case needing continuing care must be seen through.",
+  "src": "authored"
+ },
+ {
+  "id": "H0208",
+  "sec": "H-anchors",
+  "t": "H1 RA 8050",
+  "q": "A candidate who fails three times needs a refresher; a license renews every 3 years. The appeal window, however, is:",
+  "o": [
+   "15 days",
+   "30 days",
+   "3 years",
+   "3 days"
+  ],
+  "a": 0,
+  "w": "The threes cluster and then break: 3 strikes means a refresher, renewal is every 3 years, quorum is 3 and 3 votes decide a case, but the appeal window is 15 DAYS, not 3 of anything. That break is the trap.",
+  "k": "Threes everywhere, but the appeal window is 15 days.",
+  "src": "authored"
+ },
+ {
+  "id": "H0209",
+  "sec": "H-anchors",
+  "t": "H2 Bioethics",
+  "q": "Non-maleficence is best stated as:",
+  "o": [
+   "Never take any risk with a patient",
+   "The benefit must outweigh the harm",
+   "Always refer rather than treat",
+   "Treat every patient identically"
+  ],
+  "a": 1,
+  "w": "Non-maleficence is primum non nocere, but it does not mean refusing all risk: every procedure carries some. It means the expected benefit must beat the expected harm. 'Never risk anything' is the classic misreading.",
+  "k": "Non-maleficence = benefit must beat harm, not zero risk.",
+  "src": "authored"
+ },
+ {
+  "id": "H0210",
+  "sec": "H-anchors",
+  "t": "H2 Bioethics",
+  "q": "Autonomy is expressed clinically as the patient's right, of which the consent form is only the:",
+  "o": [
+   "Record",
+   "Waiver",
+   "Complete expression",
+   "Legal substitute"
+  ],
+  "a": 0,
+  "w": "Autonomy is the right to decide; informed consent is that right in action. The signed form is merely evidence. A signature without understanding is not consent, which is why the standard is understanding-based agreement.",
+  "k": "Autonomy = the right; the form is only the record.",
+  "src": "authored"
+ },
+ {
+  "id": "H0211",
+  "sec": "H-anchors",
+  "t": "H3 Practice Mgmt",
+  "q": "The DTI step of the business setup sequence registers the:",
+  "o": [
+   "Business name",
+   "Barangay clearance",
+   "Mayor's permit",
+   "TIN and books of accounts"
+  ],
+  "a": 0,
+  "w": "Setup runs D-B-M-B: DTI registers the business NAME (a 5-year certificate), Barangay clears the location, the Mayor issues the permit, and BIR registers the TIN and books of accounts.",
+  "k": "D-B-M-B: DTI name → Barangay → Mayor → BIR taxes.",
+  "src": "authored"
+ },
+ {
+  "id": "H0212",
+  "sec": "H-anchors",
+  "t": "H3 Practice Mgmt",
+  "q": "Where a practice-management item offers a commercial answer and a professional one, the correct answer is generally:",
+  "o": [
+   "Whichever the optical owner prefers",
+   "Professionalism over commercialization",
+   "Whichever maximizes patient volume",
+   "Whichever the PRC has not banned"
+  ],
+  "a": 1,
+  "w": "The Code consistently subordinates commerce to professional judgment: chair time is the doctor's sole discretion, advertising must be dignified rather than competitive, and a lay corporation may not practice. When in doubt, choose the professional answer.",
+  "k": "Professionalism over commercialization.",
   "src": "authored"
  }
 ]

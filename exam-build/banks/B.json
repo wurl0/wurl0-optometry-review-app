@@ -22,8 +22,8 @@
   "q": "How long does full, rod-based dark adaptation take?",
   "o": [
    "30–40 minutes",
-   "15 minutes",
    "7 minutes",
+   "15 minutes",
    "60 minutes"
   ],
   "a": 0,
@@ -37,9 +37,9 @@
   "t": "B1 Visual System",
   "q": "The inflection point at ~7 minutes on the dark adaptation curve, where rods take over from cones, is the:",
   "o": [
-   "Purkinje shift",
    "Ricco point",
    "Stiles-Crawford effect",
+   "Purkinje shift",
    "Kohlrausch kink"
   ],
   "a": 3,
@@ -54,9 +54,9 @@
   "q": "On Hirschberg the corneal reflex sits temporal in both eyes, but cover test shows no movement. The cause is:",
   "o": [
    "Positive angle kappa",
+   "Large angle alpha",
    "Bilateral exotropia",
-   "Esotropia",
-   "Large angle alpha"
+   "Esotropia"
   ],
   "a": 0,
   "w": "Positive kappa puts the pupil nasal to the visual axis, so the reflex looks temporal, mimicking exotropia. Negative cover test confirms pseudo-exo.",
@@ -69,8 +69,8 @@
   "t": "B1 Visual System",
   "q": "A nasally displaced corneal light reflex with a negative cover test indicates:",
   "o": [
-   "True exotropia",
    "True esotropia",
+   "True exotropia",
    "Negative angle kappa",
    "Positive angle kappa"
   ],
@@ -102,8 +102,8 @@
   "q": "Which is true of the fovea?",
   "o": [
    "No photoreceptors present",
-   "Rod density is highest here",
    "Equal numbers of rods and cones",
+   "Rod density is highest here",
    "Rods absent; cones densest"
   ],
   "a": 3,
@@ -118,8 +118,8 @@
   "q": "Why is a dim star easier to see by looking slightly to the side of it?",
   "o": [
    "Accommodation improves periphery",
-   "The blind spot is central",
    "Cones are densest off-center",
+   "The blind spot is central",
    "Rods peak at ~20° from the fovea"
   ],
   "a": 3,
@@ -135,8 +135,8 @@
   "o": [
    "Torsion",
    "Vertical",
-   "Vergence",
-   "Horizontal"
+   "Horizontal",
+   "Vergence"
   ],
   "a": 0,
   "w": "The AP axis is longest (24 mm) and controls torsion. X = vertical, Z = horizontal.",
@@ -149,10 +149,10 @@
   "t": "B1 Visual System",
   "q": "The vertical (Z) axis controls which eye movement?",
   "o": [
-   "No movement",
+   "Vertical movements",
    "Horizontal movements",
    "Torsion",
-   "Vertical movements"
+   "No movement"
   ],
   "a": 1,
   "w": "Rotation about the vertical axis produces horizontal movements. The X (transverse) axis produces vertical movements.",
@@ -165,10 +165,10 @@
   "t": "B1 Visual System",
   "q": "Angle alpha is measured at which point?",
   "o": [
-   "The center of rotation",
+   "The fovea",
    "The pupil center",
    "The nodal point",
-   "The fovea"
+   "The center of rotation"
   ],
   "a": 2,
   "w": "Angle alpha (optical vs visual axis) is measured at the nodal point; angle kappa is measured at the pupil.",
@@ -183,8 +183,8 @@
   "o": [
    "Purkinje shift",
    "Stiles-Crawford effect",
-   "Troxler fading",
-   "Bezold-Brucke shift"
+   "Bezold-Brucke shift",
+   "Troxler fading"
   ],
   "a": 0,
   "w": "As light fades, sensitivity shifts from the photopic 555 nm peak to the scotopic 507 nm (blue-green) peak, so blues relatively brighten.",
@@ -213,10 +213,10 @@
   "t": "B1 Visual System",
   "q": "The law stating that time × intensity is constant for a brief stimulus (temporal summation) is:",
   "o": [
-   "Ricco's law",
    "Weber's law",
+   "Bloch's exception",
    "Bunsen-Roscoe law",
-   "Bloch's exception"
+   "Ricco's law"
   ],
   "a": 2,
   "w": "Bunsen-Roscoe governs temporal summation (up to ~100 ms for rods).",
@@ -229,8 +229,8 @@
   "t": "B1 Visual System",
   "q": "Which cone pigment is most sensitive to long-wavelength (red) light?",
   "o": [
-   "Chlorolabe",
    "Rhodopsin",
+   "Chlorolabe",
    "Cyanolabe",
    "Erythrolabe"
   ],
@@ -245,8 +245,8 @@
   "t": "B1 Visual System",
   "q": "All three axes of eye rotation pass through the center of rotation, located approximately:",
   "o": [
-   "at the nodal point",
    "24 mm behind the cornea",
+   "at the nodal point",
    "6.5 mm behind the cornea",
    "13.5 mm behind the cornea"
   ],
@@ -261,9 +261,9 @@
   "t": "B1 Visual System",
   "q": "Compared with the cone plateau, rods at full dark adaptation are about:",
   "o": [
+   "10× more sensitive",
    "100× more sensitive",
    "Equally sensitive",
-   "10× more sensitive",
    "1000× more sensitive"
   ],
   "a": 3,
@@ -278,8 +278,8 @@
   "q": "Which lowers the visual threshold (increases sensitivity)?",
   "o": [
    "Binocular viewing",
-   "Monocular viewing",
    "Smaller pupil",
+   "Monocular viewing",
    "Bright background"
   ],
   "a": 0,
@@ -295,8 +295,8 @@
   "o": [
    "Contrast at low spatial frequency",
    "Color",
-   "Form",
-   "Motion"
+   "Motion",
+   "Form"
   ],
   "a": 1,
   "w": "Color is the most vulnerable function (basis of the red-desaturation test); motion is the most resilient.",
@@ -310,9 +310,9 @@
   "q": "Which visual function is the most resilient, lost last in optic nerve disease?",
   "o": [
    "Stereopsis",
-   "Color",
+   "Fine acuity",
    "Motion",
-   "Fine acuity"
+   "Color"
   ],
   "a": 2,
   "w": "Motion perception survives longest; color is lost first.",
@@ -325,8 +325,8 @@
   "t": "B2 Visual Perception",
   "q": "Which LGB (lateral geniculate body) layers receive contralateral (crossed) input?",
   "o": [
-   "All six",
    "Only layer 1",
+   "All six",
    "Layers 1, 4, 6",
    "Layers 2, 3, 5"
   ],
@@ -341,10 +341,10 @@
   "t": "B2 Visual Perception",
   "q": "The primary visual cortex (area 17) is mainly responsible for:",
   "o": [
-   "Eye movement planning",
-   "Basic feature detection",
    "Color naming",
-   "Object recognition"
+   "Basic feature detection",
+   "Object recognition",
+   "Eye movement planning"
   ],
   "a": 1,
   "w": "Area 17 detects basic features. Object recognition needs the ventral stream through areas 18, 19, and inferotemporal cortex.",
@@ -358,9 +358,9 @@
   "q": "The ventral visual stream is responsible for:",
   "o": [
    "'What' object recognition",
-   "Pupil reflexes",
+   "Accommodation",
    "'Where / how' spatial and motion processing",
-   "Accommodation"
+   "Pupil reflexes"
   ],
   "a": 0,
   "w": "Ventral ('what') runs to the temporal lobe; dorsal ('where/how') runs to the parietal lobe.",
@@ -374,9 +374,9 @@
   "q": "The dorsal visual stream processes:",
   "o": [
    "Object identity",
-   "Color",
+   "Faces",
    "Spatial location and motion",
-   "Faces"
+   "Color"
   ],
   "a": 2,
   "w": "The dorsal stream handles 'where/how' (spatial and motion) and projects to the parietal lobe.",
@@ -421,8 +421,8 @@
   "t": "B2 Visual Perception",
   "q": "Area 18 of the visual cortex is best described as:",
   "o": [
-   "Primary striate cortex",
    "Lateral geniculate",
+   "Primary striate cortex",
    "Peristriate cortex",
    "Parastriate cortex"
   ],
@@ -453,9 +453,9 @@
   "t": "B2 Visual Perception",
   "q": "Object recognition (the 'what' pathway) requires processing beyond area 17 through:",
   "o": [
-   "The superior colliculus tectum",
    "The dorsal stream to parietal lobe",
    "The pretectal nuclei of midbrain",
+   "The superior colliculus tectum",
    "The ventral stream to IT cortex"
   ],
   "a": 3,
@@ -486,9 +486,9 @@
   "q": "Weber's law is the physiological basis of which clinical measurement?",
   "o": [
    "Contrast sensitivity",
-   "Visual acuity",
    "Color vision",
-   "Stereoacuity"
+   "Stereoacuity",
+   "Visual acuity"
   ],
   "a": 0,
   "w": "Because the JND scales with background intensity, contrast detection (ΔI/I) underlies contrast sensitivity testing.",
@@ -565,10 +565,10 @@
   "t": "B3 Visual Field",
   "q": "The monocular temporal crescent (seen by one eye only) is about:",
   "o": [
-   "10°",
+   "90°",
    "30° each side",
-   "60° each side",
-   "90°"
+   "10°",
+   "60° each side"
   ],
   "a": 1,
   "w": "Beyond the 120° binocular zone, each eye sees a 30° temporal crescent alone.",
@@ -581,10 +581,10 @@
   "t": "B3 Visual Field",
   "q": "On Goldmann perimetry, which stimulus size is the largest?",
   "o": [
-   "Size III",
+   "Size 0",
    "Size V",
    "Size I",
-   "Size 0"
+   "Size III"
   ],
   "a": 1,
   "w": "Size V (64 mm²) is largest, used to map peripheral field in RP and low vision; size I is smallest.",
@@ -597,9 +597,9 @@
   "t": "B3 Visual Field",
   "q": "The smallest Goldmann stimulus is:",
   "o": [
-   "V",
-   "I",
    "III",
+   "I",
+   "V",
    "0"
   ],
   "a": 1,
@@ -629,8 +629,8 @@
   "t": "B3 Visual Field",
   "q": "The Amsler grid tests which portion of the visual field?",
   "o": [
-   "The full field",
    "The peripheral crescent",
+   "The full field",
    "The blind spot",
    "The central 10°"
   ],
@@ -645,8 +645,8 @@
   "t": "B3 Visual Field",
   "q": "A bitemporal hemianopia localizes the lesion to the:",
   "o": [
-   "Occipital cortex",
    "Optic nerve",
+   "Occipital cortex",
    "Optic tract",
    "Optic chiasm"
   ],
@@ -661,10 +661,10 @@
   "t": "B3 Visual Field",
   "q": "A superior quadrantanopia ('pie in the sky') localizes to:",
   "o": [
-   "Parietal radiations",
+   "Optic nerve",
    "Meyer's loop",
    "Optic chiasm",
-   "Optic nerve"
+   "Parietal radiations"
   ],
   "a": 1,
   "w": "Inferior retinal fibers loop through the temporal lobe (Meyer's loop); damage gives a contralateral superior quadrant defect.",
@@ -693,10 +693,10 @@
   "t": "B3 Visual Field",
   "q": "Within the visual field, which function is the most vulnerable (lost first)?",
   "o": [
-   "Motion",
    "Light detection",
+   "Form",
    "Color",
-   "Form"
+   "Motion"
   ],
   "a": 2,
   "w": "Color is the most vulnerable; motion is the most resilient.",
@@ -709,9 +709,9 @@
   "t": "B4 Color",
   "q": "The most common color vision deficiency is:",
   "o": [
-   "Achromatopsia",
-   "Protanopia",
    "Tritanopia",
+   "Protanopia",
+   "Achromatopsia",
    "Deuteranomaly"
   ],
   "a": 3,
@@ -726,9 +726,9 @@
   "q": "Additive mixing of red, green, and blue light produces:",
   "o": [
    "Black",
-   "Gray",
+   "Yellow",
    "White",
-   "Yellow"
+   "Gray"
   ],
   "a": 2,
   "w": "Additive (light) mixing R+G+B = white; subtractive (pigment) mixing C+M+Y = black.",
@@ -741,8 +741,8 @@
   "t": "B4 Color",
   "q": "Subtractive mixing of cyan, magenta, and yellow pigments produces:",
   "o": [
-   "Red",
    "Green",
+   "Red",
    "Black",
    "White"
   ],
@@ -773,8 +773,8 @@
   "t": "B4 Color",
   "q": "To precisely classify the axis and severity of a color defect, the best test is:",
   "o": [
-   "FALANT",
    "Plate 1",
+   "FALANT",
    "FM-100 Hue test",
    "Ishihara"
   ],
@@ -789,9 +789,9 @@
   "t": "B4 Color",
   "q": "The trichromatic theory of color (at the receptor level) is credited to:",
   "o": [
-   "Hering",
-   "Young-Helmholtz",
    "Ladd-Franklin",
+   "Young-Helmholtz",
+   "Hering",
    "Purkinje"
   ],
   "a": 1,
@@ -806,8 +806,8 @@
   "q": "The opponent-process theory of color (post-receptor level) is credited to:",
   "o": [
    "Hering",
-   "Ladd-Franklin",
    "Young-Helmholtz",
+   "Ladd-Franklin",
    "Newton"
   ],
   "a": 0,
@@ -837,9 +837,9 @@
   "t": "B4 Color",
   "q": "In protanopia, red light appears:",
   "o": [
+   "Brighter",
    "Unchanged",
    "Green",
-   "Brighter",
    "Dim"
   ],
   "a": 3,
@@ -854,8 +854,8 @@
   "q": "How does the HRR test differ from Ishihara?",
   "o": [
    "It tests red-green and blue-yellow",
-   "It needs no verbal response",
    "It screens red-green only",
+   "It needs no verbal response",
    "It uses numeral plates only"
   ],
   "a": 0,
@@ -869,10 +869,10 @@
   "t": "B4 Color",
   "q": "The FALANT (Farnsworth Lantern) is primarily a(n):",
   "o": [
-   "Macular test",
+   "Diagnostic axis test",
    "Stereo test",
    "Occupational pass/fail test",
-   "Diagnostic axis test"
+   "Macular test"
   ],
   "a": 2,
   "w": "FALANT is an occupational lantern test (e.g., for navigation/aviation), performed at 8 feet, not a diagnostic axis test.",
@@ -901,9 +901,9 @@
   "t": "B4 Color",
   "q": "Tritan (blue-yellow) congenital color defects are:",
   "o": [
-   "The most common defect",
-   "Rare and autosomal",
    "X-linked like red-green",
+   "Rare and autosomal",
+   "The most common defect",
    "Always acquired"
   ],
   "a": 1,
@@ -917,10 +917,10 @@
   "t": "B5 Binocular Vision",
   "q": "What is the normal AC/A ratio?",
   "o": [
-   "8:1 to 10:1",
    "12:1 to 15:1",
+   "1:1 to 2:1",
    "4:1 to 6:1",
-   "1:1 to 2:1"
+   "8:1 to 10:1"
   ],
   "a": 2,
   "w": "Normal AC/A is 4:1 to 6:1. High AC/A drives excess conditions; low AC/A drives insufficiency.",
@@ -934,9 +934,9 @@
   "q": "A high AC/A ratio is associated with which conditions?",
   "o": [
    "Convergence excess and divergence excess",
-   "Convergence and divergence insufficiency",
+   "Fusional vergence dysfunction",
    "Basic phorias only",
-   "Fusional vergence dysfunction"
+   "Convergence and divergence insufficiency"
   ],
   "a": 0,
   "w": "High AC/A = too much convergence per diopter = excess conditions (CE, DE).",
@@ -951,8 +951,8 @@
   "o": [
    "High AC/A, eso at near",
    "Low AC/A, exo at near, receded NPC",
-   "High eso at distance",
-   "Normal AC/A, equal deviation"
+   "Normal AC/A, equal deviation",
+   "High eso at distance"
   ],
   "a": 1,
   "w": "CI has a low AC/A, exophoria greater at near, and a receded NPC, with near symptoms.",
@@ -982,8 +982,8 @@
   "q": "Which eye movement has the shortest (fastest) latency?",
   "o": [
    "Smooth pursuit",
-   "Vergence",
    "Saccade",
+   "Vergence",
    "Vestibulo-ocular reflex"
   ],
   "a": 3,
@@ -1013,10 +1013,10 @@
   "t": "B5 Binocular Vision",
   "q": "Sheard's criterion for comfortable fusion requires the fusional reserve to be at least:",
   "o": [
-   "Equal to the phoria",
+   "Three times the phoria",
    "Twice the phoria",
-   "Half the phoria",
-   "Three times the phoria"
+   "Equal to the phoria",
+   "Half the phoria"
   ],
   "a": 1,
   "w": "Sheard's: compensating fusional reserve ≥ 2× the phoria. An 8 PD exophoria needs ≥16 PD PFC.",
@@ -1046,9 +1046,9 @@
   "q": "In Worth's classification, simultaneous macular perception is:",
   "o": [
    "Grade 1",
-   "Not graded",
+   "Grade 3",
    "Grade 2",
-   "Grade 3"
+   "Not graded"
   ],
   "a": 0,
   "w": "Grade 1 = simultaneous perception, Grade 2 = flat fusion, Grade 3 = stereopsis.",
@@ -1061,9 +1061,9 @@
   "t": "B5 Binocular Vision",
   "q": "In Worth's classification, flat (superimposition) fusion with amplitude is:",
   "o": [
-   "Grade 3",
-   "Grade 2",
    "Grade 4",
+   "Grade 2",
+   "Grade 3",
    "Grade 1"
   ],
   "a": 1,
@@ -1077,10 +1077,10 @@
   "t": "B5 Binocular Vision",
   "q": "Hering's law of equal innervation applies to:",
   "o": [
-   "Agonist-antagonist of one eye",
+   "The pupil",
    "Yoke muscles of both eyes",
    "A single muscle",
-   "The pupil"
+   "Agonist-antagonist of one eye"
   ],
   "a": 1,
   "w": "Hering's law governs binocular yoke muscles (equal innervation). Sherrington's is the monocular agonist-antagonist rule.",
@@ -1093,8 +1093,8 @@
   "t": "B5 Binocular Vision",
   "q": "Sherrington's law of reciprocal innervation describes:",
   "o": [
-   "Equal innervation to yoke muscles",
    "The near accommodative response",
+   "Equal innervation to yoke muscles",
    "The pupillary constriction reflex",
    "Agonist contracts, antagonist relaxes"
   ],
@@ -1109,10 +1109,10 @@
   "t": "B5 Binocular Vision",
   "q": "An object beyond (farther than) the fixation point produces what physiologic diplopia?",
   "o": [
+   "Vertical",
    "None",
-   "Crossed",
    "Uncrossed",
-   "Vertical"
+   "Crossed"
   ],
   "a": 2,
   "w": "Far objects stimulate nasal retina, giving uncrossed (homonymous) diplopia; near objects give crossed.",
@@ -1125,9 +1125,9 @@
   "t": "B5 Binocular Vision",
   "q": "An object closer than the fixation point produces:",
   "o": [
-   "Uncrossed diplopia",
-   "Crossed diplopia",
    "Suppression",
+   "Crossed diplopia",
+   "Uncrossed diplopia",
    "Torsional diplopia"
   ],
   "a": 1,
@@ -1157,10 +1157,10 @@
   "t": "B5 Binocular Vision",
   "q": "Anomalous retinal correspondence (ARC) typically develops in:",
   "o": [
-   "Uncorrected refractive error",
+   "An intermittent exophoria",
    "Constant strabismus, fixed angle",
-   "Long-standing orthophoria",
-   "An intermittent exophoria"
+   "Uncorrected refractive error",
+   "Long-standing orthophoria"
   ],
   "a": 1,
   "w": "A fixed, constant deviation gives the brain time to rewire correspondence (ARC) to avoid diplopia.",
@@ -1189,9 +1189,9 @@
   "t": "B5 Binocular Vision",
   "q": "The normal near point of convergence (NPC) break is:",
   "o": [
-   "15 cm",
    "25 cm",
    "20 cm",
+   "15 cm",
    "≤8 cm"
   ],
   "a": 3,
@@ -1205,9 +1205,9 @@
   "t": "B5 Binocular Vision",
   "q": "Panum's fusional area at the fovea is about:",
   "o": [
-   "60 arc minutes",
-   "6–10 arc minutes",
    "30 arc minutes",
+   "6–10 arc minutes",
+   "60 arc minutes",
    "1 degree"
   ],
   "a": 1,
@@ -1221,10 +1221,10 @@
   "t": "B5 Binocular Vision",
   "q": "A hyperope who is straight at distance but crosses at near, with a high AC/A, has:",
   "o": [
-   "Divergence excess",
+   "Basic exophoria",
    "Accommodative esotropia",
-   "Convergence insufficiency",
-   "Basic exophoria"
+   "Divergence excess",
+   "Convergence insufficiency"
   ],
   "a": 1,
   "w": "Accommodative esotropia: hyperopic accommodation drives excess convergence (high AC/A), crossing the eyes at near.",
@@ -1237,8 +1237,8 @@
   "t": "B5 Binocular Vision",
   "q": "For an exophoria, vision therapy and prism approaches aim to:",
   "o": [
-   "Patch the dominant eye",
    "Add plus lenses",
+   "Patch the dominant eye",
    "Reduce convergence with base-in prism",
    "Increase fusional convergence"
   ],
@@ -1253,9 +1253,9 @@
   "t": "B5 Binocular Vision",
   "q": "Which amblyopia type generally has the worst prognosis?",
   "o": [
-   "Strabismic",
    "Meridional",
    "Anisometropic",
+   "Strabismic",
    "Deprivation"
   ],
   "a": 3,
@@ -1271,8 +1271,8 @@
   "o": [
    "Equal exo at near and distance",
    "Exo greater at distance, high AC/A",
-   "Receded NPC with exo at near",
-   "Eso at distance, ortho at near"
+   "Eso at distance, ortho at near",
+   "Receded NPC with exo at near"
   ],
   "a": 1,
   "w": "Divergence excess: large exo at distance, near closer to ortho, with a high AC/A.",
@@ -1301,8 +1301,8 @@
   "t": "B6 Stereopsis",
   "q": "What is normal stereoacuity?",
   "o": [
-   "1–2 minutes of arc",
    "200–400 seconds of arc",
+   "1–2 minutes of arc",
    "20–40 seconds of arc",
    "3000 seconds of arc"
   ],
@@ -1318,9 +1318,9 @@
   "q": "Which stereoacuity value represents the FINEST depth perception?",
   "o": [
    "20 sec arc",
+   "400 sec arc",
    "100 sec arc",
-   "40 sec arc",
-   "400 sec arc"
+   "40 sec arc"
   ],
   "a": 0,
   "w": "Smaller arc-second values are finer; 20 sec arc is far better than 400 sec arc.",
@@ -1335,8 +1335,8 @@
   "o": [
    "Grade 3",
    "Grade 1",
-   "Grade 4",
-   "Grade 2"
+   "Grade 2",
+   "Grade 4"
   ],
   "a": 0,
   "w": "Grade 3 (stereopsis) is the highest; Grade 2 is flat fusion, Grade 1 is simultaneous perception.",
@@ -1349,10 +1349,10 @@
   "t": "B6 Stereopsis",
   "q": "A patient with deep constant strabismic amblyopia (20/200) is tested on the Randot. Expected result:",
   "o": [
+   "Normal stereo",
    "Unaffected",
-   "Reduced stereo",
    "No measurable stereopsis",
-   "Normal stereo"
+   "Reduced stereo"
   ],
   "a": 2,
   "w": "Deep suppression and disrupted binocular neurons abolish stereopsis regardless of the dominant eye's acuity.",
@@ -1382,9 +1382,9 @@
   "q": "On the Titmus test, the 'fly' represents which (coarsest) disparity?",
   "o": [
    "3000 sec arc",
-   "400 sec arc",
+   "40 sec arc",
    "20 sec arc",
-   "40 sec arc"
+   "400 sec arc"
   ],
   "a": 0,
   "w": "The Titmus fly is a gross stereo target at ~3000 sec arc, used to confirm any gross stereopsis.",
@@ -1414,8 +1414,8 @@
   "q": "A patient who loses one eye retains depth perception from:",
   "o": [
    "Panum's fusion",
-   "Stereopsis",
    "Retinal disparity",
+   "Stereopsis",
    "Monocular cues"
   ],
   "a": 3,
@@ -1429,9 +1429,9 @@
   "t": "B6 Stereopsis",
   "q": "Stereopsis specifically depends on:",
   "o": [
-   "Pupil size differences",
-   "Binocular retinal disparity",
    "Convergence effort alone",
+   "Binocular retinal disparity",
+   "Pupil size differences",
    "Accommodative demand"
   ],
   "a": 1,
@@ -1446,8 +1446,8 @@
   "q": "Stereopsis requires which prerequisites?",
   "o": [
    "Suppression",
-   "Grade 3 only",
    "Eccentric fixation",
+   "Grade 3 only",
    "Worth Grades 1 and 2 first"
   ],
   "a": 3,
@@ -1461,10 +1461,10 @@
   "t": "B6 Stereopsis",
   "q": "Convergence as a depth cue provides useful information only within about:",
   "o": [
-   "Optical infinity",
+   "10 meters",
    "50 meters",
    "2 meters",
-   "10 meters"
+   "Optical infinity"
   ],
   "a": 2,
   "w": "Convergence is a useful depth cue only at near (within ~2 m); beyond that, disparity and monocular cues dominate.",
@@ -1477,8 +1477,8 @@
   "t": "B7 VIP / VPS",
   "q": "A 7-year-old with 20/20 acuity and normal BV cannot find objects on a busy worksheet and loses his place reading. Best assessment:",
   "o": [
-   "Humphrey visual field",
    "Tonometry",
+   "Humphrey visual field",
    "Ishihara",
    "TVPS-3"
   ],
@@ -1494,9 +1494,9 @@
   "q": "A patient has 20/20 acuity but struggles with visual processing tasks. This shows that:",
   "o": [
    "20/20 acuity does NOT rule out a VIP deficit",
-   "20/20 rules out a perceptual deficit",
    "Acuity equals perception",
-   "The eyes are misaligned"
+   "The eyes are misaligned",
+   "20/20 rules out a perceptual deficit"
   ],
   "a": 0,
   "w": "Visual information processing is separate from acuity; 20/20 does not exclude a VIP/VPS deficit.",
@@ -1510,9 +1510,9 @@
   "q": "How do VIP and VPS relate?",
   "o": [
    "VPS includes motor output; VIP does not",
-   "VPS is acuity",
+   "They are identical",
    "VIP is broad; VPS is the non-motor subset",
-   "They are identical"
+   "VPS is acuity"
   ],
   "a": 2,
   "w": "Visual information processing (VIP) is the broad domain; visual perceptual skills (VPS) are its non-motor subset.",
@@ -1526,9 +1526,9 @@
   "q": "The Beery VMI primarily measures:",
   "o": [
    "Visual-motor integration",
+   "Non-motor perception only",
    "Visual fields",
-   "Color vision",
-   "Non-motor perception only"
+   "Color vision"
   ],
   "a": 0,
   "w": "Beery VMI requires copying shapes, testing visual-motor integration; a low score may be perceptual OR motor.",
@@ -1541,10 +1541,10 @@
   "t": "B7 VIP / VPS",
   "q": "The TVPS-3 is best described as:",
   "o": [
-   "A color test",
+   "A stereo test",
    "A non-motor VPS test, ages 4–18",
-   "A motor-loaded copying test",
-   "A stereo test"
+   "A color test",
+   "A motor-loaded copying test"
   ],
   "a": 1,
   "w": "TVPS-3 uses pointing responses to assess all seven non-motor VPS subtopics in ages 4–18.",
@@ -1558,9 +1558,9 @@
   "q": "A child scores poorly on the Beery VMI. To separate perception from motor output, do which test next?",
   "o": [
    "TVPS-3",
-   "Snellen acuity",
    "Tonometry",
-   "Visual field"
+   "Visual field",
+   "Snellen acuity"
   ],
   "a": 0,
   "w": "TVPS-3 needs no motor output; if normal, the Beery deficit is motor; if poor, it is perceptual.",
@@ -1573,10 +1573,10 @@
   "t": "B7 VIP / VPS",
   "q": "The DTVP-2 is notable because it:",
   "o": [
+   "Requires no motor response",
    "Measures visual acuity only",
-   "Tests color vision only",
    "Splits motor-free and motor scores",
-   "Requires no motor response"
+   "Tests color vision only"
   ],
   "a": 2,
   "w": "The DTVP-2 yields both motor-reduced and motor-enhanced scores, helping localize the deficit, in ages 4–10.",
@@ -1589,9 +1589,9 @@
   "t": "B7 VIP / VPS",
   "q": "Difficulty recognizing a shape when its size or orientation changes is a deficit of:",
   "o": [
-   "Figure-ground",
    "Visual memory",
    "Visual closure",
+   "Figure-ground",
    "Form constancy"
   ],
   "a": 3,
@@ -1605,10 +1605,10 @@
   "t": "B7 VIP / VPS",
   "q": "Identifying a complete object from an incomplete or partial drawing is the skill of:",
   "o": [
-   "Form constancy",
+   "Figure-ground",
    "Visual closure",
    "Spatial relations",
-   "Figure-ground"
+   "Form constancy"
   ],
   "a": 1,
   "w": "Visual closure is recognizing a whole from fragmentary visual information.",
@@ -1622,9 +1622,9 @@
   "q": "Trouble locating a target object within a cluttered background is a deficit of:",
   "o": [
    "Figure-ground",
-   "Visual memory",
    "Form constancy",
-   "Visual closure"
+   "Visual closure",
+   "Visual memory"
   ],
   "a": 0,
   "w": "Figure-ground is separating the relevant object from a busy background; failing it causes 'lost on the page' behavior.",
@@ -1637,10 +1637,10 @@
   "t": "B7 VIP / VPS",
   "q": "Which assessment is most appropriate when handwriting and shape-copying are the chief complaints?",
   "o": [
+   "TVPS-3",
    "Ishihara",
-   "Goldmann perimetry",
    "Beery VMI",
-   "TVPS-3"
+   "Goldmann perimetry"
   ],
   "a": 2,
   "w": "Copying and handwriting are visual-motor tasks, best evaluated by the Beery VMI.",
@@ -1655,8 +1655,8 @@
   "o": [
    "15 minutes",
    "7 minutes",
-   "2 minutes",
-   "40 minutes"
+   "40 minutes",
+   "2 minutes"
   ],
   "a": 1,
   "w": "Cones finish adapting at roughly 7 minutes, producing the Kohlrausch kink where cones plateau and rods take over. Full rod adaptation needs 30–40 minutes.",
@@ -1669,10 +1669,10 @@
   "t": "B1 Visual System",
   "q": "The Kohlrausch kink on the dark adaptation curve marks:",
   "o": [
-   "The onset of the Purkinje shift",
-   "The handover from cones to rods",
    "Peak rod sensitivity",
-   "Complete dark adaptation"
+   "The handover from cones to rods",
+   "Complete dark adaptation",
+   "The onset of the Purkinje shift"
   ],
   "a": 1,
   "w": "The kink at about 7 minutes is the break in the curve where cones have plateaued and the slower, more sensitive rods take over.",
@@ -1686,9 +1686,9 @@
   "q": "The Purkinje shift describes the peak sensitivity moving:",
   "o": [
    "From 555 nm to 507 nm",
+   "From 555 nm to 750 nm",
    "From 440 nm to 507 nm",
-   "From 507 nm to 555 nm",
-   "From 555 nm to 750 nm"
+   "From 507 nm to 555 nm"
   ],
   "a": 0,
   "w": "Going from photopic to scotopic conditions, peak sensitivity shifts from 555 nm (cones, yellow-green) to 507 nm (rods, blue-green). This is why reds look black at dusk while blues stay visible.",
@@ -1701,8 +1701,8 @@
   "t": "B1 Visual System",
   "q": "Retinal pH in the dark compared with the light is:",
   "o": [
-   "Unchanged",
    "Neutral at 7.0",
+   "Unchanged",
    "More alkaline",
    "More acidic"
   ],
@@ -1717,10 +1717,10 @@
   "t": "B1 Visual System",
   "q": "Angle alpha is the angle between the optical and visual axes measured at the:",
   "o": [
-   "Center of rotation",
    "Entrance pupil",
+   "Corneal apex",
    "Nodal point",
-   "Corneal apex"
+   "Center of rotation"
   ],
   "a": 2,
   "w": "Angle alpha is subtended at the nodal point and averages about 5° temporal. A large positive angle kappa mimics exotropia.",
@@ -1733,10 +1733,10 @@
   "t": "B1 Visual System",
   "q": "A positive angle kappa produces the appearance of:",
   "o": [
-   "True exotropia",
+   "Pseudo-esotropia",
    "Pseudo-hypertropia",
    "Pseudo-exotropia",
-   "Pseudo-esotropia"
+   "True exotropia"
   ],
   "a": 2,
   "w": "With a positive kappa the corneal reflex sits nasally, making the eye look turned out. It is an artifact of reflex position, not a real deviation.",
@@ -1749,8 +1749,8 @@
   "t": "B1 Visual System",
   "q": "Ricco's law of spatial summation states that:",
   "o": [
-   "Area ÷ intensity is constant",
    "Intensity ÷ time is constant",
+   "Area ÷ intensity is constant",
    "Time × intensity is constant",
    "Area × intensity is constant"
   ],
@@ -1765,8 +1765,8 @@
   "t": "B1 Visual System",
   "q": "The red-sensitive cone pigment is called:",
   "o": [
-   "Rhodopsin",
    "Chlorolabe",
+   "Rhodopsin",
    "Cyanolabe",
    "Erythrolabe"
   ],
@@ -1797,9 +1797,9 @@
   "t": "B2 Visual Perception",
   "q": "Which LGB layers receive crossed (nasal) fibers?",
   "o": [
-   "2, 3 and 5",
-   "1, 4 and 6",
    "1, 2 and 3",
+   "1, 4 and 6",
+   "2, 3 and 5",
    "4, 5 and 6"
   ],
   "a": 1,
@@ -1813,10 +1813,10 @@
   "t": "B2 Visual Perception",
   "q": "Brodmann area 18 is known as the:",
   "o": [
-   "Prestriate motor area",
+   "Peristriate cortex",
    "Striate cortex",
    "Parastriate cortex",
-   "Peristriate cortex"
+   "Prestriate motor area"
   ],
   "a": 2,
   "w": "Area 17 is striate (primary), 18 is parastriate (secondary), and 19 is peristriate (higher-order).",
@@ -1830,9 +1830,9 @@
   "q": "Which visual function fails earliest in optic nerve disease?",
   "o": [
    "Visual acuity",
-   "Motion perception",
+   "Light projection",
    "Color vision",
-   "Light projection"
+   "Motion perception"
   ],
   "a": 2,
   "w": "Color is the most vulnerable function and drops out first, which is why red desaturation is an early optic neuritis sign. Motion is the most resilient and goes last.",
@@ -1845,8 +1845,8 @@
   "t": "B2 Visual Perception",
   "q": "The dorsal stream to the parietal lobe processes:",
   "o": [
-   "Face recognition",
    "Color constancy",
+   "Face recognition",
    "Object identity",
    "Spatial location and motion"
   ],
@@ -1893,9 +1893,9 @@
   "t": "B3 Visual Field",
   "q": "Which Goldmann stimulus size is used to map the far periphery in advanced field loss?",
   "o": [
-   "III",
-   "V",
    "I",
+   "V",
+   "III",
    "II"
   ],
   "a": 1,
@@ -1911,8 +1911,8 @@
   "o": [
    "1 arc minute",
    "1°",
-   "5 arc minutes",
-   "5°"
+   "5°",
+   "5 arc minutes"
   ],
   "a": 1,
   "w": "Each square equals 1° of visual field, and the whole grid covers the central 10° at the standard 30 cm working distance.",
@@ -1926,8 +1926,8 @@
   "q": "A 'pie in the sky' superior quadrantanopia localizes to:",
   "o": [
    "Meyer's loop",
-   "The optic chiasm",
    "The occipital pole",
+   "The optic chiasm",
    "The parietal radiation"
   ],
   "a": 0,
@@ -1974,9 +1974,9 @@
   "q": "The most common inherited color vision defect is:",
   "o": [
    "Deuteranomaly",
+   "Protanopia",
    "Tritanomaly",
-   "Deuteranopia",
-   "Protanopia"
+   "Deuteranopia"
   ],
   "a": 0,
   "w": "Deuteranomaly, a green weakness rather than a total loss, is the commonest defect. Red-green deficiency overall affects about 8% of males.",
@@ -1989,10 +1989,10 @@
   "t": "B4 Color",
   "q": "The first plate of the Ishihara test shows '12' because it is:",
   "o": [
-   "The hardest plate",
+   "A tritan plate",
    "A control plate everyone can read",
-   "A red-green screening plate",
-   "A tritan plate"
+   "The hardest plate",
+   "A red-green screening plate"
   ],
   "a": 1,
   "w": "Plate 1 is a demonstration plate visible to all observers, including total color defectives. Failing it suggests malingering or very poor acuity rather than a color defect.",
@@ -2005,8 +2005,8 @@
   "t": "B4 Color",
   "q": "The most comprehensive clinical test of color discrimination is the:",
   "o": [
-   "HRR plates",
    "Ishihara plates",
+   "HRR plates",
    "D-15 panel",
    "FM-100 Hue test"
   ],
@@ -2021,8 +2021,8 @@
   "t": "B4 Color",
   "q": "The FALANT occupational color test is performed at:",
   "o": [
-   "40 cm",
    "20 feet",
+   "40 cm",
    "1 meter",
    "8 feet"
   ],
@@ -2069,10 +2069,10 @@
   "t": "B5 Binocular Vision",
   "q": "Sheard's criterion requires the fusional reserve to be at least:",
   "o": [
-   "Three times the phoria",
    "Half the phoria",
+   "Equal to the phoria",
    "Twice the phoria",
-   "Equal to the phoria"
+   "Three times the phoria"
   ],
   "a": 2,
   "w": "Sheard's criterion holds that the opposing fusional reserve should be at least twice the phoria for comfortable single vision. Failing it supports prescribing prism or starting therapy.",
@@ -2085,10 +2085,10 @@
   "t": "B5 Binocular Vision",
   "q": "Worth Grade 1 of binocular vision is:",
   "o": [
+   "Flat fusion with amplitude",
    "Stereopsis",
-   "Suppression",
    "Simultaneous macular perception",
-   "Flat fusion with amplitude"
+   "Suppression"
   ],
   "a": 2,
   "w": "Grade 1 is simultaneous perception, Grade 2 flat fusion with amplitude, Grade 3 stereopsis. Grades 1 and 2 are prerequisites for Grade 3.",
@@ -2101,10 +2101,10 @@
   "t": "B5 Binocular Vision",
   "q": "Physiologic diplopia for an object beyond the fixation point is:",
   "o": [
-   "Vertical diplopia",
+   "Crossed diplopia",
    "Uncrossed diplopia",
    "Absent entirely",
-   "Crossed diplopia"
+   "Vertical diplopia"
   ],
   "a": 1,
   "w": "Objects farther than fixation give uncrossed physiologic diplopia; objects nearer than fixation give crossed diplopia. It is a normal finding and a useful anti-suppression cue.",
@@ -2117,10 +2117,10 @@
   "t": "B5 Binocular Vision",
   "q": "The normal near point of convergence is:",
   "o": [
-   "≤20 cm",
    "≤15 cm",
+   "≤2 cm",
    "≤8 cm",
-   "≤2 cm"
+   "≤20 cm"
   ],
   "a": 2,
   "w": "A normal NPC breaks at 8 cm or closer. Beyond 10 cm suggests convergence insufficiency.",
@@ -2134,9 +2134,9 @@
   "q": "Normal stereoacuity is about:",
   "o": [
    "20–40 seconds of arc",
+   "100–200 seconds of arc",
    "1–2 minutes of arc",
-   "5–10 seconds of arc",
-   "100–200 seconds of arc"
+   "5–10 seconds of arc"
   ],
   "a": 0,
   "w": "Normal stereoacuity is 20–40 arc seconds. The Randot resolves to about 20 arc seconds; the Titmus fly is the coarsest target at 3000 arc seconds.",
@@ -2150,9 +2150,9 @@
   "q": "Panum's fusional area at the fovea spans about:",
   "o": [
    "6–10 arc minutes",
+   "30–60 arc minutes",
    "1–2 arc minutes",
-   "2–3 degrees",
-   "30–60 arc minutes"
+   "2–3 degrees"
   ],
   "a": 0,
   "w": "Panum's area is the zone of disparity within which two retinal images still fuse into one. It is narrowest at the fovea (6–10 arc min) and widens peripherally.",
@@ -2166,9 +2166,9 @@
   "q": "The coarsest target on the Titmus stereotest is the:",
   "o": [
    "Fly",
+   "Animals",
    "Circles",
-   "Randot forms",
-   "Animals"
+   "Randot forms"
   ],
   "a": 0,
   "w": "The Titmus fly is 3000 arc seconds, gross enough that a patient with no stereopsis may still pass it by monocular cues, so it is a screen rather than a measure.",
@@ -2183,8 +2183,8 @@
   "o": [
    "VPS is the non-motor subset of VIP",
    "VIP is a subset of VPS",
-   "Neither involves motor output",
-   "They are interchangeable terms"
+   "They are interchangeable terms",
+   "Neither involves motor output"
   ],
   "a": 0,
   "w": "Visual information processing is the broad term covering processing plus motor output. Visual perceptual skills are the non-motor subset within it.",
@@ -2215,8 +2215,8 @@
   "o": [
    "Trace the figure",
    "Point to the answer",
-   "Assemble blocks",
-   "Draw the target"
+   "Draw the target",
+   "Assemble blocks"
   ],
   "a": 1,
   "w": "The TVPS-3 requires pointing only, so a child with poor motor skills is not penalized on a perceptual test. It covers ages 4 to 18.",
@@ -2229,8 +2229,8 @@
   "t": "B1 Visual System",
   "q": "Horizontal eye movements (adduction and abduction) occur around which axis?",
   "o": [
-   "The Y-axis",
    "The visual axis",
+   "The Y-axis",
    "The Z-axis",
    "The X-axis"
   ],
@@ -2246,9 +2246,9 @@
   "q": "Angle kappa, unlike angle alpha, is measured at the:",
   "o": [
    "Pupil",
-   "Fovea",
    "Nodal point",
-   "Center of rotation"
+   "Center of rotation",
+   "Fovea"
   ],
   "a": 0,
   "w": "Angle kappa is subtended at the pupil; angle alpha at the nodal point. Both describe the offset between the optical and visual axes, but at different reference points.",
@@ -2261,10 +2261,10 @@
   "t": "B1 Visual System",
   "q": "A positive angle kappa on Hirschberg testing is distinguished from true exotropia by:",
   "o": [
-   "The absence of diplopia",
+   "A larger reflex displacement",
    "A negative cover test",
-   "Testing with a red filter",
-   "A larger reflex displacement"
+   "The absence of diplopia",
+   "Testing with a red filter"
   ],
   "a": 1,
   "w": "Positive kappa shifts the reflex temporally, mimicking exotropia, but the cover test shows no movement because there is no true deviation. It is pseudo-exotropia.",
@@ -2277,10 +2277,10 @@
   "t": "B3 Visual Field",
   "q": "The 30° monocular crescent at each side of the field is seen by the:",
   "o": [
-   "Fovea",
    "Superior retina",
+   "Nasal retina",
    "Temporal retina",
-   "Nasal retina"
+   "Fovea"
   ],
   "a": 2,
   "w": "The central 120° is binocular. Beyond it, each temporal retina alone sees a 30° crescent, which is why a chiasmal lesion costs those far temporal fields.",
@@ -2293,10 +2293,10 @@
   "t": "B4 Color",
   "q": "In protanopia, red objects appear:",
   "o": [
-   "Bright blue",
    "Brighter than normal",
+   "Unchanged in brightness",
    "Abnormally dim",
-   "Unchanged in brightness"
+   "Bright blue"
   ],
   "a": 2,
   "w": "Protanopes lack L-cones, and red light stimulates the M- and S-cones poorly, so red loses luminance as well as hue. A red traffic light can look almost black.",
@@ -2309,9 +2309,9 @@
   "t": "B4 Color",
   "q": "Tritanopia differs from the red-green defects in that it is:",
   "o": [
+   "The most common defect",
    "Confined to females",
    "X-linked recessive",
-   "The most common defect",
    "Autosomal and rare"
   ],
   "a": 3,
@@ -2325,8 +2325,8 @@
   "t": "B4 Color",
   "q": "On the FM-100 Hue test, the patient responds by:",
   "o": [
-   "Tracing a path",
    "Naming the color",
+   "Tracing a path",
    "Reading a number",
    "Arranging caps in hue order"
   ],
@@ -2341,10 +2341,10 @@
   "t": "B5 Binocular Vision",
   "q": "The fastest VOLUNTARY eye movement is the:",
   "o": [
-   "Vergence movement",
+   "Smooth pursuit",
    "Saccade",
-   "Vestibulo-ocular reflex",
-   "Smooth pursuit"
+   "Vergence movement",
+   "Vestibulo-ocular reflex"
   ],
   "a": 1,
   "w": "The saccade is the fastest voluntary movement, at a 200 ms latency. The VOR is the fastest reflex at 15 ms but is not voluntary, and vergence is slowest at 20°/s.",
@@ -2374,9 +2374,9 @@
   "q": "Why does a heterophoria preserve normal retinal correspondence?",
   "o": [
    "The eyes stay aligned",
+   "Phorias are always intermittent",
    "Fusion is permanently absent",
-   "The angle is too small to adapt",
-   "Phorias are always intermittent"
+   "The angle is too small to adapt"
   ],
   "a": 0,
   "w": "A phoria is compensated by fusion nearly all the time, so the eyes stay aligned and NRC persists. ARC needs the constant, unchanging misalignment of a constant strabismus.",
@@ -2390,9 +2390,9 @@
   "q": "Suppression treated early within the critical period is:",
   "o": [
    "Reversible",
-   "Only correctable by surgery",
+   "Permanent regardless of therapy",
    "Untreatable after age 3",
-   "Permanent regardless of therapy"
+   "Only correctable by surgery"
   ],
   "a": 0,
   "w": "Suppression itself is reversible when treated early. The danger is that prolonged suppression breeds amblyopia, which becomes permanent once the critical period closes around 7 to 8 years.",
@@ -2405,10 +2405,10 @@
   "t": "B1 Visual System",
   "q": "During Hirschberg testing, the corneal light reflex falls approximately 1mm temporal to the corneal center in both eyes. Cover test reveals no movement. What is the most likely explanation?",
   "o": [
+   "Bilateral exotropia",
    "Large angle alpha",
-   "Negative angle kappa",
    "Positive angle kappa",
-   "Bilateral exotropia"
+   "Negative angle kappa"
   ],
   "a": 2,
   "w": "Positive angle kappa exists when the center of the entrance pupil is nasal to the visual axis. Because the pupil is nasal, the corneal light reflex appears displaced temporally — simulating exotropia on Hirschberg. The negative cover test confirms no real deviation is present. This is pseudo-exotropia due to positive angle kappa. Negative kappa would produce a nasal reflex displacement (pseudo-esotropia). Angle alpha is measured at the nodal point and does not produce this clinical finding directly.",
@@ -2455,8 +2455,8 @@
   "o": [
    "Color perception",
    "Form perception",
-   "Spatial contrast sensitivity",
-   "Motion perception"
+   "Motion perception",
+   "Spatial contrast sensitivity"
   ],
   "a": 0,
   "w": "Color is the most vulnerable visual function — it is selectively affected early in optic nerve disease because color perception depends on intact, well-myelinated, high-frequency nerve fiber conduction. Even subtle demyelination (as in early optic neuritis) preferentially disrupts color transmission before form or motion are noticeably impaired. This is the basis of the \"red desaturation\" test — patients with early optic neuritis report that a bright red target appears washed-out or pink in the affected eye compared to the normal eye. Motion is the most resilient function and is typically preserved until late disease.",
@@ -2470,9 +2470,9 @@
   "q": "A researcher doubles the intensity of a light stimulus from 100 to 200 units. According to Weber's Law, what must be true about the just noticeable difference (JND)?",
   "o": [
    "The JND stays a fixed fraction of the new background intensity",
-   "The JND decreases because more light is available",
    "The JND doubles because the background intensity doubled",
-   "The JND stays constant regardless of the background intensity"
+   "The JND stays constant regardless of the background intensity",
+   "The JND decreases because more light is available"
   ],
   "a": 0,
   "w": "Weber's Law states: ΔI/I = k. The ratio of the just noticeable difference (ΔI) to the background intensity (I) is a constant (k) — not ΔI itself. When the background doubles from 100 to 200, the new JND = k �� 200, which is twice the original JND. The absolute threshold goes up, but the ratio stays the same. This is the clinical basis for contrast sensitivity: in dim conditions (low I), a smaller ΔI is needed; in bright conditions (high I), a larger ΔI is needed for detection.",
@@ -2502,9 +2502,9 @@
   "q": "On Goldmann perimetry, all isopters are severely constricted, with only a small central island of vision remaining. The patient reports difficulty seeing in dim light and has had peripheral vision loss for years. What condition does this pattern suggest?",
   "o": [
    "Pituitary adenoma",
-   "Glaucoma",
+   "Central serous retinopathy",
    "Retinitis pigmentosa",
-   "Central serous retinopathy"
+   "Glaucoma"
   ],
   "a": 2,
   "w": "Retinitis pigmentosa is a rod dystrophy that begins peripherally and progresses centrally, creating a classic \"ring scotoma\" that expands until only a small central island of cone vision remains. On Goldmann perimetry, this appears as severely constricted isopters around a preserved central island. The history of night blindness (rod dysfunction precedes cone loss in RP) and progressive peripheral loss over years is consistent with RP. Pituitary adenoma causes bitemporal hemianopia — not concentric constriction. Glaucoma causes arcuate scotomas and nasal steps, typically not this degree of peripheral constriction early. CSR causes a central scotoma, not peripheral.",
@@ -2517,8 +2517,8 @@
   "t": "B4 Color",
   "q": "A patient fails multiple Ishihara plates and is suspected of having a color vision deficiency. To determine the exact axis and severity of the defect, which test should be ordered?",
   "o": [
-   "D-15",
    "FALANT",
+   "D-15",
    "HRR",
    "FM-100 Hue test"
   ],
@@ -2549,8 +2549,8 @@
   "t": "B5 Binocular Vision",
   "q": "A child with right esotropia is examined with the Hering-Bielschowsky after-image test. The after-image from the right eye appears displaced to the left of the after-image from the left eye, indicating a non-symmetric result. What does this finding indicate?",
   "o": [
-   "Unharmonious anomalous retinal correspondence",
    "Normal retinal correspondence with strabismus",
+   "Unharmonious anomalous retinal correspondence",
    "Suppression of the right eye",
    "Harmonious anomalous retinal correspondence"
   ],
@@ -2565,10 +2565,10 @@
   "t": "B5 Binocular Vision",
   "q": "A patient presents with spontaneous oscillating eye movements with no fast phase. The movements are equal in both directions. He reports the movements were present since birth and improve slightly when he converges. What type of nystagmus does this describe?",
   "o": [
-   "Acquired pendular nystagmus",
+   "Gaze-evoked nystagmus",
    "Infantile nystagmus syndrome with null point",
-   "Jerk nystagmus from a vestibular lesion",
-   "Gaze-evoked nystagmus"
+   "Acquired pendular nystagmus",
+   "Jerk nystagmus from a vestibular lesion"
   ],
   "a": 1,
   "w": "The key features: (1) present since birth — congenital onset; (2) pendular in primary position (equal velocity both ways — no fast/slow phase); (3) dampens with convergence — this is the diagnostic hallmark of infantile nystagmus syndrome (INS), also called congenital nystagmus. Patients often adopt a head turn to bring gaze to their null point where the nystagmus is least intense. The convergence dampening explains why some patients read with the book held very close — the convergence demand reduces the nystagmus. Acquired pendular nystagmus has a known adult onset (MS, brainstem lesion) and does not dampen with convergence. Jerk nystagmus has fast/slow phases. Gaze-evoked only appears at eccentric gaze, not in primary position.",
@@ -2581,10 +2581,10 @@
   "t": "B5 Binocular Vision",
   "q": "During binocular rivalry testing, a patient views a vertical grating with one eye and a horizontal grating with the other. The expected percept is:",
   "o": [
-   "Permanent suppression of the non-dominant eye's grating",
    "A plaid pattern",
+   "A diagonal grating",
    "Alternating suppression of each grating",
-   "A diagonal grating"
+   "Permanent suppression of the non-dominant eye's grating"
   ],
   "a": 2,
   "w": "Binocular rivalry occurs when the two eyes are shown incompatible images that cannot be fused. The brain cannot fuse a vertical and horizontal grating into a single stable percept. Instead, it alternates — one eye's image is perceived for a few seconds, then the other takes over, back and forth. This alternating suppression is the defining feature of binocular rivalry. It is NOT the same as permanent suppression (which occurs in constant strabismus with deep amblyopia). It is also not fusion because the stimuli are too dissimilar for the disparity detectors to merge them.",
@@ -2598,9 +2598,9 @@
   "q": "A patient with right amblyopia (VA 20/200, strabismic) undergoes stereopsis testing. The expected finding on Randot stereotest is:",
   "o": [
    "Reduced stereo",
-   "Normal stereo",
+   "Stereo unaffected because the left eye is normal",
    "No measurable stereopsis",
-   "Stereo unaffected because the left eye is normal"
+   "Normal stereo"
   ],
   "a": 2,
   "w": "Strabismic amblyopia involves suppression of the amblyopic eye and disruption of binocular cortical neurons. Stereopsis requires both eyes to contribute corresponding images within Panum's fusional area simultaneously. In strabismus with deep suppression, the amblyopic eye's image is actively inhibited — binocular neurons are not stimulated normally. Without binocular cortical input, stereopsis cannot be generated regardless of monocular acuity in the dominant eye. Residual coarse stereopsis might persist with very mild or intermittent strabismus, but with deep constant amblyopia (20/200), stereopsis is essentially absent.",
@@ -2613,9 +2613,9 @@
   "t": "B7 VIP / VPS",
   "q": "A 7-year-old has 20/20 acuity OU, no strabismus, and normal binocular vision. The teacher reports he cannot find objects on a busy worksheet and frequently loses his place while reading. Which assessment would best evaluate the most likely deficit?",
   "o": [
-   "Beery VMI",
    "Ishihara color vision testing",
    "Humphrey visual field testing",
+   "Beery VMI",
    "TVPS-3"
   ],
   "a": 3,
@@ -2630,8 +2630,8 @@
   "q": "A 6-year-old scores poorly on the Beery VMI. Before concluding she has a visual perceptual deficit, which assessment should be done first to separate perception from motor output?",
   "o": [
    "Snellen acuity testing",
-   "DTVP-2 motor-enhanced subtest",
    "Humphrey visual field test",
+   "DTVP-2 motor-enhanced subtest",
    "TVPS-3"
   ],
   "a": 3,
@@ -2661,10 +2661,10 @@
   "t": "B1 Visual System",
   "q": "The Y-axis (AP) length is:",
   "o": [
-   "~150,000/mm²",
-   "24 mm",
    "22 mm each",
-   "13.5 mm behind cornea"
+   "24 mm",
+   "13.5 mm behind cornea",
+   "~150,000/mm²"
   ],
   "a": 1,
   "w": "Y-axis (AP) length: 24 mm. Longest — full eyeball depth",
@@ -2677,9 +2677,9 @@
   "t": "B1 Visual System",
   "q": "The X and Z axes is:",
   "o": [
+   "13.5 mm behind cornea",
    "~150,000/mm²",
    "24 mm",
-   "13.5 mm behind cornea",
    "22 mm each"
   ],
   "a": 3,
@@ -2694,9 +2694,9 @@
   "q": "The center of rotation is:",
   "o": [
    "13.5 mm behind cornea",
-   "24 mm",
    "~150,000/mm²",
-   "22 mm each"
+   "22 mm each",
+   "24 mm"
   ],
   "a": 0,
   "w": "Center of rotation: 13.5 mm behind cornea. All axes pass through here",
@@ -2710,9 +2710,9 @@
   "q": "The adult IPD average is:",
   "o": [
    "62.5 mm",
-   "24 mm",
+   "~150,000/mm²",
    "22 mm each",
-   "~150,000/mm²"
+   "24 mm"
   ],
   "a": 0,
   "w": "Adult IPD average: 62.5 mm. Used in spectacle dispensing",
@@ -2726,9 +2726,9 @@
   "q": "The normal pupil range is:",
   "o": [
    "2–5 mm",
-   "22 mm each",
+   "24 mm",
    "~150,000/mm²",
-   "24 mm"
+   "22 mm each"
   ],
   "a": 0,
   "w": "Normal pupil range: 2–5 mm (physiologic 3–4 mm). Miotic ≤1.5 mm; mydriatic >5 mm",
@@ -2742,8 +2742,8 @@
   "q": "The F₂ (secondary focal point) is:",
   "o": [
    "~24 mm behind the cornea",
-   "~17 mm in front of the cornea",
    "~13.5 mm behind the cornea",
+   "~17 mm in front of the cornea",
    "~7 mm behind the cornea"
   ],
   "a": 0,
@@ -2758,9 +2758,9 @@
   "q": "Which term describes bright-light cone-mediated vision; peak sensitivity 555nm?",
   "o": [
    "Photopic",
+   "Rhodopsin",
    "Kohlrausch kink",
-   "Purkinje shift",
-   "Rhodopsin"
+   "Purkinje shift"
   ],
   "a": 0,
   "w": "Photopic: Greek photos — light. Bright-light cone-mediated vision; peak sensitivity 555nm",
@@ -2773,10 +2773,10 @@
   "t": "B1 Visual System",
   "q": "Which term describes the shift of peak spectral sensitivity from 555nm (photopic) to 507nm (scotopic) as light decreases?",
   "o": [
-   "Kohlrausch kink",
-   "Purkinje shift",
    "Photopic",
-   "Rhodopsin"
+   "Purkinje shift",
+   "Rhodopsin",
+   "Kohlrausch kink"
   ],
   "a": 1,
   "w": "Purkinje shift: Named after Jan E. Purkinje. The shift of peak spectral sensitivity from 555nm (photopic) to 507nm (scotopic) as light decreases",
@@ -2789,9 +2789,9 @@
   "t": "B1 Visual System",
   "q": "Which term describes the inflection point on the dark adaptation curve (~7min) where rod sensitivity takes over from cone sensitivity?",
   "o": [
-   "Photopic",
    "Purkinje shift",
    "Rhodopsin",
+   "Photopic",
    "Kohlrausch kink"
   ],
   "a": 3,
@@ -2838,8 +2838,8 @@
   "q": "Which term describes green-sensitive cone pigment; peak ~535nm (M-cones)?",
   "o": [
    "Chlorolabe",
-   "Kohlrausch kink",
    "Photopic",
+   "Kohlrausch kink",
    "Purkinje shift"
   ],
   "a": 0,
@@ -2853,10 +2853,10 @@
   "t": "B1 Visual System",
   "q": "Which term describes blue-sensitive cone pigment; peak ~440nm (S-cones)?",
   "o": [
-   "Photopic",
-   "Cyanolabe",
    "Purkinje shift",
-   "Kohlrausch kink"
+   "Cyanolabe",
+   "Kohlrausch kink",
+   "Photopic"
   ],
   "a": 1,
   "w": "Cyanolabe: Greek kyanos — blue. Blue-sensitive cone pigment; peak ~440nm (S-cones)",
@@ -2869,8 +2869,8 @@
   "t": "B1 Visual System",
   "q": "Which term describes point through which rays pass undeviated; angle alpha measured here?",
   "o": [
-   "Kohlrausch kink",
    "Purkinje shift",
+   "Kohlrausch kink",
    "Photopic",
    "Nodal point"
   ],
@@ -2885,10 +2885,10 @@
   "t": "B1 Visual System",
   "q": "Which term describes the 6 key points that define the optical system of the eye?",
   "o": [
-   "Kohlrausch kink",
+   "Photopic",
    "Purkinje shift",
    "Cardinal points",
-   "Photopic"
+   "Kohlrausch kink"
   ],
   "a": 2,
   "w": "Cardinal points: Latin cardinalis — principal. The 6 key points that define the optical system of the eye",
@@ -2902,8 +2902,8 @@
   "q": "Which term describes brodmann area 18; secondary visual processing?",
   "o": [
    "Parastriate cortex",
-   "Ventral stream",
    "Dorsal stream",
+   "Ventral stream",
    "Peristriate cortex"
   ],
   "a": 0,
@@ -2918,8 +2918,8 @@
   "q": "Which term describes brodmann area 19; higher processing (motion, form, object recognition)?",
   "o": [
    "Peristriate cortex",
-   "Ventral stream",
    "Parastriate cortex",
+   "Ventral stream",
    "Dorsal stream"
   ],
   "a": 0,
@@ -2934,9 +2934,9 @@
   "q": "Which term describes \"What\" pathway: temporal lobe; object recognition?",
   "o": [
    "Ventral stream",
+   "Parastriate cortex",
    "Dorsal stream",
-   "Peristriate cortex",
-   "Parastriate cortex"
+   "Peristriate cortex"
   ],
   "a": 0,
   "w": "Ventral stream: Latin venter — belly (flows \"below\"). \"What\" pathway: temporal lobe; object recognition",
@@ -2949,9 +2949,9 @@
   "t": "B2 Visual Perception",
   "q": "Which term describes \"Where\" pathway: parietal lobe; spatial location, motion?",
   "o": [
-   "Peristriate cortex",
-   "Parastriate cortex",
    "Ventral stream",
+   "Parastriate cortex",
+   "Peristriate cortex",
    "Dorsal stream"
   ],
   "a": 3,
@@ -2965,8 +2965,8 @@
   "t": "B2 Visual Perception",
   "q": "Which term describes the retina has two systems: scotopic (rods) + photopic (cones)?",
   "o": [
-   "Parastriate cortex",
    "Peristriate cortex",
+   "Parastriate cortex",
    "Ventral stream",
    "Duplicity theory"
   ],
@@ -2997,10 +2997,10 @@
   "t": "B3 Visual Field",
   "q": "The VF temporal extent is:",
   "o": [
-   "60°",
+   "120° central",
    "100°",
-   "75°",
-   "120° central"
+   "60°",
+   "75°"
   ],
   "a": 1,
   "w": "VF temporal extent: 100°. Widest extent",
@@ -3013,10 +3013,10 @@
   "t": "B3 Visual Field",
   "q": "The VF nasal extent is:",
   "o": [
-   "120° central",
    "75°",
+   "100°",
    "60°",
-   "100°"
+   "120° central"
   ],
   "a": 2,
   "w": "VF nasal extent: 60°. Nose limits nasal field",
@@ -3047,8 +3047,8 @@
   "o": [
    "30° each side",
    "100°",
-   "75°",
-   "60°"
+   "60°",
+   "75°"
   ],
   "a": 0,
   "w": "Monocular crescent: 30° each side. Temporal retina only; no binocular input",
@@ -3093,10 +3093,10 @@
   "t": "B3 Visual Field",
   "q": "Which term describes a localized area of reduced or absent vision within the visual field?",
   "o": [
-   "Quadrantanopia",
+   "Hemianopia",
    "Scotoma",
-   "Perimetry",
-   "Hemianopia"
+   "Quadrantanopia",
+   "Perimetry"
   ],
   "a": 1,
   "w": "Scotoma: Greek skotos — darkness. A localized area of reduced or absent vision within the visual field",
@@ -3110,9 +3110,9 @@
   "q": "Which term describes loss of a quarter of the visual field?",
   "o": [
    "Perimetry",
-   "Hemianopia",
+   "Scotoma",
    "Quadrantanopia",
-   "Scotoma"
+   "Hemianopia"
   ],
   "a": 2,
   "w": "Quadrantanopia: Latin quadrans — quarter. Loss of a quarter of the visual field",
@@ -3125,10 +3125,10 @@
   "t": "B3 Visual Field",
   "q": "Which term describes systematic mapping of the visual field?",
   "o": [
-   "Quadrantanopia",
+   "Hemianopia",
    "Perimetry",
    "Scotoma",
-   "Hemianopia"
+   "Quadrantanopia"
   ],
   "a": 1,
   "w": "Perimetry: Greek peri — around + metron — measure. Systematic mapping of the visual field",
@@ -3141,9 +3141,9 @@
   "t": "B3 Visual Field",
   "q": "Which term describes measurement unit for Goldmann bowl background and stimuli?",
   "o": [
-   "Hemianopia",
-   "Apostilb",
    "Quadrantanopia",
+   "Apostilb",
+   "Hemianopia",
    "Scotoma"
   ],
   "a": 1,
@@ -3158,8 +3158,8 @@
   "q": "Which term describes three cone types present but one has shifted peak absorption?",
   "o": [
    "Anomalous trichromacy",
-   "Monochromacy",
    "Protan-",
+   "Monochromacy",
    "Dichromacy"
   ],
   "a": 0,
@@ -3175,8 +3175,8 @@
   "o": [
    "Monochromacy",
    "Dichromacy",
-   "Anomalous trichromacy",
-   "Protan-"
+   "Protan-",
+   "Anomalous trichromacy"
   ],
   "a": 1,
   "w": "Dichromacy: Greek di — two. Only two functioning cone types; one type absent",
@@ -3190,9 +3190,9 @@
   "q": "Which term describes only one cone type (or rods only); complete color blindness?",
   "o": [
    "Monochromacy",
+   "Dichromacy",
    "Protan-",
-   "Anomalous trichromacy",
-   "Dichromacy"
+   "Anomalous trichromacy"
   ],
   "a": 0,
   "w": "Monochromacy: Greek mono — one. Only one cone type (or rods only); complete color blindness",
@@ -3223,8 +3223,8 @@
   "o": [
    "Fusion",
    "Phoria",
-   "Tropia",
-   "NRC"
+   "NRC",
+   "Tropia"
   ],
   "a": 1,
   "w": "Phoria: Greek phora — bearing/tendency. Latent tendency of the eyes to deviate; only present under dissociation",
@@ -3238,9 +3238,9 @@
   "q": "Which term describes manifest (constant) deviation; always present?",
   "o": [
    "Fusion",
-   "Heterophoria",
+   "Phoria",
    "Tropia",
-   "Phoria"
+   "Heterophoria"
   ],
   "a": 2,
   "w": "Tropia: Greek tropos — turn. Manifest (constant) deviation; always present",
@@ -3253,9 +3253,9 @@
   "t": "B5 Binocular Vision",
   "q": "Which term describes ideal alignment with no deviation tendency?",
   "o": [
-   "Fusion",
-   "Orthophoria",
    "Tropia",
+   "Orthophoria",
+   "Fusion",
    "Heterophoria"
   ],
   "a": 1,
@@ -3271,8 +3271,8 @@
   "o": [
    "Tropia",
    "NRC",
-   "Phoria",
-   "Fusion"
+   "Fusion",
+   "Phoria"
   ],
   "a": 1,
   "w": "NRC: Normal Retinal Correspondence. Both foveas have the same visual direction",
@@ -3301,10 +3301,10 @@
   "t": "B5 Binocular Vision",
   "q": "Which term describes zone around the horopter where fusion (not diplopia) occurs despite non-corresponding stimulation?",
   "o": [
-   "Tropia",
    "Phoria",
+   "Fusion",
    "Panum's area",
-   "Fusion"
+   "Tropia"
   ],
   "a": 2,
   "w": "Panum's area: Named after Peter Ludvig Panum. Zone around the horopter where fusion (not diplopia) occurs despite non-corresponding stimulation",
@@ -3317,9 +3317,9 @@
   "t": "B5 Binocular Vision",
   "q": "Which term describes active inhibition of one eye's visual signal by the brain?",
   "o": [
+   "Tropia",
    "Fusion",
    "Phoria",
-   "Tropia",
    "Suppression"
   ],
   "a": 3,
@@ -3349,9 +3349,9 @@
   "t": "B5 Binocular Vision",
   "q": "Which term describes double vision from non-corresponding retinal stimulation?",
   "o": [
-   "Tropia",
    "Phoria",
    "Fusion",
+   "Tropia",
    "Diplopia"
   ],
   "a": 3,
@@ -3365,8 +3365,8 @@
   "t": "B1 Visual System",
   "q": "Scheerer's blue field phenomenon, seen as tiny bright dots on squiggly paths, is caused by:",
   "o": [
-   "Traction on the vitreous base",
    "Retinal blood vessels lit obliquely",
+   "Traction on the vitreous base",
    "White blood cells moving in retinal capillaries",
    "Vitreous opacities casting shadows"
   ],
@@ -3382,9 +3382,9 @@
   "q": "Purkinje figures are entoptic images of the:",
   "o": [
    "Retinal blood vessels",
-   "White blood cells in capillaries",
    "Vitreous opacities",
-   "Lens fibre sutures"
+   "Lens fiber sutures",
+   "White blood cells in capillaries"
   ],
   "a": 0,
   "w": "Oblique illumination casts the shadows of the retinal vessels onto the photoreceptors, making the patient's own vascular tree visible. Normally the image is stabilised and suppressed.",
@@ -3397,9 +3397,9 @@
   "t": "B1 Visual System",
   "q": "Moore's lightning streaks are associated with:",
   "o": [
-   "Lens fibre diffraction",
-   "Retinal capillary blood flow",
    "Raised intraocular pressure",
+   "Lens fiber diffraction",
+   "Retinal capillary blood flow",
    "Vitreous traction"
   ],
   "a": 3,
@@ -3415,8 +3415,8 @@
   "o": [
    "Ganglion cells stimulated directly",
    "Light entering the pupil normally",
-   "Vitreous floaters drifting",
-   "Diffraction at the cornea"
+   "Diffraction at the cornea",
+   "Vitreous floaters drifting"
   ],
   "a": 0,
   "w": "A phosphene is light perceived without any light entering the eye, from mechanical or electrical stimulation of the retinal ganglion cells. Pressing on a closed lid produces one.",
@@ -3427,7 +3427,7 @@
   "id": "B0215",
   "sec": "B-consolidated",
   "t": "B1 Visual System",
-  "q": "The PHYSIOLOGIC coloured halo around a point light source is produced by:",
+  "q": "The PHYSIOLOGIC colored halo around a point light source is produced by:",
   "o": [
    "Corneal epithelial edema",
    "Raised intraocular pressure",
@@ -3435,8 +3435,8 @@
    "Vitreous syneresis with age"
   ],
   "a": 2,
-  "w": "The radial arrangement of lens fibres diffracts light into a coloured halo, which is normal. A PATHOLOGIC halo comes from corneal edema in raised IOP or radiation keratopathy, and that one matters.",
-  "k": "Physiologic halo = lens fibre diffraction; pathologic = corneal edema.",
+  "w": "The radial arrangement of lens fibers diffracts light into a colored halo, which is normal. A PATHOLOGIC halo comes from corneal edema in raised IOP or radiation keratopathy, and that one matters.",
+  "k": "Physiologic halo = lens fiber diffraction; pathologic = corneal edema.",
   "src": "sanitized"
  }
 ]
