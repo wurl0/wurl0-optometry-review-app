@@ -1,0 +1,407 @@
+{
+  "H0007": {
+    "o": [
+      "A 70% average, none below 50%",
+      "A 75% average, none below 60%",
+      "An 80% average, none below 70%",
+      "A 75% average, none below 50%"
+    ],
+    "a": 3
+  },
+  "H0011": {
+    "o": [
+      "A fine only, up to P5,000",
+      "Imprisonment of 10–20 years",
+      "1–8 years, P10,000–40,000, or both",
+      "License suspension only"
+    ],
+    "a": 2
+  },
+  "H0012": {
+    "o": [
+      "Visual acuity screening only",
+      "Instillation of DPAs",
+      "Cataract extraction surgery",
+      "Full refraction and dispensing"
+    ],
+    "a": 0
+  },
+  "H0013": {
+    "o": [
+      "Professional Regulation Commission",
+      "Department of Health",
+      "Department of Labor and Employment",
+      "Philippine Drug Enforcement Agency"
+    ],
+    "a": 0
+  },
+  "H0016": {
+    "o": [
+      "A physician with eye training",
+      "A licensed optician",
+      "A registered pharmacist",
+      "A contact lens vendor"
+    ],
+    "a": 0
+  },
+  "H0017": {
+    "o": [
+      "A second optometry degree",
+      "A one-year surgical fellowship",
+      "No extra requirement at all",
+      "A course and certification exam"
+    ],
+    "a": 3
+  },
+  "H0023": {
+    "o": [
+      "Display only the diplomas",
+      "Display the certificate",
+      "Display nothing at all",
+      "Keep the certificate hidden"
+    ],
+    "a": 1
+  },
+  "H0025": {
+    "o": [
+      "A purely commercial trade",
+      "A surgical subspecialty",
+      "An optional health service",
+      "Part of primary health care"
+    ],
+    "a": 3
+  },
+  "H0028": {
+    "o": [
+      "Take an oath before the Board",
+      "Open a clinic immediately",
+      "Join the PRC as staff",
+      "Pay a facilitation fee"
+    ],
+    "a": 0
+  },
+  "H0029": {
+    "o": [
+      "Filipino of good moral character",
+      "Foreign optometry expert",
+      "Permanent resident alien",
+      "Licensed medical physician"
+    ],
+    "a": 0
+  },
+  "H0031": {
+    "o": [
+      "Required by the PRC rules",
+      "Prohibited, degrading acts",
+      "Allowed once every year",
+      "Encouraged for competition"
+    ],
+    "a": 1
+  },
+  "H0032": {
+    "o": [
+      "Not a punishable matter",
+      "A minor private matter",
+      "A criminal felony only",
+      "Unethical, punishable conduct"
+    ],
+    "a": 3
+  },
+  "H0041": {
+    "o": [
+      "Is still mandatory in writing",
+      "May be waived under the doctrine",
+      "Must be obtained from the PRC",
+      "May be ignored in all cases"
+    ],
+    "a": 1
+  },
+  "H0042": {
+    "o": [
+      "Report them to the Board",
+      "Override and refer anyway",
+      "Document, re-counsel, monitor",
+      "Discharge the patient"
+    ],
+    "a": 2
+  },
+  "H0044": {
+    "o": [
+      "Always referring onward",
+      "Never accepting any risk",
+      "Benefit must outweigh harm",
+      "Treating everyone identically"
+    ],
+    "a": 2
+  },
+  "H0049": {
+    "o": [
+      "A signature on a form",
+      "Agreement based on understanding",
+      "A legal loophole for the clinic",
+      "The optometrist's own decision"
+    ],
+    "a": 1
+  },
+  "H0052": {
+    "o": [
+      "Report the parents to DSWD",
+      "Defer until a guardian consents",
+      "Fit the lenses immediately",
+      "Refuse all care outright"
+    ],
+    "a": 1
+  },
+  "H0055": {
+    "o": [
+      "Law carries no penalties",
+      "Law is enforceable; ethics moral",
+      "Ethics is enforced by courts",
+      "They are wholly identical"
+    ],
+    "a": 1
+  },
+  "H0059": {
+    "o": [
+      "Registered business name",
+      "TIN and books of accounts",
+      "The CPD certificate",
+      "The sanitary permit"
+    ],
+    "a": 1
+  },
+  "H0063": {
+    "o": [
+      "Decided by the PRC board",
+      "The optometrist's discretion",
+      "Fixed by law at 15 minutes",
+      "Set by the optical owner"
+    ],
+    "a": 1
+  },
+  "H0064": {
+    "o": [
+      "True, honest, fair, dignified",
+      "Focused on the lowest prices",
+      "Anything that attracts patients",
+      "Self-laudatory and competitive"
+    ],
+    "a": 0
+  },
+  "H0068": {
+    "o": [
+      "No contributions are required",
+      "PRC, DOH, and PDEA dues",
+      "SSS, PhilHealth, Pag-IBIG",
+      "DTI, BIR, and SEC fees"
+    ],
+    "a": 2
+  },
+  "H0074": {
+    "o": [
+      "Slit-lamp biomicroscope",
+      "Direct ophthalmoscope",
+      "A cash register",
+      "Retinoscope and phoropter"
+    ],
+    "a": 2
+  },
+  "H0075": {
+    "o": [
+      "Inside a supermarket aisle",
+      "Shared with a retail store",
+      "Open-plan with sales counters",
+      "Exclusive, enclosed, separate"
+    ],
+    "a": 3
+  },
+  "H0077": {
+    "o": [
+      "Prohibited, unprofessional",
+      "Encouraged by the Board",
+      "Required by the law",
+      "Allowed once every year"
+    ],
+    "a": 0
+  },
+  "H0097": {
+    "o": [
+      "Board Resolution No. 1 (2008)",
+      "RA 8050 Section 40 (1995)",
+      "Board Resolution No. 5 (2012)",
+      "Board Resolution No. 11 (2016)"
+    ],
+    "a": 3
+  },
+  "H0110": {
+    "o": [
+      "Being under 35 years of age",
+      "Not belonging to an association",
+      "Practicing outside Metro Manila",
+      "Conviction of moral turpitude"
+    ],
+    "a": 3
+  },
+  "H0112": {
+    "o": [
+      "After passing the board exam",
+      "Inside government clinics only",
+      "During supervised summer terms",
+      "Under a registered optometrist"
+    ],
+    "a": 3
+  },
+  "H0119": {
+    "o": [
+      "He holds a Philippine O.D. degree",
+      "He is over 35 years of age",
+      "He is endorsed by the DOH",
+      "His country reciprocates"
+    ],
+    "a": 3
+  },
+  "H0126": {
+    "o": [
+      "IFAPAO",
+      "APCO",
+      "WCO",
+      "SOP"
+    ],
+    "a": 3
+  },
+  "H0129": {
+    "o": [
+      "Preceded by the license number",
+      "Used only inside the clinic",
+      "Approved by the Board first",
+      "Qualified with 'optometrist'"
+    ],
+    "a": 3
+  },
+  "H0131": {
+    "o": [
+      "Take over the patient's care",
+      "Bill the referring optometrist",
+      "Report the referrer to the Board",
+      "Return the patient to the referrer"
+    ],
+    "a": 3
+  },
+  "H0132": {
+    "o": [
+      "Recorded in the public register",
+      "Reportable to the association",
+      "Shared with the next practitioner",
+      "Held in trust, disclosed only by law"
+    ],
+    "a": 3
+  },
+  "H0133": {
+    "o": [
+      "Referring a difficult case onward",
+      "Joining a professional association",
+      "Charging by skill and time spent",
+      "Letting a lay person examine"
+    ],
+    "a": 3
+  },
+  "H0135": {
+    "o": [
+      "No, refusal is always unethical",
+      "No, never in an emergency",
+      "Only with prior Board approval",
+      "Yes, he chooses his patients"
+    ],
+    "a": 3
+  },
+  "H0137": {
+    "o": [
+      "Picart v. Smith",
+      "People v. Pomar",
+      "Safian v. Aetna",
+      "Schloendorff"
+    ],
+    "a": 3
+  },
+  "H0138": {
+    "o": [
+      "A written fee agreement",
+      "Statutory duty alone",
+      "Professional courtesy",
+      "Trust and full disclosure"
+    ],
+    "a": 3
+  },
+  "H0141": {
+    "o": [
+      "Refund all fees already paid",
+      "Obtain Board clearance first",
+      "Continue care for 30 days",
+      "Hand over records and inform"
+    ],
+    "a": 3
+  },
+  "H0146": {
+    "o": [
+      "RA 8050",
+      "RA 8981",
+      "RA 1998",
+      "PD 223"
+    ],
+    "a": 3
+  },
+  "H0152": {
+    "o": [
+      "The general public in the store",
+      "Anyone, if a license is shown",
+      "Walk-in patients only",
+      "The employer's own employees"
+    ],
+    "a": 3
+  },
+  "H0159": {
+    "o": [
+      "The result was disappointing",
+      "He has no money at present",
+      "A third party promised to pay",
+      "A contingent fee did not succeed"
+    ],
+    "a": 3
+  },
+  "H0165": {
+    "o": [
+      "1–8 years or P10,000–40,000",
+      "A fine only, up to P5,000",
+      "License suspension only",
+      "Community service order"
+    ],
+    "a": 0
+  },
+  "H0168": {
+    "o": [
+      "Document, re-counsel, keep monitoring",
+      "Report the patient to the Board",
+      "Override the refusal and refer anyway",
+      "Refuse to see the patient again"
+    ],
+    "a": 0
+  },
+  "H0172": {
+    "o": [
+      "Chair time is the doctor's discretion",
+      "Nothing; the owner runs the business",
+      "Labor law on working hours",
+      "Advertising rules on service claims"
+    ],
+    "a": 0
+  },
+  "H0173": {
+    "o": [
+      "A dignified statement of services",
+      "\"Free eye exam with every purchase\"",
+      "\"Lowest eyeglass prices in the city\"",
+      "\"The best optometrist in the region\""
+    ],
+    "a": 0
+  }
+}

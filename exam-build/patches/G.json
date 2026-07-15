@@ -1,0 +1,281 @@
+{
+  "G0009": {
+    "o": [
+      "Polar and water-soluble",
+      "Charged and ionized",
+      "Uncharged, lipid-soluble",
+      "Bound to plasma protein"
+    ],
+    "a": 2
+  },
+  "G0021": {
+    "o": [
+      "Increasing uveoscleral outflow",
+      "Decreasing aqueous production",
+      "Blocking adenylate cyclase",
+      "Contracting the ciliary muscle"
+    ],
+    "a": 3
+  },
+  "G0031": {
+    "o": [
+      "Increasing aqueous outflow",
+      "Stimulating M3 receptors",
+      "Blocking sodium channels",
+      "Blocking acetylcholine release"
+    ],
+    "a": 3
+  },
+  "G0034": {
+    "o": [
+      "α1 agonist; ciliary muscle has no α1",
+      "It inhibits acetylcholinesterase",
+      "It blocks M3 on the sphincter",
+      "It acts as a local anesthetic"
+    ],
+    "a": 0
+  },
+  "G0038": {
+    "o": [
+      "Blocking sodium channels",
+      "Fluorescing in blue light",
+      "Stimulating α1 receptors",
+      "Blocking M3 receptors"
+    ],
+    "a": 0
+  },
+  "G0039": {
+    "o": [
+      "One i = ester, two i's = amide",
+      "All -caines are amides",
+      "Esters always have two i's",
+      "By the color of the bottle"
+    ],
+    "a": 0
+  },
+  "G0041": {
+    "o": [
+      "It is far too short-acting",
+      "It softens the corneal surface",
+      "It permanently stains cornea",
+      "It does not numb at all"
+    ],
+    "a": 1
+  },
+  "G0042": {
+    "o": [
+      "Acidic tissue ionizes the drug",
+      "Infection destroys the drug",
+      "Bacteria absorb the drug",
+      "Inflammation speeds metabolism"
+    ],
+    "a": 0
+  },
+  "G0047": {
+    "o": [
+      "Image the choroidal vessels",
+      "Stain epithelial defects",
+      "Anesthetize the cornea",
+      "Stain devitalized cells"
+    ],
+    "a": 3
+  },
+  "G0049": {
+    "o": [
+      "Reverse surgical mydriasis",
+      "Image the retinal surface",
+      "Numb the corneal surface",
+      "Stain the anterior capsule"
+    ],
+    "a": 3
+  },
+  "G0050": {
+    "o": [
+      "Causes mydriasis only",
+      "Shortens the block time",
+      "Neutralizes the drug",
+      "Prolongs the block"
+    ],
+    "a": 3
+  },
+  "G0055": {
+    "o": [
+      "Miotics and osmotics",
+      "Beta blockers, alpha-2s, CAIs",
+      "Osmotic agents only",
+      "Prostaglandins and miotics"
+    ],
+    "a": 1
+  },
+  "G0062": {
+    "o": [
+      "Dry eye and lid ptosis",
+      "Miosis and induced myopia",
+      "Glaucoma and PSC cataract",
+      "Nystagmus and diplopia"
+    ],
+    "a": 2
+  },
+  "G0068": {
+    "o": [
+      "Open-angle glaucoma",
+      "Vernal conjunctivitis",
+      "Filamentary fungal keratitis",
+      "Bacterial conjunctivitis"
+    ],
+    "a": 1
+  },
+  "G0073": {
+    "o": [
+      "Optic neuritis, red-green defect",
+      "Rhegmatogenous detachment",
+      "Posterior subcapsular cataract",
+      "Acute angle-closure"
+    ],
+    "a": 0
+  },
+  "G0074": {
+    "o": [
+      "Cornea verticillata, halos",
+      "A bull's-eye maculopathy",
+      "Nuclear cataract only",
+      "A macular cherry-red spot"
+    ],
+    "a": 0
+  },
+  "G0077": {
+    "o": [
+      "It precipitated angle-closure",
+      "It is an allergic reaction",
+      "An immature liver lets it build",
+      "It is an anesthetic overdose"
+    ],
+    "a": 2
+  },
+  "G0078": {
+    "o": [
+      "Topical beta blockers",
+      "Sulfonamides and acetazolamide",
+      "Topical prostaglandins",
+      "Systemic aminoglycosides"
+    ],
+    "a": 1
+  },
+  "G0079": {
+    "o": [
+      "Anticholinergics and TCAs",
+      "Topical prostaglandins",
+      "Systemic aminoglycosides",
+      "Beta blockers and CAIs"
+    ],
+    "a": 0
+  },
+  "G0080": {
+    "o": [
+      "A red-green color defect",
+      "Posterior subcapsular cataract",
+      "A bull's-eye maculopathy",
+      "Pseudotumor cerebri"
+    ],
+    "a": 3
+  },
+  "G0082": {
+    "o": [
+      "Steroids and anticholinergics",
+      "Beta blockers and diuretics",
+      "Sulfonamide antibiotics",
+      "Systemic antihistamines"
+    ],
+    "a": 1
+  },
+  "G0083": {
+    "o": [
+      "Chloroquine and amiodarone",
+      "Beta blockers, diuretics",
+      "Steroids and oral NSAIDs",
+      "Penicillin, gentamicin"
+    ],
+    "a": 0
+  },
+  "G0085": {
+    "o": [
+      "Better gut absorption",
+      "Faster hepatic metabolism",
+      "Larger resting pupils",
+      "Declining liver and kidney"
+    ],
+    "a": 3
+  },
+  "G0086": {
+    "o": [
+      "Dry eye and lens intolerance",
+      "A red-green color defect",
+      "Acute angle-closure glaucoma",
+      "Posterior subcapsular cataract"
+    ],
+    "a": 0
+  },
+  "G0087": {
+    "o": [
+      "Cataract and glaucoma",
+      "Xanthopsia and halos",
+      "A bull's-eye maculopathy",
+      "Aplastic anemia, neuritis"
+    ],
+    "a": 3
+  },
+  "G0114": {
+    "o": [
+      "Topical beta blockers",
+      "Sulfonamide antibiotics",
+      "Digitalis glycosides",
+      "Tetracycline and OCPs"
+    ],
+    "a": 3
+  },
+  "G0149": {
+    "o": [
+      "Acidic tissue ionizes the drug",
+      "Infection destroys the sodium channels",
+      "Inflammation washes the drug away",
+      "Bacteria metabolize the anesthetic"
+    ],
+    "a": 0
+  },
+  "G0153": {
+    "o": [
+      "Esters are metabolized by plasma cholinesterase",
+      "Amides are metabolized by plasma cholinesterase",
+      "Amides are shorter acting than esters",
+      "Esters have two i's in their generic name"
+    ],
+    "a": 0
+  },
+  "G0155": {
+    "o": [
+      "GAG buildup in the meshwork",
+      "Pupillary block from iris bombe",
+      "Swelling of the ciliary body",
+      "Increased aqueous production"
+    ],
+    "a": 0
+  },
+  "G0161": {
+    "o": [
+      "Optic neuritis, red-green defect",
+      "Posterior subcapsular cataract",
+      "Acute angle-closure glaucoma",
+      "Pigmentary retinopathy"
+    ],
+    "a": 0
+  },
+  "G0163": {
+    "o": [
+      "Anticholinergic CNS toxicity",
+      "Acute angle-closure glaucoma",
+      "Local anesthetic overdose",
+      "An allergic drug reaction"
+    ],
+    "a": 0
+  }
+}

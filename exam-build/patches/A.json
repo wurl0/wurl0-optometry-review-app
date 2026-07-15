@@ -1,0 +1,290 @@
+{
+  "A0004": {
+    "o": [
+      "CN3",
+      "CN7",
+      "CN5",
+      "CN2"
+    ],
+    "a": 2
+  },
+  "A0024": {
+    "o": [
+      "Produces the aqueous tear layer",
+      "Separates lid from orbit",
+      "Rotates the globe on gaze",
+      "Drains aqueous from the eye"
+    ],
+    "a": 1
+  },
+  "A0027": {
+    "o": [
+      "The main lacrimal gland",
+      "Glands of Krause and Wolfring",
+      "Meibomian glands of the tarsus",
+      "Conjunctival goblet cells"
+    ],
+    "a": 1
+  },
+  "A0028": {
+    "o": [
+      "Tear film stability; aqueous volume",
+      "Aqueous volume; tear film stability",
+      "Both measure aqueous volume",
+      "Both measure tear film stability"
+    ],
+    "a": 1
+  },
+  "A0031": {
+    "o": [
+      "Complete ptosis from levator palsy",
+      "Partial ptosis from Müller's paralysis",
+      "No ptosis, only miosis",
+      "Variable, fatiguable ptosis"
+    ],
+    "a": 1
+  },
+  "A0033": {
+    "o": [
+      "A tumor of the lacrimal gland",
+      "Aberrant CN7 regeneration",
+      "Reflex hypersecretion in dry eye",
+      "Stenosis of the lacrimal punctum"
+    ],
+    "a": 1
+  },
+  "A0035": {
+    "o": [
+      "Congenital glaucoma",
+      "Nasolacrimal duct obstruction",
+      "Gonococcal conjunctivitis",
+      "Lacrimal gland agenesis"
+    ],
+    "a": 1
+  },
+  "A0040": {
+    "o": [
+      "Mucin from goblet cells",
+      "The endothelial Na-K pump",
+      "The integrity of Bowman's layer",
+      "Evaporation from the tear film"
+    ],
+    "a": 1
+  },
+  "A0043": {
+    "o": [
+      "The cornea is more vascular than sclera",
+      "Corneal collagen is regularly spaced",
+      "The sclera is much thicker than cornea",
+      "They contain different cell types"
+    ],
+    "a": 1
+  },
+  "A0044": {
+    "o": [
+      "Epithelium and Bowman's layer",
+      "Stroma and Bowman's layer",
+      "Descemet's and endothelium",
+      "Epithelium and stroma"
+    ],
+    "a": 2
+  },
+  "A0045": {
+    "o": [
+      "A rupture of Descemet's membrane",
+      "Descemet's bulging through the stroma",
+      "A defect of the corneal epithelium",
+      "An ectasia of the anterior sclera"
+    ],
+    "a": 1
+  },
+  "A0055": {
+    "o": [
+      "A normal healthy pupil",
+      "A tonic Adie's pupil",
+      "An Argyll-Robertson pupil",
+      "A Horner's syndrome pupil"
+    ],
+    "a": 1
+  },
+  "A0060": {
+    "o": [
+      "The trabecular meshwork",
+      "Non-pigment ciliary epithelium",
+      "The anterior lens epithelium",
+      "The choriocapillaris"
+    ],
+    "a": 1
+  },
+  "A0063": {
+    "o": [
+      "Atrophy of the ciliary muscle",
+      "Hardening of the lens nucleus",
+      "Rupture of the zonular fibers",
+      "Posterior lens displacement"
+    ],
+    "a": 1
+  },
+  "A0065": {
+    "o": [
+      "A higher protein content",
+      "More ascorbic acid",
+      "A higher glucose level",
+      "A lower osmolarity"
+    ],
+    "a": 1
+  },
+  "A0067": {
+    "o": [
+      "They are chemically identical fluids",
+      "Aqueous is replaced; vitreous is not",
+      "Vitreous is made by the ciliary body",
+      "Aqueous fills the posterior segment"
+    ],
+    "a": 1
+  },
+  "A0073": {
+    "o": [
+      "Rods only, densely packed",
+      "Cones only, no capillaries",
+      "Equal numbers of rods and cones",
+      "No photoreceptors at all"
+    ],
+    "a": 1
+  },
+  "A0081": {
+    "o": [
+      "Photoreceptor outer segments",
+      "Retinal ganglion cell axons",
+      "Retinal pigment epithelium cells",
+      "Bipolar and amacrine cells"
+    ],
+    "a": 1
+  },
+  "A0082": {
+    "o": [
+      "Directly at the fovea",
+      "3 mm nasal to the foveola",
+      "3 mm temporal to the macula",
+      "Just anterior to the ora serrata"
+    ],
+    "a": 1
+  },
+  "A0086": {
+    "o": [
+      "An occipital lobe stroke",
+      "A pituitary adenoma",
+      "Retrobulbar optic neuritis",
+      "A retinal detachment"
+    ],
+    "a": 1
+  },
+  "A0087": {
+    "o": [
+      "Congruous homonymous hemianopia",
+      "Incongruous homonymous hemianopia",
+      "Bitemporal hemianopia",
+      "A dense central scotoma"
+    ],
+    "a": 1
+  },
+  "A0088": {
+    "o": [
+      "Contralateral inferior quadrantanopia",
+      "Contralateral superior quadrantanopia",
+      "Bitemporal hemianopia",
+      "Concentric tunnel vision"
+    ],
+    "a": 1
+  },
+  "A0089": {
+    "o": [
+      "Contralateral superior quadrantanopia",
+      "Contralateral inferior quadrantanopia",
+      "Bitemporal field loss",
+      "A central scotoma"
+    ],
+    "a": 1
+  },
+  "A0092": {
+    "o": [
+      "The cortex drives the light reflex",
+      "Pupil fibers leave at the pretectum",
+      "The pupil has a separate retina",
+      "Cortical lesions are mild by nature"
+    ],
+    "a": 1
+  },
+  "A0093": {
+    "o": [
+      "The crossing nasal fibers",
+      "Uncrossed fibers on both sides",
+      "Meyer's loop in the temporal lobe",
+      "The occipital pole"
+    ],
+    "a": 1
+  },
+  "A0101": {
+    "o": [
+      "The lens fails to form at all",
+      "The primary vitreous fails to regress",
+      "The retina detaches at birth",
+      "Calcium deposits fill the globe"
+    ],
+    "a": 1
+  },
+  "A0133": {
+    "o": [
+      "Corneal stromal deposits",
+      "RPE cell migration",
+      "Cortical lens opacities",
+      "Hyaloid system remnants"
+    ],
+    "a": 3
+  },
+  "A0157": {
+    "o": [
+      "Nasolacrimal duct obstruction",
+      "Congenital glaucoma with buphthalmos",
+      "Agenesis of the lacrimal gland",
+      "Gonococcal neonatal conjunctivitis"
+    ],
+    "a": 0
+  },
+  "A0166": {
+    "o": [
+      "Inner retinal edema sparing the thin foveola",
+      "RPE detachment revealing Bruch's membrane",
+      "Choroidal ischemia exposing bare sclera",
+      "Foveal hemorrhage from a vein occlusion"
+    ],
+    "a": 0
+  },
+  "A0170": {
+    "o": [
+      "FBN1 mutation → weak fibrillin zonules → lens dislocation",
+      "PAX6 mutation → failure of iris differentiation → aniridia",
+      "FBN1 mutation → weak secondary vitreous → lens dislocation",
+      "COL4A1 mutation → abnormal lens capsule → lens rupture"
+    ],
+    "a": 0
+  },
+  "A0174": {
+    "o": [
+      "The nasociliary nerve branch",
+      "The short ciliary nerves",
+      "The infraorbital nerve",
+      "The greater petrosal nerve"
+    ],
+    "a": 3
+  },
+  "A0179": {
+    "o": [
+      "5–6 mm; the ciliary body",
+      "0.1 mm; Bowman's layer only",
+      "3–4 mm; the ora serrata",
+      "1–2 mm; TM and Schlemm's canal"
+    ],
+    "a": 3
+  }
+}

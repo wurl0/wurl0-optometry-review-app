@@ -1,0 +1,209 @@
+{
+  "C0015": {
+    "o": [
+      "Accommodative spasm, clears on cycloplegia",
+      "A patient feigning myopia",
+      "Permanent axial elongation myopia",
+      "Flattening of the central cornea"
+    ],
+    "a": 0
+  },
+  "C0021": {
+    "o": [
+      "It affects near vision only",
+      "Fully compensated by accommodation",
+      "Not overcome by accommodation",
+      "Hidden by resting ciliary tone"
+    ],
+    "a": 2
+  },
+  "C0032": {
+    "o": [
+      "Tests one eye at a time only",
+      "Shows total deviation, not its type",
+      "Differentiates phoria from tropia",
+      "Measures stereoacuity directly"
+    ],
+    "a": 1
+  },
+  "C0036": {
+    "o": [
+      "Hyperopia with convergence excess",
+      "Uncorrected simple myopia",
+      "Uncorrected astigmatism",
+      "An early nuclear cataract"
+    ],
+    "a": 0
+  },
+  "C0047": {
+    "o": [
+      "Total astigmatism from keratometry",
+      "Pupil diameter in dim light",
+      "Axial length of the globe",
+      "Amplitude of accommodation"
+    ],
+    "a": 0
+  },
+  "C0048": {
+    "o": [
+      "Assess the anterior chamber angle",
+      "Examine retinal blood vessels",
+      "Show fluorescein staining",
+      "Measure intraocular pressure"
+    ],
+    "a": 2
+  },
+  "C0052": {
+    "o": [
+      "Viewing vessels and nerve fiber layer",
+      "Measuring the chamber angle",
+      "Viewing fluorescein staining",
+      "Producing cycloplegia"
+    ],
+    "a": 0
+  },
+  "C0054": {
+    "o": [
+      "Fundus examination",
+      "Applanation tonometry",
+      "Specular reflection, Van Herick",
+      "Gonioscopic angle viewing"
+    ],
+    "a": 2
+  },
+  "C0058": {
+    "o": [
+      "Dilate with caution and monitor",
+      "Dilate freely, no risk",
+      "Do not dilate under any setting",
+      "Van Herick does not guide dilation"
+    ],
+    "a": 0
+  },
+  "C0061": {
+    "o": [
+      "Correctly corrected already",
+      "Over-minused; add plus",
+      "Under-minused; add minus",
+      "Hyperopic and uncorrected"
+    ],
+    "a": 1
+  },
+  "C0063": {
+    "o": [
+      "Just enough to reach 20/20",
+      "A minus over-correction",
+      "+0.50 to +0.75 D of fog",
+      "+3.00 D of fog"
+    ],
+    "a": 2
+  },
+  "C0068": {
+    "o": [
+      "Restart the monocular refraction",
+      "Keep adding plus until equal",
+      "Leave the dominant eye clearer",
+      "Add plus to the other eye"
+    ],
+    "a": 2
+  },
+  "C0070": {
+    "o": [
+      "Uncorrected astigmatism",
+      "Advanced presbyopia",
+      "High axial myopia",
+      "Red-green deficiency"
+    ],
+    "a": 3
+  },
+  "C0075": {
+    "o": [
+      "Glasses → prism → VT → surgery",
+      "Prism → glasses → surgery → VT",
+      "Surgery → VT → prism → glasses",
+      "VT → surgery → glasses → prism"
+    ],
+    "a": 0
+  },
+  "C0078": {
+    "o": [
+      "Base-in prism at near",
+      "Patching the sound eye",
+      "Full hyperopic correction",
+      "Early strabismus surgery"
+    ],
+    "a": 2
+  },
+  "C0080": {
+    "o": [
+      "Aligns eyes without restoring acuity",
+      "Is the first-line treatment",
+      "Replaces the need for patching",
+      "Cures the underlying amblyopia"
+    ],
+    "a": 0
+  },
+  "C0084": {
+    "o": [
+      "Blurring the amblyopic eye",
+      "Blurring the good eye at near",
+      "Dilating both eyes equally",
+      "Patching the amblyopic eye"
+    ],
+    "a": 1
+  },
+  "C0085": {
+    "o": [
+      "Cataract in the patched eye",
+      "Amblyopia in the good eye",
+      "No risk at all",
+      "Permanent strabismus"
+    ],
+    "a": 1
+  },
+  "C0089": {
+    "o": [
+      "Prescribe relieving prism",
+      "Correct the refractive error",
+      "Begin convergence exercises",
+      "Refer for strabismus surgery"
+    ],
+    "a": 1
+  },
+  "C0091": {
+    "o": [
+      "A single string seen",
+      "An X at the fixated bead",
+      "No strings visible at all",
+      "Two parallel strings seen"
+    ],
+    "a": 1
+  },
+  "C0096": {
+    "o": [
+      "Hart chart → pleoptics → CAM",
+      "Push-ups → Brock string → vectogram",
+      "Surgery → prism → glasses",
+      "Patching → atropine → CAM"
+    ],
+    "a": 1
+  },
+  "C0099": {
+    "o": [
+      "When VA equalizes or stops improving",
+      "Patching is never discontinued",
+      "As soon as any improvement is seen",
+      "After exactly two weeks of wear"
+    ],
+    "a": 0
+  },
+  "C0160": {
+    "o": [
+      "3.75 D",
+      "4.50 D",
+      "5.00 D",
+      "7.00 D"
+    ],
+    "a": 2
+  }
+}

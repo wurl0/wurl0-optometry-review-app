@@ -1,0 +1,218 @@
+{
+  "E0012": {
+    "o": [
+      "A simple sac infection",
+      "Canalicular stenosis",
+      "An allergic reaction",
+      "Carcinoma of the sac"
+    ],
+    "a": 3
+  },
+  "E0016": {
+    "o": [
+      "Ectropion of the lower lid",
+      "Lagophthalmos on closure",
+      "S-shaped ptosis of the lid",
+      "Complete mechanical ptosis"
+    ],
+    "a": 2
+  },
+  "E0025": {
+    "o": [
+      "An inflamed pinguecula",
+      "Subconjunctival hemorrhage",
+      "Allergic conjunctivitis",
+      "A deep intraocular process"
+    ],
+    "a": 3
+  },
+  "E0032": {
+    "o": [
+      "Acanthamoeba keratitis",
+      "A bacterial corneal ulcer",
+      "Herpes simplex keratitis",
+      "Filamentary fungal keratitis"
+    ],
+    "a": 2
+  },
+  "E0033": {
+    "o": [
+      "Bacterial superinfection",
+      "Mild, self-limiting disease",
+      "Nasociliary nerve involvement",
+      "An allergic skin reaction"
+    ],
+    "a": 2
+  },
+  "E0036": {
+    "o": [
+      "A mid-dilated, fixed pupil",
+      "A small pinpoint pupil",
+      "Bilateral gradual field loss",
+      "A normal pupil, clear cornea"
+    ],
+    "a": 0
+  },
+  "E0043": {
+    "o": [
+      "HLA-B27 disease or Behcet's",
+      "Uncorrected refractive error",
+      "Evaporative dry eye",
+      "Allergic eye disease"
+    ],
+    "a": 0
+  },
+  "E0045": {
+    "o": [
+      "A darker iris with synechiae",
+      "A dense hypopyon",
+      "A lighter iris, no synechiae",
+      "Mutton-fat keratic precipitates"
+    ],
+    "a": 2
+  },
+  "E0059": {
+    "o": [
+      "Age-related macular degeneration",
+      "Central retinal artery occlusion",
+      "Diabetic retinopathy",
+      "Hypertensive retinopathy"
+    ],
+    "a": 3
+  },
+  "E0066": {
+    "o": [
+      "A retinal break",
+      "An early cataract",
+      "A vitreous hemorrhage",
+      "Normal vitreous aging"
+    ],
+    "a": 0
+  },
+  "E0068": {
+    "o": [
+      "Associated with sclerosis",
+      "Unilateral with early loss",
+      "Painful, with an RAPD",
+      "Bilateral and painless"
+    ],
+    "a": 3
+  },
+  "E0073": {
+    "o": [
+      "Bone spicule pigmentation",
+      "A macular cherry-red spot",
+      "Dilated, tortuous vessels",
+      "Scattered macular drusen"
+    ],
+    "a": 2
+  },
+  "E0074": {
+    "o": [
+      "At the optic disc margin",
+      "At the ora serrata",
+      "Within the fovea itself",
+      "At an arteriovenous crossing"
+    ],
+    "a": 3
+  },
+  "E0079": {
+    "o": [
+      "Early open-angle glaucoma",
+      "Retrobulbar optic neuritis",
+      "Choroidal neovascularization",
+      "A nuclear cataract"
+    ],
+    "a": 2
+  },
+  "E0084": {
+    "o": [
+      "Topical steroids alone",
+      "Broad-spectrum antibiotics",
+      "Pressure patching the eye",
+      "Lowering IOP, then iridotomy"
+    ],
+    "a": 3
+  },
+  "E0087": {
+    "o": [
+      "Firmly pressure patched",
+      "Pressed to measure IOP",
+      "Shielded and referred, NPO",
+      "Irrigated forcefully"
+    ],
+    "a": 2
+  },
+  "E0091": {
+    "o": [
+      "Marked redness of the eyelid",
+      "Fever with general malaise",
+      "Proptosis and restricted gaze",
+      "Swelling of the entire eyelid"
+    ],
+    "a": 2
+  },
+  "E0092": {
+    "o": [
+      "A macular cherry-red spot",
+      "A layered hypopyon",
+      "Pulsating axial proptosis",
+      "Numbness and vertical diplopia"
+    ],
+    "a": 3
+  },
+  "E0097": {
+    "o": [
+      "Requires urgent surgery",
+      "Heals in 24–48 hours",
+      "Causes secondary glaucoma",
+      "Causes permanent scarring"
+    ],
+    "a": 1
+  },
+  "E0122": {
+    "o": [
+      "Wet exudative AMD",
+      "Myopic degeneration",
+      "Central serous retinopathy",
+      "Dry atrophic AMD"
+    ],
+    "a": 3
+  },
+  "E0138": {
+    "o": [
+      "Early severe vision loss",
+      "An early dense RAPD",
+      "Early central scotoma",
+      "An enlarged blind spot"
+    ],
+    "a": 3
+  },
+  "E0140": {
+    "o": [
+      "Coagulates surface protein",
+      "Is more often concentrated",
+      "Binds corneal collagen tightly",
+      "Liquefies and keeps going"
+    ],
+    "a": 3
+  },
+  "E0152": {
+    "o": [
+      "Optic neuritis; IV methylprednisolone",
+      "Retinal detachment; urgent surgery",
+      "CRAO; ocular massage, lower IOP",
+      "CRVO; observe and monitor"
+    ],
+    "a": 2
+  },
+  "E0157": {
+    "o": [
+      "Scleritis; oral NSAID therapy",
+      "Conjunctivitis; topical antibiotics",
+      "Acute angle-closure; laser iridotomy",
+      "Anterior uveitis; topical steroid"
+    ],
+    "a": 2
+  }
+}

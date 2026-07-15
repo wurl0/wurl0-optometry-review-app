@@ -1,0 +1,137 @@
+{
+  "B0006": {
+    "o": [
+      "Photoisomerization in the outer segment",
+      "Cone pigment synthesis in the fovea",
+      "Re-isomerization of retinal in the RPE",
+      "Glutamate release in the dark current"
+    ],
+    "a": 2
+  },
+  "B0007": {
+    "o": [
+      "No photoreceptors present",
+      "Rods absent; cones densest",
+      "Equal numbers of rods and cones",
+      "Rod density is highest here"
+    ],
+    "a": 1
+  },
+  "B0025": {
+    "o": [
+      "Stays the same absolute value",
+      "Halves as intensity doubles",
+      "Disappears at high intensity",
+      "Doubles with the background"
+    ],
+    "a": 3
+  },
+  "B0028": {
+    "o": [
+      "Object naming in both fields",
+      "Motion perception only",
+      "Color discrimination only",
+      "Vision in the contralateral field"
+    ],
+    "a": 3
+  },
+  "B0029": {
+    "o": [
+      "The pretectal nuclei of midbrain",
+      "The ventral stream to IT cortex",
+      "The superior colliculus tectum",
+      "The dorsal stream to parietal lobe"
+    ],
+    "a": 1
+  },
+  "B0035": {
+    "o": [
+      "60°",
+      "90°",
+      "120°",
+      "180°"
+    ],
+    "a": 2
+  },
+  "B0054": {
+    "o": [
+      "It screens red-green only",
+      "It needs no verbal response",
+      "It tests red-green and blue-yellow",
+      "It uses numeral plates only"
+    ],
+    "a": 2
+  },
+  "B0069": {
+    "o": [
+      "The near accommodative response",
+      "Agonist contracts, antagonist relaxes",
+      "Equal innervation to yoke muscles",
+      "The pupillary constriction reflex"
+    ],
+    "a": 1
+  },
+  "B0073": {
+    "o": [
+      "Long-standing orthophoria",
+      "An intermittent exophoria",
+      "Uncorrected refractive error",
+      "Constant strabismus, fixed angle"
+    ],
+    "a": 3
+  },
+  "B0080": {
+    "o": [
+      "Exo greater at distance, high AC/A",
+      "Equal exo at near and distance",
+      "Eso at distance, ortho at near",
+      "Receded NPC with exo at near"
+    ],
+    "a": 0
+  },
+  "B0090": {
+    "o": [
+      "Convergence effort alone",
+      "Pupil size differences",
+      "Accommodative demand",
+      "Binocular retinal disparity"
+    ],
+    "a": 3
+  },
+  "B0099": {
+    "o": [
+      "Tests color vision only",
+      "Requires no motor response",
+      "Measures visual acuity only",
+      "Splits motor-free and motor scores"
+    ],
+    "a": 3
+  },
+  "B0132": {
+    "o": [
+      "Crossed diplopia",
+      "Absent entirely",
+      "Vertical diplopia",
+      "Uncrossed diplopia"
+    ],
+    "a": 3
+  },
+  "B0149": {
+    "o": [
+      "The angle is too small to adapt",
+      "Phorias are always intermittent",
+      "Fusion is permanently absent",
+      "The eyes stay aligned"
+    ],
+    "a": 3
+  },
+  "B0160": {
+    "o": [
+      "Harmonious anomalous retinal correspondence",
+      "Normal retinal correspondence with strabismus",
+      "Unharmonious anomalous retinal correspondence",
+      "Suppression of the right eye"
+    ],
+    "a": 0
+  }
+}

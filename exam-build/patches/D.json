@@ -1,0 +1,182 @@
+{
+  "D0017": {
+    "o": [
+      "It has no measurable curvature",
+      "Index drops across a convex surface",
+      "It is completely avascular",
+      "It is concave toward the front"
+    ],
+    "a": 1
+  },
+  "D0026": {
+    "o": [
+      "Real, inverted, same size",
+      "Real, upright, magnified",
+      "Virtual, upright, minified",
+      "Virtual, upright, same size"
+    ],
+    "a": 3
+  },
+  "D0032": {
+    "o": [
+      "A real, minified image",
+      "A real, inverted image",
+      "No image at all",
+      "A virtual, magnified image"
+    ],
+    "a": 3
+  },
+  "D0036": {
+    "o": [
+      "Reverses its direction",
+      "Displaces it laterally only",
+      "Converges it to a focus",
+      "Adds plus power to it"
+    ],
+    "a": 1
+  },
+  "D0037": {
+    "o": [
+      "Neither radius nor index",
+      "The radius of curvature only",
+      "Both radius and index change",
+      "The index difference only"
+    ],
+    "a": 2
+  },
+  "D0043": {
+    "o": [
+      "It changes corneal curvature",
+      "It blocks ultraviolet light",
+      "It removes the vertex distance",
+      "It is a thicker lens overall"
+    ],
+    "a": 2
+  },
+  "D0048": {
+    "o": [
+      "Maximum refracting power",
+      "Power set by radius alone",
+      "Zero power at any curvature",
+      "Negative refracting power"
+    ],
+    "a": 2
+  },
+  "D0051": {
+    "o": [
+      "Present only with a mirror coat",
+      "Limited to the UV-C band",
+      "Absent unless it is coated",
+      "Inherent, no coating needed"
+    ],
+    "a": 3
+  },
+  "D0052": {
+    "o": [
+      "Car interior light is too dim",
+      "They react only to heat",
+      "The windshield blocks the UV",
+      "The lens stays too cold"
+    ],
+    "a": 2
+  },
+  "D0055": {
+    "o": [
+      "P = d(mm) × F",
+      "P = d(cm) × F",
+      "P = F / d(cm)",
+      "P = d(cm)² × F"
+    ],
+    "a": 1
+  },
+  "D0078": {
+    "o": [
+      "Tap water exposure in lens wear",
+      "Wearing reading glasses",
+      "Daily disposable lens use",
+      "Polycarbonate spectacle lenses"
+    ],
+    "a": 0
+  },
+  "D0083": {
+    "o": [
+      "It binds the lens and is toxic",
+      "It discolors the lens material",
+      "It has no effect on lenses",
+      "It dissolves the lens matrix"
+    ],
+    "a": 0
+  },
+  "D0084": {
+    "o": [
+      "Bacterial infection of the lid",
+      "Ultraviolet light exposure",
+      "Corneal hypoxia alone",
+      "Lens deposits and friction"
+    ],
+    "a": 3
+  },
+  "D0093": {
+    "o": [
+      "Perfect central positioning",
+      "Too little lens movement",
+      "It steepens the cornea",
+      "Excess movement, decentered"
+    ],
+    "a": 3
+  },
+  "D0103": {
+    "o": [
+      "The same sign as the original",
+      "Half the original power",
+      "The sum of sphere and cylinder",
+      "The original sign reversed"
+    ],
+    "a": 3
+  },
+  "D0109": {
+    "o": [
+      "Chromatic aberration at near",
+      "Excess edge thickness",
+      "Peripheral spherical aberration",
+      "Vertical prism imbalance"
+    ],
+    "a": 3
+  },
+  "D0117": {
+    "o": [
+      "Excessive lens movement",
+      "Marked lens decentration",
+      "Inferior dropping of the lens",
+      "Too little movement"
+    ],
+    "a": 3
+  },
+  "D0122": {
+    "o": [
+      "Reversible epithelial edema",
+      "Normal aging of the tear film",
+      "Temporary stromal thinning",
+      "Irreversible endothelial change"
+    ],
+    "a": 3
+  },
+  "D0128": {
+    "o": [
+      "Is easier to calculate with",
+      "Matches the tear film exactly",
+      "Corrects for the tear prism",
+      "Absorbs the posterior surface"
+    ],
+    "a": 3
+  },
+  "D0144": {
+    "o": [
+      "Restricting tear exchange",
+      "Inducing corneal hypoxia",
+      "Causing no harm at all",
+      "Excess movement and rubbing"
+    ],
+    "a": 3
+  }
+}
