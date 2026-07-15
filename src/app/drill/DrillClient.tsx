@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
@@ -41,7 +41,10 @@ export default function DrillClient({ pool, dueCount }: Props) {
   const [overtime, setOvertime] = useState(false)
   const [saving, setSaving] = useState(false)
   const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
-  const [srsResult, setSrsResult] = useState<RecordResult | null>(null)
+  // Running totals of what this drill has fed the review queue. State, not a ref: the
+  // done screen renders straight from it, so a response landing late just updates the
+  // number instead of being missed.
+  const [srsTotals, setSrsTotals] = useState<RecordResult>({ added: 0, advanced: 0, reset: 0 })
 
   // The clock only runs while questions are on screen, and stops at zero until the user
   // chooses to go into overtime.
@@ -62,37 +65,30 @@ export default function DrillClient({ pool, dueCount }: Props) {
   // Each answer is sent the moment it is given, not batched to the end. Batching meant an
   // abandoned drill recorded nothing, so its due cards never rotated and the next drill
   // reopened on the same ones. /review already grades card-by-card; this matches it.
-  const pending = useRef<Promise<unknown>[]>([])
-  const totals = useRef({ added: 0, advanced: 0, reset: 0 })
-
-  const recordOne = useCallback((q: DrillItem, wasCorrect: boolean) => {
-    const item: RecordItem = {
-      stem: q.stem,
-      options: q.options,
-      correct: q.correct,
-      explanation: q.explanation,
+  const recordOne = useCallback((item: DrillItem, wasCorrect: boolean) => {
+    const payload: RecordItem = {
+      stem: item.stem,
+      options: item.options,
+      correct: item.correct,
+      explanation: item.explanation,
       // A review card keeps its original subject/source so it stays on one schedule
       // wherever it was answered; fresh material is tagged 'drill'.
-      subject: q.subject,
-      source: (q.isReview ? q.source : 'drill') as RecordItem['source'],
+      subject: item.subject,
+      source: (item.isReview ? item.source : 'drill') as RecordItem['source'],
       wasCorrect,
     }
-    const p = recordSession([item]).then(r => {
-      if (r) {
-        totals.current.added += r.added
-        totals.current.advanced += r.advanced
-        totals.current.reset += r.reset
-      }
+    recordSession([payload]).then(r => {
+      if (!r) return
+      setSrsTotals(t => ({
+        added: t.added + r.added,
+        advanced: t.advanced + r.advanced,
+        reset: t.reset + r.reset,
+      }))
     })
-    pending.current.push(p)
   }, [])
 
   const finish = useCallback(async (answered: boolean[]) => {
     setSaving(true)
-    // Answers were sent as they happened; wait for the stragglers so the summary is real.
-    await Promise.allSettled(pending.current)
-    setSrsResult({ ...totals.current })
-
     const score = answered.filter(Boolean).length
     try {
       const supabase = createClient()
@@ -213,19 +209,19 @@ export default function DrillClient({ pool, dueCount }: Props) {
             </p>
           </div>
 
-          {srsResult && (srsResult.added > 0 || srsResult.reset > 0 || srsResult.advanced > 0) && (
+          {(srsTotals.added > 0 || srsTotals.reset > 0 || srsTotals.advanced > 0) && (
             <Link href="/review" className="block bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 hover:bg-gray-800 transition-colors">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🧠</span>
                 <div className="flex-1">
                   <p className="text-sm font-bold text-white">
-                    {srsResult.added + srsResult.reset > 0
-                      ? `${srsResult.added + srsResult.reset} added to your review queue`
-                      : `${srsResult.advanced} recalled on schedule`}
+                    {srsTotals.added + srsTotals.reset > 0
+                      ? `${srsTotals.added + srsTotals.reset} added to your review queue`
+                      : `${srsTotals.advanced} recalled on schedule`}
                   </p>
                   <p className="text-xs text-gray-300 mt-0.5">
-                    {srsResult.added + srsResult.reset > 0 && 'Back tomorrow. '}
-                    {srsResult.advanced > 0 && `${srsResult.advanced} moved up a rung.`}
+                    {srsTotals.added + srsTotals.reset > 0 && 'Back tomorrow. '}
+                    {srsTotals.advanced > 0 && `${srsTotals.advanced} moved up a rung.`}
                   </p>
                 </div>
                 <span className="text-xs font-semibold text-white bg-white/10 px-3 py-1.5 rounded-lg">Queue →</span>
