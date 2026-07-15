@@ -12,16 +12,25 @@ export default async function HomePage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const [attemptsRes, statsRes, badgesRes, progressRes, dueRes] = await Promise.all([
+  const [attemptsRes, statsRes, badgesRes, progressRes, dueRes, trackedRes, nextDueRes] = await Promise.all([
     supabase.from('exam_attempts').select('subject, score, total, percentage, created_at').eq('user_id', user.id).order('created_at', { ascending: false }),
     supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
     supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
     supabase.from('practice_progress').select('subject, level, passed').eq('user_id', user.id),
     supabase.from('question_reviews').select('*', { count: 'exact', head: true })
       .eq('user_id', user.id).eq('retired', false).lte('due_on', todayStr()),
+    // Tracked-but-not-due, so the card can confirm the queue is collecting even on a day
+    // with nothing scheduled. Without this the whole system is invisible until it fires.
+    supabase.from('question_reviews').select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id).eq('retired', false),
+    supabase.from('question_reviews').select('due_on')
+      .eq('user_id', user.id).eq('retired', false).gt('due_on', todayStr())
+      .order('due_on', { ascending: true }).limit(1),
   ])
 
   const dueCount = dueRes.count ?? 0
+  const trackedCount = trackedRes.count ?? 0
+  const nextDue: string | null = nextDueRes.data?.[0]?.due_on ?? null
 
   const attempts = attemptsRes.data
   const userStats = statsRes.data
@@ -108,25 +117,49 @@ export default async function HomePage() {
           <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
 
-        {/* Review queue — questions you missed, back on their spaced schedule */}
-        {dueCount > 0 && (
-          <Link
-            href="/review"
-            className="block bg-gray-900 border border-gray-700 rounded-2xl p-4 mb-4 hover:bg-gray-800 transition-colors"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🧠</span>
-              <div className="flex-1">
-                <p className="text-sm font-bold text-white">
-                  {dueCount} question{dueCount > 1 ? 's' : ''} due for review
-                </p>
-                <p className="text-xs text-gray-300 mt-0.5">
-                  Ones you missed, back at the point you&apos;re about to forget them. Do these first.
-                </p>
+        {/* Review queue — questions you missed, back on their spaced schedule.
+            Shown whenever anything is tracked, not only when due: a card that appears
+            only on firing days gives no way to tell the queue is collecting at all. */}
+        {trackedCount > 0 && (
+          dueCount > 0 ? (
+            <Link
+              href="/review"
+              className="block bg-gray-900 border border-gray-700 rounded-2xl p-4 mb-4 hover:bg-gray-800 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🧠</span>
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-white">
+                    {dueCount} question{dueCount > 1 ? 's' : ''} due for review
+                  </p>
+                  <p className="text-xs text-gray-300 mt-0.5">
+                    Ones you missed, back at the point you&apos;re about to forget them. Do these first.
+                  </p>
+                </div>
+                <span className="text-xs font-semibold text-white bg-white/10 px-3 py-1.5 rounded-lg">Start →</span>
               </div>
-              <span className="text-xs font-semibold text-white bg-white/10 px-3 py-1.5 rounded-lg">Start →</span>
-            </div>
-          </Link>
+            </Link>
+          ) : (
+            <Link
+              href="/review"
+              className="block bg-white border border-gray-200 rounded-2xl p-4 mb-4 hover:border-gray-300 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🧠</span>
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-gray-900">
+                    Review queue: {trackedCount} tracked, nothing due today
+                  </p>
+                  <p className="text-xs text-gray-500 mt-0.5">
+                    {nextDue
+                      ? `Next batch lands ${new Date(nextDue + 'T00:00:00').toLocaleDateString(undefined, { weekday: 'long' })}. The gap is doing the work.`
+                      : 'Questions you miss land here automatically.'}
+                  </p>
+                </div>
+                <span className="text-xs font-semibold text-gray-400">View →</span>
+              </div>
+            </Link>
+          )
         )}
 
         {/* Gamification stats bar */}

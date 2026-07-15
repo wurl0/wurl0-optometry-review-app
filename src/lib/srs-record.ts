@@ -1,8 +1,15 @@
 import { Question } from './types'
 
 // Client-side helper: hands a finished session's questions and results to the review
-// queue. Fire-and-forget — a failure here must never block a result screen, since the
+// queue and reports back what happened, so a result screen can say so. A failure here
+// must never block the screen — it resolves null and the caller shows nothing, since the
 // score itself is already saved through its own path.
+
+export interface RecordResult {
+  added: number     // new cards entering the queue
+  advanced: number  // due cards recalled correctly here, moved up a rung
+  reset: number     // cards already in the queue, missed again
+}
 
 export interface RecordItem {
   stem: string
@@ -14,15 +21,21 @@ export interface RecordItem {
   wasCorrect: boolean
 }
 
-export async function recordSession(items: RecordItem[]): Promise<void> {
-  if (!items.length) return
+export async function recordSession(items: RecordItem[]): Promise<RecordResult | null> {
+  if (!items.length) return null
   try {
-    await fetch('/api/srs/record', {
+    const res = await fetch('/api/srs/record', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ items }),
     })
-  } catch {}
+    if (!res.ok) return null
+    const data = await res.json()
+    if (typeof data?.added !== 'number') return null
+    return data as RecordResult
+  } catch {
+    return null
+  }
 }
 
 // Zips a session's question list with its per-question outcomes.

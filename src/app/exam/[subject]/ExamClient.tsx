@@ -78,8 +78,9 @@ export default function ExamClient({ subject, questions }: Props) {
     let gamification: GamificationResult | undefined
 
     // Feed the review queue. Skipped questions are left out — a blank is not a graded
-    // retrieval, so it should not schedule a card either way.
-    recordSession(
+    // retrieval, so it should not schedule a card either way. Awaited so the result page
+    // can report it; a silent harvest leaves no way to tell it ran.
+    const srs = await recordSession(
       shuffled.flatMap((q, i) =>
         answers[i] === null
           ? []
@@ -121,7 +122,7 @@ export default function ExamClient({ subject, questions }: Props) {
       }
     } catch {}
 
-    localStorage.setItem(`ole_result_${subject.slug}`, JSON.stringify({ ...result, questions: shuffled, gamification }))
+    localStorage.setItem(`ole_result_${subject.slug}`, JSON.stringify({ ...result, questions: shuffled, gamification, srs }))
     router.push(`/results/${subject.slug}`)
   }, [answers, shuffled, subject, router])
 

@@ -6,10 +6,12 @@ import { Question, ExamResult } from '@/lib/types'
 import { SUBJECTS, COLOR_MAP } from '@/lib/subjects'
 import { Badge } from '@/lib/badges'
 import { GamificationResult } from '@/lib/gamification'
+import { type RecordResult } from '@/lib/srs-record'
 
 interface StoredResult extends ExamResult {
   questions: Question[]
   gamification?: GamificationResult
+  srs?: RecordResult | null
 }
 
 export default function ResultsPage() {
@@ -32,7 +34,7 @@ export default function ResultsPage() {
 
   if (!result || !subject) return null
 
-  const { score, total, percentage, answers, questions, gamification } = result
+  const { score, total, percentage, answers, questions, gamification, srs } = result
   const passing = percentage >= 75
 
   const wrongIndices = questions.reduce<number[]>((acc, q, i) => {
@@ -99,6 +101,27 @@ export default function ResultsPage() {
             </div>
           </div>
         </div>
+
+        {/* Review queue — what this exam fed into spaced repetition */}
+        {srs && (srs.added > 0 || srs.reset > 0 || srs.advanced > 0) && (
+          <Link href="/review" className="block bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 mb-3 hover:bg-gray-800 transition-colors">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div className="flex-1">
+                <p className="text-sm font-bold text-white">
+                  {srs.added + srs.reset > 0
+                    ? `${srs.added + srs.reset} added to your review queue`
+                    : `${srs.advanced} recalled on schedule`}
+                </p>
+                <p className="text-xs text-gray-300 mt-0.5">
+                  {srs.added + srs.reset > 0 && 'Back tomorrow, then on a widening gap until they stick. '}
+                  {srs.advanced > 0 && `${srs.advanced} due one${srs.advanced > 1 ? 's' : ''} moved up a rung.`}
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-white bg-white/10 px-3 py-1.5 rounded-lg">Queue →</span>
+            </div>
+          </Link>
+        )}
 
         {/* XP + badges */}
         {gamification && gamification.xpEarned > 0 && (

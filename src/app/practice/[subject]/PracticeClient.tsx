@@ -5,7 +5,7 @@ import { Question, Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
-import { recordSession, itemsFromSession } from '@/lib/srs-record'
+import { recordSession, itemsFromSession, type RecordResult } from '@/lib/srs-record'
 
 const LEVEL_CONFIG = [
   { level: 1, label: 'Level 1', questions: 25, description: 'Foundation', emoji: '🌱' },
@@ -64,6 +64,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
   const [sessionAnswers, setSessionAnswers] = useState<{ isCorrect: boolean }[]>([])
   const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
   const [gamLoading, setGamLoading] = useState(false)
+  const [srsResult, setSrsResult] = useState<RecordResult | null>(null)
 
   // Result state
   const [levelResult, setLevelResult] = useState<{ score: number; total: number; pct: number; passed: boolean } | null>(null)
@@ -83,6 +84,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
     setRevealed(false)
     setSessionAnswers([])
     setGamResult(null)
+    setSrsResult(null)
     setLevelResult(null)
     setPhase('playing')
   }
@@ -109,8 +111,11 @@ export default function PracticeClient({ subject, questions, levelProgress: init
       const passed = pct >= PASS_THRESHOLD
 
       // Feed the review queue: misses enter it, and anything already due that came back
-      // right here advances on schedule.
-      recordSession(itemsFromSession(levelQuestions, next.map(a => a.isCorrect), subject.slug, 'practice'))
+      // right here advances on schedule. Awaited so the result screen can report it —
+      // a silent harvest leaves no way to tell it ran.
+      setSrsResult(await recordSession(
+        itemsFromSession(levelQuestions, next.map(a => a.isCorrect), subject.slug, 'practice')
+      ))
 
       try {
         const supabase = createClient()
@@ -348,6 +353,26 @@ export default function PracticeClient({ subject, questions, levelProgress: init
             <div className="bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4">
               <p className="text-sm font-bold text-white">🏆 Full Exam unlocked!</p>
               <p className="text-xs text-gray-300 mt-0.5">You&apos;ve passed all 3 levels. The full exam is now available.</p>
+            </div>
+          )}
+
+          {/* Review queue — what this session fed into spaced repetition */}
+          {srsResult && (srsResult.added > 0 || srsResult.reset > 0 || srsResult.advanced > 0) && (
+            <div className="bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🧠</span>
+                <div>
+                  <p className="text-sm font-bold text-white">
+                    {srsResult.added + srsResult.reset > 0
+                      ? `${srsResult.added + srsResult.reset} added to your review queue`
+                      : `${srsResult.advanced} recalled on schedule`}
+                  </p>
+                  <p className="text-xs text-gray-300 mt-0.5">
+                    {srsResult.added + srsResult.reset > 0 && 'Back tomorrow, then on a widening gap until they stick. '}
+                    {srsResult.advanced > 0 && `${srsResult.advanced} due one${srsResult.advanced > 1 ? 's' : ''} moved up a rung.`}
+                  </p>
+                </div>
+              </div>
             </div>
           )}
 
