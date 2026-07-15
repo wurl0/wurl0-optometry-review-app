@@ -5,6 +5,7 @@ import { Question, Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
+import { recordSession, itemsFromSession } from '@/lib/srs-record'
 
 const LEVEL_CONFIG = [
   { level: 1, label: 'Level 1', questions: 25, description: 'Foundation', emoji: '🌱' },
@@ -106,6 +107,10 @@ export default function PracticeClient({ subject, questions, levelProgress: init
       const total = next.length
       const pct = Math.round((score / total) * 100)
       const passed = pct >= PASS_THRESHOLD
+
+      // Feed the review queue: misses enter it, and anything already due that came back
+      // right here advances on schedule.
+      recordSession(itemsFromSession(levelQuestions, next.map(a => a.isCorrect), subject.slug, 'practice'))
 
       try {
         const supabase = createClient()

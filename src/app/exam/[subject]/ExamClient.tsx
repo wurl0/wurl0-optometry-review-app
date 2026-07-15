@@ -5,6 +5,7 @@ import { Question, Subject, ExamResult } from '@/lib/types'
 import { createClient } from '@/lib/supabase-client'
 import { COLOR_MAP } from '@/lib/subjects'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
+import { recordSession } from '@/lib/srs-record'
 
 interface Props {
   subject: Subject
@@ -75,6 +76,24 @@ export default function ExamClient({ subject, questions }: Props) {
     }
 
     let gamification: GamificationResult | undefined
+
+    // Feed the review queue. Skipped questions are left out — a blank is not a graded
+    // retrieval, so it should not schedule a card either way.
+    recordSession(
+      shuffled.flatMap((q, i) =>
+        answers[i] === null
+          ? []
+          : [{
+              stem: q.stem,
+              options: q.options,
+              correct: q.correct,
+              explanation: q.explanation,
+              subject: subject.slug,
+              source: 'exam' as const,
+              wasCorrect: answers[i] === q.correct,
+            }],
+      ),
+    )
 
     try {
       const supabase = createClient()

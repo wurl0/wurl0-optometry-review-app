@@ -5,18 +5,23 @@ import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
 import { canOpenItem, isAdmin, type Access } from '@/lib/access'
+import { todayStr } from '@/lib/srs'
 
 export default async function HomePage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const [attemptsRes, statsRes, badgesRes, progressRes] = await Promise.all([
+  const [attemptsRes, statsRes, badgesRes, progressRes, dueRes] = await Promise.all([
     supabase.from('exam_attempts').select('subject, score, total, percentage, created_at').eq('user_id', user.id).order('created_at', { ascending: false }),
     supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
     supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
     supabase.from('practice_progress').select('subject, level, passed').eq('user_id', user.id),
+    supabase.from('question_reviews').select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id).eq('retired', false).lte('due_on', todayStr()),
   ])
+
+  const dueCount = dueRes.count ?? 0
 
   const attempts = attemptsRes.data
   const userStats = statsRes.data
@@ -102,6 +107,27 @@ export default async function HomePage() {
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
           <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
+
+        {/* Review queue — questions you missed, back on their spaced schedule */}
+        {dueCount > 0 && (
+          <Link
+            href="/review"
+            className="block bg-gray-900 border border-gray-700 rounded-2xl p-4 mb-4 hover:bg-gray-800 transition-colors"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div className="flex-1">
+                <p className="text-sm font-bold text-white">
+                  {dueCount} question{dueCount > 1 ? 's' : ''} due for review
+                </p>
+                <p className="text-xs text-gray-300 mt-0.5">
+                  Ones you missed, back at the point you&apos;re about to forget them. Do these first.
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-white bg-white/10 px-3 py-1.5 rounded-lg">Start →</span>
+            </div>
+          </Link>
+        )}
 
         {/* Gamification stats bar */}
         <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-6 grid grid-cols-3 gap-4">
