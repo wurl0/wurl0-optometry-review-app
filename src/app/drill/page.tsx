@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase-server'
 import { SUBJECTS } from '@/lib/subjects'
 import { QUESTION_MAP } from '@/lib/banks'
 import { todayStr, type QuestionPayload } from '@/lib/srs'
+import { loadAccess, canServeCard } from '@/lib/access'
 import { Question } from '@/lib/types'
 import DrillClient, { type DrillItem } from './DrillClient'
 
@@ -50,6 +51,8 @@ export default async function DrillPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
+  const access = await loadAccess(supabase, user)
+
   const [dueRes, attemptsRes] = await Promise.all([
     supabase
       .from('question_reviews')
@@ -58,7 +61,7 @@ export default async function DrillPage() {
       .eq('retired', false)
       .lte('due_on', todayStr())
       .order('due_on', { ascending: true })
-      .limit(MAX_DUE_IN_DRILL),
+      .limit(MAX_DUE_IN_DRILL * 2), // headroom: some may fail the access re-check below
     supabase
       .from('exam_attempts')
       .select('subject, percentage, created_at')
@@ -67,20 +70,24 @@ export default async function DrillPage() {
   ])
 
   // Due review cards, carrying their original subject/source so grading them here feeds
-  // the same schedule as /review would.
-  const dueItems: DrillItem[] = (dueRes.data ?? []).map(r => {
-    const p = r.payload as QuestionPayload
-    return {
-      stem: p.stem,
-      options: p.options,
-      correct: p.correct,
-      explanation: p.explanation,
-      subject: r.subject,
-      source: r.source,
-      subjectLabel: SUBJECTS.find(s => s.slug === r.subject)?.name ?? r.subject,
-      isReview: true,
-    }
-  })
+  // the same schedule as /review would. Re-authorised against CURRENT access: a card
+  // stores a snapshot of its question, so a revoked grant must stop it surfacing here.
+  const dueItems: DrillItem[] = (dueRes.data ?? [])
+    .filter(r => canServeCard(access, r.subject, r.source))
+    .slice(0, MAX_DUE_IN_DRILL)
+    .map(r => {
+      const p = r.payload as QuestionPayload
+      return {
+        stem: p.stem,
+        options: p.options,
+        correct: p.correct,
+        explanation: p.explanation,
+        subject: r.subject,
+        source: r.source,
+        subjectLabel: SUBJECTS.find(s => s.slug === r.subject)?.name ?? r.subject,
+        isReview: true,
+      }
+    })
 
   // Bias fresh material toward what has gone untested. A subject with no attempt at all
   // sorts first; otherwise the weakest recent score leads.

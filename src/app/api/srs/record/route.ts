@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase-server'
 import { questionId, schedule, todayStr, type QuestionPayload } from '@/lib/srs'
+import { loadAccess, canServeCard } from '@/lib/access'
 
 // Harvests a finished session's results into the review queue.
 //
@@ -39,6 +40,11 @@ export async function POST(req: NextRequest) {
   if (!items.length) return NextResponse.json({ error: 'No items' }, { status: 400 })
   if (items.length > MAX_ITEMS) return NextResponse.json({ error: 'Too many items' }, { status: 400 })
 
+  // The body is client-supplied, so a card may only be stored for content this user can
+  // currently open. Same rule the pages serve by: nothing enters the queue that /review
+  // would then refuse to show.
+  const access = await loadAccess(supabase, user)
+
   // Validate and key each item by its stem hash, dropping anything malformed.
   const clean = new Map<string, { subject: string; source: string; payload: QuestionPayload; wasCorrect: boolean }>()
   for (const it of items) {
@@ -46,6 +52,7 @@ export async function POST(req: NextRequest) {
     if (typeof it.subject !== 'string' || !it.subject.trim()) continue
     if (typeof it.source !== 'string' || !SOURCES.has(it.source)) continue
     if (typeof it.correct !== 'number' && typeof it.correct !== 'boolean') continue
+    if (!canServeCard(access, it.subject, it.source)) continue
 
     clean.set(questionId(it.stem), {
       subject: it.subject.slice(0, 60),

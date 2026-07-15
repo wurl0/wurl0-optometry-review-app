@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { todayStr, type ReviewCard, type QuestionPayload } from '@/lib/srs'
+import { loadAccess, canServeCard } from '@/lib/access'
 import { subjectLabel } from './labels'
 import ReviewClient from './ReviewClient'
 
@@ -25,8 +26,9 @@ export default async function ReviewPage() {
   if (!user) redirect('/login')
 
   const today = todayStr()
+  const access = await loadAccess(supabase, user)
 
-  const [{ data: dueRows }, { count: queueCount }, { count: solidCount }] = await Promise.all([
+  const [{ data: dueRows }, { data: allRows }] = await Promise.all([
     supabase
       .from('question_reviews')
       .select('question_id, subject, source, payload, box, due_on, reps, lapses')
@@ -34,20 +36,26 @@ export default async function ReviewPage() {
       .eq('retired', false)
       .lte('due_on', today)
       .order('due_on', { ascending: true })
-      .limit(SESSION_CAP),
+      .limit(SESSION_CAP * 2), // headroom: some may be filtered out below
+    // Counted in JS rather than by the database, because the totals have to be filtered
+    // by the same access rule as the cards. A count that disagrees with what the page
+    // serves is worse than no count.
     supabase
       .from('question_reviews')
-      .select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .eq('retired', false),
-    supabase
-      .from('question_reviews')
-      .select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .eq('retired', true),
+      .select('subject, source, retired')
+      .eq('user_id', user.id),
   ])
 
-  const rows = (dueRows ?? []) as Row[]
+  // Re-authorise every card against CURRENT access. A card outlives the grant that
+  // produced it, so a revoked grant must stop serving its questions here too.
+  const rows = ((dueRows ?? []) as Row[])
+    .filter(r => canServeCard(access, r.subject, r.source))
+    .slice(0, SESSION_CAP)
+
+  const servable = ((allRows ?? []) as { subject: string; source: string; retired: boolean }[])
+    .filter(r => canServeCard(access, r.subject, r.source))
+  const queueCount = servable.filter(r => !r.retired).length
+  const solidCount = servable.filter(r => r.retired).length
 
   const cards: ReviewCard[] = rows.map(r => ({
     questionId: r.question_id,
@@ -88,8 +96,8 @@ export default async function ReviewPage() {
     <ReviewClient
       cards={interleaved}
       labels={labels}
-      queueTotal={queueCount ?? 0}
-      solidTotal={solidCount ?? 0}
+      queueTotal={queueCount}
+      solidTotal={solidCount}
     />
   )
 }

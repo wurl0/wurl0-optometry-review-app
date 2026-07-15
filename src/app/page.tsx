@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
-import { canOpenItem, isAdmin, type Access } from '@/lib/access'
+import { canOpenItem, isAdmin, loadAccess, canServeCard } from '@/lib/access'
 import { todayStr } from '@/lib/srs'
 
 export default async function HomePage() {
@@ -12,25 +12,17 @@ export default async function HomePage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  const [attemptsRes, statsRes, badgesRes, progressRes, dueRes, trackedRes, nextDueRes] = await Promise.all([
+  const [attemptsRes, statsRes, badgesRes, progressRes, reviewRes] = await Promise.all([
     supabase.from('exam_attempts').select('subject, score, total, percentage, created_at').eq('user_id', user.id).order('created_at', { ascending: false }),
     supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
     supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
     supabase.from('practice_progress').select('subject, level, passed').eq('user_id', user.id),
-    supabase.from('question_reviews').select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id).eq('retired', false).lte('due_on', todayStr()),
-    // Tracked-but-not-due, so the card can confirm the queue is collecting even on a day
-    // with nothing scheduled. Without this the whole system is invisible until it fires.
-    supabase.from('question_reviews').select('*', { count: 'exact', head: true })
+    // Every live card. Counted in JS because the totals must be filtered by the same
+    // access rule that /review and /drill use to serve them: a home count that disagrees
+    // with what those pages show would be worse than no count.
+    supabase.from('question_reviews').select('subject, source, due_on')
       .eq('user_id', user.id).eq('retired', false),
-    supabase.from('question_reviews').select('due_on')
-      .eq('user_id', user.id).eq('retired', false).gt('due_on', todayStr())
-      .order('due_on', { ascending: true }).limit(1),
   ])
-
-  const dueCount = dueRes.count ?? 0
-  const trackedCount = trackedRes.count ?? 0
-  const nextDue: string | null = nextDueRes.data?.[0]?.due_on ?? null
 
   const attempts = attemptsRes.data
   const userStats = statsRes.data
@@ -38,14 +30,19 @@ export default async function HomePage() {
 
   // Top 2 reviewer access (tier + per-user grants). Defaults to base if the
   // migration has not run yet (select errors, profile is null).
-  const { data: profRow } = await supabase
-    .from('profiles').select('tier, grants').eq('user_id', user.id).single()
-  const pr = profRow as { tier?: string; grants?: string[] } | null
-  const access: Access = {
-    tier: pr?.tier ?? 'base',
-    grants: pr?.grants ?? [],
-    isEnvAdmin: user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL,
-  }
+  const access = await loadAccess(supabase, user)
+
+  // Review-queue counts, filtered by the same access rule /review and /drill serve by,
+  // so the number on this card always matches what those pages will actually show.
+  const liveCards = ((reviewRes.data ?? []) as { subject: string; source: string; due_on: string }[])
+    .filter(r => canServeCard(access, r.subject, r.source))
+  const today0 = todayStr()
+  const dueCount = liveCards.filter(r => r.due_on <= today0).length
+  const trackedCount = liveCards.length
+  const nextDue: string | null = liveCards
+    .filter(r => r.due_on > today0)
+    .map(r => r.due_on)
+    .sort()[0] ?? null
   // Readiness has its own dedicated card below, so keep it out of the generic
   // granted-item cards. Readiness is intentionally excluded from the main app
   // home; it lives in the cockpit and the static Top 2 home only.
