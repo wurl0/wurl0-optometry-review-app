@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
 
   const { data: card } = await supabase
     .from('question_reviews')
-    .select('box, reps, lapses')
+    .select('box, reps, lapses, retired, swept_at')
     .eq('user_id', user.id)
     .eq('question_id', qid)
     .single()
@@ -27,6 +27,12 @@ export async function POST(req: NextRequest) {
   if (!card) return NextResponse.json({ error: 'Card not found' }, { status: 404 })
 
   const next = schedule(card.box, correct)
+
+  // A card that was RETIRED when it was served can only have come from the sweep, so this
+  // grading IS its final pass. Stamp it so it is not swept twice — whether it survived
+  // (retires again) or not (drops to the bottom rung and rejoins the ladder).
+  const wasSweep = card.retired === true
+  const sweptAt = wasSweep ? new Date().toISOString() : card.swept_at
 
   const { error } = await supabase
     .from('question_reviews')
@@ -36,6 +42,7 @@ export async function POST(req: NextRequest) {
       retired: next.retired,
       reps: card.reps + 1,
       lapses: correct ? card.lapses : card.lapses + 1,
+      swept_at: sweptAt,
       updated_at: new Date().toISOString(),
     })
     .eq('user_id', user.id)

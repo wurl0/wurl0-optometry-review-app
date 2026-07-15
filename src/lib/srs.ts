@@ -102,3 +102,40 @@ export function schedule(box: number, correct: boolean, now: Date = new Date()):
 export function boxLabel(box: number): string {
   return `Step ${box + 1} of ${INTERVALS.length}`
 }
+
+// ─── The pre-exam sweep ───────────────────────────────────────────────────────────
+//
+// Clearing the ladder retires a card, and nothing brings it back. For a fixed exam date
+// that leaves a hole: a card retired on 12 Aug gets no retrieval at all for the 47 days
+// before 28 Sept. The sweep gives every retired card one final pass during the taper.
+//
+// It needs no new scheduling. A retired card sits on the top rung (box = LAST_BOX), so
+// feeding it back through the normal grader does the right thing by itself:
+//   recalled -> schedule(LAST_BOX, true)  -> retires again, stays solid
+//   missed   -> schedule(LAST_BOX, false) -> bottom rung, due tomorrow, back in the queue
+// swept_at only records that a card has had its pass, so it is not swept twice.
+//
+// The window matches the taper in the study plan (high-yield only, 3 hrs/day), which is
+// where the time for this is already budgeted. It closes a week before the exam so the
+// last stretch stays clear.
+export const SWEEP_START = '2026-09-01'
+export const SWEEP_END = '2026-09-21'
+
+export function isSweepWindow(today: string = todayStr()): boolean {
+  return today >= SWEEP_START && today <= SWEEP_END
+}
+
+const MAX_SWEEP_PER_SESSION = 15
+
+// How many retired cards to resurface today: the backlog spread over the days left in the
+// window, so it self-balances if a day is skipped, and never dumps the whole pile at once.
+export function sweepQuota(unswept: number, today: string = todayStr()): number {
+  if (unswept <= 0 || !isSweepWindow(today)) return 0
+  const daysLeft = Math.max(
+    1,
+    Math.round(
+      (new Date(SWEEP_END + 'T00:00:00Z').getTime() - new Date(today + 'T00:00:00Z').getTime()) / 86400000,
+    ) + 1,
+  )
+  return Math.min(MAX_SWEEP_PER_SESSION, Math.ceil(unswept / daysLeft))
+}

@@ -208,7 +208,14 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
             {labels[card.subject] ?? card.subject}
           </span>
           <span className="text-xs text-gray-400">{SOURCE_LABEL[card.source] ?? card.source}</span>
-          <span className="text-xs text-gray-400">· {boxLabel(card.box)}</span>
+          {/* A sweep card arrives already retired: this is its one final check. */}
+          {card.retired ? (
+            <span className="text-xs font-semibold text-teal-700 bg-teal-100 px-2 py-0.5 rounded-full">
+              final check
+            </span>
+          ) : (
+            <span className="text-xs text-gray-400">· {boxLabel(card.box)}</span>
+          )}
           {card.lapses > 1 && (
             <span className="text-xs font-semibold text-orange-700 bg-orange-100 px-2 py-0.5 rounded-full">
               missed {card.lapses}×
@@ -267,7 +274,11 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
           <>
             <div className={`mt-4 rounded-2xl border p-5 ${selected === card.payload.correct ? 'bg-green-50 border-green-200' : 'bg-orange-50 border-orange-200'}`}>
               <p className={`text-sm font-bold mb-2 ${selected === card.payload.correct ? 'text-green-900' : 'text-orange-900'}`}>
-                {selected === card.payload.correct ? '✓ Recalled' : '✗ Missed again — resets to tomorrow'}
+                {selected === card.payload.correct
+                  ? (card.retired ? '✓ Still solid — stays retired' : '✓ Recalled')
+                  : (card.retired
+                      ? '✗ It had faded — back into the queue from the bottom'
+                      : '✗ Missed again — resets to tomorrow')}
               </p>
               {card.payload.explanation && (
                 <p className={`text-sm leading-relaxed ${selected === card.payload.correct ? 'text-green-800' : 'text-orange-800'}`}>

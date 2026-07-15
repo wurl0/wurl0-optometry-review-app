@@ -5,7 +5,7 @@ import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
 import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
 import { canOpenItem, isAdmin, loadAccess, canServeCard } from '@/lib/access'
-import { todayStr } from '@/lib/srs'
+import { todayStr, sweepQuota } from '@/lib/srs'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -17,11 +17,13 @@ export default async function HomePage() {
     supabase.from('user_stats').select('xp, streak, daily_goal, daily_done, daily_date').eq('user_id', user.id).single(),
     supabase.from('user_badges').select('badge_id').eq('user_id', user.id),
     supabase.from('practice_progress').select('subject, level, passed').eq('user_id', user.id),
-    // Every live card. Counted in JS because the totals must be filtered by the same
-    // access rule that /review and /drill use to serve them: a home count that disagrees
-    // with what those pages show would be worse than no count.
-    supabase.from('question_reviews').select('subject, source, due_on')
-      .eq('user_id', user.id).eq('retired', false),
+    // Every card, retired ones included: during the taper the sweep serves from the solid
+    // pile, so a count that ignored them would promise "nothing due" and then hand over 15
+    // questions. Counted in JS because the totals must be filtered by the same access rule
+    // /review and /drill serve by — a home count that disagrees with those pages would be
+    // worse than no count at all.
+    supabase.from('question_reviews').select('subject, source, due_on, retired, swept_at')
+      .eq('user_id', user.id),
   ])
 
   const attempts = attemptsRes.data
@@ -34,11 +36,15 @@ export default async function HomePage() {
 
   // Review-queue counts, filtered by the same access rule /review and /drill serve by,
   // so the number on this card always matches what those pages will actually show.
-  const liveCards = ((reviewRes.data ?? []) as { subject: string; source: string; due_on: string }[])
+  const allCards = ((reviewRes.data ?? []) as
+    { subject: string; source: string; due_on: string; retired: boolean; swept_at: string | null }[])
     .filter(r => canServeCard(access, r.subject, r.source))
   const today0 = todayStr()
-  const dueCount = liveCards.filter(r => r.due_on <= today0).length
+  const liveCards = allCards.filter(r => !r.retired)
   const trackedCount = liveCards.length
+  // What /review will actually serve: today's schedule plus the taper's final checks.
+  const sweepToday = sweepQuota(allCards.filter(r => r.retired && !r.swept_at).length, today0)
+  const dueCount = liveCards.filter(r => r.due_on <= today0).length + sweepToday
   const nextDue: string | null = liveCards
     .filter(r => r.due_on > today0)
     .map(r => r.due_on)
@@ -136,7 +142,7 @@ export default async function HomePage() {
         {/* Review queue — questions you missed, back on their spaced schedule.
             Shown whenever anything is tracked, not only when due: a card that appears
             only on firing days gives no way to tell the queue is collecting at all. */}
-        {trackedCount > 0 && (
+        {(trackedCount > 0 || dueCount > 0) && (
           dueCount > 0 ? (
             <Link
               href="/review"
