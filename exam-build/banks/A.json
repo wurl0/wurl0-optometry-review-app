@@ -5,9 +5,9 @@
   "t": "A1 Body & CN",
   "q": "Which cranial nerve is completely decussated, innervating the contralateral superior oblique?",
   "o": [
-   "CN6",
-   "CN5",
    "CN3",
+   "CN5",
+   "CN6",
    "CN4"
   ],
   "a": 3,
@@ -22,8 +22,8 @@
   "q": "A pupil-involving CN3 palsy (ptosis, eye down-and-out, dilated fixed pupil) is concerning for:",
   "o": [
    "Diabetic microvascular ischemia",
-   "Myasthenia gravis",
    "Benign variant",
+   "Myasthenia gravis",
    "Compressive aneurysm"
   ],
   "a": 3,
@@ -37,10 +37,10 @@
   "t": "A1 Body & CN",
   "q": "In CN3 palsy, an ischemic (diabetic) cause classically:",
   "o": [
-   "Dilates the pupil",
+   "Causes bilateral blindness",
    "Causes nystagmus",
    "Spares the pupil",
-   "Causes bilateral blindness"
+   "Dilates the pupil"
   ],
   "a": 2,
   "w": "Ischemia hits the inner motor fibers first and spares the outer pupillomotor fibers, so the pupil is spared.",
@@ -55,8 +55,8 @@
   "o": [
    "CN7",
    "CN5",
-   "CN2",
-   "CN3"
+   "CN3",
+   "CN2"
   ],
   "a": 1,
   "w": "The ophthalmic division (V1) of the trigeminal, via the nasociliary nerve, provides corneal sensation.",
@@ -69,9 +69,9 @@
   "t": "A1 Body & CN",
   "q": "Which division of the trigeminal nerve is the smallest and purely sensory?",
   "o": [
-   "V2 maxillary",
-   "V1 ophthalmic",
    "V3 mandibular",
+   "V1 ophthalmic",
+   "V2 maxillary",
    "All are mixed"
   ],
   "a": 1,
@@ -85,9 +85,9 @@
   "t": "A1 Body & CN",
   "q": "Orbital cellulitis most commonly spreads from which sinus?",
   "o": [
-   "Sphenoidal",
    "Frontal",
    "Maxillary",
+   "Sphenoidal",
    "Ethmoidal"
   ],
   "a": 3,
@@ -101,9 +101,9 @@
   "t": "A1 Body & CN",
   "q": "Sphenoidal sinusitis is classically associated with which ocular complication?",
   "o": [
+   "Blowout fracture",
    "Orbital cellulitis",
    "Dacryocystitis",
-   "Blowout fracture",
    "Retrobulbar neuritis"
   ],
   "a": 3,
@@ -118,9 +118,9 @@
   "q": "Which cranial nerve mediates both eyelid closure and reflex lacrimal secretion?",
   "o": [
    "CN5",
-   "CN6",
+   "CN3",
    "CN7",
-   "CN3"
+   "CN6"
   ],
   "a": 2,
   "w": "CN7 closes the lids (orbicularis) and drives reflex tearing via the greater petrosal nerve.",
@@ -133,10 +133,10 @@
   "t": "A1 Body & CN",
   "q": "The optic nerve (CN2) and ophthalmic artery enter the orbit through the:",
   "o": [
+   "Foramen rotundum",
    "Superior orbital fissure",
-   "Inferior orbital fissure",
    "Optic canal",
-   "Foramen rotundum"
+   "Inferior orbital fissure"
   ],
   "a": 2,
   "w": "CN2 and the ophthalmic artery pass through the optic canal (lesser wing of sphenoid), not the SOF.",
@@ -149,10 +149,10 @@
   "t": "A1 Body & CN",
   "q": "Which cranial nerve has the longest intracranial course?",
   "o": [
-   "CN3",
+   "CN6",
    "CN4",
-   "CN2",
-   "CN6"
+   "CN3",
+   "CN2"
   ],
   "a": 1,
   "w": "CN4 has the longest intracranial course (~75 mm) and is also the thinnest motor nerve.",
@@ -165,8 +165,8 @@
   "t": "A1 Body & CN",
   "q": "The lateral rectus is innervated by:",
   "o": [
-   "CN5",
    "CN4",
+   "CN5",
    "CN6",
    "CN3"
   ],
@@ -182,9 +182,9 @@
   "q": "The primary visual cortex (area 17) is located in which lobe?",
   "o": [
    "Occipital",
+   "Frontal",
    "Temporal",
-   "Parietal",
-   "Frontal"
+   "Parietal"
   ],
   "a": 0,
   "w": "Area 17 (primary visual cortex) sits in the medial occipital lobe.",
@@ -213,8 +213,8 @@
   "t": "A2 Orbit & EOM",
   "q": "Which extraocular muscle does NOT originate from the annulus of Zinn?",
   "o": [
-   "Superior rectus",
    "Lateral rectus",
+   "Superior rectus",
    "Medial rectus",
    "Inferior oblique"
   ],
@@ -246,8 +246,8 @@
   "q": "The superior orbital fissure transmits all EXCEPT:",
   "o": [
    "CN2",
-   "CN3",
    "CN4",
+   "CN3",
    "CN6"
   ],
   "a": 0,
@@ -261,9 +261,9 @@
   "t": "A2 Orbit & EOM",
   "q": "Which rectus muscle inserts NEAREST the limbus and is the strongest?",
   "o": [
-   "Lateral rectus",
    "Inferior rectus",
    "Superior rectus",
+   "Lateral rectus",
    "Medial rectus"
   ],
   "a": 3,
@@ -278,9 +278,9 @@
   "q": "The longest extraocular muscle is the:",
   "o": [
    "Medial rectus",
-   "Lateral rectus",
+   "Inferior oblique",
    "Superior oblique",
-   "Inferior oblique"
+   "Lateral rectus"
   ],
   "a": 2,
   "w": "The superior oblique, including its tendon, is the longest EOM at ~60 mm.",
@@ -309,10 +309,10 @@
   "t": "A2 Orbit & EOM",
   "q": "How do the rectus and oblique muscles insert relative to the equator?",
   "o": [
+   "Both in front of the equator",
    "Recti behind, obliques in front",
-   "Both behind the equator",
    "Recti in front, obliques behind the equator",
-   "Both in front of the equator"
+   "Both behind the equator"
   ],
   "a": 2,
   "w": "The recti insert anterior to the equator; the obliques insert posterior to it.",
@@ -341,10 +341,10 @@
   "t": "A2 Orbit & EOM",
   "q": "The suspensory ligament of the eyeball (a thickening of Tenon's capsule) is:",
   "o": [
-   "Whitnall's ligament",
+   "Annulus of Zinn",
    "Lockwood's ligament",
-   "Check ligament",
-   "Annulus of Zinn"
+   "Whitnall's ligament",
+   "Check ligament"
   ],
   "a": 1,
   "w": "Lockwood's ligament (with IR and IO fascia) forms the suspensory hammock of the globe.",
@@ -421,9 +421,9 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The basic (resting) aqueous tear secretion comes from:",
   "o": [
-   "Conjunctival goblet cells",
    "Meibomian glands of the tarsus",
    "The main lacrimal gland",
+   "Conjunctival goblet cells",
    "Glands of Krause and Wolfring"
   ],
   "a": 3,
@@ -437,10 +437,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Schirmer's test measures, and TBUT measures, respectively:",
   "o": [
-   "Tear film stability; aqueous volume",
    "Both measure tear film stability",
+   "Both measure aqueous volume",
    "Aqueous volume; tear film stability",
-   "Both measure aqueous volume"
+   "Tear film stability; aqueous volume"
   ],
   "a": 2,
   "w": "Schirmer = aqueous volume (normal 10–25 mm/5 min); TBUT = stability (normal >10 s).",
@@ -455,8 +455,8 @@
   "o": [
    "Punctal stenosis",
    "Evaporative dry eye",
-   "Reflex hypersecretion",
-   "Aqueous-deficient dry eye"
+   "Aqueous-deficient dry eye",
+   "Reflex hypersecretion"
   ],
   "a": 1,
   "w": "Normal aqueous volume with a short break-up time points to lipid-layer deficiency (MGD), i.e., evaporative dry eye.",
@@ -469,8 +469,8 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The nasolacrimal duct drains into the:",
   "o": [
-   "Middle meatus",
    "Superior meatus",
+   "Middle meatus",
    "Inferior meatus",
    "Sphenoethmoidal recess"
   ],
@@ -487,8 +487,8 @@
   "o": [
    "Partial ptosis from Müller's paralysis",
    "Complete ptosis from levator palsy",
-   "Variable, fatiguable ptosis",
-   "No ptosis, only miosis"
+   "No ptosis, only miosis",
+   "Variable, fatiguable ptosis"
   ],
   "a": 0,
   "w": "Horner's paralyzes Müller's muscle, giving a mild 1–2 mm ptosis. Complete ptosis needs LPS (CN3) failure.",
@@ -533,10 +533,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Goblet cells, which secrete mucin, are absent at the:",
   "o": [
-   "Plica semilunaris",
+   "Fornix",
    "Lid margins and limbus",
    "Bulbar conjunctiva",
-   "Fornix"
+   "Plica semilunaris"
   ],
   "a": 1,
   "w": "Goblet cells are densest at the fornix and absent at the lid margins and limbus.",
@@ -549,10 +549,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "A 6-week-old with unilateral epiphora and mucopurulent discharge since birth most likely has:",
   "o": [
-   "Congenital glaucoma",
+   "Lacrimal gland agenesis",
    "Gonococcal conjunctivitis",
    "Nasolacrimal duct obstruction",
-   "Lacrimal gland agenesis"
+   "Congenital glaucoma"
   ],
   "a": 2,
   "w": "A non-canalized NLD (failure at the valve of Hasner) causes stasis, infection, and chronic discharge.",
@@ -597,10 +597,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which corneal layer CANNOT regenerate after injury?",
   "o": [
-   "Tear film",
+   "Epithelium",
    "Bowman's membrane",
    "Descemet's membrane",
-   "Epithelium"
+   "Tear film"
   ],
   "a": 1,
   "w": "Bowman's (and the endothelium) cannot regenerate; epithelium and Descemet's can.",
@@ -613,9 +613,9 @@
   "t": "A2 Cornea/Sclera",
   "q": "Corneal thickness is:",
   "o": [
-   "Greater centrally than peripherally",
-   "Uniform throughout",
    "Thinnest at the limbus",
+   "Uniform throughout",
+   "Greater centrally than peripherally",
    "Thinner centrally than peripherally"
   ],
   "a": 3,
@@ -629,10 +629,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Corneal deturgescence (clarity) is maintained by:",
   "o": [
+   "Mucin from goblet cells",
    "Evaporation from the tear film",
-   "The integrity of Bowman's layer",
    "The endothelial Na-K pump",
-   "Mucin from goblet cells"
+   "The integrity of Bowman's layer"
   ],
   "a": 2,
   "w": "The endothelial Na-K ATPase pumps ions and draws water out of the stroma, keeping it clear.",
@@ -661,10 +661,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "The sclera is thickest at which point?",
   "o": [
-   "The equator",
+   "The EOM insertions",
    "The limbus",
    "The optic nerve entrance",
-   "The EOM insertions"
+   "The equator"
   ],
   "a": 2,
   "w": "The sclera is thickest (~1.0 mm) at the CN2 entrance and thinnest (~0.3 mm) under the EOM insertions.",
@@ -677,8 +677,8 @@
   "t": "A2 Cornea/Sclera",
   "q": "Why is the cornea transparent but the sclera white?",
   "o": [
-   "The sclera is much thicker than cornea",
    "They contain different cell types",
+   "The sclera is much thicker than cornea",
    "Corneal collagen is regularly spaced",
    "The cornea is more vascular than sclera"
   ],
@@ -693,9 +693,9 @@
   "t": "A2 Cornea/Sclera",
   "q": "The cornea is innervated by the nasociliary nerve in all layers EXCEPT:",
   "o": [
-   "Stroma and Bowman's layer",
    "Epithelium and stroma",
    "Epithelium and Bowman's layer",
+   "Stroma and Bowman's layer",
    "Descemet's and endothelium"
   ],
   "a": 3,
@@ -709,9 +709,9 @@
   "t": "A2 Cornea/Sclera",
   "q": "A descemetocele is:",
   "o": [
-   "A rupture of Descemet's membrane",
-   "Descemet's bulging through the stroma",
    "An ectasia of the anterior sclera",
+   "Descemet's bulging through the stroma",
+   "A rupture of Descemet's membrane",
    "A defect of the corneal epithelium"
   ],
   "a": 1,
@@ -725,10 +725,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "On gonioscopy, the most anterior landmark, a glistening line at the end of Descemet's, is:",
   "o": [
-   "Scleral spur",
+   "Trabecular meshwork",
    "Ciliary body band",
    "Schwalbe's line",
-   "Trabecular meshwork"
+   "Scleral spur"
   ],
   "a": 2,
   "w": "Schwalbe's line marks the termination of Descemet's membrane, the most anterior angle landmark.",
@@ -741,10 +741,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "The horizontal corneal diameter relative to the vertical is:",
   "o": [
-   "Variable by gaze",
    "Equal",
+   "Smaller",
    "Larger",
-   "Smaller"
+   "Variable by gaze"
   ],
   "a": 2,
   "w": "The cornea is oval, wider horizontally (~11–12 mm) than vertically (~10–11 mm).",
@@ -773,9 +773,9 @@
   "t": "A2 Uveal Tract",
   "q": "During accommodation, the ciliary muscle contracts and:",
   "o": [
-   "Pulls the lens backward",
-   "Tightens the zonules, flattening the lens",
    "Has no effect on the lens",
+   "Tightens the zonules, flattening the lens",
+   "Pulls the lens backward",
    "Relaxes the zonules, letting the lens round up"
   ],
   "a": 3,
@@ -789,8 +789,8 @@
   "t": "A2 Uveal Tract",
   "q": "The preferred surgical entry into the eye for vitreoretinal procedures is the:",
   "o": [
-   "Iris root",
    "Pars plicata",
+   "Iris root",
    "Pars plana",
    "Limbus"
   ],
@@ -821,8 +821,8 @@
   "t": "A2 Uveal Tract",
   "q": "The choroid is thickest at the:",
   "o": [
-   "Equator",
    "Ora serrata",
+   "Equator",
    "Posterior pole",
    "Anterior periphery"
   ],
@@ -837,10 +837,10 @@
   "t": "A2 Uveal Tract",
   "q": "Bilateral small, irregular pupils that constrict to near but not to light indicate:",
   "o": [
-   "Adie's tonic pupils",
+   "Marcus-Gunn pupil",
    "Argyll-Robertson pupils",
    "Horner's syndrome",
-   "Marcus-Gunn pupil"
+   "Adie's tonic pupils"
   ],
   "a": 1,
   "w": "Light-near dissociation with small irregular pupils is Argyll-Robertson (neurosyphilis, pretectal lesion).",
@@ -869,9 +869,9 @@
   "t": "A2 Uveal Tract",
   "q": "Dilute 0.125% pilocarpine constricts which pupil?",
   "o": [
-   "A Horner's syndrome pupil",
-   "A normal healthy pupil",
    "An Argyll-Robertson pupil",
+   "A normal healthy pupil",
+   "A Horner's syndrome pupil",
    "A tonic Adie's pupil"
   ],
   "a": 3,
@@ -885,9 +885,9 @@
   "t": "A2 Uveal Tract",
   "q": "The dilator pupillae lies in which zone of the iris?",
   "o": [
-   "Pupillary zone",
-   "Ciliary zone",
    "Iris root only",
+   "Ciliary zone",
+   "Pupillary zone",
    "Posterior pigment epithelium only"
   ],
   "a": 1,
@@ -917,9 +917,9 @@
   "t": "A2 Uveal Tract",
   "q": "The layer between the choroid and the RPE is:",
   "o": [
-   "Internal limiting membrane",
-   "Sclera",
    "Lamina cribrosa",
+   "Sclera",
+   "Internal limiting membrane",
    "Bruch's membrane"
   ],
   "a": 3,
@@ -933,8 +933,8 @@
   "t": "A2 Uveal Tract",
   "q": "The normal resting pupil diameter is about:",
   "o": [
-   "6 mm",
    "1 mm",
+   "6 mm",
    "8 mm",
    "3–4 mm"
   ],
@@ -949,9 +949,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "Aqueous humor is produced by the:",
   "o": [
+   "The trabecular meshwork",
    "The anterior lens epithelium",
    "The choriocapillaris",
-   "The trabecular meshwork",
    "Non-pigment ciliary epithelium"
   ],
   "a": 3,
@@ -982,8 +982,8 @@
   "q": "Which lens capsule region is thickest (and the thickest basement membrane in the body)?",
   "o": [
    "Anterior capsule",
-   "Posterior capsule",
    "All equal",
+   "Posterior capsule",
    "Equatorial capsule only"
   ],
   "a": 0,
@@ -1013,10 +1013,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "The vitreous gel is approximately:",
   "o": [
-   "100% water",
    "50% water",
+   "75% water",
    "98.5% water",
-   "75% water"
+   "100% water"
   ],
   "a": 2,
   "w": "Vitreous is ~98.5% water; hyaluronic acid gives it its gel character. Volume ~4.5 mL.",
@@ -1030,9 +1030,9 @@
   "q": "Compared with plasma, aqueous humor has:",
   "o": [
    "A higher protein content",
-   "A higher glucose level",
+   "A lower osmolarity",
    "More ascorbic acid",
-   "A lower osmolarity"
+   "A higher glucose level"
   ],
   "a": 2,
   "w": "Aqueous is protein-poor but has a much higher ascorbate concentration than plasma (antioxidant role).",
@@ -1046,9 +1046,9 @@
   "q": "Normal intraocular pressure ranges from:",
   "o": [
    "10–21 mmHg",
-   "5–10 mmHg",
+   "30–40 mmHg",
    "22–30 mmHg",
-   "30–40 mmHg"
+   "5–10 mmHg"
   ],
   "a": 0,
   "w": "Normal IOP is 10–21 mmHg; episcleral venous pressure (~10 mmHg) sets the floor.",
@@ -1061,9 +1061,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "How does aqueous humor differ from vitreous?",
   "o": [
-   "They are chemically identical fluids",
-   "Vitreous is made by the ciliary body",
    "Aqueous fills the posterior segment",
+   "Vitreous is made by the ciliary body",
+   "They are chemically identical fluids",
    "Aqueous is replaced; vitreous is not"
   ],
   "a": 3,
@@ -1077,10 +1077,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "The remnant of the embryonic hyaloid artery passing through the vitreous is:",
   "o": [
-   "The ora serrata",
+   "The lamina cribrosa",
    "Cloquet's canal",
-   "Bruch's membrane",
-   "The lamina cribrosa"
+   "The ora serrata",
+   "Bruch's membrane"
   ],
   "a": 1,
   "w": "Cloquet's canal is the hyaloid remnant, ending at the area of Martegiani near the disc.",
@@ -1094,9 +1094,9 @@
   "q": "Which class of glaucoma drug lowers IOP mainly by increasing uveoscleral outflow?",
   "o": [
    "Prostaglandin analogs",
-   "Beta blockers",
+   "Carbonic anhydrase inhibitors",
    "Alpha-2 agonists",
-   "Carbonic anhydrase inhibitors"
+   "Beta blockers"
   ],
   "a": 0,
   "w": "Prostaglandins increase the uveoscleral (~20%) outflow pathway; the others mostly cut production.",
@@ -1109,10 +1109,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "The posterior lens surface, compared to the anterior, is:",
   "o": [
-   "Less curved",
+   "Avascular only",
    "Identical curvature",
    "More curved",
-   "Avascular only"
+   "Less curved"
   ],
   "a": 2,
   "w": "The posterior surface (radius ~6 mm) is more curved than the anterior (~10 mm), giving it more power.",
@@ -1127,8 +1127,8 @@
   "o": [
    "It is too small for vessels",
    "Vessels would obstruct the optical path",
-   "It has no metabolic needs",
-   "It is replaced daily"
+   "It is replaced daily",
+   "It has no metabolic needs"
   ],
   "a": 1,
   "w": "Any vasculature would scatter light and blur the image, so the lens relies on aqueous for nutrition.",
@@ -1142,9 +1142,9 @@
   "q": "A retinal detachment separates which two layers?",
   "o": [
    "Photoreceptors from the RPE",
-   "Choroid from sclera",
+   "RPE from Bruch's membrane",
    "NFL from ganglion cells",
-   "RPE from Bruch's membrane"
+   "Choroid from sclera"
   ],
   "a": 0,
   "w": "Detachment occurs at the potential space between the neurosensory photoreceptors and the RPE.",
@@ -1158,9 +1158,9 @@
   "q": "The foveola contains:",
   "o": [
    "Equal numbers of rods and cones",
-   "No photoreceptors at all",
+   "Rods only, densely packed",
    "Cones only, no capillaries",
-   "Rods only, densely packed"
+   "No photoreceptors at all"
   ],
   "a": 2,
   "w": "The foveola is pure cones, rod-free and capillary-free, giving peak acuity.",
@@ -1173,10 +1173,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Which retinal region is THICKEST?",
   "o": [
-   "Ora serrata",
+   "Optic disc",
    "Parafovea",
-   "Foveola",
-   "Optic disc"
+   "Ora serrata",
+   "Foveola"
   ],
   "a": 1,
   "w": "The parafovea is thickest (piled-up displaced ganglion cells); the foveola is the thinnest retina.",
@@ -1205,9 +1205,9 @@
   "t": "A2 Retina/Optic N",
   "q": "A normal cup-to-disc ratio is:",
   "o": [
+   "0.5",
    "0.8",
    "0.7",
-   "0.5",
    "≤0.3"
   ],
   "a": 3,
@@ -1239,8 +1239,8 @@
   "o": [
    "Bruch's membrane",
    "The central retinal artery",
-   "The ciliary arteries",
-   "The choriocapillaris"
+   "The choriocapillaris",
+   "The ciliary arteries"
   ],
   "a": 1,
   "w": "The central retinal artery supplies the inner retina; the choriocapillaris supplies the outer retina.",
@@ -1254,9 +1254,9 @@
   "q": "The macular pigments that filter blue light (and are targeted by AREDS2) are:",
   "o": [
    "Lutein and zeaxanthin",
+   "Rhodopsin and iodopsin",
    "Hemoglobin",
-   "Melanin and lipofuscin",
-   "Rhodopsin and iodopsin"
+   "Melanin and lipofuscin"
   ],
   "a": 0,
   "w": "Lutein and zeaxanthin (xanthophylls) concentrate in the macula and are protective antioxidants.",
@@ -1270,9 +1270,9 @@
   "q": "The ora serrata, the anterior termination of the retina, lies about:",
   "o": [
    "at the equator",
-   "1 mm from the limbus",
+   "12 mm from the limbus",
    "6 mm from the limbus",
-   "12 mm from the limbus"
+   "1 mm from the limbus"
   ],
   "a": 2,
   "w": "The ora serrata is ~6 mm from the limbus, the junction of retina and pars plana.",
@@ -1287,8 +1287,8 @@
   "o": [
    "Photoreceptor outer segments",
    "Retinal ganglion cell axons",
-   "Retinal pigment epithelium cells",
-   "Bipolar and amacrine cells"
+   "Bipolar and amacrine cells",
+   "Retinal pigment epithelium cells"
   ],
   "a": 1,
   "w": "Elevated IOP compresses retinal ganglion cell axons at the lamina cribrosa, causing field loss and cupping.",
@@ -1301,9 +1301,9 @@
   "t": "A2 Retina/Optic N",
   "q": "The optic disc is located approximately:",
   "o": [
-   "Just anterior to the ora serrata",
-   "3 mm temporal to the macula",
    "Directly at the fovea",
+   "3 mm temporal to the macula",
+   "Just anterior to the ora serrata",
    "3 mm nasal to the foveola"
   ],
   "a": 3,
@@ -1334,9 +1334,9 @@
   "q": "A complete optic nerve lesion causes:",
   "o": [
    "Ipsilateral total blindness",
-   "Quadrantanopia",
+   "Contralateral hemianopia",
    "Bitemporal hemianopia",
-   "Contralateral hemianopia"
+   "Quadrantanopia"
   ],
   "a": 0,
   "w": "Before the chiasm, an optic nerve lesion blinds the entire same-side eye.",
@@ -1349,10 +1349,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which fibers cross at the optic chiasm?",
   "o": [
-   "No fibers",
+   "All fibers",
    "Nasal retinal fibers",
-   "Temporal retinal fibers",
-   "All fibers"
+   "No fibers",
+   "Temporal retinal fibers"
   ],
   "a": 1,
   "w": "Nasal retinal fibers decussate; temporal fibers stay ipsilateral. Chiasm damage gives bitemporal loss.",
@@ -1365,9 +1365,9 @@
   "t": "A2 Visual Pathway",
   "q": "Bitemporal hemianopia is most commonly caused by:",
   "o": [
-   "A retinal detachment",
    "An occipital lobe stroke",
    "Retrobulbar optic neuritis",
+   "A retinal detachment",
    "A pituitary adenoma"
   ],
   "a": 3,
@@ -1397,9 +1397,9 @@
   "t": "A2 Visual Pathway",
   "q": "A temporal lobe (Meyer's loop) lesion causes:",
   "o": [
-   "Bitemporal hemianopia",
-   "Contralateral superior quadrantanopia",
    "Contralateral inferior quadrantanopia",
+   "Contralateral superior quadrantanopia",
+   "Bitemporal hemianopia",
    "Concentric tunnel vision"
   ],
   "a": 1,
@@ -1413,10 +1413,10 @@
   "t": "A2 Visual Pathway",
   "q": "A parietal radiation lesion causes:",
   "o": [
-   "Bitemporal field loss",
+   "Contralateral superior quadrantanopia",
    "A central scotoma",
    "Contralateral inferior quadrantanopia",
-   "Contralateral superior quadrantanopia"
+   "Bitemporal field loss"
   ],
   "a": 2,
   "w": "Superior retinal fibers run through the parietal lobe; damage produces an inferior quadrantanopia.",
@@ -1430,8 +1430,8 @@
   "q": "As lesions move more posteriorly along the pathway, the homonymous defects become:",
   "o": [
    "More congruous",
-   "Always bitemporal",
    "Monocular",
+   "Always bitemporal",
    "More incongruous"
   ],
   "a": 0,
@@ -1445,8 +1445,8 @@
   "t": "A2 Visual Pathway",
   "q": "An occipital cortex lesion characteristically produces a homonymous hemianopia with:",
   "o": [
-   "Bitemporal pattern",
    "Total blindness",
+   "Bitemporal pattern",
    "Pupillary involvement",
    "Macular sparing"
   ],
@@ -1477,10 +1477,10 @@
   "t": "A2 Visual Pathway",
   "q": "Binasal hemianopia results from damage to:",
   "o": [
-   "The crossing nasal fibers",
+   "The occipital pole",
    "Uncrossed fibers on both sides",
    "Meyer's loop in the temporal lobe",
-   "The occipital pole"
+   "The crossing nasal fibers"
   ],
   "a": 1,
   "w": "Lateral compression of the uncrossed temporal fibers on both sides gives a binasal field loss (rare).",
@@ -1493,10 +1493,10 @@
   "t": "A2 Visual Pathway",
   "q": "At the LGB, temporal (uncrossed) retinal fibers terminate in which layers?",
   "o": [
-   "All six",
    "None",
+   "1, 4, 6",
    "2, 3, 5",
-   "1, 4, 6"
+   "All six"
   ],
   "a": 2,
   "w": "Temporal/ipsilateral fibers go to LGB layers 2, 3, 5; nasal/crossed go to 1, 4, 6.",
@@ -1509,9 +1509,9 @@
   "t": "A2 Visual Pathway",
   "q": "The white band of myelinated fibers within area 17 is the:",
   "o": [
-   "Lamina cribrosa",
-   "Striae of Gennari",
    "Optic radiation",
+   "Striae of Gennari",
+   "Lamina cribrosa",
    "Meyer's loop"
   ],
   "a": 1,
@@ -1525,8 +1525,8 @@
   "t": "A3 Embryology",
   "q": "The optic vesicle arises from the:",
   "o": [
-   "Mesoderm",
    "Neural crest",
+   "Mesoderm",
    "Diencephalon",
    "Surface ectoderm"
   ],
@@ -1542,9 +1542,9 @@
   "q": "Which major ocular structure is derived entirely from surface ectoderm?",
   "o": [
    "Sclera",
-   "Retina",
+   "Choroid",
    "Crystalline lens",
-   "Choroid"
+   "Retina"
   ],
   "a": 2,
   "w": "The lens forms entirely from the surface-ectoderm lens placode; the cornea epithelium also comes from surface ectoderm.",
@@ -1557,10 +1557,10 @@
   "t": "A3 Embryology",
   "q": "Failure of the fetal (choroidal) fissure to close results in a coloboma located:",
   "o": [
-   "Temporally",
    "Superiorly",
+   "Anywhere randomly",
    "Inferiorly/inferonasally",
-   "Anywhere randomly"
+   "Temporally"
   ],
   "a": 2,
   "w": "The fetal fissure lies inferonasally, so colobomas are always inferior (6 o'clock) when it fails to close (~week 7).",
@@ -1574,8 +1574,8 @@
   "q": "Which vitreous becomes the adult vitreous gel?",
   "o": [
    "Secondary vitreous",
-   "Primary vitreous",
    "None",
+   "Primary vitreous",
    "Tertiary vitreous"
   ],
   "a": 0,
@@ -1589,9 +1589,9 @@
   "t": "A3 Embryology",
   "q": "The tertiary vitreous gives rise to the:",
   "o": [
-   "Cornea",
-   "Hyaloid artery",
    "Adult vitreous gel",
+   "Hyaloid artery",
+   "Cornea",
    "Lens zonules"
   ],
   "a": 3,
@@ -1607,8 +1607,8 @@
   "o": [
    "The retina detaches at birth",
    "The primary vitreous fails to regress",
-   "The lens fails to form at all",
-   "Calcium deposits fill the globe"
+   "Calcium deposits fill the globe",
+   "The lens fails to form at all"
   ],
   "a": 1,
   "w": "Retained fibrovascular primary vitreous behind the lens appears as a white pupil; absence of calcium helps distinguish it from retinoblastoma.",
@@ -1637,9 +1637,9 @@
   "t": "A3 Embryology",
   "q": "Aniridia is most associated with a mutation in which gene?",
   "o": [
-   "FBN1",
    "RB1",
    "COL4A1",
+   "FBN1",
    "PAX6"
   ],
   "a": 3,
@@ -1669,10 +1669,10 @@
   "t": "A3 Embryology",
   "q": "The retina develops from the:",
   "o": [
+   "Surface ectoderm",
    "Mesoderm",
-   "Neural crest",
    "Neuroectoderm",
-   "Surface ectoderm"
+   "Neural crest"
   ],
   "a": 2,
   "w": "The two walls of the optic cup (neuroectoderm) form the neurosensory retina and the RPE.",
@@ -1717,10 +1717,10 @@
   "t": "A1 Body & CN",
   "q": "The thinnest motor cranial nerve is:",
   "o": [
-   "CN7",
-   "CN4",
    "CN6",
-   "CN3"
+   "CN4",
+   "CN3",
+   "CN7"
   ],
   "a": 1,
   "w": "CN4 is both the thinnest motor cranial nerve and the one with the longest intracranial course, which is why it is so vulnerable to closed head trauma.",
@@ -1734,9 +1734,9 @@
   "q": "CN7 exits the skull through which foramen?",
   "o": [
    "Stylomastoid foramen",
-   "Foramen rotundum",
+   "Superior orbital fissure",
    "Optic canal",
-   "Superior orbital fissure"
+   "Foramen rotundum"
   ],
   "a": 0,
   "w": "The facial nerve leaves the skull at the stylomastoid foramen before branching over the face to supply the orbicularis oculi.",
@@ -1749,9 +1749,9 @@
   "t": "A1 Body & CN",
   "q": "Besides CN2, the optic canal also transmits the:",
   "o": [
+   "Superior ophthalmic vein",
    "Lacrimal nerve",
    "Frontal nerve",
-   "Superior ophthalmic vein",
    "Ophthalmic artery"
   ],
   "a": 3,
@@ -1782,9 +1782,9 @@
   "q": "Which cranial nerve supplies the superior oblique of the opposite side?",
   "o": [
    "CN4",
+   "CN3",
    "CN6",
-   "CN7",
-   "CN3"
+   "CN7"
   ],
   "a": 0,
   "w": "CN4 decussates completely in the anterior medullary velum, so each trochlear nucleus drives the contralateral superior oblique.",
@@ -1799,8 +1799,8 @@
   "o": [
    "Roof",
    "Lateral wall",
-   "Medial wall",
-   "Floor"
+   "Floor",
+   "Medial wall"
   ],
   "a": 1,
   "w": "The lateral wall, formed by the greater wing of the sphenoid and the zygomatic bone, is the thickest and strongest. The medial wall is the thinnest.",
@@ -1829,9 +1829,9 @@
   "t": "A2 Orbit & EOM",
   "q": "Which rectus muscle inserts farthest from the limbus?",
   "o": [
-   "Lateral rectus",
-   "Inferior rectus",
    "Medial rectus",
+   "Inferior rectus",
+   "Lateral rectus",
    "Superior rectus"
   ],
   "a": 3,
@@ -1846,9 +1846,9 @@
   "q": "The three layers of orbital fascia, from outside in, are:",
   "o": [
    "Periorbita → orbital septum → Tenon's capsule",
-   "Tenon's capsule → periorbita → septum",
    "Periorbita → Tenon's capsule → septum",
-   "Septum → periorbita → Tenon's capsule"
+   "Septum → periorbita → Tenon's capsule",
+   "Tenon's capsule → periorbita → septum"
   ],
   "a": 0,
   "w": "Periorbita lines the bone, the orbital septum forms the anterior barrier, and Tenon's capsule envelops the globe.",
@@ -1861,10 +1861,10 @@
   "t": "A2 Orbit & EOM",
   "q": "To prevent sympathetic ophthalmia, a severely traumatized blind eye should be enucleated within:",
   "o": [
-   "1 year",
+   "6 months",
    "2 weeks",
    "48 hours",
-   "6 months"
+   "1 year"
   ],
   "a": 1,
   "w": "Enucleating the injured eye within about 2 weeks removes the uveal antigen before the fellow eye can mount granulomatous uveitis.",
@@ -1894,9 +1894,9 @@
   "q": "The dilator pupillae is innervated by:",
   "o": [
    "Sympathetic fibers",
-   "Parasympathetic CN3",
    "Parasympathetic CN7",
-   "Somatic CN5"
+   "Somatic CN5",
+   "Parasympathetic CN3"
   ],
   "a": 0,
   "w": "The dilator is sympathetic; the sphincter is parasympathetic via CN3 and the short ciliary nerves. Losing the sympathetic supply gives the miosis of Horner's.",
@@ -1925,9 +1925,9 @@
   "t": "A2 Uveal Tract",
   "q": "Which layer supplies the outer retina and carries most of the eye's blood flow?",
   "o": [
-   "Central retinal artery",
-   "Retinal pigment epithelium",
    "Bruch's membrane",
+   "Retinal pigment epithelium",
+   "Central retinal artery",
    "Choriocapillaris"
   ],
   "a": 3,
@@ -1942,8 +1942,8 @@
   "q": "The layer lying between the choroid and the RPE is:",
   "o": [
    "Bruch's membrane",
-   "The lamina fusca",
    "Tenon's capsule",
+   "The lamina fusca",
    "The choriocapillaris"
   ],
   "a": 0,
@@ -1957,10 +1957,10 @@
   "t": "A2 Uveal Tract",
   "q": "Argyll-Robertson pupils are classically caused by:",
   "o": [
-   "A posterior communicating aneurysm",
+   "Sympathetic chain injury",
    "Neurosyphilis",
-   "Ciliary ganglion damage",
-   "Sympathetic chain injury"
+   "A posterior communicating aneurysm",
+   "Ciliary ganglion damage"
   ],
   "a": 1,
   "w": "Argyll-Robertson pupils come from a pretectal lesion in neurosyphilis or tabes dorsalis: small, irregular pupils that accommodate but do not react to light.",
@@ -1973,8 +1973,8 @@
   "t": "A2 Uveal Tract",
   "q": "Adie's tonic pupil results from damage to the:",
   "o": [
-   "Edinger-Westphal nucleus",
    "Pretectal nucleus",
+   "Edinger-Westphal nucleus",
    "Superior cervical ganglion",
    "Ciliary ganglion"
   ],
@@ -1991,8 +1991,8 @@
   "o": [
    "25 µL/min",
    "2 µL/min",
-   "10 µL/min",
-   "0.2 µL/min"
+   "0.2 µL/min",
+   "10 µL/min"
   ],
   "a": 1,
   "w": "Aqueous is produced at roughly 2 µL/min and turns over the anterior chamber about every 100 minutes.",
@@ -2022,9 +2022,9 @@
   "q": "Episcleral venous pressure sets the floor for IOP at about:",
   "o": [
    "21 mmHg",
-   "2 mmHg",
+   "30 mmHg",
    "10 mmHg",
-   "30 mmHg"
+   "2 mmHg"
   ],
   "a": 2,
   "w": "Aqueous drains into the episcleral veins, so IOP cannot fall below their pressure of roughly 10 mmHg. Normal IOP runs 10–21 mmHg.",
@@ -2037,8 +2037,8 @@
   "t": "A2 Lens/Vitreous",
   "q": "The volume of the vitreous is approximately:",
   "o": [
-   "0.25 mL",
    "1.5 mL",
+   "0.25 mL",
    "9.0 mL",
    "4.5 mL"
   ],
@@ -2054,8 +2054,8 @@
   "q": "Which molecule gives the vitreous its gel character?",
   "o": [
    "Hyaluronic acid",
-   "Fibrillin",
    "Collagen type IV",
+   "Fibrillin",
    "Albumin"
   ],
   "a": 0,
@@ -2070,8 +2070,8 @@
   "q": "The thickest basement membrane in the human body is the:",
   "o": [
    "Anterior lens capsule",
-   "Posterior lens capsule",
    "Bruch's membrane",
+   "Posterior lens capsule",
    "Descemet's membrane"
   ],
   "a": 0,
@@ -2085,9 +2085,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "At rest, the crystalline lens contributes approximately how much refractive power?",
   "o": [
-   "20–25 D",
    "43 D",
    "3–5 D",
+   "20–25 D",
    "10–15 D"
   ],
   "a": 3,
@@ -2118,9 +2118,9 @@
   "q": "Muscae volitantes (floaters) represent:",
   "o": [
    "RPE cell migration",
-   "Corneal stromal deposits",
+   "Cortical lens opacities",
    "Hyaloid system remnants",
-   "Cortical lens opacities"
+   "Corneal stromal deposits"
   ],
   "a": 2,
   "w": "Muscae volitantes are vitreous floaters left over from the embryonic hyaloid vascular system, seen as drifting specks against a bright background.",
@@ -2133,10 +2133,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "The crystalline lens is avascular because:",
   "o": [
-   "It has no metabolic demand",
+   "Blood vessels cannot cross a capsule",
    "It is derived from mesoderm",
    "Vessels would obstruct the optical path",
-   "Blood vessels cannot cross a capsule"
+   "It has no metabolic demand"
   ],
   "a": 2,
   "w": "Any vessel crossing the lens would scatter light and block the visual axis, so the lens is nourished entirely by aqueous instead.",
@@ -2149,10 +2149,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "During accommodation, the ciliary muscle:",
   "o": [
+   "Relaxes and tightens the zonules",
    "Relaxes and slackens the zonules",
-   "Contracts and tightens the zonules",
    "Contracts and slackens the zonules",
-   "Relaxes and tightens the zonules"
+   "Contracts and tightens the zonules"
   ],
   "a": 2,
   "w": "Ciliary contraction pulls the ring forward and inward, which reduces its diameter, slackens the zonules, and lets the elastic lens round up. This is the step presbyopia defeats.",
@@ -2166,9 +2166,9 @@
   "q": "The sphincter pupillae lies in which zone of the iris?",
   "o": [
    "The pupillary zone",
-   "The ciliary zone",
+   "The iris root",
    "The collarette only",
-   "The iris root"
+   "The ciliary zone"
   ],
   "a": 0,
   "w": "The sphincter sits centrally in the pupillary zone; the dilator lies peripherally in the ciliary zone. The collarette marks the boundary between the two.",
@@ -2181,9 +2181,9 @@
   "t": "A2 Uveal Tract",
   "q": "The choroid is thinnest at which location?",
   "o": [
-   "The macula",
    "The optic disc margin",
    "The posterior pole",
+   "The macula",
    "Anteriorly, near the ora"
   ],
   "a": 3,
@@ -2213,9 +2213,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "Intraocular pressure is maintained principally by:",
   "o": [
-   "Choroidal blood volume",
-   "Aqueous production and outflow",
    "The vitreous gel",
+   "Aqueous production and outflow",
+   "Choroidal blood volume",
    "Scleral rigidity"
   ],
   "a": 1,
@@ -2230,9 +2230,9 @@
   "q": "Comparing the lens surfaces, the posterior surface is:",
   "o": [
    "More curved, radius 6 mm",
-   "Flat, with no measurable radius",
    "Flatter, radius 10 mm",
-   "Equal in curvature"
+   "Equal in curvature",
+   "Flat, with no measurable radius"
   ],
   "a": 0,
   "w": "The posterior lens surface has a 6 mm radius and the anterior 10 mm, so the posterior is steeper and contributes more refractive power. Greater curvature means more power.",
@@ -2245,9 +2245,9 @@
   "t": "A2 Retina/Optic N",
   "q": "The THICKEST part of the retina is the:",
   "o": [
-   "Optic disc",
-   "Foveola",
    "Fovea",
+   "Foveola",
+   "Optic disc",
    "Parafovea"
   ],
   "a": 3,
@@ -2262,8 +2262,8 @@
   "q": "In a retinal detachment, the separation occurs between the:",
   "o": [
    "Photoreceptors and the RPE",
-   "Vitreous and internal limiting membrane",
    "RPE and Bruch's membrane",
+   "Vitreous and internal limiting membrane",
    "Choroid and sclera"
   ],
   "a": 0,
@@ -2293,9 +2293,9 @@
   "t": "A2 Retina/Optic N",
   "q": "The inner retinal layers are supplied by the:",
   "o": [
-   "Ciliary arteries",
-   "Central retinal artery",
    "Ophthalmic vein",
+   "Central retinal artery",
+   "Ciliary arteries",
    "Choriocapillaris"
   ],
   "a": 1,
@@ -2327,8 +2327,8 @@
   "o": [
    "Central and nasal fields",
    "Temporal fields only",
-   "No useful vision",
-   "Superior fields only"
+   "Superior fields only",
+   "No useful vision"
   ],
   "a": 0,
   "w": "Bitemporal hemianopia knocks out the temporal fields but preserves nasal fields and central vision, so acuity can stay 20/20 while the patient collides with door frames.",
@@ -2341,8 +2341,8 @@
   "t": "A2 Visual Pathway",
   "q": "Wernicke's hemianopic pupil occurs only with a lesion of the:",
   "o": [
-   "Optic chiasm",
    "Occipital cortex",
+   "Optic chiasm",
    "Parietal radiation",
    "Optic tract"
   ],
@@ -2357,8 +2357,8 @@
   "t": "A3 Embryology",
   "q": "The crystalline lens derives from:",
   "o": [
-   "Neuroectoderm",
    "Neural crest",
+   "Neuroectoderm",
    "Surface ectoderm",
    "Mesoderm"
   ],
@@ -2373,9 +2373,9 @@
   "t": "A3 Embryology",
   "q": "The corneal stroma and endothelium derive from:",
   "o": [
-   "Endoderm",
-   "Neural crest",
    "Surface ectoderm",
+   "Neural crest",
+   "Endoderm",
    "Neuroectoderm"
   ],
   "a": 1,
@@ -2389,8 +2389,8 @@
   "t": "A3 Embryology",
   "q": "The adult vitreous gel develops from the:",
   "o": [
-   "Primary vitreous",
    "Hyaloid artery",
+   "Primary vitreous",
    "Secondary vitreous",
    "Tertiary vitreous"
   ],
@@ -2421,10 +2421,10 @@
   "t": "A1 Body & CN",
   "q": "A 58-year-old hypertensive patient wakes up with right-sided ptosis, right eye turned outward and downward, and pupil 7mm and non-reactive. What is the diagnosis and what does the pupil finding suggest?",
   "o": [
+   "Right CN3 palsy; ischemic",
    "Right CN4 palsy; ischemic",
-   "Right CN6 palsy; ischemic",
    "Right CN3 palsy; compressive",
-   "Right CN3 palsy; ischemic"
+   "Right CN6 palsy; ischemic"
   ],
   "a": 2,
   "w": "Complete right CN3 palsy presents with: ptosis (LPS paralyzed), eye down and out (SR/IR/MR paralyzed; unopposed LR + SO), dilated non-reactive pupil (sphincter pupillae paralyzed). The KEY finding is the dilated, non-reactive pupil — parasympathetic pupillomotor fibers run on the outside surface of CN3. External compression (aneurysm of the posterior communicating artery) preferentially affects these outer fibers FIRST, causing early pupil involvement. Ischemic CN3 palsy (diabetes, hypertension) affects the inner motor fibers first while sparing the outer pupillomotor fibers. Pupil-involving CN3 palsy = surgical emergency until neuroimaging rules out aneurysm. CN6 palsy causes esotropia, not the down-and-out eye. CN4 palsy causes hypertropia/head tilt, not ptosis.",
@@ -2437,10 +2437,10 @@
   "t": "A1 Body & CN",
   "q": "A child presents with preseptal eyelid swelling, proptosis, restricted eye movement, and fever. What is the most likely source of infection based on anatomy?",
   "o": [
-   "Frontal sinus",
-   "Ethmoidal sinus",
    "Sphenoidal sinus",
-   "Maxillary sinus"
+   "Ethmoidal sinus",
+   "Maxillary sinus",
+   "Frontal sinus"
   ],
   "a": 1,
   "w": "Orbital cellulitis in children most commonly originates from the ethmoidal sinus. The medial orbital wall (lamina papyracea of the ethmoid) is extremely thin and directly adjacent to the ethmoidal air cells. Bacterial sinusitis erodes through this wall, spreading infection into the orbit. The presentation — preseptal and postseptal involvement, proptosis, restricted EOM, fever — is the classic orbital cellulitis picture. The sphenoidal sinus is posterior to the orbit and relates to CN2 (retrobulbar neuritis), not direct orbital spread. The maxillary sinus relates to the orbital floor (blowout fractures). The frontal sinus relates to the orbital roof.",
@@ -2485,10 +2485,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "A 35-year-old patient complains of chronic eye irritation, foreign body sensation, and redness worsening in the afternoon. Schirmer's test (without anesthesia) measures 18 mm bilaterally. Tear break-up time is 5 seconds. Which of the following is the most likely underlying problem?",
   "o": [
-   "Conjunctival goblet cell hyperplasia",
+   "Aqueous-deficient dry eye from lacrimal gland hyposecretion",
    "Lipid layer deficiency from Meibomian gland dysfunction",
    "Excessive tear drainage due to punctal stenosis",
-   "Aqueous-deficient dry eye from lacrimal gland hyposecretion"
+   "Conjunctival goblet cell hyperplasia"
   ],
   "a": 1,
   "w": "The normal Schirmer's test (18 mm — well within 10–25 mm) rules out aqueous deficiency. The short TBUT (5 seconds, normal >10 seconds) indicates the tear film is breaking up too quickly despite adequate aqueous volume. The lipid layer (from Meibomian glands) is what prevents evaporation and maintains film stability. When it is deficient, the aqueous layer evaporates rapidly and the film collapses before the next blink. This is evaporative dry eye — the most common form. Symptoms worsen in the afternoon because Meibomian gland secretions accumulate and solidify with reduced blink-driven expression over the day.",
@@ -2517,10 +2517,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "A 70-year-old patient presents with progressive, painless bilateral vision loss. Slit lamp examination shows corneal edema with a beaten-metal appearance of the endothelium on specular reflection. Central pachymetry is 680 µm bilaterally. Which of the following best explains the pathophysiology?",
   "o": [
-   "Failure of goblet cells to produce mucin for the tear film",
+   "Disruption of tight junctions in the corneal epithelium",
    "Degeneration of Bowman's membrane preventing epithelial adhesion",
    "Loss of endothelial Na-K ATPase pump function leading to stromal edema",
-   "Disruption of tight junctions in the corneal epithelium"
+   "Failure of goblet cells to produce mucin for the tear film"
   ],
   "a": 2,
   "w": "This is Fuchs' endothelial dystrophy. The endothelium normally pumps Na+ and HCO3- out of the stroma — water follows osmotically, keeping the stroma at 75–80% water. In Fuchs', endothelial cells degenerate and are not replaced (endothelium is post-mitotic). As cell density falls below a critical threshold, the pump cannot maintain deturgescence. Water accumulates in the stroma, disrupting the regular collagen fiber spacing and causing light scatter (opacity). Pachymetry above 600 µm (normal 520–560 µm) confirms stromal swelling. The \"beaten-metal\" or \"hammered silver\" appearance on specular microscopy is the endothelial guttata — excrescences on Descemet's membrane that are pathognomonic of Fuchs'. Goblet cells, tight junctions, and Bowman's membrane are unrelated to this presentation.",
@@ -2550,9 +2550,9 @@
   "q": "A patient is asked to look at a near target. Both pupils constrict. When a bright light is shone into the right eye, neither pupil constricts, but both constrict with near gaze. The left eye shows the same pattern. Which of the following best describes this condition?",
   "o": [
    "Argyll-Robertson pupils",
-   "Bilateral Adie's pupils",
    "Bilateral Horner's syndrome",
-   "Bilateral Marcus-Gunn pupil"
+   "Bilateral Marcus-Gunn pupil",
+   "Bilateral Adie's pupils"
   ],
   "a": 0,
   "w": "Argyll-Robertson pupils are pathognomonic for neurosyphilis (tabes dorsalis). The hallmark is light-near dissociation: \"accommodates but does not react to light.\" The pretectal lesion disrupts the afferent arc of the pupillary light reflex while sparing the accommodation-convergence near reflex pathway (which travels more ventrally in the brainstem). This produces bilateral small, irregular pupils that constrict with near gaze but not with light. Bilateral Adie's is possible but would show tonic (slow) near constriction and loss of deep tendon reflexes, not the complete absence of light response. Marcus-Gunn involves a relative afferent defect — it does not cause bilateral failure of the light reflex in both eyes.",
@@ -2566,9 +2566,9 @@
   "q": "During a vitreoretinal surgical procedure, the surgeon enters the eye through which of the following structures to minimize bleeding risk?",
   "o": [
    "Pars plana",
-   "Iris root",
    "Limbus",
-   "Pars plicata"
+   "Pars plicata",
+   "Iris root"
   ],
   "a": 0,
   "w": "The pars plana is the posterior, flat, avascular portion of the ciliary body (4mm wide, extending from the ora serrata to the pars plicata). Its relative avascularity makes it the preferred and safest entry point for vitreoretinal surgery, reducing hemorrhage risk. The pars plicata (anterior 2mm, most vascular) contains the ciliary processes and is avoided. The limbus is used for anterior segment surgeries (e.g., cataract). The iris root is fragile and its incision would damage the angle and drainage structures.",
@@ -2581,9 +2581,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "A 55-year-old patient has had increasing difficulty reading. Their distance vision remains 20/20. Amplitude of accommodation measures +0.5D. Which of the following is the primary mechanism?",
   "o": [
+   "Posterior displacement of the lens reducing its refractive power",
    "Zonule degeneration preventing transmission of ciliary muscle force",
    "Ciliary muscle atrophy reducing zonular tension",
-   "Posterior displacement of the lens reducing its refractive power",
    "Progressive hardening of the lens nucleus reducing elastic recoil"
   ],
   "a": 3,
@@ -2598,9 +2598,9 @@
   "q": "Which of the following most accurately describes the composition of aqueous humor relative to plasma?",
   "o": [
    "Lower osmolarity than plasma",
-   "Higher protein content than plasma",
+   "Higher glucose concentration than plasma",
    "Higher ascorbic acid concentration than plasma",
-   "Higher glucose concentration than plasma"
+   "Higher protein content than plasma"
   ],
   "a": 2,
   "w": "Aqueous humor is actively secreted — not just a filtrate of plasma — so certain components are concentrated above plasma levels. Ascorbic acid (vitamin C) is actively pumped into the AH at concentrations 15–20× higher than plasma. It serves as an antioxidant protecting the lens and cornea from oxidative damage. Protein content is very low (25 mg% vs. Plasma ~7000 mg%) — the blood-aqueous barrier restricts protein entry, keeping AH optically clear. Osmolarity is slightly higher than plasma (not lower). Glucose is present at about 2.5 mg% in AH — lower than plasma.",
@@ -2613,10 +2613,10 @@
   "t": "A2 Retina/Optic N",
   "q": "A patient with advanced glaucoma retains central vision but has complete loss of peripheral visual field. Which retinal cells are most directly responsible for the peripheral field loss?",
   "o": [
+   "Bipolar cells at the inner nuclear layer",
    "Foveal cones",
-   "RPE cells at the ora serrata",
    "Peripheral rods and their associated ganglion cells",
-   "Bipolar cells at the inner nuclear layer"
+   "RPE cells at the ora serrata"
   ],
   "a": 2,
   "w": "Glaucoma damages retinal ganglion cells — specifically their axons at the lamina cribrosa where elevated IOP compresses them. The peripheral ganglion cells (associated with peripheral rods for peripheral field) are more vulnerable and lost earlier in glaucoma. This produces the classic arcuate scotoma and nasal step pattern, eventually leaving only a central island of vision (tunnel vision from surviving foveal cone-ganglion pathways). The foveal cones themselves are among the last to be affected because the foveal area has a relative abundance of ganglion cells and better vascular supply. RPE cells and bipolar cells are not the primary site of glaucomatous damage.",
@@ -2629,10 +2629,10 @@
   "t": "A2 Retina/Optic N",
   "q": "On fundus examination, the optic disc measures 1.5mm and the cup measures 0.7mm in diameter. Which of the following is most accurate?",
   "o": [
-   "C/D ratio of 0.7 — very concerning for glaucomatous cupping",
-   "C/D ratio of 0.47 — borderline suspicious for glaucoma",
    "C/D ratio of 0.47 — normal",
-   "Normal finding — within accepted range"
+   "C/D ratio of 0.47 — borderline suspicious for glaucoma",
+   "Normal finding — within accepted range",
+   "C/D ratio of 0.7 — very concerning for glaucomatous cupping"
   ],
   "a": 1,
   "w": "C/D ratio = cup diameter ÷ disc diameter = 0.7 ÷ 1.5 = 0.47. Normal C/D is ≤0.3. A ratio of 0.47 is above normal and warrants further evaluation — IOP measurement, visual field testing, and OCT of the nerve fiber layer. It is suspicious but not necessarily diagnostic.7 would be the cup diameter, not the ratio). A C/D >0.5 with asymmetry >0.2 between the two eyes raises high concern for glaucoma.",
@@ -2647,8 +2647,8 @@
   "o": [
    "Inner retinal edema sparing the thin foveola",
    "Choroidal ischemia exposing bare sclera",
-   "RPE detachment revealing Bruch's membrane",
-   "Foveal hemorrhage from a vein occlusion"
+   "Foveal hemorrhage from a vein occlusion",
+   "RPE detachment revealing Bruch's membrane"
   ],
   "a": 0,
   "w": "In central retinal artery occlusion (CRAO), the inner retina (supplied by the CRA) becomes ischemic and edematous — the swollen cells make the retina appear pale and opaque. However, the fovea (specifically the foveola) is extremely thin — it lacks ganglion cells and inner nuclear cells. At the foveola, the transparent inner retina is so thin that the underlying choroid (still perfused by the short posterior ciliary arteries, which are not affected by CRAO) shows through as a red color against the pale surrounding retina. This contrast creates the cherry-red spot. RPE detachment is a different pathology. Vein occlusion causes flame hemorrhages, not cherry-red spot.",
@@ -2662,9 +2662,9 @@
   "q": "A 45-year-old woman presents with gradual loss of her peripheral vision bilaterally. She bumps into objects on both sides. Visual field testing shows loss of both temporal fields while nasal fields are intact. MRI would most likely reveal a lesion at which location?",
   "o": [
    "Optic chiasma",
-   "Right optic tract",
+   "Left occipital cortex",
    "Right optic nerve",
-   "Left occipital cortex"
+   "Right optic tract"
   ],
   "a": 0,
   "w": "Bitemporal hemianopsia — loss of both temporal fields with preserved nasal fields — is the hallmark of a chiasmal lesion affecting the crossing (decussating) fibers. These nasal fibers carry temporal field information from both eyes; their interruption at the chiasma eliminates both temporal fields simultaneously. The most common cause in a middle-aged woman is a pituitary adenoma growing upward to compress the inferior chiasma. A right optic nerve lesion would cause right monocular blindness. A right optic tract lesion would cause left homonymous hemianopsia (not bitemporal). Occipital cortex lesion causes homonymous scotoma — not bitemporal loss.",
@@ -2677,10 +2677,10 @@
   "t": "A2 Visual Pathway",
   "q": "A 60-year-old man suffers a right-sided stroke involving the temporal lobe. Which visual field defect is most likely on examination?",
   "o": [
-   "Left homonymous hemianopsia with macular sparing",
    "Left inferior quadrantanopsia",
+   "Right bitemporal hemianopsia",
    "Left superior quadrantanopsia",
-   "Right bitemporal hemianopsia"
+   "Left homonymous hemianopsia with macular sparing"
   ],
   "a": 2,
   "w": "The inferior fibers of the right optic radiation loop through the temporal lobe (Meyer's loop) before reaching the occipital cortex. These fibers carry information from the superior visual field of the left hemifield. A right temporal lobe stroke interrupts Meyer's loop, producing a left superior quadrantanopsia — classically called \"pie in the sky\" (the upper-left visual field is lost). Left inferior quadrantanopsia would result from a right parietal lobe lesion (superior radiation fibers). Left homonymous hemianopsia with macular sparing is a right occipital cortex finding. Bitemporal hemianopsia requires a chiasmal lesion.",
@@ -2694,9 +2694,9 @@
   "q": "A newborn presents with leukocoria (white pupil). On examination, a white fibrovascular mass is noted behind the lens. B-scan ultrasound shows a retrolental mass with no calcium deposits. Which embryological failure best explains this finding?",
   "o": [
    "Failure of primary vitreous to regress",
-   "Failure of fetal fissure closure",
    "Failure of lens vesicle to separate from surface ectoderm",
-   "Failure of secondary vitreous to form"
+   "Failure of secondary vitreous to form",
+   "Failure of fetal fissure closure"
   ],
   "a": 0,
   "w": "This is Persistent Hyperplastic Primary Vitreous (PHPV), now called Persistent Fetal Vasculature (PFV). The primary vitreous, which is vascular and contains the hyaloid artery system, normally regresses completely by birth. When it persists, the remaining fibrovascular tissue forms a white retrolental mass — leukocoria. The absence of calcium deposits distinguishes it from retinoblastoma (which often calcifies). Fetal fissure failure produces coloboma (not a retrolental mass). Lens vesicle failure would prevent lens formation. Secondary vitreous failure does not cause leukocoria.",
@@ -2709,8 +2709,8 @@
   "t": "A3 Embryology",
   "q": "A 16-year-old male with tall stature, long fingers, and arachnodactyly presents with sudden visual blur in the right eye. Slit-lamp exam shows the right lens displaced superiorly. Which of the following correctly links the genetic defect to the embryological structure affected?",
   "o": [
-   "PAX6 mutation → failure of iris differentiation → aniridia",
    "COL4A1 mutation → abnormal lens capsule → lens rupture",
+   "PAX6 mutation → failure of iris differentiation → aniridia",
    "FBN1 mutation → weak secondary vitreous → lens dislocation",
    "FBN1 mutation → weak fibrillin zonules → lens dislocation"
   ],
@@ -2726,8 +2726,8 @@
   "q": "The lipid layer of the tear film comes mainly from the:",
   "o": [
    "Meibomian glands",
-   "Main lacrimal gland",
    "Goblet cells",
+   "Main lacrimal gland",
    "Glands of Krause"
   ],
   "a": 0,
@@ -2741,8 +2741,8 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Reflex aqueous tear secretion comes from the:",
   "o": [
-   "Glands of Krause",
    "Meibomian glands",
+   "Glands of Krause",
    "Glands of Wolfring",
    "Main lacrimal gland"
   ],
@@ -2758,8 +2758,8 @@
   "q": "The thinnest layer of the tear film is the:",
   "o": [
    "Aqueous",
-   "Lipid",
    "They are equal",
+   "Lipid",
    "Mucin"
   ],
   "a": 3,
@@ -2790,9 +2790,9 @@
   "q": "A normal Schirmer's test without anesthesia measures:",
   "o": [
    "10–25 mm / 5 min",
-   "30–40 mm / 5 min",
+   "5–8 mm / 5 min",
    "2–5 mm / 5 min",
-   "5–8 mm / 5 min"
+   "30–40 mm / 5 min"
   ],
   "a": 0,
   "w": "Normal is 10–25 mm in 5 minutes without anesthesia. Under 10 mm suggests aqueous deficiency. TBUT under 10 seconds points instead to instability.",
@@ -2805,10 +2805,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Lysozyme makes up roughly what share of tear protein?",
   "o": [
-   "50–60%",
+   "1–2%",
    "21–25%",
-   "80%",
-   "1–2%"
+   "50–60%",
+   "80%"
   ],
   "a": 1,
   "w": "Lysozyme is 21–25% of tear protein and lyses bacterial cell walls, working alongside secretory IgA and lactoferrin as the tear film's defense.",
@@ -2822,9 +2822,9 @@
   "q": "The six corneal layers from anterior to posterior are:",
   "o": [
    "Epithelium → Bowman's → stroma → Dua's → Descemet's → endothelium",
-   "Epithelium → stroma → Bowman's → Dua's → Descemet's → endothelium",
    "Epithelium → Bowman's → Dua's → stroma → Descemet's → endothelium",
-   "Endothelium → Descemet's → Dua's → stroma → Bowman's → epithelium"
+   "Endothelium → Descemet's → Dua's → stroma → Bowman's → epithelium",
+   "Epithelium → stroma → Bowman's → Dua's → Descemet's → endothelium"
   ],
   "a": 0,
   "w": "Epithelium, Bowman's, stroma, Dua's, Descemet's, endothelium. Dua's layer is the modern addition, a tough pre-Descemet's layer relevant to deep lamellar grafting.",
@@ -2855,8 +2855,8 @@
   "o": [
    "3–4 mm; the ora serrata",
    "1–2 mm; TM and Schlemm's canal",
-   "0.1 mm; Bowman's layer only",
-   "5–6 mm; the ciliary body"
+   "5–6 mm; the ciliary body",
+   "0.1 mm; Bowman's layer only"
   ],
   "a": 1,
   "w": "The limbus is a 1–2 mm transition zone holding the trabecular meshwork, Schlemm's canal and the limbal stem cells that resurface the epithelium.",
@@ -2869,8 +2869,8 @@
   "t": "A2 Cornea/Sclera",
   "q": "The gonioscopic landmarks from anterior to posterior are:",
   "o": [
-   "Scleral spur → Schwalbe's → TM → ciliary body → iris",
    "TM → Schwalbe's → scleral spur → iris → ciliary body",
+   "Scleral spur → Schwalbe's → TM → ciliary body → iris",
    "Ciliary body → iris → scleral spur → TM → Schwalbe's",
    "Schwalbe's → TM → scleral spur → ciliary body → iris"
   ],
@@ -2918,8 +2918,8 @@
   "q": "The macular xanthophyll pigments are:",
   "o": [
    "Erythrolabe and chlorolabe",
-   "Rhodopsin and iodopsin",
    "Melanin and lipofuscin",
+   "Rhodopsin and iodopsin",
    "Lutein and zeaxanthin"
   ],
   "a": 3,
@@ -2933,10 +2933,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Counting from outer to inner, which is the OUTERMOST retinal layer?",
   "o": [
-   "The ganglion cell layer",
+   "The internal limiting membrane",
    "The retinal pigment epithelium",
-   "The nerve fiber layer",
-   "The internal limiting membrane"
+   "The ganglion cell layer",
+   "The nerve fiber layer"
   ],
   "a": 1,
   "w": "The order runs RPE, photoreceptors, ELM, ONL, Henle's, OPL, INL, IPL, GCL, NFL, ILM. Light traverses the whole thickness to reach the photoreceptors: the retina is inverted.",
@@ -2949,10 +2949,10 @@
   "t": "A2 Retina/Optic N",
   "q": "The optic disc sits how far above the foveola?",
   "o": [
+   "5 mm",
    "3 mm",
-   "It sits level with it",
    "0.8 mm",
-   "5 mm"
+   "It sits level with it"
   ],
   "a": 2,
   "w": "The disc lies about 3 mm nasal to the macula and 0.8 mm above the foveola, which is why the physiologic blind spot maps slightly below the horizontal midline.",
@@ -2966,8 +2966,8 @@
   "q": "The fetal fissure normally closes at which week?",
   "o": [
    "Week 7",
-   "Week 12",
    "Week 36",
+   "Week 12",
    "Week 3"
   ],
   "a": 0,
@@ -2997,10 +2997,10 @@
   "t": "A3 Embryology",
   "q": "A Mittendorf dot on the posterior lens capsule is:",
   "o": [
-   "A sign of retinoblastoma",
    "An early cataract",
+   "A sign of PHPV",
    "A benign normal variant",
-   "A sign of PHPV"
+   "A sign of retinoblastoma"
   ],
   "a": 2,
   "w": "A Mittendorf dot is a harmless remnant of the hyaloid artery's attachment to the posterior lens. It needs no treatment and must not be mistaken for pathology.",
@@ -3015,8 +3015,8 @@
   "o": [
    "Neuroectoderm",
    "Mesoderm",
-   "Surface ectoderm",
-   "Endoderm"
+   "Endoderm",
+   "Surface ectoderm"
   ],
   "a": 1,
   "w": "The EOMs are mesodermal. The lens and lacrimal gland come from surface ectoderm, the retina from neuroectoderm, and the corneal stroma and endothelium from neural crest.",
@@ -3062,9 +3062,9 @@
   "q": "The primary vitreous is distinguished from the secondary by being:",
   "o": [
    "Vascular, carrying the hyaloid artery",
+   "Avascular",
    "Denser and permanent",
-   "Derived from surface ectoderm",
-   "Avascular"
+   "Derived from surface ectoderm"
   ],
   "a": 0,
   "w": "The primary vitreous is vascular, built around the hyaloid artery, and regresses to leave Cloquet's canal. The secondary vitreous is avascular and becomes the adult gel.",
@@ -3077,9 +3077,9 @@
   "t": "A1 Body & CN",
   "q": "Which term describes convolutions (folds) of the cerebral cortex?",
   "o": [
-   "Fissures",
-   "Haversian system",
    "Sulci",
+   "Haversian system",
+   "Fissures",
    "Gyri"
   ],
   "a": 3,
@@ -3094,9 +3094,9 @@
   "q": "Which term describes deep grooves dividing major brain regions?",
   "o": [
    "Fissures",
-   "Sulci",
    "Haversian system",
-   "Gyri"
+   "Gyri",
+   "Sulci"
   ],
   "a": 0,
   "w": "Fissures: Latin fissura — cleft. Deep grooves dividing major brain regions",
@@ -3109,9 +3109,9 @@
   "t": "A1 Body & CN",
   "q": "Which term describes the structural unit of compact bone; contains Haversian canals, lamellae, and osteocytes?",
   "o": [
-   "Sulci",
-   "Haversian system",
    "Gyri",
+   "Haversian system",
+   "Sulci",
    "Fissures"
   ],
   "a": 1,
@@ -3126,9 +3126,9 @@
   "q": "Which term describes three protective membranes covering the brain and spinal cord (dura, arachnoid, pia)?",
   "o": [
    "Meninges",
-   "Sulci",
+   "Gyri",
    "Fissures",
-   "Gyri"
+   "Sulci"
   ],
   "a": 0,
   "w": "Meninges: Greek meninx — membrane. Three protective membranes covering the brain and spinal cord (dura, arachnoid, pia)",
@@ -3142,8 +3142,8 @@
   "q": "Which term describes membrane-filled gaps between infant skull bones; close as ossification completes?",
   "o": [
    "Fontanels",
-   "Sulci",
    "Gyri",
+   "Sulci",
    "Fissures"
   ],
   "a": 0,
@@ -3158,9 +3158,9 @@
   "q": "Which term describes largest foramen in the skull; connects medulla oblongata to spinal cord?",
   "o": [
    "Foramen magnum",
+   "Gyri",
    "Fissures",
-   "Sulci",
-   "Gyri"
+   "Sulci"
   ],
   "a": 0,
   "w": "Foramen magnum: Latin — large hole. Largest foramen in the skull; connects medulla oblongata to spinal cord",
@@ -3173,10 +3173,10 @@
   "t": "A2 Orbit & EOM",
   "q": "The optic canal dimensions is:",
   "o": [
-   "5.5 mm",
+   "7.7 mm",
    "6.9 mm",
    "4–10 mm long",
-   "7.7 mm"
+   "5.5 mm"
   ],
   "a": 2,
   "w": "Optic canal dimensions: 4–10 mm long. Completely surrounded by bone inside the lesser wing of sphenoid — protected unless sphenoidal sinusitis erodes through",
@@ -3189,10 +3189,10 @@
   "t": "A2 Orbit & EOM",
   "q": "The limbus distance — MR is:",
   "o": [
-   "4–10 mm long",
+   "6.9 mm",
    "7.7 mm",
    "5.5 mm",
-   "6.9 mm"
+   "4–10 mm long"
   ],
   "a": 2,
   "w": "Limbus distance — MR: 5.5 mm (nearest). Closest insertion = best mechanical leverage = strongest recti muscle. This is why convergence (both MRs pulling simultaneously) is the most powerful EOM movement",
@@ -3205,10 +3205,10 @@
   "t": "A2 Orbit & EOM",
   "q": "The limbus distance — SR is:",
   "o": [
-   "4–10 mm long",
+   "5.5 mm",
    "6.9 mm",
    "7.7 mm",
-   "5.5 mm"
+   "4–10 mm long"
   ],
   "a": 2,
   "w": "Limbus distance — SR: 7.7 mm (farthest). Being farthest means SR pulls at a 23° angle to the visual axis — it cannot produce pure elevation alone. The angle forces secondary intorsion and tertiary adduction as unavoidable byproducts",
@@ -3222,9 +3222,9 @@
   "q": "The LR insertion is:",
   "o": [
    "6.9 mm",
-   "5.5 mm",
    "7.7 mm",
-   "4–10 mm long"
+   "4–10 mm long",
+   "5.5 mm"
   ],
   "a": 0,
   "w": "LR insertion: 6.9 mm. LR is the only muscle abducting the eye. In CN6 palsy, LR fails and MR acts unopposed — the eye is pulled permanently nasally, producing esotropia. The amount of esotropia tells you how complete the palsy is",
@@ -3237,9 +3237,9 @@
   "t": "A2 Orbit & EOM",
   "q": "The palpebral fissure height is:",
   "o": [
-   "4–10 mm",
    "5.5 mm",
    "7.7 mm",
+   "4–10 mm",
    "8–11 mm"
   ],
   "a": 3,
@@ -3254,9 +3254,9 @@
   "q": "The SO total length is:",
   "o": [
    "60 mm",
+   "7.7 mm",
    "5.5 mm",
-   "4–10 mm long",
-   "7.7 mm"
+   "4–10 mm long"
   ],
   "a": 0,
   "w": "SO total length: 60 mm (longest EOM total). Long because it travels from the orbital apex all the way to the trochlea and then bends back to insert posteriorly — the longest path of any EOM",
@@ -3269,9 +3269,9 @@
   "t": "A2 Orbit & EOM",
   "q": "The IO total length is:",
   "o": [
-   "7.7 mm",
-   "37 mm",
    "4–10 mm long",
+   "37 mm",
+   "7.7 mm",
    "5.5 mm"
   ],
   "a": 1,
@@ -3286,8 +3286,8 @@
   "q": "Which term describes the fibrocartilaginous loop on the orbital roof that redirects the SO tendon — acts as a mechanical pulley?",
   "o": [
    "Adduction",
-   "Recti",
    "Oblique",
+   "Recti",
    "Trochlea"
   ],
   "a": 3,
@@ -3302,9 +3302,9 @@
   "q": "Which term describes the four straight muscles that run along the orbital walls?",
   "o": [
    "Recti",
+   "Adduction",
    "Oblique",
-   "Trochlea",
-   "Adduction"
+   "Trochlea"
   ],
   "a": 0,
   "w": "Recti: Latin rectus — straight. The four straight muscles that run along the orbital walls",
@@ -3319,8 +3319,8 @@
   "o": [
    "Trochlea",
    "Oblique",
-   "Adduction",
-   "Recti"
+   "Recti",
+   "Adduction"
   ],
   "a": 1,
   "w": "Oblique: Latin obliquus — slanting. The two muscles whose paths are angled relative to the visual axis",
@@ -3333,9 +3333,9 @@
   "t": "A2 Orbit & EOM",
   "q": "Which term describes moving the eye nasally (toward the midline)?",
   "o": [
+   "Oblique",
    "Trochlea",
    "Recti",
-   "Oblique",
    "Adduction"
   ],
   "a": 3,
@@ -3350,8 +3350,8 @@
   "q": "Which term describes moving the eye temporally (away from midline)?",
   "o": [
    "Abduction",
-   "Recti",
    "Trochlea",
+   "Recti",
    "Oblique"
   ],
   "a": 0,
@@ -3365,10 +3365,10 @@
   "t": "A2 Orbit & EOM",
   "q": "Which term describes the thinnest orbital wall (medial, ethmoid bone) — the wall that fractures first?",
   "o": [
-   "Oblique",
-   "Lamina papyracea",
    "Trochlea",
-   "Recti"
+   "Lamina papyracea",
+   "Recti",
+   "Oblique"
   ],
   "a": 1,
   "w": "Lamina papyracea: Latin — paper-thin plate. The thinnest orbital wall (medial, ethmoid bone) — the wall that fractures first",
@@ -3397,9 +3397,9 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The lower tarsus height is:",
   "o": [
+   "11 mm",
    "8–11 mm height, 27–30 mm width",
    "0.3 mm",
-   "11 mm",
    "5 mm"
   ],
   "a": 3,
@@ -3413,10 +3413,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The lacrimal punctum size is:",
   "o": [
-   "11 mm",
    "5 mm",
+   "8–11 mm height, 27–30 mm width",
    "0.3 mm",
-   "8–11 mm height, 27–30 mm width"
+   "11 mm"
   ],
   "a": 2,
   "w": "Lacrimal punctum size: 0.3 mm. Small enough to require dilation before probing (probing for nasolacrimal obstruction)",
@@ -3429,8 +3429,8 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The canaliculus horizontal length is:",
   "o": [
-   "8–11 mm height, 27–30 mm width",
    "5 mm",
+   "8–11 mm height, 27–30 mm width",
    "11 mm",
    "8 mm"
   ],
@@ -3446,9 +3446,9 @@
   "q": "The lacrimal sac dimensions is:",
   "o": [
    "12mm long × 6mm wide",
-   "11 mm",
+   "8–11 mm height, 27–30 mm width",
    "5 mm",
-   "8–11 mm height, 27–30 mm width"
+   "11 mm"
   ],
   "a": 0,
   "w": "Lacrimal sac dimensions: 12mm long × 6mm wide. Dacryocystitis = infection here; palpable mass below medial palpebral ligament",
@@ -3461,10 +3461,10 @@
   "t": "A2 Lids/Lacrimal",
   "q": "The nasolacrimal duct length is:",
   "o": [
-   "8–11 mm height, 27–30 mm width",
+   "11 mm",
    "12–24 mm",
    "5 mm",
-   "11 mm"
+   "8–11 mm height, 27–30 mm width"
   ],
   "a": 1,
   "w": "Nasolacrimal duct length: 12–24 mm. Opens at inferior meatus; last to open in development",
@@ -3494,9 +3494,9 @@
   "q": "Which term describes anything related to the eyelid (palpebral conjunctiva, palpebral fissure, pars palpebralis)?",
   "o": [
    "Palpebral",
-   "Punctum",
    "Meibomian glands",
-   "Fornix"
+   "Fornix",
+   "Punctum"
   ],
   "a": 0,
   "w": "Palpebral: Latin palpebra — eyelid. Anything related to the eyelid (palpebral conjunctiva, palpebral fissure, pars palpebralis)",
@@ -3525,9 +3525,9 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Which term describes the tiny opening at the medial end of each eyelid through which tears enter the drainage system?",
   "o": [
-   "Palpebral",
-   "Fornix",
    "Meibomian glands",
+   "Fornix",
+   "Palpebral",
    "Punctum"
   ],
   "a": 3,
@@ -3542,9 +3542,9 @@
   "q": "Which term describes the narrow tube connecting the punctum to the lacrimal sac?",
   "o": [
    "Meibomian glands",
-   "Fornix",
+   "Palpebral",
    "Canaliculus",
-   "Palpebral"
+   "Fornix"
   ],
   "a": 2,
   "w": "Canaliculus: Latin — small canal. The narrow tube connecting the punctum to the lacrimal sac",
@@ -3557,9 +3557,9 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Which term describes the duct that carries tears from the lacrimal sac into the nasal cavity?",
   "o": [
-   "Fornix",
-   "Meibomian glands",
    "Palpebral",
+   "Meibomian glands",
+   "Fornix",
    "Nasolacrimal"
   ],
   "a": 3,
@@ -3573,8 +3573,8 @@
   "t": "A2 Lids/Lacrimal",
   "q": "Which term describes unicellular glands in the conjunctival epithelium that secrete mucin?",
   "o": [
-   "Meibomian glands",
    "Fornix",
+   "Meibomian glands",
    "Palpebral",
    "Goblet cell"
   ],
@@ -3591,8 +3591,8 @@
   "o": [
    "Palpebral",
    "TBUT",
-   "Meibomian glands",
-   "Fornix"
+   "Fornix",
+   "Meibomian glands"
   ],
   "a": 1,
   "w": "TBUT: Tear Break-Up Time. Time in seconds from last blink to first dry spot on cornea — measures tear film stability",
@@ -3607,8 +3607,8 @@
   "o": [
    "Chemosis",
    "Fornix",
-   "Meibomian glands",
-   "Palpebral"
+   "Palpebral",
+   "Meibomian glands"
   ],
   "a": 0,
   "w": "Chemosis: Greek kheme — clam shell (gaping shell). Swelling/edema of the conjunctiva, most prominent at the loose fornix",
@@ -3621,10 +3621,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "The corneal central thickness is:",
   "o": [
-   "7–8.5 mm",
+   "0.7–1.0 mm",
    "0.52–0.56 mm",
    "11–12 mm",
-   "0.7–1.0 mm"
+   "7–8.5 mm"
   ],
   "a": 1,
   "w": "Corneal central thickness: 0.52–0.56 mm. Measured by pachymeter — thin cornea = risk in refractive surgery; thick = suspect IOP readings",
@@ -3638,8 +3638,8 @@
   "q": "The corneal peripheral thickness is:",
   "o": [
    "0.7–1.0 mm",
-   "0.52–0.56 mm",
    "7–8.5 mm",
+   "0.52–0.56 mm",
    "11–12 mm"
   ],
   "a": 0,
@@ -3653,8 +3653,8 @@
   "t": "A2 Cornea/Sclera",
   "q": "The corneal radius of curvature is:",
   "o": [
-   "0.7–1.0 mm",
    "0.52–0.56 mm",
+   "0.7–1.0 mm",
    "7–8.5 mm",
    "11–12 mm"
   ],
@@ -3669,10 +3669,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "The corneal horizontal diameter is:",
   "o": [
-   "0.52–0.56 mm",
    "7–8.5 mm",
+   "0.7–1.0 mm",
    "11–12 mm",
-   "0.7–1.0 mm"
+   "0.52–0.56 mm"
   ],
   "a": 2,
   "w": "Corneal horizontal diameter: 11–12 mm. Wider than vertical (10–11mm) — cornea is a horizontal oval, not a circle",
@@ -3718,9 +3718,9 @@
   "q": "The scleral radius of curvature is:",
   "o": [
    "0.7–1.0 mm",
-   "0.52–0.56 mm",
+   "7–8.5 mm",
    "12 mm",
-   "7–8.5 mm"
+   "0.52–0.56 mm"
   ],
   "a": 2,
   "w": "Scleral radius of curvature: 12 mm. Flatter than cornea; not refractive",
@@ -3733,10 +3733,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the tough white outer coat that forms 5/6 of the eyeball wall?",
   "o": [
-   "Limbus",
    "Stroma",
+   "Descemet's membrane",
    "Sclera",
-   "Descemet's membrane"
+   "Limbus"
   ],
   "a": 2,
   "w": "Sclera: Greek skleros — hard. The tough white outer coat that forms 5/6 of the eyeball wall",
@@ -3749,10 +3749,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the 1–2 mm transition zone where cornea meets sclera — not just anatomical, but clinically critical (contains drainage angle)?",
   "o": [
-   "Stroma",
+   "Descemet's membrane",
    "Sclera",
    "Limbus",
-   "Descemet's membrane"
+   "Stroma"
   ],
   "a": 2,
   "w": "Limbus: Latin — border, threshold. The 1–2 mm transition zone where cornea meets sclera — not just anatomical, but clinically critical (contains drainage angle)",
@@ -3765,8 +3765,8 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the thick middle layer of the cornea (90% of its thickness); the \"mattress\" of collagen?",
   "o": [
-   "Sclera",
    "Descemet's membrane",
+   "Sclera",
    "Limbus",
    "Stroma"
   ],
@@ -3781,8 +3781,8 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the basement membrane of the endothelium — elastic, resistant to perforation?",
   "o": [
-   "Scleral spur",
    "Corneal stroma",
+   "Scleral spur",
    "Bowman's layer",
    "Descemet's membrane"
   ],
@@ -3797,9 +3797,9 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes a balloon-like protrusion of Descemet's membrane through a perforated corneal stroma — the stroma gives way but Descemet holds?",
   "o": [
-   "Limbus",
    "Stroma",
    "Sclera",
+   "Limbus",
    "Descemetocele"
   ],
   "a": 3,
@@ -3815,8 +3815,8 @@
   "o": [
    "Endothelium",
    "Limbus",
-   "Stroma",
-   "Sclera"
+   "Sclera",
+   "Stroma"
   ],
   "a": 0,
   "w": "Endothelium: Greek endon — within + thele — nipple. The innermost single-cell layer of the cornea; critical for deturgescence via Na-K pump",
@@ -3829,10 +3829,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the active dehydration of the corneal stroma maintained by the endothelial pump?",
   "o": [
+   "Limbus",
    "Sclera",
-   "Stroma",
    "Deturgescence",
-   "Limbus"
+   "Stroma"
   ],
   "a": 2,
   "w": "Deturgescence: Latin de — away + turgescere — to swell. The active dehydration of the corneal stroma maintained by the endothelial pump",
@@ -3845,10 +3845,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes the instrument that measures corneal thickness?",
   "o": [
+   "Limbus",
    "Stroma",
-   "Sclera",
    "Pachymeter",
-   "Limbus"
+   "Sclera"
   ],
   "a": 2,
   "w": "Pachymeter: Greek pakhys — thick + metron — measure. The instrument that measures corneal thickness",
@@ -3862,9 +3862,9 @@
   "q": "Which term describes the flat, stellate cells within the corneal stroma that produce and maintain the collagen matrix?",
   "o": [
    "Limbus",
-   "Stroma",
+   "Sclera",
    "Keratocyte",
-   "Sclera"
+   "Stroma"
   ],
   "a": 2,
   "w": "Keratocyte: Greek keras — horn + kytos — cell. The flat, stellate cells within the corneal stroma that produce and maintain the collagen matrix",
@@ -3877,10 +3877,10 @@
   "t": "A2 Cornea/Sclera",
   "q": "Which term describes channels through the sclera through which nerves and vessels pass?",
   "o": [
-   "Stroma",
+   "Sclera",
    "Limbus",
    "Emissarium",
-   "Sclera"
+   "Stroma"
   ],
   "a": 2,
   "w": "Emissarium: Latin — outlet. Channels through the sclera through which nerves and vessels pass",
@@ -3894,9 +3894,9 @@
   "q": "The normal pupil size is:",
   "o": [
    "3–4 mm",
+   "0.10 mm",
    "6 mm total",
-   "0.25 mm",
-   "0.10 mm"
+   "0.25 mm"
   ],
   "a": 0,
   "w": "Normal pupil size: 3–4 mm. Miosis = <2mm; mydriasis = >5mm",
@@ -3925,10 +3925,10 @@
   "t": "A2 Uveal Tract",
   "q": "The choroid posterior thickness is:",
   "o": [
-   "3–4 mm",
+   "6 mm total",
    "0.25 mm",
    "0.10 mm",
-   "6 mm total"
+   "3–4 mm"
   ],
   "a": 1,
   "w": "Choroid posterior thickness: 0.25 mm (thickest). Most metabolically active; first affected in choroidal ischemia",
@@ -3943,8 +3943,8 @@
   "o": [
    "0.10 mm",
    "0.25 mm",
-   "3–4 mm",
-   "6 mm total"
+   "6 mm total",
+   "3–4 mm"
   ],
   "a": 0,
   "w": "Choroid anterior thickness: 0.10 mm (thinnest). Near ora serrata",
@@ -3973,8 +3973,8 @@
   "t": "A2 Uveal Tract",
   "q": "Which term describes the circular ridge on the iris that separates the pupillary zone from the ciliary zone?",
   "o": [
-   "Iris",
    "Mydriasis",
+   "Iris",
    "Miosis",
    "Collarette"
   ],
@@ -4005,8 +4005,8 @@
   "t": "A2 Uveal Tract",
   "q": "Which term describes the flat, non-vascular posterior portion of the ciliary body — preferred surgical entry site?",
   "o": [
-   "Miosis",
    "Collarette",
+   "Miosis",
    "Iris",
    "Pars plana"
   ],
@@ -4021,10 +4021,10 @@
   "t": "A2 Uveal Tract",
   "q": "Which term describes the folded, vascular anterior portion with ciliary processes — produces aqueous?",
   "o": [
-   "Miosis",
+   "Iris",
    "Pars plicata",
    "Collarette",
-   "Iris"
+   "Miosis"
   ],
   "a": 1,
   "w": "Pars plicata: Latin — folded part. The folded, vascular anterior portion with ciliary processes — produces aqueous",
@@ -4037,9 +4037,9 @@
   "t": "A2 Uveal Tract",
   "q": "Which term describes the innermost vascular layer of the choroid — wide-bore capillaries that supply the outer retina?",
   "o": [
+   "Miosis",
    "Iris",
    "Collarette",
-   "Miosis",
    "Choriocapillaris"
   ],
   "a": 3,
@@ -4054,9 +4054,9 @@
   "q": "Which term describes the thin innermost layer of the choroid separating it from the RPE?",
   "o": [
    "Collarette",
-   "Iris",
+   "Miosis",
    "Bruch's membrane",
-   "Miosis"
+   "Iris"
   ],
   "a": 2,
   "w": "Bruch's membrane: Named after Karl Wilhelm Ludwig Bruch. The thin innermost layer of the choroid separating it from the RPE",
@@ -4070,9 +4070,9 @@
   "q": "Which term describes age-related loss of accommodation due to lens nuclear hardening?",
   "o": [
    "Presbyopia",
+   "Capsule",
    "Vitreous",
-   "Muscae volitantes",
-   "Capsule"
+   "Muscae volitantes"
   ],
   "a": 0,
   "w": "Presbyopia: Greek presbys — old man + ops — eye. Age-related loss of accommodation due to lens nuclear hardening",
@@ -4087,8 +4087,8 @@
   "o": [
    "Capsule",
    "Muscae volitantes",
-   "Vitreous",
-   "Presbyopia"
+   "Presbyopia",
+   "Vitreous"
   ],
   "a": 0,
   "w": "Capsule: Latin capsula — small container. The smooth acellular envelope surrounding the entire lens",
@@ -4102,8 +4102,8 @@
   "q": "Which term describes the clear gel filling the posterior 4/5 of the eyeball?",
   "o": [
    "Presbyopia",
-   "Muscae volitantes",
    "Capsule",
+   "Muscae volitantes",
    "Vitreous"
   ],
   "a": 3,
@@ -4117,10 +4117,10 @@
   "t": "A2 Lens/Vitreous",
   "q": "Which term describes vitreous floaters; opacities from remnants of the hyaloid system?",
   "o": [
-   "Presbyopia",
    "Vitreous",
+   "Capsule",
    "Muscae volitantes",
-   "Capsule"
+   "Presbyopia"
   ],
   "a": 2,
   "w": "Muscae volitantes: Latin — flying flies. Vitreous floaters; opacities from remnants of the hyaloid system",
@@ -4133,9 +4133,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "Which term describes the remnant canal of the hyaloid artery running through the vitreous?",
   "o": [
+   "Vitreous",
    "Presbyopia",
    "Capsule",
-   "Vitreous",
    "Hyaloid canal"
   ],
   "a": 3,
@@ -4150,8 +4150,8 @@
   "q": "Which term describes active dehydration of the corneal stroma by endothelial pumping?",
   "o": [
    "Deturgescence",
-   "Capsule",
    "Presbyopia",
+   "Capsule",
    "Vitreous"
   ],
   "a": 0,
@@ -4165,9 +4165,9 @@
   "t": "A2 Lens/Vitreous",
   "q": "Which term describes the pressure that sets the floor for IOP, normally about 10 mmHg?",
   "o": [
+   "Intraocular pressure",
    "Choroidal perfusion pressure",
    "Capsular tension",
-   "Intraocular pressure",
    "Episcleral venous pressure"
   ],
   "a": 3,
@@ -4182,9 +4182,9 @@
   "q": "The macula diameter is:",
   "o": [
    "4.5 mm",
+   "6 mm from limbus",
    "1.5 mm",
-   "0.4 mm",
-   "6 mm from limbus"
+   "0.4 mm"
   ],
   "a": 0,
   "w": "Macula diameter: 4.5 mm. Contains the central 4.5mm around fovea",
@@ -4198,8 +4198,8 @@
   "q": "The foveola diameter is:",
   "o": [
    "0.4 mm",
-   "4.5 mm",
    "6 mm from limbus",
+   "4.5 mm",
    "1.5 mm"
   ],
   "a": 0,
@@ -4213,9 +4213,9 @@
   "t": "A2 Retina/Optic N",
   "q": "The ora serrata location is:",
   "o": [
+   "4.5 mm",
    "1.5 mm",
    "0.4 mm",
-   "4.5 mm",
    "6 mm from limbus"
   ],
   "a": 3,
@@ -4245,9 +4245,9 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes the central pit/depression in the macula; thinnest retina; highest acuity?",
   "o": [
+   "Macula lutea",
    "Foveola",
    "Parafovea",
-   "Macula lutea",
    "Fovea centralis"
   ],
   "a": 3,
@@ -4261,10 +4261,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes the central 0.4mm of the fovea; pure cones; capillary-free zone?",
   "o": [
-   "Fovea centralis",
    "Parafovea",
+   "Macula lutea",
    "Foveola",
-   "Macula lutea"
+   "Fovea centralis"
   ],
   "a": 2,
   "w": "Foveola: Latin — small pit. The central 0.4mm of the fovea; pure cones; capillary-free zone",
@@ -4278,8 +4278,8 @@
   "q": "Which term describes the rim of the fovea; thickest retinal area (ganglion cells displaced here, 5–7 layers)?",
   "o": [
    "Fovea centralis",
-   "Foveola",
    "Macula lutea",
+   "Foveola",
    "Parafovea"
   ],
   "a": 3,
@@ -4293,10 +4293,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes the scalloped anterior edge of the retina where it transitions to ciliary epithelium?",
   "o": [
-   "Fovea centralis",
+   "Foveola",
    "Macula lutea",
    "Ora serrata",
-   "Foveola"
+   "Fovea centralis"
   ],
   "a": 2,
   "w": "Ora serrata: Latin — serrated mouth. The scalloped anterior edge of the retina where it transitions to ciliary epithelium",
@@ -4309,9 +4309,9 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes the rods and cones; convert light to electrical signals?",
   "o": [
-   "Macula lutea",
-   "Foveola",
    "Fovea centralis",
+   "Foveola",
+   "Macula lutea",
    "Photoreceptor"
   ],
   "a": 3,
@@ -4325,10 +4325,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes single layer of pigmented cells; outermost retinal layer; absorbs light, maintains photoreceptors?",
   "o": [
-   "Foveola",
+   "Macula lutea",
    "RPE",
-   "Fovea centralis",
-   "Macula lutea"
+   "Foveola",
+   "Fovea centralis"
   ],
   "a": 1,
   "w": "RPE: Retinal Pigment Epithelium. Single layer of pigmented cells; outermost retinal layer; absorbs light, maintains photoreceptors",
@@ -4341,10 +4341,10 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes 3rd-order neurons; axons form the optic nerve?",
   "o": [
-   "Macula lutea",
    "Fovea centralis",
+   "Foveola",
    "Ganglion cell",
-   "Foveola"
+   "Macula lutea"
   ],
   "a": 2,
   "w": "Ganglion cell: Latin ganglion — knot. 3rd-order neurons; axons form the optic nerve",
@@ -4373,8 +4373,8 @@
   "t": "A2 Retina/Optic N",
   "q": "Which term describes the head of the optic nerve as it exits the eye; blind spot?",
   "o": [
-   "Foveola",
    "Macula lutea",
+   "Foveola",
    "Fovea centralis",
    "Optic disc"
   ],
@@ -4391,8 +4391,8 @@
   "o": [
    "Fovea centralis",
    "Lamina cribrosa",
-   "Foveola",
-   "Macula lutea"
+   "Macula lutea",
+   "Foveola"
   ],
   "a": 1,
   "w": "Lamina cribrosa: Latin — sieve-like plate. The perforated scleral area through which optic nerve fibers exit; critical pressure point in glaucoma",
@@ -4407,8 +4407,8 @@
   "o": [
    "C/D ratio",
    "Fovea centralis",
-   "Macula lutea",
-   "Foveola"
+   "Foveola",
+   "Macula lutea"
   ],
   "a": 0,
   "w": "C/D ratio: Cup-to-disc ratio. Ratio of physiologic cup to optic disc diameter; normal ≤0.3; elevated in glaucoma",
@@ -4422,9 +4422,9 @@
   "q": "Which term describes same-side field defects in both eyes (e.g., right homonymous = right field lost in both eyes)?",
   "o": [
    "Homonymous",
+   "Incongruous",
    "Congruous",
-   "Heteronymous",
-   "Incongruous"
+   "Heteronymous"
   ],
   "a": 0,
   "w": "Homonymous: Greek homos — same + onymos — named. Same-side field defects in both eyes (e.g., right homonymous = right field lost in both eyes)",
@@ -4437,10 +4437,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes different-side field defects (e.g., bitemporal = temporal field lost in both eyes)?",
   "o": [
-   "Congruous",
+   "Homonymous",
    "Heteronymous",
    "Incongruous",
-   "Homonymous"
+   "Congruous"
   ],
   "a": 1,
   "w": "Heteronymous: Greek heteros — different + onymos. Different-side field defects (e.g., bitemporal = temporal field lost in both eyes)",
@@ -4454,8 +4454,8 @@
   "q": "Which term describes field defects that are identical/symmetrical in both eyes; posterior lesion?",
   "o": [
    "Congruous",
-   "Heteronymous",
    "Homonymous",
+   "Heteronymous",
    "Quadrantanopsia"
   ],
   "a": 0,
@@ -4469,10 +4469,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes field defects that are dissimilar between the two eyes; anterior lesion?",
   "o": [
-   "Heteronymous",
-   "Incongruous",
    "Homonymous",
-   "Quadrantanopsia"
+   "Incongruous",
+   "Quadrantanopsia",
+   "Heteronymous"
   ],
   "a": 1,
   "w": "Incongruous: Latin — to disagree. Field defects that are dissimilar between the two eyes; anterior lesion",
@@ -4485,10 +4485,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes loss of one quadrant of the visual field?",
   "o": [
-   "Heteronymous",
    "Homonymous",
+   "Congruous",
    "Quadrantanopsia",
-   "Congruous"
+   "Heteronymous"
   ],
   "a": 2,
   "w": "Quadrantanopsia: Latin quadrans — quarter. Loss of one quadrant of the visual field",
@@ -4503,8 +4503,8 @@
   "o": [
    "Heteronymous",
    "Scotoma",
-   "Homonymous",
-   "Congruous"
+   "Congruous",
+   "Homonymous"
   ],
   "a": 1,
   "w": "Scotoma: Greek skotos — darkness. A focal area of reduced or absent vision within an intact visual field",
@@ -4517,10 +4517,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes brodmann area 17; primary visual cortex; named for the prominent striae of Gennari?",
   "o": [
-   "Heteronymous",
+   "Congruous",
    "Area striata",
-   "Homonymous",
-   "Congruous"
+   "Heteronymous",
+   "Homonymous"
   ],
   "a": 1,
   "w": "Area striata: Latin — striped area. Brodmann area 17; primary visual cortex; named for the prominent striae of Gennari",
@@ -4533,9 +4533,9 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes the thick white band of geniculo-calcarine fibers visible in area 17 even with the naked eye?",
   "o": [
-   "Congruous",
-   "Heteronymous",
    "Homonymous",
+   "Heteronymous",
+   "Congruous",
    "Striae of Gennari"
   ],
   "a": 3,
@@ -4549,10 +4549,10 @@
   "t": "A2 Visual Pathway",
   "q": "Which term describes pupil does not react when light hits the blind half of retina; from optic tract lesion?",
   "o": [
-   "Adie's tonic pupil",
+   "Argyll-Robertson pupil",
    "Wernicke's hemianopic pupil",
    "Marcus Gunn pupil",
-   "Argyll-Robertson pupil"
+   "Adie's tonic pupil"
   ],
   "a": 1,
   "w": "Wernicke's hemianopic pupil: Named after Carl Wernicke. Pupil does not react when light hits the blind half of retina; from optic tract lesion",
@@ -4566,8 +4566,8 @@
   "q": "Which term describes the bilateral outpouching from the diencephalon that initiates eye development?",
   "o": [
    "Optic vesicle",
-   "Lens placode",
    "Coloboma",
+   "Lens placode",
    "Fetal fissure"
   ],
   "a": 0,
@@ -4582,9 +4582,9 @@
   "q": "Which term describes the localized thickening of surface ectoderm induced by the optic vesicle contact?",
   "o": [
    "Lens placode",
+   "Coloboma",
    "Optic vesicle",
-   "Fetal fissure",
-   "Coloboma"
+   "Fetal fissure"
   ],
   "a": 0,
   "w": "Lens placode: Greek plax — flat plate. The localized thickening of surface ectoderm induced by the optic vesicle contact",
@@ -4613,9 +4613,9 @@
   "t": "A3 Embryology",
   "q": "Which term describes a congenital gap or notch from failure of fetal fissure closure?",
   "o": [
-   "Optic vesicle",
-   "Coloboma",
    "Lens placode",
+   "Coloboma",
+   "Optic vesicle",
    "Fetal fissure"
   ],
   "a": 1,
@@ -4646,8 +4646,8 @@
   "q": "Which term describes a small white dot on the posterior lens capsule — the normal remnant of where the hyaloid artery attached?",
   "o": [
    "Mittendorf dot",
-   "Fetal fissure",
    "Lens placode",
+   "Fetal fissure",
    "Optic vesicle"
   ],
   "a": 0,
@@ -4661,10 +4661,10 @@
   "t": "A3 Embryology",
   "q": "Which term describes lens dislocation — classic in Marfan syndrome (superiorly)?",
   "o": [
-   "Fetal fissure",
+   "Optic vesicle",
    "Ectopia lentis",
-   "Lens placode",
-   "Optic vesicle"
+   "Fetal fissure",
+   "Lens placode"
   ],
   "a": 1,
   "w": "Ectopia lentis: Greek ektopos — displaced + lens. Lens dislocation — classic in Marfan syndrome (superiorly)",

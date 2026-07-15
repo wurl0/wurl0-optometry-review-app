@@ -6,9 +6,9 @@
   "q": "An infant has an enlarged, cloudy cornea and tearing. The enlarged globe is termed:",
   "o": [
    "Buphthalmos",
-   "Anophthalmos",
+   "Phthisis bulbi",
    "Microphthalmos",
-   "Phthisis bulbi"
+   "Anophthalmos"
   ],
   "a": 0,
   "w": "Raised IOP from congenital glaucoma stretches the infant's distensible cornea and sclera (buphthalmos).",
@@ -37,9 +37,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "The most common primary orbital malignancy in children is:",
   "o": [
-   "Retinoblastoma",
-   "Lymphoma",
    "Cavernous hemangioma",
+   "Lymphoma",
+   "Retinoblastoma",
    "Rhabdomyosarcoma"
   ],
   "a": 3,
@@ -55,8 +55,8 @@
   "o": [
    "Myasthenia gravis",
    "CN3 palsy",
-   "Horner's syndrome",
-   "Aponeurotic ptosis"
+   "Aponeurotic ptosis",
+   "Horner's syndrome"
   ],
   "a": 0,
   "w": "Variable, fatiguable ptosis with a positive Tensilon test is myasthenia gravis.",
@@ -85,10 +85,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Horner's syndrome triad consists of:",
   "o": [
-   "Proptosis, mydriasis, tearing",
    "Ptosis, mydriasis, anhidrosis",
+   "Ptosis, miosis, exophthalmos",
    "Ptosis, miosis, anhidrosis",
-   "Ptosis, miosis, exophthalmos"
+   "Proptosis, mydriasis, tearing"
   ],
   "a": 2,
   "w": "Horner's = ptosis + miosis (small pupil) + anhidrosis. CN3 palsy gives the dilated-pupil ptosis.",
@@ -117,10 +117,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "An eyelid that turns outward after a CN VII palsy is:",
   "o": [
-   "Entropion",
+   "Trichiasis",
    "Ectropion",
-   "Distichiasis",
-   "Trichiasis"
+   "Entropion",
+   "Distichiasis"
   ],
   "a": 1,
   "w": "Orbicularis paralysis (CN VII) lets the lid evert (ectropion). Entropion turns in and scratches the cornea.",
@@ -149,10 +149,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "The most common malignant lacrimal gland tumor is:",
   "o": [
-   "Lymphoma",
+   "Squamous cell carcinoma",
    "Adenoid cystic carcinoma",
-   "Pleomorphic adenoma",
-   "Squamous cell carcinoma"
+   "Lymphoma",
+   "Pleomorphic adenoma"
   ],
   "a": 1,
   "w": "Adenoid cystic carcinoma is the most common malignant lacrimal gland tumor (painful, perineural, poor prognosis).",
@@ -165,10 +165,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Chronic dacryocystitis from nasolacrimal duct obstruction is definitively treated with:",
   "o": [
-   "Antibiotic drops only",
    "Probing",
+   "Massage",
    "DCR",
-   "Massage"
+   "Antibiotic drops only"
   ],
   "a": 2,
   "w": "DCR creates a new drainage passage for chronic obstruction; probing is used for congenital cases.",
@@ -181,9 +181,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Blood regurgitating on pressure over the lacrimal sac suggests:",
   "o": [
+   "Canalicular stenosis",
    "An allergic reaction",
    "A simple sac infection",
-   "Canalicular stenosis",
    "Carcinoma of the sac"
   ],
   "a": 3,
@@ -197,10 +197,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "The most common overall cause of proptosis in adults is:",
   "o": [
-   "Cellulitis",
+   "Orbital tumor",
    "Thyroid eye disease",
-   "Trauma",
-   "Orbital tumor"
+   "Cellulitis",
+   "Trauma"
   ],
   "a": 1,
   "w": "Thyroid eye disease (Graves) is the most common cause of both unilateral and bilateral proptosis in adults.",
@@ -214,9 +214,9 @@
   "q": "Pulsating exophthalmos suggests:",
   "o": [
    "Carotid-cavernous fistula",
-   "Thyroid disease",
+   "Cellulitis",
    "Orbital varices",
-   "Cellulitis"
+   "Thyroid disease"
   ],
   "a": 0,
   "w": "A transmitted vascular pulse (pulsating proptosis) suggests a carotid-cavernous fistula; intermittent (Valsalva) suggests varices.",
@@ -230,9 +230,9 @@
   "q": "Bilateral painless enlargement of the lacrimal AND salivary glands is:",
   "o": [
    "Acute dacryoadenitis",
-   "Mumps",
+   "Sjogren's syndrome",
    "Mikulicz syndrome",
-   "Sjogren's syndrome"
+   "Mumps"
   ],
   "a": 2,
   "w": "Mikulicz syndrome is bilateral painless lacrimal + salivary gland enlargement (sarcoid, lymphoma, TB).",
@@ -277,9 +277,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Inability to fully close the eye (e.g., from facial palsy) is:",
   "o": [
-   "Entropion",
-   "Blepharospasm",
    "Ptosis",
+   "Blepharospasm",
+   "Entropion",
    "Lagophthalmos"
   ],
   "a": 3,
@@ -294,9 +294,9 @@
   "q": "The most common benign orbital tumor in adults is:",
   "o": [
    "Lymphoma",
-   "Rhabdomyosarcoma",
+   "Glioma",
    "Cavernous hemangioma",
-   "Glioma"
+   "Rhabdomyosarcoma"
   ],
   "a": 2,
   "w": "Cavernous hemangioma is the most common benign orbital tumor in adults.",
@@ -309,9 +309,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Forceful, involuntary bilateral lid closure treated with botulinum toxin is:",
   "o": [
-   "Hemifacial spasm",
-   "Blepharoclonus",
    "Myokymia",
+   "Blepharoclonus",
+   "Hemifacial spasm",
    "Essential blepharospasm"
   ],
   "a": 3,
@@ -325,9 +325,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "An extra row of lashes arising from the meibomian gland orifices is:",
   "o": [
-   "Trichiasis",
-   "Distichiasis",
    "Poliosis",
+   "Distichiasis",
+   "Trichiasis",
    "Madarosis"
   ],
   "a": 1,
@@ -357,10 +357,10 @@
   "t": "E2 Anterior Segment",
   "q": "A wing-shaped fibrovascular growth crossing the limbus and destroying Bowman's layer is a:",
   "o": [
-   "Phlyctenule",
    "Pannus",
+   "Pinguecula",
    "Pterygium",
-   "Pinguecula"
+   "Phlyctenule"
   ],
   "a": 2,
   "w": "A pterygium crosses the limbus and destroys Bowman's; a pinguecula is a yellow limbal deposit that does not cross.",
@@ -373,9 +373,9 @@
   "t": "E2 Anterior Segment",
   "q": "The leading infectious cause of blindness worldwide is:",
   "o": [
+   "Bacterial conjunctivitis",
    "Herpes keratitis",
    "Onchocerciasis",
-   "Bacterial conjunctivitis",
    "Trachoma"
   ],
   "a": 3,
@@ -390,8 +390,8 @@
   "q": "A violet ring of injection around the cornea that does not blanch with epinephrine indicates:",
   "o": [
    "A deep intraocular process",
-   "Allergic conjunctivitis",
    "An inflamed pinguecula",
+   "Allergic conjunctivitis",
    "Subconjunctival hemorrhage"
   ],
   "a": 0,
@@ -421,9 +421,9 @@
   "t": "E2 Anterior Segment",
   "q": "A green-gold ring in Descemet's membrane (Kayser-Fleischer ring) indicates:",
   "o": [
-   "Gout",
    "Hemochromatosis",
    "Diabetes",
+   "Gout",
    "Wilson's disease"
   ],
   "a": 3,
@@ -437,10 +437,10 @@
   "t": "E2 Anterior Segment",
   "q": "Which growth does NOT cross the limbus?",
   "o": [
-   "Pterygium",
-   "Pinguecula",
    "Pannus",
-   "Phlyctenule migrating onto cornea"
+   "Pinguecula",
+   "Phlyctenule migrating onto cornea",
+   "Pterygium"
   ],
   "a": 1,
   "w": "A pinguecula is a degenerative yellow deposit that stops at the limbus.",
@@ -470,9 +470,9 @@
   "q": "Giant papillary conjunctivitis is most associated with:",
   "o": [
    "Contact lens wear",
-   "Dry eye",
    "Allergy to pollen",
-   "Bacterial infection"
+   "Bacterial infection",
+   "Dry eye"
   ],
   "a": 0,
   "w": "GPC is caused by lens deposits and friction on the upper tarsus (also sutures, prostheses).",
@@ -485,8 +485,8 @@
   "t": "E2 Anterior Segment",
   "q": "In bacterial conjunctivitis, the predominant cells and discharge are:",
   "o": [
-   "Plasma cells, serous",
    "Eosinophils, stringy",
+   "Plasma cells, serous",
    "Neutrophils, mucopurulent",
    "Lymphocytes, watery"
   ],
@@ -502,8 +502,8 @@
   "q": "A recurrent branching corneal ulcer with terminal bulbs that stains with fluorescein is:",
   "o": [
    "Herpes simplex keratitis",
-   "A bacterial corneal ulcer",
    "Filamentary fungal keratitis",
+   "A bacterial corneal ulcer",
    "Acanthamoeba keratitis"
   ],
   "a": 0,
@@ -518,8 +518,8 @@
   "q": "Vesicles on the tip of the nose in herpes zoster ophthalmicus (Hutchinson's sign) indicate:",
   "o": [
    "An allergic skin reaction",
-   "Bacterial superinfection",
    "Mild, self-limiting disease",
+   "Bacterial superinfection",
    "Nasociliary nerve involvement"
   ],
   "a": 3,
@@ -533,9 +533,9 @@
   "t": "E2 Anterior Segment",
   "q": "A tonic pupil that constricts to dilute (0.1%) pilocarpine is:",
   "o": [
-   "Horner's",
    "Marcus Gunn",
    "Argyll-Robertson",
+   "Horner's",
    "Adie's pupil"
   ],
   "a": 3,
@@ -550,9 +550,9 @@
   "q": "Small, irregular pupils that accommodate but do not react to light, due to neurosyphilis, are:",
   "o": [
    "Argyll-Robertson pupils",
-   "Marcus Gunn pupils",
+   "Adie's pupils",
    "Horner's pupils",
-   "Adie's pupils"
+   "Marcus Gunn pupils"
   ],
   "a": 0,
   "w": "Argyll-Robertson pupils (light-near dissociation) indicate neurosyphilis (pretectal lesion).",
@@ -565,10 +565,10 @@
   "t": "E2 Anterior Segment",
   "q": "Primary acute angle-closure glaucoma classically shows:",
   "o": [
-   "A normal pupil, clear cornea",
+   "A small pinpoint pupil",
    "Bilateral gradual field loss",
    "A mid-dilated, fixed pupil",
-   "A small pinpoint pupil"
+   "A normal pupil, clear cornea"
   ],
   "a": 2,
   "w": "PACG presents with a hard painful eye, cloudy cornea, halos, and a mid-dilated fixed pupil; it is a surgical emergency.",
@@ -599,8 +599,8 @@
   "o": [
    "Superotemporally",
    "It does not dislocate",
-   "Posteriorly",
-   "Inferiorly"
+   "Inferiorly",
+   "Posteriorly"
   ],
   "a": 0,
   "w": "Marfan (FBN1) dislocates the lens up (superotemporal); homocystinuria dislocates it down (inferonasal).",
@@ -614,9 +614,9 @@
   "q": "A nuclear sclerotic cataract that temporarily improves near vision causes:",
   "o": [
    "Second sight",
+   "Sudden blindness",
    "Hypermetropic shift",
-   "No refractive change",
-   "Sudden blindness"
+   "No refractive change"
   ],
   "a": 0,
   "w": "Nuclear sclerosis raises the lens index, producing a myopic shift ('second sight') before clouding vision.",
@@ -629,9 +629,9 @@
   "t": "E2 Anterior Segment",
   "q": "Which age-related cataract is described as the most common and most visually disabling, and is steroid-linked?",
   "o": [
-   "Anterior subcapsular",
-   "Posterior subcapsular",
    "Cortical",
+   "Posterior subcapsular",
+   "Anterior subcapsular",
    "Nuclear"
   ],
   "a": 1,
@@ -647,8 +647,8 @@
   "o": [
    "Galactosemia",
    "Diabetes mellitus",
-   "Hypocalcemia",
-   "Wilson's disease"
+   "Wilson's disease",
+   "Hypocalcemia"
   ],
   "a": 1,
   "w": "The bilateral snowflake cataract is the classic acute diabetic cataract.",
@@ -678,9 +678,9 @@
   "q": "A hypopyon in acute anterior uveitis is most associated with:",
   "o": [
    "HLA-B27 disease or Behcet's",
-   "Uncorrected refractive error",
+   "Allergic eye disease",
    "Evaporative dry eye",
-   "Allergic eye disease"
+   "Uncorrected refractive error"
   ],
   "a": 0,
   "w": "Hypopyon (pus in the AC) is classic for HLA-B27 uveitis and Behcet's, and for bacterial endophthalmitis.",
@@ -693,9 +693,9 @@
   "t": "E2 Anterior Segment",
   "q": "The standard treatment of acute anterior uveitis is:",
   "o": [
-   "Topical antibiotic only",
-   "Topical steroid + cycloplegic",
    "Anti-VEGF",
+   "Topical steroid + cycloplegic",
+   "Topical antibiotic only",
    "Laser iridotomy"
   ],
   "a": 1,
@@ -710,8 +710,8 @@
   "q": "Fuchs heterochromic cyclitis characteristically shows:",
   "o": [
    "Mutton-fat keratic precipitates",
-   "A dense hypopyon",
    "A darker iris with synechiae",
+   "A dense hypopyon",
    "A lighter iris, no synechiae"
   ],
   "a": 3,
@@ -741,10 +741,10 @@
   "t": "E2 Anterior Segment",
   "q": "Band keratopathy (calcium in Bowman's layer) is treated with:",
   "o": [
-   "Antiviral drops",
+   "Laser iridotomy",
    "EDTA chelation",
-   "Anti-VEGF",
-   "Laser iridotomy"
+   "Antiviral drops",
+   "Anti-VEGF"
   ],
   "a": 1,
   "w": "Band keratopathy is calcium deposition (chronic uveitis, hypercalcemia) removed by EDTA chelation.",
@@ -757,10 +757,10 @@
   "t": "E2 Anterior Segment",
   "q": "Aphakia (absence of the lens) results in approximately:",
   "o": [
-   "Emmetropia",
    "−3 D myopia",
+   "−10 D myopia",
    "+10 to +12 D hyperopia",
-   "−10 D myopia"
+   "Emmetropia"
   ],
   "a": 2,
   "w": "Removing the lens leaves a high hyperopic refraction (~+10 to +12 D), corrected by IOL, CL, or thick spectacles.",
@@ -773,8 +773,8 @@
   "t": "E2 Anterior Segment",
   "q": "A vertical brown spindle of pigment on the corneal endothelium (Krukenberg spindle) is part of:",
   "o": [
-   "Keratoconus",
    "Fuchs dystrophy",
+   "Keratoconus",
    "Wilson's disease",
    "Pigment dispersion syndrome"
   ],
@@ -789,10 +789,10 @@
   "t": "E2 Anterior Segment",
   "q": "The dry eye test cutoffs are:",
   "o": [
-   "TBUT <2 sec only",
+   "Schirmer <5 mm only",
    "Schirmer <25 mm and TBUT <30 sec",
    "Schirmer <10 mm and TBUT <10 sec",
-   "Schirmer <5 mm only"
+   "TBUT <2 sec only"
   ],
   "a": 2,
   "w": "Schirmer <10 mm/5 min suggests aqueous deficiency; TBUT <10 sec suggests instability (lipid/mucin).",
@@ -805,8 +805,8 @@
   "t": "E2 Anterior Segment",
   "q": "The aqueous deficiency form of dry eye is most classically caused by:",
   "o": [
-   "Pterygium",
    "Meibomian gland dysfunction",
+   "Pterygium",
    "Sjogren's syndrome",
    "Vitamin A deficiency"
   ],
@@ -821,9 +821,9 @@
   "t": "E2 Anterior Segment",
   "q": "After-cataract (posterior capsule opacification) following extracapsular surgery is treated with:",
   "o": [
-   "Repeat cataract surgery",
-   "YAG laser capsulotomy",
    "Steroid drops",
+   "YAG laser capsulotomy",
+   "Repeat cataract surgery",
    "Anti-VEGF"
   ],
   "a": 1,
@@ -854,9 +854,9 @@
   "q": "A 'blood and thunder' fundus with diffuse hemorrhages and dilated tortuous veins is:",
   "o": [
    "CRVO",
-   "ARMD",
+   "Diabetic macular edema",
    "CRAO",
-   "Diabetic macular edema"
+   "ARMD"
   ],
   "a": 0,
   "w": "Central retinal vein occlusion gives the blood-and-thunder appearance; ischemic CRVO risks neovascular glaucoma at ~3 months.",
@@ -869,10 +869,10 @@
   "t": "E3 Posterior/Retina",
   "q": "The earliest sign of diabetic retinopathy is:",
   "o": [
+   "Hard exudates",
    "Neovascularization",
-   "Cotton-wool spots",
    "Microaneurysm",
-   "Hard exudates"
+   "Cotton-wool spots"
   ],
   "a": 2,
   "w": "Microaneurysms are the earliest ophthalmoscopic sign of diabetic retinopathy.",
@@ -886,9 +886,9 @@
   "q": "Severe non-proliferative diabetic retinopathy is defined by the:",
   "o": [
    "1-2-3 rule",
-   "ISNT rule",
+   "ABCD rule",
    "4-2-1 rule",
-   "ABCD rule"
+   "ISNT rule"
   ],
   "a": 2,
   "w": "4-2-1: hemorrhages in all 4 quadrants, OR venous beading in 2, OR IRMA in 1.",
@@ -902,9 +902,9 @@
   "q": "Cotton-wool spots represent:",
   "o": [
    "Nerve fiber layer infarcts",
+   "Drusen",
    "Hemorrhages",
-   "Lipid exudates",
-   "Drusen"
+   "Lipid exudates"
   ],
   "a": 0,
   "w": "Cotton-wool spots are NFL microinfarcts from ischemia; hard exudates are lipid.",
@@ -918,9 +918,9 @@
   "q": "Proliferative diabetic retinopathy is treated with:",
   "o": [
    "Panretinal photocoagulation",
+   "Cycloplegics",
    "Observation",
-   "Topical steroids",
-   "Cycloplegics"
+   "Topical steroids"
   ],
   "a": 0,
   "w": "PRP destroys ischemic retina to cut the VEGF drive; anti-VEGF is an adjunct.",
@@ -933,10 +933,10 @@
   "t": "E3 Posterior/Retina",
   "q": "A macular star of hard exudates with papilledema indicates:",
   "o": [
-   "Central retinal artery occlusion",
+   "Diabetic retinopathy",
    "Hypertensive retinopathy",
-   "Age-related macular degeneration",
-   "Diabetic retinopathy"
+   "Central retinal artery occlusion",
+   "Age-related macular degeneration"
   ],
   "a": 1,
   "w": "Grade IV (Keith-Wagener-Barker) hypertensive retinopathy adds papilledema to grade III findings = malignant hypertension.",
@@ -949,10 +949,10 @@
   "t": "E3 Posterior/Retina",
   "q": "The most common type of age-related macular degeneration is:",
   "o": [
-   "Myopic",
+   "Mixed",
    "Wet",
    "Dry",
-   "Mixed"
+   "Myopic"
   ],
   "a": 2,
   "w": "Dry (atrophic) ARMD with drusen is 85–90%; wet (CNV) is the aggressive minority.",
@@ -965,9 +965,9 @@
   "t": "E3 Posterior/Retina",
   "q": "First-line treatment for wet (neovascular) ARMD is:",
   "o": [
+   "Observation",
    "Laser only",
    "AREDS2 vitamins only",
-   "Observation",
    "Intravitreal anti-VEGF"
   ],
   "a": 3,
@@ -981,10 +981,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Night blindness, bone-spicule pigmentation, and a waxy pale disc describe:",
   "o": [
-   "CRVO",
    "Diabetic retinopathy",
+   "ARMD",
    "Retinitis pigmentosa",
-   "ARMD"
+   "CRVO"
   ],
   "a": 2,
   "w": "RP is a rod-first dystrophy: nyctalopia, bone spicules, attenuated vessels, waxy disc, reduced rod ERG.",
@@ -997,9 +997,9 @@
   "t": "E3 Posterior/Retina",
   "q": "A 'headlight in the fog' focal chorioretinitis at the edge of an old scar is:",
   "o": [
-   "VKH",
-   "Toxoplasmosis",
    "CMV retinitis",
+   "Toxoplasmosis",
+   "VKH",
    "Toxocariasis"
   ],
   "a": 1,
@@ -1013,9 +1013,9 @@
   "t": "E3 Posterior/Retina",
   "q": "A 'pizza pie' retinitis with hemorrhage in a patient with HIV (CD4 <50) is:",
   "o": [
-   "Toxoplasmosis",
    "Histoplasmosis",
    "ARMD",
+   "Toxoplasmosis",
    "CMV retinitis"
   ],
   "a": 3,
@@ -1046,9 +1046,9 @@
   "q": "Pigment cells in the anterior vitreous (tobacco dust / Shafer's sign) indicate:",
   "o": [
    "A vitreous hemorrhage",
-   "Normal vitreous aging",
+   "An early cataract",
    "A retinal break",
-   "An early cataract"
+   "Normal vitreous aging"
   ],
   "a": 2,
   "w": "Tobacco dust signals a retinal break and warrants urgent retinal examination.",
@@ -1062,9 +1062,9 @@
   "q": "Unilateral vision loss over days with pain on eye movement and an RAPD in a young woman is:",
   "o": [
    "CRAO",
-   "NAION",
+   "Papilledema",
    "Optic neuritis",
-   "Papilledema"
+   "NAION"
   ],
   "a": 2,
   "w": "Optic neuritis (often the first sign of multiple sclerosis) causes painful unilateral loss with RAPD and red desaturation.",
@@ -1093,9 +1093,9 @@
   "t": "E3 Posterior/Retina",
   "q": "A 72-year-old with jaw claudication, raised ESR, and a chalky-white swollen disc has:",
   "o": [
-   "NAION",
    "Optic neuritis",
    "Papilledema",
+   "NAION",
    "Giant cell arteritis"
   ],
   "a": 3,
@@ -1110,8 +1110,8 @@
   "q": "Painless vision loss on waking with an altitudinal field defect and a 'disc at risk' is:",
   "o": [
    "Arteritic AION",
-   "Optic neuritis",
    "CRAO",
+   "Optic neuritis",
    "Non-arteritic AION"
   ],
   "a": 3,
@@ -1125,10 +1125,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Panuveitis with vitiligo, poliosis, alopecia, and meningismus is:",
   "o": [
-   "Behcet's",
-   "Vogt-Koyanagi-Harada",
    "Sarcoidosis",
-   "Sympathetic ophthalmia"
+   "Vogt-Koyanagi-Harada",
+   "Sympathetic ophthalmia",
+   "Behcet's"
   ],
   "a": 1,
   "w": "VKH is a panuveitis with integumentary and neurological features, treated with high-dose systemic steroids.",
@@ -1142,8 +1142,8 @@
   "q": "After penetrating trauma to one eye, bilateral granulomatous panuveitis develops. The injured eye is called the:",
   "o": [
    "Sympathizing eye",
-   "Dominant eye",
    "Amblyopic eye",
+   "Dominant eye",
    "Exciting eye"
   ],
   "a": 3,
@@ -1157,9 +1157,9 @@
   "t": "E3 Posterior/Retina",
   "q": "Retinopathy of prematurity active disease ('plus disease') is marked by:",
   "o": [
-   "Scattered macular drusen",
    "A macular cherry-red spot",
    "Bone spicule pigmentation",
+   "Scattered macular drusen",
    "Dilated, tortuous vessels"
   ],
   "a": 3,
@@ -1173,10 +1173,10 @@
   "t": "E3 Posterior/Retina",
   "q": "A branch retinal vein occlusion most commonly occurs:",
   "o": [
-   "At the optic disc margin",
+   "Within the fovea itself",
    "At an arteriovenous crossing",
    "At the ora serrata",
-   "Within the fovea itself"
+   "At the optic disc margin"
   ],
   "a": 1,
   "w": "BRVO occurs where a thickened artery compresses a vein at a crossing, most often superotemporally.",
@@ -1189,10 +1189,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Which retinal break carries the highest risk of progressing to detachment?",
   "o": [
-   "Atrophic round hole",
    "Drusen",
+   "Lattice without holes",
    "Horseshoe tear",
-   "Lattice without holes"
+   "Atrophic round hole"
   ],
   "a": 2,
   "w": "A horseshoe (flap) tear is under active vitreoretinal traction and most likely to lead to RD.",
@@ -1221,9 +1221,9 @@
   "t": "E3 Posterior/Retina",
   "q": "On the optic disc, glaucomatous cupping violates which rule?",
   "o": [
+   "KWB rule",
    "4-2-1 rule",
    "Roper-Hall rule",
-   "KWB rule",
    "ISNT rule"
   ],
   "a": 3,
@@ -1237,9 +1237,9 @@
   "t": "E3 Posterior/Retina",
   "q": "A large solitary floater after acute posterior vitreous detachment (a ring of condensed peripapillary vitreous) is a:",
   "o": [
+   "Drusen",
    "Roth spot",
    "Cotton-wool spot",
-   "Drusen",
    "Weiss ring"
   ],
   "a": 3,
@@ -1253,10 +1253,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Distortion of straight lines (metamorphopsia) on an Amsler grid is an early sign of:",
   "o": [
-   "A nuclear cataract",
+   "Retrobulbar optic neuritis",
    "Early open-angle glaucoma",
    "Choroidal neovascularization",
-   "Retrobulbar optic neuritis"
+   "A nuclear cataract"
   ],
   "a": 2,
   "w": "Metamorphopsia signals macular pathology, classically early CNV in wet ARMD.",
@@ -1270,9 +1270,9 @@
   "q": "A worker splashes lye (alkali) in one eye. The correct first step is:",
   "o": [
    "Begin copious irrigation immediately",
-   "Pad the eye and refer",
+   "Instill antibiotic ointment",
    "Take a full history first",
-   "Instill antibiotic ointment"
+   "Pad the eye and refer"
   ],
   "a": 0,
   "w": "A chemical burn is the only ocular injury treated before history and exam; irrigate at once.",
@@ -1286,8 +1286,8 @@
   "q": "Compared with acid, an alkali ocular burn is:",
   "o": [
    "More dangerous, penetrating deeply",
-   "Limited to the conjunctiva",
    "Less dangerous",
+   "Limited to the conjunctiva",
    "Identical"
   ],
   "a": 0,
@@ -1301,8 +1301,8 @@
   "t": "E4 Emergencies",
   "q": "Chemical-burn irrigation should continue until the pH reaches:",
   "o": [
-   "5.0",
    "Any time after 1 minute",
+   "5.0",
    "7.0–7.4",
    "8.5"
   ],
@@ -1317,9 +1317,9 @@
   "t": "E4 Emergencies",
   "q": "The prognosis in a chemical burn (Roper-Hall) depends most on:",
   "o": [
-   "Corneal diameter",
-   "The degree of limbal ischemia",
    "IOP",
+   "The degree of limbal ischemia",
+   "Corneal diameter",
    "Eyelid involvement"
   ],
   "a": 1,
@@ -1333,9 +1333,9 @@
   "t": "E4 Emergencies",
   "q": "A hard, painful red eye with a mid-dilated fixed pupil and cloudy cornea is managed by:",
   "o": [
+   "Topical steroids alone",
    "Broad-spectrum antibiotics",
    "Pressure patching the eye",
-   "Topical steroids alone",
    "Lowering IOP, then iridotomy"
   ],
   "a": 3,
@@ -1366,8 +1366,8 @@
   "q": "In suspected giant cell arteritis with sudden vision loss, you should:",
   "o": [
    "Start high-dose corticosteroids immediately",
-   "Wait for temporal artery biopsy before treating",
    "Give anti-VEGF",
+   "Wait for temporal artery biopsy before treating",
    "Observe"
   ],
   "a": 0,
@@ -1382,8 +1382,8 @@
   "q": "A suspected open (ruptured) globe should be:",
   "o": [
    "Shielded and referred, NPO",
-   "Irrigated forcefully",
    "Firmly pressure patched",
+   "Irrigated forcefully",
    "Pressed to measure IOP"
   ],
   "a": 0,
@@ -1397,9 +1397,9 @@
   "t": "E4 Emergencies",
   "q": "Which imaging is CONTRAINDICATED for a suspected ferrous (iron) intraocular foreign body?",
   "o": [
-   "CT",
-   "Ultrasound",
    "Plain X-ray",
+   "Ultrasound",
+   "CT",
    "MRI"
   ],
   "a": 3,
@@ -1429,10 +1429,10 @@
   "t": "E4 Emergencies",
   "q": "A hypopyon and decreasing vision a few days after cataract surgery is:",
   "o": [
-   "Dry eye",
+   "Allergic reaction",
    "GPC",
    "Endophthalmitis",
-   "Allergic reaction"
+   "Dry eye"
   ],
   "a": 2,
   "w": "Post-operative endophthalmitis is an emergency treated with a vitreous tap and intravitreal antibiotics.",
@@ -1447,8 +1447,8 @@
   "o": [
    "Proptosis and restricted gaze",
    "Marked redness of the eyelid",
-   "Fever with general malaise",
-   "Swelling of the entire eyelid"
+   "Swelling of the entire eyelid",
+   "Fever with general malaise"
   ],
   "a": 0,
   "w": "Orbital cellulitis adds proptosis, pain on motion, and restricted gaze; preseptal has normal motility and no proptosis.",
@@ -1478,8 +1478,8 @@
   "q": "After a blunt orbital injury with a floor fracture, the patient should be told to:",
   "o": [
    "Avoid blowing the nose",
-   "Apply heat",
    "Bend forward often",
+   "Apply heat",
    "Blow the nose to clear pressure"
   ],
   "a": 0,
@@ -1509,9 +1509,9 @@
   "t": "E4 Emergencies",
   "q": "Bilateral retinal hemorrhages with subdural hemorrhage in an infant under 2 suggest:",
   "o": [
-   "Birth trauma only",
-   "Shaken baby syndrome",
    "ROP",
+   "Shaken baby syndrome",
+   "Birth trauma only",
    "Congenital glaucoma"
   ],
   "a": 1,
@@ -1525,10 +1525,10 @@
   "t": "E4 Emergencies",
   "q": "A white corneal infiltrate with fluorescein staining and pain in a contact-lens wearer is, until proven otherwise:",
   "o": [
-   "Pinguecula",
    "Dry eye",
+   "Allergic conjunctivitis",
    "Microbial keratitis",
-   "Allergic conjunctivitis"
+   "Pinguecula"
   ],
   "a": 2,
   "w": "An infiltrate with staining and pain is microbial keratitis (Pseudomonas most common), a sight-threatening emergency.",
@@ -1541,9 +1541,9 @@
   "t": "E4 Emergencies",
   "q": "UV photokeratitis ('welder's flash' or snow blindness) typically:",
   "o": [
-   "Requires urgent surgery",
-   "Causes secondary glaucoma",
    "Causes permanent scarring",
+   "Causes secondary glaucoma",
+   "Requires urgent surgery",
    "Heals in 24–48 hours"
   ],
   "a": 3,
@@ -1559,8 +1559,8 @@
   "o": [
    "Acetic and citric",
    "Hydrofluoric acid",
-   "Boric and carbonic",
-   "All acids equally"
+   "All acids equally",
+   "Boric and carbonic"
   ],
   "a": 1,
   "w": "Hydrofluoric acid (and ammonia among alkalis) penetrates deeply, unlike most acids that coagulate and self-limit.",
@@ -1573,10 +1573,10 @@
   "t": "E4 Emergencies",
   "q": "A pigment ring imprinted on the anterior lens after blunt trauma (from the iris) is a:",
   "o": [
-   "Kayser-Fleischer ring",
-   "Vossius ring",
    "Weiss ring",
-   "Fleischer ring"
+   "Vossius ring",
+   "Fleischer ring",
+   "Kayser-Fleischer ring"
   ],
   "a": 1,
   "w": "A Vossius ring is iris-pigment imprinted on the anterior lens capsule from blunt trauma.",
@@ -1589,10 +1589,10 @@
   "t": "E4 Emergencies",
   "q": "Gray retinal opacification after blunt trauma that usually resolves in weeks is:",
   "o": [
-   "Retinal detachment",
+   "CRAO",
    "Choroidal rupture",
    "Commotio retinae",
-   "CRAO"
+   "Retinal detachment"
   ],
   "a": 2,
   "w": "Commotio retinae (Berlin's edema) is transient gray retinal whitening that typically resolves over 2–6 weeks.",
@@ -1605,9 +1605,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "An abnormally enlarged globe in an infant is termed:",
   "o": [
-   "Exophthalmos",
    "Megalocornea",
    "Staphyloma",
+   "Exophthalmos",
    "Buphthalmos"
   ],
   "a": 3,
@@ -1622,8 +1622,8 @@
   "q": "The most common primary orbital malignancy of childhood is:",
   "o": [
    "Rhabdomyosarcoma",
-   "Neuroblastoma",
    "Optic nerve glioma",
+   "Neuroblastoma",
    "Retinoblastoma"
   ],
   "a": 0,
@@ -1639,8 +1639,8 @@
   "o": [
    "Horner's syndrome",
    "Myasthenia gravis",
-   "CN3 palsy",
-   "Aponeurotic dehiscence"
+   "Aponeurotic dehiscence",
+   "CN3 palsy"
   ],
   "a": 1,
   "w": "Myasthenia produces fatiguable ptosis that worsens through the day and improves with edrophonium. It is the great mimic of pupil-sparing motility disorders.",
@@ -1671,8 +1671,8 @@
   "o": [
    "Chalazion",
    "Molluscum lesion",
-   "Preseptal cellulitis",
-   "Hordeolum"
+   "Hordeolum",
+   "Preseptal cellulitis"
   ],
   "a": 0,
   "w": "A chalazion is a sterile lipogranuloma of a blocked meibomian gland: firm and non-tender. A hordeolum (stye) is an acute, tender abscess.",
@@ -1686,9 +1686,9 @@
   "q": "Ectropion caused by a nerve palsy points to:",
   "o": [
    "CN7",
-   "CN5",
+   "CN3",
    "CN6",
-   "CN3"
+   "CN5"
   ],
   "a": 0,
   "w": "CN7 palsy paralyzes orbicularis oculi, so the lower lid falls away from the globe, producing paralytic ectropion with exposure keratopathy.",
@@ -1701,8 +1701,8 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "The most common eyelid malignancy is:",
   "o": [
-   "Squamous cell carcinoma",
    "Malignant melanoma",
+   "Squamous cell carcinoma",
    "Basal cell carcinoma",
    "Sebaceous gland carcinoma"
   ],
@@ -1717,10 +1717,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "The most common malignant tumor of the lacrimal gland is:",
   "o": [
-   "Lymphoma",
-   "Adenoid cystic carcinoma",
    "Basal cell carcinoma",
-   "Pleomorphic adenoma"
+   "Adenoid cystic carcinoma",
+   "Pleomorphic adenoma",
+   "Lymphoma"
   ],
   "a": 1,
   "w": "Adenoid cystic carcinoma is the commonest lacrimal gland malignancy, notable for pain from perineural invasion. Pleomorphic adenoma is the commonest benign tumor.",
@@ -1749,10 +1749,10 @@
   "t": "E2 Anterior Segment",
   "q": "Which growth invades and destroys Bowman's membrane?",
   "o": [
-   "Pannus",
    "Pinguecula",
+   "Limbal dermoid",
    "Pterygium",
-   "Limbal dermoid"
+   "Pannus"
   ],
   "a": 2,
   "w": "A pterygium crosses the limbus onto the cornea and destroys Bowman's, which is why it can scar and recur. A pinguecula stops at the limbus.",
@@ -1765,10 +1765,10 @@
   "t": "E2 Anterior Segment",
   "q": "The world's leading infectious cause of blindness is:",
   "o": [
-   "Onchocerciasis",
+   "Herpes simplex keratitis",
    "Trachoma",
-   "Gonococcal ophthalmia",
-   "Herpes simplex keratitis"
+   "Onchocerciasis",
+   "Gonococcal ophthalmia"
   ],
   "a": 1,
   "w": "Trachoma, from Chlamydia trachomatis, leads infectious blindness worldwide through repeated infection, scarring, trichiasis and corneal opacification.",
@@ -1783,8 +1783,8 @@
   "o": [
    "Vogt's striae",
    "A Fleischer ring",
-   "A Kayser-Fleischer ring",
-   "Munson's sign"
+   "Munson's sign",
+   "A Kayser-Fleischer ring"
   ],
   "a": 1,
   "w": "The Fleischer ring, iron deposited at the base of the cone, appears earliest. Vogt's striae and Munson's sign come later.",
@@ -1797,9 +1797,9 @@
   "t": "E2 Anterior Segment",
   "q": "A copper ring deposited in Descemet's membrane is called a:",
   "o": [
+   "Krukenberg spindle",
    "Hudson-Stahli line",
    "Fleischer ring",
-   "Krukenberg spindle",
    "Kayser-Fleischer ring"
   ],
   "a": 3,
@@ -1814,9 +1814,9 @@
   "q": "Which treatment must NEVER be given alone in epithelial (dendritic) herpes simplex keratitis?",
   "o": [
    "Topical steroids",
-   "Oral acyclovir",
    "Lubricants",
-   "Topical antivirals"
+   "Topical antivirals",
+   "Oral acyclovir"
   ],
   "a": 0,
   "w": "Steroids suppress local immunity and let the dendrite enlarge into a geographic ulcer, risking perforation. Steroids have a role only in stromal disease, always under antiviral cover.",
@@ -1829,10 +1829,10 @@
   "t": "E2 Anterior Segment",
   "q": "In Marfan syndrome the crystalline lens classically dislocates:",
   "o": [
-   "Directly posteriorly",
+   "Downward and inward",
    "Upward and outward",
    "Into the anterior chamber",
-   "Downward and inward"
+   "Directly posteriorly"
   ],
   "a": 1,
   "w": "Marfan displaces the lens up and out; homocystinuria displaces it down and in. Remember Marfan = up, homocystinuria = down.",
@@ -1847,8 +1847,8 @@
   "o": [
    "Cortical",
    "Nuclear sclerosis",
-   "Posterior subcapsular",
-   "Congenital lamellar"
+   "Congenital lamellar",
+   "Posterior subcapsular"
   ],
   "a": 1,
   "w": "A sclerosing nucleus raises the lens index, producing an index myopia that briefly lets a presbyope read without glasses again.",
@@ -1861,10 +1861,10 @@
   "t": "E2 Anterior Segment",
   "q": "A hypermature cataract leaking lens protein through an intact capsule causes which OPEN-angle secondary glaucoma?",
   "o": [
-   "Phacomorphic",
+   "Phacoantigenic",
    "Pupillary block",
    "Phacolytic",
-   "Phacoantigenic"
+   "Phacomorphic"
   ],
   "a": 2,
   "w": "In phacolytic glaucoma leaked protein and macrophages clog an open trabecular meshwork. Phacomorphic glaucoma is the angle-closure form, from an intumescent lens.",
@@ -1911,8 +1911,8 @@
   "o": [
    "Microaneurysm",
    "Cotton-wool spot",
-   "Neovascularization",
-   "Hard exudate"
+   "Hard exudate",
+   "Neovascularization"
   ],
   "a": 0,
   "w": "Microaneurysms are the first ophthalmoscopic sign, outpouchings where pericyte loss has weakened the capillary wall.",
@@ -1926,9 +1926,9 @@
   "q": "The 4-2-1 rule is used to define:",
   "o": [
    "Clinically significant macular edema",
-   "Proliferative diabetic retinopathy",
+   "The stages of ROP",
    "Severe non-proliferative diabetic retinopathy",
-   "The stages of ROP"
+   "Proliferative diabetic retinopathy"
   ],
   "a": 2,
   "w": "Severe NPDR needs any one of: hemorrhages in 4 quadrants, venous beading in 2, or IRMA in 1. It flags a high risk of progressing to proliferative disease.",
@@ -1941,9 +1941,9 @@
   "t": "E3 Posterior/Retina",
   "q": "The most common form of age-related macular degeneration is:",
   "o": [
-   "Central serous retinopathy",
    "Wet exudative AMD",
    "Myopic degeneration",
+   "Central serous retinopathy",
    "Dry atrophic AMD"
   ],
   "a": 3,
@@ -1974,9 +1974,9 @@
   "q": "A 'headlight in the fog' fundus appearance is classic for:",
   "o": [
    "Toxoplasmosis",
+   "Histoplasmosis",
    "Toxocariasis",
-   "CMV retinitis",
-   "Histoplasmosis"
+   "CMV retinitis"
   ],
   "a": 0,
   "w": "An active toxoplasma focus glows through overlying vitritis beside an old pigmented scar, the headlight-in-the-fog picture.",
@@ -1989,10 +1989,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Jaw claudication with a chalky-white swollen disc indicates:",
   "o": [
-   "Papilledema",
+   "Optic neuritis",
    "Giant cell arteritis",
    "Non-arteritic AION",
-   "Optic neuritis"
+   "Papilledema"
   ],
   "a": 1,
   "w": "Arteritic AION from GCA gives a chalky, pallid disc with systemic symptoms and a raised ESR. High-dose steroids start immediately, before biopsy, to save the fellow eye.",
@@ -2005,10 +2005,10 @@
   "t": "E3 Posterior/Retina",
   "q": "A retinal detachment associated with a full-thickness retinal break is:",
   "o": [
-   "Exudative",
-   "Rhegmatogenous",
    "Serous",
-   "Tractional"
+   "Rhegmatogenous",
+   "Tractional",
+   "Exudative"
   ],
   "a": 1,
   "w": "Rhegma means rent: fluid passes through a break into the subretinal space. Tractional detachment pulls the retina up without a break; exudative accumulates fluid beneath it.",
@@ -2021,10 +2021,10 @@
   "t": "E4 Emergencies",
   "q": "For a chemical burn, the very first action is to:",
   "o": [
-   "Measure visual acuity",
-   "Irrigate immediately",
    "Instill a cycloplegic",
-   "Take a full history"
+   "Irrigate immediately",
+   "Take a full history",
+   "Measure visual acuity"
   ],
   "a": 1,
   "w": "Irrigation precedes everything, including history and acuity. Every second of contact deepens the injury, and alkali penetrates fastest.",
@@ -2037,9 +2037,9 @@
   "t": "E4 Emergencies",
   "q": "Initial management of a central retinal artery occlusion includes:",
   "o": [
-   "Immediate anti-VEGF",
-   "Urgent laser retinopexy",
    "High-dose antibiotics",
+   "Urgent laser retinopexy",
+   "Immediate anti-VEGF",
    "Ocular massage and lowering IOP"
   ],
   "a": 3,
@@ -2053,10 +2053,10 @@
   "t": "E4 Emergencies",
   "q": "In suspected giant cell arteritis, high-dose steroids should be started:",
   "o": [
-   "After the ESR returns",
    "Only if vision is already lost",
+   "Only after a positive biopsy",
    "Immediately, before biopsy",
-   "Only after a positive biopsy"
+   "After the ESR returns"
   ],
   "a": 2,
   "w": "Steroids start on clinical suspicion. Biopsy stays informative for one to two weeks afterward, and waiting risks blinding the fellow eye.",
@@ -2070,9 +2070,9 @@
   "q": "A suspected ferrous intraocular foreign body must be imaged with:",
   "o": [
    "CT",
-   "No imaging is needed",
+   "B-scan ultrasound only",
    "MRI",
-   "B-scan ultrasound only"
+   "No imaging is needed"
   ],
   "a": 0,
   "w": "CT is mandatory and MRI is contraindicated: the magnet can move a ferrous fragment and shred intraocular tissue.",
@@ -2087,8 +2087,8 @@
   "o": [
    "Toxic anterior segment syndrome",
    "Endophthalmitis",
-   "Sympathetic ophthalmia",
-   "Phacolytic glaucoma"
+   "Phacolytic glaucoma",
+   "Sympathetic ophthalmia"
   ],
   "a": 1,
   "w": "Post-operative endophthalmitis presents with pain, falling vision and a hypopyon, and demands urgent intravitreal antibiotics.",
@@ -2103,8 +2103,8 @@
   "o": [
    "Oral antibiotics and review in a week",
    "Intravenous antibiotics and CT",
-   "Topical antibiotics only",
-   "Immediate orbital decompression"
+   "Immediate orbital decompression",
+   "Topical antibiotics only"
   ],
   "a": 1,
   "w": "Orbital cellulitis needs admission, IV antibiotics and CT to look for an abscess. It can progress to cavernous sinus thrombosis and death.",
@@ -2117,10 +2117,10 @@
   "t": "E4 Emergencies",
   "q": "A patient with a blow-out fracture should specifically be told not to:",
   "o": [
+   "Apply a cold compress",
    "Take oral analgesia",
-   "Sleep with the head raised",
    "Blow the nose",
-   "Apply a cold compress"
+   "Sleep with the head raised"
   ],
   "a": 2,
   "w": "Nose blowing forces air from the sinus into the orbit through the fracture, producing orbital emphysema and potentially compressing the optic nerve.",
@@ -2133,8 +2133,8 @@
   "t": "E4 Emergencies",
   "q": "A positive Seidel test with a distorted pupil suggests:",
   "o": [
-   "Endophthalmitis",
    "Acute angle-closure",
+   "Endophthalmitis",
    "An open globe",
    "Anterior uveitis"
   ],
@@ -2149,10 +2149,10 @@
   "t": "E2 Anterior Segment",
   "q": "The cataract described as the most visually disabling age-related type is:",
   "o": [
-   "Nuclear sclerotic",
+   "Cortical spoke",
    "Posterior subcapsular",
-   "Anterior stellate",
-   "Cortical spoke"
+   "Nuclear sclerotic",
+   "Anterior stellate"
   ],
   "a": 1,
   "w": "PSC sits right at the nodal point of the visual axis, so it wrecks near vision and glares badly in bright light, out of all proportion to its size.",
@@ -2165,10 +2165,10 @@
   "t": "E2 Anterior Segment",
   "q": "The Kayser-Fleischer ring consists of:",
   "o": [
-   "Iron at the cone base",
+   "Calcium in Bowman's",
    "Iron in the epithelium",
    "Copper in Descemet's membrane",
-   "Calcium in Bowman's"
+   "Iron at the cone base"
   ],
   "a": 2,
   "w": "The KF ring is copper deposited in Descemet's, signalling Wilson's disease. The Fleischer ring is iron at the base of the keratoconus cone: different metal, different layer, different disease.",
@@ -2182,9 +2182,9 @@
   "q": "The cherry-red spot in CRAO represents:",
   "o": [
    "Healthy choroid seen through thin retina",
+   "Lipid deposition at the fovea",
    "Infarcted foveal tissue",
-   "Subretinal hemorrhage",
-   "Lipid deposition at the fovea"
+   "Subretinal hemorrhage"
   ],
   "a": 0,
   "w": "The spot is not diseased tissue. The fovea is thin and fed by the choroid, so its normal red glow shows through while the surrounding retina turns pale and ischemic. Tay-Sachs produces the same picture.",
@@ -2213,8 +2213,8 @@
   "t": "E3 Posterior/Retina",
   "q": "Which retinal detachment type has NO retinal break?",
   "o": [
-   "All types have a break",
    "Rhegmatogenous",
+   "All types have a break",
    "Only exudative has none",
    "Tractional and exudative"
   ],
@@ -2229,10 +2229,10 @@
   "t": "E4 Emergencies",
   "q": "Alkali burns are more dangerous than acid burns because alkali:",
   "o": [
+   "Coagulates surface protein",
    "Binds corneal collagen tightly",
-   "Is more often concentrated",
    "Liquefies and keeps going",
-   "Coagulates surface protein"
+   "Is more often concentrated"
   ],
   "a": 2,
   "w": "Alkali saponifies membranes and liquefies its way inward, so damage continues long after contact. Acid coagulates protein, and that coagulum forms a barrier that limits depth. Acid is self-limiting; alkali is not.",
@@ -2245,9 +2245,9 @@
   "t": "E4 Emergencies",
   "q": "The pupil in acute angle-closure glaucoma is:",
   "o": [
-   "Widely dilated and reactive",
-   "Mid-dilated and fixed",
    "Small and constricted",
+   "Mid-dilated and fixed",
+   "Widely dilated and reactive",
    "Normal in size"
   ],
   "a": 1,
@@ -2261,9 +2261,9 @@
   "t": "E4 Emergencies",
   "q": "A chemical burn is unique among ocular injuries because it is:",
   "o": [
-   "Never sight-threatening",
    "Best treated after imaging",
    "Always managed by patching",
+   "Never sight-threatening",
    "Treated before any history is taken"
   ],
   "a": 3,
@@ -2277,8 +2277,8 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "A painful, tender, red nodule erupts at the lid margin over a few days. Most likely:",
   "o": [
-   "Basal cell carcinoma",
    "Chalazion",
+   "Basal cell carcinoma",
    "Hordeolum",
    "Xanthelasma"
   ],
@@ -2293,10 +2293,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "A patient with Bell's palsy (CN VII) develops a lower lid that falls away from the globe. This is:",
   "o": [
-   "Entropion",
+   "Distichiasis",
    "Lagophthalmos only",
    "Ectropion",
-   "Distichiasis"
+   "Entropion"
   ],
   "a": 2,
   "w": "(paralytic). Orbicularis paralysis lets the lid evert. Lagophthalmos (incomplete closure) often coexists, but the everted lid is ectropion.",
@@ -2309,10 +2309,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Fluorescein placed in the eye is not recovered from the nose; after saline irrigation the dye is recovered. This indicates:",
   "o": [
-   "A fully patent system",
+   "Complete block below the sac",
    "Lacrimal gland tumor",
    "Partial obstruction above the sac",
-   "Complete block below the sac"
+   "A fully patent system"
   ],
   "a": 2,
   "w": "A negative Jones I with dye recovered on Jones II irrigation indicates partial (functional) obstruction proximal to the sac.",
@@ -2341,9 +2341,9 @@
   "t": "E2 Anterior Segment",
   "q": "A red eye has a violet ring of injection around the cornea that does not blanch with epinephrine. This points to:",
   "o": [
+   "Subconjunctival hemorrhage",
    "Allergic conjunctivitis",
    "Pinguecula",
-   "Subconjunctival hemorrhage",
    "A deep process"
   ],
   "a": 3,
@@ -2374,9 +2374,9 @@
   "q": "A tall patient with long fingers and an aortic aneurysm has a lens dislocated superotemporally. The diagnosis and shift are:",
   "o": [
    "Marfan syndrome, up",
+   "Homocystinuria, down",
    "Trauma, variable",
-   "Weill-Marchesani, spherophakia",
-   "Homocystinuria, down"
+   "Weill-Marchesani, spherophakia"
   ],
   "a": 0,
   "w": "Marfan dislocates the lens superotemporally (up); homocystinuria dislocates it inferonasally (down).",
@@ -2390,8 +2390,8 @@
   "q": "A hypermature cataract leaks lens protein, macrophages clog the trabecular meshwork, and IOP rises with an open angle. This is:",
   "o": [
    "Iris bombe",
-   "Phacomorphic glaucoma",
    "Rubeosis iridis",
+   "Phacomorphic glaucoma",
    "Phacolytic glaucoma"
   ],
   "a": 3,
@@ -2405,10 +2405,10 @@
   "t": "E2 Anterior Segment",
   "q": "Mutton-fat keratic precipitates on the corneal endothelium indicate which kind of uveitis?",
   "o": [
-   "Viral",
    "Allergic",
+   "Fuchs heterochromic",
    "Granulomatous",
-   "Fuchs heterochromic"
+   "Viral"
   ],
   "a": 2,
   "w": "Large greasy mutton-fat KP suggest sarcoidosis, TB, VKH. Fine stellate KP suggest viral or Fuchs.",
@@ -2421,10 +2421,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Sudden painless loss of vision in one eye shows a pale retina with a cherry-red fovea and an RAPD. The diagnosis and first step:",
   "o": [
-   "Optic neuritis; IV methylprednisolone",
-   "CRAO; ocular massage, lower IOP",
    "Retinal detachment; urgent surgery",
-   "CRVO; observe and monitor"
+   "CRAO; ocular massage, lower IOP",
+   "CRVO; observe and monitor",
+   "Optic neuritis; IV methylprednisolone"
   ],
   "a": 1,
   "w": "The pale retina with cherry-red fovea is classic. Attempt ocular massage and IOP lowering within the window, and exclude giant cell arteritis.",
@@ -2454,8 +2454,8 @@
   "q": "A 30-year-old woman has unilateral vision loss over days, pain on eye movement, red desaturation, and an RAPD. The key systemic association is:",
   "o": [
    "Multiple sclerosis",
-   "Hypertension",
    "Diabetes",
+   "Hypertension",
    "Giant cell arteritis"
   ],
   "a": 0,
@@ -2469,10 +2469,10 @@
   "t": "E3 Posterior/Retina",
   "q": "A 72-year-old man has sudden vision loss, jaw pain when chewing, scalp tenderness, and ESR of 80. The immediate action is:",
   "o": [
-   "Temporal artery biopsy, then treat",
-   "Start high-dose corticosteroids immediately",
    "Observe and repeat ESR",
-   "Anti-VEGF injection"
+   "Start high-dose corticosteroids immediately",
+   "Anti-VEGF injection",
+   "Temporal artery biopsy, then treat"
   ],
   "a": 1,
   "w": "Giant cell arteritis can blind the second eye within days; treat on suspicion and biopsy afterward.",
@@ -2487,8 +2487,8 @@
   "o": [
    "Retinitis pigmentosa",
    "Diabetic retinopathy",
-   "CRVO",
-   "Age-related macular degeneration"
+   "Age-related macular degeneration",
+   "CRVO"
   ],
   "a": 0,
   "w": "Rod-first dystrophy: nyctalopia, bone spicules, attenuated vessels, waxy disc, reduced rod b-wave.",
@@ -2502,8 +2502,8 @@
   "q": "A painful red eye has a cloudy cornea, a mid-dilated non-reactive pupil, and a rock-hard globe with nausea. The diagnosis and definitive treatment:",
   "o": [
    "Scleritis; oral NSAID therapy",
-   "Anterior uveitis; topical steroid",
    "Conjunctivitis; topical antibiotics",
+   "Anterior uveitis; topical steroid",
    "Acute angle-closure; laser iridotomy"
   ],
   "a": 3,
@@ -2517,10 +2517,10 @@
   "t": "E4 Emergencies",
   "q": "A metal worker has a suspected intraocular foreign body of iron. Which is contraindicated?",
   "o": [
-   "Slit-lamp exam",
-   "MRI",
    "B-scan ultrasound",
-   "CT scan"
+   "MRI",
+   "CT scan",
+   "Slit-lamp exam"
   ],
   "a": 1,
   "w": "Is contraindicated with a ferrous foreign body (magnetic movement risk). Use CT.",
@@ -2533,10 +2533,10 @@
   "t": "E4 Emergencies",
   "q": "Three days after blunt trauma, a patient with hyphema suddenly worsens. The most likely event is:",
   "o": [
-   "Optic neuritis",
-   "Rebleed",
    "New chemical injury",
-   "Spontaneous resolution"
+   "Rebleed",
+   "Spontaneous resolution",
+   "Optic neuritis"
   ],
   "a": 1,
   "w": "Hyphema rebleeding peaks days 3 to 5 and raises IOP. Manage with rest, shield, and avoidance of antiplatelet drugs; screen for sickle cell.",
@@ -2550,9 +2550,9 @@
   "q": "A blunt orbital injury causes numbness of the cheek and upper lip, diplopia on upgaze, and orbital emphysema. The injury and imaging of choice:",
   "o": [
    "Retinal detachment; fundus photo",
-   "Open globe; MRI",
+   "Hyphema; ultrasound",
    "Blow-out floor fracture; CT coronal",
-   "Hyphema; ultrasound"
+   "Open globe; MRI"
   ],
   "a": 2,
   "w": "Infraorbital nerve numbness, restricted vertical gaze, and emphysema are classic. CT with coronal sections is best, and the patient must not blow the nose.",
@@ -2565,9 +2565,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes anterior globe protrusion specifically; Graves disease is the #1 cause?",
   "o": [
-   "Entropion",
-   "Exophthalmos",
    "Ectropion",
+   "Exophthalmos",
+   "Entropion",
    "Ptosis"
   ],
   "a": 1,
@@ -2581,9 +2581,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes lid margin turns inward; lashes abrade the cornea?",
   "o": [
-   "Ectropion",
    "Ptosis",
    "Exophthalmos",
+   "Ectropion",
    "Entropion"
   ],
   "a": 3,
@@ -2598,8 +2598,8 @@
   "q": "Which term describes lid margin turns outward; causes exposure and epiphora?",
   "o": [
    "Ectropion",
-   "Entropion",
    "Ptosis",
+   "Entropion",
    "Exophthalmos"
   ],
   "a": 0,
@@ -2613,8 +2613,8 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes incomplete lid closure (\"hare's eye\"); leads to exposure keratopathy?",
   "o": [
-   "Entropion",
    "Ptosis",
+   "Entropion",
    "Lagophthalmos",
    "Exophthalmos"
   ],
@@ -2629,10 +2629,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes acute, tender lid-margin abscess (stye)?",
   "o": [
-   "Ptosis",
+   "Exophthalmos",
    "Hordeolum",
    "Entropion",
-   "Exophthalmos"
+   "Ptosis"
   ],
   "a": 1,
   "w": "Hordeolum: Latin hordeum = barley. Acute, tender lid-margin abscess (stye)",
@@ -2646,9 +2646,9 @@
   "q": "Which term describes loss of lashes/brows, classic for ulcerative blepharitis?",
   "o": [
    "Madarosis",
+   "Entropion",
    "Exophthalmos",
-   "Ptosis",
-   "Entropion"
+   "Ptosis"
   ],
   "a": 0,
   "w": "Madarosis: Greek madaros = bald. Loss of lashes/brows, classic for ulcerative blepharitis",
@@ -2661,10 +2661,10 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes tear overflow from drainage block or reflex tearing?",
   "o": [
-   "Entropion",
+   "Exophthalmos",
    "Epiphora",
-   "Ptosis",
-   "Exophthalmos"
+   "Entropion",
+   "Ptosis"
   ],
   "a": 1,
   "w": "Epiphora: Greek = sudden flow of tears. Tear overflow from drainage block or reflex tearing",
@@ -2679,8 +2679,8 @@
   "o": [
    "Dacryoadenitis",
    "Ptosis",
-   "Entropion",
-   "Exophthalmos"
+   "Exophthalmos",
+   "Entropion"
   ],
   "a": 0,
   "w": "Dacryoadenitis: dakryon = tear + aden = gland. Lacrimal gland inflammation; S-shaped ptosis",
@@ -2693,9 +2693,9 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes lacrimal sac infection; medial canthal swelling?",
   "o": [
-   "Ptosis",
    "Exophthalmos",
    "Entropion",
+   "Ptosis",
    "Dacryocystitis"
   ],
   "a": 3,
@@ -2709,8 +2709,8 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes accessory second row of eyelashes?",
   "o": [
-   "Entropion",
    "Exophthalmos",
+   "Entropion",
    "Distichiasis",
    "Ptosis"
   ],
@@ -2725,8 +2725,8 @@
   "t": "E1 Orbit/Adnexa/Lids",
   "q": "Which term describes adhesion between palpebral and bulbar conjunctiva?",
   "o": [
-   "Exophthalmos",
    "Entropion",
+   "Exophthalmos",
    "Symblepharon",
    "Ptosis"
   ],
@@ -2741,10 +2741,10 @@
   "t": "E2 Anterior Segment",
   "q": "Which term describes yellow degenerative limbal deposit; does not cross the limbus?",
   "o": [
-   "Keratoconus",
+   "Hypopyon",
    "Ciliary flush",
    "Pinguecula",
-   "Hypopyon"
+   "Keratoconus"
   ],
   "a": 2,
   "w": "Pinguecula: Latin pinguis = fat. Yellow degenerative limbal deposit; does not cross the limbus",
@@ -2774,9 +2774,9 @@
   "q": "Which term describes layered white cells in the anterior chamber?",
   "o": [
    "Hypopyon",
-   "Pinguecula",
    "Ciliary flush",
-   "Keratoconus"
+   "Keratoconus",
+   "Pinguecula"
   ],
   "a": 0,
   "w": "Hypopyon: hypo = under + pyon = pus. Layered white cells in the anterior chamber",
@@ -2789,9 +2789,9 @@
   "t": "E2 Anterior Segment",
   "q": "Which term describes mutton-fat = granulomatous; fine stellate = viral/Fuchs?",
   "o": [
-   "Keratoconus",
    "Ciliary flush",
    "Pinguecula",
+   "Keratoconus",
    "Keratic precipitates"
   ],
   "a": 3,
@@ -2806,8 +2806,8 @@
   "q": "Which term describes iris adhesions: anterior (to cornea) or posterior (to lens)?",
   "o": [
    "Synechiae",
-   "Ciliary flush",
    "Pinguecula",
+   "Ciliary flush",
    "Keratoconus"
   ],
   "a": 0,
@@ -2821,10 +2821,10 @@
   "t": "E2 Anterior Segment",
   "q": "Which term describes iris neovascularization; closed angle without pupillary block?",
   "o": [
-   "Keratoconus",
-   "Rubeosis iridis",
    "Ciliary flush",
-   "Pinguecula"
+   "Rubeosis iridis",
+   "Pinguecula",
+   "Keratoconus"
   ],
   "a": 1,
   "w": "Rubeosis iridis: Latin rubeo = redden. Iris neovascularization; closed angle without pupillary block",
@@ -2855,8 +2855,8 @@
   "o": [
    "Phacolytic",
    "Pinguecula",
-   "Keratoconus",
-   "Ciliary flush"
+   "Ciliary flush",
+   "Keratoconus"
   ],
   "a": 0,
   "w": "Phacolytic: phakos = lens + lysis = loosening. Open-angle glaucoma from leaked hypermature lens protein",
@@ -2869,10 +2869,10 @@
   "t": "E2 Anterior Segment",
   "q": "Which term describes closed-angle glaucoma from an intumescent swollen lens?",
   "o": [
-   "Ciliary flush",
-   "Phacomorphic",
    "Pinguecula",
-   "Keratoconus"
+   "Phacomorphic",
+   "Keratoconus",
+   "Ciliary flush"
   ],
   "a": 1,
   "w": "Phacomorphic: phakos + morphe = shape. Closed-angle glaucoma from an intumescent swollen lens",
@@ -2886,9 +2886,9 @@
   "q": "Which term describes peripheral stromal cholesterol ring with a lucid interval?",
   "o": [
    "Keratoconus",
-   "Ciliary flush",
+   "Pinguecula",
    "Arcus senilis",
-   "Pinguecula"
+   "Ciliary flush"
   ],
   "a": 2,
   "w": "Arcus senilis: Latin = bow of old age. Peripheral stromal cholesterol ring with a lucid interval",
@@ -2901,8 +2901,8 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes pigment in anterior vitreous = retinal break until proven otherwise?",
   "o": [
-   "Rhegmatogenous",
    "Microaneurysm",
+   "Rhegmatogenous",
    "Cotton-wool spot",
    "Shafer's sign"
   ],
@@ -2919,8 +2919,8 @@
   "o": [
    "Cotton-wool spot",
    "Rhegmatogenous",
-   "Microaneurysm",
-   "Shafer's sign"
+   "Shafer's sign",
+   "Microaneurysm"
   ],
   "a": 1,
   "w": "Rhegmatogenous: Greek rhegma = break/rent. Retinal detachment caused by a full-thickness break",
@@ -2933,10 +2933,10 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes earliest visible sign of diabetic retinopathy?",
   "o": [
-   "Shafer's sign",
+   "Cotton-wool spot",
    "Microaneurysm",
    "Rhegmatogenous",
-   "Cotton-wool spot"
+   "Shafer's sign"
   ],
   "a": 1,
   "w": "Microaneurysm: micro + aneurysma = dilation. Earliest visible sign of diabetic retinopathy",
@@ -2966,8 +2966,8 @@
   "q": "Which term describes shunt vessels in ischemic retina; severe NPDR marker?",
   "o": [
    "IRMA",
-   "Rhegmatogenous",
    "Microaneurysm",
+   "Rhegmatogenous",
    "Shafer's sign"
   ],
   "a": 0,
@@ -2981,9 +2981,9 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes sub-RPE deposits; hallmark of dry ARMD?",
   "o": [
-   "Microaneurysm",
    "Shafer's sign",
    "Rhegmatogenous",
+   "Microaneurysm",
    "Drusen"
   ],
   "a": 3,
@@ -2997,8 +2997,8 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes wavy distortion on Amsler grid; early CNV warning?",
   "o": [
-   "Microaneurysm",
    "Shafer's sign",
+   "Microaneurysm",
    "Rhegmatogenous",
    "Metamorphopsia"
   ],
@@ -3015,8 +3015,8 @@
   "o": [
    "Nyctalopia",
    "Rhegmatogenous",
-   "Microaneurysm",
-   "Shafer's sign"
+   "Shafer's sign",
+   "Microaneurysm"
   ],
   "a": 0,
   "w": "Nyctalopia: Greek nyx = night + alaos = blind. Night blindness; first symptom of retinitis pigmentosa",
@@ -3029,9 +3029,9 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes classic mid-peripheral sign of retinitis pigmentosa?",
   "o": [
-   "Microaneurysm",
-   "Bone-spicule pigment",
    "Shafer's sign",
+   "Bone-spicule pigment",
+   "Microaneurysm",
    "Rhegmatogenous"
   ],
   "a": 1,
@@ -3047,8 +3047,8 @@
   "o": [
    "Microaneurysm",
    "Papilledema",
-   "Shafer's sign",
-   "Rhegmatogenous"
+   "Rhegmatogenous",
+   "Shafer's sign"
   ],
   "a": 1,
   "w": "Papilledema: papilla + oidema = swelling. Bilateral disc swelling from raised intracranial pressure",
@@ -3061,9 +3061,9 @@
   "t": "E3 Posterior/Retina",
   "q": "Which term describes marcus Gunn pupil; optic nerve or massive retinal disease?",
   "o": [
+   "Microaneurysm",
    "Rhegmatogenous",
    "Shafer's sign",
-   "Microaneurysm",
    "RAPD"
   ],
   "a": 3,
@@ -3078,9 +3078,9 @@
   "q": "Which term describes acid burn; the coagulum self-limits depth?",
   "o": [
    "Coagulative necrosis",
+   "Seidel test",
    "Open globe",
-   "Hyphema",
-   "Seidel test"
+   "Hyphema"
   ],
   "a": 0,
   "w": "Coagulative necrosis: proteins coagulate. Acid burn; the coagulum self-limits depth",
@@ -3094,9 +3094,9 @@
   "q": "Which term describes positive = aqueous leak from a full-thickness corneal wound?",
   "o": [
    "Open globe",
-   "Hyphema",
+   "Coagulative necrosis",
    "Seidel test",
-   "Coagulative necrosis"
+   "Hyphema"
   ],
   "a": 2,
   "w": "Seidel test: fluorescein streaming. Positive = aqueous leak from a full-thickness corneal wound",
@@ -3110,9 +3110,9 @@
   "q": "Which term describes shield, no pressure, NPO, urgent surgery?",
   "o": [
    "Hyphema",
-   "Coagulative necrosis",
+   "Seidel test",
    "Open globe",
-   "Seidel test"
+   "Coagulative necrosis"
   ],
   "a": 2,
   "w": "Open globe: full-thickness scleral/corneal breach. Shield, no pressure, NPO, urgent surgery",
@@ -3125,8 +3125,8 @@
   "t": "E4 Emergencies",
   "q": "Which term describes blood in the anterior chamber after blunt trauma?",
   "o": [
-   "Coagulative necrosis",
    "Seidel test",
+   "Coagulative necrosis",
    "Open globe",
    "Hyphema"
   ],
@@ -3141,9 +3141,9 @@
   "t": "E4 Emergencies",
   "q": "Which term describes layered white cells; endophthalmitis until proven otherwise?",
   "o": [
-   "Seidel test",
    "Open globe",
    "Coagulative necrosis",
+   "Seidel test",
    "Hypopyon"
   ],
   "a": 3,
@@ -3157,9 +3157,9 @@
   "t": "E4 Emergencies",
   "q": "Which term describes iron IOFB toxicity; no MRI (ferrous)?",
   "o": [
-   "Coagulative necrosis",
-   "Siderosis",
    "Seidel test",
+   "Siderosis",
+   "Coagulative necrosis",
    "Open globe"
   ],
   "a": 1,
@@ -3175,8 +3175,8 @@
   "o": [
    "Seidel test",
    "Chalcosis",
-   "Open globe",
-   "Coagulative necrosis"
+   "Coagulative necrosis",
+   "Open globe"
   ],
   "a": 1,
   "w": "Chalcosis: Greek chalkos = copper. Copper IOFB; KF ring + sunflower cataract",
@@ -3190,8 +3190,8 @@
   "q": "Which term describes sunken globe; blow-out floor fracture?",
   "o": [
    "Enophthalmos",
-   "Seidel test",
    "Open globe",
+   "Seidel test",
    "Coagulative necrosis"
   ],
   "a": 0,
@@ -3206,8 +3206,8 @@
   "q": "Which term describes gray retinal opacification after blunt trauma; usually resolves?",
   "o": [
    "Commotio retinae",
-   "Coagulative necrosis",
    "Seidel test",
+   "Coagulative necrosis",
    "Open globe"
   ],
   "a": 0,
@@ -3221,8 +3221,8 @@
   "t": "E4 Emergencies",
   "q": "Which term describes ring of iris pigment on the lens after blunt trauma?",
   "o": [
-   "Coagulative necrosis",
    "Seidel test",
+   "Coagulative necrosis",
    "Open globe",
    "Vossius ring"
   ],

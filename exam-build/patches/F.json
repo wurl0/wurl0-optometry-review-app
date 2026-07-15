@@ -340,5 +340,23 @@
       "Train only patients with VA better than 20/200"
     ],
     "a": 0
+  },
+  "F0195": {
+    "o": [
+      "The crystalline lens",
+      "The neural retina",
+      "The corneal stroma",
+      "The ocular blood vessels"
+    ],
+    "a": 3
+  },
+  "F0198": {
+    "o": [
+      "The rooting reflex",
+      "The Galant reflex",
+      "The Landau reflex",
+      "The Moro reflex"
+    ],
+    "a": 3
   }
 }

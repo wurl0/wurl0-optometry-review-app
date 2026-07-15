@@ -5,10 +5,10 @@
   "t": "C1 Epidemiology",
   "q": "The two leading causes of vision impairment worldwide are:",
   "o": [
-   "Trachoma and corneal opacity",
+   "AMD and glaucoma",
    "Uncorrected refractive error and cataract",
    "Glaucoma and diabetic retinopathy",
-   "AMD and glaucoma"
+   "Trachoma and corneal opacity"
   ],
   "a": 1,
   "w": "Uncorrected refractive error and cataract lead globally, and both are largely avoidable.",
@@ -39,8 +39,8 @@
   "o": [
    "Sporadic",
    "Endemic",
-   "Epidemic",
-   "Pandemic"
+   "Pandemic",
+   "Epidemic"
   ],
   "a": 1,
   "w": "Endemic = constant low-level presence. Epidemic = outbreak above expected; pandemic = epidemic across regions.",
@@ -55,8 +55,8 @@
   "o": [
    "Prevalence",
    "Incidence",
-   "Mortality",
-   "Endemicity"
+   "Endemicity",
+   "Mortality"
   ],
   "a": 1,
   "w": "Incidence = new cases over time; prevalence = all existing cases at a point.",
@@ -85,9 +85,9 @@
   "t": "C1 Epidemiology",
   "q": "The leading cause of bilateral blindness in the Philippines is:",
   "o": [
-   "Diabetic retinopathy",
    "Refractive error",
    "Glaucoma",
+   "Diabetic retinopathy",
    "Cataract"
   ],
   "a": 3,
@@ -102,9 +102,9 @@
   "q": "The World Health Organization was established on:",
   "o": [
    "April 7, 1948",
-   "January 1, 1945",
+   "October 10, 1950",
    "May 1, 1960",
-   "October 10, 1950"
+   "January 1, 1945"
   ],
   "a": 0,
   "w": "WHO was founded April 7, 1948 (World Health Day), governed through the World Health Assembly.",
@@ -133,10 +133,10 @@
   "t": "C1 Epidemiology",
   "q": "Low-vision rehabilitation to limit disability in an established eye condition is which level of prevention?",
   "o": [
-   "Secondary",
+   "Primary",
    "Tertiary",
-   "Quaternary",
-   "Primary"
+   "Secondary",
+   "Quaternary"
   ],
   "a": 1,
   "w": "Tertiary prevention limits disability once disease is established; secondary catches/reverses it early.",
@@ -150,8 +150,8 @@
   "q": "The Philippine DOH program integrating eye care into local public health is the:",
   "o": [
    "Community Eye Health Program",
-   "RA 8050 program",
    "PhilHealth Z-benefit",
+   "RA 8050 program",
    "Expanded Program on Immunization"
   ],
   "a": 0,
@@ -167,8 +167,8 @@
   "o": [
    "Minus",
    "Prism",
-   "Plus",
-   "Cylinder only"
+   "Cylinder only",
+   "Plus"
   ],
   "a": 0,
   "w": "Myopia (image in front of retina) is corrected with a minus lens; hyperopia with plus.",
@@ -181,9 +181,9 @@
   "t": "C2 Ametropia",
   "q": "The far point of a −3.00 D myope is:",
   "o": [
-   "Behind the eye",
-   "At infinity",
    "At the near point",
+   "At infinity",
+   "Behind the eye",
    "33 cm in front of the eye"
   ],
   "a": 3,
@@ -198,9 +198,9 @@
   "q": "Hofstetter's MINIMUM amplitude of accommodation formula is:",
   "o": [
    "15 − 0.25",
-   "25 − 0.40",
+   "18.5 − 0.30",
    "15 + 0.25",
-   "18.5 − 0.30"
+   "25 − 0.40"
   ],
   "a": 0,
   "w": "Minimum = 15 − 0.25(age); average = 18.5 − 0.30(age); maximum = 25 − 0.40(age).",
@@ -214,9 +214,9 @@
   "q": "Total hyperopia equals:",
   "o": [
    "Latent plus manifest",
-   "Absolute only",
    "Facultative only",
-   "Manifest minus latent"
+   "Manifest minus latent",
+   "Absolute only"
   ],
   "a": 0,
   "w": "Total hyperopia = latent (masked by ciliary tone) + manifest (revealed on routine refraction).",
@@ -231,8 +231,8 @@
   "o": [
    "Flattening of the central cornea",
    "Accommodative spasm, clears on cycloplegia",
-   "A patient feigning myopia",
-   "Permanent axial elongation myopia"
+   "Permanent axial elongation myopia",
+   "A patient feigning myopia"
   ],
   "a": 1,
   "w": "Pseudomyopia is a real tonic accommodative spasm that makes an emmetrope appear myopic and resolves with cycloplegia.",
@@ -246,8 +246,8 @@
   "q": "With-the-rule (WTR) corneal astigmatism is:",
   "o": [
    "Corrected with prism",
-   "Always pathological",
    "Steep at 180°, more common with age",
+   "Always pathological",
    "Steep at 90°, more common in youth"
   ],
   "a": 3,
@@ -277,10 +277,10 @@
   "t": "C2 Ametropia",
   "q": "In retinoscopy, 'against' motion is neutralized with which lens?",
   "o": [
-   "Cylinder only",
-   "Minus",
    "Plus",
-   "Prism"
+   "Minus",
+   "Prism",
+   "Cylinder only"
   ],
   "a": 1,
   "w": "Against motion = add minus; with motion = add plus.",
@@ -294,9 +294,9 @@
   "q": "A young hyperopic child with esotropia that resolves with full plus glasses has:",
   "o": [
    "Accommodative esotropia",
-   "Pseudomyopia",
+   "Convergence insufficiency",
    "Divergence excess",
-   "Convergence insufficiency"
+   "Pseudomyopia"
   ],
   "a": 0,
   "w": "Uncorrected hyperopia drives accommodation and convergence; full cycloplegic plus removes the drive.",
@@ -373,9 +373,9 @@
   "t": "C2 Ametropia",
   "q": "Compound myopic astigmatism in minus-cylinder form is written as:",
   "o": [
+   "Plano sphere with plus cyl",
    "Plus sphere with plus cyl",
    "Minus sphere with plus cyl",
-   "Plano sphere with plus cyl",
    "Minus sphere with minus cyl"
   ],
   "a": 3,
@@ -389,9 +389,9 @@
   "t": "C2 Ametropia",
   "q": "Astigmatism is best corrected with:",
   "o": [
-   "Sphere only",
-   "Cylinder",
    "Plus add",
+   "Cylinder",
+   "Sphere only",
    "Prism"
   ],
   "a": 1,
@@ -422,8 +422,8 @@
   "q": "If pinhole acuity improves the vision, the cause is most likely:",
   "o": [
    "Uncorrected refractive error",
-   "Cataract that won't improve",
    "Amblyopia",
+   "Cataract that won't improve",
    "Organic"
   ],
   "a": 0,
@@ -437,9 +437,9 @@
   "t": "C3 Preliminary Exam",
   "q": "In the unilateral cover test, covering the right eye makes the uncovered left eye move inward, then it drifts back out when uncovered. This is:",
   "o": [
+   "Left esophoria",
    "Right exotropia",
    "Left esotropia",
-   "Left esophoria",
    "Left exophoria"
   ],
   "a": 3,
@@ -454,8 +454,8 @@
   "q": "A temporally displaced corneal light reflex indicates which deviation?",
   "o": [
    "Eso deviation",
-   "No deviation",
    "Exo deviation",
+   "No deviation",
    "Hyperdeviation"
   ],
   "a": 0,
@@ -469,10 +469,10 @@
   "t": "C3 Preliminary Exam",
   "q": "The pupillary light reflex pathway leaves the visual pathway at the:",
   "o": [
-   "Occipital cortex",
+   "Optic chiasm",
    "Pretectal nucleus",
    "Lateral geniculate nucleus",
-   "Optic chiasm"
+   "Occipital cortex"
   ],
   "a": 1,
   "w": "Pupillomotor fibers branch off at the pretectum, which is why cortically blind patients keep light reflexes.",
@@ -501,9 +501,9 @@
   "t": "C3 Preliminary Exam",
   "q": "The alternating cover test:",
   "o": [
-   "Tests one eye at a time only",
-   "Shows total deviation, not its type",
    "Measures stereoacuity directly",
+   "Shows total deviation, not its type",
+   "Tests one eye at a time only",
    "Differentiates phoria from tropia"
   ],
   "a": 1,
@@ -519,8 +519,8 @@
   "o": [
    "Swinging flashlight test",
    "Hirschberg test",
-   "Maddox rod",
-   "Cover test"
+   "Cover test",
+   "Maddox rod"
   ],
   "a": 0,
   "w": "The swinging flashlight test reveals an RAPD: the affected pupil paradoxically dilates when light swings to it.",
@@ -566,8 +566,8 @@
   "q": "A patient with a frontal headache and eyestrain most classically has:",
   "o": [
    "Hyperopia with convergence excess",
-   "An early nuclear cataract",
    "Uncorrected astigmatism",
+   "An early nuclear cataract",
    "Uncorrected simple myopia"
   ],
   "a": 0,
@@ -598,9 +598,9 @@
   "q": "Binocular visual acuity, compared with the better monocular eye, should be:",
   "o": [
    "Equal to or better",
+   "Half",
    "Always exactly the same",
-   "Worse",
-   "Half"
+   "Worse"
   ],
   "a": 0,
   "w": "Binocular VA should equal or exceed the better eye; worse binocular VA suggests a binocular problem.",
@@ -631,8 +631,8 @@
   "o": [
    "Uncorrected astigmatism",
    "An organic cause",
-   "Uncorrected myopia",
-   "Presbyopia"
+   "Presbyopia",
+   "Uncorrected myopia"
   ],
   "a": 1,
   "w": "No pinhole improvement points to organic disease (macula, optic nerve) rather than refractive error.",
@@ -645,10 +645,10 @@
   "t": "C3 Preliminary Exam",
   "q": "The near point of convergence is tested:",
   "o": [
-   "With one eye occluded",
+   "In the dark",
    "Through a pinhole",
    "Binocularly, both eyes open",
-   "In the dark"
+   "With one eye occluded"
   ],
   "a": 2,
   "w": "NPC is binocular: both eyes track a target inward until convergence breaks.",
@@ -662,8 +662,8 @@
   "q": "A direct light reflex refers to:",
   "o": [
    "Constriction of the illuminated pupil",
-   "Convergence",
    "Constriction of the opposite pupil",
+   "Convergence",
    "Accommodation"
   ],
   "a": 0,
@@ -678,9 +678,9 @@
   "q": "Direct ophthalmoscopy produces what kind of image?",
   "o": [
    "Virtual, erect, ~15x",
-   "Real, inverted, 2–5x",
    "Virtual, inverted",
-   "Real, erect, 40x"
+   "Real, erect, 40x",
+   "Real, inverted, 2–5x"
   ],
   "a": 0,
   "w": "Direct = virtual, erect, ~15x, narrow ~6.5° field. Indirect = real, inverted, 2–5x, wide ~40° field.",
@@ -693,8 +693,8 @@
   "t": "C4 Objective Exam",
   "q": "Increasing the power of the indirect condensing lens (e.g., +20 D vs +14 D) gives:",
   "o": [
-   "More magnification, narrower field",
    "No change",
+   "More magnification, narrower field",
    "Less magnification, wider field",
    "More magnification, wider field"
   ],
@@ -726,8 +726,8 @@
   "q": "On the Van Herick test, which grades are unsafe to dilate?",
   "o": [
    "Grade 2",
-   "Any grade",
    "Grade 3–4",
+   "Any grade",
    "Grade 0–1"
   ],
   "a": 3,
@@ -741,10 +741,10 @@
   "t": "C4 Objective Exam",
   "q": "Javal's rule estimates which value?",
   "o": [
-   "Amplitude of accommodation",
+   "Pupil diameter in dim light",
    "Total astigmatism from keratometry",
    "Axial length of the globe",
-   "Pupil diameter in dim light"
+   "Amplitude of accommodation"
   ],
   "a": 1,
   "w": "Javal's rule: At = 1.25(Ac) + (−0.50 cyl × 90°), estimating total astigmatism including the internal component.",
@@ -789,10 +789,10 @@
   "t": "C4 Objective Exam",
   "q": "The keratometer measures:",
   "o": [
-   "Axial length",
+   "Total corneal power including the back surface",
    "Anterior corneal surface power only",
-   "Lens power",
-   "Total corneal power including the back surface"
+   "Axial length",
+   "Lens power"
   ],
   "a": 1,
   "w": "The keratometer reads only the anterior corneal surface using a simplified index, hence Javal's rule for total astigmatism.",
@@ -807,8 +807,8 @@
   "o": [
    "+0.50 cyl × 90°",
    "−0.50 cyl × 90°",
-   "Zero",
-   "−1.00 cyl × 180°"
+   "−1.00 cyl × 180°",
+   "Zero"
   ],
   "a": 1,
   "w": "Internal astigmatism is a roughly constant −0.50 cyl × 90° (ATR direction) that partly offsets corneal WTR.",
@@ -821,10 +821,10 @@
   "t": "C4 Objective Exam",
   "q": "The red-free (green) slit-lamp filter is best for:",
   "o": [
-   "Producing cycloplegia",
+   "Viewing fluorescein staining",
    "Viewing vessels and nerve fiber layer",
    "Measuring the chamber angle",
-   "Viewing fluorescein staining"
+   "Producing cycloplegia"
   ],
   "a": 1,
   "w": "Red-free light makes vessels and the nerve fiber layer appear dark for better contrast.",
@@ -869,10 +869,10 @@
   "t": "C4 Objective Exam",
   "q": "Average normal keratometry readings fall around:",
   "o": [
-   "60 D",
+   "33–37 D",
    "40–47 D",
-   "50–55 D",
-   "33–37 D"
+   "60 D",
+   "50–55 D"
   ],
   "a": 1,
   "w": "Normal central K is ~40–47 D, averaging about 43–44 D.",
@@ -917,10 +917,10 @@
   "t": "C4 Objective Exam",
   "q": "A Van Herick shadow about one-quarter of the optic section width corresponds to which action?",
   "o": [
-   "Do not dilate under any setting",
+   "Van Herick does not guide dilation",
    "Dilate freely, no risk",
    "Dilate with caution and monitor",
-   "Van Herick does not guide dilation"
+   "Do not dilate under any setting"
   ],
   "a": 2,
   "w": "A ~1:4 ratio is a moderately narrow angle (about grade 2): dilate cautiously and watch for closure.",
@@ -933,10 +933,10 @@
   "t": "C5 Subjective Exam",
   "q": "On the astigmatic dial, the darkest (clearest black) line indicates the:",
   "o": [
-   "Add power",
+   "Axis of the minus cylinder",
    "Power meridian",
    "Sphere power",
-   "Axis of the minus cylinder"
+   "Add power"
   ],
   "a": 1,
   "w": "The darkest line marks the power meridian; the minus-cyl axis is 90° away from the darkest line.",
@@ -949,9 +949,9 @@
   "t": "C5 Subjective Exam",
   "q": "For every −0.50 D of cylinder you add during the astigmatic dial, you add how much sphere?",
   "o": [
-   "None",
-   "+0.50 D",
    "−0.25 D",
+   "+0.50 D",
+   "None",
    "+0.25 D"
   ],
   "a": 3,
@@ -965,10 +965,10 @@
   "t": "C5 Subjective Exam",
   "q": "On the duochrome test, if the GREEN side is clearer, the patient is:",
   "o": [
+   "Correctly corrected already",
    "Hyperopic and uncorrected",
-   "Under-minused; add minus",
    "Over-minused; add plus",
-   "Correctly corrected already"
+   "Under-minused; add minus"
   ],
   "a": 2,
   "w": "Green clearer = focal point in front of retina = over-minused; reduce minus or add plus. (Red clearer = add minus.)",
@@ -981,8 +981,8 @@
   "t": "C5 Subjective Exam",
   "q": "During JCC, the patient prefers Position 1 (red dots parallel to the tentative axis). This means:",
   "o": [
-   "Cylinder over-powered → reduce minus",
    "Axis is wrong",
+   "Cylinder over-powered → reduce minus",
    "Cylinder under-powered → add minus",
    "Sphere too plus"
   ],
@@ -998,9 +998,9 @@
   "q": "The ideal amount of fog before the astigmatic dial is:",
   "o": [
    "A minus over-correction",
-   "Just enough to reach 20/20",
+   "+3.00 D of fog",
    "+0.50 to +0.75 D of fog",
-   "+3.00 D of fog"
+   "Just enough to reach 20/20"
   ],
   "a": 2,
   "w": "Fog +0.50 to +0.75 D above best sphere to blur to ~20/30–20/40, relaxing accommodation.",
@@ -1013,9 +1013,9 @@
   "t": "C5 Subjective Exam",
   "q": "During the JCC axis check, the handle (axis of the flip cross) is held:",
   "o": [
-   "45° to the axis",
-   "At 90° from the sphere",
    "Perpendicular to the axis",
+   "At 90° from the sphere",
+   "45° to the axis",
    "Parallel to the tentative axis"
   ],
   "a": 3,
@@ -1029,10 +1029,10 @@
   "t": "C5 Subjective Exam",
   "q": "The rotation (clock-dial) method for refining cylinder is used when the cylinder power is:",
   "o": [
-   "Exactly 1.00 D",
    "Any amount",
+   "≤ 0.50 D",
    "> 0.75 D",
-   "≤ 0.50 D"
+   "Exactly 1.00 D"
   ],
   "a": 2,
   "w": "The rotation/astigmatic-dial method is used for cyl > 0.75 D; JCC is used for ≤ 0.75 D.",
@@ -1061,10 +1061,10 @@
   "t": "C5 Subjective Exam",
   "q": "The prism dissociation setup for binocular balance is:",
   "o": [
-   "No prism",
    "10Δ BI OD",
+   "6Δ BO each eye",
    "3Δ BD OD and 3Δ BU OS",
-   "6Δ BO each eye"
+   "No prism"
   ],
   "a": 2,
   "w": "3Δ base-down OD and 3Δ base-up OS vertically separates the two images for comparison.",
@@ -1078,9 +1078,9 @@
   "q": "During binocular balance, adding +0.25 D to the clearer eye REVERSES the preference instead of equalizing. You should:",
   "o": [
    "Leave the dominant eye clearer",
+   "Add plus to the other eye",
    "Restart the monocular refraction",
-   "Keep adding plus until equal",
-   "Add plus to the other eye"
+   "Keep adding plus until equal"
   ],
   "a": 0,
   "w": "A reversal means you passed the neutral point; allow the dominant eye to keep the slight advantage.",
@@ -1094,8 +1094,8 @@
   "q": "PRA (positive relative accommodation, OEP #20) is measured by adding:",
   "o": [
    "Minus lenses until blur",
-   "Prism until diplopia",
    "Plus lenses until blur",
+   "Prism until diplopia",
    "Cylinder until clear"
   ],
   "a": 0,
@@ -1109,10 +1109,10 @@
   "t": "C5 Subjective Exam",
   "q": "The duochrome test is invalid in patients with:",
   "o": [
-   "Advanced presbyopia",
+   "High axial myopia",
    "Uncorrected astigmatism",
    "Red-green deficiency",
-   "High axial myopia"
+   "Advanced presbyopia"
   ],
   "a": 2,
   "w": "Red-green color blindness makes the duochrome comparison meaningless.",
@@ -1125,10 +1125,10 @@
   "t": "C5 Subjective Exam",
   "q": "The endpoint of the OEP #7 subjective refraction is:",
   "o": [
-   "First blur",
-   "MPMVA",
    "Binocular balance",
-   "The astigmatic dial"
+   "MPMVA",
+   "The astigmatic dial",
+   "First blur"
   ],
   "a": 1,
   "w": "#7 ends at MPMVA and becomes the reference lens for all subsequent OEP tests.",
@@ -1142,9 +1142,9 @@
   "q": "On the duochrome test, if the RED side is clearer, you should:",
   "o": [
    "Add minus / reduce plus",
-   "Add cylinder",
+   "Reduce minus / add plus",
    "Do nothing",
-   "Reduce minus / add plus"
+   "Add cylinder"
   ],
   "a": 0,
   "w": "Red clearer = focal point behind retina = under-minused; add minus (or reduce plus).",
@@ -1173,8 +1173,8 @@
   "t": "C5 Subjective Exam",
   "q": "Preferring JCC Position 2 (white dots parallel to the axis) indicates:",
   "o": [
-   "Wrong axis",
    "Cylinder under-powered → add minus",
+   "Wrong axis",
    "Sphere error only",
    "Cylinder over-powered → reduce minus"
   ],
@@ -1190,8 +1190,8 @@
   "q": "The correct order of managing a binocular vision disorder is:",
   "o": [
    "Glasses → prism → VT → surgery",
-   "VT → surgery → glasses → prism",
    "Prism → glasses → surgery → VT",
+   "VT → surgery → glasses → prism",
    "Surgery → VT → prism → glasses"
   ],
   "a": 0,
@@ -1206,9 +1206,9 @@
   "q": "Exophoria requiring prism is corrected with which base direction?",
   "o": [
    "Base in",
+   "Base up",
    "Base down",
-   "Base out",
-   "Base up"
+   "Base out"
   ],
   "a": 0,
   "w": "Exophoria → base-in prism; esophoria → base-out; hyperphoria → base-down before the higher eye.",
@@ -1222,9 +1222,9 @@
   "q": "The Sheard's-criterion prism amount is calculated as:",
   "o": [
    "÷ 3",
-   "phoria ÷ 2",
+   "recovery − phoria",
    "2 × phoria",
-   "recovery − phoria"
+   "phoria ÷ 2"
   ],
   "a": 0,
   "w": "Prism = (2 × phoria − compensating recovery) ÷ 3.",
@@ -1237,9 +1237,9 @@
   "t": "C6 Management",
   "q": "The first management step for accommodative esotropia is:",
   "o": [
-   "Patching the sound eye",
    "Early strabismus surgery",
    "Base-in prism at near",
+   "Patching the sound eye",
    "Full hyperopic correction"
   ],
   "a": 3,
@@ -1255,8 +1255,8 @@
   "o": [
    "Neither",
    "Good eye",
-   "Both alternately from the start",
-   "Amblyopic eye"
+   "Amblyopic eye",
+   "Both alternately from the start"
   ],
   "a": 1,
   "w": "Cover the good eye to force use of the amblyopic eye. Atropine penalization is likewise instilled in the good eye.",
@@ -1270,9 +1270,9 @@
   "q": "Strabismus surgery for a patient with amblyopia:",
   "o": [
    "Cures the underlying amblyopia",
-   "Is the first-line treatment",
+   "Replaces the need for patching",
    "Aligns eyes without restoring acuity",
-   "Replaces the need for patching"
+   "Is the first-line treatment"
   ],
   "a": 2,
   "w": "Surgery corrects motor alignment only; amblyopia (acuity) still needs patching/penalization/VT.",
@@ -1286,9 +1286,9 @@
   "q": "Pleoptics is specifically indicated for amblyopia with:",
   "o": [
    "Eccentric fixation",
+   "Central fixation",
    "Alternating fixation",
-   "No fixation",
-   "Central fixation"
+   "No fixation"
   ],
   "a": 0,
   "w": "Pleoptics targets eccentric fixation and gives inferior results to patching for standard amblyopia.",
@@ -1302,9 +1302,9 @@
   "q": "The MOST sensitive period for amblyopia development and treatment is:",
   "o": [
    "5–7 years",
-   "12–18 years",
+   "8–10 years",
    "0–2 years",
-   "8–10 years"
+   "12–18 years"
   ],
   "a": 2,
   "w": "The critical period is most sensitive 0–2 years, treatable to ~7–8, with some response up to 12–18.",
@@ -1318,9 +1318,9 @@
   "q": "Vertical (hyper) phoria prism is placed base-___ before the ___ eye:",
   "o": [
    "down; higher",
-   "in; non-dominant",
    "out; dominant",
-   "up; lower"
+   "up; lower",
+   "in; non-dominant"
   ],
   "a": 0,
   "w": "Base-down prism before the higher eye (or base-up before the lower eye) corrects a hyperdeviation.",
@@ -1333,10 +1333,10 @@
   "t": "C6 Management",
   "q": "Atropine penalization for amblyopia works by:",
   "o": [
-   "Dilating both eyes equally",
+   "Patching the amblyopic eye",
    "Blurring the amblyopic eye",
    "Blurring the good eye at near",
-   "Patching the amblyopic eye"
+   "Dilating both eyes equally"
   ],
   "a": 2,
   "w": "Atropine in the sound eye blurs its near vision, forcing the amblyopic eye to work at near.",
@@ -1365,10 +1365,10 @@
   "t": "C6 Management",
   "q": "Sudden-onset distance esophoria (possible divergence insufficiency) must be differentiated from:",
   "o": [
-   "Convergence insufficiency",
+   "Cataract",
    "Sixth nerve palsy",
-   "Presbyopia",
-   "Cataract"
+   "Convergence insufficiency",
+   "Presbyopia"
   ],
   "a": 1,
   "w": "DI is comitant; CN6 palsy is incomitant (worse in the paretic field). Rule out CN6 palsy before prescribing BO prism.",
@@ -1383,8 +1383,8 @@
   "o": [
    "2Δ base in",
    "No prism needed",
-   "4Δ base in",
-   "2Δ base out"
+   "2Δ base out",
+   "4Δ base in"
   ],
   "a": 0,
   "w": "Prism = (2×8 − 10)/3 = 6/3 = 2Δ; exophoria takes base-in.",
@@ -1397,9 +1397,9 @@
   "t": "C6 Management",
   "q": "The first management step for anisometropic amblyopia is:",
   "o": [
-   "Prism",
    "Patching immediately",
    "Surgery",
+   "Prism",
    "Full refractive correction"
   ],
   "a": 3,
@@ -1415,8 +1415,8 @@
   "o": [
    "Refer for strabismus surgery",
    "Correct the refractive error",
-   "Prescribe relieving prism",
-   "Begin convergence exercises"
+   "Begin convergence exercises",
+   "Prescribe relieving prism"
   ],
   "a": 1,
   "w": "Glasses come first; VT on an uncorrected Rx trains against the wrong baseline.",
@@ -1430,9 +1430,9 @@
   "q": "The Parks 3-step test is used for:",
   "o": [
    "Vertical deviations",
+   "Accommodation",
    "Color vision",
-   "Horizontal phorias",
-   "Accommodation"
+   "Horizontal phorias"
   ],
   "a": 0,
   "w": "Parks 3-step (8→4→2→1) isolates a paretic cyclovertical muscle in vertical deviations.",
@@ -1446,9 +1446,9 @@
   "q": "On the Brock string, a normal response is:",
   "o": [
    "Two parallel strings seen",
-   "A single string seen",
+   "No strings visible at all",
    "An X at the fixated bead",
-   "No strings visible at all"
+   "A single string seen"
   ],
   "a": 2,
   "w": "Normal viewing shows an X at the fixated bead; an absent X side indicates suppression. The string is both diagnostic and therapeutic.",
@@ -1461,9 +1461,9 @@
   "t": "C7 Vision Therapy",
   "q": "The CAM (visual stimulator) treatment is performed:",
   "o": [
-   "With both eyes open",
-   "Under cycloplegia",
    "With prism",
+   "Under cycloplegia",
+   "With both eyes open",
    "Monocularly"
   ],
   "a": 3,
@@ -1525,10 +1525,10 @@
   "t": "C7 Vision Therapy",
   "q": "A typical office-based VT sequence for convergence insufficiency progresses as:",
   "o": [
+   "Hart chart → pleoptics → CAM",
    "Surgery → prism → glasses",
-   "Patching → atropine → CAM",
    "Push-ups → Brock string → vectogram",
-   "Hart chart → pleoptics → CAM"
+   "Patching → atropine → CAM"
   ],
   "a": 2,
   "w": "CI therapy builds convergence: pencil push-ups, then Brock string, aperture rule, then prism/vectogram flippers.",
@@ -1541,9 +1541,9 @@
   "t": "C7 Vision Therapy",
   "q": "The normal near positive fusional convergence (PFC) finding is approximately:",
   "o": [
-   "No norm exists",
-   "Blur 30 / Break 35 / Recovery 20",
    "Blur 9 / Break 12 / Recovery 5",
+   "Blur 30 / Break 35 / Recovery 20",
+   "No norm exists",
    "Blur 17 / Break 21 / Recovery 11"
   ],
   "a": 3,
@@ -1559,8 +1559,8 @@
   "o": [
    "Accommodation and saccades",
    "Color vision",
-   "Stereopsis",
-   "Suppression only"
+   "Suppression only",
+   "Stereopsis"
   ],
   "a": 0,
   "w": "The Hart chart alternates near and distance targets, training accommodative facility and saccades.",
@@ -1573,10 +1573,10 @@
   "t": "C7 Vision Therapy",
   "q": "When should patching be discontinued?",
   "o": [
-   "Patching is never discontinued",
+   "After exactly two weeks of wear",
    "When VA equalizes or stops improving",
    "As soon as any improvement is seen",
-   "After exactly two weeks of wear"
+   "Patching is never discontinued"
   ],
   "a": 1,
   "w": "Stopping at first improvement causes regression; continue until VA equalizes or plateaus across cycles.",
@@ -1591,8 +1591,8 @@
   "o": [
    "Suppression of that eye",
    "Accommodative spasm",
-   "Normal fusion",
-   "Excellent stereopsis"
+   "Excellent stereopsis",
+   "Normal fusion"
   ],
   "a": 0,
   "w": "A missing leg of the X means that eye's input is being suppressed.",
@@ -1605,10 +1605,10 @@
   "t": "C1 Epidemiology",
   "q": "The number of NEW cases arising over a period of time is the:",
   "o": [
-   "Attack ratio",
+   "Prevalence",
    "Incidence",
-   "Endemic rate",
-   "Prevalence"
+   "Attack ratio",
+   "Endemic rate"
   ],
   "a": 1,
   "w": "Incidence counts new cases over time; prevalence counts all existing cases at a point in time. Chronic disease inflates prevalence without changing incidence.",
@@ -1621,8 +1621,8 @@
   "t": "C1 Epidemiology",
   "q": "A disease constantly present in a population at low frequency is described as:",
   "o": [
-   "Pandemic",
    "Sporadic",
+   "Pandemic",
    "Endemic",
    "Epidemic"
   ],
@@ -1639,8 +1639,8 @@
   "o": [
    "Refractive error and cataract",
    "Glaucoma and diabetic retinopathy",
-   "AMD and glaucoma",
-   "Trachoma and onchocerciasis"
+   "Trachoma and onchocerciasis",
+   "AMD and glaucoma"
   ],
   "a": 0,
   "w": "Uncorrected refractive error and cataract lead globally, which matters because both are correctable. Over 80% of visual impairment worldwide is avoidable.",
@@ -1653,10 +1653,10 @@
   "t": "C1 Epidemiology",
   "q": "The leading cause of blindness in the Philippines is:",
   "o": [
+   "Uncorrected refractive error",
    "Glaucoma",
-   "Diabetic retinopathy",
    "Cataract",
-   "Uncorrected refractive error"
+   "Diabetic retinopathy"
   ],
   "a": 2,
   "w": "Cataract is the leading Philippine cause of blindness, addressed through the national Cataract-free zone and CEHP programs.",
@@ -1685,9 +1685,9 @@
   "t": "C1 Epidemiology",
   "q": "The World Health Organization was founded on:",
   "o": [
+   "October 24, 1945",
    "June 12, 1946",
    "May 8, 1950",
-   "October 24, 1945",
    "April 7, 1948"
   ],
   "a": 3,
@@ -1701,9 +1701,9 @@
   "t": "C2 Ametropia",
   "q": "Hofstetter's formula for the MINIMUM amplitude of accommodation is:",
   "o": [
-   "15 − 0.40 × age",
-   "25 − 0.40 × age",
    "18.5 − 0.30 × age",
+   "25 − 0.40 × age",
+   "15 − 0.40 × age",
    "15 − 0.25 × age"
   ],
   "a": 3,
@@ -1734,9 +1734,9 @@
   "q": "The far point of a −3.00 D myope lies:",
   "o": [
    "1 meter in front",
-   "Behind the eye",
+   "At optical infinity",
    "33 cm in front of the eye",
-   "At optical infinity"
+   "Behind the eye"
   ],
   "a": 2,
   "w": "The far point sits at 1/3.00 = 0.33 m in front of the eye. A hyperope's far point is virtual, behind the eye; an emmetrope's is at infinity.",
@@ -1750,9 +1750,9 @@
   "q": "The far point of a hyperopic eye is:",
   "o": [
    "Virtual, behind the eye",
-   "At the corneal plane",
    "At optical infinity",
-   "Real, in front of the eye"
+   "Real, in front of the eye",
+   "At the corneal plane"
   ],
   "a": 0,
   "w": "Only converging light focuses on an uncorrected hyperopic retina, so the conjugate far point is virtual and sits behind the eye.",
@@ -1782,9 +1782,9 @@
   "q": "With retinoscopy at a 67 cm working distance, you correct the gross finding by:",
   "o": [
    "Subtracting 1.50 D",
-   "Subtracting 2.00 D",
+   "Adding 1.50 D",
    "Adding 2.50 D",
-   "Adding 1.50 D"
+   "Subtracting 2.00 D"
   ],
   "a": 0,
   "w": "The working distance adds its own dioptric value, so at 67 cm you subtract 1.50 D from the gross to reach the net refraction.",
@@ -1797,10 +1797,10 @@
   "t": "C2 Ametropia",
   "q": "'With' motion on retinoscopy means you should:",
   "o": [
-   "Rotate the axis",
-   "Add plus",
    "Change the working distance",
-   "Add minus"
+   "Add plus",
+   "Add minus",
+   "Rotate the axis"
   ],
   "a": 1,
   "w": "With motion means the far point is behind the retinoscope, so plus is added until neutrality. Against motion calls for minus.",
@@ -1813,10 +1813,10 @@
   "t": "C2 Ametropia",
   "q": "With-the-rule astigmatism has its steep power meridian at:",
   "o": [
+   "150–180°",
    "0–30°",
-   "Exactly 45°",
    "60–120°",
-   "150–180°"
+   "Exactly 45°"
   ],
   "a": 2,
   "w": "WTR has the steep (more powerful) meridian vertically, at 60–120°, so the correcting minus cylinder axis sits at or near 180°.",
@@ -1861,8 +1861,8 @@
   "t": "C3 Preliminary Exam",
   "q": "Visual acuity that does NOT improve with a pinhole suggests:",
   "o": [
-   "Simple myopia",
    "Uncorrected astigmatism",
+   "Simple myopia",
    "An organic cause",
    "Latent hyperopia"
   ],
@@ -1893,9 +1893,9 @@
   "t": "C3 Preliminary Exam",
   "q": "The pupillary light reflex fibers leave the visual pathway at the:",
   "o": [
-   "Superior colliculus",
-   "Optic chiasm",
    "Lateral geniculate body",
+   "Optic chiasm",
+   "Superior colliculus",
    "Pretectal nucleus"
   ],
   "a": 3,
@@ -1910,8 +1910,8 @@
   "q": "A relative afferent pupillary defect is also known as a:",
   "o": [
    "Marcus Gunn pupil",
-   "Horner's pupil",
    "Argyll-Robertson pupil",
+   "Horner's pupil",
    "Adie's pupil"
   ],
   "a": 0,
@@ -1925,10 +1925,10 @@
   "t": "C3 Preliminary Exam",
   "q": "The near reflex triad consists of convergence, accommodation and:",
   "o": [
-   "Depression of gaze",
    "Pupil dilation",
+   "Lid retraction",
    "Pupil constriction",
-   "Lid retraction"
+   "Depression of gaze"
   ],
   "a": 2,
   "w": "The near triad is convergence, accommodation and miosis, all driven together by CN3.",
@@ -1942,8 +1942,8 @@
   "q": "On Hirschberg testing, a corneal reflex displaced temporally indicates:",
   "o": [
    "An eso deviation",
-   "Orthophoria",
    "An exo deviation",
+   "Orthophoria",
    "A hyper deviation"
   ],
   "a": 0,
@@ -1957,9 +1957,9 @@
   "t": "C4 Objective Exam",
   "q": "The image formed by direct ophthalmoscopy is:",
   "o": [
-   "Virtual and inverted",
    "Real and erect",
    "Real and inverted",
+   "Virtual and inverted",
    "Virtual and erect"
   ],
   "a": 3,
@@ -1974,9 +1974,9 @@
   "q": "Increasing the power of the condensing lens in indirect ophthalmoscopy gives:",
   "o": [
    "No change in field or magnification",
-   "A wider field and more magnification",
+   "A narrower field and more magnification",
    "A wider field and less magnification",
-   "A narrower field and more magnification"
+   "A wider field and more magnification"
   ],
   "a": 2,
   "w": "Field and magnification trade off: a 30 D lens gives high magnification over a small field, a 20 D lens a wider field with less magnification.",
@@ -1989,10 +1989,10 @@
   "t": "C4 Objective Exam",
   "q": "Which Van Herick grades permit safe dilation?",
   "o": [
-   "Grade 2 only",
    "Grade 1 or 2",
+   "Grade 0 or 1",
    "Grade 3 or 4",
-   "Grade 0 or 1"
+   "Grade 2 only"
   ],
   "a": 2,
   "w": "Grades 3 and 4 mean an open angle and safe dilation; grades 0–1 mean a dangerously narrow angle and dilation is withheld.",
@@ -2005,8 +2005,8 @@
   "t": "C4 Objective Exam",
   "q": "The average normal keratometry reading is about:",
   "o": [
-   "35–37 D",
    "48–50 D",
+   "35–37 D",
    "38–40 D",
    "43–44 D"
   ],
@@ -2021,9 +2021,9 @@
   "t": "C4 Objective Exam",
   "q": "In Javal's rule, the internal (lenticular) astigmatism constant is taken as:",
   "o": [
+   "−0.50 cyl × 180°",
    "−1.25 cyl × 90°",
    "+0.50 cyl × 90°",
-   "−0.50 cyl × 180°",
    "−0.50 cyl × 90°"
   ],
   "a": 3,
@@ -2039,8 +2039,8 @@
   "o": [
    "Posterior to the pupil plane",
    "On the corneal surface",
-   "Anterior to the pupil plane",
-   "At the pupil plane"
+   "At the pupil plane",
+   "Anterior to the pupil plane"
   ],
   "a": 0,
   "w": "Posterior opacities travel with the scope; anterior opacities move against it. The pupil plane is the pivot.",
@@ -2069,9 +2069,9 @@
   "t": "C5 Subjective Exam",
   "q": "The target acuity a patient should reach when properly fogged is:",
   "o": [
-   "20/20",
    "20/100",
    "20/200",
+   "20/20",
    "20/30–20/40"
   ],
   "a": 3,
@@ -2085,9 +2085,9 @@
   "t": "C5 Subjective Exam",
   "q": "On the astigmatic dial, the darkest line corresponds to the:",
   "o": [
-   "Circle of least confusion",
-   "Power meridian",
    "Axis of the minus cylinder",
+   "Power meridian",
+   "Circle of least confusion",
    "Axis of the plus cylinder"
   ],
   "a": 1,
@@ -2101,10 +2101,10 @@
   "t": "C5 Subjective Exam",
   "q": "When adding cylinder, you compensate the sphere by:",
   "o": [
-   "+0.25 D sphere per −0.25 D cyl",
+   "−0.25 D sphere per −0.50 D cyl",
    "+0.50 D sphere per −0.50 D cyl",
    "+0.25 D sphere per −0.50 D cyl",
-   "−0.25 D sphere per −0.50 D cyl"
+   "+0.25 D sphere per −0.25 D cyl"
   ],
   "a": 2,
   "w": "Adding minus cylinder pulls the circle of least confusion forward, so half the cylinder power is added back as plus sphere to keep it on the retina.",
@@ -2117,10 +2117,10 @@
   "t": "C5 Subjective Exam",
   "q": "On JCC axis refinement, when the patient prefers Position 1 you should:",
   "o": [
-   "Reduce the minus cylinder",
+   "Leave the axis unchanged",
    "Add minus cylinder",
    "Add plus sphere",
-   "Leave the axis unchanged"
+   "Reduce the minus cylinder"
   ],
   "a": 1,
   "w": "Preferring Position 1, with the red dots parallel to the tentative axis, means the cylinder is under-powered, so more minus cylinder is added. Position 2 means it is over-powered.",
@@ -2149,8 +2149,8 @@
   "t": "C5 Subjective Exam",
   "q": "The standard prism dissociation setup for vertical balance is:",
   "o": [
-   "3Δ BO OD / 3Δ BI OS",
    "12Δ BI OD / 6Δ BU OS",
+   "3Δ BO OD / 3Δ BI OS",
    "3Δ BD OD / 3Δ BU OS",
    "6Δ BI OD / 6Δ BO OS"
   ],
@@ -2181,10 +2181,10 @@
   "t": "C5 Subjective Exam",
   "q": "For the PRA (OEP #20), you add:",
   "o": [
-   "Plus lenses until blur",
+   "Cylinder until clear",
    "Minus lenses until blur",
-   "Prism until break",
-   "Cylinder until clear"
+   "Plus lenses until blur",
+   "Prism until break"
   ],
   "a": 1,
   "w": "Positive relative accommodation is measured by adding minus until sustained blur, testing accommodation against fixed convergence. NRA adds plus instead.",
@@ -2213,10 +2213,10 @@
   "t": "C6 Management",
   "q": "For a hyperphoria, the base-down prism is placed before the:",
   "o": [
-   "Dominant eye",
+   "Lower eye",
    "Higher eye",
-   "Amblyopic eye",
-   "Lower eye"
+   "Dominant eye",
+   "Amblyopic eye"
   ],
   "a": 1,
   "w": "Base-down before the higher eye pushes its image back down toward fusion.",
@@ -2246,9 +2246,9 @@
   "q": "Percival's criterion asks that the phoria fall within:",
   "o": [
    "Twice the fusional reserve",
-   "One prism dioptre of ortho",
+   "The outer third of the range",
    "The middle third of the vergence range",
-   "The outer third of the range"
+   "One prism dioptre of ortho"
   ],
   "a": 2,
   "w": "Percival's criterion ignores the phoria's size and asks only that the demand sit in the comfortable middle third of the total vergence range.",
@@ -2261,10 +2261,10 @@
   "t": "C6 Management",
   "q": "Borish's threshold for clinically significant anisometropia is:",
   "o": [
+   "≥4.00 D",
    "≥1.00 D",
-   "≥0.50 D",
    "≥2.00 D",
-   "≥4.00 D"
+   "≥0.50 D"
   ],
   "a": 2,
   "w": "Two dioptres or more is the classic threshold. At a hyperopic difference of 3.5 D or more, amblyopia is essentially universal without correction.",
@@ -2294,9 +2294,9 @@
   "q": "Pleoptics is indicated specifically for:",
   "o": [
    "Eccentric fixation",
+   "Convergence insufficiency",
    "Accommodative infacility",
-   "Anisometropia",
-   "Convergence insufficiency"
+   "Anisometropia"
   ],
   "a": 0,
   "w": "Pleoptics dazzles the peripheral retina to rehabilitate foveal fixation in eccentric fixation. It is largely historical and gives results inferior to conventional patching.",
@@ -2309,9 +2309,9 @@
   "t": "C6 Management",
   "q": "The CAM stimulator protocol runs:",
   "o": [
-   "2 hours daily for a month",
-   "30 min daily for a year",
    "5 min twice daily",
+   "30 min daily for a year",
+   "2 hours daily for a month",
    "7 minutes weekly for several weeks"
   ],
   "a": 3,
@@ -2325,8 +2325,8 @@
   "t": "C7 Vision Therapy",
   "q": "Vision therapy differs from prism in that therapy:",
   "o": [
-   "Compensates the deviation optically",
    "Eliminates the refractive error",
+   "Compensates the deviation optically",
    "Expands the fusional vergence range",
    "Works only in strabismus"
   ],
@@ -2343,8 +2343,8 @@
   "o": [
    "Eccentric fixation",
    "Suppression",
-   "Normal fusion",
-   "Convergence excess"
+   "Convergence excess",
+   "Normal fusion"
   ],
   "a": 1,
   "w": "The X crossing at the fixated bead proves both eyes are contributing. If one leg disappears, that eye is being suppressed.",
@@ -2373,10 +2373,10 @@
   "t": "C7 Vision Therapy",
   "q": "Standard lens flipper training uses which power, aiming at what adult rate?",
   "o": [
-   "±4.00 D, 20 cpm",
+   "±0.50 D, 30 cpm",
    "±2.00 D, 12 cpm",
    "±1.00 D, 6 cpm",
-   "±0.50 D, 30 cpm"
+   "±4.00 D, 20 cpm"
   ],
   "a": 1,
   "w": "±2.00 D flippers targeting 12 cycles per minute in adults treat accommodative infacility.",
@@ -2389,10 +2389,10 @@
   "t": "C7 Vision Therapy",
   "q": "The Hart chart trains accommodation together with:",
   "o": [
-   "Color discrimination",
-   "Saccades",
    "Stereopsis",
-   "Fusional vergence"
+   "Saccades",
+   "Fusional vergence",
+   "Color discrimination"
   ],
   "a": 1,
   "w": "Alternating between near and distance Hart charts exercises accommodative facility and saccadic accuracy at the same time.",
@@ -2406,8 +2406,8 @@
   "q": "Antisuppression therapy normally progresses:",
   "o": [
    "Stereopsis before fusion",
-   "Central to peripheral targets",
    "Grade III to Grade I",
+   "Central to peripheral targets",
    "Peripheral to central targets"
   ],
   "a": 3,
@@ -2421,10 +2421,10 @@
   "t": "C7 Vision Therapy",
   "q": "PEDIG evidence on patching dose for moderate amblyopia showed that:",
   "o": [
+   "Only atropine works",
    "Patching adds nothing to glasses",
-   "Full-time is clearly superior",
    "Part-time equals full-time",
-   "Only atropine works"
+   "Full-time is clearly superior"
   ],
   "a": 2,
   "w": "PEDIG found part-time patching (2–6 hours daily) matches full-time patching for moderate amblyopia, with better compliance.",
@@ -2437,10 +2437,10 @@
   "t": "C1 Epidemiology",
   "q": "A disease is constantly present in a community at a low, steady frequency. This pattern is:",
   "o": [
-   "Sporadic",
    "Epidemic",
+   "Pandemic",
    "Endemic",
-   "Pandemic"
+   "Sporadic"
   ],
   "a": 2,
   "w": "Constant low-level presence in a locality. An epidemic is an outbreak above expected levels; a pandemic is an epidemic spread across regions.",
@@ -2454,9 +2454,9 @@
   "q": "Conducting community vision screening and health education to stop disease before it starts is which level of prevention?",
   "o": [
    "Primary",
+   "Quaternary",
    "Secondary",
-   "Tertiary",
-   "Quaternary"
+   "Tertiary"
   ],
   "a": 0,
   "w": "Primary prevention acts before onset. Secondary is early detection and reversal; tertiary limits established disability (e.g., low-vision rehab).",
@@ -2469,10 +2469,10 @@
   "t": "C1 Epidemiology",
   "q": "In the Philippines, the leading cause of bilateral blindness is:",
   "o": [
-   "Refractive error",
    "Diabetic retinopathy",
+   "Glaucoma",
    "Cataract",
-   "Glaucoma"
+   "Refractive error"
   ],
   "a": 2,
   "w": "(about a third of cases), followed by errors of refraction, then glaucoma.",
@@ -2501,10 +2501,10 @@
   "t": "C1 Epidemiology",
   "q": "In the Philippines, the leading cause of bilateral low vision (as opposed to blindness) is:",
   "o": [
-   "Cataract",
    "Glaucoma",
+   "Diabetic retinopathy",
    "Errors of refraction",
-   "Diabetic retinopathy"
+   "Cataract"
   ],
   "a": 2,
   "w": "(~43%), with cataract second (~34%). The order flips from blindness, where cataract leads.",
@@ -2517,9 +2517,9 @@
   "t": "C1 Epidemiology",
   "q": "Which of the following does WHO list as a condition that does not typically cause vision impairment?",
   "o": [
+   "Diabetic retinopathy",
    "Trachoma",
    "Corneal opacity",
-   "Diabetic retinopathy",
    "Pterygium"
   ],
   "a": 3,
@@ -2533,9 +2533,9 @@
   "t": "C2 Ametropia",
   "q": "A 7-year-old is referred for an eye examination. The parents report that the child squints to see the blackboard but reads comfortably at near. Retinoscopy reveals AGAINST motion in all meridians at 67 cm working distance. Which lens is most likely to neutralize the reflex?",
   "o": [
-   "−1.50 DS",
-   "−3.00 DS",
    "+1.50 DS",
+   "−3.00 DS",
+   "−1.50 DS",
    "+3.00 DS"
   ],
   "a": 1,
@@ -2582,8 +2582,8 @@
   "q": "A patient's VA is OD 20/60, OS 20/20. Pinhole placed over the right eye improves VA to 20/30 but not to 20/20. The most likely explanation is:",
   "o": [
    "The right eye has a purely organic pathology",
-   "The pinhole result is invalid — a 20/60 eye should always reach 20/20 through pinhole",
    "The right eye has an uncorrected refractive error only",
+   "The pinhole result is invalid — a 20/60 eye should always reach 20/20 through pinhole",
    "The right eye has both an uncorrected refractive error AND an organic component"
   ],
   "a": 3,
@@ -2597,10 +2597,10 @@
   "t": "C4 Objective Exam",
   "q": "During slit lamp examination of a patient being evaluated for dilation, the Van Herick shadow width appears equal to about one-quarter of the corneal optic section width. Which of the following actions is most appropriate?",
   "o": [
-   "Measure IOP before deciding, then dilate freely if normal",
-   "Dilate with caution and monitor for angle closure",
    "Do not dilate — the angle is closed",
-   "Proceed with dilation — the angle is wide open"
+   "Dilate with caution and monitor for angle closure",
+   "Proceed with dilation — the angle is wide open",
+   "Measure IOP before deciding, then dilate freely if normal"
   ],
   "a": 1,
   "w": "A shadow width equal to 1/4 of the corneal optic section width corresponds to Van Herick Grade 2 (ratio 1:4). This indicates a narrow anterior chamber angle — not closed, but at risk. Dilation is not absolutely contraindicated but must be done with caution, the patient should be monitored, and the IOP checked after dilation. Grade 0–1 = absolute contraindication. Grades 3–4 = safe to dilate. Grade 2 = proceed with caution.",
@@ -2613,9 +2613,9 @@
   "t": "C4 Objective Exam",
   "q": "Which of the following is NOT part of the slit lamp's mechanical system?",
   "o": [
-   "Joystick",
-   "Light source",
    "Motorized table",
+   "Light source",
+   "Joystick",
    "Patient-positioning frame"
   ],
   "a": 1,
@@ -2645,10 +2645,10 @@
   "t": "C4 Objective Exam",
   "q": "On slit lamp exam in a dark room, the beam through the anterior chamber shows a hazy \"headlight-in-fog\" glow with no discrete particles. What does this indicate?",
   "o": [
-   "A closed anterior chamber angle",
-   "Protein leaked into the aqueous",
    "Pigment on the corneal endothelium",
-   "Inflammatory white blood cells"
+   "Protein leaked into the aqueous",
+   "Inflammatory white blood cells",
+   "A closed anterior chamber angle"
   ],
   "a": 1,
   "w": "Flare is the Tyndall haze of leaked protein — a diffuse glow with no distinct particles. CELLS are discrete floating white blood cells that look like dust in a sunbeam. Flare = protein; cells = inflammatory cells. Both are assessed at high magnification (25–40x) in a fully dark room. This is separate from Van Herick, which grades the angle, not inflammation.",
@@ -2677,9 +2677,9 @@
   "t": "C5 Subjective Exam",
   "q": "During the prism dissociation binocular balance, the patient reports the upper image (OD) is consistently clearer. After adding +0.25D to the OD, the lower image (OS) becomes clearer instead. What is the correct next step?",
   "o": [
-   "Add another +0.25D to OD to see if equality appears",
    "Add +0.25D to OS to bring it back",
    "Repeat the monocular subjective refraction for OD before continuing",
+   "Add another +0.25D to OD to see if equality appears",
    "Allow OD to retain the better vision and begin binocular reduction"
   ],
   "a": 3,
@@ -2693,10 +2693,10 @@
   "t": "C6 Management",
   "q": "A 7-year-old presents with 20/20 OD and 20/60 OS. Examination shows 4 Δ esotropia OU with +3.50D hyperopia. Cycloplegic refraction confirms +3.50D OU. What is the most appropriate first management step?",
   "o": [
-   "Prescribe BO prism to compensate for the esotropia",
+   "Refer immediately for strabismus surgery",
    "Patch the right eye for 6 hours/day",
    "Prescribe full cycloplegic correction and reassess",
-   "Refer immediately for strabismus surgery"
+   "Prescribe BO prism to compensate for the esotropia"
   ],
   "a": 2,
   "w": "This is a classic accommodative esotropia presentation: esotropia with significant hyperopia. The uncorrected hyperopia drives accommodation, which drives convergence via the AC/A ratio, producing the esotropia. The first step is full hyperopic correction — the glasses may resolve the deviation completely. Patching is premature before the refractive error is addressed; the amblyopia in OS may partially or fully resolve with correction alone. Surgery is premature; surgery on an uncorrected accommodative esotropia treats the symptom without removing the cause. Prism would compensate the deviation without removing the accommodative drive; the esotropia would persist when the prism is removed.",
@@ -2710,9 +2710,9 @@
   "q": "A patient has 8 Δ exophoria at near. BI recovery at near (#17B) is 10 Δ. The examiner wants to prescribe compensating prism. How much prism is needed according to Sheard's criterion, and in which direction?",
   "o": [
    "No prism needed; criterion is met",
-   "4 Δ BI",
+   "2 Δ BO",
    "2 Δ BI",
-   "2 Δ BO"
+   "4 Δ BI"
   ],
   "a": 2,
   "w": "Sheard's criterion: BI recovery (10 Δ) must be ≥ 2 × phoria (2 × 8 = 16 Δ). It is not met (10 < 16). Prism needed = (2 × 8 − 10) ÷ 3 = (16 − 10) ÷ 3 = 6 ÷ 3 = 2 Δ. Direction: exophoria → BI prism (base-in compensates for the outward deviation). C over-estimates the amount.",
@@ -2726,9 +2726,9 @@
   "q": "The avoidable share is:",
   "o": [
    "over 80%",
-   "cataract",
+   "refractive error",
    "~25%",
-   "refractive error"
+   "cataract"
   ],
   "a": 0,
   "w": "Avoidable share: over 80%.",
@@ -2742,9 +2742,9 @@
   "q": "The PH leading cause of BLINDNESS is:",
   "o": [
    "~25%",
-   "over 80%",
+   "refractive error",
    "cataract",
-   "refractive error"
+   "over 80%"
   ],
   "a": 2,
   "w": "PH leading cause of BLINDNESS: cataract (~33–35%).",
@@ -2757,8 +2757,8 @@
   "t": "C1 Epidemiology",
   "q": "The PH leading cause of LOW VISION is:",
   "o": [
-   "~25%",
    "over 80%",
+   "~25%",
    "refractive error",
    "cataract"
   ],
@@ -2773,10 +2773,10 @@
   "t": "C1 Epidemiology",
   "q": "The amblyopia among those is:",
   "o": [
-   "over 80%",
+   "cataract",
    "~25%",
-   "refractive error",
-   "cataract"
+   "over 80%",
+   "refractive error"
   ],
   "a": 1,
   "w": "Amblyopia among those: ~25%.",
@@ -2790,9 +2790,9 @@
   "q": "The functional presbyopia threshold is:",
   "o": [
    "0.25 to 3.00 D",
-   "~0.25D or less",
+   "67 cm → −1.50D correction",
    "AOA < 5.00 D",
-   "67 cm → −1.50D correction"
+   "~0.25D or less"
   ],
   "a": 2,
   "w": "Functional presbyopia threshold: AOA < 5.00 D. Near symptoms develop; ADD indicated",
@@ -2821,10 +2821,10 @@
   "t": "C2 Ametropia",
   "q": "The standard working distance (retinoscopy) is:",
   "o": [
-   "~0.25D or less",
-   "67 cm → −1.50D correction",
    "AOA < 5.00 D",
-   "0.25 to 3.00 D"
+   "67 cm → −1.50D correction",
+   "0.25 to 3.00 D",
+   "~0.25D or less"
   ],
   "a": 1,
   "w": "Standard working distance (retinoscopy): 67 cm → −1.50D correction. Some rooms use 50 cm → −2.00D",
@@ -2837,8 +2837,8 @@
   "t": "C2 Ametropia",
   "q": "The myopia classification (medium) is:",
   "o": [
-   "AOA < 5.00 D",
    "~0.25D or less",
+   "AOA < 5.00 D",
    "67 cm → −1.50D correction",
    "3.00 to 6.00 D"
   ],
@@ -2885,8 +2885,8 @@
   "t": "C2 Ametropia",
   "q": "The hyperopia (high) is:",
   "o": [
-   "~0.25D or less",
    "67 cm → −1.50D correction",
+   "~0.25D or less",
    "5.00 D and above",
    "AOA < 5.00 D"
   ],
@@ -2903,8 +2903,8 @@
   "o": [
    "AOA < 5.00 D",
    "10.00 D",
-   "67 cm → −1.50D correction",
-   "~0.25D or less"
+   "~0.25D or less",
+   "67 cm → −1.50D correction"
   ],
   "a": 1,
   "w": "Donders table — age 20: 10.00 D. Key anchor: memorize age 20 = 10D",
@@ -2917,10 +2917,10 @@
   "t": "C2 Ametropia",
   "q": "The donders table — age 40 is:",
   "o": [
-   "67 cm → −1.50D correction",
+   "~0.25D or less",
    "AOA < 5.00 D",
    "4.50 D",
-   "~0.25D or less"
+   "67 cm → −1.50D correction"
   ],
   "a": 2,
   "w": "Donders table — age 40: 4.50 D. Beginning of presbyopia range",
@@ -2933,10 +2933,10 @@
   "t": "C2 Ametropia",
   "q": "The donders table — age 45 is:",
   "o": [
-   "67 cm → −1.50D correction",
+   "AOA < 5.00 D",
    "3.50 D",
    "~0.25D or less",
-   "AOA < 5.00 D"
+   "67 cm → −1.50D correction"
   ],
   "a": 1,
   "w": "Donders table — age 45: 3.50 D. Typical clinical presbyopia onset",
@@ -2949,10 +2949,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes parallel rays focus exactly on the retina at rest; no correction needed?",
   "o": [
-   "Hypermetropia",
+   "Hyperopia",
    "Emmetropia",
    "Myopia",
-   "Hyperopia"
+   "Hypermetropia"
   ],
   "a": 1,
   "w": "Emmetropia: Greek: emmetros (in proper measure). Parallel rays focus exactly on the retina at rest; no correction needed",
@@ -2965,10 +2965,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes eye \"squints to see\" — near-sightedness; image in front of retina?",
   "o": [
-   "Hypermetropia",
+   "Emmetropia",
    "Myopia",
-   "Hyperopia",
-   "Emmetropia"
+   "Hypermetropia",
+   "Hyperopia"
   ],
   "a": 1,
   "w": "Myopia: Greek: myein (to close/shut) + ops (eye). Eye \"squints to see\" — near-sightedness; image in front of retina",
@@ -2981,8 +2981,8 @@
   "t": "C2 Ametropia",
   "q": "Which term describes \"Over-seeing\" — far-sightedness; image behind retina?",
   "o": [
-   "Hypermetropia",
    "Myopia",
+   "Hypermetropia",
    "Hyperopia",
    "Emmetropia"
   ],
@@ -2997,9 +2997,9 @@
   "t": "C2 Ametropia",
   "q": "Which term describes same condition as hyperopia; British/older preferred term; both valid?",
   "o": [
-   "Hyperopia",
    "Emmetropia",
    "Myopia",
+   "Hyperopia",
    "Hypermetropia"
   ],
   "a": 3,
@@ -3014,8 +3014,8 @@
   "q": "Which term describes \"No point focus\" — different powers in different meridians; multiple foci?",
   "o": [
    "Astigmatism",
-   "Hyperopia",
    "Emmetropia",
+   "Hyperopia",
    "Myopia"
   ],
   "a": 0,
@@ -3029,10 +3029,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes age-related loss of accommodative amplitude; lens stiffening?",
   "o": [
-   "Emmetropia",
+   "Myopia",
    "Presbyopia",
-   "Hyperopia",
-   "Myopia"
+   "Emmetropia",
+   "Hyperopia"
   ],
   "a": 1,
   "w": "Presbyopia: Greek: presbys (old man) + ops (eye). Age-related loss of accommodative amplitude; lens stiffening",
@@ -3061,10 +3061,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes unequal image size between the two eyes?",
   "o": [
-   "Hyperopia",
    "Myopia",
+   "Emmetropia",
    "Aniseikonia",
-   "Emmetropia"
+   "Hyperopia"
   ],
   "a": 2,
   "w": "Aniseikonia: Greek: aniso (unequal) + eikon (image). Unequal image size between the two eyes",
@@ -3077,10 +3077,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes absence of crystalline lens; extreme hyperopia results?",
   "o": [
-   "Hyperopia",
-   "Aphakia",
    "Emmetropia",
-   "Myopia"
+   "Aphakia",
+   "Myopia",
+   "Hyperopia"
   ],
   "a": 1,
   "w": "Aphakia: Greek: a (without) + phakos (lens). Absence of crystalline lens; extreme hyperopia results",
@@ -3093,10 +3093,10 @@
   "t": "C2 Ametropia",
   "q": "Which term describes amount of hyperopia that can be overcome by accommodation?",
   "o": [
-   "Hypermetropia",
    "Emmetropia",
+   "Myopia",
    "Facultative hyperopia",
-   "Myopia"
+   "Hypermetropia"
   ],
   "a": 2,
   "w": "Facultative hyperopia: Latin: facultas (ability). Amount of hyperopia that can be overcome by accommodation",
@@ -3109,9 +3109,9 @@
   "t": "C2 Ametropia",
   "q": "Which term describes amount masked by tonic ciliary spasm; only revealed under cycloplegia?",
   "o": [
-   "Myopia",
-   "Emmetropia",
    "Hypermetropia",
+   "Emmetropia",
+   "Myopia",
    "Latent hyperopia"
   ],
   "a": 3,
@@ -3143,8 +3143,8 @@
   "o": [
    "AC/A ratio",
    "Emmetropia",
-   "Myopia",
-   "Hyperopia"
+   "Hyperopia",
+   "Myopia"
   ],
   "a": 0,
   "w": "AC/A ratio: Accommodative Convergence to Accommodation. Prism diopters of convergence generated per diopter of accommodation",
@@ -3157,8 +3157,8 @@
   "t": "C2 Ametropia",
   "q": "Which term describes apparent myopia from tonic accommodative spasm in a non-myopic eye?",
   "o": [
-   "Hypermetropia",
    "Emmetropia",
+   "Hypermetropia",
    "Hyperopia",
    "Pseudomyopia"
   ],
@@ -3238,9 +3238,9 @@
   "q": "The anisocoria threshold is:",
   "o": [
    ">0.5 mm",
-   ">2.0 mm",
+   ">3.0 mm",
    ">1.0 mm",
-   ">3.0 mm"
+   ">2.0 mm"
   ],
   "a": 2,
   "w": "Anisocoria threshold: >1.0mm difference = abnormal. Physiologic = same in light and dark",
@@ -3253,8 +3253,8 @@
   "t": "C3 Preliminary Exam",
   "q": "The angle kappa (normal) is:",
   "o": [
-   "5° = 10Δ",
    "30° = 60Δ",
+   "5° = 10Δ",
    "15° = 30Δ",
    "Up to +5° nasally"
   ],
@@ -3286,9 +3286,9 @@
   "q": "Which term describes monocular eye movement in any direction?",
   "o": [
    "NPC",
-   "Vergence",
+   "Version",
    "Duction",
-   "Version"
+   "Vergence"
   ],
   "a": 2,
   "w": "Duction: Latin: ducere (to lead). Monocular eye movement in any direction",
@@ -3301,10 +3301,10 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes binocular eye movements in opposite directions (convergence/divergence)?",
   "o": [
-   "Version",
-   "Vergence",
    "NPC",
-   "Duction"
+   "Vergence",
+   "Duction",
+   "Version"
   ],
   "a": 1,
   "w": "Vergence: Latin: vergere (to incline). Binocular eye movements in opposite directions (convergence/divergence)",
@@ -3318,8 +3318,8 @@
   "q": "Which term describes closest point the eyes can maintain convergence without diplopia or deviation?",
   "o": [
    "Vergence",
-   "Version",
    "Duction",
+   "Version",
    "NPC"
   ],
   "a": 3,
@@ -3333,10 +3333,10 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes closest point the eye can still focus clearly (maximum accommodation used)?",
   "o": [
-   "Vergence",
+   "Duction",
    "Version",
    "NPA",
-   "Duction"
+   "Vergence"
   ],
   "a": 2,
   "w": "NPA: Near Point of Accommodation. Closest point the eye can still focus clearly (maximum accommodation used)",
@@ -3350,8 +3350,8 @@
   "q": "Which term describes latent deviation — controlled by fusion; only appears when fusion is broken?",
   "o": [
    "Duction",
-   "Vergence",
    "Version",
+   "Vergence",
    "Phoria"
   ],
   "a": 3,
@@ -3382,8 +3382,8 @@
   "q": "Which term describes paradoxical dilation on swinging flashlight = afferent defect ipsilateral side?",
   "o": [
    "Version",
-   "Duction",
    "Vergence",
+   "Duction",
    "RAPD"
   ],
   "a": 3,
@@ -3397,9 +3397,9 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes rAPD; impaired optic nerve or retinal input compared to fellow eye?",
   "o": [
-   "Duction",
-   "Version",
    "Vergence",
+   "Version",
+   "Duction",
    "Marcus Gunn pupil"
   ],
   "a": 3,
@@ -3413,10 +3413,10 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes corneal reflex method to estimate tropia magnitude in prism diopters?",
   "o": [
-   "Version",
    "Duction",
+   "Vergence",
    "Hirschberg test",
-   "Vergence"
+   "Version"
   ],
   "a": 2,
   "w": "Hirschberg test: Named after Julius Hirschberg. Corneal reflex method to estimate tropia magnitude in prism diopters",
@@ -3429,10 +3429,10 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes standard abbreviation for normal pupil findings?",
   "o": [
-   "Duction",
+   "Version",
    "PERRL",
    "Vergence",
-   "Version"
+   "Duction"
   ],
   "a": 1,
   "w": "PERRL: Pupils Equal Round Reactive to Light. Standard abbreviation for normal pupil findings",
@@ -3445,8 +3445,8 @@
   "t": "C3 Preliminary Exam",
   "q": "Which term describes unequal pupil sizes; physiologic if difference ≤1mm and consistent in light and dark?",
   "o": [
-   "Vergence",
    "Duction",
+   "Vergence",
    "Anisocoria",
    "Version"
   ],
@@ -3461,10 +3461,10 @@
   "t": "C4 Objective Exam",
   "q": "The indirect ophthalmoscopy magnification is:",
   "o": [
-   "6x",
-   "2–5x; 1.5–4.5x",
    "16x",
-   "6x–10x"
+   "2–5x; 1.5–4.5x",
+   "6x–10x",
+   "6x"
   ],
   "a": 1,
   "w": "Indirect ophthalmoscopy magnification: 2–5x (monocular); 1.5–4.5x (binocular). Inverted, real image",
@@ -3493,10 +3493,10 @@
   "t": "C4 Objective Exam",
   "q": "The normal corneal astigmatism is:",
   "o": [
-   "40–47D",
+   "+10 D",
    "≤1.00D",
-   "+22 D",
-   "+10 D"
+   "40–47D",
+   "+22 D"
   ],
   "a": 1,
   "w": "Normal corneal astigmatism: ≤1.00D (most common). Higher = clinically significant",
@@ -3509,9 +3509,9 @@
   "t": "C4 Objective Exam",
   "q": "The slit lamp eyepiece (ocular) lens power is:",
   "o": [
-   "≤1.00D",
    "40–47D",
    "+22 D",
+   "≤1.00D",
    "+10 D"
   ],
   "a": 3,
@@ -3525,9 +3525,9 @@
   "t": "C4 Objective Exam",
   "q": "The slit lamp objective lens power is:",
   "o": [
+   "40–47D",
    "≤1.00D",
    "+10 D",
-   "40–47D",
    "+22 D"
   ],
   "a": 3,
@@ -3542,9 +3542,9 @@
   "q": "Which term describes examination of the interior of the eye with an ophthalmoscope?",
   "o": [
    "Ophthalmoscopy",
-   "Parallelepiped",
    "Mire",
-   "Van Herick technique"
+   "Van Herick technique",
+   "Parallelepiped"
   ],
   "a": 0,
   "w": "Ophthalmoscopy: Greek: ophthalmos (eye) + skopein. Examination of the interior of the eye with an ophthalmoscope",
@@ -3558,9 +3558,9 @@
   "q": "Which term describes slit lamp beam width ~3mm; allows 3D view of corneal volume?",
   "o": [
    "Parallelepiped",
-   "Van Herick technique",
+   "Ophthalmoscopy",
    "Mire",
-   "Ophthalmoscopy"
+   "Van Herick technique"
   ],
   "a": 0,
   "w": "Parallelepiped: Geometry: parallel + solid. Slit lamp beam width ~3mm; allows 3D view of corneal volume",
@@ -3574,9 +3574,9 @@
   "q": "Which term describes slit lamp method to estimate anterior chamber angle depth?",
   "o": [
    "Van Herick technique",
-   "Ophthalmoscopy",
    "Mire",
-   "Parallelepiped"
+   "Parallelepiped",
+   "Ophthalmoscopy"
   ],
   "a": 0,
   "w": "Van Herick technique: Named after W. Van Herick. Slit lamp method to estimate anterior chamber angle depth",
@@ -3591,8 +3591,8 @@
   "o": [
    "Mire",
    "Ophthalmoscopy",
-   "Van Herick technique",
-   "Parallelepiped"
+   "Parallelepiped",
+   "Van Herick technique"
   ],
   "a": 0,
   "w": "Mire: French: mirer (to aim at / reflect). The target circles or crosses reflected off the cornea in keratometry",
@@ -3605,8 +3605,8 @@
   "t": "C4 Objective Exam",
   "q": "Which term describes formula to predict total astigmatism from corneal astigmatism?",
   "o": [
-   "Van Herick technique",
    "Ophthalmoscopy",
+   "Van Herick technique",
    "Parallelepiped",
    "Javal's rule"
   ],
@@ -3621,10 +3621,10 @@
   "t": "C5 Subjective Exam",
   "q": "The ideal fog lens is:",
   "o": [
-   "+0.50 to +0.75D to both eyes",
+   "±0.12, ±0.25, ±0.50D",
    "+0.50 to +0.75D above best sphere",
-   "+0.25D sphere per −0.50D cyl",
-   "±0.12, ±0.25, ±0.50D"
+   "+0.50 to +0.75D to both eyes",
+   "+0.25D sphere per −0.50D cyl"
   ],
   "a": 1,
   "w": "Ideal fog lens: +0.50 to +0.75D above best sphere. Standardizes the accommodative relaxation before astigmatic dial",
@@ -3637,10 +3637,10 @@
   "t": "C5 Subjective Exam",
   "q": "The JCC strengths is:",
   "o": [
-   "+0.50 to +0.75D to both eyes",
+   "+0.25D sphere per −0.50D cyl",
    "+0.50 to +0.75D above best sphere",
    "±0.12, ±0.25, ±0.50D",
-   "+0.25D sphere per −0.50D cyl"
+   "+0.50 to +0.75D to both eyes"
   ],
   "a": 2,
   "w": "JCC strengths: ±0.12, ±0.25, ±0.50D. ±0.25 is the standard clinical choice",
@@ -3654,9 +3654,9 @@
   "q": "The sphere add per cylinder is:",
   "o": [
    "+0.50 to +0.75D to both eyes",
-   "+0.50 to +0.75D above best sphere",
+   "±0.12, ±0.25, ±0.50D",
    "+0.25D sphere per −0.50D cyl",
-   "±0.12, ±0.25, ±0.50D"
+   "+0.50 to +0.75D above best sphere"
   ],
   "a": 2,
   "w": "Sphere add per cylinder: +0.25D sphere per −0.50D cyl. Keeps the circle of least confusion centered on the retina",
@@ -3670,9 +3670,9 @@
   "q": "The binocular balance re-fog is:",
   "o": [
    "+0.50 to +0.75D to both eyes",
-   "+0.25D sphere per −0.50D cyl",
    "±0.12, ±0.25, ±0.50D",
-   "+0.50 to +0.75D above best sphere"
+   "+0.50 to +0.75D above best sphere",
+   "+0.25D sphere per −0.50D cyl"
   ],
   "a": 0,
   "w": "Binocular balance re-fog: +0.50 to +0.75D to both eyes. Same principle as monocular fog; applied binocularly",
@@ -3686,9 +3686,9 @@
   "q": "The NRA normal is:",
   "o": [
    "+2.00D",
-   "+0.25D sphere per −0.50D cyl",
    "+0.50 to +0.75D above best sphere",
-   "±0.12, ±0.25, ±0.50D"
+   "±0.12, ±0.25, ±0.50D",
+   "+0.25D sphere per −0.50D cyl"
   ],
   "a": 0,
   "w": "NRA normal: +2.00D. Ability to relax accommodation at 40cm",
@@ -3701,10 +3701,10 @@
   "t": "C5 Subjective Exam",
   "q": "The PRA normal is:",
   "o": [
-   "+0.50 to +0.75D above best sphere",
-   "−2.37D",
    "±0.12, ±0.25, ±0.50D",
-   "+0.25D sphere per −0.50D cyl"
+   "−2.37D",
+   "+0.25D sphere per −0.50D cyl",
+   "+0.50 to +0.75D above best sphere"
   ],
   "a": 1,
   "w": "PRA normal: −2.37D. Ability to stimulate accommodation at 40cm",
@@ -3717,9 +3717,9 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes deliberate over-plussing to blur the image and relax accommodation?",
   "o": [
+   "TIB",
    "MPMVA",
    "Duochrome / Bichrome",
-   "TIB",
    "Fogging"
   ],
   "a": 3,
@@ -3733,10 +3733,10 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes reducing plus (or adding minus) after astigmatic correction is set?",
   "o": [
-   "TIB",
+   "Duochrome / Bichrome",
    "MPMVA",
    "Defogging",
-   "Duochrome / Bichrome"
+   "TIB"
   ],
   "a": 2,
   "w": "Defogging: Removing the fog. Reducing plus (or adding minus) after astigmatic correction is set",
@@ -3750,9 +3750,9 @@
   "q": "Which term describes the endpoint: highest plus (lowest minus) that still gives best VA?",
   "o": [
    "MPMVA",
+   "Duochrome / Bichrome",
    "Fogging",
-   "Defogging",
-   "Duochrome / Bichrome"
+   "Defogging"
   ],
   "a": 0,
   "w": "MPMVA: Most Plus / Minimum Minus Visual Acuity. The endpoint: highest plus (lowest minus) that still gives best VA",
@@ -3765,10 +3765,10 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes two-color test based on chromatic aberration; bichrome = binocular version?",
   "o": [
-   "Fogging",
-   "Duochrome / Bichrome",
    "MPMVA",
-   "Defogging"
+   "Duochrome / Bichrome",
+   "Defogging",
+   "Fogging"
   ],
   "a": 1,
   "w": "Duochrome / Bichrome: Greek duo (two) + chroma (color). Two-color test based on chromatic aberration; bichrome = binocular version",
@@ -3781,10 +3781,10 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes binocular balance technique using a septum to separate each eye's field?",
   "o": [
-   "Fogging",
-   "TIB",
    "MPMVA",
-   "Defogging"
+   "TIB",
+   "Defogging",
+   "Fogging"
   ],
   "a": 1,
   "w": "TIB: Turville Infinity Balance. Binocular balance technique using a septum to separate each eye's field",
@@ -3799,8 +3799,8 @@
   "o": [
    "OEP",
    "MPMVA",
-   "Fogging",
-   "Defogging"
+   "Defogging",
+   "Fogging"
   ],
   "a": 0,
   "w": "OEP: Optometric Extension Program. The 21-step phorometric protocol that maps accommodation and convergence",
@@ -3813,10 +3813,10 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes maximum accommodation that can be stimulated at 40cm (#20)?",
   "o": [
-   "Defogging",
+   "MPMVA",
    "PRA",
-   "Fogging",
-   "MPMVA"
+   "Defogging",
+   "Fogging"
   ],
   "a": 1,
   "w": "PRA: Positive Relative Accommodation. Maximum accommodation that can be stimulated at 40cm (#20)",
@@ -3829,8 +3829,8 @@
   "t": "C5 Subjective Exam",
   "q": "Which term describes maximum accommodation that can be inhibited at 40cm (#21)?",
   "o": [
-   "Defogging",
    "Fogging",
+   "Defogging",
    "MPMVA",
    "NRA"
   ],
@@ -3846,9 +3846,9 @@
   "q": "Which term describes manifest misalignment of the eyes; one eye deviates from the point of fixation?",
   "o": [
    "Strabismus",
-   "Eccentric fixation",
    "Tropia",
-   "Phoria"
+   "Phoria",
+   "Eccentric fixation"
   ],
   "a": 0,
   "w": "Strabismus: Greek strabizein (to squint). Manifest misalignment of the eyes; one eye deviates from the point of fixation",
@@ -3861,8 +3861,8 @@
   "t": "C6 Management",
   "q": "Which term describes latent tendency of the eyes to deviate, held in check by fusion?",
   "o": [
-   "Strabismus",
    "Tropia",
+   "Strabismus",
    "Eccentric fixation",
    "Phoria"
   ],
@@ -3877,10 +3877,10 @@
   "t": "C6 Management",
   "q": "Which term describes manifest deviation; the eye actually turns, not just tends to?",
   "o": [
+   "Eccentric fixation",
    "Phoria",
-   "Strabismus",
    "Tropia",
-   "Eccentric fixation"
+   "Strabismus"
   ],
   "a": 2,
   "w": "Tropia: Greek tropos (turning). Manifest deviation; the eye actually turns, not just tends to",
@@ -3893,10 +3893,10 @@
   "t": "C6 Management",
   "q": "Which term describes fixation in the amblyopic eye occurs at a retinal point other than the fovea?",
   "o": [
-   "Tropia",
    "Phoria",
+   "Strabismus",
    "Eccentric fixation",
-   "Strabismus"
+   "Tropia"
   ],
   "a": 2,
   "w": "Eccentric fixation: Latin ex-centrum (off-center). Fixation in the amblyopic eye occurs at a retinal point other than the fovea",
@@ -3925,9 +3925,9 @@
   "t": "C6 Management",
   "q": "Which term describes technique using intense light stimulation of the non-foveal area to rehabilitate foveal fixation in amblyopia with eccentric fixation?",
   "o": [
-   "Strabismus",
    "Tropia",
    "Phoria",
+   "Strabismus",
    "Pleoptics"
   ],
   "a": 3,
@@ -3942,8 +3942,8 @@
   "q": "Which term describes unequal image size between the two eyes, causing binocular fusion difficulties?",
   "o": [
    "Aniseikonia",
-   "Phoria",
    "Strabismus",
+   "Phoria",
    "Tropia"
   ],
   "a": 0,
@@ -3957,9 +3957,9 @@
   "t": "C6 Management",
   "q": "Which term describes a lens designed to equalize retinal image size without altering its power?",
   "o": [
+   "Prism segment",
    "Bifocal segment",
    "Aspheric lens",
-   "Prism segment",
    "Iseikonic lens"
   ],
   "a": 3,
@@ -3975,8 +3975,8 @@
   "o": [
    "Eccentric fixation",
    "Vision therapy",
-   "Pleoptics",
-   "Physiological diplopia"
+   "Physiological diplopia",
+   "Pleoptics"
   ],
   "a": 1,
   "w": "Vision therapy (VT): English compound. Broader term; includes accommodation, sensory fusion, and higher perceptual training — not just convergence",
@@ -3990,9 +3990,9 @@
   "q": "Which term describes monocular technique for eccentric fixation; uses intense light to dazzle peripheral retina and rehabilitate foveal fixation?",
   "o": [
    "Pleoptics",
-   "Physiological diplopia",
    "Eccentric fixation",
-   "Vision therapy"
+   "Vision therapy",
+   "Physiological diplopia"
   ],
   "a": 0,
   "w": "Pleoptics: Greek pleion (more) + ops. Monocular technique for eccentric fixation; uses intense light to dazzle peripheral retina and rehabilitate foveal fixation",
@@ -4005,9 +4005,9 @@
   "t": "C7 Vision Therapy",
   "q": "Which term describes fixation in the amblyopic eye at a retinal point other than the fovea; marker of deep amblyopia?",
   "o": [
+   "Vision therapy",
    "Physiological diplopia",
    "Pleoptics",
-   "Vision therapy",
    "Eccentric fixation"
   ],
   "a": 3,
@@ -4021,10 +4021,10 @@
   "t": "C7 Vision Therapy",
   "q": "Which term describes normal doubling of non-fixated objects; expected finding when fusion is intact; absent when suppression is present?",
   "o": [
+   "Vision therapy",
    "Pleoptics",
-   "Eccentric fixation",
    "Physiological diplopia",
-   "Vision therapy"
+   "Eccentric fixation"
   ],
   "a": 2,
   "w": "Physiological diplopia: Greek diploos (double). Normal doubling of non-fixated objects; expected finding when fusion is intact; absent when suppression is present",
@@ -4037,10 +4037,10 @@
   "t": "C7 Vision Therapy",
   "q": "Which term describes step 3 of Parks test; tilting the head increases vertical fusion demand on cyclovertical muscles of the ipsilateral eye?",
   "o": [
-   "Vision therapy",
-   "Bielschowsky head tilt test",
    "Eccentric fixation",
-   "Pleoptics"
+   "Bielschowsky head tilt test",
+   "Pleoptics",
+   "Vision therapy"
   ],
   "a": 1,
   "w": "Bielschowsky head tilt test: Named: Alfred Bielschowsky (1900s). Step 3 of Parks test; tilting the head increases vertical fusion demand on cyclovertical muscles of the ipsilateral eye",
@@ -4054,9 +4054,9 @@
   "q": "Which term describes instrument for measuring objective and subjective angle of deviation and training at all three Grades of BV?",
   "o": [
    "Synoptophore / Amblyoscope",
-   "Pleoptics",
+   "Vision therapy",
    "Eccentric fixation",
-   "Vision therapy"
+   "Pleoptics"
   ],
   "a": 0,
   "w": "Synoptophore / Amblyoscope: Greek synoptos (seen together). Instrument for measuring objective and subjective angle of deviation and training at all three Grades of BV",
@@ -4087,8 +4087,8 @@
   "o": [
    "Dichoptic training",
    "Pleoptics",
-   "Eccentric fixation",
-   "Vision therapy"
+   "Vision therapy",
+   "Eccentric fixation"
   ],
   "a": 0,
   "w": "Dichoptic training: Greek dikha (separately) + optikos. Presents different images to each eye simultaneously; forces cortical integration; modern active amblyopia therapy",
