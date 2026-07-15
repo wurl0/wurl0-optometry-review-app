@@ -38,7 +38,6 @@ export default function DrillClient({ pool, dueCount }: Props) {
   const [revealed, setRevealed] = useState(false)
   const [outcomes, setOutcomes] = useState<boolean[]>([])
   const [remaining, setRemaining] = useState(TEN_MINUTES)
-  const [timeUp, setTimeUp] = useState(false)
   const [overtime, setOvertime] = useState(false)
   const [saving, setSaving] = useState(false)
   const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
@@ -54,11 +53,11 @@ export default function DrillClient({ pool, dueCount }: Props) {
     return () => clearInterval(id)
   }, [phase, overtime])
 
-  // Hitting zero does NOT yank the screen away mid-question. It raises a flag that the
-  // next answer honours, so the 10-minute mark always lands between questions.
-  useEffect(() => {
-    if (!overtime && remaining === 0) setTimeUp(true)
-  }, [remaining, overtime])
+  // Derived, not state: the clock stops AT zero rather than running past it, so this
+  // latches by itself until the user opts into overtime. Hitting zero does not yank the
+  // screen away mid-question — handleNext honours the flag, so the 10-minute mark always
+  // lands between questions.
+  const timeUp = !overtime && remaining === 0
 
   const finish = useCallback(async (answered: boolean[]) => {
     setSaving(true)
@@ -119,7 +118,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
     const next = [...outcomes, selected === q.correct]
     setOutcomes(next)
 
-    if (timeUp && !overtime) { setPhase('milestone'); return }
+    if (timeUp) { setPhase('milestone'); return }   // timeUp already excludes overtime
     if (current === pool.length - 1) { await finish(next); return }
 
     setCurrent(i => i + 1)
@@ -355,7 +354,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
               disabled={saving}
               className="w-full mt-3 py-3 text-sm font-semibold rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition-colors disabled:opacity-50"
             >
-              {saving ? 'Saving…' : timeUp && !overtime ? "Time's up — see where you got to" : current === pool.length - 1 ? 'Finish' : 'Next →'}
+              {saving ? 'Saving…' : timeUp ? "Time's up — see where you got to" : current === pool.length - 1 ? 'Finish' : 'Next →'}
             </button>
 
             <button
