@@ -81,6 +81,8 @@ const MOCK_ITEMS: Item[] = [
     sub: 'Cross-subject, weighted to TOS', path: '/top2/00-Master-Index/OLE-Mock-Board-Exam.html' },
   { id: 'mock.set2', subject: 'GLOBAL', type: 'mock', label: 'OLE Mock Board Exam — Set 2',
     sub: '2024 preboard bank, weighted to TOS', path: '/top2/00-Master-Index/OLE-Mock-Board-Exam-Set2.html' },
+  { id: 'mock.reviewer', subject: 'GLOBAL', type: 'mock', label: 'OLE Mock Board — Reviewer Bank',
+    sub: 'Full 1000-item weighted paper drawn from the reviewer banks', path: '/top2/00-Master-Index/OLE-Mock-Board-Reviewer.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
@@ -107,6 +109,18 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.G2-Autonomic-Grid-Interactive', subject: 'G', type: 'interactive', label: 'G2 Autonomic Grid', path: '/top2/G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Grid-Interactive.html' },
 ]
 
+// Per-subject extras that sit outside the generated five. These are linked FROM pages a
+// granted user can already open (H-Reviewer's layers bar points at both law-book pages),
+// so leaving them off the manifest made those links bounce a granted user back to /.
+const EXTRA_SUBJECT_ITEMS: Item[] = [
+  { id: 'H.optolawbook', subject: 'H', type: 'reviewer', label: 'Jurisprudence & Ethics — Law Book (full)',
+    sub: 'Full digest of the optometry law and professional aspects text',
+    path: '/top2/H-Jurisprudence-and-Ethics/H-OPTOLAWBOOK-Reviewer.html' },
+  { id: 'H.optolawbook-drill', subject: 'H', type: 'interactive', label: 'Jurisprudence & Ethics — Law Drill',
+    sub: 'Self-test on the law book digest',
+    path: '/top2/H-Jurisprudence-and-Ethics/H-OPTOLAWBOOK-Law-Drill.html' },
+]
+
 // App features (not static /top2 files) that are grantable like any other item.
 // Gated in their own page, not by the /top2 middleware.
 export const READINESS_ITEM_ID = 'feature.readiness'
@@ -115,6 +129,8 @@ const FEATURE_ITEMS: Item[] = [
     sub: 'Weighted GWA dashboard from exam scores', path: '/readiness' },
 ]
 
-export const ITEMS: Item[] = [...SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...FEATURE_ITEMS]
+export const ITEMS: Item[] = [
+  ...SUBJECT_ITEMS, ...EXTRA_SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...FEATURE_ITEMS,
+]
 export const ITEM_BY_PATH = new Map<string, Item>(ITEMS.map(i => [i.path, i]))
 export const ITEM_BY_ID = new Map<string, Item>(ITEMS.map(i => [i.id, i]))

@@ -83,11 +83,9 @@ export function canServeCard(a: Access, subject: string, source: string): boolea
 
   // A mock card records which SUBJECT it tested, not which mock file served it, so the
   // exact item cannot be recovered. Require access to some mock rather than guessing.
+  // Derived from the manifest so a new mock is covered the moment it is added.
   if (source === 'mock') {
-    return ['mock.2025', 'mock.set2'].some(id => {
-      const item = ITEM_BY_ID.get(id)
-      return !!item && canOpenItem(a, item)
-    })
+    return [...ITEM_BY_ID.values()].some(i => i.type === 'mock' && canOpenItem(a, i))
   }
 
   const id = itemIdForCard(subject, source)
