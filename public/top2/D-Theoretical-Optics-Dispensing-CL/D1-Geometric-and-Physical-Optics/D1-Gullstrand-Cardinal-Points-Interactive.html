@@ -3,28 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAA Board Review 2026 — Gullstrand Cardinal Points</title>
+<title>WAA Board Review 2026, Gullstrand Cardinal Points</title>
 <style>
   :root{
     --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
     --accent:#854f0b; --accent-soft:#faeeda;
     --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
-    --tag:#534ab7; --tag-soft:#eeedfe;
+    --nodal:#2f6fd6; --img:#c0392b; --cornea:#5f97c9; --retina:#d8862f;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
-  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 18px 80px}
   header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
   .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
   h1{font-size:22px;margin:6px 0 2px}.sub{font-size:14px;color:var(--muted);margin:0}
   section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
   h2{font-size:17px;margin:0 0 6px}.hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  svg#eye{width:100%;height:auto;display:block;background:#fbfaf7;border:1px solid var(--line);border-radius:10px;touch-action:none}
   .ptbtns{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 0}
   .ptbtn{border:1.5px solid var(--line);background:#fff;border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;color:var(--ink)}
   .ptbtn:hover{border-color:var(--accent)} .ptbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
   .detail{margin-top:12px;background:var(--accent-soft);border-radius:11px;padding:13px 15px;font-size:14.5px}
   .detail b{color:var(--accent)} .dxname{font-size:15px;font-weight:700;margin-bottom:2px}
-  table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:13.5px}
+  .nodalbox{margin-top:14px;border:1px solid var(--line);border-radius:11px;padding:12px 14px;background:#fbfaf6}
+  .nodalbox .sliderow{display:flex;align-items:center;gap:12px;margin:2px 0 10px}
+  .nodalbox label{font-size:14px;color:var(--muted);min-width:140px}
+  input[type=range]{flex:1;accent-color:var(--nodal)}
+  .readout{display:flex;flex-wrap:wrap;gap:8px}
+  .pill{font-size:13px;font-weight:600;padding:5px 11px;border-radius:20px;background:#eaf1fb;color:#1d5aae}
+  .pill.a{background:var(--accent-soft);color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin:14px 0 0;font-size:13.5px}
   th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)} th{color:var(--muted);font-size:12px;text-transform:uppercase}
   td:last-child{text-align:right;font-weight:600}
   .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
@@ -50,21 +58,35 @@
 <div class="wrap">
   <header>
     <div class="kicker">WAA · Board Review 2026</div>
-    <h1>D1 — Gullstrand Cardinal Points, interactive</h1>
-    <p class="sub">Personal study notes · tap a cardinal point on the schematic eye, then test yourself</p>
+    <h1>D1 · Gullstrand Cardinal Points, interactive</h1>
+    <p class="sub">Personal study notes · tap a cardinal point, drag the visual angle to trace the nodal ray, then test yourself</p>
   </header>
 
   <section>
-    <h2>1. The six cardinal points (measured from the anterior cornea)</h2>
-    <p class="hint">Light enters from the left. Tap a point to see where it sits and what it does.</p>
-    <svg id="eye" width="100%" viewBox="0 0 600 230" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Schematic eye cardinal points"></svg>
+    <h2>1. The cardinal points, and the nodal ray</h2>
+    <p class="hint">Light enters from the left. The six cardinal points come in three pairs: focal (F, F′), principal (P, P′), and nodal (N, N′). Tap a point for its role. Drag the visual angle to send a distant object through the nodal point and watch the retinal image form.</p>
+    <svg id="eye" viewBox="0 0 760 360" aria-label="Schematic eye with cardinal points and nodal ray"></svg>
+
     <div class="ptbtns" id="ptbtns"></div>
-    <div class="detail" id="detail"><div class="dxname">Tap a point</div>The cardinal points define the eye's optical system.</div>
+    <div class="detail" id="detail"><div class="dxname">Tap a point</div>The cardinal points let you trace any ray through the eye without knowing its internal surfaces.</div>
+
+    <div class="nodalbox">
+      <div class="sliderow">
+        <label>Visual angle θ: <b id="thVal">5.0</b>°</label>
+        <input type="range" id="th" min="0" max="10" step="0.5" value="5">
+      </div>
+      <div class="readout" id="nodalRead"></div>
+    </div>
+
     <table>
       <tr><th>Gullstrand constant</th><th>Value</th></tr>
-      <tr><td>Cornea power</td><td>43 D</td></tr>
-      <tr><td>Lens power (unaccommodated)</td><td>19 D</td></tr>
-      <tr><td>Total power — exact / reduced eye</td><td>58.64 D / 60 D</td></tr>
+      <tr><td>Cornea power</td><td>+43 D</td></tr>
+      <tr><td>Lens power (unaccommodated)</td><td>+19 D</td></tr>
+      <tr><td>Total power, exact / reduced eye</td><td>+58.64 D / +60 D</td></tr>
+      <tr><td>Principal points P, P′ (behind cornea)</td><td>1.35 / 1.60 mm</td></tr>
+      <tr><td>Nodal points N, N′ (behind cornea)</td><td>7.08 / 7.33 mm</td></tr>
+      <tr><td>Posterior nodal distance (N′ to retina)</td><td>≈ 16.7 mm</td></tr>
+      <tr><td>Retinal image per 1° of visual angle</td><td>≈ 0.29 mm</td></tr>
       <tr><td>Axial length (emmetrope)</td><td>24 mm</td></tr>
     </table>
   </section>
@@ -78,71 +100,136 @@
 </div>
 
 <script>
-const svg=document.getElementById('eye');
-// scale: mm -> px. Cornea at xmm=0 -> screen 110. scale 13 px/mm.
-const X0=110, SC=13, AY=115;
+var svg=document.getElementById('eye');
+// mm -> px. Anterior cornea at 0 mm.
+var X0=250, SC=11, AY=178;
 function sx(mm){return X0+mm*SC;}
-const POINTS=[
- {id:'F1',mm:-15.7,lab:"F₁",name:"Primary focal point",d:"~15.7 mm <b>in front</b> of the cornea. An object placed here sends out parallel rays after the eye."},
- {id:'H',mm:1.35,lab:"H H'",name:"Principal planes (H, H')",d:"~1.35 and 1.60 mm behind the cornea (almost coincident). Refraction is 'considered' to occur here; powers and conjugates are measured from them."},
- {id:'N',mm:7.08,lab:"N N'",name:"Nodal points (N, N')",d:"~7.08 and 7.33 mm behind the cornea. A ray aimed at the nodal point passes <b>undeviated</b>; retinal image size is calculated from here. Do not confuse with the center of rotation (13.5 mm)."},
- {id:'CR',mm:13.5,lab:"CR",name:"Center of rotation",d:"~13.5 mm behind the cornea. The pivot for eye movements (all three axes of Fick pass through it). A different measurement from the nodal point."},
- {id:'F2',mm:24,lab:"F₂",name:"Secondary focal point",d:"~24 mm behind the cornea — <b>on the retina in emmetropia</b>. Parallel rays from infinity converge here."}
+var PND=24-7.33;                          // posterior nodal distance, N' to retina (mm)
+var active=null, theta=5;
+
+var POINTS=[
+ {id:'F',mm:-15.7,mmLab:"−15.7 mm",lab:"F",name:"Primary focal point (F)",
+   d:"About <b>15.7 mm in front</b> of the cornea. An object placed here leaves the eye as parallel rays. Also called the anterior focal point."},
+ {id:'P',mm:1.475,mmLab:"≈1.5 mm",lab:"P P′",name:"Principal points (P, P′)",
+   d:"About <b>1.35 and 1.60 mm behind</b> the cornea, almost coincident. Refraction is treated as if it all happens here, and object and image distances are measured from them. They are planes of unit (+1) magnification."},
+ {id:'N',mm:7.205,mmLab:"≈7.2 mm",lab:"N N′",name:"Nodal points (N, N′)",
+   d:"About <b>7.08 and 7.33 mm behind</b> the cornea. A ray aimed at N leaves N′ <b>parallel to its original direction (undeviated in angle)</b>, which is how retinal image size is calculated. Do not confuse with the centre of rotation."},
+ {id:'CR',mm:13.5,mmLab:"13.5 mm",lab:"C",name:"Centre of rotation (not a cardinal point)",
+   d:"About <b>13.5 mm behind</b> the cornea. The pivot for eye movements; the three axes of Fick pass through it. It is a mechanical point, separate from the nodal points at 7 mm."},
+ {id:'F2',mm:24,mmLab:"24 mm",lab:"F′",name:"Secondary focal point (F′)",
+   d:"About <b>24 mm behind</b> the cornea, which is <b>on the retina in emmetropia</b>. Parallel rays from infinity converge here."}
 ];
-function drawEye(active){
-  let s='';
-  // axis
-  s+='<line x1="20" y1="'+AY+'" x2="585" y2="'+AY+'" stroke="#cfccc2" stroke-width="1.5"/>';
-  // globe (from cornea 0 to ~24mm), drawn as a big circle/ellipse
-  const cxg=sx(12), r=12*SC+6;
-  s+='<ellipse cx="'+cxg+'" cy="'+AY+'" rx="'+(12*SC+8)+'" ry="'+(11*SC)+'" fill="#eef4fb" stroke="#b9cbe0" stroke-width="1.5"/>';
-  // cornea (front bump)
-  s+='<path d="M '+sx(0)+' '+(AY-70)+' Q '+(sx(0)-22)+' '+AY+' '+sx(0)+' '+(AY+70)+'" fill="none" stroke="#5f97c9" stroke-width="3"/>';
-  // retina (back) highlight
-  s+='<path d="M '+sx(23)+' '+(AY-78)+' Q '+(sx(25))+' '+AY+' '+sx(23)+' '+(AY+78)+'" fill="none" stroke="#d8862f" stroke-width="2.5"/>';
-  s+='<text x="'+sx(0)+'" y="'+(AY+92)+'" font-size="11" fill="#5f97c9" text-anchor="middle">cornea</text>';
-  s+='<text x="'+sx(23)+'" y="'+(AY-86)+'" font-size="11" fill="#854f0b" text-anchor="middle">retina</text>';
-  // points
-  POINTS.forEach(p=>{
-    const x=sx(p.mm), on=active===p.id;
-    s+='<line x1="'+x+'" y1="'+(AY-58)+'" x2="'+x+'" y2="'+(AY+58)+'" stroke="'+(on?'#854f0b':'#bbb7ac')+'" stroke-width="'+(on?2.5:1.2)+'" stroke-dasharray="'+(p.id==='F1'||p.id==='F2'?'0':'4 3')+'"/>';
-    s+='<circle cx="'+x+'" cy="'+AY+'" r="'+(on?6:4)+'" fill="'+(on?'#854f0b':'#8a8780')+'"/>';
-    s+='<text x="'+x+'" y="'+(AY-64)+'" font-size="12" fill="'+(on?'#854f0b':'#6b685f')+'" text-anchor="middle" font-weight="'+(on?700:400)+'">'+p.lab+'</text>';
-    s+='<text x="'+x+'" y="'+(AY+74)+'" font-size="9.5" fill="#9a968c" text-anchor="middle">'+p.mm+'mm</text>';
+
+function ln(x1,y1,x2,y2,st,w,dash){
+  return '<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" stroke="'+st+'" stroke-width="'+w+'"'+(dash?' stroke-dasharray="'+dash+'"':'')+' stroke-linecap="round"/>';
+}
+function tx(x,y,s,fill,size,anchor,weight){
+  return '<text x="'+x+'" y="'+y+'" font-size="'+(size||11)+'" fill="'+fill+'" text-anchor="'+(anchor||'middle')+'"'+(weight?' font-weight="'+weight+'"':'')+'>'+s+'</text>';
+}
+
+function draw(){
+  var s='';
+  // optic axis
+  s+=ln(24,AY,600,AY,'#c9c5ba',1.4,'4 5');
+  // eye body (light, so the internal points show through)
+  var cxg=(sx(0)+sx(24))/2, rxg=(sx(24)-sx(0))/2;
+  s+='<ellipse cx="'+cxg+'" cy="'+AY+'" rx="'+(rxg+6)+'" ry="118" fill="#eef4fb" stroke="#b6c6da" stroke-width="1.6"/>';
+  // cornea
+  s+='<path d="M '+sx(0)+' '+(AY-74)+' Q '+(sx(0)-20)+' '+AY+' '+sx(0)+' '+(AY+74)+'" fill="none" stroke="var(--cornea)" stroke-width="4"/>';
+  // crystalline lens
+  s+='<ellipse cx="'+sx(4)+'" cy="'+AY+'" rx="10" ry="46" fill="#cfe0f2" stroke="#7fa8d4" stroke-width="1.2" opacity="0.9"/>';
+  // pupil
+  s+='<ellipse cx="'+sx(3)+'" cy="'+AY+'" rx="4" ry="17" fill="#2a3646"/>';
+  // retina
+  s+='<path d="M '+sx(23.2)+' '+(AY-84)+' Q '+(sx(25))+' '+AY+' '+sx(23.2)+' '+(AY+84)+'" fill="none" stroke="var(--retina)" stroke-width="3"/>';
+  s+=tx(sx(0)-4,AY+104,'cornea','var(--cornea)',11,'middle');
+  s+=tx(sx(24),AY-92,'retina','var(--retina)',11,'middle');
+
+  // ---- nodal ray demonstration (drawn under the point markers) ----
+  var t=Math.tan(theta*Math.PI/180);
+  var xN=sx(7.08), xN2=sx(7.33), xP2=sx(1.6), retinaX=sx(24);
+  var imgY=AY+PND*SC*t;                    // inverted image below axis
+  // faint bundle from a distant object, converging on the retinal image
+  [-20,20].forEach(function(dy){
+    var yP=AY+dy;
+    var xStart=26, yStart=yP - t*(xP2-xStart);
+    s+=ln(xStart,yStart,xP2,yP,'#e7c98a',1.6);
+    s+=ln(xP2,yP,retinaX,imgY,'#e7c98a',1.6);
+  });
+  // the nodal ray, undeviated in angle through N and N'
+  var xStartN=26, yStartN=AY - t*(xN-xStartN);
+  s+=ln(xStartN,yStartN,xN,AY,'var(--nodal)',2.4);
+  s+=ln(xN2,AY,retinaX,imgY,'var(--nodal)',2.4);
+  s+=tx(xStartN+2,yStartN-6,'from a distant object','var(--nodal)',10.5,'start');
+  // retinal image arrow
+  if(Math.abs(imgY-AY)>1.5){
+    s+=ln(retinaX,AY,retinaX,imgY,'var(--img)',3);
+    var dir=imgY>=AY?1:-1;
+    s+='<path d="M '+(retinaX-4)+' '+(imgY-dir*6)+' L '+retinaX+' '+imgY+' L '+(retinaX+4)+' '+(imgY-dir*6)+'" fill="none" stroke="var(--img)" stroke-width="3"/>';
+    s+=tx(retinaX+8,imgY+4,'image','var(--img)',10.5,'start');
+  }
+
+  // ---- cardinal point markers (on top) ----
+  POINTS.forEach(function(p){
+    var x=sx(p.mm), on=active===p.id, focal=(p.id==='F'||p.id==='F2');
+    s+=ln(x,AY-96,x,AY+96,on?'var(--accent)':'#c3bfb4',on?2.4:1.1,focal?null:'4 3');
+    s+='<circle cx="'+x+'" cy="'+AY+'" r="'+(on?6:4)+'" fill="'+(on?'var(--accent)':'#8a8780')+'"/>';
+    s+=tx(x,AY-102,p.lab,on?'var(--accent)':'#6b685f',12,'middle',on?700:500);
+    s+=tx(x,AY+120,p.mmLab,'#9a968c',9.5,'middle');
   });
   svg.innerHTML=s;
-}
-drawEye(null);
-const detail=document.getElementById('detail'),ptbtns=document.getElementById('ptbtns');
-POINTS.forEach(p=>{const b=document.createElement('button');b.className='ptbtn';b.textContent=p.lab+' · '+p.name.split('(')[0].trim();
-  b.addEventListener('click',()=>{document.querySelectorAll('.ptbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
-    drawEye(p.id);detail.innerHTML='<div class="dxname">'+p.name+'</div>'+p.d;});
-  ptbtns.appendChild(b);});
 
-const Q=[
- {q:"The secondary focal point (F₂) of the emmetropic eye sits approximately:",o:["7 mm behind the cornea","13.5 mm behind the cornea","24 mm behind the cornea (on the retina)","15 mm in front"],a:2,w:"Parallel rays converge at F₂ ≈ 24 mm behind the cornea — on the retina in emmetropia.",k:"F₂ ≈ 24 mm = on the retina."},
- {q:"A ray directed at the nodal point passes:",o:["Undeviated","Through the focal point","Back to the cornea","Parallel to the axis"],a:0,w:"Nodal-point rays pass undeviated and are used to compute retinal image size.",k:"Nodal-point ray = undeviated."},
- {q:"The center of rotation lies about how far behind the cornea?",o:["7.08 mm","13.5 mm","24 mm","1.5 mm"],a:1,w:"The center of rotation (~13.5 mm) is the pivot for eye movements — not the nodal point (~7.08 mm).",k:"Center of rotation = 13.5 mm."},
- {q:"The total power of Gullstrand's exact schematic eye is:",o:["43 D","58.64 D","60 D","19 D"],a:1,w:"Exact eye = 58.64 D; the reduced (Emsley) eye = 60 D.",k:"Gullstrand exact = 58.64 D."},
- {q:"Where refraction is 'considered' to occur (powers measured from here) are the:",o:["Nodal points","Principal planes (H, H')","Focal points","Center of rotation"],a:1,w:"The principal planes (~1.5 mm behind the cornea) are the reference for power and conjugates.",k:"Principal planes = where refraction is considered."}
+  // readout
+  var img=(PND*t).toFixed(2);
+  document.getElementById('thVal').textContent=theta.toFixed(1);
+  document.getElementById('nodalRead').innerHTML=
+    '<span class="pill">θ = '+theta.toFixed(1)+'°</span>'+
+    '<span class="pill">PND ≈ 16.7 mm</span>'+
+    '<span class="pill a">Retinal image = PND × tan θ = '+img+' mm</span>'+
+    '<span class="pill">'+(theta>0?'inverted':'on axis')+'</span>';
+}
+
+// point buttons
+var detail=document.getElementById('detail'), ptbtns=document.getElementById('ptbtns');
+POINTS.forEach(function(p){
+  var b=document.createElement('button');b.className='ptbtn';
+  b.textContent=p.lab+' · '+p.name.split('(')[0].trim();
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.ptbtn').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');active=p.id;
+    detail.innerHTML='<div class="dxname">'+p.name+'</div>'+p.d;draw();
+  });
+  ptbtns.appendChild(b);
+});
+document.getElementById('th').addEventListener('input',function(e){theta=parseFloat(e.target.value);draw();});
+draw();
+
+// ---- quiz ----
+var Q=[
+ {q:"The secondary focal point (F′) of the emmetropic eye sits approximately:",o:["7 mm behind the cornea","13.5 mm behind the cornea","24 mm behind the cornea (on the retina)","15 mm in front"],a:2,w:"Parallel rays converge at F′ ≈ 24 mm behind the cornea, on the retina in emmetropia.",k:"F′ ≈ 24 mm = on the retina."},
+ {q:"A ray directed at the nodal point emerges:",o:["Parallel to its original direction (undeviated)","Through the focal point","Back toward the cornea","Parallel to the optic axis"],a:0,w:"A ray aimed at N leaves N′ parallel to the incoming ray, which is why nodal rays give retinal image size.",k:"Nodal ray = undeviated in angle."},
+ {q:"The posterior nodal distance and the retinal image of a 1° object are about:",o:["17 mm and 0.29 mm","24 mm and 1 mm","7 mm and 0.1 mm","33 mm and 0.5 mm"],a:0,w:"N′ to retina ≈ 16.7 mm, so image = 16.7 × tan(1°) ≈ 0.29 mm per degree.",k:"PND ≈ 17 mm → ≈ 0.29 mm per degree."},
+ {q:"The centre of rotation lies about how far behind the cornea?",o:["7.08 mm","13.5 mm","24 mm","1.5 mm"],a:1,w:"The centre of rotation (~13.5 mm) is the pivot for eye movements, distinct from the nodal points (~7 mm).",k:"Centre of rotation = 13.5 mm, not the nodal point."},
+ {q:"The total power of Gullstrand's exact schematic eye is:",o:["+43 D","+58.64 D","+60 D","+19 D"],a:1,w:"Exact eye = 58.64 D; the reduced (Emsley) eye rounds to 60 D.",k:"Gullstrand exact = 58.64 D."},
+ {q:"Where refraction is 'considered' to occur, and from where powers and conjugates are measured, are the:",o:["Nodal points","Principal points (P, P′)","Focal points","Centre of rotation"],a:1,w:"The principal points (~1.5 mm behind the cornea) are the reference planes for power and conjugates, and are planes of unit magnification.",k:"Principal points = where refraction is considered."}
 ];
-let i=0,sc=0,done=false;
-const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
-const L=['A','B','C','D'];
-function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
- let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+var i=0,sc=0,done=false;
+var body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+var L=['A','B','C','D'];
+function render(){done=false;var it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ var h='<div class="qtext">'+it.q+'</div>';it.o.forEach(function(o,n){h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
  h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
- body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
-function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
- body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
- const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
- const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ body.querySelectorAll('.opt').forEach(function(b){b.addEventListener('click',function(){choose(parseInt(b.dataset.i));});});}
+function choose(c){if(done)return;done=true;var it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach(function(b,n){b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ var ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ var fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
  fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+L[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
- const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ var last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
  document.getElementById('nx').addEventListener('click',next);}
-function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';var pct=Math.round(sc/Q.length*100);
  body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
- document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+ document.getElementById('ag').addEventListener('click',function(){i=0;sc=0;render();});}}
 render();
 </script>
 </body>
