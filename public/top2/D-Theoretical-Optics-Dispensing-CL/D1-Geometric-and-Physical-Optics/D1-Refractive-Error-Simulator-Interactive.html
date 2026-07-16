@@ -3,236 +3,386 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Refractive Error Simulator — Interactive (WAA Board Review 2026)</title>
+<title>Refractive Error Simulator, Interactive (WAA Board Review 2026)</title>
 <style>
-  :root{--bg:#0f1419;--card:#1a212b;--card2:#222b37;--line:#2d3845;--txt:#e6edf3;--mut:#9fb0c0;
-    --accent:#4aa8ff;--ok:#3fb950;--warn:#e3b341;--ray:#ffd479;--retina:#e673b0;--key:#a371f7}
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --ok:#1d9e75; --ok-soft:#e1f5ee; --bad:#c0392b; --bad-soft:#fbeaea;
+    --ray:#e0a32e; --retina:#d64545; --cornea:#7fb2e6; --lens:#4f8fd0; --tag:#534ab7;
+  }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:0 0 70px}
-  header{background:linear-gradient(135deg,#13202f,#0f1419);border-bottom:1px solid var(--line);padding:22px 18px}
-  .wrap{max-width:900px;margin:0 auto;padding:0 18px}
-  h1{margin:2px 0 0;font-size:21px}
-  .brand{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:2px}
-  .sub{color:var(--mut);font-size:13px;margin-top:4px}
-  h2{font-size:16px;color:var(--warn);border-left:3px solid var(--warn);padding-left:10px;margin:22px 0 8px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
-  .hint{color:var(--mut);font-size:13.5px;margin:2px 0 12px}
-  svg{width:100%;height:auto;display:block}
-  .btns{display:flex;gap:8px;flex-wrap:wrap}
-  .btn{cursor:pointer;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:9px;padding:8px 12px;font-size:13px;transition:.14s}
-  .btn:hover{border-color:var(--mut)}
-  .btn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
-  .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:10px}
-  input[type=range]{accent-color:var(--accent);flex:1;min-width:200px}
-  .toggle{display:inline-flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
-  .toggle input{accent-color:var(--ok);width:16px;height:16px}
-  .readout{margin:12px 0 0;font-size:14px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .readout b{color:#fff}
-  .stat{display:inline-block;background:#11181f;border:1px solid var(--line);border-radius:7px;padding:3px 9px;margin:3px 6px 3px 0;font-size:13px}
-  .stat b{color:var(--accent)}
-  .preview{display:flex;gap:24px;align-items:center;justify-content:center;margin-top:8px}
-  .E{font-weight:800;font-size:74px;color:#e6edf3;line-height:1;transition:filter .25s}
-  .plabel{font-size:12px;color:var(--mut);text-align:center}
-  footer{color:var(--mut);font-size:12px;text-align:center;margin-top:30px}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .seg{display:inline-flex;background:#f1efe8;border:1px solid var(--line);border-radius:11px;padding:3px;gap:2px}
+  .seg button{border:none;background:transparent;border-radius:8px;padding:7px 13px;font-size:14px;cursor:pointer;color:var(--muted)}
+  .seg button.on{background:#fff;color:var(--accent);font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+  .rightctl{display:flex;gap:10px;align-items:center}
+  .corr{border:1.5px solid var(--accent);background:var(--accent);color:#fff;border-radius:10px;padding:8px 14px;font-size:14px;font-weight:600;cursor:pointer}
+  .corr.remove{background:var(--ok-soft);color:#0f6e56;border-color:#bfe6d7}
+  .corr:disabled{opacity:.4;cursor:default}
+  .labels-btn{border:none;background:transparent;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline}
+  .stage{position:relative}
+  svg#eye{width:100%;height:auto;display:block;background:#fbfaf7;border:1px solid var(--line);border-radius:12px}
+  .patient{position:absolute;top:14px;right:14px;width:118px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 6px 4px;text-align:center}
+  .patient .pv{font-size:11px;color:var(--muted);margin-bottom:2px}
+  .patient .chart{border:1px solid var(--line);border-radius:5px;padding:6px 2px;transition:filter .25s}
+  .patient .big{font-weight:800;font-size:34px;line-height:.95}
+  .patient .row2{font-weight:800;font-size:19px;letter-spacing:3px;line-height:1.1}
+  .status{display:flex;gap:9px;align-items:flex-start;border-radius:11px;padding:11px 14px;margin-top:12px;font-size:14.5px}
+  .status.ok{background:var(--ok-soft);border:1px solid #bfe6d7}
+  .status.bad{background:var(--bad-soft);border:1px solid #efc9c5}
+  .status .ic{font-weight:800}
+  .status.ok .ic{color:var(--ok)} .status.bad .ic{color:var(--bad)}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:14px 0 2px}
+  .sliderow label{font-size:14px;color:var(--muted);min-width:150px}
+  .sliderow.hidden{display:none}
+  input[type=range]{flex:1;accent-color:var(--accent)}
+  .readout{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .pill{font-size:13px;font-weight:600;padding:5px 11px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .pill.g{background:var(--ok-soft);color:#0f6e56} .pill.r{background:var(--bad-soft);color:var(--bad)}
+  .note{font-size:13.5px;color:var(--muted);margin-top:10px}
+  /* reference cards */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .rc{border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;background:#fff;cursor:pointer}
+  .rc.on{border-color:var(--accent);background:#fdfbf6}
+  .rc h3{margin:0 0 5px;font-size:14.5px}
+  .rc p{margin:0;font-size:13px;color:var(--muted)}
+  .rc .fix{margin-top:8px;font-size:12.5px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:7px;padding:5px 9px}
+  /* quiz */
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--ok);background:var(--ok-soft)} .opt.correct .lab{color:var(--ok)}
+  .opt.incorrect{border-color:var(--bad);background:var(--bad-soft)} .opt.incorrect .lab{color:var(--bad)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--ok-soft);border:1px solid #bfe6d7}
+  .feedback.badf{background:var(--bad-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.badf .tag{color:var(--bad)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}.patient{width:92px}.patient .big{font-size:26px}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <div class="brand">WAA</div>
-  <h1>Refractive Error Simulator</h1>
-  <div class="sub">Board Review 2026 · Personal study notes · where do the rays land, and what lens fixes it</div>
-</div></header>
-
 <div class="wrap">
-  <div class="card">
-    <div class="btns" id="modeBtns">
-      <div class="btn mode" data-mode="emm">Emmetropia</div>
-      <div class="btn mode" data-mode="myopia">Myopia</div>
-      <div class="btn mode" data-mode="hyperopia">Hyperopia</div>
-      <div class="btn mode" data-mode="astig">Astigmatism</div>
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D1 · Refractive Errors, interactive</h1>
+    <p class="sub">Personal study notes · watch where the light lands, add the right lens, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. See where the light lands</h2>
+    <p class="hint">Choose a condition. Drag the severity slider to make it stronger, then apply the correcting lens and watch the focus return to the retina. The blurred chart is what the patient sees.</p>
+
+    <div class="toolbar">
+      <div class="seg" id="modeSeg">
+        <button data-mode="emm">Emmetropia</button>
+        <button data-mode="myopia" class="on">Myopia</button>
+        <button data-mode="hyperopia">Hyperopia</button>
+        <button data-mode="astig">Astigmatism</button>
+      </div>
+      <div class="rightctl">
+        <button class="labels-btn" id="labelsBtn">Hide labels</button>
+        <button class="corr" id="corrBtn">Apply correction</button>
+      </div>
     </div>
 
-    <svg id="eye" viewBox="0 0 640 360" role="img" aria-label="Eye cross-section with rays"></svg>
+    <div class="stage">
+      <svg id="eye" viewBox="0 0 760 400" aria-label="Eye cross-section with rays"></svg>
+      <div class="patient">
+        <div class="pv">Patient view</div>
+        <div class="chart" id="chart"><div class="big">E</div><div class="row2">F P</div></div>
+      </div>
+    </div>
 
-    <div class="row" id="sliderRow">
-      <span style="font-size:13px;color:var(--mut);min-width:96px">Axial length</span>
-      <input type="range" id="len" min="-26" max="26" value="0">
-      <label class="toggle"><input type="checkbox" id="corr"> Correcting lens</label>
+    <div class="status" id="status"></div>
+
+    <div class="sliderow" id="sevRow">
+      <label>Severity: <b id="sevVal">3.0</b> D</label>
+      <input type="range" id="sev" min="0.5" max="8" step="0.5" value="3">
     </div>
 
     <div class="readout" id="readout"></div>
-    <div style="margin-top:10px" id="stats"></div>
+    <div class="note" id="teach"></div>
+  </section>
 
-    <div class="preview">
-      <div><div class="E" id="Eimg">E</div><div class="plabel">image on the retina</div></div>
+  <section>
+    <h2>2. Quick reference</h2>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section>
+    <h2>3. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 0</div>
     </div>
-  </div>
+    <div id="qbody"></div>
+  </section>
 
-  <div class="card" id="teach"></div>
-
-  <footer>WAA · Board Review 2026 · Personal study notes · D1 Geometric Optics — Refractive errors</footer>
+  <footer>WAA Board Review 2026 · Personal study notes · D1 Geometric Optics, Refractive errors</footer>
 </div>
 
 <script>
-var SVGNS="http://www.w3.org/2000/svg";
-function el(t,a){var e=document.createElementNS(SVGNS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+var NS="http://www.w3.org/2000/svg";
+function E(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
 var svg=document.getElementById('eye');
 
-// geometry: lens plane at x=170, optical axis y=180, natural focus (emmetropic) at FX0
-var LENSX=170, AXIS=180, FX0=470, TOPY=110, BOTY=250;
-var mode='emm';
+// fixed geometry (px)
+var CORNEA=300, PX=332, FX_EMM=548, AY=195, RY=118, SPECX=150, STARTX=44;
+var RAYS=[-52,-34,-16,16,34,52];
+
+var mode='myopia', corrected=false, sev=3, showLabels=true;
 
 function clear(){while(svg.firstChild)svg.removeChild(svg.firstChild);}
+function line(x1,y1,x2,y2,stroke,w,dash){
+  var a={x1:x1,y1:y1,x2:x2,y2:y2,stroke:stroke,'stroke-width':w,'stroke-linecap':'round'};
+  if(dash)a['stroke-dasharray']='6 5';
+  svg.appendChild(E('line',a));
+}
+function txt(x,y,s,fill,size,anchor){
+  if(!showLabels)return;
+  var t=E('text',{x:x,y:y,fill:fill,'font-size':size||12,'text-anchor':anchor||'middle','font-family':'-apple-system,Segoe UI,sans-serif'});
+  t.textContent=s;svg.appendChild(t);
+}
 
 function drawEyeBody(retinaX){
-  // globe
-  svg.appendChild(el('path',{d:'M150,180 Q150,70 300,70 Q'+(retinaX+30)+',70 '+(retinaX+30)+',180 Q'+(retinaX+30)+',290 300,290 Q150,290 150,180 Z',
-    fill:'#16202b',stroke:'#3a4654','stroke-width':2}));
-  // cornea bump
-  svg.appendChild(el('path',{d:'M150,180 Q120,150 130,120 M150,180 Q120,210 130,240',fill:'none',stroke:'#4a5a6b','stroke-width':2}));
-  // lens
-  svg.appendChild(el('ellipse',{cx:LENSX,cy:AXIS,rx:13,ry:54,fill:'#1c3a55',stroke:'#4aa8ff','stroke-width':1.5,opacity:.85}));
-  // retina (back wall)
-  svg.appendChild(el('path',{d:'M'+(retinaX+30)+',96 Q'+(retinaX+10)+',180 '+(retinaX+30)+',264',
+  var cxg=(CORNEA+retinaX)/2, rxg=(retinaX-CORNEA)/2;
+  // sclera + interior
+  svg.appendChild(E('ellipse',{cx:cxg,cy:AY,rx:rxg+5,ry:RY+5,fill:'#e7ebef',stroke:'#c2ccd6','stroke-width':2}));
+  svg.appendChild(E('ellipse',{cx:cxg,cy:AY,rx:rxg,ry:RY,fill:'#414d5e'}));
+  // retina arc (posterior inner wall)
+  var r=rxg-6, th=52*Math.PI/180;
+  var rTopX=cxg+r*Math.cos(th), rTopY=AY-r*Math.sin(th), rBotY=AY+r*Math.sin(th);
+  svg.appendChild(E('path',{d:'M '+rTopX.toFixed(1)+' '+rTopY.toFixed(1)+' A '+r+' '+r+' 0 0 1 '+rTopX.toFixed(1)+' '+rBotY.toFixed(1),
     fill:'none',stroke:'var(--retina)','stroke-width':4}));
-  var t=el('text',{x:retinaX-6,y:300,fill:'#e673b0','font-size':12,'text-anchor':'middle'});t.textContent='retina';svg.appendChild(t);
-  // axis
-  svg.appendChild(el('line',{x1:120,y1:AXIS,x2:retinaX+24,y2:AXIS,stroke:'#33414f','stroke-width':1,'stroke-dasharray':'4 5'}));
+  // cornea (front crescent)
+  svg.appendChild(E('path',{d:'M '+CORNEA+' '+(AY-72)+' Q '+(CORNEA-16)+' '+AY+' '+CORNEA+' '+(AY+72),
+    fill:'none',stroke:'var(--cornea)','stroke-width':6,opacity:.9}));
+  // crystalline lens
+  svg.appendChild(E('ellipse',{cx:CORNEA+20,cy:AY,rx:11,ry:46,fill:'var(--lens)',stroke:'#356fa8','stroke-width':1.4,opacity:.9}));
+  // pupil gap
+  svg.appendChild(E('ellipse',{cx:CORNEA+8,cy:AY,rx:5,ry:19,fill:'#101c29'}));
+  // optic axis
+  line(30,AY,retinaX+60,AY,'#b7b3a8',1,true);
+  // labels
+  txt(CORNEA-2,AY-RY-14,'Cornea','#6b685f',12);
+  txt(CORNEA+54,AY-RY-14,'Lens','#6b685f',12);
+  txt(retinaX-30,AY-RY-14,'Retina','var(--retina)',12);
+  return {cxg:cxg,rxg:rxg};
 }
-function ray(x1,y1,x2,y2,extendTo){
-  // line from (x1,y1) toward (x2,y2); returns y at x=extendTo
-  var m=(y2-y1)/(x2-x1);
-  var yEnd=y1+m*(extendTo-x1);
-  svg.appendChild(el('line',{x1:x1,y1:y1,x2:extendTo,y2:yEnd,stroke:'var(--ray)','stroke-width':2}));
-  return yEnd;
+
+function focusDot(fx,onRetina){
+  svg.appendChild(E('circle',{cx:fx,cy:AY,r:5,fill:onRetina?'var(--ok)':'var(--bad)',stroke:'#fff','stroke-width':1.5}));
+  txt(fx,AY+96,'focal point',onRetina?'var(--ok)':'var(--bad)',12);
 }
-function spotOrBlur(x,yTop,yBot){
-  var r=Math.abs(yTop-yBot)/2;
-  if(r<3){svg.appendChild(el('circle',{cx:x,cy:AXIS,r:3.5,fill:'var(--ok)'}));}
-  else{svg.appendChild(el('circle',{cx:x,cy:AXIS,r:r,fill:'none',stroke:'var(--bad)','stroke-width':1.5,opacity:.8}));
-       svg.appendChild(el('circle',{cx:x,cy:AXIS,r:r,fill:'var(--bad)',opacity:.12}));}
-  return r;
+
+function drawSpectacle(sign){
+  var top=AY-64, bot=AY+64, x=SPECX, midY=AY;
+  if(sign<0){ // biconcave, minus
+    svg.appendChild(E('path',{d:'M '+(x-11)+' '+top+' L '+(x+11)+' '+top+' Q '+(x-6)+' '+midY+' '+(x+11)+' '+bot+
+      ' L '+(x-11)+' '+bot+' Q '+(x+6)+' '+midY+' '+(x-11)+' '+top+' Z',fill:'#dceaf8',stroke:'var(--lens)','stroke-width':2}));
+    txt(x,top-8,'Concave lens (−)','var(--lens)',12);
+  }else{ // biconvex, plus
+    svg.appendChild(E('path',{d:'M '+x+' '+top+' Q '+(x+26)+' '+midY+' '+x+' '+bot+' Q '+(x-26)+' '+midY+' '+x+' '+top+' Z',
+      fill:'#dceaf8',stroke:'var(--lens)','stroke-width':2}));
+    txt(x,top-8,'Convex lens (+)','var(--lens)',12);
+  }
+}
+
+// ---- render ametropia / emmetropia ----
+function renderSphere(){
+  var off = (mode==='myopia'?1:mode==='hyperopia'?-1:0) * sev*9;
+  var retinaX = FX_EMM + off;                 // myopia: retina behind focus (long eye)
+  if(mode==='emm') retinaX=FX_EMM;
+  drawEyeBody(retinaX);
+  var lensSign = mode==='myopia'?-1:1;
+  var FX = corrected ? retinaX : FX_EMM;       // correction moves focus onto retina
+  var maxDev=0;
+  if(corrected) drawSpectacle(lensSign);
+  RAYS.forEach(function(h){
+    // incoming parallel ray
+    line(STARTX,AY+h,PX,AY+h,'var(--ray)',2);
+    var slope=-h/(FX-PX);                       // rise toward the axis = -(h)
+    var yRet=AY+h+slope*(retinaX-PX);
+    line(PX,AY+h,retinaX,yRet,'var(--ray)',2);
+    if(FX>retinaX+1){ line(retinaX,yRet,FX,AY,'var(--ray)',1.4,true); } // focus behind retina (hyperopia)
+    maxDev=Math.max(maxDev,Math.abs(yRet-AY));
+  });
+  var onRetina = Math.abs(FX-retinaX)<3;
+  focusDot(FX,onRetina);
+  return {retinaX:retinaX, blur:onRetina?0:Math.min(11,maxDev/2.6)};
+}
+
+function renderAstig(){
+  var retinaX=FX_EMM;
+  drawEyeBody(retinaX);
+  var fxH=corrected?retinaX:retinaX-28, fxV=corrected?retinaX:retinaX+28;
+  [[-40,fxH,'#e0a32e'],[40,fxH,'#e0a32e'],[-22,fxV,'#c98b1e'],[22,fxV,'#c98b1e']].forEach(function(p){
+    var h=p[0],fx=p[1];
+    line(STARTX,AY+h,PX,AY+h,p[2],2);
+    var slope=-h/(fx-PX);
+    var yRet=AY+h+slope*(retinaX-PX);
+    line(PX,AY+h,retinaX,yRet,p[2],2);
+  });
+  if(!corrected){
+    svg.appendChild(E('circle',{cx:fxH,cy:AY,r:4,fill:'var(--bad)'}));
+    svg.appendChild(E('circle',{cx:fxV,cy:AY,r:4,fill:'#8a5a12'}));
+    svg.appendChild(E('circle',{cx:retinaX,cy:AY,r:11,fill:'none',stroke:'#23211c','stroke-width':1.3,opacity:.6}));
+    txt(retinaX,AY-24,'circle of least confusion','#23211c',11);
+    txt(fxH,AY+96,'meridian 1','var(--bad)',11);
+  }else{ focusDot(retinaX,true); }
+  return {retinaX:retinaX, blur:corrected?0:3.2};
 }
 
 function render(){
   clear();
-  var corr=document.getElementById('corr').checked;
-  var slider=+document.getElementById('len').value; // -26..26 (negative=short eye=hyperope)
-  var retinaX, fx, blurD, label, lensSign=0;
+  document.getElementById('sevVal').textContent=sev.toFixed(1);
+  var sevRow=document.getElementById('sevRow');
+  sevRow.className='sliderow'+((mode==='emm'||mode==='astig')?' hidden':'');
+  var corrBtn=document.getElementById('corrBtn');
+  corrBtn.disabled = (mode==='emm');
+  corrBtn.textContent = corrected?'Remove lens':'Apply correction';
+  corrBtn.className='corr'+(corrected?' remove':'');
 
+  var res = mode==='astig'?renderAstig():renderSphere();
+  document.getElementById('chart').style.filter='blur('+res.blur+'px)';
+
+  // status
+  var st=document.getElementById('status');
+  var msgs={
+    emm:['ok','Vision is clear. Parallel light focuses exactly on the retina, no lens needed.'],
+    myopia:corrected?['ok','Corrected. The concave (minus) lens diverges light first, so the focus moves back onto the retina.']
+                    :['bad','Blurry. The eye is too long (or too strong), so light focuses in front of the retina.'],
+    hyperopia:corrected?['ok','Corrected. The convex (plus) lens converges light first, so the focus moves forward onto the retina.']
+                       :['bad','Blurry. The eye is too short (or too weak), so light would focus behind the retina.'],
+    astig:corrected?['ok','Corrected. A cylindrical lens collapses the two meridian foci onto a single point on the retina.']
+                   :['bad','Blurry. The two meridians focus at different points (interval of Sturm), so there is no single focus.']
+  };
+  var m=msgs[mode]; st.className='status '+m[0];
+  st.innerHTML='<span class="ic">'+(m[0]==='ok'?'✓':'!')+'</span><span>'+m[1]+'</span>';
+
+  // readout pills + teach
+  readout();
+  document.getElementById('teach').innerHTML=TEACH[mode];
+  // cards highlight
+  document.querySelectorAll('.rc').forEach(function(c){c.classList.toggle('on',c.dataset.mode===mode);});
+  // seg highlight
+  document.querySelectorAll('#modeSeg button').forEach(function(b){b.classList.toggle('on',b.dataset.mode===mode);});
+}
+
+function readout(){
+  var ro=document.getElementById('readout');
   if(mode==='emm'){
-    retinaX=FX0; fx=FX0; document.getElementById('sliderRow').style.opacity=.4;
-    document.getElementById('len').disabled=true;
-  }else{
-    document.getElementById('sliderRow').style.opacity=1;document.getElementById('len').disabled=false;
-    if(mode==='myopia'){slider=Math.max(4,Math.abs(slider))*1; retinaX=FX0+slider*3; lensSign=-1;}
-    else if(mode==='hyperopia'){slider=Math.max(4,Math.abs(slider)); retinaX=FX0-slider*3; lensSign=1;}
-    else {retinaX=FX0; } // astig handled separately
-    fx=FX0;
-    if(corr){fx=retinaX;} // lens moves focus onto retina
+    ro.innerHTML='<span class="pill g">Plano</span><span class="pill">Axial length ≈ 24.0 mm</span><span class="pill">Far point at infinity</span>';
+    return;
   }
-
-  if(mode==='astig'){ drawEyeBody(FX0); renderAstig(corr); return; }
-
-  drawEyeBody(retinaX);
-  // incoming parallel rays to the lens edges
-  svg.appendChild(el('line',{x1:120,y1:AXIS-46,x2:LENSX,y2:AXIS-46,stroke:'var(--ray)','stroke-width':2}));
-  svg.appendChild(el('line',{x1:120,y1:AXIS+46,x2:LENSX,y2:AXIS+46,stroke:'var(--ray)','stroke-width':2}));
-  // refracted rays converging to the focus, extended to the retina
-  var topAtRet=ray(LENSX,AXIS-46,fx,AXIS,retinaX);
-  var botAtRet=ray(LENSX,AXIS+46,fx,AXIS,retinaX);
-  svg.appendChild(el('circle',{cx:fx,cy:AXIS,r:3.5,fill:'var(--ok)'}));
-  var blurR=spotOrBlur(retinaX,topAtRet,botAtRet);
-
-  // spectacle lens if corrected
-  if(corr && lensSign!==0) drawSpectacle(lensSign);
-
-  // numbers
-  var errD=Math.round((Math.abs(retinaX-FX0)/3)/3*10)/10; // rough dioptres
-  var axmm=Math.round((24+(retinaX-FX0)/3*0.3)*10)/10;
-  var focusWhere = fx<retinaX-3?'in front of the retina':(fx>retinaX+3?'behind the retina':'on the retina');
-  var sharp = blurR<3;
-  document.getElementById('readout').innerHTML =
-    '<b>'+({myopia:'Myopia',hyperopia:'Hyperopia',emm:'Emmetropia'}[mode])+(corr?' (corrected)':'')+'.</b> '+
-    (mode==='emm'?'Parallel rays from a distant object focus exactly on the retina. No correction needed.':
-      'The eye focuses parallel rays '+focusWhere+', so the retinal image is '+(sharp?'sharp':'a blur circle')+'. '+
-      (corr?('A '+(lensSign<0?'minus (concave)':'plus (convex)')+' spectacle lens shifts the focus onto the retina.'):
-            'Add the correcting lens to fix it.'));
-  document.getElementById('stats').innerHTML =
-    '<span class="stat">Error ≈ <b>'+(lensSign<0?'-':'+')+errD.toFixed(1)+' D</b></span>'+
-    '<span class="stat">Axial length ≈ <b>'+axmm.toFixed(1)+' mm</b></span>'+
-    '<span class="stat">Correcting lens: <b>'+(mode==='emm'?'none':(lensSign<0?'concave (−)':'convex (+)'))+'</b></span>';
-  // blurred letter preview
-  var blurPx = sharp?0:Math.min(12,blurR/4);
-  document.getElementById('Eimg').style.filter='blur('+blurPx+'px)';
-  teach();
-}
-function renderAstig(corr){
-  // two focal lines: vertical meridian focuses at fxV, horizontal at fxH; circle of least confusion between
-  var fxH=FX0-26, fxV=FX0+26, retinaX=FX0;
-  if(corr){fxH=FX0;fxV=FX0;}
-  drawEyeBody(retinaX);
-  // rays to two foci
-  ray(LENSX,AXIS-46,fxH,AXIS,retinaX);ray(LENSX,AXIS+46,fxH,AXIS,retinaX);
-  ray(LENSX,AXIS-30,fxV,AXIS,retinaX);ray(LENSX,AXIS+30,fxV,AXIS,retinaX);
-  svg.appendChild(el('line',{x1:120,y1:AXIS-46,x2:LENSX,y2:AXIS-46,stroke:'var(--ray)','stroke-width':2}));
-  svg.appendChild(el('line',{x1:120,y1:AXIS+46,x2:LENSX,y2:AXIS+46,stroke:'var(--ray)','stroke-width':2}));
-  if(!corr){
-    svg.appendChild(el('circle',{cx:fxH,cy:AXIS,r:3.5,fill:'#ff9d97'}));
-    svg.appendChild(el('circle',{cx:fxV,cy:AXIS,r:3.5,fill:'#9ccbff'}));
-    var clc=(fxH+fxV)/2;
-    svg.appendChild(el('circle',{cx:clc,cy:AXIS,r:10,fill:'none',stroke:'#fff','stroke-width':1.2,opacity:.7}));
-    var t=el('text',{x:clc,y:AXIS-16,fill:'#fff','font-size':11,'text-anchor':'middle'});t.textContent='circle of least confusion';svg.appendChild(t);
-  }else{ svg.appendChild(el('circle',{cx:FX0,cy:AXIS,r:3.5,fill:'var(--ok)'})); }
-  document.getElementById('sliderRow').style.opacity=.4;document.getElementById('len').disabled=true;
-  if(corr) drawSpectacle(2); // cyl symbol
-  document.getElementById('readout').innerHTML='<b>Astigmatism'+(corr?' (corrected)':'')+'.</b> '+
-    (corr?'A cylindrical lens collapses the two focal lines onto one point on the retina.':
-    'The two principal meridians focus at different points (the interval of Sturm). Between them sits the circle of least confusion, the blur the patient actually fixates. A cylinder is needed, not just a sphere.');
-  document.getElementById('stats').innerHTML='<span class="stat">Needs a <b>cylinder</b> (toric) correction</span><span class="stat">Two line foci → <b>interval of Sturm</b></span>';
-  document.getElementById('Eimg').style.filter=corr?'blur(0px)':'blur(3px)';
-  teach();
-}
-
-function drawSpectacle(sign){
-  var x=92;
-  if(sign<0){ // concave / minus: thin centre
-    svg.appendChild(el('path',{d:'M'+x+',120 Q'+(x+9)+',180 '+x+',240 L'+(x-12)+',240 Q'+(x-3)+',180 '+(x-12)+',120 Z',
-      fill:'#10324f',stroke:'#4aa8ff','stroke-width':1.5,opacity:.9}));
-    sym('−',x-3);
-  } else if(sign===2){ // cylinder
-    svg.appendChild(el('rect',{x:x-12,y:120,width:18,height:120,rx:4,fill:'#2a1f45',stroke:'#a371f7','stroke-width':1.5,opacity:.9}));
-    sym('cyl',x-3);
-  } else { // convex / plus: thick centre
-    svg.appendChild(el('path',{d:'M'+x+',120 Q'+(x-9)+',180 '+x+',240 L'+(x-12)+',240 Q'+(x+3)+',180 '+(x-12)+',120 Z',
-      fill:'#10324f',stroke:'#4aa8ff','stroke-width':1.5,opacity:.9}));
-    sym('+',x-3);
+  if(mode==='astig'){
+    ro.innerHTML='<span class="pill">Needs a cylinder (toric)</span><span class="pill">Two line foci → interval of Sturm</span>'+
+      '<span class="pill">Axis matters</span>';
+    return;
   }
-  function sym(s,sx){var t=el('text',{x:sx,y:106,fill:'#9ccbff','font-size':14,'text-anchor':'middle','font-weight':'700'});t.textContent=s;svg.appendChild(t);}
+  var sign = mode==='myopia'?'−':'+';
+  var ax = (mode==='myopia'? 24 + sev*0.33 : 24 - sev*0.33).toFixed(1);
+  var far = mode==='myopia' ? ('Far point '+Math.round(100/sev)+' cm in front') : 'Far point virtual, behind the eye';
+  ro.innerHTML =
+    '<span class="pill r">'+({myopia:'Myopia',hyperopia:'Hyperopia'}[mode])+' '+sign+sev.toFixed(2)+' D</span>'+
+    '<span class="pill '+(corrected?'g':'')+'">Correcting lens: '+(mode==='myopia'?'concave ':'convex ')+sign+sev.toFixed(2)+' D</span>'+
+    '<span class="pill">Axial length ≈ '+ax+' mm</span>'+
+    '<span class="pill">'+(corrected?'Corrected to plano':far)+'</span>';
 }
 
 var TEACH={
- emm:'<b>Emmetropia</b> means the focal point of the relaxed eye sits exactly on the retina. The total power of cornea plus lens is matched to the axial length. Far point is at infinity.',
- myopia:'<b>Myopia (nearsighted).</b> The eye is too powerful or too long, so light focuses in front of the retina. Corrected with a <b>minus (concave)</b> lens that diverges light. Far point is at a finite distance in front of the eye; near objects are seen clearly.',
- hyperopia:'<b>Hyperopia (farsighted).</b> The eye is too weak or too short, so light would focus behind the retina. Corrected with a <b>plus (convex)</b> lens. Young hyperopes can accommodate to clear it, which is why latent hyperopia hides on a manifest refraction.',
- astig:'<b>Astigmatism.</b> The cornea (or lens) has different power in different meridians, so there is no single focus, but two focal lines separated by the interval of Sturm. The circle of least confusion is the point of best overall focus. Requires a <b>cylindrical</b> lens; the axis matters.'
+ emm:'<b>Emmetropia.</b> The relaxed eye focuses parallel light exactly on the retina, so the total power (cornea about +43 D plus lens about +19 D, roughly +60 D) is matched to the axial length. The far point is infinity.',
+ myopia:'<b>Myopia (nearsighted).</b> The eye is too long (axial) or too powerful (refractive), so distant light focuses in front of the retina. A <b>minus (concave)</b> lens diverges the light to fix it. The far point sits at a finite distance in front of the eye, which is why near objects stay clear.',
+ hyperopia:'<b>Hyperopia (farsighted).</b> The eye is too short or too weak, so light would focus behind the retina. A <b>plus (convex)</b> lens converges it. Young patients can accommodate to clear this, which is why latent hyperopia hides on a manifest refraction.',
+ astig:'<b>Astigmatism.</b> The cornea or lens has different power in different meridians, so there is no single focus but two focal lines separated by the interval of Sturm. The circle of least confusion is the point of best overall focus. It needs a <b>cylinder</b>, and the axis matters.'
 };
-function teach(){document.getElementById('teach').innerHTML=TEACH[mode];}
 
-document.querySelectorAll('.mode').forEach(function(b){
-  b.addEventListener('click',function(){
-    mode=b.dataset.mode;
-    document.querySelectorAll('.mode').forEach(function(x){x.classList.toggle('on',x===b);});
-    document.getElementById('corr').checked=false;
-    document.getElementById('len').value=mode==='hyperopia'?-12:12;
-    render();
+// ---- reference cards ----
+var CARDS=[
+ {mode:'emm',t:'Emmetropia',p:'Light focuses precisely on the retina. Images are clear and sharp.',fix:'No correction needed'},
+ {mode:'myopia',t:'Myopia (nearsighted)',p:'Eye too long or too strong. Light focuses in front of the retina.',fix:'Fix: concave / minus lens'},
+ {mode:'hyperopia',t:'Hyperopia (farsighted)',p:'Eye too short or too weak. Light focuses behind the retina.',fix:'Fix: convex / plus lens'},
+ {mode:'astig',t:'Astigmatism',p:'Meridians differ in power. Two focal lines, no single point focus.',fix:'Fix: cylindrical (toric) lens'}
+];
+(function(){
+  var wrap=document.getElementById('cards');
+  CARDS.forEach(function(c){
+    var d=document.createElement('div');d.className='rc';d.dataset.mode=c.mode;
+    d.innerHTML='<h3>'+c.t+'</h3><p>'+c.p+'</p><div class="fix">'+c.fix+'</div>';
+    d.addEventListener('click',function(){setMode(c.mode);});
+    wrap.appendChild(d);
   });
+})();
+
+// ---- controls ----
+function setMode(m){ mode=m; corrected=false; if(m==='hyperopia'&&sev<0.5)sev=3; render(); }
+document.querySelectorAll('#modeSeg button').forEach(function(b){
+  b.addEventListener('click',function(){setMode(b.dataset.mode);});
 });
-document.getElementById('len').addEventListener('input',render);
-document.getElementById('corr').addEventListener('change',render);
-// init
-document.querySelector('.mode[data-mode="myopia"]').classList.add('on');
-mode='myopia';document.getElementById('len').value=12;render();
+document.getElementById('corrBtn').addEventListener('click',function(){corrected=!corrected;render();});
+document.getElementById('labelsBtn').addEventListener('click',function(){
+  showLabels=!showLabels;this.textContent=showLabels?'Hide labels':'Show labels';render();
+});
+document.getElementById('sev').addEventListener('input',function(e){sev=parseFloat(e.target.value);render();});
+render();
+
+// ---- quiz ----
+var Q=[
+ {q:"Myopia is corrected with which type of lens?",o:["Convex (plus)","Concave (minus)","Cylindrical only","No lens"],a:1,
+   w:"Myopia focuses light in front of the retina, so a minus (concave) diverging lens is used to push the focus back.",k:"Myopia = minus (concave) lens."},
+ {q:"In AXIAL hyperopia, the eyeball is:",o:["Too long","Too short","Normal length but too strong","Irregularly curved"],a:1,
+   w:"Axial hyperopia means the globe is too short, so the retina sits in front of the focal point.",k:"Axial hyperopia = short eye."},
+ {q:"Astigmatism generally requires which correction?",o:["Sphere only","Prism","A cylindrical (toric) lens","A minus sphere only"],a:2,
+   w:"Astigmatism has two meridians of different power, so a cylinder is needed, and the axis matters.",k:"Astigmatism = cylinder, mind the axis."},
+ {q:"The far point of a 2.00 D myope (uncorrected) is at about:",o:["25 cm","50 cm","1 m","Infinity"],a:1,
+   w:"Far point (m) = 1 / error = 1 / 2.00 = 0.5 m = 50 cm in front of the eye.",k:"Far point (cm) = 100 / dioptres of myopia."},
+ {q:"In uncorrected hyperopia, parallel light from a distant object focuses:",o:["In front of the retina","On the retina","Behind the retina","At the far point"],a:2,
+   w:"A hyperopic eye is too weak or too short, so the focus falls behind the retina.",k:"Hyperopia → focus behind the retina."},
+ {q:"Between the two focal lines in astigmatism lies the:",o:["Nodal point","Circle of least confusion","Far point","Blur-free zone"],a:1,
+   w:"The interval of Sturm runs between the two line foci; the circle of least confusion is the point of best overall focus within it.",k:"Two line foci → circle of least confusion between them."}
+];
+var qi=0,qsc=0,qdone=false;
+var body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+var LTR=['A','B','C','D'];
+function qrender(){qdone=false;var it=Q[qi];barfill.style.width=(qi/Q.length*100)+'%';scoretext.textContent=qsc+' / '+Q.length;
+ var h='<div class="qtext">'+it.q+'</div>';it.o.forEach(function(o,n){h+='<button class="opt" data-i="'+n+'"><span class="lab">'+LTR[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(function(b){b.addEventListener('click',function(){choose(parseInt(b.dataset.i));});});}
+function choose(c){if(qdone)return;qdone=true;var it=Q[qi],r=it.a;
+ body.querySelectorAll('.opt').forEach(function(b,n){b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ var ok=c===r;if(ok)qsc++;scoretext.textContent=qsc+' / '+Q.length;
+ var fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'badf');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+LTR[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ var last=qi===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',qnext);}
+function qnext(){if(qi<Q.length-1){qi++;qrender();}else{barfill.style.width='100%';var pct=Math.round(qsc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+qsc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',function(){qi=0;qsc=0;qrender();});}}
+qrender();
 </script>
 </body>
 </html>
