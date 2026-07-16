@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase-server'
 import { redirect } from 'next/navigation'
 import { SUBJECTS, COLOR_MAP, SUBJECT_GROUPS } from '@/lib/subjects'
 import { xpLevel } from '@/lib/gamification'
-import { ITEMS as REVIEWER_ITEMS, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
+import { ITEMS as REVIEWER_ITEMS, ITEM_BY_ID, OWN_CARD_ITEM_IDS, DRILL_ITEM_ID, REVIEW_ITEM_ID } from '@/lib/reviewer-manifest'
 import { canOpenItem, isAdmin, loadAccess, canServeCard } from '@/lib/access'
 import { todayStr, sweepQuota } from '@/lib/srs'
 
@@ -52,9 +52,13 @@ export default async function HomePage() {
   // Readiness has its own dedicated card below, so keep it out of the generic
   // granted-item cards. Readiness is intentionally excluded from the main app
   // home; it lives in the cockpit and the static Top 2 home only.
-  const grantedItems = REVIEWER_ITEMS.filter(i => i.id !== READINESS_ITEM_ID && canOpenItem(access, i))
+  const grantedItems = REVIEWER_ITEMS.filter(i => !OWN_CARD_ITEM_IDS.includes(i.id) && canOpenItem(access, i))
   // select tier: direct item cards. full tier: the filtered dynamic cockpit.
   // admin (tier or env): the full static index (every subject, mocks, interactives).
+  const drillItem = ITEM_BY_ID.get(DRILL_ITEM_ID)
+  const reviewItem = ITEM_BY_ID.get(REVIEW_ITEM_ID)
+  const showDrill = !!drillItem && canOpenItem(access, drillItem)
+  const showReview = !!reviewItem && canOpenItem(access, reviewItem)
   const showGrantedCards = access.tier === 'select' && grantedItems.length > 0
   const showCockpitLink = access.tier === 'full'
   const showStaticIndex = isAdmin(access)
@@ -123,6 +127,7 @@ export default async function HomePage() {
         {/* The 10-minute drill: the lowest-friction way in. Deliberately the first thing
             on the page and the only one that needs no decision to start — picking a
             subject and a level is where a study session dies. */}
+        {showDrill && (
         <Link
           href="/drill"
           className="block bg-teal-600 rounded-2xl p-4 mb-4 hover:bg-teal-500 transition-colors"
@@ -138,11 +143,12 @@ export default async function HomePage() {
             <span className="text-xs font-semibold text-white bg-white/20 px-3 py-1.5 rounded-lg">Start →</span>
           </div>
         </Link>
+        )}
 
         {/* Review queue — questions you missed, back on their spaced schedule.
             Shown whenever anything is tracked, not only when due: a card that appears
             only on firing days gives no way to tell the queue is collecting at all. */}
-        {(trackedCount > 0 || dueCount > 0) && (
+        {showReview && (trackedCount > 0 || dueCount > 0) && (
           dueCount > 0 ? (
             <Link
               href="/review"

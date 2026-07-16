@@ -1,7 +1,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { todayStr, isSweepWindow, sweepQuota, type ReviewCard, type QuestionPayload } from '@/lib/srs'
-import { loadAccess, canServeCard } from '@/lib/access'
+import { loadAccess, canServeCard, canOpenItem } from '@/lib/access'
+import { ITEM_BY_ID, REVIEW_ITEM_ID } from '@/lib/reviewer-manifest'
 import { subjectLabel } from './labels'
 import ReviewClient from './ReviewClient'
 
@@ -28,6 +29,10 @@ export default async function ReviewPage() {
   const today = todayStr()
   const access = await loadAccess(supabase, user)
 
+  // Grantable feature: gated here rather than by the /top2 middleware, same as /readiness.
+  const item = ITEM_BY_ID.get(REVIEW_ITEM_ID)
+  if (!item || !canOpenItem(access, item)) redirect('/')
+
   const [{ data: dueRows }, { data: allRows }] = await Promise.all([
     supabase
       .from('question_reviews')
@@ -42,7 +47,7 @@ export default async function ReviewPage() {
     // serves is worse than no count.
     supabase
       .from('question_reviews')
-      .select('subject, source, retired')
+      .select('subject, source, retired, swept_at')
       .eq('user_id', user.id),
   ])
 

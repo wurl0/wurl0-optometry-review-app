@@ -3,7 +3,8 @@ import { createClient } from '@/lib/supabase-server'
 import { SUBJECTS } from '@/lib/subjects'
 import { QUESTION_MAP } from '@/lib/banks'
 import { todayStr, type QuestionPayload } from '@/lib/srs'
-import { loadAccess, canServeCard } from '@/lib/access'
+import { loadAccess, canServeCard, canOpenItem } from '@/lib/access'
+import { ITEM_BY_ID, DRILL_ITEM_ID } from '@/lib/reviewer-manifest'
 import { Question } from '@/lib/types'
 import DrillClient, { type DrillItem } from './DrillClient'
 
@@ -52,6 +53,10 @@ export default async function DrillPage() {
   if (!user) redirect('/login')
 
   const access = await loadAccess(supabase, user)
+
+  // Grantable feature: gated here rather than by the /top2 middleware, same as /readiness.
+  const item = ITEM_BY_ID.get(DRILL_ITEM_ID)
+  if (!item || !canOpenItem(access, item)) redirect('/')
 
   const [dueRes, attemptsRes] = await Promise.all([
     supabase
@@ -128,7 +133,6 @@ export default async function DrillPage() {
   // Due cards lead (highest-value retrievals first), then fresh material. Both halves are
   // interleaved by subject in their own right — grouping the due cards by subject first
   // matters, since a run of misses usually comes from the same exam.
-  //
   const dueBySubject = new Map<string, DrillItem[]>()
   for (const d of dueItems) {
     const list = dueBySubject.get(d.subject) ?? []

@@ -124,9 +124,19 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
 // App features (not static /top2 files) that are grantable like any other item.
 // Gated in their own page, not by the /top2 middleware.
 export const READINESS_ITEM_ID = 'feature.readiness'
+export const DRILL_ITEM_ID = 'feature.drill'
+export const REVIEW_ITEM_ID = 'feature.review'
+
+// Features with their own home-page card, kept out of the generic granted-item list.
+export const OWN_CARD_ITEM_IDS = [READINESS_ITEM_ID, DRILL_ITEM_ID, REVIEW_ITEM_ID]
+
 const FEATURE_ITEMS: Item[] = [
   { id: READINESS_ITEM_ID, subject: 'GLOBAL', type: 'feature', label: 'Board Readiness',
     sub: 'Weighted GWA dashboard from exam scores', path: '/readiness' },
+  { id: DRILL_ITEM_ID, subject: 'GLOBAL', type: 'feature', label: '10-Minute Drill',
+    sub: 'Mixed-subject interleaved drill, no setup', path: '/drill' },
+  { id: REVIEW_ITEM_ID, subject: 'GLOBAL', type: 'feature', label: 'Review Queue',
+    sub: 'Spaced repetition of every missed question', path: '/review' },
 ]
 
 export const ITEMS: Item[] = [
