@@ -180,15 +180,18 @@ function draw(){
   let s=GRID;
   // principal axis + lens
   s+=L(0,AY,VW,AY,'var(--gridax)',false,1.6);
-  const lensTop=sy(8.6),lensBot=sy(-8.6);
-  s+=L(LX,lensTop,LX,lensBot,'#7a86c9',false,2.6);
-  if(sign>0){ // convex: outward heads
-    s+='<path d="M '+LX+' '+lensTop+' l -6 9 M '+LX+' '+lensTop+' l 6 9" stroke="#7a86c9" stroke-width="2.2" fill="none"/>';
-    s+='<path d="M '+LX+' '+lensBot+' l -6 -9 M '+LX+' '+lensBot+' l 6 -9" stroke="#7a86c9" stroke-width="2.2" fill="none"/>';
-  } else {    // concave: inward heads
-    s+='<path d="M '+(LX-6)+' '+lensTop+' l 6 9 M '+(LX+6)+' '+lensTop+' l -6 9" stroke="#7a86c9" stroke-width="2.2" fill="none"/>';
-    s+='<path d="M '+(LX-6)+' '+lensBot+' l 6 -9 M '+(LX+6)+' '+lensBot+' l -6 -9" stroke="#7a86c9" stroke-width="2.2" fill="none"/>';
+  const lensTop=sy(8.6),lensBot=sy(-8.6),midY=AY;
+  // realistic glass lens silhouette
+  if(sign>0){ // biconvex: thin at the rim, thick in the middle
+    s+='<path d="M '+LX+' '+lensTop+' Q '+(LX+34)+' '+midY+' '+LX+' '+lensBot+' Q '+(LX-34)+' '+midY+' '+LX+' '+lensTop+' Z" fill="#bcd3ef" fill-opacity="0.5" stroke="#5f7fa8" stroke-width="1.6"/>';
+    s+='<path d="M '+(LX-10)+' '+(lensTop+24)+' Q '+(LX-2)+' '+midY+' '+(LX-10)+' '+(lensBot-24)+'" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.55" stroke-linecap="round"/>';
+  } else {    // biconcave: thick at the rim, thin in the middle
+    const hw=13;
+    s+='<path d="M '+(LX-hw)+' '+lensTop+' L '+(LX+hw)+' '+lensTop+' Q '+(LX-7)+' '+midY+' '+(LX+hw)+' '+lensBot+' L '+(LX-hw)+' '+lensBot+' Q '+(LX+7)+' '+midY+' '+(LX-hw)+' '+lensTop+' Z" fill="#bcd3ef" fill-opacity="0.5" stroke="#5f7fa8" stroke-width="1.6"/>';
+    s+='<path d="M '+(LX-hw+3)+' '+(lensTop+22)+' Q '+(LX-4)+' '+midY+' '+(LX-hw+3)+' '+(lensBot-22)+'" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.5" stroke-linecap="round"/>';
   }
+  // thin-lens plane reference (where the rays refract)
+  s+=L(LX,lensTop,LX,lensBot,'#9aa0cf',true,1);
   // cardinal markers: O at lens, F and 2F on both sides
   function mark(xc,txt){
     if(sx(xc)<6||sx(xc)>VW-6) return '';
