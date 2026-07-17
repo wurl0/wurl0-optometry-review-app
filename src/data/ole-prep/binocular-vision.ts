@@ -39,6 +39,18 @@ const data: OlePrepData = {
           device: '"Front Fovea Fuse Far" — 4 Fs',
           breakdown: 'Frontally placed eyes · Foveal stimulation · Fusion (sensory + motor) · Far: partial decussation of optic fibers. Plus equal image sizes (iseikonia) and efficient EOM function.',
         },
+        {
+          kind: 'mnemonic',
+          term: 'Anisometropia Thresholds by Author',
+          device: '"HGB = 0.25, 1.00, 2.00"',
+          breakdown: 'Hartstein: any difference from 0.25 D · Grosvenor: 1.00 D or more · Borish: 2.00 D or more is clinically significant. Listed in rising order.',
+        },
+        {
+          kind: 'mnemonic',
+          term: 'Five Classes of Anisometropia',
+          device: '"Fine, Fusion, Fails, Flip, Fights"',
+          breakdown: 'Class I = Fine (good fusion + stereopsis) · Class II = Fusion holds, mild amblyopia · Class III = Fails (refractive amblyopia, may reach only ~20/100) · Class IV = Flip (monovision, one eye at a time) · Class V = Fights (strabismus / muscle imbalance).',
+        },
       ],
     },
     {
