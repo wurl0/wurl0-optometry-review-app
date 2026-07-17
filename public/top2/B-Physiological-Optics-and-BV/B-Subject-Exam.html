@@ -76,12 +76,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject B — Board Exam</h1>
-    <p class="sub">Physiological Optics and Binocular Vision · 215 questions · mixed, board-style</p>
+    <p class="sub">Physiological Optics and Binocular Vision · 223 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>215 board-style questions drawn from every B note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>223 board-style questions drawn from every B note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">B1 Visual System</span>
       <span class="chip">B2 Visual Perception</span>
@@ -93,7 +93,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="215">Full (215)</button>
+      <button class="modebtn sel" data-n="223">Full (223)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -351,7 +351,7 @@ const BANK=[
 {t:"B5 Binocular Vision",q:"Aniseikonia in which image size differs in only one meridian, often tied to astigmatic correction, is classified as:",o:["Overall symmetrical", "Meridional symmetrical", "Compound symmetrical", "Retinal aniseikonia"],a:1,w:"Meridional aniseikonia differs in one meridian only and is linked to astigmatic errors and their correction. Overall differs in all meridians; compound combines both. Mnemonic: One All, One Line, One Both.",k:"Meridional = one meridian (astigmatic)."}
 ];
 
-let MODE=215, SCOPE='*';
+let MODE=223, SCOPE='*';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
