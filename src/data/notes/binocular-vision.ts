@@ -1040,6 +1040,180 @@ const notes: NotesData = {
         },
       ],
     },
+    {
+      id: 'anisometropia-aniseikonia',
+      title: 'Anisometropia & Aniseikonia',
+      blocks: [
+        {
+          kind: 'text',
+          content:
+            'Anisometropia is a difference in refractive error between the two eyes. When the two eyes need different corrections, they end up seeing images of different clarity, and often of different size, so the brain has a harder time fusing them into one. The word itself is the giveaway: *aniso* (unequal), *metr* (measure), *opia* (of the eye). It matters because it sits behind amblyopia, aniseikonia, and a lot of asthenopia complaints.',
+        },
+        {
+          kind: 'sub',
+          title: 'How much difference counts (thresholds by author)',
+          blocks: [
+            {
+              kind: 'text',
+              content:
+                'There is no single cutoff. Different authors draw the line at different diopter differences, and boards test all three.',
+            },
+            {
+              kind: 'table',
+              headers: ['Author', 'Threshold', 'Note'],
+              rows: [
+                ['Hartstein', '≥ 0.25 D', 'Any measurable difference'],
+                ['Grosvenor', '≥ 1.00 D', 'Common clinical threshold'],
+                ['Borish', '≥ 2.00 D', 'Difference considered clinically significant'],
+              ],
+            },
+            {
+              kind: 'bullets',
+              items: [
+                'Mnemonic: **HGB = 0.25, 1.00, 2.00** (Hartstein, Grosvenor, Borish, in rising order).',
+                'Prevalence at the 1.00 D threshold runs about 1 to 10 percent; it climbs with age and is strongest in high myopia.',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Terminology to keep straight',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Term', 'Meaning'],
+              rows: [
+                ['Isometropia', 'Both eyes have equal refractive error'],
+                ['Isoanisometropia (simple)', 'Same TYPE of error in both eyes (both myopic or both hyperopic), different magnitude'],
+                ['Antimetropia (mixed)', 'One eye myopic, the other hyperopic. Least common form'],
+                ['Iso-oxyopia', 'Equal best-corrected acuity between the two eyes'],
+                ['Aniso-oxyopia', 'Unequal best-corrected acuity despite full correction'],
+              ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                '*opia* refers to REFRACTION; *oxyopia* refers to ACUITY. Antimetropia = "anti" = opposite errors (one plus, one minus). Common trick question.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Effects and complications',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                '**Aniseikonia** — unequal perceived image size, which lowers stereopsis and strains fusion.',
+                '**Anisophoria** — the phoria changes across gaze positions because the prism effect of a strong lens changes as the eye moves off the optical center (Prentice effect). Causes asthenopia.',
+                '**Amblyopia** — reduced acuity in the more ametropic eye from unequal input during the sensitive period.',
+                '**Suppression** — the brain ignores one eye to avoid blur-confusion or diplopia.',
+                '**Strabismus** — misalignment that can develop secondary to anisometropic amblyopia.',
+                '**Reduced stereopsis** and **asthenopia** (eyestrain, headache, fatigue on near work).',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Five classes of anisometropia',
+          blocks: [
+            {
+              kind: 'table',
+              headers: ['Class', 'Difference', 'Key feature'],
+              rows: [
+                ['I', '< 1.50 D', 'Good fusion and stereopsis; eyes used well together'],
+                ['II', '1.50–3.00 D', 'Fusion holds most of the time; any suppression is central; mild amblyopia may persist'],
+                ['III', '> 3.00 D', 'Refractive (anisometropic) amblyopia; poorer eye may reach only ~20/100; peripheral fusion keeps eyes aligned'],
+                ['IV', 'Varies', 'Good acuity in each eye but one used at a time (natural monovision, e.g. emmetropia + moderate myopia)'],
+                ['V', 'Varies', 'Equal acuity but with muscle imbalance / strabismus present'],
+              ],
+            },
+            {
+              kind: 'callout',
+              variant: 'mnemonic',
+              content:
+                'Mnemonic for the five classes: **"Fine, Fusion, Fails, Flip, Fights."** I = Fine, II = Fusion (mild amblyopia), III = Fails (refractive amblyopia), IV = Flip (monovision), V = Fights (strabismus).',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Management of hyperopic anisometropia',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                '**With esotropia:** full hyperopic correction each eye, occlude the better eye to force the amblyopic one, do a visuscope to check central vs eccentric fixation; pleoptics if fixation is eccentric.',
+                '**Without strabismus:** give the correction; atropine penalization of the sound eye can blur it and push the amblyopic eye into use; monitor acuity, BV, and stereopsis.',
+                '**Treatment limit:** a difference above about 6.00 D is usually left alone. The aniseikonia and prism problems are too large for comfortable fusion, so it is often managed with contact lenses rather than spectacles.',
+              ],
+            },
+            {
+              kind: 'text',
+              content:
+                '**Pleoptics** is intensive stimulation of the amblyopic fovea, mainly for eccentric fixation. It is largely historical now (occlusion and penalization replaced it) but still shows up in board questions.',
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Aniseikonia',
+          blocks: [
+            {
+              kind: 'text',
+              content:
+                'Aniseikonia is when the two eyes see images of different size or shape, which makes comfortable single vision hard. From *aniso* (unequal) + *eikon* (image). Symptoms usually start once the size difference passes about 0.75 to 1.00 percent and become clearly troublesome past roughly 3 percent: headache, asthenopia, reading trouble, photophobia, nausea, and dizziness.',
+            },
+            {
+              kind: 'table',
+              headers: ['Type', 'What differs'],
+              rows: [
+                ['Overall (global) symmetrical', 'One eye sees the whole image larger or smaller, equal in all meridians'],
+                ['Meridional symmetrical', 'Size differs in one meridian only (usually horizontal or vertical); tied to astigmatic corrections'],
+                ['Compound symmetrical', 'Overall plus an extra meridional difference'],
+              ],
+            },
+            {
+              kind: 'bullets',
+              items: [
+                '**Optical aniseikonia** — unequal magnification from lenses (unequal spectacle correction, aphakia).',
+                '**Retinal aniseikonia** — receptors stretched or crowded (retinal detachment repair, macular edema).',
+                'Mnemonic for the types: **"One All, One Line, One Both"** (overall = all meridians, meridional = one line, compound = both).',
+              ],
+            },
+          ],
+        },
+        {
+          kind: 'sub',
+          title: 'Correcting aniseikonia',
+          blocks: [
+            {
+              kind: 'bullets',
+              items: [
+                'Order of preference: **"Glasses, Contacts, Surgery, Cause"** (least to most invasive, and always treat the underlying cause).',
+                '**Iseikonic (size) lenses** adjust image size by changing base curve, center thickness, vertex distance, and index. Best for mild to moderate cases.',
+                '**Contact lenses** are the treatment of choice for anisometropia-induced aniseikonia. Sitting on the cornea, they cut the magnification difference that spectacles create, giving more equal retinal image sizes.',
+                '**Refractive surgery** (LASIK/PRK) in selected patients when optical correction is not tolerated.',
+              ],
+            },
+            {
+              kind: 'callout',
+              variant: 'trap',
+              content:
+                'Spectacle magnification has a **shape factor** (front base curve + thickness) and a **power factor** (lens power + vertex distance). Iseikonic lenses change the SHAPE factor to alter image size while keeping the corrective POWER the same. They change size, not power.',
+            },
+          ],
+        },
+        {
+          kind: 'pearl',
+          content:
+            'Quick recall: anisometropic amblyopia maps to Class III (>3.00 D, may reach only 20/100). Monovision = Class IV. Strabismus = Class V. Contact lenses beat spectacles for anisometropic aniseikonia because they minimize the spectacle magnification difference. Anisophoria comes from the Prentice prism effect in specs.',
+        },
+      ],
+    },
   ],
 }
 

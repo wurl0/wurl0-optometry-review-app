@@ -57,12 +57,12 @@ Because research shows that patients are comfortable when their fusional reserve
 **Eye movement systems — speed and latency:**
 
 ```
-SYSTEM VELOCITY LATENCY PURPOSE
-Saccadic 500–1000°/s 200 ms Fast refixation; reading; scanning
-Smooth pursuit 30°/s — Track moving targets; keeps image on fovea
-Optokinetic 90°/s 125 ms Full-field visual stabilization
-Vergence 20°/s 160 ms (slowest) Binocular alignment; convergence/divergence
-VOR 90°/s 15 ms (fastest) Gaze stabilization during head movement
+SYSTEM          VELOCITY        LATENCY         PURPOSE
+Saccadic        500–1000°/s     200 ms          Fast refixation; reading; scanning
+Smooth pursuit  30°/s           —               Track moving targets; keeps image on fovea
+Optokinetic     90°/s           125 ms          Full-field visual stabilization
+Vergence        20°/s           160 ms (slowest) Binocular alignment; convergence/divergence
+VOR             90°/s           15 ms (fastest)  Gaze stabilization during head movement
 ```
 
 **AC/A ratio — the engine of accommodative vergence:**
@@ -74,16 +74,16 @@ Formula (Gradient method): AC/A = (phoria at near – phoria at distance) ÷ acc
 Formula (Calculated): AC/A = IPD (cm) + (near phoria – far phoria) ÷ near power (D)
 
 HIGH AC/A (>6:1) → excess convergence for accommodation
- → Divergence excess: exo at far, ortho/less exo at near (high AC/A)
- → Convergence excess: ortho/eso at far, high eso at near (high AC/A)
- → Accommodative esotropia: hyperope who crosses at near
+  → Divergence excess: exo at far, ortho/less exo at near (high AC/A)
+  → Convergence excess: ortho/eso at far, high eso at near (high AC/A)
+  → Accommodative esotropia: hyperope who crosses at near
 
 LOW AC/A (<4:1) → insufficient convergence for accommodation
- → Convergence insufficiency: exo at near, ortho at far (low AC/A)
- → Divergence insufficiency: eso at far, ortho/less eso at near (low AC/A)
+  → Convergence insufficiency: exo at near, ortho at far (low AC/A)
+  → Divergence insufficiency: eso at far, ortho/less eso at near (low AC/A)
 
 NORMAL AC/A (4–6:1) → equal deviation at distance and near
- → Basic exophoria, basic esophoria, FVD
+  → Basic exophoria, basic esophoria, FVD
 ```
 
 **Sheard's criterion:**
@@ -122,37 +122,37 @@ Used to assess whether BV is comfortable under natural conditions — not dissoc
 
 ```
 GRADE 1 — Simultaneous Macular Perception (SMP)
- Most elementary; both maculae stimulated simultaneously
- Presence = no suppression of either eye
- Absence = complete suppression of one eye
+  Most elementary; both maculae stimulated simultaneously
+  Presence = no suppression of either eye
+  Absence = complete suppression of one eye
 
 GRADE 2 — Fusion (flat/superimposition fusion)
- Two images merged into one
- Has amplitude — can overcome prism dissociation to fuse
- Tests: Worth 4-dot test, Prism fusion ranges
+  Two images merged into one
+  Has amplitude — can overcome prism dissociation to fuse
+  Tests: Worth 4-dot test, Prism fusion ranges
 
 GRADE 3 — Stereopsis (depth perception from binocular disparity)
- Highest grade; 3D perception from slightly disparate retinal images
- Tests: Randot, TNO, Frisby, Lang
- Normal: 20–40 seconds of arc
+  Highest grade; 3D perception from slightly disparate retinal images
+  Tests: Randot, TNO, Frisby, Lang
+  Normal: 20–40 seconds of arc
 ```
 
 **Retinal correspondence:**
 
 ```
 NORMAL RETINAL CORRESPONDENCE (NRC)
- Both foveas = same visual direction
- Nasal retina one eye ↔ temporal retina other eye
- Present in normals and heterophorias
- Tested by: Hering-Bielschowsky after-image test → harmonious result
+  Both foveas = same visual direction
+  Nasal retina one eye ↔ temporal retina other eye
+  Present in normals and heterophorias
+  Tested by: Hering-Bielschowsky after-image test → harmonious result
 
 ANOMALOUS RETINAL CORRESPONDENCE (ARC)
- Fovea of fixating eye ↔ extrafoveal area of deviating eye = same direction
- Develops in constant strabismus with fixed angle
- The brain rewires to avoid diplopia
- Harmonious ARC: anomalous neutral point = angle of deviation (fully adapted)
- Unharmonious ARC: anomalous neutral point ≠ angle of deviation
- Tested by: Bagolini striated lenses, after-image test (crossed = ARC)
+  Fovea of fixating eye ↔ extrafoveal area of deviating eye = same direction
+  Develops in constant strabismus with fixed angle
+  The brain rewires to avoid diplopia
+  Harmonious ARC: anomalous neutral point = angle of deviation (fully adapted)
+  Unharmonious ARC: anomalous neutral point ≠ angle of deviation
+  Tested by: Bagolini striated lenses, after-image test (crossed = ARC)
 ```
 
 **Physiologic diplopia:**
@@ -160,16 +160,16 @@ ANOMALOUS RETINAL CORRESPONDENCE (ARC)
 ```
 FIXATED OBJECT (on horopter) → single vision
 OBJECT BEYOND HOROPTER:
- Stimulates nasal retina of both eyes simultaneously
- Nasal retina = temporal visual direction
- Both eyes see the object to the temporal side → UNCROSSED (homonymous) diplopia
- Objects in DISTANCE (esophoric tendency) = uncrossed
+  Stimulates nasal retina of both eyes simultaneously
+  Nasal retina = temporal visual direction
+  Both eyes see the object to the temporal side → UNCROSSED (homonymous) diplopia
+  Objects in DISTANCE (esophoric tendency) = uncrossed
 
 OBJECT NEARER THAN HOROPTER:
- Stimulates temporal retina of both eyes
- Temporal retina = nasal visual direction
- Both eyes see object to the nasal side → CROSSED (heteronymous) diplopia
- Objects NEAR (exophoric tendency) = crossed
+  Stimulates temporal retina of both eyes
+  Temporal retina = nasal visual direction
+  Both eyes see object to the nasal side → CROSSED (heteronymous) diplopia
+  Objects NEAR (exophoric tendency) = crossed
 ```
 
 **Mnemonic: "FAR = UNCROSSED; NEAR = CROSSED"**
@@ -179,15 +179,15 @@ Or: "Far objects appear same-sided; Near objects cross over"
 
 ```
 FACULTATIVE suppression
- Only during binocular conditions
- Pattern: periphery suppression (central BV maintained)
- Common in: exodeviations (suppresses peripheral diplopia)
+  Only during binocular conditions
+  Pattern: periphery suppression (central BV maintained)
+  Common in: exodeviations (suppresses peripheral diplopia)
 
 OBLIGATORY suppression
- Even when attempting binocular conditions
- Central suppression zone + peripheral
- Common in: constant esotropia, deep amblyopia
- Associated: dense amblyopia, ARC
+  Even when attempting binocular conditions
+  Central suppression zone + peripheral
+  Common in: constant esotropia, deep amblyopia
+  Associated: dense amblyopia, ARC
 ```
 
 **Amblyopia classification:**
@@ -279,26 +279,26 @@ Grade 1 = Superimposition; Grade 2 = Flat Fusion; Grade 3 = Stereopsis
 ```
 BV ANOMALY MAP — AC/A + DEVIATION PATTERN
 ──────────────────────────────────────────
- DISTANCE PHORIA
- EXOPHORIA ←────────→ ESOPHORIA
- | |
-HIGH AC/A: Divergence Excess Convergence Excess
- (exo far, ortho near) (ortho far, eso near)
- | |
-LOW AC/A: Convergence Insuffic. Divergence Insuffic.
- (ortho far, exo near) (eso far, ortho near)
- | |
-NORMAL AC/A: Basic Exophoria Basic Esophoria
- (equal exo far+near) (equal eso far+near)
- ↓
- FVD: Normal phorias; reduced fusional reserves
+                    DISTANCE PHORIA
+              EXOPHORIA ←────────→ ESOPHORIA
+                  |                    |
+HIGH AC/A:    Divergence Excess    Convergence Excess
+              (exo far, ortho near) (ortho far, eso near)
+                  |                    |
+LOW AC/A:     Convergence Insuffic.  Divergence Insuffic.
+              (ortho far, exo near)   (eso far, ortho near)
+                  |                    |
+NORMAL AC/A:  Basic Exophoria       Basic Esophoria
+              (equal exo far+near)  (equal eso far+near)
+                         ↓
+                    FVD: Normal phorias; reduced fusional reserves
 
 PHYSIOLOGIC DIPLOPIA
 ──────────────────────
- OBJECT NEAR FIXATION POINT OBJECT FAR
- | | |
- CROSSED diplopia SINGLE VISION UNCROSSED diplopia
- (heteronymous) (homonymous)
+     OBJECT NEAR    FIXATION POINT    OBJECT FAR
+         |               |                |
+    CROSSED diplopia  SINGLE VISION   UNCROSSED diplopia
+    (heteronymous)                   (homonymous)
 
 WORTH'S GRADES
 ───────────────
@@ -511,22 +511,22 @@ Morgan's norms are the EXPECTED normal values for the 21-step OEP examination se
 
 ```
 SHEARD'S CRITERION:
- The compensating fusional reserve must be AT LEAST TWICE the demand (phoria)
+  The compensating fusional reserve must be AT LEAST TWICE the demand (phoria)
 
 Formula:
- Compensating reserve ≥ 2 × phoria
+  Compensating reserve ≥ 2 × phoria
 
 For exophoria: PFC (positive fusional convergence) must be ≥ 2 × exophoria
 For esophoria: NFC (negative fusional convergence) must be ≥ 2 × esophoria
 
 Example:
- Exophoria 8Δ at near; Near PFC blur = 10Δ
- Sheard's requirement: PFC ≥ 2 × 8 = 16Δ
- Patient has 10Δ PFC → FAILS Sheard's → symptomatic
+  Exophoria 8Δ at near; Near PFC blur = 10Δ
+  Sheard's requirement: PFC ≥ 2 × 8 = 16Δ
+  Patient has 10Δ PFC → FAILS Sheard's → symptomatic
 
 Prism needed to restore Sheard's:
- Prism = (2/3) × phoria − (1/3) × compensating reserve
- = (2/3)(8) − (1/3)(10) = 5.33 − 3.33 = 2.0Δ BI
+  Prism = (2/3) × phoria − (1/3) × compensating reserve
+  = (2/3)(8) − (1/3)(10) = 5.33 − 3.33 = 2.0Δ BI
 ```
 
 ---
@@ -535,21 +535,21 @@ Prism needed to restore Sheard's:
 
 ```
 PERCIVAL'S CRITERION:
- The phoria must fall within the MIDDLE THIRD of the total fusional vergence range
+  The phoria must fall within the MIDDLE THIRD of the total fusional vergence range
 
 Method:
- 1. Find the full vergence range: add NFC + PFC (total fusional range)
- 2. The middle third = between 1/3 and 2/3 of the total range
- 3. Patient is comfortable if their phoria is within this zone
+  1. Find the full vergence range: add NFC + PFC (total fusional range)
+  2. The middle third = between 1/3 and 2/3 of the total range
+  3. Patient is comfortable if their phoria is within this zone
 
 Example:
- Distance: PFC = 20Δ, NFC = 10Δ → Total range = 30Δ
- Middle third = between 10Δ and 20Δ from the NFC end
- If phoria is 5Δ exo → phoria falls in the outer third → FAILS Percival's
+  Distance: PFC = 20Δ, NFC = 10Δ → Total range = 30Δ
+  Middle third = between 10Δ and 20Δ from the NFC end
+  If phoria is 5Δ exo → phoria falls in the outer third → FAILS Percival's
 
 When to apply Percival's vs Sheard's:
- Sheard's: best for EXOPHORIC patients (tests positive fusional reserve)
- Percival's: best for ESOPHORIC or high AC/A patients; also used when both NFC and PFC are reduced
+  Sheard's: best for EXOPHORIC patients (tests positive fusional reserve)
+  Percival's: best for ESOPHORIC or high AC/A patients; also used when both NFC and PFC are reduced
 ```
 
 ---
@@ -558,17 +558,17 @@ When to apply Percival's vs Sheard's:
 
 ```
 NEUMULLER'S CRITERION:
- Applies specifically to ESOPHORIC patients
+  Applies specifically to ESOPHORIC patients
 
 Rule: The prism prescribed should equal HALF the difference between:
- Phoria at near − Phoria at distance
+  Phoria at near − Phoria at distance
 
 Formula: Prism = (near eso − distance eso) / 2
 
 Example:
- Distance: orthophoria (0Δ); Near: 8Δ esophoria
- Prism = (8 − 0) / 2 = 4Δ BI
- 
+  Distance: orthophoria (0Δ); Near: 8Δ esophoria
+  Prism = (8 − 0) / 2 = 4Δ BI
+  
 This is used when the near eso is significantly larger than distance eso (high AC/A),
 suggesting the near esophoria is the primary clinical problem.
 ```
@@ -588,11 +588,11 @@ KEY OEP PRINCIPLES:
 4. Management follows a hierarchy: lenses first, prisms second, vision therapy third
 
 OEP 21-STEP SEQUENCE (key steps for boards):
- Steps 1-5: Distant VA and refraction (objective + subjective)
- Steps 6-9: Distance BV analysis (phorias, fusional ranges)
- Steps 10-13: Near VA and refraction
- Steps 14-17: Near BV analysis (phorias, NPC, fusional ranges, AC/A)
- Steps 18-21: Additional tests (stereopsis, color vision, VF, DPA)
+  Steps 1-5: Distant VA and refraction (objective + subjective)
+  Steps 6-9: Distance BV analysis (phorias, fusional ranges)
+  Steps 10-13: Near VA and refraction
+  Steps 14-17: Near BV analysis (phorias, NPC, fusional ranges, AC/A)
+  Steps 18-21: Additional tests (stereopsis, color vision, VF, DPA)
 ```
 
 **SOAP Analysis:**
@@ -612,35 +612,35 @@ A problem-oriented approach to BV case analysis:
 
 ```
 STEP 1: CORRECT THE CAUSE
- Prescribe full refractive correction (glasses/contact lens)
- Wait 4-8 weeks for glasses alone to improve VA before patching
- (Passive glasses therapy = some VA improvement from optical correction alone)
+  Prescribe full refractive correction (glasses/contact lens)
+  Wait 4-8 weeks for glasses alone to improve VA before patching
+  (Passive glasses therapy = some VA improvement from optical correction alone)
 
 STEP 2: PENALIZE THE PREFERRED EYE (force use of amblyopic eye)
- a. Patching (occlusion therapy) — MOST EFFECTIVE
- Part-time patching (2-6 hours/day) = as effective as full-time for moderate amblyopia
- Duration: until VA equalizes or no further improvement over 2 cycles
- Compliance issue: children resist patching → atropine is alternative
+  a. Patching (occlusion therapy) — MOST EFFECTIVE
+     Part-time patching (2-6 hours/day) = as effective as full-time for moderate amblyopia
+     Duration: until VA equalizes or no further improvement over 2 cycles
+     Compliance issue: children resist patching → atropine is alternative
 
- b. Atropine penalization
- 1% atropine drops in the DOMINANT eye: blurs near vision in dominant eye
- Forces use of amblyopic eye for near tasks
- Comparable to patching for moderate amblyopia (PEDIG trials)
- Advantage: no compliance battle; child wears glasses
- Risk: photophobia in dominant eye
+  b. Atropine penalization
+     1% atropine drops in the DOMINANT eye: blurs near vision in dominant eye
+     Forces use of amblyopic eye for near tasks
+     Comparable to patching for moderate amblyopia (PEDIG trials)
+     Advantage: no compliance battle; child wears glasses
+     Risk: photophobia in dominant eye
 
- c. Optical penalization (Bangerter filters, blur lenses)
- Opaque or diffusion filters on spectacle lens over dominant eye
+  c. Optical penalization (Bangerter filters, blur lenses)
+     Opaque or diffusion filters on spectacle lens over dominant eye
 
 STEP 3: ACTIVE VISION THERAPY (if passive methods plateau)
- Dichoptic training, binocular perceptual learning
- 
+  Dichoptic training, binocular perceptual learning
+  
 CRITICAL PERIODS:
- Most sensitive: 0–2 years (amblyopia develops fastest here)
- Effective treatment: up to age 7–8 years (traditional)
- Possible improvement: up to age 12–18 years (with intensive therapy)
- Adult treatment: less responsive but not impossible
- KEY: The earlier treatment begins, the better the prognosis
+  Most sensitive: 0–2 years (amblyopia develops fastest here)
+  Effective treatment: up to age 7–8 years (traditional)
+  Possible improvement: up to age 12–18 years (with intensive therapy)
+  Adult treatment: less responsive but not impossible
+  KEY: The earlier treatment begins, the better the prognosis
 ```
 
 ---
@@ -649,38 +649,38 @@ CRITICAL PERIODS:
 
 ```
 DEFINITION:
- Fixation not occurring at the fovea — the patient uses a non-foveal retinal area for fixation
+  Fixation not occurring at the fovea — the patient uses a non-foveal retinal area for fixation
 
 CAUSES:
- Long-standing uncorrected refractive error
- Deep amblyopia with foveal suppression
- Strabismus (especially constant unilateral esotropia)
- Macular disease destroying foveal function
+  Long-standing uncorrected refractive error
+  Deep amblyopia with foveal suppression
+  Strabismus (especially constant unilateral esotropia)
+  Macular disease destroying foveal function
 
 ASSESSMENT:
- Visuoscopy — examiner shines a target (star pattern) onto the patient's fundus
- while the patient fixates a small target
- Normal: star projects onto the fovea
- Eccentric: star projects onto extrafoveal area → measured in degrees/prism diopters
+  Visuoscopy — examiner shines a target (star pattern) onto the patient's fundus
+               while the patient fixates a small target
+               Normal: star projects onto the fovea
+               Eccentric: star projects onto extrafoveal area → measured in degrees/prism diopters
 
 CLINICAL SIGNIFICANCE:
- Eccentric fixation is a marker of DEEP AMBLYOPIA
- Prognosis for full VA recovery is worse with eccentric fixation
- Management: same amblyopia treatment, but harder to improve
- 
- Angle of eccentric fixation ≠ Angle of strabismus (these can differ)
- The degree of eccentricity is a poor prognostic factor for final VA
+  Eccentric fixation is a marker of DEEP AMBLYOPIA
+  Prognosis for full VA recovery is worse with eccentric fixation
+  Management: same amblyopia treatment, but harder to improve
+  
+  Angle of eccentric fixation ≠ Angle of strabismus (these can differ)
+  The degree of eccentricity is a poor prognostic factor for final VA
 
 NOTATION:
- Measured in degrees from the fovea and direction (nasal, temporal, superior, inferior)
- E.g., "2° nasal eccentric fixation" = patient fixates 2° nasal to fovea
+  Measured in degrees from the fovea and direction (nasal, temporal, superior, inferior)
+  E.g., "2° nasal eccentric fixation" = patient fixates 2° nasal to fovea
 ```
 
 ---
 
 ## Extended Topics: Extraocular Muscles (EOMs) and the Horopter
 
-*(From BV-Binocular-Vision-Sumaya.md — added June 6, 2026 to complete B.5 face-to-face review content)*
+*(From BV-Binocular-Vision-Sumaya.md — added June 6, 2026 to complete B.5 MCU face-to-face review content)*
 
 ---
 
@@ -691,24 +691,24 @@ NOTATION:
 **EOM origins and insertions:**
 
 ```
-MUSCLE ORIGIN INSERTION NERVE
+MUSCLE      ORIGIN                  INSERTION           NERVE
 ────────────────────────────────────────────────────────────────
-SR (Superior Rectus) Annulus of Zinn Anterior to equator (superior) CN III
-IR (Inferior Rectus) Annulus of Zinn Anterior to equator (inferior) CN III
-MR (Medial Rectus) Annulus of Zinn Anterior to equator (medial) CN III
-LR (Lateral Rectus) Annulus of Zinn Anterior to equator (lateral) CN VI
-SO (Superior Oblique) Annulus of Zinn Posterior to equator (superior) CN IV
-IO (Inferior Oblique) Medial orbital wall Posterior to equator (inferior) CN III
- (floor of orbit,
- nasal side)
+SR (Superior Rectus)   Annulus of Zinn     Anterior to equator (superior)   CN III
+IR (Inferior Rectus)   Annulus of Zinn     Anterior to equator (inferior)   CN III
+MR (Medial Rectus)     Annulus of Zinn     Anterior to equator (medial)     CN III
+LR (Lateral Rectus)    Annulus of Zinn     Anterior to equator (lateral)    CN VI
+SO (Superior Oblique)  Annulus of Zinn     Posterior to equator (superior)  CN IV
+IO (Inferior Oblique)  Medial orbital wall Posterior to equator (inferior)  CN III
+                       (floor of orbit,
+                       nasal side)
 
 SPECIAL FACTS:
- SO = longest EOM; passes through the TROCHLEA (pulley at superomedial orbit)
- → trochlea changes direction of SO pull
- IO = ONLY EOM not originating from Annulus of Zinn
- LR = ONLY muscle innervated by CN VI (abducens)
- SO = ONLY muscle innervated by CN IV (trochlear)
- All others (SR, IR, MR, IO) = CN III (oculomotor)
+  SO = longest EOM; passes through the TROCHLEA (pulley at superomedial orbit)
+       → trochlea changes direction of SO pull
+  IO = ONLY EOM not originating from Annulus of Zinn
+  LR = ONLY muscle innervated by CN VI (abducens)
+  SO = ONLY muscle innervated by CN IV (trochlear)
+  All others (SR, IR, MR, IO) = CN III (oculomotor)
 ```
 
 **Primary, secondary, and tertiary actions:**
@@ -730,15 +730,15 @@ SPECIAL FACTS:
 The benzene ring (hexagonal diagram) maps which single muscle is primarily tested in each of the 6 cardinal positions of gaze. In each cardinal position, the muscle's primary action is isolation so that paresis of that muscle is most obvious.
 
 ```
- UP-LEFT UP-RIGHT
- (L SR, R IO) (R SR, L IO)
- \ /
- \ /
-LEFT GAZE ─── (L LR, R MR) CENTER (R LR, L MR) ─── RIGHT GAZE
- / \
- / \
- (L IR, R SO) (R IR, L SO)
- DOWN-LEFT DOWN-RIGHT
+                    UP-LEFT           UP-RIGHT
+                  (L SR, R IO)      (R SR, L IO)
+                       \                /
+                        \              /
+LEFT GAZE ─── (L LR, R MR)  CENTER  (R LR, L MR) ─── RIGHT GAZE
+                        /              \
+                       /                \
+                  (L IR, R SO)      (R IR, L SO)
+                   DOWN-LEFT          DOWN-RIGHT
 ```
 
 **How to read the benzene ring:**
@@ -762,8 +762,8 @@ When the eye is ABDUCTED, the recti (SR/IR) are primary elevators/depressors.
 When the eye is ADDUCTED, the obliques (SO/IO) are primary elevators/depressors.
 
 ```
-ABDUCTED EYE: SR elevates, IR depresses (recti work best here)
-ADDUCTED EYE: IO elevates, SO depresses (obliques work best here)
+ABDUCTED EYE:  SR elevates, IR depresses (recti work best here)
+ADDUCTED EYE:  IO elevates, SO depresses (obliques work best here)
 Board trap: SR palsy looks like IR palsy in adduction — test in cardinal positions!
 ```
 
@@ -771,49 +771,49 @@ Board trap: SR palsy looks like IR palsy in adduction — test in cardinal posit
 
 ```
 DUCTIONS (monocular movements — one eye only):
- Abduction = outward (away from nose)
- Adduction = inward (toward nose)
- Supraduction = upward (elevation)
- Infraduction = downward (depression)
- Intorsion = top of cornea rotates nasally
- Extorsion = top of cornea rotates temporally
+  Abduction = outward (away from nose)
+  Adduction = inward (toward nose)
+  Supraduction = upward (elevation)
+  Infraduction = downward (depression)
+  Intorsion = top of cornea rotates nasally
+  Extorsion = top of cornea rotates temporally
 
 VERSIONS (binocular, conjugate — both eyes move same direction):
- Dextroversion = both eyes right
- Levoversion = both eyes left
- Supraversion = both eyes up
- Infraversion = both eyes down
- Dextrocycloversion = both eyes intort/extort together (right)
- Levocycloversion = both eyes intort/extort together (left)
+  Dextroversion = both eyes right
+  Levoversion = both eyes left
+  Supraversion = both eyes up
+  Infraversion = both eyes down
+  Dextrocycloversion = both eyes intort/extort together (right)
+  Levocycloversion = both eyes intort/extort together (left)
 
 VERGENCES (binocular, disconjugate — eyes move opposite directions):
- Convergence = both eyes adduct (near)
- Divergence = both eyes abduct (distance)
- Incyclovergence = both eyes intort
- Excyclovergence = both eyes extort
- Vertical vergence = one eye up, one eye down
+  Convergence = both eyes adduct (near)
+  Divergence = both eyes abduct (distance)
+  Incyclovergence = both eyes intort
+  Excyclovergence = both eyes extort
+  Vertical vergence = one eye up, one eye down
 ```
 
 **Hering's Law and Sherrington's Law (law breakdown):**
 
 ```
 HERING'S LAW (Binocular — VERSIONS):
- Equal and simultaneous innervation to YOKE MUSCLES of both eyes
- 
- What it means: When you look right, R LR and L MR get exactly equal nerve impulses
- Why: Ensures both eyes move the same amount at the same time (conjugate gaze)
- Clinical use: In a CN VI palsy (R LR paretic), the gaze command still fires equally
- to both yoke muscles — but R LR is weak, causing both eyes to drift
- left together (the secondary deviation = same angle as primary deviation)
+  Equal and simultaneous innervation to YOKE MUSCLES of both eyes
+  
+  What it means: When you look right, R LR and L MR get exactly equal nerve impulses
+  Why: Ensures both eyes move the same amount at the same time (conjugate gaze)
+  Clinical use: In a CN VI palsy (R LR paretic), the gaze command still fires equally
+               to both yoke muscles — but R LR is weak, causing both eyes to drift
+               left together (the secondary deviation = same angle as primary deviation)
 
 SHERRINGTON'S LAW (Monocular — DUCTIONS):
- When an agonist contracts, the antagonist relaxes by an equal and opposite amount
- = Reciprocal innervation
- 
- What it means: When R SR fires (elevation), R IR relaxes simultaneously
- Why: Prevents muscles from fighting each other; allows smooth, graded movement
- Clinical use: Explains why a tight IR (e.g., after thyroid eye disease) restricts SR
- elevation — even if SR is healthy, the co-contracted IR resists it
+  When an agonist contracts, the antagonist relaxes by an equal and opposite amount
+  = Reciprocal innervation
+  
+  What it means: When R SR fires (elevation), R IR relaxes simultaneously
+  Why: Prevents muscles from fighting each other; allows smooth, graded movement
+  Clinical use: Explains why a tight IR (e.g., after thyroid eye disease) restricts SR
+               elevation — even if SR is healthy, the co-contracted IR resists it
 ```
 
 **Hering vs Sherrington — the board distinction:**
@@ -840,24 +840,24 @@ The horopter is the curved surface in visual space through the fixation point th
 
 ```
 GEOMETRIC HOROPTER = VIETH-MÜLLER CIRCLE
- The theoretical circle passing through the fixation point and the nodal points
- of both eyes
- Based purely on geometric optics (corresponding retinal points = exact symmetry)
- 
+  The theoretical circle passing through the fixation point and the nodal points
+  of both eyes
+  Based purely on geometric optics (corresponding retinal points = exact symmetry)
+  
 EMPIRICAL HOROPTER
- What is actually measured in a real human eye
- It is NOT the same as the Vieth-Müller circle
- 
+  What is actually measured in a real human eye
+  It is NOT the same as the Vieth-Müller circle
+  
 HILLEBRAND DEVIATION:
- The empirical horopter deviates from the Vieth-Müller circle in a predictable way:
- - At NEAR distances: empirical horopter falls INSIDE (in front of) the Vieth-Müller circle
- - At FAR distances: empirical horopter falls OUTSIDE (behind) the Vieth-Müller circle
- - The deviation = because corresponding retinal points are not perfectly geometric
- 
+  The empirical horopter deviates from the Vieth-Müller circle in a predictable way:
+  - At NEAR distances: empirical horopter falls INSIDE (in front of) the Vieth-Müller circle
+  - At FAR distances: empirical horopter falls OUTSIDE (behind) the Vieth-Müller circle
+  - The deviation = because corresponding retinal points are not perfectly geometric
+  
 ABATHIC DISTANCE:
- The distance at which the empirical horopter most closely matches the Vieth-Müller circle
- (the "true" geometric horopter)
- Approximately 1–2 meters
+  The distance at which the empirical horopter most closely matches the Vieth-Müller circle
+  (the "true" geometric horopter)
+  Approximately 1–2 meters
 ```
 
 **Panum's Fusional Area:**
@@ -866,24 +866,24 @@ Named after Peter Ludvig Panum (1858). The zone around the horopter within which
 
 ```
 DEFINITION:
- The zone of single binocular vision immediately surrounding the horopter
- Objects within Panum's area → single vision (despite some retinal disparity)
- Objects outside Panum's area → physiological diplopia
+  The zone of single binocular vision immediately surrounding the horopter
+  Objects within Panum's area → single vision (despite some retinal disparity)
+  Objects outside Panum's area → physiological diplopia
 
 SIZE OF PANUM'S AREA:
- At the FOVEA: narrowest → 6–10 arcmin (very small; precise binocular alignment needed)
- At 12° eccentricity: ~30–40 arcmin (wider; more tolerance for misalignment)
- Panum's area INCREASES with distance from fixation (peripheral = more tolerant)
+  At the FOVEA: narrowest → 6–10 arcmin (very small; precise binocular alignment needed)
+  At 12° eccentricity: ~30–40 arcmin (wider; more tolerance for misalignment)
+  Panum's area INCREASES with distance from fixation (peripheral = more tolerant)
 
 WHY IT GETS WIDER PERIPHERALLY:
- Peripheral retina has lower spatial resolution (larger receptive fields)
- A larger amount of disparity is tolerated before the visual system detects mismatch
- This is why you can fuse peripheral objects easily even if not perfectly aligned
+  Peripheral retina has lower spatial resolution (larger receptive fields)
+  A larger amount of disparity is tolerated before the visual system detects mismatch
+  This is why you can fuse peripheral objects easily even if not perfectly aligned
 
 THREE FUNCTIONS OF THE PERIPHERAL EXPANSION:
- 1. Allows binocular fusion of large objects (wide disparity in periphery tolerated)
- 2. Provides a "safety margin" for vergence errors without inducing diplopia
- 3. Supports the perception of a continuous single visual world despite small deviations
+  1. Allows binocular fusion of large objects (wide disparity in periphery tolerated)
+  2. Provides a "safety margin" for vergence errors without inducing diplopia
+  3. Supports the perception of a continuous single visual world despite small deviations
 ```
 
 **Physiological diplopia — the full mechanism:**
@@ -892,18 +892,18 @@ THREE FUNCTIONS OF THE PERIPHERAL EXPANSION:
 FIXATION POINT (on horopter) → retinal images on corresponding elements → SINGLE VISION
 
 OBJECT BEYOND THE HOROPTER (farther than fixation):
- Image falls on NASAL retina of both eyes
- Nasal retina → projects to TEMPORAL visual field direction
- Both eyes "point" the object temporally → appears on same side (homonymous)
- RESULT: UNCROSSED (homonymous) diplopia
- Memory: "FAR = UNCROSSED" / FAR and UNcrossed both have 3 letters ending in consonants
+  Image falls on NASAL retina of both eyes
+  Nasal retina → projects to TEMPORAL visual field direction
+  Both eyes "point" the object temporally → appears on same side (homonymous)
+  RESULT: UNCROSSED (homonymous) diplopia
+  Memory: "FAR = UNCROSSED" / FAR and UNcrossed both have 3 letters ending in consonants
 
 OBJECT NEARER THAN THE HOROPTER (closer than fixation):
- Image falls on TEMPORAL retina of both eyes
- Temporal retina → projects to NASAL visual field direction
- Both eyes "point" the object nasally (but from opposite sides) → cross-pattern
- RESULT: CROSSED (heteronymous) diplopia
- Memory: "NEAR = CROSSED"
+  Image falls on TEMPORAL retina of both eyes
+  Temporal retina → projects to NASAL visual field direction
+  Both eyes "point" the object nasally (but from opposite sides) → cross-pattern
+  RESULT: CROSSED (heteronymous) diplopia
+  Memory: "NEAR = CROSSED"
 ```
 
 **Horopter and Panum's — the board comparison:**
@@ -937,34 +937,34 @@ OBJECT NEARER THAN THE HOROPTER (closer than fixation):
 
 ```
 DEFINITION:
- When the two eyes receive completely incompatible images (too different to fuse),
- the visual cortex alternates between the two images rather than superimposing them.
- Neither image is permanently suppressed — they take turns dominating perception.
+  When the two eyes receive completely incompatible images (too different to fuse),
+  the visual cortex alternates between the two images rather than superimposing them.
+  Neither image is permanently suppressed — they take turns dominating perception.
 
 WHEN IT OCCURS:
- Images presented to each eye are so dissimilar that sensory fusion is impossible.
- Examples: different colors, different shapes, different orientations in each eye.
- 
- Contrast with suppression in strabismus:
- SUPPRESSION (strabismus): one image is constantly inhibited (same image repeatedly lost)
- RIVALRY: alternation happens — both images get perceived, just not simultaneously
+  Images presented to each eye are so dissimilar that sensory fusion is impossible.
+  Examples: different colors, different shapes, different orientations in each eye.
+  
+  Contrast with suppression in strabismus:
+    SUPPRESSION (strabismus): one image is constantly inhibited (same image repeatedly lost)
+    RIVALRY: alternation happens — both images get perceived, just not simultaneously
 
 MECHANISM:
- The dominant eye's image suppresses the other for ~1–5 seconds
- Then the other eye's image breaks through
- The switch is involuntary and roughly periodic
- Rate of switching: influenced by attention, fatigue, image strength
- 
+  The dominant eye's image suppresses the other for ~1–5 seconds
+  Then the other eye's image breaks through
+  The switch is involuntary and roughly periodic
+  Rate of switching: influenced by attention, fatigue, image strength
+  
 CLINICAL SIGNIFICANCE:
- Used as a research tool to study visual consciousness and cortical dominance
- Anaglyph tests (red-green glasses with different images to each eye) use rivalry
- Rivalry is more likely with high-contrast, detailed, or moving images
- Slower alternation may indicate neurological or visual pathway disease
- 
+  Used as a research tool to study visual consciousness and cortical dominance
+  Anaglyph tests (red-green glasses with different images to each eye) use rivalry
+  Rivalry is more likely with high-contrast, detailed, or moving images
+  Slower alternation may indicate neurological or visual pathway disease
+  
 BOARD RULE:
- "Rivalry = alternation (not permanent suppression)"
- If both images are too different to fuse → rivalry
- If one image chronically dominates → suppression (strabismic)
+  "Rivalry = alternation (not permanent suppression)"
+  If both images are too different to fuse → rivalry
+  If one image chronically dominates → suppression (strabismic)
 ```
 
 ---
@@ -975,39 +975,39 @@ BOARD RULE:
 
 ```
 DEFINITION:
- The total range of vergence (in prism diopters) over which a person maintains
- single binocular vision (fusion) without diplopia.
+  The total range of vergence (in prism diopters) over which a person maintains
+  single binocular vision (fusion) without diplopia.
 
 COMPONENTS:
- POSITIVE FUSIONAL CONVERGENCE (PFC) — base-out prism tolerance
- How much convergence demand the system can handle while still fusing
- Measured with base-out (BO) prism until:
- Blur point: when accommodation/vergence can no longer keep up
- Break point: image splits into diplopia
- Recovery point: when fusion is re-established as prism is reduced
- 
- NEGATIVE FUSIONAL CONVERGENCE (NFC) — base-in prism tolerance
- How much divergence demand the system can handle while still fusing
- Measured with base-in (BI) prism until blur/break/recovery
+  POSITIVE FUSIONAL CONVERGENCE (PFC) — base-out prism tolerance
+    How much convergence demand the system can handle while still fusing
+    Measured with base-out (BO) prism until:
+      Blur point: when accommodation/vergence can no longer keep up
+      Break point: image splits into diplopia
+      Recovery point: when fusion is re-established as prism is reduced
+    
+  NEGATIVE FUSIONAL CONVERGENCE (NFC) — base-in prism tolerance
+    How much divergence demand the system can handle while still fusing
+    Measured with base-in (BI) prism until blur/break/recovery
 
 NORMAL VALUES (Morgan's norms at distance):
- PFC (BO): Blur 9Δ | Break 19Δ | Recovery 10Δ
- NFC (BI): Blur 7Δ | Break 11Δ | Recovery 8Δ
- 
+  PFC (BO): Blur 9Δ | Break 19Δ | Recovery 10Δ
+  NFC (BI): Blur 7Δ | Break 11Δ | Recovery 8Δ
+  
 NORMAL VALUES (Morgan's norms at near):
- PFC (BO): Blur 17Δ | Break 21Δ | Recovery 11Δ
- NFC (BI): Blur 13Δ | Break 21Δ | Recovery 13Δ
+  PFC (BO): Blur 17Δ | Break 21Δ | Recovery 11Δ
+  NFC (BI): Blur 13Δ | Break 21Δ | Recovery 13Δ
 
 CLINICAL USE:
- Reduced PFC + exophoria → convergence insufficiency
- Reduced NFC + esophoria → divergence excess or accommodative esotropia
- Reduced BOTH NFC and PFC with normal phorias → fusional vergence dysfunction (FVD)
- Applied to Sheard's and Percival's criteria to determine if reserves are adequate
+  Reduced PFC + exophoria → convergence insufficiency
+  Reduced NFC + esophoria → divergence excess or accommodative esotropia
+  Reduced BOTH NFC and PFC with normal phorias → fusional vergence dysfunction (FVD)
+  Applied to Sheard's and Percival's criteria to determine if reserves are adequate
 
 BOARD RULE:
- "Amplitude of fusion = the vergence range that maintains single vision"
- Larger amplitude = more flexible binocular system = better tolerance of phorias
- Smaller amplitude = symptomatic even with small phorias
+  "Amplitude of fusion = the vergence range that maintains single vision"
+  Larger amplitude = more flexible binocular system = better tolerance of phorias
+  Smaller amplitude = symptomatic even with small phorias
 ```
 
 ---
@@ -1027,23 +1027,23 @@ Two key things define any nystagmus: **the direction of movement** and **whether
 ```
 NYSTAGMUS
 ├── PHYSIOLOGICAL (normal — occurs in specific conditions)
-│ └── End-point nystagmus, optokinetic nystagmus (OKN), caloric nystagmus
+│     └── End-point nystagmus, optokinetic nystagmus (OKN), caloric nystagmus
 │
 └── PATHOLOGICAL (abnormal — present in primary gaze or neutral position)
- ├── By WAVEFORM:
- ��� ├── JERK nystagmus — has a SLOW drift + FAST corrective jerk
- │ │ Named by direction of the FAST phase
- │ └── PENDULAR nystagmus — equal velocity in both directions (no fast phase)
- │ Like a pendulum swinging equally both ways
- │
- ├── By ONSET:
- │ ├── CONGENITAL (infantile) — present at birth or in first few months of life
- │ └── ACQUIRED — develops later in life (neurological cause until proven otherwise)
- │
- └── By PLANE:
- ├── Horizontal (most common)
- ├── Vertical (rare; almost always neurological)
- └── Torsional (rotary)
+      ├── By WAVEFORM:
+      ���     ├── JERK nystagmus — has a SLOW drift + FAST corrective jerk
+      │     │     Named by direction of the FAST phase
+      │     └── PENDULAR nystagmus — equal velocity in both directions (no fast phase)
+      │           Like a pendulum swinging equally both ways
+      │
+      ├── By ONSET:
+      │     ├── CONGENITAL (infantile) — present at birth or in first few months of life
+      │     └── ACQUIRED — develops later in life (neurological cause until proven otherwise)
+      │
+      └── By PLANE:
+            ├── Horizontal (most common)
+            ├── Vertical (rare; almost always neurological)
+            └── Torsional (rotary)
 ```
 
 ---
@@ -1054,30 +1054,30 @@ These are normal responses — the eye is working correctly.
 
 ```
 1. END-POINT NYSTAGMUS
- What it is: Fine jerk nystagmus that appears when the eye is held at extreme lateral gaze
- Plain version: Hold your eyes all the way to the side and they start to drift back — the
- brain corrects with a jerk. This is normal.
- Key rule: Normal only at extreme gaze. Nystagmus in PRIMARY GAZE = always abnormal.
+   What it is: Fine jerk nystagmus that appears when the eye is held at extreme lateral gaze
+   Plain version: Hold your eyes all the way to the side and they start to drift back — the
+   brain corrects with a jerk. This is normal.
+   Key rule: Normal only at extreme gaze. Nystagmus in PRIMARY GAZE = always abnormal.
 
 2. OPTOKINETIC NYSTAGMUS (OKN)
- What it is: Alternating slow pursuit + fast saccadic return when watching a moving
- repetitive pattern (like a train going by, or striped drum)
- Plain version: Your eyes follow a stripe (slow pursuit), then snap back to catch the next
- stripe (fast saccade). Over and over.
- Clinical use:
- - Tests integrity of pursuit system (slow phase) + saccade system (fast phase)
- - Used to CONFIRM visual acuity in pre-verbal infants — if OKN is present, child can see
- - Asymmetric OKN = parietal lobe lesion (drum moving toward lesion = absent/reduced OKN)
- Direction convention: Named by direction of the FAST (saccadic) phase
+   What it is: Alternating slow pursuit + fast saccadic return when watching a moving
+   repetitive pattern (like a train going by, or striped drum)
+   Plain version: Your eyes follow a stripe (slow pursuit), then snap back to catch the next
+   stripe (fast saccade). Over and over.
+   Clinical use:
+     - Tests integrity of pursuit system (slow phase) + saccade system (fast phase)
+     - Used to CONFIRM visual acuity in pre-verbal infants — if OKN is present, child can see
+     - Asymmetric OKN = parietal lobe lesion (drum moving toward lesion = absent/reduced OKN)
+   Direction convention: Named by direction of the FAST (saccadic) phase
 
 3. CALORIC NYSTAGMUS
- What it is: Nystagmus induced by irrigation of the external ear canal with warm or cold water
- Plain version: Water changes the temperature of the horizontal semicircular canal, creating
- artificial endolymph convection — tricks the brain into thinking the head is turning
- Cold water → nystagmus AWAY from irrigated ear (fast phase contralateral)
- Warm water → nystagmus TOWARD irrigated ear (fast phase ipsilateral)
- Mnemonic: COWS — Cold Opposite, Warm Same
- Clinical use: Tests brainstem/vestibular integrity in comatose patients
+   What it is: Nystagmus induced by irrigation of the external ear canal with warm or cold water
+   Plain version: Water changes the temperature of the horizontal semicircular canal, creating
+   artificial endolymph convection — tricks the brain into thinking the head is turning
+   Cold water → nystagmus AWAY from irrigated ear (fast phase contralateral)
+   Warm water → nystagmus TOWARD irrigated ear (fast phase ipsilateral)
+   Mnemonic: COWS — Cold Opposite, Warm Same
+   Clinical use: Tests brainstem/vestibular integrity in comatose patients
 ```
 
 ---
@@ -1088,67 +1088,67 @@ These are normal responses — the eye is working correctly.
 
 ```
 VESTIBULAR NYSTAGMUS
- Cause: Inner ear (peripheral vestibular) or brainstem (central vestibular) lesion
- 
- PERIPHERAL (labyrinth, CN VIII):
- Horizontal or horizontal-torsional
- Fast phase AWAY from the lesion side
- SUPPRESSED by visual fixation
- Associated: vertigo, nausea, unilateral hearing loss, tinnitus
- Example: Benign paroxysmal positional vertigo (BPPV), M��nière's disease
- 
- CENTRAL (brainstem/cerebellar):
- Often vertical or purely torsional
- NOT suppressed by fixation
- Absent or mild vertigo despite severe nystagmus
- Example: Multiple sclerosis, stroke, tumor
- 
- Board rule: "Peripheral = fixation suppresses; Central = fixation does NOT suppress"
+  Cause: Inner ear (peripheral vestibular) or brainstem (central vestibular) lesion
+  
+  PERIPHERAL (labyrinth, CN VIII):
+    Horizontal or horizontal-torsional
+    Fast phase AWAY from the lesion side
+    SUPPRESSED by visual fixation
+    Associated: vertigo, nausea, unilateral hearing loss, tinnitus
+    Example: Benign paroxysmal positional vertigo (BPPV), M��nière's disease
+    
+  CENTRAL (brainstem/cerebellar):
+    Often vertical or purely torsional
+    NOT suppressed by fixation
+    Absent or mild vertigo despite severe nystagmus
+    Example: Multiple sclerosis, stroke, tumor
+    
+  Board rule: "Peripheral = fixation suppresses; Central = fixation does NOT suppress"
 
 GAZE-EVOKED NYSTAGMUS
- Beats in the direction of gaze (right-beating on right gaze, left-beating on left gaze)
- Cause: Cerebellar disease, drugs (anticonvulsants, sedatives, alcohol)
- Plain version: The brain can't hold the eyes in an eccentric position — they drift back,
- then correct. Most common drug-related nystagmus.
+  Beats in the direction of gaze (right-beating on right gaze, left-beating on left gaze)
+  Cause: Cerebellar disease, drugs (anticonvulsants, sedatives, alcohol)
+  Plain version: The brain can't hold the eyes in an eccentric position — they drift back,
+  then correct. Most common drug-related nystagmus.
 
 DOWNBEAT NYSTAGMUS
- Fast phase is DOWNWARD
- Primary gaze or worsens on downgaze/lateral gaze
- Localization: Cranio-cervical junction (Chiari malformation), cerebellar flocculus lesion
- Board clue: Downbeat in primary gaze → think Chiari malformation / foramen magnum
+  Fast phase is DOWNWARD
+  Primary gaze or worsens on downgaze/lateral gaze
+  Localization: Cranio-cervical junction (Chiari malformation), cerebellar flocculus lesion
+  Board clue: Downbeat in primary gaze → think Chiari malformation / foramen magnum
 
 UPBEAT NYSTAGMUS
- Fast phase UPWARD
- Localization: Medulla (Wernicke's encephalopathy, thiamine deficiency) or anterior vermis
+  Fast phase UPWARD
+  Localization: Medulla (Wernicke's encephalopathy, thiamine deficiency) or anterior vermis
 ```
 
 **Pendular nystagmus — equal velocity both ways:**
 
 ```
 CONGENITAL MOTOR NYSTAGMUS (Infantile Nystagmus Syndrome — INS)
- Onset: First few months of life
- Waveform: Pendular (infants) → becomes jerk nystagmus (older children)
- Direction: Usually HORIZONTAL, even on up/down gaze
- Key features:
- - NULL POINT: a gaze position where nystagmus is LEAST intense
- - HEAD TURN/TILT to null point = compensatory posture (not pathological)
- - DAMPENED by convergence (near fixation reduces nystagmus)
- - No oscillopsia (brain adapts — patient does NOT see world shaking)
- Causes: Idiopathic (most common), OR sensory (albinism, cone dystrophy, aniridea, cataract)
- Board clue: Null point + dampens with convergence + no oscillopsia = congenital
+  Onset: First few months of life
+  Waveform: Pendular (infants) → becomes jerk nystagmus (older children)
+  Direction: Usually HORIZONTAL, even on up/down gaze
+  Key features:
+    - NULL POINT: a gaze position where nystagmus is LEAST intense
+    - HEAD TURN/TILT to null point = compensatory posture (not pathological)
+    - DAMPENED by convergence (near fixation reduces nystagmus)
+    - No oscillopsia (brain adapts — patient does NOT see world shaking)
+  Causes: Idiopathic (most common), OR sensory (albinism, cone dystrophy, aniridea, cataract)
+  Board clue: Null point + dampens with convergence + no oscillopsia = congenital
 
 ACQUIRED PENDULAR NYSTAGMUS
- Cause: Multiple sclerosis (brainstem demyelination), Whipple's disease
- Key difference from congenital: Patient HAS oscillopsia (world appears to shake)
- This is because the brain didn't adapt to it from birth
+  Cause: Multiple sclerosis (brainstem demyelination), Whipple's disease
+  Key difference from congenital: Patient HAS oscillopsia (world appears to shake)
+  This is because the brain didn't adapt to it from birth
 
 LATENT/MANIFEST-LATENT NYSTAGMUS
- LATENT: Only appears when one eye is COVERED (disappears with both eyes open)
- MANIFEST-LATENT: Present all the time but WORSENS when one eye is covered
- Common in: Infantile esotropia, early childhood strabismus
- Direction: Fast phase toward the UNCOVERED (viewing) eye
- Clinical trap: VA measured with one eye covered → nystagmus appears → falsely low VA
- Always measure VA binocularly or with a neutral density filter (not full occlusion)
+  LATENT: Only appears when one eye is COVERED (disappears with both eyes open)
+  MANIFEST-LATENT: Present all the time but WORSENS when one eye is covered
+  Common in: Infantile esotropia, early childhood strabismus
+  Direction: Fast phase toward the UNCOVERED (viewing) eye
+  Clinical trap: VA measured with one eye covered → nystagmus appears → falsely low VA
+  Always measure VA binocularly or with a neutral density filter (not full occlusion)
 ```
 
 ---
@@ -1164,7 +1164,7 @@ Every nystagmus description should include these 6 features — the clinical ter
 4. FREQUENCY: Rapid (fine/fast) vs slow (pendular-like)
 5. NULL POINT: Is there a gaze position where nystagmus diminishes?
 6. FIXATION EFFECT: Does fixation suppress or worsen it?
- (Suppresses = peripheral vestibular; doesn't suppress = central)
+   (Suppresses = peripheral vestibular; doesn't suppress = central)
 ```
 
 ---
@@ -1197,12 +1197,121 @@ Every nystagmus description should include these 6 features — the clinical ter
 
 ---
 
+## Extended Topics: Anisometropia and Aniseikonia
+
+### The Plain Version First
+
+Anisometropia just means the two eyes need different corrections. Aniseikonia means the two eyes see images of different size. They travel together: unequal corrections (especially in spectacles) tend to produce unequal image sizes, and once the images differ enough, fusion gets uncomfortable. This is the same fusion story as the rest of B5, viewed from the refractive side.
+
+Word roots: *aniso* = unequal, *metr* = measure, *opia* = of the eye (refraction), *eikon* = image, *oxyopia* = acuity.
+
+### Terminology and Thresholds
+
+| Term | Meaning |
+|---|---|
+| Isometropia | Both eyes have equal refractive error |
+| Isoanisometropia (simple) | Same TYPE of error both eyes (both myopic or both hyperopic), different magnitude |
+| Antimetropia (mixed) | One eye myopic, the other hyperopic. Least common form |
+| Iso-oxyopia | Equal best-corrected acuity between the eyes |
+| Aniso-oxyopia | Unequal best-corrected acuity despite full correction |
+
+**Diopter threshold varies by author (mnemonic HGB = 0.25, 1.00, 2.00):**
+
+| Author | Threshold |
+|---|---|
+| Hartstein | Any difference, from 0.25 D |
+| Grosvenor | 1.00 D or more |
+| Borish | 2.00 D or more is clinically significant |
+
+> Prevalence at the 1.00 D threshold is roughly 1 to 10 percent; it rises with age and is strongest in high myopia.
+
+### The Five Classes
+
+| Class | Difference | Key feature |
+|---|---|---|
+| I | < 1.50 D | Good fusion and stereopsis; both eyes used well together |
+| II | 1.50 to 3.00 D | Fusion holds most of the time; suppression (if any) is central; mild amblyopia may persist |
+| III | > 3.00 D | Refractive (anisometropic) amblyopia; poorer eye may reach only about 20/100; peripheral fusion keeps eyes aligned |
+| IV | Varies | Good acuity each eye but one used at a time (natural monovision, e.g. emmetropia + moderate myopia) |
+| V | Varies | Equal acuity but with a muscle imbalance or strabismus present |
+
+**Mnemonic: "Fine, Fusion, Fails, Flip, Fights."** I = Fine, II = Fusion (mild amblyopia), III = Fails (refractive amblyopia), IV = Flip (monovision), V = Fights (strabismus).
+
+### Effects and Management
+
+Effects worth naming: aniseikonia (unequal image size, lowers stereopsis), anisophoria (phoria changes across gaze from the Prentice prism effect of a strong lens off its optical center), amblyopia in the more ametropic eye, suppression, secondary strabismus, reduced stereopsis, and asthenopia.
+
+**Hyperopic anisometropia with esotropia:** full hyperopic Rx each eye, occlude the better eye, visuscope for central vs eccentric fixation, pleoptics if fixation is eccentric.
+
+**Without strabismus:** give the correction; atropine penalization of the sound eye blurs it and pushes the amblyopic eye into use; monitor acuity, BV, stereopsis.
+
+**Treatment limit:** a difference above about 6.00 D is usually left alone. The aniseikonia and prism become too large for comfortable fusion, so it is managed with contact lenses rather than pushed in spectacles.
+
+> Pleoptics = intensive stimulation of the amblyopic fovea, mainly for eccentric fixation. Largely historical (occlusion and penalization replaced it) but still tested.
+
+### Aniseikonia — Types and Correction
+
+| Type | What differs |
+|---|---|
+| Overall (global) symmetrical | Whole image larger or smaller, equal in all meridians |
+| Meridional symmetrical | Size differs in one meridian only; tied to astigmatic correction |
+| Compound symmetrical | Overall plus an added meridional difference |
+
+Two causes by mechanism: **optical** aniseikonia (unequal lens magnification, as in unequal spectacle correction or aphakia) and **retinal** aniseikonia (receptors stretched or crowded, as after retinal detachment repair or in macular edema).
+
+Symptoms usually begin once the size difference passes about 0.75 to 1.00 percent and become clearly troublesome past roughly 3 percent: headache, asthenopia, reading trouble, photophobia, nausea, dizziness.
+
+**Correction order (mnemonic "Glasses, Contacts, Surgery, Cause"):** iseikonic (size) lenses first for mild to moderate cases, then contact lenses, then refractive surgery, and always treat the underlying cause.
+
+**How iseikonic lenses work:** spectacle magnification has a *shape factor* (front base curve and thickness) and a *power factor* (power and vertex distance). Iseikonic lenses adjust the shape factor to change image size while holding the corrective power the same. They change size, not power.
+
+### Numbers to Know
+
+| Item | Value |
+|---|---|
+| Hartstein / Grosvenor / Borish thresholds | 0.25 / 1.00 / 2.00 D |
+| Anisometropia prevalence (at 1.00 D) | ~1 to 10 percent |
+| Treatment-limit difference | > 6.00 D usually left alone |
+| Aniseikonia symptom onset | ~0.75 to 1.00 percent size difference |
+| Aniseikonia clearly troublesome | > ~3 percent |
+| Class III amblyopic ceiling | ~20/100 |
+
+### Board Traps (Anisometropia and Aniseikonia)
+
+- **Trap:** "Anisometropia means unequal image size." Wrong. That is aniseikonia. Anisometropia is unequal refractive ERROR.
+- **Trap:** "Antimetropia is just a large anisometropia." Wrong. Antimetropia is specifically one eye myopic and one hyperopic (opposite signs), the least common form.
+- **Trap:** "opia and oxyopia mean the same thing." Wrong. opia = refraction, oxyopia = acuity. Iso-oxyopia vs aniso-oxyopia is about acuity.
+- **Trap:** "Spectacles are best for anisometropic aniseikonia." Wrong. Contact lenses are the treatment of choice; they minimize the spectacle magnification difference.
+- **Trap:** "Iseikonic lenses change the lens power." Wrong. They change image size via the shape factor while keeping power constant.
+- **Trap:** "Anisophoria comes from unequal magnification." Wrong. It comes from the Prentice prism effect as the eyes move off the optical centers of strong lenses.
+
+### Practice Question
+
+**Q.** A patient wears +1.00 D OD and +4.50 D OS. Acuity corrects to 20/20 OD and 20/80 OS, and stereopsis is reduced. Which class of anisometropia is this, and what is the single best optical management to reduce the resulting aniseikonia?
+
+- A. Class II; high-index spectacles
+- B. Class III; contact lenses
+- C. Class IV; base-in prism
+- D. Class V; occlusion therapy
+
+<details>
+<summary>Answer</summary>
+
+**B. Class III; contact lenses.**
+
+The difference is 3.50 D (greater than 3.00 D) with amblyopia in the more hyperopic eye reaching only about 20/80 to 20/100, which is Class III (refractive/anisometropic amblyopia). Contact lenses are the best optical choice for the aniseikonia because they sit on the cornea and minimize the spectacle magnification difference, giving more equal retinal image sizes than glasses. High-index spectacles (A) would still leave a magnification difference. Base-in prism (C) addresses a phoria, not image size. Occlusion (D) treats amblyopia but does not fix the aniseikonia.
+
+</details>
+
+---
+
 ## Sources Used
 
 - [x] `TOS Review Structure/B/REVIEW GUIDE — B.md` — Eye movement systems, AC/A, BV anomalies table, original B5 content
 - [x] `BV-Binocular-Vision-Sumaya.md` — Worth's grades, NRC/ARC, horopter, Panum's area, diplopia, fusion, eccentric fixation, suppression definitions
 - [x] `BV-Dr-Juarez.md` — BV anomalies detailed, Morgan's norms (NPC, PFC, NFC, NRA, PRA), Sheard's criterion formula, Percival's criterion, amblyopia classification + management, eccentric fixation assessment, SOAP approach
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.5 scope reference (Syllabi sections 3.1–3.4, amblyopia management)
+- [x] `MCU Review 2026/anisometropia-aniseikonia-study-guide.md` — anisometropia thresholds/classes/management + aniseikonia types/correction (Extended Topics section)
 
 ---
 

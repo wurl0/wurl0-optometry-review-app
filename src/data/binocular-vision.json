@@ -1363,5 +1363,161 @@
     "correct": 3,
     "explanation": "NRC in exotropia produces HETERONYMOUS (crossed) diplopia — red light (right eye filtered) appears to the LEFT of white light. This is the expected response in NRC with exotropia.",
     "module": "Module 15"
+  },
+  {
+    "type": "mcq",
+    "stem": "Anisometropia is BEST defined as:",
+    "options": [
+      "Unequal best-corrected visual acuity between the two eyes",
+      "A difference in refractive error between the two eyes",
+      "Unequal perceived image size between the two eyes",
+      "One eye myopic and the other hyperopic"
+    ],
+    "correct": 1,
+    "explanation": "Anisometropia = a difference in refractive ERROR between the eyes (aniso = unequal, metr = measure, opia = eye). Unequal acuity is aniso-oxyopia, unequal image size is aniseikonia, and one-myopic-one-hyperopic is antimetropia.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "According to Borish, the difference in refractive error considered clinically significant for anisometropia is:",
+    "options": [
+      "0.25 D or greater",
+      "1.00 D or greater",
+      "2.00 D or greater",
+      "6.00 D or greater"
+    ],
+    "correct": 2,
+    "explanation": "Thresholds by author (mnemonic HGB = 0.25 / 1.00 / 2.00): Hartstein counts any difference from 0.25 D, Grosvenor uses 1.00 D, and Borish sets 2.00 D or greater as clinically significant.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient has +2.00 D in the right eye and -3.00 D in the left eye. This is termed:",
+    "options": [
+      "Isoanisometropia",
+      "Isometropia",
+      "Antimetropia",
+      "Aniso-oxyopia"
+    ],
+    "correct": 2,
+    "explanation": "Antimetropia (mixed anisometropia) is one eye myopic and the other hyperopic. It is the least common form. Isoanisometropia would be the same type of error in both eyes with different magnitude.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "The difference between iso-oxyopia and aniso-oxyopia is that both terms describe:",
+    "options": [
+      "Refractive error, not acuity",
+      "Visual acuity, not refractive error",
+      "Image size, not acuity",
+      "Ocular alignment, not refraction"
+    ],
+    "correct": 1,
+    "explanation": "The suffix oxyopia refers to ACUITY. Iso-oxyopia is equal best-corrected acuity between eyes; aniso-oxyopia is unequal acuity despite full correction. The suffix opia (as in anisometropia) refers to refraction.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Anisophoria in a patient wearing high-powered spectacles is caused by:",
+    "options": [
+      "Unequal magnification between the two lenses",
+      "Changing prism effect as the eyes move away from the optical centers (Prentice effect)",
+      "Suppression of the non-dominant eye",
+      "Eccentric fixation in the amblyopic eye"
+    ],
+    "correct": 1,
+    "explanation": "Anisophoria is a difference in heterophoria across gaze positions. With strong lenses the induced prism changes as the eye moves off the optical center (Prentice effect), so the phoria differs in up-gaze versus down-gaze, producing asthenopia.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Anisometropic (refractive) amblyopia, in which the poorer eye may improve only to about 20/100, corresponds to which class of anisometropia?",
+    "options": [
+      "Class I",
+      "Class II",
+      "Class III",
+      "Class IV"
+    ],
+    "correct": 2,
+    "explanation": "Class III (generally greater than 3.00 D) shows pronounced amblyopia in the poorer eye that may reach only about 20/100, with peripheral fusion keeping the eyes aligned. Mnemonic Fine-Fusion-Fails-Flip-Fights: Class III = Fails.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "A patient is emmetropic in the right eye and moderately myopic in the left, uses the right eye for distance and the left for near, and reports no diplopia. This natural monovision is which class of anisometropia?",
+    "options": [
+      "Class II",
+      "Class III",
+      "Class IV",
+      "Class V"
+    ],
+    "correct": 2,
+    "explanation": "Class IV: good acuity in each eye but one eye used at a time (natural monovision), classically emmetropia in one eye with moderate myopia in the other. Class V would involve a muscle imbalance or strabismus.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Most investigators agree that a refractive difference greater than which value generally cannot be helped by treatment and is left alone?",
+    "options": [
+      "2.00 D",
+      "3.00 D",
+      "4.00 D",
+      "6.00 D"
+    ],
+    "correct": 3,
+    "explanation": "A difference beyond about 6.00 D is usually left alone. The aniseikonia and prism problems become too great for comfortable fusion, so it is often managed with contact lenses rather than spectacles instead of pushing full spectacle correction.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Aniseikonia in which the image size differs in only one meridian, often linked to astigmatic correction, is classified as:",
+    "options": [
+      "Overall (global) symmetrical",
+      "Meridional symmetrical",
+      "Compound symmetrical",
+      "Retinal aniseikonia"
+    ],
+    "correct": 1,
+    "explanation": "Meridional aniseikonia differs in a single meridian (usually horizontal or vertical) and is tied to astigmatic errors and their correction. Overall type differs equally in all meridians; compound combines both. Mnemonic: One All, One Line, One Both.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "The treatment of choice for anisometropia-induced aniseikonia is usually:",
+    "options": [
+      "High-index spectacle lenses",
+      "Contact lenses",
+      "Occlusion therapy",
+      "Base-in prism"
+    ],
+    "correct": 1,
+    "explanation": "Contact lenses sit on the cornea and minimize the spectacle magnification difference, giving more equal retinal image sizes and better binocular vision. This is why they are preferred over spectacles for anisometropic aniseikonia.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Iseikonic (size) lenses alter the perceived image size primarily by changing the:",
+    "options": [
+      "Dioptric power of the lens",
+      "Shape factor (base curve and thickness) while keeping power constant",
+      "Retinal receptor spacing",
+      "Accommodative demand"
+    ],
+    "correct": 1,
+    "explanation": "Spectacle magnification has a shape factor (front base curve plus thickness) and a power factor (power plus vertex distance). Iseikonic lenses adjust the shape factor to change image size while keeping the corrective power the same. They change size, not power.",
+    "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "Aniseikonia caused by stretching or crowding of retinal receptors, as after retinal detachment repair or in macular edema, is termed:",
+    "options": [
+      "Optical aniseikonia",
+      "Retinal aniseikonia",
+      "Meridional aniseikonia",
+      "Compound aniseikonia"
+    ],
+    "correct": 1,
+    "explanation": "Retinal aniseikonia comes from altered spacing of retinal elements (stretched or crowded receptors), as in retinal detachment repair or macular edema. Optical aniseikonia instead comes from unequal lens magnification, such as after unequal spectacle correction or aphakia.",
+    "module": "Module 16"
   }
 ]
