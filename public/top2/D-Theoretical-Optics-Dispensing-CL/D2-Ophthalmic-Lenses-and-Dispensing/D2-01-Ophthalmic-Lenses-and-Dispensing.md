@@ -1102,6 +1102,27 @@ To achieve prescribed prism via decentration:
  d = P / D (cm)
 ```
 
+The same boxing-system logic carries over to the near segment. At near the eyes converge, so the near PD is smaller than the distance PD, and the segment (or the near zone of a PAL) has to sit nasal to the distance OC by the amount the eyes turn in. That nasal shift is the **inset**, the near-vision counterpart of the decentration above, referenced to the same frame center.
+
+```
+Segment inset (from the distance OC)      = (Distance PD − Near PD) / 2   (per eye, mm)
+
+Total inset (from the boxing/geometric center) = (Frame PD − Near PD) / 2   (per eye, mm)
+
+Relationship:  Total inset = Distance decentration + Segment inset
+                           = (Frame PD − Distance PD)/2  +  (Distance PD − Near PD)/2
+```
+
+**Board trap:** "total inset" is measured from the frame's geometric center, so it uses **Frame PD and Near PD**, not the distance PD. The lens power and the reading add are distractors; they never enter the inset calculation.
+
+```
+Worked example (Rx OU −3.00 add +1.00, distance PD 62, near PD 60, eye size 45, DBL 20):
+ Frame PD = 45 + 20 = 65  → 32.5 mm from the frame center
+ Near PD  = 60            → 30.0 mm from the frame center
+ Total inset = 32.5 − 30.0 = 2.5 mm per eye
+ Check: decentration (65−62)/2 = 1.5  +  segment inset (62−60)/2 = 1.0  = 2.5 ✓
+```
+
 ---
 
 ### Memory Anchors — Extended Topics
@@ -1130,6 +1151,8 @@ Ultex = 20mm OC → most jump; Executive = 0mm OC → zero jump.
 | Executive bifocal image jump | ZERO (OC at segment line) |
 | Vertical imbalance > 1.5Δ correction | Slab-off or prism in segments |
 | Slab-off is ground on | Most minus (or least plus) lens |
+| Distance decentration (per eye) | (Frame PD − Distance PD) / 2 |
+| Total inset from frame center (per eye) | (Frame PD − Near PD) / 2 = decentration + segment inset |
 | Uncoated CR-39 transmission | ~92% (7.75% reflected from two surfaces) |
 | Higher index lens + AR coating | More important — higher native reflectance |
 
