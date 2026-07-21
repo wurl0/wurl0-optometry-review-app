@@ -30,6 +30,15 @@ const TIERS = ['base', 'select', 'full', 'admin'] as const
 const GLOBAL_ITEMS = ITEMS.filter(i => i.subject === 'GLOBAL')
 const shortLabel = (label: string) => label.split(' — ')[1] ?? label
 
+// Three different kinds of work: a queue you empty, a registry you edit, a report you read.
+type Tab = 'approvals' | 'access' | 'readiness'
+const TABS: { id: Tab; label: string }[] = [
+  { id: 'approvals', label: 'Approvals' },
+  { id: 'access', label: 'Access' },
+  { id: 'readiness', label: 'Readiness' },
+]
+const isTab = (v: string | null): v is Tab => TABS.some(t => t.id === v)
+
 // Same wording and colours as the user-facing /readiness page.
 const VERDICT: Record<Verdict, { label: string; cls: string }> = {
   READY: { label: 'Board-ready', cls: 'bg-emerald-100 text-emerald-800' },
@@ -231,8 +240,17 @@ export default function AdminPage() {
   const [readiness, setReadiness] = useState<ReadinessUser[]>([])
   const [loading, setLoading] = useState(true)
   const [approving, setApproving] = useState<string | null>(null)
+  const [justApproved, setJustApproved] = useState<Profile | null>(null)
+  const [tab, setTab] = useState<Tab>('approvals')
   const [error, setError] = useState('')
   const router = useRouter()
+
+  // Read/write the tab through window.location rather than useSearchParams, which
+  // would force this page under a Suspense boundary to build.
+  function selectTab(next: Tab) {
+    setTab(next)
+    window.history.replaceState(null, '', next === 'approvals' ? '/admin' : `/admin?tab=${next}`)
+  }
 
   useEffect(() => {
     async function load() {
@@ -245,6 +263,12 @@ export default function AdminPage() {
       const json = await res.json()
       if (json.error) { setError(json.error); setLoading(false); return }
       setProfiles(json.profiles)
+
+      // An explicit ?tab wins. Otherwise open the queue only if it has something
+      // in it, so a waiting sign-up is never hidden behind a tab.
+      const urlTab = new URLSearchParams(window.location.search).get('tab')
+      const pendingCount = (json.profiles as Profile[]).filter(p => !p.approved).length
+      setTab(isTab(urlTab) ? urlTab : pendingCount > 0 ? 'approvals' : 'readiness')
       setLoading(false)
 
       // Secondary: approvals stay usable even if the readiness table is missing.
@@ -267,6 +291,8 @@ export default function AdminPage() {
     setProfiles(prev =>
       prev.map(p => p.id === profileId ? { ...p, approved: true, approved_at: new Date().toISOString() } : p)
     )
+    // Approving grants nothing on its own, so hand off to the Access tab.
+    setJustApproved(profiles.find(p => p.id === profileId) ?? null)
     setApproving(null)
   }
 
@@ -288,31 +314,76 @@ export default function AdminPage() {
           <h1 className="text-2xl font-bold text-gray-900">Admin Panel</h1>
           <Link href="/" className="text-sm text-teal-600 hover:underline font-medium">← Home</Link>
         </div>
-        <p className="text-gray-500 text-sm mb-8">Manage OptoPrep sign-up approvals and reviewer access</p>
+        <p className="text-gray-500 text-sm mb-6">Manage OptoPrep sign-up approvals and reviewer access</p>
 
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3 mb-6">{error}</div>
         )}
 
-        {readiness.length > 0 && (
-          <section className="mb-8">
+        <nav className="flex gap-1 border-b border-gray-200 mb-6">
+          {TABS.map(t => (
+            <button
+              key={t.id}
+              onClick={() => selectTab(t.id)}
+              className={`relative px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors ${
+                tab === t.id
+                  ? 'border-teal-600 text-teal-700'
+                  : 'border-transparent text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              {t.label}
+              {t.id === 'approvals' && pending.length > 0 && (
+                <span className="ml-1.5 inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-xs font-semibold rounded-full bg-rose-500 text-white">
+                  {pending.length}
+                </span>
+              )}
+            </button>
+          ))}
+        </nav>
+
+        {tab === 'readiness' && (
+          <section>
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-1">
               Readiness ({readiness.filter(u => u.attemptCount > 0).length} with attempts)
             </h2>
             <p className="text-xs text-gray-400 mb-3">
-              Projected GWA counts untested subjects as 0, so it only equals the true GWA at 8/8 coverage.
-              Everyone stays &ldquo;Building&rdquo; until all 8 subjects have an attempt.
+              Scores come only from Top 2 exams (subject exams, preboards, mocks). Main app practice
+              and drills are not counted. Projected GWA treats untested subjects as 0, so it only
+              equals the true GWA at 8/8 coverage.
             </p>
-            <div className="space-y-2">
-              {readiness.map(u => <ReadinessCard key={u.userId} u={u} />)}
-            </div>
+            {readiness.length === 0 ? (
+              <p className="text-gray-400 text-sm">
+                No readiness data. Either nobody has sat a Top 2 exam yet, or the
+                <code className="bg-gray-100 px-1 rounded mx-1">ole_attempts</code>
+                table is missing.
+              </p>
+            ) : (
+              <div className="space-y-2">
+                {readiness.map(u => <ReadinessCard key={u.userId} u={u} />)}
+              </div>
+            )}
           </section>
         )}
 
-        <section className="mb-8">
+        {tab === 'approvals' && (
+        <section>
           <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
             Pending ({pending.length})
           </h2>
+          {justApproved && (
+            <div className="bg-teal-50 border border-teal-200 rounded-xl px-4 py-3 mb-3 flex items-center justify-between gap-3">
+              <p className="text-xs text-teal-900">
+                Approved <b>{justApproved.full_name ?? justApproved.email}</b>. They start on
+                base tier with nothing granted.
+              </p>
+              <button
+                onClick={() => { setJustApproved(null); selectTab('access') }}
+                className="text-xs font-semibold text-teal-700 hover:underline shrink-0"
+              >
+                Set access →
+              </button>
+            </div>
+          )}
           {pending.length === 0 ? (
             <p className="text-gray-400 text-sm">No pending approvals.</p>
           ) : (
@@ -336,7 +407,10 @@ export default function AdminPage() {
             </div>
           )}
         </section>
+        )}
 
+        {tab === 'access' && (
+        <>
         <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 mb-4 text-xs text-blue-900 leading-relaxed">
           <p className="font-semibold mb-1">Reviewer access</p>
           <p><b>Tiers:</b> base = original app only · select = granted items via home cards · full = granted items + the reviewer cockpit · admin = everything.</p>
@@ -373,6 +447,8 @@ export default function AdminPage() {
             </div>
           )}
         </section>
+        </>
+        )}
       </div>
     </div>
   )
