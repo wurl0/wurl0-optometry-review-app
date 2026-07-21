@@ -86,13 +86,21 @@ function ReadinessCard({ u }: { u: ReadinessUser }) {
               {[...r.subjects]
                 .sort((a, b) => (a.avg ?? -1) - (b.avg ?? -1))
                 .map(s => (
-                  <div key={s.code} className="flex items-center justify-between text-xs">
-                    <span className="text-gray-600">
+                  <div key={s.code} className="flex items-center justify-between gap-2 text-xs">
+                    <span className="text-gray-600 min-w-0 truncate">
                       <b className="text-gray-400 mr-1">{s.code}</b>{s.name}
                       <span className="text-gray-300 ml-1">({s.weight}%)</span>
                     </span>
-                    <span className={`font-semibold ${scoreColor(s.avg)}`}>
-                      {s.avg === null ? 'untested' : `${s.avg}%`}
+                    <span className="flex items-center gap-2 shrink-0">
+                      <span className="text-gray-400">
+                        {s.attempts === 0
+                          ? '0 attempts'
+                          : `${s.attempts} attempt${s.attempts === 1 ? '' : 's'}${s.attempts > 3 ? ' (avg of last 3)' : ''}`}
+                      </span>
+                      {s.best !== null && <span className="text-gray-300">best {s.best}%</span>}
+                      <span className={`font-semibold w-14 text-right ${scoreColor(s.avg)}`}>
+                        {s.avg === null ? 'untested' : `${s.avg}%`}
+                      </span>
                     </span>
                   </div>
                 ))}
