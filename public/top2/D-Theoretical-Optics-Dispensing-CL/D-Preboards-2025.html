@@ -181,11 +181,12 @@ function updGrid(){
     if(idx===i)c.classList.add('cur');
   });
 }
+function tally(){var d=0,c=0;for(var n=0;n<pool.length;n++){var q=pool[n];if(q.errata)continue;if(answered[q.id]!==undefined){d++;if(answered[q.id])c++;}}return{d:d,c:c};}
 function render(){
   const q=pool[i];
   document.getElementById('fill').style.width=((i+1)/pool.length*100)+'%';
   document.getElementById('plabel').textContent='Question '+(i+1)+' of '+pool.length+'  ·  PDF #'+q.id;
-  let done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
+  var _t=tally(),done=_t.d,corr=_t.c;
   document.getElementById('score').textContent=cfg.mode==='quiz'?(corr+' / '+done+' correct'):'Study mode';
   // tags
   let t='<span class="tag">Theo Optics</span>';
@@ -230,12 +231,12 @@ function esc(s){const d=document.createElement('div');d.textContent=s;return d.i
 function finish(){
   document.getElementById('s-quiz').classList.remove('active');
   document.getElementById('s-res').classList.add('active');
-  const done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
+  var _t=tally(),done=_t.d,corr=_t.c;
   const pct = done? Math.round(corr/done*100):0;
-  if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}/*WAA-SRS*/if(cfg.mode==='quiz'&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}
+  if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}/*WAA-SRS*/if(cfg.mode==='quiz'&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>!x.errata&&answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}
   document.getElementById('ring').textContent=pct+'%';
   document.getElementById('rdetail').textContent = cfg.mode==='study'? 'Study mode — '+pool.length+' questions reviewed' : (corr+' correct of '+done+' answered ('+pool.length+' in set)');
-  const missed=pool.filter(q=>answered[q.id]===false);
+  const missed=pool.filter(q=>!q.errata&&answered[q.id]===false);
   let h='';
   if(missed.length){
     h='<div class="opt-row"><div class="lbl">Review these ('+missed.length+')</div></div>';
@@ -258,7 +259,7 @@ function finish(){
     var total = null, ans = null;
     try {
       if (typeof pool !== 'undefined' && pool && pool.length && typeof answered !== 'undefined') {
-        total = pool.length; ans = Object.keys(answered).length;
+        total = pool.filter(function(q){return !q.errata;}).length; ans = pool.filter(function(q){return !q.errata&&answered[q.id]!==undefined;}).length;
       } else if (typeof Q !== 'undefined' && Q && Q.length) {
         total = Q.length;
         ans = (typeof topicStats !== 'undefined' && topicStats)
