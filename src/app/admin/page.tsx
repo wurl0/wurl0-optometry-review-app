@@ -4,6 +4,16 @@ import { createClient } from '@/lib/supabase-client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { SUBJECTS, ITEMS } from '@/lib/reviewer-manifest'
+import type { Readiness, Verdict } from '@/lib/readiness'
+
+type ReadinessUser = {
+  userId: string
+  fullName: string | null
+  email: string | null
+  attemptCount: number
+  lastAttemptAt: string | null
+  readiness: Readiness
+}
 
 type Profile = {
   id: string
@@ -19,6 +29,83 @@ type Profile = {
 const TIERS = ['base', 'select', 'full', 'admin'] as const
 const GLOBAL_ITEMS = ITEMS.filter(i => i.subject === 'GLOBAL')
 const shortLabel = (label: string) => label.split(' — ')[1] ?? label
+
+// Same wording and colours as the user-facing /readiness page.
+const VERDICT: Record<Verdict, { label: string; cls: string }> = {
+  READY: { label: 'Board-ready', cls: 'bg-emerald-100 text-emerald-800' },
+  BORDERLINE: { label: 'Borderline', cls: 'bg-amber-100 text-amber-800' },
+  NOT_READY: { label: 'Not ready yet', cls: 'bg-rose-100 text-rose-800' },
+  BUILDING: { label: 'Building', cls: 'bg-slate-100 text-slate-700' },
+}
+
+function scoreColor(pct: number | null): string {
+  if (pct === null) return 'text-gray-400'
+  if (pct >= 75) return 'text-emerald-600'
+  if (pct >= 65) return 'text-amber-600'
+  return 'text-rose-600'
+}
+
+function ReadinessCard({ u }: { u: ReadinessUser }) {
+  const [open, setOpen] = useState(false)
+  const r = u.readiness
+  const v = VERDICT[r.verdict]
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 px-4 py-3">
+      <div className="flex items-center justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-sm font-medium text-gray-900 truncate">{u.fullName ?? '—'}</p>
+          <p className="text-xs text-gray-400 truncate">{u.email}</p>
+          <p className="text-xs text-gray-300 mt-0.5">
+            {u.attemptCount === 0
+              ? 'No attempts logged'
+              : `${u.attemptCount} attempt${u.attemptCount === 1 ? '' : 's'} · last ${new Date(u.lastAttemptAt as string).toLocaleDateString()}`}
+          </p>
+        </div>
+        <div className="flex items-center gap-3 shrink-0">
+          <div className="text-right">
+            <p className={`text-sm font-semibold ${scoreColor(r.projectedGwa)}`}>
+              {r.projectedGwa ?? '—'}
+            </p>
+            <p className="text-xs text-gray-400">{r.measuredCount}/{SUBJECTS.length} subjects</p>
+          </div>
+          <span className={`text-xs font-medium px-3 py-1 rounded-full ${v.cls}`}>{v.label}</span>
+        </div>
+      </div>
+
+      {u.attemptCount > 0 && (
+        <>
+          <button
+            onClick={() => setOpen(o => !o)}
+            className="mt-2 text-xs text-teal-600 hover:underline font-medium"
+          >
+            {open ? 'Hide subjects' : 'Show subjects'}
+          </button>
+          {open && (
+            <div className="mt-2 border-t border-gray-100 pt-2 space-y-1">
+              {[...r.subjects]
+                .sort((a, b) => (a.avg ?? -1) - (b.avg ?? -1))
+                .map(s => (
+                  <div key={s.code} className="flex items-center justify-between text-xs">
+                    <span className="text-gray-600">
+                      <b className="text-gray-400 mr-1">{s.code}</b>{s.name}
+                      <span className="text-gray-300 ml-1">({s.weight}%)</span>
+                    </span>
+                    <span className={`font-semibold ${scoreColor(s.avg)}`}>
+                      {s.avg === null ? 'untested' : `${s.avg}%`}
+                    </span>
+                  </div>
+                ))}
+              {r.mockGwa !== null && (
+                <p className="text-xs text-gray-400 pt-1">Latest mock GWA: {r.mockGwa}</p>
+              )}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  )
+}
 
 function AccessEditor({ profile, onSaved }: {
   profile: Profile
@@ -133,6 +220,7 @@ function AccessEditor({ profile, onSaved }: {
 
 export default function AdminPage() {
   const [profiles, setProfiles] = useState<Profile[]>([])
+  const [readiness, setReadiness] = useState<ReadinessUser[]>([])
   const [loading, setLoading] = useState(true)
   const [approving, setApproving] = useState<string | null>(null)
   const [error, setError] = useState('')
@@ -150,6 +238,11 @@ export default function AdminPage() {
       if (json.error) { setError(json.error); setLoading(false); return }
       setProfiles(json.profiles)
       setLoading(false)
+
+      // Secondary: approvals stay usable even if the readiness table is missing.
+      const rRes = await fetch('/api/admin/readiness')
+      const rJson = await rRes.json()
+      if (!rJson.error) setReadiness(rJson.users)
     }
     load()
   }, [router])
@@ -191,6 +284,21 @@ export default function AdminPage() {
 
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3 mb-6">{error}</div>
+        )}
+
+        {readiness.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-1">
+              Readiness ({readiness.filter(u => u.attemptCount > 0).length} with attempts)
+            </h2>
+            <p className="text-xs text-gray-400 mb-3">
+              Projected GWA counts untested subjects as 0, so it only equals the true GWA at 8/8 coverage.
+              Everyone stays &ldquo;Building&rdquo; until all 8 subjects have an attempt.
+            </p>
+            <div className="space-y-2">
+              {readiness.map(u => <ReadinessCard key={u.userId} u={u} />)}
+            </div>
+          </section>
         )}
 
         <section className="mb-8">
