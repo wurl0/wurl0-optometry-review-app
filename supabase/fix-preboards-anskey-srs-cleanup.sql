@@ -198,3 +198,31 @@ with expected(question_id, correct) as (values
 delete from question_reviews r using expected e
 where r.question_id = e.question_id
   and (r.payload->>'correct') is distinct from e.correct::text;
+
+-- ROUND 4 (Jul 22, 2026): Set 2 audit.
+-- Emphasis audit on Set 2 returned 5 flags, ALL false positives, so Set 2's keys are
+-- clean. Its only defect was the same source-vs-build drift as Set 1 round 1: 7 items
+-- (D-7/9/10/11/14/62, C-70) where the BUILD was corrected and the JSON source in
+-- optometry/MCU-Preboards-2024/ never caught up. Sources now synced; the deployed build
+-- was already right, so no redeploy was needed.
+-- D-7/9/10/11 are the prism cluster already cleared by fix-prism-srs-cleanup.sql.
+-- Only these three could still hold a stale card. Guarded, so a correct card survives.
+with expected(question_id, correct) as (values
+  ('0337009f-3h', 0),  -- D-14 Set 2
+  ('45976b17-52', 0),  -- D-62 Set 2
+  ('420e52f0-5v', 2)  -- C-70 Set 2
+)
+select e.question_id, e.correct as should_be, r.payload->>'correct' as stored_correct,
+       case when r.question_id is null then 'not in queue'
+            when (r.payload->>'correct') = e.correct::text then 'ok'
+            else 'STALE' end as status
+from expected e left join question_reviews r using (question_id);
+
+with expected(question_id, correct) as (values
+  ('0337009f-3h', 0),  -- D-14 Set 2
+  ('45976b17-52', 0),  -- D-62 Set 2
+  ('420e52f0-5v', 2)  -- C-70 Set 2
+)
+delete from question_reviews r using expected e
+where r.question_id = e.question_id
+  and (r.payload->>'correct') is distinct from e.correct::text;
