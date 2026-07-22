@@ -138,7 +138,7 @@ function esc(s){const d=document.createElement('div');d.textContent=s;return d.i
 function finish(){document.getElementById('s-quiz').classList.remove('active');document.getElementById('s-res').classList.add('active');
   var _t=tally(),done=_t.d,corr=_t.c;
   const pct=done?Math.round(corr/done*100):0;
-  if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}/*WAA-SRS*/if(cfg.mode==='quiz'&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>!x.errata&&answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}document.getElementById('ring').textContent=pct+'%';
+  if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}/*WAA-SRS*/if(cfg.mode==='quiz'&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>!x.errata&&!x.flag&&answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}document.getElementById('ring').textContent=pct+'%';
   document.getElementById('rdetail').textContent=cfg.mode==='study'?'Study mode — '+pool.length+' reviewed':(corr+' correct of '+done+' answered ('+pool.length+' in set)');
   const missed=pool.filter(q=>!q.errata&&answered[q.id]===false);let h='';
   if(missed.length){h='<div class="opt-row"><div class="lbl">Review these ('+missed.length+')</div></div>';

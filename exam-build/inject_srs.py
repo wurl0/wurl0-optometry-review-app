@@ -56,10 +56,13 @@ PRE_ANCHOR = (
     "if(cfg.mode==='quiz'&&cfg.set==='all'&&done&&window.reportOleScore)"
     "{window.reportOleScore({score:corr,total:done});}"
 )
+# errata/flag are excluded: an item whose key is known-bad or disputed must not drill.
+# Keep this in sync with the already-injected pages — the snippet in public/top2 is the
+# live copy, and this constant only shapes pages wired from here on.
 PRE_INJECT = (
     MARKER
     + "if(cfg.mode==='quiz'&&window.reportSrsItems){"
-    "window.reportSrsItems(pool.filter(x=>answered[x.id]!==undefined).map(x=>({"
+    "window.reportSrsItems(pool.filter(x=>!x.errata&&!x.flag&&answered[x.id]!==undefined).map(x=>({"
     "stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',"
     "wasCorrect:answered[x.id]===true})));}"
 )
