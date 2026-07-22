@@ -41,13 +41,19 @@ def flag(level, check, detail):
 
 # ---------- load the four sources ----------
 
+ALL_ITEMS = []  # (id, subject, type, path) for every manifest entry, /top2 or not
+
+
 def manifest_items():
     """Every {path: (id, type)} the manifest exposes, static /top2 paths only."""
     src = MANIFEST.read_text()
     out = {}
-    for m in re.finditer(r"id:\s*'([^']+)'[^}]*?type:\s*'([^']+)'[^}]*?path:\s*'([^']+)'",
-                         src, re.S):
-        item_id, item_type, path = m.groups()
+    for m in re.finditer(
+            r"id:\s*(?:'([^']+)'|(\w+))[^}]*?subject:\s*'([^']+)'[^}]*?"
+            r"type:\s*'([^']+)'[^}]*?path:\s*'([^']+)'", src, re.S):
+        quoted, ident, subject, item_type, path = m.groups()
+        item_id = quoted if quoted is not None else ident
+        ALL_ITEMS.append((item_id, subject, item_type, path))
         if path.startswith("/top2/"):
             out[path[len("/top2/"):]] = (item_id, item_type)
     # SUBJECT_ITEMS are generated in a loop rather than written out, so rebuild them
@@ -155,6 +161,27 @@ else:
 for path, (item_id, item_type) in sorted(man.items()):
     if item_type in ("reviewer", "strategy") and indexed and item_id not in indexed:
         flag("warning", "not-in-search-index", f"{item_id}  ({path})")
+
+# 8. BLOCKING: the admin Access tab builds its checkbox registry from
+#    ITEMS.filter(subject === s.code) for each of A-H, plus subject === 'GLOBAL'. An item
+#    whose subject is neither is silently dropped: still gated, still openable by admin
+#    (who bypasses the middleware entirely), but impossible to GRANT to anyone. That is
+#    the failure this check exists for, because admin's own bypass hides it completely.
+subject_codes = set(re.findall(r"\{ code: '(\w)'", MANIFEST.read_text())) | {"GLOBAL"}
+for item_id, subject, _t, _p in ALL_ITEMS:
+    if subject not in subject_codes:
+        flag("blocking", "ungrantable-subject",
+             f"{item_id}  subject={subject!r} is not A-H or GLOBAL")
+
+# 9. BLOCKING: ITEM_BY_ID and ITEM_BY_PATH are built with `new Map(...)`, so a duplicate
+#    id or path silently keeps only the last one and the earlier item becomes unreachable.
+for field, idx in (("id", 0), ("path", 3)):
+    seen = {}
+    for row in ALL_ITEMS:
+        seen.setdefault(row[idx], []).append(row[0])
+    for value, owners in sorted(seen.items()):
+        if len(owners) > 1:
+            flag("blocking", f"duplicate-{field}", f"{value}  <-  {', '.join(owners)}")
 
 # ---------- report ----------
 
