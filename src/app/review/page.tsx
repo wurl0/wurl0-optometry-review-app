@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
-import { todayStr, isSweepWindow, sweepQuota, type ReviewCard, type QuestionPayload } from '@/lib/srs'
+import { todayStr, sweepQuota, type ReviewCard, type QuestionPayload } from '@/lib/srs'
 import { loadAccess, canServeCard, canOpenItem } from '@/lib/access'
 import { ITEM_BY_ID, REVIEW_ITEM_ID } from '@/lib/reviewer-manifest'
 import { subjectLabel } from './labels'
