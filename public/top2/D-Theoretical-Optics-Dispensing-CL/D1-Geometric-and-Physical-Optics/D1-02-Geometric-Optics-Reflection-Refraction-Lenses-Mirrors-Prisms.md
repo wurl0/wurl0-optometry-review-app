@@ -140,12 +140,12 @@ The center of curvature C is at distance R. For a ray hitting the mirror at the 
 |---|---|---|
 | q positive | Real image — forms in FRONT of the mirror | Can be projected on a screen; real |
 | q negative | Virtual image — forms BEHIND the mirror | Cannot be projected; apparent image only |
-| m = +1 | Same size; upright | Object at C of concave mirror... no, that gives m = −1. m = +1 → virtual, upright, same size (not a standard case) |
+| m = +1 | Virtual, upright, same size | **The plane mirror.** m = +1 forces q = −p, and substituting into 1/p + 1/q = 1/f gives 1/f = 0, so f and R are infinite. Image sits as far behind the mirror as the object is in front |
 | m = −1 | Same size; inverted | Object exactly at C of concave mirror (q = C = 2f) |
-| |m| > 1 | Magnified | Object between F and C of concave; or any position for concave (virtual case) |
-| |m| < 1 | Minified | Object beyond C (concave); or any position on convex mirror |
-| m positive, |m| > 1 | Upright AND magnified → virtual | Object between F and V (inside F) of concave mirror — magnifying mirror |
-| m negative, |m| < 1 | Inverted AND minified → real | Object beyond C of concave mirror |
+| \|m\| > 1 | Magnified | Object between F and C of a concave mirror (real, inverted); or inside F of a concave mirror (virtual, upright) |
+| \|m\| < 1 | Minified | Object beyond C (concave); or any position on a convex mirror |
+| m positive, \|m\| > 1 | Upright AND magnified → virtual | Object between F and V (inside F) of concave mirror — magnifying mirror |
+| m negative, \|m\| < 1 | Inverted AND minified → real | Object beyond C of concave mirror |
 
 > **Concave mirror cases — the six rules:**
 >
@@ -282,8 +282,8 @@ Same "vergence machine" as the mirror. An object sends divergent rays toward the
 | q negative | Virtual image — forms on SAME side as object | Cannot be projected; eye must look through lens to see it |
 | m = −q/p positive | Upright image → virtual | Magnifying glass; reading glasses over CL; indirect ophthalmoscope? No — that's real |
 | m = −q/p negative | Inverted image → real | Camera, eye, projector |
-| |m| > 1 | Magnified | Object between F and 2F (real, inverted) or inside F (virtual, upright) |
-| |m| < 1 | Minified | Object beyond 2F (real, inverted); any position for minus lens |
+| \|m\| > 1 | Magnified | Object between F and 2F (real, inverted) or inside F (virtual, upright) |
+| \|m\| < 1 | Minified | Object beyond 2F (real, inverted); any position for minus lens |
 
 > **The practical two-question check after every lens calculation:**
 > 1. Is q positive or negative? → Tells you real or virtual.
