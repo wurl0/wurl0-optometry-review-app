@@ -104,6 +104,10 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.D1-Gullstrand-Cardinal-Points-Interactive', subject: 'D', type: 'interactive', label: 'D1 Gullstrand Cardinal Points', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Gullstrand-Cardinal-Points-Interactive.html' },
   { id: 'int.D1-Ray-Diagram-Interactive', subject: 'D', type: 'interactive', label: 'D1 Ray Diagram', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Ray-Diagram-Interactive.html' },
   { id: 'int.D1-Ocular-Axes-and-Angles-Interactive', subject: 'D', type: 'interactive', label: 'D1 Axes & Angles of the Eye', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Ocular-Axes-and-Angles-Interactive.html' },
+  { id: 'int.D1-Image-Formation-Zones-Interactive', subject: 'D', type: 'interactive', label: 'D1 Image Formation Zones', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Image-Formation-Zones-Interactive.html' },
+  // Named -Visualizer rather than -Interactive, so it fell outside the generator's glob
+  // and was reachable only from the D reviewer's layers bar until now.
+  { id: 'int.D-Prism-360-Visualizer', subject: 'D', type: 'interactive', label: 'D Prism 360 Dial', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D-Prism-360-Visualizer.html' },
   { id: 'int.E3-Fundus-Signatures-Interactive', subject: 'E', type: 'interactive', label: 'E3 Fundus Signatures', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Fundus-Signatures-Interactive.html' },
   { id: 'int.F1-DPA-Quiz', subject: 'F', type: 'interactive', label: 'F1 DPA Quiz', path: '/top2/F-Clinical-Optometry-and-Specialties/F1-DPA-Examination/F1-DPA-Quiz.html' },
   { id: 'int.G1-Interactive', subject: 'G', type: 'interactive', label: 'G1 Interactive', path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Interactive.html' },

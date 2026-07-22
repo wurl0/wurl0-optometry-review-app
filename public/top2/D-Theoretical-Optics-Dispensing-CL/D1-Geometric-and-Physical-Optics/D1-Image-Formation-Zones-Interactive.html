@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Image Formation Zones Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --tag:#534ab7; --tag-soft:#eeedfe;
+    --obj:#185fa5; --img:#c2610f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  h3{font-size:14px;margin:0 0 6px;color:var(--muted);font-weight:600}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .toggle{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+  .tbtn{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .tbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:10px 0 6px}
+  .sliderow label{font-size:14px;color:var(--muted);min-width:150px}
+  input[type=range]{flex:1}
+  .panel{margin:14px 0 4px}
+  svg.scene{width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;display:block}
+  .readout{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .pill{font-size:13px;font-weight:600;padding:5px 11px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .pill.real{background:#e1f5ee;color:#0f6e56} .pill.virtual{background:#eeedfe;color:#534ab7}
+  .pill.up{background:#e6f1fb;color:#185fa5} .pill.inv{background:#faece7;color:#993c1d}
+  .pill.num{background:#f1efe8;color:var(--muted)}
+  .zones{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:14px}
+  .zone{font-size:12px;text-align:center;padding:7px 3px;border-radius:8px;background:#f1efe8;color:var(--muted);border:1.5px solid transparent;line-height:1.35}
+  .zone.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);font-weight:600}
+  .zones.off .zone{opacity:.35}
+  .verdict{font-size:17px;font-weight:600;margin:12px 0 2px}
+  .note{font-size:13.5px;color:var(--muted);margin-top:8px}
+  .callout{background:var(--accent-soft);border-radius:10px;padding:11px 14px;font-size:14px;margin-top:12px}
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center}.results .big{font-size:40px;font-weight:700;margin:4px 0}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D1 — Image Formation Zones, interactive</h1>
+    <p class="sub">Personal study notes · one slider, two elements, and the answer is always the same words</p>
+  </header>
+
+  <section>
+    <h2>1. The lens and the mirror are the same question</h2>
+    <p class="hint">Move the object. Watch both panels at once. The lens is on top, the concave mirror below it, and the description underneath never disagrees. C on the mirror sits exactly where 2F sits on the lens, because f = R/2 makes C = 2f. Both elements here have f = 20 cm.</p>
+
+    <div class="toggle" id="elToggle">
+      <button class="tbtn on" data-f="20">Converging (+ lens / concave mirror)</button>
+      <button class="tbtn" data-f="-20">Diverging (− lens / convex mirror)</button>
+    </div>
+
+    <div class="sliderow">
+      <label>Object distance: <b id="pval">40</b> cm</label>
+      <input type="range" id="pslider" min="5" max="100" step="1" value="40" aria-label="Object distance in centimetres">
+    </div>
+
+    <div class="panel">
+      <h3>Converging lens</h3>
+      <svg id="lensScene" class="scene" viewBox="0 0 700 190" aria-label="Lens image formation diagram"></svg>
+    </div>
+
+    <div class="panel">
+      <h3>Concave mirror, same focal length</h3>
+      <svg id="mirrorScene" class="scene" viewBox="0 0 700 190" aria-label="Mirror image formation diagram"></svg>
+    </div>
+
+    <div class="verdict" id="verdict">Real, inverted, same size</div>
+    <div class="readout" id="readout"></div>
+
+    <div class="zones" id="zoneStrip">
+      <div class="zone" id="z0">inside F</div>
+      <div class="zone" id="z1">at F</div>
+      <div class="zone" id="z2">F to 2F<br>(F to C)</div>
+      <div class="zone" id="z3">at 2F<br>(at C)</div>
+      <div class="zone" id="z4">beyond 2F<br>(beyond C)</div>
+    </div>
+
+    <div class="callout" id="callout"></div>
+    <p class="note" id="seesaw"></p>
+  </section>
+
+  <section>
+    <h2>2. Test yourself</h2>
+    <p class="hint">Six stems mixing lenses and mirrors. Run the fast pick: check converging or diverging, then divide p by f.</p>
+    <div class="progress-row">
+      <span id="qcount">Question 1 of 6</span>
+      <span class="bar"><span id="barfill"></span></span>
+      <span class="score" id="scoretext">0 correct</span>
+    </div>
+    <div id="qbody"></div>
+    <div class="actions" id="acts"></div>
+  </section>
+
+  <footer>WAA · Personal study notes · companion to D1-03 Image Formation Zones</footer>
+</div>
+
+<script>
+(function(){
+  var SVGNS='http://www.w3.org/2000/svg';
+  var F=20, S=3.2, AY=110, OH=42;
+  var LCX=350, MX=590;
+  var lensScene=document.getElementById('lensScene');
+  var mirrorScene=document.getElementById('mirrorScene');
+  var slider=document.getElementById('pslider');
+  var pval=document.getElementById('pval');
+  var verdict=document.getElementById('verdict');
+  var readout=document.getElementById('readout');
+  var callout=document.getElementById('callout');
+  var seesaw=document.getElementById('seesaw');
+  var zoneStrip=document.getElementById('zoneStrip');
+  var zones=[0,1,2,3,4].map(function(i){return document.getElementById('z'+i);});
+
+  function el(tag,attrs){
+    var n=document.createElementNS(SVGNS,tag);
+    for(var k in attrs) n.setAttribute(k,attrs[k]);
+    return n;
+  }
+  function line(p,x1,y1,x2,y2,stroke,w,dash){
+    var a={x1:x1,y1:y1,x2:x2,y2:y2,stroke:stroke,'stroke-width':w||1};
+    if(dash) a['stroke-dasharray']=dash;
+    p.appendChild(el('line',a));
+  }
+  function text(p,x,y,s,fill,size,anchor){
+    var t=el('text',{x:x,y:y,fill:fill,'font-size':size||11,'text-anchor':anchor||'middle',
+      'font-family':'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'});
+    t.textContent=s; p.appendChild(t);
+  }
+  function arrow(p,x,tipY,color,dash,label){
+    var dir = tipY<AY ? 1 : -1;
+    line(p,x,AY,x,tipY,color,2.5,dash);
+    var tri=el('polygon',{points:(x-5)+','+(tipY+dir*9)+' '+(x+5)+','+(tipY+dir*9)+' '+x+','+tipY,fill:color});
+    p.appendChild(tri);
+    if(label) text(p,x,dir>0?tipY-7:tipY+15,label,color,11);
+  }
+  function tick(p,x,label,tall){
+    var h=tall?11:7;
+    line(p,x,AY-h,x,AY+h,'#b9b4a6',1);
+    text(p,x,AY+h+13,label,'#8d887a',11);
+  }
+  function clamp(v,lo,hi){return v<lo?lo:(v>hi?hi:v);}
+
+  function state(){
+    var p=+slider.value;
+    var conv=F>0;
+    var atF = conv && Math.abs(p-F)<0.5;
+    var q = atF ? Infinity : p*F/(p-F);
+    var m = atF ? NaN : -q/p;
+    var virt = !atF && q<0;
+    var am = Math.abs(m);
+    var size = am>1.03?'larger':(am<0.97?'smaller':'same size');
+    var desc;
+    if(atF) desc='No image forms';
+    else if(virt) desc='Virtual, upright, '+size;
+    else desc='Real, inverted, '+size;
+    return {p:p,q:q,m:m,conv:conv,atF:atF,virt:virt,am:am,size:size,desc:desc};
+  }
+
+  function drawLens(st){
+    while(lensScene.firstChild) lensScene.removeChild(lensScene.firstChild);
+    var g=lensScene;
+    line(g,15,AY,685,AY,'#ccc7ba',1);
+    var lens=el('ellipse',{cx:LCX,cy:AY,rx:8,ry:58,fill:'#f4ede0',stroke:'#c9a56a','stroke-width':1.5});
+    if(!st.conv){
+      lens.setAttribute('rx',5);
+      lens.setAttribute('fill','#eef1f6');
+      lens.setAttribute('stroke','#8fa4bd');
+    }
+    g.appendChild(lens);
+    tick(g,LCX-F*S,'F'); tick(g,LCX+F*S,'F');
+    tick(g,LCX-2*F*S,'2F',true); tick(g,LCX+2*F*S,'2F',true);
+
+    var ox=LCX-st.p*S;
+    arrow(g,ox,AY-OH,'#185fa5',null,'object');
+
+    if(st.atF){ text(g,LCX+150,AY-60,'no image, rays emerge parallel','#8d887a',12); return; }
+    var ix=LCX+st.q*S, off=false;
+    if(ix>682){ix=682;off=true;} if(ix<18){ix=18;off=true;}
+    var ih=clamp(st.m*OH,-62,62);
+    arrow(g,ix,AY-ih,'#c2610f',st.virt?'5 4':null,off?'image (off scale)':'image');
+  }
+
+  function drawMirror(st){
+    while(mirrorScene.firstChild) mirrorScene.removeChild(mirrorScene.firstChild);
+    var g=mirrorScene;
+    line(g,15,AY,692,AY,'#ccc7ba',1);
+    var d = st.conv
+      ? 'M '+(MX+14)+' '+(AY-58)+' Q '+(MX-16)+' '+AY+' '+(MX+14)+' '+(AY+58)
+      : 'M '+(MX-14)+' '+(AY-58)+' Q '+(MX+16)+' '+AY+' '+(MX-14)+' '+(AY+58);
+    g.appendChild(el('path',{d:d,fill:'none',stroke:st.conv?'#c9a56a':'#8fa4bd','stroke-width':3}));
+    text(g,MX+34,AY+4,'V','#8d887a',11);
+    tick(g,MX-F*S,'F');
+    tick(g,MX-2*F*S,'C',true);
+
+    var ox=MX-st.p*S;
+    arrow(g,ox,AY-OH,'#185fa5',null,'object');
+
+    if(st.atF){ text(g,MX-260,AY-60,'no image, rays emerge parallel','#8d887a',12); return; }
+    var ix = st.virt ? MX+Math.abs(st.q)*S : MX-st.q*S;
+    var off=false;
+    if(ix>688){ix=688;off=true;} if(ix<18){ix=18;off=true;}
+    var ih=clamp(st.m*OH,-62,62);
+    arrow(g,ix,AY-ih,'#c2610f',st.virt?'5 4':null,off?'image (off scale)':'image');
+    if(st.virt) text(g,690,AY+76,'behind the mirror','#8d887a',11,'end');
+  }
+
+  function pill(cls,txt){
+    var s=document.createElement('span');
+    s.className='pill '+cls; s.textContent=txt; readout.appendChild(s);
+  }
+
+  function render(){
+    var st=state();
+    pval.textContent=st.p;
+    drawLens(st); drawMirror(st);
+    verdict.textContent=st.desc;
+
+    readout.innerHTML='';
+    if(st.atF){
+      pill('num','p ÷ f = 1.00');
+      pill('num','rays emerge parallel');
+    } else {
+      pill(st.virt?'virtual':'real', st.virt?'virtual':'real');
+      pill(st.virt?'up':'inv', st.virt?'upright':'inverted');
+      pill('', st.size);
+      pill('num','p ÷ f = '+(st.p/Math.abs(F)).toFixed(2));
+      pill('num','q = '+(st.q>0?'+':'')+st.q.toFixed(1)+' cm');
+      pill('num','m = '+(st.m>0?'+':'')+st.m.toFixed(2));
+    }
+
+    var zi;
+    if(!st.conv) zi=-1;
+    else zi = st.p<F-0.5?0:(st.atF?1:(st.p<2*F-0.5?2:(st.p<2*F+0.5?3:4)));
+    zones.forEach(function(z,i){ z.className = (i===zi)?'zone on':'zone'; });
+    zoneStrip.className = st.conv?'zones':'zones off';
+
+    if(!st.conv){
+      callout.textContent='Diverging elements have no zones. Virtual, upright, minified at every distance, and the image is always squeezed between the element and F. If a board stem gives you a minus lens or a convex mirror and asks only what kind of image forms, the numbers are decoration.';
+      seesaw.textContent='';
+      return;
+    }
+    if(st.atF){
+      callout.textContent='The object is at F. Its share of the vergence budget is the whole budget, so nothing is left to converge the light. 1/q = 0, which means q is infinite. The stem may phrase this as "image at infinity."';
+      seesaw.textContent='';
+      return;
+    }
+    var texts={
+      0:'Object inside F. It demands more vergence than the lens has, so the account goes negative and the image goes virtual, on the object’s own side. This is the magnifying glass, the simple magnifier in low vision, and the direct ophthalmoscope.',
+      2:'Object between F and 2F. It takes more than half the budget, so less is left for the image, so the image sits far out and is therefore magnified. This is the condensing lens zone in indirect ophthalmoscopy.',
+      3:'Object at exactly 2F. Object and image split the budget evenly, 1/2f + 1/2f = 1/f, so they sit at equal distances and come out the same size. This is the symmetry point and the basis of the same-size method for finding focal length.',
+      4:'Object beyond 2F. It takes only a small share, the image pays most of the bill and lands close in, so the image is minified. This is the eye looking at the world, which is why the retinal image is inverted and small.'
+    };
+    callout.textContent=texts[zi]||'';
+    var far = Math.abs(st.q)>st.p ? 'image' : 'object';
+    var near = far==='image' ? 'object' : 'image';
+    if(Math.abs(Math.abs(st.q)-st.p)<0.6){
+      seesaw.textContent='Seesaw check: object at '+st.p+' cm, image at '+Math.abs(st.q).toFixed(0)+' cm. Equal distances, so equal size.';
+    } else {
+      seesaw.textContent='Seesaw check: object at '+st.p+' cm, image at '+Math.abs(st.q).toFixed(0)+' cm. The '+far+' is farther from the element, so the '+far+' is the bigger one and the '+near+' is the smaller.';
+    }
+  }
+
+  slider.addEventListener('input',render);
+  document.getElementById('elToggle').addEventListener('click',function(e){
+    var b=e.target.closest('.tbtn'); if(!b) return;
+    F=+b.getAttribute('data-f');
+    [].forEach.call(this.querySelectorAll('.tbtn'),function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    render();
+  });
+  render();
+
+  var QS=[
+    {q:'A concave mirror has a radius of curvature of 40 cm. An object is placed 30 cm in front of it. The image is:',
+     o:['Real, inverted, minified','Real, inverted, magnified','Virtual, upright, magnified','Real, upright, same size'],
+     a:1,
+     e:'f = R/2 = 20 cm, so C = 40 cm. The object at 30 cm sits between F and C, the real inverted magnified zone. Check: q = (30 × 20)/10 = +60 cm, m = −2. The stem hands you R, not f. Halving it first is the whole question. Option D is fabricated: real never travels with upright.'},
+    {q:'A convex lens with f = 20 cm has an object at 40 cm. The image is:',
+     o:['Real, inverted, same size','Virtual, upright, smaller','Real, inverted, larger','Virtual, magnified'],
+     a:0,
+     e:'p ÷ f = 40/20 = exactly 2, so the object is at 2F and the image lands at 2F on the far side. Equal distances means equal size. "Real, inverted, larger" is bait for reading 40 cm as merely close; "virtual, magnified" is the inside-F answer and requires p to be under 20 cm.'},
+    {q:'An object is placed 10 cm from a +5.00 D lens. The image formed is:',
+     o:['Real, inverted, 2× magnified','Virtual, upright, 2× magnified','Real, inverted, same size','Virtual, upright, 0.5× minified'],
+     a:1,
+     e:'f = 100/5.00 = 20 cm. p ÷ f = 0.5, under 1, so virtual, upright, larger. Check: q = −20 cm, m = +2. Option D is impossible: a converging element can never give a virtual minified image, that is diverging behaviour.'},
+    {q:'A convex mirror has a radius of curvature of 30 cm. An object sits 15 cm in front of it. The image is:',
+     o:['Real, inverted, minified','Virtual, upright, minified','Virtual, upright, magnified','Real, inverted, same size'],
+     a:1,
+     e:'Convex mirror means diverging, so the distances are decoration. Virtual, upright, minified at every object position, with the image always between the mirror and F. If you found yourself calculating here, you spent time you did not need to spend.'},
+    {q:'An object is placed exactly at the center of curvature of a concave mirror. The image is:',
+     o:['At F, real, inverted, minified','At C, real, inverted, same size','Behind the mirror, virtual, upright','No image forms'],
+     a:1,
+     e:'C sits at 2f, so this is the mirror wording of "object at 2F." Object and image split the vergence budget evenly, so the image returns to C at the same size, inverted, m = −1. Lens stems say 2F and mirror stems say C, but it is one landmark and one answer.'},
+    {q:'For a single converging lens with a real object, which image description is impossible at every object distance?',
+     o:['Real, inverted, magnified','Virtual, upright, magnified','Real, upright, magnified','Real, inverted, minified'],
+     a:2,
+     e:'Real always travels with inverted, and virtual always travels with upright. Any option pairing real with upright, or virtual with inverted, is fabricated and can be crossed out before you read the numbers. On a four-option stem this alone often halves the field.'}
+  ];
+
+  var qi=0, score=0, answered=false;
+  var qbody=document.getElementById('qbody'), acts=document.getElementById('acts');
+  var qcount=document.getElementById('qcount'), barfill=document.getElementById('barfill');
+  var scoretext=document.getElementById('scoretext');
+
+  function paintQ(){
+    answered=false;
+    var item=QS[qi];
+    qcount.textContent='Question '+(qi+1)+' of '+QS.length;
+    barfill.style.width=(qi/QS.length*100)+'%';
+    scoretext.textContent=score+' correct';
+    qbody.innerHTML='';
+    acts.innerHTML='';
+    var h=document.createElement('div'); h.className='qtext'; h.textContent=item.q; qbody.appendChild(h);
+    item.o.forEach(function(txt,i){
+      var b=document.createElement('button');
+      b.className='opt';
+      b.innerHTML='<span class="lab">'+'ABCD'[i]+'</span>';
+      b.appendChild(document.createTextNode(txt));
+      b.addEventListener('click',function(){ pick(i,b); });
+      qbody.appendChild(b);
+    });
+  }
+  function pick(i,btn){
+    if(answered) return;
+    answered=true;
+    var item=QS[qi];
+    var opts=qbody.querySelectorAll('.opt');
+    [].forEach.call(opts,function(o,j){
+      o.disabled=true;
+      if(j===item.a) o.classList.add('correct');
+      else if(j===i) o.classList.add('incorrect');
+    });
+    if(i===item.a) score++;
+    scoretext.textContent=score+' correct';
+    var fb=document.createElement('div');
+    fb.className='feedback '+(i===item.a?'good':'bad');
+    var tag=document.createElement('span');
+    tag.className='tag';
+    tag.textContent=(i===item.a?'Correct':'Not quite')+' · answer is '+'ABCD'[item.a];
+    fb.appendChild(tag);
+    fb.appendChild(document.createTextNode(item.e));
+    qbody.appendChild(fb);
+    var nx=document.createElement('button');
+    nx.className='nav';
+    nx.textContent=(qi===QS.length-1)?'See score':'Next';
+    nx.addEventListener('click',function(){
+      if(qi===QS.length-1) results(); else { qi++; paintQ(); }
+    });
+    acts.appendChild(nx);
+  }
+  function results(){
+    barfill.style.width='100%';
+    qcount.textContent='Finished';
+    qbody.innerHTML='';
+    acts.innerHTML='';
+    var d=document.createElement('div'); d.className='results';
+    var big=document.createElement('div'); big.className='big';
+    big.textContent=score+' / '+QS.length;
+    d.appendChild(big);
+    var p=document.createElement('p');
+    p.textContent = score===QS.length
+      ? 'Clean run. Move this to the solid pile and re-test in one week.'
+      : 'Re-read the zone strip above, then run it again. Any miss means the fast pick is not automatic yet.';
+    d.appendChild(p);
+    qbody.appendChild(d);
+    var again=document.createElement('button');
+    again.className='nav ghost';
+    again.textContent='Restart';
+    again.addEventListener('click',function(){ qi=0; score=0; paintQ(); });
+    acts.appendChild(again);
+  }
+  paintQ();
+})();
+</script>
+</body>
+</html>
