@@ -124,6 +124,13 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'H.optolawbook-drill', subject: 'H', type: 'interactive', label: 'Jurisprudence & Ethics — Law Drill',
     sub: 'Self-test on the law book digest',
     path: '/top2/H-Jurisprudence-and-Ethics/H-OPTOLAWBOOK-Law-Drill.html' },
+  // Per-topic strategy card from the 3-part-package workflow. G1 is the only topic that
+  // got one, and it was never wired up: 31 of its 35 sentences (ADME, the two-bucket
+  // sort) appear nowhere in G-Subject-Exam-Strategy, so it is unique content, not a
+  // superseded duplicate.
+  { id: 'G.g1-strategy', subject: 'G', type: 'strategy', label: 'Ocular Pharmacology — G1 Strategy',
+    sub: 'General pharmacology principles: rules, mnemonics and traps',
+    path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Strategy.html' },
 ]
 
 // App features (not static /top2 files) that are grantable like any other item.
