@@ -31,10 +31,13 @@ export default async function ReviewerPage() {
   const readinessItem = ITEM_BY_ID.get(READINESS_ITEM_ID)
   const showReadiness = !!readinessItem && can(readinessItem)
   const mocks = ITEMS.filter(i => i.subject === 'GLOBAL' && i.type === 'mock' && can(i))
+  // GLOBAL items only render if a section explicitly asks for their type, so a new
+  // cross-subject type needs a block here or it is gated correctly and shown nowhere.
+  const tools = ITEMS.filter(i => i.subject === 'GLOBAL' && i.type === 'tool' && can(i))
   const subjects = SUBJECTS
     .map(s => ({ s, items: ITEMS.filter(i => i.subject === s.code && can(i)) }))
     .filter(g => g.items.length > 0)
-  const nothing = mocks.length === 0 && subjects.length === 0
+  const nothing = mocks.length === 0 && tools.length === 0 && subjects.length === 0
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -76,6 +79,24 @@ export default async function ReviewerPage() {
                     {m.sub && <p className="text-xs text-teal-100 mt-0.5">{m.sub}</p>}
                   </div>
                   <span className="text-white text-lg">→</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {tools.length > 0 && (
+          <section className="mb-7">
+            <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Study tools</p>
+            <div className="grid gap-2 sm:grid-cols-2">
+              {tools.map(t => (
+                <a key={t.id} href={t.path}
+                  className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-4 py-3 hover:border-teal-300 transition-colors">
+                  <div>
+                    <p className="text-sm font-bold text-gray-900">{t.label}</p>
+                    {t.sub && <p className="text-xs text-gray-500 mt-0.5">{t.sub}</p>}
+                  </div>
+                  <span className="text-teal-600 text-lg">→</span>
                 </a>
               ))}
             </div>

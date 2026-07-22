@@ -4,9 +4,12 @@
 
 export type ItemType =
   | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'mock' | 'interactive' | 'feature'
+  | 'tool'
 
-// The five per-subject content types (everything except the global mocks, interactives, and features).
-type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature'>
+// The five per-subject content types (everything except the global mocks, interactives,
+// features, and tools). Every new cross-subject type MUST be added to this Exclude, or
+// the Record<SubjectItemType, …> maps below stop being exhaustive and tsc fails.
+type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature' | 'tool'>
 
 export type Item = {
   id: string          // stable ID, e.g. "A.exam", "mock.set2"
@@ -85,6 +88,20 @@ const MOCK_ITEMS: Item[] = [
     sub: 'Full 1000-item weighted paper drawn from the reviewer banks', path: '/top2/00-Master-Index/OLE-Mock-Board-Reviewer.html' },
 ]
 
+// Cross-subject study tools: static /top2 pages that belong to no single subject. They
+// were linked from the static index for months but absent from here, so they worked for
+// admin (who bypasses the gate) and were invisible to everyone else, including from this
+// manifest-driven cockpit. Distinct from 'feature', which is for app routes like
+// /readiness that gate themselves rather than going through the /top2 middleware.
+const TOOL_ITEMS: Item[] = [
+  { id: 'tool.progress-tracker', subject: 'GLOBAL', type: 'tool', label: 'Progress Tracker',
+    sub: 'Log exam scores against the 75% line across all 8 areas',
+    path: '/top2/00-Master-Index/Progress-Tracker.html' },
+  { id: 'tool.study-plans', subject: 'GLOBAL', type: 'tool', label: 'Study Plans',
+    sub: 'Paced, burnout-aware schedule through Sept 28',
+    path: '/top2/00-Master-Index/Study-Plans.html' },
+]
+
 // Visual interactives (grouped under their subject). Grantable like any other item.
 const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.A2-07-Visual-Pathway-Interactive', subject: 'A', type: 'interactive', label: 'A2 07 Visual Pathway', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-07-Visual-Pathway-Interactive.html' },
@@ -152,7 +169,8 @@ const FEATURE_ITEMS: Item[] = [
 ]
 
 export const ITEMS: Item[] = [
-  ...SUBJECT_ITEMS, ...EXTRA_SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...FEATURE_ITEMS,
+  ...SUBJECT_ITEMS, ...EXTRA_SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...TOOL_ITEMS,
+  ...FEATURE_ITEMS,
 ]
 export const ITEM_BY_PATH = new Map<string, Item>(ITEMS.map(i => [i.path, i]))
 export const ITEM_BY_ID = new Map<string, Item>(ITEMS.map(i => [i.id, i]))
