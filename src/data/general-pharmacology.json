@@ -234,7 +234,7 @@
    "High intrinsic activity",
    "Submaximal activity",
    "Negative intrinsic activity",
-   "Zero intrinsic activity \u2014 it blocks the agonist but has no effect alone"
+   "Zero intrinsic activity — it blocks the agonist but has no effect alone"
   ],
   "correct": 3,
   "explanation": "An antagonist has affinity but ZERO intrinsic activity: it blocks agonist binding and has no effect alone. An inverse agonist has NEGATIVE intrinsic activity."
@@ -687,9 +687,9 @@
   "type": "mcq",
   "stem": "M2 muscarinic receptors, found at the SA and AV nodes, act through which pathway to slow the heart?",
   "options": [
-   "Gq \u2192 phospholipase C",
-   "Gi \u2192 inhibit adenylyl cyclase \u2192 decrease cAMP",
-   "Gs \u2192 increase cAMP",
+   "Gq → phospholipase C",
+   "Gi → inhibit adenylyl cyclase → decrease cAMP",
+   "Gs → increase cAMP",
    "Direct ion channel only"
   ],
   "correct": 1,
@@ -1222,5 +1222,1520 @@
   ],
   "correct": 1,
   "explanation": "Reserpine is a pre-ganglionic adrenergic blocker that depletes norepinephrine by inhibiting its storage and release."
+ },
+ {
+  "type": "mcq",
+  "stem": "Activation of this ocular receptor leads to mydriasis:",
+  "options": [
+   "a1",
+   "a2",
+   "b2",
+   "M3"
+  ],
+  "correct": 0,
+  "explanation": "Alpha-1 (a1) receptors on the iris dilator muscle cause mydriasis (pupil dilation) when activated."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ocular location of alpha-1 receptor, EXCEPT:",
+  "options": [
+   "Trabecular meshwork",
+   "Anterior uveal vasculature",
+   "Muller's smooth muscle",
+   "Ciliary process"
+  ],
+  "correct": 3,
+  "explanation": "Alpha-1 receptors are found in the trabecular meshwork, anterior uveal vasculature, and Muller's smooth muscle. The ciliary process is not a primary alpha-1 site."
+ },
+ {
+  "type": "mcq",
+  "stem": "All of the following adrenergic receptors may interact with adenylyl cyclase, EXCEPT;",
+  "options": [
+   "alpha-1",
+   "beta-2",
+   "alpha-2",
+   "beta-1"
+  ],
+  "correct": 0,
+  "explanation": "Alpha-1 receptors act via phospholipase C (PLC), not adenylyl cyclase. Beta receptors stimulate adenylyl cyclase; alpha-2 inhibits it."
+ },
+ {
+  "type": "mcq",
+  "stem": "It is involved in the voluntary control of functions such as contraction of the skeletal muscles essential for locomotion.",
+  "options": [
+   "Autonomic Nervous system",
+   "Somatic Nervous system",
+   "Central Nervous system",
+   "Peripheral Nervous system",
+   "Nervous system"
+  ],
+  "correct": 1,
+  "explanation": "The somatic nervous system controls voluntary skeletal muscle movement for locomotion."
+ },
+ {
+  "type": "mcq",
+  "stem": "Activation of the M3 receptors in the eyes leads to, EXCEPT;",
+  "options": [
+   "miosis",
+   "cycloplegia",
+   "accomodation",
+   "opening of trabecula"
+  ],
+  "correct": 1,
+  "explanation": "M3 muscarinic activation causes miosis, accommodation, and opening of the trabecular meshwork. It produces accommodation, not cycloplegia (which is paralysis of accommodation)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is not a characteristic of the cholinergic NS?",
+  "options": [
+   "Ganglia close to or within the organ innervated",
+   "Ach is the NT for postganglionic neurotransmission",
+   "Ach is the NT at parasympathetic ganglia",
+   "Long unmyelinated postganglionic neurons"
+  ],
+  "correct": 3,
+  "explanation": "Cholinergic (parasympathetic) postganglionic neurons are short, not long unmyelinated. The other three are true characteristics."
+ },
+ {
+  "type": "mcq",
+  "stem": "It includes neurons located outside the brain and spinal cord.",
+  "options": [
+   "Nervous system",
+   "Central Nervous system",
+   "Peripheral Nervous system",
+   "Somatic Nervous system",
+   "Autonomic Nervous system"
+  ],
+  "correct": 2,
+  "explanation": "The peripheral nervous system consists of neurons located outside the brain and spinal cord."
+ },
+ {
+  "type": "mcq",
+  "stem": "Activation of this ocular receptor leads to the production of cAMP; I. a1 receptors II. a2 receptors III. b2 receptors IV. M3 receptors",
+  "options": [
+   "I only",
+   "I and II",
+   "III only",
+   "III and IV"
+  ],
+  "correct": 2,
+  "explanation": "Beta-2 (b2) receptors stimulate adenylyl cyclase to produce cAMP. Alpha-2 inhibits cAMP; alpha-1 and M3 act via the PLC pathway."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following adrenergic receptors results in the activation of adenylyl cyclase as the major component of its signal transduction process? I. Alpha-1 receptor II. Alpha-2 receptor III. Beta-1 receptor IV. Beta-2 receptor",
+  "options": [
+   "IV only",
+   "I and III",
+   "I and II",
+   "III and IV"
+  ],
+  "correct": 3,
+  "explanation": "Both beta-1 and beta-2 receptors couple to Gs and stimulate adenylyl cyclase, raising cAMP."
+ },
+ {
+  "type": "mcq",
+  "stem": "Activation of these ocular receptor/s leads to reduced IOP: I. alpha-1 II. alpha-2 III. beta-2 IV. muscarinic-3",
+  "options": [
+   "I, II, IV",
+   "I, III, IV",
+   "I, II, III",
+   "I and II"
+  ],
+  "correct": 0,
+  "explanation": "Alpha-1, alpha-2, and muscarinic-3 activation lower IOP. Beta-2 activation increases aqueous production (beta blockers lower IOP), so III is excluded."
+ },
+ {
+  "type": "mcq",
+  "stem": "The sympathetic NS is characterized by all of the following, EXCEPT: I. The NT for preganglionic neurons is Ach II. Postganglionic neurons are longer III. It involves fight/flight response IV. Never discharge as a complete",
+  "options": [
+   "I, II, III",
+   "IV only",
+   "II, IV",
+   "I, II"
+  ],
+  "correct": 1,
+  "explanation": "The sympathetic NS CAN discharge as a complete unit (mass response), so statement IV is the exception. The other three statements are correct."
+ },
+ {
+  "type": "mcq",
+  "stem": "Stimulation of presynaptic alpha-2 adrenoceptors on postganglionic sympathetic neurons causes the following:",
+  "options": [
+   "Inhibition of NE release",
+   "Stimulation of EPI release",
+   "Stimulation of NE release",
+   "Inhibition of Ach release"
+  ],
+  "correct": 0,
+  "explanation": "Presynaptic alpha-2 receptors provide negative feedback, inhibiting further norepinephrine (NE) release."
+ },
+ {
+  "type": "mcq",
+  "stem": "Nicotinic receptors are found in these ocular muscles;",
+  "options": [
+   "ciliary muscle",
+   "brucke's muscle",
+   "muller's muscle",
+   "extraocular muscle"
+  ],
+  "correct": 3,
+  "explanation": "Nicotinic receptors are found at the neuromuscular junction of skeletal muscle, including the extraocular muscles."
+ },
+ {
+  "type": "mcq",
+  "stem": "It is composed of the brain and spinal cord.",
+  "options": [
+   "Somatic Nervous system",
+   "Central Nervous system",
+   "Autonomic Nervous system",
+   "Peripheral Nervous system",
+   "Nervous system"
+  ],
+  "correct": 1,
+  "explanation": "The central nervous system is composed of the brain and spinal cord."
+ },
+ {
+  "type": "mcq",
+  "stem": "It regulates the everyday requirements of vital bodily functions without the conscious participation of the mind.",
+  "options": [
+   "Central Nervous system",
+   "Nervous system",
+   "Autonomic Nervous system",
+   "Peripheral Nervous system",
+   "Somatic Nervous system"
+  ],
+  "correct": 2,
+  "explanation": "The autonomic nervous system regulates involuntary vital functions without conscious control."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following signal transduction processes can be used by muscarinic cholinergic receptors?",
+  "options": [
+   "Activation of PLC",
+   "Stimulation of guanylyl cyclase",
+   "Stimulation of adenylyl cyclase",
+   "Decrease IP3, DAG"
+  ],
+  "correct": 0,
+  "explanation": "M1/M3 muscarinic receptors couple to Gq, activating phospholipase C (PLC) to increase IP3 and DAG."
+ },
+ {
+  "type": "mcq",
+  "stem": "This corticosteroid readily penetrates the airway mucosa but has very short half-lives after it enters the blood, so systemic effects and toxicity are greatly reduced;",
+  "options": [
+   "prednisolone",
+   "cortisone",
+   "dexamethasone",
+   "budesonide"
+  ],
+  "correct": 3,
+  "explanation": "Budesonide has high airway retention but is rapidly cleared systemically (high first-pass metabolism), minimizing systemic toxicity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ocular effects of glucocorticoids, EXCEPT;",
+  "options": [
+   "Inflammation",
+   "Inhibit collagen activity",
+   "Blepharoptosis",
+   "Mydriasis"
+  ],
+  "correct": 0,
+  "explanation": "Glucocorticoids suppress inflammation rather than cause it. They can inhibit collagen activity, cause blepharoptosis, and mydriasis."
+ },
+ {
+  "type": "mcq",
+  "stem": "This NSAID has decreased risk of peptic ulcer disease (PUD) but associated with increased risk of acute thrombotic event;",
+  "options": [
+   "naproxen",
+   "mefenamic acid",
+   "aspirin",
+   "celecoxib"
+  ],
+  "correct": 3,
+  "explanation": "Celecoxib is a selective COX-2 inhibitor, sparing the GI tract (less PUD) but increasing cardiovascular/thrombotic risk."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most important long-term side effect of NSAIDs;",
+  "options": [
+   "peptic ulcer",
+   "fluid retention",
+   "tinnitus"
+  ],
+  "correct": 0,
+  "explanation": "Chronic NSAID use most importantly causes peptic ulcer disease from COX-1 inhibition of protective gastric prostaglandins."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which antihistamine is the preferred for pilot?",
+  "options": [
+   "cetirizine",
+   "diphenhydramine",
+   "meclizine",
+   "fexofenadine"
+  ],
+  "correct": 3,
+  "explanation": "Fexofenadine is a non-sedating second-generation antihistamine that does not penetrate the CNS, making it suitable for pilots."
+ },
+ {
+  "type": "mcq",
+  "stem": "The COX expressed in activated lymphocytes, polymorphonuclear cells, and other inflammatory cells;",
+  "options": [
+   "COX-3",
+   "COX-2",
+   "COX-1",
+   "COX-4"
+  ],
+  "correct": 1,
+  "explanation": "COX-2 is the inducible isoform expressed in inflammatory cells during inflammation."
+ },
+ {
+  "type": "mcq",
+  "stem": "A natural vasodilator that maintains patency of the ductus arteriosus during fetal development involved in the ripening of the cervix at term;",
+  "options": [
+   "PGE1",
+   "PGF2a",
+   "TXA2",
+   "PGE2"
+  ],
+  "correct": 3,
+  "explanation": "PGE2 maintains ductus arteriosus patency in the fetus and ripens the cervix at term."
+ },
+ {
+  "type": "mcq",
+  "stem": "The only NSAID classified as irreversible and nonselective COX inhibitor;",
+  "options": [
+   "aspirin",
+   "mefenamic acid",
+   "ibuprofen",
+   "celecoxib"
+  ],
+  "correct": 0,
+  "explanation": "Aspirin irreversibly acetylates both COX-1 and COX-2 (nonselective); other NSAIDs are reversible inhibitors."
+ },
+ {
+  "type": "mcq",
+  "stem": "COX-1 is; I. inducible II. constitutive III. causing inflammation IV. housekeeping",
+  "options": [
+   "II and IV",
+   "II and III",
+   "I and II",
+   "I and III"
+  ],
+  "correct": 0,
+  "explanation": "COX-1 is constitutive (always present) and performs housekeeping functions such as gastric protection. COX-2 is the inducible, inflammation-causing isoform."
+ },
+ {
+  "type": "mcq",
+  "stem": "The physiologic antagonist of histamine and serves as the first-line agent for anaphylactic shock;",
+  "options": [
+   "diphenhydramine",
+   "cromolyn",
+   "loratadine",
+   "epinephrine"
+  ],
+  "correct": 3,
+  "explanation": "Epinephrine physiologically opposes histamine's effects (vasoconstriction, bronchodilation) and is first-line for anaphylaxis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Allergy, redness due to vasodilation, and bronchospasm are mediated by histamine binding to what histamine receptor?",
+  "options": [
+   "H4",
+   "H1",
+   "H3",
+   "H2"
+  ],
+  "correct": 1,
+  "explanation": "H1 receptors mediate allergic responses: vasodilation, increased vascular permeability, and bronchoconstriction."
+ },
+ {
+  "type": "mcq",
+  "stem": "All NSAIDs are known to cause these important pharmacologic effects, EXCEPT;",
+  "options": [
+   "antiplatelet",
+   "anti-inflammatory",
+   "analgesic",
+   "antipyretic"
+  ],
+  "correct": 0,
+  "explanation": "NSAIDs are analgesic, antipyretic, and anti-inflammatory. Only aspirin has a clinically significant irreversible antiplatelet effect, so antiplatelet is not common to all NSAIDs."
+ },
+ {
+  "type": "mcq",
+  "stem": "The hormones secreted from the zona fasciculata of the adrenal cortex;",
+  "options": [
+   "mineralocorticoid",
+   "cathecolamines",
+   "CRH",
+   "glucocorticoids"
+  ],
+  "correct": 3,
+  "explanation": "The zona fasciculata secretes glucocorticoids (cortisol). The zona glomerulosa makes mineralocorticoids; the medulla makes catecholamines."
+ },
+ {
+  "type": "mcq",
+  "stem": "The NSAID associated to causing Reye's syndrome when given to children with fever caused by viral illnesses like influenza or chickenpox;",
+  "options": [
+   "indomethacin",
+   "aspirin",
+   "phenylbutazone",
+   "ketorolac"
+  ],
+  "correct": 1,
+  "explanation": "Aspirin is linked to Reye's syndrome (encephalopathy and liver damage) in children with viral illness, so it is avoided in pediatric fever."
+ },
+ {
+  "type": "mcq",
+  "stem": "True about antihistamine; I. 1st gen agents are sedating II. 2nd gen agents are less/true non-sedating III. 1st gen agents can penetrate the CNS IV. 2nd gen agents are less lipid-soluble",
+  "options": [
+   "I, II, III and IV",
+   "I and III",
+   "I, II, and IV",
+   "II and IV"
+  ],
+  "correct": 0,
+  "explanation": "All four statements are correct: first-gen antihistamines are lipid-soluble, cross the CNS, and sedate; second-gen agents are less lipid-soluble and non-sedating."
+ },
+ {
+  "type": "mcq",
+  "stem": "The only non-acidic NSAID that is a ketone prodrug and metabolized to the acidic active drug;",
+  "options": [
+   "aspirin",
+   "ketorolac",
+   "ibuprofen",
+   "nabumetone"
+  ],
+  "correct": 3,
+  "explanation": "Nabumetone is a non-acidic ketone prodrug converted in the liver to its active acidic metabolite (6-MNA)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ocular clinical uses of corticosteroids, EXCEPT;",
+  "options": [
+   "cataract",
+   "conjunctival disease",
+   "eyelids diseases",
+   "scleritis"
+  ],
+  "correct": 0,
+  "explanation": "Corticosteroids can cause cataract (a side effect), not treat it. They are used for conjunctival disease, eyelid disease, and scleritis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Route of administration in posterior segment diseases (optic neuritis, posterior scleritis), EXCEPT;",
+  "options": [
+   "topical",
+   "intravitreal",
+   "periocular",
+   "systemic"
+  ],
+  "correct": 0,
+  "explanation": "Topical drops penetrate poorly to the posterior segment. Intravitreal, periocular, and systemic routes are used for posterior segment disease."
+ },
+ {
+  "type": "mcq",
+  "stem": "This NSAID has greater analgesic effectiveness, however, its use should be restricted to 72 h because of the risk of GI and renal damage with longer administration;",
+  "options": [
+   "phenylbutazone",
+   "aspirin",
+   "indomethacin",
+   "ketorolac"
+  ],
+  "correct": 3,
+  "explanation": "Ketorolac is a potent analgesic NSAID limited to short-term use (up to ~5 days; parenteral often 72 h) due to GI and renal toxicity."
+ },
+ {
+  "type": "mcq",
+  "stem": "The prostaglandin that is known to reduce intraocular pressure;",
+  "options": [
+   "PGF2a",
+   "TXA2",
+   "PGE2",
+   "PGI2"
+  ],
+  "correct": 0,
+  "explanation": "PGF2-alpha (and its analogs like latanoprost) lowers IOP by increasing uveoscleral outflow."
+ },
+ {
+  "type": "mcq",
+  "stem": "Montelukast and zafirlukast work by;",
+  "options": [
+   "inhibiting LOX",
+   "inhibiting COX",
+   "inhibiting PLA2",
+   "inhibiting LT receptors"
+  ],
+  "correct": 3,
+  "explanation": "Montelukast and zafirlukast are leukotriene (LT) receptor antagonists used in asthma."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most important dose-dependent side effect of paracetamol;",
+  "options": [
+   "nephrotoxicity",
+   "hepatotoxicity",
+   "peptic ulcer",
+   "cardiotoxicity"
+  ],
+  "correct": 1,
+  "explanation": "Paracetamol (acetaminophen) overdose causes dose-dependent hepatotoxicity via the toxic metabolite NAPQI."
+ },
+ {
+  "type": "mcq",
+  "stem": "The antihistamine with most sedating and has significant anticholinergic effects;",
+  "options": [
+   "piperazines",
+   "alkylamines",
+   "ethanolamines",
+   "phenothiazines"
+  ],
+  "correct": 2,
+  "explanation": "Ethanolamines (e.g., diphenhydramine) are the most sedating first-generation antihistamines and have strong anticholinergic effects."
+ },
+ {
+  "type": "mcq",
+  "stem": "The biochemical mechanisms underlying the anti-inflammatory effect of corticosteroids include the induced synthesis of an inhibitor of;",
+  "options": [
+   "PLA2",
+   "LT receptor",
+   "COX",
+   "LOX"
+  ],
+  "correct": 0,
+  "explanation": "Corticosteroids induce lipocortin (annexin A1), which inhibits phospholipase A2 (PLA2), blocking arachidonic acid release."
+ },
+ {
+  "type": "mcq",
+  "stem": "True about Paracetamol; I. an NSAID II. has analgesic effect III. has anti-inflammatory effect IV. has antipyretic effect",
+  "options": [
+   "II and IV",
+   "I and III",
+   "II and III",
+   "I and II"
+  ],
+  "correct": 0,
+  "explanation": "Paracetamol is analgesic and antipyretic but has weak anti-inflammatory action and is not classified as a true NSAID."
+ },
+ {
+  "type": "mcq",
+  "stem": "Characteristics of non-dihydropyridine calcium channel blockers, EXCEPT;",
+  "options": [
+   "cardioselective",
+   "depressant effect on the heart",
+   "vasoselective",
+   "includes verapamil and diltiazem"
+  ],
+  "correct": 2,
+  "explanation": "Non-dihydropyridines (verapamil, diltiazem) are cardioselective and depress the heart. They are not vasoselective; the dihydropyridines (amlodipine, nifedipine) are the vasoselective group."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most serious toxicity of this vasodilator is related to accumulation of cyanide;",
+  "options": [
+   "Diazoxide",
+   "Hydralazine",
+   "Sodium nitroprusside",
+   "Minoxidil"
+  ],
+  "correct": 2,
+  "explanation": "Sodium nitroprusside is metabolized to cyanide, which can accumulate and cause toxicity, especially with prolonged infusion."
+ },
+ {
+  "type": "mcq",
+  "stem": "These antihypertensives have a particularly useful role in treating patients with chronic kidney disease:",
+  "options": [
+   "ACE inhibitors",
+   "Diuretics",
+   "B blockers",
+   "Calcium channel blockers"
+  ],
+  "correct": 0,
+  "explanation": "ACE inhibitors reduce intraglomerular pressure and proteinuria, making them renoprotective in chronic kidney disease."
+ },
+ {
+  "type": "mcq",
+  "stem": "What is the most probable mechanism of vasodilation by NO?",
+  "options": [
+   "Elevation of IP3, therefore, relaxing the vascular smooth muscle",
+   "Elevation of cAMP, therefore, relaxing the vascular smooth muscle",
+   "Elevation of cGMP, therefore, relaxing the vascular smooth muscle"
+  ],
+  "correct": 2,
+  "explanation": "Nitric oxide activates guanylyl cyclase, raising cGMP, which relaxes vascular smooth muscle."
+ },
+ {
+  "type": "mcq",
+  "stem": "Diuretics that increase urine volume by altering sodium excretion are technically known as:",
+  "options": [
+   "Aquaretics",
+   "Diuretics",
+   "Cholinergics",
+   "Natriuretics"
+  ],
+  "correct": 3,
+  "explanation": "Natriuretics increase urine volume specifically by increasing sodium excretion. Aquaretics increase water excretion without sodium loss."
+ },
+ {
+  "type": "mcq",
+  "stem": "Goku presents with a prescription for high BP. You told the patient that he can't take the drug because it will aggravate asthma attack. The prescription could have been:",
+  "options": [
+   "Propranolol",
+   "Verapamil",
+   "Losartan",
+   "Sodium nitroprusside"
+  ],
+  "correct": 0,
+  "explanation": "Propranolol is a non-selective beta blocker; blocking beta-2 receptors causes bronchoconstriction, worsening asthma."
+ },
+ {
+  "type": "mcq",
+  "stem": "Itachi, a hypertensive, complains that his medication makes his heart beats faster and causes swelling of his feet. He also observed that his beard grows twice faster than before. You suspected that the patient have taken:",
+  "options": [
+   "Minoxidil",
+   "Hydralazine",
+   "Bepridil",
+   "Sodium nitroprusside"
+  ],
+  "correct": 0,
+  "explanation": "Minoxidil causes reflex tachycardia, fluid retention (edema), and hypertrichosis (increased hair growth)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following side effects is/are common to the following drugs: hydralazine, diazoxide, and minoxidil?",
+  "options": [
+   "Lupus-like side effect",
+   "Hypertrichosis",
+   "Reflex tachycardia",
+   "Glucose intolerance"
+  ],
+  "correct": 2,
+  "explanation": "All three are arteriolar vasodilators, so they share reflex tachycardia (baroreceptor-mediated). The other effects are drug-specific."
+ },
+ {
+  "type": "mcq",
+  "stem": "High Angiotensin II level increases the systemic vascular resistance thus elevates blood pressure. The effect of angiotensin II can be antagonized by receptor inhibition. Which agent could cause this action?",
+  "options": [
+   "Metoprolol",
+   "Captopril",
+   "Nifedipine",
+   "Losartan"
+  ],
+  "correct": 3,
+  "explanation": "Losartan is an angiotensin II receptor blocker (ARB), directly antagonizing the AT1 receptor. Captopril inhibits the enzyme, not the receptor."
+ },
+ {
+  "type": "mcq",
+  "stem": "A diuretic that reduces Intracranial Pressure and Intraocular pressure:",
+  "options": [
+   "Mannitol",
+   "Furosemide",
+   "HCTZ",
+   "Vasopressin"
+  ],
+  "correct": 0,
+  "explanation": "Mannitol is an osmotic diuretic that draws fluid out of tissues, lowering both intracranial and intraocular pressure."
+ },
+ {
+  "type": "mcq",
+  "stem": "A CCB that is selective to the L-type calcium channel inhibition in the heart:",
+  "options": [
+   "Felodipine",
+   "Verapamil",
+   "Amlodipine",
+   "Nifedipine"
+  ],
+  "correct": 1,
+  "explanation": "Verapamil (a non-dihydropyridine) preferentially blocks cardiac L-type calcium channels, affecting rate and conduction."
+ },
+ {
+  "type": "mcq",
+  "stem": "All of the following agents are pure arteriolar vasodilators, EXCEPT:",
+  "options": [
+   "Sodium Nitroprusside",
+   "Hydralazine",
+   "Minoxidil",
+   "Diazoxide"
+  ],
+  "correct": 0,
+  "explanation": "Sodium nitroprusside dilates both arterioles and veins (mixed). Hydralazine, minoxidil, and diazoxide are pure arteriolar dilators."
+ },
+ {
+  "type": "mcq",
+  "stem": "This arteriolar vasodilator can cause hyperglycemia due to its inhibition of insulin release.",
+  "options": [
+   "Diazoxide",
+   "Nitrates",
+   "Minoxidil",
+   "Hydralazine"
+  ],
+  "correct": 0,
+  "explanation": "Diazoxide opens K-ATP channels in pancreatic beta cells, inhibiting insulin release and causing hyperglycemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "High-ceiling diuretics are:",
+  "options": [
+   "Loop diuretics",
+   "Potassium-sparing diuretics",
+   "Thiazide diuretics",
+   "Osmotic diuretics"
+  ],
+  "correct": 0,
+  "explanation": "Loop diuretics are called high-ceiling because they produce the greatest diuresis (up to ~25% of filtered sodium)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Hydrochlorothiazide is known to produce all of the following, EXCEPT:",
+  "options": [
+   "Hyperlipidemia",
+   "Hyperuricemia",
+   "Hyperglycemia",
+   "Hypocalcemia"
+  ],
+  "correct": 3,
+  "explanation": "Thiazides cause hyperCALCEMIA (they increase calcium reabsorption), not hypocalcemia. They do cause hyperlipidemia, hyperuricemia, and hyperglycemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "An antihypertensive agent that is clinically useful and safe for hypertensive, pregnant women:",
+  "options": [
+   "Methyldopa",
+   "Captopril",
+   "Losartan",
+   "Furosemide"
+  ],
+  "correct": 0,
+  "explanation": "Methyldopa is the classic safe antihypertensive in pregnancy. ACE inhibitors and ARBs are teratogenic and contraindicated."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dry cough is a side effect of which antihypertensive?",
+  "options": [
+   "ARBs",
+   "B-blockers",
+   "ACE inhibitors",
+   "CCBs"
+  ],
+  "correct": 2,
+  "explanation": "ACE inhibitors cause dry cough due to bradykinin accumulation. ARBs do not, and are used as an alternative."
+ },
+ {
+  "type": "mcq",
+  "stem": "The formula for blood pressure is:",
+  "options": [
+   "BP = CO - SVR",
+   "BP = CO + SVR",
+   "BP = CO x SVR",
+   "BP = CO/SVR"
+  ],
+  "correct": 2,
+  "explanation": "Blood pressure equals cardiac output multiplied by systemic vascular resistance (BP = CO x SVR)."
+ },
+ {
+  "type": "mcq",
+  "stem": "One of the common adverse effects of hydralazine:",
+  "options": [
+   "Bradycardia",
+   "Lupus like syndrome",
+   "Atherosclerosis",
+   "Hyperglycemia"
+  ],
+  "correct": 1,
+  "explanation": "Hydralazine can cause a drug-induced lupus-like syndrome, especially in slow acetylators."
+ },
+ {
+  "type": "mcq",
+  "stem": "What is the rationale behind the combination of spironolactone and hydrochlorothiazide?",
+  "options": [
+   "Minimize bicarbonaturia",
+   "Reduce risk of hypokalemia",
+   "Minimize hyperglycemia",
+   "Reduce risk of renal stone formation"
+  ],
+  "correct": 1,
+  "explanation": "Thiazides cause potassium loss; adding potassium-sparing spironolactone offsets this and reduces the risk of hypokalemia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which vasodilator can be used during hypertensive emergencies in pregnant women?",
+  "options": [
+   "Diazoxide",
+   "Sodium nitroprusside",
+   "Hydralazine",
+   "Minoxidil"
+  ],
+  "correct": 2,
+  "explanation": "IV hydralazine is a first-line vasodilator for hypertensive emergencies in pregnancy. Nitroprusside risks fetal cyanide toxicity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Emtricitabine is an antiviral drug classified as:",
+  "options": [
+   "NRTI",
+   "NNRTI",
+   "PI",
+   "II"
+  ],
+  "correct": 0,
+  "explanation": "Emtricitabine is a nucleoside reverse transcriptase inhibitor (NRTI) used in HIV therapy."
+ },
+ {
+  "type": "mcq",
+  "stem": "The antifungal treatment of choice for systemic Aspergillus infections:",
+  "options": [
+   "Fluconazole",
+   "Ketoconazole",
+   "Voriconazole",
+   "Itraconazole"
+  ],
+  "correct": 2,
+  "explanation": "Voriconazole is first-line for invasive aspergillosis."
+ },
+ {
+  "type": "mcq",
+  "stem": "The antifungal treatment of choice for the management of severe fungal infections.",
+  "options": [
+   "Voriconazole",
+   "Caspofungin",
+   "Flucytosine",
+   "Amphotericin B"
+  ],
+  "correct": 3,
+  "explanation": "Amphotericin B is the broad-spectrum agent reserved for severe, life-threatening systemic fungal infections."
+ },
+ {
+  "type": "mcq",
+  "stem": "Ocular toxoplasmosis can be treated with the following, EXCEPT;",
+  "options": [
+   "Pyrimethamine",
+   "Clindamycin",
+   "Steroids",
+   "Ciprofloxacin"
+  ],
+  "correct": 3,
+  "explanation": "Toxoplasmosis is treated with pyrimethamine, clindamycin, and steroids (for inflammation). Ciprofloxacin is an antibacterial with no antiprotozoal role here."
+ },
+ {
+  "type": "mcq",
+  "stem": "A prophylactic agent for ophthalmia neonatorum;",
+  "options": [
+   "Erythromycin",
+   "Gentamicin",
+   "Ciprofloxacin",
+   "Polymyxin B"
+  ],
+  "correct": 0,
+  "explanation": "Erythromycin 0.5% ophthalmic ointment is the standard prophylaxis for ophthalmia neonatorum."
+ },
+ {
+  "type": "mcq",
+  "stem": "A topical administered antiviral for HSV keratitis and keratoconjunctivitis;",
+  "options": [
+   "Trifluridine",
+   "Acyclovir",
+   "Famciclovir",
+   "Valacyclovir"
+  ],
+  "correct": 0,
+  "explanation": "Trifluridine is a topical ophthalmic antiviral for herpes simplex keratitis and keratoconjunctivitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Piperacillin, a carboxypenicillin, has additional greater activity against gram-negative bacteria and have the special advantage of activity against:",
+  "options": [
+   "Staphylococcus aureus",
+   "Bacillus subtilis",
+   "Streptococcus pneumoniae",
+   "Pseudomonas aeruginosa"
+  ],
+  "correct": 3,
+  "explanation": "Piperacillin (an antipseudomonal penicillin) is notable for activity against Pseudomonas aeruginosa."
+ },
+ {
+  "type": "mcq",
+  "stem": "MRSA is a developed antimicrobial resistance known worldwide. MRSA is an issue to what group of penicillins?",
+  "options": [
+   "Carboxypenicillin",
+   "Isoxazolylpenicillin",
+   "Aminopenicillin",
+   "Ureidopenicillin"
+  ],
+  "correct": 1,
+  "explanation": "MRSA is resistant to the isoxazolyl (antistaphylococcal) penicillins such as methicillin, oxacillin, and cloxacillin."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bacitracin is a cyclic polypeptide antibiotic that prevents:",
+  "options": [
+   "Decarboxylation of the phospholipid that carries the peptidoglycan subunit",
+   "Dephosphorylation of the phospholipid that carries the peptidoglycan subunit",
+   "Phosphorylation of the phospholipid that carries the peptidoglycan subunit",
+   "Carboxylation of the phospholipid that carries the peptidoglycan subunit"
+  ],
+  "correct": 1,
+  "explanation": "Bacitracin blocks dephosphorylation of the lipid carrier (bactoprenol pyrophosphate), halting cell wall synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Drugs that act on the 50S Subunit, EXCEPT:",
+  "options": [
+   "Gentamicin",
+   "Azithromycin",
+   "Chloramphenicol",
+   "Linezolid"
+  ],
+  "correct": 0,
+  "explanation": "Gentamicin (an aminoglycoside) acts on the 30S subunit. Azithromycin, chloramphenicol, and linezolid act on the 50S subunit."
+ },
+ {
+  "type": "mcq",
+  "stem": "Tetracycline prophylaxis for leptospirosis and malaria:",
+  "options": [
+   "Doxycycline",
+   "Chlortetracycline",
+   "Minocycline",
+   "Demeclocycline"
+  ],
+  "correct": 0,
+  "explanation": "Doxycycline is used for prophylaxis of leptospirosis and malaria."
+ },
+ {
+  "type": "mcq",
+  "stem": "It inhibits protein synthesis by binding to the 50S ribosomal subunit and blocking the action of peptidyltransferase:",
+  "options": [
+   "Chloramphenicol",
+   "Erythromycin",
+   "Clindamycin",
+   "Tetracycline"
+  ],
+  "correct": 0,
+  "explanation": "Chloramphenicol binds the 50S subunit and inhibits peptidyltransferase activity."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bactericidal, EXCEPT:",
+  "options": [
+   "Penicillin",
+   "Erythromycin",
+   "Vancomycin",
+   "Streptomycin"
+  ],
+  "correct": 1,
+  "explanation": "Erythromycin (a macrolide) is bacteriostatic. Penicillin, vancomycin, and streptomycin are bactericidal."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bacteriostatic agents, EXCEPT:",
+  "options": [
+   "Doxycycline",
+   "Erythromycin",
+   "Cefalexin",
+   "Chloramphenicol"
+  ],
+  "correct": 2,
+  "explanation": "Cefalexin (a cephalosporin) is bactericidal. Doxycycline, erythromycin, and chloramphenicol are bacteriostatic."
+ },
+ {
+  "type": "mcq",
+  "stem": "The salient features of the behavior of bacteriostatic drugs are that, EXCEPT;",
+  "options": [
+   "Host defense mechanisms, such as phagocytosis, are required to kill the bacteria.",
+   "Inhibit the growth of bacteria but does not kill them.",
+   "Useful in certain infections especially those that are immediately life-threatening.",
+   "Bacteria can grow again when the drug is withdrawn."
+  ],
+  "correct": 2,
+  "explanation": "Bacteriostatic drugs rely on host defenses and are not ideal for immediately life-threatening infections; bactericidal drugs are preferred there."
+ },
+ {
+  "type": "mcq",
+  "stem": "Excellent example of antibacterial synergism:",
+  "options": [
+   "Tazocin",
+   "Co-trimoxazole",
+   "Sultamicillin",
+   "Co-amoxiclav"
+  ],
+  "correct": 1,
+  "explanation": "Co-trimoxazole (trimethoprim + sulfamethoxazole) is the classic example of synergism, sequentially blocking folate synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "The pathogenesis of this potentially severe complication is suppression of the normal flora of the bowel by Clindamycin and overgrowth of a drug-resistant strain of Clostridium difficile:",
+  "options": [
+   "Jarisch-Herxheimer reaction",
+   "Gray baby syndrome",
+   "Steven-Johnson's syndrome",
+   "Pseudomembranous colitis"
+  ],
+  "correct": 3,
+  "explanation": "Pseudomembranous colitis results from C. difficile overgrowth after normal gut flora is suppressed, classically by clindamycin."
+ },
+ {
+  "type": "mcq",
+  "stem": "Bactericidal drugs that block bacterial DNA synthesis by inhibiting DNA gyrase:",
+  "options": [
+   "Quinolones",
+   "Rifampicin",
+   "Trimethoprim",
+   "Sulfonamides"
+  ],
+  "correct": 0,
+  "explanation": "Quinolones/fluoroquinolones inhibit DNA gyrase (topoisomerase II) and topoisomerase IV, blocking DNA synthesis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Patients receiving this anti-TB drug excrete pyridoxine in excessive amounts causing peripheral neuropathy;",
+  "options": [
+   "Ethambutol",
+   "Rifampin",
+   "Pyrazinamide",
+   "Isoniazid"
+  ],
+  "correct": 3,
+  "explanation": "Isoniazid increases pyridoxine (vitamin B6) excretion, causing peripheral neuropathy; B6 is co-administered to prevent it."
+ },
+ {
+  "type": "mcq",
+  "stem": "This is due to reduced glucuronyl transferase activity in infants, resulting in a toxic concentration of chloramphenicol:",
+  "options": [
+   "Steven-Johnson's syndrome",
+   "Gray baby syndrome",
+   "Red man syndrome",
+   "Pseudomembranous colitis"
+  ],
+  "correct": 1,
+  "explanation": "Gray baby syndrome results from chloramphenicol accumulation in neonates who cannot glucuronidate the drug."
+ },
+ {
+  "type": "mcq",
+  "stem": "Dihydropteroate synthetase inhibitor:",
+  "options": [
+   "Trimethoprim",
+   "Rifampicin",
+   "Sulfonamides",
+   "Quinolones"
+  ],
+  "correct": 2,
+  "explanation": "Sulfonamides inhibit dihydropteroate synthetase in bacterial folate synthesis. Trimethoprim inhibits the later enzyme dihydrofolate reductase."
+ },
+ {
+  "type": "mcq",
+  "stem": "Commons side effect of aminoglycosides;",
+  "options": [
+   "Ototoxicity",
+   "Cardiotoxicity",
+   "Hepatotoxicity",
+   "Photosensitivity"
+  ],
+  "correct": 0,
+  "explanation": "Aminoglycosides are classically ototoxic (and nephrotoxic)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Cefuroxime is;",
+  "options": [
+   "2nd gen CEPH",
+   "1st gen CEPH",
+   "4th gen CEPH",
+   "3rd gen CEPH"
+  ],
+  "correct": 0,
+  "explanation": "Cefuroxime is a second-generation cephalosporin."
+ },
+ {
+  "type": "mcq",
+  "stem": "Urinary antiseptic for the treatment of uncomplicated UTI, EXCEPT;",
+  "options": [
+   "Nalidixic acid",
+   "Nitrofurantoin",
+   "Ciprofloxacin",
+   "Methenamine"
+  ],
+  "correct": 2,
+  "explanation": "Ciprofloxacin is a systemic fluoroquinolone, not a urinary antiseptic. Nalidixic acid, nitrofurantoin, and methenamine act as urinary antiseptics."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anti-TB drug that imparts a harmless orange color to urine, sweat, and contact lenses:",
+  "options": [
+   "Pyrazinamide",
+   "Isoniazid",
+   "Rifampicin",
+   "Ethambutol"
+  ],
+  "correct": 2,
+  "explanation": "Rifampicin causes harmless orange-red discoloration of body fluids and can stain soft contact lenses."
+ },
+ {
+  "type": "mcq",
+  "stem": "Anti-TB drug that causes optic neuritis during long-term administration;",
+  "options": [
+   "Pyrazinamide",
+   "Isoniazid",
+   "Ethambutol",
+   "Rifampicin"
+  ],
+  "correct": 2,
+  "explanation": "Ethambutol can cause dose-related optic neuritis with loss of visual acuity and red-green color vision."
+ },
+ {
+  "type": "mcq",
+  "stem": "The macrolide that is given once a day for 3 days in the treatment of infection;",
+  "options": [
+   "Clarithromycin",
+   "Roxithromycin",
+   "Azithromycin",
+   "Erythromycin"
+  ],
+  "correct": 2,
+  "explanation": "Azithromycin has a long half-life allowing once-daily dosing for a short 3-day course."
+ },
+ {
+  "type": "mcq",
+  "stem": "The macrolide that is given as alternative to penicillin allergic patients because of its similar and broad spectrum of activity;",
+  "options": [
+   "Azithromycin",
+   "Clarithromycin",
+   "Roxithromycin",
+   "Erythromycin"
+  ],
+  "correct": 3,
+  "explanation": "Erythromycin is the classic macrolide alternative for penicillin-allergic patients."
+ },
+ {
+  "type": "mcq",
+  "stem": "It is the only aminoglycoside active against Mycobacterium tuberculosis:",
+  "options": [
+   "Ethambutol",
+   "Isoniazid",
+   "Pyrazinamide",
+   "Streptomycin",
+   "Rifampicin"
+  ],
+  "correct": 3,
+  "explanation": "Streptomycin is the aminoglycoside with anti-tuberculous activity (a second-line anti-TB agent)."
+ },
+ {
+  "type": "mcq",
+  "stem": "This drug inhibits viral DNA polymerases significantly more than host DNA polymerases, significantly reducing host toxicity, and enabling oral and intravenous administration.",
+  "options": [
+   "Famciclovir",
+   "Acyclovir",
+   "Ganciclovir",
+   "Trifluridine"
+  ],
+  "correct": 1,
+  "explanation": "Acyclovir is selectively activated in infected cells and strongly inhibits viral DNA polymerase, giving low host toxicity and oral/IV use."
+ },
+ {
+  "type": "mcq",
+  "stem": "The only antifungal drug that can be administered as a topical solution for the eyes, eye injection, and IV administration for the treatment of various fungal infections",
+  "options": [
+   "Amphotericin B",
+   "Natamycin",
+   "Miconazole",
+   "Fluconazole"
+  ],
+  "correct": 0,
+  "explanation": "Amphotericin B can be given topically, intravitreally/intraocularly, and intravenously for fungal infections."
+ },
+ {
+  "type": "mcq",
+  "stem": "Polyhexamethylene biguanide (PHMB) is clinically used to treat which ocular infection?",
+  "options": [
+   "Toxoplasmosis",
+   "Acanthamoeba",
+   "Herpes simplex virus",
+   "Bacterial conjunctivitis"
+  ],
+  "correct": 1,
+  "explanation": "PHMB is a first-line agent for Acanthamoeba keratitis."
+ },
+ {
+  "type": "mcq",
+  "stem": "Common route of administration of polymyxin B because of its systemic toxicity as seen in Maxitrol and Terramycin;",
+  "options": [
+   "Rectal",
+   "Topical",
+   "Peroral",
+   "Parenteral"
+  ],
+  "correct": 1,
+  "explanation": "Polymyxin B is given topically (as in combination eye preparations) because systemic use is nephro- and neurotoxic."
+ },
+ {
+  "type": "mcq",
+  "stem": "Yellow or brown staining of the teeth of fetuses and young children as a result of deposition of the drug in developing teeth is caused by;",
+  "options": [
+   "Macrolides",
+   "Aminoglycosides",
+   "Lincosamides",
+   "Tetracyclines"
+  ],
+  "correct": 3,
+  "explanation": "Tetracyclines chelate calcium and deposit in developing teeth and bone, causing permanent discoloration; avoided in pregnancy and young children."
+ },
+ {
+  "type": "mcq",
+  "stem": "The most useful clinical activity of this bacteriostatic drug is against anaerobes, particularly in the treatment of acne vulgaris;",
+  "options": [
+   "Amoxicillin",
+   "Clindamycin",
+   "Ciprofloxacin",
+   "Cefalexin"
+  ],
+  "correct": 1,
+  "explanation": "Clindamycin is active against anaerobes and used topically/systemically for acne vulgaris."
+ },
+ {
+  "type": "mcq",
+  "stem": "It binds to the 23S ribosomal RNA in the 50S subunit and inhibits protein synthesis and useful for the treatment of vancomycin resistant infections such as VRSE and VRSA;",
+  "options": [
+   "Streptogramins",
+   "Linezolid",
+   "Pleuromutilins",
+   "Colistin"
+  ],
+  "correct": 1,
+  "explanation": "Linezolid binds the 23S rRNA of the 50S subunit and is used against resistant Gram-positives including VRE, VRSE, and VRSA."
+ },
+ {
+  "type": "mcq",
+  "stem": "An example of narrow-spectrum antibiotic used as drug of choice for MRSA;",
+  "options": [
+   "Chloramphenicol",
+   "Tetracycline",
+   "Levofloxacin",
+   "Vancomycin"
+  ],
+  "correct": 3,
+  "explanation": "Vancomycin is the drug of choice for MRSA infections."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is NOT a beta lactam antibiotics?",
+  "options": [
+   "Meropenem",
+   "Cefixime",
+   "Bacitracin",
+   "Amoxicillin"
+  ],
+  "correct": 2,
+  "explanation": "Bacitracin is a cyclic polypeptide, not a beta-lactam. Meropenem, cefixime, and amoxicillin are beta-lactams."
+ },
+ {
+  "type": "mcq",
+  "stem": "An antibiotic used as a \"last-line\" therapy to treat infections caused by MDR Gram-negative bacteria, when essentially no other options are available.",
+  "options": [
+   "Cycloserine",
+   "Colistin",
+   "Roxifloxacin",
+   "Bacitracin"
+  ],
+  "correct": 1,
+  "explanation": "Colistin (polymyxin E) is reserved as last-line therapy for multidrug-resistant Gram-negative infections."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following IV anesthetic causes dissociative anesthesia?",
+  "options": [
+   "Propofol",
+   "Midazolam",
+   "Ketamine",
+   "Thiopental"
+  ],
+  "correct": 2,
+  "explanation": "Ketamine produces dissociative anesthesia (a trance-like cataleptic state) by antagonizing NMDA receptors."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following general anesthetic agent is the least potent?",
+  "options": [
+   "Methoxyflurane",
+   "Nitrous oxide",
+   "Isoflurane",
+   "Halothane"
+  ],
+  "correct": 1,
+  "explanation": "Nitrous oxide has a very high MAC (>100%), meaning it is the least potent inhaled anesthetic and cannot alone produce surgical anesthesia."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is a long-acting local anesthetic agent?",
+  "options": [
+   "Bupivacaine",
+   "Procaine",
+   "Tetracaine",
+   "Lidocaine"
+  ],
+  "correct": 0,
+  "explanation": "Bupivacaine is a long-acting amide local anesthetic. Procaine is short-acting; lidocaine is intermediate."
+ },
+ {
+  "type": "mcq",
+  "stem": "An ocular OTC agent used as eyelid scrub;",
+  "options": [
+   "Zinc sulfate",
+   "Borate",
+   "Naphazoline",
+   "Phenylephrine"
+  ],
+  "correct": 1,
+  "explanation": "Borate (boric acid) solution is an OTC agent used for eyelid hygiene and as a mild eye wash."
+ },
+ {
+  "type": "mcq",
+  "stem": "A common topical local anesthetic agent used for minor conjunctival and corneal procedures because of its low irritation and allergy side effects;",
+  "options": [
+   "Tetracaine",
+   "Benoxinate",
+   "Proparacaine",
+   "Cocaine"
+  ],
+  "correct": 2,
+  "explanation": "Proparacaine is the preferred topical ocular anesthetic because it causes the least irritation and has a low allergy rate."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following state of anesthesia is undesirable that can lead to death?",
+  "options": [
+   "Analgesia",
+   "Excitement",
+   "Surgical anesthesia",
+   "Medullary paralysis"
+  ],
+  "correct": 3,
+  "explanation": "Medullary paralysis (stage IV) depresses the respiratory and vasomotor centers and can be fatal; it is an anesthetic overdose state to be avoided."
+ },
+ {
+  "type": "mcq",
+  "stem": "A common topical local anesthetic agent which intrinsic antibacterial activity against common ocular pathogens;",
+  "options": [
+   "Lidocaine",
+   "Cocaine",
+   "Proparacaine",
+   "Benoxinate"
+  ],
+  "correct": 3,
+  "explanation": "Benoxinate (oxybuprocaine) has intrinsic antibacterial activity against common ocular pathogens."
+ },
+ {
+  "type": "mcq",
+  "stem": "Local anesthetics at normal doses block;",
+  "options": [
+   "Cl channels",
+   "Na channels",
+   "Ca channels",
+   "K channels"
+  ],
+  "correct": 1,
+  "explanation": "Local anesthetics block voltage-gated sodium (Na) channels, preventing nerve impulse conduction."
+ },
+ {
+  "type": "mcq",
+  "stem": "The loss of pain perception accompanied by loss of consciousness;",
+  "options": [
+   "General anesthesia",
+   "Anti-inflammatory",
+   "Analgesia",
+   "Local anesthesia"
+  ],
+  "correct": 0,
+  "explanation": "General anesthesia produces loss of pain perception together with loss of consciousness. Local anesthesia blocks pain in one area without loss of consciousness."
+ },
+ {
+  "type": "mcq",
+  "stem": "A common topically useful local anesthetic agents with a concentration of 0.4%;",
+  "options": [
+   "Benoxinate",
+   "Tetracaine",
+   "Proparacaine",
+   "Cocaine"
+  ],
+  "correct": 0,
+  "explanation": "Benoxinate is commonly used topically at 0.4% concentration."
+ },
+ {
+  "type": "mcq",
+  "stem": "True about ester local anesthetics, EXCEPT;",
+  "options": [
+   "Slow onset",
+   "Allergic reaction is common",
+   "Rapid metabolism",
+   "Longer acting"
+  ],
+  "correct": 3,
+  "explanation": "Ester local anesthetics are generally shorter acting (rapidly hydrolyzed by plasma esterases), so 'longer acting' is the exception."
+ },
+ {
+  "type": "mcq",
+  "stem": "A common topical local anesthetic agent used for horner's syndrome diagnosis;",
+  "options": [
+   "Proparacaine",
+   "Benoxinate",
+   "Tetracaine",
+   "Cocaine"
+  ],
+  "correct": 3,
+  "explanation": "Topical cocaine is used in the diagnostic test for Horner's syndrome; it fails to dilate the affected pupil due to absent norepinephrine release."
+ },
+ {
+  "type": "mcq",
+  "stem": "General anesthetic agents augment which neurotransmitter?",
+  "options": [
+   "GABA",
+   "Norepinephrine",
+   "Acetylcholine",
+   "Glutamate"
+  ],
+  "correct": 0,
+  "explanation": "Most general anesthetics enhance inhibitory GABA-A receptor activity, depressing CNS function."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is NOT a component of artificial tears?",
+  "options": [
+   "Methylcellulose",
+   "Carbopol",
+   "Polyvinyl alcohol",
+   "Hydroxymethylcellulose"
+  ],
+  "correct": 1,
+  "explanation": "Per this item, carbopol is identified as not a standard artificial tear component; methylcellulose, polyvinyl alcohol, and hydroxymethylcellulose are common demulcents."
+ },
+ {
+  "type": "mcq",
+  "stem": "Physicochemical Characteristics of Ideal Local Anesthetics, EXCEPT;",
+  "options": [
+   "Low systemic toxicity",
+   "Short duration",
+   "Cheap",
+   "Stable"
+  ],
+  "correct": 1,
+  "explanation": "An ideal local anesthetic should have an adequate/long enough duration of action, not a short duration; the other traits are desirable."
+ },
+ {
+  "type": "mcq",
+  "stem": "Advantages of employing local anesthesia, EXCEPT.",
+  "options": [
+   "No renal side effect",
+   "No cardiovascular side effect",
+   "Poor recovery",
+   "No residual effects"
+  ],
+  "correct": 2,
+  "explanation": "Local anesthesia offers rapid, good recovery. 'Poor recovery' is not an advantage; it is the opposite."
+ },
+ {
+  "type": "mcq",
+  "stem": "A common topical local anesthetic agent used for gonioscopy;",
+  "options": [
+   "Cocaine",
+   "Benoxinate",
+   "Lidocaine",
+   "Proparacaine"
+  ],
+  "correct": 1,
+  "explanation": "Benoxinate is commonly used as the topical anesthetic for gonioscopy."
+ },
+ {
+  "type": "mcq",
+  "stem": "During caesarean child birth surgery, which is employed?",
+  "options": [
+   "Spinal",
+   "Epidural",
+   "Peripheral",
+   "Transdermal"
+  ],
+  "correct": 1,
+  "explanation": "Epidural anesthesia is commonly employed for caesarean delivery, allowing the mother to remain awake with a controllable block."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is NOT an amide anesthetic agent?",
+  "options": [
+   "Etidocaine",
+   "Lidocaine",
+   "Benzocaine",
+   "Bupivacaine"
+  ],
+  "correct": 2,
+  "explanation": "Benzocaine is an ester local anesthetic. Etidocaine, lidocaine, and bupivacaine are amides (their names contain two 'i's)."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following local anesthetics require concurrent administration of a local vasoconstrictor?",
+  "options": [
+   "Benzocaine",
+   "Bupivacaine",
+   "Cocaine",
+   "Lidocaine"
+  ],
+  "correct": 3,
+  "explanation": "Lidocaine is often combined with a vasoconstrictor (epinephrine) to prolong its action and reduce systemic absorption. Cocaine is itself a vasoconstrictor."
+ },
+ {
+  "type": "mcq",
+  "stem": "In unmyelinated fiber, 8-10 mm segment of fibers must be blocked and _____ amount of anesthetic agents are required to prevent conduction of impulse.",
+  "options": [
+   "Less",
+   "Highest",
+   "Least",
+   "More"
+  ],
+  "correct": 2,
+  "explanation": "Unmyelinated fibers require the least amount of anesthetic to block conduction because there is no myelin barrier and no need to cover nodes of Ranvier."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which is NOT a vasoconstrictor that is used to relieve red eye?",
+  "options": [
+   "Zinc Sulfate",
+   "Naphazoline",
+   "Phenylephrine",
+   "Oxymetazoline"
+  ],
+  "correct": 0,
+  "explanation": "Zinc sulfate is an astringent, not a vasoconstrictor. Naphazoline, phenylephrine, and oxymetazoline are decongestant vasoconstrictors."
+ },
+ {
+  "type": "mcq",
+  "stem": "True about the important benefits of anesthesia, EXCEPT;",
+  "options": [
+   "Muscle contraction",
+   "Analgesia",
+   "Amnesia",
+   "Sedation"
+  ],
+  "correct": 0,
+  "explanation": "Anesthesia aims for muscle relaxation, not muscle contraction. Analgesia, amnesia, and sedation are intended benefits."
+ },
+ {
+  "type": "mcq",
+  "stem": "Neuroleptanethesia has the following components, EXCEPT;",
+  "options": [
+   "Ketamine",
+   "Fentanyl",
+   "Droperidol",
+   "Laughing gas"
+  ],
+  "correct": 0,
+  "explanation": "Neuroleptanesthesia classically combines an opioid (fentanyl), a neuroleptic (droperidol), and nitrous oxide (laughing gas). Ketamine is not a component."
+ },
+ {
+  "type": "mcq",
+  "stem": "Which of the following is the MOST common ocular side effect of topical local anesthetics?",
+  "options": [
+   "Allergy",
+   "Stinging",
+   "Corneal edema",
+   "Vasodilation"
+  ],
+  "correct": 1,
+  "explanation": "Transient stinging or burning on instillation is the most common side effect of topical ocular anesthetics."
  }
 ]

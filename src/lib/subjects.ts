@@ -84,9 +84,9 @@ export const SUBJECTS: Subject[] = [
   {
     slug: 'general-pharmacology',
     name: 'General Pharmacology',
-    description: 'Pharmacokinetics, pharmacodynamics, ANS drugs, anti-infectives, CNS agents, and drug interactions.',
+    description: 'Pharmacokinetics, pharmacodynamics, ANS drugs, antimicrobials, anti-inflammatories, antihypertensives, anesthetics, and CNS agents.',
     color: 'indigo',
-    questionCount: 102,
+    questionCount: 228,
     icon: '💊',
     olePrep: true,
     hasExam: true,
