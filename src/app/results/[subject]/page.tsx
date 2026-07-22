@@ -71,7 +71,8 @@ export default function ResultsPage() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-          <Link href="/" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">← Back to home</Link>
+          {/* The exam's misses were just recorded, so home's counts are a render behind. */}
+          <Link href="/" onClick={() => router.refresh()} className="text-sm text-gray-500 hover:text-gray-800 transition-colors">← Back to home</Link>
           <span className={`text-xs font-semibold ${c.text}`}>{subject.name}</span>
         </div>
       </header>
@@ -157,7 +158,7 @@ export default function ResultsPage() {
           <Link href={`/exam/${slug}`} className="flex-1 bg-teal-600 text-white text-sm font-semibold py-2.5 rounded-xl text-center hover:bg-teal-700 transition-colors">
             Practice again
           </Link>
-          <Link href="/" className="flex-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold py-2.5 rounded-xl text-center hover:bg-gray-50 transition-colors">
+          <Link href="/" onClick={() => router.refresh()} className="flex-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold py-2.5 rounded-xl text-center hover:bg-gray-50 transition-colors">
             All subjects
           </Link>
         </div>

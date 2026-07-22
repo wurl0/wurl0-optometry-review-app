@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
 import { INTERVALS, boxLabel, type ReviewCard } from '@/lib/srs'
@@ -10,6 +11,7 @@ interface Props {
   labels: Record<string, string>
   queueTotal: number
   solidTotal: number
+  dueTotal: number
 }
 
 type Phase = 'playing' | 'done'
@@ -26,7 +28,8 @@ const SOURCE_LABEL: Record<string, string> = {
   'mock': 'Mock board',
 }
 
-export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: Props) {
+export default function ReviewClient({ cards, labels, queueTotal, solidTotal, dueTotal }: Props) {
+  const router = useRouter()
   const [phase, setPhase] = useState<Phase>('playing')
   const [current, setCurrent] = useState(0)
   const [selected, setSelected] = useState<number | boolean | null>(null)
@@ -34,10 +37,16 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
   const [results, setResults] = useState<{ correct: boolean; retired: boolean }[]>([])
   const [saving, setSaving] = useState(false)
   const [gamResult, setGamResult] = useState<GamificationResult | null>(null)
+  // Frozen at mount. The refresh at the end of a session replaces these props with
+  // post-session figures, and the results screen already subtracts the session itself
+  // from them, so reading the live props there would count the same work twice.
+  const [atStart] = useState({ due: dueTotal, queue: queueTotal, solid: solidTotal })
 
   // ─── NOTHING DUE ──────────────────────────────────────────────────────────
 
-  if (!cards.length) {
+  // Only while playing. Finishing a session refreshes the server data, which empties
+  // `cards`, and without the phase check that would swap the results screen for this one.
+  if (!cards.length && phase === 'playing') {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
@@ -51,7 +60,7 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
           {solidTotal > 0 && (
             <p className="text-xs text-gray-400 mb-6">{solidTotal} retired to the solid pile so far.</p>
           )}
-          <Link href="/" className="inline-block text-sm font-semibold bg-gray-900 text-white px-5 py-2.5 rounded-xl hover:bg-gray-800 transition-colors">
+          <Link href="/" onClick={() => router.refresh()} className="inline-block text-sm font-semibold bg-gray-900 text-white px-5 py-2.5 rounded-xl hover:bg-gray-800 transition-colors">
             Back home
           </Link>
         </div>
@@ -60,7 +69,9 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
   }
 
   const card = cards[current]
-  const isTf = card.payload.options === undefined || card.payload.options.length === 0
+  // Optional: after the end-of-session refresh, `cards` can be empty while the results
+  // screen below is still on screen. Nothing here is read on that path.
+  const isTf = !card?.payload.options?.length
 
   async function grade(correct: boolean) {
     try {
@@ -107,6 +118,11 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
       } catch {}
       setSaving(false)
       setPhase('done')
+      // Grading goes through a route handler, which leaves the client Router Cache
+      // untouched: home would keep serving the due count it rendered before the session,
+      // and in a standalone web app the only way out of that is quitting the app.
+      // This drops the cached render for the whole tree so the next navigation is fresh.
+      router.refresh()
     } else {
       setCurrent(i => i + 1)
       setSelected(null)
@@ -119,7 +135,10 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
   if (phase === 'done') {
     const score = results.filter(r => r.correct).length
     const retiredNow = results.filter(r => r.retired).length
-    const remaining = Math.max(0, queueTotal - retiredNow)
+    // Every graded card leaves today's due set: recalled ones move up the ladder or
+    // retire, missed ones land on tomorrow. So what the day still owes is simply what
+    // it owed on arrival minus what was just answered.
+    const remainingDue = Math.max(0, atStart.due - results.length)
 
     return (
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
@@ -171,10 +190,15 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
           )}
 
           <div className="bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-center">
-            <p className="text-xs text-gray-500">{remaining} still active in the queue · {solidTotal + retiredNow} solid</p>
+            <p className="text-xs text-gray-500">
+              {remainingDue > 0
+                ? `${remainingDue} still due today`
+                : 'Nothing else due today'}
+              {' · '}{Math.max(0, atStart.queue - retiredNow)} in the queue · {atStart.solid + retiredNow} solid
+            </p>
           </div>
 
-          <Link href="/" className="block text-center text-sm font-semibold bg-gray-900 text-white py-2.5 rounded-xl hover:bg-gray-800 transition-colors">
+          <Link href="/" onClick={() => router.refresh()} className="block text-center text-sm font-semibold bg-gray-900 text-white py-2.5 rounded-xl hover:bg-gray-800 transition-colors">
             Done for now
           </Link>
         </div>
@@ -191,7 +215,8 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal }: 
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3">
           <div className="flex items-center gap-2 mb-2">
-            <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
+            {/* Leaving mid-session still means some cards were graded. */}
+            <Link href="/" onClick={() => router.refresh()} className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
             <span className="text-base leading-none">🧠</span>
             <span className="text-xs font-semibold text-gray-900">Review Queue</span>
             <span className="text-xs text-gray-400">· {current + 1} of {cards.length} due</span>

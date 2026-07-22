@@ -47,7 +47,7 @@ export default async function ReviewPage() {
     // serves is worse than no count.
     supabase
       .from('question_reviews')
-      .select('subject, source, retired, swept_at')
+      .select('subject, source, due_on, retired, swept_at')
       .eq('user_id', user.id),
   ])
 
@@ -58,7 +58,7 @@ export default async function ReviewPage() {
     .slice(0, SESSION_CAP)
 
   const servable = ((allRows ?? []) as
-    { subject: string; source: string; retired: boolean; swept_at: string | null }[])
+    { subject: string; source: string; due_on: string; retired: boolean; swept_at: string | null }[])
     .filter(r => canServeCard(access, r.subject, r.source))
   const queueCount = servable.filter(r => !r.retired).length
   const solidCount = servable.filter(r => r.retired).length
@@ -67,6 +67,11 @@ export default async function ReviewPage() {
   // that retired in August goes untouched all the way to the exam.
   const unswept = servable.filter(r => r.retired && !r.swept_at).length
   const quota = sweepQuota(unswept, today)
+
+  // Everything the day owes, uncapped by SESSION_CAP and counted the same way the home
+  // card counts it. The finish screen subtracts what was just graded from this; the
+  // queue total can't do that job, because it also holds cards due weeks from now.
+  const dueTotal = servable.filter(r => !r.retired && r.due_on <= today).length + quota
 
   let sweepCards: ReviewCard[] = []
   if (quota > 0) {
@@ -138,6 +143,7 @@ export default async function ReviewPage() {
       labels={labels}
       queueTotal={queueCount}
       solidTotal={solidCount}
+      dueTotal={dueTotal}
     />
   )
 }

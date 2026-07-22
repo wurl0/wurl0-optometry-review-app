@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { Question, Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
 import { createClient } from '@/lib/supabase-client'
@@ -51,6 +52,9 @@ type Phase = 'select' | 'playing' | 'result'
 
 export default function PracticeClient({ subject, questions, levelProgress: initialProgress }: Props) {
   const c = COLOR_MAP[subject.color]
+  // Misses recorded here change the home screen's counts, and a route handler write does
+  // not touch the client Router Cache. Refreshing on the way out keeps home honest.
+  const router = useRouter()
 
   const [phase, setPhase] = useState<Phase>('select')
   const [activeLevel, setActiveLevel] = useState<1 | 2 | 3 | null>(null)
@@ -169,7 +173,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
       <div className="min-h-screen pb-12">
         <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
           <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-2">
-            <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
+            <Link href="/" onClick={() => router.refresh()} className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
             <span className="text-base leading-none">{subject.icon}</span>
             <span className={`text-xs font-semibold ${c.text}`}>{subject.name}</span>
             <span className="text-xs text-gray-400">· Guided Practice</span>
@@ -424,7 +428,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
               All levels
             </button>
           </div>
-          <Link href="/" className="block text-center text-xs text-gray-400 hover:text-gray-600 py-1">← Home</Link>
+          <Link href="/" onClick={() => router.refresh()} className="block text-center text-xs text-gray-400 hover:text-gray-600 py-1">← Home</Link>
         </div>
       </div>
     )

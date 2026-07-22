@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
 import { recordSession, type RecordItem, type RecordResult } from '@/lib/srs-record'
@@ -32,6 +33,9 @@ function mmss(sec: number): string {
 }
 
 export default function DrillClient({ pool, dueCount }: Props) {
+  // Misses recorded here change the home screen's counts, and a route handler write does
+  // not touch the client Router Cache. Refreshing on the way out keeps home honest.
+  const router = useRouter()
   const [phase, setPhase] = useState<Phase>('playing')
   const [current, setCurrent] = useState(0)
   const [selected, setSelected] = useState<number | boolean | null>(null)
@@ -266,10 +270,10 @@ export default function DrillClient({ pool, dueCount }: Props) {
           )}
 
           <div className="flex gap-3">
-            <Link href="/drill" className="flex-1 py-2.5 text-sm font-semibold rounded-xl border-2 border-gray-200 text-gray-700 text-center hover:border-gray-300 transition-colors">
+            <Link href="/drill" onClick={() => router.refresh()} className="flex-1 py-2.5 text-sm font-semibold rounded-xl border-2 border-gray-200 text-gray-700 text-center hover:border-gray-300 transition-colors">
               Another 10
             </Link>
-            <Link href="/" className="flex-1 py-2.5 text-sm font-semibold rounded-xl bg-gray-900 text-white text-center hover:bg-gray-800 transition-colors">
+            <Link href="/" onClick={() => router.refresh()} className="flex-1 py-2.5 text-sm font-semibold rounded-xl bg-gray-900 text-white text-center hover:bg-gray-800 transition-colors">
               Done for now
             </Link>
           </div>
@@ -287,7 +291,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3">
           <div className="flex items-center gap-2">
-            <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
+            <Link href="/" onClick={() => router.refresh()} className="text-gray-400 hover:text-gray-600 text-sm">←</Link>
             <span className="text-base leading-none">⏱️</span>
             <span className="text-xs font-semibold text-gray-900">10-Minute Drill</span>
             <span className="text-xs text-gray-400">· {outcomes.length} done</span>
