@@ -103,9 +103,20 @@ def notebook_pages():
 
 
 def indexed_ids():
+    """Item ids the search index actually covers.
+
+    The field is `itemId`, not `item`. An earlier version of this grep looked for `item`,
+    matched nothing, and combined with the `and indexed` guard below that silently
+    disabled the coverage check entirely -- exactly the class of failure this script
+    exists to catch, so the count is asserted rather than trusted.
+    """
     if not SEARCH_INDEX.exists():
         return set()
-    return set(re.findall(r'\\"item\\":\\"([^"\\]+)\\"', SEARCH_INDEX.read_text()))
+    ids = set(re.findall(r'\\"itemId\\":\\"([^"\\]+)\\"', SEARCH_INDEX.read_text()))
+    if not ids:
+        flag("blocking", "search-index-unparseable",
+             "no itemId found in top2-search-index.ts; the coverage check below is blind")
+    return ids
 
 
 man = manifest_items()

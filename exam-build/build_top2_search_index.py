@@ -46,6 +46,19 @@ def strategy_file(code):
     return f"{code}-Subject-Exam-Strategy.html" if code in ("G", "H") else f"{code}-Strategy.html"
 
 
+# Reference pages that sit outside the generated two-per-subject pattern. This list is a
+# SECOND hand-maintained mirror of reviewer-manifest.ts, so it drifts: a page added to the
+# manifest but not here stays reachable and silently unsearchable, which is how
+# G.g1-strategy was missed. `exam-build/audit_top2.py` compares the two and reports
+# "not-in-search-index" -- run it after touching either file.
+EXTRA_TARGETS = [
+    ("H.optolawbook", "H", "Jurisprudence & Ethics — Law Book", "reviewer",
+     "H-Jurisprudence-and-Ethics/H-OPTOLAWBOOK-Reviewer.html"),
+    ("G.g1-strategy", "G", "Ocular Pharmacology — G1 Strategy", "strategy",
+     "G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Strategy.html"),
+]
+
+
 def targets():
     """Yield (item_id, subject_code, label, kind, path) for every page to index."""
     for code, name, folder in SUBJECTS:
@@ -53,8 +66,8 @@ def targets():
                TOP2 / folder / f"{code}-Reviewer.html")
         yield (f"{code}.strategy", code, f"{name} — Strategy", "strategy",
                TOP2 / folder / strategy_file(code))
-    yield ("H.optolawbook", "H", "Jurisprudence & Ethics — Law Book", "reviewer",
-           TOP2 / "H-Jurisprudence-and-Ethics" / "H-OPTOLAWBOOK-Reviewer.html")
+    for item_id, code, label, kind, rel in EXTRA_TARGETS:
+        yield (item_id, code, label, kind, TOP2 / rel)
 
 
 # Containers whose text is navigation or controls, never content.
