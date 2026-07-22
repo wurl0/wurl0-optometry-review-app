@@ -154,3 +154,47 @@ where question_id = 'bb344c74-2u' and (payload->>'correct') is distinct from '1'
 -- NOTE: errata/flag does NOT exclude an item from the queue, so this will re-enter if
 -- met and missed again. Decide whether to replace option C or filter flagged items.
 delete from question_reviews where question_id = 'f9b72d05-2g';
+
+-- ROUND 3 (Jul 22, 2026): 10 items from the emphasis-based audit across all 8 banks.
+-- 14 of the 24 candidates were false positives (key correct, rationale merely naming a
+-- distractor, plus EXCEPT questions the heuristic cannot read). These 10 are real:
+--   C-119 5/6 of eyeball -> Sclera        C-121 -1.00=+1.00x180 -> ATR simple myopic
+--   C-130 dull slow WITH -> High hyperopia C-131 myopia onset -> monitor axial length
+--   G-40  benzalkonium   -> preservative   H-91  advertising w/o PRC -> illegal RA 8050
+--   E-13  dilated veins  -> venous dilation E-79 newborn cloudy cornea -> congenital glaucoma
+--   C-112 and D-100 are DEFECTIVE/disputed, errata set true (C-112 has two identical
+--   'Compound myopic' options; D-100 is an inverse-square vs 'Law of Intensity' naming
+--   dispute the rationale itself asks to flag).
+-- errata now excludes an item from FUTURE harvests, but does not remove rows already in
+-- the queue, so both are included in the delete below.
+with expected(question_id, correct) as (values
+  ('9528391d-21', 1),  -- bank 04 id 119
+  ('65d44d0e-2h', 3),  -- bank 04 id 121
+  ('27406bd1-3t', 0),  -- bank 04 id 130
+  ('a3b874a7-8k', 1),  -- bank 04 id 131
+  ('a237a259-2s', 1),  -- bank 04 id 112 [errata]
+  ('521d7894-1c', 2),  -- bank 06 id 40
+  ('ba04d303-1t', 1),  -- bank 07 id 91
+  ('ecdde6b8-3a', 1),  -- bank 08 id 13
+  ('1f419307-2w', 0),  -- bank 08 id 79
+  ('9ed985c8-41', 2)  -- bank 01 id 100 [errata]
+)
+select r.question_id, r.subject, r.source, r.box, r.due_on,
+       (r.payload->>'correct') as stored_correct, e.correct as should_be
+from question_reviews r join expected e using (question_id);
+
+with expected(question_id, correct) as (values
+  ('9528391d-21', 1),  -- bank 04 id 119
+  ('65d44d0e-2h', 3),  -- bank 04 id 121
+  ('27406bd1-3t', 0),  -- bank 04 id 130
+  ('a3b874a7-8k', 1),  -- bank 04 id 131
+  ('a237a259-2s', 1),  -- bank 04 id 112 [errata]
+  ('521d7894-1c', 2),  -- bank 06 id 40
+  ('ba04d303-1t', 1),  -- bank 07 id 91
+  ('ecdde6b8-3a', 1),  -- bank 08 id 13
+  ('1f419307-2w', 0),  -- bank 08 id 79
+  ('9ed985c8-41', 2)  -- bank 01 id 100 [errata]
+)
+delete from question_reviews r using expected e
+where r.question_id = e.question_id
+  and (r.payload->>'correct') is distinct from e.correct::text;
