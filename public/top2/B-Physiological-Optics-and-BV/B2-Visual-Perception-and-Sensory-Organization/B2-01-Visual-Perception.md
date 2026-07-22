@@ -56,15 +56,15 @@ Superior layers = Lateral eye (ipsilateral/temporal fibers)
 Inferior layers = Medial eye (contralateral/nasal fibers)
 
 Layer inputs:
- 1 → Contralateral (nasal fibers, crossed)
- 4 → Contralateral
- 6 → Contralateral
- = 1-4-6 = Contralateral
+  1 → Contralateral (nasal fibers, crossed)
+  4 → Contralateral
+  6 → Contralateral
+  = 1-4-6 = Contralateral
 
- 2 → Ipsilateral (temporal fibers, uncrossed)
- 3 → Ipsilateral
- 5 → Ipsilateral
- = 2-3-5 = Ipsilateral
+  2 → Ipsilateral (temporal fibers, uncrossed)
+  3 → Ipsilateral
+  5 → Ipsilateral
+  = 2-3-5 = Ipsilateral
 ```
 
 Why this matters: In amblyopia treatment, the suppressed eye's LGB layers show reduced activity. Identifying which layers respond to which eye is foundational to understanding binocular development research.
@@ -95,9 +95,9 @@ Damage: Spatial neglect, akinetopsia (cannot see motion), optic ataxia
 
 ```
 MOST RESILIENT (last to be affected by disease)
- Motion
- Form
- Color ← MOST VULNERABLE (first affected in optic nerve disease)
+    Motion
+    Form
+    Color ← MOST VULNERABLE (first affected in optic nerve disease)
 LEAST RESILIENT
 ```
 
@@ -160,11 +160,11 @@ Layer 1 — Contralateral
 CORTICAL STREAMS
 ─────────────────
 Area 17 (V1) — primary cortex
- ↙ Ventral Dorsal ↘
-Area 18 → IT Area 18 → V5 (MT)
-"WHAT" "WHERE/HOW"
-Object ID Motion, space, action
-Temporal lobe Parietal lobe
+  ↙ Ventral         Dorsal ↘
+Area 18 → IT        Area 18 → V5 (MT)
+"WHAT"              "WHERE/HOW"
+Object ID           Motion, space, action
+Temporal lobe       Parietal lobe
 ```
 
 ---
@@ -225,7 +225,7 @@ Color is the most vulnerable visual function — it is selectively affected earl
 
 **C. The JND stays a fixed fraction (k) of the new background intensity.**
 
-Weber's Law states: ΔI/I = k. The ratio of the just noticeable difference (ΔI) to the background intensity (I) is a constant (k) — not ΔI itself. When the background doubles from 100 to 200, the new JND = k �� 200, which is twice the original JND. The absolute threshold goes up, but the ratio stays the same. This is the clinical basis for contrast sensitivity: in dim conditions (low I), a smaller ΔI is needed; in bright conditions (high I), a larger ΔI is needed for detection. Option A is wrong — the absolute ΔI does change with intensity. Option B correctly states the ΔI doubles but the reasoning "because the background doubled" misses the point — it is the constant ratio, not a direct doubling, that defines Weber's Law.
+Weber's Law states: ΔI/I = k. The ratio of the just noticeable difference (ΔI) to the background intensity (I) is a constant (k) — not ΔI itself. When the background doubles from 100 to 200, the new JND = k × 200, which is twice the original JND. The absolute threshold goes up, but the ratio stays the same. This is the clinical basis for contrast sensitivity: in dim conditions (low I), a smaller ΔI is needed; in bright conditions (high I), a larger ΔI is needed for detection. Option A is wrong — the absolute ΔI does change with intensity. Option B correctly states the ΔI doubles but the reasoning "because the background doubled" misses the point — it is the constant ratio, not a direct doubling, that defines Weber's Law.
 
 </details>
 
@@ -375,37 +375,37 @@ Visual acuity is not a single entity — it has five distinct forms, each measur
 ```
 CONTRAST THRESHOLD: Smallest amount of contrast needed to detect a stimulus
 CONTRAST SENSITIVITY (CS): Reciprocal of contrast threshold
- CS = 1 / Contrast threshold
- Higher CS = can detect lower contrast = better
+  CS = 1 / Contrast threshold
+  Higher CS = can detect lower contrast = better
 ```
 
 **The Contrast Sensitivity Function (CSF):**
 
 ```
 A graph of contrast sensitivity vs. spatial frequency (cycles per degree)
- Spatial frequency: how many cycles (dark-light pairs) per degree of visual angle
- Low SF: large, coarse objects (like large fuzzy blobs)
- High SF: fine detail (like sharp edges, fine print)
- 
+  Spatial frequency: how many cycles (dark-light pairs) per degree of visual angle
+    Low SF: large, coarse objects (like large fuzzy blobs)
+    High SF: fine detail (like sharp edges, fine print)
+    
 NORMAL CSF SHAPE: Bandpass (inverted U)
- Peak sensitivity: ~3–5 cycles/degree (medium spatial frequency)
- Falls off at:
- Low SF: less sensitive to very coarse patterns (surround inhibition)
- High SF: less sensitive to very fine detail (optical + neural limits)
- 
+  Peak sensitivity: ~3–5 cycles/degree (medium spatial frequency)
+  Falls off at:
+    Low SF: less sensitive to very coarse patterns (surround inhibition)
+    High SF: less sensitive to very fine detail (optical + neural limits)
+    
 CLINICAL SIGNIFICANCE:
- CSF better predicts functional vision than Snellen VA alone
- Patient with normal Snellen but reduced CSF → difficulty with:
- Driving at night (low contrast road markings)
- Reading in poor light
- Recognizing faces in dim light
- 
+  CSF better predicts functional vision than Snellen VA alone
+  Patient with normal Snellen but reduced CSF → difficulty with:
+    Driving at night (low contrast road markings)
+    Reading in poor light
+    Recognizing faces in dim light
+  
 CONDITIONS that reduce CSF:
- Early glaucoma (affects CSF before Snellen VA)
- Amblyopia (reduces both VA and CSF)
- Cataract (reduces CSF especially at medium-high frequencies)
- Multiple sclerosis / optic neuritis (reduces CSF)
- Diabetic retinopathy
+  Early glaucoma (affects CSF before Snellen VA)
+  Amblyopia (reduces both VA and CSF)
+  Cataract (reduces CSF especially at medium-high frequencies)
+  Multiple sclerosis / optic neuritis (reduces CSF)
+  Diabetic retinopathy
 ```
 
 **Tests for contrast sensitivity:**
@@ -420,15 +420,15 @@ CONDITIONS that reduce CSF:
 
 ```
 DEPTH OF FOCUS: How much the image can shift relative to the retina and still appear clear
- — determined by pupil size (smaller pupil = greater depth of focus)
- — pinhole effect: small pupil eliminates blur circles → greater DOF
+  — determined by pupil size (smaller pupil = greater depth of focus)
+  — pinhole effect: small pupil eliminates blur circles → greater DOF
 
 DEPTH OF FIELD: How much the OBJECT can move toward or away and still appear clear
- — related to depth of focus through magnification
+  — related to depth of focus through magnification
 
 Clinical application:
- Pinhole testing improves VA only if the problem is optical (refractive error or media opacity)
- If VA doesn't improve with pinhole → problem is retinal or neural
+  Pinhole testing improves VA only if the problem is optical (refractive error or media opacity)
+  If VA doesn't improve with pinhole → problem is retinal or neural
 ```
 
 ---
@@ -453,29 +453,29 @@ Fechner took Weber's Law further and said: the *sensation* you experience doesn'
 
 ```
 PLAIN VERSION:
- The minimum change you can detect = a constant fraction of the current stimulus
+  The minimum change you can detect = a constant fraction of the current stimulus
 
 FORMULA:
- ΔI / I = k (Weber fraction)
+  ΔI / I = k  (Weber fraction)
 
- Where:
- ΔI = the minimum detectable change in intensity (just noticeable difference, JND)
- I = the background stimulus intensity
- k = Weber fraction (a constant for a given sensory system)
+  Where:
+    ΔI = the minimum detectable change in intensity (just noticeable difference, JND)
+    I  = the background stimulus intensity
+    k  = Weber fraction (a constant for a given sensory system)
 
 EXAMPLE IN VISION:
- You are in a room with 100 units of light.
- The Weber fraction for brightness ≈ 0.02 (2%)
- → You can detect a change only if ΔI ≥ 2 units (2% of 100)
- 
- Now the room is 1000 units of light.
- → You need ΔI ≥ 20 units to notice a change
+  You are in a room with 100 units of light.
+  The Weber fraction for brightness ≈ 0.02 (2%)
+  → You can detect a change only if ΔI ≥ 2 units (2% of 100)
+  
+  Now the room is 1000 units of light.
+  → You need ΔI ≥ 20 units to notice a change
 
 CLINICAL MEANING:
- The eye's ability to detect contrast depends on the background luminance.
- In bright conditions, you need a bigger absolute difference to see contrast.
- In dim conditions, even small absolute differences are detectable.
- This is why a candle flame is easily visible in a dark room but invisible in sunlight.
+  The eye's ability to detect contrast depends on the background luminance.
+  In bright conditions, you need a bigger absolute difference to see contrast.
+  In dim conditions, even small absolute differences are detectable.
+  This is why a candle flame is easily visible in a dark room but invisible in sunlight.
 ```
 
 **The clinical term for the minimum detectable change:** Just Noticeable Difference (JND) or Difference Limen (DL).
@@ -486,34 +486,34 @@ CLINICAL MEANING:
 
 ```
 PLAIN VERSION:
- Your perception of brightness doesn't grow at the same rate as the actual light increase.
- Every time you multiply the physical stimulus by the same amount,
- you only add a fixed increment to your sensation.
+  Your perception of brightness doesn't grow at the same rate as the actual light increase.
+  Every time you multiply the physical stimulus by the same amount,
+  you only add a fixed increment to your sensation.
 
 FORMULA:
- S = k × log(I)
+  S = k × log(I)
 
- Where:
- S = perceived sensation (subjective brightness)
- I = physical stimulus intensity
- k = constant
+  Where:
+    S = perceived sensation (subjective brightness)
+    I = physical stimulus intensity
+    k = constant
 
 EXAMPLE:
- Light intensity: 1 unit → sensation = 0 (log 1 = 0)
- Light intensity: 10 units → sensation = k × 1
- Light intensity: 100 units → sensation = k × 2
- Light intensity: 1000 units → sensation = k × 3
- 
- Each 10× increase in actual light adds only 1 unit of perceived sensation.
+  Light intensity: 1 unit → sensation = 0 (log 1 = 0)
+  Light intensity: 10 units → sensation = k × 1
+  Light intensity: 100 units → sensation = k × 2
+  Light intensity: 1000 units → sensation = k × 3
+  
+  Each 10× increase in actual light adds only 1 unit of perceived sensation.
 
 WHY THIS MATTERS:
- This is why a log scale is used to measure light, sound, and other sensory stimuli.
- It explains why the photopic range (100,000:1 light intensity range)
- feels like a manageable range of brightness to us — because perception is logarithmic.
- 
+  This is why a log scale is used to measure light, sound, and other sensory stimuli.
+  It explains why the photopic range (100,000:1 light intensity range)
+  feels like a manageable range of brightness to us — because perception is logarithmic.
+  
 CLINICAL CONNECTION:
- Log MAR charts (Bailey-Lovie, ETDRS) are based on Fechner's principle —
- each line adds equal perceptual steps rather than equal physical steps in letter size.
+  Log MAR charts (Bailey-Lovie, ETDRS) are based on Fechner's principle —
+  each line adds equal perceptual steps rather than equal physical steps in letter size.
 ```
 
 **The clinical term for this relationship:** Fechner's Law / Weber-Fechner Law.
@@ -526,41 +526,41 @@ CLINICAL CONNECTION:
 
 ```
 NYCTALOPIA (Night Blindness)
- Greek: nyx = night + alaos = blind + ops = eye
- 
- Plain language: Cannot see well in dim light or darkness
- 
- The rod system fails — either rhodopsin cannot regenerate, rods are absent/damaged,
- or the rod pathway is disrupted.
- 
- CAUSES (most board-tested):
- 1. Vitamin A deficiency — most common worldwide cause
- (no Vit A → no 11-cis retinal → no rhodopsin regeneration)
- 2. Retinitis Pigmentosa (RP) — rod degeneration, peripheral VF loss
- 3. Congenital stationary night blindness (CSNB) — X-linked or autosomal
- 4. Choroideremia — X-linked choroidal + RPE degeneration
- 5. Gyrate atrophy — ornithine aminotransferase deficiency
- 6. Fundus albipunctatus — delayed rhodopsin regeneration
- 
- EXAMINATION FINDING: Dark adaptation curve — rod phase flat or absent
+  Greek: nyx = night + alaos = blind + ops = eye
+  
+  Plain language: Cannot see well in dim light or darkness
+  
+  The rod system fails — either rhodopsin cannot regenerate, rods are absent/damaged,
+  or the rod pathway is disrupted.
+  
+  CAUSES (most board-tested):
+    1. Vitamin A deficiency — most common worldwide cause
+       (no Vit A → no 11-cis retinal → no rhodopsin regeneration)
+    2. Retinitis Pigmentosa (RP) — rod degeneration, peripheral VF loss
+    3. Congenital stationary night blindness (CSNB) — X-linked or autosomal
+    4. Choroideremia — X-linked choroidal + RPE degeneration
+    5. Gyrate atrophy — ornithine aminotransferase deficiency
+    6. Fundus albipunctatus — delayed rhodopsin regeneration
+    
+  EXAMINATION FINDING: Dark adaptation curve — rod phase flat or absent
 
 HEMERALOPIA (Day Blindness)
- Greek: hemera = day + alaos = blind + ops = eye
- 
- Plain language: Cannot see well in bright light; vision improves in dim conditions
- 
- The cone system is preferentially affected.
- 
- CAUSES:
- 1. Achromatopsia (rod monochromacy) — complete absence of functioning cones
- Complete: no color, no photopic VA, photophobia
- Incomplete (incomplete achromatopsia): partial cone loss
- 2. Cone dystrophy — progressive cone degeneration
- 3. Cone-rod dystrophy (CRD) — cones affected first, rods later
- 4. Central corneal opacity or dense cataract — (secondary, not true retinal hemeralopia)
- 
- EXAMINATION FINDING: Dark adaptation curve — cone phase absent or flat;
- rod curve may be normal
+  Greek: hemera = day + alaos = blind + ops = eye
+  
+  Plain language: Cannot see well in bright light; vision improves in dim conditions
+  
+  The cone system is preferentially affected.
+  
+  CAUSES:
+    1. Achromatopsia (rod monochromacy) — complete absence of functioning cones
+       Complete: no color, no photopic VA, photophobia
+       Incomplete (incomplete achromatopsia): partial cone loss
+    2. Cone dystrophy — progressive cone degeneration
+    3. Cone-rod dystrophy (CRD) — cones affected first, rods later
+    4. Central corneal opacity or dense cataract — (secondary, not true retinal hemeralopia)
+    
+  EXAMINATION FINDING: Dark adaptation curve — cone phase absent or flat;
+  rod curve may be normal
 ```
 
 **Critical board distinction:**
@@ -586,53 +586,53 @@ These are the specific cell types that the board tests under retinal perception.
 
 ```
 W CELLS (slow, broad fields)
- Speed: Slow signal transmission
- Field size: Large receptive fields in peripheral retina
- Input: Mostly from RODS
- Function: Crude movement detection; rod-mediated dim-light motion sensing
- Board clue: W = slow, Wide, dim-light motion
+  Speed: Slow signal transmission
+  Field size: Large receptive fields in peripheral retina
+  Input: Mostly from RODS
+  Function: Crude movement detection; rod-mediated dim-light motion sensing
+  Board clue: W = slow, Wide, dim-light motion
 
 X CELLS (detail, color)
- Speed: Moderate
- Field size: Small, discrete receptive fields
- Input: 1 cone per cell at fovea
- Function: Fine spatial detail, color vision, high-resolution vision
- Board clue: X = eXact, fine detail, color
+  Speed: Moderate
+  Field size: Small, discrete receptive fields
+  Input: 1 cone per cell at fovea
+  Function: Fine spatial detail, color vision, high-resolution vision
+  Board clue: X = eXact, fine detail, color
 
 Y CELLS (fast, large, motion)
- Speed: FASTEST transmission
- Field size: Largest of all three
- Input: From large areas
- Function: Rapid change detection; alerts CNS of sudden new visual events
- Board clue: Y = fast, big, motion — but poor at locating exactly where
+  Speed: FASTEST transmission
+  Field size: Largest of all three
+  Input: From large areas
+  Function: Rapid change detection; alerts CNS of sudden new visual events
+  Board clue: Y = fast, big, motion — but poor at locating exactly where
 ```
 
 **P and M Cell Classification (based on morphology in primates):**
 
 ```
 PARVOCELLULAR (P) CELLS = Beta cells = Midget ganglion cells
- Location: Central retina
- Projection: Parvocellular layers of LGB (layers 3–6)
- → Feeds VENTRAL stream (What pathway)
- Function: Color, fine detail, spatial resolution
- Board clue: P = Parvocellular = Precise = color + detail
- Equivalent to: X cells functionally
+  Location: Central retina
+  Projection: Parvocellular layers of LGB (layers 3–6)
+  → Feeds VENTRAL stream (What pathway)
+  Function: Color, fine detail, spatial resolution
+  Board clue: P = Parvocellular = Precise = color + detail
+  Equivalent to: X cells functionally
 
 MAGNOCELLULAR (M) CELLS = Alpha cells
- Location: Peripheral retina (more)
- Projection: Magnocellular layers of LGB (layers 1–2)
- → Feeds DORSAL stream (Where/How pathway)
- Function: Motion detection, low-contrast sensitivity, black-and-white
- Board clue: M = Magnocellular = Movement = motion + contrast
- Equivalent to: Y cells functionally
+  Location: Peripheral retina (more)
+  Projection: Magnocellular layers of LGB (layers 1–2)
+  → Feeds DORSAL stream (Where/How pathway)
+  Function: Motion detection, low-contrast sensitivity, black-and-white
+  Board clue: M = Magnocellular = Movement = motion + contrast
+  Equivalent to: Y cells functionally
 
 MELANOPSIN-CONTAINING (ipRGC) CELLS
- Location: Ganglion cell layer
- Photopigment: Melanopsin (maximally sensitive to blue light ~480nm)
- Projection: Suprachiasmatic nucleus (SCN) of hypothalamus
- Function: Circadian rhythm regulation (light/dark cycle), pupillary light reflex
- They do NOT form images — they only sense ambient light level
- Board clue: melanopsin = non-image-forming; circadian; pupil reflex
+  Location: Ganglion cell layer
+  Photopigment: Melanopsin (maximally sensitive to blue light ~480nm)
+  Projection: Suprachiasmatic nucleus (SCN) of hypothalamus
+  Function: Circadian rhythm regulation (light/dark cycle), pupillary light reflex
+  They do NOT form images — they only sense ambient light level
+  Board clue: melanopsin = non-image-forming; circadian; pupil reflex
 ```
 
 **P vs M — the board comparison:**
@@ -650,33 +650,33 @@ MELANOPSIN-CONTAINING (ipRGC) CELLS
 
 ```
 HORIZONTAL CELLS (always inhibitory)
- Connected laterally across photoreceptors
- Inhibit neighboring photoreceptors
- Result: LATERAL INHIBITION — sharpens edges and enhances contrast
- "Mach bands" are a perceptual result of lateral inhibition
- 
+  Connected laterally across photoreceptors
+  Inhibit neighboring photoreceptors
+  Result: LATERAL INHIBITION — sharpens edges and enhances contrast
+  "Mach bands" are a perceptual result of lateral inhibition
+  
 AMACRINE CELLS (30 types, mostly inhibitory)
- Located in inner nuclear layer
- Roles:
- - Direct rod pathway: Rod → Bipolar → Amacrine → Ganglion cell
- - Motion detection (directionally selective amacrine cells)
- - Response to light onset/offset
- - Additional lateral inhibition at inner plexiform layer
+  Located in inner nuclear layer
+  Roles:
+    - Direct rod pathway: Rod → Bipolar → Amacrine → Ganglion cell
+    - Motion detection (directionally selective amacrine cells)
+    - Response to light onset/offset
+    - Additional lateral inhibition at inner plexiform layer
 
 BIPOLAR CELLS (depolarizing and hyperpolarizing)
- Two types based on response to light:
- 
- DEPOLARIZING (ON-center) bipolar cells:
- Direct synapse from photoreceptor
- Light → decreased glutamate from photoreceptor
- → Bipolar cell depolarizes → "ON" signal
- 
- HYPERPOLARIZING (OFF-center) bipolar cells:
- Inhibitory synapse
- Light → decreased glutamate → Bipolar cell hyperpolarizes → "OFF" signal
- 
- Result: The retina signals both LIGHT ONSET (ON pathway) and LIGHT OFFSET (OFF pathway)
- simultaneously — gives the visual system sensitivity to both edges and changes
+  Two types based on response to light:
+  
+  DEPOLARIZING (ON-center) bipolar cells:
+    Direct synapse from photoreceptor
+    Light → decreased glutamate from photoreceptor
+    → Bipolar cell depolarizes → "ON" signal
+    
+  HYPERPOLARIZING (OFF-center) bipolar cells:
+    Inhibitory synapse
+    Light → decreased glutamate → Bipolar cell hyperpolarizes → "OFF" signal
+    
+  Result: The retina signals both LIGHT ONSET (ON pathway) and LIGHT OFFSET (OFF pathway)
+  simultaneously — gives the visual system sensitivity to both edges and changes
 ```
 
 ---
@@ -697,8 +697,8 @@ BIPOLAR CELLS (depolarizing and hyperpolarizing)
 - [x] `PO-Physiological-Optics.md` — Visual acuity types (detection, resolution, legible), preferential looking tests, contrast sensitivity (Pelli-Robson), depth of focus/field
 - [x] `BV-Dr-Juarez.md` — Visual acuity charts (Bailey-Lovie, ETDRS, HOTV, Lea, Snellen gold standard discussion)
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.2 scope reference (Syllabi section 16.0)
-- [x] `SCOTOPIC-AND-PHOTOPIC-VISION.pdf` (the 2026 review, Dr. Aldwin Lanorio OD) — W/X/Y ganglion cell types, P/M cells, melanopsin ipRGCs, retinal neuron functions (horizontal cells, amacrine cells, bipolar cells ON/OFF), lateral inhibition, nyctalopia causes, retinal blood supply overview
-- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (the 2026 review) — Fechner's Law, Weber's Law context, retinal sensitivity laws
+- [x] `SCOTOPIC-AND-PHOTOPIC-VISION.pdf` (MCU Review 2026, Dr. Aldwin Lanorio OD) — W/X/Y ganglion cell types, P/M cells, melanopsin ipRGCs, retinal neuron functions (horizontal cells, amacrine cells, bipolar cells ON/OFF), lateral inhibition, nyctalopia causes, retinal blood supply overview
+- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (MCU Review 2026) — Fechner's Law, Weber's Law context, retinal sensitivity laws
 
 ---
 

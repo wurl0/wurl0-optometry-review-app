@@ -1031,7 +1031,7 @@ NYSTAGMUS
 │
 └── PATHOLOGICAL (abnormal — present in primary gaze or neutral position)
       ├── By WAVEFORM:
-      ���     ├── JERK nystagmus — has a SLOW drift + FAST corrective jerk
+      │     ├── JERK nystagmus — has a SLOW drift + FAST corrective jerk
       │     │     Named by direction of the FAST phase
       │     └── PENDULAR nystagmus — equal velocity in both directions (no fast phase)
       │           Like a pendulum swinging equally both ways
@@ -1095,7 +1095,7 @@ VESTIBULAR NYSTAGMUS
     Fast phase AWAY from the lesion side
     SUPPRESSED by visual fixation
     Associated: vertigo, nausea, unilateral hearing loss, tinnitus
-    Example: Benign paroxysmal positional vertigo (BPPV), M��nière's disease
+    Example: Benign paroxysmal positional vertigo (BPPV), Ménière's disease
     
   CENTRAL (brainstem/cerebellar):
     Often vertical or purely torsional
