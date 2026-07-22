@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { SUBJECTS, ITEMS, ITEM_BY_ID, READINESS_ITEM_ID, type Item } from '@/lib/reviewer-manifest'
 import { canOpenCockpit, canOpenItem, type Access } from '@/lib/access'
+import Top2Search from './Top2Search'
 
 // Dynamic cockpit for the Top 2 reviewer. Renders only the items a user may open
 // (admin sees everything). Non-cockpit users are sent home by middleware/this guard.
@@ -48,6 +49,10 @@ export default async function ReviewerPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6">
+        {/* Only worth showing when something is actually granted; an empty cockpit has
+            nothing to search. */}
+        {!nothing && <Top2Search />}
+
         {showReadiness && (
           <Link href="/readiness"
             className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-5 py-4 mb-6 hover:border-teal-300 transition-colors">

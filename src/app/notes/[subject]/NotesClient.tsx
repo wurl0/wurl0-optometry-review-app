@@ -6,12 +6,15 @@ import { Subject } from '@/lib/types'
 import { COLOR_MAP } from '@/lib/subjects'
 import { DiagramRenderer } from '@/components/diagrams/DiagramRenderer'
 import { NotesQuizData } from '@/lib/notes-quiz-types'
+import { countMatches, sectionText } from '@/lib/notes-text'
 import NotesQuiz from './NotesQuiz'
 
 interface Props {
   subject: Subject
   notes: NotesData
   quiz?: NotesQuizData
+  // Seeded from `?q=` when arriving from the global search, so the term stays applied.
+  initialQuery?: string
 }
 
 function escapeRegExp(s: string): string {
@@ -45,31 +48,6 @@ function inline(text: string, query = ''): ReactNode {
     }
     return <Fragment key={i}>{highlightText(p, query)}</Fragment>
   })
-}
-
-// Flatten all searchable text of a block (recursing into sub-blocks) so a
-// keyword can be matched no matter how deeply it is nested.
-function blockText(block: Block): string {
-  switch (block.kind) {
-    case 'text': return block.content
-    case 'bullets': return block.items.join(' ')
-    case 'table': return block.headers.concat(block.rows.flat()).join(' ')
-    case 'pearl': return block.content
-    case 'callout': return `${block.title ?? ''} ${block.content}`
-    case 'diagram': return block.caption ?? ''
-    case 'sub': return `${block.title} ${block.blocks.map(blockText).join(' ')}`
-    default: return ''
-  }
-}
-
-function sectionText(section: Section): string {
-  return `${section.title} ${section.blocks.map(blockText).join(' ')}`
-}
-
-// Count case-insensitive occurrences of `q` in `hay`.
-function countMatches(hay: string, q: string): number {
-  if (!q) return 0
-  return hay.toLowerCase().split(q.toLowerCase()).length - 1
 }
 
 const CALLOUT_STYLES = {
@@ -184,11 +162,11 @@ function BlockRenderer({ block, depth = 0, query = '' }: { block: Block; depth?:
 }
 
 
-export default function NotesClient({ subject, notes, quiz }: Props) {
+export default function NotesClient({ subject, notes, quiz, initialQuery = '' }: Props) {
   const c = COLOR_MAP[subject.color]
   const [allOpen, setAllOpen] = useState(false)
   const [quizOpen, setQuizOpen] = useState(false)
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState(initialQuery)
   const q = query.trim()
   const searching = q.length > 0
 
@@ -352,7 +330,7 @@ function ForceOpenSection({
   const effectiveOpen = forceOpen || open
 
   return (
-    <div id={section.id} className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+    <div id={section.id} className="scroll-mt-32 bg-white rounded-2xl border border-gray-200 overflow-hidden">
       <button
         onClick={() => setOpen(o => !o)}
         className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"

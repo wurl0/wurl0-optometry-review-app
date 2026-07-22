@@ -1,44 +1,8 @@
 import { createClient } from '@/lib/supabase-server'
 import { redirect, notFound } from 'next/navigation'
 import OlePrepClient from './OlePrepClient'
-import { OlePrepData } from '@/lib/ole-prep-types'
 import { SUBJECTS } from '@/lib/subjects'
-
-import physiologicOpticsData from '@/data/ole-prep/physiologic-optics'
-import binocularVisionData from '@/data/ole-prep/binocular-vision'
-import theoreticalOpticsData from '@/data/ole-prep/theoretical-optics'
-import phorometryData from '@/data/ole-prep/phorometry'
-import primaryEyeCareData from '@/data/ole-prep/primary-eye-care'
-import { ocularAnatomyData } from '@/data/ole-prep/ocular-anatomy'
-import { generalAnatomyData } from '@/data/ole-prep/general-anatomy'
-import { ocularDiseaseData } from '@/data/ole-prep/ocular-disease'
-import { generalPharmacologyData } from '@/data/ole-prep/general-pharmacology'
-import { ocularPharmacologyData } from '@/data/ole-prep/ocular-pharmacology'
-import { practicalMechanicalOpticsData } from '@/data/ole-prep/practical-mechanical-optics'
-import { optometryConstantsData } from '@/data/ole-prep/optometry-constants'
-import { lowVisionData } from '@/data/ole-prep/low-vision'
-import { pediatricOptometryData } from '@/data/ole-prep/pediatric-optometry'
-import { contactLensData } from '@/data/ole-prep/contact-lens'
-import { ethicsAndJurisprudenceData } from '@/data/ole-prep/ethics-and-jurisprudence'
-
-const DATA_MAP: Record<string, OlePrepData> = {
-  'physiologic-optics': physiologicOpticsData,
-  'binocular-vision': binocularVisionData,
-  'theoretical-optics': theoreticalOpticsData,
-  'phorometry': phorometryData,
-  'primary-eye-care': primaryEyeCareData,
-  'ocular-anatomy': ocularAnatomyData,
-  'general-anatomy': generalAnatomyData,
-  'ocular-disease': ocularDiseaseData,
-  'general-pharmacology': generalPharmacologyData,
-  'ocular-pharmacology': ocularPharmacologyData,
-  'practical-mechanical-optics': practicalMechanicalOpticsData,
-  'optometry-constants': optometryConstantsData,
-  'low-vision': lowVisionData,
-  'pediatric-optometry': pediatricOptometryData,
-  'contact-lens': contactLensData,
-  'ethics-and-jurisprudence': ethicsAndJurisprudenceData,
-}
+import { OLE_PREP_MAP } from '@/lib/notes-registry'
 
 const REGULAR_SUBJECT_SLUGS = SUBJECTS.filter(s => !s.isBonus).map(s => s.slug)
 
@@ -52,7 +16,7 @@ export default async function OlePrepSubjectPage({
   if (!user) redirect('/login')
 
   const { subject } = await params
-  const data = DATA_MAP[subject]
+  const data = OLE_PREP_MAP[subject]
   if (!data) notFound()
 
   // Bonus subject: check unlock eligibility

@@ -119,10 +119,29 @@ export default async function HomePage() {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Greeting */}
-        <div className="mb-5">
+        <div className="mb-4">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
           <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
         </div>
+
+        {/* Search every subject at once. A plain GET form on purpose: no client JS, so
+            it works instantly on a phone and needs nothing loaded before you can type. */}
+        <form action="/search" method="get" className="relative mb-5">
+          <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm pointer-events-none">🔎</span>
+          <input
+            type="search"
+            name="q"
+            autoComplete="off"
+            placeholder="Search all subjects: a term, a drug, a formula…"
+            className="w-full pl-10 pr-20 py-2.5 text-sm rounded-xl border border-gray-200 bg-white focus:border-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-100 transition-colors"
+          />
+          <button
+            type="submit"
+            className="absolute right-1.5 top-1/2 -translate-y-1/2 text-xs font-semibold bg-gray-900 text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            Search
+          </button>
+        </form>
 
         {/* The 10-minute drill: the lowest-friction way in. Deliberately the first thing
             on the page and the only one that needs no decision to start — picking a
@@ -442,6 +461,7 @@ export default async function HomePage() {
             </summary>
             <div className="mt-3 space-y-2">
               {[
+                { version: 'v0.20', date: 'Jul 2026', note: 'Search across everything — one box on the home screen searches all 16 subjects’ Notes and OLE Prep at once and drops you on the exact section, and the Top 2 home gained the same box across all 8 reviewers, strategy cards, and the law book.' },
                 { version: 'v0.19', date: 'Jul 2026', note: 'Board-area color accents — each subject group on the home screen now sits in its own tinted, bordered box for faster visual scanning.' },
                 { version: 'v0.18', date: 'Jul 2026', note: 'In-subject keyword search — every Notes reviewer now has a search box that filters to the sections containing your term, highlights every match, and shows a match count.' },
                 { version: 'v0.17', date: 'Jul 2026', note: 'Notes visual upgrade finished — the callout + bold treatment (plus new diagrams: boxing system, retinoscopy motion, duochrome) rolled out to the remaining 12 subjects: Theoretical & Practical Optics, Contact Lens, Ocular & General Anatomy, Primary Eye Care, Phorometry, Ocular Disease, Ocular & General Pharmacology, Low Vision, and Pediatric Optometry.' },

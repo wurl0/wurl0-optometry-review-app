@@ -1,21 +1,7 @@
 import { notFound } from 'next/navigation'
 import { SUBJECTS } from '@/lib/subjects'
 import NotesClient from './NotesClient'
-import physioNotes from '@/data/notes/physiologic-optics'
-import bvNotes from '@/data/notes/binocular-vision'
-import theoreticalOpticsNotes from '@/data/notes/theoretical-optics'
-import phorometryNotes from '@/data/notes/phorometry'
-import primaryEyeCareNotes from '@/data/notes/primary-eye-care'
-import { ocularAnatomyNotes } from '@/data/notes/ocular-anatomy'
-import { generalAnatomyNotes } from '@/data/notes/general-anatomy'
-import { ocularDiseaseNotes } from '@/data/notes/ocular-disease'
-import { generalPharmacologyNotes } from '@/data/notes/general-pharmacology'
-import { ocularPharmacologyNotes } from '@/data/notes/ocular-pharmacology'
-import { practicalMechanicalOpticsNotes } from '@/data/notes/practical-mechanical-optics'
-import { lowVisionNotes } from '@/data/notes/low-vision'
-import { pediatricOptometryNotes } from '@/data/notes/pediatric-optometry'
-import { contactLensNotes } from '@/data/notes/contact-lens'
-import { ethicsAndJurisprudenceNotes } from '@/data/notes/ethics-and-jurisprudence'
+import { NOTES_MAP } from '@/lib/notes-registry'
 import physioQuiz from '@/data/notes-quiz/physiologic-optics'
 import bvQuiz from '@/data/notes-quiz/binocular-vision'
 import theoreticalOpticsQuiz from '@/data/notes-quiz/theoretical-optics'
@@ -31,26 +17,7 @@ import { lowVisionQuiz } from '@/data/notes-quiz/low-vision'
 import { pediatricOptometryQuiz } from '@/data/notes-quiz/pediatric-optometry'
 import { contactLensQuiz } from '@/data/notes-quiz/contact-lens'
 import { ethicsAndJurisprudenceQuiz } from '@/data/notes-quiz/ethics-and-jurisprudence'
-import { NotesData } from '@/lib/notes-types'
 import { NotesQuizData } from '@/lib/notes-quiz-types'
-
-const NOTES_MAP: Record<string, NotesData> = {
-  'physiologic-optics': physioNotes,
-  'binocular-vision': bvNotes,
-  'theoretical-optics': theoreticalOpticsNotes,
-  'phorometry': phorometryNotes,
-  'primary-eye-care': primaryEyeCareNotes,
-  'ocular-anatomy': ocularAnatomyNotes,
-  'general-anatomy': generalAnatomyNotes,
-  'ocular-disease': ocularDiseaseNotes,
-  'general-pharmacology': generalPharmacologyNotes,
-  'ocular-pharmacology': ocularPharmacologyNotes,
-  'practical-mechanical-optics': practicalMechanicalOpticsNotes,
-  'low-vision': lowVisionNotes,
-  'pediatric-optometry': pediatricOptometryNotes,
-  'contact-lens': contactLensNotes,
-  'ethics-and-jurisprudence': ethicsAndJurisprudenceNotes,
-}
 
 const QUIZ_MAP: Record<string, NotesQuizData> = {
   'physiologic-optics': physioQuiz,
@@ -70,8 +37,17 @@ const QUIZ_MAP: Record<string, NotesQuizData> = {
   'ethics-and-jurisprudence': ethicsAndJurisprudenceQuiz,
 }
 
-export default async function NotesPage({ params }: { params: Promise<{ subject: string }> }) {
+export default async function NotesPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ subject: string }>
+  searchParams: Promise<{ q?: string }>
+}) {
   const { subject } = await params
+  // `?q=` arrives from the global search on the home page, so the subject opens with
+  // the same keyword already filtering and highlighted.
+  const { q } = await searchParams
   const subjectMeta = SUBJECTS.find(s => s.slug === subject)
   if (!subjectMeta) notFound()
 
@@ -89,5 +65,12 @@ export default async function NotesPage({ params }: { params: Promise<{ subject:
     )
   }
 
-  return <NotesClient subject={subjectMeta} notes={notes} quiz={QUIZ_MAP[subject]} />
+  return (
+    <NotesClient
+      subject={subjectMeta}
+      notes={notes}
+      quiz={QUIZ_MAP[subject]}
+      initialQuery={q ?? ''}
+    />
+  )
 }

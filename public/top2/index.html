@@ -38,6 +38,23 @@ a{text-decoration:none;color:inherit;}
 .il{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--navy);
  background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 12px;}
 .il:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+/* General search over every reviewer + strategy page. Queries /api/top2-search so the
+   1.2 MB index stays on the server and results are filtered by the same access rules. */
+.gs{position:relative;margin-top:16px;}
+.gs input{width:100%;font:inherit;font-size:15px;padding:12px 14px 12px 42px;border:1px solid var(--line);
+ border-radius:12px;background:#fff;color:var(--ink);outline:none;}
+.gs input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(31,58,99,.10);}
+.gs .gs-ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:17px;pointer-events:none;}
+.gs-status{font-size:12.5px;color:var(--muted);margin-top:9px;}
+.gs-results{margin-top:10px;display:none;}
+.gs-results.on{display:block;}
+.gs-hit{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin-bottom:8px;}
+.gs-hit:hover{border-color:var(--navy);}
+.gs-hit-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;}
+.gs-hit-t{font-weight:670;font-size:14px;line-height:1.3;}
+.gs-hit-src{font-size:11.5px;color:var(--muted);white-space:nowrap;flex:none;}
+.gs-hit-s{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.5;}
+.gs-hit-s mark{background:#fde68a;color:inherit;border-radius:3px;padding:0 2px;}
 .foot{margin-top:40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px;}
 </style></head><body>
 <div class="wrap">
@@ -55,6 +72,82 @@ a{text-decoration:none;color:inherit;}
       ? days + ' days to written exam'
       : (days === 0 ? 'Written exam is today' : 'Written exam has passed');
   })();
+</script>
+
+<div class="gs">
+  <i class="ti ti-search gs-ico"></i>
+  <input id="waa-search" type="search" autocomplete="off" placeholder="Search every reviewer and strategy card: a term, a drug, a value…">
+</div>
+<div class="gs-status" id="waa-search-status"></div>
+<div class="gs-results" id="waa-search-results"></div>
+<script>
+/* Top 2 general search. The index lives on the server (src/data/top2-search-index.ts,
+   built by exam-build/build_top2_search_index.py); this only renders what comes back,
+   already filtered to the pages the signed-in user may open. */
+(function () {
+  var box = document.getElementById('waa-search');
+  var status = document.getElementById('waa-search-status');
+  var out = document.getElementById('waa-search-results');
+  var timer = null, seq = 0;
+
+  function esc(s) {
+    return s.replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function mark(text, q) {
+    var lower = text.toLowerCase(), needle = q.toLowerCase(), html = '', at = 0, i;
+    while ((i = lower.indexOf(needle, at)) !== -1) {
+      html += esc(text.slice(at, i)) + '<mark>' + esc(text.substr(i, q.length)) + '</mark>';
+      at = i + q.length;
+    }
+    return html + esc(text.slice(at));
+  }
+
+  function render(data) {
+    if (!data.hits.length) {
+      out.className = 'gs-results';
+      out.innerHTML = '';
+      status.textContent = 'No matches for "' + data.query + '".';
+      return;
+    }
+    status.textContent = data.total + (data.total === 1 ? ' match in ' : ' matches in ') +
+      data.hits.length + (data.hits.length === 1 ? ' section' : ' sections') +
+      (data.truncated ? ' (showing the strongest 40)' : '');
+    out.innerHTML = data.hits.map(function (h) {
+      return '<a class="gs-hit" href="' + esc(h.href) + '">' +
+        '<div class="gs-hit-top"><span class="gs-hit-t">' + esc(h.title) + '</span>' +
+        '<span class="gs-hit-src">' + esc(h.label) + ' · ' + h.matches + '\u00d7</span></div>' +
+        '<div class="gs-hit-s">' + mark(h.snippet, data.query) + '</div></a>';
+    }).join('');
+    out.className = 'gs-results on';
+  }
+
+  function run() {
+    var q = box.value.trim();
+    if (q.length < 2) {
+      status.textContent = '';
+      out.className = 'gs-results';
+      out.innerHTML = '';
+      return;
+    }
+    var mine = ++seq;
+    status.textContent = 'Searching…';
+    fetch('/api/top2-search?q=' + encodeURIComponent(q))
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function (data) { if (mine === seq) render(data); })
+      .catch(function () {
+        if (mine !== seq) return;
+        status.textContent = 'Search is unavailable right now.';
+        out.className = 'gs-results';
+      });
+  }
+
+  /* Debounced: one request per pause, not one per keystroke. */
+  box.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 250); });
+  box.addEventListener('keydown', function (e) { if (e.key === 'Enter') { clearTimeout(timer); run(); } });
+})();
 </script>
 
 <div class="sec-label">Full board simulation</div>

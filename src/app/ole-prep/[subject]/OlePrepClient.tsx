@@ -296,7 +296,9 @@ export default function OlePrepClient({ data }: Props) {
           {data.sections.map(section => {
             const isOpen = openSections.has(section.id)
             return (
-              <div key={section.id} className="border border-gray-200 rounded-2xl overflow-hidden bg-white">
+              // The id is the anchor the global search deep-links to; scroll-mt clears
+              // the sticky header so the section title is not hidden under it.
+              <div key={section.id} id={section.id} className="scroll-mt-20 border border-gray-200 rounded-2xl overflow-hidden bg-white">
                 {/* Section header */}
                 <button
                   onClick={() => toggleSection(section.id)}
