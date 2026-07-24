@@ -35,6 +35,13 @@
   .stage{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
   .chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:12px;color:var(--dim)}
   .chip b{color:var(--text)} .chip.live{border-color:var(--good);color:var(--good)}
+  .raillegend{font-size:11px;color:#64748b;margin-top:8px}
+  .rxrow{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;padding:5px 0;border-bottom:1px solid var(--panel2)}
+  .rxrow:last-child{border-bottom:0}
+  .rxrow span{color:var(--dim)} .rxrow b{color:var(--text);font-family:ui-monospace,Menlo,monospace}
+  .viewtoggle{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font-size:11.5px;cursor:pointer;font-weight:600;white-space:nowrap}
+  .viewtoggle:hover{border-color:var(--accent);color:var(--text)}
+  .viewtoggle.off{border-color:var(--warn);color:var(--warn)}
 
   /* patient view */
   .viewwrap{display:flex;flex-direction:column;align-items:center}
@@ -145,13 +152,22 @@
     <span class="chip live" id="pStep">Step 1</span>
   </div>
   <div class="rail" id="rail"></div>
+  <div class="raillegend">Dimmed chips are objective steps (given to you as briefings); bright chips are the ones you measure. Click any chip to jump, or use Back / Next.</div>
 </div>
 
 <div class="grid">
   <!-- LEFT: patient view + control -->
   <div>
+    <div class="card" id="rxCard">
+      <h2>Chart on file</h2>
+      <div class="rxrow"><span>Habitual Rx</span><b id="rxHab">&mdash;</b></div>
+      <div class="rxrow"><span>#7 Subjective</span><b id="rxSubj">&mdash;</b></div>
+    </div>
     <div class="card">
-      <h2 id="viewTitle">Through the phoropter</h2>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px">
+        <h2 style="margin:0" id="viewTitle">Through the phoropter</h2>
+        <button class="viewtoggle" id="viewToggle">Patient's view: on</button>
+      </div>
       <div class="viewwrap">
         <svg class="eye" id="eye" viewBox="0 0 300 220"></svg>
         <div class="viewcap" id="viewcap"></div>
@@ -335,7 +351,7 @@ const STEPS=[
 ];
 
 /* ===================== state ===================== */
-let idx=0; const results={}; let marks={}; let dial=0, addDial=0, answered=false;
+let idx=0; const results={}; let marks={}; let dial=0, addDial=0, answered=false; let showView=true;
 
 /* ===================== patient view ===================== */
 function letters(x,y,col,blur){ return ["E","F","P"].map((c,i)=>`<text x="${x}" y="${y+(i-1)*15}" fill="${col}" font-size="16" font-family="monospace" font-weight="700" text-anchor="middle" dominant-baseline="middle" ${blur?'filter="url(#pb)"':''}>${c}</text>`).join(""); }
@@ -351,6 +367,8 @@ function drawEye(){
            `<rect width="300" height="220" rx="12" fill="#05070d"/>`];
   const k=step.kind;
   if(k==="brief"){ g.push(`<text x="150" y="112" fill="#3a4a5e" font-size="13" font-family="monospace" text-anchor="middle">objective step</text>`); }
+  else if(!showView){ g.push(`<text x="150" y="100" fill="#5a6a7a" font-size="13" font-family="monospace" text-anchor="middle">exam mode</text>`);
+    g.push(`<text x="150" y="124" fill="#3a4a5e" font-size="11" font-family="monospace" text-anchor="middle">go by the patient's reply</text>`); }
   else if(k==="lateral"){ const t=step.truth(P), dx=clamp((dial-t)*5,-110,110), al=Math.abs(dial-t)<0.75;
     g.push(`<line x1="150" y1="18" x2="150" y2="202" stroke="#12324a" stroke-dasharray="3 6"/>`);
     g.push(letters(cx+dx,cy-42,col,false)); g.push(letters(cx,cy+42,col,false));
@@ -464,7 +482,7 @@ function setCtrl(v){ const cfg=controlCfg(STEPS[idx]);
 function redraw(){ const step=STEPS[idx];
   drawEye();
   const b=$("#bigread"); if(b) b.textContent=readoutText(step);
-  $("#viewcap").innerHTML="";           // dialog carries the words; keep the view clean
+  $("#viewcap").innerHTML=`<span style="color:var(--purple);font-weight:600">Patient:</span> ${patientPercept()}`;
   const al=$("#algn"); if(al&&(step.kind==="lateral"||step.kind==="vertical")) al.classList.toggle("on",Math.abs(dial-step.truth(P))<0.75);
   setLive(patientPercept());
 }
@@ -624,11 +642,16 @@ function finish(){
 function newCase(){ P=genPatient(); for(const k in results) delete results[k]; idx=0;
   $("#pName").textContent=P.name;
   $("#pProfile").textContent=`age ${P.age} · ${({emme:"~emmetrope",myope:"myope",hyperope:"hyperope",astig:"astigmat"})[P.kind]}${P.presby?" · presbyope":""}`;
+  $("#rxHab").textContent=`OD ${rxStr(P.oldRx.OD)}  ·  OS ${rxStr(P.oldRx.OS)}`;
+  $("#rxSubj").textContent=`OD ${rxStr(P.Rx.OD)}  ·  OS ${rxStr(P.Rx.OS)}${P.presby?`  ·  Add +${P.add.toFixed(2)}`:""}`;
   renderStep(); }
 $("#recordWrap").addEventListener("click",e=>{ if(e.target.id==="chk") checkStep(STEPS[idx],false); });
 $("#btnNext").addEventListener("click",next);
 $("#btnPrev").addEventListener("click",prev);
 $("#btnReveal").addEventListener("click",()=>checkStep(STEPS[idx],true));
+$("#viewToggle").addEventListener("click",()=>{ showView=!showView;
+  $("#viewToggle").textContent="Patient's view: "+(showView?"on":"off");
+  $("#viewToggle").classList.toggle("off",!showView); drawEye(); });
 $("#btnNewCase").addEventListener("click",newCase);
 $("#btnNewCase2").addEventListener("click",newCase);
 document.addEventListener("keydown",e=>{ if(/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
