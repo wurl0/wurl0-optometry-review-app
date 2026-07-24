@@ -68,6 +68,8 @@
     font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
   .f input:focus,.f select:focus{outline:none;border-color:var(--accent)}
   .f.ok input{border-color:var(--good)} .f.err input{border-color:var(--bad)}
+  .f.off{opacity:.4} .f.off label::after{content:" — n/a";color:var(--dim);font-weight:400}
+  .f input:disabled,.f select:disabled{cursor:not-allowed;background:#131c2c}
 
   .actions{display:flex;gap:8px;margin-top:14px}
   .actions button{flex:1;border:none;border-radius:8px;padding:11px;cursor:pointer;
@@ -256,7 +258,7 @@
         <label>Power drum (D) <span class="val" id="drumVal">+0.00</span></label>
         <div class="sliderrow">
           <button data-drum="-0.25">&minus;</button>
-          <input type="range" id="drum" min="-20" max="20" step="0.01" value="0">
+          <input type="range" id="drum" min="-20" max="20" step="0.25" value="0">
           <button data-drum="0.25">+</button>
         </div>
       </div>
@@ -288,12 +290,13 @@
         <summary>How this simulation behaves, and why that matters</summary>
         <p>The two line sets do <b>not</b> come to focus together. Each principal meridian of the lens
         forms a line image at right angles to itself, so the sphere lines sharpen at one drum setting
-        and the cyl line sharpens at another. The gap between the two readings <b>is</b> the cylinder.
+        and the cyl lines sharpen at another. The gap between the two readings <b>is</b> the cylinder.
         That is the whole reason lensmetry takes two readings rather than one.</p>
         <ul>
-          <li><b>Sphere lines</b> (the triple set) sharpen when the drum reaches the axis meridian.
-              That reading is your sphere.</li>
-          <li><b>Cyl line</b> (the single bold line) sharpens at sphere plus cyl. Subtract to get the cylinder.</li>
+          <li>Both meridians are <b>triple-line sets</b> crossing at right angles: the sphere lines sit
+              close together, the cylinder lines wider apart, so you can tell them apart.</li>
+          <li><b>Sphere lines</b> sharpen when the drum reaches the axis meridian. That reading is your sphere.</li>
+          <li><b>Cyl lines</b> sharpen at sphere plus cyl. Subtract to get the cylinder.</li>
           <li><b>Broken mires</b> mean the axis wheel is wrong, not the power. The lines shear apart
               whenever the target sits off a principal meridian, and they snap back into one continuous
               line only at the true axis. Chase the break before you chase the blur.</li>
@@ -309,10 +312,10 @@
       <h2>Record the prism</h2>
       <div class="fields two">
         <div class="f" id="fPh"><label>Horizontal (&Delta;)</label><input id="inPh" placeholder="0.00"></div>
-        <div class="f"><label>Base</label>
+        <div class="f" id="fPhb"><label>Base</label>
           <select id="inPhb"><option value="none">none</option><option value="in">in</option><option value="out">out</option></select></div>
         <div class="f" id="fPv"><label>Vertical (&Delta;)</label><input id="inPv" placeholder="0.00"></div>
-        <div class="f"><label>Base</label>
+        <div class="f" id="fPvb"><label>Base</label>
           <select id="inPvb"><option value="none">none</option><option value="up">up</option><option value="down">down</option></select></div>
       </div>
       <div class="actions">
@@ -522,18 +525,27 @@ function renderTarget(){
   // mire break from axis misalignment
   const brk = clamp(Math.abs(C) * Math.abs(Math.sin(rad(2*(axisW-th)))) * 7, 0, 15);
 
-  // sphere lines: three parallel lines running along local y (perpendicular to wheel)
+  // Both meridians are TRIPLE-line sets crossing at right angles (standard reticle).
+  // Sphere lines sit close together (they read almost as one line); cylinder lines are
+  // spaced wider apart so the two sets are told apart at a glance. Each set focuses
+  // on its own meridian, so only one is crisp at a time.
+  const SP_SPH = 7, SP_CYL = 20;
+
+  // sphere lines: triple, running along local y (perpendicular to the wheel), tight
   let hs = "";
-  [-19,0,19].forEach(x => {
+  [-SP_SPH,0,SP_SPH].forEach(x => {
     hs += segLine(x-brk, -L, x-brk, -6, wSph, "#04211a");
     hs += segLine(x+brk,  6, x+brk,  L, wSph, "#04211a");
   });
   $("#gSph").innerHTML = hs;
   $("#gSph").setAttribute("style","filter:blur("+bSph.toFixed(2)+"px)");
 
-  // cyl line: single bold line along local x (along the wheel setting)
-  let hc = segLine(-L, -brk, -6, -brk, wCyl, "#031610")
-         + segLine( 6,  brk,  L,  brk, wCyl, "#031610");
+  // cylinder lines: triple, running along local x (along the wheel), spaced wider
+  let hc = "";
+  [-SP_CYL,0,SP_CYL].forEach(y => {
+    hc += segLine(-L, y-brk, -6, y-brk, wCyl, "#031610");
+    hc += segLine( 6, y+brk,  L, y+brk, wCyl, "#031610");
+  });
   $("#gCyl").innerHTML = hc;
   $("#gCyl").setAttribute("style","filter:blur("+bCyl.toFixed(2)+"px)");
 
@@ -609,7 +621,31 @@ function newTarget(){
   $$("#recSca input,#recPrism input,#recAdd input,#recPrentice input").forEach(i => i.value = "");
   $("#inPhb").value = "none"; $("#inPvb").value = "none"; $("#inPrB").value = "in";
   if (tab === "prentice") renderPren();
+  gateFields();
   refreshInstr(); drawNasal(); updateStage();
+}
+
+// The record fields follow the practice settings: sphere-only hides cyl and axis,
+// a single-plane prism disables the other plane. A disabled field is dimmed, marked
+// n/a, and cleared so it cannot carry a stale value into the check.
+function gateFields(){
+  const set = (wrapSel, inputSel, on) => {
+    const w = $(wrapSel), el = $(inputSel);
+    if (!w || !el) return;
+    w.classList.toggle("off", !on);
+    el.disabled = !on;
+    if (!on) el.value = (el.tagName === "SELECT") ? "none" : "";
+  };
+  if (tab === "sca"){
+    const cylOn = (diff !== "sph");     // no cylinder to record on a pure sphere
+    set("#fCyl", "#inCyl", cylOn);
+    set("#fAx",  "#inAx",  cylOn);
+  } else if (tab === "prism"){
+    const hOn = (pmode === "horiz" || pmode === "comp");
+    const vOn = (pmode === "vert"  || pmode === "comp");
+    set("#fPh",  "#inPh",  hOn); set("#fPhb", "#inPhb", hOn);
+    set("#fPv",  "#inPv",  vOn); set("#fPvb", "#inPvb", vOn);
+  }
 }
 
 /* ---------------- add module reading ---------------- */
@@ -627,11 +663,13 @@ function renderAddTarget(){
   const p = addReading();
   const d = Math.abs(drum - p);
   const w = clamp(3 + d*4.5, 3, 26), b = clamp(d*0.9, 0, 3.5);
+  // Spherical target, so both triple-line sets focus together.
   let hs = "";
-  [-19,0,19].forEach(x => { hs += segLine(x,-118,x,-6,w,"#04211a"); hs += segLine(x,6,x,118,w,"#04211a"); });
+  [-7,0,7].forEach(x => { hs += segLine(x,-118,x,-6,w,"#04211a"); hs += segLine(x,6,x,118,w,"#04211a"); });
   $("#gSph").innerHTML = hs; $("#gSph").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
-  $("#gCyl").innerHTML = segLine(-118,0,-6,0,w+1,"#031610") + segLine(6,0,118,0,w+1,"#031610");
-  $("#gCyl").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
+  let hc = "";
+  [-20,0,20].forEach(y => { hc += segLine(-118,y,-6,y,w,"#031610"); hc += segLine(6,y,118,y,w,"#031610"); });
+  $("#gCyl").innerHTML = hc; $("#gCyl").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
   $("#targetRot").setAttribute("transform","translate(200,200)");
   $("#targetShift").setAttribute("transform","translate(0,0)");
 }
@@ -939,7 +977,7 @@ function switchTab(t){
   $("#eyecard").classList.toggle("hidden", t === "prentice");
   $("#hint").textContent = t === "add"
     ? "Focus the distance zone, then the near segment. Change the seating and watch the add change."
-    : "Scroll over the eyepiece to turn the power drum. Shift + scroll turns the axis wheel. Arrow keys work too.";
+    : "Scroll over the eyepiece to click the power drum in 0.25 D steps. Shift + scroll turns the axis wheel. Arrow keys work too.";
   newTarget();
 }
 
@@ -955,7 +993,7 @@ bindSeg("#prenSeg","pr", v => { prmode = v; newTarget(); });
 bindSeg("#seatSeg","seat", v => { seat = v; updateStage(); renderAddTarget(); });
 bindSeg("#zoneSeg","zone", v => { zone = v; updateStage(); renderAddTarget(); });
 
-function setDrum(v){ drum = clamp(Math.round(v*100)/100, -20, 20); refreshInstr(); if (tab==="add") renderAddTarget(); }
+function setDrum(v){ drum = clamp(r25(v), -20, 20); refreshInstr(); if (tab==="add") renderAddTarget(); }  // drum clicks in 0.25 D detents
 function setAxis(v){ axisW = ((Math.round(v) % 180) + 180) % 180; refreshInstr(); }
 
 $("#drum").addEventListener("input", e => setDrum(parseFloat(e.target.value)));
@@ -966,13 +1004,13 @@ $$("[data-axis]").forEach(b => b.addEventListener("click", () => setAxis(axisW +
 $("#eye").addEventListener("wheel", e => {
   e.preventDefault();
   const d = e.deltaY > 0 ? -1 : 1;
-  if (e.shiftKey) setAxis(axisW + d); else setDrum(drum + d*0.05);
+  if (e.shiftKey) setAxis(axisW + d); else setDrum(drum + d*0.25);  // one detent per notch
 }, { passive:false });
 
 document.addEventListener("keydown", e => {
   if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
-  if (e.key === "ArrowUp")   { e.preventDefault(); setDrum(drum + (e.shiftKey?0.05:0.25)); }
-  if (e.key === "ArrowDown") { e.preventDefault(); setDrum(drum - (e.shiftKey?0.05:0.25)); }
+  if (e.key === "ArrowUp")   { e.preventDefault(); setDrum(drum + 0.25); }
+  if (e.key === "ArrowDown") { e.preventDefault(); setDrum(drum - 0.25); }
   if (e.key === "ArrowRight"){ e.preventDefault(); setAxis(axisW + (e.shiftKey?5:1)); }
   if (e.key === "ArrowLeft") { e.preventDefault(); setAxis(axisW - (e.shiftKey?5:1)); }
   if (e.key === "n" || e.key === "N") newTarget();
