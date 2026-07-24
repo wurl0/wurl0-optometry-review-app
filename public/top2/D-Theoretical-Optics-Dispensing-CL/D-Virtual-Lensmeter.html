@@ -674,6 +674,33 @@ function renderAddTarget(){
   $("#targetShift").setAttribute("transform","translate(0,0)");
 }
 
+// Induced-prism reticle. The mires sit sharp and centred while the student works, then
+// jump to their displaced position (toward the base, 1 ring = 1 prism dioptre) once an
+// answer is committed, so the calculation is confirmed against what the lensmeter shows.
+function renderPrenTarget(){
+  if (!T || T.kind !== "pren") return;
+  const w = 3;
+  let hs = "";
+  [-7,0,7].forEach(x => { hs += segLine(x,-118,x,-6,w,"#04211a"); hs += segLine(x,6,x,118,w,"#04211a"); });
+  $("#gSph").innerHTML = hs; $("#gSph").setAttribute("style","filter:blur(0px)");
+  let hc = "";
+  [-20,0,20].forEach(y => { hc += segLine(-118,y,-6,y,w,"#031610"); hc += segLine(6,y,118,y,w,"#031610"); });
+  $("#gCyl").innerHTML = hc; $("#gCyl").setAttribute("style","filter:blur(0px)");
+  $("#targetRot").setAttribute("transform","translate(200,200)");
+
+  let dx = 0, dy = 0;
+  if (answered){
+    const D = (prmode === "fwd") ? Math.abs(T.c/10 * T.F) : T.D;
+    const base = prenBase();
+    const nasalSign = (eyeSide === "OD") ? 1 : -1;   // mires displace toward the base
+    if (base === "in")   dx =  D * nasalSign;
+    if (base === "out")  dx = -D * nasalSign;
+    if (base === "up")   dy = -D;
+    if (base === "down") dy =  D;
+  }
+  $("#targetShift").setAttribute("transform", `translate(${(dx*22).toFixed(1)},${(dy*22).toFixed(1)})`);
+}
+
 /* ---------------- prentice stem ---------------- */
 function renderPren(){
   if (!T || T.kind !== "pren") return;
@@ -884,7 +911,11 @@ function checkAdd(reveal){
   show($("#vAdd"), false, "Not right", notes, "Correct answer: " + ans);
 }
 
-function checkPren(reveal){
+// Wrapper: run the check, then re-draw the reticle so the mires appear displaced by the
+// induced prism once the student has committed an answer (see renderPrenTarget).
+function checkPren(reveal){ checkPrenInner(reveal); if (tab === "prentice") renderTarget(); }
+
+function checkPrenInner(reveal){
   if (!T || T.kind !== "pren") return;
   const base = prenBase();
   const D = Math.abs(T.c/10 * T.F);
@@ -953,7 +984,7 @@ function bindSeg(sel, attr, fn){
 
 function updateStage(){
   $("#stageEye").textContent = eyeSide === "OD" ? "Right eye (OD)" : "Left eye (OS)";
-  const m = { sca:"Crossline target", prism:"Prism reticle", add:"Add measurement", prentice:"Calculation" };
+  const m = { sca:"Crossline target", prism:"Prism reticle", add:"Add measurement", prentice:"Induced prism on reticle" };
   $("#stageMode").textContent = m[tab];
   const zs = $("#stageZone");
   if (tab === "add"){ zs.style.display = ""; zs.innerHTML = "Zone: <b>" + (zone==="dist"?"Distance":"Near segment") + "</b> &middot; " + (seat==="back"?"back surface down":"front surface down"); }
@@ -974,10 +1005,11 @@ function switchTab(t){
   $("#addControls").classList.toggle("hidden", t !== "add");
   $("#axisRow").classList.toggle("hidden", t === "add");
   $("#instrCard").classList.toggle("hidden", t === "prentice");
-  $("#eyecard").classList.toggle("hidden", t === "prentice");
-  $("#hint").textContent = t === "add"
-    ? "Focus the distance zone, then the near segment. Change the seating and watch the add change."
-    : "Scroll over the eyepiece to click the power drum in 0.25 D steps. Shift + scroll turns the axis wheel. Arrow keys work too.";
+  $("#eyecard").classList.remove("hidden");   // reticle shown on every tab, induced prism included
+  $("#hint").textContent =
+      t === "add"      ? "Focus the distance zone, then the near segment. Change the seating and watch the add change."
+    : t === "prentice" ? "Work out the prism first, then reveal to see the mires shift by that amount on the reticle (1 ring = 1Δ)."
+    :                    "Scroll over the eyepiece to click the power drum in 0.25 D steps. Shift + scroll turns the axis wheel. Arrow keys work too.";
   newTarget();
 }
 
@@ -1002,6 +1034,7 @@ $$("[data-drum]").forEach(b => b.addEventListener("click", () => setDrum(drum + 
 $$("[data-axis]").forEach(b => b.addEventListener("click", () => setAxis(axisW + parseFloat(b.dataset.axis))));
 
 $("#eye").addEventListener("wheel", e => {
+  if (tab === "prentice") return;   // no drum on the calculation station: let the page scroll
   e.preventDefault();
   const d = e.deltaY > 0 ? -1 : 1;
   if (e.shiftKey) setAxis(axisW + d); else setDrum(drum + d*0.25);  // one detent per notch
@@ -1030,7 +1063,11 @@ $("#resetStats").addEventListener("click", () => {
 });
 
 const origRender = renderTarget;
-renderTarget = function(){ if (tab === "add") renderAddTarget(); else origRender(); };
+renderTarget = function(){
+  if (tab === "add") renderAddTarget();
+  else if (tab === "prentice") renderPrenTarget();
+  else origRender();
+};
 
 paintStats(); drawNasal(); switchTab("sca");
 
