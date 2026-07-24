@@ -166,7 +166,7 @@
       </svg>
 
       <div class="readout" id="readout"></div>
-      <div class="hint" id="hint">Focus and centre on the big +, rotate the axis until the copies stop stepping, then superimpose the + signs (horizontal drum, left image) and the − signs (vertical drum, upper image) until it is no longer doubled.</div>
+      <div class="hint" id="hint">Inverted-L mires: focus and centre on the big +, rotate the axis until the copies stop stepping, then superimpose the + signs in the horizontal gap (horizontal drum) and the − signs in the vertical gap (vertical drum).</div>
     </div>
 
     <div class="card">
@@ -269,11 +269,12 @@
           <li><b>Focus and centre on the large + first.</b> The central mire carries a big plus cross.
               Off focus the mires blur. Sharpen and centre on that cross before touching a drum, or every
               later reading inherits the error.</li>
-          <li><b>One mire, doubled into three images.</b> You see the central image plus a left copy and an
-              upper copy. Turn the horizontal drum until the <b>+ signs of the central and left images
-              superimpose</b>; turn the vertical drum until the <b>− signs of the central and upper images
-              superimpose</b>. When both are nulled the copies fall back onto the centre and the image is no
-              longer doubled. Each drum reads dioptres of corneal power directly.</li>
+          <li><b>One mire, doubled into three images in an inverted L.</b> The reference sits at the corner
+              (with the big +); its horizontal copy sits to the left and its vertical copy above. The + and −
+              signs sit in the space around each ring, not on it. Turn the horizontal drum until the
+              <b>+ signs between the corner and the left image superimpose</b> into one; turn the vertical
+              drum until the <b>− signs between the corner and the upper image superimpose</b>. Each drum
+              reads dioptres of corneal power directly.</li>
           <li><b>Set the axis before the drums.</b> Off a principal meridian the plus signs step apart
               vertically (the mires look broken). Rotate the wheel until they run unbroken, then null.
               A principal meridian is found at the axis and again 90° away.</li>
@@ -424,33 +425,37 @@ function plusGlyph(x,y,s,w,col){
 function minusGlyph(x,y,s,w,col){
   return G("line",{x1:x-s,y1:y,x2:x+s,y2:y,stroke:col,"stroke-width":w,"stroke-linecap":"round"});
 }
-// One B&L mire image: a circle carrying two + signs (3 and 9 o'clock) and two − signs
-// (12 and 6 o'clock). The central image also carries the large central + for focusing.
-function mireImage(x,y,r,w,col,bigPlus){
+// One B&L mire image: a circle with + signs set off to its left and right and − signs set
+// off above and below, all sitting in the space AWAY from the ring (offset by sgn). The
+// reference image also carries the large central + used to focus and centre.
+function mireImage(x,y,r,w,col,sgn,bigPlus){
   let s = G("circle",{cx:x,cy:y,r:r,fill:"none",stroke:col,"stroke-width":w})
-        + plusGlyph(x-r, y, 6.5, w, col) + plusGlyph(x+r, y, 6.5, w, col)
-        + minusGlyph(x, y-r, 7.5, w, col) + minusGlyph(x, y+r, 7.5, w, col);
+        + plusGlyph(x-r-sgn, y, 5.5, w, col) + plusGlyph(x+r+sgn, y, 5.5, w, col)
+        + minusGlyph(x, y-r-sgn, 6.5, w, col) + minusGlyph(x, y+r+sgn, 6.5, w, col);
   if (bigPlus) s += plusGlyph(x, y, r*0.5, w+1, col);
   return s;
 }
 
 function renderMires(){
-  const cx = 200, cy = 200, C = "#06281d", r = 40, w = 3;
+  const cx = 200, cy = 200, C = "#06281d", r = 36, sgn = 12, w = 2.8;
+  const sp = 2*r + 2*sgn;                          // centre spacing that lands facing signs together
   const Ph = mer(axisW), Pv = mer(axisW+90);
-  // Doubling: the whole mire is duplicated. The LEFT image shifts horizontally off the
-  // horizontal power, the UPPER image shifts vertically off the vertical power. At both
-  // nulls the two copies fall back onto the central image and it is no longer doubled.
-  const sepH = clamp((hDrum - Ph) * 15, -95, 95);
-  const sepV = clamp((vDrum - Pv) * 15, -95, 95);
+  // Inverted-L doubling. The reference sits at the corner; the LEFT image is its horizontal
+  // copy (their facing + signs meet in the gap) and the UPPER image its vertical copy (their
+  // facing − signs meet). The horizontal drum slides the left image, the vertical drum the
+  // upper image; each nulls when the paired signs superimpose.
+  const sepH = clamp((hDrum - Ph) * 15, -62, 62);
+  const sepV = clamp((vDrum - Pv) * 15, -62, 62);
   const blur = clamp(Math.abs(foc)*1.1, 0, 6);    // focus null at 0
   // axis break: off a principal meridian the doubling goes oblique, so the copies step
   const brk = T ? clamp(T.astig * Math.abs(Math.sin(rad(2*(axisW - T.th)))) * 4, 0, 16) : 0;
   const wob = T && T.wob ? T.wob : {hx:0,hy:0,vx:0,vy:0,rot:0};
 
+  const Rx = cx + sp/2, Ry = cy + sp/2;            // reference corner (bottom-right), cluster centred
   let h = "";
-  h += mireImage(cx - sepH + wob.hx, cy + brk + wob.hy, r, w, C);         // left  image (+ signs, horizontal drum)
-  h += mireImage(cx + brk + wob.vx,  cy - sepV + wob.vy, r, w, C);        // upper image (− signs, vertical drum)
-  h += mireImage(cx, cy, r, w, C, true);                                  // central image (reference, big +)
+  h += mireImage(Rx - sp - sepH + wob.hx, Ry + brk + wob.hy, r, w, C, sgn);   // left  image (+ signs, horizontal drum)
+  h += mireImage(Rx + brk + wob.vx, Ry - sp - sepV + wob.vy, r, w, C, sgn);   // upper image (− signs, vertical drum)
+  h += mireImage(Rx, Ry, r, w, C, sgn, true);                                 // reference (corner, big +)
 
   const g = $("#mires");
   g.innerHTML = h;
@@ -661,7 +666,7 @@ function switchTab(t){
   $("#diffSeg").classList.toggle("hidden", t === "javal");   // difficulty applies to the measure drill only
   $("#hint").textContent = t === "javal"
     ? "The reading is measured for you. Apply Javal's rule to predict the eye's total refractive astigmatism."
-    : "Focus and centre on the big +, rotate the axis until the copies stop stepping, then superimpose the + signs (horizontal drum, left image) and the − signs (vertical drum, upper image) until it is no longer doubled.";
+    : "Inverted-L mires: focus and centre on the big +, rotate the axis until the copies stop stepping, then superimpose the + signs in the horizontal gap (horizontal drum) and the − signs in the vertical gap (vertical drum).";
   newTarget();
 }
 
