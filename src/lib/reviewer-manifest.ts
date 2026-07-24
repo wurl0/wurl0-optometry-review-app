@@ -117,6 +117,9 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.C4-Retinoscopy-Interactive', subject: 'C', type: 'interactive', label: 'C4 Retinoscopy', path: '/top2/C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Retinoscopy-Interactive.html' },
   { id: 'int.C4-Ophthalmoscopy-Interactive', subject: 'C', type: 'interactive', label: 'C4 Ophthalmoscopy', path: '/top2/C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Ophthalmoscopy-Interactive.html' },
   { id: 'int.C4-Optic-Disc-CD-Ratio-Interactive', subject: 'C', type: 'interactive', label: 'C4 Optic Disc & C/D Ratio', path: '/top2/C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Optic-Disc-CD-Ratio-Interactive.html' },
+  // Full OEP 21-step phorometric routine on a realistic phoropter head (Von Graefe phorias,
+  // vergences, cross-cylinder, AA/PRA/NRA) with a Doctor/Patient dialog and end-of-case AC/A + Sheard analysis.
+  { id: 'int.C5-21-Step-Phoropter-Realistic-Interactive', subject: 'C', type: 'interactive', label: 'C5 21-Step Phoropter', path: '/top2/C-Primary-Care-and-Refraction/C5-Subjective-Examination/C5-21-Step-Phoropter-Realistic-Interactive.html' },
   { id: 'int.D1-Refractive-Error-Simulator-Interactive', subject: 'D', type: 'interactive', label: 'D1 Refractive Error Simulator', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Refractive-Error-Simulator-Interactive.html' },
   { id: 'int.D1-Gullstrand-Cardinal-Points-Interactive', subject: 'D', type: 'interactive', label: 'D1 Gullstrand Cardinal Points', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Gullstrand-Cardinal-Points-Interactive.html' },
   { id: 'int.D1-Ray-Diagram-Interactive', subject: 'D', type: 'interactive', label: 'D1 Ray Diagram', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Ray-Diagram-Interactive.html' },
