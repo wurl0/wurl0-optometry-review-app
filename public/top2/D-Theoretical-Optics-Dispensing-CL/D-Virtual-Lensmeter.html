@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAA | Virtual Lensmeter, Board Review 2026</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#172033; --line:#334155;
+    --text:#e2e8f0; --dim:#94a3b8; --accent:#38bdf8;
+    --good:#4ade80; --bad:#f87171; --warn:#fbbf24; --sph:#7dd3fc; --cyl:#f9a8d4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:24px;background:var(--bg);color:var(--text);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  .wrap{max-width:1180px;margin:0 auto}
+  header{margin-bottom:18px}
+  .waa{display:inline-block;background:var(--accent);color:#0f172a;font-weight:800;
+    letter-spacing:.12em;font-size:12px;padding:4px 10px;border-radius:5px}
+  h1{font-size:24px;margin:12px 0 4px}
+  .sub{color:var(--dim);font-size:13px}
+  .attrib{color:#64748b;font-size:12px;margin-top:6px}
+
+  .tabs{display:flex;gap:6px;margin:20px 0 16px;flex-wrap:wrap}
+  .tabs button{background:var(--panel);color:var(--dim);border:1px solid var(--line);
+    padding:9px 15px;border-radius:8px;cursor:pointer;font-size:13.5px;font-weight:600}
+  .tabs button.on{background:var(--accent);color:#0f172a;border-color:var(--accent)}
+
+  .grid{display:grid;grid-template-columns:minmax(340px,1fr) minmax(330px,410px);
+    gap:20px;align-items:start}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;
+    margin-bottom:16px}
+  h2{font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);
+    margin:0 0 14px}
+
+  .stage{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;
+    flex-wrap:wrap}
+  .chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+    padding:5px 14px;font-size:12.5px;color:var(--dim)}
+  .chip b{color:var(--text)}
+  .chip.live{border-color:var(--good);color:var(--good)}
+  svg.eye{display:block;width:100%;max-width:440px;margin:0 auto;touch-action:none;cursor:ns-resize}
+  .hint{text-align:center;color:#64748b;font-size:12.5px;margin-top:10px;font-style:italic}
+
+  .seg{display:flex;gap:5px;margin-bottom:14px}
+  .seg button{flex:1;background:var(--panel2);color:var(--dim);border:1px solid var(--line);
+    padding:8px 4px;border-radius:7px;cursor:pointer;font-size:12.5px;font-weight:600}
+  .seg button.on{background:var(--accent);color:#0f172a;border-color:var(--accent)}
+
+  .row{margin-bottom:15px}
+  .row label{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;
+    color:var(--dim);margin-bottom:6px}
+  .val{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:17px;font-weight:700;
+    color:var(--text);background:var(--panel2);border:1px solid var(--line);
+    border-radius:6px;padding:2px 10px;font-variant-numeric:tabular-nums}
+  .sliderrow{display:flex;align-items:center;gap:8px}
+  .sliderrow button{width:32px;height:30px;flex:none;background:var(--panel2);color:var(--text);
+    border:1px solid var(--line);border-radius:6px;cursor:pointer;font-size:16px;line-height:1}
+  input[type=range]{flex:1;accent-color:var(--accent);min-width:0}
+
+  .fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+  .fields.two{grid-template-columns:1fr 1fr}
+  .fields.one{grid-template-columns:1fr}
+  .f label{display:block;font-size:11.5px;color:var(--dim);margin-bottom:4px}
+  .f input,.f select{width:100%;background:var(--panel2);color:var(--text);
+    border:1px solid var(--line);border-radius:6px;padding:8px;font-size:14px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .f input:focus,.f select:focus{outline:none;border-color:var(--accent)}
+  .f.ok input{border-color:var(--good)} .f.err input{border-color:var(--bad)}
+
+  .actions{display:flex;gap:8px;margin-top:14px}
+  .actions button{flex:1;border:none;border-radius:8px;padding:11px;cursor:pointer;
+    font-size:13.5px;font-weight:700}
+  .primary{background:var(--accent);color:#0f172a}
+  .ghost{flex:0 0 100px !important;background:var(--panel2);color:var(--dim);
+    border:1px solid var(--line) !important}
+  .newbtn{width:100%;background:var(--good);color:#0f172a;border:none;border-radius:8px;
+    padding:11px;cursor:pointer;font-size:13.5px;font-weight:700}
+
+  .verdict{margin-top:14px;padding:13px 15px;border-radius:0 8px 8px 0;font-size:13.5px;
+    background:var(--panel2);border-left:3px solid var(--line);display:none}
+  .verdict.show{display:block}
+  .verdict.pass{border-left-color:var(--good)}
+  .verdict.fail{border-left-color:var(--bad)}
+  .verdict h3{margin:0 0 8px;font-size:14.5px}
+  .verdict.pass h3{color:var(--good)} .verdict.fail h3{color:var(--bad)}
+  .verdict ul{margin:8px 0 0;padding-left:18px}
+  .verdict li{margin-bottom:6px}
+  .verdict code{background:#0b1220;padding:1px 5px;border-radius:4px;
+    font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--warn)}
+  .why{color:var(--dim);font-size:12.5px;margin-top:9px;padding-top:9px;
+    border-top:1px solid var(--line)}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+  .stats div{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px 4px}
+  .stats b{display:block;font-size:19px;font-variant-numeric:tabular-nums}
+  .stats span{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
+  .weak{margin-top:12px;font-size:12.5px;color:var(--dim)}
+  .weak div{display:flex;justify-content:space-between;padding:4px 0;
+    border-bottom:1px solid var(--panel2)}
+  .weak b{color:var(--bad);font-variant-numeric:tabular-nums}
+
+  details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  summary{cursor:pointer;font-size:12.5px;color:var(--accent);font-weight:600}
+  details p,details li{font-size:13px;color:var(--dim)}
+  details b{color:var(--text)}
+  .note{font-size:12.5px;color:#64748b;margin-top:10px}
+  .hidden{display:none}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+  th,td{text-align:left;padding:5px 6px;border-bottom:1px solid var(--panel2)}
+  th{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="waa">WAA</span>
+  <h1>Virtual Lensmeter</h1>
+  <div class="sub">Board Review 2026 &middot; practical station drill: sphere, cylinder, axis, prism, near add, and induced prism</div>
+  <div class="attrib">Personal study notes</div>
+</header>
+
+<div class="tabs">
+  <button data-tab="sca" class="on">1. Sph / Cyl / Axis</button>
+  <button data-tab="prism">2. Prism</button>
+  <button data-tab="add">3. Near Add</button>
+  <button data-tab="prentice">4. Induced Prism</button>
+</div>
+
+<div class="grid">
+
+  <!-- ========== LEFT: EYEPIECE ========== -->
+  <div>
+    <div class="card" id="eyecard">
+      <div class="stage">
+        <span class="chip">Lens on stage: <b id="stageEye">Right eye (OD)</b></span>
+        <span class="chip live" id="stageMode">Crossline target</span>
+        <span class="chip" id="stageZone" style="display:none">Zone: <b>Distance</b></span>
+      </div>
+
+      <svg class="eye" id="eye" viewBox="0 0 400 400">
+        <defs>
+          <radialGradient id="fieldg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"  stop-color="#8ee7c4"/>
+            <stop offset="55%" stop-color="#3fae87"/>
+            <stop offset="100%" stop-color="#1f7a5c"/>
+          </radialGradient>
+        </defs>
+
+        <circle cx="200" cy="200" r="182" fill="#0b1220"/>
+        <circle cx="200" cy="200" r="174" fill="#1e293b"/>
+        <circle cx="200" cy="200" r="166" fill="url(#fieldg)"/>
+
+        <g id="scale"></g>
+
+        <!-- reticle -->
+        <g id="reticle" stroke="#12503c" fill="none" opacity=".55">
+          <circle cx="200" cy="200" r="22"/><circle cx="200" cy="200" r="44"/>
+          <circle cx="200" cy="200" r="66"/><circle cx="200" cy="200" r="88"/>
+          <circle cx="200" cy="200" r="110"/>
+          <line x1="86" y1="200" x2="314" y2="200"/>
+          <line x1="200" y1="86" x2="200" y2="314"/>
+        </g>
+        <g id="ringlab" font-size="9" fill="#0d3f2f" font-family="ui-monospace,Menlo,monospace"></g>
+        <g id="nasallab" font-size="10" fill="#0d3f2f" font-weight="700"
+           font-family="-apple-system,sans-serif"></g>
+
+        <!-- target -->
+        <g id="targetShift">
+          <g id="targetRot">
+            <g id="gSph"></g>
+            <g id="gCyl"></g>
+          </g>
+        </g>
+
+        <!-- OC marker for prentice -->
+        <g id="ocMark" class="hidden"></g>
+      </svg>
+
+      <div class="hint" id="hint">Scroll over the eyepiece to turn the power drum. Shift + scroll turns the axis wheel. Arrow keys work too.</div>
+    </div>
+
+    <div class="card">
+      <h2>Session</h2>
+      <div class="stats">
+        <div><b id="stAtt">0</b><span>Targets</span></div>
+        <div><b id="stAcc" style="color:var(--good)">&mdash;</b><span>Accuracy</span></div>
+        <div><b id="stStreak" style="color:var(--warn)">0</b><span>Streak</span></div>
+        <div><b id="stTime">&mdash;</b><span>Avg sec</span></div>
+      </div>
+      <div class="weak" id="weakList"></div>
+      <button class="ghost" style="width:100%;margin-top:12px;flex:none !important"
+              id="resetStats">Reset session data</button>
+    </div>
+  </div>
+
+  <!-- ========== RIGHT: CONTROLS ========== -->
+  <div>
+
+    <div class="card">
+      <h2>Practice settings</h2>
+      <div class="seg" id="eyeSeg">
+        <button data-eye="OD" class="on">Right (OD)</button>
+        <button data-eye="OS">Left (OS)</button>
+      </div>
+      <div id="setSca">
+        <div class="seg" id="diffSeg">
+          <button data-diff="sph" class="on">Sphere only</button>
+          <button data-diff="sphcyl">Sph + Cyl</button>
+          <button data-diff="hard">Oblique axis</button>
+        </div>
+        <div class="seg" id="convSeg">
+          <button data-conv="minus" class="on">Minus cyl</button>
+          <button data-conv="plus">Plus cyl</button>
+        </div>
+      </div>
+      <div id="setPrism" class="hidden">
+        <div class="seg" id="prismSeg">
+          <button data-pm="vert" class="on">Vertical only</button>
+          <button data-pm="horiz">Horizontal only</button>
+          <button data-pm="comp">Compound</button>
+        </div>
+      </div>
+      <div id="setAdd" class="hidden">
+        <div class="seg" id="addSeg">
+          <button data-am="low" class="on">Low plus Rx</button>
+          <button data-am="high">High plus Rx</button>
+        </div>
+      </div>
+      <div id="setPrentice" class="hidden">
+        <div class="seg" id="prenSeg">
+          <button data-pr="fwd" class="on">Find the prism</button>
+          <button data-pr="rev">Find the decentration</button>
+        </div>
+      </div>
+      <button class="newbtn" id="newTarget">Generate new target</button>
+    </div>
+
+    <!-- instrument controls (tabs 1-3) -->
+    <div class="card" id="instrCard">
+      <h2>Instrument controls</h2>
+      <div id="addControls" class="hidden">
+        <div class="seg" id="seatSeg">
+          <button data-seat="back" class="on">Back surface on stop</button>
+          <button data-seat="front">Front surface on stop</button>
+        </div>
+        <div class="seg" id="zoneSeg">
+          <button data-zone="dist" class="on">Distance zone</button>
+          <button data-zone="near">Near segment</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>Power drum (D) <span class="val" id="drumVal">+0.00</span></label>
+        <div class="sliderrow">
+          <button data-drum="-0.25">&minus;</button>
+          <input type="range" id="drum" min="-20" max="20" step="0.01" value="0">
+          <button data-drum="0.25">+</button>
+        </div>
+      </div>
+
+      <div class="row" id="axisRow">
+        <label>Axis wheel (&deg;) <span class="val" id="axisVal">000</span></label>
+        <div class="sliderrow">
+          <button data-axis="-1">&minus;</button>
+          <input type="range" id="axis" min="0" max="180" step="1" value="0">
+          <button data-axis="1">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RECORD PANELS ===== -->
+    <div class="card" id="recSca">
+      <h2>Record your findings</h2>
+      <div class="fields">
+        <div class="f" id="fSph"><label>Sphere (D)</label><input id="inSph" placeholder="-1.25"></div>
+        <div class="f" id="fCyl"><label>Cylinder (D)</label><input id="inCyl" placeholder="-0.75"></div>
+        <div class="f" id="fAx"><label>Axis (&deg;)</label><input id="inAx" placeholder="180"></div>
+      </div>
+      <div class="actions">
+        <button class="primary" id="chkSca">Check measurement</button>
+        <button class="ghost" id="revSca">Reveal</button>
+      </div>
+      <div class="verdict" id="vSca"></div>
+      <details>
+        <summary>How this simulation behaves, and why that matters</summary>
+        <p>The two line sets do <b>not</b> come to focus together. Each principal meridian of the lens
+        forms a line image at right angles to itself, so the sphere lines sharpen at one drum setting
+        and the cyl line sharpens at another. The gap between the two readings <b>is</b> the cylinder.
+        That is the whole reason lensmetry takes two readings rather than one.</p>
+        <ul>
+          <li><b>Sphere lines</b> (the triple set) sharpen when the drum reaches the axis meridian.
+              That reading is your sphere.</li>
+          <li><b>Cyl line</b> (the single bold line) sharpens at sphere plus cyl. Subtract to get the cylinder.</li>
+          <li><b>Broken mires</b> mean the axis wheel is wrong, not the power. The lines shear apart
+              whenever the target sits off a principal meridian, and they snap back into one continuous
+              line only at the true axis. Chase the break before you chase the blur.</li>
+          <li>With a pure sphere there is no break and both sets sharpen at the same setting.</li>
+        </ul>
+        <p class="note">Working order on the real instrument: focus the eyepiece on the reticle first,
+        seat the lens back surface against the stop, centre the mires, then rotate the axis wheel until
+        the lines are unbroken, then take your two readings.</p>
+      </details>
+    </div>
+
+    <div class="card hidden" id="recPrism">
+      <h2>Record the prism</h2>
+      <div class="fields two">
+        <div class="f" id="fPh"><label>Horizontal (&Delta;)</label><input id="inPh" placeholder="0.00"></div>
+        <div class="f"><label>Base</label>
+          <select id="inPhb"><option value="none">none</option><option value="in">in</option><option value="out">out</option></select></div>
+        <div class="f" id="fPv"><label>Vertical (&Delta;)</label><input id="inPv" placeholder="0.00"></div>
+        <div class="f"><label>Base</label>
+          <select id="inPvb"><option value="none">none</option><option value="up">up</option><option value="down">down</option></select></div>
+      </div>
+      <div class="actions">
+        <button class="primary" id="chkPrism">Check measurement</button>
+        <button class="ghost" id="revPrism">Reveal</button>
+      </div>
+      <div class="verdict" id="vPrism"></div>
+      <details>
+        <summary>Reading the rings, and the direction trap</summary>
+        <ul>
+          <li>Each reticle ring is <b>one prism dioptre</b>. Count rings from centre to the middle of
+              the displaced mires.</li>
+          <li><b>The mires displace toward the base.</b> If the target sits high in the field, it is
+              base up. Reading the displacement backwards is the most common error at this station,
+              and it is why the checker calls it out separately.</li>
+          <li>Base in and base out are defined relative to the <b>nose</b>, so they swap sides between
+              OD and OS. The nasal side is labelled on the reticle. Watch it flip when you change eyes.</li>
+          <li>Compound prism is recorded as separate horizontal and vertical components, not as a single
+              resultant, because that is how it gets ordered and verified.</li>
+        </ul>
+        <p class="note">Reticle orientation here assumes the frame is seated with the temples pointing
+        away from you, so you view it as though facing the wearer. If your instructor seats the frame the
+        other way, the nasal side mirrors. Confirm the convention on the actual instrument at MCU.</p>
+      </details>
+    </div>
+
+    <div class="card hidden" id="recAdd">
+      <h2>Record the add</h2>
+      <div class="fields">
+        <div class="f"><label>First reading (D)</label><input id="inR1" placeholder="+2.00"></div>
+        <div class="f"><label>Second reading (D)</label><input id="inR2" placeholder="+4.50"></div>
+        <div class="f" id="fAdd"><label>Add (D)</label><input id="inAdd" placeholder="+2.50"></div>
+      </div>
+      <div class="actions">
+        <button class="primary" id="chkAdd">Check measurement</button>
+        <button class="ghost" id="revAdd">Reveal</button>
+      </div>
+      <div class="verdict" id="vAdd"></div>
+      <details>
+        <summary>Why the lens has to be flipped</summary>
+        <p>The add sits on the <b>front</b> surface of the lens. Measured from the back, the distance
+        portion behind it inflates the reading, and the error grows with the distance power. Turn the
+        spectacle round so the front surface rests on the stop, take both readings that way, and the
+        difference is the true add.</p>
+        <ul>
+          <li>Back surface on the stop gives <b>back vertex power</b>. That is the correct way to read
+              the distance Rx, and the wrong way to read the add.</li>
+          <li>Front surface on the stop gives <b>front vertex (neutralising) power</b>. The single
+              reading is not the Rx, but the <b>difference</b> between distance and near zones is the add.</li>
+          <li>Try it deliberately: measure one target both ways and watch the add change on a high plus lens.
+              On a low power the two agree, which is why the error hides until it matters.</li>
+        </ul>
+        <p class="note">The size of the error here is modelled approximately. The point being drilled is
+        that it exists, which way it runs, and that it scales with the distance power.</p>
+      </details>
+    </div>
+
+    <div class="card hidden" id="recPrentice">
+      <h2>Induced prism</h2>
+      <div id="prenStem" style="background:var(--panel2);border-left:3px solid var(--accent);
+           border-radius:0 8px 8px 0;padding:13px 15px;font-size:14px;margin-bottom:14px"></div>
+      <div class="fields two" id="prenFwd">
+        <div class="f" id="fPrD"><label>Prism (&Delta;)</label><input id="inPrD" placeholder="2.00"></div>
+        <div class="f"><label>Base</label>
+          <select id="inPrB">
+            <option value="in">in</option><option value="out">out</option>
+            <option value="up">up</option><option value="down">down</option></select></div>
+      </div>
+      <div class="fields one hidden" id="prenRev">
+        <div class="f" id="fPrC"><label>Decentration (mm)</label><input id="inPrC" placeholder="5"></div>
+      </div>
+      <div class="actions">
+        <button class="primary" id="chkPren">Check answer</button>
+        <button class="ghost" id="revPren">Reveal</button>
+      </div>
+      <div class="verdict" id="vPren"></div>
+      <details>
+        <summary>Prentice, part by part</summary>
+        <p style="font-family:ui-monospace,Menlo,monospace;font-size:15px;color:var(--text);
+           background:#0b1220;padding:10px;border-radius:6px">&Delta; = c &times; F</p>
+        <ul>
+          <li><b>&Delta;</b> is prism dioptres: 1&Delta; displaces the image 1 cm at 1 m. It is a
+              <i>tangent</i> of deviation, not an angle, which is why the components add as vectors.</li>
+          <li><b>c</b> is decentration in <b>centimetres</b>, measured from the optical centre to the
+              point the eye actually looks through. Millimetres is the units trap: divide by 10.</li>
+          <li><b>F</b> is the lens power in dioptres, which is itself 1/f in metres. So the formula is
+              really "how far off centre, times how strongly the surface bends".</li>
+        </ul>
+        <p><b>Where it comes from:</b> a lens is a stack of prisms whose apex angle grows with distance
+        from the centre. At the centre there is no prism at all. Step away and the local wedge gets
+        steeper in direct proportion, which is why the relationship is linear rather than curved.</p>
+        <p><b>Physical picture:</b> a plus lens is two prisms joined <b>base to base</b> at the optical
+        centre, so any off-centre point acts base toward the centre. A minus lens is two prisms joined
+        <b>apex to apex</b>, so it acts base away from the centre. That single image gives you the base
+        direction without memorising a table.</p>
+        <p><b>Connections:</b> this is the same quantity you neutralise in the lensmeter at station 2,
+        it is what makes anisometropia produce vertical imbalance on downgaze, and it is the working
+        formula behind slab-off and deliberate decentration in dispensing.</p>
+      </details>
+    </div>
+
+  </div>
+</div>
+
+<div class="card" style="margin-top:4px">
+  <h2>Tolerances used by the checker</h2>
+  <table>
+    <tr><th>Field</th><th>Accepted</th><th>Note</th></tr>
+    <tr><td>Sphere, cylinder</td><td>exact to 0.25 D</td><td>one drum click either way is flagged as a near miss, not a pass</td></tr>
+    <tr><td>Axis</td><td>&plusmn;2&deg;</td><td>tightens as cylinder power rises in real standards; held at 2&deg; here</td></tr>
+    <tr><td>Prism</td><td>&plusmn;0.25&Delta; and correct base</td><td>base direction must be exact, magnitude alone does not pass</td></tr>
+    <tr><td>Add</td><td>exact to 0.25 D</td><td>a wrong-seating add is graded as a method error, not a reading error</td></tr>
+  </table>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------------- helpers ---------------- */
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const r25 = v => Math.round(v*4)/4;
+const fmtD = v => (v>=0?"+":"−") + Math.abs(v).toFixed(2);
+const fmtAx = v => String(Math.round(v)).padStart(3,"0");
+const rad = d => d*Math.PI/180;
+const pick = a => a[Math.floor(Math.random()*a.length)];
+const rnd25 = (lo,hi) => r25(lo + Math.random()*(hi-lo));
+const parseNum = s => { const v = parseFloat(String(s).replace(/[−–]/g,"-").trim());
+                        return isNaN(v) ? null : v; };
+const near = (a,b,tol) => a!==null && Math.abs(a-b) <= tol + 1e-9;
+
+/* ---------------- state ---------------- */
+let tab = "sca";
+let eyeSide = "OD";
+let diff = "sph", conv = "minus", pmode = "vert", amode = "low", prmode = "fwd";
+let seat = "back", zone = "dist";
+let drum = 0, axisW = 0;
+let T = null;              // current target
+let tStart = Date.now();
+let answered = false;
+
+const STORE = "waa-lensmeter-v1";
+let stats = { att:0, ok:0, streak:0, best:0, secs:0, err:{} };
+try { const s = JSON.parse(localStorage.getItem(STORE)||"null"); if (s) stats = Object.assign(stats,s); } catch(e){}
+const saveStats = () => { try { localStorage.setItem(STORE, JSON.stringify(stats)); } catch(e){} };
+
+/* ---------------- eyepiece scale ---------------- */
+(function buildScale(){
+  const g = $("#scale"); let h = "";
+  for (let a=0; a<360; a+=5){
+    const long = (a%30===0), r1 = long?146:152, r2 = 160;
+    const x1 = 200 + r1*Math.cos(rad(a)), y1 = 200 - r1*Math.sin(rad(a));
+    const x2 = 200 + r2*Math.cos(rad(a)), y2 = 200 - r2*Math.sin(rad(a));
+    h += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"
+           stroke="#0d3f2f" stroke-width="${long?1.8:0.9}"/>`;
+  }
+  for (let a=0; a<360; a+=30){
+    const r = 134, x = 200 + r*Math.cos(rad(a)), y = 200 - r*Math.sin(rad(a));
+    h += `<text x="${x.toFixed(1)}" y="${(y+3.5).toFixed(1)}" font-size="11" fill="#0d3f2f"
+           text-anchor="middle" font-family="ui-monospace,Menlo,monospace">${a}</text>`;
+  }
+  g.innerHTML = h;
+  let rl = "";
+  for (let i=1;i<=5;i++) rl += `<text x="${200+i*22-3}" y="196" >${i}</text>`;
+  $("#ringlab").innerHTML = rl;
+})();
+
+function drawNasal(){
+  // Frame seated temples away, so the view matches facing the wearer:
+  // OD nasal falls on the operator's right, OS nasal on the left.
+  const odRight = (eyeSide === "OD");
+  const nx = odRight ? 300 : 100, tx = odRight ? 100 : 300;
+  $("#nasallab").innerHTML =
+    `<text x="${nx}" y="248" text-anchor="middle">NASAL</text>` +
+    `<text x="${tx}" y="248" text-anchor="middle">TEMP</text>`;
+}
+
+/* ---------------- target drawing ---------------- */
+// Optics model. For a lens sph S, cyl C, axis th, the power along meridian phi is
+//   P(phi) = S + C*sin^2(phi - th).
+// A meridian forms its line image at right angles to itself, so the line set drawn
+// perpendicular to the wheel setting (the sphere lines) sharpens at P(a), and the line
+// drawn along the wheel setting (the cyl line) sharpens at P(a+90).
+function meridianPower(S,C,th,phi){ const s = Math.sin(rad(phi-th)); return S + C*s*s; }
+
+function segLine(x1,y1,x2,y2,w,col,op){
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${col}"
+          stroke-width="${w}" stroke-linecap="round" opacity="${op||1}"/>`;
+}
+
+function renderTarget(){
+  const S = T ? T.S : 0, C = T ? T.C : 0, th = T ? T.th : 0;
+  const L = 118;
+
+  // focus errors
+  const pSph = meridianPower(S,C,th,axisW);
+  const pCyl = meridianPower(S,C,th,axisW+90);
+  const bSph = clamp(Math.abs(drum - pSph)*1.8, 0, 7);
+  const bCyl = clamp(Math.abs(drum - pCyl)*1.8, 0, 7);
+
+  // mire break from axis misalignment
+  const brk = clamp(Math.abs(C) * Math.abs(Math.sin(rad(2*(axisW-th)))) * 7, 0, 15);
+
+  // sphere lines: three parallel lines running along local y (perpendicular to wheel)
+  let hs = "";
+  [-19,0,19].forEach(x => {
+    hs += segLine(x-brk, -L, x-brk, -6, 3.0, "#04211a");
+    hs += segLine(x+brk,  6, x+brk,  L, 3.0, "#04211a");
+  });
+  $("#gSph").innerHTML = hs;
+  $("#gSph").setAttribute("style","filter:blur("+bSph.toFixed(2)+"px)");
+
+  // cyl line: single bold line along local x (along the wheel setting)
+  let hc = segLine(-L, -brk, -6, -brk, 4.6, "#031610")
+         + segLine( 6,  brk,  L,  brk, 4.6, "#031610");
+  $("#gCyl").innerHTML = hc;
+  $("#gCyl").setAttribute("style","filter:blur("+bCyl.toFixed(2)+"px)");
+
+  $("#targetRot").setAttribute("transform", `translate(200,200) rotate(${-axisW})`);
+
+  // prism displacement, 22 px per prism dioptre, mires displace toward the base
+  let dx = 0, dy = 0;
+  if (T && T.kind === "prism"){
+    const odRight = (eyeSide === "OD");
+    const nasalSign = odRight ? 1 : -1;           // +x is nasal for OD
+    if (T.hb === "in")  dx =  T.h * nasalSign;
+    if (T.hb === "out") dx = -T.h * nasalSign;
+    if (T.vb === "up")   dy = -T.v;
+    if (T.vb === "down") dy =  T.v;
+  }
+  $("#targetShift").setAttribute("transform", `translate(${(dx*22).toFixed(1)},${(dy*22).toFixed(1)})`);
+}
+
+function refreshInstr(){
+  $("#drumVal").textContent = fmtD(drum);
+  $("#axisVal").textContent = fmtAx(axisW);
+  $("#drum").value = drum;
+  $("#axis").value = axisW;
+  renderTarget();
+}
+
+/* ---------------- target generation ---------------- */
+const CARD_AX = [0,10,15,20,90,95,170,175,180,180,90];
+const OBLIQUE = [25,35,42,55,63,72,105,118,127,135,148,155];
+
+function genSca(){
+  const S = rnd25(-8, 6);
+  let C = 0, th = 0;
+  if (diff !== "sph"){
+    C = -rnd25(0.5, 4);
+    th = diff === "hard" ? pick(OBLIQUE) : pick(CARD_AX);
+    if (th === 180) th = 180;
+  }
+  return { kind:"sca", S, C, th: th % 180 };
+}
+function genPrism(){
+  const S = rnd25(-4, 4);
+  let h = 0, v = 0, hb = "none", vb = "none";
+  if (pmode === "vert" || pmode === "comp"){ v = rnd25(0.5, 4); vb = pick(["up","down"]); }
+  if (pmode === "horiz" || pmode === "comp"){ h = rnd25(0.5, 4); hb = pick(["in","out"]); }
+  if (pmode === "comp"){ h = rnd25(0.5, 3); v = rnd25(0.5, 3); }
+  return { kind:"prism", S, C:0, th:0, h, v, hb, vb };
+}
+function genAdd(){
+  const S = amode === "high" ? rnd25(3.5, 7) : rnd25(-1.5, 1.5);
+  const A = rnd25(0.75, 3);
+  return { kind:"add", S, C:0, th:0, A };
+}
+function genPren(){
+  const F = pick([-6,-5,-4,-3,-2,2,3,4,5,6,8]) + pick([0,0,0.5,-0.5]);
+  const c = pick([2,3,4,5,6,7,8]);
+  const dir = pick(["nasal","temporal","up","down"]);
+  const target = r25(Math.abs(c/10*F));
+  return { kind:"pren", F, c, dir, D: target };
+}
+
+function newTarget(){
+  answered = false;
+  drum = 0; axisW = 0; seat = "back"; zone = "dist";
+  segSet("#seatSeg","seat","back"); segSet("#zoneSeg","zone","dist");
+  if (tab === "sca")      T = genSca();
+  else if (tab === "prism") T = genPrism();
+  else if (tab === "add")   T = genAdd();
+  else                      T = genPren();
+  tStart = Date.now();
+  $$(".verdict").forEach(v => v.className = "verdict");
+  $$(".f").forEach(f => f.className = "f");
+  $$("#recSca input,#recPrism input,#recAdd input,#recPrentice input").forEach(i => i.value = "");
+  $("#inPhb").value = "none"; $("#inPvb").value = "none"; $("#inPrB").value = "in";
+  if (tab === "prentice") renderPren();
+  refreshInstr(); drawNasal(); updateStage();
+}
+
+/* ---------------- add module reading ---------------- */
+// Back surface on the stop reads back vertex power: correct for the distance Rx,
+// and it over-reads the add in proportion to the distance power.
+// Front surface on the stop isolates the add exactly.
+function addReading(){
+  if (!T || T.kind !== "add") return 0;
+  const S = T.S, A = T.A;
+  const frontDist = S / (1 + 0.02*S);
+  if (seat === "back")  return zone === "dist" ? S : S + A*(1 + 0.02*S);
+  return zone === "dist" ? frontDist : frontDist + A;
+}
+function renderAddTarget(){
+  const p = addReading();
+  const b = clamp(Math.abs(drum - p)*1.8, 0, 7);
+  let hs = "";
+  [-19,0,19].forEach(x => { hs += segLine(x,-118,x,-6,3.0,"#04211a"); hs += segLine(x,6,x,118,3.0,"#04211a"); });
+  $("#gSph").innerHTML = hs; $("#gSph").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
+  $("#gCyl").innerHTML = segLine(-118,0,-6,0,4.6,"#031610") + segLine(6,0,118,0,4.6,"#031610");
+  $("#gCyl").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
+  $("#targetRot").setAttribute("transform","translate(200,200)");
+  $("#targetShift").setAttribute("transform","translate(0,0)");
+}
+
+/* ---------------- prentice stem ---------------- */
+function renderPren(){
+  if (!T || T.kind !== "pren") return;
+  const sign = T.F >= 0 ? "plus" : "minus";
+  const dirTxt = { nasal:"nasally", temporal:"temporally", up:"upward", down:"downward" }[T.dir];
+  if (prmode === "fwd"){
+    $("#prenStem").innerHTML =
+      `This ${sign} lens is <b>${fmtD(T.F)} DS</b> in front of the <b>${eyeSide}</b>.<br>
+       Its optical centre sits <b>${T.c} mm ${dirTxt}</b> to the line of sight.<br>
+       What prism does the wearer receive, and which way is the base?`;
+    $("#prenFwd").classList.remove("hidden"); $("#prenRev").classList.add("hidden");
+  } else {
+    $("#prenStem").innerHTML =
+      `A <b>${fmtD(T.F)} DS</b> lens must deliver <b>${T.D.toFixed(2)}&Delta;</b> to the <b>${eyeSide}</b>
+       by decentration alone.<br>How many millimetres off centre does it have to sit?`;
+    $("#prenFwd").classList.add("hidden"); $("#prenRev").classList.remove("hidden");
+  }
+}
+function prenBase(){
+  // Plus lens acts base toward the optical centre, minus lens base away from it.
+  const towardOC = T.F > 0;
+  const map = { nasal:"in", temporal:"out", up:"up", down:"down" };
+  const opp = { in:"out", out:"in", up:"down", down:"up" };
+  const b = map[T.dir];
+  return towardOC ? b : opp[b];
+}
+
+/* ---------------- checking ---------------- */
+function logResult(pass, tags){
+  stats.att++; stats.secs += (Date.now()-tStart)/1000;
+  if (pass){ stats.ok++; stats.streak++; stats.best = Math.max(stats.best, stats.streak); }
+  else { stats.streak = 0; (tags||[]).forEach(t => stats.err[t] = (stats.err[t]||0)+1); }
+  saveStats(); paintStats();
+}
+function paintStats(){
+  $("#stAtt").textContent = stats.att;
+  $("#stAcc").textContent = stats.att ? Math.round(stats.ok/stats.att*100)+"%" : "—";
+  $("#stStreak").textContent = stats.streak + (stats.best ? " / "+stats.best : "");
+  $("#stTime").textContent = stats.att ? (stats.secs/stats.att).toFixed(0) : "—";
+  const keys = Object.keys(stats.err).sort((a,b) => stats.err[b]-stats.err[a]).slice(0,6);
+  $("#weakList").innerHTML = keys.length
+    ? "<div style='color:var(--accent);border:0;padding-bottom:6px'>Repeat errors</div>" +
+      keys.map(k => `<div><span>${k}</span><b>${stats.err[k]}</b></div>`).join("")
+    : "";
+}
+function show(el, pass, title, lines, why){
+  el.className = "verdict show " + (pass ? "pass" : "fail");
+  el.innerHTML = `<h3>${title}</h3>` +
+    (lines.length ? "<ul>" + lines.map(l => "<li>"+l+"</li>").join("") + "</ul>" : "") +
+    (why ? `<div class="why">${why}</div>` : "");
+}
+
+function expectedSca(){
+  const S = T.S, C = T.C, th = T.th;
+  if (conv === "minus" || C === 0) return { s:S, c:C, a:th };
+  return { s: r25(S+C), c: r25(-C), a: (th+90) % 180 };
+}
+function otherSca(){
+  const S = T.S, C = T.C, th = T.th;
+  if (conv === "minus") return { s: r25(S+C), c: r25(-C), a: (th+90)%180 };
+  return { s:S, c:C, a:th };
+}
+
+function checkSca(reveal){
+  if (!T || T.kind !== "sca") return;
+  const E = expectedSca(), O = otherSca();
+  const rxTxt = `<code>${fmtD(E.s)} ${E.c ? fmtD(E.c)+" x "+fmtAx(E.a) : "DS"}</code>`;
+  if (reveal){
+    show($("#vSca"), false, "Answer", [
+      "Prescription: " + rxTxt,
+      T.C ? `Sphere line focuses at <code>${fmtD(T.S)}</code>, cyl line at <code>${fmtD(r25(T.S+T.C))}</code>, difference <code>${fmtD(T.C)}</code>.`
+          : "Pure sphere, so both line sets sharpen at the same drum setting."
+    ], T.C ? "Set the wheel to "+fmtAx(T.th)+" in minus cyl terms and the mires stop breaking." : "");
+    if (!answered){ answered = true; logResult(false, ["revealed"]); }
+    return;
+  }
+  const s = parseNum($("#inSph").value), c0 = parseNum($("#inCyl").value), a = parseNum($("#inAx").value);
+  const c = (c0 === null && E.c === 0) ? 0 : c0;
+  const okS = near(s, E.s, 0), okC = near(c, E.c, 0);
+  const okA = (E.c === 0) ? true : (a !== null && (Math.abs(a-E.a) <= 2 || Math.abs(Math.abs(a-E.a)-180) <= 2));
+  $("#fSph").className = "f " + (okS?"ok":"err");
+  $("#fCyl").className = "f " + (okC?"ok":"err");
+  $("#fAx").className  = "f " + (okA?"ok":"err");
+
+  const notes = [], tags = [];
+  if (okS && okC && okA){
+    if (!answered){ answered = true; logResult(true, []); }
+    show($("#vSca"), true, "Correct", ["Prescription: " + rxTxt], "");
+    return;
+  }
+  if (near(s,O.s,0) && near(c,O.c,0) && a !== null && Math.abs(a-O.a) <= 2){
+    notes.push("You wrote the <b>"+(conv==="minus"?"plus":"minus")+" cyl form</b>. The optics are identical, but the checker is set to "+conv+" cyl. Transpose: add the cyl to the sphere, flip its sign, rotate the axis 90 degrees.");
+    tags.push("wrong cyl convention");
+  }
+  if (!okA && a !== null && E.c !== 0){
+    const d = Math.min(Math.abs(a-E.a), 180-Math.abs(a-E.a));
+    if (Math.abs(d-90) <= 3){
+      notes.push("Your axis is <b>90 degrees off</b>. You focused the cyl line and read the wheel, but the axis is the setting where the <b>sphere</b> lines are sharp and unbroken.");
+      tags.push("axis 90 off");
+    } else if (d > 2 && d <= 12){
+      notes.push(`Axis out by ${d} degrees. The mires were still slightly broken. Rock the wheel back and forth past the break point rather than creeping up on it.`);
+      tags.push("axis not refined");
+    } else if (d > 12){
+      notes.push("Axis is well off. Find the wheel setting where the lines run continuous <b>before</b> touching the drum.");
+      tags.push("axis not refined");
+    }
+  }
+  if (!okS && s !== null){
+    const d = s - E.s;
+    if (Math.abs(Math.abs(d)-0.25) < 1e-6){ notes.push("Sphere out by one click ("+fmtD(d)+"). Approach the focus from the plus side and stop the moment it is sharp, not after."); tags.push("sphere one click"); }
+    else if (near(s, r25(T.S+T.C), 0) && T.C){ notes.push("You recorded the <b>second</b> reading as the sphere. In minus cyl the sphere is the <b>first</b> focus, the more plus of the two."); tags.push("read cyl as sphere"); }
+    else { notes.push("Sphere off by "+fmtD(d)+"."); tags.push("sphere off"); }
+  }
+  if (!okC && c !== null && T.C){
+    if (near(c, -E.c, 0)) { notes.push("Cylinder magnitude right, <b>sign wrong</b>. In "+conv+" cyl it must read "+fmtD(E.c)+"."); tags.push("cyl sign"); }
+    else { notes.push("Cylinder is the <b>difference</b> between the two readings, not a reading itself: "+fmtD(E.c)+"."); tags.push("cyl off"); }
+  }
+  if (!answered){ answered = true; logResult(false, tags.length?tags:["missed"]); }
+  show($("#vSca"), false, "Not right", notes.length?notes:["Correct answer: "+rxTxt], "Correct answer: " + rxTxt);
+}
+
+function checkPrism(reveal){
+  if (!T || T.kind !== "prism") return;
+  const res = Math.sqrt(T.h*T.h + T.v*T.v);
+  const txt = [];
+  if (T.h) txt.push(T.h.toFixed(2)+"Δ base "+T.hb);
+  if (T.v) txt.push(T.v.toFixed(2)+"Δ base "+T.vb);
+  const ansTxt = "<code>" + (txt.join(" and ") || "no prism") + "</code>";
+  if (reveal){
+    show($("#vPrism"), false, "Answer", [
+      "Prism: " + ansTxt,
+      T.h && T.v ? "Resultant <code>"+res.toFixed(2)+"Δ</code>, but it is recorded and ordered as separate components." : ""
+    ].filter(Boolean), "Count the rings from centre to the middle of the mires. The mires sit toward the base.");
+    if (!answered){ answered = true; logResult(false, ["revealed"]); }
+    return;
+  }
+  const h = parseNum($("#inPh").value) || 0, v = parseNum($("#inPv").value) || 0;
+  const hb = $("#inPhb").value, vb = $("#inPvb").value;
+  const okH = near(h, T.h, 0.25) && (T.h === 0 || hb === T.hb) && (T.h !== 0 || h === 0);
+  const okV = near(v, T.v, 0.25) && (T.v === 0 || vb === T.vb) && (T.v !== 0 || v === 0);
+  $("#fPh").className = "f " + (okH?"ok":"err");
+  $("#fPv").className = "f " + (okV?"ok":"err");
+
+  const notes = [], tags = [];
+  if (okH && okV){
+    if (!answered){ answered = true; logResult(true, []); }
+    show($("#vPrism"), true, "Correct", ["Prism: " + ansTxt], "");
+    return;
+  }
+  const flipH = { in:"out", out:"in" }, flipV = { up:"down", down:"up" };
+  if (T.h && near(h,T.h,0.25) && hb === flipH[T.hb]){
+    notes.push("Magnitude right, <b>base reversed</b> horizontally. The mires displace <b>toward the base</b>, so read where the target sits, not where it came from.");
+    tags.push("base direction reversed");
+  }
+  if (T.v && near(v,T.v,0.25) && vb === flipV[T.vb]){
+    notes.push("Magnitude right, <b>base reversed</b> vertically. Target high in the field means base up.");
+    tags.push("base direction reversed");
+  }
+  if (T.h && !near(h,T.h,0.25)) {
+    notes.push("Horizontal magnitude off. Each ring is exactly 1Δ, so count rings rather than estimating.");
+    tags.push("ring miscount");
+  }
+  if (T.v && !near(v,T.v,0.25)) {
+    notes.push("Vertical magnitude off. Each ring is exactly 1Δ, so count rings rather than estimating.");
+    tags.push("ring miscount");
+  }
+  if (T.h === 0 && h !== 0) { notes.push("There is no horizontal component in this lens."); tags.push("phantom component"); }
+  if (T.v === 0 && v !== 0) { notes.push("There is no vertical component in this lens."); tags.push("phantom component"); }
+  if (!answered){ answered = true; logResult(false, tags.length?tags:["missed"]); }
+  show($("#vPrism"), false, "Not right", notes, "Correct answer: " + ansTxt +
+    ". Nasal is on the " + (eyeSide==="OD"?"right":"left") + " of the reticle for this eye.");
+}
+
+function checkAdd(reveal){
+  if (!T || T.kind !== "add") return;
+  const ans = "<code>+" + T.A.toFixed(2) + " D</code>";
+  const backAdd = r25(T.A * (1 + 0.02*T.S));
+  if (reveal){
+    show($("#vAdd"), false, "Answer", [
+      "Add: " + ans + " on a " + fmtD(T.S) + " DS distance lens.",
+      "Front surface on the stop: readings differ by exactly the add.",
+      "Back surface on the stop: the same lens reads about <code>+"+backAdd.toFixed(2)+"</code>."
+    ], "Flip the spectacle. The add lives on the front surface.");
+    if (!answered){ answered = true; logResult(false, ["revealed"]); }
+    return;
+  }
+  const a = parseNum($("#inAdd").value);
+  const ok = near(a, T.A, 0);
+  $("#fAdd").className = "f " + (ok?"ok":"err");
+  const notes = [], tags = [];
+  if (ok){
+    if (!answered){ answered = true; logResult(true, []); }
+    const extra = seat === "front"
+      ? "Seated front surface down, which is the reason the number came out clean."
+      : "It agreed this time because the distance power is low. On a strong plus lens it will not.";
+    show($("#vAdd"), true, "Correct", ["Add: " + ans], extra);
+    return;
+  }
+  if (near(a, backAdd, 0) && backAdd !== T.A){
+    notes.push("That is the <b>back vertex add</b>, not the true add. You measured through the back surface on a "+fmtD(T.S)+" DS lens, and the distance portion inflated the near reading by "+fmtD(backAdd-T.A)+".");
+    notes.push("Turn the spectacle so the <b>front</b> surface rests on the stop, then take both readings again.");
+    tags.push("add read from back surface");
+  } else if (a !== null) {
+    notes.push("Add is the <b>difference</b> between the distance zone and the near segment, both taken in the same seating. Out by "+fmtD(a-T.A)+".");
+    tags.push("add off");
+  }
+  if (!answered){ answered = true; logResult(false, tags.length?tags:["missed"]); }
+  show($("#vAdd"), false, "Not right", notes, "Correct answer: " + ans);
+}
+
+function checkPren(reveal){
+  if (!T || T.kind !== "pren") return;
+  const base = prenBase();
+  const D = Math.abs(T.c/10 * T.F);
+  const work = `<code>&Delta; = ${(T.c/10).toFixed(1)} cm &times; ${Math.abs(T.F).toFixed(2)} D = ${D.toFixed(2)}&Delta;</code>`;
+  if (reveal){
+    if (prmode === "fwd")
+      show($("#vPren"), false, "Answer", [work, "Base <b>"+base+"</b>. "+(T.F>0?"Plus lens, so the base points toward the optical centre.":"Minus lens, so the base points away from the optical centre.")],
+        "Decentration goes in as centimetres. That is where most of the marks are lost.");
+    else
+      show($("#vPren"), false, "Answer", [`<code>c = ${T.D.toFixed(2)}&Delta; &divide; ${Math.abs(T.F).toFixed(2)} D = ${(T.D/Math.abs(T.F)).toFixed(2)} cm = ${(T.D/Math.abs(T.F)*10).toFixed(1)} mm</code>`],
+        "Answer in millimetres, since that is how frames are actually decentred.");
+    if (!answered){ answered = true; logResult(false, ["revealed"]); }
+    return;
+  }
+  if (prmode === "fwd"){
+    const d = parseNum($("#inPrD").value), b = $("#inPrB").value;
+    const okD = near(d, r25(D), 0.13), okB = (b === base);
+    $("#fPrD").className = "f " + (okD?"ok":"err");
+    const notes = [], tags = [];
+    if (okD && okB){
+      if (!answered){ answered = true; logResult(true, []); }
+      show($("#vPren"), true, "Correct", [work + " base " + base], "");
+      return;
+    }
+    if (!okD && d !== null){
+      if (near(d, D*10, 1)) { notes.push("Units. You used <b>millimetres</b> where the formula wants <b>centimetres</b>. Divide the decentration by 10 first."); tags.push("Prentice units"); }
+      else notes.push("Magnitude off. " + work);
+      tags.push("Prentice magnitude");
+    }
+    if (!okB){
+      notes.push("Base direction wrong. A <b>"+(T.F>0?"plus":"minus")+"</b> lens is two prisms joined "+(T.F>0?"base to base":"apex to apex")+" at the optical centre, so an off-centre point acts base <b>"+(T.F>0?"toward":"away from")+"</b> the centre. Here the centre sits "+T.dir+", so the base is <b>"+base+"</b>.");
+      tags.push("Prentice base direction");
+    }
+    if (!answered){ answered = true; logResult(false, tags.length?tags:["missed"]); }
+    show($("#vPren"), false, "Not right", notes, work + ", base " + base);
+  } else {
+    const c = parseNum($("#inPrC").value);
+    const trueC = T.D/Math.abs(T.F)*10;
+    const ok = near(c, trueC, 0.6);
+    $("#fPrC").className = "f " + (ok?"ok":"err");
+    if (ok){
+      if (!answered){ answered = true; logResult(true, []); }
+      show($("#vPren"), true, "Correct", [`<code>c = ${T.D.toFixed(2)} &divide; ${Math.abs(T.F).toFixed(2)} = ${(trueC/10).toFixed(2)} cm = ${trueC.toFixed(1)} mm</code>`], "");
+      return;
+    }
+    const notes = [], tags = ["Prentice reverse"];
+    if (c !== null && near(c, trueC/10, 0.2)) { notes.push("You stopped at <b>centimetres</b>. The answer is asked in millimetres, so multiply by 10."); tags.push("Prentice units"); }
+    else notes.push("Rearrange rather than re-derive: c = &Delta; / F, then convert cm to mm.");
+    if (!answered){ answered = true; logResult(false, tags); }
+    show($("#vPren"), false, "Not right", notes, `c = ${trueC.toFixed(1)} mm`);
+  }
+}
+
+/* ---------------- ui wiring ---------------- */
+function segSet(sel, attr, val){
+  $$(sel + " button").forEach(b => b.classList.toggle("on", b.dataset[attr] === val));
+}
+function bindSeg(sel, attr, fn){
+  const el = $(sel); if (!el) return;
+  el.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    $$(sel + " button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); fn(b.dataset[attr]);
+  });
+}
+
+function updateStage(){
+  $("#stageEye").textContent = eyeSide === "OD" ? "Right eye (OD)" : "Left eye (OS)";
+  const m = { sca:"Crossline target", prism:"Prism reticle", add:"Add measurement", prentice:"Calculation" };
+  $("#stageMode").textContent = m[tab];
+  const zs = $("#stageZone");
+  if (tab === "add"){ zs.style.display = ""; zs.innerHTML = "Zone: <b>" + (zone==="dist"?"Distance":"Near segment") + "</b> &middot; " + (seat==="back"?"back surface down":"front surface down"); }
+  else zs.style.display = "none";
+}
+
+function switchTab(t){
+  tab = t;
+  $$(".tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === t));
+  $("#setSca").classList.toggle("hidden", t !== "sca");
+  $("#setPrism").classList.toggle("hidden", t !== "prism");
+  $("#setAdd").classList.toggle("hidden", t !== "add");
+  $("#setPrentice").classList.toggle("hidden", t !== "prentice");
+  $("#recSca").classList.toggle("hidden", t !== "sca");
+  $("#recPrism").classList.toggle("hidden", t !== "prism");
+  $("#recAdd").classList.toggle("hidden", t !== "add");
+  $("#recPrentice").classList.toggle("hidden", t !== "prentice");
+  $("#addControls").classList.toggle("hidden", t !== "add");
+  $("#axisRow").classList.toggle("hidden", t === "add");
+  $("#instrCard").classList.toggle("hidden", t === "prentice");
+  $("#eyecard").classList.toggle("hidden", t === "prentice");
+  $("#hint").textContent = t === "add"
+    ? "Focus the distance zone, then the near segment. Change the seating and watch the add change."
+    : "Scroll over the eyepiece to turn the power drum. Shift + scroll turns the axis wheel. Arrow keys work too.";
+  newTarget();
+}
+
+$(".tabs").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (b) switchTab(b.dataset.tab);
+});
+bindSeg("#eyeSeg","eye", v => { eyeSide = v; drawNasal(); updateStage(); renderTarget(); if (tab==="prentice") renderPren(); });
+bindSeg("#diffSeg","diff", v => { diff = v; newTarget(); });
+bindSeg("#convSeg","conv", v => { conv = v; });
+bindSeg("#prismSeg","pm", v => { pmode = v; newTarget(); });
+bindSeg("#addSeg","am", v => { amode = v; newTarget(); });
+bindSeg("#prenSeg","pr", v => { prmode = v; newTarget(); });
+bindSeg("#seatSeg","seat", v => { seat = v; updateStage(); renderAddTarget(); });
+bindSeg("#zoneSeg","zone", v => { zone = v; updateStage(); renderAddTarget(); });
+
+function setDrum(v){ drum = clamp(Math.round(v*100)/100, -20, 20); refreshInstr(); if (tab==="add") renderAddTarget(); }
+function setAxis(v){ axisW = ((Math.round(v) % 180) + 180) % 180; refreshInstr(); }
+
+$("#drum").addEventListener("input", e => setDrum(parseFloat(e.target.value)));
+$("#axis").addEventListener("input", e => setAxis(parseFloat(e.target.value)));
+$$("[data-drum]").forEach(b => b.addEventListener("click", () => setDrum(drum + parseFloat(b.dataset.drum))));
+$$("[data-axis]").forEach(b => b.addEventListener("click", () => setAxis(axisW + parseFloat(b.dataset.axis))));
+
+$("#eye").addEventListener("wheel", e => {
+  e.preventDefault();
+  const d = e.deltaY > 0 ? -1 : 1;
+  if (e.shiftKey) setAxis(axisW + d); else setDrum(drum + d*0.05);
+}, { passive:false });
+
+document.addEventListener("keydown", e => {
+  if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
+  if (e.key === "ArrowUp")   { e.preventDefault(); setDrum(drum + (e.shiftKey?0.05:0.25)); }
+  if (e.key === "ArrowDown") { e.preventDefault(); setDrum(drum - (e.shiftKey?0.05:0.25)); }
+  if (e.key === "ArrowRight"){ e.preventDefault(); setAxis(axisW + (e.shiftKey?5:1)); }
+  if (e.key === "ArrowLeft") { e.preventDefault(); setAxis(axisW - (e.shiftKey?5:1)); }
+  if (e.key === "n" || e.key === "N") newTarget();
+});
+
+$("#newTarget").addEventListener("click", newTarget);
+$("#chkSca").addEventListener("click", () => checkSca(false));
+$("#revSca").addEventListener("click", () => checkSca(true));
+$("#chkPrism").addEventListener("click", () => checkPrism(false));
+$("#revPrism").addEventListener("click", () => checkPrism(true));
+$("#chkAdd").addEventListener("click", () => checkAdd(false));
+$("#revAdd").addEventListener("click", () => checkAdd(true));
+$("#chkPren").addEventListener("click", () => checkPren(false));
+$("#revPren").addEventListener("click", () => checkPren(true));
+$("#resetStats").addEventListener("click", () => {
+  stats = { att:0, ok:0, streak:0, best:0, secs:0, err:{} }; saveStats(); paintStats();
+});
+
+const origRender = renderTarget;
+renderTarget = function(){ if (tab === "add") renderAddTarget(); else origRender(); };
+
+paintStats(); drawNasal(); switchTab("sca");
+
+})();
+</script>
+</div>
+</body>
+</html>

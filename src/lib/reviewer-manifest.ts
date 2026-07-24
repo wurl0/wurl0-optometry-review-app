@@ -125,6 +125,10 @@ const INTERACTIVE_ITEMS: Item[] = [
   // Named -Visualizer rather than -Interactive, so it fell outside the generator's glob
   // and was reachable only from the D reviewer's layers bar until now.
   { id: 'int.D-Prism-360-Visualizer', subject: 'D', type: 'interactive', label: 'D Prism 360 Dial', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D-Prism-360-Visualizer.html' },
+  // Practical-station drill rather than a topic visual: simulates the lensmeter itself
+  // (true two-meridian focusing, broken mires off-axis, ring-counted prism, the
+  // front-vertex add flip, and Prentice both directions).
+  { id: 'int.D-Virtual-Lensmeter', subject: 'D', type: 'interactive', label: 'D Virtual Lensmeter', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D-Virtual-Lensmeter.html' },
   { id: 'int.E3-Fundus-Signatures-Interactive', subject: 'E', type: 'interactive', label: 'E3 Fundus Signatures', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Fundus-Signatures-Interactive.html' },
   { id: 'int.F1-DPA-Quiz', subject: 'F', type: 'interactive', label: 'F1 DPA Quiz', path: '/top2/F-Clinical-Optometry-and-Specialties/F1-DPA-Examination/F1-DPA-Quiz.html' },
   { id: 'int.G1-Interactive', subject: 'G', type: 'interactive', label: 'G1 Interactive', path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Interactive.html' },
