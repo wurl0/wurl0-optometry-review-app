@@ -266,8 +266,9 @@
       <details>
         <summary>How the B&amp;L one-position mires behave</summary>
         <ul>
-          <li><b>Focus first.</b> Off focus the mires blur and double. Sharpen them before touching a drum,
-              or every later reading inherits the error.</li>
+          <li><b>Focus and centre on the large + first.</b> The reference ring carries a big central plus
+              cross. Off focus the mires blur and double. Sharpen and centre on that cross before touching
+              a drum, or every later reading inherits the error.</li>
           <li><b>You see three rings.</b> The two lower rings carry the + signs; the upper ring carries the
               − signs. Turn the horizontal drum until the lower pair meet and their + signs superimpose;
               turn the vertical drum until the top ring drops in and its − signs superimpose. At both nulls
@@ -423,10 +424,13 @@ function minusGlyph(x,y,s,w,col){
   return G("line",{x1:x-s,y1:y,x2:x+s,y2:y,stroke:col,"stroke-width":w,"stroke-linecap":"round"});
 }
 // One B&L mire ring with + signs at 3 and 9 o'clock and − signs at 12 and 6 o'clock.
-function mireRing(x,y,r,w,col){
-  return G("circle",{cx:x,cy:y,r:r,fill:"none",stroke:col,"stroke-width":w})
-       + plusGlyph(x-r, y, 6, w, col) + plusGlyph(x+r, y, 6, w, col)
-       + minusGlyph(x, y-r, 7, w, col) + minusGlyph(x, y+r, 7, w, col);
+// The reference ring also carries the large central + used to focus and centre.
+function mireRing(x,y,r,w,col,bigPlus){
+  let s = G("circle",{cx:x,cy:y,r:r,fill:"none",stroke:col,"stroke-width":w})
+        + plusGlyph(x-r, y, 6, w, col) + plusGlyph(x+r, y, 6, w, col)
+        + minusGlyph(x, y-r, 7, w, col) + minusGlyph(x, y+r, 7, w, col);
+  if (bigPlus) s += plusGlyph(x, y, r*0.55, w+0.8, col);
+  return s;
 }
 
 function renderMires(){
@@ -444,7 +448,7 @@ function renderMires(){
   const by = cy + 23;                             // bottom row of the triangle
   const apex = cy - 46;                           // top ring when tangent (sepV = 0)
   let h = "";
-  h += mireRing(cx - r - sepH/2 + wob.hx, by + wob.hy,        r, w, C);   // lower-left  (reference)
+  h += mireRing(cx - r - sepH/2 + wob.hx, by + wob.hy,        r, w, C, true);   // lower-left  (reference, central +)
   h += mireRing(cx + r + sepH/2 + wob.vx, by + brk + wob.vy,  r, w, C);   // lower-right (+ signs, horizontal drum)
   h += mireRing(cx + brk,                 apex - sepV,        r, w, C);   // top        (− signs, vertical drum)
 
