@@ -166,7 +166,7 @@
       </svg>
 
       <div class="readout" id="readout"></div>
-      <div class="hint" id="hint">Focus the circles, rotate the axis until the plus signs stop stepping, then null the + signs (horizontal drum) and the − signs (vertical drum).</div>
+      <div class="hint" id="hint">Focus the three rings, rotate the axis until they stop stepping, then bring the lower pair together (horizontal drum, + signs) and drop the top ring in (vertical drum, − signs).</div>
     </div>
 
     <div class="card">
@@ -268,9 +268,10 @@
         <ul>
           <li><b>Focus first.</b> Off focus the mires blur and double. Sharpen them before touching a drum,
               or every later reading inherits the error.</li>
-          <li><b>Plus signs read the horizontal meridian, minus signs the vertical.</b> Turn the horizontal
-              drum until the two + signs sit exactly on top of each other; turn the vertical drum until the
-              two − signs superimpose. Each drum reads dioptres of corneal power directly.</li>
+          <li><b>You see three rings.</b> The two lower rings carry the + signs; the upper ring carries the
+              − signs. Turn the horizontal drum until the lower pair meet and their + signs superimpose;
+              turn the vertical drum until the top ring drops in and its − signs superimpose. At both nulls
+              the three rings sit tangent. Each drum reads dioptres of corneal power directly.</li>
           <li><b>Set the axis before the drums.</b> Off a principal meridian the plus signs step apart
               vertically (the mires look broken). Rotate the wheel until they run unbroken, then null.
               A principal meridian is found at the axis and again 90° away.</li>
@@ -421,40 +422,42 @@ function plusGlyph(x,y,s,w,col){
 function minusGlyph(x,y,s,w,col){
   return G("line",{x1:x-s,y1:y,x2:x+s,y2:y,stroke:col,"stroke-width":w,"stroke-linecap":"round"});
 }
+// One B&L mire ring with + signs at 3 and 9 o'clock and − signs at 12 and 6 o'clock.
+function mireRing(x,y,r,w,col){
+  return G("circle",{cx:x,cy:y,r:r,fill:"none",stroke:col,"stroke-width":w})
+       + plusGlyph(x-r, y, 6, w, col) + plusGlyph(x+r, y, 6, w, col)
+       + minusGlyph(x, y-r, 7, w, col) + minusGlyph(x, y+r, 7, w, col);
+}
 
 function renderMires(){
-  const cx = 200, cy = 200, C = "#06281d";
+  const cx = 200, cy = 200, C = "#06281d", r = 38, w = 3.2;
   const Ph = mer(axisW), Pv = mer(axisW+90);
-  const sepH = (hDrum - Ph) * 17;                 // + signs separate horizontally, null at Ph
-  const sepV = (vDrum - Pv) * 17;                 // − signs separate vertically, null at Pv
+  // Doubling: the lower pair separate horizontally (null at Ph), the top ring rises
+  // vertically (null at Pv). At both nulls the three rings are mutually tangent.
+  const sepH = clamp((hDrum - Ph) * 13, -80, 80);
+  const sepV = clamp((vDrum - Pv) * 13, -80, 80);
   const blur = clamp(Math.abs(foc)*1.1, 0, 6);    // focus null at 0
-  // axis break: signs step apart off a principal meridian
-  const brk = T ? clamp(T.astig * Math.abs(Math.sin(rad(2*(axisW - T.th)))) * 4, 0, 16) : 0;
-  const w = T && T.wob ? T.wob : {hx:0,hy:0,vx:0,vy:0,rot:0};
+  // axis break: the doubling goes oblique off a principal meridian, so the rings step
+  const brk = T ? clamp(T.astig * Math.abs(Math.sin(rad(2*(axisW - T.th)))) * 4, 0, 18) : 0;
+  const wob = T && T.wob ? T.wob : {hx:0,hy:0,vx:0,vy:0,rot:0};
 
-  const Rp = 66, Rm = 66, gs = 12, gw = 3.4;
+  const by = cy + 23;                             // bottom row of the triangle
+  const apex = cy - 46;                           // top ring when tangent (sepV = 0)
   let h = "";
-  // central focusing circle (doubles when badly out of focus)
-  h += G("circle",{cx:cx,cy:cy,r:34,fill:"none",stroke:C,"stroke-width":3});
-
-  // plus-sign pair on the right (horizontal meridian), separated by sepH, stepped by brk
-  h += plusGlyph(cx + Rp - sepH/2 + w.hx, cy - brk/2 + w.hy, gs, gw, C);
-  h += plusGlyph(cx + Rp + sepH/2 + w.hx, cy + brk/2 - w.hy, gs, gw, C);
-  // minus-sign pair below (vertical meridian), separated by sepV, stepped by brk
-  h += minusGlyph(cx + brk/2 + w.vx, cy + Rm - sepV/2 + w.vy, gs+2, gw, C);
-  h += minusGlyph(cx - brk/2 - w.vx, cy + Rm + sepV/2 + w.vy, gs+2, gw, C);
+  h += mireRing(cx - r - sepH/2 + wob.hx, by + wob.hy,        r, w, C);   // lower-left  (reference)
+  h += mireRing(cx + r + sepH/2 + wob.vx, by + brk + wob.vy,  r, w, C);   // lower-right (+ signs, horizontal drum)
+  h += mireRing(cx + brk,                 apex - sepV,        r, w, C);   // top        (− signs, vertical drum)
 
   const g = $("#mires");
   g.innerHTML = h;
-  g.setAttribute("transform", `rotate(${(-axisW + w.rot).toFixed(1)} ${cx} ${cy})`);
+  g.setAttribute("transform", `rotate(${(-axisW + wob.rot).toFixed(1)} ${cx} ${cy})`);
   g.setAttribute("style", `filter:blur(${blur.toFixed(2)}px)`);
 
   // live null indicators + readout
-  const nulledH = Math.abs(sepH) < 3, nulledV = Math.abs(sepV) < 3;
-  const nulledA = brk < 2, sharp = Math.abs(foc) < 0.4;
-  $("#nH").classList.toggle("on", nulledH && sharp);
-  $("#nV").classList.toggle("on", nulledV && sharp);
-  $("#nA").classList.toggle("on", nulledA && sharp);
+  const sharp = Math.abs(foc) < 0.4;
+  $("#nH").classList.toggle("on", Math.abs(sepH) < 4 && sharp);
+  $("#nV").classList.toggle("on", Math.abs(sepV) < 4 && sharp);
+  $("#nA").classList.toggle("on", brk < 2 && sharp);
   $("#nFoc").classList.toggle("on", sharp);
   $("#readout").innerHTML =
     `H: <b>${fmt2(hDrum)} D</b> = ${fmt2(D2mm(hDrum))} mm` +
@@ -654,7 +657,7 @@ function switchTab(t){
   $("#diffSeg").classList.toggle("hidden", t === "javal");   // difficulty applies to the measure drill only
   $("#hint").textContent = t === "javal"
     ? "The reading is measured for you. Apply Javal's rule to predict the eye's total refractive astigmatism."
-    : "Focus the circles, rotate the axis until the plus signs stop stepping, then null the + signs (horizontal drum) and the − signs (vertical drum).";
+    : "Focus the three rings, rotate the axis until they stop stepping, then bring the lower pair together (horizontal drum, + signs) and drop the top ring in (vertical drum, − signs).";
   newTarget();
 }
 
