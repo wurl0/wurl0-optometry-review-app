@@ -509,11 +509,15 @@ function renderTarget(){
   const S = T ? T.S : 0, C = T ? T.C : 0, th = T ? T.th : 0;
   const L = 118;
 
-  // focus errors
+  // Defocus. Out of focus, a lensmeter line is a wide fuzzy band, not vanishing ink:
+  // the band WIDENS and softens as you leave focus and narrows to a crisp line at power.
+  // Modelling defocus as stroke width (plus a little blur) keeps the target always
+  // visible, so the drum can be hunted toward focus instead of the line disappearing.
   const pSph = meridianPower(S,C,th,axisW);
   const pCyl = meridianPower(S,C,th,axisW+90);
-  const bSph = clamp(Math.abs(drum - pSph)*1.8, 0, 7);
-  const bCyl = clamp(Math.abs(drum - pCyl)*1.8, 0, 7);
+  const dSph = Math.abs(drum - pSph), dCyl = Math.abs(drum - pCyl);
+  const wSph = clamp(3 + dSph*4.5, 3, 26), bSph = clamp(dSph*0.9, 0, 3.5);
+  const wCyl = clamp(4 + dCyl*4.5, 4, 28), bCyl = clamp(dCyl*0.9, 0, 3.5);
 
   // mire break from axis misalignment
   const brk = clamp(Math.abs(C) * Math.abs(Math.sin(rad(2*(axisW-th)))) * 7, 0, 15);
@@ -521,15 +525,15 @@ function renderTarget(){
   // sphere lines: three parallel lines running along local y (perpendicular to wheel)
   let hs = "";
   [-19,0,19].forEach(x => {
-    hs += segLine(x-brk, -L, x-brk, -6, 3.0, "#04211a");
-    hs += segLine(x+brk,  6, x+brk,  L, 3.0, "#04211a");
+    hs += segLine(x-brk, -L, x-brk, -6, wSph, "#04211a");
+    hs += segLine(x+brk,  6, x+brk,  L, wSph, "#04211a");
   });
   $("#gSph").innerHTML = hs;
   $("#gSph").setAttribute("style","filter:blur("+bSph.toFixed(2)+"px)");
 
   // cyl line: single bold line along local x (along the wheel setting)
-  let hc = segLine(-L, -brk, -6, -brk, 4.6, "#031610")
-         + segLine( 6,  brk,  L,  brk, 4.6, "#031610");
+  let hc = segLine(-L, -brk, -6, -brk, wCyl, "#031610")
+         + segLine( 6,  brk,  L,  brk, wCyl, "#031610");
   $("#gCyl").innerHTML = hc;
   $("#gCyl").setAttribute("style","filter:blur("+bCyl.toFixed(2)+"px)");
 
@@ -621,11 +625,12 @@ function addReading(){
 }
 function renderAddTarget(){
   const p = addReading();
-  const b = clamp(Math.abs(drum - p)*1.8, 0, 7);
+  const d = Math.abs(drum - p);
+  const w = clamp(3 + d*4.5, 3, 26), b = clamp(d*0.9, 0, 3.5);
   let hs = "";
-  [-19,0,19].forEach(x => { hs += segLine(x,-118,x,-6,3.0,"#04211a"); hs += segLine(x,6,x,118,3.0,"#04211a"); });
+  [-19,0,19].forEach(x => { hs += segLine(x,-118,x,-6,w,"#04211a"); hs += segLine(x,6,x,118,w,"#04211a"); });
   $("#gSph").innerHTML = hs; $("#gSph").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
-  $("#gCyl").innerHTML = segLine(-118,0,-6,0,4.6,"#031610") + segLine(6,0,118,0,4.6,"#031610");
+  $("#gCyl").innerHTML = segLine(-118,0,-6,0,w+1,"#031610") + segLine(6,0,118,0,w+1,"#031610");
   $("#gCyl").setAttribute("style","filter:blur("+b.toFixed(2)+"px)");
   $("#targetRot").setAttribute("transform","translate(200,200)");
   $("#targetShift").setAttribute("transform","translate(0,0)");
