@@ -42,6 +42,11 @@
   .viewtoggle{background:var(--panel2);color:var(--dim);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font-size:11.5px;cursor:pointer;font-weight:600;white-space:nowrap}
   .viewtoggle:hover{border-color:var(--accent);color:var(--text)}
   .viewtoggle.off{border-color:var(--warn);color:var(--warn)}
+  svg.phoropter{display:block;width:100%;max-width:560px;margin:0 auto;background:#0a0f18;border-radius:12px;border:1px solid var(--line)}
+  .prismnote{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px;min-height:16px}
+  .pchip{font-size:11px;font-family:ui-monospace,Menlo,monospace;padding:3px 9px;border-radius:6px;border:1px solid var(--line);background:var(--panel2);color:var(--dim)}
+  .pchip.meas{border-color:#2a5a86;color:#8fd0ff}
+  .pchip.diss{border-color:#4a3a6e;color:#c4b5ef}
 
   /* patient view */
   .viewwrap{display:flex;flex-direction:column;align-items:center}
@@ -156,7 +161,7 @@
 </div>
 
 <div class="grid">
-  <!-- LEFT: patient view + control -->
+  <!-- LEFT: instrument + patient view -->
   <div>
     <div class="card" id="rxCard">
       <h2>Chart on file</h2>
@@ -164,15 +169,20 @@
       <div class="rxrow"><span>#7 Subjective</span><b id="rxSubj">&mdash;</b></div>
     </div>
     <div class="card">
+      <h2>Phoropter &mdash; examiner's side</h2>
+      <svg class="phoropter" id="phoropter" viewBox="0 0 560 300"></svg>
+      <div class="prismnote" id="prismnote"></div>
+      <div class="ctrl" id="ctrl"></div>
+    </div>
+    <div class="card">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px">
-        <h2 style="margin:0" id="viewTitle">Through the phoropter</h2>
+        <h2 style="margin:0" id="viewTitle">Patient's view (guide)</h2>
         <button class="viewtoggle" id="viewToggle">Patient's view: on</button>
       </div>
       <div class="viewwrap">
         <svg class="eye" id="eye" viewBox="0 0 300 220"></svg>
         <div class="viewcap" id="viewcap"></div>
       </div>
-      <div class="ctrl" id="ctrl"></div>
     </div>
     <div class="card">
       <h2>Case sheet</h2>
@@ -273,7 +283,7 @@ const ph15B=p=>r25(p.nearPh+p.ACA*(gross14B(p)-p.se7));
 
 /* ===================== steps ===================== */
 // guide(): {lens, dissociate, control, endpoint, act}
-const STEPS=[
+const STEP_DEFS=[
  {n:"1",name:"Ophthalmoscopy",kind:"brief",brief:p=>`Media clear, both discs healthy, C/D 0.3, spontaneous venous pulse present. <b>No pathology.</b> Steps 1 and 2 are objective screens, not binocular-vision tests.`},
  {n:"2",name:"Keratometry",kind:"brief",brief:p=>`K readings regular OU, mires clean, agree with the refractive cylinder. <b>No keratoconus.</b>`},
  {n:"3",name:"Habitual phoria at far",kind:"lateral",dist:"far",lens:p=>`Habitual Rx (OD ${rxStr(p.oldRx.OD)}, OS ${rxStr(p.oldRx.OS)})`,truth:habPhFar,
@@ -349,6 +359,11 @@ const STEPS=[
   guide:{control:"Sphere over the near lens, 20/20 target at 40cm",
     act:"Add plus until it blurs out. Net should not exceed +2.50; more means #7 was over-minused."}}
 ];
+// OEP arrangement (from "21 Visual Tests Notes"): habitual phorias before the subjective,
+// and the relaxing / exo tests before the stimulating / eso ones to spare the eyes fatigue
+// (base-in #11/#17 before base-out #9-10/#16, and NRA #21 before PRA #20).
+const ORDER=["1","2","3","13A","4","5","6","7","8","13B","11","9-10","12","18","19","14A","15A","14B","15B","17","16","21","20"];
+const STEPS=ORDER.map(n=>STEP_DEFS.find(s=>s.n===n));
 
 /* ===================== state ===================== */
 let idx=0; const results={}; let marks={}; let dial=0, addDial=0, answered=false; let showView=true;
@@ -361,6 +376,71 @@ function vergState(step){ const T=P[step.truthKey]; if(step.kind==="vergBO")retu
   return{blur:T.biBlur,brk:T.biBreak,rec:T.biRec,hasBlur:true}; }
 function accBlurred(step){ let thr,dir; if(step.mode==="AA"){thr=r25(P.AA-2.50);dir=-1;} else if(step.mode==="PRA"){thr=P.PRAnet;dir=-1;} else {thr=P.NRAnet;dir=1;}
   return dir<0?addDial<=thr+0.001:addDial>=thr-0.001; }
+/* ===================== phoropter instrument (shows prism placement) ===================== */
+function eyeGlyph(cx,cy,r){
+  return `<ellipse cx="${cx}" cy="${cy}" rx="${(r*0.6).toFixed(1)}" ry="${(r*0.4).toFixed(1)}" fill="#edf1ee"/>`
+    +`<circle cx="${cx}" cy="${cy}" r="${(r*0.30).toFixed(1)}" fill="#5b7fa6"/>`
+    +`<circle cx="${cx}" cy="${cy}" r="${(r*0.28).toFixed(1)}" fill="#38597a"/>`
+    +`<circle cx="${cx}" cy="${cy}" r="${(r*0.14).toFixed(1)}" fill="#0a0f16"/>`
+    +`<circle cx="${(cx-r*0.10).toFixed(1)}" cy="${(cy-r*0.12).toFixed(1)}" r="${(r*0.05).toFixed(1)}" fill="#eaf2ff"/>`
+    +`<path d="M ${(cx-r*0.6).toFixed(1)} ${cy} Q ${cx} ${(cy-r*0.5).toFixed(1)} ${(cx+r*0.6).toFixed(1)} ${cy}" fill="none" stroke="#c9bfae" stroke-width="1.4"/>`;
+}
+function ticks(cx,cy,r){ let s=""; for(let a=0;a<360;a+=15){ const rr=a*Math.PI/180;
+  s+=`<line x1="${(cx+Math.cos(rr)*r).toFixed(1)}" y1="${(cy+Math.sin(rr)*r).toFixed(1)}" x2="${(cx+Math.cos(rr)*(r-5)).toFixed(1)}" y2="${(cy+Math.sin(rr)*(r-5)).toFixed(1)}" stroke="#384660" stroke-opacity="0.7" stroke-width="1"/>`; }
+  return s; }
+function prismArrow(cx,cy,side,base,mag,color){
+  let dx=0,dy=0;
+  if(base==="BU")dy=-1; else if(base==="BD")dy=1;
+  else { const toward=side==="OD"?1:-1; dx=base==="BI"?toward:-toward; }   // BI points toward the nose (screen centre)
+  const len=clamp(16+mag*1.6,16,44), ex=cx+dx*len, ey=cy+dy*len;
+  const px=dx!==0?0:1, py=dx!==0?1:0;
+  const b1x=ex-dx*9+px*6, b1y=ey-dy*9+py*6, b2x=ex-dx*9-px*6, b2y=ey-dy*9-py*6;
+  return `<line x1="${cx}" y1="${cy}" x2="${ex.toFixed(1)}" y2="${ey.toFixed(1)}" stroke="${color}" stroke-width="4" stroke-linecap="round" opacity="0.95"/>`
+    +`<polygon points="${ex.toFixed(1)},${ey.toFixed(1)} ${b1x.toFixed(1)},${b1y.toFixed(1)} ${b2x.toFixed(1)},${b2y.toFixed(1)}" fill="${color}"/>`;
+}
+function prismPlacement(step){
+  const k=step.kind;
+  if(k==="lateral") return {OD:{base:dial>=0?"BI":"BO",mag:Math.abs(dial),role:"measuring"}, OS:{base:"BU",mag:6,role:"dissociating"}};
+  if(k==="vertical") return {OD:{base:"BI",mag:12,role:"dissociating"}, OS:{base:dial>=0?"BU":"BD",mag:Math.abs(dial),role:"measuring"}};
+  if(k==="vergBO"||k==="vergNearBO") return {OD:{base:"BO",mag:dial,role:"rotary"}, OS:{base:"BO",mag:dial,role:"rotary"}};
+  if(k==="vergBI"||k==="vergNearBI") return {OD:{base:"BI",mag:dial,role:"rotary"}, OS:{base:"BI",mag:dial,role:"rotary"}};
+  if(k==="crossCyl"&&step.mode==="A") return {OD:{base:"BD",mag:3,role:"dissociating"}, OS:{base:"BU",mag:3,role:"dissociating"}};
+  return null;
+}
+function ctrlSph(side){ const step=STEPS[idx]; let b=(step.n==="3"||step.n==="13A")?P.oldRx[side].s:P.Rx[side].s;
+  if(step.kind==="acc"||step.kind==="crossCyl") b=r25(b+addDial); return b; }
+function drawPhoropter(){
+  const step=STEPS[idx], cxOD=150, cxOS=410, cy=150, R=96, apR=46, prR=70;
+  const place = step.kind==="brief" ? null : prismPlacement(step);
+  const jcc = step.kind==="crossCyl";
+  const g=[`<defs>
+    <radialGradient id="phskin" cx="50%" cy="40%" r="62%"><stop offset="0" stop-color="#e6c6aa"/><stop offset="1" stop-color="#c2a082"/></radialGradient>
+    <radialGradient id="phbody" cx="42%" cy="30%" r="82%"><stop offset="0" stop-color="#2f3c54"/><stop offset="0.6" stop-color="#141d2e"/><stop offset="1" stop-color="#0a0f1a"/></radialGradient>
+    <radialGradient id="phlens" cx="42%" cy="36%" r="72%"><stop offset="0" stop-color="#1c2c44"/><stop offset="0.7" stop-color="#0e1626"/><stop offset="1" stop-color="#060a12"/></radialGradient>
+  </defs>`];
+  g.push(`<g opacity="0.4"><ellipse cx="280" cy="170" rx="148" ry="150" fill="url(#phskin)"/><path d="M 280 124 Q 268 170 283 184" fill="none" stroke="#8a6a54" stroke-width="2"/><path d="M 256 212 Q 280 226 304 212" fill="none" stroke="#8a6a54" stroke-width="2.5"/></g>`);
+  g.push(`<rect x="40" y="42" width="480" height="12" rx="6" fill="#1a2233"/>`);
+  [["OD",cxOD],["OS",cxOS]].forEach(([lbl,cx])=>{
+    g.push(`<circle cx="${cx}" cy="${cy}" r="${R}" fill="url(#phbody)" stroke="#05070d" stroke-width="2.5"/>`);
+    g.push(`<circle cx="${cx}" cy="${cy}" r="${prR}" fill="none" stroke="#2c3a54" stroke-width="1"/>`);
+    g.push(ticks(cx,cy,prR));
+    g.push(`<circle cx="${cx}" cy="${cy}" r="${apR}" fill="url(#phlens)" stroke="#05070d" stroke-width="2"/>`);
+    g.push(eyeGlyph(cx,cy,apR));
+    if(jcc) g.push(`<circle cx="${(cx-apR*0.5).toFixed(1)}" cy="${(cy-apR*0.35).toFixed(1)}" r="2.6" fill="#ff3b3b"/><circle cx="${(cx+apR*0.5).toFixed(1)}" cy="${(cy+apR*0.35).toFixed(1)}" r="2.6" fill="#ff3b3b"/>`);
+    g.push(`<circle cx="${cx}" cy="${cy-R-2}" r="14" fill="#3a465e" stroke="#05070d"/><circle cx="${cx}" cy="${cy-R-2}" r="6" fill="#1a2233"/>`);
+    g.push(`<rect x="${cx-30}" y="${cy+R-10}" width="60" height="20" rx="4" fill="#1a0606" stroke="#3a1414"/><text x="${cx}" y="${cy+R+5}" text-anchor="middle" font-size="12" fill="#ff5a5a" font-family="ui-monospace,monospace" font-weight="700">${f2(ctrlSph(lbl))}</text>`);
+    g.push(`<text x="${cx}" y="${cy-R-24}" text-anchor="middle" font-size="11" fill="#8fa0b6" font-family="monospace">${lbl}</text>`);
+    if(place && place[lbl] && place[lbl].mag>=0.5){
+      const pl=place[lbl], color = pl.role==="dissociating" ? "#c4b5ef" : "#8fd0ff";
+      g.push(prismArrow(cx,cy,lbl,pl.base,pl.mag,color));
+    }
+  });
+  $("#phoropter").innerHTML=g.join("");
+  const chip=lbl=>{ if(!place) return ""; const pl=place[lbl]; if(!pl||pl.mag<0.5) return "";
+    return `<span class="pchip ${pl.role==="dissociating"?"diss":"meas"}">${lbl}: ${Math.round(pl.mag)}Δ ${pl.base} <span style="opacity:.65">${pl.role}</span></span>`; };
+  $("#prismnote").innerHTML = step.kind==="brief" ? "" : (place ? chip("OD")+chip("OS") : `<span class="pchip">lens step, no prism</span>`);
+}
+
 function drawEye(){
   const step=STEPS[idx], cx=150, cy=110, col="#bfe3ff";
   const g=[`<defs><filter id="pb"><feGaussianBlur stdDeviation="2.6"/></filter></defs>`,
@@ -480,6 +560,7 @@ function setCtrl(v){ const cfg=controlCfg(STEPS[idx]);
   const s=$("#slider"); if(s) s.value=nv;
   redraw(); }
 function redraw(){ const step=STEPS[idx];
+  drawPhoropter();
   drawEye();
   const b=$("#bigread"); if(b) b.textContent=readoutText(step);
   $("#viewcap").innerHTML=`<span style="color:var(--purple);font-weight:600">Patient:</span> ${patientPercept()}`;
@@ -498,14 +579,14 @@ function renderStep(){
   clearDialog();
 
   if(step.kind==="brief"){
-    $("#viewTitle").textContent="Objective step";
+    $("#viewTitle").textContent="Patient's view (guide)";
     $("#guideWrap").innerHTML=`<div class="brief">${step.brief(P)}</div>`;
     $("#ctrl").innerHTML=""; $("#recordWrap").innerHTML=""; $("#btnReveal").disabled=true;
-    drawEye();
+    drawPhoropter(); drawEye();
     addMsg("doc", step.n==="7"?"Let me set your best lenses. Look at the chart.":"Let me take a quick look.");
     addMsg("pat", step.n==="7"?"Okay.":"Sure, doc.");
   } else {
-    $("#viewTitle").textContent="Through the phoropter (patient's view)";
+    $("#viewTitle").textContent="Patient's view (guide)";
     $("#btnReveal").disabled=false;
     $("#guideWrap").innerHTML=guideHtml(step);
     renderControl(step);
