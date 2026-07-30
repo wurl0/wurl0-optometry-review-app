@@ -104,8 +104,11 @@ function ReadinessCard({ u }: { u: ReadinessUser }) {
                       <span className="text-gray-400">
                         {s.attempts === 0
                           ? '0 attempts'
-                          : `${s.attempts} attempt${s.attempts === 1 ? '' : 's'}${s.attempts > 3 ? ' (avg of last 3)' : ''}`}
+                          : `${s.attempts} attempt${s.attempts === 1 ? '' : 's'} · ${s.items} item${s.items === 1 ? '' : 's'}`}
                       </span>
+                      {s.avg !== null && !s.confident && (
+                        <span className="text-amber-600 font-medium">provisional</span>
+                      )}
                       {s.best !== null && <span className="text-gray-300">best {s.best}%</span>}
                       <span className={`font-semibold w-14 text-right ${scoreColor(s.avg)}`}>
                         {s.avg === null ? 'untested' : `${s.avg}%`}

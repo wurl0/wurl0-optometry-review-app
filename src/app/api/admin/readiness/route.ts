@@ -13,9 +13,11 @@ type AttemptRow = {
   user_id: string
   subject_code: string
   source: string
+  score: number
+  total: number
   percentage: number
   created_at: string
-  area_breakdown: { area: string; percentage: number }[] | null
+  area_breakdown: { area: string; correct?: number; total?: number; percentage: number }[] | null
 }
 
 export async function GET() {
@@ -38,7 +40,7 @@ export async function GET() {
 
   const { data: attemptData, error: attemptError } = await admin
     .from('ole_attempts')
-    .select('user_id, subject_code, source, percentage, created_at, area_breakdown')
+    .select('user_id, subject_code, source, score, total, percentage, created_at, area_breakdown')
   if (attemptError) return NextResponse.json({ error: attemptError.message }, { status: 500 })
 
   // Bucket attempts by user, then reuse computeReadiness so the rolling window,
@@ -49,6 +51,8 @@ export async function GET() {
     list.push({
       subjectCode: r.subject_code,
       source: r.source as OleAttempt['source'],
+      score: Number(r.score),
+      total: Number(r.total),
       percentage: Number(r.percentage),
       createdAt: r.created_at,
       areaBreakdown: r.area_breakdown ?? [],

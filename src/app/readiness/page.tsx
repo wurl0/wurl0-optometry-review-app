@@ -9,9 +9,11 @@ export const dynamic = 'force-dynamic'
 interface AttemptRow {
   subject_code: string
   source: string
+  score: number
+  total: number
   percentage: number
   created_at: string
-  area_breakdown: { area: string; percentage: number }[] | null
+  area_breakdown: { area: string; correct?: number; total?: number; percentage: number }[] | null
 }
 
 const VERDICT: Record<Verdict, { label: string; cls: string }> = {
@@ -63,12 +65,14 @@ export default async function ReadinessPage() {
 
   const { data } = await supabase
     .from('ole_attempts')
-    .select('subject_code, source, percentage, created_at, area_breakdown')
+    .select('subject_code, source, score, total, percentage, created_at, area_breakdown')
     .eq('user_id', user.id)
 
   const attempts: OleAttempt[] = ((data as AttemptRow[] | null) ?? []).map(r => ({
     subjectCode: r.subject_code,
     source: r.source as OleAttempt['source'],
+    score: Number(r.score),
+    total: Number(r.total),
     percentage: Number(r.percentage),
     createdAt: r.created_at,
     areaBreakdown: r.area_breakdown ?? [],
@@ -95,7 +99,8 @@ export default async function ReadinessPage() {
         <div className="mb-5">
           <h1 className="text-2xl font-bold text-gray-900">Board Readiness</h1>
           <p className="text-gray-500 mt-1">
-            Theoretical area only, the 70% written block gated at 75%. Numbers use your last 3 attempts per subject.
+            Theoretical area only, the 70% written block gated at 75%. Each subject pools your recent
+            attempts by number of questions, so bigger exams count more and a lucky short quiz cannot swing it.
           </p>
         </div>
 
@@ -166,7 +171,7 @@ export default async function ReadinessPage() {
               </div>
               {!r.coverageMet && (
                 <p className="text-xs text-slate-700 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 mt-3">
-                  {8 - r.measuredCount} of 8 subject{8 - r.measuredCount > 1 ? 's' : ''} still untested — a readiness verdict is held until you have taken all 8. The big number is your <span className="font-semibold">projected</span> GWA with untested subjects counted as 0; it climbs as you finish more.
+                  {8 - r.measuredCount} of 8 subject{8 - r.measuredCount > 1 ? 's' : ''} not yet confirmed — a readiness verdict is held until all 8 have enough questions behind them. The big number is your <span className="font-semibold">projected</span> GWA with unconfirmed subjects counted as 0; it climbs as you finish more.
                 </p>
               )}
             </div>
@@ -183,8 +188,8 @@ export default async function ReadinessPage() {
                       <span className="w-7 h-7 shrink-0 rounded-lg bg-teal-600 text-white text-sm font-bold flex items-center justify-center">{d.code}</span>
                       <span className="font-medium text-gray-800 text-sm flex-1">{d.name}</span>
                       <span className="text-xs text-gray-400">{d.weight}%</span>
-                      <span className={`text-sm font-semibold w-24 text-right ${d.untested ? 'text-gray-400' : scoreColor(d.avg)}`}>
-                        {d.untested ? 'untested' : `${d.avg}%`}
+                      <span className={`text-sm font-semibold w-24 text-right ${d.untested || d.provisional ? 'text-amber-600' : scoreColor(d.avg)}`}>
+                        {d.untested ? 'untested' : d.provisional ? `${d.avg}% · confirm` : `${d.avg}%`}
                       </span>
                     </li>
                   ))}
@@ -201,10 +206,23 @@ export default async function ReadinessPage() {
                     <span className="w-8 h-8 shrink-0 rounded-lg bg-teal-600 text-white text-sm font-bold flex items-center justify-center">{s.code}</span>
                     <div className="flex-1">
                       <p className="font-semibold text-gray-900 text-sm leading-tight">{s.name}</p>
-                      <p className="text-xs text-gray-400">{s.weight}% of exam · {s.attempts} attempt{s.attempts === 1 ? '' : 's'}</p>
+                      <p className="text-xs text-gray-400">
+                        {s.weight}% of exam · {s.attempts} attempt{s.attempts === 1 ? '' : 's'}
+                        {s.avg !== null && <> · {s.items} item{s.items === 1 ? '' : 's'}</>}
+                      </p>
                     </div>
-                    <span className={`text-lg font-bold ${scoreColor(s.avg)}`}>{s.avg === null ? '—' : `${s.avg}%`}</span>
+                    <div className="text-right">
+                      <span className={`text-lg font-bold ${scoreColor(s.avg)}`}>{s.avg === null ? '—' : `${s.avg}%`}</span>
+                      {s.avg !== null && !s.confident && (
+                        <p className="text-[10px] font-semibold uppercase tracking-wide text-amber-600 leading-none mt-0.5">provisional</p>
+                      )}
+                    </div>
                   </div>
+                  {s.avg !== null && !s.confident && (
+                    <p className="text-[11px] text-amber-700 bg-amber-50 border border-amber-100 rounded px-2 py-1 mb-2">
+                      Only {s.items} question{s.items === 1 ? '' : 's'} so far — take more of this subject to confirm the score. It is not counted in your GWA yet.
+                    </p>
+                  )}
 
                   <div className="relative h-2 bg-gray-100 rounded-full overflow-hidden">
                     <div className={`h-full rounded-full ${barColor(s.avg)}`} style={{ width: `${s.avg ?? 0}%` }} />
