@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 2 · Anti-infectives</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-width:1px;border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .rx{color:var(--accent-deep);font-weight:600;}
+  td .bug{font-weight:700;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
+    </div>
+    <div class="card-no">Card<b>02</b>Therapeutic set</div>
+  </header>
+
+  <h1>Anti-infectives: <em>match the bug</em>, respect the steroid</h1>
+  <p class="dek">Every anti-infective decision is two questions. Which organism is this, and does it need a steroid held back? Get the red-eye triage right and the drug picks itself. Reach for a steroid on a red eye you have not identified and you can turn a dendrite into a disaster.</p>
+
+  <section>
+    <h2><span class="n">01</span> Red-eye triage: name the bug first</h2>
+    <p class="lead">Before any drop, sort the infective red eye into five buckets. Each has one clue that gives it away.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Bucket</th><th>Give-away clue</th><th>First move</th></tr></thead>
+        <tbody>
+          <tr><td><span class="bug">Bacterial</span></td><td>Purulent discharge, quick onset; contact lens</td><td class="rx">Broad topical; keratitis needs cover (section 3)</td></tr>
+          <tr><td><span class="bug">Viral, HSV</span></td><td>Dendrite with terminal end-bulbs, stains with fluorescein</td><td class="rx">Antiviral only &middot; no steroid on epithelial</td></tr>
+          <tr><td><span class="bug">Viral, adeno</span></td><td>Watery, very contagious, follicles, tender preauricular node</td><td class="rx">Supportive (compress, lubricants)</td></tr>
+          <tr><td><span class="bug">Fungal</span></td><td>Feathery margins, satellite lesions, plant/vegetative trauma</td><td class="rx">Natamycin 5% (filamentous)</td></tr>
+          <tr><td><span class="bug">Acanthamoeba</span></td><td>Pain out of proportion, ring infiltrate, contact lens + water</td><td class="rx">Biguanide + diamidine</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">Hook</div><p><b>The bug decides the drug.</b> Allergic red eye (itch, stringy mucus, bilateral, no discharge) is the odd one out, it is not infective and gets antihistamine or mast-cell stabilizer, never an antibiotic.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Antibacterials by class</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Class</th><th>Examples</th><th>Sweet spot</th><th>Watch</th></tr></thead>
+        <tbody>
+          <tr><td><b>Fluoroquinolones</b></td><td class="rx">cipro, oflox, levo, moxi, gati, besi</td><td>Broad; first-line bacterial keratitis. 4th-gen (moxi/gati/besi) add gram-positive and atypicals</td><td>Ciprofloxacin can leave a white corneal precipitate</td></tr>
+          <tr><td><b>Aminoglycosides</b></td><td class="rx">gentamicin, tobramycin</td><td>Gram-negative including Pseudomonas; fortified for severe keratitis</td><td>Toxic to the epithelium</td></tr>
+          <tr><td><b>Combination</b></td><td class="rx">polymyxin B + trimethoprim</td><td>Broad bacterial conjunctivitis</td><td>Surface only</td></tr>
+          <tr><td><b>Macrolides</b></td><td class="rx">erythromycin oint, azithromycin</td><td>Gram-positive, blepharitis/MGD; azithromycin for chlamydia</td><td>Weak against gram-negatives</td></tr>
+          <tr><td><b>Cephalosporin (fortified)</b></td><td class="rx">cefazolin</td><td>Gram-positive arm of the fortified combo</td><td>Compounded, short shelf life</td></tr>
+          <tr><td><b>Others</b></td><td class="rx">bacitracin, sulfacetamide, chloramphenicol, fusidic acid</td><td>Blepharitis, mild conjunctivitis</td><td>Chloramphenicol: rare aplastic anemia</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Bacterial keratitis playbook</h2>
+    <p>A corneal infiltrate with an overlying epithelial defect is keratitis until proven otherwise. Culture, then cover broadly and hit it hard.</p>
+    <div class="cal why"><div class="lab">Empiric cover</div><p>Central or severe ulcer: <b>fortified cefazolin</b> (gram-positive) plus <b>fortified tobramycin or gentamicin</b> (gram-negative), dosed hourly around the clock. Smaller or peripheral: a <b>4th-generation fluoroquinolone alone</b> is usually enough. The logic is simple, cover both halves of the bacterial world until the culture narrows it.</p></div>
+    <div class="cal trap"><div class="lab">The contact-lens bug</div><p><b>Pseudomonas aeruginosa</b> is the classic contact-lens keratitis organism: fast, a soupy hypopyon, and stromal melt within a day. Cover gram-negatives aggressively and never assume a red eye in a lens wearer is trivial.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Antivirals, and the steroid line</h2>
+    <p class="lead">Herpes is where most people lose the point. The lesion tells you which arm of treatment is safe.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-label="HSV dendrite with terminal end-bulbs versus zoster pseudodendrite">
+        <!-- panel 1: HSV dendrite -->
+        <text x="20" y="26" font-size="13" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">HSV dendrite</text>
+        <g stroke="var(--trap)" stroke-width="3.4" fill="none" stroke-linecap="round">
+          <path d="M150 55 L120 95 L95 135"/>
+          <path d="M120 95 L160 120"/>
+          <path d="M150 55 L185 90 L215 120"/>
+          <path d="M185 90 L165 130"/>
+          <path d="M95 135 L120 165"/>
+        </g>
+        <g fill="var(--trap)"><circle cx="150" cy="55" r="5"/><circle cx="95" cy="135" r="5"/><circle cx="160" cy="120" r="5"/><circle cx="215" cy="120" r="5"/><circle cx="165" cy="130" r="5"/><circle cx="120" cy="165" r="5"/></g>
+        <text x="150" y="198" text-anchor="middle" font-size="11.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">true branches + end-bulbs, stains</text>
+
+        <!-- divider -->
+        <line x1="325" y1="20" x2="325" y2="185" stroke="var(--line)" stroke-width="1.5"/>
+
+        <!-- panel 2: zoster pseudodendrite -->
+        <text x="360" y="26" font-size="13" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Zoster pseudodendrite</text>
+        <g stroke="var(--ink-faint)" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.85">
+          <path d="M470 55 L445 100 L455 150"/>
+          <path d="M470 55 L510 95"/>
+          <path d="M445 100 L410 120"/>
+        </g>
+        <text x="470" y="198" text-anchor="middle" font-size="11.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">raised plaque, blunt, no end-bulbs</text>
+      </svg>
+      <figcaption>the lesion decides the treatment</figcaption>
+    </figure>
+
+    <div class="cal trap big" style="margin-top:14px"><div class="lab">The steroid trap in HSV</div><p><b>Epithelial HSV (the dendrite) gets antiviral only.</b> A steroid on it opens the dendrite into a geographic ulcer. Options: trifluridine 1%, ganciclovir gel 0.15%, or oral acyclovir/valacyclovir. Steroids are used in <b>stromal or disciform</b> HSV, where the problem is immune, but only under antiviral cover and with IOP watched.</p></div>
+    <div class="cal why"><div class="lab">Zoster (HZO) and adenovirus</div><p><b>Herpes zoster ophthalmicus:</b> oral acyclovir/valacyclovir/famciclovir, ideally within 72 hours. <b>Hutchinson's sign</b> (a vesicle on the tip of the nose) marks nasociliary involvement and predicts the eye is at risk. <b>Adenoviral conjunctivitis</b> has no specific antiviral, treat supportively, warn about how contagious it is, and watch for subepithelial infiltrates and pseudomembranes.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Fungal and Acanthamoeba</h2>
+    <div class="cal why"><div class="lab">Fungal keratitis</div><p>Suspect it after <b>plant or vegetative trauma</b>, or in a lens wearer, with feathery infiltrate margins, satellite lesions, and a slow course. <b>Natamycin 5%</b> is first-line for the filamentous fungi (Fusarium, Aspergillus). Voriconazole is a broad backup; amphotericin B covers yeasts like Candida. Steroids stay off.</p></div>
+    <div class="cal trap"><div class="lab">Acanthamoeba (know this one cold)</div><p>Contact lens wearer, water exposure, and <b>pain far out of proportion</b> to what you see, a <b>ring infiltrate</b>, and radial keratoneuritis. Treat with a <b>biguanide</b> (PHMB or chlorhexidine) plus a <b>diamidine</b> (propamidine or hexamidine), for months. A ring infiltrate with hypopyon after extended lens wear is infectious keratitis, not a papillary reaction, do not soothe it and send it home.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> The one rule that fails people</h2>
+    <div class="cal trap big"><div class="lab">Never steroid an undiagnosed red eye</div><p>Steroids <b>worsen HSV epithelial, fungal, and Acanthamoeba</b> infections, they <b>mask</b> a worsening picture, they <b>raise IOP</b> in responders, and over time they <b>grow cataract</b>. If inflammation genuinely needs them (stromal HSV, severe iritis), give them with the correct anti-infective cover and monitor the pressure. When unsure of the cause, treat the infection and hold the steroid.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Bug to drug, and the newborn clock</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Presentation</th><th>Organism</th><th>First move</th></tr></thead>
+        <tbody>
+          <tr><td>Lens wearer, rapid, hypopyon</td><td class="bug">Pseudomonas</td><td class="rx">4th-gen FQ or fortified tobramycin</td></tr>
+          <tr><td>Dendrite with end-bulbs</td><td class="bug">HSV</td><td class="rx">Trifluridine / ganciclovir gel / oral acyclovir; no steroid</td></tr>
+          <tr><td>Nose-tip vesicles + red eye</td><td class="bug">VZV (HZO)</td><td class="rx">Oral acyclovir / valacyclovir</td></tr>
+          <tr><td>Watery, contagious, preauricular node</td><td class="bug">Adenovirus</td><td class="rx">Supportive</td></tr>
+          <tr><td>Feathery infiltrate after plant trauma</td><td class="bug">Fungus</td><td class="rx">Natamycin 5%</td></tr>
+          <tr><td>Pain out of proportion, ring, lens + water</td><td class="bug">Acanthamoeba</td><td class="rx">PHMB + chlorhexidine</td></tr>
+          <tr><td>Hyperacute copious pus, under 24 h</td><td class="bug">N. gonorrhoeae</td><td class="rx">Systemic ceftriaxone + lavage (emergency)</td></tr>
+          <tr><td>Chronic follicular, sexually active</td><td class="bug">Chlamydia</td><td class="rx">Oral azithromycin / doxycycline</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:12px"><div class="lab">Ophthalmia neonatorum by day of onset</div><p><b>Day 1</b> chemical (silver nitrate). <b>Day 2 to 5</b> gonococcal, sight-threatening, needs <b>systemic ceftriaxone</b>. <b>Day 5 to 14</b> chlamydial, needs <b>oral erythromycin</b> (topical alone misses the lungs). Prophylaxis at birth is erythromycin ointment.</p></div>
+    <div class="cal why"><div class="lab">Cross-links (say these out loud)</div><p><b>Ocular Disease:</b> this is the red-eye and keratitis chapter seen from the drug side, plus HZO and the hypopyon differentials. <b>Primary Eye Care:</b> fluorescein staining and the contact-lens history are how you land in the right bucket. <b>Ethics/Juris:</b> anti-infectives are therapeutic agents (TPAs), a different scope tier from the diagnostic DPAs in Card 1.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Triage tree blind</div><p>From memory, split a red eye into the five infective buckets, and write the single clue that separates each. Then add the allergic outlier.</p></div>
+    <div class="drill"><div class="t">2 &middot; Fill the bug-to-drug table</div><p>Blank the middle column. Given each presentation, name the organism and the first move. Check against section 7.</p></div>
+    <div class="drill"><div class="t">3 &middot; Draw the dendrite</div><p>Sketch an HSV dendrite with end-bulbs next to a zoster pseudodendrite, then write the epithelial-versus-stromal management and the steroid rule beneath.</p></div>
+    <div class="drill"><div class="t">4 &middot; The newborn clock</div><p>Write the three onset windows (chemical, gonococcal, chlamydial) with the day range and treatment for each, from memory.</p></div>
+    <div class="drill"><div class="t">5 &middot; Teach the steroid rule</div><p>Explain to an imaginary classmate the four reasons a steroid is dangerous on an undiagnosed red eye, and the one situation where you would still use it.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">09</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Empiric cover for a severe central bacterial ulcer?</span> <span class="a">Fortified cefazolin (gram-positive) plus fortified tobramycin or gentamicin (gram-negative); or a 4th-gen fluoroquinolone alone if less severe.</span></li>
+      <li><span class="q">Most common organism in contact-lens keratitis?</span> <span class="a">Pseudomonas aeruginosa.</span></li>
+      <li><span class="q">Corneal side effect of ciprofloxacin?</span> <span class="a">White crystalline corneal precipitate.</span></li>
+      <li><span class="q">HSV epithelial lesion and one antiviral?</span> <span class="a">Dendrite with terminal end-bulbs; trifluridine 1% (or ganciclovir gel 0.15%, or oral acyclovir).</span></li>
+      <li><span class="q">Why no steroid on epithelial HSV, and when is it used?</span> <span class="a">It opens the dendrite into a geographic ulcer; steroids only for stromal/disciform HSV under antiviral cover.</span></li>
+      <li><span class="q">Hutchinson's sign?</span> <span class="a">Vesicle on the tip of the nose (nasociliary nerve); predicts ocular involvement in HZO.</span></li>
+      <li><span class="q">Adenoviral conjunctivitis treatment?</span> <span class="a">Supportive; no specific antiviral; very contagious, watch for subepithelial infiltrates.</span></li>
+      <li><span class="q">First-line for filamentous fungal keratitis?</span> <span class="a">Natamycin 5% (Fusarium, Aspergillus).</span></li>
+      <li><span class="q">Acanthamoeba: clues and drugs?</span> <span class="a">Pain out of proportion, ring infiltrate, lens + water; biguanide (PHMB, chlorhexidine) plus diamidine (propamidine, hexamidine).</span></li>
+      <li><span class="q">Hyperacute purulent conjunctivitis under 24 h?</span> <span class="a">Suspect gonococcal; systemic ceftriaxone plus saline lavage; emergency.</span></li>
+      <li><span class="q">Neonatal conjunctivitis: gonococcal vs chlamydial timing and treatment?</span> <span class="a">Gonococcal day 2 to 5 (ceftriaxone); chlamydial day 5 to 14 (oral erythromycin).</span></li>
+      <li><span class="q">Four reasons a steroid is dangerous on an undiagnosed red eye?</span> <span class="a">Worsens HSV/fungal/Acanthamoeba, masks infection, raises IOP, causes cataract.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 2 &middot; the bug decides the drug</div>
+
+</div>
+</body>
+</html>
