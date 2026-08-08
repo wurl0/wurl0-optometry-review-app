@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 — Road to Top 2</title>
+<style>
+  :root{
+    --bg:#F4F6F8; --surface:#FFFFFF; --surface-2:#EDF0F3; --inset:#E7EBEF;
+    --ink:#151A21; --ink-soft:#515C6B; --ink-faint:#7A8593;
+    --line:#DBE0E6; --line-soft:#E7EBEF;
+    --accent:#0C8A86; --accent-deep:#096763; --accent-wash:#DCEFEE;
+    --gold:#9C7118; --gold-wash:#F2E7CC;
+    --crit:#BE3A2C; --warn:#A9660A; --ok:#0C8A86; --good:#2C7A46;
+    --crit-w:#F6DED9; --warn-w:#F6E8CF; --ok-w:#D8ECEB; --good-w:#D9EBDF;
+    --shadow:0 1px 2px rgba(16,24,33,.05),0 8px 24px rgba(16,24,33,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0D1117; --surface:#161C24; --surface-2:#1B222C; --inset:#141A22;
+      --ink:#E8EDF3; --ink-soft:#9BA6B4; --ink-faint:#6D7887;
+      --line:#28313C; --line-soft:#212A34;
+      --accent:#33B8B1; --accent-deep:#8FE0DA; --accent-wash:#123230;
+      --gold:#E0B657; --gold-wash:#2E2814;
+      --crit:#E86A5C; --warn:#E3A64C; --ok:#33B8B1; --good:#59C57C;
+      --crit-w:#331C1A; --warn-w:#332816; --ok-w:#123230; --good-w:#16281C;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F4F6F8; --surface:#FFFFFF; --surface-2:#EDF0F3; --inset:#E7EBEF;
+    --ink:#151A21; --ink-soft:#515C6B; --ink-faint:#7A8593;
+    --line:#DBE0E6; --line-soft:#E7EBEF;
+    --accent:#0C8A86; --accent-deep:#096763; --accent-wash:#DCEFEE;
+    --gold:#9C7118; --gold-wash:#F2E7CC;
+    --crit:#BE3A2C; --warn:#A9660A; --ok:#0C8A86; --good:#2C7A46;
+    --crit-w:#F6DED9; --warn-w:#F6E8CF; --ok-w:#D8ECEB; --good-w:#D9EBDF;
+    --shadow:0 1px 2px rgba(16,24,33,.05),0 8px 24px rgba(16,24,33,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D1117; --surface:#161C24; --surface-2:#1B222C; --inset:#141A22;
+    --ink:#E8EDF3; --ink-soft:#9BA6B4; --ink-faint:#6D7887;
+    --line:#28313C; --line-soft:#212A34;
+    --accent:#33B8B1; --accent-deep:#8FE0DA; --accent-wash:#123230;
+    --gold:#E0B657; --gold-wash:#2E2814;
+    --crit:#E86A5C; --warn:#E3A64C; --ok:#33B8B1; --good:#59C57C;
+    --crit-w:#331C1A; --warn-w:#332816; --ok-w:#123230; --good-w:#16281C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+  .wrap{max-width:780px;margin:0 auto;padding:34px 22px 80px;}
+
+  .eyebrow{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);}
+
+  /* Masthead */
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;
+    gap:16px;border-bottom:1px solid var(--line);padding-bottom:16px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-weight:600;letter-spacing:.04em;font-size:13px;color:var(--ink);}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .count{text-align:right;line-height:1;}
+  .count b{font-size:40px;font-weight:800;letter-spacing:-.02em;color:var(--ink);
+    font-variant-numeric:tabular-nums;}
+  .count small{display:block;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.15em;text-transform:uppercase;color:var(--ink-faint);margin-top:5px;}
+
+  h1{font-size:clamp(30px,6.5vw,46px);line-height:1.02;letter-spacing:-.025em;
+    font-weight:820;margin:26px 0 6px;text-wrap:balance;}
+  h1 .go{color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16.5px;max-width:60ch;margin:0;}
+
+  section{margin-top:40px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-faint);margin:0 0 15px;
+    display:flex;align-items:center;gap:10px;}
+  h2::before{content:"";width:16px;height:2px;background:var(--accent);border-radius:2px;}
+
+  /* The math strip */
+  .math{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .mcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:16px 16px 15px;box-shadow:var(--shadow);}
+  .mcard .lab{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--ink-faint);}
+  .mcard .num{font-size:34px;font-weight:800;letter-spacing:-.02em;margin-top:6px;
+    font-variant-numeric:tabular-nums;line-height:1;}
+  .mcard .note{font-size:12.5px;color:var(--ink-soft);margin-top:7px;}
+  .mcard.base .num{color:var(--ink);}
+  .mcard.safe{border-color:color-mix(in srgb,var(--warn) 40%,var(--line));}
+  .mcard.safe .num{color:var(--warn);}
+  .mcard.top{border-color:color-mix(in srgb,var(--gold) 55%,var(--line));background:
+    linear-gradient(180deg,var(--gold-wash),var(--surface) 60%);}
+  .mcard.top .num{color:var(--gold);}
+  .keyline{margin-top:12px;font-size:13px;color:var(--ink-soft);
+    background:var(--surface-2);border:1px solid var(--line-soft);border-radius:10px;
+    padding:11px 14px;}
+  .keyline b{color:var(--ink);}
+
+  /* Subject board */
+  .board{display:flex;flex-direction:column;gap:9px;}
+  .row{display:grid;grid-template-columns:1.5fr 2.3fr auto;gap:14px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:11px;
+    padding:12px 15px;box-shadow:var(--shadow);}
+  .row .name{font-weight:650;font-size:14.5px;}
+  .row .wt{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--ink-faint);
+    letter-spacing:.04em;margin-top:1px;}
+  .track{position:relative;height:9px;background:var(--inset);border-radius:6px;overflow:hidden;}
+  .fill{position:absolute;inset:0 auto 0 0;border-radius:6px;
+    transform-origin:left;transform:scaleX(var(--now));transition:transform .9s cubic-bezier(.2,.7,.2,1);}
+  .marker{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);left:var(--tgt);
+    opacity:.55;}
+  .marker::after{content:"";position:absolute;top:-4px;left:-2px;width:6px;height:6px;
+    border-radius:50%;background:var(--ink);}
+  .track-meta{display:flex;justify-content:space-between;margin-top:6px;
+    font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--ink-faint);}
+  .gain{text-align:right;}
+  .gain .pill{display:inline-block;font-family:ui-monospace,Menlo,monospace;font-weight:600;
+    font-size:12px;padding:3px 9px;border-radius:20px;font-variant-numeric:tabular-nums;}
+  .gain .sc{font-size:11px;color:var(--ink-faint);font-family:ui-monospace,Menlo,monospace;
+    margin-top:4px;}
+
+  .crit .fill{background:var(--crit)} .crit .pill{background:var(--crit-w);color:var(--crit)}
+  .warn .fill{background:var(--warn)} .warn .pill{background:var(--warn-w);color:var(--warn)}
+  .ok .fill{background:var(--accent)} .ok .pill{background:var(--ok-w);color:var(--accent-deep)}
+  .good .fill{background:var(--good)} .good .pill{background:var(--good-w);color:var(--good)}
+
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;
+    color:var(--ink-soft);font-family:ui-monospace,Menlo,monospace;}
+  .legend i{width:9px;height:9px;border-radius:3px;display:inline-block;margin-right:5px;
+    vertical-align:middle;}
+
+  /* Phases timeline */
+  .phase{display:grid;grid-template-columns:74px 1fr;gap:16px;padding:16px 0;
+    border-top:1px solid var(--line);}
+  .phase:first-of-type{border-top:none;}
+  .phase .when{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    line-height:1.5;}
+  .phase .when b{display:block;color:var(--accent);font-size:12px;letter-spacing:.04em;}
+  .phase .body h3{margin:0 0 4px;font-size:16.5px;font-weight:720;letter-spacing:-.01em;}
+  .phase .body p{margin:0;color:var(--ink-soft);font-size:14px;}
+  .phase.rest .when b{color:var(--gold);}
+  .phase.exam{background:var(--surface-2);border-radius:12px;padding:15px 16px;
+    border:1px solid var(--line);margin-top:6px;}
+  .phase.exam .body h3{color:var(--gold);}
+
+  /* Daily engine */
+  .day{display:flex;flex-direction:column;gap:8px;}
+  .blk{display:grid;grid-template-columns:96px 1fr;gap:14px;background:var(--surface);
+    border:1px solid var(--line);border-radius:11px;padding:13px 15px;box-shadow:var(--shadow);}
+  .blk .t{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--accent);
+    font-weight:600;letter-spacing:.03em;}
+  .blk .t small{display:block;color:var(--ink-faint);font-weight:400;margin-top:2px;}
+  .blk .d h4{margin:0 0 3px;font-size:14.5px;font-weight:680;}
+  .blk .d p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+  .blk .d p .app{color:var(--ink);font-weight:600;}
+  .rhythm{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;}
+  .chip{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;padding:6px 11px;border-radius:8px;
+    background:var(--surface-2);border:1px solid var(--line-soft);color:var(--ink-soft);}
+  .chip b{color:var(--ink);}
+
+  /* Rules */
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .rule{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:14px 15px;
+    box-shadow:var(--shadow);}
+  .rule .k{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:5px;}
+  .rule p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+  .rule p b{color:var(--ink);}
+
+  /* Creed */
+  .creed{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:12px;padding:22px 22px 20px;box-shadow:var(--shadow);}
+  .creed .eyebrow{color:var(--gold);margin-bottom:10px;}
+  .creed p{margin:0 0 13px;font-size:15.5px;color:var(--ink);}
+  .creed p:last-child{margin-bottom:0;}
+  .creed .kick{font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--gold);}
+  .creed em{font-style:normal;color:var(--accent-deep);font-weight:650;}
+
+  .foot{margin-top:34px;text-align:center;font-family:ui-monospace,Menlo,monospace;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+
+  @media (max-width:640px){
+    .math{grid-template-columns:1fr;}
+    .row{grid-template-columns:1fr auto;}
+    .row .track-wrap{grid-column:1/-1;order:3;}
+    .rules{grid-template-columns:1fr;}
+    .blk{grid-template-columns:80px 1fr;}
+    .phase{grid-template-columns:60px 1fr;}
+  }
+  @media (prefers-reduced-motion:reduce){ .fill{transition:none;} }
+
+  .phase.active{background:var(--accent-wash);box-shadow:inset 3px 0 0 var(--accent);border-radius:8px;}
+  .here{display:inline-block;margin-top:8px;font-family:ui-monospace,Menlo,monospace;font-size:9px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--surface);background:var(--accent);
+    padding:3px 7px;border-radius:20px;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Philippine OLE campaign</div>
+    </div>
+    <div class="count">
+      <b id="dcount">51</b>
+      <small id="dlabel">days to go</small>
+    </div>
+  </header>
+
+  <h1>Road to <span class="go">Top&nbsp;2</span>.<br>It's a math problem now.</h1>
+  <p class="dek">Your real preboard weighted score is 74, not 98. That's the good news: the whole gap lives in three subjects, and 51 days is plenty of runway to close it. Here's the plan, run on OptoPrep Main and the Top 2 Reviewer.</p>
+
+  <section>
+    <h2>The one number that matters</h2>
+    <div class="math">
+      <div class="mcard base">
+        <div class="lab">Baseline now</div>
+        <div class="num">74.0</div>
+        <div class="note">740 of 1000 items. Where you actually stand.</div>
+      </div>
+      <div class="mcard safe">
+        <div class="lab">Safe pass</div>
+        <div class="num">80.0</div>
+        <div class="note">+60 correct items. Clears the 75 line with margin.</div>
+      </div>
+      <div class="mcard top">
+        <div class="lab">Top 2 target</div>
+        <div class="num">89.0</div>
+        <div class="note">+150 correct items. Podium range.</div>
+      </div>
+    </div>
+    <div class="keyline">Every subject's weight-to-total ratio is <b>0.10</b>, so one more correct answer anywhere is worth exactly <b>+0.10</b> on your average. You are not chasing a grade. You are chasing <b>150 more right answers</b>, and almost all of them sit in the three subjects below.</div>
+  </section>
+
+  <section>
+    <h2>The board &middot; targets by subject</h2>
+    <div class="board">
+
+      <div class="row crit">
+        <div><div class="name">Ocular Pharma</div><div class="wt">10% &middot; /100</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.55"></div><div class="marker" style="--tgt:85%"></div></div>
+          <div class="track-meta"><span>now 55</span><span>target 85</span></div>
+        </div>
+        <div class="gain"><span class="pill">+30</span><div class="sc">55 &rarr; 85</div></div>
+      </div>
+
+      <div class="row crit">
+        <div><div class="name">Visual Biology</div><div class="wt">10% &middot; /100</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.56"></div><div class="marker" style="--tgt:85%"></div></div>
+          <div class="track-meta"><span>now 56</span><span>target 85</span></div>
+        </div>
+        <div class="gain"><span class="pill">+29</span><div class="sc">56 &rarr; 85</div></div>
+      </div>
+
+      <div class="row crit">
+        <div><div class="name">Ocular Disease</div><div class="wt">10% &middot; /100</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.57"></div><div class="marker" style="--tgt:85%"></div></div>
+          <div class="track-meta"><span>now 57</span><span>target 85</span></div>
+        </div>
+        <div class="gain"><span class="pill">+28</span><div class="sc">57 &rarr; 85</div></div>
+      </div>
+
+      <div class="row warn">
+        <div><div class="name">TO + PMO</div><div class="wt">15% &middot; /150</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.74"></div><div class="marker" style="--tgt:88%"></div></div>
+          <div class="track-meta"><span>now 74</span><span>target 88</span></div>
+        </div>
+        <div class="gain"><span class="pill">+21</span><div class="sc">111 &rarr; 132</div></div>
+      </div>
+
+      <div class="row warn">
+        <div><div class="name">PO + BV</div><div class="wt">15% &middot; /150</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.753"></div><div class="marker" style="--tgt:88%"></div></div>
+          <div class="track-meta"><span>now 75</span><span>target 88</span></div>
+        </div>
+        <div class="gain"><span class="pill">+19</span><div class="sc">113 &rarr; 132</div></div>
+      </div>
+
+      <div class="row ok">
+        <div><div class="name">Clinical Optometry</div><div class="wt">15% &middot; /150</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.80"></div><div class="marker" style="--tgt:90%"></div></div>
+          <div class="track-meta"><span>now 80</span><span>target 90</span></div>
+        </div>
+        <div class="gain"><span class="pill">+15</span><div class="sc">120 &rarr; 135</div></div>
+      </div>
+
+      <div class="row good">
+        <div><div class="name">Ethics + Juris</div><div class="wt">10% &middot; /100</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.87"></div><div class="marker" style="--tgt:92%"></div></div>
+          <div class="track-meta"><span>now 87</span><span>target 92</span></div>
+        </div>
+        <div class="gain"><span class="pill">+5</span><div class="sc">maintain</div></div>
+      </div>
+
+      <div class="row good">
+        <div><div class="name">Primary Care</div><div class="wt">15% &middot; /150</div></div>
+        <div class="track-wrap">
+          <div class="track"><div class="fill" style="--now:.94"></div><div class="marker" style="--tgt:96%"></div></div>
+          <div class="track-meta"><span>now 94</span><span>target 96</span></div>
+        </div>
+        <div class="gain"><span class="pill">+3</span><div class="sc">protect</div></div>
+      </div>
+
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--crit)"></i>below 60 &middot; fix first</span>
+      <span><i style="background:var(--warn)"></i>60&ndash;74 &middot; lift</span>
+      <span><i style="background:var(--accent)"></i>75&ndash;84 &middot; sharpen</span>
+      <span><i style="background:var(--good)"></i>85+ &middot; hold</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>The 51-day arc</h2>
+
+    <div class="phase rest">
+      <div class="when"><b>Wk 1</b>Aug 10&ndash;16</div>
+      <div class="body">
+        <h3>Rest, then rig up</h3>
+        <p>Unwind Mon to Fri, guilt-free, because it's in the plan. Two light setup jobs only: build clean OptoPrep decks for the three weak subjects, and run one honest diagnostic set on each so you know exactly where you're bleeding. Sleep eight hours. That's the whole week.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="when"><b>Wk 2&ndash;4</b>Aug 17&ndash;Sep 6</div>
+      <div class="body">
+        <h3>Go at the weak three</h3>
+        <p>Ocular Pharma, Visual Biology, Ocular Disease on rotation, two subjects a day. This is where the exam is won or lost. Strong subjects get a short maintenance drill twice a week so they don't drift.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="when"><b>Wk 5&ndash;6</b>Sep 7&ndash;20</div>
+      <div class="body">
+        <h3>Full coverage and timing</h3>
+        <p>All eight subjects in the rotation now, everything under exam-pace timing. One full mock every Sunday. The weak three should be sitting near 80 by the end of this block, or you extend it a few days.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="when"><b>Wk 7</b>Sep 21&ndash;27</div>
+      <div class="body">
+        <h3>Sharpen and taper</h3>
+        <p>No new material. Work only your error log and flagged cards. Two light mocks, then back off. Protect sleep hard this week. A rested brain recalls; a fried one guesses.</p>
+      </div>
+    </div>
+
+    <div class="phase exam">
+      <div class="when"><b>Day 51</b>~Sep 28</div>
+      <div class="body">
+        <h3>Exam day</h3>
+        <p>Watch the clock, answer every item, leave nothing blank. No score-counting. You already did that math here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Daily engine &middot; a push day</h2>
+    <div class="day">
+      <div class="blk">
+        <div class="t">Block A<small>90 min</small></div>
+        <div class="d"><h4>Learn, then rebuild blind</h4>
+          <p>Read one topic in the <span class="app">Top 2 Reviewer</span>. Close it. Rebuild it on paper from memory. Formula and mechanism items get the full treatment: what each part means, where it came from, a physical analogy, why this form and not another, two cross-links.</p></div>
+      </div>
+      <div class="blk">
+        <div class="t">Block B<small>75 min</small></div>
+        <div class="d"><h4>Drill under the clock</h4>
+          <p>One timed set of 40&ndash;50 items in <span class="app">OptoPrep Main</span> on the same subject, at real exam pace. No pausing to look things up.</p></div>
+      </div>
+      <div class="blk">
+        <div class="t">Block C<small>45 min</small></div>
+        <div class="d"><h4>Reckon with the misses</h4>
+          <p>Log every wrong item with the reason you missed it, not just the right letter. Turn each one into a spaced-repetition card. This log becomes your Week 7 study material.</p></div>
+      </div>
+      <div class="blk">
+        <div class="t">Block D<small>20 min</small></div>
+        <div class="d"><h4>Recall the backlog</h4>
+          <p>Run the cards due today: yesterday's misses plus older ones resurfacing. Short, daily, non-negotiable.</p></div>
+      </div>
+    </div>
+    <div class="rhythm">
+      <span class="chip"><b>5</b> push days</span>
+      <span class="chip"><b>1</b> full mock</span>
+      <span class="chip"><b>1</b> real rest day</span>
+      <span class="chip">track: <b>items/day + accuracy per subject</b></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Four rules that fit how you learn</h2>
+    <div class="rules">
+      <div class="rule"><div class="k">Retrieval over rereading</div><p><b>Rebuild from a blank page.</b> Rereading feels productive and isn't. The struggle to pull it back from memory is the part that sticks, especially given where your retrieval muscle is right now.</p></div>
+      <div class="rule"><div class="k">The error log is the plan</div><p><b>Wrong answers are the syllabus.</b> A miss you understood beats ten questions you already knew. Feed every miss back into the deck.</p></div>
+      <div class="rule"><div class="k">Formulas get the why</div><p><b>Never formula plus sample problem.</b> Meaning, origin, analogy, why this form, cross-links. Pharma and Visual Bio reward the mechanism, not the memorized line.</p></div>
+      <div class="rule"><div class="k">Plain words first</div><p><b>Explain it before you name it.</b> Say the mechanism in ordinary language, then attach the clinical term. You know the machinery; the labels come after.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="creed">
+      <div class="eyebrow">Read this on the days you don't want to</div>
+      <p>You didn't imagine the 98. You added it up wrong, and the real number is 74. That stings, but it also kills the story that you're behind on everything. You're not. You're behind on three subjects. Pharma, Visual Bio, Ocular Disease. That is the entire gap.</p>
+      <p>You built the app you're about to study from. Sit with that for a second. The retrieval you keep calling broken is the same skill that shipped a working reviewer. It works. It needs reps, not a rescue.</p>
+      <p>So next week you rest, and you don't apologize for it, because rest is on the schedule and not something you're getting away with. Then you turn the key. Open OptoPrep. Answer the items. Write down why you missed the ones you missed. Sleep. Again tomorrow. The average climbs on its own once you stop staring at it and start feeding it.</p>
+      <p>No miracle required. About <em>60 more right answers</em> to be safe, <em>150</em> to fight for Top 2, and every one is sitting in a subject you've been dodging because it feels heavy. Heavy is fine. Heavy is where the points are.</p>
+      <p class="kick">Stop sulking. Stop counting. Put it in gear.</p>
+    </div>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; keep the reps, trust the number</div>
+
+</div>
+
+<script>
+(function(){
+  var EXAM = new Date(2026, 8, 28); // Sep 28 2026 (month is 0-indexed). Set to the actual OLE date.
+  function mid(d){ return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  var today = mid(new Date());
+  var days = Math.round((EXAM - today) / 86400000);
+  var dc = document.getElementById('dcount'), dl = document.getElementById('dlabel');
+  if (dc) {
+    if (days > 1){ dc.textContent = days; dl.textContent = 'days to go'; }
+    else if (days === 1){ dc.textContent = '1'; dl.textContent = 'day to go'; }
+    else if (days === 0){ dc.textContent = '0'; dl.textContent = 'exam day'; }
+    else { dc.textContent = '—'; dl.textContent = 'OLE done'; }
+  }
+  var ranges = [['2026-08-10','2026-08-16'],['2026-08-17','2026-09-06'],['2026-09-07','2026-09-20'],['2026-09-21','2026-09-27'],['2026-09-28','2026-09-28']];
+  document.querySelectorAll('.phase').forEach(function(p, i){
+    if (!ranges[i]) return;
+    var a = mid(new Date(ranges[i][0] + 'T00:00:00')), b = mid(new Date(ranges[i][1] + 'T00:00:00'));
+    if (today >= a && today <= b){
+      p.classList.add('active');
+      var w = p.querySelector('.when');
+      if (w){ var s = document.createElement('span'); s.className = 'here'; s.textContent = 'you are here'; w.appendChild(s); }
+    }
+  });
+})();
+</script>
+</body>
+</html>
