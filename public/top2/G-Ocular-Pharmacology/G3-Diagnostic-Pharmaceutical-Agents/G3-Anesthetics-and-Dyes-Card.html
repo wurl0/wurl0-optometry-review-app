@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 5 · Anesthetics &amp; Dyes</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .rx{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
+    </div>
+    <div class="card-no">Card<b>05</b>Diagnostic set</div>
+  </header>
+
+  <h1>Anesthetics and dyes: <em>numb it or stain it</em></h1>
+  <p class="dek">These are the diagnostic agents, the DPAs. One family stops the nerve so you can touch the eye, the other lights up what is wrong on the surface. Small list, high yield, and one rule about anesthetics that the board asks every year.</p>
+
+  <section>
+    <h2><span class="n">01</span> Two jobs</h2>
+    <p class="lead">Everything here does one of two things. An <span class="term">anesthetic</span> silences the cornea so you can measure pressure, remove a foreign body, or examine a painful eye. A <span class="term">dye</span> makes a defect or a sick surface visible. Both are diagnostic, held in the clinic, never sent home.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Topical anesthetics</h2>
+    <p>They block the voltage-gated sodium channels in the corneal nerves, so the nerve cannot fire and the eye feels nothing. Onset is seconds, and the effect lasts about 15 to 20 minutes.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Agent</th><th>Where it fits</th></tr></thead>
+        <tbody>
+          <tr><td><b>Proparacaine 0.5%</b></td><td class="rx">Least stinging, the workhorse: tonometry, foreign-body and suture removal, gonioscopy</td></tr>
+          <tr><td><b>Tetracaine 0.5%</b></td><td>Stings more, longer acting</td></tr>
+          <tr><td><b>Benoxinate (oxybuprocaine)</b></td><td>Often combined with fluorescein for tonometry</td></tr>
+          <tr><td><b>Lidocaine</b></td><td>Injectable and intracameral for surgery; also a topical gel</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:13px"><div class="lab">One thing to remember about the blink</div><p>An anesthetized cornea also loses its <b>blink reflex</b> and protective sensation. The eye is defenceless until the drop wears off, so the patient must not rub it, and you protect the surface until sensation returns.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The rule the board loves</h2>
+    <div class="cal trap big"><div class="lab">Never dispense a topical anesthetic for home use</div><p>Repeated self-use is toxic to the epithelium: <b>non-healing defects, a ring-shaped stromal infiltrate that mimics Acanthamoeba, corneal melt, even perforation and vision loss</b>. On top of that it <b>masks</b> the very pathology that is getting worse. Anesthetics numb for an exam in the clinic, then stay in the clinic. If a stem hands a patient a bottle to take home for pain, that is the wrong answer.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Fluorescein: stains what is missing</h2>
+    <p class="lead">Fluorescein is an orange dye that glows <span class="term">green under cobalt blue light</span>. It does not stain intact epithelium. It pools in the tear film and floods any spot where the epithelium is gone, so a defect lights up bright green.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 620 210" role="img" aria-label="Fluorescein pools in an epithelial defect; rose bengal and lissamine dot devitalized cells">
+        <text x="155" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Fluorescein</text>
+        <circle cx="155" cy="100" r="66" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+        <path d="M132 84 q22 -10 34 8 q10 22 -12 30 q-26 6 -30 -16 q-2 -16 8 -22 z" fill="var(--accent)" opacity="0.9"/>
+        <text x="155" y="192" text-anchor="middle" font-size="11.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">where cells are GONE (defects)</text>
+
+        <line x1="310" y1="24" x2="310" y2="176" stroke="var(--line)" stroke-width="1.5"/>
+
+        <text x="465" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Rose bengal / Lissamine</text>
+        <circle cx="465" cy="100" r="66" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+        <g fill="var(--trap)">
+          <circle cx="428" cy="96" r="4"/><circle cx="446" cy="88" r="4"/><circle cx="462" cy="100" r="4"/>
+          <circle cx="480" cy="90" r="4"/><circle cx="498" cy="99" r="4"/><circle cx="438" cy="110" r="4"/>
+          <circle cx="456" cy="114" r="4"/><circle cx="476" cy="110" r="4"/><circle cx="492" cy="112" r="4"/>
+        </g>
+        <text x="465" y="192" text-anchor="middle" font-size="11.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">where cells are SICK (dry eye)</text>
+      </svg>
+      <figcaption>the two staining logics, side by side</figcaption>
+    </figure>
+
+    <div class="cal trap" style="margin-top:14px"><div class="lab">Seidel test</div><p>Put fluorescein over a suspected wound. A <b>bright stream of diluted dye</b> running out means aqueous is leaking, a full-thickness (penetrating) injury. This is the Seidel-positive picture that pairs with a capsular tear in trauma questions.</p></div>
+    <div class="cal pearl"><div class="lab">Two quick traps</div><p><b>Fluorescein stains soft contact lenses</b>, remove them first (or use high-molecular-weight fluorexon). And its four everyday jobs beyond abrasions: <b>applanation tonometry, tear break-up time, dendrite detection, and RGP fit patterns</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Rose bengal and lissamine: stain what is sick</h2>
+    <p>These stain <b>devitalized and degenerating cells and mucus</b>, exactly the cells fluorescein ignores. That makes them the dry-eye stains, lighting up the exposed interpalpebral surface in keratoconjunctivitis sicca. They also mark an HSV dendrite well.</p>
+    <div class="cal mnem"><div class="lab">The one-line split</div><p><b>Fluorescein = cells GONE</b> (an epithelial defect). <b>Rose bengal and lissamine = cells SICK but still there</b> (dry eye). Same eye, two questions. Rose bengal stings hard; <b>lissamine green does the same job painlessly</b>, so it is now preferred.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Which agent runs which test</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Test</th><th>Agent</th><th>What you read</th></tr></thead>
+        <tbody>
+          <tr><td>Goldmann applanation tonometry</td><td class="rx">fluorescein + anesthetic</td><td>Aligned mires give the IOP</td></tr>
+          <tr><td>Tear break-up time</td><td class="rx">fluorescein</td><td>Seconds to the first dry spot</td></tr>
+          <tr><td>Seidel test</td><td class="rx">fluorescein</td><td>Streaming dye = aqueous leak</td></tr>
+          <tr><td>Corneal abrasion / dendrite</td><td class="rx">fluorescein</td><td>Green-stained defect</td></tr>
+          <tr><td>Dry-eye surface grading</td><td class="rx">lissamine / rose bengal</td><td>Devitalized-cell staining</td></tr>
+          <tr><td>Basal secretion (Schirmer)</td><td class="rx">anesthetic, then strip</td><td>Millimetres of wetting</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">Cross-links (say these out loud)</div><p><b>Ethics/Juris:</b> these plus the Card 1 mydriatics are the diagnostic tier (DPAs); the anti-infectives, anti-inflammatories, and glaucoma drugs of Cards 2 to 4 are therapeutic (TPAs), a separate scope. <b>Primary Eye Care:</b> tonometry, tear break-up time, Seidel, and Schirmer are the techniques these agents serve. <b>Card 2:</b> a Seidel-positive leak with a capsular tear is the penetrating-trauma picture, and fluorescein is how you catch the HSV dendrite.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Anesthetics</div><p>Write the mechanism, name the workhorse and why, then the one rule and the four harms of anesthetic abuse.</p></div>
+    <div class="drill"><div class="t">2 &middot; Fluorescein</div><p>State what it does and does not stain, the light it needs, and four uses beyond finding an abrasion.</p></div>
+    <div class="drill"><div class="t">3 &middot; Gone vs sick</div><p>From memory, split fluorescein from rose bengal and lissamine with the one-line rule, and say why lissamine won out over rose bengal.</p></div>
+    <div class="drill"><div class="t">4 &middot; Match the test</div><p>Blank the agent column of the test table and fill it in.</p></div>
+    <div class="drill"><div class="t">5 &middot; Teach Seidel</div><p>Describe a positive Seidel test and what it tells you about the injury.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Topical anesthetic mechanism?</span> <span class="a">Block voltage-gated sodium channels, stopping nerve conduction.</span></li>
+      <li><span class="q">Workhorse topical anesthetic and why?</span> <span class="a">Proparacaine 0.5%, least stinging.</span></li>
+      <li><span class="q">The one rule with topical anesthetics?</span> <span class="a">Never dispense for home use; abuse causes non-healing defects, ring infiltrate mimicking Acanthamoeba, corneal melt, and masks disease.</span></li>
+      <li><span class="q">What reflex is lost after an anesthetic, and what do you do?</span> <span class="a">The blink reflex; protect the eye and do not rub until sensation returns.</span></li>
+      <li><span class="q">What does fluorescein stain, and under what light?</span> <span class="a">Epithelial defects and the tear film (not intact epithelium); glows green under cobalt blue.</span></li>
+      <li><span class="q">Seidel test positive means?</span> <span class="a">A stream of diluted dye from a wound = aqueous leak = penetrating (full-thickness) injury.</span></li>
+      <li><span class="q">Fluorescein and a soft contact lens?</span> <span class="a">It stains the lens; remove it first (or use fluorexon).</span></li>
+      <li><span class="q">What do rose bengal and lissamine green stain?</span> <span class="a">Devitalized and degenerating cells and mucus (the dry-eye surface).</span></li>
+      <li><span class="q">Rose bengal vs lissamine green?</span> <span class="a">Same targets; lissamine stings far less, so it is preferred.</span></li>
+      <li><span class="q">Fluorescein vs rose bengal in one line?</span> <span class="a">Fluorescein = cells gone (defects); rose bengal/lissamine = cells sick but present (dry eye).</span></li>
+      <li><span class="q">Two everyday tests that use fluorescein?</span> <span class="a">Goldmann applanation tonometry and tear break-up time.</span></li>
+      <li><span class="q">Are anesthetics and dyes DPAs or TPAs?</span> <span class="a">Diagnostic agents (DPAs); the anti-infectives, anti-inflammatories, and glaucoma drugs are therapeutic (TPAs).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 5 &middot; numb it or stain it, then keep the bottle</div>
+
+</div>
+</body>
+</html>
