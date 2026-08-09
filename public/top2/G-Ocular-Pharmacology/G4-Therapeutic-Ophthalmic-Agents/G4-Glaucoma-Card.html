@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 4 · Glaucoma Drugs</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:560px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .rx{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
+    </div>
+    <div class="card-no">Card<b>04</b>Therapeutic set</div>
+  </header>
+
+  <h1>Glaucoma drugs: <em>one tank</em>, less in or more out</h1>
+  <p class="dek">Pressure is a water level. The ciliary body fills the tank, two drains empty it, and every glaucoma drug does exactly one thing: turn the tap down or open a drain. This is the same production-and-outflow wiring from Card 1, now with the whole drug list hung on it.</p>
+
+  <section>
+    <h2><span class="n">01</span> The tank</h2>
+    <p class="lead">IOP is <span class="term">production minus outflow</span>. Aqueous flows out two ways: the <b>trabecular</b> drain (the main one, into Schlemm's canal) and the <b>uveoscleral</b> drain. Lower the level by making less or draining more.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 620 300" role="img" aria-label="IOP as a tank with one inflow and two drains, tagged with drug classes">
+        <!-- tank -->
+        <rect x="235" y="66" width="150" height="104" rx="14" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))" stroke-width="2"/>
+        <text x="310" y="112" text-anchor="middle" font-size="20" font-weight="800" fill="var(--accent-deep)" font-family="system-ui,sans-serif">IOP</text>
+        <text x="310" y="134" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui,sans-serif">aqueous level</text>
+
+        <!-- inflow -->
+        <rect x="302" y="26" width="16" height="40" fill="var(--surface-2)" stroke="var(--line)"/>
+        <circle cx="310" cy="40" r="6" fill="var(--trap)"/>
+        <polygon points="310,72 303,60 317,60" fill="var(--ink-faint)"/>
+        <rect x="356" y="24" width="250" height="42" rx="10" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 40%,var(--line))"/>
+        <text x="368" y="42" font-size="11.5" font-weight="700" fill="var(--why)" font-family="system-ui,sans-serif">Turn production DOWN</text>
+        <text x="368" y="58" font-size="11" fill="var(--ink-soft)" font-family="system-ui,sans-serif">beta-blockers, alpha-2, CAIs</text>
+
+        <!-- outflows -->
+        <line x1="258" y1="170" x2="172" y2="214" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <circle cx="215" cy="192" r="6" fill="var(--accent)"/>
+        <polygon points="170,216 168,203 180,208" fill="var(--ink-faint)"/>
+        <line x1="362" y1="170" x2="448" y2="214" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <circle cx="405" cy="192" r="6" fill="var(--accent)"/>
+        <polygon points="450,216 440,208 452,203" fill="var(--ink-faint)"/>
+
+        <rect x="24" y="218" width="252" height="46" rx="10" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 40%,var(--line))"/>
+        <text x="36" y="237" font-size="11.5" font-weight="700" fill="var(--accent-deep)" font-family="system-ui,sans-serif">Open the TRABECULAR drain</text>
+        <text x="36" y="253" font-size="11" fill="var(--ink-soft)" font-family="system-ui,sans-serif">pilocarpine, netarsudil</text>
+
+        <rect x="344" y="218" width="252" height="46" rx="10" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 40%,var(--line))"/>
+        <text x="356" y="237" font-size="11.5" font-weight="700" fill="var(--accent-deep)" font-family="system-ui,sans-serif">Open the UVEOSCLERAL drain</text>
+        <text x="356" y="253" font-size="11" fill="var(--ink-soft)" font-family="system-ui,sans-serif">prostaglandins</text>
+
+        <text x="310" y="288" text-anchor="middle" font-size="11.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">less in, or more out, lowers the level</text>
+      </svg>
+      <figcaption>every glaucoma drug is a valve on this tank</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Make less: production reducers</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Class</th><th>How</th><th>Examples</th><th>Watch</th></tr></thead>
+        <tbody>
+          <tr><td><b>Beta-blockers</b></td><td>Block &beta;2 on ciliary epithelium</td><td class="rx">timolol, levobunolol, betaxolol (&beta;1-selective)</td><td>Asthma/COPD (&beta;2), bradycardia/heart block (&beta;1); weaker at night</td></tr>
+          <tr><td><b>Alpha-2 agonists</b></td><td>Less production <b>and</b> more uveoscleral outflow</td><td class="rx">brimonidine, apraclonidine</td><td>Allergic conjunctivitis; infant apnea (avoid under 2); apraclonidine tachyphylaxis</td></tr>
+          <tr><td><b>Carbonic anhydrase inhibitors</b></td><td>Block CA, less aqueous made</td><td class="rx">topical dorzolamide, brinzolamide; oral acetazolamide</td><td>Sulfa cross-reaction, paresthesias, kidney stones, acidosis (oral)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Drain more: outflow openers</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Class</th><th>Route</th><th>Examples</th><th>Watch</th></tr></thead>
+        <tbody>
+          <tr><td><b>Prostaglandin analogs</b></td><td>Uveoscleral</td><td class="rx">latanoprost, travoprost, bimatoprost, tafluprost</td><td>Iris darkening, lash growth, sunken orbit (PAP), hyperemia; caution uveitis/CME/herpes</td></tr>
+          <tr><td><b>Cholinergics (miotics)</b></td><td>Trabecular, via ciliary contraction</td><td class="rx">pilocarpine, carbachol</td><td>Miosis/dim vision, brow ache, induced myopia, retinal detachment; mostly angle-closure now</td></tr>
+          <tr><td><b>Rho-kinase inhibitors</b></td><td>Trabecular + lower episcleral venous pressure</td><td class="rx">netarsudil</td><td>Cornea verticillata (whorls), hyperemia, subconjunctival hemorrhage</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">Hook</div><p>Prostaglandins take the side drain (<b>uveoscleral</b>). Pilocarpine and netarsudil open the main drain (<b>trabecular</b>). The production reducers never touch a drain at all. Sort any drug by asking, tap or drain.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> First-line, combos, and the crisis</h2>
+    <div class="cal why"><div class="lab">First-line</div><p>A <b>prostaglandin analog</b> is first-line: the biggest single-drug drop (about 25 to 33 percent), <b>once nightly</b>, and no systemic effects. Beta-blockers are the classic alternative or add-on. When one drop is not enough, stack classes or use a fixed combo (timolol + dorzolamide, timolol + brimonidine, brinzolamide + brimonidine, netarsudil + latanoprost).</p></div>
+    <div class="cal trap big"><div class="lab">Acute angle-closure: order matters</div><p>An emergency. <b>Lower the pressure fast first</b>: topical timolol, brimonidine or apraclonidine, and dorzolamide, plus oral or IV <b>acetazolamide</b>, and <b>IV mannitol</b> if very high. <b>Then</b> pilocarpine to pull the peripheral iris out of the angle, but it only works once IOP drops below roughly 40 to 50, because a very high pressure leaves the iris sphincter ischemic and unresponsive. Definitive fix: <b>laser peripheral iridotomy</b>.</p></div>
+    <div class="cal pearl"><div class="lab">Hyperosmotics</div><p>Mannitol IV and oral glycerin or isosorbide pull water out of the vitreous for a fast, temporary drop in a crisis. Powerful but short-lived, and glycerin raises blood sugar (caution in diabetics).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The side-effect landmines</h2>
+    <p>The board rarely asks the mechanism. It asks the signature harm. Learn the drug-to-trap pairs cold.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Drug / class</th><th>The trap they test</th></tr></thead>
+        <tbody>
+          <tr><td><b>Prostaglandins</b></td><td>Permanent iris darkening, longer lashes, sunken orbit (prostaglandin-associated periorbitopathy)</td></tr>
+          <tr><td><b>Timolol</b></td><td>Asthma/COPD and bradycardia/heart block; betaxolol is safer for lungs</td></tr>
+          <tr><td><b>Brimonidine</b></td><td>Infant apnea and CNS depression (avoid under 2); allergic conjunctivitis</td></tr>
+          <tr><td><b>Acetazolamide / CAIs</b></td><td>Sulfa cross-reaction, tingling, kidney stones, metabolic acidosis</td></tr>
+          <tr><td><b>Netarsudil</b></td><td>Cornea verticillata (corneal whorls) and a red eye</td></tr>
+          <tr><td><b>Pilocarpine</b></td><td>Retinal detachment, induced myopia, brow ache, dim vision from miosis</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">Cross-links (say these out loud)</div><p><b>Card 1:</b> production and the two outflow routes are the aqueous wiring you already drew; pilocarpine opening the meshwork by ciliary contraction is straight from there. <b>Ocular Disease:</b> open-angle vs angle-closure and the acute crisis are the disease-side view. <b>Primary Eye Care:</b> tonometry, gonioscopy, the cup-to-disc ratio, and visual fields are how the glaucoma you are treating is graded.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the tank</div><p>One inflow, two drains. Tag each drug class at its valve, and label which drain is trabecular and which is uveoscleral.</p></div>
+    <div class="drill"><div class="t">2 &middot; Sort all six classes</div><p>Split them into make-less and drain-more without looking, then note which alpha-2 quirk lets it sit in both.</p></div>
+    <div class="drill"><div class="t">3 &middot; Match the landmines</div><p>Blank the second column of the side-effect table and pair each drug with its signature harm.</p></div>
+    <div class="drill"><div class="t">4 &middot; Angle-closure sequence</div><p>Write the acute crisis steps in order, then explain in one sentence why pilocarpine waits.</p></div>
+    <div class="drill"><div class="t">5 &middot; Teach first-line</div><p>Give the three reasons a prostaglandin is first-line, and when you would reach for a beta-blocker instead.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">IOP in one equation?</span> <span class="a">Production (ciliary body) minus outflow (trabecular + uveoscleral).</span></li>
+      <li><span class="q">First-line drug, why, and dosing?</span> <span class="a">Prostaglandin analog; biggest single-drug drop, no systemic effects, once nightly.</span></li>
+      <li><span class="q">Which classes reduce production?</span> <span class="a">Beta-blockers, alpha-2 agonists, carbonic anhydrase inhibitors.</span></li>
+      <li><span class="q">Which increase outflow, and by which route?</span> <span class="a">Prostaglandins (uveoscleral); cholinergics and rho-kinase inhibitors (trabecular).</span></li>
+      <li><span class="q">Beta-blocker contraindications and safer swap?</span> <span class="a">Asthma/COPD and bradycardia/heart block; betaxolol (beta-1 selective) is safer for lungs.</span></li>
+      <li><span class="q">Brimonidine red-flag population?</span> <span class="a">Infants under 2 (apnea/CNS depression); also allergic conjunctivitis.</span></li>
+      <li><span class="q">CAI systemic side effects?</span> <span class="a">Sulfa cross-reaction, paresthesias, kidney stones, metabolic acidosis.</span></li>
+      <li><span class="q">Prostaglandin local side effects?</span> <span class="a">Iris darkening, lash growth, periorbital fat atrophy (PAP), hyperemia.</span></li>
+      <li><span class="q">Netarsudil signature side effect?</span> <span class="a">Cornea verticillata (corneal whorls) plus conjunctival hyperemia.</span></li>
+      <li><span class="q">Pilocarpine risks?</span> <span class="a">Retinal detachment, induced myopia, brow ache, dim vision from miosis.</span></li>
+      <li><span class="q">Acute angle-closure: first moves before pilocarpine, and why?</span> <span class="a">Lower IOP first (timolol, brimonidine, acetazolamide, mannitol); pilocarpine works only once IOP is below about 40 to 50, since a high-pressure iris sphincter is ischemic.</span></li>
+      <li><span class="q">Definitive treatment for angle-closure?</span> <span class="a">Laser peripheral iridotomy.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 4 &middot; tap or drain</div>
+
+</div>
+</body>
+</html>
