@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Visual Biology Card 1 · The Visual Pathway</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .df{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Visual Biology</div>
+    </div>
+    <div class="card-no">Card<b>01</b>The pathway</div>
+  </header>
+
+  <h1>The visual pathway: <em>where the lesion sits</em> is the answer</h1>
+  <p class="dek">Field-defect questions are pure pattern recognition. Learn the six relay stations and the one crossing rule, and every stem collapses to a location. Then two rules, congruity and macular sparing, settle the ties. This is the backbone of Visual Biology.</p>
+
+  <section>
+    <h2><span class="n">01</span> The relay, and the one crossing</h2>
+    <p class="lead">Six stations carry sight from eye to brain: <span class="term">retina, optic nerve, chiasm, optic tract, LGN, optic radiation, visual cortex</span>. The only trick is the chiasm, where the <b>nasal fibers cross</b> and the temporal fibers stay. From the tract back, each side of the brain owns the opposite half of the world.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="The visual pathway from both eyes through the chiasm to the visual cortex">
+        <circle cx="180" cy="42" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><text x="180" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">L</text>
+        <circle cx="460" cy="42" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><text x="460" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">R</text>
+
+        <!-- temporal fibers (stay) -->
+        <path d="M163 52 L205 183" fill="none" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <path d="M477 52 L435 183" fill="none" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <!-- nasal fibers (cross at chiasm) -->
+        <path d="M198 54 L320 116 L435 183" fill="none" stroke="var(--accent)" stroke-width="2.4"/>
+        <path d="M442 54 L320 116 L205 183" fill="none" stroke="var(--accent)" stroke-width="2.4"/>
+        <circle cx="320" cy="116" r="5" fill="var(--trap)"/>
+
+        <rect x="176" y="183" width="58" height="28" rx="6" fill="var(--surface-2)" stroke="var(--line)"/><text x="205" y="201" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">LGN</text>
+        <rect x="406" y="183" width="58" height="28" rx="6" fill="var(--surface-2)" stroke="var(--line)"/><text x="435" y="201" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">LGN</text>
+        <path d="M205 211 L205 262" fill="none" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <path d="M435 211 L435 262" fill="none" stroke="var(--ink-faint)" stroke-width="2.4"/>
+        <rect x="165" y="262" width="80" height="30" rx="6" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/><text x="205" y="281" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-deep)" font-family="system-ui,sans-serif">V1 cortex</text>
+        <rect x="395" y="262" width="80" height="30" rx="6" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/><text x="435" y="281" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-deep)" font-family="system-ui,sans-serif">V1 cortex</text>
+
+        <g font-family="ui-monospace,monospace" font-size="11" fill="var(--ink-faint)" text-anchor="middle">
+          <text x="320" y="86">optic nerves</text>
+          <text x="340" y="120" text-anchor="start" fill="var(--trap)" font-weight="700">chiasm</text>
+          <text x="320" y="158">optic tracts</text>
+          <text x="320" y="240">optic radiations</text>
+        </g>
+      </svg>
+      <figcaption>green = nasal fibers (cross at the chiasm) &middot; gray = temporal (stay)</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Lesion to field defect</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Lesion site</th><th>Field defect</th></tr></thead>
+        <tbody>
+          <tr><td><b>Optic nerve</b></td><td class="df">Ipsilateral monocular vision loss (that eye is blind)</td></tr>
+          <tr><td><b>Optic chiasm</b> (central, e.g. pituitary)</td><td class="df">Bitemporal hemianopia (heteronymous)</td></tr>
+          <tr><td><b>Optic tract</b></td><td class="df">Contralateral homonymous hemianopia (incongruous)</td></tr>
+          <tr><td><b>LGN</b></td><td class="df">Contralateral homonymous hemianopia</td></tr>
+          <tr><td><b>Temporal radiation</b> (Meyer's loop)</td><td class="df">Contralateral superior quadrantanopia ("pie in the sky")</td></tr>
+          <tr><td><b>Parietal radiation</b></td><td class="df">Contralateral inferior quadrantanopia ("pie on the floor")</td></tr>
+          <tr><td><b>Occipital cortex</b></td><td class="df">Contralateral homonymous hemianopia with macular sparing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> See the defects</h2>
+    <p>Each pair below is the left eye and right eye field, with the blind part shaded.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 118" role="img" aria-label="Five classic visual field defects by lesion site">
+        <g stroke="var(--line)" stroke-width="1.5">
+          <circle cx="42" cy="48" r="22" fill="var(--surface-2)"/><circle cx="98" cy="48" r="22" fill="var(--surface-2)"/>
+          <circle cx="166" cy="48" r="22" fill="var(--surface-2)"/><circle cx="222" cy="48" r="22" fill="var(--surface-2)"/>
+          <circle cx="290" cy="48" r="22" fill="var(--surface-2)"/><circle cx="346" cy="48" r="22" fill="var(--surface-2)"/>
+          <circle cx="414" cy="48" r="22" fill="var(--surface-2)"/><circle cx="470" cy="48" r="22" fill="var(--surface-2)"/>
+          <circle cx="538" cy="48" r="22" fill="var(--surface-2)"/><circle cx="594" cy="48" r="22" fill="var(--surface-2)"/>
+        </g>
+        <g fill="var(--trap)" opacity="0.5">
+          <!-- 1 monocular: R eye full -->
+          <circle cx="98" cy="48" r="22"/>
+          <!-- 2 bitemporal: L left-half, R right-half -->
+          <path d="M166 26 A22 22 0 0 0 166 70 Z"/>
+          <path d="M222 26 A22 22 0 0 1 222 70 Z"/>
+          <!-- 3 homonymous left: both left-half -->
+          <path d="M290 26 A22 22 0 0 0 290 70 Z"/>
+          <path d="M346 26 A22 22 0 0 0 346 70 Z"/>
+          <!-- 4 pie in the sky: both upper-right quadrant -->
+          <path d="M414 48 L414 26 A22 22 0 0 1 436 48 Z"/>
+          <path d="M470 48 L470 26 A22 22 0 0 1 492 48 Z"/>
+          <!-- 5 macular sparing: both left-half -->
+          <path d="M538 26 A22 22 0 0 0 538 70 Z"/>
+          <path d="M594 26 A22 22 0 0 0 594 70 Z"/>
+        </g>
+        <!-- macular spare overlay -->
+        <circle cx="538" cy="48" r="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.75"/>
+        <circle cx="594" cy="48" r="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.75"/>
+
+        <g font-family="ui-monospace,monospace" text-anchor="middle" fill="var(--ink)">
+          <text x="70" y="90" font-size="10.5" font-weight="700">Optic nerve</text><text x="70" y="104" font-size="9.5" fill="var(--ink-soft)">monocular</text>
+          <text x="194" y="90" font-size="10.5" font-weight="700">Chiasm</text><text x="194" y="104" font-size="9.5" fill="var(--ink-soft)">bitemporal</text>
+          <text x="318" y="90" font-size="10.5" font-weight="700">Tract</text><text x="318" y="104" font-size="9.5" fill="var(--ink-soft)">homonymous</text>
+          <text x="442" y="90" font-size="10.5" font-weight="700">Meyer's loop</text><text x="442" y="104" font-size="9.5" fill="var(--ink-soft)">pie in the sky</text>
+          <text x="566" y="90" font-size="10.5" font-weight="700">Occipital</text><text x="566" y="104" font-size="9.5" fill="var(--ink-soft)">macular sparing</text>
+        </g>
+      </svg>
+      <figcaption>same-side shading = homonymous &middot; outer-halves = bitemporal</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The two rules that break ties</h2>
+    <div class="cal why"><div class="lab">Congruity: posterior = matching</div><p>The more <b>posterior</b> the lesion, the more <b>congruous</b> the two eyes' defects look. An optic-tract hemianopia is <b>incongruous</b> (the two halves do not match); an occipital one is perfectly congruous. So a very symmetric homonymous defect points to the back of the brain.</p></div>
+    <div class="cal why"><div class="lab">Macular sparing = occipital</div><p>The occipital pole that maps the macula has a <b>dual blood supply</b> (middle and posterior cerebral arteries), so a posterior-cerebral stroke often <b>spares central vision</b>. A homonymous hemianopia that keeps the very center is occipital until proven otherwise.</p></div>
+    <div class="cal mnem"><div class="lab">Bitemporal hook</div><p>The chiasm carries the crossing <b>nasal</b> fibers, and nasal retina sees the <b>temporal</b> field. Press up on it with a pituitary tumor and both temporal fields drop out, <b>bitemporal hemianopia</b>. Tunnel toward the temples.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The pupil light reflex takes a detour</h2>
+    <p class="lead">The reflex uses the same front end but branches off before the LGN, which is why it survives cortical blindness and why one eye's light moves both pupils.</p>
+    <div class="cal why"><div class="lab">Afferent arc</div><p>Light &rarr; retina &rarr; optic nerve &rarr; chiasm/tract &rarr; <b>pretectal nucleus</b> in the midbrain (<b>not the LGN</b>) &rarr; <b>both</b> Edinger-Westphal nuclei &rarr; CN3 out to the ciliary ganglion and iris sphincter. Because the pretectum feeds both sides, shining light in one eye constricts <b>both</b> pupils (direct and consensual).</p></div>
+    <div class="cal trap"><div class="lab">RAPD</div><p>A <b>relative afferent pupillary defect</b> (Marcus Gunn) is an <b>optic nerve or large retinal</b> problem. On the swinging-flashlight test, the affected eye's pupils <b>dilate</b> as the light swings to it. A cataract or refractive error does <b>not</b> cause an RAPD. The efferent motor arm of this reflex is the pupil pharmacology from Ocular Pharma Card 1.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Pharma Card 1:</b> the sphincter (parasympathetic, M3) is the efferent end of the light reflex you just traced. <b>Ocular Disease:</b> optic neuritis, pituitary adenoma, and PCA stroke are the classic lesions behind these fields. <b>Primary Eye Care:</b> confrontation and automated fields plus the swinging-flashlight test are how you find them at the chair.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the pathway</div><p>Six stations from retina to cortex, and mark exactly where the nasal fibers cross.</p></div>
+    <div class="drill"><div class="t">2 &middot; Lesion-to-defect table blind</div><p>Given each of the seven sites, write the field defect from memory.</p></div>
+    <div class="drill"><div class="t">3 &middot; Shade the fields</div><p>For each lesion, draw the left and right field circles and shade the blind part.</p></div>
+    <div class="drill"><div class="t">4 &middot; The two rules</div><p>State which way congruity runs and why an occipital stroke spares the macula.</p></div>
+    <div class="drill"><div class="t">5 &middot; Trace the reflex</div><p>Draw the afferent arc and say why light in one eye constricts both pupils.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Order the pathway stations?</span> <span class="a">Retina, optic nerve, chiasm, optic tract, LGN, optic radiation, occipital cortex (V1).</span></li>
+      <li><span class="q">What crosses at the chiasm?</span> <span class="a">Nasal retinal fibers (which carry the temporal visual fields).</span></li>
+      <li><span class="q">Optic nerve lesion defect?</span> <span class="a">Ipsilateral monocular vision loss.</span></li>
+      <li><span class="q">Chiasm (pituitary) defect?</span> <span class="a">Bitemporal hemianopia.</span></li>
+      <li><span class="q">Optic tract defect?</span> <span class="a">Contralateral incongruous homonymous hemianopia.</span></li>
+      <li><span class="q">Meyer's loop defect?</span> <span class="a">Contralateral superior quadrantanopia ("pie in the sky").</span></li>
+      <li><span class="q">Parietal radiation defect?</span> <span class="a">Contralateral inferior quadrantanopia.</span></li>
+      <li><span class="q">Occipital cortex defect and hallmark?</span> <span class="a">Contralateral homonymous hemianopia with macular sparing.</span></li>
+      <li><span class="q">Congruity rule?</span> <span class="a">The more posterior the lesion, the more congruous the defect.</span></li>
+      <li><span class="q">Why macular sparing in occipital strokes?</span> <span class="a">Dual blood supply of the occipital pole (middle + posterior cerebral arteries).</span></li>
+      <li><span class="q">Pupil light reflex afferent relay, and the key difference from vision?</span> <span class="a">Retina, optic nerve, then the pretectal nucleus (not the LGN), then both Edinger-Westphal nuclei, then CN3.</span></li>
+      <li><span class="q">An RAPD localizes to?</span> <span class="a">The optic nerve or extensive retinal disease (not a cataract or refractive error).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Visual Biology Card 1 &middot; find the lesion, name the field</div>
+
+</div>
+</body>
+</html>
