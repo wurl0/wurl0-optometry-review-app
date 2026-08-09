@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 6 · Systemic Drug Eye Effects</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:560px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .sig{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
+    </div>
+    <div class="card-no">Card<b>06</b>Systemic effects</div>
+  </header>
+
+  <h1>Systemic drugs on the eye: <em>learn the target</em></h1>
+  <p class="dek">A pill taken for the heart, the lungs, or the mind can land on one eye structure and leave a signature there. Do not memorize pharmacology, memorize which drug hits which tissue, and the finding names itself. This closes the Ocular Pharma set.</p>
+
+  <section>
+    <h2><span class="n">01</span> Five drugs, five structures</h2>
+    <p class="lead">Start with the map. The board's favorites each stake out one part of the eye, front to back.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 268" role="img" aria-label="Eye cross-section with five drug targets, and a legend">
+        <circle cx="150" cy="134" r="98" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+        <path d="M62 92 Q32 134 62 176" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <ellipse cx="88" cy="134" rx="13" ry="33" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+        <path d="M210 66 A94 94 0 0 1 210 202" fill="none" stroke="var(--ink-faint)" stroke-width="6" opacity="0.5"/>
+        <circle cx="236" cy="134" r="4" fill="var(--ink-faint)"/>
+        <rect x="236" y="150" width="26" height="16" rx="3" fill="var(--surface-2)" stroke="var(--line)"/>
+
+        <g font-family="ui-monospace,monospace" font-size="11" font-weight="700">
+          <circle cx="55" cy="134" r="11" fill="var(--accent)"/><text x="55" y="138" text-anchor="middle" fill="var(--surface)">1</text>
+          <circle cx="98" cy="104" r="11" fill="var(--accent)"/><text x="98" y="108" text-anchor="middle" fill="var(--surface)">2</text>
+          <circle cx="74" cy="172" r="11" fill="var(--accent)"/><text x="74" y="176" text-anchor="middle" fill="var(--surface)">3</text>
+          <circle cx="220" cy="104" r="11" fill="var(--accent)"/><text x="220" y="108" text-anchor="middle" fill="var(--surface)">4</text>
+          <circle cx="256" cy="160" r="11" fill="var(--accent)"/><text x="256" y="164" text-anchor="middle" fill="var(--surface)">5</text>
+        </g>
+
+        <g font-family="system-ui,sans-serif" font-size="13">
+          <circle cx="312" cy="42" r="9" fill="var(--accent)"/><text x="312" y="46" text-anchor="middle" fill="var(--surface)" font-family="ui-monospace,monospace" font-size="10" font-weight="700">1</text>
+          <text x="330" y="46" fill="var(--ink)"><tspan font-weight="700">Cornea whorl</tspan><tspan fill="var(--accent-deep)" font-weight="600"> &rarr; amiodarone</tspan></text>
+          <circle cx="312" cy="86" r="9" fill="var(--accent)"/><text x="312" y="90" text-anchor="middle" fill="var(--surface)" font-family="ui-monospace,monospace" font-size="10" font-weight="700">2</text>
+          <text x="330" y="90" fill="var(--ink)"><tspan font-weight="700">Lens (PSC cataract)</tspan><tspan fill="var(--accent-deep)" font-weight="600"> &rarr; steroids</tspan></text>
+          <circle cx="312" cy="130" r="9" fill="var(--accent)"/><text x="312" y="134" text-anchor="middle" fill="var(--surface)" font-family="ui-monospace,monospace" font-size="10" font-weight="700">3</text>
+          <text x="330" y="134" fill="var(--ink)"><tspan font-weight="700">Angle (acute closure)</tspan><tspan fill="var(--accent-deep)" font-weight="600"> &rarr; topiramate</tspan></text>
+          <circle cx="312" cy="174" r="9" fill="var(--accent)"/><text x="312" y="178" text-anchor="middle" fill="var(--surface)" font-family="ui-monospace,monospace" font-size="10" font-weight="700">4</text>
+          <text x="330" y="178" fill="var(--ink)"><tspan font-weight="700">Retina (bull's-eye)</tspan><tspan fill="var(--accent-deep)" font-weight="600"> &rarr; hydroxychloroquine</tspan></text>
+          <circle cx="312" cy="218" r="9" fill="var(--accent)"/><text x="312" y="222" text-anchor="middle" fill="var(--surface)" font-family="ui-monospace,monospace" font-size="10" font-weight="700">5</text>
+          <text x="330" y="222" fill="var(--ink)"><tspan font-weight="700">Optic nerve</tspan><tspan fill="var(--accent-deep)" font-weight="600"> &rarr; ethambutol</tspan></text>
+        </g>
+      </svg>
+      <figcaption>front to back: cornea, lens, angle, retina, optic nerve</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The full signature table</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Drug</th><th>Target</th><th>Signature</th></tr></thead>
+        <tbody>
+          <tr><td><b>Amiodarone</b></td><td>Cornea (rarely optic nerve)</td><td class="sig">Verticillata (whorl keratopathy); usually asymptomatic, reversible</td></tr>
+          <tr><td><b>Hydroxychloroquine / chloroquine</b></td><td>Macula (+ cornea)</td><td class="sig">Bull's-eye maculopathy (irreversible); also verticillata</td></tr>
+          <tr><td><b>Ethambutol</b></td><td>Optic nerve</td><td class="sig">Toxic optic neuropathy, red-green loss, central scotoma; reversible if caught early</td></tr>
+          <tr><td><b>Corticosteroids</b></td><td>Lens, angle, macula</td><td class="sig">Posterior subcapsular cataract, raised IOP, central serous chorioretinopathy</td></tr>
+          <tr><td><b>Topiramate</b></td><td>Ciliary body / angle</td><td class="sig">Acute bilateral angle-closure + acute myopic shift</td></tr>
+          <tr><td><b>Thioridazine / chlorpromazine</b></td><td>Retina / lens-cornea</td><td class="sig">Pigmentary retinopathy; lens and corneal deposits</td></tr>
+          <tr><td><b>Tamoxifen</b></td><td>Macula</td><td class="sig">Crystalline retinopathy, cystoid macular edema</td></tr>
+          <tr><td><b>Tamsulosin</b></td><td>Iris</td><td class="sig">Intraoperative floppy iris syndrome (cataract surgery)</td></tr>
+          <tr><td><b>Isotretinoin</b></td><td>Ocular surface</td><td class="sig">Dry eye, blepharoconjunctivitis, poor night vision</td></tr>
+          <tr><td><b>Vigabatrin</b></td><td>Visual field</td><td class="sig">Irreversible peripheral field constriction</td></tr>
+          <tr><td><b>Rifampin</b></td><td>Tears</td><td class="sig">Orange discoloration; stains soft contact lenses</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The four the board tests hardest</h2>
+    <div class="cal trap big"><div class="lab">Hydroxychloroquine, and why screening exists</div><p><b>Bull's-eye maculopathy is late and irreversible</b>, so the whole point is to catch damage before it. Keep the dose <b>under 5 mg/kg/day</b>, examine at baseline, then <b>screen every year after 5 years</b> (sooner with renal disease, tamoxifen use, or high dose). The two screening tests are a <b>10-2 automated visual field</b> and <b>SD-OCT</b> (parafoveal thinning). Stop the drug on the earliest change, not when the bull's-eye appears.</p></div>
+    <div class="cal why"><div class="lab">Ethambutol optic neuropathy</div><p>Dose and duration dependent. The <b>earliest sign is red-green color loss</b>, then a central or cecocentral scotoma and falling acuity, usually <b>bilateral</b>. Monitor color vision and acuity; it is <b>reversible if the drug is stopped early</b>. Isoniazid can do the same, which is why B6 goes with it.</p></div>
+    <div class="cal trap"><div class="lab">Topiramate: not your usual angle-closure</div><p>Sudden <b>bilateral</b> angle-closure with an <b>acute myopic shift</b>, from a ciliochoroidal effusion pushing the lens and iris forward. That bilateral, younger, myopic picture separates it from primary angle-closure (unilateral, older, hyperopic, pupillary block). <b>Stop the drug</b>, use cycloplegia and aqueous suppressants, and know that a <b>laser iridotomy does not help</b> here, because the mechanism is not pupillary block.</p></div>
+    <div class="cal pearl"><div class="lab">Steroids, the recurring villain</div><p>Systemic or topical, steroids give the same trio you met in Cards 3 and 4: <b>posterior subcapsular cataract, raised IOP, and central serous chorioretinopathy</b>. If a stem stacks cataract plus pressure plus a serous macular detachment, think steroid exposure.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The color-vision trio</h2>
+    <div class="cal mnem"><div class="lab">Three drugs, three colors</div><p><b>Digoxin</b> paints the world <b>yellow</b> (xanthopsia), with halos, a sign of toxicity. <b>Sildenafil</b> tints it <b>blue</b> (cyanopsia), transient. <b>Rifampin</b> turns the <b>tears orange</b> and stains soft lenses. Yellow-heart, blue-pill, orange-tears.</p></div>
+    <div class="cal why"><div class="lab">Cross-links (say these out loud)</div><p><b>Cards 3 and 4:</b> the steroid eye trio and the topiramate-versus-pilocarpine angle-closure both come back here. <b>Ocular Disease:</b> maculopathy, toxic optic neuropathy, and acute angle-closure are the disease-side view. <b>Primary Eye Care:</b> color vision testing, visual fields, and the dilated macular exam are how you screen and catch these.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the five-target map</div><p>Sketch the eye and place the five signature drugs on cornea, lens, angle, retina, and optic nerve from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Hydroxychloroquine screening</div><p>Write the dose threshold, when screening starts, the two tests, and why waiting for a bull's-eye is a failure.</p></div>
+    <div class="drill"><div class="t">3 &middot; Ethambutol</div><p>Name the earliest sign, the field defect, and whether it reverses.</p></div>
+    <div class="drill"><div class="t">4 &middot; Two angle-closures</div><p>List three ways topiramate angle-closure differs from primary, and why an iridotomy fails.</p></div>
+    <div class="drill"><div class="t">5 &middot; Color trio</div><p>Match digoxin, sildenafil, and rifampin to yellow, blue, and orange without looking.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Amiodarone's most common ocular effect?</span> <span class="a">Cornea verticillata (whorl keratopathy); usually asymptomatic and reversible.</span></li>
+      <li><span class="q">Hydroxychloroquine retinal toxicity and screening?</span> <span class="a">Bull's-eye maculopathy (late, irreversible); baseline then annual after 5 years, dose under 5 mg/kg, screen with 10-2 field + SD-OCT.</span></li>
+      <li><span class="q">Ethambutol ocular toxicity and earliest sign?</span> <span class="a">Toxic optic neuropathy; earliest is red-green color loss, then central/cecocentral scotoma; reversible if caught early.</span></li>
+      <li><span class="q">Topiramate ocular emergency?</span> <span class="a">Acute bilateral angle-closure with an acute myopic shift (ciliochoroidal effusion); iridotomy does not help.</span></li>
+      <li><span class="q">How does topiramate angle-closure differ from primary?</span> <span class="a">Bilateral, sudden, younger, with a myopic shift; primary is unilateral, older, hyperopic, pupillary block.</span></li>
+      <li><span class="q">Three eye effects of systemic steroids?</span> <span class="a">Posterior subcapsular cataract, raised IOP, central serous chorioretinopathy.</span></li>
+      <li><span class="q">Color trio: digoxin, sildenafil, rifampin?</span> <span class="a">Digoxin yellow (xanthopsia), sildenafil blue (cyanopsia), rifampin orange tears (stains soft lenses).</span></li>
+      <li><span class="q">Tamsulosin surgical risk?</span> <span class="a">Intraoperative floppy iris syndrome during cataract surgery.</span></li>
+      <li><span class="q">Thioridazine toxicity?</span> <span class="a">Pigmentary retinopathy (high dose).</span></li>
+      <li><span class="q">Tamoxifen retinal finding?</span> <span class="a">Crystalline retinopathy and cystoid macular edema.</span></li>
+      <li><span class="q">Isotretinoin ocular effects?</span> <span class="a">Dry eye, blepharoconjunctivitis, reduced night vision.</span></li>
+      <li><span class="q">Vigabatrin visual effect?</span> <span class="a">Irreversible peripheral visual field constriction.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 6 &middot; the drug picks a target, the target names the finding</div>
+
+</div>
+</body>
+</html>
