@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Visual Biology Card 2 · Retina &amp; Phototransduction</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal .seq{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--accent-deep);margin-top:6px;display:block;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .rod{color:var(--why);font-weight:600;} .cone{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Visual Biology</div>
+    </div>
+    <div class="card-no">Card<b>02</b>The retina</div>
+  </header>
+
+  <h1>The retina: <em>ten layers</em>, and the switch that runs backward</h1>
+  <p class="dek">Light enters at the front and has to travel through nine layers before it reaches the photoreceptors at the very back. Learn the stack in order, then the one cascade that turns a photon into a signal, and notice that the switch fires the opposite way you expect.</p>
+
+  <section>
+    <h2><span class="n">01</span> The ten layers, inner to outer</h2>
+    <p class="lead">The retina is <span class="term">inverted</span>: light passes the inner layers first and the photoreceptors sit last, against the pigment epithelium. Read the stack from the vitreous side down.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 418" role="img" aria-label="The ten retinal layers from inner (vitreous) to outer (RPE and choroid)">
+        <text x="26" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="var(--accent)" font-family="ui-monospace,monospace">LIGHT</text>
+        <line x1="26" y1="44" x2="26" y2="322" stroke="var(--accent)" stroke-width="2.6"/>
+        <polygon points="26,332 20,318 32,318" fill="var(--accent)"/>
+
+        <g font-family="system-ui,sans-serif">
+          <rect x="52" y="44" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="63" font-size="12" font-weight="700" fill="var(--ink)">ILM &middot; internal limiting membrane</text><text x="578" y="63" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">Muller footplates, borders vitreous</text>
+          <rect x="52" y="78" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="97" font-size="12" font-weight="700" fill="var(--ink)">NFL &middot; nerve fibre layer</text><text x="578" y="97" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">ganglion axons to optic nerve</text>
+          <rect x="52" y="112" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="131" font-size="12" font-weight="700" fill="var(--ink)">GCL &middot; ganglion cell layer</text><text x="578" y="131" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">ganglion cell bodies</text>
+          <rect x="52" y="146" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="165" font-size="12" font-weight="700" fill="var(--ink)">IPL &middot; inner plexiform layer</text><text x="578" y="165" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">bipolar to ganglion synapses</text>
+          <rect x="52" y="180" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="199" font-size="12" font-weight="700" fill="var(--ink)">INL &middot; inner nuclear layer</text><text x="578" y="199" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">bipolar, horizontal, amacrine, Muller</text>
+          <rect x="52" y="214" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="233" font-size="12" font-weight="700" fill="var(--ink)">OPL &middot; outer plexiform layer</text><text x="578" y="233" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">photoreceptor to bipolar synapses</text>
+          <rect x="52" y="248" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="267" font-size="12" font-weight="700" fill="var(--ink)">ONL &middot; outer nuclear layer</text><text x="578" y="267" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">photoreceptor nuclei</text>
+          <rect x="52" y="282" width="536" height="30" rx="5" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="64" y="301" font-size="12" font-weight="700" fill="var(--ink)">ELM &middot; external limiting membrane</text>
+          <rect x="52" y="316" width="536" height="30" rx="5" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+          <text x="64" y="335" font-size="12" font-weight="700" fill="var(--accent-deep)">Photoreceptors &middot; rod &amp; cone segments</text><text x="578" y="335" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">light captured here</text>
+          <rect x="52" y="350" width="536" height="30" rx="5" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+          <text x="64" y="369" font-size="12" font-weight="700" fill="var(--accent-deep)">RPE &middot; pigment epithelium</text><text x="578" y="369" text-anchor="end" font-size="10.5" fill="var(--ink-soft)">visual cycle, phagocytosis</text>
+          <rect x="52" y="386" width="536" height="22" rx="5" fill="var(--inset)" stroke="var(--line)"/>
+          <text x="64" y="401" font-size="11" font-weight="600" fill="var(--ink-soft)">choroid (choriocapillaris)</text>
+        </g>
+      </svg>
+      <figcaption>inner (vitreous) at top, outer (choroid) at bottom</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Who lives in the retina</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Cell</th><th>Job</th></tr></thead>
+        <tbody>
+          <tr><td><b>Photoreceptors</b> (rods, cones)</td><td>Capture light and start the signal</td></tr>
+          <tr><td><b>Bipolar cells</b></td><td>Relay photoreceptor to ganglion, the through-line</td></tr>
+          <tr><td><b>Horizontal cells</b></td><td>Lateral inhibition in the outer plexiform layer</td></tr>
+          <tr><td><b>Amacrine cells</b></td><td>Lateral processing in the inner plexiform layer</td></tr>
+          <tr><td><b>Ganglion cells</b></td><td>Output neuron; axons form the nerve fibre layer and the optic nerve</td></tr>
+          <tr><td><b>Muller cells</b></td><td>The principal glia; span the retina and form the ELM and ILM</td></tr>
+          <tr><td><b>RPE</b></td><td>Phagocytoses outer segments, recycles vitamin A, absorbs stray light, outer blood-retinal barrier</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Phototransduction: a photon becomes silence</h2>
+    <p class="lead">This is the one cascade to own, and the trick is that light turns the photoreceptor <b>off</b>.</p>
+    <div class="cal why"><div class="lab">The cascade</div><p>A photon isomerizes <b>11-cis retinal to all-trans</b>, which activates <b>rhodopsin</b>, then <b>transducin</b> (a G protein), then <b>phosphodiesterase</b>. PDE chews up cGMP, so cGMP falls, the cGMP-gated <b>sodium channels close</b>, and the photoreceptor <b>hyperpolarizes</b> and releases <b>less glutamate</b>.<span class="seq">photon &rarr; 11-cis to all-trans retinal &rarr; rhodopsin &rarr; transducin &rarr; PDE &rarr; cGMP down &rarr; Na channels close &rarr; hyperpolarize &rarr; less glutamate</span></p></div>
+    <div class="cal trap"><div class="lab">The switch runs backward</div><p>In the <b>dark</b>, cGMP is high, the sodium channels are open, and a steady <b>dark current</b> keeps the photoreceptor <b>depolarized and releasing glutamate</b>. Light shuts that down. So unlike most neurons, a photoreceptor <b>hyperpolarizes</b> to its stimulus and signals by releasing <b>less</b> transmitter.</p></div>
+    <div class="cal pearl"><div class="lab">Recovery and vitamin A</div><p>All-trans retinal shuttles to the <b>RPE</b>, is rebuilt into 11-cis retinal, and returns, the <b>visual cycle</b>. Vitamin A feeds it, which is why deficiency causes <b>night blindness</b> before anything else.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Rods versus cones</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th></th><th>Rods</th><th>Cones</th></tr></thead>
+        <tbody>
+          <tr><td>Vision</td><td class="rod">Scotopic (dim)</td><td class="cone">Photopic (bright)</td></tr>
+          <tr><td>Location</td><td class="rod">Peripheral</td><td class="cone">Central / fovea</td></tr>
+          <tr><td>Number</td><td class="rod">~120 million</td><td class="cone">~6 million</td></tr>
+          <tr><td>Pigment</td><td class="rod">Rhodopsin</td><td class="cone">Three photopsins (S, M, L)</td></tr>
+          <tr><td>Acuity</td><td class="rod">Low</td><td class="cone">High</td></tr>
+          <tr><td>Colour</td><td class="rod">No</td><td class="cone">Yes</td></tr>
+          <tr><td>Convergence</td><td class="rod">High (many to one)</td><td class="cone">Low (fovea near 1:1)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The special spots and the blood</h2>
+    <div class="cal pearl"><div class="lab">Fovea and blind spot</div><p>The <b>fovea</b> is <b>cones only, no rods</b>, with the inner layers swept aside so light reaches the cones cleanly, giving the sharpest vision. Its avascular centre is fed from behind by the <b>choroid</b>. The <b>optic disc</b> has no photoreceptors at all, that is the blind spot.</p></div>
+    <div class="cal why"><div class="lab">Two blood supplies, one exam favorite</div><p>The <b>inner</b> retina runs on the <b>central retinal artery</b>; the <b>outer</b> retina (photoreceptors and RPE) runs on the <b>choriocapillaris</b>. That split is why a central retinal artery occlusion whitens the inner retina yet leaves a <b>cherry-red spot</b>, the fovea still glowing on its intact choroidal supply.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology Card 1:</b> the ganglion axons in the nerve fibre layer become the optic nerve you traced; the pathway starts right here. <b>Ocular Disease:</b> retinitis pigmentosa is rod death (night blindness, bone-spicules), AMD hits the RPE and photoreceptors, and the CRAO cherry-red spot is the blood-supply split. <b>Ocular Pharma Card 6:</b> hydroxychloroquine poisons the photoreceptor-RPE complex at the macula.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; The ten layers</div><p>Write them inner to outer with one contents note each, then check the diagram.</p></div>
+    <div class="drill"><div class="t">2 &middot; Trace phototransduction</div><p>Photon to less glutamate, every step in order, from memory.</p></div>
+    <div class="drill"><div class="t">3 &middot; Dark vs light</div><p>State which state is depolarized, which channel is open, and which way glutamate goes.</p></div>
+    <div class="drill"><div class="t">4 &middot; Rods vs cones</div><p>Rebuild the whole comparison table blind.</p></div>
+    <div class="drill"><div class="t">5 &middot; Explain the inversion</div><p>Say why light crosses the inner retina first, and why the fovea clears the way.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Ten layers inner to outer?</span> <span class="a">ILM, NFL, GCL, IPL, INL, OPL, ONL, ELM, photoreceptors, RPE.</span></li>
+      <li><span class="q">Which layer holds photoreceptor nuclei?</span> <span class="a">The outer nuclear layer.</span></li>
+      <li><span class="q">Which cells sit in the inner nuclear layer?</span> <span class="a">Bipolar, horizontal, amacrine, and Muller cells.</span></li>
+      <li><span class="q">Do photoreceptors depolarize or hyperpolarize to light?</span> <span class="a">Hyperpolarize, releasing less glutamate.</span></li>
+      <li><span class="q">The dark current?</span> <span class="a">In darkness, high cGMP keeps sodium channels open, the photoreceptor depolarized and releasing glutamate.</span></li>
+      <li><span class="q">Phototransduction cascade order?</span> <span class="a">11-cis to all-trans retinal, rhodopsin, transducin, PDE, cGMP falls, Na channels close, hyperpolarize.</span></li>
+      <li><span class="q">RPE functions?</span> <span class="a">Phagocytose outer segments, recycle vitamin A (visual cycle), absorb stray light, outer blood-retinal barrier.</span></li>
+      <li><span class="q">Rods vs cones in one line?</span> <span class="a">Rods scotopic, peripheral, rhodopsin, no colour; cones photopic, central, colour, high acuity.</span></li>
+      <li><span class="q">Fovea specialization?</span> <span class="a">Cones only, no rods, inner layers displaced, avascular centre fed by the choroid.</span></li>
+      <li><span class="q">Retinal blood-supply split?</span> <span class="a">Inner retina from the central retinal artery; outer retina (photoreceptors, RPE) from the choriocapillaris.</span></li>
+      <li><span class="q">Vitamin A deficiency causes?</span> <span class="a">Night blindness (nyctalopia), then xerophthalmia.</span></li>
+      <li><span class="q">Principal retinal glia and what it forms?</span> <span class="a">Muller cells; they form the ELM and ILM.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Visual Biology Card 2 &middot; light in front, photoreceptors at the back</div>
+
+</div>
+</body>
+</html>
