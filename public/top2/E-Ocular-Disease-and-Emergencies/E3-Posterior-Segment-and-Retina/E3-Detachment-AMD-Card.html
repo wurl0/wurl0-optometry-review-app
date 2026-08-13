@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 4 · Vitreous, Detachment &amp; AMD</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:540px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} tbody th{font-weight:700;color:var(--ink);background:var(--surface-2);font-family:system-ui,sans-serif;text-transform:none;letter-spacing:0;font-size:13px;}
+  .k{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>04</b>Vitreous &amp; macula</div>
+  </header>
+
+  <h1>Vitreous, detachment, and AMD: <em>where the field goes</em></h1>
+  <p class="dek">The back of the eye tells you where it is failing by which part of vision drops out. A curtain means the retina is peeling; a central blur means the macula; a shrinking rim of vision means the periphery. Start with the aging vitreous, then follow the field.</p>
+
+  <section>
+    <h2><span class="n">01</span> The aging vitreous and PVD</h2>
+    <p class="lead">The vitreous is a gel that <span class="term">liquefies with age</span> (syneresis) and peels off the retina, a posterior vitreous detachment. Mostly harmless, but its tug can tear the retina.</p>
+    <div class="cal why"><div class="lab">What a PVD feels like</div><p><b>Floaters</b> (musca volitantes) and <b>photopsia</b> (flashes from the traction), and sometimes a <b>Weiss ring</b>, a ring-shaped floater where the vitreous let go of the disc. The vitreous base at the <b>ora serrata</b> is its firmest attachment and a common tear site.</p></div>
+    <div class="cal trap"><div class="lab">The red flag</div><p>A <b>shower of new floaters</b>, <b>persistent flashes</b>, or a <b>curtain or shadow</b> means the traction may have torn the retina. That earns a <b>dilated exam now</b>, because a tear can progress to a rhegmatogenous detachment.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Retinal detachment</h2>
+    <p>The sensory retina lifts off the RPE, along the same plane the two optic-cup walls left behind. Three ways it happens.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Type</th><th>Cause</th><th>Break?</th></tr></thead>
+        <tbody>
+          <tr><td><b>Rhegmatogenous</b> (most common)</td><td class="k">A retinal break, then fluid under the retina (myopia, PVD, lattice, trauma)</td><td>Yes</td></tr>
+          <tr><td><b>Tractional</b></td><td class="k">Fibrovascular membranes pull it off (PDR, ROP, sickle cell)</td><td>No</td></tr>
+          <tr><td><b>Exudative</b></td><td class="k">Subretinal fluid with no break (tumor, VKH, CSCR, malignant hypertension); shifting fluid</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px"><div class="lab">Signs and the clock</div><p>Flashes and floaters, then a <b>curtain</b> across the field, an undulating elevated retina, and <b>Shafer's sign</b> (tobacco dust, pigment in the anterior vitreous). <b>Macula-on versus macula-off</b> decides urgency: a <b>macula-on</b> detachment is an emergency to reattach before the fovea lifts.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Age-related macular degeneration</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th></th><th>Dry (about 90%)</th><th>Wet (about 10%)</th></tr></thead>
+        <tbody>
+          <tr><th>Hallmark</th><td class="k">Drusen, RPE changes, geographic atrophy</td><td class="k">Choroidal neovascularization, subretinal fluid or hemorrhage</td></tr>
+          <tr><th>Course</th><td>Gradual central loss</td><td>Rapid central loss, metamorphopsia</td></tr>
+          <tr><th>Treatment</th><td>AREDS vitamins slow it</td><td>Anti-VEGF injections</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px"><div class="lab">The macular pattern</div><p><b>Drusen</b> are the hallmark, and AMD takes <b>central</b> vision while sparing the periphery, the opposite of glaucoma and RP. New <b>distortion on an Amsler grid</b> is the warning that dry has turned wet, refer for anti-VEGF.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Follow the field</h2>
+    <p class="lead">Where vision drops out points straight to the disease. This ties the whole retina chapter together.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 120" role="img" aria-label="Three field-loss patterns: central scotoma, tunnel vision, and a curtain">
+        <g stroke="var(--line)" stroke-width="1.5" fill="var(--surface-2)">
+          <circle cx="140" cy="48" r="28"/><circle cx="320" cy="48" r="28"/><circle cx="500" cy="48" r="28"/>
+        </g>
+        <circle cx="140" cy="48" r="13" fill="var(--trap)" opacity="0.55"/>
+        <circle cx="320" cy="48" r="28" fill="var(--trap)" opacity="0.5"/>
+        <circle cx="320" cy="48" r="13" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+        <path d="M472 48 A28 28 0 0 1 528 48 Z" fill="var(--trap)" opacity="0.5"/>
+        <g font-family="ui-monospace,monospace" text-anchor="middle" fill="var(--ink)">
+          <text x="140" y="90" font-size="10.5" font-weight="700">Central scotoma</text><text x="140" y="104" font-size="9.5" fill="var(--ink-soft)">AMD, macular hole</text>
+          <text x="320" y="90" font-size="10.5" font-weight="700">Tunnel</text><text x="320" y="104" font-size="9.5" fill="var(--ink-soft)">RP, late glaucoma</text>
+          <text x="500" y="90" font-size="10.5" font-weight="700">Curtain / sector</text><text x="500" y="104" font-size="9.5" fill="var(--ink-soft)">retinal detachment</text>
+        </g>
+      </svg>
+      <figcaption>center gone, edges gone, or a shade pulled across</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:14px"><div class="lab">The rule</div><p><b>Central loss</b> is a macular disease (AMD, macular hole, CSCR). <b>Peripheral-first, shrinking to a tunnel</b> is RP or late glaucoma. A <b>curtain or sector</b> is a retinal detachment. Where the field goes tells you the layer.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Two more macular lesions</h2>
+    <div class="cal pearl"><div class="lab">Hole and pucker</div><p>A <b>macular hole</b> gives a central scotoma and a positive <b>Watzke-Allen sign</b> (a slit beam looks broken). An <b>epiretinal membrane</b> (macular pucker) gives metamorphopsia and a <b>cellophane sheen</b> on the macula.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Disease Card 1:</b> tractional detachment comes from proliferative diabetic retinopathy, and CSCR and RP sit here too. <b>Card 3:</b> the tunnel field is the shared endpoint of RP and glaucoma. <b>Visual Biology Card 2:</b> a detachment separates the neural retina from the RPE, the two optic-cup walls, and AMD attacks the photoreceptor-RPE complex. <b>Primary Eye Care:</b> the dilated fundus exam, the Amsler grid, and OCT grade all of these.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; PVD</div><p>List the symptoms and the red flags that mean a tear.</p></div>
+    <div class="drill"><div class="t">2 &middot; Detachment</div><p>Three types with a cause each and whether there is a break.</p></div>
+    <div class="drill"><div class="t">3 &middot; AMD</div><p>Dry versus wet: hallmark, course, treatment.</p></div>
+    <div class="drill"><div class="t">4 &middot; The field map</div><p>Draw the three field patterns and name the disease for each.</p></div>
+    <div class="drill"><div class="t">5 &middot; Where is it lost</div><p>Place AMD, RP, glaucoma, and detachment on the field map from memory.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">PVD symptoms?</span> <span class="a">Floaters (musca volitantes), photopsia (flashes), sometimes a Weiss ring.</span></li>
+      <li><span class="q">PVD red flags for a retinal tear?</span> <span class="a">A shower of new floaters, persistent flashes, or a curtain; do a dilated exam now.</span></li>
+      <li><span class="q">Most common retinal detachment and its cause?</span> <span class="a">Rhegmatogenous, from a retinal break (myopia, PVD, lattice, trauma).</span></li>
+      <li><span class="q">Tractional vs exudative detachment?</span> <span class="a">Tractional = fibrovascular pull (PDR, ROP), no break; exudative = subretinal fluid, no break (tumor, VKH, CSCR), shifting fluid.</span></li>
+      <li><span class="q">Shafer's sign?</span> <span class="a">Tobacco dust, pigment in the anterior vitreous, a marker of retinal detachment.</span></li>
+      <li><span class="q">Macula-on vs macula-off, why it matters?</span> <span class="a">Macula-on is an emergency to reattach before the fovea lifts and central vision is lost.</span></li>
+      <li><span class="q">Dry AMD hallmark and advanced form?</span> <span class="a">Drusen; geographic atrophy; slowed by AREDS vitamins.</span></li>
+      <li><span class="q">Wet AMD mechanism, symptom, treatment?</span> <span class="a">Choroidal neovascularization; metamorphopsia (Amsler distortion); anti-VEGF injections.</span></li>
+      <li><span class="q">Which field does AMD take?</span> <span class="a">Central, sparing the periphery.</span></li>
+      <li><span class="q">Central vs peripheral field loss, which diseases?</span> <span class="a">Central: AMD, macular hole, CSCR. Peripheral / tunnel: RP, late glaucoma.</span></li>
+      <li><span class="q">A curtain or sector field defect suggests?</span> <span class="a">Retinal detachment.</span></li>
+      <li><span class="q">A detachment separates which two layers?</span> <span class="a">The neural (sensory) retina from the RPE.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 4 &middot; the field tells you the layer</div>
+
+</div>
+</body>
+</html>
