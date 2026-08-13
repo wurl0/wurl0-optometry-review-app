@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 3 · Glaucoma</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} tbody th{font-weight:700;color:var(--ink);background:var(--surface-2);font-family:system-ui,sans-serif;text-transform:none;letter-spacing:0;font-size:13px;}
+  .aac{color:var(--trap);font-weight:600;} .dx{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>03</b>Glaucoma</div>
+  </header>
+
+  <h1>Glaucoma: <em>the nerve, not just the number</em></h1>
+  <p class="dek">Glaucoma is optic nerve damage with disc cupping and field loss. Pressure is a risk factor, not the diagnosis. Sort it by the angle, open or closed, and by primary or secondary, and the whole subject lines up. This is the disease behind the Pharma glaucoma card.</p>
+
+  <section>
+    <h2><span class="n">01</span> What it does to the disc</h2>
+    <p class="lead">The damage shows at the optic nerve head. The cup enlarges and the <span class="term">neuroretinal rim thins</span>, sometimes with a notch or a splinter hemorrhage.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 206" role="img" aria-label="Normal optic disc versus a glaucomatous disc with a large cup and thin rim">
+        <circle cx="160" cy="96" r="58" fill="var(--pearl-w)" stroke="color-mix(in srgb,var(--pearl) 45%,var(--line))" stroke-width="2"/>
+        <circle cx="160" cy="96" r="20" fill="var(--bg)" stroke="var(--line)"/>
+        <g stroke="color-mix(in srgb,var(--trap) 65%,var(--line))" stroke-width="2" fill="none" opacity="0.8"><path d="M160 40 Q150 96 158 152"/><path d="M112 108 Q160 96 208 104"/></g>
+        <text x="160" y="182" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Normal disc</text>
+        <text x="160" y="197" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">C/D ~0.3, thick rim</text>
+
+        <circle cx="480" cy="96" r="58" fill="var(--pearl-w)" stroke="color-mix(in srgb,var(--pearl) 45%,var(--line))" stroke-width="2"/>
+        <circle cx="480" cy="96" r="44" fill="var(--bg)" stroke="var(--line)"/>
+        <path d="M480 96 L480 40 A56 56 0 0 1 500 148 Z" fill="var(--bg)"/>
+        <ellipse cx="452" cy="142" rx="7" ry="4" fill="var(--trap)"/>
+        <text x="480" y="182" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Glaucomatous disc</text>
+        <text x="480" y="197" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">C/D ~0.8, notch + splinter heme</text>
+      </svg>
+      <figcaption>a small central cup, or a big cup with a bitten rim</figcaption>
+    </figure>
+    <div class="cal why" style="margin-top:14px"><div class="lab">Read the rim and the field</div><p>A healthy rim follows the <b>ISNT rule</b>, thickest <b>Inferior &gt; Superior &gt; Nasal &gt; Temporal</b>; break that order and suspect glaucoma. The field loss follows the nerve-fiber arcs: an <b>arcuate (Bjerrum) scotoma</b> and a <b>nasal step</b> first, sparing central vision until late, then tunnel vision. The ultimate effect of sustained pressure is this <b>disc cupping</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Open-angle vs acute angle-closure</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th></th><th>Primary open-angle (POAG)</th><th>Acute angle-closure</th></tr></thead>
+        <tbody>
+          <tr><th>Onset</th><td>Insidious, painless</td><td class="aac">Sudden, an emergency</td></tr>
+          <tr><th>Angle</th><td>Open</td><td class="aac">Closed (pupillary block)</td></tr>
+          <tr><th>Symptoms</th><td>None until late</td><td class="aac">Severe pain, halos, nausea</td></tr>
+          <tr><th>Pupil</th><td>Normal</td><td class="aac">Mid-dilated, fixed</td></tr>
+          <tr><th>Cornea</th><td>Clear</td><td class="aac">Hazy, edematous</td></tr>
+          <tr><th>IOP</th><td>Moderately raised</td><td class="aac">Very high (40 to 80)</td></tr>
+          <tr><th>Field loss</th><td>Peripheral first</td><td>Acute blur</td></tr>
+          <tr><th>At risk</th><td>Age, myopia, family history, African ancestry</td><td>Hyperopes, older, Asian, dim light</td></tr>
+          <tr><th>Treatment</th><td>Drops (prostaglandin first)</td><td class="aac">Lower IOP fast, then laser iridotomy</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">Two labels the board reuses</div><p>POAG is the <b>chronic simple</b> or <b>compensated</b> glaucoma: open angle, no preexisting disease, aqueous reaching the angle at all times. If the stem says the aqueous <b>cannot reach the trabecular meshwork because the angle is abnormal</b>, that is <b>angle-closure</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Secondary glaucomas</h2>
+    <p>Something else drives the pressure. Sort them the same way, by whether the angle is open or shut.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Mechanism</th><th>Cause</th></tr></thead>
+        <tbody>
+          <tr><th>Open-angle</th><td></td></tr>
+          <tr><td>Pigment dispersion</td><td class="dx">Pigment on the meshwork (Krukenberg spindle, young myopes)</td></tr>
+          <tr><td>Pseudoexfoliation</td><td class="dx">Flaky material; most common identifiable cause worldwide</td></tr>
+          <tr><td>Steroid-induced</td><td class="dx">Steroid responder (Pharma Cards 3, 4, 6)</td></tr>
+          <tr><td>Angle recession</td><td class="dx">Blunt trauma</td></tr>
+          <tr><th>Angle-closure</th><td></td></tr>
+          <tr><td>Neovascular</td><td class="dx">Rubeosis iridis after PDR or CRVO (Card 1)</td></tr>
+          <tr><td>Uveitic</td><td class="dx">Posterior synechiae, pupillary block (Card 2)</td></tr>
+          <tr><td>Phacomorphic</td><td class="dx">Swollen, intumescent lens</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px"><div class="lab">The synechiae trap</div><p><b>Posterior synechiae from uveitis cause secondary ANGLE-CLOSURE</b>, not open-angle: the iris sticks to the lens, blocks the pupil, bows forward, and shuts the angle. And <b>neovascular</b> glaucoma is angle-closure too, from a rubeotic membrane dragging the angle shut.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Congenital and developmental</h2>
+    <div class="cal pearl"><div class="lab">Primary congenital glaucoma</div><p>A big eye (<b>buphthalmos</b>), a hazy cornea with <b>Haab striae</b>, and the classic triad of <b>epiphora, photophobia, and blepharospasm</b>, from trabeculodysgenesis. Treatment is surgical (goniotomy or trabeculotomy). It also rides with <b>Sturge-Weber, aniridia, Axenfeld-Rieger, Peters, and Marfan</b>. Note the board favorite: <b>Sturge-Weber does cause it, diabetes does not</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Pharma Card 4:</b> the drug ladder and the acute angle-closure sequence are that card. <b>Card 1:</b> aqueous production and outflow is the pressure this disease raises. <b>Ocular Disease Card 1:</b> neovascular glaucoma follows a CRVO or proliferative diabetic retinopathy. <b>Card 2:</b> uveitic synechiae are the secondary angle-closure. <b>Primary Eye Care:</b> tonometry, gonioscopy, the cup-to-disc ratio, OCT, and fields make the diagnosis.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the two discs</div><p>Normal versus glaucomatous, mark the cup-to-disc ratio and the ISNT rim.</p></div>
+    <div class="drill"><div class="t">2 &middot; POAG vs angle-closure</div><p>Rebuild the comparison table blind, pupil and angle rows first.</p></div>
+    <div class="drill"><div class="t">3 &middot; Secondary glaucomas</div><p>Sort them into open versus closed with a cause for each.</p></div>
+    <div class="drill"><div class="t">4 &middot; Congenital</div><p>Write the triad, one extra sign, and three associations.</p></div>
+    <div class="drill"><div class="t">5 &middot; The fields</div><p>Name the glaucomatous field defects in the order they appear.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">What defines glaucoma, and the role of IOP?</span> <span class="a">Progressive optic neuropathy with disc cupping and field loss; IOP is a risk factor, not the definition.</span></li>
+      <li><span class="q">POAG features?</span> <span class="a">Open angle, insidious, painless, peripheral field loss first, bilateral and asymmetric; the compensated / chronic simple glaucoma.</span></li>
+      <li><span class="q">Acute angle-closure features and mechanism?</span> <span class="a">Sudden severe pain, halos, nausea, mid-dilated fixed pupil, hazy cornea, very high IOP; pupillary block shuts the angle.</span></li>
+      <li><span class="q">Definitive treatment of angle-closure?</span> <span class="a">Laser peripheral iridotomy (after lowering IOP fast).</span></li>
+      <li><span class="q">At-risk profiles, angle-closure vs open-angle?</span> <span class="a">Angle-closure: hyperopes, older, Asian, dim light. Open-angle: age, myopia, family history, African ancestry.</span></li>
+      <li><span class="q">Disc changes in glaucoma?</span> <span class="a">Enlarged cup, thin or notched neuroretinal rim, splinter hemorrhage, raised or asymmetric cup-to-disc ratio.</span></li>
+      <li><span class="q">The ISNT rule?</span> <span class="a">A healthy rim is thickest Inferior &gt; Superior &gt; Nasal &gt; Temporal; violation is suspicious.</span></li>
+      <li><span class="q">Glaucomatous field defects, in order?</span> <span class="a">Arcuate (Bjerrum) scotoma and nasal step first, central spared, tunnel vision late.</span></li>
+      <li><span class="q">Two secondary open-angle causes?</span> <span class="a">Pigment dispersion and pseudoexfoliation (also steroid-induced, angle recession).</span></li>
+      <li><span class="q">Neovascular glaucoma arises from?</span> <span class="a">Rubeosis iridis after proliferative diabetic retinopathy or a CRVO.</span></li>
+      <li><span class="q">How does uveitis cause secondary glaucoma?</span> <span class="a">Posterior synechiae and pupillary block, giving secondary angle-closure.</span></li>
+      <li><span class="q">Primary congenital glaucoma triad, and one non-cause?</span> <span class="a">Epiphora, photophobia, blepharospasm (with buphthalmos); diabetes does not cause it, but Sturge-Weber does.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 3 &middot; open or closed, primary or secondary</div>
+
+</div>
+</body>
+</html>
