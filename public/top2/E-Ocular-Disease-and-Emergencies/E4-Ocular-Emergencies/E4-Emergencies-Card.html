@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 6 · Ocular Emergencies</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:580px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .move{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>06</b>Emergencies</div>
+  </header>
+
+  <h1>Ocular emergencies: <em>the first move wins the eye</em></h1>
+  <p class="dek">These are the ones where minutes matter or the wrong first step costs vision. Two reflexes carry most of it: irrigate a chemical burn before you do anything else, and treat any sudden painless loss over fifty as arteritis until proven otherwise. This closes the Ocular Disease set.</p>
+
+  <section>
+    <h2><span class="n">01</span> The one you treat before you look</h2>
+    <div class="cal trap big"><div class="lab">Chemical burn: irrigate first</div><p>A caustic splash is the one emergency where you <b>irrigate immediately, before the history or the acuity</b>, with copious fluid until the <b>pH is neutral</b> (around 7). Only then do you examine. <b>Alkali</b> (lye, ammonia, lime, cement) is worse than acid: it dissolves membranes and <b>penetrates deep</b> by liquefactive necrosis, while acid causes a self-limiting coagulative burn. Grade the severity by <b>limbal blanching</b>, the more white, ischemic limbus, the worse the outlook.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Sudden painless vision loss</h2>
+    <div class="cal why"><div class="lab">CRAO</div><p>A <b>retinal stroke</b>: sudden, painless, severe monocular loss with a pale retina, a <b>cherry-red spot</b>, and an RAPD (Card 1). <b>Minutes count</b>, ocular massage, lower the IOP (paracentesis, acetazolamide), and always look for giant cell arteritis.</p></div>
+    <div class="cal trap big"><div class="lab">Over 50: think giant cell arteritis</div><p>An older patient with <b>jaw claudication, scalp or temporal-artery tenderness, headache</b>, or polymyalgia, and a high <b>ESR/CRP</b>. It causes <b>arteritic AION</b>, sudden painless loss with a <b>pallid, chalky disc swelling</b>, and can take the fellow eye within days. <b>Start high-dose steroids immediately, do not wait for the biopsy.</b> Every sudden painless loss over fifty gets an ESR and CRP.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Trauma</h2>
+    <p class="lead">A soft, distorted eye after trauma is an <span class="term">open globe</span> until proven otherwise, and the pupil often points to the wound.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 196" role="img" aria-label="A normal round pupil versus a peaked pupil pointing to an open-globe wound">
+        <circle cx="160" cy="92" r="54" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))" stroke-width="2"/>
+        <circle cx="160" cy="92" r="17" fill="var(--ink)"/>
+        <text x="160" y="172" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Normal</text>
+        <text x="160" y="187" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">round, central pupil</text>
+
+        <circle cx="480" cy="92" r="54" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))" stroke-width="2"/>
+        <circle cx="480" cy="92" r="15" fill="var(--ink)"/>
+        <polygon points="472,80 490,82 516,58" fill="var(--ink)"/>
+        <line x1="508" y1="52" x2="524" y2="66" stroke="var(--trap)" stroke-width="4" stroke-linecap="round"/>
+        <text x="480" y="172" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Open globe</text>
+        <text x="480" y="187" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">peaked pupil points to the wound</text>
+      </svg>
+      <figcaption>a teardrop pupil aims at the rupture</figcaption>
+    </figure>
+    <div class="cal trap" style="margin-top:14px"><div class="lab">Open globe: do not press</div><p>Signs: a <b>peaked pupil, shallow anterior chamber, hyphema, low IOP, prolapsed uvea, positive Seidel</b>, and a high-velocity history. <b>Do not manipulate or press on the eye.</b> Place a <b>rigid shield</b> (not a pad), keep the patient NPO, get a <b>CT</b>, give IV antibiotics and tetanus, and refer for urgent surgery.</p></div>
+    <div class="cal pearl"><div class="lab">Hyphema</div><p>Blood in the anterior chamber. Rest with the head up, a shield, and no aspirin or NSAIDs. Watch for the <b>rebleed at day 3 to 5</b>, an IOP spike, and corneal staining, and take extra care in <b>sickle cell</b> disease.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Endophthalmitis</h2>
+    <div class="cal trap"><div class="lab">A hypopyon after surgery</div><p>Intraocular infection, classically <b>days 1 to 7 after cataract surgery</b> or after an injection: <b>pain, dropping vision, a hypopyon, and vitritis</b>. This is an emergency, a <b>vitreous tap plus intravitreal antibiotics</b> (vancomycin and ceftazidime). The usual post-cataract organism is <b>Staph epidermidis</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The whole list, and the first move</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Emergency</th><th>Red flag</th><th>First move</th></tr></thead>
+        <tbody>
+          <tr><td><b>Chemical burn</b></td><td>Any caustic splash</td><td class="move">Irrigate immediately, before assessing</td></tr>
+          <tr><td><b>CRAO</b></td><td>Sudden painless loss, cherry-red spot</td><td class="move">Massage, lower IOP; check for GCA</td></tr>
+          <tr><td><b>Giant cell arteritis</b></td><td>Over 50, jaw claudication, high ESR</td><td class="move">High-dose steroids now, before biopsy</td></tr>
+          <tr><td><b>Acute angle-closure</b></td><td>Pain, halos, mid-dilated pupil, hard eye</td><td class="move">Lower IOP, then laser iridotomy (Card 3)</td></tr>
+          <tr><td><b>Endophthalmitis</b></td><td>Post-op hypopyon + vitritis</td><td class="move">Vitreous tap + intravitreal antibiotics</td></tr>
+          <tr><td><b>Open globe</b></td><td>Peaked pupil, soft eye, trauma</td><td class="move">Shield (do not press), CT, surgery</td></tr>
+          <tr><td><b>Orbital cellulitis</b></td><td>Proptosis + painful eye movements</td><td class="move">IV antibiotics, imaging (Card 5)</td></tr>
+          <tr><td><b>Retinal detachment</b> (macula-on)</td><td>Curtain, flashes and floaters</td><td class="move">Urgent surgical referral (Card 4)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Disease Cards 1, 3, 4, 5:</b> CRAO, acute angle-closure, macula-on detachment, and orbital cellulitis are the emergencies met in their home chapters. <b>Ocular Pharma Card 4:</b> the angle-closure drug sequence. <b>Card 2:</b> the endophthalmitis antibiotics. <b>Primary Eye Care:</b> irrigation, the Seidel test, ESR and CRP, and the rigid shield are the emergency skills.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Chemical burn</div><p>The first action, and why alkali is worse than acid.</p></div>
+    <div class="drill"><div class="t">2 &middot; Painless loss over 50</div><p>What to suspect, the tests, and the immediate treatment.</p></div>
+    <div class="drill"><div class="t">3 &middot; Open globe</div><p>The signs, and the things you must not do.</p></div>
+    <div class="drill"><div class="t">4 &middot; Endophthalmitis</div><p>The triad, the timing, and the procedure.</p></div>
+    <div class="drill"><div class="t">5 &middot; The list</div><p>For each red flag in the table, give the first move from memory.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">First action in a chemical burn?</span> <span class="a">Immediate copious irrigation, before history or acuity, until the pH is neutral.</span></li>
+      <li><span class="q">Alkali vs acid burns, which is worse and why?</span> <span class="a">Alkali (liquefactive necrosis, penetrates deep); acid causes a self-limiting coagulative burn.</span></li>
+      <li><span class="q">CRAO management?</span> <span class="a">Minutes count: ocular massage, lower the IOP, and check for giant cell arteritis.</span></li>
+      <li><span class="q">Sudden painless loss over 50, what to do?</span> <span class="a">Suspect giant cell arteritis; check ESR and CRP and start high-dose steroids immediately, before the biopsy.</span></li>
+      <li><span class="q">Arteritic AION disc appearance?</span> <span class="a">Pallid, chalky disc swelling.</span></li>
+      <li><span class="q">Open globe signs?</span> <span class="a">Peaked pupil, shallow AC, hyphema, low IOP, uveal prolapse, positive Seidel.</span></li>
+      <li><span class="q">Open globe: what not to do, and what to do?</span> <span class="a">Do not press or manipulate; place a rigid shield, keep NPO, CT, IV antibiotics, urgent surgery.</span></li>
+      <li><span class="q">Hyphema risks?</span> <span class="a">Rebleed (day 3 to 5), raised IOP, corneal staining; caution in sickle cell; avoid aspirin and NSAIDs.</span></li>
+      <li><span class="q">Endophthalmitis triad and timing?</span> <span class="a">Pain, dropping vision, hypopyon with vitritis; classically days 1 to 7 after cataract surgery.</span></li>
+      <li><span class="q">Endophthalmitis treatment?</span> <span class="a">Vitreous tap and intravitreal antibiotics (vancomycin + ceftazidime).</span></li>
+      <li><span class="q">Most common post-cataract endophthalmitis organism?</span> <span class="a">Staph epidermidis (coagulase-negative staph).</span></li>
+      <li><span class="q">Acute angle-closure, first move then definitive?</span> <span class="a">Lower IOP fast, then laser peripheral iridotomy.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 6 &middot; irrigate first, steroids for the over-fifty</div>
+
+</div>
+</body>
+</html>
