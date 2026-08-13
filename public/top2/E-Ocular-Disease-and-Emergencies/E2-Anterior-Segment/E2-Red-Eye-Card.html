@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 2 · The Red Eye</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:600px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} tbody th{font-weight:700;color:var(--ink);background:var(--surface-2);font-family:system-ui,sans-serif;text-transform:none;letter-spacing:0;font-size:13px;}
+  .dx{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>02</b>The red eye</div>
+  </header>
+
+  <h1>The red eye: <em>benign or blinding</em></h1>
+  <p class="dek">A red eye is only a problem if it threatens sight. The whole skill is sorting the harmless conjunctivitis from keratitis, uveitis, angle-closure, and scleritis, and two clues do most of it: where the redness sits and what the pupil is doing.</p>
+
+  <section>
+    <h2><span class="n">01</span> Read the redness first</h2>
+    <p class="lead">The pattern of injection sorts the causes before you touch anything. <span class="term">Diffuse and superficial</span> is benign; a <span class="term">ring hugging the cornea</span> is deep and dangerous.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 218" role="img" aria-label="Diffuse conjunctival injection versus perilimbal ciliary flush">
+        <circle cx="160" cy="100" r="76" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+        <circle cx="160" cy="100" r="60" fill="none" stroke="var(--trap)" stroke-width="16" opacity="0.32"/>
+        <circle cx="160" cy="100" r="34" fill="var(--bg)" stroke="var(--line)"/>
+        <circle cx="160" cy="100" r="11" fill="var(--ink)"/>
+        <text x="160" y="196" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Conjunctival</text>
+        <text x="160" y="211" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">diffuse, blanches with phenylephrine</text>
+
+        <circle cx="480" cy="100" r="76" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+        <circle cx="480" cy="100" r="42" fill="none" stroke="var(--trap)" stroke-width="13" opacity="0.6"/>
+        <circle cx="480" cy="100" r="34" fill="var(--bg)" stroke="var(--line)"/>
+        <circle cx="480" cy="100" r="11" fill="var(--ink)"/>
+        <text x="480" y="196" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)" font-family="system-ui,sans-serif">Ciliary flush</text>
+        <text x="480" y="211" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)" font-family="ui-monospace,monospace">perilimbal, does not blanch</text>
+      </svg>
+      <figcaption>redness at the edge is benign; redness at the limbus is not</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The triage table</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th></th><th>Conjunctivitis</th><th>Keratitis</th><th>Uveitis</th><th>Angle-closure</th><th>Scleritis</th></tr></thead>
+        <tbody>
+          <tr><th>Vision</th><td>Normal</td><td>Reduced</td><td>Reduced</td><td class="dx">Very reduced, halos</td><td>Reduced</td></tr>
+          <tr><th>Pain</th><td>Gritty / none</td><td>Moderate to severe</td><td>Ache, photophobia</td><td class="dx">Severe + nausea</td><td class="dx">Severe, boring, at night</td></tr>
+          <tr><th>Discharge</th><td>Yes (type varies)</td><td>Watery</td><td>None</td><td>None</td><td>None</td></tr>
+          <tr><th>Injection</th><td>Conjunctival</td><td>Ciliary flush</td><td>Ciliary flush</td><td>Diffuse, cloudy cornea</td><td>Deep, violaceous</td></tr>
+          <tr><th>Pupil</th><td>Normal</td><td>Normal / small</td><td class="dx">Miotic</td><td class="dx">Mid-dilated, fixed</td><td>Normal</td></tr>
+          <tr><th>Cornea</th><td>Clear</td><td>Infiltrate / stains</td><td>KPs on endothelium</td><td>Hazy, edematous</td><td>Clear</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Conjunctivitis</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Type</th><th>Hallmark</th><th>Signs / organism</th></tr></thead>
+        <tbody>
+          <tr><td><b>Bacterial</b></td><td class="dx">Purulent, lids stuck shut</td><td>Papillae; Staph aureus (adult), Strep / H. flu (kids), Pseudomonas (CL); hyperacute copious = gonococcal, an emergency</td></tr>
+          <tr><td><b>Viral (adeno)</b></td><td class="dx">Watery, very contagious</td><td>Follicles, tender preauricular node, second eye follows; subepithelial infiltrates</td></tr>
+          <tr><td><b>Allergic</b></td><td class="dx">Itch, stringy mucus</td><td>Bilateral, chemosis, papillae; VKC gives cobblestone papillae and a shield ulcer</td></tr>
+          <tr><td><b>Chlamydial</b></td><td class="dx">Chronic follicular</td><td>Trachoma (leading infectious blindness worldwide); adult inclusion conjunctivitis (STI)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">Follicles vs papillae</div><p><b>Follicles</b> (smooth lymphoid bumps) point to <b>viral or chlamydial</b>. <b>Papillae</b> (bumps with a central vessel) point to <b>bacterial or allergic</b>. And <b>itch is the allergy tell</b>, if it does not itch, it is probably not allergic.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The sight-threatening pair: keratitis and uveitis</h2>
+    <div class="cal trap"><div class="lab">Keratitis, by the clue</div><p>An infiltrate with an epithelial defect. <b>Contact lens</b> and fast melt with a hypopyon means <b>Pseudomonas</b>; a <b>dendrite</b> means HSV (antiviral only, no steroid on the epithelial form); <b>feathery margins after plant trauma</b> means fungus; <b>pain out of proportion with a ring</b> means Acanthamoeba. The drug picks are Ocular Pharma Card 2.</p></div>
+    <div class="cal big why"><div class="lab">Anterior uveitis</div><p>Pain, photophobia, <b>ciliary flush, a miotic pupil</b>, and cells and flare in the anterior chamber, with <b>keratic precipitates</b>, sometimes a hypopyon, and <b>posterior synechiae</b>. <b>Granulomatous</b> (mutton-fat KPs, iris nodules) points to TB, sarcoid, syphilis, or VKH; <b>non-granulomatous</b> (fine KPs, acute, fibrinous) points to <b>HLA-B27</b> disease (ankylosing spondylitis, reactive arthritis, IBD).</p></div>
+    <div class="cal trap"><div class="lab">The complication that raises pressure</div><p>Inflammation glues the iris to the lens as <b>posterior synechiae</b>, which block the pupil, bow the iris forward, and shut the angle, a <b>secondary angle-closure glaucoma</b>. Uveitis also brings cataract, cystoid macular edema, and band keratopathy.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Episcleritis vs scleritis</h2>
+    <div class="cal big trap"><div class="lab">One drop tells them apart</div><p><b>Episcleritis</b> is sectoral, <b>mild or painless</b>, self-limited, and <b>blanches with phenylephrine 2.5%</b>. <b>Scleritis</b> is a <b>severe, boring, deep pain</b> that wakes the patient, with a <b>violaceous hue</b>, does <b>not blanch</b>, and travels with systemic autoimmune disease (rheumatoid arthritis, granulomatosis with polyangiitis, relapsing polychondritis). Necrotizing scleritis threatens the eye. The phenylephrine blanch is the separator.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Pharma Card 2:</b> the keratitis and conjunctivitis drug picks are that card. <b>Card 3:</b> uveitis lives on steroids, and allergic conjunctivitis on the dual-action drops. <b>Card 4:</b> the uveitic secondary glaucoma is the pressure side. <b>Visual Biology Card 5:</b> conjunctival versus ciliary injection is the vessel anatomy you already drew.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Read the redness</div><p>Draw the two injection patterns, name what each suggests, and give the phenylephrine result.</p></div>
+    <div class="drill"><div class="t">2 &middot; Triage table</div><p>Rebuild the feature-by-cause table blind, pupil and injection rows first.</p></div>
+    <div class="drill"><div class="t">3 &middot; Conjunctivitis</div><p>Match each type to its hallmark, and split follicles from papillae.</p></div>
+    <div class="drill"><div class="t">4 &middot; Anterior uveitis</div><p>List the signs and separate granulomatous from non-granulomatous causes.</p></div>
+    <div class="drill"><div class="t">5 &middot; Episcleritis vs scleritis</div><p>Three differences and the one test.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Conjunctival injection vs ciliary flush?</span> <span class="a">Conjunctival = superficial, diffuse, blanches with phenylephrine (conjunctivitis, episcleritis); ciliary flush = deep perilimbal, does not blanch (keratitis, uveitis, angle-closure, scleritis).</span></li>
+      <li><span class="q">Pupil in uveitis vs acute angle-closure?</span> <span class="a">Uveitis miotic; acute angle-closure mid-dilated and fixed.</span></li>
+      <li><span class="q">Bacterial conjunctivitis: common bug, CL bug, hyperacute?</span> <span class="a">Staph aureus; Pseudomonas (contact lens); Neisseria gonorrhoeae (hyperacute, emergency).</span></li>
+      <li><span class="q">Follicles vs papillae?</span> <span class="a">Follicles = viral or chlamydial; papillae = bacterial or allergic.</span></li>
+      <li><span class="q">Hallmark of allergic conjunctivitis?</span> <span class="a">Itching (bilateral, stringy mucus, chemosis).</span></li>
+      <li><span class="q">HSV epithelial keratitis sign and drug rule?</span> <span class="a">Dendrite with terminal end-bulbs; antiviral only, no steroid on the epithelial form.</span></li>
+      <li><span class="q">Anterior uveitis signs?</span> <span class="a">Pain, photophobia, ciliary flush, miosis, cells and flare, keratic precipitates, hypopyon, posterior synechiae.</span></li>
+      <li><span class="q">Granulomatous vs non-granulomatous KPs and causes?</span> <span class="a">Granulomatous = mutton-fat KPs + iris nodules (TB, sarcoid, syphilis, VKH); non-granulomatous = fine KPs, acute (HLA-B27: AS, reactive arthritis, IBD).</span></li>
+      <li><span class="q">Uveitis complication that raises IOP?</span> <span class="a">Posterior synechiae causing pupillary block and secondary angle-closure glaucoma.</span></li>
+      <li><span class="q">Episcleritis vs scleritis pain and phenylephrine?</span> <span class="a">Episcleritis mild and blanches; scleritis severe, boring, violaceous, does not blanch.</span></li>
+      <li><span class="q">Scleritis systemic associations?</span> <span class="a">Rheumatoid arthritis, granulomatosis with polyangiitis, relapsing polychondritis.</span></li>
+      <li><span class="q">Trachoma significance?</span> <span class="a">Chlamydial; the leading infectious cause of blindness worldwide.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 2 &middot; where it is red, and what the pupil does</div>
+
+</div>
+</body>
+</html>
