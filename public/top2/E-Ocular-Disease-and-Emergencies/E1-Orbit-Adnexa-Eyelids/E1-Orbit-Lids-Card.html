@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 5 · Orbit, Adnexa &amp; Lids</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .k{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>05</b>Orbit &amp; lids</div>
+  </header>
+
+  <h1>Orbit, adnexa, and lids: <em>the septum decides</em></h1>
+  <p class="dek">The front of the eye is mostly benign lumps and lid position, with two things that must not be missed: an infection that has crossed the orbital septum, and a proptosis that means thyroid eye disease. Sort those first, then the rest.</p>
+
+  <section>
+    <h2><span class="n">01</span> Preseptal vs orbital cellulitis</h2>
+    <p class="lead">One line, the <span class="term">orbital septum</span>, separates a lid problem from a sight-and-life emergency. The globe signs tell you which side the infection is on.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 178" role="img" aria-label="Preseptal versus orbital cellulitis, divided by the orbital septum">
+        <line x1="320" y1="18" x2="320" y2="162" stroke="var(--ink-faint)" stroke-width="2" stroke-dasharray="6 5"/>
+        <text x="320" y="14" text-anchor="middle" font-size="10" fill="var(--ink-faint)" font-family="ui-monospace,monospace">orbital septum</text>
+        <rect x="28" y="28" width="272" height="122" rx="10" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+        <rect x="340" y="28" width="272" height="122" rx="10" fill="var(--trap-w)" stroke="color-mix(in srgb,var(--trap) 42%,var(--line))"/>
+        <g font-family="system-ui,sans-serif" fill="var(--ink)">
+          <text x="44" y="52" font-size="14" font-weight="800" fill="var(--accent-deep)">PRESEPTAL</text>
+          <text x="44" y="74" font-size="12">Lids swollen and red</text>
+          <text x="44" y="94" font-size="12">Vision normal</text>
+          <text x="44" y="114" font-size="12">Eye movements normal, no pain</text>
+          <text x="44" y="134" font-size="12">No proptosis, no RAPD</text>
+          <text x="356" y="52" font-size="14" font-weight="800" fill="var(--trap)">ORBITAL</text>
+          <text x="356" y="74" font-size="12">Proptosis</text>
+          <text x="356" y="94" font-size="12">Painful, restricted movements</text>
+          <text x="356" y="114" font-size="12">Vision down, RAPD</text>
+          <text x="356" y="134" font-size="12">Emergency: from ethmoid sinusitis</text>
+        </g>
+      </svg>
+      <figcaption>lids only is benign; the globe involved is an emergency</figcaption>
+    </figure>
+    <div class="cal trap" style="margin-top:14px"><div class="lab">Do not miss it</div><p><b>Orbital cellulitis</b> spreads from the <b>ethmoid sinus</b> through the paper-thin lamina papyracea. Proptosis, painful eye movements, falling vision, or an RAPD means it is behind the septum: <b>IV antibiotics, imaging, and possible drainage</b>, before it becomes an abscess or a cavernous sinus thrombosis.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Proptosis means thyroid until proven otherwise</h2>
+    <div class="cal big why"><div class="lab">Thyroid eye disease (Graves)</div><p>The <b>most common cause of proptosis in adults</b>, unilateral or bilateral. Look for <b>lid retraction and lag</b>, proptosis, a <b>restrictive myopathy</b> (the muscle bellies enlarge, the tendons are spared), exposure keratopathy, and the sight-threatening one, <b>compressive optic neuropathy</b>. The muscles go in the order <b>"I'M SLOW": Inferior rectus, Medial, Superior, Lateral</b>. Smoking makes it worse.</p></div>
+    <div class="cal pearl"><div class="lab">Other proptosis to know</div><p>In a <b>child with rapidly progressive proptosis</b>, think <b>rhabdomyosarcoma</b>, an emergency. The most common benign adult orbital tumor is a <b>cavernous hemangioma</b>; a painful, steroid-responsive proptosis with no mass is <b>idiopathic orbital inflammation</b> (pseudotumor).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The eyelids</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Problem</th><th>What it is</th></tr></thead>
+        <tbody>
+          <tr><td><b>Chalazion</b></td><td class="k">Chronic, painless lipogranuloma of a blocked meibomian gland</td></tr>
+          <tr><td><b>Hordeolum</b></td><td class="k">Acute infection: internal (meibomian) or external stye (Zeis/Moll)</td></tr>
+          <tr><td><b>Blepharitis</b></td><td class="k">Lid-margin inflammation: anterior (staph, seborrheic) or posterior (MGD)</td></tr>
+          <tr><td><b>Entropion</b></td><td class="k">Lid turns in, lashes rub the cornea (trichiasis)</td></tr>
+          <tr><td><b>Ectropion</b></td><td class="k">Lid turns out, epiphora and exposure</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px"><div class="lab">Lid cancer red flags</div><p><b>Madarosis</b> (lash loss), <b>ulceration, induration</b>, and a <b>pearly rolled border with telangiectasia</b> mean <b>basal cell carcinoma</b>, the most common, favoring the lower lid and medial canthus. A <b>recurrent chalazion</b> in an older patient can be a <b>sebaceous cell carcinoma</b> in disguise, biopsy it.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Ptosis and the lacrimal sac</h2>
+    <div class="cal why"><div class="lab">Ptosis, by cause</div><p><b>Aponeurotic</b> (age, a high lid crease, the common one). <b>Myogenic</b>, think <b>myasthenia</b> if it is fatigable and variable with diplopia, or CPEO. <b>Neurogenic</b>: a <b>CN III</b> palsy gives ptosis with a down-and-out, dilated eye; <b>Horner's</b> gives a mild ptosis with a miotic pupil. Always check the pupil.</p></div>
+    <div class="cal pearl"><div class="lab">Dacryocystitis</div><p>A <b>painful red swelling at the medial canthus</b> over the lacrimal sac, with tearing and mucopurulent reflux, from a <b>nasolacrimal duct obstruction</b>. Warm compresses and oral antibiotics acutely; the definitive fix is a <b>dacryocystorhinostomy</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology Card 5:</b> the lid glands, the lacrimal drainage, and the valveless orbital veins that carry orbital cellulitis to the cavernous sinus are that card. <b>Card 4 of Visual Biology:</b> the blowout fracture, the EOMs of thyroid myopathy, and the CN III and Horner ptosis. <b>Ocular Pharma Card 2:</b> the antibiotics for cellulitis. <b>Primary Eye Care:</b> exophthalmometry, lid eversion, and the motility exam read this card.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; The septum</div><p>Give the three globe signs that separate orbital from preseptal cellulitis, and the usual source.</p></div>
+    <div class="drill"><div class="t">2 &middot; Thyroid eye</div><p>List the signs and the muscle order "I'M SLOW."</p></div>
+    <div class="drill"><div class="t">3 &middot; The eyelids</div><p>Chalazion vs hordeolum, entropion vs ectropion, and the cancer red flags.</p></div>
+    <div class="drill"><div class="t">4 &middot; Ptosis</div><p>Three causes with a distinguishing feature each, and what the pupil adds.</p></div>
+    <div class="drill"><div class="t">5 &middot; Dacryocystitis</div><p>Where it swells, the cause, and the definitive treatment.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Preseptal vs orbital cellulitis?</span> <span class="a">Orbital has proptosis, painful restricted movements, reduced vision, and RAPD; preseptal has none of these (lids only).</span></li>
+      <li><span class="q">Usual source of orbital cellulitis?</span> <span class="a">Ethmoid sinusitis, through the lamina papyracea.</span></li>
+      <li><span class="q">Most common cause of adult proptosis?</span> <span class="a">Thyroid eye disease (Graves).</span></li>
+      <li><span class="q">Thyroid eye disease signs?</span> <span class="a">Lid retraction and lag, proptosis, restrictive myopathy, exposure keratopathy, compressive optic neuropathy.</span></li>
+      <li><span class="q">EOM order in thyroid eye disease?</span> <span class="a">"I'M SLOW": Inferior rectus, Medial, Superior, Lateral (bellies enlarge, tendons spared).</span></li>
+      <li><span class="q">Chalazion vs hordeolum?</span> <span class="a">Chalazion = chronic painless meibomian lipogranuloma; hordeolum = acute infection (internal meibomian, external Zeis/Moll).</span></li>
+      <li><span class="q">Entropion vs ectropion?</span> <span class="a">Entropion turns in (lashes rub the cornea); ectropion turns out (epiphora, exposure).</span></li>
+      <li><span class="q">Eyelid cancer red flags and the common one?</span> <span class="a">Madarosis, ulceration, induration, pearly border with telangiectasia; basal cell carcinoma (lower lid, medial canthus).</span></li>
+      <li><span class="q">Which lid cancer mimics a recurrent chalazion?</span> <span class="a">Sebaceous cell carcinoma.</span></li>
+      <li><span class="q">Ptosis causes and one feature each?</span> <span class="a">Aponeurotic (age, high crease); myogenic (myasthenia, fatigable); neurogenic (CN III down-and-out + dilated; Horner mild + miotic).</span></li>
+      <li><span class="q">Dacryocystitis location and cause?</span> <span class="a">Painful swelling at the medial canthus over the sac, from nasolacrimal duct obstruction.</span></li>
+      <li><span class="q">Most common childhood orbital malignancy and its urgency?</span> <span class="a">Rhabdomyosarcoma; rapidly progressive proptosis, an emergency.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 5 &middot; the septum decides</div>
+
+</div>
+</body>
+</html>
