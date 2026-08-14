@@ -3,7 +3,7 @@
 // Add or restructure content here; nothing else hard-codes these paths.
 
 export type ItemType =
-  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'mock' | 'interactive' | 'feature'
+  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'preboards-set4' | 'mock' | 'interactive' | 'feature'
   | 'tool'
 
 // The five per-subject content types (everything except the global mocks, interactives,
@@ -35,7 +35,7 @@ export const SUBJECTS: SubjectDef[] = [
 ]
 
 const SUBJECT_ITEM_TYPES: SubjectItemType[] =
-  ['reviewer', 'strategy', 'exam', 'preboards-2025', 'preboards-set2', 'preboards-set3']
+  ['reviewer', 'strategy', 'exam', 'preboards-2025', 'preboards-set2', 'preboards-set3', 'preboards-set4']
 
 const TYPE_LABEL: Record<SubjectItemType, string> = {
   reviewer: 'Reviewer',
@@ -44,6 +44,7 @@ const TYPE_LABEL: Record<SubjectItemType, string> = {
   'preboards-2025': 'Preboards Set 1',
   'preboards-set2': 'Preboards Set 2',
   'preboards-set3': 'Preboards Set 3',
+  'preboards-set4': 'Preboards Set 4',
 }
 
 // No public/free items: all Top 2 content is controlled per-user via grants.
@@ -63,6 +64,7 @@ function fileFor(code: string, type: SubjectItemType): string {
     'preboards-2025': `${code}-Preboards-2025.html`,
     'preboards-set2': `${code}-Preboards-Set2.html`,
     'preboards-set3': `${code}-Preboards-Set3.html`,
+    'preboards-set4': `${code}-Preboards-Set4.html`,
   }
   return files[type]
 }
