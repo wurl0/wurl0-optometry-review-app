@@ -25,6 +25,7 @@ const SOURCE_LABEL: Record<string, string> = {
   'preboards-2025': 'Preboards Set 1',
   'preboards-set2': 'Preboards Set 2',
   'preboards-set3': 'Preboards Set 3',
+  'preboards-set4': 'Preboards Set 4',
   'mock': 'Mock board',
 }
 

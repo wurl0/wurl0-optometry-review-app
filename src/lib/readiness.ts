@@ -20,7 +20,7 @@ const WINDOW_TARGET_ITEMS = 150 // pool recent attempts up to ~this many items
 const WINDOW_MIN_ATTEMPTS = 3   // ...but always across at least this many sittings
 const CONFIDENCE_MIN_ITEMS = 75 // under this many items, the subject is provisional
 
-export type AttemptSource = 'subject-exam' | 'preboards-2025' | 'preboards-set2' | 'mock'
+export type AttemptSource = 'subject-exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'preboards-set4' | 'mock'
 
 export interface OleAttempt {
   subjectCode: string

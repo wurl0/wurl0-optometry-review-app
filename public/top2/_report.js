@@ -9,6 +9,8 @@
     if (/Subject-Exam/i.test(file)) source = 'subject-exam';
     else if (/Preboards-2025/i.test(file)) source = 'preboards-2025';
     else if (/Preboards-Set2/i.test(file)) source = 'preboards-set2';
+    else if (/Preboards-Set3/i.test(file)) source = 'preboards-set3';
+    else if (/Preboards-Set4/i.test(file)) source = 'preboards-set4';
     else if (/Mock-Board/i.test(file)) source = 'mock';
     const m = file.match(/^([A-H])-/); // "D-Subject-Exam.html" -> "D"
     return { source, subjectCode: m ? m[1] : null };

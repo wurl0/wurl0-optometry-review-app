@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase-server'
 
 const SUBJECT_CODES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-const SOURCES = ['subject-exam', 'preboards-2025', 'preboards-set2', 'mock']
+const SOURCES = ['subject-exam', 'preboards-2025', 'preboards-set2', 'preboards-set3', 'preboards-set4', 'mock']
 
 // Receives a finished-exam score from a Top 2 HTML page (via /top2/_report.js).
 // The page is already behind the middleware auth gate, so the Supabase cookie
