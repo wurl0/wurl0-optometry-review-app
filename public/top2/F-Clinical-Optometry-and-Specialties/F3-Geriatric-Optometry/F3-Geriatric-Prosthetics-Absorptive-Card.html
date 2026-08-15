@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Clinical Optometry Card 6 · Geriatric, Prosthetics &amp; Absorptive Lenses</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Clinical Optometry &amp; Specialties</div>
+    </div>
+    <div class="card-no">Card<b>06</b>Geriatric</div>
+  </header>
+
+  <h1>The aging eye, <em>and the lenses it needs</em></h1>
+  <p class="dek">Age changes the whole visual system and stacks the odds toward four diseases. Adapt the exam, screen for the big four, and prescribe light, contrast, and protection. Then two specialty topics: the artificial eye and the tinted lens.</p>
+
+  <section>
+    <h2><span class="n">01</span> Normal aging, and adapting the exam</h2>
+    <p class="lead">Expected changes: <b>presbyopia</b>, <b>senile miosis</b> (a smaller pupil needing more light), reduced <b>contrast sensitivity</b>, slower <b>dark adaptation</b>, a <b>yellowing lens</b> (less blue), <b>dry eye</b>, and arcus senilis.</p>
+    <div class="cal why"><div class="lab">Adapt at the chair</div><p>Give <b>more light</b> and <b>higher contrast</b>, go slower, use larger targets, and mind <b>mobility and falls</b>. A small senile pupil is exactly why the elderly read better in bright light.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The four that steal sight</h2>
+    <p class="lead">The leading causes of vision loss in older adults, each with a signature pattern.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 170" role="img" aria-label="Vision loss patterns: cataract uniform haze, AMD central scotoma, glaucoma peripheral tunnel, diabetic scattered patches">
+        <g>
+          <circle cx="95" cy="80" r="48" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+          <circle cx="95" cy="80" r="48" fill="var(--ink-faint)" opacity="0.32"/>
+          <circle cx="255" cy="80" r="48" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+          <circle cx="255" cy="80" r="17" fill="var(--ink)"/>
+          <circle cx="415" cy="80" r="48" fill="var(--ink)" stroke="var(--line)" stroke-width="2"/>
+          <circle cx="415" cy="80" r="19" fill="var(--surface-2)"/>
+          <circle cx="575" cy="80" r="48" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+          <g fill="var(--ink)"><circle cx="560" cy="62" r="6"/><circle cx="590" cy="72" r="7"/><circle cx="565" cy="95" r="5"/><circle cx="592" cy="98" r="6"/><circle cx="575" cy="78" r="4"/></g>
+        </g>
+        <g font-family="system-ui,sans-serif" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">
+          <text x="95" y="146">cataract</text><text x="255" y="146">AMD</text><text x="415" y="146">glaucoma</text><text x="575" y="146">diabetic</text>
+        </g>
+        <g font-family="ui-monospace,Menlo,monospace" text-anchor="middle" font-size="8.5" fill="var(--ink-faint)">
+          <text x="95" y="160">uniform haze</text><text x="255" y="160">central loss</text><text x="415" y="160">tunnel</text><text x="575" y="160">scattered</text>
+        </g>
+      </svg>
+      <figcaption>cataract blurs everything, AMD takes the center, glaucoma narrows the periphery, diabetic retinopathy scatters patches</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">Hooks</div><p><b>Cataract</b> is the leading <b>treatable</b> cause. <b>AMD</b> = <b>central</b> vision (reading, faces). <b>Glaucoma</b> = <b>peripheral</b> first (silent). <b>Diabetic retinopathy</b> = scattered vascular damage. Detail is on the Ocular Disease cards.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The whole patient</h2>
+    <div class="cal why"><div class="lab">Geriatric care is holistic</div><p>Screen for <b>systemic disease</b> (diabetes, hypertension) and <b>polypharmacy</b> (drugs with ocular side effects), assess <b>driving, falls, and cognition</b>, and connect to <b>low-vision rehab</b> when correction is not enough. The eye exam is one window on general health.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Ocular prosthetics</h2>
+    <div class="cal why"><div class="lab">After the eye is lost or shrunken</div><p>An <b>anophthalmic socket</b> (after <b>enucleation</b> or <b>evisceration</b>) is fitted with an <b>ocular prosthesis</b>, a custom acrylic artificial eye over an orbital implant, for cosmesis and lid support. A <b>scleral shell</b> is a thin prosthesis worn over a <b>phthisical</b> (shrunken) or disfigured but present eye. Both need handling and hygiene teaching.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Absorptive and tinted lenses</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Need</th><th>Choice</th></tr></thead>
+        <tbody>
+          <tr><td><b>Photophobia / glare</b></td><td class="act">Gray or amber tint; Polaroid for reflected glare (avoid over-tinting)</td></tr>
+          <tr><td><b>UV / blue protection</b></td><td>UV-blocking (plastic absorbs more than glass), blue-light filters</td></tr>
+          <tr><td><b>Low-light contrast</b></td><td>Yellow / amber</td></tr>
+          <tr><td><b>Convenience</b></td><td>Photochromic (darkens with UV)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:12px"><div class="lab">Two facts to carry</div><p><b>Cobalt oxide</b> tints glass blue; a <b>glassblower/welder cataract</b> is <b>infrared</b> damage (wear IR-absorbing lenses). Optical density measures how dark a tint is: 50% transmission is OD 0.30.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Ocular Disease (E):</b> cataract, AMD, glaucoma, diabetic retinopathy in depth. <b>Card 1 (Low vision):</b> the rehab these patients need. <b>Optics &amp; Dispensing (Materials):</b> tints, UV, and optical density.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Aging changes</div><p>List the normal ocular changes and three exam adaptations.</p></div>
+    <div class="drill"><div class="t">2 &middot; The big four</div><p>Draw each vision-loss pattern and name the leading treatable cause.</p></div>
+    <div class="drill"><div class="t">3 &middot; Holistic care</div><p>What else you screen in a geriatric patient beyond the eye.</p></div>
+    <div class="drill"><div class="t">4 &middot; Prosthetics</div><p>Ocular prosthesis vs scleral shell, and their sockets/eyes.</p></div>
+    <div class="drill"><div class="t">5 &middot; Tints</div><p>Match a tint to photophobia, low light, UV, and glare.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Normal aging ocular changes?</span> <span class="a">Presbyopia, senile miosis, reduced contrast, slow dark adaptation, yellowing lens, dry eye, arcus.</span></li>
+      <li><span class="q">Why do the elderly read better in bright light?</span> <span class="a">Senile miosis (small pupil) needs more light.</span></li>
+      <li><span class="q">Exam adaptations for older adults?</span> <span class="a">More light and contrast, slower pace, larger targets, mind mobility/falls.</span></li>
+      <li><span class="q">The four leading age-related causes?</span> <span class="a">Cataract, AMD, glaucoma, diabetic retinopathy.</span></li>
+      <li><span class="q">AMD vs glaucoma field pattern?</span> <span class="a">AMD takes central vision; glaucoma takes peripheral first.</span></li>
+      <li><span class="q">Leading treatable cause?</span> <span class="a">Cataract.</span></li>
+      <li><span class="q">What else does geriatric care screen?</span> <span class="a">Systemic disease, polypharmacy, driving, falls, cognition; refer to low-vision rehab.</span></li>
+      <li><span class="q">Ocular prosthesis vs scleral shell?</span> <span class="a">Prosthesis = artificial eye for an anophthalmic socket; scleral shell = thin prosthesis over a phthisical/present eye.</span></li>
+      <li><span class="q">Enucleation vs evisceration?</span> <span class="a">Enucleation removes the whole globe; evisceration removes contents, keeps the scleral shell.</span></li>
+      <li><span class="q">Tint for photophobia/glare?</span> <span class="a">Gray or amber; Polaroid for reflected glare (avoid over-tinting).</span></li>
+      <li><span class="q">Best UV absorber, glass or plastic?</span> <span class="a">Plastic absorbs more UV than glass.</span></li>
+      <li><span class="q">Cobalt and glassblower cataract?</span> <span class="a">Cobalt oxide = blue glass; glassblower/welder cataract = infrared damage.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Clinical Optometry Card 6 &middot; Light, contrast, protection, and the whole patient</div>
+
+</div>
+</body>
+</html>
