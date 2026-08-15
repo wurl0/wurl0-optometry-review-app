@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Theoretical Optics Card 1 · Refraction, Vergence &amp; Image Formation</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Theoretical Optics &amp; Dispensing</div>
+    </div>
+    <div class="card-no">Card<b>01</b>Refraction</div>
+  </header>
+
+  <h1>How light bends, <em>and where it focuses</em></h1>
+  <p class="dek">Every optics computation on the paper is one of a few ideas: light slows in denser media and bends, it disperses by wavelength, and a lens adds vergence. Learn Snell, the critical angle, the vergence equation, and the sign rules, and the calculation items become plug-and-play.</p>
+
+  <section>
+    <h2><span class="n">01</span> Index and Snell's law</h2>
+    <p class="lead">The refractive index is how much a medium slows light: <span class="eq">n = c / v</span>. Entering a <b>denser</b> (higher-n) medium, light <b>slows</b> and bends <b>toward</b> the normal.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 280" role="img" aria-label="Refraction at a boundary: an incident ray bends toward the normal entering a denser medium">
+        <rect x="40" y="150" width="560" height="104" rx="6" fill="var(--accent-wash)"/>
+        <line x1="40" y1="150" x2="600" y2="150" stroke="var(--ink-soft)" stroke-width="2"/>
+        <line x1="320" y1="44" x2="320" y2="256" stroke="var(--ink-faint)" stroke-width="1.4" stroke-dasharray="5 5"/>
+        <text x="322" y="56" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">normal</text>
+        <!-- incident ray -->
+        <line x1="212" y1="66" x2="320" y2="150" stroke="var(--accent)" stroke-width="3"/>
+        <path d="M320 150 l-14 -3 l6 -11 z" fill="var(--accent)"/>
+        <!-- refracted ray -->
+        <line x1="320" y1="150" x2="372" y2="248" stroke="var(--accent-deep)" stroke-width="3"/>
+        <path d="M372 248 l-3 -14 l-11 6 z" fill="var(--accent-deep)"/>
+        <!-- reflected (faint) -->
+        <line x1="320" y1="150" x2="410" y2="80" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <!-- angle arcs -->
+        <path d="M320 108 A42 42 0 0 0 292 122" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+        <path d="M320 200 A50 50 0 0 0 337 197" fill="none" stroke="var(--accent-deep)" stroke-width="1.5"/>
+        <g font-family="system-ui,sans-serif" font-size="12" font-weight="700">
+          <text x="278" y="112" fill="var(--accent)">&theta;1</text>
+          <text x="336" y="212" fill="var(--accent-deep)">&theta;2</text>
+        </g>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--ink-soft)">
+          <text x="60" y="130">n1 (air, faster)</text>
+          <text x="60" y="180" fill="var(--accent-deep)">n2 (glass, slower)</text>
+        </g>
+      </svg>
+      <figcaption>into a denser medium (n2 &gt; n1): light slows, &theta;2 &lt; &theta;1, so the ray bends toward the normal</figcaption>
+    </figure>
+    <div class="cal why" style="margin-top:13px"><div class="lab">What changes at the boundary, and what does not</div><p>Crossing into glass, <b>speed and wavelength drop</b>, but <b>frequency stays the same</b> (frequency is set by the source, so color is conserved). Snell's law is <span class="eq">n1 sin&theta;1 = n2 sin&theta;2</span>, the angle depends only on the two indices.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Critical angle and total internal reflection</h2>
+    <div class="cal big trap"><div class="lab">Going the other way (dense to rare)</div><p>Leaving a dense medium, the ray bends <b>away</b> from the normal. Past the <span class="term">critical angle</span> it cannot leave at all and reflects completely, <b>total internal reflection</b>. <span class="eq">sin&theta;c = n2 / n1</span>, so a <b>higher index gives a smaller critical angle</b>.</p></div>
+    <div class="cal mnem"><div class="lab">Where you see it</div><p><b>Fiber-optic</b> instrument cables and the <b>sparkle of a diamond</b> (very high index, tiny critical angle, so light bounces around inside before escaping).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Dispersion and color</h2>
+    <div class="cal why"><div class="lab">A prism spreads white light</div><p>Index varies slightly with wavelength, so each color bends by a different amount, <span class="term">dispersion</span>. <b>Blue/violet bends more</b> (shorter wavelength, higher frequency) and focuses <b>closer</b> (shorter focal length) than red, the basis of longitudinal chromatic aberration.</p></div>
+    <div class="cal pearl"><div class="lab">Order and the Abbe preview</div><p>By <b>increasing frequency</b>: red, orange, yellow, green, blue, violet (violet is highest frequency, shortest wavelength). A material's <b>Abbe number</b> rates how little it disperses, high Abbe = little color fringing (its own card ahead).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Vergence and power</h2>
+    <div class="cal big why"><div class="lab">The one equation that runs the eye and every lens</div><p><span class="eq">L' = L + F</span>: outgoing vergence = incoming vergence + lens power. <b>Vergence</b> (in diopters) = n divided by the distance in meters; converging light is <b>plus</b>, diverging is <b>minus</b>. Lens <b>power</b> <span class="eq">F = 1 / f</span> (focal length in meters), so a stronger lens has a <b>shorter</b> focal length.</p></div>
+    <div class="cal why"><div class="lab">Worked example</div><p>A diverging lens of <span class="eq">&minus;8.50 D</span> has focal length f = 1 / (&minus;8.50) = <span class="eq">&minus;0.118 m</span> (negative, virtual focus on the incoming side).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Image formation</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Lens</th><th>Object position</th><th>Image</th></tr></thead>
+        <tbody>
+          <tr><td><b>Converging (+)</b></td><td>Beyond 2F</td><td class="act">Real, inverted, minified</td></tr>
+          <tr><td><b>Converging (+)</b></td><td>At F</td><td>Rays emerge parallel, image at infinity</td></tr>
+          <tr><td><b>Converging (+)</b></td><td>Inside F</td><td>Virtual, upright, magnified (a magnifier)</td></tr>
+          <tr><td><b>Diverging (&minus;)</b></td><td>Any distance</td><td class="act">Always virtual, upright, minified</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">Magnification sign</div><p><span class="eq">m = image distance / object distance</span> (or L / L'). <b>Negative m = inverted and real</b>; <b>positive m = upright and virtual</b>. A diverging lens is always positive m and less than 1.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Card ahead (Prism &amp; thick lens):</b> Snell drives the prism deviation, and vergence drives back-vertex power. <b>Primary Care:</b> vergence L' = L + F is the retinoscopy and lens-effectivity logic. <b>Physiological Optics:</b> the schematic eye is just these surfaces stacked.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Snell at a boundary</div><p>Draw a ray into glass, label the normal and both angles, say which is smaller and why.</p></div>
+    <div class="drill"><div class="t">2 &middot; Critical angle</div><p>Formula, and what a higher index does to it; two real examples.</p></div>
+    <div class="drill"><div class="t">3 &middot; Dispersion</div><p>Which color bends most, focuses closest, and the increasing-frequency order.</p></div>
+    <div class="drill"><div class="t">4 &middot; Power and vergence</div><p>Write L' = L + F and compute the focal length of a -8.50 D lens.</p></div>
+    <div class="drill"><div class="t">5 &middot; Image table</div><p>Rebuild the four image cases from memory, with the magnification sign rule.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Refractive index?</span> <span class="a">n = c / v, the ratio of light speed in vacuum to its speed in the medium.</span></li>
+      <li><span class="q">Which way does light bend into a denser medium?</span> <span class="a">Toward the normal (it slows down).</span></li>
+      <li><span class="q">What is conserved crossing a boundary?</span> <span class="a">Frequency (color); speed and wavelength change.</span></li>
+      <li><span class="q">Snell's law?</span> <span class="a">n1 sin(theta1) = n2 sin(theta2); the angle depends on the two indices.</span></li>
+      <li><span class="q">Critical angle and TIR?</span> <span class="a">sin(theta c) = n2/n1; past it, light totally internally reflects (dense to rare only).</span></li>
+      <li><span class="q">Higher index does what to the critical angle?</span> <span class="a">Makes it smaller (easier TIR), as in a diamond.</span></li>
+      <li><span class="q">Which color disperses/bends most and focuses closest?</span> <span class="a">Blue/violet (shorter wavelength, shorter focal length).</span></li>
+      <li><span class="q">Increasing-frequency color order?</span> <span class="a">Red, orange, yellow, green, blue, violet.</span></li>
+      <li><span class="q">Power and focal length?</span> <span class="a">F = 1/f (meters); stronger lens = shorter focal length.</span></li>
+      <li><span class="q">The vergence equation?</span> <span class="a">L' = L + F (outgoing vergence = incoming + lens power).</span></li>
+      <li><span class="q">Focal length of a -8.50 D lens?</span> <span class="a">-0.118 m (virtual focus).</span></li>
+      <li><span class="q">Diverging lens image?</span> <span class="a">Always virtual, upright, minified (positive m, less than 1).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Theoretical Optics Card 1 &middot; Slow bends toward normal, L' = L + F</div>
+
+</div>
+</body>
+</html>
