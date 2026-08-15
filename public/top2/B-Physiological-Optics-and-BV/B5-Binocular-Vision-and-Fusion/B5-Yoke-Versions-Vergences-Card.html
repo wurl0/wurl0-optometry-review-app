@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 1 · Versions, Vergences &amp; Yoke Muscles</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>01</b>Versions &amp; vergences</div>
+  </header>
+
+  <h1>Both eyes, one command: <em>yoke, version, vergence</em></h1>
+  <p class="dek">Card 4 of Visual Biology gave you the six muscles of one eye. This is the layer above it: how the brain drives the pair. Nail two laws, one yoke chart, and the naming decoder, and every version, vergence, and diplopia question turns into recognition.</p>
+
+  <section>
+    <h2><span class="n">01</span> Two ways the eyes move</h2>
+    <p class="lead">Every binocular movement is one of two kinds, decided by whether the eyes move the <b>same</b> way or <b>opposite</b> ways.</p>
+    <div class="cal why"><div class="lab">Version = conjugate (same direction)</div><p>Both eyes swing the <b>same</b> way, like a soldier's eyes tracking a passing car. Look right = <span class="term">dextroversion</span>, look up = <span class="term">supraversion</span> (sursumversion). The pair stays parallel.</p></div>
+    <div class="cal trap"><div class="lab">Vergence = disjunctive (opposite directions)</div><p>The eyes move <b>toward or away from each other</b>. Both turn in for a near target = <span class="term">convergence</span>; both turn out = <span class="term">divergence</span>. This is the only time the two visual axes are not parallel.</p></div>
+    <div class="cal mnem"><div class="lab">Hook</div><p><b>Ver</b>sion = eyes go the <b>ver</b>y same way. <b>Ver</b>gence = eyes di<b>verge</b>/con<b>verge</b>, they disagree.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The two laws that govern the pair</h2>
+    <div class="cal big why"><div class="lab">Hering's law of equal innervation (between the two eyes)</div><p>Yoke muscles of the <b>two eyes</b> get an <b>equal and simultaneous</b> stream of innervation. Push both eyes right and the right lateral rectus and left medial rectus fire together, in equal measure. This is why a palsy in one eye throws off the other: overdrive to the weak muscle spills equally to its yoke (the basis of primary vs secondary deviation).</p></div>
+    <div class="cal big trap"><div class="lab">Sherrington's law of reciprocal innervation (within one eye)</div><p>When a muscle contracts, its <b>antagonist in the same eye relaxes</b>. Right eye adducts: right medial rectus contracts as the right lateral rectus lets go, in equal measure.</p></div>
+    <div class="cal mnem"><div class="lab">Keep them straight</div><p><b>Hering = two eyes</b> (yoke pairs, equal innervation). <b>Sherrington = one eye</b> (agonist vs antagonist, reciprocal). Two names, two scopes.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The yoke chart</h2>
+    <p class="lead">A <span class="term">yoke pair</span> is the two muscles, one in each eye, that move the eyes together into a given direction of gaze. Drawn from the patient's view (their right is on the right).</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 340" role="img" aria-label="The six cardinal positions of gaze with the yoke muscle pair acting in each">
+        <!-- gaze lines from the two eyes to each position -->
+        <g stroke="var(--line)" stroke-width="2" fill="none">
+          <line x1="300" y1="176" x2="150" y2="70"/><line x1="340" y1="176" x2="150" y2="70"/>
+          <line x1="300" y1="176" x2="490" y2="70"/><line x1="340" y1="176" x2="490" y2="70"/>
+          <line x1="300" y1="176" x2="118" y2="176"/><line x1="340" y1="176" x2="522" y2="176"/>
+          <line x1="300" y1="176" x2="150" y2="282"/><line x1="340" y1="176" x2="150" y2="282"/>
+          <line x1="300" y1="176" x2="490" y2="282"/><line x1="340" y1="176" x2="490" y2="282"/>
+        </g>
+        <!-- the two eyes -->
+        <circle cx="300" cy="176" r="22" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="300" cy="176" r="7" fill="var(--ink)"/>
+        <circle cx="340" cy="176" r="22" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="340" cy="176" r="7" fill="var(--ink)"/>
+        <text x="320" y="220" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="var(--ink-faint)">OD &nbsp; OS</text>
+
+        <g font-family="system-ui,sans-serif" text-anchor="middle">
+          <!-- up-left : levoelevation -->
+          <rect x="86" y="40" width="128" height="44" rx="9" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 45%,var(--line))"/>
+          <text x="150" y="59" font-size="14" font-weight="800" fill="var(--ink)">RIO + LSR</text><text x="150" y="74" font-size="9.5" fill="var(--ink-soft)">up &amp; left (levo-elev)</text>
+          <!-- up-right : dextroelevation -->
+          <rect x="426" y="40" width="128" height="44" rx="9" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+          <text x="490" y="59" font-size="14" font-weight="800" fill="var(--ink)">RSR + LIO</text><text x="490" y="74" font-size="9.5" fill="var(--ink-soft)">up &amp; right (dextro-elev)</text>
+          <!-- left : levoversion -->
+          <rect x="30" y="154" width="128" height="44" rx="9" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 45%,var(--line))"/>
+          <text x="94" y="173" font-size="14" font-weight="800" fill="var(--ink)">RMR + LLR</text><text x="94" y="188" font-size="9.5" fill="var(--ink-soft)">left (levoversion)</text>
+          <!-- right : dextroversion -->
+          <rect x="482" y="154" width="128" height="44" rx="9" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+          <text x="546" y="173" font-size="14" font-weight="800" fill="var(--ink)">RLR + LMR</text><text x="546" y="188" font-size="9.5" fill="var(--ink-soft)">right (dextroversion)</text>
+          <!-- down-left : levodepression -->
+          <rect x="86" y="268" width="128" height="44" rx="9" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 45%,var(--line))"/>
+          <text x="150" y="287" font-size="14" font-weight="800" fill="var(--ink)">RSO + LIR</text><text x="150" y="302" font-size="9.5" fill="var(--ink-soft)">down &amp; left (levo-dep)</text>
+          <!-- down-right : dextrodepression -->
+          <rect x="426" y="268" width="128" height="44" rx="9" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+          <text x="490" y="287" font-size="14" font-weight="800" fill="var(--ink)">RIR + LSO</text><text x="490" y="302" font-size="9.5" fill="var(--ink-soft)">down &amp; right (dextro-dep)</text>
+        </g>
+      </svg>
+      <figcaption>green = looking right (dextro), blue = looking left (levo) &middot; in each direction, the abducting eye uses a rectus, the adducting eye uses the matching muscle</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">How to rebuild it without memorizing 6 pairs</div><p>For any diagonal, the <b>abducting</b> eye (the one turning out) uses its <b>rectus</b>: up-and-out = SR, down-and-out = IR. The <b>adducting</b> eye (turning in) uses the <b>oblique</b> that matches the height: up-and-in = IO, down-and-in = SO. So up-and-right: right eye abducts (RSR), left eye adducts up (LIO). Build any box from that one rule.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The naming decoder</h2>
+    <p class="lead">Board stems hide the movement inside a compound word. Split it: <b>side</b> + <b>vertical</b> + <b>version</b>.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Prefix</th><th>Means</th><th>Example term</th></tr></thead>
+        <tbody>
+          <tr><td><b>Dextro-</b></td><td class="act">to the right</td><td>Dextroversion = both eyes right</td></tr>
+          <tr><td><b>Levo-</b></td><td class="act">to the left</td><td>Levoversion = both eyes left</td></tr>
+          <tr><td><b>Supra- / Sursum-</b></td><td class="act">up</td><td>Supraversion = both eyes up</td></tr>
+          <tr><td><b>Infra- / Deorsum-</b></td><td class="act">down</td><td>Infraversion = both eyes down</td></tr>
+          <tr><td><b>Dextroelevation</b></td><td>up and to the right</td><td class="cn">RSR + LIO</td></tr>
+          <tr><td><b>Levodepression</b></td><td>down and to the left</td><td class="cn">RSO + LIR</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">Worked example (a classic stem)</div><p>"Yoke muscles are the right superior rectus and left inferior oblique." Decode: RSR abducts-and-elevates the right eye, LIO adducts-and-elevates the left, so both eyes go <b>up and to the right</b> = <span class="term">dextroelevation</span> (dextrosupraversion).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Cycloversions and cyclovergences</h2>
+    <p class="lead">The eyes can also <b>roll</b> about the line of sight. Same naming logic: same direction = version, mirror = vergence.</p>
+    <div class="cal why"><div class="lab">Cycloversion (same way)</div><p>Both upper corneal poles roll the <b>same</b> direction. <span class="term">Dextrocycloversion</span> = both tops roll to the right, so the right eye extorts (RIO) and the left intorts (LSO).</p></div>
+    <div class="cal trap"><div class="lab">Cyclovergence (mirror)</div><p>The poles roll <b>toward or away from</b> each other. Both tops toward the nose = <span class="term">conclination</span> (incyclovergence); both away = <span class="term">disclination</span> (excyclovergence). Watch the trap: "both eyes rotate inward" is a vergence, not a version.</p></div>
+    <div class="cal mnem"><div class="lab">Torsion hook (carried from Visual Biology Card 4)</div><p>Superiors <b>in</b>tort (SR, SO), inferiors <b>ex</b>tort (IR, IO). That decides which muscle rolls which way.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology Card 4:</b> single-eye muscle actions and the three palsies, the layer under this one. <b>Primary Eye Care:</b> the H-pattern motility test drives the eyes through exactly these six yoke positions; a lag names the weak muscle. <b>Ocular Disease:</b> a cranial-nerve palsy shows up here as a yoke that will not follow, and Hering's law explains why the good eye overshoots (secondary deviation).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Version vs vergence</div><p>Define each in one line, and give the four version prefixes with directions.</p></div>
+    <div class="drill"><div class="t">2 &middot; The two laws</div><p>State Hering and Sherrington, and which is "two eyes" vs "one eye."</p></div>
+    <div class="drill"><div class="t">3 &middot; The yoke chart</div><p>Draw the six positions and fill every yoke pair from memory, then check with the abduct-rectus / adduct-oblique rule.</p></div>
+    <div class="drill"><div class="t">4 &middot; Decode two stems</div><p>Turn "RSR + LIO" and "RSO + LIR" into their movement names, and go the other way from "levoelevation."</p></div>
+    <div class="drill"><div class="t">5 &middot; Cyclo</div><p>Define dextrocycloversion and conclination, and name the muscles for each.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Version vs vergence?</span> <span class="a">Version = both eyes same direction (conjugate); vergence = opposite directions (disjunctive, con/divergence).</span></li>
+      <li><span class="q">Hering's law?</span> <span class="a">Equal and simultaneous innervation to the yoke muscles of the TWO eyes.</span></li>
+      <li><span class="q">Sherrington's law?</span> <span class="a">Within ONE eye, a muscle contracts as its antagonist relaxes (reciprocal innervation).</span></li>
+      <li><span class="q">Which law is one eye vs two eyes?</span> <span class="a">Sherrington = one eye (agonist/antagonist); Hering = two eyes (yoke pairs).</span></li>
+      <li><span class="q">Yoke pair for dextroversion (look right)?</span> <span class="a">Right lateral rectus + left medial rectus.</span></li>
+      <li><span class="q">Yoke pair for up-and-right (dextroelevation)?</span> <span class="a">Right superior rectus + left inferior oblique.</span></li>
+      <li><span class="q">Yoke pair for down-and-right (dextrodepression)?</span> <span class="a">Right inferior rectus + left superior oblique.</span></li>
+      <li><span class="q">Yoke pair for down-and-left (levodepression)?</span> <span class="a">Right superior oblique + left inferior rectus.</span></li>
+      <li><span class="q">The build-it rule for any yoke box?</span> <span class="a">Abducting eye uses its rectus (up=SR, down=IR); adducting eye uses the matching oblique (up=IO, down=SO).</span></li>
+      <li><span class="q">Dextrocycloversion muscles?</span> <span class="a">Both tops roll right: right eye extorts (RIO), left eye intorts (LSO).</span></li>
+      <li><span class="q">Conclination?</span> <span class="a">Incyclovergence: both upper poles roll toward the nose (a vergence, not a version).</span></li>
+      <li><span class="q">Why does one-eye palsy disturb the other eye?</span> <span class="a">Hering's law: extra innervation to the weak muscle goes equally to its yoke, so the sound eye overshoots (secondary deviation).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 1 &middot; Hering two eyes, Sherrington one eye</div>
+
+</div>
+</body>
+</html>
