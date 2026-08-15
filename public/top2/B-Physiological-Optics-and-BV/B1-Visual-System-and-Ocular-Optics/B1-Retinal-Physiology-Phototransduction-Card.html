@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 5 · Retinal Physiology &amp; Phototransduction</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>05</b>Retinal physiology</div>
+  </header>
+
+  <h1>Light turns the receptor <em>off</em></h1>
+  <p class="dek">The photoreceptor is the one neuron that fires in the dark and quiets in the light. Learn the dark current, the cascade that shuts it, the visual cycle that reloads the pigment, and the adaptation curve, and the physiology questions collapse into one story.</p>
+
+  <section>
+    <h2><span class="n">01</span> Two receptors, split shift (duplicity)</h2>
+    <p class="lead">Rods and cones divide the day. The <span class="term">duplicity theory</span> says one system runs dim light, the other bright.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th></th><th>Rods</th><th>Cones</th></tr></thead>
+        <tbody>
+          <tr><td><b>Number / location</b></td><td>~120 million, peripheral</td><td>~6 million, foveal</td></tr>
+          <tr><td><b>Works in</b></td><td class="act">Dim (scotopic)</td><td class="act">Bright (photopic)</td></tr>
+          <tr><td><b>Acuity</b></td><td>Low (many converge)</td><td>High (1:1 at fovea)</td></tr>
+          <tr><td><b>Color</b></td><td>No (one pigment)</td><td>Yes (three pigments)</td></tr>
+          <tr><td><b>Pigment</b></td><td>Rhodopsin</td><td>Iodopsin (photopsins)</td></tr>
+          <tr><td><b>Peak sensitivity</b></td><td class="cn">507 nm</td><td class="cn">555 nm</td></tr>
+          <tr><td><b>Adaptation</b></td><td>Slow (to ~30 min)</td><td>Fast (~7 min)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Phototransduction: light shuts the dark current</h2>
+    <div class="cal big why"><div class="lab">In the dark, the receptor is ON</div><p>Cyclic GMP holds the <b>CNG sodium channels open</b>, a steady <span class="term">dark current</span> keeps the cell <b>depolarized</b>, and it <b>releases glutamate tonically</b>. Dark is the receptor's busy state.</p></div>
+    <div class="cal big trap"><div class="lab">Light runs the cascade and turns it OFF</div><p>A photon isomerizes <b>11-cis retinal to all-trans</b>, activating opsin (metarhodopsin II). That activates <b>transducin</b> (a G protein), which switches on <b>phosphodiesterase (PDE)</b>. PDE <b>hydrolyzes cGMP</b>, so cGMP falls, the <b>Na channels close</b>, the cell <b>hyperpolarizes</b>, and glutamate release <b>drops</b>.</p></div>
+    <div class="cal mnem"><div class="lab">The one-line chain</div><p><b>Light &rarr; retinal flips &rarr; opsin &rarr; transducin &rarr; PDE &rarr; cGMP down &rarr; Na channels close &rarr; hyperpolarize &rarr; less glutamate.</b> The receptor is the neuron that quiets when lit.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The visual cycle (reloading the pigment)</h2>
+    <div class="cal why"><div class="lab">All-trans back to 11-cis</div><p>Bleached <b>all-trans retinal</b> travels to the <b>RPE</b>, is reduced and then <b>re-isomerized to 11-cis retinal</b> (retinal isomerase), and returns to recombine with opsin. The building block is <b>vitamin A</b> (retinol), stored in the liver's <b>Ito (stellate) cells</b>.</p></div>
+    <div class="cal trap"><div class="lab">Why vitamin A deficiency blinds you at night first</div><p>Rods run on the most pigment turnover, so low vitamin A starves rhodopsin and causes <span class="term">nyctalopia</span> (night blindness) before day vision suffers.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Dark adaptation and the Purkinje shift</h2>
+    <p class="lead">Step from sun into a dark room and sensitivity recovers in <b>two stages</b>: cones first and fast, then rods, slow and far deeper.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 290" role="img" aria-label="The biphasic dark adaptation curve, with a fast cone branch, the rod-cone break, and a slow deeper rod branch">
+        <!-- axes -->
+        <line x1="58" y1="40" x2="58" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <line x1="58" y1="252" x2="612" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-faint)">
+          <text x="330" y="283" text-anchor="middle" fill="var(--ink-soft)">time in the dark (min)</text>
+          <text x="60" y="270" text-anchor="middle">0</text><text x="240" y="270" text-anchor="middle">10</text>
+          <text x="420" y="270" text-anchor="middle">20</text><text x="600" y="270" text-anchor="middle">30</text>
+          <text x="30" y="150" text-anchor="middle" transform="rotate(-90 30 150)" fill="var(--ink-soft)">log threshold (down = more sensitive)</text>
+        </g>
+        <!-- cone branch -->
+        <path d="M60 66 Q92 120 132 142 L188 150" fill="none" stroke="var(--pearl)" stroke-width="3"/>
+        <!-- rod branch -->
+        <path d="M188 150 Q262 176 330 205 Q432 242 600 248" fill="none" stroke="var(--why)" stroke-width="3"/>
+        <!-- rod-cone break marker -->
+        <circle cx="188" cy="150" r="6" fill="var(--trap)"/>
+        <g font-family="system-ui,sans-serif" font-size="12" font-weight="700">
+          <text x="120" y="108" fill="var(--pearl)">cone branch</text>
+          <text x="196" y="140" fill="var(--trap)">rod-cone break</text>
+          <text x="430" y="220" fill="var(--why)">rod branch</text>
+        </g>
+      </svg>
+      <figcaption>threshold falls fast (cones) to a plateau, then the rod-cone break at ~7 to 10 min, then the slow, deeper rod branch</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">The Purkinje shift</div><p>As you go scotopic, peak sensitivity slides toward the <b>blue</b> (rods 507 vs cones 555). At dusk, <b>reds go dark first and blues look relatively brighter</b>. That shift is why the red bulb protects dark adaptation and why the ophthalmoscope's red-free light helps.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Reading the retina's electricity</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Test</th><th>Measures</th><th>Key waves / use</th></tr></thead>
+        <tbody>
+          <tr><td><b>ERG</b></td><td class="act">Mass photoreceptor + inner retina</td><td><b>a-wave</b> = photoreceptors, <b>b-wave</b> = bipolar/Muller. Flat in retinitis pigmentosa</td></tr>
+          <tr><td><b>EOG</b></td><td class="act">RPE standing potential</td><td>Arden ratio; abnormal in RPE disease (Best)</td></tr>
+          <tr><td><b>VEP / VER</b></td><td class="act">Cortical response</td><td>Optic nerve and pathway integrity</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">One more wiring fact</div><p><b>Horizontal cells</b> spread signals sideways for <b>lateral inhibition</b>, sharpening edges and contrast. That is the inner-retina counterpart to the receptor cascade above.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology (Retina card):</b> the same cascade from the anatomy side, layer by layer. <b>BV Card 3:</b> the cone pigments feed the color channels. <b>Ocular Disease:</b> retinitis pigmentosa (flat ERG, nyctalopia), vitamin A deficiency, and RPE dystrophies read straight off this physiology.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Duplicity table</div><p>Rods vs cones on all seven rows, peaks included, from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; The cascade</div><p>Write the light chain end to end, and state what the receptor does (hyperpolarize, less glutamate).</p></div>
+    <div class="drill"><div class="t">3 &middot; Visual cycle</div><p>All-trans back to 11-cis, where it happens, and the vitamin behind it.</p></div>
+    <div class="drill"><div class="t">4 &middot; Dark adaptation</div><p>Draw the biphasic curve, label the break and both branches, then define the Purkinje shift.</p></div>
+    <div class="drill"><div class="t">5 &middot; Electrophysiology</div><p>ERG a vs b wave, EOG, VEP: what each reads.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">The dark current?</span> <span class="a">In the dark, high cGMP holds Na channels open, the cell is depolarized and releases glutamate tonically.</span></li>
+      <li><span class="q">What does light do to a photoreceptor?</span> <span class="a">It hyperpolarizes the cell and reduces glutamate release (the receptor turns off).</span></li>
+      <li><span class="q">Role of PDE and cGMP?</span> <span class="a">Light activates PDE, which hydrolyzes cGMP; cGMP falls, so the Na channels close.</span></li>
+      <li><span class="q">First molecular step of light capture?</span> <span class="a">11-cis retinal isomerizes to all-trans, activating opsin (metarhodopsin II).</span></li>
+      <li><span class="q">Cascade order after opsin?</span> <span class="a">Opsin to transducin to PDE to cGMP down to channels close to hyperpolarize.</span></li>
+      <li><span class="q">Visual cycle and vitamin?</span> <span class="a">All-trans retinal returns to the RPE and is re-isomerized to 11-cis; the building block is vitamin A (retinol), stored in liver Ito cells.</span></li>
+      <li><span class="q">Vitamin A deficiency first symptom?</span> <span class="a">Nyctalopia (night blindness), because rods depend on the most pigment turnover.</span></li>
+      <li><span class="q">Scotopic vs photopic peaks?</span> <span class="a">Rods 507 nm, cones 555 nm.</span></li>
+      <li><span class="q">Dark adaptation shape?</span> <span class="a">Biphasic: fast cone branch, then the rod-cone break at ~7 to 10 min, then the slow, deeper rod branch.</span></li>
+      <li><span class="q">The Purkinje shift?</span> <span class="a">In dim light peak sensitivity shifts toward blue (rods), so reds darken and blues look relatively brighter at dusk.</span></li>
+      <li><span class="q">ERG a-wave vs b-wave?</span> <span class="a">a-wave = photoreceptors; b-wave = bipolar/Muller cells. Flat in retinitis pigmentosa.</span></li>
+      <li><span class="q">What do horizontal cells do?</span> <span class="a">Lateral inhibition, sharpening edges and contrast.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 5 &middot; Light closes Na channels, receptor goes quiet</div>
+
+</div>
+</body>
+</html>
