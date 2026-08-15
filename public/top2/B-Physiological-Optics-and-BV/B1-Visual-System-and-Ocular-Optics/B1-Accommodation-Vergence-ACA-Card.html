@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 6 · Accommodation, Vergence &amp; the AC/A Ratio</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>06</b>Accommodation &amp; AC/A</div>
+  </header>
+
+  <h1>Focus and converge, <em>locked together</em></h1>
+  <p class="dek">Look at something close and three things fire at once, and focus drags convergence along for the ride. Learn the near triad, how AC/A ties the two, and the phoria rules, and every accommodative and vergence diagnosis falls out of two numbers.</p>
+
+  <section>
+    <h2><span class="n">01</span> The near triad, and how the lens focuses</h2>
+    <p class="lead">Fixate a near target and the <span class="term">near reflex</span> fires three responses together, all parasympathetic on <b>CN III</b>: <b>accommodation</b>, <b>convergence</b>, and <b>miosis</b> (pupil constriction).</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="The lens for distance versus near: ciliary muscle, zonules and lens shape in each state">
+        <line x1="320" y1="34" x2="320" y2="266" stroke="var(--line-soft)" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <g font-family="system-ui,sans-serif" text-anchor="middle" font-weight="800" font-size="13" fill="var(--ink)">
+          <text x="160" y="30">DISTANCE</text><text x="480" y="30">NEAR</text>
+        </g>
+        <!-- distance: ciliary relaxed, zonules taut, lens flat -->
+        <rect x="138" y="46" width="44" height="12" rx="4" fill="var(--accent)"/>
+        <rect x="138" y="242" width="44" height="12" rx="4" fill="var(--accent)"/>
+        <g stroke="var(--ink-soft)" stroke-width="1.6">
+          <line x1="150" y1="58" x2="150" y2="102"/><line x1="160" y1="58" x2="160" y2="100"/><line x1="170" y1="58" x2="170" y2="102"/>
+          <line x1="150" y1="242" x2="150" y2="198"/><line x1="160" y1="242" x2="160" y2="200"/><line x1="170" y1="242" x2="170" y2="198"/>
+        </g>
+        <ellipse cx="160" cy="150" rx="15" ry="52" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2.4"/>
+        <!-- near: ciliary contracted (inward), zonules slack, lens round -->
+        <rect x="458" y="74" width="44" height="12" rx="4" fill="var(--accent)"/>
+        <rect x="458" y="214" width="44" height="12" rx="4" fill="var(--accent)"/>
+        <g stroke="var(--ink-soft)" stroke-width="1.6">
+          <line x1="470" y1="86" x2="471" y2="104"/><line x1="480" y1="86" x2="480" y2="102"/><line x1="490" y1="86" x2="489" y2="104"/>
+          <line x1="470" y1="214" x2="471" y2="196"/><line x1="480" y1="214" x2="480" y2="198"/><line x1="490" y1="214" x2="489" y2="196"/>
+        </g>
+        <ellipse cx="480" cy="150" rx="30" ry="46" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2.4"/>
+        <g font-family="ui-monospace,Menlo,monospace" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">
+          <text x="160" y="286">ciliary relaxed &middot; zonules taut &middot; lens flat</text>
+          <text x="480" y="286">ciliary tight &middot; zonules slack &middot; lens round</text>
+        </g>
+      </svg>
+      <figcaption>Helmholtz: the ciliary muscle contracts, the zonules slacken, and the elastic lens rounds up to add plus power</figcaption>
+    </figure>
+    <div class="cal pearl" style="margin-top:13px"><div class="lab">Amplitude falls with age (Hofstetter)</div><p><span class="eq">Min = 15 &minus; 0.25 &times; age</span> &nbsp; <span class="eq">Avg = 18.5 &minus; 0.3 &times; age</span> &nbsp; <span class="eq">Max = 25 &minus; 0.4 &times; age</span>. Each part: the constant is the young maximum, the age term is the yearly loss of lens elasticity. When amplitude no longer covers the near demand, that is <b>presbyopia</b>, and you add plus.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> AC/A: focus pulls convergence</h2>
+    <p class="lead">Accommodating a target automatically drives some convergence, the <span class="term">accommodative convergence</span>. The <b>AC/A ratio</b> is how many prism diopters of convergence come per diopter of accommodation. Normal is about <b>4:1</b> (roughly 3 to 5).</p>
+    <div class="cal why"><div class="lab">Two ways to get the number</div><p><b>Calculated:</b> <span class="eq">AC/A = IPD + m(&Delta;n &minus; &Delta;d)</span>. IPD in cm, m = near test distance in meters (e.g. 0.4), and phoria &Delta; is signed (<b>eso = +, exo = &minus;</b>). <b>Gradient:</b> add a known lens, remeasure the phoria, and <span class="eq">AC/A = (&Delta;with &minus; &Delta;without) / lens power</span>. The gradient holds the target fixed, so it excludes proximal convergence.</p></div>
+    <div class="cal mnem"><div class="lab">High vs low, and what it does at near</div><p><b>High AC/A</b>: a little focusing over-converges the eyes, so the patient goes <b>eso at near</b>. <b>Low AC/A</b>: focusing barely converges, so the patient goes <b>exo at near</b>. The ratio predicts the deviation.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Phorias and the vergence anomalies</h2>
+    <p class="lead">A <span class="term">phoria</span> is a latent misalignment held straight by fusion; a <span class="term">tropia</span> is a manifest one. Break the anomalies down by <b>where</b> the deviation is worse and the <b>AC/A</b>.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Anomaly</th><th>Deviation</th><th>AC/A</th><th>First move</th></tr></thead>
+        <tbody>
+          <tr><td><b>Convergence insufficiency</b></td><td class="act">Exo, worse at near</td><td>Low</td><td>Base-in prism / vergence therapy; receded NPC</td></tr>
+          <tr><td><b>Convergence excess</b></td><td class="act">Eso, worse at near</td><td>High</td><td>Plus add at near</td></tr>
+          <tr><td><b>Divergence excess</b></td><td class="act">Exo, worse at distance</td><td>High</td><td>Minus / base-out; VT</td></tr>
+          <tr><td><b>Divergence insufficiency</b></td><td class="act">Eso, worse at distance</td><td>Low</td><td>Base-out prism; rule out CN VI/neuro</td></tr>
+          <tr><td><b>Basic</b></td><td>Equal at distance and near</td><td>Normal</td><td>Prism / VT to the phoria</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Will the phoria be comfortable? Two criteria</h2>
+    <div class="cal why"><div class="lab">Sheard's criterion (best for EXO)</div><p>The compensating <b>fusional reserve should be at least twice the phoria</b>. So for a 6&Delta; exophoria you need at least <b>12&Delta;</b> of opposing (base-out / positive) fusional vergence to be comfortable. Fall short and prescribe prism = <span class="eq">(2 &times; phoria &minus; reserve) / 3</span>.</p></div>
+    <div class="cal trap"><div class="lab">Percival's criterion (best for ESO)</div><p>Keep the fixation demand in the <b>middle third</b> of the range of clear single binocular vision. It looks only at the vergence range, <b>ignoring the phoria itself</b>, which is why it suits eso deviations where Sheard misbehaves.</p></div>
+    <div class="cal mnem"><div class="lab">Pairing hook</div><p><b>Sheard for exophoria, Percival for esophoria.</b> Both ask the same real question: is enough fusional reserve left over to hold the eyes straight without strain?</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The accommodative anomalies</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Anomaly</th><th>Picture</th></tr></thead>
+        <tbody>
+          <tr><td><b>Accommodative insufficiency</b></td><td>Amplitude below age norm; near blur, receded near point of accommodation, high MEM lag</td></tr>
+          <tr><td><b>Ill-sustained</b></td><td>Starts adequate, fatigues with prolonged near work</td></tr>
+          <tr><td><b>Accommodative excess (spasm)</b></td><td>Over-focuses; a lead of accommodation, pseudomyopia, trouble relaxing to distance</td></tr>
+          <tr><td><b>Accommodative infacility</b></td><td>Slow to change focus near-to-far (fails flippers), normal amplitude</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>BV Card 1:</b> convergence is the vergence half of the motor system, driven here by accommodation. <b>BV Card 4:</b> motor fusion supplies the reserves that Sheard and Percival test. <b>Primary Eye Care / Vision therapy:</b> the phoria, NPC, AC/A, and MEM are the chair measurements; plus adds, prism, and VT are the treatments.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; The near triad + Helmholtz</div><p>Three responses, and the ciliary-zonule-lens chain for near.</p></div>
+    <div class="drill"><div class="t">2 &middot; Hofstetter</div><p>Write the three amplitude formulas and compute average amplitude for age 40.</p></div>
+    <div class="drill"><div class="t">3 &middot; AC/A</div><p>Both formulas, the normal value, and what high vs low does at near.</p></div>
+    <div class="drill"><div class="t">4 &middot; The four vergence anomalies</div><p>Deviation, where it is worse, and AC/A for each.</p></div>
+    <div class="drill"><div class="t">5 &middot; Sheard vs Percival</div><p>State each and which phoria it suits.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">The near triad?</span> <span class="a">Accommodation, convergence, and miosis, all parasympathetic on CN III.</span></li>
+      <li><span class="q">How does the lens accommodate (Helmholtz)?</span> <span class="a">Ciliary muscle contracts, zonules slacken, the elastic lens rounds up to add plus.</span></li>
+      <li><span class="q">Hofstetter average amplitude?</span> <span class="a">18.5 minus 0.3 times age (min = 15 - 0.25 age, max = 25 - 0.4 age).</span></li>
+      <li><span class="q">Normal AC/A ratio?</span> <span class="a">About 4:1 (roughly 3 to 5 prism diopters per diopter).</span></li>
+      <li><span class="q">Calculated vs gradient AC/A?</span> <span class="a">Calculated = IPD + m(phoria near - phoria dist); gradient = phoria change per diopter of added lens (excludes proximal convergence).</span></li>
+      <li><span class="q">High AC/A does what at near?</span> <span class="a">Over-converges, so eso at near (convergence excess).</span></li>
+      <li><span class="q">Low AC/A does what at near?</span> <span class="a">Under-converges, so exo at near (convergence insufficiency).</span></li>
+      <li><span class="q">Phoria vs tropia?</span> <span class="a">Phoria = latent, held straight by fusion; tropia = manifest.</span></li>
+      <li><span class="q">Convergence insufficiency signs?</span> <span class="a">Exo greater at near, receded NPC, low AC/A, fails Sheard; near asthenopia.</span></li>
+      <li><span class="q">Sheard's criterion?</span> <span class="a">Compensating fusional reserve should be at least twice the phoria (best for exophoria).</span></li>
+      <li><span class="q">Percival's criterion?</span> <span class="a">Keep the demand in the middle third of the clear-single-BV range; ignores the phoria (best for esophoria).</span></li>
+      <li><span class="q">Accommodative excess vs insufficiency?</span> <span class="a">Excess = over-focuses (lead, pseudomyopia, hard to relax); insufficiency = amplitude below norm (near blur, receded NPA, high lag).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 6 &middot; Sheard for exo, Percival for eso</div>
+
+</div>
+</body>
+</html>
