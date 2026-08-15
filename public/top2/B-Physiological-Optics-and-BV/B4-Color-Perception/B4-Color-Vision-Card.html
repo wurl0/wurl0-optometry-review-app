@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 3 · Color Vision &amp; Parallel Pathways</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>03</b>Color vision</div>
+  </header>
+
+  <h1>Three cones, and <em>the channels they feed</em></h1>
+  <p class="dek">Color is three cone types, an opponent recode, and a naming system built on which cone is off. Learn the S/M/L peaks, the prot/deuter/trit rule, and the anomaloscope, then add the parallel pathways that carry color, motion, and the body clock.</p>
+
+  <section>
+    <h2><span class="n">01</span> Three cones, then an opponent recode</h2>
+    <p class="lead">Normal color vision is <span class="term">trichromatic</span>: three cone types, each tuned to a different band. The brain then recodes them into <b>opponent</b> pairs.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="Spectral sensitivity curves of the S, M and L cones across the visible spectrum">
+        <!-- axes -->
+        <line x1="50" y1="250" x2="612" y2="250" stroke="var(--line)" stroke-width="2"/>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-faint)" text-anchor="middle">
+          <line x1="60" y1="250" x2="60" y2="256" stroke="var(--line)"/><text x="60" y="270">400</text>
+          <line x1="240" y1="250" x2="240" y2="256" stroke="var(--line)"/><text x="240" y="270">500</text>
+          <line x1="420" y1="250" x2="420" y2="256" stroke="var(--line)"/><text x="420" y="270">600</text>
+          <line x1="600" y1="250" x2="600" y2="256" stroke="var(--line)"/><text x="600" y="270">700</text>
+          <text x="330" y="291" fill="var(--ink-soft)">wavelength (nm)</text>
+        </g>
+        <!-- rod (scotopic) dashed -->
+        <path d="M183 250 Q253 -70 323 250" fill="none" stroke="var(--ink-faint)" stroke-width="2" stroke-dasharray="4 4"/>
+        <!-- cone curves -->
+        <path d="M40 250 Q96 -110 152 250" fill="none" stroke="var(--why)" stroke-width="3"/>
+        <path d="M231 250 Q301 -110 371 250" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <path d="M285 250 Q355 -110 425 250" fill="none" stroke="var(--pearl)" stroke-width="3"/>
+        <!-- peak labels -->
+        <g font-family="system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">
+          <text x="96" y="58" fill="var(--why)">S 420</text>
+          <text x="286" y="52" fill="var(--accent)">M 534</text>
+          <text x="386" y="70" fill="var(--pearl)">L 564</text>
+          <text x="253" y="150" fill="var(--ink-faint)" font-size="10" font-weight="600">rod 507</text>
+        </g>
+      </svg>
+      <figcaption>S (blue), M (green), L ("red") cones &middot; dashed = rods (scotopic) &middot; peaks in nm</figcaption>
+    </figure>
+    <div class="cal why"><div class="lab">Two theories, both right, at different stages</div><p><b>Young-Helmholtz trichromatic</b> theory describes the <b>receptor</b> stage (three cones). <b>Hering opponent-process</b> theory describes the <b>neural</b> stage: bipolar, ganglion, and LGB cells recode the cones into <span class="term">red-green</span>, <span class="term">blue-yellow</span>, and <span class="term">black-white</span> opponents. That recode is why you never see reddish-green.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Naming a color defect</h2>
+    <p class="lead">Two questions decide the name: <b>how many cone types work</b>, and <b>which one is the problem</b>.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Working cones</th><th>Class</th><th>Members</th></tr></thead>
+        <tbody>
+          <tr><td><b>3, one weak/shifted</b></td><td class="act">Anomalous trichromacy</td><td>Protanomaly (L weak), deuteranomaly (M weak), tritanomaly (S weak)</td></tr>
+          <tr><td><b>2 (one cone absent)</b></td><td class="act">Dichromacy</td><td>Protanopia (no L), deuteranopia (no M), tritanopia (no S)</td></tr>
+          <tr><td><b>1 cone only</b></td><td class="act">Incomplete monochromacy</td><td>Cone (e.g. blue-cone) monochromatism</td></tr>
+          <tr><td><b>0 cones (rods only)</b></td><td class="act">Complete monochromacy</td><td>Rod monochromatism (achromatopsia)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">The prot / deuter / trit rule</div><p><b>Prot</b> = first = <b>L</b> cone = <b>red</b>. <b>Deuter</b> = second = <b>M</b> cone = <b>green</b>. <b>Trit</b> = third = <b>S</b> cone = <b>blue</b>. So "-anomaly" = that cone is weak, "-anopia" = that cone is absent.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Frequencies and inheritance</h2>
+    <div class="cal why"><div class="lab">Red-green is X-linked (the common one)</div><p>Protan and deutan defects are <b>X-linked recessive</b>, so about <b>8% of males</b> and only ~0.5% of females. <b>Deuteranomaly</b> is the single most common color anomaly; <b>deuteranopia</b> is the most common dichromacy.</p></div>
+    <div class="cal trap"><div class="lab">Blue-yellow is different</div><p><span class="term">Tritan</span> (S-cone) defects are <b>rare</b> and <b>autosomal</b> (not sex-linked), so equal in males and females. Acquired tritan defects also flag S-cone-vulnerable disease (glaucoma, some retinopathies).</p></div>
+    <div class="cal pearl"><div class="lab">Complete achromatopsia</div><p><b>Autosomal recessive</b>, no working cones. Rods only, so <b>poor acuity, nystagmus, photophobia,</b> and no color. Its X-linked cousin, blue-cone monochromatism, affects mainly males.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The tests</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Test</th><th>Type</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td><b>Ishihara plates</b></td><td>Pseudoisochromatic</td><td>Fast <b>screen</b> for red-green defects (misses tritan)</td></tr>
+          <tr><td><b>Farnsworth D-15</b></td><td>Arrangement</td><td>Sorts <b>significant</b> from mild; shows the axis</td></tr>
+          <tr><td><b>Farnsworth-Munsell 100-hue</b></td><td>Arrangement</td><td><b>Grades</b> discrimination finely</td></tr>
+          <tr><td><b>Anomaloscope</b></td><td>Color match (Rayleigh)</td><td><span class="act">Gold standard:</span> diagnoses and classifies exactly</td></tr>
+          <tr><td><b>Lantern</b></td><td>Recognition</td><td>Occupational pass/fail (signals)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The channels the cones feed</h2>
+    <p class="lead">Ganglion cells sort into parallel streams to the LGB, plus a special one that never forms an image.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Channel</th><th>Carries</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><b>Magnocellular</b> (M / Y cells)</td><td class="act">Motion, low contrast</td><td>Fast, large fields, high temporal, low spatial, color-blind</td></tr>
+          <tr><td><b>Parvocellular</b> (P / X cells)</td><td class="act">Color (red-green), fine detail</td><td>Slow, small fields, high spatial, high acuity</td></tr>
+          <tr><td><b>Koniocellular</b></td><td class="act">Blue-yellow (S-cone)</td><td>Between the LGB layers</td></tr>
+          <tr><td><b>ipRGCs</b> (melanopsin)</td><td class="act">Ambient light, non-image</td><td>To the <b>suprachiasmatic nucleus</b> (circadian) and the pupil reflex</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">Hook</div><p><b>Magno = Motion</b> (big, fast, colorblind). <b>Parvo = color and Particulars</b> (small, slow, detailed). <b>ipRGCs run the body clock</b>, not what you see.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology:</b> cone phototransduction and the S/M/L opsins live here. <b>Clinical / Occupational optometry:</b> the tests and the pass/fail standards are chair-side and job-screening tools. <b>Ocular Disease:</b> an <b>acquired</b> color defect (especially blue-yellow) is a red flag for optic nerve or retinal disease, unlike a stable inherited one.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the three cones</div><p>Sketch S/M/L curves with peaks, add the rod peak, from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Name the classes</div><p>Anomalous trichromacy, dichromacy, monochromacy: cones working and members of each.</p></div>
+    <div class="drill"><div class="t">3 &middot; Prot/deuter/trit</div><p>Map each to its cone and color, and state which is X-linked vs autosomal.</p></div>
+    <div class="drill"><div class="t">4 &middot; The tests</div><p>Screen vs gold standard, and which one misses tritan.</p></div>
+    <div class="drill"><div class="t">5 &middot; The channels</div><p>Magno, parvo, konio, ipRGC: what each carries in one line.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">The three cone peaks?</span> <span class="a">S about 420 nm (blue), M about 534 nm (green), L about 564 nm (red).</span></li>
+      <li><span class="q">Trichromatic vs opponent theory?</span> <span class="a">Young-Helmholtz = receptor stage (3 cones); Hering opponent = neural recode into red-green, blue-yellow, black-white.</span></li>
+      <li><span class="q">Prot / deuter / trit map?</span> <span class="a">Prot = L = red; deuter = M = green; trit = S = blue.</span></li>
+      <li><span class="q">-anomaly vs -anopia?</span> <span class="a">-anomaly = that cone weak/shifted (anomalous trichromat); -anopia = that cone absent (dichromat).</span></li>
+      <li><span class="q">Most common color anomaly and most common dichromacy?</span> <span class="a">Deuteranomaly (anomaly); deuteranopia (dichromacy).</span></li>
+      <li><span class="q">Two cone types dead means what?</span> <span class="a">Only one cone works = incomplete monochromacy; zero cones = complete (rod) monochromacy.</span></li>
+      <li><span class="q">Inheritance of red-green vs blue-yellow?</span> <span class="a">Red-green = X-linked recessive (about 8% of males); blue-yellow (tritan) = autosomal, rare, equal in sexes.</span></li>
+      <li><span class="q">Complete achromatopsia features and inheritance?</span> <span class="a">Autosomal recessive, rods only: poor acuity, nystagmus, photophobia, no color.</span></li>
+      <li><span class="q">Screening test vs gold standard?</span> <span class="a">Ishihara plates screen red-green; the anomaloscope (Rayleigh match) is the definitive/classifying test.</span></li>
+      <li><span class="q">Which common test misses tritan defects?</span> <span class="a">Ishihara (it screens red-green only).</span></li>
+      <li><span class="q">Magnocellular vs parvocellular?</span> <span class="a">Magno = motion, low contrast, fast, colorblind; parvo = color (red-green) and fine detail, high acuity.</span></li>
+      <li><span class="q">Where do ipRGCs (melanopsin) project?</span> <span class="a">Suprachiasmatic nucleus (circadian) and the pupillary light reflex, non-image-forming.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 3 &middot; Prot L, deuter M, trit S</div>
+
+</div>
+</body>
+</html>
