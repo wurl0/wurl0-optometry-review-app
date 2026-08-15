@@ -4,12 +4,12 @@
 
 export type ItemType =
   | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'preboards-set4' | 'mock' | 'interactive' | 'feature'
-  | 'tool'
+  | 'tool' | 'card'
 
 // The five per-subject content types (everything except the global mocks, interactives,
 // features, and tools). Every new cross-subject type MUST be added to this Exclude, or
 // the Record<SubjectItemType, …> maps below stop being exhaustive and tsc fails.
-type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature' | 'tool'>
+type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature' | 'tool' | 'card'>
 
 export type Item = {
   id: string          // stable ID, e.g. "A.exam", "mock.set2"
@@ -145,6 +145,59 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.G2-Autonomic-Grid-Interactive', subject: 'G', type: 'interactive', label: 'G2 Autonomic Grid', path: '/top2/G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Grid-Interactive.html' },
 ]
 
+
+// WAA study cards (topic-focused, one diagram + drills + spaced-rep deck each).
+// Subject-scoped and grantable like the interactives; not auto-generated because their
+// paths are irregular, so they are listed explicitly here.
+const CARD_ITEMS: Item[] = [
+  { id: 'card.A2-Visual-Pathway-Card', subject: 'A', type: 'card', label: 'Card 1 · Pathway', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Visual-Pathway-Card.html' },
+  { id: 'card.A2-Retina-Phototransduction-Card', subject: 'A', type: 'card', label: 'Card 2 · Retina', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Retina-Phototransduction-Card.html' },
+  { id: 'card.A2-Coats-Anterior-Segment-Card', subject: 'A', type: 'card', label: 'Card 3 · Coats', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Coats-Anterior-Segment-Card.html' },
+  { id: 'card.A2-Orbit-EOM-Card', subject: 'A', type: 'card', label: 'Card 4 · Orbit/EOM', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Orbit-EOM-Card.html' },
+  { id: 'card.A2-Lids-Lacrimal-Card', subject: 'A', type: 'card', label: 'Card 5 · Lids/Lacrimal', path: '/top2/A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Lids-Lacrimal-Card.html' },
+  { id: 'card.A3-Ocular-Embryology-Card', subject: 'A', type: 'card', label: 'Card 6 · Embryology', path: '/top2/A-Visual-Biology/A3-Ocular-Embryology/A3-Ocular-Embryology-Card.html' },
+  { id: 'card.B5-Yoke-Versions-Vergences-Card', subject: 'B', type: 'card', label: 'Card 1 · Yoke/versions', path: '/top2/B-Physiological-Optics-and-BV/B5-Binocular-Vision-and-Fusion/B5-Yoke-Versions-Vergences-Card.html' },
+  { id: 'card.B3-Fields-Pathway-Lesions-Card', subject: 'B', type: 'card', label: 'Card 2 · Fields/pathway', path: '/top2/B-Physiological-Optics-and-BV/B3-Visual-Field/B3-Fields-Pathway-Lesions-Card.html' },
+  { id: 'card.B4-Color-Vision-Card', subject: 'B', type: 'card', label: 'Card 3 · Color vision', path: '/top2/B-Physiological-Optics-and-BV/B4-Color-Perception/B4-Color-Vision-Card.html' },
+  { id: 'card.B5-Fusion-Grades-Diplopia-Card', subject: 'B', type: 'card', label: 'Card 4 · Fusion/diplopia', path: '/top2/B-Physiological-Optics-and-BV/B5-Binocular-Vision-and-Fusion/B5-Fusion-Grades-Diplopia-Card.html' },
+  { id: 'card.B1-Retinal-Physiology-Phototransduction-Card', subject: 'B', type: 'card', label: 'Card 5 · Retinal physiology', path: '/top2/B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Retinal-Physiology-Phototransduction-Card.html' },
+  { id: 'card.B1-Accommodation-Vergence-ACA-Card', subject: 'B', type: 'card', label: 'Card 6 · Accom & AC/A', path: '/top2/B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Accommodation-Vergence-ACA-Card.html' },
+  { id: 'card.C2-Ametropia-Astigmatism-Card', subject: 'C', type: 'card', label: 'Card 1 · Ametropia', path: '/top2/C-Primary-Care-and-Refraction/C2-Ametropia-and-Refractive-Errors/C2-Ametropia-Astigmatism-Card.html' },
+  { id: 'card.C4-Retinoscopy-Card', subject: 'C', type: 'card', label: 'Card 2 · Retinoscopy', path: '/top2/C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Retinoscopy-Card.html' },
+  { id: 'card.C5-Subjective-Refraction-Card', subject: 'C', type: 'card', label: 'Card 3 · Subjective', path: '/top2/C-Primary-Care-and-Refraction/C5-Subjective-Examination/C5-Subjective-Refraction-Card.html' },
+  { id: 'card.C6-Presbyopia-Near-Add-Card', subject: 'C', type: 'card', label: 'Card 4 · Presbyopia', path: '/top2/C-Primary-Care-and-Refraction/C6-Management-of-Visual-Disorders/C6-Presbyopia-Near-Add-Card.html' },
+  { id: 'card.C6-Myopia-Control-Card', subject: 'C', type: 'card', label: 'Card 5 · Myopia control', path: '/top2/C-Primary-Care-and-Refraction/C6-Management-of-Visual-Disorders/C6-Myopia-Control-Card.html' },
+  { id: 'card.C7-Amblyopia-VT-Card', subject: 'C', type: 'card', label: 'Card 6 · Amblyopia/VT', path: '/top2/C-Primary-Care-and-Refraction/C7-Vision-Therapy-and-Orthoptics/C7-Amblyopia-VT-Card.html' },
+  { id: 'card.D1-Geometric-Optics-Refraction-Card', subject: 'D', type: 'card', label: 'Card 1 · Refraction', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Geometric-Optics-Refraction-Card.html' },
+  { id: 'card.D2-Prism-Prentice-Vertex-Card', subject: 'D', type: 'card', label: 'Card 2 · Prism/power', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Prism-Prentice-Vertex-Card.html' },
+  { id: 'card.D1-Photometry-Reflection-Card', subject: 'D', type: 'card', label: 'Card 3 · Photometry', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Photometry-Reflection-Card.html' },
+  { id: 'card.D2-Lens-Materials-Abbe-Card', subject: 'D', type: 'card', label: 'Card 4 · Materials', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Lens-Materials-Abbe-Card.html' },
+  { id: 'card.D2-Bifocals-Dispensing-Card', subject: 'D', type: 'card', label: 'Card 5 · Bifocals', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Bifocals-Dispensing-Card.html' },
+  { id: 'card.D3-Contact-Lenses-Card', subject: 'D', type: 'card', label: 'Card 6 · Contact lenses', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D3-Contact-Lenses/D3-Contact-Lenses-Card.html' },
+  { id: 'card.E3-Retinal-Vascular-Card', subject: 'E', type: 'card', label: 'Card 1 · Vascular', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Retinal-Vascular-Card.html' },
+  { id: 'card.E2-Red-Eye-Card', subject: 'E', type: 'card', label: 'Card 2 · Red eye', path: '/top2/E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Red-Eye-Card.html' },
+  { id: 'card.E2-Glaucoma-Card', subject: 'E', type: 'card', label: 'Card 3 · Glaucoma', path: '/top2/E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Glaucoma-Card.html' },
+  { id: 'card.E3-Detachment-AMD-Card', subject: 'E', type: 'card', label: 'Card 4 · RD & AMD', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Detachment-AMD-Card.html' },
+  { id: 'card.E1-Orbit-Lids-Card', subject: 'E', type: 'card', label: 'Card 5 · Orbit/Lids', path: '/top2/E-Ocular-Disease-and-Emergencies/E1-Orbit-Adnexa-Eyelids/E1-Orbit-Lids-Card.html' },
+  { id: 'card.E4-Emergencies-Card', subject: 'E', type: 'card', label: 'Card 6 · Emergencies', path: '/top2/E-Ocular-Disease-and-Emergencies/E4-Ocular-Emergencies/E4-Emergencies-Card.html' },
+  { id: 'card.F7-Low-Vision-Magnification-Card', subject: 'F', type: 'card', label: 'Card 1 · Low vision', path: '/top2/F-Clinical-Optometry-and-Specialties/F7-Low-Vision-and-Rehabilitation/F7-Low-Vision-Magnification-Card.html' },
+  { id: 'card.F4-Neuro-Oculomotor-Tests-Card', subject: 'F', type: 'card', label: 'Card 2 · Neuro tests', path: '/top2/F-Clinical-Optometry-and-Specialties/F4-Neuro-Optometry/F4-Neuro-Oculomotor-Tests-Card.html' },
+  { id: 'card.F2-Pediatric-Optometry-Card', subject: 'F', type: 'card', label: 'Card 3 · Pediatric', path: '/top2/F-Clinical-Optometry-and-Specialties/F2-Pediatric-Optometry/F2-Pediatric-Optometry-Card.html' },
+  { id: 'card.F1-DPA-Clinical-Pharmacology-Card', subject: 'F', type: 'card', label: 'Card 4 · DPAs', path: '/top2/F-Clinical-Optometry-and-Specialties/F1-DPA-Examination/F1-DPA-Clinical-Pharmacology-Card.html' },
+  { id: 'card.F5-Occupational-Sports-Vision-Card', subject: 'F', type: 'card', label: 'Card 5 · Occ & sports', path: '/top2/F-Clinical-Optometry-and-Specialties/F5-Occupational-Optometry/F5-Occupational-Sports-Vision-Card.html' },
+  { id: 'card.F3-Geriatric-Prosthetics-Absorptive-Card', subject: 'F', type: 'card', label: 'Card 6 · Geriatric', path: '/top2/F-Clinical-Optometry-and-Specialties/F3-Geriatric-Optometry/F3-Geriatric-Prosthetics-Absorptive-Card.html' },
+  { id: 'card.G2-Autonomic-Eye-Card', subject: 'G', type: 'card', label: 'Card 1 · Autonomic', path: '/top2/G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Eye-Card.html' },
+  { id: 'card.G4-Anti-Infectives-Card', subject: 'G', type: 'card', label: 'Card 2 · Anti-infect', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Infectives-Card.html' },
+  { id: 'card.G4-Anti-Inflammatory-Card', subject: 'G', type: 'card', label: 'Card 3 · Anti-inflam', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Inflammatory-Card.html' },
+  { id: 'card.G4-Glaucoma-Card', subject: 'G', type: 'card', label: 'Card 4 · Glaucoma', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Glaucoma-Card.html' },
+  { id: 'card.G3-Anesthetics-and-Dyes-Card', subject: 'G', type: 'card', label: 'Card 5 · Anes & Dyes', path: '/top2/G-Ocular-Pharmacology/G3-Diagnostic-Pharmaceutical-Agents/G3-Anesthetics-and-Dyes-Card.html' },
+  { id: 'card.G5-Systemic-Drug-Side-Effects-Card', subject: 'G', type: 'card', label: 'Card 6 · Systemic SE', path: '/top2/G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Systemic-Drug-Side-Effects-Card.html' },
+  { id: 'card.H1-RA8050-Optometry-Law-Card', subject: 'H', type: 'card', label: 'Card 1 · RA 8050', path: '/top2/H-Jurisprudence-and-Ethics/H1-RA8050-Optometry-Law/H1-RA8050-Optometry-Law-Card.html' },
+  { id: 'card.H2-Bioethics-Code-of-Ethics-Card', subject: 'H', type: 'card', label: 'Card 2 · Bioethics', path: '/top2/H-Jurisprudence-and-Ethics/H2-Bioethics-and-Code-of-Ethics/H2-Bioethics-Code-of-Ethics-Card.html' },
+  { id: 'card.H3-Practice-Management-Taxes-Card', subject: 'H', type: 'card', label: 'Card 3 · Practice mgmt', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Practice-Management-Taxes-Card.html' },
+  { id: 'card.H3-Labor-Laws-Benefits-Card', subject: 'H', type: 'card', label: 'Card 4 · Labor laws', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Labor-Laws-Benefits-Card.html' },
+]
+
 // Per-subject extras that sit outside the generated five. These are linked FROM pages a
 // granted user can already open (H-Reviewer's layers bar points at both law-book pages),
 // so leaving them off the manifest made those links bounce a granted user back to /.
@@ -183,7 +236,7 @@ const FEATURE_ITEMS: Item[] = [
 ]
 
 export const ITEMS: Item[] = [
-  ...SUBJECT_ITEMS, ...EXTRA_SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...MOCK_ITEMS, ...TOOL_ITEMS,
+  ...SUBJECT_ITEMS, ...EXTRA_SUBJECT_ITEMS, ...INTERACTIVE_ITEMS, ...CARD_ITEMS, ...MOCK_ITEMS, ...TOOL_ITEMS,
   ...FEATURE_ITEMS,
 ]
 export const ITEM_BY_PATH = new Map<string, Item>(ITEMS.map(i => [i.path, i]))
