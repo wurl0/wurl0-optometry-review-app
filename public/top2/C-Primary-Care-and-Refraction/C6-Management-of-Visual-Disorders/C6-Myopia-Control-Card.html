@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care &amp; Refraction Card 5 · Myopia Control</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care &amp; Refraction</div>
+    </div>
+    <div class="card-no">Card<b>05</b>Myopia control</div>
+  </header>
+
+  <h1>Slow the growing eye <em>with defocus</em></h1>
+  <p class="dek">Myopia progresses because the eye keeps elongating, and the periphery of the retina votes on that growth. Feed it hyperopic defocus and it grows; feed it myopic defocus and it slows. Every control method, optical, drug, and behavioral, is a way to change that peripheral signal.</p>
+
+  <section>
+    <h2><span class="n">01</span> The problem is a long eye</h2>
+    <p class="lead"><span class="term">Axial myopia</span> is elongation of the globe, so the image falls in front of the retina. In children it <b>progresses</b>, and high myopia carries lifelong risk of <b>retinal detachment, myopic maculopathy, and glaucoma</b>. Control means <b>slowing axial growth</b>, not just sharpening today's vision.</p>
+    <div class="cal mnem"><div class="lab">Do not confuse these with progression</div><p><b>Pseudomyopia</b> (accommodative spasm) reads as minus but is plus under cycloplegia. <b>Index/induced myopia</b> comes from nuclear sclerosis. <b>Nocturnal myopia</b> appears only in dim light. None are the axial elongation this card targets.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The engine: peripheral defocus</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="Two eyes showing peripheral hyperopic defocus driving elongation versus peripheral myopic defocus slowing it">
+        <g font-family="system-ui,sans-serif" text-anchor="middle" font-weight="800" font-size="12" fill="var(--ink)">
+          <text x="170" y="30">SINGLE VISION</text><text x="470" y="30">MYOPIA CONTROL</text>
+        </g>
+        <!-- Panel A globe -->
+        <circle cx="170" cy="150" r="74" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+        <path d="M207 86 A74 74 0 0 1 207 214" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <ellipse cx="80" cy="150" rx="7" ry="38" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2"/>
+        <g stroke="var(--ink-faint)" stroke-width="1.2" fill="none">
+          <line x1="86" y1="150" x2="244" y2="150"/><line x1="86" y1="150" x2="237" y2="93"/><line x1="86" y1="150" x2="237" y2="207"/>
+        </g>
+        <circle cx="244" cy="150" r="5" fill="var(--ink)"/>
+        <circle cx="237" cy="93" r="5" fill="var(--trap)"/><circle cx="237" cy="207" r="5" fill="var(--trap)"/>
+        <text x="170" y="262" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--trap)">periphery BEHIND retina = hyperopic</text>
+        <text x="170" y="277" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" font-weight="700" fill="var(--trap)">eye ELONGATES</text>
+        <!-- Panel B globe -->
+        <circle cx="470" cy="150" r="74" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+        <path d="M507 86 A74 74 0 0 1 507 214" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <ellipse cx="380" cy="150" rx="7" ry="38" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2"/>
+        <g stroke="var(--ink-faint)" stroke-width="1.2" fill="none">
+          <line x1="386" y1="150" x2="544" y2="150"/><line x1="386" y1="150" x2="516" y2="101"/><line x1="386" y1="150" x2="516" y2="199"/>
+        </g>
+        <circle cx="544" cy="150" r="5" fill="var(--ink)"/>
+        <circle cx="516" cy="101" r="5" fill="var(--accent-deep)"/><circle cx="516" cy="199" r="5" fill="var(--accent-deep)"/>
+        <text x="470" y="262" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--accent-deep)">periphery IN FRONT of retina = myopic</text>
+        <text x="470" y="277" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" font-weight="700" fill="var(--accent-deep)">growth SLOWS</text>
+      </svg>
+      <figcaption>central vision is sharp in both; the periphery is the switch, hyperopic defocus grows the eye, myopic defocus brakes it</figcaption>
+    </figure>
+    <div class="cal trap" style="margin-top:13px"><div class="lab">Why plain minus lenses do not help</div><p>A single-vision minus lens sharpens the fovea but leaves the curved <b>peripheral</b> retina in relative <b>hyperopic</b> defocus, a growth signal. <b>Undercorrection</b> was once thought to slow myopia (leftover myopic blur), but it actually <b>speeds</b> progression, so correct fully and change the periphery deliberately.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The interventions</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Type</th><th>Method</th><th>How it works</th></tr></thead>
+        <tbody>
+          <tr><td><b>Optical</b></td><td>Dual-focus soft CL, DIMS/HAL spectacles, ortho-k</td><td class="act">Impose peripheral myopic defocus</td></tr>
+          <tr><td><b>Pharmacologic</b></td><td>Low-dose atropine (0.01 to 0.05%)</td><td class="act">Retinal/scleral signaling (dopamine), not accommodation</td></tr>
+          <tr><td><b>Behavioral</b></td><td>Outdoor time (about 2 h/day), less near work</td><td class="act">Light-driven retinal dopamine</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">Ortho-k and the reverse curve</div><p>The reverse-geometry lens <b>flattens the central cornea</b> (clear daytime vision) and <b>steepens the mid-periphery</b>. That <b>reverse curve</b> is the part that builds the peripheral <b>myopic defocus</b> ring.</p></div>
+    <div class="cal pearl"><div class="lab">Atropine's real mechanism</div><p>Its control effect is <b>not</b> from paralyzing accommodation, low doses barely touch focusing. It works on <b>retinal dopamine and scleral receptors</b>. Low dose is used to minimize glare and rebound.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Spotting and monitoring risk</h2>
+    <div class="cal why"><div class="lab">Pre-myopia and risk factors</div><p>A child whose cycloplegic refraction is only about <b>+0.75 D or less at age 6 to 7</b> is a <span class="term">pre-myope</span>, at risk. Other risks: <b>Asian ethnicity</b>, low outdoor time, heavy near work, parental myopia, and early onset.</p></div>
+    <div class="cal trap"><div class="lab">Track the eye, not just the glasses</div><p>Monitor <b>axial length every 6 months</b>. A crossing from plus into minus with rising axial length confirms onset and progression, prescription change alone can lag.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Combining methods</h2>
+    <div class="cal mnem"><div class="lab">Additive combinations</div><p><b>Atropine + orthokeratology</b> together outperform either alone (an additive effect). Optical and pharmacologic brakes hit different parts of the same signal, so stacking helps.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Card 1 (Ametropia):</b> axial vs refractive myopia, and the far point you are correcting. <b>Clinical / Contact lenses:</b> ortho-k fitting and soft dual-focus lenses. <b>Ocular Disease:</b> the high-myopia complications (detachment, myopic maculopathy) that make control worth doing.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Axial myopia</div><p>Define it and list two high-myopia risks, plus the three myopia mimics.</p></div>
+    <div class="drill"><div class="t">2 &middot; The defocus switch</div><p>Draw the two eyes: which defocus grows the eye, which slows it, and why single-vision minus fails.</p></div>
+    <div class="drill"><div class="t">3 &middot; The three intervention types</div><p>Optical, pharmacologic, behavioral: one method and mechanism each.</p></div>
+    <div class="drill"><div class="t">4 &middot; Ortho-k and atropine</div><p>Which lens part makes the defocus, and atropine's true mechanism.</p></div>
+    <div class="drill"><div class="t">5 &middot; Risk and monitoring</div><p>Pre-myopia threshold, top risk factors, and what to track every 6 months.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Axial myopia?</span> <span class="a">Myopia from elongation of the globe, so the image falls in front of the retina.</span></li>
+      <li><span class="q">Hyperopic vs myopic peripheral defocus?</span> <span class="a">Hyperopic (behind the retina) drives elongation; myopic (in front) slows it.</span></li>
+      <li><span class="q">Why do single-vision minus lenses not slow myopia?</span> <span class="a">They leave the peripheral retina in relative hyperopic defocus (a growth signal).</span></li>
+      <li><span class="q">Undercorrection to slow myopia?</span> <span class="a">A myth, it actually speeds progression; correct fully and change the periphery.</span></li>
+      <li><span class="q">Ortho-k: which part makes the defocus?</span> <span class="a">The reverse curve (central flattening + mid-peripheral steepening = myopic defocus ring).</span></li>
+      <li><span class="q">Atropine's control mechanism?</span> <span class="a">Retinal dopamine and scleral signaling, not paralysis of accommodation.</span></li>
+      <li><span class="q">Outdoor time effect?</span> <span class="a">About 2 hours/day of outdoor light raises retinal dopamine and lowers onset/progression.</span></li>
+      <li><span class="q">Pre-myopia threshold?</span> <span class="a">Cycloplegic refraction of about +0.75 D or less at age 6 to 7.</span></li>
+      <li><span class="q">What do you monitor, and how often?</span> <span class="a">Axial length, every 6 months.</span></li>
+      <li><span class="q">Highest-risk ethnicity?</span> <span class="a">Asian.</span></li>
+      <li><span class="q">Optical control options?</span> <span class="a">Dual-focus soft CL, DIMS/HAL spectacle lenses, and ortho-k.</span></li>
+      <li><span class="q">An additive combination?</span> <span class="a">Atropine plus orthokeratology.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care &amp; Refraction Card 5 &middot; Hyperopic defocus grows, myopic defocus brakes</div>
+
+</div>
+</body>
+</html>
