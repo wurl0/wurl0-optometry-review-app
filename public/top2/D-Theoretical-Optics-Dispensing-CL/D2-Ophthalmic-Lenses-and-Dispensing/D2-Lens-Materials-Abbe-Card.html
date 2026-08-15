@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Theoretical Optics Card 4 · Lens Materials &amp; Abbe</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Theoretical Optics &amp; Dispensing</div>
+    </div>
+    <div class="card-no">Card<b>04</b>Materials</div>
+  </header>
+
+  <h1>Two numbers pick the lens: <em>index and Abbe</em></h1>
+  <p class="dek">A material is chosen by how thin it makes the lens (index) and how faithfully it passes color (Abbe), and the two usually fight. Add impact resistance, coatings, and tints, and you can answer every material item by placing it on one trade-off.</p>
+
+  <section>
+    <h2><span class="n">01</span> Index vs Abbe, the trade-off</h2>
+    <p class="lead"><b>Refractive index</b> sets <b>thinness</b> (higher index bends light more, so flatter, thinner lenses). <b>Abbe number</b> sets <b>color fidelity</b> (higher Abbe = less chromatic dispersion). Push the index up and the Abbe usually falls.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 290" role="img" aria-label="Refractive index plotted against Abbe number for common lens materials, showing high index trades away Abbe">
+        <line x1="66" y1="44" x2="66" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <line x1="66" y1="252" x2="612" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-faint)">
+          <text x="330" y="282" text-anchor="middle" fill="var(--ink-soft)">refractive index (thinner to the right)</text>
+          <text x="144" y="268" text-anchor="middle">1.50</text><text x="272" y="268" text-anchor="middle">1.59</text>
+          <text x="397" y="268" text-anchor="middle">1.67</text><text x="501" y="268" text-anchor="middle">1.74</text>
+          <text x="30" y="150" text-anchor="middle" transform="rotate(-90 30 150)" fill="var(--ink-soft)">Abbe (less color, up)</text>
+        </g>
+        <g font-family="system-ui,sans-serif" font-size="10.5" font-weight="700">
+          <circle cx="144" cy="81" r="5" fill="var(--accent)"/><text x="150" y="76" fill="var(--ink)">CR-39 (58)</text>
+          <circle cx="178" cy="77" r="5" fill="var(--accent)"/><text x="185" y="70" fill="var(--ink)">crown (59)</text>
+          <circle cx="189" cy="139" r="5" fill="var(--accent)"/><text x="196" y="136" fill="var(--ink)">Trivex (45)</text>
+          <circle cx="272" cy="206" r="5" fill="var(--trap)"/><text x="230" y="224" fill="var(--trap)">poly (30)</text>
+          <circle cx="397" cy="197" r="5" fill="var(--pearl)"/><text x="404" y="193" fill="var(--ink)">1.67 (32)</text>
+          <circle cx="501" cy="192" r="5" fill="var(--pearl)"/><text x="508" y="188" fill="var(--ink)">1.74 (33)</text>
+        </g>
+      </svg>
+      <figcaption>top-left = crown/CR-39 (high Abbe, thick); bottom-right = high-index and poly (thin, low Abbe); Trivex sits mid</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The material lineup</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Material</th><th>Index</th><th>Abbe</th><th>Impact</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td><b>CR-39</b> (plastic)</td><td class="cn">1.50</td><td>58</td><td>Low</td><td>The standard; light, tintable</td></tr>
+          <tr><td><b>Crown glass</b></td><td class="cn">1.523</td><td>59</td><td>Poor (shatters)</td><td class="act">Highest Abbe; heavy, scratch-hard</td></tr>
+          <tr><td><b>Trivex</b></td><td class="cn">1.53</td><td>45</td><td class="act">Excellent</td><td>Light + high Abbe + impact</td></tr>
+          <tr><td><b>Polycarbonate</b></td><td class="cn">1.586</td><td>30</td><td class="act">Excellent</td><td>Safety/kids; lowest Abbe; blocks UV</td></tr>
+          <tr><td><b>High-index 1.67</b></td><td class="cn">1.67</td><td>32</td><td>Moderate</td><td>Thin for strong Rx</td></tr>
+          <tr><td><b>High-index 1.74</b></td><td class="cn">1.74</td><td>33</td><td>Moderate</td><td class="act">Thinnest common plastic</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Chromatic aberration and impact</h2>
+    <div class="cal why"><div class="lab">Low Abbe means colored fringes</div><p>A low-Abbe material disperses more, so a patient looking through the <b>edge</b> of a high-index or polycarbonate lens sees <b>colored fringes</b> around lights, even with sharp central acuity. <b>Polycarbonate</b> (Abbe 30) is the worst; <b>crown/CR-39</b> (about 58) the best.</p></div>
+    <div class="cal trap"><div class="lab">When safety wins</div><p><b>Polycarbonate and Trivex</b> are the impact-resistant choices, for children, monocular patients, sports, and industry. <b>Trivex</b> is the upgrade: poly-like safety but a <b>higher Abbe</b> (crisper optics) and lower density. Impact is checked by the <b>drop-ball test</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Coatings</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Coating</th><th>Does</th></tr></thead>
+        <tbody>
+          <tr><td><b>Anti-reflective (AR)</b></td><td class="act">Cuts surface reflections, raises transmission; most needed on high-index (which reflects more)</td></tr>
+          <tr><td><b>Scratch / hard coat</b></td><td>Hardens soft plastic surfaces</td></tr>
+          <tr><td><b>UV</b></td><td>Blocks ultraviolet; plastics (CR-39) already absorb more UV than crown glass</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Absorptive lenses and tints</h2>
+    <div class="cal why"><div class="lab">Pick the tint for the task</div><p><b>Yellow/amber:</b> blocks blue, boosts contrast in <b>fog, haze, and low light</b>. <b>Gray:</b> neutral, true color, general sun. <b>Brown:</b> contrast in bright sun. <b>Polaroid:</b> kills <b>glare</b> from horizontal reflected surfaces (water, road).</p></div>
+    <div class="cal pearl"><div class="lab">Two glass facts</div><p>Glass is tinted in the melt: <b>cobalt oxide</b> gives a <b>blue</b> lens. And a <b>glassblower's cataract</b> comes from chronic <b>infrared</b> exposure, the reason heat workers wear IR-absorbing lenses.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Card 1:</b> index and dispersion are the same physics that bends and splits light. <b>Card 3:</b> high index reflecting more is Fresnel, which is why AR pairs with high-index. <b>Clinical / Occupational:</b> polycarbonate for safety, tints for glare and specific tasks.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Index vs Abbe</div><p>What each controls, and the trade-off; sketch the scatter with the six materials.</p></div>
+    <div class="drill"><div class="t">2 &middot; The lineup</div><p>Rank the six by Abbe and by impact from memory.</p></div>
+    <div class="drill"><div class="t">3 &middot; Aberration and safety</div><p>Which material fringes most, which two are impact-safe, and Trivex vs poly.</p></div>
+    <div class="drill"><div class="t">4 &middot; Coatings</div><p>AR, scratch, UV: what each does and where AR matters most.</p></div>
+    <div class="drill"><div class="t">5 &middot; Tints</div><p>Match yellow, gray, brown, Polaroid to a task; cobalt and glassblower.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">What do index and Abbe each control?</span> <span class="a">Index = thinness (higher = thinner); Abbe = color fidelity (higher = less dispersion).</span></li>
+      <li><span class="q">The trade-off?</span> <span class="a">Higher index usually means lower Abbe (thinner but more chromatic aberration).</span></li>
+      <li><span class="q">Highest Abbe materials?</span> <span class="a">Crown glass and CR-39 (about 58 to 59).</span></li>
+      <li><span class="q">Lowest Abbe / most fringing?</span> <span class="a">Polycarbonate (about 30).</span></li>
+      <li><span class="q">Impact-resistant materials?</span> <span class="a">Polycarbonate and Trivex.</span></li>
+      <li><span class="q">Trivex advantage over polycarbonate?</span> <span class="a">Higher Abbe (crisper optics) with excellent impact resistance and lower density.</span></li>
+      <li><span class="q">Why does high-index need AR?</span> <span class="a">Higher index reflects more light at each surface (Fresnel).</span></li>
+      <li><span class="q">Plastic vs glass and UV?</span> <span class="a">Plastic (CR-39) absorbs more UV than crown glass.</span></li>
+      <li><span class="q">Highest-index common plastic?</span> <span class="a">1.74 (thinnest).</span></li>
+      <li><span class="q">Colored fringes at the lens edge mean?</span> <span class="a">Chromatic aberration from a low Abbe value.</span></li>
+      <li><span class="q">Yellow tint use?</span> <span class="a">Blocks blue, boosts contrast in fog/haze and low light.</span></li>
+      <li><span class="q">Cobalt oxide and glassblower cataract?</span> <span class="a">Cobalt = blue glass; glassblower cataract = infrared exposure.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Theoretical Optics Card 4 &middot; High index, thin but low Abbe</div>
+
+</div>
+</body>
+</html>
