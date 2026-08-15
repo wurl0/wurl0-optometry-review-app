@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care &amp; Refraction Card 6 · Amblyopia, Vision Therapy &amp; the Functional Anomalies</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care &amp; Refraction</div>
+    </div>
+    <div class="card-no">Card<b>06</b>Amblyopia &amp; VT</div>
+  </header>
+
+  <h1>Train the lazy eye, <em>rebuild the team</em></h1>
+  <p class="dek">Amblyopia is reduced acuity in a structurally normal eye, the brain turned it down. Fix it in order: give a clear image, force the weak eye to work, then rebuild the two-eye team. Learn the types, the management ladder, and the therapy stages, and the vision-therapy questions line up.</p>
+
+  <section>
+    <h2><span class="n">01</span> What amblyopia is</h2>
+    <p class="lead">Reduced best-corrected acuity (or a two-line difference between eyes) with a <b>normal eye exam</b>, from disrupted vision during the <span class="term">critical period</span> of development. Depth perception (stereopsis) suffers first, and the earlier and longer the disruption, the deeper the loss.</p>
+    <div class="cal trap"><div class="lab">The catch</div><p>A child reading 20/80 in one eye and 20/20 in the other with healthy-looking eyes is amblyopic until proven otherwise. Treat earlier for a better result, but plasticity persists longer than once thought.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The types</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Type</th><th>Cause</th></tr></thead>
+        <tbody>
+          <tr><td><b>Strabismic</b></td><td>A constant, unilateral turn; the deviating eye is suppressed</td></tr>
+          <tr><td><b>Anisometropic (refractive)</b></td><td>A large unequal refractive error (the blurrier eye is chronically defocused)</td></tr>
+          <tr><td><b>Deprivation</b></td><td class="act">Something blocks the image (congenital cataract, ptosis); the most severe</td></tr>
+          <tr><td><b>Isoametropic</b></td><td>High but equal error in both eyes (both underdeveloped)</td></tr>
+          <tr><td><b>Meridional</b></td><td>Uncorrected high astigmatism in one meridian</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The management ladder</h2>
+    <p class="lead">Work the steps in order. The <b>first clinical goal is a clear retinal image</b>, everything else builds on it.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 168" role="img" aria-label="The amblyopia management ladder: correct the refraction, occlude or penalize, active vision therapy, then binocular fusion">
+        <g font-family="system-ui,sans-serif">
+          <g>
+            <rect x="8" y="46" width="140" height="80" rx="12" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+            <circle cx="30" cy="68" r="12" fill="var(--accent)"/><text x="30" y="72" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+            <text x="80" y="94" text-anchor="middle" font-size="12.5" font-weight="800" fill="var(--ink)">Correct Rx</text>
+            <text x="80" y="111" text-anchor="middle" font-size="10" fill="var(--ink-soft)">clear image</text>
+          </g>
+          <g>
+            <rect x="172" y="46" width="140" height="80" rx="12" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+            <circle cx="194" cy="68" r="12" fill="var(--accent)"/><text x="194" y="72" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+            <text x="244" y="94" text-anchor="middle" font-size="12.5" font-weight="800" fill="var(--ink)">Occlude</text>
+            <text x="244" y="111" text-anchor="middle" font-size="10" fill="var(--ink-soft)">patch the good eye</text>
+          </g>
+          <g>
+            <rect x="336" y="46" width="140" height="80" rx="12" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+            <circle cx="358" cy="68" r="12" fill="var(--accent)"/><text x="358" y="72" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+            <text x="408" y="94" text-anchor="middle" font-size="12.5" font-weight="800" fill="var(--ink)">Active VT</text>
+            <text x="408" y="111" text-anchor="middle" font-size="10" fill="var(--ink-soft)">monocular skills</text>
+          </g>
+          <g>
+            <rect x="500" y="46" width="132" height="80" rx="12" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/>
+            <circle cx="522" cy="68" r="12" fill="var(--accent)"/><text x="522" y="72" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
+            <text x="566" y="94" text-anchor="middle" font-size="12.5" font-weight="800" fill="var(--ink)">Binocular</text>
+            <text x="566" y="111" text-anchor="middle" font-size="10" fill="var(--ink-soft)">fusion + stereo</text>
+          </g>
+          <g stroke="var(--ink-faint)" stroke-width="2" fill="none">
+            <path d="M152 86 h16 M164 81 l6 5 l-6 5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M316 86 h16 M328 81 l6 5 l-6 5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M480 86 h16 M492 81 l6 5 l-6 5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption>correct the refraction first, then patch the dominant eye, then active therapy, then rebuild binocular fusion</figcaption>
+    </figure>
+    <div class="cal why" style="margin-top:13px"><div class="lab">The moves, spelled out</div><p><b>Step 1:</b> full refractive correction gives the amblyopic eye a clear image to work with. <b>Step 2:</b> occlusion (patch the <b>dominant/better</b> eye) or atropine <b>penalization</b> blurs the good eye to force the weak one. <b>Step 3:</b> active therapy builds monocular skills. <b>Step 4:</b> anti-suppression and fusion training rebuild binocular vision.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Passive vs active, and the therapy stages</h2>
+    <div class="cal why"><div class="lab">Passive vs active</div><p><b>Passive:</b> occlusion and penalization just force the eye to be used. <b>Active:</b> supervised, feedback-driven tasks (Brock string, aperture-rule, monocular-in-a-binocular-field). The gains come from <b>neuroplasticity and visual learning</b>, not stronger muscles.</p></div>
+    <div class="cal trap"><div class="lab">The stages of vision therapy</div><p><b>Monocular</b> (each eye alone) &rarr; <b>MFBF</b> (monocular fixation in a binocular field, one eye works while both stay open) &rarr; <b>biocular</b> &rarr; <b>binocular</b> (both eyes as one system, fusion and stereopsis). Anti-suppression bridges from monocular into binocular.</p></div>
+    <div class="cal pearl"><div class="lab">A couple of named tools</div><p><b>CAM stimulator</b> (rotating high-contrast gratings for the amblyopic eye) and <b>pleoptics</b> (dazzle the periphery, protect the fovea to recentre fixation). Success = improved acuity, no suppression, and restored stereopsis.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The functional anomalies (recap)</h2>
+    <p class="lead">The accommodative and vergence dysfunctions you correct at the chair. The AC/A and phoria detail is on <b>Physiological Optics Card 6</b>; here is the clinical shorthand.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Anomaly</th><th>Clinical picture</th></tr></thead>
+        <tbody>
+          <tr><td><b>Accommodative insufficiency</b></td><td>Near blur, receded near point, high lag; struggles to focus near</td></tr>
+          <tr><td><b>Ill-sustained / infacility</b></td><td>Fades with sustained near work / slow to shift focus near-to-far (fails flippers)</td></tr>
+          <tr><td><b>Accommodative excess (spasm)</b></td><td>Over-focuses, a lead, pseudomyopia, hard to relax to distance</td></tr>
+          <tr><td><b>Convergence insufficiency</b></td><td>Exo at near, receded NPC, words jump, covers one eye at near</td></tr>
+          <tr><td><b>Convergence excess</b></td><td>Eso at near, high AC/A; helped by a plus add at near</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">Comitant vs incomitant</div><p><b>Comitant:</b> the deviation is the same in every gaze (constant angle). <b>Incomitant:</b> it changes with gaze direction (a nerve palsy or a restriction).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Physiological Optics Card 4:</b> suppression, ARC, and the fusion grades that therapy rebuilds. <b>Physiological Optics Card 6:</b> AC/A, phorias, Sheard/Percival behind the vergence anomalies. <b>Clinical / Pediatric optometry:</b> amblyopia is caught and managed in the pediatric exam.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Define amblyopia</div><p>Definition, critical period, and which function suffers first.</p></div>
+    <div class="drill"><div class="t">2 &middot; The types</div><p>Strabismic, anisometropic, deprivation, isoametropic, meridional: one cause each.</p></div>
+    <div class="drill"><div class="t">3 &middot; The ladder</div><p>Four steps in order, and which eye you patch.</p></div>
+    <div class="drill"><div class="t">4 &middot; Passive vs active + stages</div><p>Define each, and list the therapy stages including MFBF.</p></div>
+    <div class="drill"><div class="t">5 &middot; Functional anomalies</div><p>Accommodative insufficiency vs excess, and convergence insufficiency vs excess.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Amblyopia?</span> <span class="a">Reduced best-corrected acuity with a structurally normal eye, from disrupted vision in the critical period.</span></li>
+      <li><span class="q">Strabismic amblyopia?</span> <span class="a">From a constant unilateral turn; the deviating eye is suppressed.</span></li>
+      <li><span class="q">Anisometropic amblyopia?</span> <span class="a">From a large unequal refractive error chronically blurring one eye.</span></li>
+      <li><span class="q">Deprivation amblyopia?</span> <span class="a">Something blocks the image (congenital cataract, ptosis); the most severe.</span></li>
+      <li><span class="q">First step in management?</span> <span class="a">Correct the refractive error to give a clear retinal image.</span></li>
+      <li><span class="q">Which eye do you patch?</span> <span class="a">The dominant/better eye, to force the amblyopic one.</span></li>
+      <li><span class="q">Passive vs active treatment?</span> <span class="a">Passive = occlusion/penalization (forced use); active = supervised feedback tasks (Brock string, aperture rule).</span></li>
+      <li><span class="q">What is MFBF?</span> <span class="a">Monocular fixation in a binocular field: one eye works while both stay open (breaks suppression).</span></li>
+      <li><span class="q">Vision therapy stages?</span> <span class="a">Monocular to MFBF to biocular to binocular (fusion and stereopsis).</span></li>
+      <li><span class="q">Mechanism of VT gains?</span> <span class="a">Neuroplasticity and visual learning, not muscle strengthening.</span></li>
+      <li><span class="q">Accommodative insufficiency vs excess?</span> <span class="a">Insufficiency = near blur, receded NPA, high lag; excess = over-focuses (lead, pseudomyopia, hard to relax).</span></li>
+      <li><span class="q">Convergence insufficiency signs?</span> <span class="a">Exo at near, receded NPC, words jump, covers one eye at near.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care &amp; Refraction Card 6 &middot; Clear image, patch, activate, fuse</div>
+
+</div>
+</body>
+</html>
