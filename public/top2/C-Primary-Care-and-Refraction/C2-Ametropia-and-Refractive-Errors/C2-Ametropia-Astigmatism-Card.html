@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care &amp; Refraction Card 1 · Ametropia &amp; Astigmatism</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care &amp; Refraction</div>
+    </div>
+    <div class="card-no">Card<b>01</b>Ametropia</div>
+  </header>
+
+  <h1>Every refractive error is <em>a focus in the wrong place</em></h1>
+  <p class="dek">Emmetropia lands parallel light on the retina with accommodation relaxed. Miss it three ways: too much power (myopia), too little (hyperopia), or two powers at once (astigmatism). Learn the far point, the interval of Sturm, and the transposition trick, and the classification questions become mechanical.</p>
+
+  <section>
+    <h2><span class="n">01</span> Emmetropia and the far point</h2>
+    <p class="lead">With accommodation <b>relaxed</b>, the eye's <span class="term">far point</span> is the one object distance that focuses sharply on the retina. Where that point sits names the error.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>State</th><th>Relaxed focus</th><th>Far point</th><th>Correct with</th></tr></thead>
+        <tbody>
+          <tr><td><b>Emmetropia</b></td><td>On the retina</td><td>Infinity</td><td>Nothing</td></tr>
+          <tr><td><b>Myopia</b></td><td class="act">In front of retina</td><td>Real, in front (near)</td><td>Minus (concave)</td></tr>
+          <tr><td><b>Hyperopia</b></td><td class="act">Behind retina</td><td>Virtual, behind the eye</td><td>Plus (convex)</td></tr>
+          <tr><td><b>Astigmatism</b></td><td>Two focal lines (interval of Sturm)</td><td>Two, one per meridian</td><td>Cylinder</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">Axial vs refractive</div><p>Each error is <b>axial</b> (eye too long or short) or <b>refractive</b> (cornea/lens too strong or weak). A myope's eye is usually too <b>long</b>; a hyperope's too <b>short</b>. About <b>1 mm of axial length is roughly 3 D</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Myopia and hyperopia, in kinds</h2>
+    <div class="cal why"><div class="lab">Myopia types</div><p><b>Simple</b> (physiologic), <b>degenerative/pathologic</b> (long eye, retinal risk), <b>nocturnal</b> (dim light, dark focus), <b>pseudomyopia</b> (accommodative spasm, disappears under cycloplegia), and <b>induced/index</b> (nuclear sclerosis, drugs). Corrected with the <b>least minus</b> that gives best acuity.</p></div>
+    <div class="cal trap"><div class="lab">Hyperopia is layered</div><p><span class="term">Total</span> hyperopia = <b>latent + manifest</b>. <b>Latent</b> is hidden by ciliary tone, revealed only by <b>cycloplegia</b>. <b>Manifest</b> = <b>facultative</b> (accommodation can still overcome it) + <b>absolute</b> (it cannot). Give the <b>most plus</b> the patient accepts for comfortable vision.</p></div>
+    <div class="cal mnem"><div class="lab">Correction hook</div><p>Myopia: <b>max minus is wrong, use the least</b> (over-minus stimulates accommodation). Hyperopia: <b>give the most plus</b> that keeps distance clear.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Astigmatism and the interval of Sturm</h2>
+    <p class="lead">A toric surface has <b>two</b> principal powers, so it makes not a point but two <span class="term">focal lines</span> at right angles, with a blur between them.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="The conoid of Sturm: a toric lens forming a vertical focal line, a circle of least confusion, and a horizontal focal line">
+        <line x1="60" y1="150" x2="565" y2="150" stroke="var(--ink-faint)" stroke-width="1.4" stroke-dasharray="4 5"/>
+        <!-- toric lens -->
+        <ellipse cx="55" cy="150" rx="9" ry="48" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2.4"/>
+        <text x="55" y="218" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">toric</text>
+        <!-- beam envelope: bulges at F1 (vertical line), pinches at F2 (horizontal line) -->
+        <path d="M62 118 Q150 100 230 106 Q330 133 452 147 Q535 133 565 120" fill="none" stroke="var(--line)" stroke-width="1.6"/>
+        <path d="M62 182 Q150 200 230 194 Q330 167 452 153 Q535 167 565 180" fill="none" stroke="var(--line)" stroke-width="1.6"/>
+        <!-- F1 vertical focal line -->
+        <line x1="230" y1="120" x2="230" y2="180" stroke="var(--why)" stroke-width="4.5"/>
+        <!-- circle of least confusion -->
+        <circle cx="340" cy="150" r="14" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <!-- F2 horizontal focal line -->
+        <line x1="424" y1="150" x2="480" y2="150" stroke="var(--pearl)" stroke-width="4.5"/>
+        <g font-family="system-ui,sans-serif" text-anchor="middle" font-weight="700" font-size="11.5">
+          <text x="230" y="108" fill="var(--why)">F1 vertical line</text>
+          <text x="340" y="112" fill="var(--accent)">least confusion</text>
+          <text x="452" y="118" fill="var(--pearl)">F2 horizontal line</text>
+        </g>
+      </svg>
+      <figcaption>the two meridians focus at different depths; midway sits the circle of least confusion, where a sphere alone would place the blur</figcaption>
+    </figure>
+    <div class="cal why" style="margin-top:13px"><div class="lab">Where the cylinder goes</div><p>A correcting cylinder collapses the two focal lines onto the retina. In minus-cylinder form, the <b>axis</b> marks the meridian with <b>no</b> cyl power; the full cyl acts <b>90 degrees away</b>. Regular astigmatism has meridians at right angles (correctable); <b>irregular</b> (keratoconus, scars) does not, and needs a rigid contact lens.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Classifying astigmatism</h2>
+    <div class="cal trap big"><div class="lab">By where the two focal lines fall</div><p>Read each meridian's power. <b>Both minus</b> = compound myopic. <b>Both plus</b> = compound hyperopic. <b>One plano</b> = simple (myopic or hyperopic, named by the other). <b>One plus, one minus</b> (they straddle the retina) = <b>mixed</b>.</p></div>
+    <div class="cal why"><div class="lab">By meridian orientation</div><p><b>With-the-rule (WTR):</b> steeper <b>vertical</b> meridian, minus cyl axis near <b>180</b> (young eyes; the lids press the cornea). <b>Against-the-rule (ATR):</b> steeper <b>horizontal</b>, minus cyl axis near <b>90</b> (older eyes). <b>Oblique:</b> axis near 45 or 135.</p></div>
+    <div class="cal pearl"><div class="lab">Comparing the two eyes</div><p><b>Symmetric:</b> the axes mirror each other (sum to about 180). <b>Homonymous:</b> both eyes the same type (both WTR or both ATR); <b>heteronymous</b> if one is WTR and the other ATR.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Transposition: same lens, other form</h2>
+    <div class="cal big mnem"><div class="lab">Three steps, every time</div><p><b>1.</b> New sphere = old sphere + old cylinder. <b>2.</b> New cylinder = same number, <b>flip the sign</b>. <b>3.</b> New axis = old axis <b>&plusmn; 90</b>. The lens is identical; only the notation changes.</p></div>
+    <div class="cal why"><div class="lab">Worked example</div><p><span class="eq">+2.00 &minus;1.00 &times; 90</span> transposes to <span class="eq">+1.00 +1.00 &times; 180</span>. Check the meridians both ways: at 90 the power is +1.00, at 180 it is +2.00, either notation gives the same two powers.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Theoretical Optics:</b> the interval of Sturm and transposition are pure lens optics. <b>Primary Care Cards ahead:</b> retinoscopy and the cross cylinder find and refine exactly this cylinder. <b>Ocular Disease:</b> irregular astigmatism flags keratoconus, and a sudden refractive shift flags cataract or blood-sugar swings.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Far points</div><p>Draw where light focuses and where the far point sits for myope, hyperope, emmetrope.</p></div>
+    <div class="drill"><div class="t">2 &middot; Hyperopia layers</div><p>Total = latent + manifest; manifest = facultative + absolute. Define each.</p></div>
+    <div class="drill"><div class="t">3 &middot; Interval of Sturm</div><p>Draw the two focal lines and the circle of least confusion, label which meridian makes which line.</p></div>
+    <div class="drill"><div class="t">4 &middot; Classify five prescriptions</div><p>Read the meridians and call each simple/compound/mixed, then WTR/ATR.</p></div>
+    <div class="drill"><div class="t">5 &middot; Transpose</div><p>Transpose three prescriptions both directions and verify by meridian.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Emmetropia?</span> <span class="a">Parallel light focuses on the retina with accommodation relaxed (far point at infinity).</span></li>
+      <li><span class="q">Myopia: focus, far point, correction?</span> <span class="a">Focuses in front of the retina; real far point in front of the eye; corrected with minus.</span></li>
+      <li><span class="q">Hyperopia: focus, far point, correction?</span> <span class="a">Focuses behind the retina; virtual far point behind the eye; corrected with plus.</span></li>
+      <li><span class="q">Axial vs refractive, and the 1 mm rule?</span> <span class="a">Eye too long/short vs optics too strong/weak; about 1 mm axial length is roughly 3 D.</span></li>
+      <li><span class="q">Total hyperopia components?</span> <span class="a">Latent + manifest; manifest = facultative + absolute; latent needs cycloplegia to reveal.</span></li>
+      <li><span class="q">The interval of Sturm?</span> <span class="a">The space between the two focal lines of a toric system; midway is the circle of least confusion.</span></li>
+      <li><span class="q">WTR vs ATR?</span> <span class="a">WTR = steep vertical meridian (minus cyl axis ~180); ATR = steep horizontal (minus cyl axis ~90).</span></li>
+      <li><span class="q">Regular vs irregular astigmatism?</span> <span class="a">Regular = principal meridians 90 apart (correctable); irregular (keratoconus, scars) needs a rigid lens.</span></li>
+      <li><span class="q">Classify by focal lines?</span> <span class="a">Both minus = compound myopic; both plus = compound hyperopic; one plano = simple; straddling = mixed.</span></li>
+      <li><span class="q">Transposition steps?</span> <span class="a">New sphere = sphere + cyl; flip the cyl sign; change axis by 90.</span></li>
+      <li><span class="q">Transpose +2.00 -1.00 x90?</span> <span class="a">+1.00 +1.00 x180 (same lens).</span></li>
+      <li><span class="q">Symmetric vs homonymous astigmatism?</span> <span class="a">Symmetric = mirror axes (sum ~180); homonymous = both eyes the same type (both WTR or both ATR).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care &amp; Refraction Card 1 &middot; Sphere + cyl, flip sign, axis 90</div>
+
+</div>
+</body>
+</html>
