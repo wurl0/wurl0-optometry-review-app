@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 2 · Visual Fields &amp; Pathway Lesions</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>02</b>Fields &amp; pathway</div>
+  </header>
+
+  <h1>Where the field breaks <em>names the lesion</em></h1>
+  <p class="dek">The whole pathway is one rule: before the chiasm, a defect is one eye; at the chiasm, it splits the two temporal fields; behind the chiasm, it takes the same half of both. Learn the six cut points and the pupil test, and field questions become a lookup.</p>
+
+  <section>
+    <h2><span class="n">01</span> The pathway and its six cut points</h2>
+    <p class="lead">Light from the <b>right</b> half of the world lands on the <b>left</b> half of each retina and travels to the <b>left</b> brain. Nasal fibers cross at the chiasm; temporal fibers stay put. Cut the line anywhere and the field drops out in a signature pattern.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="The visual pathway from the eyes through chiasm, tract, LGB and radiations to the occipital cortex, with six numbered lesion sites">
+        <!-- eyes -->
+        <circle cx="52" cy="86" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="52" cy="86" r="7" fill="var(--ink)"/>
+        <circle cx="52" cy="214" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="52" cy="214" r="7" fill="var(--ink)"/>
+        <text x="52" y="130" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">OD</text>
+        <text x="52" y="258" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">OS</text>
+        <!-- optic nerves to chiasm -->
+        <g stroke="var(--accent)" stroke-width="3" fill="none">
+          <line x1="72" y1="92" x2="205" y2="138"/><line x1="72" y1="208" x2="205" y2="162"/>
+        </g>
+        <!-- chiasm -->
+        <g stroke="var(--accent-deep)" stroke-width="3" fill="none">
+          <line x1="205" y1="138" x2="250" y2="162"/><line x1="205" y1="162" x2="250" y2="138"/>
+        </g>
+        <text x="227" y="192" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">chiasm</text>
+        <!-- tracts to LGB -->
+        <g stroke="var(--accent)" stroke-width="3" fill="none">
+          <line x1="250" y1="150" x2="382" y2="92"/><line x1="250" y1="150" x2="382" y2="208"/>
+        </g>
+        <!-- LGB nodes -->
+        <rect x="368" y="78" width="34" height="28" rx="7" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/><text x="385" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="var(--ink)">LGB</text>
+        <rect x="368" y="194" width="34" height="28" rx="7" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 45%,var(--line))"/><text x="385" y="212" text-anchor="middle" font-size="10" font-weight="700" fill="var(--ink)">LGB</text>
+        <!-- radiations (lower one loops down = Meyer's loop) -->
+        <g stroke="var(--accent)" stroke-width="3" fill="none">
+          <line x1="402" y1="90" x2="548" y2="80"/>
+          <path d="M402 210 Q 452 262 500 236 T 548 214"/>
+        </g>
+        <!-- occipital -->
+        <rect x="546" y="62" width="60" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><text x="576" y="83" text-anchor="middle" font-size="10" font-weight="700" fill="var(--ink)">occipital</text>
+        <rect x="546" y="198" width="60" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><text x="576" y="219" text-anchor="middle" font-size="10" font-weight="700" fill="var(--ink)">occipital</text>
+        <!-- lesion markers -->
+        <g font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="12">
+          <circle cx="140" cy="116" r="12" fill="var(--trap)"/><text x="140" y="120" text-anchor="middle" fill="#fff">1</text>
+          <circle cx="227" cy="150" r="12" fill="var(--trap)"/><text x="227" y="154" text-anchor="middle" fill="#fff">2</text>
+          <circle cx="256" cy="120" r="12" fill="var(--trap)"/><text x="256" y="124" text-anchor="middle" fill="#fff">3</text>
+          <circle cx="322" cy="115" r="12" fill="var(--trap)"/><text x="322" y="119" text-anchor="middle" fill="#fff">4</text>
+          <circle cx="470" cy="243" r="12" fill="var(--trap)"/><text x="470" y="247" text-anchor="middle" fill="#fff">5</text>
+          <circle cx="520" cy="74" r="12" fill="var(--trap)"/><text x="520" y="78" text-anchor="middle" fill="#fff">6</text>
+        </g>
+      </svg>
+      <figcaption>six lesion sites &middot; 1 optic nerve &middot; 2 chiasm center &middot; 3 chiasm sides &middot; 4 optic tract &middot; 5 temporal radiation (Meyer's loop) &middot; 6 occipital</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Site to defect</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>#</th><th>Lesion</th><th>Field defect</th><th>Localizing clue</th></tr></thead>
+        <tbody>
+          <tr><td class="cn">1</td><td><b>Optic nerve</b></td><td class="act">Monocular blindness (that eye)</td><td>Only one eye, and a positive RAPD on that side</td></tr>
+          <tr><td class="cn">2</td><td><b>Chiasm, central</b></td><td class="act">Bitemporal hemianopsia</td><td>Crossing nasal fibers; pituitary tumor</td></tr>
+          <tr><td class="cn">3</td><td><b>Chiasm, sides</b></td><td class="act">Binasal hemianopsia</td><td>Uncrossed temporal fibers, both lateral edges</td></tr>
+          <tr><td class="cn">4</td><td><b>Optic tract</b></td><td class="act">Homonymous hemianopsia, incongruous</td><td>Contralateral field; may show a Wernicke pupil</td></tr>
+          <tr><td class="cn">5</td><td><b>Temporal radiation</b> (Meyer's loop)</td><td class="act">Superior homonymous quadrantanopsia</td><td>"Pie in the sky," contralateral and upper</td></tr>
+          <tr><td class="cn">6</td><td><b>Occipital cortex</b></td><td class="act">Homonymous hemianopsia, congruous, macular sparing</td><td>Very congruous; central vision spared (dual supply)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Reading the pattern</h2>
+    <div class="cal why"><div class="lab">Homonymous vs heteronymous</div><p><span class="term">Homonymous</span> = the <b>same side</b> of both fields (both right, or both left), so the lesion is <b>behind</b> the chiasm and on the opposite side of the brain. <span class="term">Heteronymous</span> = <b>opposite</b> sides (bitemporal or binasal), which only the <b>chiasm</b> can produce.</p></div>
+    <div class="cal trap"><div class="lab">Congruity localizes front-to-back</div><p>Congruity = how well the two eyes' defects <b>match</b>. The more congruous (matching), the more <b>posterior</b> the lesion. So an <b>incongruous</b> homonymous defect points to the <b>optic tract</b>; a <b>congruous</b> one points to the <b>occipital cortex</b>.</p></div>
+    <div class="cal mnem"><div class="lab">Two hooks</div><p><b>Temporal lobe = "pie in the sky"</b> (Meyer's loop carries lower fibers, so it drops the upper field). <b>Parietal lobe = "pie on the floor"</b> (inferior quadrant). And <b>macular sparing = occipital</b>, because the occipital pole has a double blood supply.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> The pupil: swinging flashlight</h2>
+    <p class="lead">The light reflex splits off <b>before</b> the LGB, so it tests the <b>afferent</b> (input) nerve and the <b>efferent</b> (CN III output) separately. A retrochiasmal or LGB-and-beyond lesion leaves the pupil <b>normal</b>.</p>
+    <div class="cal why"><div class="lab">RAPD (relative afferent, Marcus Gunn)</div><p>Swing the light to the <b>bad</b> eye and <b>both pupils dilate</b> instead of constricting, because that eye sends a weaker signal. It is a sign of <b>optic nerve</b> or extensive retinal disease, and it is <b>relative</b> (a difference between the two sides).</p></div>
+    <div class="cal trap"><div class="lab">Efferent (motor) defect</div><p>One pupil <b>never constricts</b>, to its own light or to the consensual light, because its <b>CN III output</b> is out. The other pupil reacts normally throughout. Afferent is an <b>input</b> problem, efferent is an <b>output</b> problem.</p></div>
+    <div class="cal pearl"><div class="lab">Wernicke's hemianopic pupil</div><p>Shine light on the <b>blind</b> hemiretina and the pupil <b>does not react</b>; shine it on the seeing half and it does. This localizes to the <b>optic tract</b> (the last place field and pupil fibers still travel together before the pupil fibers peel off).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Visual Biology:</b> the same pathway and the pupil light reflex arc, built up anatomically. <b>Primary Eye Care:</b> confrontation and perimetry map these defects at the chair, and the swinging-flashlight test is a two-second screen. <b>Clinical / Neuro-optometry:</b> pituitary tumors (bitemporal) and strokes (congruous homonymous with macular sparing) are the classic cases.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Draw the pathway</div><p>Eyes to occipital, mark all six cut points from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Site to defect</div><p>Rebuild the whole table blind: lesion, defect, one clue each.</p></div>
+    <div class="drill"><div class="t">3 &middot; Homonymous vs heteronymous</div><p>State what each means and which one only the chiasm makes.</p></div>
+    <div class="drill"><div class="t">4 &middot; Congruity + the pies</div><p>Which lesion is incongruous vs congruous, and pie-in-the-sky vs pie-on-the-floor.</p></div>
+    <div class="drill"><div class="t">5 &middot; The pupil</div><p>Describe RAPD, an efferent defect, and Wernicke's pupil, and where each localizes.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Optic nerve lesion defect?</span> <span class="a">Monocular blindness of that eye, with a positive RAPD.</span></li>
+      <li><span class="q">Central chiasm lesion?</span> <span class="a">Bitemporal hemianopsia (crossing nasal fibers), classically a pituitary tumor.</span></li>
+      <li><span class="q">Lateral chiasm lesions on both sides?</span> <span class="a">Binasal hemianopsia (uncrossed temporal fibers).</span></li>
+      <li><span class="q">Homonymous vs heteronymous?</span> <span class="a">Homonymous = same side of both fields = behind the chiasm; heteronymous = opposite sides = the chiasm.</span></li>
+      <li><span class="q">What does congruity tell you?</span> <span class="a">The more congruous (matching) the defect, the more posterior the lesion (occipital); incongruous = optic tract.</span></li>
+      <li><span class="q">Pie in the sky?</span> <span class="a">Superior homonymous quadrantanopsia from a temporal-lobe (Meyer's loop) lesion.</span></li>
+      <li><span class="q">Pie on the floor?</span> <span class="a">Inferior homonymous quadrantanopsia from a parietal-lobe lesion.</span></li>
+      <li><span class="q">Occipital lesion hallmark?</span> <span class="a">Congruous homonymous hemianopsia with macular sparing (dual blood supply).</span></li>
+      <li><span class="q">Right homonymous hemianopsia localizes where?</span> <span class="a">A left-sided retrochiasmal lesion (left tract, radiation, or occipital).</span></li>
+      <li><span class="q">RAPD on the swinging-flashlight test?</span> <span class="a">Swinging to the bad eye makes both pupils dilate; sign of optic nerve or severe retinal disease.</span></li>
+      <li><span class="q">Efferent pupil defect?</span> <span class="a">One pupil never constricts to direct or consensual light (CN III output is out); the other reacts.</span></li>
+      <li><span class="q">Wernicke's hemianopic pupil localizes where?</span> <span class="a">Optic tract; light on the blind hemiretina gives no reaction, light on the seeing half does.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 2 &middot; Before/at/behind the chiasm</div>
+
+</div>
+</body>
+</html>
