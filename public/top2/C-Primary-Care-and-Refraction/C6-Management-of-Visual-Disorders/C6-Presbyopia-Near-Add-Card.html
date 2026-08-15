@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care &amp; Refraction Card 4 · Presbyopia &amp; the Near Add</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care &amp; Refraction</div>
+    </div>
+    <div class="card-no">Card<b>04</b>Presbyopia</div>
+  </header>
+
+  <h1>The lens runs out of <em>plus to give</em></h1>
+  <p class="dek">Presbyopia is not disease, it is arithmetic: the near task asks for more focusing than the aging lens can supply, so you make up the shortfall with an add. Learn the amplitude-demand logic, the half-amplitude reserve, and the multifocal choices, and every add question is a subtraction.</p>
+
+  <section>
+    <h2><span class="n">01</span> What presbyopia is</h2>
+    <p class="lead">With age the crystalline lens <b>stiffens and loses elasticity</b>, so accommodative amplitude falls. Around <b>40 to 45</b> it drops below the near demand and near vision blurs.</p>
+    <div class="cal why"><div class="lab">The picture</div><p>Near blur, holding print <b>farther away</b>, needing <b>more light</b>, and eyestrain after sustained near work. <b>Distance acuity is untouched</b>, presbyopia is a near-only problem.</p></div>
+    <div class="cal trap"><div class="lab">Two exam traps</div><p>The cause is <b>decreased</b> lens elasticity (not increased). And presbyopia <b>never</b> reduces distance vision, if distance is blurred too, look for another error.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Where it begins: amplitude vs demand</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 290" role="img" aria-label="Accommodative amplitude falling with age and crossing the near demand, marking the onset of presbyopia">
+        <line x1="58" y1="46" x2="58" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <line x1="58" y1="252" x2="614" y2="252" stroke="var(--line)" stroke-width="2"/>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--ink-faint)">
+          <text x="330" y="283" text-anchor="middle" fill="var(--ink-soft)">age (years)</text>
+          <text x="60" y="268" text-anchor="middle">10</text><text x="240" y="268" text-anchor="middle">30</text>
+          <text x="420" y="268" text-anchor="middle">50</text><text x="600" y="268" text-anchor="middle">70</text>
+          <text x="26" y="150" text-anchor="middle" transform="rotate(-90 26 150)" fill="var(--ink-soft)">amplitude (D)</text>
+        </g>
+        <!-- comfort threshold (2x demand = 5 D) -->
+        <line x1="58" y1="188" x2="614" y2="188" stroke="var(--pearl)" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <text x="600" y="182" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--pearl)">~2x demand (comfort)</text>
+        <!-- near demand line (2.5 D at 40 cm) -->
+        <line x1="58" y1="219" x2="614" y2="219" stroke="var(--why)" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <text x="600" y="213" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--why)">near demand 2.5 D (40 cm)</text>
+        <!-- amplitude curve (Hofstetter avg) -->
+        <path d="M60 56 Q200 112 330 169 Q405 200 465 224 Q495 236 512 244" fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <!-- onset marker where amplitude crosses comfort (~age 45) -->
+        <circle cx="375" cy="188" r="6" fill="var(--trap)"/>
+        <text x="375" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="var(--trap)">presbyopia</text>
+        <text x="375" y="136" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="var(--trap)">begins ~45</text>
+        <line x1="375" y1="142" x2="375" y2="182" stroke="var(--trap)" stroke-width="1.4" stroke-dasharray="3 3"/>
+      </svg>
+      <figcaption>amplitude falls with age; comfort needs about twice the demand in reserve, so the near task fails around the mid-40s</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Finding the add</h2>
+    <div class="cal big why"><div class="lab">Demand minus what the eye can still spare</div><p>Measure the accommodative <b>demand</b> (<span class="eq">1 / working distance</span>, so 40 cm = 2.50 D) and the patient's <b>amplitude</b>. Keep <b>half the amplitude in reserve</b> and use the other half: <span class="eq">Add = demand &minus; &frac12; amplitude</span>.</p></div>
+    <div class="cal why"><div class="lab">Worked example</div><p>Works at 40 cm (demand 2.50 D), amplitude 2.00 D. Keep 1.00 in reserve, use 1.00: <span class="eq">Add = 2.50 &minus; 1.00 = +1.50 D</span>.</p></div>
+    <div class="cal pearl"><div class="lab">Refine and balance</div><p>Confirm with the <b>near cross cylinder</b> and balance with <b>NRA/PRA</b>: the ideal add sits at the midpoint, <span class="eq">tentative add + (NRA + PRA)/2</span>. Then prescribe the <b>weakest add</b> that gives comfortable, sustained near vision.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Working distance drives everything</h2>
+    <div class="cal trap"><div class="lab">Measure it first</div><p>The add only serves <b>one</b> distance. Establish the patient's habitual working distance before prescribing, because it sets the demand. An accountant at 40 cm and a musician reading a score at 60 cm need different adds.</p></div>
+    <div class="cal mnem"><div class="lab">Reading the complaint</div><p><b>Blur closer than the set distance</b> = the add is <b>too weak</b> (or the task moved nearer). <b>Must hold material farther out</b> = the add is <b>too strong</b> or working distance was overestimated.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Delivering the add: multifocals</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Option</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td><b>Single-vision readers</b></td><td>Simplest; only near, must be removed for distance</td></tr>
+          <tr><td><b>Bifocal</b> (flat-top, round, executive)</td><td>Distance up, near add below; visible line, image jump at the segment</td></tr>
+          <tr><td><b>Trifocal</b></td><td class="act">Adds an intermediate = distance + <b>half the near add</b></td></tr>
+          <tr><td><b>PAL (progressive)</b></td><td>No line; a corridor of increasing plus; needs correct fitting height</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px"><div class="lab">Add limits and the intermediate</div><p>A near add rarely exceeds about <b>+2.50 to +3.00 D</b>; beyond that, the working distance is so close it needs a low-vision magnifier. The <b>trifocal intermediate is half the add</b>, so a +2.50 add gives a +1.25 intermediate (total = distance + 1.25).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Physiological Optics (AC/A card):</b> amplitude, Hofstetter, and the half-amplitude reserve come straight from there. <b>Card 3 (Subjective):</b> the near cross cylinder and NRA/PRA refine the add. <b>Optics &amp; Dispensing:</b> bifocal image jump, PAL corridors, and the intermediate math live in that subject.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Define presbyopia</div><p>Mechanism, onset age, and the two exam traps.</p></div>
+    <div class="drill"><div class="t">2 &middot; Amplitude vs demand</div><p>Sketch the falling curve crossing the demand, and say why comfort needs a reserve.</p></div>
+    <div class="drill"><div class="t">3 &middot; Compute an add</div><p>40 cm, amplitude 2.00 D: work the add with the half-amplitude rule.</p></div>
+    <div class="drill"><div class="t">4 &middot; Read the complaint</div><p>Blur closer vs holding farther: which way is the add wrong.</p></div>
+    <div class="drill"><div class="t">5 &middot; The multifocals</div><p>Bifocal vs trifocal vs PAL, and the intermediate formula.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">What is presbyopia and when does it start?</span> <span class="a">Age-related loss of accommodative amplitude from a stiffening lens; near blur around 40 to 45.</span></li>
+      <li><span class="q">The mechanism?</span> <span class="a">Decreased elasticity of the crystalline lens (not the muscles).</span></li>
+      <li><span class="q">Does presbyopia affect distance vision?</span> <span class="a">No, it is a near-only problem.</span></li>
+      <li><span class="q">Add formula?</span> <span class="a">Add = accommodative demand minus half the amplitude (keep half in reserve).</span></li>
+      <li><span class="q">Demand at 40 cm?</span> <span class="a">2.50 D (1 / 0.40 m).</span></li>
+      <li><span class="q">Compute: 40 cm, amplitude 2.00 D?</span> <span class="a">Add = 2.50 - 1.00 = +1.50 D.</span></li>
+      <li><span class="q">Balancing the add with NRA/PRA?</span> <span class="a">Ideal add = tentative + (NRA + PRA)/2; they should be roughly equal and opposite.</span></li>
+      <li><span class="q">Why measure working distance first?</span> <span class="a">It sets the accommodative demand, and the add serves only that distance.</span></li>
+      <li><span class="q">Near add too strong vs too weak?</span> <span class="a">Too strong = must hold material farther; too weak = blur when the task is closer.</span></li>
+      <li><span class="q">Trifocal intermediate power?</span> <span class="a">Distance + half the near add.</span></li>
+      <li><span class="q">Practical maximum add?</span> <span class="a">About +2.50 to +3.00 D; beyond that use low-vision magnification.</span></li>
+      <li><span class="q">Goal when choosing the final add?</span> <span class="a">The weakest plus that gives comfortable, sustained near vision.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care &amp; Refraction Card 4 &middot; Add = demand minus half the amplitude</div>
+
+</div>
+</body>
+</html>
