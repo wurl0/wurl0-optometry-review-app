@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care &amp; Refraction Card 3 · Subjective Refraction</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .eq{font-family:ui-monospace,Menlo,monospace;background:var(--inset);border:1px solid var(--line);border-radius:8px;padding:2px 7px;font-size:13.5px;color:var(--accent-deep);white-space:nowrap;}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care &amp; Refraction</div>
+    </div>
+    <div class="card-no">Card<b>03</b>Subjective</div>
+  </header>
+
+  <h1>Refine the retinoscopy: <em>sphere, cylinder, balance</em></h1>
+  <p class="dek">Subjective refraction takes the objective start and asks the patient to fine-tune it, on one rule that runs through every step: keep the least minus that still sees best, so accommodation never sneaks in. Learn the order, the cross cylinder, the duochrome, and the balance, and the chair sequence is automatic.</p>
+
+  <section>
+    <h2><span class="n">01</span> The order, and the one rule</h2>
+    <p class="lead">Refine in a fixed sequence, each step assuming the last is set.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Step</th><th>What you do</th></tr></thead>
+        <tbody>
+          <tr><td class="cn">1</td><td><b>Best sphere</b> (MPMVA), fog and reduce to the least minus that gives best acuity</td></tr>
+          <tr><td class="cn">2</td><td><b>Cylinder axis</b> with the cross cylinder</td></tr>
+          <tr><td class="cn">3</td><td><b>Cylinder power</b> with the cross cylinder</td></tr>
+          <tr><td class="cn">4</td><td><b>Re-check sphere</b> (adding cyl shifted the focus)</td></tr>
+          <tr><td class="cn">5</td><td><b>Binocular balance</b>, then duochrome to finish</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal big mnem" style="margin-top:12px"><div class="lab">MPMVA, the maximum-plus rule</div><p>Give the <b>most plus (least minus) that still reaches best acuity</b>. Over-minus stimulates accommodation, so the patient reports 20/20 while quietly focusing, and you end up too strong. If more minus does not improve acuity, stop.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Fogging</h2>
+    <div class="cal why"><div class="lab">Push the focus in front, then walk it back</div><p>Add <b>plus</b> to place the image <b>in front of the retina</b>, an artificial myopia that <b>relaxes accommodation</b>. Then reduce the plus in small steps until best acuity. Fogging is the reset that keeps the whole refraction honest.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Jackson cross cylinder</h2>
+    <p class="lead">The JCC flips a small cylinder between two positions; the patient names the clearer, and you chase equality. <b>Axis first, then power.</b></p>
+    <div class="cal why"><div class="lab">Axis</div><p>Hold the JCC with its axes <b>45 degrees</b> to the correcting cylinder. Rotate the cylinder axis <b>toward the preferred (clearer) position</b>, in shrinking steps. <b>Endpoint: no preference</b> between flips means the axis is right.</p></div>
+    <div class="cal trap"><div class="lab">Power (and keeping the blur centered)</div><p>Now align the JCC axis <b>with</b> the cylinder axis. If the flip that <b>adds minus cyl</b> is preferred, add <b>minus cylinder in 0.25 steps</b> until equal. For every <b>&minus;0.50 D of cyl</b> added, add <b>+0.25 D sphere</b> to keep the circle of least confusion on the retina.</p></div>
+    <div class="cal mnem"><div class="lab">Hook</div><p>No preference on the flip = you are done with that setting. Chase equality, not a favorite.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Duochrome (red-green)</h2>
+    <p class="lead">Chromatic aberration splits the focus: red focuses slightly behind the retina, green slightly in front. Balanced letters mean the focus sits between.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="The duochrome test: black letters on a split red and green background, with the add-minus / add-plus rule">
+        <rect x="150" y="52" width="170" height="104" rx="14" fill="#d64b3f"/>
+        <rect x="320" y="52" width="170" height="104" rx="14" fill="#2e9e5b"/>
+        <rect x="316" y="52" width="8" height="104" fill="var(--surface)"/>
+        <g font-family="ui-monospace,Menlo,monospace" font-weight="800" font-size="30" fill="#161616" text-anchor="middle">
+          <text x="235" y="114">6 8</text><text x="405" y="114">3 5</text>
+        </g>
+        <g font-family="ui-monospace,Menlo,monospace" font-size="11" font-weight="700" text-anchor="middle">
+          <text x="235" y="176" fill="#d64b3f">RED</text><text x="405" y="176" fill="#2e9e5b">GREEN</text>
+          <text x="235" y="210" fill="var(--ink)">clearer &rarr; ADD MINUS</text>
+          <text x="405" y="210" fill="var(--ink)">clearer &rarr; ADD PLUS</text>
+        </g>
+      </svg>
+      <figcaption>RAM-GAP: Red Add Minus, Green Add Plus &middot; endpoint = the two sides look equal</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:13px"><div class="lab">RAM-GAP, and a safety note</div><p><b>Red clearer &rarr; add minus (RAM). Green clearer &rarr; add plus (GAP).</b> Start slightly fogged (so red leads) and reduce to equal. Because it works on <b>focus and luminance, not hue</b>, the duochrome is valid even in the color-deficient.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Binocular balancing</h2>
+    <div class="cal why"><div class="lab">Equalize the accommodation between the two eyes</div><p>After the monocular refraction, <b>balance</b> so both eyes accommodate equally. Fog both, dissociate (prism or alternating occlusion), and <b>add plus to the clearer eye until the two blur equally</b>, then reduce together. It runs <b>after monocular subjective, before binocular tests</b>.</p></div>
+    <div class="cal trap"><div class="lab">When it does not apply</div><p>Balancing needs <b>roughly equal acuity</b> in the two eyes. Skip it when one eye is much worse (dense unilateral cataract, amblyopia, no light perception), there is nothing to balance against.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>Card 2 (Retinoscopy):</b> the objective result you refine here. <b>Card 1 (Ametropia):</b> the cross cylinder is finding the interval of Sturm and collapsing it. <b>Physiological Optics:</b> MPMVA, fogging, and balancing are all one idea, keep accommodation relaxed and equal.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; The sequence</div><p>List the five steps in order from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; MPMVA and fogging</div><p>State the maximum-plus rule and what fogging does.</p></div>
+    <div class="drill"><div class="t">3 &middot; JCC</div><p>Axis vs power: JCC position, what you adjust, and the endpoint for each.</p></div>
+    <div class="drill"><div class="t">4 &middot; Duochrome</div><p>RAM-GAP, and why color vision does not matter.</p></div>
+    <div class="drill"><div class="t">5 &middot; Balancing</div><p>When it is done, how, and when to skip it.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Refinement sequence?</span> <span class="a">Sphere, cylinder axis, cylinder power, sphere again, then binocular balance (and duochrome).</span></li>
+      <li><span class="q">MPMVA principle?</span> <span class="a">Give the most plus / least minus that still gives best acuity (avoids over-minus and accommodation).</span></li>
+      <li><span class="q">Purpose of fogging?</span> <span class="a">Add plus to put the image in front of the retina and relax accommodation, then reduce.</span></li>
+      <li><span class="q">JCC axis refinement endpoint?</span> <span class="a">Rotate the cyl axis toward the clearer flip; endpoint is no preference between the two positions.</span></li>
+      <li><span class="q">JCC power, and keeping the blur centered?</span> <span class="a">Add minus cyl in 0.25 steps toward equality; add +0.25 sphere for every -0.50 cyl to keep the circle of least confusion on the retina.</span></li>
+      <li><span class="q">Duochrome: red clearer?</span> <span class="a">Add minus (RAM: Red Add Minus).</span></li>
+      <li><span class="q">Duochrome: green clearer?</span> <span class="a">Add plus / reduce minus (GAP: Green Add Plus).</span></li>
+      <li><span class="q">Is duochrome valid in color deficiency?</span> <span class="a">Yes, it depends on focus and luminance, not hue.</span></li>
+      <li><span class="q">When is binocular balancing done?</span> <span class="a">After monocular subjective refraction, before binocular testing.</span></li>
+      <li><span class="q">How do you balance?</span> <span class="a">Fog and dissociate, add plus to the clearer eye until both blur equally, then reduce together.</span></li>
+      <li><span class="q">When do you skip balancing?</span> <span class="a">When the eyes have very unequal acuity (dense cataract, amblyopia, no LP).</span></li>
+      <li><span class="q">Sphere refinement step size?</span> <span class="a">0.25 D.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care &amp; Refraction Card 3 &middot; Max plus, chase equality, RAM-GAP</div>
+
+</div>
+</body>
+</html>
