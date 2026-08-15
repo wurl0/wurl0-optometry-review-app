@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Physiological Optics &amp; BV Card 4 · Fusion Grades, Diplopia &amp; Correspondence</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(26px,5.2vw,39px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;} .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .cal.big{border-left-width:4px;}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:540px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .cn{font-family:ui-monospace,Menlo,monospace;color:var(--accent-deep);font-weight:600;} .act{color:var(--accent-deep);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Physiological Optics &amp; BV</div>
+    </div>
+    <div class="card-no">Card<b>04</b>Fusion &amp; diplopia</div>
+  </header>
+
+  <h1>One image from two: <em>correspondence, fusion, diplopia</em></h1>
+  <p class="dek">Card 1 moved the eyes together. This card is what the brain does with the two pictures: pair corresponding points, fuse what is close, see double what is not, and, when the eyes stop aligning, quietly adapt. Correspondence, the three grades, crossed vs uncrossed, and suppression vs ARC.</p>
+
+  <section>
+    <h2><span class="n">01</span> Corresponding points and the horopter</h2>
+    <p class="lead">Two retinal points that share one visual direction are <span class="term">corresponding points</span>. Stimulate a matched pair and you see <b>one</b> fused image; stimulate mismatched points and you see two.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-label="Two eyes fixating a point on the horopter, with a nearer object seen crossed and a farther object seen uncrossed">
+        <!-- eyes -->
+        <circle cx="250" cy="255" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="250" cy="248" r="6" fill="var(--ink)"/>
+        <circle cx="390" cy="255" r="20" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/><circle cx="390" cy="248" r="6" fill="var(--ink)"/>
+        <text x="250" y="292" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">OD</text>
+        <text x="390" y="292" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">OS</text>
+        <!-- visual axes to fixation F -->
+        <g stroke="var(--accent)" stroke-width="2.4" fill="none">
+          <line x1="256" y1="236" x2="320" y2="92"/><line x1="384" y1="236" x2="320" y2="92"/>
+        </g>
+        <!-- horopter (dashed arc through F) -->
+        <path d="M165 150 Q320 20 475 150" fill="none" stroke="var(--ink-faint)" stroke-width="1.6" stroke-dasharray="5 5"/>
+        <text x="470" y="135" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="var(--ink-faint)">horopter</text>
+        <!-- fixation point -->
+        <circle cx="320" cy="90" r="6" fill="var(--accent-deep)"/><text x="332" y="86" font-size="12" font-weight="800" fill="var(--ink)">F</text>
+        <!-- far point D (beyond F) -->
+        <g stroke="var(--why)" stroke-width="1.8" fill="none" stroke-dasharray="3 3"><line x1="256" y1="236" x2="320" y2="46"/><line x1="384" y1="236" x2="320" y2="46"/></g>
+        <circle cx="320" cy="46" r="5" fill="var(--why)"/><text x="332" y="44" font-size="11" font-weight="700" fill="var(--why)">D far &middot; uncrossed</text>
+        <!-- near point N (nearer than F) -->
+        <g stroke="var(--trap)" stroke-width="1.8" fill="none"><line x1="256" y1="236" x2="320" y2="168"/><line x1="384" y1="236" x2="320" y2="168"/></g>
+        <circle cx="320" cy="168" r="5" fill="var(--trap)"/><text x="332" y="172" font-size="11" font-weight="700" fill="var(--trap)">N near &middot; crossed</text>
+      </svg>
+      <figcaption>eyes fixate F on the horopter (single) &middot; a nearer point N is seen crossed, a farther point D uncrossed</figcaption>
+    </figure>
+    <div class="cal why"><div class="lab">Panum's fusional area</div><p>A thin zone straddling the horopter where slightly <b>disparate</b> images still fuse into one. Disparity <b>within</b> Panum is the raw material of <span class="term">stereopsis</span> (depth); disparity <b>beyond</b> it is seen as <b>physiologic diplopia</b>.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The three grades of binocular vision</h2>
+    <p class="lead">Worth ranked binocular vision in three ascending grades. Each grade assumes the one below it.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Grade</th><th>Name</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td class="cn">I</td><td><b>Simultaneous perception</b></td><td>Both foveas perceive at once (superimposition); tested with dissimilar targets</td></tr>
+          <tr><td class="cn">II</td><td><b>Fusion</b></td><td>Blend two similar images into one, and hold it. Tested with <b>flat-fusion</b> targets (near-identical, small control difference)</td></tr>
+          <tr><td class="cn">III</td><td><b>Stereopsis</b></td><td class="act">Depth from horizontal disparity within Panum. The highest grade</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px"><div class="lab">Fusion has two halves</div><p><b>Sensory fusion</b> = the brain merges the two images. <b>Motor fusion</b> = the vergence effort (fusional reserves) that keeps them aligned so sensory fusion can happen. Lose motor fusion and the phoria breaks into a tropia.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Physiologic diplopia (the normal double)</h2>
+    <div class="cal why"><div class="lab">It is normal, you just ignore it</div><p>Anything well off the horopter falls outside Panum and images double. Hold a finger up, fixate past it, and it doubles. The brain suppresses it, so you rarely notice.</p></div>
+    <div class="cal trap"><div class="lab">Crossed vs uncrossed</div><p><b>Nearer</b> than fixation = <span class="term">crossed</span> (heteronymous) diplopia, prominent in <b>exo</b> deviations. <b>Farther</b> than fixation = <span class="term">uncrossed</span> (homonymous) diplopia. Contrast with <b>pathologic</b> diplopia, the troublesome double vision of a manifest strabismus or a nerve palsy.</p></div>
+    <div class="cal mnem"><div class="lab">Hook</div><p><b>Near = crossed</b> (the images swap sides, like crossing your arms to reach a close thing). Far = uncrossed.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> When the eyes stop aligning: sensory adaptations</h2>
+    <p class="lead">A constant manifest deviation threatens two miseries: <b>diplopia</b> (one object, two places) and <b>confusion</b> (two objects, one place). The young visual system adapts.</p>
+    <div class="cal trap big"><div class="lab">Suppression</div><p>Actively inhibit the deviating eye's image. It ends the diplopia, but a constantly suppressed eye in a child drifts into <b>amblyopia</b>.</p></div>
+    <div class="cal why"><div class="lab">Anomalous retinal correspondence (ARC)</div><p>The fovea of the fixing eye takes on a <b>common visual direction with an extrafoveal point</b> of the deviating eye, so the patient sees single despite the turn. It needs a <b>long-standing, constant, unilateral</b> deviation; alternating fixation prevents it.</p></div>
+    <div class="cal pearl"><div class="lab">Eccentric fixation and amblyopia</div><p><b>Eccentric fixation:</b> the amblyopic eye fixes with a non-foveal point (a monocular sign). <b>Amblyopia:</b> reduced best-corrected acuity from strabismus, anisometropia, or deprivation, with a structurally normal eye.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> The tests</h2>
+    <div class="cal why"><div class="lab">Worth 4-dot (fusion vs suppression vs diplopia)</div><p>Red-green glasses over four lights (one red, two green, one white). <b>4 lights = fusion. 5 = diplopia. 2 red = OD suppression (left eye off), 3 green = OS suppression.</b> Near tests peripheral fusion; distance tests central.</p></div>
+    <div class="cal why"><div class="lab">Correspondence and suppression</div><p><b>Bagolini striated glasses</b> dissociate the least (most natural), good for suppression and ARC. The <b>red-lens</b> and <b>afterimage</b> tests also probe correspondence.</p></div>
+    <div class="cal pearl"><div class="lab">Stereoacuity</div><p><b>Titmus</b> (contour, has some monocular cues; all nine circles = <b>40 seconds of arc</b>), <b>TNO</b> and <b>Randot</b> (random-dot, remove monocular cues), <b>Lang</b> (no glasses). Lower arc-seconds = finer stereo.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Cross-links</h2>
+    <div class="cal why"><div class="lab">Say these out loud</div><p><b>BV Card 1:</b> motor fusion is the vergence system that keeps images on corresponding points. <b>Primary Eye Care:</b> the cover test, Worth 4-dot, and stereo tests grade exactly this. <b>Clinical / Vision therapy:</b> anti-suppression work, ARC, and amblyopia therapy all live on this map.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Horopter and Panum</div><p>Define corresponding points, the horopter, and what disparity within vs beyond Panum gives.</p></div>
+    <div class="drill"><div class="t">2 &middot; Three grades</div><p>Name grades I to III and one test target for each; state which is highest.</p></div>
+    <div class="drill"><div class="t">3 &middot; Crossed vs uncrossed</div><p>Near vs far, and which associates with exo.</p></div>
+    <div class="drill"><div class="t">4 &middot; Adaptations</div><p>Suppression, ARC, eccentric fixation, amblyopia: one line each, and what ARC requires.</p></div>
+    <div class="drill"><div class="t">5 &middot; Worth 4-dot</div><p>What 2, 3, 4, and 5 lights each mean.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Into the review queue, 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Corresponding points?</span> <span class="a">Two retinal points sharing one visual direction; stimulating a matched pair is seen as one image.</span></li>
+      <li><span class="q">The horopter?</span> <span class="a">The locus of object points falling on corresponding points for a given fixation, seen single.</span></li>
+      <li><span class="q">Panum's fusional area?</span> <span class="a">A narrow zone around the horopter where disparate images still fuse; disparity within it yields stereopsis.</span></li>
+      <li><span class="q">The three grades of BV?</span> <span class="a">I simultaneous perception, II fusion, III stereopsis (highest).</span></li>
+      <li><span class="q">Sensory vs motor fusion?</span> <span class="a">Sensory = the brain merges the two images; motor = the vergence effort that keeps them aligned.</span></li>
+      <li><span class="q">Flat-fusion target?</span> <span class="a">Near-identical images with a small control difference, used to test grade II fusion.</span></li>
+      <li><span class="q">Crossed vs uncrossed physiologic diplopia?</span> <span class="a">Nearer than fixation = crossed (exo); farther = uncrossed.</span></li>
+      <li><span class="q">Diplopia vs confusion in strabismus?</span> <span class="a">Diplopia = one object seen in two places; confusion = two objects seen in one place.</span></li>
+      <li><span class="q">What does ARC require?</span> <span class="a">A long-standing, constant, unilateral deviation (alternation prevents it).</span></li>
+      <li><span class="q">Suppression risk in a child?</span> <span class="a">A constantly suppressed eye becomes amblyopic.</span></li>
+      <li><span class="q">Worth 4-dot results?</span> <span class="a">4 = fusion, 5 = diplopia, 2 red = OD suppression, 3 green = OS suppression.</span></li>
+      <li><span class="q">All nine Titmus circles equals what stereoacuity?</span> <span class="a">40 seconds of arc.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Physiological Optics &amp; BV Card 4 &middot; Near crossed, far uncrossed</div>
+
+</div>
+</body>
+</html>
