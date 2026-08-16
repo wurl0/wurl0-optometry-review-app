@@ -108,6 +108,7 @@
   .tix .txt{flex:1;min-width:0}
   .tix label{cursor:pointer;font-size:14.5px}
   .floor{color:var(--warn);font-weight:800;font-size:10.5px;letter-spacing:.03em;font-family:ui-monospace,Menlo,monospace;}
+  .rd{color:var(--accent-deep);font-weight:800;font-size:10.5px;letter-spacing:.03em;font-family:ui-monospace,Menlo,monospace;}
   .why{display:block;color:var(--ink-faint);font-size:12.5px;margin-top:2px}
   .go{align-self:center;white-space:nowrap;font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.04em;
     background:var(--accent-wash);color:var(--accent-deep);border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));
@@ -184,6 +185,68 @@ const revLink  =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Reviewer.html";
 const QUEUE_LINK="/review";
 const MOCK_LINK ="OLE-Mock-Board-Exam-Set2.html";
 
+// quick-read cards per subject (href relative to top2 root, label). Rotated one per appearance.
+const CARDS={
+  "Pharmacology":[
+    ["G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Eye-Card.html","Autonomic"],
+    ["G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Infectives-Card.html","Anti-infectives"],
+    ["G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Inflammatory-Card.html","Anti-inflammatory"],
+    ["G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Glaucoma-Card.html","Glaucoma"],
+    ["G-Ocular-Pharmacology/G3-Diagnostic-Pharmaceutical-Agents/G3-Anesthetics-and-Dyes-Card.html","Anesthetics & dyes"],
+    ["G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Systemic-Drug-Side-Effects-Card.html","Systemic side effects"]],
+  "Visual Biology":[
+    ["A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Visual-Pathway-Card.html","Visual pathway"],
+    ["A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Retina-Phototransduction-Card.html","Retina"],
+    ["A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Coats-Anterior-Segment-Card.html","Coats"],
+    ["A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Orbit-EOM-Card.html","Orbit / EOM"],
+    ["A-Visual-Biology/A2-The-Human-Eye-Anatomy/A2-Lids-Lacrimal-Card.html","Lids / lacrimal"],
+    ["A-Visual-Biology/A3-Ocular-Embryology/A3-Ocular-Embryology-Card.html","Embryology"]],
+  "Ocular Disease":[
+    ["E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Retinal-Vascular-Card.html","Retinal vascular"],
+    ["E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Red-Eye-Card.html","Red eye"],
+    ["E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Glaucoma-Card.html","Glaucoma"],
+    ["E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Detachment-AMD-Card.html","RD & AMD"],
+    ["E-Ocular-Disease-and-Emergencies/E1-Orbit-Adnexa-Eyelids/E1-Orbit-Lids-Card.html","Orbit / lids"],
+    ["E-Ocular-Disease-and-Emergencies/E4-Ocular-Emergencies/E4-Emergencies-Card.html","Emergencies"]],
+  "Primary Care":[
+    ["C-Primary-Care-and-Refraction/C2-Ametropia-and-Refractive-Errors/C2-Ametropia-Astigmatism-Card.html","Ametropia"],
+    ["C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Retinoscopy-Card.html","Retinoscopy"],
+    ["C-Primary-Care-and-Refraction/C5-Subjective-Examination/C5-Subjective-Refraction-Card.html","Subjective"],
+    ["C-Primary-Care-and-Refraction/C6-Management-of-Visual-Disorders/C6-Presbyopia-Near-Add-Card.html","Presbyopia"],
+    ["C-Primary-Care-and-Refraction/C6-Management-of-Visual-Disorders/C6-Myopia-Control-Card.html","Myopia control"],
+    ["C-Primary-Care-and-Refraction/C7-Vision-Therapy-and-Orthoptics/C7-Amblyopia-VT-Card.html","Amblyopia / VT"]],
+  "Theoretical Optics + CL":[
+    ["D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Geometric-Optics-Refraction-Card.html","Refraction"],
+    ["D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Prism-Prentice-Vertex-Card.html","Prism / power"],
+    ["D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Photometry-Reflection-Card.html","Photometry"],
+    ["D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Lens-Materials-Abbe-Card.html","Materials"],
+    ["D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Bifocals-Dispensing-Card.html","Bifocals"],
+    ["D-Theoretical-Optics-Dispensing-CL/D3-Contact-Lenses/D3-Contact-Lenses-Card.html","Contact lenses"]],
+  "Physio Optics + BV":[
+    ["B-Physiological-Optics-and-BV/B5-Binocular-Vision-and-Fusion/B5-Yoke-Versions-Vergences-Card.html","Yoke / versions"],
+    ["B-Physiological-Optics-and-BV/B3-Visual-Field/B3-Fields-Pathway-Lesions-Card.html","Fields / pathway"],
+    ["B-Physiological-Optics-and-BV/B4-Color-Perception/B4-Color-Vision-Card.html","Color vision"],
+    ["B-Physiological-Optics-and-BV/B5-Binocular-Vision-and-Fusion/B5-Fusion-Grades-Diplopia-Card.html","Fusion / diplopia"],
+    ["B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Retinal-Physiology-Phototransduction-Card.html","Retinal physiology"],
+    ["B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Accommodation-Vergence-ACA-Card.html","Accom & AC/A"]],
+  "Clinical Optometry":[
+    ["F-Clinical-Optometry-and-Specialties/F7-Low-Vision-and-Rehabilitation/F7-Low-Vision-Magnification-Card.html","Low vision"],
+    ["F-Clinical-Optometry-and-Specialties/F4-Neuro-Optometry/F4-Neuro-Oculomotor-Tests-Card.html","Neuro tests"],
+    ["F-Clinical-Optometry-and-Specialties/F2-Pediatric-Optometry/F2-Pediatric-Optometry-Card.html","Pediatric"],
+    ["F-Clinical-Optometry-and-Specialties/F1-DPA-Examination/F1-DPA-Clinical-Pharmacology-Card.html","DPAs"],
+    ["F-Clinical-Optometry-and-Specialties/F5-Occupational-Optometry/F5-Occupational-Sports-Vision-Card.html","Occ & sports"],
+    ["F-Clinical-Optometry-and-Specialties/F3-Geriatric-Optometry/F3-Geriatric-Prosthetics-Absorptive-Card.html","Geriatric"]],
+  "Ethics + Jurisprudence":[
+    ["H-Jurisprudence-and-Ethics/H1-RA8050-Optometry-Law/H1-RA8050-Optometry-Law-Card.html","RA 8050"],
+    ["H-Jurisprudence-and-Ethics/H2-Bioethics-and-Code-of-Ethics/H2-Bioethics-Code-of-Ethics-Card.html","Bioethics"],
+    ["H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Practice-Management-Taxes-Card.html","Practice mgmt"],
+    ["H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Labor-Laws-Benefits-Card.html","Labor laws"]]
+};
+const cardN={};
+function readTix(s){ const arr=CARDS[s]; const i=(cardN[s]=(cardN[s]||0)+1)-1; const [href,label]=arr[i%arr.length];
+  return {read:true, txt:"Read the "+s+" card · "+label, link:"../"+href,
+    why:"A 5-minute refresher before you test. Warm up retrieval, then answer cold."}; }
+
 const HEAVY=["Primary Care","Theoretical Optics + CL","Physio Optics + BV","Clinical Optometry","Ethics + Jurisprudence"];
 let hp=0;
 
@@ -220,6 +283,7 @@ function buildDay(dt){
       if(wk[dow]){ s=wk[dow]; weak=true; } else { s=HEAVY[(hp++)%HEAVY.length]; weak=false; }
       tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
       tix=[QUEUE(),
+        readTix(s),
         {txt:s+" Subject Exam, timed", link:examLink(s), why:"One bank, exam pace. Then log what you scored.", score:true},
         GAPS];
     }
@@ -256,9 +320,9 @@ days.forEach((d,i)=>{
   d.tix.forEach((t,j)=>{
     const id=i+"_"+j, on=!!store[id];
     html+=`<li class="${on?'checked':''}"><input type="checkbox" id="c${id}" ${on?'checked':''} data-id="${id}">`+
-      `<span class="txt"><label for="c${id}">${t.floor?'<span class="floor">FLOOR · </span>':''}${t.txt}</label>`+
+      `<span class="txt"><label for="c${id}">${t.floor?'<span class="floor">FLOOR · </span>':''}${t.read?'<span class="rd">READ · </span>':''}${t.txt}</label>`+
       (t.why?`<span class="why">${t.why}</span>`:``)+`</span>`+
-      (t.link?`<a class="go" href="${t.link}">open</a>`:``)+
+      (t.link?`<a class="go" href="${t.link}">${t.read?'read':'open'}</a>`:``)+
       (t.score?`<input class="score" placeholder="score" value="${store['sc'+id]||''}" data-score="${id}">`:``)+`</li>`;
   });
   html+=`</ul>`; card.innerHTML=html; container.appendChild(card);
