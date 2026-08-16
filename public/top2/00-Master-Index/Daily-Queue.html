@@ -182,6 +182,10 @@ const SUBJ={
 const examLink =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Subject-Exam.html";
 const prebLink =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Preboards-Set2.html";
 const revLink  =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Reviewer.html";
+const prebN    =(s,t)=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Preboards-"+t+".html";
+// build-phase test source rotates by week so all 4 preboard sets get used, one bank per week
+const SRC=[["Subject Exam",examLink],["Preboard Set 1",s=>prebN(s,"2025")],["Preboard Set 2",s=>prebN(s,"Set2")],
+           ["Preboard Set 3",s=>prebN(s,"Set3")],["Preboard Set 4",s=>prebN(s,"Set4")]];
 const QUEUE_LINK="/review";
 const MOCK_LINK ="OLE-Mock-Board-Exam-Set2.html";
 
@@ -256,6 +260,7 @@ const GAPS={txt:"Read the gaps", why:"Open the rationale on every item you misse
 
 function buildDay(dt){
   const dow=dt.getDay(), toExam=Math.round((EXAM-dt)/DAYMS);
+  const weekIdx=Math.floor((dt-START)/(7*DAYMS));   // 0 = first week
   let phase,tag,tagClass,subj="",tix=[];
   if(toExam<=3){
     phase="taper"; tag="taper"; tagClass="t-taper"; subj="High-yield only";
@@ -282,9 +287,10 @@ function buildDay(dt){
       let s,weak;
       if(wk[dow]){ s=wk[dow]; weak=true; } else { s=HEAVY[(hp++)%HEAVY.length]; weak=false; }
       tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
+      const src=SRC[Math.min(weekIdx,SRC.length-1)];
       tix=[QUEUE(),
         readTix(s),
-        {txt:s+" Subject Exam, timed", link:examLink(s), why:"One bank, exam pace. Then log what you scored.", score:true},
+        {txt:s+" "+src[0]+", timed", link:src[1](s), why:"One bank, exam pace. Then log what you scored.", score:true},
         GAPS];
     }
   }
