@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 — Daily Queue</title>
+<style>
+  :root{
+    --bg:#F4F6F8; --surface:#FFFFFF; --surface-2:#EDF0F3; --inset:#E7EBEF;
+    --ink:#151A21; --ink-soft:#515C6B; --ink-faint:#7A8593;
+    --line:#DBE0E6; --line-soft:#E7EBEF;
+    --accent:#0C8A86; --accent-deep:#096763; --accent-wash:#DCEFEE;
+    --gold:#9C7118; --gold-wash:#F2E7CC;
+    --crit:#BE3A2C; --warn:#A9660A; --ok:#0C8A86; --good:#2C7A46; --weak:#C0347E;
+    --crit-w:#F6DED9; --warn-w:#F6E8CF; --ok-w:#D8ECEB; --good-w:#D9EBDF; --weak-w:#F7DEEC;
+    --shadow:0 1px 2px rgba(16,24,33,.05),0 8px 24px rgba(16,24,33,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0D1117; --surface:#161C24; --surface-2:#1B222C; --inset:#141A22;
+      --ink:#E8EDF3; --ink-soft:#9BA6B4; --ink-faint:#6D7887;
+      --line:#28313C; --line-soft:#212A34;
+      --accent:#33B8B1; --accent-deep:#8FE0DA; --accent-wash:#123230;
+      --gold:#E0B657; --gold-wash:#2E2814;
+      --crit:#E86A5C; --warn:#E3A64C; --ok:#33B8B1; --good:#59C57C; --weak:#E67CB1;
+      --crit-w:#331C1A; --warn-w:#332816; --ok-w:#123230; --good-w:#16281C; --weak-w:#301826;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F4F6F8; --surface:#FFFFFF; --surface-2:#EDF0F3; --inset:#E7EBEF;
+    --ink:#151A21; --ink-soft:#515C6B; --ink-faint:#7A8593;
+    --line:#DBE0E6; --line-soft:#E7EBEF;
+    --accent:#0C8A86; --accent-deep:#096763; --accent-wash:#DCEFEE;
+    --gold:#9C7118; --gold-wash:#F2E7CC;
+    --crit:#BE3A2C; --warn:#A9660A; --ok:#0C8A86; --good:#2C7A46; --weak:#C0347E;
+    --crit-w:#F6DED9; --warn-w:#F6E8CF; --ok-w:#D8ECEB; --good-w:#D9EBDF; --weak-w:#F7DEEC;
+    --shadow:0 1px 2px rgba(16,24,33,.05),0 8px 24px rgba(16,24,33,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D1117; --surface:#161C24; --surface-2:#1B222C; --inset:#141A22;
+    --ink:#E8EDF3; --ink-soft:#9BA6B4; --ink-faint:#6D7887;
+    --line:#28313C; --line-soft:#212A34;
+    --accent:#33B8B1; --accent-deep:#8FE0DA; --accent-wash:#123230;
+    --gold:#E0B657; --gold-wash:#2E2814;
+    --crit:#E86A5C; --warn:#E3A64C; --ok:#33B8B1; --good:#59C57C; --weak:#E67CB1;
+    --crit-w:#331C1A; --warn-w:#332816; --ok-w:#123230; --good-w:#16281C; --weak-w:#301826;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:780px;margin:0 auto;padding:30px 20px 90px;}
+  a{color:var(--accent);text-decoration:none;}
+
+  /* Masthead */
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;
+    gap:16px;border-bottom:1px solid var(--line);padding-bottom:16px;flex-wrap:wrap;}
+  .brand{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-weight:600;letter-spacing:.04em;font-size:13px;color:var(--ink);}
+  .brand span{color:var(--accent);}
+  .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .count{text-align:right;line-height:1;}
+  .count b{font-size:40px;font-weight:800;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .count small{display:block;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.15em;text-transform:uppercase;color:var(--ink-faint);margin-top:5px;}
+  h1{font-size:clamp(27px,6vw,40px);line-height:1.04;letter-spacing:-.025em;font-weight:820;margin:24px 0 6px;}
+  .dek{color:var(--ink-soft);font-size:15.5px;max-width:60ch;margin:0;}
+  .back{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;}
+
+  /* stat strip */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:22px;}
+  .st{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;box-shadow:var(--shadow);}
+  .st b{display:block;font-size:26px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1;}
+  .st span{font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px;display:block;}
+  .track{height:8px;background:var(--inset);border-radius:99px;overflow:hidden;margin-top:14px;}
+  .track>i{display:block;height:100%;background:linear-gradient(90deg,var(--good),var(--accent));width:0;transition:width .6s;}
+
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-faint);margin:16px 2px 0;}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:99px;margin-right:5px;vertical-align:middle}
+
+  .phase{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);
+    margin:30px 2px 10px;font-weight:600;display:flex;align-items:center;gap:10px;}
+  .phase::before{content:"";width:16px;height:2px;background:var(--accent);border-radius:2px;}
+
+  .day{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:14px 15px;margin:10px 0;box-shadow:var(--shadow);transition:.15s}
+  .day.done{border-color:color-mix(in srgb,var(--good) 45%,var(--line));}
+  .day.today{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 45%,transparent),var(--shadow);}
+  .dhead{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+  .dcount{font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;}
+  .ddate{color:var(--ink-faint);font-size:12.5px;font-family:ui-monospace,Menlo,monospace;}
+  .tag{font-family:ui-monospace,Menlo,monospace;font-size:9.5px;font-weight:700;letter-spacing:.06em;padding:3px 8px;border-radius:99px;text-transform:uppercase;}
+  .t-weak{background:var(--weak-w);color:var(--weak)}
+  .t-heavy{background:var(--accent-wash);color:var(--accent-deep)}
+  .t-mock{background:var(--gold-wash);color:var(--gold)}
+  .t-taper{background:var(--good-w);color:var(--good)}
+  .t-rest{background:var(--surface-2);color:var(--ink-faint)}
+  .t-today{background:var(--accent);color:#fff}
+  .subj{margin-left:auto;font-size:13.5px;color:var(--ink);font-weight:650;}
+  .tix{list-style:none;margin:9px 0 0;padding:0}
+  .tix li{display:flex;align-items:flex-start;gap:11px;padding:9px 0;border-top:1px solid var(--line-soft);}
+  .tix li:first-child{border-top:0}
+  .tix input[type=checkbox]{appearance:none;-webkit-appearance:none;width:21px;height:21px;min-width:21px;margin-top:1px;
+    border:2px solid var(--line);border-radius:6px;cursor:pointer;position:relative;background:var(--surface-2)}
+  .tix input[type=checkbox]:checked{background:var(--good);border-color:var(--good)}
+  .tix input[type=checkbox]:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+  .tix .txt{flex:1;min-width:0}
+  .tix label{cursor:pointer;font-size:14.5px}
+  .floor{color:var(--warn);font-weight:800;font-size:10.5px;letter-spacing:.03em;font-family:ui-monospace,Menlo,monospace;}
+  .why{display:block;color:var(--ink-faint);font-size:12.5px;margin-top:2px}
+  .go{align-self:center;white-space:nowrap;font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.04em;
+    background:var(--accent-wash);color:var(--accent-deep);border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));
+    border-radius:8px;padding:6px 11px;font-weight:600;}
+  .score{align-self:center;width:62px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 8px;font-size:13px;}
+  .checked label{text-decoration:line-through;color:var(--ink-faint)}
+  .note{margin-top:26px;font-size:13px;color:var(--ink-soft);background:var(--surface-2);border:1px solid var(--line-soft);border-radius:11px;padding:14px 16px;}
+  .note b{color:var(--ink)}
+  .reset{margin-top:16px;background:none;border:1px solid var(--line);color:var(--ink-faint);border-radius:9px;padding:7px 13px;cursor:pointer;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <div class="brand">WAA <span>·</span> BOARD REVIEW 2026</div>
+      <div class="sub">Daily Queue · personal study notes</div>
+    </div>
+    <div class="count"><b id="s-left">—</b><small>days to exam</small></div>
+  </div>
+  <h1>Today's queue</h1>
+  <p class="dek">One floor a day. Close the ticket. Never zero. This is the execution layer under the <a href="Road-to-Top2.html">Battle Plan</a>.</p>
+
+  <div class="stats">
+    <div class="st"><b id="s-streak">0</b><span>day streak</span></div>
+    <div class="st"><b id="s-closed">0</b><span>tickets closed</span></div>
+    <div class="st"><b id="s-pct">0%</b><span>floors held</span></div>
+    <div class="st"><b id="s-done">0/8</b><span>this week</span></div>
+  </div>
+  <div class="track"><i id="bar"></i></div>
+
+  <div class="legend">
+    <span><i class="dot" style="background:var(--weak)"></i>weak three</span>
+    <span><i class="dot" style="background:var(--accent)"></i>heavy 15%</span>
+    <span><i class="dot" style="background:var(--gold)"></i>simulation</span>
+    <span><i class="dot" style="background:var(--good)"></i>taper</span>
+  </div>
+
+  <div id="days"></div>
+
+  <div class="note">
+    <p><b>The floor is the yellow ticket.</b> On a dead day you close only that and your streak lives. Never zero.</p>
+    <p><b>Tap "open" on any ticket</b> to jump straight to that exam or the review queue. Do it, come back, tick the box. Check-offs save on this device only, same as your other trackers.</p>
+    <p style="margin-bottom:0"><b>Read the gaps</b> means open the rationale on every miss. That is what feeds tomorrow's review queue.</p>
+    <button class="reset" onclick="if(confirm('Clear all check-offs on this device?')){localStorage.removeItem(KEY);location.reload()}">Reset queue</button>
+  </div>
+</div>
+
+<script>
+const KEY="waa-daily-queue-v1";
+const START=new Date(2026,7,16);   // Aug 16 2026 (rest day)
+const EXAM =new Date(2026,8,28);   // Sep 28 2026 (exam)
+const DAYMS=86400000;
+const store=JSON.parse(localStorage.getItem(KEY)||"{}");
+function save(){localStorage.setItem(KEY,JSON.stringify(store))}
+
+const WEEK=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const MO=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+// subject registry -> app page paths (this file lives in 00-Master-Index/)
+const SUBJ={
+  "Pharmacology":            {L:"G",f:"G-Ocular-Pharmacology"},
+  "Visual Biology":          {L:"A",f:"A-Visual-Biology"},
+  "Ocular Disease":          {L:"E",f:"E-Ocular-Disease-and-Emergencies"},
+  "Primary Care":            {L:"C",f:"C-Primary-Care-and-Refraction"},
+  "Theoretical Optics + CL": {L:"D",f:"D-Theoretical-Optics-Dispensing-CL"},
+  "Physio Optics + BV":      {L:"B",f:"B-Physiological-Optics-and-BV"},
+  "Clinical Optometry":      {L:"F",f:"F-Clinical-Optometry-and-Specialties"},
+  "Ethics + Jurisprudence":  {L:"H",f:"H-Jurisprudence-and-Ethics"}
+};
+const examLink =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Subject-Exam.html";
+const prebLink =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Preboards-Set2.html";
+const revLink  =s=>"../"+SUBJ[s].f+"/"+SUBJ[s].L+"-Reviewer.html";
+const QUEUE_LINK="/review";
+const MOCK_LINK ="OLE-Mock-Board-Exam-Set2.html";
+
+const HEAVY=["Primary Care","Theoretical Optics + CL","Physio Optics + BV","Clinical Optometry","Ethics + Jurisprudence"];
+let hp=0;
+
+function QUEUE(){return {floor:true, txt:"Do your review-queue cards", link:QUEUE_LINK,
+  why:"While the backlog is big, cap at ~50/day so it drains without burning you out. Once it is small, clear to zero. Non-negotiable."};}
+const GAPS={txt:"Read the gaps", why:"Open the rationale on every item you missed. Do not reread what you already know."};
+
+function buildDay(dt){
+  const dow=dt.getDay(), toExam=Math.round((EXAM-dt)/DAYMS);
+  let phase,tag,tagClass,subj="",tix=[];
+  if(toExam<=3){
+    phase="taper"; tag="taper"; tagClass="t-taper"; subj="High-yield only";
+    tix=[QUEUE(),
+      {txt:"Skim one weak-subject Reviewer + Strategy", link:revLink("Pharmacology"), why:"No new material. Just the traps and fast-picks."},
+      {txt:"Logistics + lights out by 10pm", why:"Bag, IDs, route to venue. Sleep is a study tool now."}];
+  } else if(toExam<=14){
+    phase="simulate";
+    if(dow===0){ tag="simulation"; tagClass="t-mock"; subj="Full board simulation";
+      tix=[QUEUE(),{txt:"Full Board Simulation, timed", link:MOCK_LINK, why:"822-question mock, weighted like the real paper, 75% pass line.", score:true}, GAPS];
+    } else {
+      const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
+      const s = wk[dow] || HEAVY[(hp++)%HEAVY.length];
+      const weak = !!wk[dow];
+      tag = weak?"weak three":"timed"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — timed";
+      tix=[QUEUE(),{txt:"Timed Preboards: "+s, link:prebLink(s), why:"Exam pace, no pausing. Log your score.", score:true}, GAPS];
+    }
+  } else {
+    phase="build";
+    if(dow===0){ tag="checkpoint"; tagClass="t-mock"; subj="Weekly checkpoint";
+      tix=[QUEUE(),{txt:"Full Board Simulation, timed", link:MOCK_LINK, why:"Watch your number climb from 74 toward Top 2.", score:true}, GAPS];
+    } else {
+      const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
+      let s,weak;
+      if(wk[dow]){ s=wk[dow]; weak=true; } else { s=HEAVY[(hp++)%HEAVY.length]; weak=false; }
+      tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
+      tix=[QUEUE(),
+        {txt:s+" Subject Exam, timed", link:examLink(s), why:"One bank, exam pace. Then log what you scored.", score:true},
+        GAPS];
+    }
+  }
+  return {toExam,dow,phase,tag,tagClass,subj,tix};
+}
+
+const days=[]; let cur=new Date(START);
+while(cur<=EXAM){ days.push({dt:new Date(cur), ...buildDay(cur)}); cur=new Date(cur.getTime()+DAYMS); }
+
+// today = rest day (excluded from stats)
+const first=days[0];
+first.phase="rest"; first.tag="rest day"; first.tagClass="t-rest"; first.subj="Recover";
+first.tix=[{txt:"Rest. No queue, no exam.", why:"A planned rest day is part of the plan, not a crack in it. The real start is tomorrow, D-42."}];
+// exam day
+const last=days[days.length-1];
+last.phase="exam"; last.tag="exam day"; last.tagClass="t-today"; last.subj="Execute";
+last.tix=[{txt:"Arrive early, breathe, trust the reps", why:"You did the work. Read every stem twice, eliminate, commit."}];
+
+const container=document.getElementById("days");
+const PH={rest:"Rest day",build:"Build phase · daily loop, weekly checkpoint",simulate:"Simulate phase · timed papers, exam conditions",taper:"Taper · high-yield, rest, logistics",exam:"Exam"};
+const todayMid=new Date(); todayMid.setHours(0,0,0,0);
+let lastPhase="";
+
+days.forEach((d,i)=>{
+  if(d.phase!==lastPhase){ const h=document.createElement("div"); h.className="phase"; h.textContent=PH[d.phase]; container.appendChild(h); lastPhase=d.phase; }
+  const isToday = d.dt.getTime()===todayMid.getTime();
+  const card=document.createElement("div"); card.className="day"+(isToday?" today":"");
+  const dnum = d.toExam===0?"EXAM":"D-"+d.toExam;
+  let html=`<div class="dhead"><span class="dcount">${dnum}</span>`+
+    `<span class="ddate">${WEEK[d.dow]} ${MO[d.dt.getMonth()]} ${d.dt.getDate()}</span>`+
+    `<span class="tag ${isToday?'t-today':d.tagClass}">${isToday?'today':d.tag}</span>`+
+    (d.subj?`<span class="subj">${d.subj}</span>`:``)+`</div><ul class="tix">`;
+  d.tix.forEach((t,j)=>{
+    const id=i+"_"+j, on=!!store[id];
+    html+=`<li class="${on?'checked':''}"><input type="checkbox" id="c${id}" ${on?'checked':''} data-id="${id}">`+
+      `<span class="txt"><label for="c${id}">${t.floor?'<span class="floor">FLOOR · </span>':''}${t.txt}</label>`+
+      (t.why?`<span class="why">${t.why}</span>`:``)+`</span>`+
+      (t.link?`<a class="go" href="${t.link}">open</a>`:``)+
+      (t.score?`<input class="score" placeholder="score" value="${store['sc'+id]||''}" data-score="${id}">`:``)+`</li>`;
+  });
+  html+=`</ul>`; card.innerHTML=html; container.appendChild(card);
+});
+
+function refresh(){
+  document.getElementById("s-left").textContent=Math.max(0,Math.round((EXAM-todayMid)/DAYMS));
+  let closed=0; for(const k in store){ if(store[k]===true) closed++; }
+  document.getElementById("s-closed").textContent=closed;
+  let elapsed=0,held=0,run=0,streak=0;
+  days.forEach((d,i)=>{
+    if(d.phase==="exam"||d.phase==="rest") return;
+    if(d.dt.getTime()<=todayMid.getTime()){
+      elapsed++;
+      if(store[i+"_0"]===true){ held++; run++; streak=run; }
+      else if(d.dt.getTime()<todayMid.getTime()){ run=0; }
+    }
+  });
+  document.getElementById("s-streak").textContent=streak;
+  document.getElementById("s-pct").textContent=(elapsed?Math.round(held/elapsed*100):0)+"%";
+  // this-week floors (Mon-Sun containing today)
+  let wk=0,wkTot=0; const wd=(todayMid.getDay()+6)%7; const monday=new Date(todayMid.getTime()-wd*DAYMS);
+  days.forEach((d,i)=>{ if(d.phase==="exam"||d.phase==="rest")return;
+    if(d.dt>=monday && d.dt<new Date(monday.getTime()+7*DAYMS)){ wkTot++; if(store[i+"_0"]===true) wk++; } });
+  document.getElementById("s-done").textContent=wk+"/"+wkTot;
+  const total=days.reduce((a,d)=>a+((d.phase==="exam"||d.phase==="rest")?0:d.tix.length),0);
+  document.getElementById("bar").style.width=(total?closed/total*100:0)+"%";
+}
+
+container.addEventListener("change",e=>{ const t=e.target;
+  if(t.dataset.id!==undefined){ store[t.dataset.id]=t.checked; t.closest("li").classList.toggle("checked",t.checked); save(); refresh(); }});
+container.addEventListener("input",e=>{ const t=e.target;
+  if(t.dataset.score!==undefined){ store['sc'+t.dataset.score]=t.value; save(); }});
+refresh();
+const te=document.querySelector(".day.today"); if(te) te.scrollIntoView({block:"center"});
+</script>
+</body>
+</html>
