@@ -152,7 +152,8 @@
   <div class="note">
     <p><b>The floor is the yellow ticket.</b> On a dead day you close only that and your streak lives. Never zero.</p>
     <p><b>Tap "open" on any ticket</b> to jump straight to that exam or the review queue. Do it, come back, tick the box. Check-offs save on this device only, same as your other trackers.</p>
-    <p style="margin-bottom:0"><b>Read the gaps</b> means open the rationale on every miss. That is what feeds tomorrow's review queue.</p>
+    <p><b>Read the gaps</b> means open the rationale on every miss. That is what feeds tomorrow's review queue.</p>
+    <p style="margin-bottom:0"><b>Timing and scores.</b> There is no in-app timer. In the simulate phase and on mocks, run board pace on your phone: about 1.2 min per item (2 hours per 100, 3 per 150). Build phase has no clock, you are still learning. Your real scores log themselves to <a href="/readiness">Board Readiness</a> after every exam, so there is nothing to record here.</p>
     <button class="reset" onclick="if(confirm('Clear all check-offs on this device?')){localStorage.removeItem(KEY);location.reload()}">Reset queue</button>
   </div>
 </div>
@@ -270,18 +271,18 @@ function buildDay(dt){
   } else if(toExam<=14){
     phase="simulate";
     if(dow===0){ tag="simulation"; tagClass="t-mock"; subj="Full board simulation";
-      tix=[QUEUE(),{txt:"Full Board Simulation, timed", link:MOCK_LINK, why:"822-question mock, weighted like the real paper, 75% pass line.", score:true}, GAPS];
+      tix=[QUEUE(),{txt:"Full Board Simulation", link:MOCK_LINK, why:"Board pace on your phone timer, ~1.2 min per item. 822-question mock, weighted like the real paper, 75% pass line."}, GAPS];
     } else {
       const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
       const s = wk[dow] || HEAVY[(hp++)%HEAVY.length];
       const weak = !!wk[dow];
-      tag = weak?"weak three":"timed"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — timed";
-      tix=[QUEUE(),{txt:"Timed Preboards: "+s, link:prebLink(s), why:"Exam pace, no pausing. Log your score.", score:true}, GAPS];
+      tag = weak?"weak three":"board pace"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — board pace";
+      tix=[QUEUE(),{txt:"Preboards: "+s, link:prebLink(s), why:"Board pace, phone timer, ~1.2 min per item (2h/100, 3h/150). No pausing."}, GAPS];
     }
   } else {
     phase="build";
     if(dow===0){ tag="checkpoint"; tagClass="t-mock"; subj="Weekly checkpoint";
-      tix=[QUEUE(),{txt:"Full Board Simulation, timed", link:MOCK_LINK, why:"Watch your number climb from 74 toward Top 2.", score:true}, GAPS];
+      tix=[QUEUE(),{txt:"Full Board Simulation", link:MOCK_LINK, why:"Board pace: ~1.2 min per item (2h/100, 3h/150). No in-app timer, so set your phone. Watch your number climb from 74."}, GAPS];
     } else {
       const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
       let s,weak;
@@ -290,7 +291,7 @@ function buildDay(dt){
       const src=SRC[Math.min(weekIdx,SRC.length-1)];
       tix=[QUEUE(),
         readTix(s),
-        {txt:s+" "+src[0]+", timed", link:src[1](s), why:"One bank, exam pace. Then log what you scored.", score:true},
+        {txt:s+" "+src[0], link:src[1](s), why:"One bank at a working pace. You are still learning here, so no clock. Score logs itself to Board Readiness."},
         GAPS];
     }
   }
@@ -328,8 +329,7 @@ days.forEach((d,i)=>{
     html+=`<li class="${on?'checked':''}"><input type="checkbox" id="c${id}" ${on?'checked':''} data-id="${id}">`+
       `<span class="txt"><label for="c${id}">${t.floor?'<span class="floor">FLOOR · </span>':''}${t.read?'<span class="rd">READ · </span>':''}${t.txt}</label>`+
       (t.why?`<span class="why">${t.why}</span>`:``)+`</span>`+
-      (t.link?`<a class="go" href="${t.link}">${t.read?'read':'open'}</a>`:``)+
-      (t.score?`<input class="score" placeholder="score" value="${store['sc'+id]||''}" data-score="${id}">`:``)+`</li>`;
+      (t.link?`<a class="go" href="${t.link}">${t.read?'read':'open'}</a>`:``)+`</li>`;
   });
   html+=`</ul>`; card.innerHTML=html; container.appendChild(card);
 });
@@ -360,8 +360,6 @@ function refresh(){
 
 container.addEventListener("change",e=>{ const t=e.target;
   if(t.dataset.id!==undefined){ store[t.dataset.id]=t.checked; t.closest("li").classList.toggle("checked",t.checked); save(); refresh(); }});
-container.addEventListener("input",e=>{ const t=e.target;
-  if(t.dataset.score!==undefined){ store['sc'+t.dataset.score]=t.value; save(); }});
 refresh();
 const te=document.querySelector(".day.today"); if(te) te.scrollIntoView({block:"center"});
 </script>
