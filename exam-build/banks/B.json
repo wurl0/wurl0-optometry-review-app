@@ -3438,5 +3438,293 @@
   "w": "The radial arrangement of lens fibers diffracts light into a colored halo, which is normal. A PATHOLOGIC halo comes from corneal edema in raised IOP or radiation keratopathy, and that one matters.",
   "k": "Physiologic halo = lens fiber diffraction; pathologic = corneal edema.",
   "src": "sanitized"
+ },
+ {
+  "id": "B0216",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The primary optical function of the cornea is to:",
+  "o": [
+   "Provide most of the eye's refractive power",
+   "Produce the aqueous humor of the eye",
+   "Absorb stray light within the eyeball",
+   "Control the size of the eye's pupil"
+  ],
+  "a": 0,
+  "w": "The air-cornea interface gives roughly two thirds of total focusing power. Aqueous is made by ciliary body; pupil size is iris; light absorption is RPE.",
+  "k": "\"Optical function\" plus \"cornea\" = bending light. The biggest refraction is at the first air-tissue surface.",
+  "src": "sanitized"
+ },
+ {
+  "id": "B0217",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The approximate refractive power of the cornea is:",
+  "o": [
+   "+10.00 D",
+   "+60.00 D",
+   "+20.00 D",
+   "+43.00 D"
+  ],
+  "a": 3,
+  "w": "The cornea contributes about +43 D of the eye's roughly +60 D total. +60 D is the whole eye, not the cornea alone; +10 and +20 D are too low.",
+  "k": "Two anchors: whole eye about +60 D, cornea about +43 D, lens the remainder (~+17 to +20 D). The +60 option is the whole-eye trap.",
+  "src": "authored"
+ },
+ {
+  "id": "B0218",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The crystalline lens primarily contributes to:",
+  "o": [
+   "Tear production",
+   "Accommodation",
+   "Color perception",
+   "Phototransduction"
+  ],
+  "a": 1,
+  "w": "The lens changes shape to focus at different distances (accommodation). Tears, phototransduction and colour belong to lacrimal tissue, photoreceptors and cones.",
+  "k": "Lens = adjustable focus = accommodation. The other options are secretory or receptor tasks.",
+  "src": "authored"
+ },
+ {
+  "id": "B0219",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Accommodation is the process by which the eye:",
+  "o": [
+   "Changes the axial length of the eye",
+   "Changes the thickness of the retina",
+   "Changes the curvature of the cornea",
+   "Changes the refractive power of the lens"
+  ],
+  "a": 3,
+  "w": "Accommodation alters lens curvature and thus power for near focus. Axial length is fixed in adults; corneal curvature does not change to accommodate; retinal thickness is unrelated.",
+  "k": "Accommodation acts on the one adjustable optic, the lens. Anything about the cornea, globe length, or retina is a distractor.",
+  "src": "sanitized"
+ },
+ {
+  "id": "B0220",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "During accommodation, the crystalline lens becomes:",
+  "o": [
+   "Flatter",
+   "More convex",
+   "Less powerful",
+   "Thinner"
+  ],
+  "a": 1,
+  "w": "For near vision the lens rounds up (more convex), increasing power. Flatter/thinner/less powerful describe the distance (unaccommodated) state.",
+  "k": "Near needs more plus power, so the lens must get more curved (convex). Reject every option that reduces power.",
+  "src": "authored"
+ },
+ {
+  "id": "B0221",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The muscle responsible for accommodation is the:",
+  "o": [
+   "Ciliary muscle",
+   "Medial rectus",
+   "Superior rectus",
+   "Orbicularis oculi"
+  ],
+  "a": 0,
+  "w": "The ciliary muscle controls lens shape via the zonules. Recti move the eye; orbicularis closes the lids.",
+  "k": "Accommodation is intraocular, so the muscle is intraocular: ciliary. Rectus and orbicularis are movement/lid muscles.",
+  "src": "authored"
+ },
+ {
+  "id": "B0222",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The refractive index of the cornea is approximately:",
+  "o": [
+   "1.00",
+   "1.70",
+   "1.376",
+   "1.33"
+  ],
+  "a": 2,
+  "w": "Corneal index is about 1.376. 1.00 is air, 1.33 is water/aqueous, 1.70 is far too high for ocular tissue.",
+  "k": "Line up the indices: air 1.00, water/aqueous 1.33, cornea ~1.376. Pick the value just above water.",
+  "src": "authored"
+ },
+ {
+  "id": "B0223",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The refractive index of air is approximately:",
+  "o": [
+   "1.80",
+   "1.33",
+   "1.50",
+   "1.00"
+  ],
+  "a": 3,
+  "w": "Air is the reference at n = 1.00. 1.33 is water, ~1.5 is crown glass/plastic, 1.8 is high-index glass.",
+  "k": "Air is the baseline everything else is measured against, so its index is 1.00.",
+  "src": "authored"
+ },
+ {
+  "id": "B0224",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Cones are primarily responsible for:",
+  "o": [
+   "Color and high-acuity vision",
+   "Peripheral vision only",
+   "Night vision",
+   "Scotopic vision"
+  ],
+  "a": 0,
+  "w": "Cones give colour and sharp daylight (photopic) detail. Scotopic, night and peripheral vision are rod roles.",
+  "k": "Cones = colour + clarity. Dim/night/peripheral wording means rods.",
+  "src": "authored"
+ },
+ {
+  "id": "B0225",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The highest concentration of cones is found in the:",
+  "o": [
+   "Ora serrata",
+   "Peripheral retina",
+   "Fovea centralis",
+   "Optic disc"
+  ],
+  "a": 2,
+  "w": "Cone density peaks at the fovea. The optic disc has no receptors; ora serrata and periphery are rod-rich.",
+  "k": "Cone peak = fovea. The disc (blind spot) and periphery are traps.",
+  "src": "authored"
+ },
+ {
+  "id": "B0226",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The fovea provides the highest visual acuity because it has:",
+  "o": [
+   "Many large blood vessels feeding the region",
+   "High cone density and minimal overlying retinal tissue",
+   "No functioning photoreceptors at that point",
+   "An especially high density of rod photoreceptors"
+  ],
+  "a": 1,
+  "w": "Densely packed cones plus displaced inner retinal layers let light reach receptors directly, giving the sharpest image. Rods and vessels reduce acuity; \"no photoreceptors\" describes the blind spot.",
+  "k": "Two reasons for max acuity: most cones and least tissue in the way. The correct option is the one naming both.",
+  "src": "sanitized"
+ },
+ {
+  "id": "B0227",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The optic disc is called the blind spot because it:",
+  "o": [
+   "Contains only rods",
+   "Contains only cones",
+   "Has excessive pigmentation",
+   "Contains no photoreceptors"
+  ],
+  "a": 3,
+  "w": "No rods or cones at the disc means no light detection. It is not selectively cone/rod rich, and pigment is not the cause.",
+  "k": "\"Blind\" = no receptors. Choose the option that removes photoreceptors entirely.",
+  "src": "authored"
+ },
+ {
+  "id": "B0228",
+  "sec": "B2 Visual Perception",
+  "t": "B2 Visual Perception",
+  "q": "The Purkinje images are reflections produced by:",
+  "o": [
+   "Ocular surfaces",
+   "Extraocular muscles",
+   "Optic nerve fibers",
+   "The retina only"
+  ],
+  "a": 0,
+  "w": "Purkinje images are reflections from the four refracting surfaces (anterior/posterior cornea, anterior/posterior lens). They are surface reflections, not retinal, nerve or muscle phenomena.",
+  "k": "\"Reflections\" implies mirrored light off boundaries, so think refracting surfaces of the eye, not deep tissues.",
+  "src": "authored"
+ },
+ {
+  "id": "B0229",
+  "sec": "B2 Visual Perception",
+  "t": "B2 Visual Perception",
+  "q": "Dark adaptation refers to the ability of the visual system to:",
+  "o": [
+   "Increase accommodation",
+   "Become more sensitive in low illumination",
+   "Increase pupil size permanently",
+   "Adjust to bright light"
+  ],
+  "a": 1,
+  "w": "Dark adaptation is the rod-driven rise in sensitivity in dim light over minutes. Adjusting to bright light is light adaptation; pupil change is transient; accommodation is focusing.",
+  "k": "\"Dark\" adaptation = getting better at seeing in the dark = increased sensitivity in low light. The bright-light option is the opposite process.",
+  "src": "authored"
+ },
+ {
+  "id": "B0230",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The visual pigment found primarily in rods is:",
+  "o": [
+   "Rhodopsin",
+   "Hemoglobin",
+   "Iodopsin",
+   "Melanin"
+  ],
+  "a": 0,
+  "w": "Rods contain rhodopsin (visual purple). Iodopsin/photopsins are cone pigments; melanin is RPE/skin pigment; hemoglobin is in blood.",
+  "k": "Rod + pigment = rhodopsin. Cone pigment is the iodopsin/photopsin decoy.",
+  "src": "authored"
+ },
+ {
+  "id": "B0231",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Phototransduction occurs primarily in the:",
+  "o": [
+   "Lens capsule",
+   "Extraocular muscles",
+   "Photoreceptors",
+   "Cornea"
+  ],
+  "a": 2,
+  "w": "Converting light into a neural signal happens in rod and cone outer segments. Muscles, cornea and lens capsule do not transduce light.",
+  "k": "\"Photo-transduction\" literally means light-to-signal, which only the photoreceptors do.",
+  "src": "authored"
+ },
+ {
+  "id": "B0232",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The aqueous humor is located mainly in the:",
+  "o": [
+   "Vitreous cavity only",
+   "Optic nerve",
+   "Subretinal space",
+   "Anterior and posterior chambers"
+  ],
+  "a": 3,
+  "w": "Aqueous fills the anterior and posterior chambers of the front segment. Vitreous cavity holds vitreous, not aqueous.",
+  "k": "Chambers (front) hold aqueous; cavity (back) holds vitreous. Do not swap them.",
+  "src": "authored"
+ },
+ {
+  "id": "B0233",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The vitreous humor primarily helps to:",
+  "o": [
+   "Control pupil size",
+   "Maintain the shape of the eyeball",
+   "Produce visual pigments",
+   "Produce tears"
+  ],
+  "a": 1,
+  "w": "The vitreous gel maintains globe shape and supports the retina. It does not make tears or pigments and does not control the pupil.",
+  "k": "Space-filling gel = structural support. Pick the mechanical role.",
+  "src": "authored"
  }
 ]

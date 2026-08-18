@@ -3390,5 +3390,709 @@
   "w": "The Code consistently subordinates commerce to professional judgment: chair time is the doctor's sole discretion, advertising must be dignified rather than competitive, and a lay corporation may not practice. When in doubt, choose the professional answer.",
   "k": "Professionalism over commercialization.",
   "src": "authored"
+ },
+ {
+  "id": "H0213",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "What is the principal law regulating the practice of optometry in the Philippines?",
+  "o": [
+   "RA 8050",
+   "RA 11032",
+   "RA 1998",
+   "RA 7160"
+  ],
+  "a": 0,
+  "w": "RA 8050, the Revised Optometry Law of 1995, governs Philippine optometry. RA 7160 is the Local Government Code, RA 11032 is the Ease of Doing Business Act, RA 1998 is not the optometry law.",
+  "k": "Memorise RA 8050 as the optometry law. The other RAs are general statutes used as distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "H0214",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "RA 8050 was approved on:",
+  "o": [
+   "June 7, 1995",
+   "June 22, 1957",
+   "January 1, 1996",
+   "August 17, 1995"
+  ],
+  "a": 0,
+  "w": "RA 8050 was approved on June 7, 1995. The other dates are close-sounding distractors.",
+  "k": "Tie the approval year (1995) to the law's title. June 7, 1995 is the date to retain.",
+  "src": "authored"
+ },
+ {
+  "id": "H0215",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "Which government body regulates optometry through the Professional Regulatory Board of Optometry?",
+  "o": [
+   "DTI",
+   "PRC",
+   "CHED only",
+   "DOH only"
+  ],
+  "a": 1,
+  "w": "The Professional Regulation Commission (PRC) oversees the Board of Optometry and licensure. DOH handles health services, CHED handles education, DTI handles trade.",
+  "k": "\"Professional Regulatory Board\" sits under the PRC. Licensure and registration = PRC, not DOH or CHED.",
+  "src": "authored"
+ },
+ {
+  "id": "H0216",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "Which of the following is considered an act constituting the practice of optometry?",
+  "o": [
+   "Selling ordinary non-prescription sunglasses over the counter",
+   "Manufacturing eyeglass cases and other optical accessories",
+   "Selling lens-cleaning cloths and spray solutions at retail",
+   "Examination of the human eye using objective and subjective procedures"
+  ],
+  "a": 3,
+  "w": "Examining the eye by objective and subjective methods to diagnose and correct is core optometric practice. Selling sunglasses, cases or cloths is retail, not professional practice.",
+  "k": "\"Practice of optometry\" means clinical acts, not merchandising. Pick the examination option.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0217",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The prescription and dispensing of ophthalmic lenses, prisms, and contact lenses are:",
+  "o": [
+   "Only optical merchandising",
+   "Outside optometry",
+   "Acts constituting optometric practice",
+   "Only medical acts"
+  ],
+  "a": 2,
+  "w": "Prescribing and dispensing corrective devices is defined within optometric practice under RA 8050. It is not outside optometry, exclusively medical, or mere merchandising.",
+  "k": "Prescribing and dispensing corrective optics is central to the profession, so it counts as optometric practice.",
+  "src": "authored"
+ },
+ {
+  "id": "H0218",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "Counseling patients regarding vision and eye care is:",
+  "o": [
+   "Only an administrative function",
+   "Part of optometric practice",
+   "Prohibited to optometrists",
+   "Only performed by nurses"
+  ],
+  "a": 1,
+  "w": "Patient counseling on vision and eye care is a recognised part of optometric practice. It is neither prohibited, purely administrative, nor a nurses-only task.",
+  "k": "Educating patients is a professional duty, so it falls within practice. The restrictive options are wrong.",
+  "src": "authored"
+ },
+ {
+  "id": "H0219",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "An optometrist must possess a valid certificate of registration before:",
+  "o": [
+   "Buying eyeglasses",
+   "Purchasing optical equipment",
+   "Practicing optometry",
+   "Wearing spectacles"
+  ],
+  "a": 2,
+  "w": "A valid certificate of registration (and PIC) is required to practice legally. Buying glasses, wearing spectacles or purchasing equipment need no license.",
+  "k": "Licensure gates professional practice, not consumer acts. The registration requirement attaches to practicing.",
+  "src": "authored"
+ },
+ {
+  "id": "H0220",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The Board of Optometry has authority to:",
+  "o": [
+   "Issue and regulate professional registration",
+   "Operate all optical shops across the country",
+   "Manufacture ophthalmic lenses and spectacle frames",
+   "Set admission fees for public hospitals"
+  ],
+  "a": 0,
+  "w": "The Board regulates the profession, including registration, standards and discipline. It does not manufacture lenses, run optical shops or set hospital fees.",
+  "k": "A regulatory board regulates people and standards, not commerce or hospitals. Choose the registration/regulation role.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0221",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should treat patients with:",
+  "o": [
+   "Anger, impatience, and open dismissiveness",
+   "Favoritism toward a few selected patients",
+   "Discrimination based on a patient's background",
+   "Patience, delicacy, frankness, and respect"
+  ],
+  "a": 3,
+  "w": "Professional conduct requires patience, delicacy, frankness and respect for all patients. Anger, favoritism and discrimination violate the code of ethics.",
+  "k": "Ethics questions reward the respectful, professional option and punish the negative behaviours.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0222",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should inform a patient about manifestations of disease:",
+  "o": [
+   "Only when the patient asks",
+   "Never",
+   "Only after selling glasses",
+   "In a timely and appropriate manner"
+  ],
+  "a": 3,
+  "w": "Findings should be communicated promptly and appropriately so the patient can act. Withholding until asked, never, or only after a sale is unethical.",
+  "k": "Duty to disclose is proactive and timely. The conditional/never options fail the ethics test.",
+  "src": "authored"
+ },
+ {
+  "id": "H0223",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should NOT:",
+  "o": [
+   "Exaggerate or minimize the seriousness of a patient's condition",
+   "Refer to another professional whenever it is clearly necessary",
+   "Explain the examination findings clearly to the patient",
+   "Provide appropriate advice about vision and eye care"
+  ],
+  "a": 0,
+  "w": "Honesty forbids exaggerating or downplaying a condition. Explaining findings, referring and advising are all proper duties.",
+  "k": "A \"should NOT\" ethics stem seeks the dishonest act. Distorting severity is the violation.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0224",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "If a patient's condition requires another professional's services, the optometrist should:",
+  "o": [
+   "Hide the finding",
+   "Refer the patient appropriately",
+   "Continue treatment indefinitely",
+   "Ignore it"
+  ],
+  "a": 1,
+  "w": "Care beyond one's scope warrants appropriate referral. Ignoring, over-treating or concealing endangers the patient and breaches ethics.",
+  "k": "Scope-of-practice questions almost always answer \"refer appropriately.\"",
+  "src": "authored"
+ },
+ {
+  "id": "H0225",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "Once an optometrist has formally undertaken a case, the optometrist should:",
+  "o": [
+   "Abandon the patient immediately without notice or onward referral",
+   "Continue appropriate care or provide sufficient notice before withdrawal",
+   "Refuse all further follow-up regardless of the clinical need",
+   "Transfer the patient elsewhere without any explanation given"
+  ],
+  "a": 1,
+  "w": "After accepting a case, continuity of care is owed; withdrawal requires adequate notice so the patient can arrange alternatives. Abandonment or unexplained transfer is unethical.",
+  "k": "Avoiding patient abandonment is the principle. Choose continuity with proper notice.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0226",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "In an emergency, an optometrist should:",
+  "o": [
+   "Refer every emergency without assessment",
+   "Respond to a request for assistance",
+   "Refuse assistance automatically",
+   "Demand payment before any assistance"
+  ],
+  "a": 1,
+  "w": "Professionals should respond to reasonable requests for emergency help within their competence. Refusing outright, demanding payment first or blanket-referring without assessment is improper.",
+  "k": "Emergency ethics favour responding and helping, not refusing or gating on payment.",
+  "src": "authored"
+ },
+ {
+  "id": "H0227",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The primary responsibility of an optometrist under RA 8050 is the:",
+  "o": [
+   "Sale of premium frames",
+   "Visual welfare of the public",
+   "Number of patients seen daily",
+   "Profitability of the clinic"
+  ],
+  "a": 1,
+  "w": "The law centres on protecting and promoting the public's visual welfare. Profit, sales and patient volume are business metrics, not the professional's primary duty.",
+  "k": "Public welfare beats commerce in professional-duty questions. Choose the patient/public option.",
+  "src": "authored"
+ },
+ {
+  "id": "H0228",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "Professional care should be provided with:",
+  "o": [
+   "Different quality based on social status",
+   "Preference for friends",
+   "Equal diligence to patients",
+   "Preference for wealthy patients"
+  ],
+  "a": 2,
+  "w": "Equal diligence and non-discrimination are ethical baselines. Varying quality by status, wealth or friendship is unethical.",
+  "k": "Fairness/equality is the ethical answer; any preferential or discriminatory option is wrong.",
+  "src": "authored"
+ },
+ {
+  "id": "H0229",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should respect the confidential nature of information concerning:",
+  "o": [
+   "Competitors only",
+   "Optical suppliers only",
+   "Patients served",
+   "Advertisers"
+  ],
+  "a": 2,
+  "w": "Confidentiality protects patient information. Competitors, suppliers and advertisers are not the subject of the duty of confidentiality.",
+  "k": "Confidentiality attaches to patients. The non-patient options are distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "H0230",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "Continuous improvement of theoretical and practical proficiency is:",
+  "o": [
+   "Unnecessary after licensure",
+   "Required only for students",
+   "Optional",
+   "A professional responsibility"
+  ],
+  "a": 3,
+  "w": "Ongoing competence and lifelong learning are professional responsibilities. It is neither optional, student-only, nor finished at licensure.",
+  "k": "Continuing competence is a duty, not a choice. Reject the options that make it optional or time-limited.",
+  "src": "authored"
+ },
+ {
+  "id": "H0231",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should maintain cordial relationships with:",
+  "o": [
+   "Only other optometrists working in the same clinic",
+   "Members of the profession and other professions",
+   "Only patients who are fully able to pay",
+   "Members and suppliers of the optical trade only"
+  ],
+  "a": 1,
+  "w": "Professionalism includes collegial relations within optometry and with other health professions. Limiting cordiality to a narrow group is contrary to the code.",
+  "k": "The inclusive option (own and other professions) beats the exclusive ones.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0232",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "The primary objective of an optometric clinic should be:",
+  "o": [
+   "Maximum sales",
+   "Selling the most expensive lenses",
+   "Quality patient care",
+   "Maximum advertising"
+  ],
+  "a": 2,
+  "w": "Quality patient care is the clinic's core objective; sound business supports but does not replace it. Maximising sales, advertising or costly lenses puts commerce first.",
+  "k": "Patient care over profit. The sales/advertising options are commercial traps.",
+  "src": "authored"
+ },
+ {
+  "id": "H0233",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "A well-organized patient record should contain:",
+  "o": [
+   "Only the total amount that the patient has paid",
+   "Only the patient's full name and home address",
+   "Only the final spectacle prescription that was given",
+   "Relevant clinical findings and management information"
+  ],
+  "a": 3,
+  "w": "Good records document history, findings and management for continuity and legal protection. Name, payment or Rx alone is incomplete.",
+  "k": "\"Well-organized record\" means comprehensive clinical documentation, not a single field.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0234",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "Proper record keeping is important because it:",
+  "o": [
+   "Supports continuity and quality of patient care",
+   "Replaces informed communication",
+   "Guarantees profit",
+   "Eliminates the need for examination"
+  ],
+  "a": 0,
+  "w": "Records enable continuity, quality and accountability. They do not replace examination, guarantee profit or substitute for communicating with the patient.",
+  "k": "Records support care; they do not replace clinical steps. Pick the continuity/quality option.",
+  "src": "authored"
+ },
+ {
+  "id": "H0235",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "Informed consent primarily means that the patient:",
+  "o": [
+   "Receives relevant information and voluntarily agrees",
+   "Signs a blank consent form without reading it",
+   "Must first purchase glasses before being treated",
+   "Is forced to accept the recommended treatment"
+  ],
+  "a": 0,
+  "w": "Informed consent is voluntary agreement after receiving adequate information about the procedure, risks and alternatives. Coercion, forced purchase or blank forms are invalid.",
+  "k": "\"Informed\" (given information) plus \"consent\" (voluntary agreement) defines the correct option.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0236",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "Which is an important component of good clinic management?",
+  "o": [
+   "Ignoring expired supplies",
+   "Poor instrument maintenance",
+   "Proper sanitation and infection control",
+   "Unorganized records"
+  ],
+  "a": 2,
+  "w": "Sanitation and infection control protect patients and staff and are essential management. The other options are examples of poor management.",
+  "k": "Choose the responsible practice; the other three are obvious negatives.",
+  "src": "authored"
+ },
+ {
+  "id": "H0237",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "Instruments used in clinical practice should be:",
+  "o": [
+   "Properly maintained and disinfected as appropriate",
+   "Used regardless of their actual working condition",
+   "Shared between patients without any cleaning",
+   "Stored anywhere convenient around the clinic"
+  ],
+  "a": 0,
+  "w": "Instruments must be maintained and disinfected to ensure safety and accuracy. Sharing uncleaned, careless storage or using faulty tools risks infection and error.",
+  "k": "Safety and hygiene wins. The neglectful options are wrong.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0238",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "A clinic's appointment system is primarily useful for:",
+  "o": [
+   "Diagnosing glaucoma",
+   "Managing patient flow efficiently",
+   "Measuring visual acuity",
+   "Increasing prescription power"
+  ],
+  "a": 1,
+  "w": "Appointments organise patient flow and reduce waiting. They have nothing to do with prescription power, diagnosing disease or measuring acuity.",
+  "k": "An appointment system is an administrative tool, so its purpose is workflow, not clinical measurement.",
+  "src": "authored"
+ },
+ {
+  "id": "H0239",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "An effective inventory system helps the clinic to:",
+  "o": [
+   "Determine IOP",
+   "Monitor supplies and prevent shortages",
+   "Replace clinical examination",
+   "Diagnose refractive errors"
+  ],
+  "a": 1,
+  "w": "Inventory control tracks stock and avoids shortages or expiry. It does not diagnose, replace exams or measure pressure.",
+  "k": "Inventory = supplies management. The clinical-sounding options are distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "H0240",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "Which is an example of unethical business practice?",
+  "o": [
+   "Misleading claims about guaranteed visual results",
+   "Accurate disclosure of the professional fees",
+   "Proper patient education about their own care",
+   "Careful maintenance of accurate clinical records"
+  ],
+  "a": 0,
+  "w": "Guaranteeing results with misleading claims deceives patients and is unethical. Accurate disclosure, education and records are ethical practices.",
+  "k": "Look for the deceptive/misleading option; the honest practices are all acceptable.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0241",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "Professional advertising should be:",
+  "o": [
+   "Truthful and consistent with professional standards",
+   "Designed to guarantee a complete cure of disease",
+   "False and exaggerated to attract more patients",
+   "Based only on misleading promotional claims"
+  ],
+  "a": 0,
+  "w": "Advertising must be truthful and standard-compliant. False, exaggerated, cure-guaranteeing or misleading ads violate the code.",
+  "k": "Only the truthful option is ethical; anything false or guaranteeing cures is wrong.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0242",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The PRC Professional Regulatory Boards have authority to investigate violations of professional standards and:",
+  "o": [
+   "Operate private clinics",
+   "Sell medications",
+   "Manufacture optical lenses",
+   "Adjudicate administrative cases"
+  ],
+  "a": 3,
+  "w": "The boards investigate and adjudicate administrative cases against practitioners. They do not manufacture lenses, run clinics or sell drugs.",
+  "k": "A regulatory board's power is investigate and adjudicate. The commercial options are out of scope.",
+  "src": "authored"
+ },
+ {
+  "id": "H0243",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The Board of Optometry may, according to law, impose professional regulatory actions including:",
+  "o": [
+   "Closure of every optical shop operating within the region",
+   "Cancellation of all prescriptions previously issued nationwide",
+   "Imprisonment of the optometrist without any court proceedings",
+   "Suspension or revocation of registration for causes provided by law"
+  ],
+  "a": 3,
+  "w": "The Board may suspend or revoke registration for causes defined by law. It cannot imprison (a court function), close all shops, or cancel all prescriptions.",
+  "k": "Administrative bodies act on licenses, not on liberty. Suspension/revocation is the lawful sanction.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0244",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "Under the IRR, routine optometric examination should generally be performed in:",
+  "o": [
+   "A patient's workplace without authorization",
+   "A shopping mall hallway",
+   "Premises used appropriately for optometric practice",
+   "Any public place"
+  ],
+  "a": 2,
+  "w": "Examinations should occur in premises suitable and authorised for practice, ensuring standards and privacy. Public hallways or unauthorised sites are improper.",
+  "k": "Proper facility is the safe, standards-based answer; casual public locations are wrong.",
+  "src": "authored"
+ },
+ {
+  "id": "H0245",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "The PRC has specifically issued an advisory concerning unauthorized optometric practice involving:",
+  "o": [
+   "Examination and dispensing through unauthorized mobile units",
+   "Reading printed books under normal room lighting",
+   "Buying eyeglass frames from an ordinary retail store",
+   "Wearing contact lenses purely for cosmetic purposes"
+  ],
+  "a": 0,
+  "w": "Advisories target unauthorised mobile examination and dispensing that bypass proper premises and oversight. Wearing lenses, buying frames or reading are not regulated acts.",
+  "k": "\"Unauthorized practice\" points to the clinical acts done improperly (mobile units), not harmless consumer activities.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0246",
+  "sec": "H1 RA 8050",
+  "t": "H1 RA 8050",
+  "q": "A mobile optometric service outside the regular clinic may require appropriate permission from:",
+  "o": [
+   "A frame manufacturer that supplies the clinic with its display stock and finished lens blanks",
+   "The next-door neighbor of a patient who lives near the proposed community outreach venue",
+   "Relevant national/local health authorities and/or the recognized professional organization, as applicable",
+   "Any optical salesperson employed at a nearby commercial establishment or shopping mall outlet"
+  ],
+  "a": 2,
+  "w": "Off-site services need clearance from the proper health authorities and professional bodies. Neighbours, manufacturers and salespersons have no such authority.",
+  "k": "Permission comes from official regulators. The unofficial parties are distractors.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0247",
+  "sec": "H3 Practice Management",
+  "t": "H3 Practice Mgmt",
+  "q": "An optometrist discovers signs suggesting a serious ocular disease outside the scope of routine optometric management. What is the best action?",
+  "o": [
+   "Sell the patient a stronger pair of spectacles instead",
+   "Conceal the finding to avoid alarming the patient",
+   "Ignore the finding and continue routine care as normal",
+   "Refer appropriately and explain the concern to the patient"
+  ],
+  "a": 3,
+  "w": "Serious findings beyond scope require timely referral with clear explanation. Concealing, selling glasses or ignoring endangers the patient.",
+  "k": "Beyond scope plus serious = refer and inform. The care-avoiding and sales options are wrong.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0248",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "A patient cannot afford the professional fee. Ethical practice emphasizes that:",
+  "o": [
+   "The patient should usually be refused service until able to pay",
+   "The patient should generally receive inferior, lower-standard care",
+   "The patient's condition should simply be ignored by the clinic",
+   "Humanitarian considerations may warrant professional service without charge"
+  ],
+  "a": 3,
+  "w": "Ethics allow for humanitarian, sometimes pro bono, service; care quality should not depend on ability to pay. Refusing, ignoring or downgrading care is unethical.",
+  "k": "Compassion over commerce: the humanitarian option is correct; refusal or lesser care is wrong.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0249",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist tells every patient that a particular lens will \"cure all eye diseases.\" This is:",
+  "o": [
+   "Misleading professional conduct",
+   "Appropriate advertising",
+   "Ethical counseling",
+   "Good practice management"
+  ],
+  "a": 0,
+  "w": "Claiming a lens cures all diseases is false and misleading, breaching professional standards. It is neither appropriate advertising, ethical counseling nor good management.",
+  "k": "\"Cure all\" is a classic false-claim signal, so it is misleading conduct.",
+  "src": "authored"
+ },
+ {
+  "id": "H0250",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "A patient asks the optometrist to disclose another patient's diagnosis. The optometrist should:",
+  "o": [
+   "Maintain confidentiality",
+   "Give the information to the patient's friends",
+   "Post it online",
+   "Disclose it"
+  ],
+  "a": 0,
+  "w": "Another patient's information is confidential and must not be shared. Disclosing, posting or telling friends violates privacy.",
+  "k": "Third-party medical information is protected, so maintain confidentiality. Every sharing option is wrong.",
+  "src": "authored"
+ },
+ {
+  "id": "H0251",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist is offered a financial incentive by a supplier to recommend a product regardless of patient need. The best response is to:",
+  "o": [
+   "Hide the incentive from the patient entirely",
+   "Prioritize patient welfare and professional judgment",
+   "Increase the price that is charged to patients",
+   "Accept it and recommend the product to everyone"
+  ],
+  "a": 1,
+  "w": "Recommendations must serve patient need and professional judgment, not kickbacks. Accepting to push a product, concealing the incentive or raising prices is unethical.",
+  "k": "Conflict-of-interest questions answer with patient welfare and professional judgment over financial gain.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0252",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist notices a colleague repeatedly practicing in violation of professional regulations. The ethical response is to:",
+  "o": [
+   "Take appropriate steps consistent with professional and regulatory procedures",
+   "Spread the information about the colleague widely on social media platforms",
+   "Publicly insult and humiliate the colleague in front of the staff",
+   "Ignore the questionable conduct completely and say nothing to anyone"
+  ],
+  "a": 0,
+  "w": "Repeated violations should be addressed through proper professional and regulatory channels. Ignoring enables harm; public insult or social media are unprofessional.",
+  "k": "Use the proper channels: report through regulatory procedures, not by ignoring or shaming.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0253",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "A patient requests a prescription without undergoing an appropriate examination. The optometrist should:",
+  "o": [
+   "Provide the prescription immediately",
+   "Guess the prescription",
+   "Ask the optical salesperson to determine it",
+   "Explain that appropriate assessment is necessary"
+  ],
+  "a": 3,
+  "w": "A prescription must follow proper examination for safety and accuracy. Issuing without exam, delegating to a salesperson or guessing is substandard and unethical.",
+  "k": "No exam, no valid prescription. The correct answer insists on assessment first.",
+  "src": "authored"
+ },
+ {
+  "id": "H0254",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "Which principle best describes ethical optometric practice?",
+  "o": [
+   "Patient welfare, professional competence, honesty, and confidentiality",
+   "Advertising and marketing placed before clinical patient care",
+   "Profit and personal income placed before patient welfare always",
+   "Competition with peers placed before professional cooperation"
+  ],
+  "a": 0,
+  "w": "Ethical practice rests on patient welfare, competence, honesty and confidentiality. Profit-first, competition-first and advertising-first options invert the priorities.",
+  "k": "The comprehensive patient-centred option captures the ethics pillars; the single-value commercial options are wrong.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0255",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "An optometrist should approach new developments in optometry with:",
+  "o": [
+   "Blind acceptance of it without any question",
+   "Purely commercial considerations and nothing else",
+   "Immediate rejection without any proper review",
+   "Scientific judgment and critical evaluation"
+  ],
+  "a": 3,
+  "w": "New developments deserve evidence-based, critical appraisal. Blind acceptance, reflex rejection or purely commercial motives are unscientific.",
+  "k": "Evidence and critical thinking is the professional stance; the extreme and commercial options are traps.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0256",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Bioethics",
+  "q": "The best overall principle for an optometrist managing a practice is to:",
+  "o": [
+   "Avoid making any referrals to other health professionals at all times",
+   "Maximize clinic profit regardless of the patient's real needs",
+   "Focus almost exclusively on selling optical retail products",
+   "Balance sound management with ethical, competent, patient-centered care"
+  ],
+  "a": 3,
+  "w": "Good practice balances viable management with ethical, competent, patient-centred care. Profit-only, product-only or referral-avoiding approaches harm patients.",
+  "k": "\"Best overall principle\" wants the balanced, patient-centred option, not a single commercial extreme.",
+  "src": "sanitized"
  }
 ]

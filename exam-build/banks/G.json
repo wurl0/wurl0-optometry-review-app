@@ -3390,5 +3390,565 @@
   "w": "Children have an immature liver, the elderly a failing liver and kidney, and pregnancy a shared fetal circulation. This is why 2% cyclopentolate produces CNS toxicity in a child: the drug is absorbed but not cleared.",
   "k": "Kids = immature liver; elderly = failing liver/kidney; pregnancy = shared fetus.",
   "src": "authored"
+ },
+ {
+  "id": "G0213",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The primary organ responsible for drug metabolism is the:",
+  "o": [
+   "Heart",
+   "Liver",
+   "Kidney",
+   "Spleen"
+  ],
+  "a": 1,
+  "w": "The liver is the main site of drug metabolism (biotransformation). The kidney mainly excretes; the heart and spleen do not metabolise drugs significantly.",
+  "k": "\"Metabolism\" of drugs = liver. Reserve the kidney for excretion, the next question's answer.",
+  "src": "authored"
+ },
+ {
+  "id": "G0214",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The major organ responsible for elimination of many drugs and metabolites is the:",
+  "o": [
+   "Lung",
+   "Kidney",
+   "Pancreas",
+   "Liver"
+  ],
+  "a": 1,
+  "w": "The kidney excretes many drugs and metabolites in urine. The liver metabolises them first; lung and pancreas are not primary excretory organs for most drugs.",
+  "k": "Elimination/excretion = kidney. Pair it with the liver's metabolism role so you never swap them.",
+  "src": "authored"
+ },
+ {
+  "id": "G0215",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A drug that binds to a receptor and produces a response is called a/an:",
+  "o": [
+   "Antagonist",
+   "Inhibitor",
+   "Agonist",
+   "Antidote"
+  ],
+  "a": 2,
+  "w": "An agonist binds and activates a receptor to produce a response. An antagonist blocks it; inhibitor and antidote are broader terms not defined by receptor activation.",
+  "k": "Binds AND produces a response = agonist. Binds and blocks = antagonist (next item).",
+  "src": "authored"
+ },
+ {
+  "id": "G0216",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A drug that binds to a receptor but blocks its activation is a/an:",
+  "o": [
+   "Agonist",
+   "Hormone",
+   "Antagonist",
+   "Enzyme"
+  ],
+  "a": 2,
+  "w": "An antagonist occupies the receptor without activating it, preventing the natural response. Agonists activate; enzymes and hormones are not receptor-blocking drug classes here.",
+  "k": "\"Binds but blocks\" is the definition of antagonist. It is the mirror of the previous agonist question.",
+  "src": "authored"
+ },
+ {
+  "id": "G0217",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The amount of drug required to produce a specific effect is related to its:",
+  "o": [
+   "Expiration date",
+   "Color",
+   "Potency",
+   "Solubility only"
+  ],
+  "a": 2,
+  "w": "Potency describes the dose needed for a given effect (lower dose = higher potency). Colour, solubility alone and expiry do not define the dose-effect relationship.",
+  "k": "\"Amount needed for an effect\" defines potency. Do not confuse it with efficacy (maximum effect), which is the next item.",
+  "src": "authored"
+ },
+ {
+  "id": "G0218",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The maximum effect a drug can produce is called its:",
+  "o": [
+   "Half-life",
+   "Efficacy",
+   "Toxicity",
+   "Potency"
+  ],
+  "a": 1,
+  "w": "Efficacy is the greatest effect achievable regardless of dose. Potency is dose sensitivity; toxicity is harm; half-life is elimination timing.",
+  "k": "\"Maximum effect\" = efficacy. Potency (how little you need) is the paired trap.",
+  "src": "authored"
+ },
+ {
+  "id": "G0219",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The time required for the plasma concentration of a drug to decrease by 50% is the:",
+  "o": [
+   "Duration of action",
+   "Onset time",
+   "Peak time",
+   "Half-life"
+  ],
+  "a": 3,
+  "w": "Half-life is the time for plasma concentration to fall by half. Onset, duration and peak time describe other points on the concentration-time curve.",
+  "k": "\"Decrease by 50%\" literally spells out half-life. The number 50 percent is the giveaway.",
+  "src": "authored"
+ },
+ {
+  "id": "G0220",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A predictable, unwanted effect occurring at a normal therapeutic dose is called a:",
+  "o": [
+   "Drug tolerance",
+   "Therapeutic effect",
+   "Side effect/adverse effect",
+   "Placebo effect"
+  ],
+  "a": 2,
+  "w": "An unwanted but expected effect at normal dose is a side/adverse effect. Placebo is inert response, therapeutic is the intended effect, tolerance is reduced response over time.",
+  "k": "\"Unwanted at a normal dose\" = side effect. The intended benefit is the therapeutic effect decoy.",
+  "src": "authored"
+ },
+ {
+  "id": "G0221",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A substance given to produce a desired therapeutic effect is called a:",
+  "o": [
+   "Metabolite",
+   "Toxin",
+   "Antigen",
+   "Drug"
+  ],
+  "a": 3,
+  "w": "A drug is given to produce a therapeutic effect. A toxin harms, an antigen triggers immunity, a metabolite is a breakdown product.",
+  "k": "\"Desired therapeutic effect\" defines a drug. Toxin is the harmful opposite.",
+  "src": "authored"
+ },
+ {
+  "id": "G0222",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A drug interaction occurs when:",
+  "o": [
+   "Two drugs are always chemically identical",
+   "A patient refuses medication",
+   "A drug has no effect",
+   "One drug alters the effect of another drug"
+  ],
+  "a": 3,
+  "w": "An interaction is when one drug changes another's effect (additive, synergistic or antagonistic). Identical chemistry, no effect or refusal are not interactions.",
+  "k": "\"Interaction\" = mutual influence between drugs. Choose the option where one drug changes another.",
+  "src": "authored"
+ },
+ {
+  "id": "G0223",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Which drug is commonly used to produce mydriasis for ocular examination?",
+  "o": [
+   "Timolol",
+   "Pilocarpine",
+   "Tropicamide",
+   "Brimonidine"
+  ],
+  "a": 2,
+  "w": "Tropicamide is a short-acting mydriatic/cycloplegic used for dilation. Pilocarpine constricts; timolol lowers IOP; brimonidine is an alpha-2 agonist for IOP.",
+  "k": "\"Dilate for exam\" = tropicamide. The glaucoma drugs (timolol, brimonidine) and the miotic (pilocarpine) do not dilate.",
+  "src": "authored"
+ },
+ {
+  "id": "G0224",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Tropicamide primarily acts as a:",
+  "o": [
+   "Carbonic anhydrase inhibitor",
+   "Prostaglandin analog",
+   "Beta blocker",
+   "Muscarinic antagonist"
+  ],
+  "a": 3,
+  "w": "Tropicamide is a muscarinic antagonist (anticholinergic), blocking the iris sphincter to dilate. The other classes are glaucoma drug categories.",
+  "k": "Dilation by blocking the constrictor means antimuscarinic. Mydriatic anticholinergic = muscarinic antagonist.",
+  "src": "authored"
+ },
+ {
+  "id": "G0225",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Pilocarpine is a:",
+  "o": [
+   "Beta blocker",
+   "Prostaglandin analog",
+   "Alpha-2 antagonist",
+   "Muscarinic agonist"
+  ],
+  "a": 3,
+  "w": "Pilocarpine is a muscarinic agonist that stimulates the sphincter (miosis) and ciliary muscle. It is not a beta blocker, prostaglandin or alpha antagonist.",
+  "k": "Pilocarpine constricts, the opposite of tropicamide, so it is a muscarinic agonist.",
+  "src": "authored"
+ },
+ {
+  "id": "G0226",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Pilocarpine produces:",
+  "o": [
+   "Miosis and accommodation",
+   "Mydriasis and cycloplegia",
+   "Mydriasis only",
+   "Cycloplegia only"
+  ],
+  "a": 0,
+  "w": "As a muscarinic agonist it causes miosis (sphincter contraction) and accommodation (ciliary contraction). Mydriasis and cycloplegia are the opposite (anticholinergic) effects.",
+  "k": "Agonist at the sphincter and ciliary muscle = miosis + accommodation. Reject the mydriasis/cycloplegia options, which are anticholinergic.",
+  "src": "authored"
+ },
+ {
+  "id": "G0227",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Which drug is commonly used to lower intraocular pressure by increasing uveoscleral outflow?",
+  "o": [
+   "Atropine",
+   "Tropicamide",
+   "Phenylephrine",
+   "Latanoprost"
+  ],
+  "a": 3,
+  "w": "Latanoprost, a prostaglandin analog, boosts uveoscleral outflow to lower IOP. Tropicamide and atropine dilate; phenylephrine is a mydriatic, none primarily increase outflow.",
+  "k": "\"Increase uveoscleral outflow\" is the prostaglandin signature, so latanoprost.",
+  "src": "authored"
+ },
+ {
+  "id": "G0228",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Latanoprost belongs to which class?",
+  "o": [
+   "Anticholinergic",
+   "Miotic",
+   "Prostaglandin analog",
+   "Beta blocker"
+  ],
+  "a": 2,
+  "w": "Latanoprost is a prostaglandin analog. It is not a beta blocker (timolol), a miotic (pilocarpine) or an anticholinergic (atropine).",
+  "k": "The \"-prost\" stem flags prostaglandin. Drug-name endings often reveal the class.",
+  "src": "authored"
+ },
+ {
+  "id": "G0229",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Which drug is a topical beta-adrenergic blocker used to lower IOP?",
+  "o": [
+   "Timolol",
+   "Latanoprost",
+   "Tropicamide",
+   "Pilocarpine"
+  ],
+  "a": 0,
+  "w": "Timolol is the classic topical beta blocker that reduces aqueous production. Latanoprost is a prostaglandin, pilocarpine a miotic, tropicamide a mydriatic.",
+  "k": "The \"-olol\" ending marks a beta blocker, so timolol.",
+  "src": "authored"
+ },
+ {
+  "id": "G0230",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Timolol lowers IOP mainly by:",
+  "o": [
+   "Dilating the pupil",
+   "Decreasing aqueous humor production",
+   "Increasing aqueous humor production",
+   "Increasing accommodation"
+  ],
+  "a": 1,
+  "w": "Beta blockade reduces aqueous secretion by the ciliary epithelium, lowering IOP. It does not increase production, affect accommodation or dilate.",
+  "k": "Beta blocker turns the aqueous \"tap\" down, so it decreases production. Lowering IOP by less inflow is the mechanism.",
+  "src": "authored"
+ },
+ {
+  "id": "G0231",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Which medication is a carbonic anhydrase inhibitor?",
+  "o": [
+   "Latanoprost",
+   "Timolol",
+   "Dorzolamide",
+   "Tropicamide"
+  ],
+  "a": 2,
+  "w": "Dorzolamide inhibits carbonic anhydrase, cutting aqueous production. Timolol is a beta blocker, latanoprost a prostaglandin, tropicamide a mydriatic.",
+  "k": "The \"-zolamide\" ending signals carbonic anhydrase inhibitor.",
+  "src": "authored"
+ },
+ {
+  "id": "G0232",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Carbonic anhydrase inhibitors reduce IOP primarily by:",
+  "o": [
+   "Decreasing aqueous humor production",
+   "Paralyzing accommodation",
+   "Increasing pupil size",
+   "Increasing aqueous production"
+  ],
+  "a": 0,
+  "w": "Blocking carbonic anhydrase in the ciliary body lowers aqueous secretion and IOP. It does not raise production, change pupil size or paralyse accommodation.",
+  "k": "Like timolol, CAIs reduce inflow (less production). Both work by turning aqueous secretion down.",
+  "src": "authored"
+ },
+ {
+  "id": "G0233",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Brimonidine is primarily classified as a:",
+  "o": [
+   "Beta blocker",
+   "Alpha-2 adrenergic agonist",
+   "Prostaglandin antagonist",
+   "Muscarinic agonist"
+  ],
+  "a": 1,
+  "w": "Brimonidine is an alpha-2 agonist that reduces aqueous production and increases uveoscleral outflow. It is not a beta blocker, muscarinic agonist or prostaglandin antagonist.",
+  "k": "Brimonidine is the classic alpha-2 agonist of glaucoma therapy. Learn it by class since the name gives no obvious stem.",
+  "src": "authored"
+ },
+ {
+  "id": "G0234",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Which class of drug is commonly used to treat bacterial ocular infections?",
+  "o": [
+   "Antihistamines",
+   "Cycloplegics",
+   "Mydriatics",
+   "Antibiotics"
+  ],
+  "a": 3,
+  "w": "Antibiotics treat bacterial infection. Antihistamines target allergy; mydriatics and cycloplegics affect pupil and accommodation.",
+  "k": "\"Bacterial infection\" maps directly to antibiotics. The other classes treat allergy or the pupil.",
+  "src": "authored"
+ },
+ {
+  "id": "G0235",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Which of the following is an ocular antibiotic?",
+  "o": [
+   "Atropine",
+   "Moxifloxacin",
+   "Timolol",
+   "Latanoprost"
+  ],
+  "a": 1,
+  "w": "Moxifloxacin is a fluoroquinolone antibiotic. Timolol, latanoprost and atropine are a beta blocker, prostaglandin and anticholinergic.",
+  "k": "The \"-floxacin\" ending marks a fluoroquinolone antibiotic.",
+  "src": "authored"
+ },
+ {
+  "id": "G0236",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Fluoroquinolone antibiotics are commonly used to treat:",
+  "o": [
+   "Cataract",
+   "Bacterial ocular infections",
+   "Glaucoma exclusively",
+   "Presbyopia"
+  ],
+  "a": 1,
+  "w": "Fluoroquinolones (like moxifloxacin) treat bacterial ocular infection such as keratitis and conjunctivitis. They do not treat glaucoma, presbyopia or cataract.",
+  "k": "Antibiotic class implies infection target. Glaucoma, presbyopia and cataract are non-infective decoys.",
+  "src": "authored"
+ },
+ {
+  "id": "G0237",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "Which class of drugs is commonly used to reduce ocular inflammation?",
+  "o": [
+   "Miotics",
+   "Mydriatics",
+   "Beta agonists",
+   "Corticosteroids"
+  ],
+  "a": 3,
+  "w": "Corticosteroids suppress ocular inflammation. Mydriatics/miotics act on the pupil; beta agonists are not anti-inflammatory eye drugs.",
+  "k": "\"Reduce inflammation\" = steroids. Pupil-acting classes are the distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "G0238",
+  "sec": "G3 Diagnostic",
+  "t": "G3 Diagnostic",
+  "q": "Which is a topical ocular anesthetic?",
+  "o": [
+   "Pilocarpine",
+   "Timolol",
+   "Latanoprost",
+   "Proparacaine"
+  ],
+  "a": 3,
+  "w": "Proparacaine is a topical anesthetic used for tonometry and minor procedures. The others are a beta blocker, prostaglandin and miotic.",
+  "k": "The \"-caine\" ending marks a local anesthetic, so proparacaine.",
+  "src": "authored"
+ },
+ {
+  "id": "G0239",
+  "sec": "G3 Diagnostic",
+  "t": "G3 Diagnostic",
+  "q": "Topical ocular anesthetics should generally NOT be used for:",
+  "o": [
+   "Controlled clinical examination",
+   "Measuring corneal sensation",
+   "Prolonged unsupervised self-treatment",
+   "Short-term diagnostic procedures"
+  ],
+  "a": 2,
+  "w": "Chronic unsupervised use causes epithelial toxicity, delayed healing and corneal damage. Brief clinical and diagnostic use is appropriate.",
+  "k": "A \"should NOT\" stem seeks the unsafe use. Prolonged and unsupervised are the danger words.",
+  "src": "authored"
+ },
+ {
+  "id": "G0240",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Atropine is classified as a:",
+  "o": [
+   "Muscarinic agonist",
+   "Prostaglandin analog",
+   "Muscarinic antagonist",
+   "Beta blocker"
+  ],
+  "a": 2,
+  "w": "Atropine is a long-acting muscarinic antagonist causing mydriasis and cycloplegia. It is not an agonist, beta blocker or prostaglandin.",
+  "k": "Atropine dilates and paralyses accommodation, the classic antimuscarinic profile.",
+  "src": "authored"
+ },
+ {
+  "id": "G0241",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Compared with tropicamide, atropine generally produces:",
+  "o": [
+   "No measurable effect on accommodation at all",
+   "Only miosis with no cycloplegic action",
+   "Stronger and longer-lasting cycloplegia",
+   "Only a reduction in intraocular pressure"
+  ],
+  "a": 2,
+  "w": "Atropine gives more potent, days-long cycloplegia versus tropicamide's brief effect. It clearly affects accommodation, causes mydriasis not miosis, and is not an IOP drug.",
+  "k": "Both are antimuscarinics, but atropine is the long-acting one. \"Compared with tropicamide\" is asking about duration and strength.",
+  "src": "sanitized"
+ },
+ {
+  "id": "G0242",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Phenylephrine primarily produces:",
+  "o": [
+   "Miosis",
+   "Cycloplegia",
+   "Mydriasis",
+   "Corneal anesthesia"
+  ],
+  "a": 2,
+  "w": "Phenylephrine, an alpha agonist, dilates by stimulating the iris dilator (mydriasis) without cycloplegia. It does not constrict or anesthetise.",
+  "k": "Alpha agonist stimulates the dilator muscle, giving mydriasis with little accommodation change.",
+  "src": "authored"
+ },
+ {
+  "id": "G0243",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Phenylephrine is primarily a:",
+  "o": [
+   "Alpha-adrenergic agonist",
+   "Carbonic anhydrase inhibitor",
+   "Beta blocker",
+   "Muscarinic antagonist"
+  ],
+  "a": 0,
+  "w": "Phenylephrine is a direct alpha-adrenergic agonist. It is not a beta blocker, antimuscarinic or CAI.",
+  "k": "Sympathomimetic dilator = alpha agonist. Its dilating action without cycloplegia signals the alpha (not antimuscarinic) route.",
+  "src": "authored"
+ },
+ {
+  "id": "G0244",
+  "sec": "G5 Side Effects",
+  "t": "G5 Side Effects",
+  "q": "Which glaucoma medication class can cause increased pigmentation of the iris and eyelid/periocular tissues?",
+  "o": [
+   "Carbonic anhydrase inhibitors",
+   "Alpha agonists",
+   "Prostaglandin analogs",
+   "Beta blockers"
+  ],
+  "a": 2,
+  "w": "Prostaglandin analogs (latanoprost) can darken the iris and periocular skin and lengthen lashes. Beta blockers, CAIs and alpha agonists do not cause this pigment change.",
+  "k": "Iris darkening plus lash growth is the prostaglandin signature side effect.",
+  "src": "authored"
+ },
+ {
+  "id": "G0245",
+  "sec": "G4 Therapeutic",
+  "t": "G4 Therapeutic",
+  "q": "A major systemic concern with topical timolol is:",
+  "o": [
+   "Bradycardia and bronchospasm",
+   "Severe miosis only",
+   "Iris pigmentation",
+   "Increased accommodation"
+  ],
+  "a": 0,
+  "w": "Systemically absorbed beta blockade can slow the heart and constrict airways, dangerous in asthma/COPD and heart block. Miosis and accommodation are not timolol effects; pigmentation is a prostaglandin effect.",
+  "k": "Beta blocker systemic effects hit heart and lungs: bradycardia and bronchospasm. Think of the drug's class, then its systemic reach.",
+  "src": "authored"
+ },
+ {
+  "id": "G0246",
+  "sec": "G5 Side Effects",
+  "t": "G5 Side Effects",
+  "q": "When administering multiple ophthalmic drops, the usual recommended interval between different drops is approximately:",
+  "o": [
+   "1 hour in all cases",
+   "Several minutes",
+   "No interval is needed",
+   "1 second"
+  ],
+  "a": 1,
+  "w": "Waiting about 5 minutes prevents the second drop from washing out the first and reduces dilution. No interval defeats the point; 1 second is too short; 1 hour is impractical.",
+  "k": "Pick the sensible middle value. \"No wait\" and \"a full hour\" are extremes; several minutes is the practical answer.",
+  "src": "authored"
+ },
+ {
+  "id": "G0247",
+  "sec": "G5 Side Effects",
+  "t": "G5 Side Effects",
+  "q": "After instilling an ophthalmic medication, gentle punctal occlusion can help:",
+  "o": [
+   "Reduce systemic absorption",
+   "Dilate the pupil",
+   "Increase evaporation",
+   "Increase systemic absorption"
+  ],
+  "a": 0,
+  "w": "Pressing the puncta limits drainage into the nasolacrimal system and nasal mucosa, reducing systemic absorption and side effects while improving ocular contact. It does not increase absorption, evaporation or dilate.",
+  "k": "Blocking the drainage channel keeps drug in the eye and out of the bloodstream, so it reduces systemic absorption.",
+  "src": "authored"
  }
 ]
