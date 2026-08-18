@@ -46,12 +46,17 @@
   .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
   .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
   .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .optwhy{display:none;font-size:13px;line-height:1.45;color:var(--muted);padding:0 12px 0 34px;margin:-4px 0 9px}
+  .optwhy.show{display:block}
+  .optwhy.owright{color:var(--right);font-weight:600}
+  .optwhy.owpick{color:var(--wrong)}
   .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
   .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
   .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
   .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
   .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
   .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .feedback .decode{margin:2px 0 9px;padding:9px 11px;border-radius:8px;background:#f6efdc;color:#8a6a12;font-size:14px;line-height:1.5}
   .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
   button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
   button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
@@ -144,7 +149,7 @@ function prep(it){
   let perm=it.o.map((_,n)=>n);
   if(it.n)perm.sort((x,y)=>numval(it.o[x])-numval(it.o[y]));
   else perm=shuffle(perm);
-  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a)});
+  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a),ow:it.ow?perm.map(n=>it.ow[n]):null});
 }
 
 document.getElementById('startBtn').addEventListener('click',()=>{
@@ -159,7 +164,7 @@ function render(){
  barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
  let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
  h+='<div class="qtext">'+it.q+'</div>';
- it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button><div class="optwhy" id="ow'+n+'"></div>';});
  h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
  body.innerHTML=h;
  body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
@@ -171,11 +176,13 @@ function choose(c){
  body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
    if(n===right)b.classList.add('correct');
    if(n===c&&c!==right)b.classList.add('incorrect');});
+ if(it.ow){it.ow.forEach((txt,n)=>{const el=document.getElementById('ow'+n);if(el){el.textContent=txt;el.className='optwhy show'+(n===right?' owright':(n===c?' owpick':''));}});}
  const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
  scoretext.textContent=s+' / '+Q.length;
  const fb=document.getElementById('fb');
  fb.className='feedback '+(ok?'good':'bad');
- fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const decodeHtml=it.decode?'<div class="decode"><b>Decode &middot; how to spot it:</b> '+it.decode+'</div>':'';
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span>'+decodeHtml+'<div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
  const last=i===Q.length-1;
  document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
  document.getElementById('nx').addEventListener('click',next);

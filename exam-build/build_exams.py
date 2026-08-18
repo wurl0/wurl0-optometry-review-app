@@ -64,8 +64,12 @@ def js_bank(bank):
         row += (
             f"w:{json.dumps(q['w'], ensure_ascii=False)},"
             + f"k:{json.dumps(q['k'], ensure_ascii=False)}"
-            + "}"
         )
+        if q.get("decode"):
+            row += f",decode:{json.dumps(q['decode'], ensure_ascii=False)}"
+        if q.get("ow"):
+            row += f",ow:{json.dumps(q['ow'], ensure_ascii=False)}"
+        row += "}"
         rows.append(row)
     return "[\n" + ",\n".join(rows) + "\n]"
 
