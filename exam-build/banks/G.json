@@ -5694,7 +5694,14 @@
   "a": 2,
   "w": "Pharmacology is the study of drugs and how they act on living tissue. Anatomy is structure, microbiology is organisms, and surgery is a procedure, none of which is the drug science itself.",
   "k": "Root 'pharmakon' means drug. The answer must name drugs and their effects, not structure, bugs, or operations.",
-  "src": "sanitized"
+  "src": "sanitized",
+  "decode": "Pharmacology is the study of DRUGS and their effects on living organisms.",
+  "ow": [
+   "Surgical procedure design is surgery, not pharmacology.",
+   "Studying only microorganisms is microbiology.",
+   "Correct. Pharmacology studies drugs and their effects.",
+   "Gross and microscopic eye structure is anatomy."
+  ]
  },
  {
   "id": "G0249",
@@ -5710,7 +5717,14 @@
   "a": 0,
   "w": "Pharmacokinetics is what the body does to the drug: absorption, distribution, metabolism, excretion. Pharmacodynamics is the reverse, what the drug does to the body. Toxicology and pharmacy are separate fields.",
   "k": "Kinetics equals body-on-drug (ADME). If the stem says 'what the body does to a drug,' pick kinetics, not dynamics.",
-  "src": "authored"
+  "src": "authored",
+  "decode": "PHARMACOKINETICS is what the body does to a drug (absorption, distribution, metabolism, excretion).",
+  "ow": [
+   "Correct. Pharmacokinetics is the body's handling of the drug (ADME).",
+   "Toxicology studies poisons and adverse effects, not ADME generally.",
+   "Pharmacy is the preparation and dispensing of drugs, not this branch.",
+   "Pharmacodynamics is the reverse: what the drug does to the body."
+  ]
  },
  {
   "id": "G0250",
@@ -5726,7 +5740,14 @@
   "a": 3,
   "w": "Pharmacodynamics covers the drug's effects on the body, such as receptor binding and response. Absorption, distribution, and excretion are kinetic steps describing the body's handling of the drug.",
   "k": "Dynamics equals drug-on-body (the effect). The ADME words are kinetics distractors.",
-  "src": "authored"
+  "src": "authored",
+  "decode": "PHARMACODYNAMICS refers to the DRUG'S EFFECTS on the body (receptor binding and response).",
+  "ow": [
+   "Drug excretion is a kinetic (ADME) step, not dynamics.",
+   "Drug distribution is a kinetic step, not dynamics.",
+   "Drug absorption is a kinetic step, not dynamics.",
+   "Correct. Pharmacodynamics is the drug's effect on the body."
+  ]
  },
  {
   "id": "G0251",
@@ -5742,7 +5763,14 @@
   "a": 2,
   "w": "An intravenous dose goes straight into the bloodstream, so it acts fastest with no absorption step to slow it. Oral, intramuscular, and subcutaneous routes must first be absorbed, which takes time.",
   "k": "Fastest means skipping absorption. Only IV puts drug directly in blood; any route needing absorption is slower.",
-  "src": "authored"
+  "src": "authored",
+  "decode": "The INTRAVENOUS route gives the fastest systemic effect: the drug enters the blood directly with no absorption step.",
+  "ow": [
+   "Intramuscular dosing still requires absorption, so it is slower.",
+   "Subcutaneous dosing requires absorption, so it is slower.",
+   "Correct. IV bypasses absorption, acting fastest.",
+   "Oral dosing requires absorption, so it is slower."
+  ]
  },
  {
   "id": "G0252",
@@ -5758,6 +5786,13 @@
   "a": 1,
   "w": "Absorption is the movement of drug from where it was given into the blood. Distribution then carries it to tissues, metabolism changes it, and excretion removes it.",
   "k": "Into the bloodstream equals absorption, the first ADME step. Distribution/metabolism/excretion come after the drug is already in blood.",
-  "src": "authored"
+  "src": "authored",
+  "decode": "ABSORPTION is the movement of a drug from its administration site into the bloodstream (the first ADME step).",
+  "ow": [
+   "Metabolism chemically changes the drug after it is in the blood.",
+   "Correct. Absorption moves the drug into the bloodstream.",
+   "Excretion removes the drug from the body.",
+   "Distribution carries the drug from blood to tissues, after absorption."
+  ]
  }
 ]
