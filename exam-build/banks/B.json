@@ -83,7 +83,7 @@
   "w": "Positive kappa puts the pupil nasal to the visual axis, so the reflex looks temporal, mimicking exotropia. Negative cover test confirms pseudo-exo.",
   "k": "Positive kappa = pseudo-exotropia.",
   "src": "legacy",
-  "decode": "POSITIVE kappa puts the pupil NASAL, so the reflex looks temporal — pseudo-exotropia, confirmed by a negative cover test.",
+  "decode": "POSITIVE kappa puts the pupil NASAL, so the reflex looks temporal, giving pseudo-exotropia, confirmed by a negative cover test.",
   "ow": [
    "Correct. Positive kappa shifts the pupil nasal, making the reflex look temporal with no real deviation.",
    "Angle alpha is measured at the nodal point and does not itself produce this reflex-plus-negative-cover picture.",
@@ -106,7 +106,7 @@
   "w": "Negative kappa puts the pupil temporal, so the reflex sits nasal, simulating esotropia (pseudo-eso).",
   "k": "Negative kappa = pseudo-esotropia.",
   "src": "legacy",
-  "decode": "NEGATIVE kappa puts the pupil TEMPORAL, so the reflex sits nasal — pseudo-esotropia, confirmed by a negative cover test.",
+  "decode": "NEGATIVE kappa puts the pupil TEMPORAL, so the reflex sits nasal, giving pseudo-esotropia, confirmed by a negative cover test.",
   "ow": [
    "True esotropia would show inward movement on cover test; here there is none.",
    "True exotropia gives a temporal-looking reflex, the opposite pattern.",
