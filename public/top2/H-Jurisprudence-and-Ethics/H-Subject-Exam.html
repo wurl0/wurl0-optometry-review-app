@@ -46,12 +46,17 @@
   .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
   .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
   .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .optwhy{display:none;font-size:13px;line-height:1.45;color:var(--muted);padding:0 12px 0 34px;margin:-4px 0 9px}
+  .optwhy.show{display:block}
+  .optwhy.owright{color:var(--right);font-weight:600}
+  .optwhy.owpick{color:var(--wrong)}
   .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
   .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
   .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
   .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
   .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
   .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .feedback .decode{margin:2px 0 9px;padding:9px 11px;border-radius:8px;background:#f6efdc;color:#8a6a12;font-size:14px;line-height:1.5}
   .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
   button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
   button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
@@ -76,20 +81,21 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject H — Board Exam</h1>
-    <p class="sub">Jurisprudence and Ethics · 256 questions · mixed, board-style</p>
+    <p class="sub">Jurisprudence and Ethics · 261 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>256 board-style questions drawn from every H note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>261 board-style questions drawn from every H note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">H1 RA 8050</span>
       <span class="chip">H2 Bioethics</span>
       <span class="chip">H3 Practice Mgmt</span>
+      <span class="chip">H2 Ethics</span>
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="256">Full (256)</button>
+      <button class="modebtn sel" data-n="261">Full (261)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -101,6 +107,7 @@
       <button class="scopebtn" data-t="H1 RA 8050">H1 RA 8050</button>
       <button class="scopebtn" data-t="H2 Bioethics">H2 Bioethics</button>
       <button class="scopebtn" data-t="H3 Practice Mgmt">H3 Practice Mgmt</button>
+      <button class="scopebtn" data-t="H2 Ethics">H2 Ethics</button>
     </div>
     <button class="start" id="startBtn">Start the exam</button>
   </div>
@@ -373,10 +380,15 @@ const BANK=[
 {t:"H2 Bioethics",q:"A patient requests a prescription without undergoing an appropriate examination. The optometrist should:",o:["Provide the prescription immediately", "Guess the prescription", "Ask the optical salesperson to determine it", "Explain that appropriate assessment is necessary"],a:3,w:"A prescription must follow proper examination for safety and accuracy. Issuing without exam, delegating to a salesperson or guessing is substandard and unethical.",k:"No exam, no valid prescription. The correct answer insists on assessment first."},
 {t:"H2 Bioethics",q:"Which principle best describes ethical optometric practice?",o:["Patient welfare, professional competence, honesty, and confidentiality", "Advertising and marketing placed before clinical patient care", "Profit and personal income placed before patient welfare always", "Competition with peers placed before professional cooperation"],a:0,w:"Ethical practice rests on patient welfare, competence, honesty and confidentiality. Profit-first, competition-first and advertising-first options invert the priorities.",k:"The comprehensive patient-centred option captures the ethics pillars; the single-value commercial options are wrong."},
 {t:"H2 Bioethics",q:"An optometrist should approach new developments in optometry with:",o:["Blind acceptance of it without any question", "Purely commercial considerations and nothing else", "Immediate rejection without any proper review", "Scientific judgment and critical evaluation"],a:3,w:"New developments deserve evidence-based, critical appraisal. Blind acceptance, reflex rejection or purely commercial motives are unscientific.",k:"Evidence and critical thinking is the professional stance; the extreme and commercial options are traps."},
-{t:"H2 Bioethics",q:"The best overall principle for an optometrist managing a practice is to:",o:["Avoid making any referrals to other health professionals at all times", "Maximize clinic profit regardless of the patient's real needs", "Focus almost exclusively on selling optical retail products", "Balance sound management with ethical, competent, patient-centered care"],a:3,w:"Good practice balances viable management with ethical, competent, patient-centred care. Profit-only, product-only or referral-avoiding approaches harm patients.",k:"\"Best overall principle\" wants the balanced, patient-centred option, not a single commercial extreme."}
+{t:"H2 Bioethics",q:"The best overall principle for an optometrist managing a practice is to:",o:["Avoid making any referrals to other health professionals at all times", "Maximize clinic profit regardless of the patient's real needs", "Focus almost exclusively on selling optical retail products", "Balance sound management with ethical, competent, patient-centered care"],a:3,w:"Good practice balances viable management with ethical, competent, patient-centred care. Profit-only, product-only or referral-avoiding approaches harm patients.",k:"\"Best overall principle\" wants the balanced, patient-centred option, not a single commercial extreme."},
+{t:"H2 Ethics",q:"The Board of Optometry may investigate violations of:",o:["Optometry laws and regulations", "Traffic laws only", "School regulations only", "Tax laws only"],a:0,w:"The Board of Optometry is a professional regulatory board, so its jurisdiction is optometry laws and the rules of practice, not traffic, tax, or school matters. Those fall to other agencies entirely.",k:"A professional board polices its own profession. The answer must stay inside optometry practice, so reject unrelated legal domains."},
+{t:"H2 Ethics",q:"According to the Code of Ethics, the optometrist's prime concern should be:",o:["Service to humanity and visual welfare", "Sales volume", "Financial gain", "Competition with other professionals"],a:0,w:"The Code puts service to humanity and the patient's visual welfare first. Financial gain, sales volume, and beating competitors are secondary at best and never the prime concern.",k:"Ethics questions reward the patient-first option. Any answer about money or competition is the distractor."},
+{t:"H2 Ethics",q:"Financial gain in optometric practice should be:",o:["Secondary to professional service", "The primary consideration", "More important than patient welfare", "The only consideration"],a:0,w:"Earning a living is legitimate, but ethics ranks it below professional service to the patient. Making it primary, sole, or above patient welfare all violate the Code.",k:"Money is allowed but never first. Choose the option that keeps service ahead of profit."},
+{t:"H2 Ethics",q:"An optometrist should continuously maintain and improve:",o:["Professional knowledge and proficiency", "Persuasive advertising and marketing skills", "Aggressive product sales techniques only", "Personal business profits above all else"],a:0,w:"Ethics requires an optometrist to keep learning and stay competent, so ongoing improvement of professional knowledge and proficiency is the duty. Advertising, sales, and profit are business concerns, not the core professional obligation.",k:"Continuing duty points to competence and knowledge. Anything about selling or profit is the ethical distractor."},
+{t:"H2 Ethics",q:"Patient information obtained during professional attendance should generally be:",o:["Posted publicly", "Kept confidential", "Published online", "Shared with competitors"],a:1,w:"Patient information is confidential and must be protected. Posting it publicly, sharing with competitors, or publishing it online all breach that duty.",k:"Confidentiality is the default. Reject any option that exposes patient information to others."}
 ];
 
-let MODE=256, SCOPE='*';
+let MODE=261, SCOPE='*';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
@@ -409,7 +421,7 @@ function prep(it){
   let perm=it.o.map((_,n)=>n);
   if(it.n)perm.sort((x,y)=>numval(it.o[x])-numval(it.o[y]));
   else perm=shuffle(perm);
-  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a)});
+  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a),ow:it.ow?perm.map(n=>it.ow[n]):null});
 }
 
 document.getElementById('startBtn').addEventListener('click',()=>{
@@ -424,7 +436,7 @@ function render(){
  barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
  let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
  h+='<div class="qtext">'+it.q+'</div>';
- it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button><div class="optwhy" id="ow'+n+'"></div>';});
  h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
  body.innerHTML=h;
  body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
@@ -436,11 +448,13 @@ function choose(c){
  body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
    if(n===right)b.classList.add('correct');
    if(n===c&&c!==right)b.classList.add('incorrect');});
+ if(it.ow){it.ow.forEach((txt,n)=>{const el=document.getElementById('ow'+n);if(el){el.textContent=txt;el.className='optwhy show'+(n===right?' owright':(n===c?' owpick':''));}});}
  const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
  scoretext.textContent=s+' / '+Q.length;
  const fb=document.getElementById('fb');
  fb.className='feedback '+(ok?'good':'bad');
- fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const decodeHtml=it.decode?'<div class="decode"><b>Decode &middot; how to spot it:</b> '+it.decode+'</div>':'';
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span>'+decodeHtml+'<div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
  const last=i===Q.length-1;
  document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
  document.getElementById('nx').addEventListener('click',next);

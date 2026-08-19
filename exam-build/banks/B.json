@@ -3726,5 +3726,261 @@
   "w": "The vitreous gel maintains globe shape and supports the retina. It does not make tears or pigments and does not control the pupil.",
   "k": "Space-filling gel = structural support. Pick the mechanical role.",
   "src": "authored"
+ },
+ {
+  "id": "B0234",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The blind spot corresponds anatomically to the:",
+  "o": [
+   "Lens",
+   "Optic disc",
+   "Fovea",
+   "Macula"
+  ],
+  "a": 1,
+  "w": "The optic disc is where axons leave the eye, so it has no rods or cones and cannot register light. That gap in the receptor sheet is the physiological blind spot. The fovea and macula are the most sensitive seeing areas, the opposite of blind, and the lens is not part of the retina at all.",
+  "k": "'Blind spot' means no photoreceptors. Only the optic disc, the exit door for nerve fibers, fits that. Pick the seeing-poor structure, not a seeing-rich one like fovea or macula.",
+  "src": "authored"
+ },
+ {
+  "id": "B0235",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The optic radiations project from the lateral geniculate nucleus to the:",
+  "o": [
+   "Frontal cortex",
+   "Cerebellum",
+   "Occipital cortex",
+   "Temporal pole"
+  ],
+  "a": 2,
+  "w": "After the relay in the lateral geniculate nucleus, fibers fan out as the optic radiations and end in the occipital cortex, the seeing part of the brain. The cerebellum handles coordination, the frontal cortex planning, and the temporal pole memory and hearing, none of them primary vision.",
+  "k": "Vision ends at the back of the brain. Trace LGN forward and the only answer that is a visual destination is occipital.",
+  "src": "authored"
+ },
+ {
+  "id": "B0236",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The primary visual cortex is located in the:",
+  "o": [
+   "Occipital lobe",
+   "Temporal lobe",
+   "Parietal lobe",
+   "Frontal lobe"
+  ],
+  "a": 0,
+  "w": "The primary visual cortex sits in the occipital lobe at the very back of the brain. The frontal lobe does planning, the parietal touch and spatial sense, the temporal hearing and memory. Only occipital is the visual receiving area.",
+  "k": "Back of the head equals seeing. When lobes are the choices, occipital is vision.",
+  "src": "authored"
+ },
+ {
+  "id": "B0237",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The primary visual cortex is also called:",
+  "o": [
+   "Brodmann area 44",
+   "Brodmann area 17",
+   "Brodmann area 41",
+   "Brodmann area 4"
+  ],
+  "a": 1,
+  "w": "The primary visual cortex is Brodmann area 17, also called the striate cortex for its stripe of Gennari. Area 4 is motor, area 44 is speech (Broca), area 41 is primary auditory. Only 17 is vision.",
+  "k": "Memorize 17 for sight. The distractor numbers are famous non-visual areas (4 motor, 41 hearing, 44 speech).",
+  "src": "authored"
+ },
+ {
+  "id": "B0238",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The macula is responsible primarily for:",
+  "o": [
+   "Peripheral vision",
+   "Central detailed vision",
+   "Tear production",
+   "Aqueous production"
+  ],
+  "a": 1,
+  "w": "The macula, with its dense cone packing, gives sharp central detail vision used for reading and faces. Peripheral vision comes from the rod-rich retina outside it, and tears and aqueous are made by glands, not the macula.",
+  "k": "Macula equals central, detailed, cone vision. Any option about periphery or fluid production is off-topic.",
+  "src": "authored"
+ },
+ {
+  "id": "B0239",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The optic disc is also known as the:",
+  "o": [
+   "Macula",
+   "Fovea",
+   "Ora serrata",
+   "Blind spot"
+  ],
+  "a": 3,
+  "w": "The optic disc is the nerve-head where fibers exit and no photoreceptors sit, which is exactly why it is the blind spot. The fovea and macula are the opposite (peak vision), and the ora serrata is the peripheral retinal edge.",
+  "k": "Disc and blind spot are two names for the same fiber-exit point. Reflex-pair the two.",
+  "src": "authored"
+ },
+ {
+  "id": "B0240",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The visual pathway begins with photoreceptors located in the:",
+  "o": [
+   "Cornea",
+   "Choroid",
+   "Retina",
+   "Lens"
+  ],
+  "a": 2,
+  "w": "Vision starts where light is absorbed, and that happens in the rods and cones of the retina. The cornea and lens only focus light, and the choroid is the blood supply behind the retina.",
+  "k": "The pathway begins at the receptors. Focusing parts (cornea, lens) and blood supply (choroid) do not start the signal; the retina does.",
+  "src": "authored"
+ },
+ {
+  "id": "B0241",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Which test is particularly useful for detecting suppression and assessing binocular vision?",
+  "o": [
+   "Ishihara",
+   "Schirmer",
+   "Amsler grid",
+   "Worth 4 Dot"
+  ],
+  "a": 3,
+  "w": "The Worth 4 Dot shines red and green dots through red/green goggles, so each eye sees only certain dots. If one eye is suppressed the patient reports fewer dots, which makes it a direct test of binocular fusion and suppression. Ishihara tests color, Amsler the macula, Schirmer tear volume.",
+  "k": "Match the test to what it isolates. Suppression and fusion belong to Worth 4 Dot; the others test color, macula, or tears.",
+  "src": "authored"
+ },
+ {
+  "id": "B0242",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Which test is specifically designed to evaluate central retinal/macular function?",
+  "o": [
+   "Maddox rod",
+   "Amsler grid",
+   "Cover test",
+   "Ishihara"
+  ],
+  "a": 1,
+  "w": "The Amsler grid is a square of lines fixated centrally, so it probes the macula, where wavy or missing lines signal macular disease. Maddox rod checks alignment, Ishihara color, cover test eye deviation.",
+  "k": "Central grid equals macula. If the stem says central retinal or macular, pick the grid, not an alignment or color test.",
+  "src": "authored"
+ },
+ {
+  "id": "B0243",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The largest refractive change in the eye occurs at the:",
+  "o": [
+   "Lens-retina interface",
+   "Aqueous-lens interface",
+   "Air-cornea interface",
+   "Vitreous-retina interface"
+  ],
+  "a": 2,
+  "w": "Air and cornea differ most in how fast light travels through them, and the biggest change in speed at a surface bends light the most. That air-to-cornea jump provides about two-thirds of the eye's total focusing power. The internal interfaces (lens, vitreous, aqueous) sit between media of similar index, so they bend light far less.",
+  "k": "The largest index jump makes the largest bend. The eye's biggest jump is air into cornea, not any interface buried inside the fluid-filled eye.",
+  "src": "authored"
+ },
+ {
+  "id": "B0244",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The approximate minimum angle of resolution (MAR) for 20/20 vision is:",
+  "o": [
+   "5 minutes of arc",
+   "1 minute of arc",
+   "20 minutes of arc",
+   "10 minutes of arc"
+  ],
+  "a": 1,
+  "w": "20/20 means resolving detail that subtends 1 minute of arc, about 1/60 of a degree, which is the normal limit set by cone spacing. Five, ten, or twenty minutes are much coarser and would map to poorer acuities like 20/100.",
+  "k": "20/20 pins to 1 minute of arc. Bigger arc numbers mean worse vision, so the smallest realistic value is the match.",
+  "src": "authored"
+ },
+ {
+  "id": "B0245",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Binocular vision allows the visual system to obtain:",
+  "o": [
+   "Stereopsis and depth perception",
+   "Only peripheral vision",
+   "Only color vision",
+   "Better dark adaptation only"
+  ],
+  "a": 0,
+  "w": "Using two eyes with slightly different viewpoints lets the brain fuse the images and compute depth, called stereopsis. Color, peripheral extent, and dark adaptation do not require two eyes and can be near-normal with one.",
+  "k": "The unique payoff of two eyes is depth. Anything one eye alone can do is not the binocular-specific answer.",
+  "src": "authored"
+ },
+ {
+  "id": "B0246",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "The two types of photoreceptors are:",
+  "o": [
+   "Bipolar and ganglion cells",
+   "Muller and bipolar cells",
+   "Rods and cones",
+   "Amacrine and horizontal cells"
+  ],
+  "a": 2,
+  "w": "The light-catching cells are the rods (dim light) and cones (color and detail). Bipolar, ganglion, amacrine, horizontal, and Muller cells process or support the signal but do not absorb light themselves.",
+  "k": "Only two cell types are photoreceptors: rods and cones. Every other retinal cell name is a processing or glial distractor.",
+  "src": "authored"
+ },
+ {
+  "id": "B0247",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "Axons of retinal ganglion cells form the:",
+  "o": [
+   "Lateral geniculate body",
+   "Optic tract",
+   "Optic radiation",
+   "Optic nerve"
+  ],
+  "a": 3,
+  "w": "Ganglion cell axons gather at the disc and bundle together to form the optic nerve, the first named segment of the pathway. The optic tract, radiation, and geniculate body come later, after the chiasm.",
+  "k": "Order the pathway: ganglion axons make the optic nerve first. Tract and radiation are downstream, so they are too late for 'form the'.",
+  "src": "authored"
+ },
+ {
+  "id": "B0248",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "At the optic chiasm, fibers from the ______ retina cross.",
+  "o": [
+   "Nasal",
+   "Superior only",
+   "Inferior only",
+   "Temporal"
+  ],
+  "a": 0,
+  "w": "At the chiasm the nasal (inner) retinal fibers cross to the other side while temporal fibers stay uncrossed, which is what lets each side of the brain see the opposite visual field. Temporal fibers do not cross; superior/inferior is not how the split works.",
+  "k": "Nasal crosses, temporal stays. When the chiasm asks who crosses, it is always the nasal fibers.",
+  "src": "authored"
+ },
+ {
+  "id": "B0249",
+  "sec": "B1 Visual System and Ocular Optics",
+  "t": "B1 Visual System",
+  "q": "After the optic chiasm, the fibers continue as the:",
+  "o": [
+   "Optic radiation",
+   "Ciliary nerve",
+   "Optic tract",
+   "Optic nerve"
+  ],
+  "a": 2,
+  "w": "Once past the chiasm the mixed crossed-and-uncrossed fibers travel as the optic tract toward the geniculate. Before the chiasm they were the optic nerve; the radiation comes only after the geniculate relay; the ciliary nerve is unrelated.",
+  "k": "Name by position: nerve before chiasm, tract after. 'After the chiasm' forces optic tract.",
+  "src": "authored"
  }
 ]

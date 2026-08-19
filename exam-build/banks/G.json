@@ -5679,5 +5679,85 @@
    "It does not affect evaporation.",
    "The opposite; it reduces it."
   ]
+ },
+ {
+  "id": "G0248",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Pharmacology is the study of:",
+  "o": [
+   "The design and steps of common surgical procedures",
+   "Only the microorganisms that cause disease",
+   "Drugs and their effects on living organisms",
+   "The gross and microscopic anatomy of the eye"
+  ],
+  "a": 2,
+  "w": "Pharmacology is the study of drugs and how they act on living tissue. Anatomy is structure, microbiology is organisms, and surgery is a procedure, none of which is the drug science itself.",
+  "k": "Root 'pharmakon' means drug. The answer must name drugs and their effects, not structure, bugs, or operations.",
+  "src": "sanitized"
+ },
+ {
+  "id": "G0249",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The branch of pharmacology concerned with what the body does to a drug is:",
+  "o": [
+   "Pharmacokinetics",
+   "Toxicology",
+   "Pharmacy",
+   "Pharmacodynamics"
+  ],
+  "a": 0,
+  "w": "Pharmacokinetics is what the body does to the drug: absorption, distribution, metabolism, excretion. Pharmacodynamics is the reverse, what the drug does to the body. Toxicology and pharmacy are separate fields.",
+  "k": "Kinetics equals body-on-drug (ADME). If the stem says 'what the body does to a drug,' pick kinetics, not dynamics.",
+  "src": "authored"
+ },
+ {
+  "id": "G0250",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Pharmacodynamics refers primarily to:",
+  "o": [
+   "Drug excretion",
+   "Drug distribution",
+   "Drug absorption",
+   "Drug effects on the body"
+  ],
+  "a": 3,
+  "w": "Pharmacodynamics covers the drug's effects on the body, such as receptor binding and response. Absorption, distribution, and excretion are kinetic steps describing the body's handling of the drug.",
+  "k": "Dynamics equals drug-on-body (the effect). The ADME words are kinetics distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "G0251",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Which route generally provides the fastest systemic drug effect?",
+  "o": [
+   "Intramuscular",
+   "Subcutaneous",
+   "Intravenous",
+   "Oral"
+  ],
+  "a": 2,
+  "w": "An intravenous dose goes straight into the bloodstream, so it acts fastest with no absorption step to slow it. Oral, intramuscular, and subcutaneous routes must first be absorbed, which takes time.",
+  "k": "Fastest means skipping absorption. Only IV puts drug directly in blood; any route needing absorption is slower.",
+  "src": "authored"
+ },
+ {
+  "id": "G0252",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The movement of a drug from its site of administration into the bloodstream is called:",
+  "o": [
+   "Metabolism",
+   "Absorption",
+   "Excretion",
+   "Distribution"
+  ],
+  "a": 1,
+  "w": "Absorption is the movement of drug from where it was given into the blood. Distribution then carries it to tissues, metabolism changes it, and excretion removes it.",
+  "k": "Into the bloodstream equals absorption, the first ADME step. Distribution/metabolism/excretion come after the drug is already in blood.",
+  "src": "authored"
  }
 ]

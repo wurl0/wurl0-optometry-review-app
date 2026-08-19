@@ -4094,5 +4094,85 @@
   "w": "Good practice balances viable management with ethical, competent, patient-centred care. Profit-only, product-only or referral-avoiding approaches harm patients.",
   "k": "\"Best overall principle\" wants the balanced, patient-centred option, not a single commercial extreme.",
   "src": "sanitized"
+ },
+ {
+  "id": "H0257",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Ethics",
+  "q": "The Board of Optometry may investigate violations of:",
+  "o": [
+   "Optometry laws and regulations",
+   "Traffic laws only",
+   "School regulations only",
+   "Tax laws only"
+  ],
+  "a": 0,
+  "w": "The Board of Optometry is a professional regulatory board, so its jurisdiction is optometry laws and the rules of practice, not traffic, tax, or school matters. Those fall to other agencies entirely.",
+  "k": "A professional board polices its own profession. The answer must stay inside optometry practice, so reject unrelated legal domains.",
+  "src": "authored"
+ },
+ {
+  "id": "H0258",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Ethics",
+  "q": "According to the Code of Ethics, the optometrist's prime concern should be:",
+  "o": [
+   "Service to humanity and visual welfare",
+   "Sales volume",
+   "Financial gain",
+   "Competition with other professionals"
+  ],
+  "a": 0,
+  "w": "The Code puts service to humanity and the patient's visual welfare first. Financial gain, sales volume, and beating competitors are secondary at best and never the prime concern.",
+  "k": "Ethics questions reward the patient-first option. Any answer about money or competition is the distractor.",
+  "src": "authored"
+ },
+ {
+  "id": "H0259",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Ethics",
+  "q": "Financial gain in optometric practice should be:",
+  "o": [
+   "Secondary to professional service",
+   "The primary consideration",
+   "More important than patient welfare",
+   "The only consideration"
+  ],
+  "a": 0,
+  "w": "Earning a living is legitimate, but ethics ranks it below professional service to the patient. Making it primary, sole, or above patient welfare all violate the Code.",
+  "k": "Money is allowed but never first. Choose the option that keeps service ahead of profit.",
+  "src": "authored"
+ },
+ {
+  "id": "H0260",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Ethics",
+  "q": "An optometrist should continuously maintain and improve:",
+  "o": [
+   "Professional knowledge and proficiency",
+   "Persuasive advertising and marketing skills",
+   "Aggressive product sales techniques only",
+   "Personal business profits above all else"
+  ],
+  "a": 0,
+  "w": "Ethics requires an optometrist to keep learning and stay competent, so ongoing improvement of professional knowledge and proficiency is the duty. Advertising, sales, and profit are business concerns, not the core professional obligation.",
+  "k": "Continuing duty points to competence and knowledge. Anything about selling or profit is the ethical distractor.",
+  "src": "sanitized"
+ },
+ {
+  "id": "H0261",
+  "sec": "H2 Bioethics and Code of Ethics",
+  "t": "H2 Ethics",
+  "q": "Patient information obtained during professional attendance should generally be:",
+  "o": [
+   "Posted publicly",
+   "Kept confidential",
+   "Published online",
+   "Shared with competitors"
+  ],
+  "a": 1,
+  "w": "Patient information is confidential and must be protected. Posting it publicly, sharing with competitors, or publishing it online all breach that duty.",
+  "k": "Confidentiality is the default. Reject any option that exposes patient information to others.",
+  "src": "authored"
  }
 ]

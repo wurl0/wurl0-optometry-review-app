@@ -5438,5 +5438,581 @@
   "w": "Light enters cornea, crosses aqueous, passes the pupil, is focused by the lens, traverses the vitreous, and lands on the retina. The others reverse or scramble the order and route light through the opaque sclera.",
   "k": "Trace front to back in physical order. The retina must be last (it is the screen); any sequence not ending at the retina is wrong.",
   "src": "sanitized"
+ },
+ {
+  "id": "A0341",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The remaining four recti/oblique extraocular muscles are primarily innervated by:",
+  "o": [
+   "CN IV",
+   "CN VI",
+   "CN III",
+   "CN II"
+  ],
+  "a": 2,
+  "w": "The oculomotor nerve (CN III) supplies four of the six muscles: superior, inferior, and medial rectus plus inferior oblique. The lateral rectus runs on CN VI and the superior oblique on CN IV, which is the LR6-SO4 rule. CN II is the optic nerve and carries no eye movement.",
+  "k": "Remember LR6 SO4; everything else is CN III. If a muscle is not lateral rectus or superior oblique, third nerve is the answer.",
+  "src": "authored"
+ },
+ {
+  "id": "A0342",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle elevates the eye when the eye is abducted?",
+  "o": [
+   "Superior rectus",
+   "Inferior oblique",
+   "Inferior rectus",
+   "Superior oblique"
+  ],
+  "a": 0,
+  "w": "With the eye abducted, the superior rectus pulls straight up, so it is the clean elevator in that position. This is why the cover test for the superior rectus starts with the eye turned out. Inferior rectus depresses, and the obliques do their vertical work in adduction, not abduction.",
+  "k": "Abducted plus up equals superior rectus. The recti act vertically when the eye looks out; the obliques take over when it looks in.",
+  "src": "authored"
+ },
+ {
+  "id": "A0343",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle depresses the eye when the eye is abducted?",
+  "o": [
+   "Inferior rectus",
+   "Superior oblique",
+   "Superior rectus",
+   "Inferior oblique"
+  ],
+  "a": 0,
+  "w": "In abduction the inferior rectus points straight down, making it the depressor tested in that position. The superior rectus elevates, and the obliques act vertically only when the eye is adducted.",
+  "k": "Abducted plus down equals inferior rectus. Recti = abducted testing position for vertical action.",
+  "src": "authored"
+ },
+ {
+  "id": "A0344",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle elevates the eye when it is adducted?",
+  "o": [
+   "Inferior rectus",
+   "Inferior oblique",
+   "Superior oblique",
+   "Superior rectus"
+  ],
+  "a": 1,
+  "w": "When the eye is adducted, the inferior oblique becomes the elevator, which is why it is checked with the eye turned in. The superior rectus elevates in abduction, not adduction, and the superior oblique depresses.",
+  "k": "Adducted plus up equals inferior oblique. Obliques do vertical work in the adducted position, opposite the recti.",
+  "src": "authored"
+ },
+ {
+  "id": "A0345",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle depresses the eye when it is adducted?",
+  "o": [
+   "Inferior rectus",
+   "Superior rectus",
+   "Superior oblique",
+   "Inferior oblique"
+  ],
+  "a": 2,
+  "w": "In adduction the superior oblique pulls the eye down, so it is the depressor tested with the eye turned in. The inferior rectus depresses in abduction, and the inferior oblique elevates in adduction.",
+  "k": "Adducted plus down equals superior oblique. Pair it against the inferior oblique (adducted plus up).",
+  "src": "authored"
+ },
+ {
+  "id": "A0346",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The primary action of the superior rectus is:",
+  "o": [
+   "Elevation",
+   "Depression",
+   "Intorsion",
+   "Abduction"
+  ],
+  "a": 0,
+  "w": "The superior rectus runs along the top of the globe and its main job is to raise the eye, so elevation is its primary action. Depression, abduction, and intorsion are secondary or belong to other muscles.",
+  "k": "'Superior' rectus lifts the eye up. The primary action follows the name: superior = elevation.",
+  "src": "authored"
+ },
+ {
+  "id": "A0347",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The ability of the eye to change its optical power to focus on near objects is:",
+  "o": [
+   "Convergence",
+   "Dispersion",
+   "Accommodation",
+   "Refraction"
+  ],
+  "a": 2,
+  "w": "Changing the eye's focusing power to see near objects clearly is accommodation, done by the lens and ciliary muscle. Convergence is the eyes turning in, refraction is bending of light in general, and dispersion is color splitting.",
+  "k": "Focusing power change for near equals accommodation. Do not confuse it with convergence (eye turning) or refraction (bending).",
+  "src": "authored"
+ },
+ {
+  "id": "A0348",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which structure provides most of the refractive power of the eye?",
+  "o": [
+   "Lens",
+   "Cornea",
+   "Retina",
+   "Iris"
+  ],
+  "a": 1,
+  "w": "The cornea supplies most of the eye's focusing power, roughly two-thirds, because it is the big air-to-tissue interface. The lens adds the fine, adjustable remainder; the retina and iris do not focus light.",
+  "k": "The cornea is the eye's strongest lens because of the air interface. When asked for most power, choose cornea over lens.",
+  "src": "authored"
+ },
+ {
+  "id": "A0349",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The approximate total refractive power of the eye at distance is:",
+  "o": [
+   "+60 D",
+   "+10 D",
+   "+43 D",
+   "+20 D"
+  ],
+  "a": 0,
+  "w": "The whole eye adds up to about +60 diopters at distance, cornea plus lens combined. Values like +43 D describe the cornea alone, and +10 or +20 D are far too weak for the entire eye.",
+  "k": "Total eye is about +60 D; cornea alone is about +43 D. Match the larger figure to the whole eye.",
+  "src": "authored"
+ },
+ {
+  "id": "A0350",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The largest chamber of the eye is filled with:",
+  "o": [
+   "Lymph",
+   "Aqueous humor",
+   "Vitreous humor",
+   "Blood"
+  ],
+  "a": 2,
+  "w": "The vitreous chamber behind the lens is the biggest space in the eye and holds the gel-like vitreous humor. Aqueous fills the small front chambers, and blood and lymph are not inside the globe's chambers.",
+  "k": "Largest chamber equals vitreous. The front (aqueous) spaces are small; blood and lymph do not belong.",
+  "src": "authored"
+ },
+ {
+  "id": "A0351",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The orbit is best described as a:",
+  "o": [
+   "Cylindrical cavity",
+   "Four-sided pyramid",
+   "Flat cavity",
+   "Circular cavity"
+  ],
+  "a": 1,
+  "w": "The orbit is a four-sided pyramid with its apex pointing back toward the optic canal and its base at the rim. It is not circular, cylindrical, or flat.",
+  "k": "Picture a pyramid with the apex at the back. The four-walled pyramid is the standard description.",
+  "src": "authored"
+ },
+ {
+  "id": "A0352",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which bone forms a major portion of the medial wall of the orbit?",
+  "o": [
+   "Occipital",
+   "Temporal",
+   "Mandible",
+   "Ethmoid"
+  ],
+  "a": 3,
+  "w": "The paper-thin ethmoid (lamina papyracea) forms much of the medial orbital wall, which is why ethmoid sinus infection can spread to the orbit. The mandible, temporal, and occipital bones are not orbital walls.",
+  "k": "Medial wall equals thin ethmoid. Its fragility explains orbital cellulitis from sinus spread.",
+  "src": "authored"
+ },
+ {
+  "id": "A0353",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The roof of the orbit is formed mainly by the frontal bone and:",
+  "o": [
+   "Orbital plate of the maxillary bone",
+   "Perpendicular plate of the ethmoid bone",
+   "Orbital process of the zygomatic bone",
+   "Lesser wing of sphenoid"
+  ],
+  "a": 3,
+  "w": "The orbital roof is built from the frontal bone and the lesser wing of the sphenoid. The maxilla forms the floor, the ethmoid the medial wall, and the zygomatic the lateral wall.",
+  "k": "Roof equals frontal plus lesser wing of sphenoid. Sort the bones by wall: floor maxilla, medial ethmoid, lateral zygoma.",
+  "src": "sanitized"
+ },
+ {
+  "id": "A0354",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The lacrimal gland is located in which part of the orbit?",
+  "o": [
+   "Superomedial",
+   "Superolateral",
+   "Inferomedial",
+   "Inferolateral"
+  ],
+  "a": 1,
+  "w": "The lacrimal gland sits in the superolateral orbit, in a fossa of the frontal bone, which is why tears sweep down and across to the nasal puncta. The other quadrants are wrong.",
+  "k": "Tear gland is up and out (superolateral). Tears then run to the down-and-in puncta.",
+  "src": "authored"
+ },
+ {
+  "id": "A0355",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which structure primarily protects the eye from trauma and provides attachment for the extraocular muscles?",
+  "o": [
+   "Iris",
+   "Retina",
+   "Lens",
+   "Orbit"
+  ],
+  "a": 3,
+  "w": "The bony orbit surrounds and shields the globe and anchors the extraocular muscles at the annulus of Zinn. The lens, retina, and iris are internal structures, not protective housing.",
+  "k": "Protection plus muscle attachment equals the orbit. Internal parts like lens or retina do not shield the eye.",
+  "src": "authored"
+ },
+ {
+  "id": "A0356",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "How many extraocular muscles are responsible for movement of the eyeball?",
+  "o": [
+   "4",
+   "7",
+   "6",
+   "5"
+  ],
+  "a": 2,
+  "w": "Six extraocular muscles move each eyeball: four recti and two obliques. Not four, five, or seven.",
+  "k": "Count is six: four recti, two obliques. Memorize the fixed number.",
+  "src": "authored"
+ },
+ {
+  "id": "A0357",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle abducts the eye?",
+  "o": [
+   "Inferior rectus",
+   "Medial rectus",
+   "Lateral rectus",
+   "Superior rectus"
+  ],
+  "a": 2,
+  "w": "The lateral rectus pulls the eye outward (abduction) and runs on CN VI. Medial rectus adducts, and the vertical recti mainly elevate or depress.",
+  "k": "Lateral rectus equals abduction (out). The name points sideways-out.",
+  "src": "authored"
+ },
+ {
+  "id": "A0358",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which muscle adducts the eye?",
+  "o": [
+   "Superior oblique",
+   "Lateral rectus",
+   "Medial rectus",
+   "Inferior oblique"
+  ],
+  "a": 2,
+  "w": "The medial rectus pulls the eye inward toward the nose (adduction). The lateral rectus does the opposite, and the obliques act vertically and torsionally.",
+  "k": "Medial rectus equals adduction (in, toward the midline). Pair against lateral rectus.",
+  "src": "authored"
+ },
+ {
+  "id": "A0359",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The lateral rectus muscle is innervated by:",
+  "o": [
+   "CN VI",
+   "CN II",
+   "CN III",
+   "CN IV"
+  ],
+  "a": 0,
+  "w": "The lateral rectus is supplied by the abducens nerve, CN VI, matching the LR6 rule. CN II is optic, CN III supplies most other muscles, and CN IV is the superior oblique.",
+  "k": "LR6: lateral rectus equals CN VI. This is half of the LR6-SO4 mnemonic.",
+  "src": "authored"
+ },
+ {
+  "id": "A0360",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The superior oblique muscle is innervated by:",
+  "o": [
+   "CN III",
+   "CN V",
+   "CN IV",
+   "CN VI"
+  ],
+  "a": 2,
+  "w": "The superior oblique is supplied by the trochlear nerve, CN IV, following the SO4 rule. CN III runs the other muscles here and CN VI the lateral rectus.",
+  "k": "SO4: superior oblique equals CN IV. The other half of LR6-SO4.",
+  "src": "authored"
+ },
+ {
+  "id": "A0361",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The major relay nucleus for conscious vision is the:",
+  "o": [
+   "Superior colliculus",
+   "Edinger-Westphal nucleus",
+   "Medial geniculate nucleus",
+   "Lateral geniculate nucleus"
+  ],
+  "a": 3,
+  "w": "The lateral geniculate nucleus of the thalamus is the main relay for conscious vision on the way to the cortex. The superior colliculus handles reflex gaze, the medial geniculate is hearing, and Edinger-Westphal drives the pupil.",
+  "k": "Conscious vision relay equals LGN. Medial geniculate is sound; do not mix the two geniculates.",
+  "src": "authored"
+ },
+ {
+  "id": "A0362",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The primary action of the inferior rectus is:",
+  "o": [
+   "Abduction",
+   "Elevation",
+   "Intorsion",
+   "Depression"
+  ],
+  "a": 3,
+  "w": "The inferior rectus mainly pulls the eye down, so depression is its primary action. Elevation belongs to the superior rectus, and abduction and intorsion are other actions.",
+  "k": "'Inferior' rectus lowers the eye. Primary action follows the name: inferior = depression.",
+  "src": "authored"
+ },
+ {
+  "id": "A0363",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which extraocular muscle originates from the common tendinous ring (annulus of Zinn)?",
+  "o": [
+   "Lacrimal gland",
+   "Inferior oblique only",
+   "None of the recti",
+   "Medial rectus"
+  ],
+  "a": 3,
+  "w": "The four rectus muscles all arise from the common tendinous ring (annulus of Zinn) at the orbital apex, so the medial rectus qualifies. The inferior oblique starts near the orbital floor and the lacrimal gland is not a muscle.",
+  "k": "Annulus of Zinn is the origin of the recti. Choose a rectus; the inferior oblique and non-muscles do not arise there.",
+  "src": "authored"
+ },
+ {
+  "id": "A0364",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The floor of the orbit is formed mainly by the:",
+  "o": [
+   "Maxilla",
+   "Ethmoid",
+   "Sphenoid",
+   "Frontal bone"
+  ],
+  "a": 0,
+  "w": "The orbital floor is formed mainly by the maxilla, which is why blow-out fractures drop into the maxillary sinus. The frontal bone is the roof, ethmoid the medial wall, and sphenoid the apex.",
+  "k": "Floor equals maxilla. Its thinness explains orbital floor blow-out fractures.",
+  "src": "authored"
+ },
+ {
+  "id": "A0365",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The lateral orbital wall is formed primarily by the zygomatic bone and:",
+  "o": [
+   "Orbital plate of the ethmoid bone",
+   "Orbital surface of the palatine bone",
+   "Greater wing of sphenoid",
+   "Posterior lacrimal crest of the lacrimal bone"
+  ],
+  "a": 2,
+  "w": "The lateral orbital wall is built from the zygomatic bone and the greater wing of the sphenoid, the thickest, most protective wall. Ethmoid, lacrimal, and palatine bones are elsewhere.",
+  "k": "Lateral wall equals zygoma plus greater wing of sphenoid. Greater wing = lateral; lesser wing = roof.",
+  "src": "sanitized"
+ },
+ {
+  "id": "A0366",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The optic canal transmits the:",
+  "o": [
+   "Optic nerve and ophthalmic artery",
+   "Facial nerve and vein",
+   "Maxillary nerve and artery",
+   "Trochlear nerve and artery"
+  ],
+  "a": 0,
+  "w": "The optic canal transmits the optic nerve (CN II) and the ophthalmic artery. The facial, trochlear, and maxillary nerves run through other openings.",
+  "k": "Optic canal equals optic nerve plus ophthalmic artery. Match the canal's name to CN II.",
+  "src": "authored"
+ },
+ {
+  "id": "A0367",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The superior orbital fissure transmits several cranial nerves, including:",
+  "o": [
+   "CN VII and VIII",
+   "CN III, IV, V1, and VI",
+   "CN IX and X",
+   "CN I and II only"
+  ],
+  "a": 1,
+  "w": "The superior orbital fissure passes CN III, IV, V1, and VI, the nerves for eye movement and upper-face sensation. CN I and II do not use it, and CN VII to X are far from the orbit.",
+  "k": "SOF carries the eye-movement nerves: III, IV, V1, VI. The optic nerve uses the canal, not the fissure.",
+  "src": "authored"
+ },
+ {
+  "id": "A0368",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which structures form the uveal tract?",
+  "o": [
+   "Iris, ciliary body, choroid",
+   "Lens, vitreous, aqueous",
+   "Retina, optic nerve, macula",
+   "Cornea, sclera, conjunctiva"
+  ],
+  "a": 0,
+  "w": "The uveal tract is the middle vascular coat: iris, ciliary body, and choroid. The outer coat is cornea and sclera, and the inner coat is the retina.",
+  "k": "Uvea equals iris plus ciliary body plus choroid. It is the vascular middle layer, not the outer or inner coats.",
+  "src": "authored"
+ },
+ {
+  "id": "A0369",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The innermost layer of the eyeball is the:",
+  "o": [
+   "Retina",
+   "Sclera",
+   "Choroid",
+   "Cornea"
+  ],
+  "a": 0,
+  "w": "The innermost coat of the eyeball is the retina, the light-sensing layer. The sclera and cornea are outer, and the choroid is the middle vascular layer.",
+  "k": "Innermost equals retina. Order the three coats: outer fibrous, middle vascular, inner retina.",
+  "src": "authored"
+ },
+ {
+  "id": "A0370",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The iris controls the amount of light entering the eye through the:",
+  "o": [
+   "Pupil",
+   "Optic disc",
+   "Fovea",
+   "Canal of Schlemm"
+  ],
+  "a": 0,
+  "w": "The iris adjusts incoming light by changing the size of the pupil, the hole at its center. The canal of Schlemm drains fluid, and the fovea and disc are retinal landmarks.",
+  "k": "Iris controls light through the pupil. The adjustable aperture is the pupil, not a drainage or retinal structure.",
+  "src": "authored"
+ },
+ {
+  "id": "A0371",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "Which structure contains the highest concentration of cones and provides the sharpest vision?",
+  "o": [
+   "Optic disc",
+   "Ora serrata",
+   "Peripheral retina",
+   "Fovea centralis"
+  ],
+  "a": 3,
+  "w": "The fovea centralis has the densest cone packing and gives the sharpest vision. The optic disc has no receptors, and the ora serrata and peripheral retina are rod-dominant.",
+  "k": "Sharpest vision equals fovea (all cones). Peak detail lives at the fovea, not the periphery or disc.",
+  "src": "authored"
+ },
+ {
+  "id": "A0372",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The approximate adult axial length of the eyeball is:",
+  "o": [
+   "30 mm",
+   "24 mm",
+   "18 mm",
+   "12 mm"
+  ],
+  "a": 1,
+  "w": "The adult eye is about 24 mm long from cornea to retina. Twelve or eighteen mm are too short and thirty mm is high myopia, not average.",
+  "k": "Normal axial length is about 24 mm. Longer means more myopic; 24 is the standard emmetropic value.",
+  "src": "authored"
+ },
+ {
+  "id": "A0373",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The outermost fibrous layer of the eyeball consists of the:",
+  "o": [
+   "Iris and ciliary body",
+   "Retina and choroid",
+   "Retina and iris",
+   "Sclera and cornea"
+  ],
+  "a": 3,
+  "w": "The outer fibrous coat of the eye is the sclera plus the clear cornea in front. Retina, choroid, iris, and ciliary body belong to the inner or middle layers.",
+  "k": "Outer fibrous coat equals sclera and cornea. The tough white plus the clear window form the outer wall.",
+  "src": "authored"
+ },
+ {
+  "id": "A0374",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The transparent anterior portion of the fibrous tunic is the:",
+  "o": [
+   "Sclera",
+   "Cornea",
+   "Choroid",
+   "Conjunctiva"
+  ],
+  "a": 1,
+  "w": "The clear front part of the fibrous coat is the cornea, the eye's main window. The sclera is the opaque rest of that coat, and the choroid and conjunctiva are different tissues.",
+  "k": "Transparent front of the fibrous tunic equals cornea. Same coat as sclera, but the clear portion.",
+  "src": "authored"
+ },
+ {
+  "id": "A0375",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The optic nerve is designated as:",
+  "o": [
+   "CN IV",
+   "CN II",
+   "CN I",
+   "CN III"
+  ],
+  "a": 1,
+  "w": "The optic nerve is cranial nerve II, carrying vision from the retina. CN I is smell, CN III eye movement, and CN IV the superior oblique.",
+  "k": "Optic nerve equals CN II. It is the second cranial nerve, right after the olfactory.",
+  "src": "authored"
+ },
+ {
+  "id": "A0376",
+  "sec": "A2 Anatomy",
+  "t": "A2 Anatomy",
+  "q": "The partial crossing of optic nerve fibers occurs at the:",
+  "o": [
+   "Optic tract",
+   "Lateral geniculate nucleus",
+   "Optic chiasm",
+   "Visual cortex"
+  ],
+  "a": 2,
+  "w": "Nasal fibers from each eye cross at the optic chiasm, the partial decussation that lets each hemisphere see the opposite field. The tract, geniculate, and cortex come after the crossing.",
+  "k": "Partial crossing happens at the chiasm. It is the one X-shaped junction; downstream structures do not cross.",
+  "src": "authored"
  }
 ]

@@ -46,12 +46,17 @@
   .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
   .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
   .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .optwhy{display:none;font-size:13px;line-height:1.45;color:var(--muted);padding:0 12px 0 34px;margin:-4px 0 9px}
+  .optwhy.show{display:block}
+  .optwhy.owright{color:var(--right);font-weight:600}
+  .optwhy.owpick{color:var(--wrong)}
   .feedback{border-radius:11px;padding:13px 15px;margin:6px 0 2px;font-size:15px}
   .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
   .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
   .feedback .tag{font-weight:700;display:block;margin-bottom:4px}
   .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
   .feedback .key{margin-top:9px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  .feedback .decode{margin:2px 0 9px;padding:9px 11px;border-radius:8px;background:#f6efdc;color:#8a6a12;font-size:14px;line-height:1.5}
   .actions{display:flex;justify-content:space-between;align-items:center;margin-top:13px}
   button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:15px;font-weight:600;cursor:pointer}
   button.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
@@ -76,12 +81,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject B — Board Exam</h1>
-    <p class="sub">Physiological Optics and Binocular Vision · 233 questions · mixed, board-style</p>
+    <p class="sub">Physiological Optics and Binocular Vision · 249 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>233 board-style questions drawn from every B note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>249 board-style questions drawn from every B note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">B1 Visual System</span>
       <span class="chip">B2 Visual Perception</span>
@@ -93,7 +98,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="233">Full (233)</button>
+      <button class="modebtn sel" data-n="249">Full (249)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -358,10 +363,26 @@ const BANK=[
 {t:"B1 Visual System",q:"The visual pigment found primarily in rods is:",o:["Rhodopsin", "Hemoglobin", "Iodopsin", "Melanin"],a:0,w:"Rods contain rhodopsin (visual purple). Iodopsin/photopsins are cone pigments; melanin is RPE/skin pigment; hemoglobin is in blood.",k:"Rod + pigment = rhodopsin. Cone pigment is the iodopsin/photopsin decoy."},
 {t:"B1 Visual System",q:"Phototransduction occurs primarily in the:",o:["Lens capsule", "Extraocular muscles", "Photoreceptors", "Cornea"],a:2,w:"Converting light into a neural signal happens in rod and cone outer segments. Muscles, cornea and lens capsule do not transduce light.",k:"\"Photo-transduction\" literally means light-to-signal, which only the photoreceptors do."},
 {t:"B1 Visual System",q:"The aqueous humor is located mainly in the:",o:["Vitreous cavity only", "Optic nerve", "Subretinal space", "Anterior and posterior chambers"],a:3,w:"Aqueous fills the anterior and posterior chambers of the front segment. Vitreous cavity holds vitreous, not aqueous.",k:"Chambers (front) hold aqueous; cavity (back) holds vitreous. Do not swap them."},
-{t:"B1 Visual System",q:"The vitreous humor primarily helps to:",o:["Control pupil size", "Maintain the shape of the eyeball", "Produce visual pigments", "Produce tears"],a:1,w:"The vitreous gel maintains globe shape and supports the retina. It does not make tears or pigments and does not control the pupil.",k:"Space-filling gel = structural support. Pick the mechanical role."}
+{t:"B1 Visual System",q:"The vitreous humor primarily helps to:",o:["Control pupil size", "Maintain the shape of the eyeball", "Produce visual pigments", "Produce tears"],a:1,w:"The vitreous gel maintains globe shape and supports the retina. It does not make tears or pigments and does not control the pupil.",k:"Space-filling gel = structural support. Pick the mechanical role."},
+{t:"B1 Visual System",q:"The blind spot corresponds anatomically to the:",o:["Lens", "Optic disc", "Fovea", "Macula"],a:1,w:"The optic disc is where axons leave the eye, so it has no rods or cones and cannot register light. That gap in the receptor sheet is the physiological blind spot. The fovea and macula are the most sensitive seeing areas, the opposite of blind, and the lens is not part of the retina at all.",k:"'Blind spot' means no photoreceptors. Only the optic disc, the exit door for nerve fibers, fits that. Pick the seeing-poor structure, not a seeing-rich one like fovea or macula."},
+{t:"B1 Visual System",q:"The optic radiations project from the lateral geniculate nucleus to the:",o:["Frontal cortex", "Cerebellum", "Occipital cortex", "Temporal pole"],a:2,w:"After the relay in the lateral geniculate nucleus, fibers fan out as the optic radiations and end in the occipital cortex, the seeing part of the brain. The cerebellum handles coordination, the frontal cortex planning, and the temporal pole memory and hearing, none of them primary vision.",k:"Vision ends at the back of the brain. Trace LGN forward and the only answer that is a visual destination is occipital."},
+{t:"B1 Visual System",q:"The primary visual cortex is located in the:",o:["Occipital lobe", "Temporal lobe", "Parietal lobe", "Frontal lobe"],a:0,w:"The primary visual cortex sits in the occipital lobe at the very back of the brain. The frontal lobe does planning, the parietal touch and spatial sense, the temporal hearing and memory. Only occipital is the visual receiving area.",k:"Back of the head equals seeing. When lobes are the choices, occipital is vision."},
+{t:"B1 Visual System",q:"The primary visual cortex is also called:",o:["Brodmann area 44", "Brodmann area 17", "Brodmann area 41", "Brodmann area 4"],a:1,w:"The primary visual cortex is Brodmann area 17, also called the striate cortex for its stripe of Gennari. Area 4 is motor, area 44 is speech (Broca), area 41 is primary auditory. Only 17 is vision.",k:"Memorize 17 for sight. The distractor numbers are famous non-visual areas (4 motor, 41 hearing, 44 speech)."},
+{t:"B1 Visual System",q:"The macula is responsible primarily for:",o:["Peripheral vision", "Central detailed vision", "Tear production", "Aqueous production"],a:1,w:"The macula, with its dense cone packing, gives sharp central detail vision used for reading and faces. Peripheral vision comes from the rod-rich retina outside it, and tears and aqueous are made by glands, not the macula.",k:"Macula equals central, detailed, cone vision. Any option about periphery or fluid production is off-topic."},
+{t:"B1 Visual System",q:"The optic disc is also known as the:",o:["Macula", "Fovea", "Ora serrata", "Blind spot"],a:3,w:"The optic disc is the nerve-head where fibers exit and no photoreceptors sit, which is exactly why it is the blind spot. The fovea and macula are the opposite (peak vision), and the ora serrata is the peripheral retinal edge.",k:"Disc and blind spot are two names for the same fiber-exit point. Reflex-pair the two."},
+{t:"B1 Visual System",q:"The visual pathway begins with photoreceptors located in the:",o:["Cornea", "Choroid", "Retina", "Lens"],a:2,w:"Vision starts where light is absorbed, and that happens in the rods and cones of the retina. The cornea and lens only focus light, and the choroid is the blood supply behind the retina.",k:"The pathway begins at the receptors. Focusing parts (cornea, lens) and blood supply (choroid) do not start the signal; the retina does."},
+{t:"B1 Visual System",q:"Which test is particularly useful for detecting suppression and assessing binocular vision?",o:["Ishihara", "Schirmer", "Amsler grid", "Worth 4 Dot"],a:3,w:"The Worth 4 Dot shines red and green dots through red/green goggles, so each eye sees only certain dots. If one eye is suppressed the patient reports fewer dots, which makes it a direct test of binocular fusion and suppression. Ishihara tests color, Amsler the macula, Schirmer tear volume.",k:"Match the test to what it isolates. Suppression and fusion belong to Worth 4 Dot; the others test color, macula, or tears."},
+{t:"B1 Visual System",q:"Which test is specifically designed to evaluate central retinal/macular function?",o:["Maddox rod", "Amsler grid", "Cover test", "Ishihara"],a:1,w:"The Amsler grid is a square of lines fixated centrally, so it probes the macula, where wavy or missing lines signal macular disease. Maddox rod checks alignment, Ishihara color, cover test eye deviation.",k:"Central grid equals macula. If the stem says central retinal or macular, pick the grid, not an alignment or color test."},
+{t:"B1 Visual System",q:"The largest refractive change in the eye occurs at the:",o:["Lens-retina interface", "Aqueous-lens interface", "Air-cornea interface", "Vitreous-retina interface"],a:2,w:"Air and cornea differ most in how fast light travels through them, and the biggest change in speed at a surface bends light the most. That air-to-cornea jump provides about two-thirds of the eye's total focusing power. The internal interfaces (lens, vitreous, aqueous) sit between media of similar index, so they bend light far less.",k:"The largest index jump makes the largest bend. The eye's biggest jump is air into cornea, not any interface buried inside the fluid-filled eye."},
+{t:"B1 Visual System",q:"The approximate minimum angle of resolution (MAR) for 20/20 vision is:",o:["5 minutes of arc", "1 minute of arc", "20 minutes of arc", "10 minutes of arc"],a:1,w:"20/20 means resolving detail that subtends 1 minute of arc, about 1/60 of a degree, which is the normal limit set by cone spacing. Five, ten, or twenty minutes are much coarser and would map to poorer acuities like 20/100.",k:"20/20 pins to 1 minute of arc. Bigger arc numbers mean worse vision, so the smallest realistic value is the match."},
+{t:"B1 Visual System",q:"Binocular vision allows the visual system to obtain:",o:["Stereopsis and depth perception", "Only peripheral vision", "Only color vision", "Better dark adaptation only"],a:0,w:"Using two eyes with slightly different viewpoints lets the brain fuse the images and compute depth, called stereopsis. Color, peripheral extent, and dark adaptation do not require two eyes and can be near-normal with one.",k:"The unique payoff of two eyes is depth. Anything one eye alone can do is not the binocular-specific answer."},
+{t:"B1 Visual System",q:"The two types of photoreceptors are:",o:["Bipolar and ganglion cells", "Muller and bipolar cells", "Rods and cones", "Amacrine and horizontal cells"],a:2,w:"The light-catching cells are the rods (dim light) and cones (color and detail). Bipolar, ganglion, amacrine, horizontal, and Muller cells process or support the signal but do not absorb light themselves.",k:"Only two cell types are photoreceptors: rods and cones. Every other retinal cell name is a processing or glial distractor."},
+{t:"B1 Visual System",q:"Axons of retinal ganglion cells form the:",o:["Lateral geniculate body", "Optic tract", "Optic radiation", "Optic nerve"],a:3,w:"Ganglion cell axons gather at the disc and bundle together to form the optic nerve, the first named segment of the pathway. The optic tract, radiation, and geniculate body come later, after the chiasm.",k:"Order the pathway: ganglion axons make the optic nerve first. Tract and radiation are downstream, so they are too late for 'form the'."},
+{t:"B1 Visual System",q:"At the optic chiasm, fibers from the ______ retina cross.",o:["Nasal", "Superior only", "Inferior only", "Temporal"],a:0,w:"At the chiasm the nasal (inner) retinal fibers cross to the other side while temporal fibers stay uncrossed, which is what lets each side of the brain see the opposite visual field. Temporal fibers do not cross; superior/inferior is not how the split works.",k:"Nasal crosses, temporal stays. When the chiasm asks who crosses, it is always the nasal fibers."},
+{t:"B1 Visual System",q:"After the optic chiasm, the fibers continue as the:",o:["Optic radiation", "Ciliary nerve", "Optic tract", "Optic nerve"],a:2,w:"Once past the chiasm the mixed crossed-and-uncrossed fibers travel as the optic tract toward the geniculate. Before the chiasm they were the optic nerve; the radiation comes only after the geniculate relay; the ciliary nerve is unrelated.",k:"Name by position: nerve before chiasm, tract after. 'After the chiasm' forces optic tract."}
 ];
 
-let MODE=233, SCOPE='*';
+let MODE=249, SCOPE='*';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
@@ -394,7 +415,7 @@ function prep(it){
   let perm=it.o.map((_,n)=>n);
   if(it.n)perm.sort((x,y)=>numval(it.o[x])-numval(it.o[y]));
   else perm=shuffle(perm);
-  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a)});
+  return Object.assign({},it,{o:perm.map(n=>it.o[n]),a:perm.indexOf(it.a),ow:it.ow?perm.map(n=>it.ow[n]):null});
 }
 
 document.getElementById('startBtn').addEventListener('click',()=>{
@@ -409,7 +430,7 @@ function render(){
  barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
  let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
  h+='<div class="qtext">'+it.q+'</div>';
- it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button>';});
+ it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button><div class="optwhy" id="ow'+n+'"></div>';});
  h+='<div id="fb"></div><div class="actions" id="acts"><button class="quit" id="quitBtn">End and see results</button><span></span></div>';
  body.innerHTML=h;
  body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));
@@ -421,11 +442,13 @@ function choose(c){
  body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
    if(n===right)b.classList.add('correct');
    if(n===c&&c!==right)b.classList.add('incorrect');});
+ if(it.ow){it.ow.forEach((txt,n)=>{const el=document.getElementById('ow'+n);if(el){el.textContent=txt;el.className='optwhy show'+(n===right?' owright':(n===c?' owpick':''));}});}
  const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
  scoretext.textContent=s+' / '+Q.length;
  const fb=document.getElementById('fb');
  fb.className='feedback '+(ok?'good':'bad');
- fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span><div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
+ const decodeHtml=it.decode?'<div class="decode"><b>Decode &middot; how to spot it:</b> '+it.decode+'</div>':'';
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span>'+decodeHtml+'<div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
  const last=i===Q.length-1;
  document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
  document.getElementById('nx').addEventListener('click',next);

@@ -3854,5 +3854,2229 @@
   "w": "A successful fit balances clear vision, comfort, healthy physiology and proper lens-cornea relationship. Maximising movement, stopping blinking or flattening the cornea are not goals.",
   "k": "\"Ultimate goal\" wants the balanced, patient-centred option. The single-minded extremes are wrong.",
   "src": "sanitized"
+ },
+ {
+  "id": "D0242",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Optics is the branch of physics concerned primarily with:",
+  "o": [
+   "Sound",
+   "Magnetism only",
+   "Light",
+   "Electricity only"
+  ],
+  "a": 2,
+  "w": "Optics is the branch of physics that studies light and its behavior. Sound, electricity, and magnetism are separate branches.",
+  "k": "Optics equals light, by definition. Reject the non-light physics options.",
+  "src": "authored"
+ },
+ {
+  "id": "D0243",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which type of lens has negative power?",
+  "o": [
+   "Convex",
+   "Magnifying",
+   "Concave",
+   "Plus"
+  ],
+  "a": 2,
+  "w": "A concave (minus) lens diverges light and carries negative power, used for myopia. Convex, plus, and magnifying all describe converging positive lenses.",
+  "k": "Concave equals minus equals negative power. Convex/plus are the positive-power opposite.",
+  "src": "authored"
+ },
+ {
+  "id": "D0244",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which optical phenomenon is responsible for the separation of white light into its component colors?",
+  "o": [
+   "Accommodation",
+   "Dispersion",
+   "Reflection",
+   "Absorption"
+  ],
+  "a": 1,
+  "w": "Dispersion splits white light into its colors because each wavelength bends by a different amount, as in a prism or rainbow. Reflection bounces light, absorption removes it, and accommodation is focusing.",
+  "k": "White light splitting into colors equals dispersion. The rainbow/prism cue points there, not to reflection or absorption.",
+  "src": "authored"
+ },
+ {
+  "id": "D0245",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "When light travels from air into glass, it generally bends:",
+  "o": [
+   "Toward the normal",
+   "Back toward the source",
+   "Along the surface",
+   "Away from the normal"
+  ],
+  "a": 0,
+  "w": "Going from the faster medium (air) into the slower, denser one (glass), light bends toward the normal. It bends away from the normal only when moving into a less dense medium.",
+  "k": "Into denser and slower means bend toward the normal. Track the density change to get the bend direction.",
+  "src": "authored"
+ },
+ {
+  "id": "D0246",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The phenomenon in which white light separates into its component colors is called:",
+  "o": [
+   "Polarization",
+   "Dispersion",
+   "Diffusion",
+   "Reflection"
+  ],
+  "a": 1,
+  "w": "White light separating into its component colors is dispersion, from wavelength-dependent bending. Reflection, diffusion, and polarization are different light behaviors.",
+  "k": "Color separation equals dispersion. Same rainbow cue as before; do not pick reflection or polarization.",
+  "src": "authored"
+ },
+ {
+  "id": "D0247",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Fluorescein is especially useful in evaluating:",
+  "o": [
+   "Routine calibration of a manual lensometer",
+   "Rigid contact lens fluorescein patterns",
+   "The natural color of the patient's pupil",
+   "The overall length of a spectacle temple"
+  ],
+  "a": 1,
+  "w": "Fluorescein reveals the tear layer between a rigid lens and the cornea, so its patterns judge how a hard lens fits. Temple length, lensometer calibration, and pupil color are unrelated.",
+  "k": "Fluorescein pattern equals rigid contact lens fit. The dye shows the tear film under the lens.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0248",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The ability of an optical system to bring parallel rays to a focus is related to its:",
+  "o": [
+   "Temperature",
+   "Density",
+   "Weight",
+   "Optical power"
+  ],
+  "a": 3,
+  "w": "Bringing parallel rays to a focus is the job of optical power (dioptric strength). Density, weight, and temperature do not determine focusing ability.",
+  "k": "Focusing strength equals optical power. Physical bulk (weight, density) is irrelevant to how a lens focuses.",
+  "src": "authored"
+ },
+ {
+  "id": "D0249",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "In a plus ophthalmic lens, the thickest portion is generally at the:",
+  "o": [
+   "Temporal side",
+   "Center",
+   "Nasal side",
+   "Edge"
+  ],
+  "a": 1,
+  "w": "A plus (convex) lens is thickest in the center and thins toward the edge, which is how it converges light. A minus lens is the reverse, thick at the edge.",
+  "k": "Plus lens equals fat middle. Convex bulges centrally; minus is edge-thick.",
+  "src": "authored"
+ },
+ {
+  "id": "D0250",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The difference between the two principal corneal powers represents approximately the:",
+  "o": [
+   "Lens thickness",
+   "Corneal astigmatism",
+   "Pupil diameter",
+   "Axial length"
+  ],
+  "a": 1,
+  "w": "Subtracting the flatter meridian's power from the steeper one gives the corneal astigmatism, read from keratometry. It is not axial length, pupil size, or lens thickness.",
+  "k": "Difference between the two corneal powers equals corneal astigmatism. The gap between meridians is the cylinder.",
+  "src": "authored"
+ },
+ {
+  "id": "D0251",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A magnifier or loupe can be used to inspect:",
+  "o": [
+   "Intraocular pressure",
+   "Contact lens surface",
+   "Corneal thickness",
+   "Axial length"
+  ],
+  "a": 1,
+  "w": "A magnifier or loupe is handy for inspecting the contact lens surface for deposits or damage. It does not measure pressure, thickness, or axial length.",
+  "k": "Loupe equals inspect the lens surface. Simple magnification checks the lens, not the eye's internals.",
+  "src": "authored"
+ },
+ {
+  "id": "D0252",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "In Prentice's rule, c represents:",
+  "o": [
+   "Corneal thickness",
+   "Decentration in centimeters",
+   "Lens curvature in meters",
+   "Cylinder axis"
+  ],
+  "a": 1,
+  "w": "In Prentice's rule P = c x F, c is the decentration in centimeters, how far the visual point sits from the optical center. It is not curvature, thickness, or axis.",
+  "k": "In Prentice's rule c equals decentration in cm. Remember the formula reads prism = cm off-center times power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0253",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A mirror is an optical surface that primarily:",
+  "o": [
+   "Absorbs all light",
+   "Polarizes all light",
+   "Refracts light",
+   "Reflects light"
+  ],
+  "a": 3,
+  "w": "A mirror works by reflecting light, bouncing it off a smooth surface. It does not mainly refract, absorb, or polarize.",
+  "k": "Mirror equals reflect. By definition it sends light back, it does not bend it through.",
+  "src": "authored"
+ },
+ {
+  "id": "D0254",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The law of reflection states that the angle of incidence is:",
+  "o": [
+   "Equal to the angle of reflection",
+   "Less than the angle of reflection",
+   "Twice the angle of reflection",
+   "Greater than the angle of reflection"
+  ],
+  "a": 0,
+  "w": "The law of reflection says the angle of incidence equals the angle of reflection, measured from the normal. It is not greater, less, or double.",
+  "k": "Reflection equals angle in equals angle out. The two angles match across the normal.",
+  "src": "authored"
+ },
+ {
+  "id": "D0255",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The image formed by a plane mirror is:",
+  "o": [
+   "Always magnified",
+   "Smaller than the object",
+   "The same size as the object",
+   "Larger than the object"
+  ],
+  "a": 2,
+  "w": "A plane (flat) mirror makes an image the same size as the object, upright and virtual. It does not enlarge or shrink.",
+  "k": "Plane mirror equals same-size image. Flat means no magnification, unit size.",
+  "src": "authored"
+ },
+ {
+  "id": "D0256",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A keratometer is primarily used to measure:",
+  "o": [
+   "Lens power",
+   "Corneal curvature",
+   "IOP",
+   "Retinal thickness"
+  ],
+  "a": 1,
+  "w": "A keratometer measures the curvature of the front of the cornea. It does not read retinal thickness, pressure, or lens power.",
+  "k": "Keratometer equals corneal curvature. 'Kerato' means cornea; it maps the front curve.",
+  "src": "authored"
+ },
+ {
+  "id": "D0257",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Another name for a keratometer is:",
+  "o": [
+   "Tonometer",
+   "Perimeter",
+   "Ophthalmometer",
+   "Pachymeter"
+  ],
+  "a": 2,
+  "w": "The keratometer is also called an ophthalmometer. A perimeter maps fields, a tonometer reads pressure, and a pachymeter measures thickness.",
+  "k": "Keratometer equals ophthalmometer. The two names are the same instrument.",
+  "src": "authored"
+ },
+ {
+  "id": "D0258",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Slit-lamp examination after contact lens insertion can evaluate:",
+  "o": [
+   "Systemic blood pressure and pulse rate",
+   "The back vertex power of the lens",
+   "Lens centration, movement, and corneal staining",
+   "Corneal thickness by ultrasound pachymetry"
+  ],
+  "a": 2,
+  "w": "After a lens is inserted, the slit lamp shows how it centers, how it moves on blink, and any corneal staining underneath, so all three are assessed together. It does not read blood pressure, lens power, or corneal thickness by ultrasound.",
+  "k": "On-eye slit lamp equals centration, movement, and staining together. Choose the option combining the fit observations, not an unrelated measurement.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0259",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument can be used with fluorescein to evaluate a rigid contact lens fit?",
+  "o": [
+   "Lensometer",
+   "Slit lamp",
+   "Retinoscope",
+   "Keratometer alone"
+  ],
+  "a": 1,
+  "w": "A slit lamp with fluorescein shows the tear pattern under a rigid lens, revealing the fit. A lensometer, keratometer alone, or retinoscope cannot show this.",
+  "k": "Rigid lens fit plus fluorescein equals slit lamp. The dye pattern is viewed on the slit lamp.",
+  "src": "authored"
+ },
+ {
+  "id": "D0260",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Keratometry and slit-lamp examination together provide important information about:",
+  "o": [
+   "Systemic arterial blood pressure and pulse",
+   "General dental and periodontal health status",
+   "The patient's overall hearing ability and balance",
+   "Corneal shape and ocular response to contact lens wear"
+  ],
+  "a": 3,
+  "w": "Keratometry gives corneal shape while the slit lamp shows the eye's response to lens wear, so together they inform contact lens management. Hearing, blood pressure, and dental health are irrelevant.",
+  "k": "Keratometer plus slit lamp equals corneal shape and ocular response. Both are eye tools; ignore unrelated body systems.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0261",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which statement is CORRECT about the keratometer and slit lamp?",
+  "o": [
+   "The keratometer measures retinal thickness while the slit lamp reads spectacle power",
+   "Keratometer primarily measures corneal curvature, while slit lamp examines ocular structures",
+   "Both the keratometer and the slit lamp are used only to measure intraocular pressure",
+   "The slit lamp measures only spectacle lens power and never examines the eye itself"
+  ],
+  "a": 1,
+  "w": "The correct statement is that the keratometer measures corneal curvature while the slit lamp examines ocular structures, matching each instrument to its real job. The other options misassign their functions.",
+  "k": "Match tool to task: keratometer curvature, slit lamp structures. Reject any option that swaps or invents functions.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0262",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Keratoconus is characterized by:",
+  "o": [
+   "Progressive corneal thinning and protrusion",
+   "Painless swelling of the optic nerve head",
+   "Spontaneous displacement of the crystalline lens",
+   "Sudden intraretinal and preretinal hemorrhage"
+  ],
+  "a": 0,
+  "w": "Keratoconus is a progressive thinning and cone-shaped bulging of the cornea. It is not lens displacement, retinal bleeding, or optic nerve swelling.",
+  "k": "Keratoconus equals thinning plus conical protrusion. The '-conus' names the cone shape of the cornea.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0263",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A classic clinical feature of keratoconus is:",
+  "o": [
+   "Irregular astigmatism",
+   "Retinal detachment",
+   "Hyperopia only",
+   "Complete color blindness"
+  ],
+  "a": 0,
+  "w": "Keratoconus classically causes irregular astigmatism as the cornea distorts. Complete color blindness, pure hyperopia, and detachment are not its hallmarks.",
+  "k": "Keratoconus equals irregular astigmatism. A warped cone gives irregular, hard-to-correct cylinder.",
+  "src": "authored"
+ },
+ {
+  "id": "D0264",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A contact lens examiner may use a cobalt-blue filter with a slit lamp to observe:",
+  "o": [
+   "Red reflex",
+   "Lens power",
+   "Pupil reaction",
+   "Fluorescein"
+  ],
+  "a": 3,
+  "w": "A cobalt-blue filter on the slit lamp is used to view fluorescein, which glows under blue light. It is not for red reflex, pupil reaction, or lens power.",
+  "k": "Cobalt blue equals see fluorescein. Blue light makes the dye fluoresce.",
+  "src": "authored"
+ },
+ {
+  "id": "D0265",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to determine the optical power of a contact lens in air?",
+  "o": [
+   "Pachymeter",
+   "Keratometer",
+   "Lensometer",
+   "Slit lamp"
+  ],
+  "a": 2,
+  "w": "The optical power of a contact lens in air is measured with a lensometer. A keratometer, slit lamp, and pachymeter measure other parameters.",
+  "k": "Lens power in air equals lensometer. The instrument that reads finished-lens power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0266",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A manual lensometer is also called a:",
+  "o": [
+   "Focimeter",
+   "Keratometer",
+   "Pachometer",
+   "Ophthalmometer"
+  ],
+  "a": 0,
+  "w": "A manual lensometer is also called a focimeter. It is not a keratometer, ophthalmometer, or pachometer.",
+  "k": "Lensometer equals focimeter. Both names mean the lens-power reader.",
+  "src": "authored"
+ },
+ {
+  "id": "D0267",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is most appropriate for measuring the base curve of a rigid gas-permeable contact lens?",
+  "o": [
+   "Lensometer",
+   "Tonometer",
+   "Radiuscope",
+   "Retinoscope"
+  ],
+  "a": 2,
+  "w": "The base curve of a rigid gas-permeable lens is measured with a radiuscope. A tonometer, retinoscope, and lensometer do not measure base curve.",
+  "k": "RGP base curve equals radiuscope. The 'radius'-scope reads the back curve radius.",
+  "src": "authored"
+ },
+ {
+  "id": "D0268",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A contact lens thickness gauge measures:",
+  "o": [
+   "Tear volume",
+   "Corneal diameter",
+   "Pupil diameter",
+   "Lens thickness"
+  ],
+  "a": 3,
+  "w": "A contact lens thickness gauge measures lens thickness. It does not read corneal diameter, pupil diameter, or tear volume.",
+  "k": "Thickness gauge equals lens thickness. The name states what it measures.",
+  "src": "authored"
+ },
+ {
+  "id": "D0269",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to measure the diameter of a contact lens?",
+  "o": [
+   "Lens gauge",
+   "Ophthalmoscope",
+   "Retinoscope",
+   "Tonometer"
+  ],
+  "a": 0,
+  "w": "A lens gauge (or measuring magnifier) reads the diameter of a contact lens. A retinoscope, ophthalmoscope, and tonometer do not.",
+  "k": "Lens diameter equals lens gauge. Match the linear lens measure to a gauge.",
+  "src": "authored"
+ },
+ {
+  "id": "D0270",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The keratometer is also known as a/an:",
+  "o": [
+   "Perimeter",
+   "Pachymeter",
+   "Ophthalmometer",
+   "Aberrometer"
+  ],
+  "a": 2,
+  "w": "The keratometer is also known as an ophthalmometer. Perimeter, pachymeter, and aberrometer are different instruments.",
+  "k": "Keratometer equals ophthalmometer. Same synonym as before.",
+  "src": "authored"
+ },
+ {
+  "id": "D0271",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is useful for measuring corneal astigmatism?",
+  "o": [
+   "Tonometer",
+   "Keratometer",
+   "Pupillometer",
+   "Lensometer"
+  ],
+  "a": 1,
+  "w": "A keratometer reads the two principal corneal meridians, so it is used to measure corneal astigmatism. A lensometer, tonometer, and pupillometer do not.",
+  "k": "Corneal astigmatism equals keratometer. It compares the steep and flat corneal meridians.",
+  "src": "authored"
+ },
+ {
+  "id": "D0272",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument provides magnified examination of the contact lens and ocular surface?",
+  "o": [
+   "Slit lamp",
+   "Retinoscope",
+   "Lensometer",
+   "Trial lens set"
+  ],
+  "a": 0,
+  "w": "The slit lamp gives magnified examination of both the contact lens and the ocular surface. A lensometer, trial set, and retinoscope do not magnify the eye.",
+  "k": "Magnified lens and ocular surface equals slit lamp. The front-of-eye microscope, again.",
+  "src": "authored"
+ },
+ {
+  "id": "D0273",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A concave mirror can form:",
+  "o": [
+   "Only diminished images for every object position",
+   "Real or virtual images depending on object position",
+   "No image of any kind under any condition",
+   "Only upright virtual images regardless of distance"
+  ],
+  "a": 1,
+  "w": "A concave mirror can form real or virtual images depending on where the object sits relative to the focus. It is not limited to virtual or diminished images.",
+  "k": "Concave mirror equals real or virtual, per object position. Its image type depends on distance, so 'depends' is the answer.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0274",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The principal axis of a spherical mirror passes through the:",
+  "o": [
+   "The real object position only",
+   "The final image position only",
+   "Pole and center of curvature",
+   "The secondary focal point only"
+  ],
+  "a": 2,
+  "w": "The principal axis of a spherical mirror is the line through its pole and center of curvature. It does not pass only through the focus, object, or image.",
+  "k": "Principal axis equals pole to center of curvature. It is the central symmetry line of the mirror.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0275",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The bending of light as it passes from one medium to another is called:",
+  "o": [
+   "Refraction",
+   "Polarization",
+   "Diffraction",
+   "Reflection"
+  ],
+  "a": 0,
+  "w": "Light bending as it crosses between media is refraction. Reflection bounces, diffraction spreads at edges, and polarization filters orientation.",
+  "k": "Bending between media equals refraction. Crossing a boundary bends the ray.",
+  "src": "authored"
+ },
+ {
+  "id": "D0276",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The law governing refraction is called:",
+  "o": [
+   "Hooke's law",
+   "Boyle's law",
+   "Newton's law",
+   "Snell's law"
+  ],
+  "a": 3,
+  "w": "Refraction is governed by Snell's law, relating the indices and angles. Newton's, Boyle's, and Hooke's laws are unrelated to refraction.",
+  "k": "Refraction law equals Snell's law. Match refraction to Snell.",
+  "src": "authored"
+ },
+ {
+  "id": "D0277",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The sagittal depth of a contact lens refers to its:",
+  "o": [
+   "The total back vertex optical power of the lens",
+   "The overall horizontal diameter of the lens",
+   "Height or depth from the chord to the lens surface",
+   "The geometric center thickness of the lens only"
+  ],
+  "a": 2,
+  "w": "Sagittal depth is the height from the chord (across the lens) to the deepest point of the back surface, which drives how a lens vaults the cornea. It is not power, diameter, or thickness.",
+  "k": "Sagittal depth equals vault height from chord to surface. Think how deeply the lens sits, not its width.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0278",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is useful in determining contact lens diameter?",
+  "o": [
+   "Ophthalmoscope",
+   "Retinoscope",
+   "Tonometer",
+   "Vernier caliper"
+  ],
+  "a": 3,
+  "w": "A vernier caliper measures the diameter and dimensions of a contact lens precisely. A tonometer, retinoscope, and ophthalmoscope do not.",
+  "k": "Lens dimensions equals vernier caliper. Precise linear measure means a caliper.",
+  "src": "authored"
+ },
+ {
+  "id": "D0279",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A contact lens diameter gauge is used to measure:",
+  "o": [
+   "IOP",
+   "Corneal thickness",
+   "Lens diameter",
+   "Pupil reaction"
+  ],
+  "a": 2,
+  "w": "A contact lens diameter gauge measures lens diameter. It does not measure corneal thickness, pressure, or pupil reaction.",
+  "k": "Diameter gauge equals lens diameter. The name gives it away.",
+  "src": "authored"
+ },
+ {
+  "id": "D0280",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to examine the posterior segment of the eye rather than primarily contact lens fit?",
+  "o": [
+   "Lens gauge",
+   "Ophthalmoscope",
+   "Radiuscope",
+   "Lensometer"
+  ],
+  "a": 1,
+  "w": "An ophthalmoscope examines the posterior segment (retina and disc), unlike the fit-focused radiuscope or lens gauge. A lensometer reads lens power.",
+  "k": "Posterior segment equals ophthalmoscope. The back-of-eye viewer, not a lens-fitting tool.",
+  "src": "authored"
+ },
+ {
+  "id": "D0281",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A retinoscope may be used during contact lens practice to:",
+  "o": [
+   "Measure lens diameter",
+   "Determine refractive error",
+   "Measure corneal thickness",
+   "Inspect lens deposits"
+  ],
+  "a": 1,
+  "w": "A retinoscope in contact lens work is used to determine refractive error. It does not measure lens diameter, corneal thickness, or inspect deposits.",
+  "k": "Retinoscope equals refractive error. Even in CL practice its job is the refraction.",
+  "src": "authored"
+ },
+ {
+  "id": "D0282",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A plano-convex lens has:",
+  "o": [
+   "One plane and one concave surface",
+   "Two plane surfaces",
+   "Two concave surfaces",
+   "One plane and one convex surface"
+  ],
+  "a": 3,
+  "w": "A plano-convex lens has one flat (plano) surface and one outward-curving convex surface. Not two concave, two plane, or plane-concave.",
+  "k": "Read the name: plano plus convex equals one flat, one convex. The name lists the two surfaces.",
+  "src": "authored"
+ },
+ {
+  "id": "D0283",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The optical center of a thin lens is the point through which a ray passes:",
+  "o": [
+   "Deviating strongly toward the prism base",
+   "Deviating strongly toward the prism apex",
+   "Without significant angular deviation",
+   "With the greatest possible angular deviation"
+  ],
+  "a": 2,
+  "w": "The optical center of a thin lens lets a ray pass straight through with no meaningful bending. Rays elsewhere are deviated toward base or apex.",
+  "k": "Optical center equals no deviation. A ray through the center goes straight; only off-center rays prism.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0284",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The principal focus of a plus lens is the point where:",
+  "o": [
+   "Parallel incident rays converge",
+   "All rays are reflected",
+   "Diverging rays originate",
+   "Light becomes polarized"
+  ],
+  "a": 0,
+  "w": "The principal focus of a plus lens is where parallel incoming rays converge to a point. It is not where diverging rays originate or where light reflects or polarizes.",
+  "k": "Plus lens focus equals parallel rays converge. Converging lens gathers parallel light to the focus.",
+  "src": "authored"
+ },
+ {
+  "id": "D0285",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The standard testing distance for a Snellen chart is commonly:",
+  "o": [
+   "6 meters",
+   "12 meters",
+   "3 meters",
+   "1 meter"
+  ],
+  "a": 0,
+  "w": "The standard Snellen testing distance is 6 meters (about 20 feet), far enough that light is effectively parallel. Not 1, 3, or 12 meters.",
+  "k": "Snellen distance equals 6 m (20 ft). Six meters is the standard far test lane.",
+  "src": "authored"
+ },
+ {
+  "id": "D0286",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The radiuscope determines the:",
+  "o": [
+   "The back vertex power of a lens only",
+   "The overall diameter of a lens only",
+   "Radius of curvature of a lens surface",
+   "The central thickness of the cornea"
+  ],
+  "a": 2,
+  "w": "A radiuscope determines the radius of curvature of a lens surface, typically the back curve of a rigid lens. It does not read diameter, power, or corneal thickness.",
+  "k": "Radiuscope equals radius of curvature. The name carries 'radius'.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0287",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument measures intraocular pressure, and is relevant in contact lens practice?",
+  "o": [
+   "Tonometer",
+   "Keratometer",
+   "Radiuscope",
+   "Lensometer"
+  ],
+  "a": 0,
+  "w": "A tonometer measures intraocular pressure, relevant in contact lens practice for monitoring ocular health. A keratometer, lensometer, and radiuscope do not measure pressure.",
+  "k": "IOP equals tonometer. 'Tono' means pressure/tension.",
+  "src": "authored"
+ },
+ {
+  "id": "D0288",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Why is a tonometer relevant in contact lens practice?",
+  "o": [
+   "To measure base curve",
+   "To measure contact lens diameter",
+   "To determine lens power",
+   "To evaluate ocular health"
+  ],
+  "a": 3,
+  "w": "A tonometer matters in contact lens care because it helps evaluate overall ocular health. It does not measure lens diameter, base curve, or lens power.",
+  "k": "Tonometer in CL practice equals ocular health check. Pressure is a health parameter, not a lens spec.",
+  "src": "authored"
+ },
+ {
+  "id": "D0289",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A concave mirror is also called a:",
+  "o": [
+   "Converging mirror",
+   "Plane mirror",
+   "Diverging mirror",
+   "Cylindrical mirror"
+  ],
+  "a": 0,
+  "w": "A concave mirror is a converging mirror, focusing parallel light to a point. It is not diverging, plane, or cylindrical.",
+  "k": "Concave equals converging. The caved-in mirror gathers light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0290",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A convex mirror is a:",
+  "o": [
+   "Converging mirror",
+   "Diverging mirror",
+   "Magnifying mirror",
+   "Plane mirror"
+  ],
+  "a": 1,
+  "w": "A convex mirror is a diverging mirror, spreading reflected light. It is not converging, plane, or magnifying.",
+  "k": "Convex equals diverging. The bulging mirror spreads light (and shrinks images).",
+  "src": "authored"
+ },
+ {
+  "id": "D0291",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The center of the sphere of which a spherical mirror forms a part is called the:",
+  "o": [
+   "Center of curvature",
+   "Focal point",
+   "Pole",
+   "Vertex"
+  ],
+  "a": 0,
+  "w": "The center of the sphere from which a mirror is cut is the center of curvature. The focal point, pole, and vertex are other reference points.",
+  "k": "Center of the sphere equals center of curvature. It is the geometric center the mirror curves around.",
+  "src": "authored"
+ },
+ {
+  "id": "D0292",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The distance between the pole and center of curvature of a mirror is the:",
+  "o": [
+   "Optical distance",
+   "Vertex distance",
+   "Focal length",
+   "Radius of curvature"
+  ],
+  "a": 3,
+  "w": "The distance from the pole to the center of curvature is the radius of curvature. Focal length is half of that; vertex and optical distance are different.",
+  "k": "Pole to center equals radius of curvature. That distance is the full radius, not the focal length.",
+  "src": "authored"
+ },
+ {
+  "id": "D0293",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "For a spherical mirror, focal length is approximately:",
+  "o": [
+   "Twice the radius of curvature",
+   "Half the radius of curvature",
+   "Four times the radius",
+   "Equal to radius of curvature"
+  ],
+  "a": 1,
+  "w": "For a spherical mirror the focal length is about half the radius of curvature (f = R/2), because the focus sits midway to the center. It is not equal, double, or quadruple.",
+  "k": "Mirror focal length equals R/2. Focus lies halfway between pole and center of curvature.",
+  "src": "authored"
+ },
+ {
+  "id": "D0294",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A convex mirror always forms an image that is:",
+  "o": [
+   "Virtual and magnified",
+   "Real and inverted",
+   "Real and magnified",
+   "Virtual, upright, and diminished"
+  ],
+  "a": 3,
+  "w": "A convex mirror always gives a virtual, upright, diminished image, which is why it widens the view in security and car mirrors. It never makes a real or magnified image.",
+  "k": "Convex mirror equals virtual, upright, smaller. Always the shrunken upright image.",
+  "src": "authored"
+ },
+ {
+  "id": "D0295",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The power of a lens with a focal length of 0.50 m is:",
+  "o": [
+   "+1.00 D",
+   "+5.00 D",
+   "+0.50 D",
+   "+2.00 D"
+  ],
+  "a": 3,
+  "w": "Power is the reciprocal of focal length in meters, so P = 1/0.50 = +2.00 D. Not +0.50, +1.00, or +5.00 D.",
+  "k": "P = 1/f. A 0.50 m focus gives 1/0.5 = +2 D; invert the meters.",
+  "src": "authored"
+ },
+ {
+  "id": "D0296",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A lens with a focal length of -0.25 m has a power of:",
+  "o": [
+   "-2.00 D",
+   "+4.00 D",
+   "-4.00 D",
+   "+2.00 D"
+  ],
+  "a": 2,
+  "w": "Power equals 1 over focal length, so P = 1/(-0.25) = -4.00 D. The minus sign marks a diverging lens.",
+  "k": "P = 1/f, keep the sign. 1/(-0.25) = -4 D; a short minus focus means strong minus power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0297",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "According to Prentice's Rule, prism power is calculated as:",
+  "o": [
+   "P = F/h",
+   "P = hF/10",
+   "P = 10h/F",
+   "P = F/10h"
+  ],
+  "a": 1,
+  "w": "Prentice's rule gives prism as P = hF/10, where h is decentration in millimeters and F is lens power, dividing by 10 to convert mm to cm. The other forms invert or misplace the terms.",
+  "k": "Prentice (mm form) equals hF/10. Millimeters times power over ten gives prism dioptres.",
+  "src": "authored"
+ },
+ {
+  "id": "D0298",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A prism deviates light toward its:",
+  "o": [
+   "Optical center",
+   "Base",
+   "Apex",
+   "Center"
+  ],
+  "a": 1,
+  "w": "A prism bends light toward its base, so rays deviate baseward even though the image jumps apexward. Not toward apex, center, or optical center.",
+  "k": "Light bends toward the base; image shifts toward the apex. Keep the two directions opposite.",
+  "src": "authored"
+ },
+ {
+  "id": "D0299",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A smaller reflected corneal image on keratometry generally indicates a:",
+  "o": [
+   "Flatter cornea",
+   "Thinner cornea",
+   "Steeper cornea",
+   "More curved lens"
+  ],
+  "a": 2,
+  "w": "A smaller reflected mire on keratometry means a stronger curve, so the cornea is steeper. A larger image means flatter; thickness and lens curve are unrelated.",
+  "k": "Smaller keratometry image equals steeper cornea. More curve focuses a tighter reflection.",
+  "src": "authored"
+ },
+ {
+  "id": "D0300",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The keratometer measures corneal curvature in:",
+  "o": [
+   "Prism diopters of horizontal deviation only",
+   "Diopters and/or millimeters of radius",
+   "Centimeters of ocular axial length only",
+   "Angular degrees of meridional rotation only"
+  ],
+  "a": 1,
+  "w": "The keratometer reports corneal curvature in diopters or in millimeters of radius. Not prism diopters, degrees, or centimeters.",
+  "k": "Keratometry units equal diopters or mm of radius. Curvature reads as power or radius, not angles.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0301",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A keratometer is especially useful before fitting:",
+  "o": [
+   "Retinal implants",
+   "Contact lenses",
+   "Spectacle temples",
+   "Hearing aids"
+  ],
+  "a": 1,
+  "w": "Keratometry is especially useful before fitting contact lenses, guiding base curve choice. Hearing aids, spectacle temples, and retinal implants are unrelated.",
+  "k": "Keratometry before fitting equals contact lenses. Corneal curves matter for lens fit.",
+  "src": "authored"
+ },
+ {
+  "id": "D0302",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The corneal radius of curvature is commonly expressed in:",
+  "o": [
+   "Prism diopters",
+   "Millimeters",
+   "Centimeters only",
+   "Degrees only"
+  ],
+  "a": 1,
+  "w": "Corneal radius of curvature is expressed in millimeters. Not centimeters, prism diopters, or degrees.",
+  "k": "Corneal radius equals millimeters. A small curve radius is reported in mm.",
+  "src": "authored"
+ },
+ {
+  "id": "D0303",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The keratometer can estimate corneal refractive power from:",
+  "o": [
+   "Applanation intraocular pressure readings alone",
+   "Corneal radius and assumed refractive index",
+   "Overall ocular axial length by ultrasound alone",
+   "Entrance pupil diameter under bright light alone"
+  ],
+  "a": 1,
+  "w": "The keratometer estimates corneal power from the measured radius plus an assumed refractive index. Pupil size, IOP, and axial length are not used.",
+  "k": "Corneal power equals radius plus assumed index. It converts curve to power using a set index.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0304",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The standard keratometric index commonly used by many keratometers is approximately:",
+  "o": [
+   "1.5000",
+   "2.0000",
+   "1.000",
+   "1.3375"
+  ],
+  "a": 3,
+  "w": "Many keratometers use a standard keratometric index of about 1.3375 to convert radius to power. Not 1.000, 1.5, or 2.0.",
+  "k": "Keratometric index equals 1.3375. Memorize this conversion constant.",
+  "src": "authored"
+ },
+ {
+  "id": "D0305",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which device may be used to measure the diameter and dimensions of a contact lens during laboratory inspection?",
+  "o": [
+   "Keratometer",
+   "Ophthalmoscope",
+   "Tonometer",
+   "Vernier caliper"
+  ],
+  "a": 3,
+  "w": "During laboratory inspection, a vernier caliper measures a contact lens's diameter and dimensions. A tonometer, keratometer, and ophthalmoscope do not.",
+  "k": "Lab lens dimensions equal vernier caliper. Precise size measure means a caliper.",
+  "src": "authored"
+ },
+ {
+  "id": "D0306",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which combination is most appropriate for evaluating contact lens fit?",
+  "o": [
+   "Slit lamp with fluorescein",
+   "Lensometer with ophthalmoscope only",
+   "Perimeter with trial frame only",
+   "Tonometer with retinoscope only"
+  ],
+  "a": 0,
+  "w": "Contact lens fit is best evaluated with a slit lamp plus fluorescein, showing the tear pattern. The other paired options omit the essential slit lamp and dye.",
+  "k": "Fit evaluation equals slit lamp with fluorescein. The dye-plus-microscope pair reads the fit.",
+  "src": "authored"
+ },
+ {
+  "id": "D0307",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is considered essential for detailed clinical evaluation of contact lens wearers?",
+  "o": [
+   "Retinoscope only",
+   "Slit lamp biomicroscope",
+   "Lensometer only",
+   "Trial frame only"
+  ],
+  "a": 1,
+  "w": "The slit lamp biomicroscope is essential for detailed clinical evaluation of contact lens wearers. A lensometer, retinoscope, or trial frame alone are not enough.",
+  "k": "Essential CL evaluation tool equals slit lamp. Detailed ocular assessment needs the biomicroscope.",
+  "src": "authored"
+ },
+ {
+  "id": "D0308",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The wavelength of visible light is approximately:",
+  "o": [
+   "1-10 mm",
+   "100-200 nm",
+   "1-10 nm",
+   "380-750 nm"
+  ],
+  "a": 3,
+  "w": "Visible light spans roughly 380 to 750 nanometers. The nm-scale ranges below and the mm range are wrong by orders of magnitude.",
+  "k": "Visible light equals about 380-750 nm. Remember the violet-to-red nanometer band.",
+  "src": "authored"
+ },
+ {
+  "id": "D0309",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A patient has a prescription of -2.00 DS. What is the approximate focal length?",
+  "o": [
+   "+0.50 m",
+   "-0.25 m",
+   "-0.50 m",
+   "+2.00 m"
+  ],
+  "a": 2,
+  "w": "Focal length is the reciprocal of power, so f = 1/(-2.00) = -0.50 m. The minus marks the diverging correction for myopia.",
+  "k": "f = 1/P. A -2 D lens gives 1/(-2) = -0.5 m; invert the diopters and keep the sign.",
+  "src": "authored"
+ },
+ {
+  "id": "D0310",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A +4.00 D lens is decentered 5 mm. What prism is induced?",
+  "o": [
+   "4 prism diopters",
+   "0.5 prism diopters",
+   "2 prism diopters",
+   "1 prism diopter"
+  ],
+  "a": 2,
+  "w": "Prentice's rule gives prism = decentration (cm) x power, so 0.5 cm x 4 = 2 prism diopters. Not 0.5, 1, or 4.",
+  "k": "Prism = cm x F. 5 mm is 0.5 cm, times +4 D equals 2 prism diopters.",
+  "src": "authored"
+ },
+ {
+  "id": "D0311",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The apparent image through a prism is displaced toward the:",
+  "o": [
+   "Apex",
+   "Base",
+   "Principal axis",
+   "Optical center"
+  ],
+  "a": 0,
+  "w": "Through a prism the image appears displaced toward the apex, even though light bends toward the base. Not base, center, or axis.",
+  "k": "Image shifts toward the apex. Opposite the base-ward bending of the light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0312",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The refractive index of a medium is related to the:",
+  "o": [
+   "Thickness only",
+   "Temperature only",
+   "Speed of light in the medium",
+   "Weight of the medium"
+  ],
+  "a": 2,
+  "w": "Refractive index reflects how much light slows in a medium, defined as n = c/v. Weight, temperature alone, and thickness do not define it.",
+  "k": "Index equals speed relationship (c/v). Slower light means higher index.",
+  "src": "authored"
+ },
+ {
+  "id": "D0313",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The refractive index of a vacuum is approximately:",
+  "o": [
+   "0",
+   "0.5",
+   "2.00",
+   "1.00"
+  ],
+  "a": 3,
+  "w": "The refractive index of a vacuum is 1.00 by definition, the reference for all other media. Not 0, 0.5, or 2.",
+  "k": "Vacuum index equals 1.00. It is the baseline; everything else is higher.",
+  "src": "authored"
+ },
+ {
+  "id": "D0314",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Total internal reflection occurs when light travels:",
+  "o": [
+   "From a less dense medium into a much denser optical medium",
+   "From a denser to a less dense medium and exceeds the critical angle",
+   "At exactly normal (perpendicular) incidence to the surface",
+   "Only through a perfect vacuum where no medium is present"
+  ],
+  "a": 1,
+  "w": "Total internal reflection happens when light goes from a denser to a rarer medium and exceeds the critical angle, so it reflects back inside. It does not occur going into a denser medium or at normal incidence.",
+  "k": "TIR equals dense-to-rare beyond the critical angle. Light must be leaving the denser medium steeply enough.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0315",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The critical angle is the angle of incidence at which the refracted ray travels:",
+  "o": [
+   "Parallel to the normal",
+   "Back toward the source",
+   "At 90 degrees to the boundary",
+   "Along the boundary"
+  ],
+  "a": 3,
+  "w": "At the critical angle the refracted ray runs along the boundary (refraction angle 90 degrees to the normal). It does not go back to the source or parallel to the normal.",
+  "k": "Critical angle equals refracted ray along the surface. Just past it, light reflects internally.",
+  "src": "authored"
+ },
+ {
+  "id": "D0316",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The slit lamp is particularly important in contact lens practice for evaluating:",
+  "o": [
+   "Blood pressure",
+   "Color vision only",
+   "Lens fit and ocular response",
+   "Hearing"
+  ],
+  "a": 2,
+  "w": "In contact lens practice the slit lamp is key for evaluating lens fit and ocular response. Not blood pressure, hearing, or color alone.",
+  "k": "Slit lamp equals lens fit and ocular response. The essential CL follow-up tool.",
+  "src": "authored"
+ },
+ {
+  "id": "D0317",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The prism cover test measures ocular deviation in:",
+  "o": [
+   "Millimeters",
+   "Degrees Celsius",
+   "Prism diopters",
+   "Diopters"
+  ],
+  "a": 2,
+  "w": "The prism cover test measures deviation in prism diopters, using prisms to neutralize the movement. Not millimeters, diopters, or degrees Celsius.",
+  "k": "Deviation equals prism diopters. Ocular misalignment is graded in prism dioptres.",
+  "src": "authored"
+ },
+ {
+  "id": "D0318",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A prism is commonly measured in:",
+  "o": [
+   "Millimeters only",
+   "Degrees only",
+   "Prism diopters",
+   "Diopters"
+  ],
+  "a": 2,
+  "w": "Prism strength is measured in prism diopters. Not spherical diopters, millimeters, or degrees.",
+  "k": "Prism strength equals prism diopters. The unit for prism is the prism dioptre.",
+  "src": "authored"
+ },
+ {
+  "id": "D0319",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "One prism diopter deviates a ray of light by approximately:",
+  "o": [
+   "1 m at 1 cm",
+   "1 mm at 1 m",
+   "1 cm at 1 m",
+   "10 cm at 1 m"
+  ],
+  "a": 2,
+  "w": "One prism diopter deflects light 1 cm at 1 meter. Not 1 m at 1 cm, 10 cm, or 1 mm.",
+  "k": "1 prism diopter equals 1 cm at 1 m. The definition: 1 cm shift per metre.",
+  "src": "authored"
+ },
+ {
+  "id": "D0320",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "If an object is viewed through a prism, the apparent image is displaced toward the:",
+  "o": [
+   "Retina",
+   "Base",
+   "Apex",
+   "Optical center"
+  ],
+  "a": 2,
+  "w": "Through a prism the apparent image is displaced toward the apex. Not base, center, or retina.",
+  "k": "Image displaces apexward. Same rule: light to base, image to apex.",
+  "src": "authored"
+ },
+ {
+  "id": "D0321",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A prism with its base directed nasally is called:",
+  "o": [
+   "Base in",
+   "Base out",
+   "Base up",
+   "Base down"
+  ],
+  "a": 0,
+  "w": "A prism with its base toward the nose is base-in. Base-up, base-down, and base-out point elsewhere.",
+  "k": "Base toward nose equals base-in. Name the base direction by where it points.",
+  "src": "authored"
+ },
+ {
+  "id": "D0322",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Base-in prisms are commonly used to:",
+  "o": [
+   "Increase convergence demand",
+   "Reduce lens thickness",
+   "Reduce convergence demand",
+   "Increase accommodation"
+  ],
+  "a": 2,
+  "w": "Base-in prisms shift images to reduce the convergence demand, helping convergence excess or as relieving prism. They do not increase convergence or accommodation.",
+  "k": "Base-in equals less convergence demand. Base-in relaxes the eyes' inward pull.",
+  "src": "authored"
+ },
+ {
+  "id": "D0323",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A prism is an optical element that has:",
+  "o": [
+   "One reflecting surface only",
+   "Two nonparallel refracting surfaces",
+   "Two parallel surfaces",
+   "Three parallel surfaces"
+  ],
+  "a": 1,
+  "w": "A prism has two nonparallel (angled) refracting surfaces meeting at the apex. Parallel surfaces would make a flat plate, not a prism.",
+  "k": "Prism equals two nonparallel refracting faces. The angle between them is what makes it a prism.",
+  "src": "authored"
+ },
+ {
+  "id": "D0324",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The angle between the two refracting surfaces of a prism is called the:",
+  "o": [
+   "Critical angle",
+   "Apical angle",
+   "Angle of deviation",
+   "Angle of incidence"
+  ],
+  "a": 1,
+  "w": "The angle between a prism's two refracting surfaces is the apical angle (refracting angle). It is not the deviation, incidence, or critical angle.",
+  "k": "Angle between the faces equals apical angle. It sits at the apex where the surfaces meet.",
+  "src": "authored"
+ },
+ {
+  "id": "D0325",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The thickest part of a prism is called the:",
+  "o": [
+   "Apex",
+   "Base",
+   "Vertex",
+   "Edge"
+  ],
+  "a": 1,
+  "w": "The thickest part of a prism is the base, opposite the thin apex. Not the apex, edge, or vertex.",
+  "k": "Prism thickest part equals base. Base is the fat end, apex the thin end.",
+  "src": "authored"
+ },
+ {
+  "id": "D0326",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The thinnest part of a prism is called the:",
+  "o": [
+   "Center",
+   "Apex",
+   "Base",
+   "Meridian"
+  ],
+  "a": 1,
+  "w": "The thinnest part of a prism is the apex, where the two surfaces meet. Not the base, center, or meridian.",
+  "k": "Prism thinnest part equals apex. Apex is the point; base is the thick end.",
+  "src": "authored"
+ },
+ {
+  "id": "D0327",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is primarily used to measure the curvature of the anterior corneal surface?",
+  "o": [
+   "Lensometer",
+   "Tonometer",
+   "Retinoscope",
+   "Keratometer"
+  ],
+  "a": 3,
+  "w": "The curvature of the front corneal surface is measured with a keratometer. A lensometer, retinoscope, and tonometer measure other things.",
+  "k": "Anterior corneal curvature equals keratometer. The corneal curve reader.",
+  "src": "authored"
+ },
+ {
+  "id": "D0328",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A slit lamp is primarily used in contact lens practice to:",
+  "o": [
+   "Measure blood pressure",
+   "Examine ocular structures",
+   "Measure spectacle power only",
+   "Measure pupil size only"
+  ],
+  "a": 1,
+  "w": "In contact lens practice the slit lamp is used to examine ocular structures. Not blood pressure, spectacle power, or pupil size only.",
+  "k": "Slit lamp equals examine ocular structures. Its purpose stays the same in CL work.",
+  "src": "authored"
+ },
+ {
+  "id": "D0329",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is commonly used to evaluate fluorescein patterns on the cornea?",
+  "o": [
+   "Trial frame",
+   "Lensometer",
+   "Slit lamp",
+   "Retinoscope"
+  ],
+  "a": 2,
+  "w": "Fluorescein patterns on the cornea are evaluated with the slit lamp. A lensometer, retinoscope, and trial frame cannot.",
+  "k": "Fluorescein pattern equals slit lamp. Dye viewing means the slit lamp.",
+  "src": "authored"
+ },
+ {
+  "id": "D0330",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to verify the prescribed power of a finished contact lens?",
+  "o": [
+   "Lensometer",
+   "Pachymeter",
+   "Keratometer",
+   "Slit lamp"
+  ],
+  "a": 0,
+  "w": "The prescribed power of a finished contact lens is verified with a lensometer. A pachymeter, keratometer, and slit lamp do not read lens power.",
+  "k": "Verify lens power equals lensometer. Confirming dioptres means the lensometer.",
+  "src": "authored"
+ },
+ {
+  "id": "D0331",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is particularly important when evaluating a rigid contact lens fit?",
+  "o": [
+   "Snellen chart only",
+   "Blood pressure monitor",
+   "Slit lamp",
+   "Ophthalmoscope only"
+  ],
+  "a": 2,
+  "w": "A rigid contact lens fit is evaluated with the slit lamp (with fluorescein). A blood pressure monitor, Snellen chart, or ophthalmoscope alone will not do.",
+  "k": "Rigid lens fit equals slit lamp. The essential fit-assessment instrument.",
+  "src": "authored"
+ },
+ {
+  "id": "D0332",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to observe the fluorescein pattern with magnification?",
+  "o": [
+   "Slit lamp",
+   "Retinoscope",
+   "Radiuscope",
+   "Lensometer"
+  ],
+  "a": 0,
+  "w": "The fluorescein pattern is observed with magnification on the slit lamp. A lensometer, retinoscope, and radiuscope do not.",
+  "k": "Magnified fluorescein pattern equals slit lamp. Same dye-plus-magnifier pairing.",
+  "src": "authored"
+ },
+ {
+  "id": "D0333",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which color of visible light generally has the shortest wavelength?",
+  "o": [
+   "Yellow",
+   "Green",
+   "Red",
+   "Violet"
+  ],
+  "a": 3,
+  "w": "Violet has the shortest visible wavelength (about 380 to 450 nm) and the highest energy. Red, yellow, and green are longer.",
+  "k": "Shortest wavelength equals violet. The blue-violet end is short and high-energy.",
+  "src": "authored"
+ },
+ {
+  "id": "D0334",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which color of visible light generally has the longest wavelength?",
+  "o": [
+   "Blue",
+   "Violet",
+   "Red",
+   "Green"
+  ],
+  "a": 2,
+  "w": "Red has the longest visible wavelength (about 620 to 750 nm). Violet, blue, and green are shorter.",
+  "k": "Longest wavelength equals red. The red end is long and low-energy.",
+  "src": "authored"
+ },
+ {
+  "id": "D0335",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The unit of optical power of a lens is the:",
+  "o": [
+   "Degree",
+   "Prism diopter",
+   "Diopter",
+   "Meter"
+  ],
+  "a": 2,
+  "w": "Optical power is measured in diopters, the reciprocal of focal length in meters. Not the meter, prism diopter, or degree.",
+  "k": "Lens power equals diopters. Power is 1/f, expressed in dioptres.",
+  "src": "authored"
+ },
+ {
+  "id": "D0336",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The reciprocal of focal length in meters gives the:",
+  "o": [
+   "Refractive index",
+   "Prism power",
+   "Radius of curvature",
+   "Optical power"
+  ],
+  "a": 3,
+  "w": "Power is the reciprocal of focal length in meters, so 1/f gives optical power. Not radius, prism power, or index.",
+  "k": "1/f (in meters) equals optical power. Inverting the focal length gives dioptres.",
+  "src": "authored"
+ },
+ {
+  "id": "D0337",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A plus lens is generally:",
+  "o": [
+   "Flat on both surfaces",
+   "Thicker in the center",
+   "Always cylindrical",
+   "Thinner in the center"
+  ],
+  "a": 1,
+  "w": "A plus (converging) lens is thicker in the center and thinner at the edge. It is not edge-thick, flat, or necessarily cylindrical.",
+  "k": "Plus lens equals thick center. Convex bulges in the middle.",
+  "src": "authored"
+ },
+ {
+  "id": "D0338",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Base-out prism generally produces a demand for:",
+  "o": [
+   "Depression",
+   "Divergence",
+   "Convergence",
+   "Accommodation only"
+  ],
+  "a": 2,
+  "w": "Base-out prism shifts images outward, creating a convergence demand that the eyes meet by turning in. It does not demand divergence or accommodation.",
+  "k": "Base-out equals convergence demand. Base-out drives the eyes inward.",
+  "src": "authored"
+ },
+ {
+  "id": "D0339",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A 2 prism-diopter prism displaces a ray by how many centimeters at 1 meter?",
+  "o": [
+   "0.2 cm",
+   "20 cm",
+   "2 cm",
+   "1 cm"
+  ],
+  "a": 2,
+  "w": "By definition 2 prism diopters displaces a ray 2 cm at 1 meter (1 prism diopter equals 1 cm per meter). Not 0.2, 1, or 20 cm.",
+  "k": "Prism diopters equal cm shift at 1 m. Two prism diopters give 2 cm; scale linearly.",
+  "src": "authored"
+ },
+ {
+  "id": "D0340",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A prism of 5 prism diopters produces a displacement of approximately:",
+  "o": [
+   "10 cm at 1 m",
+   "50 cm at 1 m",
+   "5 cm at 1 m",
+   "1 cm at 5 m"
+  ],
+  "a": 2,
+  "w": "Five prism diopters displaces light 5 cm at 1 meter, following 1 cm per prism diopter per meter. Not 1 cm at 5 m or 10 to 50 cm at 1 m.",
+  "k": "5 prism diopters equal 5 cm at 1 m. Multiply prism value by the metre distance.",
+  "src": "authored"
+ },
+ {
+  "id": "D0341",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Prismatic effect in an ophthalmic lens can be calculated using:",
+  "o": [
+   "Snell's law only",
+   "Boyle's law",
+   "Newton's law",
+   "Prentice's rule"
+  ],
+  "a": 3,
+  "w": "Prismatic effect in a spectacle lens is found with Prentice's rule (prism = decentration x power). Snell's, Newton's, and Boyle's laws do not apply.",
+  "k": "Prism in a lens equals Prentice's rule. Decentration times power gives the induced prism.",
+  "src": "authored"
+ },
+ {
+  "id": "D0342",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Prentice's rule is expressed as:",
+  "o": [
+   "P = F + c",
+   "P = F/c",
+   "P = c/F",
+   "P = cF"
+  ],
+  "a": 3,
+  "w": "Prentice's rule is written P = cF, prism equals decentration in centimeters times lens power. The inverted and additive forms are wrong.",
+  "k": "Prentice equals cF (cm form). Prism is the product of decentration and power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0343",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "In Prentice's rule, P represents:",
+  "o": [
+   "Prism power",
+   "Power of the lens",
+   "Polarization",
+   "Pupil size"
+  ],
+  "a": 0,
+  "w": "In Prentice's rule P stands for prism power (in prism diopters), the induced prism. It is not lens power, pupil size, or polarization.",
+  "k": "In Prentice's rule P equals prism power. The output is the induced prism, not the lens power (that is F).",
+  "src": "authored"
+ },
+ {
+  "id": "D0344",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which aberration results from different wavelengths of light being focused at different points?",
+  "o": [
+   "Coma",
+   "Chromatic aberration",
+   "Spherical aberration",
+   "Distortion"
+  ],
+  "a": 1,
+  "w": "Chromatic aberration comes from different wavelengths focusing at different points, since each color bends differently. Spherical aberration, coma, and distortion have other causes.",
+  "k": "Wavelengths focusing apart equals chromatic aberration. Color-dependent focus means chromatic.",
+  "src": "authored"
+ },
+ {
+  "id": "D0345",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Spherical aberration occurs because:",
+  "o": [
+   "Peripheral and paraxial rays do not focus at the same point",
+   "The refracting lens surface is cylindrical, not spherical",
+   "Different wavelengths of light travel at different speeds",
+   "The incoming light has become strongly plane-polarized"
+  ],
+  "a": 0,
+  "w": "Spherical aberration arises because peripheral rays focus closer than paraxial (central) rays through a spherical lens. It is not from wavelength, cylinder, or polarization.",
+  "k": "Edge rays and center rays missing the same focus equals spherical aberration. Zone-dependent focus means spherical.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0346",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The focal length of a +5.00 D lens is:",
+  "o": [
+   "0.10 m",
+   "5.00 m",
+   "0.20 m",
+   "0.05 m"
+  ],
+  "a": 2,
+  "w": "Focal length is the reciprocal of power, so f = 1/5.00 = 0.20 m. Not 0.05, 0.10, or 5.00 m.",
+  "k": "f = 1/P. A +5 D lens gives 1/5 = 0.20 m; invert the diopters.",
+  "src": "authored"
+ },
+ {
+  "id": "D0347",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "What is the equivalent power of two thin lenses of +2.00 D and +3.00 D in contact?",
+  "o": [
+   "+2.50 D",
+   "+5.00 D",
+   "+1.00 D",
+   "+6.00 D"
+  ],
+  "a": 1,
+  "w": "Thin lenses in contact add their powers, so +2.00 D plus +3.00 D equals +5.00 D. Not +1, +2.50, or +6.",
+  "k": "Lenses in contact add: sum the powers. 2 + 3 = +5 D.",
+  "src": "authored"
+ },
+ {
+  "id": "D0348",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The refractive index of a medium is given by:",
+  "o": [
+   "n = cv",
+   "n = v/c",
+   "n = c + v",
+   "n = c/v"
+  ],
+  "a": 3,
+  "w": "Refractive index is defined as n = c/v, the speed of light in vacuum over its speed in the medium. The inverted and product forms are wrong.",
+  "k": "Index equals c/v. Vacuum speed over medium speed; a bigger slowdown means a bigger index.",
+  "src": "authored"
+ },
+ {
+  "id": "D0349",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A convex lens is also called a:",
+  "o": [
+   "Cylindrical lens",
+   "Diverging lens",
+   "Converging lens",
+   "Plano lens"
+  ],
+  "a": 2,
+  "w": "A convex lens is a converging lens, bringing parallel rays to a focus. It is not diverging, cylindrical, or plano.",
+  "k": "Convex equals converging. The bulging lens gathers light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0350",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A concave lens causes parallel rays to:",
+  "o": [
+   "Diverge",
+   "Remain parallel",
+   "Become polarized",
+   "Converge"
+  ],
+  "a": 0,
+  "w": "A concave lens diverges parallel rays, spreading them as if from a virtual focus. It does not converge them, keep them parallel, or polarize them.",
+  "k": "Concave equals diverge. The caved-in lens spreads light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0351",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The unit of lens power is:",
+  "o": [
+   "Meter",
+   "Prism",
+   "Centimeter",
+   "Diopter"
+  ],
+  "a": 3,
+  "w": "Lens power is measured in diopters, the reciprocal of focal length in meters. Not meter, centimeter, or prism.",
+  "k": "Lens power equals diopters. The standard unit of refracting power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0352",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument measures corneal curvature?",
+  "o": [
+   "Tonometer",
+   "Pupillometer",
+   "Lensometer",
+   "Keratometer"
+  ],
+  "a": 3,
+  "w": "Corneal curvature is measured with a keratometer. A tonometer, lensometer, and pupillometer measure other things.",
+  "k": "Corneal curvature equals keratometer. The corneal curve reader, once more.",
+  "src": "authored"
+ },
+ {
+  "id": "D0353",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Keratometry is particularly useful for determining:",
+  "o": [
+   "Visual field",
+   "Corneal astigmatism",
+   "Color deficiency",
+   "Retinal acuity"
+  ],
+  "a": 1,
+  "w": "Keratometry is particularly useful for determining corneal astigmatism from the two principal meridians. Not retinal acuity, color, or field.",
+  "k": "Keratometry equals corneal astigmatism. It compares the corneal meridians.",
+  "src": "authored"
+ },
+ {
+  "id": "D0354",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which lens is most appropriate for correcting simple myopia?",
+  "o": [
+   "Minus spherical",
+   "Plus spherical",
+   "Plus cylinder",
+   "Prism"
+  ],
+  "a": 0,
+  "w": "Simple myopia is corrected with a minus (diverging) spherical lens that pushes the focus back to the retina. Plus, plus cylinder, and prism do not correct it.",
+  "k": "Myopia equals minus spherical. The over-focusing eye needs diverging power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0355",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "In a minus lens, the thickest portion is generally at the:",
+  "o": [
+   "Back vertex",
+   "Optical center only",
+   "Center",
+   "Edge"
+  ],
+  "a": 3,
+  "w": "A minus (diverging) lens is thickest at the edge and thinnest at the center. Not center-thick, optical-center only, or back vertex.",
+  "k": "Minus lens equals thick edge. Concave is edge-thick, opposite the plus lens.",
+  "src": "authored"
+ },
+ {
+  "id": "D0356",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which branch of optics deals with the behavior and properties of light?",
+  "o": [
+   "Physiological optics",
+   "Ophthalmology",
+   "Geometrical anatomy",
+   "Theoretical optics"
+  ],
+  "a": 3,
+  "w": "Theoretical (geometric/physical) optics studies the behavior and properties of light. Physiological optics concerns the eye, ophthalmology is clinical, and 'geometrical anatomy' is not a field.",
+  "k": "Behavior of light equals theoretical optics. The physics-of-light branch.",
+  "src": "authored"
+ },
+ {
+  "id": "D0357",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The speed of light is greatest in:",
+  "o": [
+   "Glass",
+   "Air",
+   "Water",
+   "Vacuum"
+  ],
+  "a": 3,
+  "w": "Light travels fastest in a vacuum, where nothing slows it. It is slower in air, water, and glass.",
+  "k": "Fastest light equals vacuum. No medium means no slowing, so highest speed and index 1.",
+  "src": "authored"
+ },
+ {
+  "id": "D0358",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which law describes the relationship between the angles of incidence and refraction?",
+  "o": [
+   "Snell's law",
+   "Newton's law",
+   "Prentice's law",
+   "Boyle's law"
+  ],
+  "a": 0,
+  "w": "The relationship between the angles of incidence and refraction is Snell's law. Boyle's, Newton's, and Prentice's laws do not describe refraction.",
+  "k": "Incidence and refraction angles equal Snell's law. Refraction always maps to Snell.",
+  "src": "authored"
+ },
+ {
+  "id": "D0359",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The crystalline lens is located between the:",
+  "o": [
+   "Cornea and conjunctiva",
+   "Retina and choroid",
+   "Iris and vitreous body",
+   "Sclera and choroid"
+  ],
+  "a": 2,
+  "w": "The crystalline lens sits between the iris in front and the vitreous body behind. Not between cornea and conjunctiva, retina and choroid, or sclera and choroid.",
+  "k": "Lens sits between iris and vitreous. It hangs just behind the iris, ahead of the gel.",
+  "src": "authored"
+ },
+ {
+  "id": "D0360",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A contact lens radiuscope is used primarily to measure:",
+  "o": [
+   "Distance visual acuity in decimal",
+   "Base curve / radius of curvature",
+   "Entrance pupil diameter in mm",
+   "Intraocular pressure in mmHg"
+  ],
+  "a": 1,
+  "w": "A radiuscope measures a contact lens's base curve, its radius of curvature. Not IOP, pupil diameter, or acuity.",
+  "k": "Radiuscope equals base curve / radius. The name carries 'radius'.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0361",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to assess the fit and movement of a contact lens on the eye?",
+  "o": [
+   "Retinoscope",
+   "Perimeter",
+   "Slit lamp",
+   "Lensometer"
+  ],
+  "a": 2,
+  "w": "The fit and movement of a contact lens on the eye are assessed with the slit lamp. A lensometer, retinoscope, and perimeter cannot.",
+  "k": "Lens fit and movement equal slit lamp. The on-eye assessment tool.",
+  "src": "authored"
+ },
+ {
+  "id": "D0362",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument can measure the thickness of a soft contact lens?",
+  "o": [
+   "Retinoscope",
+   "Thickness gauge",
+   "Keratometer",
+   "Tonometer"
+  ],
+  "a": 1,
+  "w": "The thickness of a soft contact lens is measured with a thickness gauge. A keratometer, tonometer, and retinoscope do not.",
+  "k": "Soft lens thickness equals thickness gauge. The name matches the measurement.",
+  "src": "authored"
+ },
+ {
+  "id": "D0363",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is used to inspect a contact lens for deposits, scratches, and defects?",
+  "o": [
+   "Perimeter",
+   "Slit lamp",
+   "Tonometer",
+   "Retinoscope"
+  ],
+  "a": 1,
+  "w": "A contact lens is inspected for deposits, scratches, and defects using the slit lamp. A tonometer, retinoscope, and perimeter cannot.",
+  "k": "Inspect lens for defects equals slit lamp. Magnified inspection means the slit lamp.",
+  "src": "authored"
+ },
+ {
+  "id": "D0364",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is designed to measure the sagittal depth of some contact lenses?",
+  "o": [
+   "Sagittometer",
+   "Retinoscope",
+   "Tonometer",
+   "Lensometer"
+  ],
+  "a": 0,
+  "w": "The sagittal depth of some contact lenses is measured with a sagittometer. A lensometer, tonometer, and retinoscope do not.",
+  "k": "Sagittal depth equals sagittometer. The instrument name carries 'sagitta'.",
+  "src": "authored"
+ },
+ {
+  "id": "D0365",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "If the corneal radius becomes smaller, the cornea becomes:",
+  "o": [
+   "Flatter",
+   "Steeper",
+   "Thinner",
+   "More opaque"
+  ],
+  "a": 1,
+  "w": "A smaller corneal radius means a tighter curve, so the cornea is steeper. Not flatter, thinner, or more opaque.",
+  "k": "Smaller radius equals steeper cornea. Less radius means more curve.",
+  "src": "authored"
+ },
+ {
+  "id": "D0366",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "If the corneal radius becomes larger, the cornea becomes:",
+  "o": [
+   "More curved",
+   "More powerful",
+   "Steeper",
+   "Flatter"
+  ],
+  "a": 3,
+  "w": "A larger corneal radius means a gentler curve, so the cornea is flatter. Not steeper, more curved, or more powerful.",
+  "k": "Larger radius equals flatter cornea. More radius means less curve.",
+  "src": "authored"
+ },
+ {
+  "id": "D0367",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Corneal astigmatism is indicated by:",
+  "o": [
+   "Different curvature between principal meridians",
+   "A complete absence of any corneal reflection",
+   "Exactly equal right and left pupil sizes",
+   "Perfectly equal curvature in all meridians"
+  ],
+  "a": 0,
+  "w": "Corneal astigmatism shows as different curvature between the two principal meridians. Equal curvature, absent reflection, and equal pupils do not indicate it.",
+  "k": "Different power between meridians equals corneal astigmatism. Unequal meridians is the sign.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0368",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The keratometer is limited because it primarily measures the:",
+  "o": [
+   "Entire retina",
+   "Entire posterior segment",
+   "Central anterior cornea",
+   "Entire lens"
+  ],
+  "a": 2,
+  "w": "The keratometer only samples the central anterior cornea, a small zone, which is its main limitation for irregular corneas. It does not read the retina, posterior segment, or lens.",
+  "k": "Keratometer limit equals only central anterior cornea. It misses the periphery and irregular zones.",
+  "src": "authored"
+ },
+ {
+  "id": "D0369",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The keratometer is most accurate when the corneal surface is:",
+  "o": [
+   "Covered with debris",
+   "Smooth and regular",
+   "Severely irregular",
+   "Completely opaque"
+  ],
+  "a": 1,
+  "w": "The keratometer is most accurate on a smooth, regular corneal surface that reflects clean mires. Irregular, opaque, or debris-covered corneas distort the reading.",
+  "k": "Accurate keratometry equals smooth, regular cornea. Clean mires need a clean surface.",
+  "src": "authored"
+ },
+ {
+  "id": "D0370",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The standard Snellen visual acuity notation is based on:",
+  "o": [
+   "6 meters only",
+   "Pupil diameter",
+   "Accommodation amplitude",
+   "Angular resolution"
+  ],
+  "a": 3,
+  "w": "Snellen notation is based on angular resolution, the visual angle a letter's detail subtends (5 minutes overall, 1 minute per stroke). It is not defined by 6 meters, pupil size, or accommodation.",
+  "k": "Snellen equals angular resolution. The chart encodes the angle detail subtends, not the distance alone.",
+  "src": "authored"
+ },
+ {
+  "id": "D0371",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which instrument is best for measuring central corneal curvature?",
+  "o": [
+   "Lensometer",
+   "Keratometer",
+   "Retinoscope",
+   "Slit lamp"
+  ],
+  "a": 1,
+  "w": "Central corneal curvature is best measured with a keratometer. A slit lamp, lensometer, and retinoscope do not measure curvature.",
+  "k": "Central corneal curvature equals keratometer. Curvature reader for the cornea.",
+  "src": "authored"
+ },
+ {
+  "id": "D0372",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Before performing keratometry, the patient should be:",
+  "o": [
+   "Keeping both eyes tightly closed throughout",
+   "Deliberately looking away from the instrument",
+   "Properly positioned and fixating on the target",
+   "Continuously moving the head during the reading"
+  ],
+  "a": 2,
+  "w": "Before keratometry the patient should be properly positioned and fixating on the target so the mires are steady. Looking away, closing eyes, or moving would ruin it.",
+  "k": "Before keratometry equals aligned and fixating. A stable eye gives a stable reading.",
+  "src": "sanitized"
+ },
+ {
+  "id": "D0373",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The examiner should ensure that the keratometer is properly aligned with the:",
+  "o": [
+   "Ear",
+   "Patient's corneal apex",
+   "Forehead only",
+   "Chin only"
+  ],
+  "a": 1,
+  "w": "The keratometer must be aligned with the patient's corneal apex to read the true central curve. The ear, forehead, and chin are not the alignment target.",
+  "k": "Align keratometer to the corneal apex. The reading centers on the corneal cap.",
+  "src": "authored"
+ },
+ {
+  "id": "D0374",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "If the mires are not properly aligned, the keratometric reading may be:",
+  "o": [
+   "Unreliable",
+   "More accurate",
+   "Automatically corrected",
+   "Unchanged"
+  ],
+  "a": 0,
+  "w": "If the mires are misaligned, the keratometric reading is unreliable. It is not more accurate, self-correcting, or unchanged.",
+  "k": "Misaligned mires equal unreliable reading. Bad alignment means bad data.",
+  "src": "authored"
+ },
+ {
+  "id": "D0375",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "In contact lens practice, keratometry is used to help determine:",
+  "o": [
+   "Eyeglass temple length",
+   "Initial base curve selection",
+   "Color vision",
+   "Retinal circulation"
+  ],
+  "a": 1,
+  "w": "In contact lens practice keratometry guides the initial base curve selection from corneal curvature. It does not determine temple length, retinal circulation, or color vision.",
+  "k": "Keratometry in fitting equals initial base curve. The corneal curve sets the starting lens curve.",
+  "src": "authored"
+ },
+ {
+  "id": "D0376",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A minus lens is generally:",
+  "o": [
+   "Always spherical",
+   "Thicker only at the center",
+   "Thinner in the center",
+   "Thicker in the center"
+  ],
+  "a": 2,
+  "w": "A minus (diverging) lens is thinner in the center and thicker at the edge. Not thick center or always spherical.",
+  "k": "Minus lens equals thin center. Concave thins toward the middle.",
+  "src": "authored"
+ },
+ {
+  "id": "D0377",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A convex lens is also known as a:",
+  "o": [
+   "Plane lens",
+   "Cylindrical mirror",
+   "Diverging lens",
+   "Converging lens"
+  ],
+  "a": 3,
+  "w": "A convex lens is a converging lens that brings parallel light to a focus. It is not diverging, a cylindrical mirror, or a plane lens.",
+  "k": "Convex equals converging lens. Bulging lens gathers light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0378",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "A concave lens is also known as a:",
+  "o": [
+   "Converging lens",
+   "Diverging lens",
+   "Magnifying lens",
+   "Prism lens"
+  ],
+  "a": 1,
+  "w": "A concave lens is a diverging lens that spreads parallel light. It is not converging, magnifying, or a prism lens.",
+  "k": "Concave equals diverging lens. Caved-in lens spreads light.",
+  "src": "authored"
+ },
+ {
+  "id": "D0379",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "The focal point of a plus lens is the point where parallel incident rays:",
+  "o": [
+   "Become polarized",
+   "Reflect backward",
+   "Converge",
+   "Diverge"
+  ],
+  "a": 2,
+  "w": "The focal point of a plus lens is where parallel incident rays converge. They do not diverge, reflect, or polarize there.",
+  "k": "Plus lens focus equals parallel rays converge. Converging lens gathers to the focus.",
+  "src": "authored"
+ },
+ {
+  "id": "D0380",
+  "sec": "D3 Optics & Contact Lens",
+  "t": "D3 Optics & CL",
+  "q": "Which optical phenomenon is responsible for the apparent displacement of an object when viewed through a prism?",
+  "o": [
+   "Interference",
+   "Diffraction",
+   "Reflection",
+   "Refraction"
+  ],
+  "a": 3,
+  "w": "The apparent shift of an object seen through a prism is due to refraction, the bending of light at the angled surfaces. Not reflection, diffraction, or interference.",
+  "k": "Apparent displacement through a prism equals refraction. Bending at the faces moves the image.",
+  "src": "authored"
  }
 ]

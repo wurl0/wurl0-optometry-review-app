@@ -4654,5 +4654,2005 @@
   "w": "Orientation-dependent blur/distortion reflects unequal power in different meridians, that is astigmatism. Presbyopia is near-only; emmetropia has no error; colour deficiency affects hue, not line orientation.",
   "k": "\"Different in different orientations/meridians\" is the astigmatism tell. Meridian-dependent blur means cylinder.",
   "src": "authored"
+ },
+ {
+  "id": "C0292",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A central scotoma is a defect located in the:",
+  "o": [
+   "Lower eyelid",
+   "Upper eyelid",
+   "Central visual field",
+   "Extreme peripheral field"
+  ],
+  "a": 2,
+  "w": "A central scotoma is a blind or dim patch in the middle of the visual field, where central vision lives. It is not in the far periphery, and it has nothing to do with the eyelids.",
+  "k": "'Central' in the name fixes the location. Pick the central field option and ignore periphery or lid distractors.",
+  "src": "authored"
+ },
+ {
+  "id": "C0293",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Jackson cross-cylinder is primarily used to refine:",
+  "o": [
+   "Visual field",
+   "Pupil size",
+   "Color vision",
+   "Cylinder power and axis"
+  ],
+  "a": 3,
+  "w": "The Jackson cross-cylinder flips a small cylinder to compare two orientations, so it refines cylinder axis and power in subjective refraction. It has nothing to do with pupil size, fields, or color.",
+  "k": "JCC equals cylinder axis and power fine-tuning. If the stem names the cross-cylinder, the answer is about astigmatism.",
+  "src": "authored"
+ },
+ {
+  "id": "C0294",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The fogging technique is used to:",
+  "o": [
+   "Relax accommodation",
+   "Test color vision",
+   "Measure IOP",
+   "Stimulate accommodation"
+  ],
+  "a": 0,
+  "w": "Fogging adds plus power to blur distance vision, which relaxes accommodation so the refraction is not falsely minus. Stimulating accommodation would do the opposite, and it does not measure pressure or color.",
+  "k": "Fog with plus to relax focusing. The purpose is always to switch accommodation off, not on.",
+  "src": "authored"
+ },
+ {
+  "id": "C0295",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which filter enhances the visibility of fluorescein?",
+  "o": [
+   "Neutral-density filter",
+   "Cobalt-blue filter",
+   "Green filter",
+   "Red filter"
+  ],
+  "a": 1,
+  "w": "Fluorescein glows brightest under cobalt-blue light, so that filter is used to see corneal staining and lens fits. Red, green, and neutral-density filters do not excite the dye.",
+  "k": "Fluorescein plus cobalt blue go together. When the question pairs the dye with a filter, pick cobalt blue.",
+  "src": "authored"
+ },
+ {
+  "id": "C0296",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A yellow barrier filter is used with fluorescein to:",
+  "o": [
+   "Increase the contrast of fluorescein",
+   "Measure IOP",
+   "Measure corneal curvature",
+   "Measure lens power"
+  ],
+  "a": 0,
+  "w": "A yellow barrier filter blocks the blue excitation light and passes the green-yellow glow, so fluorescein stands out with more contrast. It does not measure curvature, lens power, or pressure.",
+  "k": "Yellow barrier equals more fluorescein contrast. It is an enhancer, not a measuring device.",
+  "src": "authored"
+ },
+ {
+  "id": "C0297",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "RAPD is also commonly called:",
+  "o": [
+   "Tonic pupil",
+   "Argyll Robertson pupil",
+   "Marcus Gunn pupil",
+   "Adie pupil"
+  ],
+  "a": 2,
+  "w": "A relative afferent pupillary defect is the Marcus Gunn pupil, seen on the swinging-flashlight test when one optic nerve is weaker. Argyll Robertson, Adie, and tonic pupils are different pupil syndromes.",
+  "k": "RAPD equals Marcus Gunn. The swinging-light defect has that eponym; the other names are unrelated pupils.",
+  "src": "authored"
+ },
+ {
+  "id": "C0298",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which chart is specifically designed for children who cannot read letters?",
+  "o": [
+   "ETDRS",
+   "Amsler",
+   "Ishihara",
+   "Tumbling E"
+  ],
+  "a": 3,
+  "w": "The Tumbling E chart shows the letter E in different rotations, so illiterate patients or children just point which way it opens. ETDRS uses letters, Ishihara tests color, and Amsler tests the macula.",
+  "k": "Cannot read letters equals Tumbling E (or Landolt C). Pick the direction-pointing chart.",
+  "src": "authored"
+ },
+ {
+  "id": "C0299",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Tumbling E chart requires the patient to identify the:",
+  "o": [
+   "Size of the E",
+   "Direction of the E",
+   "Number of Es",
+   "Color of the E"
+  ],
+  "a": 1,
+  "w": "On the Tumbling E chart the patient reports which way the E points, up, down, left, or right. Color, size, and counting are not what it tests.",
+  "k": "Tumbling E equals report the direction. The task is orientation, not reading or color.",
+  "src": "authored"
+ },
+ {
+  "id": "C0300",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A pachymeter is especially useful for measuring:",
+  "o": [
+   "Lens power",
+   "Corneal thickness",
+   "Contact lens diameter",
+   "Pupil size"
+  ],
+  "a": 1,
+  "w": "A pachymeter measures corneal thickness, important before refractive surgery and in glaucoma. It does not measure lens diameter, lens power, or pupil size.",
+  "k": "'Pachy' means thick, so corneal thickness. The root gives the answer.",
+  "src": "authored"
+ },
+ {
+  "id": "C0301",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Fluorescein is commonly used to detect:",
+  "o": [
+   "Retinal detachment",
+   "Refractive error",
+   "Color blindness",
+   "Corneal epithelial defects"
+  ],
+  "a": 3,
+  "w": "Fluorescein pools in breaks of the corneal epithelium and glows, revealing abrasions and ulcers. It does not measure refractive error, color vision, or detect detachment.",
+  "k": "Fluorescein equals surface (epithelial) defects. Any deep-eye or refractive option is wrong.",
+  "src": "authored"
+ },
+ {
+  "id": "C0302",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which refractive error is corrected primarily with a minus spherical lens?",
+  "o": [
+   "Aphakia",
+   "Presbyopia",
+   "Myopia",
+   "Hyperopia"
+  ],
+  "a": 2,
+  "w": "Myopia focuses light in front of the retina, so a diverging minus spherical lens pushes the focus back. Hyperopia needs plus, presbyopia needs reading adds, and aphakia needs strong plus.",
+  "k": "Minus lens equals myopia correction. Match the diverging lens to the eye that focuses too soon.",
+  "src": "authored"
+ },
+ {
+  "id": "C0303",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A yellow barrier filter used with fluorescein primarily:",
+  "o": [
+   "Measures IOP",
+   "Measures corneal curvature",
+   "Decreases contrast",
+   "Enhances fluorescein visibility"
+  ],
+  "a": 3,
+  "w": "The yellow barrier filter boosts how clearly fluorescein shows up by cutting the blue reflection. It does not measure curvature or pressure.",
+  "k": "Yellow barrier equals enhance fluorescein visibility. It is an enhancer, never a measuring tool.",
+  "src": "authored"
+ },
+ {
+  "id": "C0304",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The patient's history of present visual complaints is obtained through:",
+  "o": [
+   "Cover test",
+   "Tonometry",
+   "Keratometry",
+   "Case history"
+  ],
+  "a": 3,
+  "w": "The patient's account of the present visual complaint is gathered by taking a case history. Tonometry, keratometry, and cover test are objective measurements, not the history.",
+  "k": "Patient's story equals case history. The instrument tests measure, they do not collect the complaint.",
+  "src": "authored"
+ },
+ {
+  "id": "C0305",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which condition occurs when the eye has unequal refractive power in different meridians?",
+  "o": [
+   "Myopia",
+   "Presbyopia",
+   "Hyperopia",
+   "Astigmatism"
+  ],
+  "a": 3,
+  "w": "When the two principal meridians of the eye have different focusing power, the result is astigmatism. Myopia and hyperopia are uniform errors, and presbyopia is an age-related focusing loss.",
+  "k": "Unequal power in different meridians equals astigmatism. Uniform-error names (myopia/hyperopia) do not fit 'different meridians'.",
+  "src": "authored"
+ },
+ {
+  "id": "C0306",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A fluorescein strip is used primarily to:",
+  "o": [
+   "Estimate the spherical equivalent refractive error",
+   "Determine the back vertex power of a lens",
+   "Evaluate tear film and lens-cornea interaction",
+   "Measure central corneal thickness in microns"
+  ],
+  "a": 2,
+  "w": "A fluorescein strip stains the tear film so you can judge tear breakup and how a lens sits against the cornea. It does not measure refractive error, thickness, or lens power.",
+  "k": "Fluorescein strip equals tear film and lens-cornea assessment. It stains, it does not measure numbers.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0307",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Farnsworth-Munsell 100 Hue test evaluates:",
+  "o": [
+   "Stereoacuity",
+   "Fine color discrimination",
+   "Near point of convergence",
+   "Visual field"
+  ],
+  "a": 1,
+  "w": "The Farnsworth-Munsell 100 Hue test has patients arrange colored caps in order, grading fine color discrimination. It does not test fields, depth, or convergence.",
+  "k": "'100 Hue' means color sorting. Any test named for hue or color caps is color discrimination, not a field or depth test.",
+  "src": "authored"
+ },
+ {
+  "id": "C0308",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Confrontation testing is a basic method of assessing:",
+  "o": [
+   "Corneal curvature",
+   "Accommodation",
+   "Visual fields",
+   "Color vision"
+  ],
+  "a": 2,
+  "w": "Confrontation is a quick screen where the examiner compares the patient's field to their own, checking the visual field. It is not a color, accommodation, or curvature test.",
+  "k": "Confrontation equals gross visual field screen. Face-to-face wiggling-finger testing checks fields.",
+  "src": "authored"
+ },
+ {
+  "id": "C0309",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A perimeter is an instrument used to measure:",
+  "o": [
+   "Lens power",
+   "Visual field",
+   "Corneal thickness",
+   "Visual acuity"
+  ],
+  "a": 1,
+  "w": "A perimeter maps the visual field by finding where the patient can and cannot see targets. It does not measure acuity, corneal thickness, or lens power.",
+  "k": "Perimeter equals visual field mapper. The root 'perimeter' means the edges of vision.",
+  "src": "authored"
+ },
+ {
+  "id": "C0310",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Perimetry can detect defects involving the:",
+  "o": [
+   "Eyelids only",
+   "Lens only",
+   "Tear film only",
+   "Peripheral visual field"
+  ],
+  "a": 3,
+  "w": "Perimetry samples the whole field, so it detects peripheral field loss from glaucoma or neuro disease. It is not a lid, lens, or tear-film test.",
+  "k": "Perimetry equals field, including the periphery. Match it to field defects, not surface structures.",
+  "src": "authored"
+ },
+ {
+  "id": "C0311",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The magnification system of a slit lamp allows the examiner to:",
+  "o": [
+   "Alter the eye's refractive error during viewing",
+   "Change the curvature of the corneal surface",
+   "View ocular structures in greater detail",
+   "Raise the intraocular pressure temporarily"
+  ],
+  "a": 2,
+  "w": "Higher magnification on the slit lamp lets the examiner see fine ocular detail. It does not raise pressure, reshape the cornea, or change refraction.",
+  "k": "Magnification equals see more detail. It is an imaging aid, not something that alters the eye.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0312",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which ocular structure can be examined with a slit lamp?",
+  "o": [
+   "Only the extraocular muscles and orbit",
+   "Only the peripheral retina and optic disc",
+   "The cornea, anterior chamber, and lens",
+   "Only the lacrimal gland and drainage system"
+  ],
+  "a": 2,
+  "w": "The slit lamp examines the cornea, anterior chamber, and lens together, covering the whole anterior segment. The retina and optic disc need an ophthalmoscope, and the muscles, orbit, and lacrimal system are outside its view.",
+  "k": "Slit lamp equals the anterior segment as a whole: cornea, chamber, and lens. Choose the option naming the front structures together, not a single deep part.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0313",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The slit lamp is also called a:",
+  "o": [
+   "Retinoscope",
+   "Focimeter",
+   "Biomicroscope",
+   "Keratometer"
+  ],
+  "a": 2,
+  "w": "The slit lamp is a biomicroscope, combining a microscope with a slit beam. A keratometer measures curvature, a retinoscope finds refraction, and a focimeter reads lens power.",
+  "k": "Slit lamp equals biomicroscope. The 'bio-microscope' name matches its microscope-plus-light design.",
+  "src": "authored"
+ },
+ {
+  "id": "C0314",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The pinhole test is primarily used to determine whether reduced visual acuity is:",
+  "o": [
+   "Due to refractive error or optical factors",
+   "Due to an inherited color-vision deficiency",
+   "Due to advanced open-angle glaucoma damage",
+   "Due to a rhegmatogenous retinal detachment"
+  ],
+  "a": 0,
+  "w": "If a pinhole sharpens vision, the blur was optical (refractive), because the pinhole cuts out blur circles. Color loss, detachment, and glaucoma would not improve with a pinhole.",
+  "k": "Pinhole improves equals refractive cause. If a tiny hole helps, the problem is focus, not disease.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0315",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The duochrome test is based primarily on:",
+  "o": [
+   "Polarization",
+   "Chromatic aberration",
+   "Spherical aberration",
+   "Diffraction"
+  ],
+  "a": 1,
+  "w": "The duochrome test relies on chromatic aberration: the eye focuses red slightly behind and green slightly in front of the retina, so the two backgrounds balance the endpoint. Spherical aberration, diffraction, and polarization are not the basis.",
+  "k": "Duochrome equals chromatic aberration (red vs green focus). The color split is the working principle.",
+  "src": "authored"
+ },
+ {
+  "id": "C0316",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "In the duochrome test, the patient is usually shown:",
+  "o": [
+   "Black and white backgrounds",
+   "Blue and yellow backgrounds",
+   "Red and green backgrounds",
+   "Red and blue backgrounds"
+  ],
+  "a": 2,
+  "w": "The duochrome test shows letters on red and green backgrounds and asks which is clearer, balancing the sphere. Blue/yellow, black/white, and red/blue are not used.",
+  "k": "Duochrome equals red and green backgrounds. Remember RAM-GAP: on red add minus, on green add plus.",
+  "src": "authored"
+ },
+ {
+  "id": "C0317",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The near point of convergence (NPC) measures the closest point at which:",
+  "o": [
+   "The eyes can no longer accommodate on the target",
+   "The patient can maintain binocular single vision",
+   "The pupil constricts to a near light stimulus",
+   "The retina first responds to a bright stimulus"
+  ],
+  "a": 1,
+  "w": "Near point of convergence is the closest point the eyes can turn in and still keep single vision before one drifts out. It is about fusion, not accommodation, pupils, or retina.",
+  "k": "NPC equals closest point of single binocular vision. It tests convergence to break, not focusing.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0318",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The chief complaint refers to:",
+  "o": [
+   "The patient's refractive power",
+   "The patient's IOP",
+   "The patient's main reason for seeking care",
+   "The examiner's diagnosis"
+  ],
+  "a": 2,
+  "w": "The chief complaint is the patient's own main reason for the visit, in their words. It is not the examiner's diagnosis, the pressure, or the refraction.",
+  "k": "Chief complaint equals the patient's main problem. It is subjective and patient-stated, not a measurement.",
+  "src": "authored"
+ },
+ {
+  "id": "C0319",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which preliminary test is particularly useful for assessing the central visual field and macula?",
+  "o": [
+   "Amsler grid",
+   "Schirmer",
+   "Ishihara",
+   "Maddox rod"
+  ],
+  "a": 0,
+  "w": "The Amsler grid probes the central 10 degrees and the macula, catching central distortion. Ishihara is color, Maddox rod is alignment, Schirmer is tears.",
+  "k": "Central field and macula equals Amsler grid. Central-vision questions point to the grid.",
+  "src": "authored"
+ },
+ {
+  "id": "C0320",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which sequence best represents a typical preliminary eye examination?",
+  "o": [
+   "Case history, visual acuity, pupils, binocular/other screening tests, then ocular health screening",
+   "Contact lens fitting and dispensing first, then surgery, and finally visual acuity",
+   "Diagnostic surgery, then visual acuity measurement, followed by a brief case history",
+   "Tonometry and minor surgery first, with the patient's case history taken at the very end"
+  ],
+  "a": 0,
+  "w": "A logical prelim exam runs history first, then acuity, pupils, other binocular/screening tests, and health screening, moving from least to most invasive. Sequences that start with surgery or contact fitting are nonsense.",
+  "k": "History always comes first, invasive steps last. Reject any order that opens with surgery or fitting.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0321",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Worth 4 Dot test is primarily used to assess:",
+  "o": [
+   "Corneal curvature",
+   "Visual acuity",
+   "Binocular sensory fusion",
+   "IOP"
+  ],
+  "a": 2,
+  "w": "The Worth 4 Dot checks whether both eyes fuse or one suppresses, a test of binocular sensory fusion. It is not a curvature, acuity, or pressure test.",
+  "k": "Worth 4 Dot equals fusion and suppression. Dots seen through red/green goggles test sensory binocularity.",
+  "src": "authored"
+ },
+ {
+  "id": "C0322",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Worth 4 Dot test uses how many lights?",
+  "o": [
+   "3",
+   "6",
+   "4",
+   "2"
+  ],
+  "a": 2,
+  "w": "The Worth 4 Dot uses four lights: two green, one red, one white. Not two, three, or six.",
+  "k": "The name says four. Count is fixed at four dots.",
+  "src": "authored"
+ },
+ {
+  "id": "C0323",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The stereopsis test measures:",
+  "o": [
+   "Visual acuity only",
+   "Color perception",
+   "Contrast sensitivity only",
+   "Depth perception"
+  ],
+  "a": 3,
+  "w": "A stereopsis test measures depth perception from the slight disparity between the two eyes' images. It is not color, contrast, or plain acuity.",
+  "k": "Stereopsis equals depth perception. The 'stereo' root means three-dimensional seeing.",
+  "src": "authored"
+ },
+ {
+  "id": "C0324",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Ishihara test is primarily used to detect:",
+  "o": [
+   "Red-green color deficiency",
+   "Macular degeneration",
+   "Binocular imbalance",
+   "Glaucoma"
+  ],
+  "a": 0,
+  "w": "Ishihara plates screen for red-green color deficiency, the common inherited type. They do not detect glaucoma, macular disease, or binocular problems.",
+  "k": "Ishihara equals red-green color screen. Hidden-number color plates test color vision.",
+  "src": "authored"
+ },
+ {
+  "id": "C0325",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Ishihara plates are examples of:",
+  "o": [
+   "Contrast charts",
+   "Visual acuity charts",
+   "Stereo tests",
+   "Pseudoisochromatic plates"
+  ],
+  "a": 3,
+  "w": "Ishihara plates are pseudoisochromatic: dots of confusing colors hide a figure that color-deficient eyes miss. They are not acuity, stereo, or contrast charts.",
+  "k": "Ishihara equals pseudoisochromatic plates. The technical name describes the same color-dot design.",
+  "src": "authored"
+ },
+ {
+  "id": "C0326",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A patient with red-green color deficiency may have difficulty identifying:",
+  "o": [
+   "The base-apex direction of an ophthalmic prism",
+   "The exact location of the physiological blind spot",
+   "Certain numbers or patterns on Ishihara plates",
+   "Large high-contrast letters on a Snellen chart"
+  ],
+  "a": 2,
+  "w": "Red-green deficiency makes the hidden numbers or trails on Ishihara plates hard to read. It does not blur Snellen letters, prism direction, or the blind spot.",
+  "k": "Color deficiency shows up on color plates, not on black-letter charts. Match the difficulty to Ishihara.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0327",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The principal use of a slit lamp biomicroscope is to:",
+  "o": [
+   "Measure spectacle lens power",
+   "Measure axial length",
+   "Examine the anterior segment",
+   "Measure blood pressure"
+  ],
+  "a": 2,
+  "w": "The slit lamp biomicroscope is built to examine the anterior segment in detail. It does not read spectacle power, blood pressure, or axial length.",
+  "k": "Slit lamp equals anterior segment exam. Its core job is looking at the front of the eye.",
+  "src": "authored"
+ },
+ {
+  "id": "C0328",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Schirmer test is primarily used to evaluate:",
+  "o": [
+   "Binocular vision",
+   "Tear production",
+   "Visual acuity",
+   "Color vision"
+  ],
+  "a": 1,
+  "w": "The Schirmer test measures tear production by how far a paper strip wets in the lower lid. It is not an acuity, color, or binocular test.",
+  "k": "Schirmer equals tear volume. Paper strip in the lid means aqueous tear production.",
+  "src": "authored"
+ },
+ {
+  "id": "C0329",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A fluorescein test can be used to evaluate:",
+  "o": [
+   "Corneal staining and tear film",
+   "Accommodation",
+   "Visual field only",
+   "Color discrimination"
+  ],
+  "a": 0,
+  "w": "Fluorescein stains epithelial breaks and outlines the tear film, so it evaluates corneal staining and tears. It is not a field, color, or accommodation test.",
+  "k": "Fluorescein equals corneal staining and tear film. The dye highlights surface and tears.",
+  "src": "authored"
+ },
+ {
+  "id": "C0330",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The tear breakup time (TBUT) evaluates:",
+  "o": [
+   "Tear film stability",
+   "Retinal function",
+   "Color vision",
+   "Visual acuity"
+  ],
+  "a": 0,
+  "w": "Tear breakup time measures how long the tear film stays intact before dry spots appear, so it grades tear film stability. It is not acuity, retina, or color.",
+  "k": "TBUT equals tear film stability (quality). It times how fast the film breaks up, not how much tear there is.",
+  "src": "authored"
+ },
+ {
+  "id": "C0331",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The red reflex test is useful for detecting abnormalities involving the:",
+  "o": [
+   "Media of the eye",
+   "Lacrimal gland only",
+   "Extraocular muscles only",
+   "Eyelids only"
+  ],
+  "a": 0,
+  "w": "An abnormal or absent red reflex points to something blocking the ocular media, such as cataract or corneal opacity. Lids, muscles, and lacrimal gland are not what it screens.",
+  "k": "Red reflex equals clarity of the media. A dull reflex means an opacity in the light path.",
+  "src": "authored"
+ },
+ {
+  "id": "C0332",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The swinging flashlight test is used to assess:",
+  "o": [
+   "Accommodation",
+   "Color vision",
+   "Corneal curvature",
+   "Pupillary light responses"
+  ],
+  "a": 3,
+  "w": "The swinging flashlight test moves light between eyes to compare pupil responses, checking the afferent light pathway. It is not a color, curvature, or accommodation test.",
+  "k": "Swinging flashlight equals pupil light response (RAPD). It compares the two afferent limbs.",
+  "src": "authored"
+ },
+ {
+  "id": "C0333",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "An afferent pupillary defect is also called a:",
+  "o": [
+   "Relative accommodative defect",
+   "Corneal defect",
+   "Binocular defect",
+   "Relative afferent pupillary defect"
+  ],
+  "a": 3,
+  "w": "An afferent pupillary defect is the relative afferent pupillary defect (RAPD), a weaker constriction on the affected side. It is not an accommodative, corneal, or binocular defect.",
+  "k": "Afferent pupil defect equals RAPD. The input-side pupil problem is the relative afferent one.",
+  "src": "authored"
+ },
+ {
+  "id": "C0334",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The non-contact tonometer measures IOP using:",
+  "o": [
+   "Fluorescein only",
+   "Infrared light only",
+   "Air puff",
+   "Ultrasound"
+  ],
+  "a": 2,
+  "w": "A non-contact tonometer flattens the cornea with a puff of air to estimate pressure without touching the eye. It does not use ultrasound, dye, or infrared to measure IOP.",
+  "k": "Non-contact tonometer equals air puff. No touch means the air-puff method.",
+  "src": "authored"
+ },
+ {
+  "id": "C0335",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test evaluates the pupil's response to light?",
+  "o": [
+   "Pupillary light reflex test",
+   "The red-green duochrome balance test",
+   "The Amsler central field grid test",
+   "The Ishihara pseudoisochromatic plate test"
+  ],
+  "a": 0,
+  "w": "The pupillary light reflex test shines light to watch the pupil constrict, assessing that reflex. Ishihara, Amsler, and duochrome test color or vision, not the pupil.",
+  "k": "Pupil response to light equals the light reflex test. Match the pupil to its own reflex test.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0336",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "When light is directed into one eye, constriction of the same pupil is called the:",
+  "o": [
+   "Near response",
+   "Direct response",
+   "Consensual response",
+   "Vestibular response"
+  ],
+  "a": 1,
+  "w": "Constriction of the same eye that is lit is the direct response. The opposite eye's constriction is consensual, and near or vestibular responses are different reflexes.",
+  "k": "Same eye lit and constricting equals direct. Same side = direct, other side = consensual.",
+  "src": "authored"
+ },
+ {
+  "id": "C0337",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Constriction of the opposite pupil when light is directed into one eye is called the:",
+  "o": [
+   "Blink response",
+   "Consensual response",
+   "Accommodation response",
+   "Direct response"
+  ],
+  "a": 1,
+  "w": "When one eye is lit and the other pupil also constricts, that is the consensual response, from crossed pathway fibers. It is not the direct, accommodation, or blink response.",
+  "k": "Opposite pupil constricting equals consensual. The unlit eye reacting is the consensual limb.",
+  "src": "authored"
+ },
+ {
+  "id": "C0338",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The swinging flashlight test is particularly useful for detecting:",
+  "o": [
+   "Axial myopia in a young adult patient",
+   "Relative afferent pupillary defect",
+   "Regular corneal astigmatism at 90 degrees",
+   "Age-related presbyopic focusing loss"
+  ],
+  "a": 1,
+  "w": "The swinging flashlight test best reveals a relative afferent pupillary defect by showing a pupil that dilates as light swings to it. Myopia, astigmatism, and presbyopia are refractive, not pupil, findings.",
+  "k": "Swinging flashlight equals detect RAPD. Refractive errors have nothing to do with this test.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0339",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument can be used to measure the dimensions of the palpebral aperture?",
+  "o": [
+   "Automated projection lensometer",
+   "Ultrasound corneal pachymeter",
+   "Ruler or measuring gauge",
+   "Contact lens radiuscope unit"
+  ],
+  "a": 2,
+  "w": "The palpebral aperture (lid opening) is measured with a simple ruler or gauge in millimeters. A lensometer, radiuscope, or pachymeter measures other things.",
+  "k": "Lid opening equals ruler measurement. A linear distance needs a ruler, not an optical instrument.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0340",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test is commonly used to measure distance visual acuity?",
+  "o": [
+   "Snellen chart",
+   "Maddox rod",
+   "Ishihara test",
+   "Amsler grid"
+  ],
+  "a": 0,
+  "w": "Distance visual acuity is measured with a Snellen chart of graded letters at 6 m. Ishihara is color, Amsler is macula, Maddox rod is alignment.",
+  "k": "Distance acuity equals Snellen chart. The letter chart at 6 m is the standard acuity test.",
+  "src": "authored"
+ },
+ {
+  "id": "C0341",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Visual acuity of 6/6 means the patient:",
+  "o": [
+   "Cannot identify letters",
+   "Has severe visual impairment",
+   "Sees at 6 m what a normal observer sees at 6 m",
+   "Sees at 6 m what a normal observer sees at 12 m"
+  ],
+  "a": 2,
+  "w": "6/6 means the patient sees at 6 m what a normal eye sees at 6 m, which is normal acuity. It is not impairment, nor 6/12, nor an inability to read.",
+  "k": "6/6 equals normal (top number is test distance, bottom is normal distance). Equal numbers means normal vision.",
+  "src": "authored"
+ },
+ {
+  "id": "C0342",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument is used to measure central corneal thickness?",
+  "o": [
+   "Lensometer",
+   "Keratometer",
+   "Pachymeter",
+   "Radiuscope"
+  ],
+  "a": 2,
+  "w": "Central corneal thickness is measured with a pachymeter. A keratometer reads curvature, a lensometer lens power, and a radiuscope contact lens curves.",
+  "k": "Corneal thickness equals pachymeter. 'Pachy' (thick) points to the thickness gauge.",
+  "src": "authored"
+ },
+ {
+  "id": "C0343",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument is commonly used to measure pupil size?",
+  "o": [
+   "Pupillometer",
+   "Lensometer",
+   "Radiuscope",
+   "Keratometer"
+  ],
+  "a": 0,
+  "w": "Pupil size is measured with a pupillometer, or a simple pupil gauge. A keratometer, radiuscope, and lensometer measure other parameters.",
+  "k": "Pupil size equals pupillometer. The instrument name carries 'pupil'.",
+  "src": "authored"
+ },
+ {
+  "id": "C0344",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Presbyopia is primarily associated with:",
+  "o": [
+   "Increased axial length",
+   "Retinal detachment",
+   "Loss of accommodative ability with age",
+   "Excessive corneal curvature"
+  ],
+  "a": 2,
+  "w": "Presbyopia is the age-related loss of accommodation as the lens stiffens, so near focus fails around the forties. It is not axial length, corneal steepening, or detachment.",
+  "k": "Presbyopia equals aging loss of accommodation. 'Presby' means old; the near-focus fades with age.",
+  "src": "authored"
+ },
+ {
+  "id": "C0345",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument measures the optical power of an ophthalmic lens?",
+  "o": [
+   "Retinoscope",
+   "Lensometer",
+   "Keratometer",
+   "Tonometer"
+  ],
+  "a": 1,
+  "w": "A lensometer (focimeter) measures the power of a spectacle or contact lens. A keratometer reads corneal curves, a retinoscope refraction, and a tonometer pressure.",
+  "k": "Lens power equals lensometer. The instrument that reads a finished lens is the lensometer.",
+  "src": "authored"
+ },
+ {
+  "id": "C0346",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A retinoscope is used primarily to:",
+  "o": [
+   "Examine the optic nerve directly",
+   "Measure IOP",
+   "Measure corneal thickness",
+   "Determine refractive error objectively"
+  ],
+  "a": 3,
+  "w": "Retinoscopy objectively estimates refractive error by watching the reflex move as you sweep light across the pupil. It is not for pressure, thickness, or direct nerve viewing.",
+  "k": "Retinoscopy equals objective refraction. Watching the reflex gives the prescription without patient responses.",
+  "src": "authored"
+ },
+ {
+  "id": "C0347",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test evaluates tear production, using a paper strip?",
+  "o": [
+   "Ishihara test",
+   "Cover test",
+   "Schirmer test",
+   "Snellen test"
+  ],
+  "a": 2,
+  "w": "The Schirmer test measures tear production using a paper strip hooked over the lower lid. Snellen, Ishihara, and cover tests measure vision, color, or alignment.",
+  "k": "Tear production plus paper strip equals Schirmer. The strip that wicks tears is Schirmer.",
+  "src": "authored"
+ },
+ {
+  "id": "C0348",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Schirmer test uses:",
+  "o": [
+   "Filter paper strips",
+   "Fluorescent dye only",
+   "Prism lenses",
+   "Contact lenses"
+  ],
+  "a": 0,
+  "w": "The Schirmer test uses filter paper strips that absorb tears. It does not use dye alone, prisms, or contact lenses.",
+  "k": "Schirmer equals filter paper strips. The tool is absorbent paper, not a lens or dye.",
+  "src": "authored"
+ },
+ {
+  "id": "C0349",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Under cobalt-blue illumination, fluorescein appears:",
+  "o": [
+   "Bright crimson red",
+   "Bright yellow-green",
+   "Deep sapphire blue",
+   "A dull colorless gray"
+  ],
+  "a": 1,
+  "w": "Under cobalt-blue light, fluorescein fluoresces a bright yellow-green, marking staining and tear film. It does not look black, red, or blue.",
+  "k": "Fluorescein under blue light glows yellow-green. The excitation is blue, the emission green.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0350",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument provides magnified examination of the anterior segment?",
+  "o": [
+   "Retinoscope",
+   "Slit lamp biomicroscope",
+   "Lensometer",
+   "Trial frame"
+  ],
+  "a": 1,
+  "w": "Magnified examination of the anterior segment is done with the slit lamp biomicroscope. A lensometer, retinoscope, or trial frame do not magnify the eye.",
+  "k": "Magnified anterior-segment exam equals slit lamp. The go-to front-of-eye microscope.",
+  "src": "authored"
+ },
+ {
+  "id": "C0351",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Hyperopia is commonly corrected with:",
+  "o": [
+   "Minus spherical lens",
+   "Minus cylinder only",
+   "Plus spherical lens",
+   "Prism only"
+  ],
+  "a": 2,
+  "w": "Hyperopia focuses light behind the retina, so a converging plus spherical lens brings it forward. Minus, minus cylinder alone, and prism do not correct it.",
+  "k": "Plus lens equals hyperopia. The eye that focuses too late needs added converging power.",
+  "src": "authored"
+ },
+ {
+  "id": "C0352",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Astigmatism is commonly corrected using:",
+  "o": [
+   "Spherical lens only",
+   "Plano lens",
+   "Cylindrical or toric lens",
+   "Prism only"
+  ],
+  "a": 2,
+  "w": "Astigmatism has different power in different meridians, so a cylindrical or toric lens corrects it meridian by meridian. A sphere, prism, or plano lens cannot.",
+  "k": "Astigmatism equals cylinder/toric correction. Unequal meridians need a cylindrical, not spherical, fix.",
+  "src": "authored"
+ },
+ {
+  "id": "C0353",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A significant improvement with pinhole generally suggests:",
+  "o": [
+   "Total irreversible blindness in that eye",
+   "Complete destruction of the neural retina",
+   "Refractive or optical cause of reduced acuity",
+   "Advanced optic nerve atrophy and pallor"
+  ],
+  "a": 2,
+  "w": "If a pinhole sharply improves vision, the cause is refractive or optical, since the pinhole removes blur circles. It would not help total blindness, optic atrophy, or a destroyed retina.",
+  "k": "Pinhole improves equals optical/refractive cause. Disease that destroys the retina or nerve does not respond to a pinhole.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0354",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test evaluates the patient's ability to see colors?",
+  "o": [
+   "Cover test",
+   "Schirmer test",
+   "Ishihara test",
+   "Snellen test"
+  ],
+  "a": 2,
+  "w": "The Ishihara test checks the ability to see colors, screening red-green deficiency. Snellen tests acuity, cover tests alignment, Schirmer tears.",
+  "k": "See colors equals Ishihara. Color plates test color vision.",
+  "src": "authored"
+ },
+ {
+  "id": "C0355",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The confrontation test is used to evaluate:",
+  "o": [
+   "Accommodation",
+   "Corneal curvature",
+   "IOP",
+   "Visual fields"
+  ],
+  "a": 3,
+  "w": "The confrontation test screens the visual fields by comparing the patient's to the examiner's. It is not a curvature, accommodation, or pressure test.",
+  "k": "Confrontation equals field screen. Same as before: face-to-face field check.",
+  "src": "authored"
+ },
+ {
+  "id": "C0356",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The near point of accommodation is the closest point at which an object can be seen:",
+  "o": [
+   "With one eye closed only",
+   "Without light",
+   "Clearly",
+   "Peripherally"
+  ],
+  "a": 2,
+  "w": "The near point of accommodation is the closest distance an object can still be seen clearly, the limit of focusing. Peripheral, without light, or one-eyed conditions are not what it defines.",
+  "k": "Near point of accommodation equals closest clear point. Clarity is the criterion, not periphery or light.",
+  "src": "authored"
+ },
+ {
+  "id": "C0357",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Amplitude of accommodation refers to the:",
+  "o": [
+   "Amount of convergence",
+   "Maximum pupil size",
+   "Maximum accommodative ability",
+   "Width of the visual field"
+  ],
+  "a": 2,
+  "w": "Amplitude of accommodation is the maximum focusing power the eye can add, measured in diopters. It is not pupil size, convergence, or field width.",
+  "k": "Amplitude of accommodation equals maximum focusing ability. It is the full range of focusing power.",
+  "src": "authored"
+ },
+ {
+  "id": "C0358",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The push-up method is commonly used to measure:",
+  "o": [
+   "Color vision",
+   "Amplitude of accommodation",
+   "IOP",
+   "Corneal curvature"
+  ],
+  "a": 1,
+  "w": "The push-up method brings a target closer until it blurs to measure amplitude of accommodation. It does not measure pressure, curvature, or color.",
+  "k": "Push-up equals amplitude of accommodation. Moving a target in until blur gives the amplitude.",
+  "src": "authored"
+ },
+ {
+  "id": "C0359",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The accommodative facility test measures the ability to:",
+  "o": [
+   "Detect colors",
+   "Measure corneal thickness",
+   "Change accommodation rapidly",
+   "Detect peripheral objects"
+  ],
+  "a": 2,
+  "w": "Accommodative facility measures how quickly the eye can switch focus, usually with plus/minus flippers. It is not a color, field, or thickness test.",
+  "k": "Facility equals speed of focusing change. 'Facility' points to how fast, not how much.",
+  "src": "authored"
+ },
+ {
+  "id": "C0360",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Flipper lenses are commonly used to assess:",
+  "o": [
+   "Accommodative facility",
+   "Visual field",
+   "IOP",
+   "Corneal diameter"
+  ],
+  "a": 0,
+  "w": "Flipper (plus/minus) lenses test accommodative facility by forcing rapid focus changes. They do not test field, pressure, or corneal diameter.",
+  "k": "Flippers equal accommodative facility. The alternating lenses time focusing speed.",
+  "src": "authored"
+ },
+ {
+  "id": "C0361",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A narrow slit beam on the slit lamp is particularly useful for examining:",
+  "o": [
+   "Distance visual acuity on a letter chart",
+   "Systemic arterial blood pressure only",
+   "Retinal and choroidal circulation only",
+   "Optical sections of ocular structures"
+  ],
+  "a": 3,
+  "w": "A narrow slit beam gives a thin optical section, letting the examiner see the layers of transparent structures like the cornea. It is not for blood pressure, acuity, or retinal circulation.",
+  "k": "Narrow beam equals optical section. A thin slice reveals the depth layers of clear tissue.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0362",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which slit lamp technique is useful for examining corneal layers optically?",
+  "o": [
+   "Optical section",
+   "Diffuse illumination only",
+   "Sclerotic scatter only",
+   "Retroillumination only"
+  ],
+  "a": 0,
+  "w": "The optical section technique uses a thin slit to view corneal layers in cross-section. Retroillumination, diffuse light, and sclerotic scatter serve other purposes.",
+  "k": "Corneal layers optically equals optical section. The thin cross-section shows depth.",
+  "src": "authored"
+ },
+ {
+  "id": "C0363",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Retroillumination on the slit lamp is useful for detecting:",
+  "o": [
+   "Pupil diameter under dim illumination only",
+   "Lens or corneal opacities against a bright background",
+   "The vertical height of the palpebral fissure",
+   "Small changes in the patient's refractive error"
+  ],
+  "a": 1,
+  "w": "Retroillumination bounces light off deeper structures to backlight lens or corneal opacities against a bright background. It does not measure refraction, pupil size, or lid height.",
+  "k": "Retroillumination equals backlit opacities. Light reflected back from behind reveals opacities.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0364",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Sclerotic scatter on the slit lamp is useful in detecting:",
+  "o": [
+   "Refractive errors",
+   "Corneal abnormalities",
+   "Retinal detachment only",
+   "Optic nerve disease only"
+  ],
+  "a": 1,
+  "w": "Sclerotic scatter shoots light into the limbus so it travels through the cornea, glowing at any corneal abnormality. It is not for retina, refraction, or optic nerve.",
+  "k": "Sclerotic scatter equals corneal abnormality detection. Light piped through the cornea lights up defects.",
+  "src": "authored"
+ },
+ {
+  "id": "C0365",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Fluorescein examination on the slit lamp can help evaluate:",
+  "o": [
+   "Corneal staining and tear film",
+   "Overall ocular axial length",
+   "Back vertex power of the lens",
+   "Posterior segment retinal thickness"
+  ],
+  "a": 0,
+  "w": "Fluorescein on the slit lamp evaluates corneal staining and the tear film. It does not read lens power, retinal thickness, or axial length.",
+  "k": "Fluorescein plus slit lamp equals staining and tear film. Same dye role, viewed magnified.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0366",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The cover-uncover test is primarily used to detect:",
+  "o": [
+   "Cataract",
+   "Corneal ulcer",
+   "Tropia",
+   "Color deficiency"
+  ],
+  "a": 2,
+  "w": "The cover-uncover test detects a tropia, a manifest deviation, by watching the covered eye move as it is uncovered. It is not for cataract, ulcer, or color.",
+  "k": "Cover-uncover equals detect tropia (manifest turn). Watching the just-covered eye reveals a tropia.",
+  "src": "authored"
+ },
+ {
+  "id": "C0367",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The alternate cover test is primarily used to measure:",
+  "o": [
+   "Visual acuity",
+   "Pupil size",
+   "Total ocular deviation",
+   "Corneal power"
+  ],
+  "a": 2,
+  "w": "The alternate cover test dissociates the eyes and measures the total deviation, both tropia and phoria. It is not an acuity, corneal power, or pupil test.",
+  "k": "Alternate cover equals total deviation. Rapid alternating cover brings out the full misalignment.",
+  "src": "authored"
+ },
+ {
+  "id": "C0368",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Hirschberg test evaluates:",
+  "o": [
+   "Visual field",
+   "Color vision",
+   "Ocular alignment",
+   "Tear production"
+  ],
+  "a": 2,
+  "w": "The Hirschberg test judges ocular alignment by where the corneal light reflex falls in each eye. It is not color, tear, or field.",
+  "k": "Hirschberg equals alignment by corneal reflex. Light reflections show if the eyes point together.",
+  "src": "authored"
+ },
+ {
+  "id": "C0369",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Stereopsis refers to:",
+  "o": [
+   "Peripheral vision",
+   "Depth perception",
+   "Central acuity",
+   "Color perception"
+  ],
+  "a": 1,
+  "w": "Stereopsis is depth perception built from the two eyes' disparate views. It is not color, central acuity, or peripheral vision.",
+  "k": "Stereopsis equals depth perception. The 3D sense from two eyes.",
+  "src": "authored"
+ },
+ {
+  "id": "C0370",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A receded near point of convergence may indicate difficulty with:",
+  "o": [
+   "Distance vision only",
+   "Color vision",
+   "Peripheral vision only",
+   "Convergence"
+  ],
+  "a": 3,
+  "w": "A receded (farther) near point of convergence signals convergence difficulty, as the eyes cannot hold single vision up close. It is unrelated to color or distance-only vision.",
+  "k": "Receded NPC equals convergence problem. A pushed-back near point means weak convergence.",
+  "src": "authored"
+ },
+ {
+  "id": "C0371",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The cover test is used primarily to assess:",
+  "o": [
+   "IOP",
+   "Corneal thickness",
+   "Ocular alignment",
+   "Color vision"
+  ],
+  "a": 2,
+  "w": "The cover test assesses ocular alignment, revealing phorias and tropias. It is not for color, thickness, or pressure.",
+  "k": "Cover test equals alignment. Occluding and watching for movement checks how the eyes line up.",
+  "src": "authored"
+ },
+ {
+  "id": "C0372",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The alternate cover test is useful for measuring:",
+  "o": [
+   "Accommodation amplitude",
+   "Visual acuity",
+   "Color deficiency",
+   "Total deviation or phoria"
+  ],
+  "a": 3,
+  "w": "The alternate cover test measures the total deviation or phoria by fully dissociating the eyes. It is not for acuity, color, or accommodation.",
+  "k": "Alternate cover equals total deviation/phoria. It uncovers the whole latent-plus-manifest angle.",
+  "src": "authored"
+ },
+ {
+  "id": "C0373",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Maddox rod test is commonly used to evaluate:",
+  "o": [
+   "Visual acuity",
+   "Color blindness",
+   "Corneal curvature",
+   "Phoria"
+  ],
+  "a": 3,
+  "w": "The Maddox rod turns a light into a line seen by one eye only, revealing a phoria by where the line falls. It is not for acuity, curvature, or color.",
+  "k": "Maddox rod equals phoria. Dissociating the eyes with a red line measures the latent deviation.",
+  "src": "authored"
+ },
+ {
+  "id": "C0374",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Maddox rod converts a point light source into a:",
+  "o": [
+   "Triangle",
+   "Circle",
+   "Line",
+   "Square"
+  ],
+  "a": 2,
+  "w": "The Maddox rod's cylinders convert a point of light into a streak or line. Not a circle, triangle, or square.",
+  "k": "Maddox rod equals point into a line. The ridged lens stretches a dot into a streak.",
+  "src": "authored"
+ },
+ {
+  "id": "C0375",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Amsler grid is primarily used to assess the:",
+  "o": [
+   "Iris",
+   "Cornea",
+   "Optic nerve only",
+   "Macula"
+  ],
+  "a": 3,
+  "w": "The Amsler grid assesses the macula, where distortion or gaps signal macular disease. It is not primarily an optic nerve, cornea, or iris test.",
+  "k": "Amsler grid equals macula. Central grid checks central retina.",
+  "src": "authored"
+ },
+ {
+  "id": "C0376",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A patient viewing an Amsler grid may report:",
+  "o": [
+   "Improved color vision",
+   "Increased IOP",
+   "Improved accommodation",
+   "Metamorphopsia"
+  ],
+  "a": 3,
+  "w": "A patient with macular disease may see the Amsler grid lines as wavy, called metamorphopsia. Improved color, higher pressure, or better focusing are not grid findings.",
+  "k": "Amsler complaint equals metamorphopsia (wavy lines). Distortion on the grid signals macular trouble.",
+  "src": "authored"
+ },
+ {
+  "id": "C0377",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Contrast sensitivity testing evaluates the ability to:",
+  "o": [
+   "Detect differences in luminance",
+   "Identify colors only",
+   "Measure IOP",
+   "Measure pupil size"
+  ],
+  "a": 0,
+  "w": "Contrast sensitivity measures the faintest luminance differences a patient can detect, a fuller picture of vision than acuity. It is not color, pressure, or pupil size.",
+  "k": "Contrast sensitivity equals detecting luminance differences. It grades faint light-dark contrast, not letters alone.",
+  "src": "authored"
+ },
+ {
+  "id": "C0378",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Contrast sensitivity may be reduced even when:",
+  "o": [
+   "The cornea is absent",
+   "The patient has no retina",
+   "The pupil is completely closed",
+   "Visual acuity is relatively normal"
+  ],
+  "a": 3,
+  "w": "Contrast sensitivity can be reduced even when Snellen acuity is normal, as in early cataract or optic neuropathy. The other options describe impossible eyes.",
+  "k": "Contrast loss can hide behind normal acuity. Pick the realistic 'acuity still normal' option.",
+  "src": "authored"
+ },
+ {
+  "id": "C0379",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Amsler grid testing is particularly useful for detecting abnormalities involving the:",
+  "o": [
+   "Extraocular muscles",
+   "Tear glands",
+   "Macula and central vision",
+   "Eyelids"
+  ],
+  "a": 2,
+  "w": "The Amsler grid targets the macula and central vision, catching central distortions. Lids, tear glands, and muscles are not what it tests.",
+  "k": "Amsler grid equals macula and central vision. Central-field tool, again.",
+  "src": "authored"
+ },
+ {
+  "id": "C0380",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A Burton lamp is particularly useful for:",
+  "o": [
+   "Observing fluorescein",
+   "Measuring IOP",
+   "Measuring lens power",
+   "Measuring axial length"
+  ],
+  "a": 0,
+  "w": "A Burton lamp is an ultraviolet-blue lamp with magnifier used to view fluorescein staining and rigid lens fits. It does not measure pressure, axial length, or lens power.",
+  "k": "Burton lamp equals view fluorescein. UV-blue light plus magnifier shows the dye.",
+  "src": "authored"
+ },
+ {
+  "id": "C0381",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The forehead rest on a slit lamp provides:",
+  "o": [
+   "Tonometry",
+   "Head stabilization",
+   "Corneal illumination",
+   "Magnification"
+  ],
+  "a": 1,
+  "w": "The forehead rest steadies the patient's head against the slit lamp for a stable view. It does not illuminate, magnify, or measure pressure.",
+  "k": "Forehead rest equals head stabilization. It holds the head still, nothing optical.",
+  "src": "authored"
+ },
+ {
+  "id": "C0382",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The joystick of a slit lamp is primarily used to:",
+  "o": [
+   "Measure lens power",
+   "Change the patient's refractive error",
+   "Move and position the instrument",
+   "Change corneal curvature"
+  ],
+  "a": 2,
+  "w": "The joystick moves and focuses the whole slit lamp on the eye. It does not change refraction, read lens power, or alter the cornea.",
+  "k": "Joystick equals position the instrument. It aims the slit lamp; it changes nothing in the eye.",
+  "src": "authored"
+ },
+ {
+  "id": "C0383",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which filter is commonly used to observe fluorescein on the slit lamp?",
+  "o": [
+   "Cobalt-blue filter",
+   "Infrared filter",
+   "Neutral-density filter",
+   "Red filter"
+  ],
+  "a": 0,
+  "w": "Fluorescein is best seen through a cobalt-blue filter on the slit lamp. Red, neutral-density, and infrared filters do not excite it.",
+  "k": "Fluorescein equals cobalt-blue filter. Blue light makes the dye glow.",
+  "src": "authored"
+ },
+ {
+  "id": "C0384",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The slit beam on a slit lamp can be adjusted in terms of:",
+  "o": [
+   "Weight only",
+   "Height and width",
+   "Color only",
+   "Temperature only"
+  ],
+  "a": 1,
+  "w": "The slit beam can be varied in height and width to shape the illumination. Weight, temperature, and color-only are not adjustable beam parameters here.",
+  "k": "Slit beam adjusts in size (height and width). Think geometry of the beam, not weight or heat.",
+  "src": "authored"
+ },
+ {
+  "id": "C0385",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A broad beam of illumination on the slit lamp is useful for:",
+  "o": [
+   "Precise measurement of ocular axial length",
+   "Measurement of spectacle lens back power",
+   "General examination of the anterior segment",
+   "Isolated assessment of pupil light reaction"
+  ],
+  "a": 2,
+  "w": "A broad beam floods the anterior segment for a general overview. It does not measure axial length, spectacle power, or pupil reaction.",
+  "k": "Broad beam equals general anterior-segment survey. Wide light gives the overview.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0386",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "An abnormal or absent red reflex may suggest:",
+  "o": [
+   "Normal ocular alignment",
+   "Media opacity",
+   "Normal accommodation",
+   "Normal color vision"
+  ],
+  "a": 1,
+  "w": "An abnormal or absent red reflex suggests a media opacity like cataract blocking the light path. Normal accommodation, color, or alignment would not dull the reflex.",
+  "k": "Absent red reflex equals media opacity. Something in the light path is blocking it.",
+  "src": "authored"
+ },
+ {
+  "id": "C0387",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Pupillary distance can be measured using a:",
+  "o": [
+   "Retinoscope",
+   "Pupillometer",
+   "Tonometer",
+   "Keratometer"
+  ],
+  "a": 1,
+  "w": "Pupillary distance is measured with a pupillometer (or PD ruler). A tonometer, keratometer, and retinoscope measure other things.",
+  "k": "PD equals pupillometer. The instrument for the distance between pupils carries the name.",
+  "src": "authored"
+ },
+ {
+  "id": "C0388",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The near visual acuity test is commonly performed using:",
+  "o": [
+   "Ishihara plates",
+   "Amsler grid only",
+   "Maddox rod",
+   "Near vision chart"
+  ],
+  "a": 3,
+  "w": "Near acuity is tested with a near vision (reading) chart held at reading distance. Amsler, Ishihara, and Maddox rod test other functions.",
+  "k": "Near acuity equals near vision chart. A reading card at 40 cm tests near sight.",
+  "src": "authored"
+ },
+ {
+  "id": "C0389",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A patient who cannot read the largest letter on a distance chart should be tested using:",
+  "o": [
+   "Ishihara pseudoisochromatic color plates at the near point only",
+   "Counting fingers, hand motion, or light perception as appropriate",
+   "A red-green duochrome balancing test at six meters only",
+   "Central and peripheral corneal keratometry readings only"
+  ],
+  "a": 1,
+  "w": "If a patient cannot read the biggest chart letter, you step down to counting fingers, hand motion, then light perception. Ishihara, duochrome, and keratometry are not acuity fallbacks.",
+  "k": "Below chart letters, drop to CF, HM, LP. Grade the low-vision ladder, not a color or curvature test.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0390",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which of the following is important when taking a case history?",
+  "o": [
+   "The chief complaint, symptom duration, and prior ocular history",
+   "Only the intraocular pressure measured at this visit",
+   "Only the examiner's provisional working diagnosis and plan",
+   "Only the objective autorefractor refraction printout"
+  ],
+  "a": 0,
+  "w": "A useful case history gathers the chief complaint, how long symptoms have lasted, and previous ocular history together. The examiner's diagnosis, the pressure, and the refraction are findings recorded later, not the history itself.",
+  "k": "History equals complaint plus duration plus past ocular history combined. Pick the option that lists the patient-reported elements, not a single measured finding.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0391",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument is used to assess the corneal surface and anterior chamber under magnification?",
+  "o": [
+   "Lensometer",
+   "Pupillometer",
+   "Slit lamp biomicroscope",
+   "Radiuscope"
+  ],
+  "a": 2,
+  "w": "The corneal surface and anterior chamber are examined under magnification with the slit lamp biomicroscope. A lensometer, radiuscope, or pupillometer do not.",
+  "k": "Magnified anterior-segment exam equals slit lamp. Same instrument, phrased differently.",
+  "src": "authored"
+ },
+ {
+  "id": "C0392",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The primary purpose of a slit lamp biomicroscope is to:",
+  "o": [
+   "Objectively measure the eye's refractive error",
+   "Examine ocular structures under magnification",
+   "Measure the overall axial length of the eye",
+   "Record the patient's systemic blood pressure"
+  ],
+  "a": 1,
+  "w": "The primary purpose of the slit lamp biomicroscope is to examine ocular structures under magnification. It does not measure refraction, blood pressure, or axial length.",
+  "k": "Slit lamp equals magnified ocular exam. Its core purpose is looking, magnified.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0393",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The slit lamp uses a combination of:",
+  "o": [
+   "Ultrasound and infrared radiation",
+   "X-rays and magnification",
+   "Magnification and focused illumination",
+   "Tonometry and retinoscopy"
+  ],
+  "a": 2,
+  "w": "The slit lamp works by combining magnification with a focused slit of illumination. Not ultrasound, X-rays, or tonometry and retinoscopy.",
+  "k": "Slit lamp equals magnification plus focused light. The two-part name gives the two parts.",
+  "src": "authored"
+ },
+ {
+  "id": "C0394",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which component of the slit lamp produces the slit beam of light?",
+  "o": [
+   "Illumination system",
+   "Joystick",
+   "Microscope",
+   "Chin rest"
+  ],
+  "a": 0,
+  "w": "The illumination system of the slit lamp produces the adjustable slit beam. The microscope, chin rest, and joystick do other jobs.",
+  "k": "Slit beam comes from the illumination system. The light source makes the light.",
+  "src": "authored"
+ },
+ {
+  "id": "C0395",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The microscope of a slit lamp provides:",
+  "o": [
+   "Measurement of IOP only",
+   "Measurement of corneal curvature",
+   "Magnified viewing of the eye",
+   "Illumination only"
+  ],
+  "a": 2,
+  "w": "The microscope part of the slit lamp gives magnified viewing of the eye. It does not illuminate, measure pressure, or read curvature.",
+  "k": "Microscope equals magnified viewing. The viewing half magnifies; the lamp half lights.",
+  "src": "authored"
+ },
+ {
+  "id": "C0396",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The chin rest of a slit lamp is used to:",
+  "o": [
+   "Stabilize the patient's head",
+   "Measure corneal thickness",
+   "Measure visual acuity",
+   "Adjust illumination"
+  ],
+  "a": 0,
+  "w": "The chin rest stabilizes the patient's head for a steady slit lamp exam. It does not measure thickness, adjust light, or test acuity.",
+  "k": "Chin rest equals head stabilization. It holds the patient still.",
+  "src": "authored"
+ },
+ {
+  "id": "C0397",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The primary purpose of preliminary testing in optometry is to:",
+  "o": [
+   "Perform minor ocular surgery before any other diagnostic testing is done",
+   "Immediately prescribe and dispense contact lenses to the patient",
+   "Measure only the intraocular pressure during the first visit encounter",
+   "Establish baseline information about the patient's visual and ocular status"
+  ],
+  "a": 3,
+  "w": "Preliminary testing exists to establish baseline information about the patient's visual and ocular status before deeper testing. It is not for immediate lenses, surgery, or pressure alone.",
+  "k": "Prelim testing equals gather baseline data. The purpose is a starting picture, not treatment.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0398",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test is commonly performed first to assess visual acuity?",
+  "o": [
+   "Snellen test",
+   "Maddox rod",
+   "Amsler test",
+   "Schirmer test"
+  ],
+  "a": 0,
+  "w": "Visual acuity is usually assessed first with the Snellen test. Schirmer (tears), Amsler (macula), and Maddox rod (phoria) test other functions.",
+  "k": "First acuity check equals Snellen. The letter chart leads the exam.",
+  "src": "authored"
+ },
+ {
+  "id": "C0399",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Visual acuity is commonly recorded as:",
+  "o": [
+   "6/6 or 20/20",
+   "Prism diopters",
+   "mmHg",
+   "Diopters"
+  ],
+  "a": 0,
+  "w": "Visual acuity is recorded as a fraction like 6/6 or 20/20. It is not in mmHg, diopters, or prism diopters.",
+  "k": "Acuity equals 6/6 or 20/20 notation. The Snellen fraction is the unit.",
+  "src": "authored"
+ },
+ {
+  "id": "C0400",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which test measures unaided visual acuity?",
+  "o": [
+   "Applanation tonometry",
+   "Central corneal keratometry",
+   "Unaided visual acuity test",
+   "Ultrasound pachymetry"
+  ],
+  "a": 2,
+  "w": "Unaided visual acuity is measured with the unaided (no correction) acuity test. Keratometry, tonometry, and pachymetry measure other parameters.",
+  "k": "Unaided acuity equals the unaided acuity test. 'Without glasses' still just means an acuity chart.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0401",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The pinhole test is useful for determining whether reduced visual acuity may be improved by:",
+  "o": [
+   "Changing pupil color",
+   "Correcting refractive error",
+   "Increasing IOP",
+   "Increasing illumination"
+  ],
+  "a": 1,
+  "w": "The pinhole shows whether blurred acuity would improve by correcting refractive error, since it removes optical blur. It does not work by raising light, pressure, or changing pupil color.",
+  "k": "Pinhole equals would refraction help. It isolates the refractive component of blur.",
+  "src": "authored"
+ },
+ {
+  "id": "C0402",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Retinoscopy is primarily used to determine:",
+  "o": [
+   "Objective refractive error",
+   "Tear production",
+   "IOP",
+   "Color vision"
+  ],
+  "a": 0,
+  "w": "Retinoscopy objectively determines refractive error by neutralizing the pupil reflex. It is not for tears, pressure, or color.",
+  "k": "Retinoscopy equals objective refractive error. The reflex neutralization gives the prescription.",
+  "src": "authored"
+ },
+ {
+  "id": "C0403",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "During retinoscopy, the examiner observes the:",
+  "o": [
+   "Tear meniscus only",
+   "Corneal thickness",
+   "Retinal reflex",
+   "Pupil diameter only"
+  ],
+  "a": 2,
+  "w": "During retinoscopy the examiner watches the retinal reflex move in the pupil to judge the error. Corneal thickness, pupil diameter, and tear meniscus are not observed.",
+  "k": "Retinoscopy watches the retinal reflex. The moving red glow in the pupil is what you neutralize.",
+  "src": "authored"
+ },
+ {
+  "id": "C0404",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The red reflex can be evaluated using a:",
+  "o": [
+   "Lensometer",
+   "Direct ophthalmoscope",
+   "Keratometer",
+   "Pupillometer"
+  ],
+  "a": 1,
+  "w": "The red reflex is checked with a direct ophthalmoscope held at arm's length. A keratometer, lensometer, and pupillometer do not show it.",
+  "k": "Red reflex equals direct ophthalmoscope. The handheld scope reveals the reflex.",
+  "src": "authored"
+ },
+ {
+  "id": "C0405",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "What instrument is used to measure the horizontal visible iris diameter (HVID)?",
+  "o": [
+   "Keratometer",
+   "Tonometer",
+   "Corneal measuring gauge",
+   "Lensometer"
+  ],
+  "a": 2,
+  "w": "The horizontal visible iris diameter is measured with a corneal measuring gauge (a millimeter reticule). A keratometer, lensometer, and tonometer measure other things.",
+  "k": "HVID equals corneal measuring gauge. A linear diameter needs a millimeter scale.",
+  "src": "authored"
+ },
+ {
+  "id": "C0406",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Hirschberg test is primarily used to assess:",
+  "o": [
+   "Visual acuity",
+   "Color vision",
+   "Ocular alignment",
+   "Contrast sensitivity"
+  ],
+  "a": 2,
+  "w": "The Hirschberg test assesses ocular alignment from the position of the corneal light reflex. It is not a color, acuity, or contrast test.",
+  "k": "Hirschberg equals alignment. Corneal reflex position tells if the eyes are straight.",
+  "src": "authored"
+ },
+ {
+  "id": "C0407",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The red reflex test can help identify:",
+  "o": [
+   "Media opacity",
+   "Phoria",
+   "Color deficiency",
+   "Accommodation problems"
+  ],
+  "a": 0,
+  "w": "An abnormal red reflex helps identify a media opacity such as cataract. Phoria, color deficiency, and accommodation problems do not change the reflex.",
+  "k": "Red reflex test equals detect media opacity. A blocked reflex means something clouding the media.",
+  "src": "authored"
+ },
+ {
+  "id": "C0408",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "A slit lamp with a fluorescein evaluation is useful for assessing:",
+  "o": [
+   "Color vision using pseudoisochromatic plates",
+   "Lens centration and corneal staining",
+   "Systemic blood pressure and pulse rate",
+   "Overall spectacle frame and temple size"
+  ],
+  "a": 1,
+  "w": "A slit lamp with fluorescein assesses how a lens centers and where the cornea stains. It does not judge frame size, blood pressure, or color.",
+  "k": "Slit lamp plus fluorescein equals lens fit and corneal staining. The dye shows centration and surface breaks.",
+  "src": "sanitized"
+ },
+ {
+  "id": "C0409",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument can be used to assess tear film stability?",
+  "o": [
+   "Radiuscope",
+   "Lensometer",
+   "Slit lamp",
+   "Retinoscope"
+  ],
+  "a": 2,
+  "w": "Tear film stability is assessed on the slit lamp by watching the fluorescein film break up. A lensometer, radiuscope, and retinoscope cannot.",
+  "k": "Tear film stability equals slit lamp (with fluorescein). The film breakup is watched under magnification.",
+  "src": "authored"
+ },
+ {
+  "id": "C0410",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Tear breakup time is commonly evaluated using:",
+  "o": [
+   "Trial frame",
+   "Fluorescein and slit lamp",
+   "Keratometer alone",
+   "Lensometer"
+  ],
+  "a": 1,
+  "w": "Tear breakup time is measured with fluorescein viewed on the slit lamp, timing the first dry spot. A lensometer, keratometer alone, or trial frame will not.",
+  "k": "TBUT equals fluorescein plus slit lamp. Dye plus timing gives film stability.",
+  "src": "authored"
+ },
+ {
+  "id": "C0411",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Worth 4 Dot test evaluates:",
+  "o": [
+   "Corneal thickness",
+   "Binocular sensory status",
+   "IOP",
+   "Visual acuity only"
+  ],
+  "a": 1,
+  "w": "The Worth 4 Dot evaluates binocular sensory status, showing fusion or suppression. It is not for thickness, pressure, or acuity alone.",
+  "k": "Worth 4 Dot equals binocular sensory status. Fusion versus suppression, again.",
+  "src": "authored"
+ },
+ {
+  "id": "C0412",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The duochrome test commonly uses:",
+  "o": [
+   "Orange and violet fields",
+   "Red and green fields",
+   "Blue and yellow fields",
+   "Black and white fields"
+  ],
+  "a": 1,
+  "w": "The duochrome test presents red and green fields to balance the spherical endpoint. Blue/yellow, black/white, and orange/violet are not used.",
+  "k": "Duochrome equals red and green fields. The two-color balance test.",
+  "src": "authored"
+ },
+ {
+  "id": "C0413",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "The Amsler grid is primarily used to evaluate:",
+  "o": [
+   "Corneal curvature",
+   "Macular function",
+   "Ocular alignment",
+   "IOP"
+  ],
+  "a": 1,
+  "w": "The Amsler grid evaluates macular function, flagging central distortion or scotoma. It is not for pressure, curvature, or alignment.",
+  "k": "Amsler grid equals macular function. Central-vision map.",
+  "src": "authored"
+ },
+ {
+  "id": "C0414",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Distortion of straight lines on the Amsler grid is called:",
+  "o": [
+   "Diplopia",
+   "Scotoma",
+   "Metamorphopsia",
+   "Photophobia"
+  ],
+  "a": 2,
+  "w": "Wavy or bent straight lines on the Amsler grid are metamorphopsia, a macular sign. Diplopia, photophobia, and scotoma describe other problems.",
+  "k": "Distorted grid lines equal metamorphopsia. 'Morph' means distorted shape.",
+  "src": "authored"
+ },
+ {
+  "id": "C0415",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Visual acuity is the ability to:",
+  "o": [
+   "Detect brightness only",
+   "Detect eye pressure",
+   "Resolve fine spatial detail",
+   "Measure accommodation"
+  ],
+  "a": 2,
+  "w": "Visual acuity is the ability to resolve fine spatial detail, such as separating tiny letters. It is not brightness detection, pressure, or accommodation.",
+  "k": "Acuity equals resolving fine detail. Sharpness of detail, not brightness or focusing.",
+  "src": "authored"
+ },
+ {
+  "id": "C0416",
+  "sec": "C3 Preliminary Exam",
+  "t": "C3 Preliminary Exam",
+  "q": "Which instrument is best for detailed examination of the cornea and anterior segment?",
+  "o": [
+   "Pupillometer",
+   "Lensometer",
+   "Keratometer",
+   "Slit lamp"
+  ],
+  "a": 3,
+  "w": "The slit lamp is best for detailed examination of the cornea and anterior segment. A keratometer, lensometer, or pupillometer serve narrower roles.",
+  "k": "Detailed cornea and anterior segment equals slit lamp. The front-of-eye microscope wins.",
+  "src": "authored"
  }
 ]
