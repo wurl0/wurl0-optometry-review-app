@@ -79,6 +79,10 @@ def main():
                 "w": q["w"],
                 "k": q["k"],
             }
+            if q.get("decode"):
+                row["decode"] = q["decode"]
+            if q.get("ow"):
+                row["ow"] = q["ow"]
             if all_numeric(q):
                 row["n"] = 1
             pool.append(row)
