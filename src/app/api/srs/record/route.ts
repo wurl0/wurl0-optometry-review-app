@@ -25,6 +25,8 @@ interface IncomingItem {
   options?: unknown
   correct?: unknown
   explanation?: unknown
+  decode?: unknown
+  ow?: unknown
   subject?: unknown
   source?: unknown
   wasCorrect?: unknown
@@ -63,6 +65,9 @@ export async function POST(req: NextRequest) {
         options: Array.isArray(it.options) ? it.options.slice(0, 6).map(o => String(o).slice(0, 500)) : undefined,
         correct: it.correct as number | boolean,
         explanation: typeof it.explanation === 'string' ? it.explanation.slice(0, 4000) : '',
+        // Optional Top 2 rollout fields; stored only when the harvester sends them.
+        decode: typeof it.decode === 'string' && it.decode.trim() ? it.decode.slice(0, 4000) : undefined,
+        ow: Array.isArray(it.ow) && it.ow.length ? it.ow.slice(0, 6).map(o => String(o).slice(0, 500)) : undefined,
       },
     })
   }

@@ -13,6 +13,11 @@ export interface QuestionPayload {
   options?: string[]
   correct: number | boolean
   explanation: string
+  // Top 2 subject-exam rollout: `decode` is the sharpened correct-answer line and `ow`
+  // holds one rationale per option (same order as `options`). Both are optional; cards
+  // harvested before the rollout, or from banks without them, fall back to `explanation`.
+  decode?: string
+  ow?: string[]
 }
 
 export interface ReviewCard {

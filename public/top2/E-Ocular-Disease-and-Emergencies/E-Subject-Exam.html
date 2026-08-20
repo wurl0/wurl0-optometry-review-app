@@ -496,7 +496,7 @@ function results(){
    missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
  h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">Back to start</button></div></div>';
  const areaBreakdown=Object.keys(topicStats).map(k=>({area:k,percentage:Math.round(topicStats[k].c/topicStats[k].t*100)}));
- if(window.reportOleScore)window.reportOleScore({score:s,total:answered,areaBreakdown:areaBreakdown,wrongTopics:missed.map(x=>({area:x.t,stem:x.q,correct:x.a}))});/*WAA-SRS*/if(window.reportSrsItems){const nAns=Object.values(topicStats).reduce((x,y)=>x+y.t,0);const missedN=new Set(missed.map(x=>x.n));window.reportSrsItems(Q.slice(0,nAns).map((it,idx)=>({stem:it.q,options:it.o,correct:it.a,explanation:it.w||'',wasCorrect:!missedN.has(idx+1)})));}
+ if(window.reportOleScore)window.reportOleScore({score:s,total:answered,areaBreakdown:areaBreakdown,wrongTopics:missed.map(x=>({area:x.t,stem:x.q,correct:x.a}))});/*WAA-SRS*/if(window.reportSrsItems){const nAns=Object.values(topicStats).reduce((x,y)=>x+y.t,0);const missedN=new Set(missed.map(x=>x.n));window.reportSrsItems(Q.slice(0,nAns).map((it,idx)=>({stem:it.q,options:it.o,correct:it.a,explanation:it.w||'',decode:it.decode||'',ow:it.ow||null,wasCorrect:!missedN.has(idx+1)})));}
  body.innerHTML=h;
  document.getElementById('ag').addEventListener('click',()=>{quiz.style.display='none';intro.style.display='block';window.scrollTo(0,0);});
 }

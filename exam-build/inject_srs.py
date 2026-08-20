@@ -48,6 +48,7 @@ EXAM_INJECT = (
     "const missedN=new Set(missed.map(x=>x.n));"
     "window.reportSrsItems(Q.slice(0,nAns).map((it,idx)=>({"
     "stem:it.q,options:it.o,correct:it.a,explanation:it.w||'',"
+    "decode:it.decode||'',ow:it.ow||null,"
     "wasCorrect:!missedN.has(idx+1)})));}"
 )
 

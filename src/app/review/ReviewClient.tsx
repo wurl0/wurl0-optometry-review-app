@@ -277,21 +277,28 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
             : card.payload.options!.map((opt, i) => {
                 const isAnswer = card.payload.correct === i
                 const isPicked = selected === i
+                const ow = card.payload.ow?.[i]
                 return (
-                  <button
-                    key={i}
-                    onClick={() => handleSelect(i)}
-                    disabled={revealed}
-                    className={`w-full text-left px-4 py-3 rounded-xl border text-sm transition-colors ${
-                      revealed && isAnswer ? 'bg-green-50 border-green-400 text-green-900 font-semibold'
-                      : revealed && isPicked ? 'bg-red-50 border-red-300 text-red-900'
-                      : revealed ? 'bg-white border-gray-200 text-gray-400'
-                      : 'bg-white border-gray-200 hover:border-gray-400 text-gray-900'
-                    }`}
-                  >
-                    <span className="text-gray-400 font-semibold mr-2">{String.fromCharCode(65 + i)}</span>
-                    {opt}
-                  </button>
+                  <div key={i}>
+                    <button
+                      onClick={() => handleSelect(i)}
+                      disabled={revealed}
+                      className={`w-full text-left px-4 py-3 rounded-xl border text-sm transition-colors ${
+                        revealed && isAnswer ? 'bg-green-50 border-green-400 text-green-900 font-semibold'
+                        : revealed && isPicked ? 'bg-red-50 border-red-300 text-red-900'
+                        : revealed ? 'bg-white border-gray-200 text-gray-400'
+                        : 'bg-white border-gray-200 hover:border-gray-400 text-gray-900'
+                      }`}
+                    >
+                      <span className="text-gray-400 font-semibold mr-2">{String.fromCharCode(65 + i)}</span>
+                      {opt}
+                    </button>
+                    {revealed && ow && (
+                      <p className={`px-4 pt-1 text-xs leading-snug ${isAnswer ? 'text-green-700' : 'text-gray-500'}`}>
+                        {ow}
+                      </p>
+                    )}
+                  </div>
                 )
               })}
         </div>
@@ -306,9 +313,9 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
                       ? '✗ It had faded — back into the queue from the bottom'
                       : '✗ Missed again — resets to tomorrow')}
               </p>
-              {card.payload.explanation && (
+              {(card.payload.decode || card.payload.explanation) && (
                 <p className={`text-sm leading-relaxed ${selected === card.payload.correct ? 'text-green-800' : 'text-orange-800'}`}>
-                  {card.payload.explanation}
+                  {card.payload.decode || card.payload.explanation}
                 </p>
               )}
             </div>
