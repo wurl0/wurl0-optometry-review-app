@@ -31,13 +31,20 @@ function questionId(stem) {
   return h.toString(16).padStart(8, '0') + '-' + s.length.toString(36)
 }
 
-// --- build qid -> {decode, ow} from the exam-build subject banks ---
+// --- build qid -> canonical {options, correct, decode, ow} from the subject banks ---
+// We overwrite options+correct+ow+decode together (not just decode/ow): a card's stored
+// options were shuffled at harvest time, so grafting bank-order ow onto them misaligns the
+// per-option rationale. Replacing the whole set with the bank's canonical order keeps ow,
+// options, and correct consistent with each other.
 const patch = new Map()
 for (const L of ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']) {
   const bank = JSON.parse(readFileSync(join(HERE, 'banks', `${L}.json`), 'utf8'))
   for (const q of bank) {
     if (!q.decode && !q.ow) continue
-    patch.set(questionId(q.q), { decode: q.decode || undefined, ow: q.ow || undefined })
+    patch.set(questionId(q.q), {
+      options: q.o, correct: q.a,
+      decode: q.decode || undefined, ow: q.ow || undefined,
+    })
   }
 }
 console.log(`patches available: ${patch.size} questions`)
@@ -60,9 +67,13 @@ for (;;) {
     const p = row.payload || {}
     const hit = patch.get(row.question_id) || (p.stem ? patch.get(questionId(p.stem)) : null)
     if (!hit) continue
-    // Skip rows already carrying the same decode (idempotent re-runs).
-    if (p.decode === hit.decode && JSON.stringify(p.ow) === JSON.stringify(hit.ow)) continue
-    const next = { ...p, decode: hit.decode, ow: hit.ow }
+    // Skip rows already canonical (idempotent re-runs).
+    if (p.decode === hit.decode && p.correct === hit.correct
+        && JSON.stringify(p.ow) === JSON.stringify(hit.ow)
+        && JSON.stringify(p.options) === JSON.stringify(hit.options)) continue
+    // Overwrite options+correct+ow+decode together so the per-option rationale stays
+    // aligned with the options (the stored options were shuffled at harvest time).
+    const next = { ...p, options: hit.options, correct: hit.correct, decode: hit.decode, ow: hit.ow }
     changed++
     if (APPLY) {
       const { error: upErr } = await db
