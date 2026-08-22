@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 8 · Drug-Induced Signs &amp; Toxidromes</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;
+    background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
+    </div>
+    <div class="card-no">Card<b>08</b>Drug tox</div>
+  </header>
+
+  <h1>Drugs leave <em>fingerprints</em>: signs, colors, and pupils</h1>
+  <p class="dek">A whole band of pharma items on the preboard were "which drug does this to the eye." They are pure recognition: each drug stamps a specific mark on the cornea, lens, color vision, or pupil. Learn the fingerprint and the drug names itself. This card also covers the two safety families the board loves: drugs of abuse (by pupil) and drugs in pregnancy.</p>
+
+  <section>
+    <h2><span class="n">01</span> Color-vision toxicities</h2>
+    <p>Three named culprits, two axes. Get the axis right and the drug follows.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Two color-vision axes: red-green defect from ethambutol, blue-yellow defect from digitalis and ethanol">
+        <rect x="40" y="40" width="560" height="26" rx="6" fill="none" stroke="var(--line)"/>
+        <rect x="40" y="40" width="280" height="26" fill="#C0392B" opacity="0.5"/>
+        <rect x="320" y="40" width="280" height="26" fill="#1F7A4D" opacity="0.5"/>
+        <text x="180" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">red</text>
+        <text x="460" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">green</text>
+        <text x="320" y="86" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--ink)">red-green defect = Ethambutol</text>
+        <rect x="40" y="100" width="560" height="26" rx="6" fill="none" stroke="var(--line)"/>
+        <rect x="40" y="100" width="280" height="26" fill="#2f6fdb" opacity="0.5"/>
+        <rect x="320" y="100" width="280" height="26" fill="#d99a16" opacity="0.6"/>
+        <text x="180" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">blue</text>
+        <text x="460" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">yellow</text>
+        <text x="320" y="146" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--ink)">blue-yellow defect = Digitalis, Ethanol</text>
+      </svg>
+      <figcaption>ethambutol on the red-green axis; digitalis and alcohol on blue-yellow</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Drug</th><th>Color defect</th><th>Hook</th></tr></thead>
+        <tbody>
+          <tr><td><b>Ethambutol</b> (anti-TB)</td><td class="rx">red-green</td><td>"Ethambutol = Eyes" optic neuritis; red-green</td></tr>
+          <tr><td><b>Digitalis</b> (cardiac glycoside)</td><td class="rx">blue-yellow (xanthopsia, yellow halos)</td><td>digitalis paints the world yellow</td></tr>
+          <tr><td><b>Ethanol</b> (chronic, brandy)</td><td class="rx">blue-yellow</td><td>toxic/nutritional optic neuropathy</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact flip</div>
+      <p>You put ethambutol as blue-green and digitalis as red-green. Reverse: <b>ethambutol = red-green</b>, <b>digitalis = blue-yellow</b>. Ethanol sits with digitalis on blue-yellow.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Cornea and lens deposits</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Sign</th><th>Drug</th></tr></thead>
+        <tbody>
+          <tr><td>whorl-like ("vortex") corneal deposits, cornea verticillata</td><td class="rx">Chloroquine / hydroxychloroquine (also amiodarone)</td></tr>
+          <tr><td>posterior subcapsular cataract + secondary open-angle glaucoma</td><td class="rx">Corticosteroids</td></tr>
+          <tr><td>posterior subcapsular cataract (long-term)</td><td class="rx">Statins (simvastatin, pravastatin)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>Whorl-like cornea = <b>chloroquine</b> (you put digitalis; digitalis hits color vision, not the cornea). And corticosteroids' ocular effects are <b>PSC cataract, glaucoma, dilated pupil</b>. Hyperglycemia is a systemic steroid effect, so it is the odd one out in an "ocular effect except" stem.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Systemic drugs with ocular side effects</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Drug</th><th>Ocular effect</th></tr></thead>
+        <tbody>
+          <tr><td><b>Hydrochlorothiazide</b> (thiazide diuretic)</td><td class="rx">dry eyes</td></tr>
+          <tr><td><b>Oral contraceptives</b></td><td class="rx">retinal vein/artery occlusion (thrombosis), contact-lens intolerance; NOT hyperopia</td></tr>
+          <tr><td><b>Aminoglycosides</b> (parenteral, &gt;5 days)</td><td class="rx">ototoxicity + nephrotoxicity (systemic)</td></tr>
+          <tr><td><b>Corticosteroids</b></td><td class="rx">PSC cataract, secondary open-angle glaucoma</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">"Except" logic</div>
+      <p>Oral contraceptives cause vascular/thrombotic problems, so in an "ocular side effect except" stem the answer is the non-vascular refractive option (hyperopia). Read "except" items by finding the one that does not fit the mechanism.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Band keratopathy: the calcium company</h2>
+    <p>Band keratopathy is calcium laid down in the cornea, so its causes are the things that raise calcium or chronically inflame the eye.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Causes band keratopathy</th><th>Does NOT</th></tr></thead>
+        <tbody>
+          <tr><td>hypercalcemia, hyperparathyroidism</td><td class="rx">hyperthyroidism</td></tr>
+          <tr><td>excess vitamin D, chronic uveitis, phenylmercuric nitrate</td><td>(thyroid does not raise calcium)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>"Not a cause of band keratopathy" = <b>hyperthyroidism</b> (you put excess vitamin D, which DOES cause it via hypercalcemia). Anchor: band keratopathy = calcium, and thyroid is not a calcium problem.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Toxidromes: read the pupil</h2>
+    <p class="lead">Two drug families, opposite pupils. This is a give-away once you anchor it: <span class="term">opioids constrict, stimulants dilate.</span></p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 180" role="img" aria-label="Opioids cause pinpoint miosis; stimulants cause dilated mydriasis">
+        <circle cx="170" cy="80" r="66" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="170" cy="80" r="42" fill="none" stroke="var(--ink-faint)" stroke-width="1.5"/>
+        <circle cx="170" cy="80" r="9" fill="var(--ink)"/>
+        <text x="170" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">Opioids → miosis</text>
+        <text x="170" y="180" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">morphine, heroin, meperidine</text>
+        <circle cx="470" cy="80" r="66" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="470" cy="80" r="46" fill="var(--ink)"/>
+        <text x="470" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">Stimulants → mydriasis</text>
+        <text x="470" y="180" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">cocaine, methamphetamine</text>
+      </svg>
+      <figcaption>pinpoint = opioid; blown = stimulant</figcaption>
+    </figure>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>You marked morphine as dilated, even though you correctly called heroin and meperidine constricted. They are all opioids, so all three give <b>miosis</b>. Same class = same pupil. Cocaine and methamphetamine are stimulants = <b>mydriasis</b>.</p>
+    </div>
+    <div class="cal mnem">
+      <div class="lab">Also here</div>
+      <p>Most commonly abused OTC drug = <b>acetaminophen</b> (paracetamol). Most abused non-OTC antibiotic = amoxicillin.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Drugs in pregnancy</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Need</th><th>Safe</th><th>Avoid</th></tr></thead>
+        <tbody>
+          <tr><td>Antibiotic</td><td class="rx">ampicillin (penicillins)</td><td class="wrong">tetracycline (stains teeth, bone)</td></tr>
+          <tr><td>Lower blood sugar</td><td class="rx">insulin</td><td class="wrong">metformin and oral agents</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">Why insulin, why not tetracycline</div>
+      <p>Insulin is a large protein that does not cross the placenta, so it is the safe glucose drug in pregnancy. Tetracycline chelates calcium in developing teeth and bone, so it is contraindicated. These two show up as "safe in pregnancy" stems every cycle.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Rebuild it on paper</h2>
+    <p>These are recognition items, so drill them as fingerprint-to-drug. Close the card and answer from the sign.</p>
+    <div class="drill"><div class="t">1 &middot; Color-vision axes</div><p>Draw the two axes and place ethambutol, digitalis, and ethanol. Then say each drug's defect from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Deposit table blind</div><p>Write which drug causes vortex cornea, which cause posterior subcapsular cataract, and the full ocular effects of corticosteroids.</p></div>
+    <div class="drill"><div class="t">3 &middot; The pupil sort</div><p>List morphine, heroin, meperidine, cocaine, methamphetamine and mark each pupil. Group them into the two families.</p></div>
+    <div class="drill"><div class="t">4 &middot; Band keratopathy causes</div><p>Write the calcium-linked causes and the one distractor (hyperthyroidism). Explain why in one line.</p></div>
+    <div class="drill"><div class="t">5 &middot; Pregnancy pairs</div><p>Safe vs avoid for antibiotics and for glucose control, with the one-line reason for each.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab review queue on the 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Ethambutol color defect?</span> <span class="a">Red-green (plus optic neuritis).</span></li>
+      <li><span class="q">Digitalis color defect?</span> <span class="a">Blue-yellow (xanthopsia, yellow vision).</span></li>
+      <li><span class="q">Whorl-like corneal deposits (cornea verticillata)?</span> <span class="a">Chloroquine / hydroxychloroquine (also amiodarone).</span></li>
+      <li><span class="q">Ocular effects of corticosteroids?</span> <span class="a">Posterior subcapsular cataract, secondary open-angle glaucoma, dilated pupil (hyperglycemia is systemic).</span></li>
+      <li><span class="q">Ocular side effect of hydrochlorothiazide?</span> <span class="a">Dry eyes.</span></li>
+      <li><span class="q">Oral contraceptive ocular risk, and the "except"?</span> <span class="a">Retinal vein/artery occlusion, CL intolerance; not hyperopia.</span></li>
+      <li><span class="q">Systemic toxicity of parenteral aminoglycosides?</span> <span class="a">Ototoxicity and nephrotoxicity.</span></li>
+      <li><span class="q">Which does NOT cause band keratopathy?</span> <span class="a">Hyperthyroidism (the rest raise calcium).</span></li>
+      <li><span class="q">Opioids do what to the pupil?</span> <span class="a">Miosis (morphine, heroin, meperidine).</span></li>
+      <li><span class="q">Stimulants do what to the pupil?</span> <span class="a">Mydriasis (cocaine, methamphetamine).</span></li>
+      <li><span class="q">Most commonly abused OTC drug?</span> <span class="a">Acetaminophen.</span></li>
+      <li><span class="q">Safe antibiotic and safe glucose drug in pregnancy?</span> <span class="a">Ampicillin; insulin. Avoid tetracycline and metformin.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 8 &middot; learn the fingerprint, name the drug</div>
+
+</div>
+</body>
+</html>
