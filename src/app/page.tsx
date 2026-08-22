@@ -102,7 +102,7 @@ export default async function HomePage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/foquslab-lockup-horizontal.svg?v=1" alt="FoqusLab" className="h-7 w-auto" />
+            <img src="/brand/foquslab-lockup-plain.svg?v=1" alt="FoqusLab" className="h-7 w-auto" />
             <span className="text-xs bg-[#3B54FF]/10 text-[#3B54FF] px-2 py-0.5 rounded-full font-medium">2026</span>
           </div>
           <div className="flex items-center gap-3">
