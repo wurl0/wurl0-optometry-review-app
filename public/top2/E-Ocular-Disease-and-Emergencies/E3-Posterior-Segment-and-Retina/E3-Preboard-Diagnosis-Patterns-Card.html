@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Disease Card 7 · Diagnosis Patterns</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;
+    background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Disease</div>
+    </div>
+    <div class="card-no">Card<b>07</b>Dx patterns</div>
+  </header>
+
+  <h1>Ocular disease: <em>when you see X, think Y</em></h1>
+  <p class="dek">On the MCU preboard the disease facts were mostly there. What failed was matching the classic description to the name, especially inside big look-alike families: the retinopathies, the uveitis causes, the glaucomas. This card drills that one skill. Each row is a signature and the single word it points to. Learn to read the picture, not to recite the list.</p>
+
+  <section>
+    <h2><span class="n">01</span> The skill this card trains</h2>
+    <p class="lead">Board disease stems are pattern prompts. They hand you two or three signs and ask for the name. If you study diseases as isolated fact-lists, you freeze when the family members look alike. The fix is to learn each disease by its <span class="term">one discriminating sign</span>, the feature that no sibling shares.</p>
+    <div class="cal mnem">
+      <div class="lab">How to use every table below</div>
+      <p>Cover the left column and read only the signature. Say the disease out loud before you look. The signature, not the disease name, is what the board gives you first.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The retinopathies (your biggest cluster)</h2>
+    <p>Six misses came from this one family. The trick is one signature phrase per disease.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-label="CRVO fundus with blood and thunder hemorrhages versus CRAO fundus with a pale retina and cherry red spot">
+        <circle cx="160" cy="105" r="80" fill="#B4341F" opacity="0.16" stroke="var(--trap)"/>
+        <circle cx="160" cy="105" r="14" fill="var(--pearl)"/>
+        <g stroke="var(--trap)" stroke-width="4" stroke-linecap="round" opacity=".85">
+          <line x1="120" y1="60" x2="132" y2="80"/><line x1="205" y1="70" x2="190" y2="88"/>
+          <line x1="100" y1="120" x2="122" y2="128"/><line x1="210" y1="135" x2="188" y2="130"/>
+          <line x1="140" y1="165" x2="150" y2="145"/><line x1="185" y1="160" x2="176" y2="142"/>
+        </g>
+        <text x="160" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">CRVO</text>
+        <text x="160" y="215" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">"blood and thunder"</text>
+        <circle cx="480" cy="105" r="80" fill="#D8D6CC" opacity="0.5" stroke="var(--line)"/>
+        <circle cx="480" cy="105" r="16" fill="#C0392B"/>
+        <g stroke="var(--ink-faint)" stroke-width="2" opacity=".6">
+          <line x1="440" y1="60" x2="455" y2="85"/><line x1="520" y1="70" x2="505" y2="90"/>
+          <line x1="415" y1="120" x2="440" y2="118"/><line x1="545" y1="130" x2="520" y2="122"/>
+        </g>
+        <text x="480" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">CRAO</text>
+        <text x="480" y="215" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">pale retina, cherry-red spot</text>
+      </svg>
+      <figcaption>vein occlusion floods the retina; artery occlusion starves it pale</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Signature</th><th>Disease</th></tr></thead>
+        <tbody>
+          <tr><td>tortuous dilated dark veins, "blood and thunder" hemorrhages</td><td class="rx">Central retinal vein occlusion</td></tr>
+          <tr><td>pale disc, milky-white retina, cherry-red spot, thread-like arteries</td><td class="rx">Central retinal artery occlusion</td></tr>
+          <tr><td>arteriolar narrowing, AV nicking, retinal sheen/edema, hard exudates</td><td class="rx">Hypertensive retinopathy</td></tr>
+          <tr><td>lipid plaques in the artery wall, vascular sheathing (copper/silver wire)</td><td class="rx">Arteriosclerotic retinopathy</td></tr>
+          <tr><td>young patient, serous macular edema from an RPE leak</td><td class="rx">Central serous chorioretinopathy</td></tr>
+          <tr><td>microaneurysms, dot-and-blot hemorrhages, neovascularization</td><td class="rx">Diabetic retinopathy</td></tr>
+          <tr><td>bone-spicule pigment, attenuated vessels, waxy pale disc, night blindness</td><td class="rx">Retinitis pigmentosa</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact flips you made</div>
+      <p>You read CRVO as hypertensive, hypertensive as arteriosclerotic, arteriosclerotic as central serous, central serous as diabetic, and diabetic as hypertensive. They chain because you were matching on "vascular + hemorrhage" instead of the one signature word. Anchor each on its unique sign: <b>veins tortuous = CRVO</b>, <b>pale + cherry-red = CRAO</b>, <b>microaneurysms = diabetic</b>, <b>copper wire = arteriosclerotic</b>, <b>young + macular serous = CSCR</b>, <b>bone spicules = RP</b>.</p>
+    </div>
+    <div class="cal why">
+      <div class="lab">Cross-link</div>
+      <p>This is the same content as your E3 Retinal Vascular card and the Fundus Signatures interactive. Drill all three together.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Uveitis by cause</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Signature</th><th>Cause</th></tr></thead>
+        <tbody>
+          <tr><td>acute anterior uveitis with fibrin in the AC, young patient</td><td class="rx">Rheumatoid disease</td></tr>
+          <tr><td>granulomatous uveitis, whitish nodules in the iris</td><td class="rx">Leprosy</td></tr>
+          <tr><td>protean picture, greasy (mutton-fat) KPs, iris nodules, choroidal exudates</td><td class="rx">Tuberculosis</td></tr>
+          <tr><td>punched-out chorioretinal scars, macula spared until late</td><td class="rx">Histoplasmosis</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact misses</div>
+      <p>Fibrin + young = <b>rheumatoid</b> (you put gout). Iris nodules + granulomatous = <b>leprosy</b> (you put rheumatoid). Greasy KPs + protean = <b>TB</b> (you put toxoplasmosis).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Glaucoma, sorted two ways</h2>
+    <p>Two questions place any glaucoma: is the angle <b>open or closed</b>, and is it <b>primary</b> (no other cause) or <b>secondary</b> (something did it)?</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-label="Glaucoma 2x2 grid of open versus closed angle and primary versus secondary">
+        <text x="250" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Open angle</text>
+        <text x="470" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Closed angle</text>
+        <text x="70" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Primary</text>
+        <text x="70" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Secondary</text>
+        <rect x="150" y="46" width="200" height="60" rx="9" fill="var(--accent-wash)" stroke="var(--accent)"/>
+        <text x="250" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="var(--accent-deep)">POAG</text>
+        <text x="250" y="92" text-anchor="middle" font-size="11" fill="var(--ink-soft)">angle open, no other disease</text>
+        <rect x="370" y="46" width="200" height="60" rx="9" fill="var(--surface-2)" stroke="var(--line)"/>
+        <text x="470" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">PACG</text>
+        <text x="470" y="92" text-anchor="middle" font-size="11" fill="var(--ink-soft)">angle anatomically closed</text>
+        <rect x="150" y="120" width="200" height="60" rx="9" fill="var(--surface-2)" stroke="var(--line)"/>
+        <text x="250" y="146" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">SOAG</text>
+        <text x="250" y="166" text-anchor="middle" font-size="11" fill="var(--ink-soft)">e.g. steroid, pigment</text>
+        <rect x="370" y="120" width="200" height="60" rx="9" fill="var(--trap-w)" stroke="var(--trap)"/>
+        <text x="470" y="146" text-anchor="middle" font-size="13" font-weight="700" fill="var(--trap)">SACG</text>
+        <text x="470" y="166" text-anchor="middle" font-size="11" fill="var(--ink-soft)">e.g. posterior synechiae</text>
+      </svg>
+      <figcaption>open vs closed across the top, primary vs secondary down the side</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>aqueous reaches the angle at all times, no other disease</td><td class="rx">POAG</td></tr>
+          <tr><td>posterior synechiae block flow</td><td class="rx">Secondary angle closure</td></tr>
+          <tr><td>not a glaucoma surgery (the odd one out)</td><td class="rx">Capsulectomy</td></tr>
+          <tr><td>does NOT cause congenital glaucoma</td><td class="rx">Diabetes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">Congenital glaucoma company</div>
+      <p><b>Axenfeld, Sturge-Weber (encephalofacial hemangioma), and aniridia</b> all cause congenital glaucoma. Diabetes does not. Real glaucoma surgeries: goniotomy, trabeculectomy, fistulizing ops. Capsulectomy is a lens procedure.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Congenital anterior-segment anomalies</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Signature</th><th>Anomaly</th></tr></thead>
+        <tbody>
+          <tr><td>iris strands to a prominent Schwalbe line (posterior embryotoxon), glaucoma risk</td><td class="rx">Axenfeld syndrome</td></tr>
+          <tr><td>central corneal opacity with posterior stroma / Descemet / endothelium defect</td><td class="rx">Peters anomaly</td></tr>
+          <tr><td>absent iris, foveal hypoplasia, cataract, glaucoma</td><td class="rx">Aniridia</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">Consistency check</div>
+      <p>You got Axenfeld right on one stem and missed it on another with the same description. The fix is the anchor phrase, not the stem wording: <b>strands to Schwalbe line = Axenfeld</b>, <b>central corneal opacity + Descemet defect = Peters</b>, <b>no iris = aniridia</b>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Lens: anomalies, refraction, cataract</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>spherophakia (round lens) refracts toward</td><td class="rx">myopia</td></tr>
+          <tr><td>lens coloboma refracts toward</td><td class="rx">astigmatism</td></tr>
+          <tr><td>first-trimester virus causing congenital cataract</td><td class="rx">rubella</td></tr>
+          <tr><td>+Seidel and a capsular tear point to</td><td class="rx">penetrating trauma</td></tr>
+          <tr><td>lens capsule breaks during removal</td><td class="rx">extracapsular extraction</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">Lens shape drives the error</div>
+      <p>A rounder or more curved lens (spherophakia, lenticonus, nuclear cataract) adds plus power, so it shifts toward <b>myopia</b>. A lens that is tilted or notched (coloboma) throws <b>astigmatism</b>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Conjunctivitis by cause</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Signature</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td>bilateral chemosis, clear watery discharge</td><td class="rx">Allergic</td></tr>
+          <tr><td>from mishandling contact lenses</td><td class="rx">Giant papillary</td></tr>
+          <tr><td>most common bacterial cause</td><td class="rx">S. aureus</td></tr>
+          <tr><td>from drugs, cosmetics, hairdressing, eye meds; intense itch, syrupy discharge</td><td class="rx">Contact conjunctivitis</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact misses</div>
+      <p>Contact-lens mishandling = <b>GPC</b> (you put bacterial). Commonest bacterial = <b>S. aureus</b> (you put Pseudomonas, which is the contact-lens keratitis bug, a different question). Drug/cosmetic trigger = <b>contact conjunctivitis</b> (you put allergic).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Corneal opacity ladder and anatomy scraps</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Corneal opacity grades from faint nebula to moderate macula to dense opaque leukoma">
+        <rect x="70" y="40" width="130" height="70" rx="10" fill="var(--ink)" opacity="0.14" stroke="var(--line)"/>
+        <text x="135" y="128" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Nebula</text>
+        <text x="135" y="142" text-anchor="middle" font-size="10" fill="var(--ink-soft)">faint haze</text>
+        <rect x="255" y="40" width="130" height="70" rx="10" fill="var(--ink)" opacity="0.42" stroke="var(--line)"/>
+        <text x="320" y="128" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Macula</text>
+        <text x="320" y="142" text-anchor="middle" font-size="10" fill="var(--ink-soft)">moderate</text>
+        <rect x="440" y="40" width="130" height="70" rx="10" fill="var(--ink)" opacity="0.85" stroke="var(--line)"/>
+        <text x="505" y="128" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Leukoma</text>
+        <text x="505" y="142" text-anchor="middle" font-size="10" fill="var(--ink-soft)">dense, totally opaque</text>
+      </svg>
+      <figcaption>faint → moderate → totally opaque</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Item</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>totally opaque cornea</td><td class="rx">leukoma</td></tr>
+          <tr><td>traction on the retina by a detaching vitreous</td><td class="rx">photopsia (flashes)</td></tr>
+          <tr><td>vitreous attachment to the posterior lens</td><td class="rx">ligament of Wieger</td></tr>
+          <tr><td>innermost retinal layer, a Müller-cell derivative</td><td class="rx">internal limiting membrane</td></tr>
+          <tr><td>middle choroidal layer (medium vessels)</td><td class="rx">Sattler's layer (Haller = outer)</td></tr>
+          <tr><td>increases aqueous outflow</td><td class="rx">pilocarpine</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:12px">
+      <div class="lab">Cross-link · pharma</div>
+      <p>Pilocarpine raising outflow is the same fact as your G1 glaucoma content: the ciliary muscle contracts and pulls the trabecular meshwork open. Answer it from the mechanism, not from a list.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">09</span> Two answer-key flags</h2>
+    <div class="cal trap">
+      <div class="lab">Likely mis-keyed on the preboard</div>
+      <p><b>"Second sight"</b> is nuclear cataract producing <b>lenticular (index) myopia</b>. The form marked "lenticular astigmatism" as correct, which is almost certainly wrong. Learn it as index myopia and do not trust that item's key.</p>
+    </div>
+    <div class="cal pearl">
+      <div class="lab">Old terminology to recognize, not adopt</div>
+      <p>"Compensated glaucoma" was keyed to POAG on this exam. It is dated wording; know it only so a stem using it does not throw you.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span> Rebuild it on paper</h2>
+    <p>This is retrieval practice for pattern-matching. Read a signature, name the disease before you check.</p>
+    <div class="drill"><div class="t">1 &middot; Retinopathy signatures blind</div><p>Write the seven retinopathies and the single discriminating sign for each. Then have someone read you a sign and name the disease in under five seconds.</p></div>
+    <div class="drill"><div class="t">2 &middot; Fill the glaucoma 2x2</div><p>Draw the open/closed by primary/secondary grid and put one example in each cell. Add "not a glaucoma surgery" and "not a congenital-glaucoma cause."</p></div>
+    <div class="drill"><div class="t">3 &middot; Uveitis causes from the sign</div><p>Match fibrin+young, iris nodules+granulomatous, and greasy KPs+protean to their causes. Say why each sign fits.</p></div>
+    <div class="drill"><div class="t">4 &middot; Congenital anomaly anchors</div><p>Write the one phrase that names Axenfeld, Peters, and aniridia. No stems, just the anchor sign.</p></div>
+    <div class="drill"><div class="t">5 &middot; Teach the corneal opacity ladder</div><p>Explain nebula vs macula vs leukoma by density, and give the lens-shape rule for spherophakia vs coloboma.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">11</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab review queue on the 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Tortuous dark veins, "blood and thunder"?</span> <span class="a">Central retinal vein occlusion.</span></li>
+      <li><span class="q">Pale retina, cherry-red spot, thread-like arteries?</span> <span class="a">Central retinal artery occlusion.</span></li>
+      <li><span class="q">Microaneurysms, dot-blot hemorrhages, neovascularization?</span> <span class="a">Diabetic retinopathy.</span></li>
+      <li><span class="q">Copper/silver wiring, lipid in the artery wall?</span> <span class="a">Arteriosclerotic retinopathy.</span></li>
+      <li><span class="q">Young patient, serous macular edema from an RPE leak?</span> <span class="a">Central serous chorioretinopathy.</span></li>
+      <li><span class="q">Bone-spicule pigment, attenuated vessels, waxy disc?</span> <span class="a">Retinitis pigmentosa.</span></li>
+      <li><span class="q">Fibrin in the AC, young patient (uveitis cause)?</span> <span class="a">Rheumatoid disease.</span></li>
+      <li><span class="q">Greasy mutton-fat KPs, protean uveitis?</span> <span class="a">Tuberculosis.</span></li>
+      <li><span class="q">Posterior synechiae cause which glaucoma?</span> <span class="a">Secondary angle-closure.</span></li>
+      <li><span class="q">Angle open, no other disease?</span> <span class="a">Primary open-angle glaucoma.</span></li>
+      <li><span class="q">Which does NOT cause congenital glaucoma?</span> <span class="a">Diabetes (Axenfeld, Sturge-Weber, aniridia do).</span></li>
+      <li><span class="q">Iris strands to Schwalbe line?</span> <span class="a">Axenfeld syndrome.</span></li>
+      <li><span class="q">Central corneal opacity with Descemet defect?</span> <span class="a">Peters anomaly.</span></li>
+      <li><span class="q">Spherophakia vs lens coloboma refraction?</span> <span class="a">Myopia; astigmatism.</span></li>
+      <li><span class="q">Contact-lens mishandling conjunctivitis?</span> <span class="a">Giant papillary conjunctivitis.</span></li>
+      <li><span class="q">Totally opaque cornea?</span> <span class="a">Leukoma (nebula < macula < leukoma).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Disease Card 7 &middot; read the picture, name the disease</div>
+
+</div>
+</body>
+</html>

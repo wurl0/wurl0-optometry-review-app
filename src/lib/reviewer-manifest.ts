@@ -181,6 +181,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.E3-Detachment-AMD-Card', subject: 'E', type: 'card', label: 'Card 4 · RD & AMD', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Detachment-AMD-Card.html' },
   { id: 'card.E1-Orbit-Lids-Card', subject: 'E', type: 'card', label: 'Card 5 · Orbit/Lids', path: '/top2/E-Ocular-Disease-and-Emergencies/E1-Orbit-Adnexa-Eyelids/E1-Orbit-Lids-Card.html' },
   { id: 'card.E4-Emergencies-Card', subject: 'E', type: 'card', label: 'Card 6 · Emergencies', path: '/top2/E-Ocular-Disease-and-Emergencies/E4-Ocular-Emergencies/E4-Emergencies-Card.html' },
+  { id: 'card.E3-Preboard-Diagnosis-Patterns-Card', subject: 'E', type: 'card', label: 'Card 7 · Dx patterns', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Preboard-Diagnosis-Patterns-Card.html' },
   { id: 'card.F7-Low-Vision-Magnification-Card', subject: 'F', type: 'card', label: 'Card 1 · Low vision', path: '/top2/F-Clinical-Optometry-and-Specialties/F7-Low-Vision-and-Rehabilitation/F7-Low-Vision-Magnification-Card.html' },
   { id: 'card.F4-Neuro-Oculomotor-Tests-Card', subject: 'F', type: 'card', label: 'Card 2 · Neuro tests', path: '/top2/F-Clinical-Optometry-and-Specialties/F4-Neuro-Optometry/F4-Neuro-Oculomotor-Tests-Card.html' },
   { id: 'card.F2-Pediatric-Optometry-Card', subject: 'F', type: 'card', label: 'Card 3 · Pediatric', path: '/top2/F-Clinical-Optometry-and-Specialties/F2-Pediatric-Optometry/F2-Pediatric-Optometry-Card.html' },
