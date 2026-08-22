@@ -8738,5 +8738,293 @@
    "Reflection bounces light; the prism shift is by bending.",
    "Correct. Refraction at the angled surfaces displaces the image."
   ]
+ },
+ {
+  "id": "D0381",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "The best contact lens choice for a patient with keratoconus is a:",
+  "o": [
+   "toric soft lens",
+   "daily disposable soft lens",
+   "silicone hydrogel lens",
+   "scleral or rigid gas permeable lens"
+  ],
+  "a": 3,
+  "w": "A rigid surface vaults or bridges the irregular cornea and creates a smooth tear lens, correcting the irregular astigmatism a soft lens cannot.",
+  "k": "Keratoconus needs a rigid (scleral or RGP) lens.",
+  "src": "authored"
+ },
+ {
+  "id": "D0382",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "The most suitable contact lens for a patient with dry eye who still wants lenses is a:",
+  "o": [
+   "monthly silicone hydrogel lens",
+   "daily disposable silicone hydrogel lens",
+   "rigid gas permeable lens",
+   "conventional hydrogel lens"
+  ],
+  "a": 1,
+  "w": "Daily disposables limit deposit buildup and solution sensitivity, and silicone hydrogel maintains oxygen supply, easing dry-eye wear.",
+  "k": "Dry eye: daily disposable silicone hydrogel.",
+  "src": "authored"
+ },
+ {
+  "id": "D0383",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "A patient with high myopia and significant astigmatism is best fitted with:",
+  "o": [
+   "a spherical rigid lens",
+   "spherical soft lenses",
+   "daily disposable spheres",
+   "toric soft lenses"
+  ],
+  "a": 3,
+  "w": "Toric soft lenses correct the cylindrical component that spherical lenses leave uncorrected in a regular astigmat.",
+  "k": "Regular astigmatism in soft wear = toric soft.",
+  "src": "authored"
+ },
+ {
+  "id": "D0384",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "The most critical parameter when fitting orthokeratology lenses is:",
+  "o": [
+   "lens diameter",
+   "corneal topography",
+   "center thickness",
+   "material water content"
+  ],
+  "a": 1,
+  "w": "Ortho-k reshapes the cornea, so an accurate corneal topography is essential to design the reverse-geometry lens. Other parameters follow from it.",
+  "k": "Ortho-k fitting is driven by corneal topography.",
+  "src": "authored"
+ },
+ {
+  "id": "D0385",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "Which parameter most influences the sagittal depth of a rigid gas permeable lens?",
+  "o": [
+   "edge lift",
+   "base curve radius",
+   "overall diameter alone",
+   "center thickness"
+  ],
+  "a": 1,
+  "w": "For a given diameter, the base curve radius sets how steep the lens is and therefore its sagittal depth. A steeper base curve gives greater sag.",
+  "k": "Base curve radius drives RGP sagittal depth.",
+  "src": "authored"
+ },
+ {
+  "id": "D0386",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "The most appropriate contact lens care product for a patient with sensitive eyes or lens-related allergy is a:",
+  "o": [
+   "multipurpose solution",
+   "saline rinse only",
+   "hydrogen peroxide solution",
+   "alcohol-based cleaner"
+  ],
+  "a": 2,
+  "w": "Hydrogen peroxide systems are preservative-free after neutralization, avoiding the preservative sensitivity that triggers allergy and giant papillary conjunctivitis.",
+  "k": "Sensitive eyes/allergy: hydrogen peroxide (preservative-free).",
+  "src": "authored"
+ },
+ {
+  "id": "D0387",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "Which feature of a contact lens solution prevents microbial growth?",
+  "o": [
+   "wetting agents",
+   "preservatives",
+   "surfactants",
+   "buffering agents"
+  ],
+  "a": 1,
+  "w": "Preservatives provide the antimicrobial action of a care solution. Surfactants clean, buffers hold pH, and wetting agents aid comfort.",
+  "k": "Preservatives = antimicrobial component.",
+  "src": "authored"
+ },
+ {
+  "id": "D0388",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "A ring-shaped corneal infiltrate with hypopyon after extended contact lens wear indicates:",
+  "o": [
+   "corneal neovascularization",
+   "giant papillary conjunctivitis",
+   "infectious keratitis",
+   "superior limbic keratoconjunctivitis"
+  ],
+  "a": 2,
+  "w": "A ring infiltrate with hypopyon after extended wear is microbial (infectious) keratitis, an emergency needing lens discontinuation and antibiotics.",
+  "k": "Ring infiltrate + hypopyon = infectious keratitis.",
+  "src": "authored"
+ },
+ {
+  "id": "D0389",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "In sports eye protection, the most important feature for a contact lens is:",
+  "o": [
+   "high oxygen permeability",
+   "lens thickness",
+   "tint density",
+   "ultraviolet blocking"
+  ],
+  "a": 0,
+  "w": "High oxygen permeability keeps the cornea healthy during prolonged, active wear. Tint and thickness are secondary for a sports lens.",
+  "k": "Sports CL priority = oxygen permeability.",
+  "src": "authored"
+ },
+ {
+  "id": "D0390",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "The total power of a thin ophthalmic lens with a +7.25 D front surface and a -3.75 D back surface is:",
+  "o": [
+   "-3.75 D",
+   "+3.50 D",
+   "+7.25 D",
+   "+11.00 D"
+  ],
+  "a": 1,
+  "w": "For a thin lens the total power is the sum of the surface powers: +7.25 plus -3.75 equals +3.50 D.",
+  "k": "Thin-lens power = front + back surface.",
+  "src": "authored"
+ },
+ {
+  "id": "D0391",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "How much decentration of a +6.00 D lens is needed to induce 3 prism diopters?",
+  "o": [
+   "3 mm",
+   "5 mm",
+   "10 mm",
+   "6 mm"
+  ],
+  "a": 1,
+  "w": "By Prentice's rule, decentration in mm equals 10 times prism divided by power: 10 times 3 divided by 6 equals 5 mm.",
+  "k": "d(mm) = 10 x prism / power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0392",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "When a high-powered plus lens is moved closer to the eye without changing its labeled power, its effective power:",
+  "o": [
+   "stays the same",
+   "increases",
+   "becomes negative",
+   "decreases"
+  ],
+  "a": 3,
+  "w": "Moving a plus lens toward the eye reduces its effective (vertex) power. Moving it away increases the effective plus.",
+  "k": "Plus lens closer to eye = less effective power.",
+  "src": "authored"
+ },
+ {
+  "id": "D0393",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "The optical density of a tinted lens that transmits 50% of the incident light is:",
+  "o": [
+   "0.50",
+   "1.00",
+   "0.30",
+   "0.69"
+  ],
+  "a": 2,
+  "w": "Optical density is the log of 1 over transmittance: log of 1 divided by 0.5 equals about 0.30.",
+  "k": "OD = log(1/T); 50% -> 0.30.",
+  "src": "authored"
+ },
+ {
+  "id": "D0394",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "Which spectacle lens material has the highest Abbe value?",
+  "o": [
+   "polycarbonate",
+   "1.67 high-index plastic",
+   "1.74 high-index plastic",
+   "crown glass"
+  ],
+  "a": 3,
+  "w": "Crown glass and CR-39 have high Abbe values (least chromatic aberration); high-index and polycarbonate have low Abbe values.",
+  "k": "Crown glass = highest Abbe (least color fringing).",
+  "src": "authored"
+ },
+ {
+  "id": "D0395",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "Which test measures the scratch resistance of a lens using an abrasion wheel?",
+  "o": [
+   "Bayer test",
+   "Taber test",
+   "salt-spray test",
+   "drop-ball test"
+  ],
+  "a": 1,
+  "w": "The Taber abrasion test uses a rotating abrasion wheel to grade scratch resistance. The drop-ball test measures impact resistance.",
+  "k": "Taber test = scratch resistance.",
+  "src": "authored"
+ },
+ {
+  "id": "D0396",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "Which bifocal design gives the widest field of view for near work?",
+  "o": [
+   "round-segment bifocal",
+   "curved-top bifocal",
+   "executive bifocal",
+   "flat-top 28 bifocal"
+  ],
+  "a": 2,
+  "w": "The executive (Franklin) bifocal segment spans the full width of the lens, giving the widest near field. Segment bifocals give a narrower reading area.",
+  "k": "Widest near field = executive bifocal.",
+  "src": "authored"
+ },
+ {
+  "id": "D0397",
+  "sec": "D2 Dispensing",
+  "t": "D2 Dispensing",
+  "q": "Compared with glass, plastic (CR-39) lenses generally:",
+  "o": [
+   "absorb less UV than glass",
+   "absorb more UV than glass",
+   "block only infrared",
+   "transmit all UV"
+  ],
+  "a": 1,
+  "w": "Plastic (CR-39) inherently absorbs more ultraviolet than ordinary crown glass, and coatings can raise this further.",
+  "k": "Plastic absorbs more UV than glass.",
+  "src": "authored"
+ },
+ {
+  "id": "D0398",
+  "sec": "D3 Contact Lens",
+  "t": "D3 Contact Lens",
+  "q": "A multifocal contact lens wearer complaining of ghost images is best managed by:",
+  "o": [
+   "adjusting the add power",
+   "switching to a spherical lens",
+   "increasing the base curve",
+   "increasing lens diameter"
+  ],
+  "a": 0,
+  "w": "Ghosting with a multifocal usually reflects an add or pupil-zone mismatch, so adjusting the add power is the first step.",
+  "k": "Multifocal ghosting -> adjust the add.",
+  "src": "authored"
  }
 ]

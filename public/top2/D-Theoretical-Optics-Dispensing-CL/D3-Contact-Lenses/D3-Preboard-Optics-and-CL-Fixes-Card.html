@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Theoretical Optics Card 7 · Optics &amp; CL Fixes</title>
+<style>
+  :root{--bg:#F6F5F1;--surface:#FFFFFF;--surface-2:#F0EFEA;--ink:#1A1D19;--ink-soft:#53574E;--ink-faint:#8A8E82;--line:#E3E1D8;--line-soft:#EDEBE3;--accent:#1F7A4D;--accent-deep:#155C39;--accent-wash:#E2EFE8;--why:#1E63B0;--why-w:#E4EDF8;--trap:#BC3A2B;--trap-w:#F7E3DF;--mnem:#7A46B0;--mnem-w:#EEE7F7;--pearl:#8F6410;--pearl-w:#F4EAD1;--shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);}
+  @media (prefers-color-scheme:dark){:root{--bg:#12140F;--surface:#191C15;--surface-2:#20241A;--ink:#E9ECE1;--ink-soft:#A3A897;--ink-faint:#767B6A;--line:#2A2F21;--line-soft:#222719;--accent:#4FB980;--accent-deep:#93E2B2;--accent-wash:#152A1D;--why:#63A3E8;--why-w:#122235;--trap:#E9786C;--trap-w:#2F1B17;--mnem:#B58BE7;--mnem-w:#241B32;--pearl:#D7AB50;--pearl-w:#2B2513;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);}}
+  :root[data-theme="light"]{--bg:#F6F5F1;--surface:#FFFFFF;--surface-2:#F0EFEA;--ink:#1A1D19;--ink-soft:#53574E;--ink-faint:#8A8E82;--line:#E3E1D8;--line-soft:#EDEBE3;--accent:#1F7A4D;--accent-deep:#155C39;--accent-wash:#E2EFE8;--why:#1E63B0;--why-w:#E4EDF8;--trap:#BC3A2B;--trap-w:#F7E3DF;--mnem:#7A46B0;--mnem-w:#EEE7F7;--pearl:#8F6410;--pearl-w:#F4EAD1;--shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);}
+  :root[data-theme="dark"]{--bg:#12140F;--surface:#191C15;--surface-2:#20241A;--ink:#E9ECE1;--ink-soft:#A3A897;--ink-faint:#767B6A;--line:#2A2F21;--line-soft:#222719;--accent:#4FB980;--accent-deep:#93E2B2;--accent-wash:#152A1D;--why:#63A3E8;--why-w:#122235;--trap:#E9786C;--trap-w:#2F1B17;--mnem:#B58BE7;--mnem-w:#241B32;--pearl:#D7AB50;--pearl-w:#2B2513;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;} .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;} .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;} h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;} h2 .n{color:var(--accent);} h2::after{content:"";flex:1;height:1px;background:var(--line);}
+  p{margin:0 0 13px;} .lead{font-size:15.5px;} .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);} .fig svg{width:100%;height:auto;display:block;} .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;} .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;} th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;} td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;} .rx{color:var(--accent-deep);font-weight:600;}
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);} .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div><div class="brand">WAA <span>//</span> Board Review 2026</div><div class="sub">Personal study notes &middot; Theoretical Optics, Dispensing and Contact Lenses</div></div>
+    <div class="card-no">Card<b>07</b>Optics &amp; CL fixes</div>
+  </header>
+
+  <h1>Optics and contact lenses: <em>pick the lens, run the number</em></h1>
+  <p class="dek">Two families carried most of the misses across the Theoretical Optics and the Clinical papers: choosing the right contact lens for a given cornea and problem, and a handful of dispensing calculations and material facts. The contact-lens items from both papers are gathered here, since contact lenses live in this subject.</p>
+
+  <section>
+    <h2><span class="n">01</span> Which contact lens for which problem</h2>
+    <p>Match the cornea and the complaint to the lens. Rigid neutralizes irregularity; soft is for comfort and regular corneas.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Patient</th><th>Best lens</th></tr></thead>
+        <tbody>
+          <tr><td>keratoconus / irregular cornea after trauma</td><td class="rx">scleral (or corneal RGP)</td></tr>
+          <tr><td>dry-eye patient who wants contact lenses</td><td class="rx">daily disposable silicone hydrogel</td></tr>
+          <tr><td>aphakia (high plus)</td><td class="rx">soft spherical lens</td></tr>
+          <tr><td>high myopia with astigmatism</td><td class="rx">toric soft lens</td></tr>
+          <tr><td>presbyopia wanting extended depth of focus</td><td class="rx">aspheric soft multifocal</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">Why soft fails keratoconus</div>
+      <p>A soft lens drapes over the cone and takes its shape, so it cannot neutralize irregular astigmatism. A rigid lens holds its own front surface and creates a smooth tear lens over the irregular cornea, which is what corrects the vision.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Fitting parameters, solutions, and complications</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Item</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>parameter that most changes RGP sagittal depth</td><td class="rx">base curve radius</td></tr>
+          <tr><td>most critical parameter in ortho-k fitting</td><td class="rx">corneal topography</td></tr>
+          <tr><td>ortho-k with excessive central bearing</td><td class="rx">flatten the base curve</td></tr>
+          <tr><td>role of RGP peripheral curves / edge design</td><td class="rx">tear exchange and centration/movement</td></tr>
+          <tr><td>solution for sensitive eyes / allergy / GPC</td><td class="rx">hydrogen peroxide (preservative-free)</td></tr>
+          <tr><td>what stops microbial growth in a solution</td><td class="rx">preservatives</td></tr>
+          <tr><td>sports eye protection priority for CL</td><td class="rx">high oxygen permeability</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The red-flag complication</div>
+      <p>Sudden pain, photophobia, and decreased vision in a lens wearer, or a <b>ring-shaped corneal infiltrate with hypopyon</b> after extended wear, is <b>infectious (microbial) keratitis</b>. Stop lens wear and start broad-spectrum antibiotics. Red, itchy eyes with mucous discharge is instead giant papillary conjunctivitis.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Dispensing calculations</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 170" role="img" aria-label="Resultant prism as the hypotenuse of vertical and horizontal prism components">
+        <line x1="120" y1="140" x2="120" y2="50" stroke="var(--accent)" stroke-width="4" marker-end="url(#a)"/>
+        <line x1="120" y1="140" x2="300" y2="140" stroke="var(--why)" stroke-width="4" marker-end="url(#b)"/>
+        <line x1="120" y1="140" x2="300" y2="50" stroke="var(--ink)" stroke-width="3" stroke-dasharray="5 4"/>
+        <text x="96" y="98" text-anchor="end" font-size="12" fill="var(--accent-deep)">base up</text>
+        <text x="210" y="158" text-anchor="middle" font-size="12" fill="var(--why)">base out</text>
+        <text x="220" y="88" font-size="12" font-weight="700" fill="var(--ink)">resultant = &radic;(V&sup2; + H&sup2;)</text>
+        <text x="360" y="96" font-size="12.5" fill="var(--ink-soft)">e.g. 5&Delta; up + 3.5&Delta; out</text>
+        <text x="360" y="116" font-size="12.5" font-weight="700" fill="var(--accent-deep)">= &radic;(25 + 12.25) = 6.10&Delta;</text>
+        <defs>
+          <marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent)"/></marker>
+          <marker id="b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--why)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>combine perpendicular prisms by Pythagoras</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Task</th><th>Rule and result</th></tr></thead>
+        <tbody>
+          <tr><td>total power of a thin lens</td><td class="rx">front + back surface power (+7.25 + (-3.75) = +3.50 D)</td></tr>
+          <tr><td>decentration for prism (Prentice)</td><td class="rx">d(mm) = 10 x prism / power (3&Delta; on +6.00 D = 5 mm)</td></tr>
+          <tr><td>plus lens moved closer to the eye</td><td class="rx">effective power decreases</td></tr>
+          <tr><td>combine perpendicular prisms</td><td class="rx">resultant = square root of (vertical squared + horizontal squared)</td></tr>
+          <tr><td>optical density from transmission</td><td class="rx">OD = log(1/T); 50% transmission = 0.30</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Lens materials and bifocals</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Item</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>highest Abbe value (least chromatic aberration)</td><td class="rx">crown glass</td></tr>
+          <tr><td>UV absorption compared to glass</td><td class="rx">plastic absorbs more UV than glass</td></tr>
+          <tr><td>test for scratch resistance</td><td class="rx">Taber test (abrasion wheel)</td></tr>
+          <tr><td>surface finished on a semi-finished blank</td><td class="rx">the back surface</td></tr>
+          <tr><td>widest near field of view bifocal</td><td class="rx">executive (Franklin) bifocal</td></tr>
+          <tr><td>bifocal to reduce image jump vs a round segment</td><td class="rx">flat-top (D-segment) bifocal</td></tr>
+          <tr><td>tint for sharp contrast at dawn/dusk</td><td class="rx">red / amber</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">Abbe and jump</div>
+      <p>Higher Abbe means less chromatic aberration; among common materials <b>crown glass</b> and CR-39 sit high, high-index plastics low. Image jump comes from the segment's optical center: a <b>flat-top</b> puts it at the top of the segment, minimizing jump; a round segment maximizes it.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; CL selection table</div><p>From memory, name the lens for keratoconus, dry eye, aphakia, high astigmatism, and presbyopia.</p></div>
+    <div class="drill"><div class="t">2 &middot; Run the four numbers</div><p>Total thin-lens power, Prentice decentration, a perpendicular prism resultant, and optical density from 25% transmission.</p></div>
+    <div class="drill"><div class="t">3 &middot; Materials and bifocals</div><p>Rank Abbe values, name the scratch test, and say why a flat-top reduces jump.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Spaced-repetition deck</h2>
+    <ol class="srs">
+      <li><span class="q">Best lens for keratoconus?</span> <span class="a">Scleral or corneal RGP (rigid neutralizes irregular astigmatism).</span></li>
+      <li><span class="q">Dry-eye patient wanting CL?</span> <span class="a">Daily disposable silicone hydrogel.</span></li>
+      <li><span class="q">High myopia with astigmatism?</span> <span class="a">Toric soft lens.</span></li>
+      <li><span class="q">Most critical ortho-k parameter?</span> <span class="a">Corneal topography.</span></li>
+      <li><span class="q">Parameter that most changes RGP sagittal depth?</span> <span class="a">Base curve radius.</span></li>
+      <li><span class="q">Solution for allergy / GPC / sensitive eyes?</span> <span class="a">Hydrogen peroxide (preservative-free).</span></li>
+      <li><span class="q">Ring infiltrate + hypopyon after extended wear?</span> <span class="a">Infectious keratitis; stop lenses, broad-spectrum antibiotics.</span></li>
+      <li><span class="q">Total power of a thin lens?</span> <span class="a">Front + back surface power.</span></li>
+      <li><span class="q">Prentice decentration for 3 prism on +6.00 D?</span> <span class="a">5 mm (d = 10 x prism / power).</span></li>
+      <li><span class="q">Move a plus lens closer to the eye?</span> <span class="a">Effective power decreases.</span></li>
+      <li><span class="q">Optical density at 50% transmission?</span> <span class="a">0.30 (log of 1/0.5).</span></li>
+      <li><span class="q">Highest Abbe value material?</span> <span class="a">Crown glass.</span></li>
+      <li><span class="q">Scratch-resistance test?</span> <span class="a">Taber test.</span></li>
+      <li><span class="q">Widest near-field bifocal?</span> <span class="a">Executive (Franklin) bifocal.</span></li>
+    </ol>
+  </section>
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Theoretical Optics Card 7 &middot; rigid for irregular, run the formula</div>
+</div>
+</body>
+</html>

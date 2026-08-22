@@ -5725,5 +5725,261 @@
    "Correct. After the chiasm the fibers are the optic tract.",
    "The optic nerve is before the chiasm, not after."
   ]
+ },
+ {
+  "id": "B0250",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The neurotransmitter released by photoreceptors to signal the next neuron is:",
+  "o": [
+   "acetylcholine",
+   "dopamine",
+   "GABA",
+   "glutamate"
+  ],
+  "a": 3,
+  "w": "Photoreceptors release glutamate, most heavily in the dark. Light reduces its release. Dopamine and GABA act elsewhere in the retina.",
+  "k": "Photoreceptor transmitter = glutamate.",
+  "src": "authored"
+ },
+ {
+  "id": "B0251",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "In response to light, the photoreceptor membrane undergoes:",
+  "o": [
+   "depolarization",
+   "repolarization",
+   "hyperpolarization",
+   "an action potential"
+  ],
+  "a": 2,
+  "w": "Light closes cGMP-gated sodium channels, so the cell hyperpolarizes and releases less glutamate, unlike a typical neuron that depolarizes.",
+  "k": "Light hyperpolarizes the photoreceptor.",
+  "src": "authored"
+ },
+ {
+  "id": "B0252",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The second messenger broken down by the enzyme phosphodiesterase in phototransduction is:",
+  "o": [
+   "calcium",
+   "cAMP",
+   "cGMP",
+   "IP3"
+  ],
+  "a": 2,
+  "w": "Activated phosphodiesterase hydrolyzes cGMP, dropping its level so the sodium channels close. cAMP and IP3 are messengers in other pathways.",
+  "k": "PDE breaks down cGMP.",
+  "src": "authored"
+ },
+ {
+  "id": "B0253",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The enzyme that regenerates 11-cis retinal from all-trans retinal is:",
+  "o": [
+   "transducin",
+   "rhodopsin kinase",
+   "retinal isomerase",
+   "recoverin"
+  ],
+  "a": 2,
+  "w": "Retinal isomerase (in the visual cycle) converts all-trans retinal back to 11-cis retinal to reform rhodopsin. The others regulate the cascade.",
+  "k": "Isomerase remakes 11-cis retinal.",
+  "src": "authored"
+ },
+ {
+  "id": "B0254",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The retinal layer that receives the greatest blood supply from the choriocapillaris is the:",
+  "o": [
+   "photoreceptor layer",
+   "ganglion cell layer",
+   "inner nuclear layer",
+   "nerve fiber layer"
+  ],
+  "a": 0,
+  "w": "The choriocapillaris nourishes the outer retina, including the photoreceptors and RPE. The inner retina is supplied by the central retinal artery.",
+  "k": "Choriocapillaris feeds the outer retina (photoreceptors).",
+  "src": "authored"
+ },
+ {
+  "id": "B0255",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The largest ganglion cells, which also conduct fastest, are the:",
+  "o": [
+   "X cells",
+   "W cells",
+   "Y cells",
+   "midget cells"
+  ],
+  "a": 2,
+  "w": "Y (magnocellular, parasol) cells are large and fast, carrying motion and low-contrast information. X (parvocellular, midget) cells are smaller and slower.",
+  "k": "Y cells = largest and fastest (magno).",
+  "src": "authored"
+ },
+ {
+  "id": "B0256",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "Regarding longitudinal chromatic aberration of the eye, which is true?",
+  "o": [
+   "red light has a shorter focal length than blue",
+   "green light focuses in front of blue",
+   "all wavelengths focus at the same point",
+   "blue light has a shorter focal length than red"
+  ],
+  "a": 3,
+  "w": "Short-wavelength blue light refracts more, so it has a shorter focal length and focuses in front of red. This is longitudinal chromatic aberration.",
+  "k": "Blue bends most, focuses first (shortest focal length).",
+  "src": "authored"
+ },
+ {
+  "id": "B0257",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "Depth of focus of the eye is increased by:",
+  "o": [
+   "increased illumination alone",
+   "a large pupil",
+   "a longer eyeball",
+   "a small pupil"
+  ],
+  "a": 3,
+  "w": "A smaller pupil narrows the cone of light and increases depth of focus and depth of field, the pinhole effect.",
+  "k": "Small pupil = more depth of focus.",
+  "src": "authored"
+ },
+ {
+  "id": "B0258",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "The most important factor determining retinal image size is:",
+  "o": [
+   "corneal power",
+   "pupil diameter",
+   "lens thickness",
+   "axial length"
+  ],
+  "a": 3,
+  "w": "Axial length is the dominant factor in retinal image size; a longer eye gives a larger image. Optical powers matter less than the eye's length.",
+  "k": "Retinal image size is set mainly by axial length.",
+  "src": "authored"
+ },
+ {
+  "id": "B0259",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "Compared with parvocellular neurons, magnocellular neurons are:",
+  "o": [
+   "more sensitive to low-contrast stimuli",
+   "more sensitive to color",
+   "slower conducting",
+   "more sensitive to fine detail"
+  ],
+  "a": 0,
+  "w": "Magnocellular neurons respond to motion and low contrast and conduct quickly, but are colorblind and low-resolution. Parvocellular neurons carry detail and color.",
+  "k": "Magno = low contrast and motion; parvo = detail and color.",
+  "src": "authored"
+ },
+ {
+  "id": "B0260",
+  "sec": "B1 Visual System",
+  "t": "B1 Visual System",
+  "q": "Which ultraviolet band penetrates deepest into skin and ocular tissues?",
+  "o": [
+   "UV-C",
+   "UV-A",
+   "extreme UV",
+   "UV-B"
+  ],
+  "a": 1,
+  "w": "UV-A has the longest ultraviolet wavelength, so it penetrates deepest. UV-B and UV-C are shorter and absorbed more superficially.",
+  "k": "UV-A is longest, so it goes deepest.",
+  "src": "authored"
+ },
+ {
+  "id": "B0261",
+  "sec": "B3 Visual Field",
+  "t": "B3 Visual Field",
+  "q": "A lesion of the right optic radiation produces:",
+  "o": [
+   "left homonymous hemianopsia",
+   "right homonymous hemianopsia",
+   "binasal hemianopsia",
+   "bitemporal hemianopsia"
+  ],
+  "a": 0,
+  "w": "Retrochiasmal lesions cause a homonymous defect on the opposite side, so a right radiation lesion gives a left homonymous hemianopsia.",
+  "k": "Right radiation -> left homonymous (opposite side).",
+  "src": "authored"
+ },
+ {
+  "id": "B0262",
+  "sec": "B3 Visual Field",
+  "t": "B3 Visual Field",
+  "q": "A fixed, dilated, usually unilateral pupil caused by central nervous system compression is called:",
+  "o": [
+   "Argyll Robertson pupil",
+   "Hutchinson's pupil",
+   "Marcus Gunn pupil",
+   "Adie pupil"
+  ],
+  "a": 1,
+  "w": "Hutchinson's pupil is a fixed, dilated, usually unilateral pupil from third-nerve compression, as in uncal herniation. The others are different pupil signs.",
+  "k": "Fixed dilated pupil from compression = Hutchinson.",
+  "src": "authored"
+ },
+ {
+  "id": "B0263",
+  "sec": "B5 Binocular Vision",
+  "t": "B5 Binocular Vision",
+  "q": "A patient who can fuse images but cannot appreciate depth has which grade of binocular vision?",
+  "o": [
+   "Grade II",
+   "no binocular vision",
+   "Grade III",
+   "Grade I only"
+  ],
+  "a": 0,
+  "w": "Grade II is fusion without stereopsis. Grade I is simultaneous perception, and Grade III adds stereopsis (depth).",
+  "k": "Fuse but no depth = Grade II.",
+  "src": "authored"
+ },
+ {
+  "id": "B0264",
+  "sec": "B6 Stereopsis",
+  "t": "B6 Stereopsis",
+  "q": "A patient who passes all nine sets of the Titmus circles demonstrates a stereoacuity of:",
+  "o": [
+   "40 seconds of arc",
+   "400 seconds of arc",
+   "100 seconds of arc",
+   "20 seconds of arc"
+  ],
+  "a": 0,
+  "w": "Passing all nine Titmus circle sets corresponds to 40 seconds of arc, the finest level on that test.",
+  "k": "All nine Titmus circles = 40 arcsec.",
+  "src": "authored"
+ },
+ {
+  "id": "B0265",
+  "sec": "B5 Binocular Vision",
+  "t": "B5 Binocular Vision",
+  "q": "In the red-lens test, a patient who sees a single pink light has:",
+  "o": [
+   "fusion",
+   "abnormal retinal correspondence",
+   "diplopia",
+   "suppression"
+  ],
+  "a": 0,
+  "w": "Seeing one pink light means the red and white images have merged, indicating fusion. Two separate lights would mean diplopia, and one color means suppression.",
+  "k": "One pink light = fusion.",
+  "src": "authored"
  }
 ]

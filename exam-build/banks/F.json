@@ -4690,5 +4690,229 @@
    "Correct. About 60% have some DR past 10 years.",
    "95% is closer to the past-15-year figure, not 10."
   ]
+ },
+ {
+  "id": "F0205",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "A color-vision defect in which the red cones have decreased but not absent sensitivity is called:",
+  "o": [
+   "deuteranomaly",
+   "tritanopia",
+   "protanomaly",
+   "protanopia"
+  ],
+  "a": 2,
+  "w": "Anomaly means a weakened cone; a weak red (L) cone is protanomaly. Protanopia is an absent red cone, and deutan defects involve the green cone.",
+  "k": "Anomaly = weak cone; prot = red.",
+  "src": "authored"
+ },
+ {
+  "id": "F0206",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The most common type of dichromacy is:",
+  "o": [
+   "deuteranopia",
+   "protanomaly",
+   "protanopia",
+   "tritanopia"
+  ],
+  "a": 0,
+  "w": "Deuteranopia, an absent green (M) cone, is the most common dichromacy. Tritan defects are rare, and protanomaly is an anomalous trichromacy, not a dichromacy.",
+  "k": "Deutan (green) defects are commonest.",
+  "src": "authored"
+ },
+ {
+  "id": "F0207",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The most accurate tool for assessing a color-vision anomaly is the:",
+  "o": [
+   "anomaloscope",
+   "Farnsworth D-15",
+   "Ishihara plates",
+   "Hardy-Rand-Rittler plates"
+  ],
+  "a": 0,
+  "w": "The anomaloscope forces a Rayleigh red-green match and quantifies the defect, making it the gold standard. Plate and arrangement tests are screeners.",
+  "k": "Anomaloscope = gold standard color test.",
+  "src": "authored"
+ },
+ {
+  "id": "F0208",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The inheritance pattern of complete achromatopsia (rod monochromatism) is:",
+  "o": [
+   "autosomal dominant",
+   "autosomal recessive",
+   "mitochondrial",
+   "X-linked recessive"
+  ],
+  "a": 1,
+  "w": "Complete achromatopsia is autosomal recessive. The blue-cone (incomplete) form is X-linked and affects only men.",
+  "k": "Complete achromatopsia = autosomal recessive.",
+  "src": "authored"
+ },
+ {
+  "id": "F0209",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The type of achromatopsia that affects only males is:",
+  "o": [
+   "cerebral achromatopsia",
+   "complete achromatopsia",
+   "blue-cone achromatopsia",
+   "cone-rod dystrophy"
+  ],
+  "a": 2,
+  "w": "Blue-cone (incomplete) achromatopsia is X-linked, so it affects only males. Complete achromatopsia is autosomal recessive and affects both sexes.",
+  "k": "Blue-cone achromatopsia is X-linked, men only.",
+  "src": "authored"
+ },
+ {
+  "id": "F0210",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "A condition that results directly from an ocular abnormality is termed a:",
+  "o": [
+   "visual disorder",
+   "visual disability",
+   "visual deprivation",
+   "visual handicap"
+  ],
+  "a": 0,
+  "w": "A visual disorder is the direct result of an ocular abnormality; disability is the change in skills, and handicap is the social disadvantage.",
+  "k": "Ocular abnormality -> visual disorder.",
+  "src": "authored"
+ },
+ {
+  "id": "F0211",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The WHO uses which visual-field extent in the better eye to define blindness?",
+  "o": [
+   "less than 40 degrees",
+   "less than 10 degrees",
+   "less than 20 degrees",
+   "less than 30 degrees"
+  ],
+  "a": 2,
+  "w": "The WHO uses a visual field of less than 20 degrees in the better-seeing eye to define blindness by field constriction.",
+  "k": "WHO blindness field: under 20 degrees.",
+  "src": "authored"
+ },
+ {
+  "id": "F0212",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The vision-related change in a person's skills and abilities caused by visual impairment is termed:",
+  "o": [
+   "visual disorder",
+   "visual disability",
+   "visual handicap",
+   "visual impairment"
+  ],
+  "a": 1,
+  "w": "Disability is the functional change in skills and abilities. Disorder is the underlying condition, and handicap is the resulting social disadvantage.",
+  "k": "Change in skills/abilities = disability.",
+  "src": "authored"
+ },
+ {
+  "id": "F0213",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "At what distance must reading material be held to obtain a clear image through a +20.00 D spectacle magnifier?",
+  "o": [
+   "5 cm",
+   "10 cm",
+   "20 cm",
+   "2 cm"
+  ],
+  "a": 0,
+  "w": "The working distance equals the focal length: 100 divided by 20 D is 5 cm.",
+  "k": "Focal length = 100 / power (100/20 = 5 cm).",
+  "src": "authored"
+ },
+ {
+  "id": "F0214",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "A 20/100 target viewed through a system providing 5X magnification is equivalent to:",
+  "o": [
+   "20/50",
+   "20/20",
+   "20/500",
+   "20/100"
+  ],
+  "a": 2,
+  "w": "Magnification multiplies the effective letter size: 5 times 20/100 behaves like 20/500.",
+  "k": "5X of 20/100 = 20/500.",
+  "src": "authored"
+ },
+ {
+  "id": "F0215",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The earliest clinical sign of diabetic retinopathy is:",
+  "o": [
+   "neovascularization",
+   "microaneurysms",
+   "hard exudates",
+   "cotton-wool spots"
+  ],
+  "a": 1,
+  "w": "Microaneurysms, small outpouchings of the retinal capillaries, are the earliest visible sign. Cotton-wool spots and neovascularization appear later.",
+  "k": "Earliest DR sign = microaneurysms.",
+  "src": "authored"
+ },
+ {
+  "id": "F0216",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "White retinal lesions caused by microinfarction and ischemia of the nerve fiber layer are:",
+  "o": [
+   "microaneurysms",
+   "drusen",
+   "hard exudates",
+   "cotton-wool spots"
+  ],
+  "a": 3,
+  "w": "Cotton-wool spots are nerve-fiber-layer microinfarcts. Hard exudates are lipid deposits, and drusen are sub-RPE deposits.",
+  "k": "NFL microinfarct = cotton-wool spot.",
+  "src": "authored"
+ },
+ {
+  "id": "F0217",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The type of diabetic retinopathy defined by the presence of neovascularization is:",
+  "o": [
+   "severe non-proliferative",
+   "mild non-proliferative",
+   "moderate non-proliferative",
+   "proliferative diabetic retinopathy"
+  ],
+  "a": 3,
+  "w": "New vessel growth defines proliferative diabetic retinopathy, the sight-threatening stage. Non-proliferative stages lack neovascularization.",
+  "k": "Neovascularization = proliferative DR.",
+  "src": "authored"
+ },
+ {
+  "id": "F0218",
+  "sec": "F7 Low Vision",
+  "t": "F7 Low Vision",
+  "q": "The characteristic shape of the hemorrhages seen in diabetic retinopathy is:",
+  "o": [
+   "splinter",
+   "dot-and-blot",
+   "flame-shaped",
+   "subhyaloid"
+  ],
+  "a": 1,
+  "w": "Dot-and-blot hemorrhages in the deep retina are characteristic of diabetic retinopathy. Flame hemorrhages are more typical of hypertension.",
+  "k": "DR hemorrhage = dot-and-blot.",
+  "src": "authored"
  }
 ]

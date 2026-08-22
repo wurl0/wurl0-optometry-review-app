@@ -163,6 +163,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.B5-Fusion-Grades-Diplopia-Card', subject: 'B', type: 'card', label: 'Card 4 · Fusion/diplopia', path: '/top2/B-Physiological-Optics-and-BV/B5-Binocular-Vision-and-Fusion/B5-Fusion-Grades-Diplopia-Card.html' },
   { id: 'card.B1-Retinal-Physiology-Phototransduction-Card', subject: 'B', type: 'card', label: 'Card 5 · Retinal physiology', path: '/top2/B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Retinal-Physiology-Phototransduction-Card.html' },
   { id: 'card.B1-Accommodation-Vergence-ACA-Card', subject: 'B', type: 'card', label: 'Card 6 · Accom & AC/A', path: '/top2/B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Accommodation-Vergence-ACA-Card.html' },
+  { id: 'card.B1-Preboard-Retinal-Physiology-and-Optics-Card', subject: 'B', type: 'card', label: 'Card 7 · Retinal physiology', path: '/top2/B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Preboard-Retinal-Physiology-and-Optics-Card.html' },
   { id: 'card.C2-Ametropia-Astigmatism-Card', subject: 'C', type: 'card', label: 'Card 1 · Ametropia', path: '/top2/C-Primary-Care-and-Refraction/C2-Ametropia-and-Refractive-Errors/C2-Ametropia-Astigmatism-Card.html' },
   { id: 'card.C4-Retinoscopy-Card', subject: 'C', type: 'card', label: 'Card 2 · Retinoscopy', path: '/top2/C-Primary-Care-and-Refraction/C4-Objective-Examination/C4-Retinoscopy-Card.html' },
   { id: 'card.C5-Subjective-Refraction-Card', subject: 'C', type: 'card', label: 'Card 3 · Subjective', path: '/top2/C-Primary-Care-and-Refraction/C5-Subjective-Examination/C5-Subjective-Refraction-Card.html' },
@@ -176,6 +177,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.D2-Lens-Materials-Abbe-Card', subject: 'D', type: 'card', label: 'Card 4 · Materials', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Lens-Materials-Abbe-Card.html' },
   { id: 'card.D2-Bifocals-Dispensing-Card', subject: 'D', type: 'card', label: 'Card 5 · Bifocals', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Bifocals-Dispensing-Card.html' },
   { id: 'card.D3-Contact-Lenses-Card', subject: 'D', type: 'card', label: 'Card 6 · Contact lenses', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D3-Contact-Lenses/D3-Contact-Lenses-Card.html' },
+  { id: 'card.D3-Preboard-Optics-and-CL-Fixes-Card', subject: 'D', type: 'card', label: 'Card 7 · Optics & CL fixes', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D3-Contact-Lenses/D3-Preboard-Optics-and-CL-Fixes-Card.html' },
   { id: 'card.E3-Retinal-Vascular-Card', subject: 'E', type: 'card', label: 'Card 1 · Vascular', path: '/top2/E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Retinal-Vascular-Card.html' },
   { id: 'card.E2-Red-Eye-Card', subject: 'E', type: 'card', label: 'Card 2 · Red eye', path: '/top2/E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Red-Eye-Card.html' },
   { id: 'card.E2-Glaucoma-Card', subject: 'E', type: 'card', label: 'Card 3 · Glaucoma', path: '/top2/E-Ocular-Disease-and-Emergencies/E2-Anterior-Segment/E2-Glaucoma-Card.html' },
@@ -189,6 +191,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.F1-DPA-Clinical-Pharmacology-Card', subject: 'F', type: 'card', label: 'Card 4 · DPAs', path: '/top2/F-Clinical-Optometry-and-Specialties/F1-DPA-Examination/F1-DPA-Clinical-Pharmacology-Card.html' },
   { id: 'card.F5-Occupational-Sports-Vision-Card', subject: 'F', type: 'card', label: 'Card 5 · Occ & sports', path: '/top2/F-Clinical-Optometry-and-Specialties/F5-Occupational-Optometry/F5-Occupational-Sports-Vision-Card.html' },
   { id: 'card.F3-Geriatric-Prosthetics-Absorptive-Card', subject: 'F', type: 'card', label: 'Card 6 · Geriatric', path: '/top2/F-Clinical-Optometry-and-Specialties/F3-Geriatric-Optometry/F3-Geriatric-Prosthetics-Absorptive-Card.html' },
+  { id: 'card.F7-Preboard-Clinical-Fixes-Card', subject: 'F', type: 'card', label: 'Card 7 · Clinical fixes', path: '/top2/F-Clinical-Optometry-and-Specialties/F7-Low-Vision-and-Rehabilitation/F7-Preboard-Clinical-Fixes-Card.html' },
   { id: 'card.G2-Autonomic-Eye-Card', subject: 'G', type: 'card', label: 'Card 1 · Autonomic', path: '/top2/G-Ocular-Pharmacology/G2-Autonomic-Drugs/G2-Autonomic-Eye-Card.html' },
   { id: 'card.G4-Anti-Infectives-Card', subject: 'G', type: 'card', label: 'Card 2 · Anti-infect', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Infectives-Card.html' },
   { id: 'card.G4-Anti-Inflammatory-Card', subject: 'G', type: 'card', label: 'Card 3 · Anti-inflam', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Anti-Inflammatory-Card.html' },
@@ -201,6 +204,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.H2-Bioethics-Code-of-Ethics-Card', subject: 'H', type: 'card', label: 'Card 2 · Bioethics', path: '/top2/H-Jurisprudence-and-Ethics/H2-Bioethics-and-Code-of-Ethics/H2-Bioethics-Code-of-Ethics-Card.html' },
   { id: 'card.H3-Practice-Management-Taxes-Card', subject: 'H', type: 'card', label: 'Card 3 · Practice mgmt', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Practice-Management-Taxes-Card.html' },
   { id: 'card.H3-Labor-Laws-Benefits-Card', subject: 'H', type: 'card', label: 'Card 4 · Labor laws', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Labor-Laws-Benefits-Card.html' },
+  { id: 'card.H3-Preboard-Tax-and-Practice-Card', subject: 'H', type: 'card', label: 'Card 5 · Tax & practice', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Preboard-Tax-and-Practice-Card.html' },
 ]
 
 // Per-subject extras that sit outside the generated five. These are linked FROM pages a

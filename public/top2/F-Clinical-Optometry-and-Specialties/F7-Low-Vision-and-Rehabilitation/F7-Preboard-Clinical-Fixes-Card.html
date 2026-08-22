@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Clinical Optometry Card 7 · Clinical Fixes</title>
+<style>
+  :root{--bg:#F6F5F1;--surface:#FFFFFF;--surface-2:#F0EFEA;--ink:#1A1D19;--ink-soft:#53574E;--ink-faint:#8A8E82;--line:#E3E1D8;--line-soft:#EDEBE3;--accent:#1F7A4D;--accent-deep:#155C39;--accent-wash:#E2EFE8;--why:#1E63B0;--why-w:#E4EDF8;--trap:#BC3A2B;--trap-w:#F7E3DF;--mnem:#7A46B0;--mnem-w:#EEE7F7;--pearl:#8F6410;--pearl-w:#F4EAD1;--shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);}
+  @media (prefers-color-scheme:dark){:root{--bg:#12140F;--surface:#191C15;--surface-2:#20241A;--ink:#E9ECE1;--ink-soft:#A3A897;--ink-faint:#767B6A;--line:#2A2F21;--line-soft:#222719;--accent:#4FB980;--accent-deep:#93E2B2;--accent-wash:#152A1D;--why:#63A3E8;--why-w:#122235;--trap:#E9786C;--trap-w:#2F1B17;--mnem:#B58BE7;--mnem-w:#241B32;--pearl:#D7AB50;--pearl-w:#2B2513;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);}}
+  :root[data-theme="light"]{--bg:#F6F5F1;--surface:#FFFFFF;--surface-2:#F0EFEA;--ink:#1A1D19;--ink-soft:#53574E;--ink-faint:#8A8E82;--line:#E3E1D8;--line-soft:#EDEBE3;--accent:#1F7A4D;--accent-deep:#155C39;--accent-wash:#E2EFE8;--why:#1E63B0;--why-w:#E4EDF8;--trap:#BC3A2B;--trap-w:#F7E3DF;--mnem:#7A46B0;--mnem-w:#EEE7F7;--pearl:#8F6410;--pearl-w:#F4EAD1;--shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);}
+  :root[data-theme="dark"]{--bg:#12140F;--surface:#191C15;--surface-2:#20241A;--ink:#E9ECE1;--ink-soft:#A3A897;--ink-faint:#767B6A;--line:#2A2F21;--line-soft:#222719;--accent:#4FB980;--accent-deep:#93E2B2;--accent-wash:#152A1D;--why:#63A3E8;--why-w:#122235;--trap:#E9786C;--trap-w:#2F1B17;--mnem:#B58BE7;--mnem-w:#241B32;--pearl:#D7AB50;--pearl-w:#2B2513;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+  p{margin:0 0 13px;} .lead{font-size:15.5px;} .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;} .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;} td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;} .rx{color:var(--accent-deep);font-weight:600;}
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div><div class="brand">WAA <span>//</span> Board Review 2026</div><div class="sub">Personal study notes &middot; Clinical Optometry and Specialties</div></div>
+    <div class="card-no">Card<b>07</b>Clinical fixes</div>
+  </header>
+
+  <h1>Clinical fixes: <em>color, low vision, and the diabetic fundus</em></h1>
+  <p class="dek">The clinical misses split into three tight families: naming color-vision defects, the low-vision definition-and-magnification chain, and the diabetic retinopathy signs. The contact-lens items, which were the bulk, are consolidated on the Theoretical Optics card (Card 7) since contact lenses live there. This card owns the rest.</p>
+
+  <section>
+    <h2><span class="n">01</span> Color-vision defects: name by cone and by severity</h2>
+    <p>Two dimensions name every defect: <span class="term">which cone</span> (L=red=prot, M=green=deuter, S=blue=trit) and <span class="term">how bad</span> (anomaly = weak, anopia = absent).</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Color vision defect grid by cone and severity">
+        <text x="150" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="#C0392B">L / red (prot-)</text>
+        <text x="330" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="#1F7A4D">M / green (deuter-)</text>
+        <text x="510" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="#2f6fdb">S / blue (trit-)</text>
+        <text x="40" y="62" font-size="11" font-weight="700" fill="var(--ink)">weak</text>
+        <text x="40" y="112" font-size="11" font-weight="700" fill="var(--ink)">absent</text>
+        <rect x="90" y="44" width="150" height="34" rx="7" fill="var(--surface-2)" stroke="var(--line)"/><text x="165" y="66" text-anchor="middle" font-size="12" fill="var(--ink)">protanomaly</text>
+        <rect x="255" y="44" width="150" height="34" rx="7" fill="var(--surface-2)" stroke="var(--line)"/><text x="330" y="66" text-anchor="middle" font-size="12" fill="var(--ink)">deuteranomaly</text>
+        <rect x="420" y="44" width="150" height="34" rx="7" fill="var(--surface-2)" stroke="var(--line)"/><text x="495" y="66" text-anchor="middle" font-size="12" fill="var(--ink)">tritanomaly</text>
+        <rect x="90" y="94" width="150" height="34" rx="7" fill="var(--surface-2)" stroke="var(--line)"/><text x="165" y="116" text-anchor="middle" font-size="12" fill="var(--ink)">protanopia</text>
+        <rect x="255" y="94" width="150" height="34" rx="7" fill="var(--accent-wash)" stroke="var(--accent)"/><text x="330" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-deep)">deuteranopia</text>
+        <rect x="420" y="94" width="150" height="34" rx="7" fill="var(--surface-2)" stroke="var(--line)"/><text x="495" y="116" text-anchor="middle" font-size="12" fill="var(--ink)">tritanopia</text>
+      </svg>
+      <figcaption>cone across, severity down; deuteranopia is the common one</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>red cones with decreased but not absent sensitivity</td><td class="rx">protanomaly</td></tr>
+          <tr><td>the most common type of dichromacy</td><td class="rx">deuteranopia</td></tr>
+          <tr><td>the most accurate color-vision assessment tool</td><td class="rx">anomaloscope</td></tr>
+          <tr><td>inheritance of complete achromatopsia</td><td class="rx">autosomal recessive</td></tr>
+          <tr><td>achromatopsia type affecting only men</td><td class="rx">incomplete (blue-cone) achromatopsia, X-linked</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">Anchors</div>
+      <p>anomaly = weak cone; anopia = absent cone. Deutan (green) defects are the commonest overall. The <b>anomaloscope</b> is the gold standard (it forces a Rayleigh red-green match). Complete achromatopsia (rod monochromatism) is autosomal recessive; the men-only one is the X-linked blue-cone type.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Low vision: the definition chain and the magnifier math</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Term / task</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>result of an ocular abnormality</td><td class="rx">visual disorder</td></tr>
+          <tr><td>WHO visual-field limit for blindness (better eye)</td><td class="rx">less than 20 degrees</td></tr>
+          <tr><td>vision-related change in a person's skills and abilities</td><td class="rx">visual disability</td></tr>
+          <tr><td>reading distance through a +20.00 D spectacle magnifier</td><td class="rx">5 cm</td></tr>
+          <tr><td>20/100 target seen through 5X magnification</td><td class="rx">equivalent to 20/500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:13px">
+      <div class="lab">The two calculations</div>
+      <p>A plus magnifier's working distance is its focal length: <b>100 / 20 D = 5 cm</b>. Magnification multiplies the effective target size: a 20/100 letter under <b>5X</b> behaves like <b>20/500</b> (5 x 100). Disorder to impairment to disability to handicap is the WHO severity chain.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Diabetic retinopathy signs</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Sign</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><b>Microaneurysms</b></td><td class="rx">earliest clinical sign; capillary outpouchings</td></tr>
+          <tr><td><b>Dot-and-blot hemorrhages</b></td><td class="rx">the characteristic DR hemorrhage shape</td></tr>
+          <tr><td><b>Cotton-wool spots</b></td><td class="rx">nerve-fiber-layer microinfarcts (ischemia)</td></tr>
+          <tr><td><b>Neovascularization</b></td><td class="rx">defines proliferative diabetic retinopathy</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">The one that upgrades the stage</div>
+      <p>New vessels are the line between non-proliferative and <b>proliferative</b> DR. Microaneurysms come first, cotton-wool spots mark ischemia, and neovascularization is the dangerous late sign. This overlaps your E3 diabetic-retinopathy fundus signature.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; Color-defect grid</div><p>Draw the cone-by-severity grid and place protanomaly, deuteranopia, tritanopia. Name the gold-standard test.</p></div>
+    <div class="drill"><div class="t">2 &middot; Low-vision math</div><p>Compute the working distance of a +16, +20, and +24 D magnifier, and the acuity equivalent of 20/80 under 4X.</p></div>
+    <div class="drill"><div class="t">3 &middot; DR sign order</div><p>List the DR signs from earliest to most dangerous and say which one defines proliferative disease.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Spaced-repetition deck</h2>
+    <ol class="srs">
+      <li><span class="q">Red cones weak, not absent?</span> <span class="a">Protanomaly (anomaly = weak).</span></li>
+      <li><span class="q">Most common dichromacy?</span> <span class="a">Deuteranopia.</span></li>
+      <li><span class="q">Most accurate color-vision test?</span> <span class="a">Anomaloscope.</span></li>
+      <li><span class="q">Complete achromatopsia inheritance?</span> <span class="a">Autosomal recessive.</span></li>
+      <li><span class="q">Achromatopsia affecting only men?</span> <span class="a">X-linked blue-cone (incomplete) type.</span></li>
+      <li><span class="q">WHO field limit for blindness?</span> <span class="a">Less than 20 degrees in the better eye.</span></li>
+      <li><span class="q">Working distance of a +20 D magnifier?</span> <span class="a">5 cm (100/20).</span></li>
+      <li><span class="q">20/100 under 5X equals?</span> <span class="a">20/500.</span></li>
+      <li><span class="q">Earliest clinical sign of DR?</span> <span class="a">Microaneurysms.</span></li>
+      <li><span class="q">What defines proliferative DR?</span> <span class="a">Neovascularization.</span></li>
+      <li><span class="q">Cotton-wool spots are?</span> <span class="a">Nerve-fiber-layer microinfarcts.</span></li>
+    </ol>
+  </section>
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Clinical Optometry Card 7 &middot; name it by cone and severity</div>
+</div>
+</body>
+</html>
