@@ -804,12 +804,12 @@ const data: OlePrepData = {
           title: 'Prism Deviation Table — Base Direction & Clinical Effect',
           headers: ['Prism Base', 'Eye Deviation Induced', 'Phoria It Corrects', 'Demand Added'],
           rows: [
-            ['Base OUT (BO)', 'Eye moves IN (adducts)', 'Corrects exophoria/exotropia', 'Convergence demand ↑'],
-            ['Base IN (BI)', 'Eye moves OUT (abducts)', 'Corrects esophoria/esotropia', 'Divergence demand ↑'],
+            ['Base OUT (BO)', 'Eye moves IN (adducts)', 'Corrects esophoria/esotropia', 'Convergence demand ↑'],
+            ['Base IN (BI)', 'Eye moves OUT (abducts)', 'Corrects exophoria/exotropia', 'Divergence demand ↑'],
             ['Base UP (BU) OD', 'Right eye moves DOWN', 'Corrects right hyperphoria', 'Vertical divergence'],
             ['Base DOWN (BD) OD', 'Right eye moves UP', 'Corrects right hypophoria', 'Vertical convergence'],
           ],
-          notes: 'Memory: the eye always moves AWAY from the base (toward the apex). Light bends toward base → image shifts to apex → eye rotates toward apex to fixate.',
+          notes: 'Keep two ideas separate. (1) Induced eye movement: the eye rotates toward the APEX (away from base), so BO makes it adduct (in), BI makes it abduct (out). (2) Correcting/relieving Rx: esophoria/esotropia takes base-OUT, exophoria/exotropia takes base-IN (the same rule CI confirms: an exophore at near is relieved with base-in). Do NOT read the correcting base off the induced eye movement — that reversal is the classic board trap. The "Demand Added" column is the prism\'s stimulation effect used in vision therapy (a weak-convergence exophore trains against base-out); the relieving prescription points at the opposite phoria.',
         },
         {
           kind: 'trap' as const,

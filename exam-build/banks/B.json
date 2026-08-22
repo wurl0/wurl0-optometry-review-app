@@ -1782,14 +1782,14 @@
    "Increase fusional convergence"
   ],
   "a": 3,
-  "w": "Exophoria is managed by building fusional convergence (convergence exercises) or temporary base-out prism. Esophoria uses base-in/plus.",
+  "w": "Exophoria is managed by building fusional convergence: convergence exercises (trained against a base-out demand) and, when prism is prescribed, base-in relieving prism. Esophoria is the mirror image, managed with plus lenses at near and base-out relieving prism.",
   "k": "Exo: convergence training / base-out.",
   "src": "legacy",
   "decode": "Exophoria is managed by BUILDING fusional convergence (or temporary base-out prism).",
   "ow": [
    "Plus lenses reduce convergence and suit esophoria, not exophoria.",
    "Patching treats amblyopia, not exophoria alignment.",
-   "Base-in reduces convergence and worsens an exo demand.",
+   "The therapeutic goal for exophoria is to increase fusional convergence, not to reduce it.",
    "Correct. Exophoria therapy increases fusional convergence."
   ]
  },

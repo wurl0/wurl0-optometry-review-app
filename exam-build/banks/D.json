@@ -3315,23 +3315,23 @@
   "id": "D0145",
   "sec": "D1-01-Geometric-and-Physical-Optics practice",
   "t": "D1 Physical Optics",
-  "q": "A patient's spectacle prescription is OD −3.00 −1.00 × 90. The patient's pupillary distance is 30mm from the OC of the right lens. What is the prismatic effect?",
+  "q": "A patient's right spectacle lens is OD −3.00 −1.00 × 90. The patient views through a point 3 mm temporal to the optical center (horizontal displacement). What is the horizontal prismatic effect?",
   "o": [
    "1.2Δ base out",
    "0.9Δ base up",
    "1.5Δ base in",
    "0.9Δ base in"
   ],
-  "a": 3,
-  "w": "Using Prentice's rule: P = d × F = 3.0 cm × ... Wait — the question asks about a sphero-cylindrical lens. The prismatic effect at a given point depends on the meridional power in the direction of decentration. If the 3mm decentration is horizontal (temporal), we use the horizontal meridian power. For −3.00 −1.00 × 90: horizontal meridian (180°) = sphere = −3.00 D. P = 0.3 cm × 3.00 = 0.9Δ. For a minus lens, the prism base is AWAY from the optical center (toward the apex in the direction of displacement). With temporal decentration on OD, the base is temporal (outward) for plus lenses but for minus lenses the base is nasal (inward). Answer: 0.9Δ base in (nasal = toward nose). (Note: verify meridional power direction in exam context.)",
-  "k": "Using Prentice's rule: P = d × F = 3.0 cm × ...",
+  "a": 0,
+  "w": "Prentice's rule: P = d(cm) × F, using the lens power in the meridian of the decentration. The decentration is horizontal, so use the horizontal (180°) meridian. The cylinder axis is 90, and a cylinder's power acts 90° from its axis, so the full −1.00 cyl lands in the 180° meridian: horizontal power = −3.00 + (−1.00) = −4.00 D. Convert 3 mm = 0.3 cm. P = 0.3 × 4.00 = 1.2Δ. Direction: a minus lens throws its base toward the side you are displaced to, so a temporal viewing point gives a temporal base = base out. Answer: 1.2Δ base out.",
+  "k": "Horizontal meridian power = sphere + cyl = −4.00 D (axis 90). P = 0.3 cm × 4.00 = 1.2Δ, base out.",
   "src": "authored",
-  "decode": "Formula (Prentice): P = d(cm) × F, using the meridian power along the direction of decentration. Horizontal decentration uses the 180° meridian power. For −3.00 −1.00 × 90 the axis is 90, so the 180° meridian carries the sphere = −3.00 D. Steps: d = 3 mm = 0.3 cm; P = 0.3 × 3.00 = 0.9Δ. A minus lens decentered nasally throws its base nasally → base-in.",
+  "decode": "Formula (Prentice): P = d(cm) × F, using the power in the meridian of the decentration. Horizontal decentration → 180° meridian. Axis 90 puts the cyl power in the 180° meridian, so horizontal power = −3.00 + (−1.00) = −4.00 D. Steps: 3 mm = 0.3 cm; P = 0.3 × 4.00 = 1.2Δ. Minus lens displaced temporally → base out.",
   "ow": [
-   "1.2Δ base-out uses the wrong meridian power and direction.",
-   "0.9Δ base-up would apply vertical, not horizontal, decentration.",
-   "1.5Δ base-in overstates the magnitude (0.3 × 3.00 = 0.9, not 1.5).",
-   "Correct. P = 0.3 cm × 3.00 D = 0.9Δ, base-in."
+   "Correct. Horizontal power = −4.00 D (sphere + cyl, axis 90); 0.3 cm × 4.00 = 1.2Δ, base out.",
+   "0.9Δ base-up applies vertical decentration, but the displacement here is horizontal.",
+   "1.5Δ base-in uses the wrong magnitude and direction.",
+   "0.9Δ comes from using only the −3.00 sphere; it forgets that the −1.00 cyl (axis 90) also acts in the horizontal meridian, making it −4.00 D."
   ]
  },
  {
@@ -3369,7 +3369,7 @@
    "+6.80D"
   ],
   "a": 2,
-  "w": "The lensometer with the concave (back) surface against the lens stop reads back vertex power (BVP). BVP = D₁ + D₂ + (t/n)(D₁)² = +10.00 + (−4.00) + (0.006/1.5)(+10.00)² = +6.00 + 0.004 × 100 = +6.00 + 0.40 = +6.40D. (Note: rounding differences possible by exam — the key concept is that BVP > nominal power for plus lenses, and lensometer with concave side down = BVP.) Nominal power = D₁ + D₂ = +6.00D only applies to thin lenses. Equivalent power (Deq) subtracts the interaction term. FVP is read when the convex side is placed down.",
+  "w": "The lensometer with the concave (back) surface against the lens stop reads back vertex power (BVP). BVP = F1/(1 − (t/n)·F1) + F2 = 10/(1 − 0.004 × 10) + (−4.00) = 10/0.96 − 4 = 10.42 − 4 = +6.42 D, so the nearest option is +6.48D. (Note: rounding differences possible by exam — the key concept is that BVP > nominal power for plus lenses, and lensometer with concave side down = BVP.) Nominal power = D₁ + D₂ = +6.00D only applies to thin lenses. Equivalent power (Deq) subtracts the interaction term. FVP is read when the convex side is placed down.",
   "k": "The lensometer with the concave (back) surface against the lens stop reads back vertex power (BVP).",
   "src": "authored",
   "decode": "Concave-side-down reads BACK VERTEX POWER. Formula: BVP = F1/(1 − (t/n)·F1) + F2. Steps: t/n = 0.006/1.5 = 0.004; F1/(1 − 0.004×10) = 10/0.96 = 10.42; BVP = 10.42 + (−4) = +6.42 D ≈ +6.48. BVP exceeds the +6.00 nominal (F1 + F2) because of the thickness term.",
@@ -3415,7 +3415,7 @@
    "8△ Base In right eye"
   ],
   "a": 3,
-  "w": "Exotropia means the right eye deviates outward (temporally). To correct it, the prism must redirect the visual axis inward (nasally). A Base In prism has its apex temporal — light bends toward the base (nasal), and the eye follows the image toward the apex (temporal). Wait — re-reading: image displaces toward APEX. Apex is temporal → image appears temporal → eye moves toward apex (temporal). That would increase the exotropia. Let me reconsider. Correction: For exotropia (eye turns OUT), the correcting prism is Base IN. Here's the reasoning: the prism must move the image nasally (inward) so the eye moves inward to fixate it. With Base IN, the base faces nasally — light bends toward the nasal base — the image displaces toward the temporal APEX. The eye follows TOWARD THE APEX (temporal)... This seems wrong. Clarification: The rule is — the CORRECTING prism base points toward the deviated direction. Right exotropia = eye deviated OUT (temporal). Correcting prism base points INWARD (nasal) = Base IN. This places the base between the deviated eye and the image, bending light toward it. Answer: B (Base In right eye) or D (split equally). The Board most commonly asks for the full prism on the affected eye: B.",
+  "w": "Exotropia is an outward (temporal) deviation, and it is corrected with base-in prism (esotropia takes base-out). A base-in prism has its apex temporal and displaces the image temporally, onto the fovea of the outward-turned eye, so the eye no longer has to deviate to fixate. Board convention places the full amount on the affected eye: 8Δ base-in OD. Splitting it as 4Δ base-in each eye neutralizes the same 8Δ, but the single-eye form is the expected answer here.",
   "k": "Exotropia means the right eye deviates outward (temporally).",
   "src": "authored",
   "decode": "Right exotropia (eye turned out) is corrected with BASE-IN prism, full amount on the affected eye = 8Δ BI OD.",

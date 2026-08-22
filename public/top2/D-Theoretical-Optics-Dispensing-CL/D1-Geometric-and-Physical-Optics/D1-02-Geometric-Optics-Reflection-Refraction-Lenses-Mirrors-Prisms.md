@@ -696,11 +696,7 @@ f = R/2 = 40/2 = 20mm. Object at 15mm = inside the focal length (15 < 20). When 
 
 **B. 8△ Base In right eye (or D: 4△ Base In each eye — both are acceptable splits).**
 
-Exotropia means the right eye deviates outward (temporally). To correct it, the prism must redirect the visual axis inward (nasally). A Base In prism has its apex temporal — light bends toward the base (nasal), and the eye follows the image toward the apex (temporal). Wait — re-reading: image displaces toward APEX. Apex is temporal → image appears temporal → eye moves toward apex (temporal). That would increase the exotropia. Let me reconsider.
-
-**Correction:** For exotropia (eye turns OUT), the correcting prism is Base IN. Here's the reasoning: the prism must move the image nasally (inward) so the eye moves inward to fixate it. With Base IN, the base faces nasally — light bends toward the nasal base — the image displaces toward the temporal APEX. The eye follows TOWARD THE APEX (temporal)... this seems wrong.
-
-**Clarification:** The rule is — the CORRECTING prism base points toward the deviated direction. Right exotropia = eye deviated OUT (temporal). Correcting prism base points INWARD (nasal) = Base IN. This places the base between the deviated eye and the image, bending light toward it. Answer: **B** (Base In right eye) or **D** (split equally). The Board most commonly asks for the full prism on the affected eye: B.
+Exotropia is an outward (temporal) deviation, and it is corrected with base-in prism (esotropia takes base-out). A base-in prism has its apex temporal and displaces the image temporally, onto the fovea of the outward-turned eye, so the eye no longer has to deviate to fixate. Board convention places the full amount on the affected eye: 8Δ base-in OD. Splitting it as 4Δ base-in each eye neutralizes the same 8Δ, but the single-eye form is the expected answer here.
 
 </details>
 

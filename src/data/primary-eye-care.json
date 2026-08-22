@@ -875,8 +875,8 @@
     "type": "mcq",
     "stem": "SITUATION (continued): After plus add lenses, the near esophoria reduces from 14Δ to 4Δ. The remaining 4Δ near esophoria is symptomatic. The next step in management is:",
     "options": ["Increase the plus add", "Base-out prism", "Base-in prism", "Occlusion therapy"],
-    "correct": 2,
-    "explanation": "Residual esophoria (inward deviation) after optical management is relieved with base-in prism, which displaces the image outward and reduces the convergence demand to relieve symptoms.",
+    "correct": 1,
+    "explanation": "Residual symptomatic esophoria (an inward, over-converging deviation) is relieved with base-out prism. The prism apex points nasally, shifting the image toward where the esophoric eyes already turn, so the fusional system has less to overcome. Base-in prism is the correction for exophoria; here it would add to the convergence demand and worsen the esophoria. Increasing the plus add gives little more once the eso is already down to 4Δ, and occlusion does not treat a phoria.",
     "module": "Module 4: Binocular Vision & Strabismus"
   },
   {

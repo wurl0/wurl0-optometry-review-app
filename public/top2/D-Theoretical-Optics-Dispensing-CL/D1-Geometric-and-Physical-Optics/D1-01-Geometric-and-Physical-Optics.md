@@ -1085,19 +1085,19 @@ Result: +1.00 +1.00 × 170
 
 ## Practice Questions
 
-**1.** A patient's spectacle prescription is OD −3.00 −1.00 × 90. The patient's pupillary distance is 30mm from the OC of the right lens. What is the prismatic effect?
+**1.** A patient's right spectacle lens is OD −3.00 −1.00 × 90. The patient views through a point 3 mm temporal to the optical center (horizontal displacement). What is the horizontal prismatic effect?
 
 - A. 0.9Δ base up
-- B. 0.9Δ base in
-- C. 1.2Δ base out
+- B. 1.2Δ base out
+- C. 0.9Δ base in
 - D. 1.5Δ base in
 
 <details>
 <summary>Answer</summary>
 
-**B. 0.9Δ base in.**
+**B. 1.2Δ base out.**
 
-Using Prentice's rule: P = d × F = 3.0 cm × ... wait — the question asks about a sphero-cylindrical lens. The prismatic effect at a given point depends on the meridional power in the direction of decentration. If the 3mm decentration is horizontal (temporal), we use the horizontal meridian power. For −3.00 −1.00 × 90: horizontal meridian (180°) = sphere = −3.00 D. P = 0.3 cm × 3.00 = 0.9Δ. For a minus lens, the prism base is AWAY from the optical center (toward the apex in the direction of displacement). With temporal decentration on OD, the base is temporal (outward) for plus lenses but for minus lenses the base is nasal (inward). Answer: 0.9Δ base in (nasal = toward nose). *(Note: verify meridional power direction in exam context.)*
+Prentice's rule: P = d(cm) × F, using the lens power in the meridian of the decentration. The decentration is horizontal, so use the horizontal (180°) meridian. The cylinder axis is 90, and a cylinder's power acts 90° from its axis, so the full −1.00 cyl lands in the 180° meridian: horizontal power = −3.00 + (−1.00) = −4.00 D. Convert 3 mm = 0.3 cm. P = 0.3 × 4.00 = 1.2Δ. Direction: a minus lens throws its base toward the side you are displaced to, so a temporal viewing point gives a temporal base = base out. The 0.9Δ trap comes from using only the −3.00 sphere and forgetting the cylinder's meridian power.
 
 </details>
 
@@ -1124,16 +1124,16 @@ The critical angle for crown glass → air is 41.04° (sin CA = 1.0/1.523). Sinc
 **3.** A lens has a front surface power of +10.00D and a back surface power of −4.00D. Center thickness is 6 mm and index is 1.5. A lensometer is used with the concave side against the lens stop. Which value does the lensometer display?
 
 - A. +6.00D (nominal power)
-- B. +6.48D (equivalent power)
-- C. +6.80D (back vertex power)
-- D. +6.16D (front vertex power)
+- B. +6.16D (equivalent power)
+- C. +6.48D (back vertex power)
+- D. +6.80D
 
 <details>
 <summary>Answer</summary>
 
-**C. +6.80D (back vertex power).**
+**C. +6.48D (back vertex power).**
 
-The lensometer with the concave (back) surface against the lens stop reads back vertex power (BVP). BVP = D₁ + D₂ + (t/n)(D₁)² = +10.00 + (−4.00) + (0.006/1.5)(+10.00)² = +6.00 + 0.004 × 100 = +6.00 + 0.40 = +6.40D. *(Note: rounding differences possible by exam — the key concept is that BVP > nominal power for plus lenses, and lensometer with concave side down = BVP.)* Nominal power = D₁ + D₂ = +6.00D only applies to thin lenses. Equivalent power (Deq) subtracts the interaction term. FVP is read when the convex side is placed down.
+The lensometer with the concave (back) surface against the lens stop reads back vertex power (BVP). BVP = F1/(1 − (t/n)·F1) + F2. With t = 6 mm = 0.006 m and n = 1.5: t/n = 0.004; F1/(1 − 0.004 × 10) = 10/0.96 = 10.42; BVP = 10.42 + (−4.00) = +6.42 D, so the nearest option is +6.48D. BVP is higher than the +6.00 nominal power (F1 + F2) because of the thickness term. Nominal power (+6.00) applies only to thin lenses; equivalent power (+6.16) is a different quantity; front vertex power is read with the convex side against the stop.
 
 </details>
 
