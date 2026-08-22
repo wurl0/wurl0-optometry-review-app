@@ -27,7 +27,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/foquslab-lockup.svg" alt="FoqusLab" width={168} height={63} className="inline-block mb-3 h-14 w-auto" />
+          <img src="/brand/foquslab-lockup.svg" alt="FoqusLab" width={155} height={96} className="inline-block mb-3 h-24 w-auto" />
           <p className="text-gray-500 text-sm">Study, drill, pass.</p>
         </div>
 
