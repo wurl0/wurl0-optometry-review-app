@@ -1,18 +1,22 @@
-// One-time backfill: add `decode` + per-option `ow` to review-queue cards that were
-// recorded before the Top 2 rollout (their payload.explanation is the old worked-answer).
+// Backfill / repair review-queue cards so each card's stored payload matches the current
+// canonical question. Re-run this after correcting a question's answer or rationale in a
+// bank; it rewrites the affected /review cards to the fixed content. Two sources are read:
+//   - main-app banks  (src/data/*.json: {stem, options, correct, explanation})
+//   - Top 2 banks     (exam-build/banks/A-H.json: {q, o, a, decode, ow})
+// Top 2 wins any stem-hash collision (its decode + per-option ow is the richer content).
 //
-// Existing cards self-heal the next time their subject exam is sat (the record route
-// re-upserts the full payload), so this only matters for cards seen through /review.
-// New misses already carry decode/ow via the updated harvester.
+// Existing cards also self-heal the next time their subject exam is sat (the record route
+// re-upserts the full payload), so this only matters for a card already sitting in /review
+// that has not been re-encountered since the fix. Idempotent and safe to re-run.
 //
 // Match is by the SAME question id the app uses: FNV-1a over the normalized stem. We
 // recompute the id from each row's own payload.stem, so it lines up exactly.
 //
-// Run once, from the repo root, with the service-role key (never ship this key):
+// Run from the repo root, with the service-role key (never ship this key):
 //   NEXT_PUBLIC_SUPABASE_URL=... SUPABASE_SERVICE_ROLE_KEY=... node exam-build/backfill_srs_payload.mjs
 // Add --apply to write; without it the script only reports what it would change.
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { createClient } from '@supabase/supabase-js'
@@ -31,12 +35,34 @@ function questionId(stem) {
   return h.toString(16).padStart(8, '0') + '-' + s.length.toString(36)
 }
 
-// --- build qid -> canonical {options, correct, decode, ow} from the subject banks ---
-// We overwrite options+correct+ow+decode together (not just decode/ow): a card's stored
-// options were shuffled at harvest time, so grafting bank-order ow onto them misaligns the
-// per-option rationale. Replacing the whole set with the bank's canonical order keeps ow,
-// options, and correct consistent with each other.
+// --- build qid -> canonical patch from BOTH question sources ---
+// We overwrite options+correct together (not fields in isolation): a card's stored options
+// were shuffled at harvest time, so grafting bank-order ow/explanation onto them misaligns
+// the per-option text. Replacing the whole set with the bank's canonical order keeps
+// options, correct, and the rationale consistent with each other. Each patch also carries
+// its own rationale field (Top 2 -> decode+ow; main-app -> explanation), and only the fields
+// a patch defines are written, so a Top 2 card is not forced to grow an explanation etc.
 const patch = new Map()
+
+// Main-app banks first (src/data/*.json: {stem, options, correct, explanation}). Cards for
+// these are harvested from app practice/exams (e.g. the Primary Eye Care drill).
+const mainDir = join(HERE, '..', 'src', 'data')
+const mainBanks = readdirSync(mainDir).filter(f => f.endsWith('.json')).map(f => join(mainDir, f))
+for (const file of mainBanks) {
+  let bank
+  try { bank = JSON.parse(readFileSync(file, 'utf8')) } catch { continue }
+  if (!Array.isArray(bank)) continue
+  for (const q of bank) {
+    if (!q || typeof q.stem !== 'string' || !Array.isArray(q.options)) continue
+    patch.set(questionId(q.stem), {
+      options: q.options, correct: q.correct,
+      explanation: q.explanation || undefined,
+    })
+  }
+}
+
+// Top 2 banks second (exam-build/banks/A-H.json: {q, o, a, decode, ow}). These win any
+// stem-hash collision because their decode + per-option ow is the richer review content.
 for (const L of ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']) {
   const bank = JSON.parse(readFileSync(join(HERE, 'banks', `${L}.json`), 'utf8'))
   for (const q of bank) {
@@ -67,13 +93,17 @@ for (;;) {
     const p = row.payload || {}
     const hit = patch.get(row.question_id) || (p.stem ? patch.get(questionId(p.stem)) : null)
     if (!hit) continue
-    // Skip rows already canonical (idempotent re-runs).
-    if (p.decode === hit.decode && p.correct === hit.correct
-        && JSON.stringify(p.ow) === JSON.stringify(hit.ow)
-        && JSON.stringify(p.options) === JSON.stringify(hit.options)) continue
-    // Overwrite options+correct+ow+decode together so the per-option rationale stays
-    // aligned with the options (the stored options were shuffled at harvest time).
-    const next = { ...p, options: hit.options, correct: hit.correct, decode: hit.decode, ow: hit.ow }
+    // Only the fields this patch defines get written (Top 2 -> options/correct/decode/ow;
+    // main-app -> options/correct/explanation). Build the diff, then skip if it is a no-op.
+    const fields = ['options', 'correct', 'decode', 'ow', 'explanation']
+    const next = { ...p }
+    let differs = false
+    for (const k of fields) {
+      if (hit[k] === undefined) continue
+      if (JSON.stringify(p[k]) !== JSON.stringify(hit[k])) differs = true
+      next[k] = hit[k]
+    }
+    if (!differs) continue // already canonical — idempotent re-runs
     changed++
     if (APPLY) {
       const { error: upErr } = await db
