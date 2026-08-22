@@ -102,7 +102,7 @@ export default async function HomePage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">👁️</span>
-            <span className="font-bold text-gray-900">OptoPrep</span>
+            <span className="font-bold text-gray-900">FoqusLab</span>
             <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full font-medium">2026</span>
           </div>
           <div className="flex items-center gap-3">
@@ -457,7 +457,7 @@ export default async function HomePage() {
           <details className="group">
             <summary className="cursor-pointer text-xs text-gray-400 hover:text-gray-600 transition-colors select-none list-none flex items-center gap-1.5">
               <span className="group-open:rotate-90 transition-transform inline-block">▶</span>
-              What&apos;s new in OptoPrep
+              What&apos;s new in FoqusLab
             </summary>
             <div className="mt-3 space-y-2">
               {[

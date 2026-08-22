@@ -3,7 +3,7 @@ import './globals.css'
 import BfcacheReload from '@/components/BfcacheReload'
 
 export const metadata: Metadata = {
-  title: 'OptoPrep',
+  title: 'FoqusLab',
   description: 'Prep. Practice. Pass. — The Philippine Optometry review platform.',
 }
 

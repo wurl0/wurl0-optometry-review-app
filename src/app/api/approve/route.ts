@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
 function successPage(name: string, alreadyApproved: boolean) {
   const message = alreadyApproved
     ? `${name} was already approved.`
-    : `${name} has been approved and can now access OptoPrep.`
+    : `${name} has been approved and can now access FoqusLab.`
   return `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Approved</title>
     <style>body{font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f0fdf4}
     .card{background:#fff;border-radius:16px;padding:40px;max-width:400px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.08)}
@@ -59,7 +59,7 @@ function successPage(name: string, alreadyApproved: boolean) {
     <div style="font-size:48px;margin-bottom:16px">✅</div>
     <h2>Access Granted</h2>
     <p>${message}</p>
-    <a href="/">Go to OptoPrep →</a>
+    <a href="/">Go to FoqusLab →</a>
     </div></body></html>`
 }
 

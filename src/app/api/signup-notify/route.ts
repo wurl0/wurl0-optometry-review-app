@@ -25,12 +25,12 @@ export async function POST(req: NextRequest) {
     const adminUrl = `${appUrl}/admin`
 
     await resend.emails.send({
-      from: 'OptoPrep <onboarding@resend.dev>',
+      from: 'FoqusLab <onboarding@resend.dev>',
       to: process.env.ADMIN_EMAIL!,
       subject: `New sign-up: ${profile.full_name ?? profile.email}`,
       html: `
         <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:24px">
-          <h2 style="margin:0 0 8px">New OptoPrep Sign-Up 👁️</h2>
+          <h2 style="margin:0 0 8px">New FoqusLab Sign-Up 👁️</h2>
           <p style="color:#555;margin:0 0 20px">Someone just created an account and is waiting for your approval.</p>
           <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
             <tr>

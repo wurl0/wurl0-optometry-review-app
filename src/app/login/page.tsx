@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase-client'
 
 export default function LoginPage() {
@@ -26,9 +27,9 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-teal-600 text-white text-2xl mb-4">👁️</div>
-          <h1 className="text-2xl font-bold text-gray-900">OptoPrep</h1>
-          <p className="text-gray-500 text-sm mt-1">Prep. Practice. Pass.</p>
+          <Image src="/brand/foquslab-appicon.png" alt="FoqusLab" width={56} height={56} className="inline-block rounded-2xl mb-4" priority />
+          <h1 className="text-2xl font-bold text-gray-900">FoqusLab</h1>
+          <p className="text-gray-500 text-sm mt-1">Study, drill, pass.</p>
         </div>
 
         <form onSubmit={handleLogin} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">

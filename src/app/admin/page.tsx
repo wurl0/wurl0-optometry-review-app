@@ -317,7 +317,7 @@ export default function AdminPage() {
           <h1 className="text-2xl font-bold text-gray-900">Admin Panel</h1>
           <Link href="/" className="text-sm text-teal-600 hover:underline font-medium">← Home</Link>
         </div>
-        <p className="text-gray-500 text-sm mb-6">Manage OptoPrep sign-up approvals and reviewer access</p>
+        <p className="text-gray-500 text-sm mb-6">Manage FoqusLab sign-up approvals and reviewer access</p>
 
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3 mb-6">{error}</div>

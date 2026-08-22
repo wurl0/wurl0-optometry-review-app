@@ -88,7 +88,7 @@ export default async function ReadinessPage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">👁️</span>
-            <span className="font-bold text-gray-900">OptoPrep</span>
+            <span className="font-bold text-gray-900">FoqusLab</span>
             <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full font-medium">Readiness</span>
           </div>
           <a href={examsHref} className="text-sm text-gray-500 hover:text-gray-800 transition-colors">← Top 2</a>
