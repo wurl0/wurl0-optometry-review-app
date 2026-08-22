@@ -2,236 +2,432 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pharma Swap-Pairs & Formulation Drill Card — Board Review 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Ocular Pharma Card 7 · G1 Principles</title>
 <style>
-  @page { size: letter landscape; margin: 0.35in; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #1a1a1a; margin: 0; font-size: 10px; line-height: 1.3;
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
   }
-  .page { page-break-after: always; }
-  .page:last-child { page-break-after: auto; }
-  .topbar {
-    display: flex; justify-content: space-between; align-items: baseline;
-    border-bottom: 2px solid #1a1a1a; padding-bottom: 4px; margin-bottom: 6px;
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
   }
-  .topbar .waa { font-weight: 700; font-size: 15px; letter-spacing: 1px; }
-  .topbar .title { font-size: 13px; font-weight: 700; }
-  .topbar .sub { font-size: 9px; color: #555; }
-  .cols { display: flex; gap: 12px; }
-  .col { flex: 1; }
-  .col h2 {
-    font-size: 11px; margin: 0 0 4px; padding: 2px 6px;
-    background: #1a1a1a; color: #fff; text-transform: uppercase; letter-spacing: .5px;
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
   }
-  .col h3 { font-size: 9.5px; margin: 7px 0 2px; text-transform: uppercase; color: #444; letter-spacing: .5px; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 4px; }
-  td, th { border: 1px solid #888; padding: 3px 4px; vertical-align: top; }
-  th { background: #eee; font-size: 9px; text-align: left; }
-  .k { font-weight: 700; white-space: nowrap; }
-  .clue { color: #555; }
-  .rule { background: #f6f6f6; border-left: 3px solid #888; padding: 3px 6px; margin: 3px 0; }
-  .note { font-size: 8.5px; color: #666; font-style: italic; margin: 2px 0 4px; }
-  .blank td { height: 34px; }
-  .writeline { border-bottom: 1px solid #bbb; display: inline-block; min-width: 90px; }
-  .foot { margin-top: 6px; border-top: 1px solid #ccc; padding-top: 3px; font-size: 8.5px; color: #666; display:flex; justify-content: space-between; }
-  .trap { background: #fff6f6; border-left: 3px solid #c0392b; padding: 3px 6px; margin: 3px 0; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;
+    background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
 </style>
 </head>
 <body>
 
-<!-- ============================ PAGE 1 — SWAP-PAIRS ============================ -->
-<div class="page">
-  <div class="topbar">
-    <span class="waa">WAA</span>
-    <span class="title">Ocular Pharma &middot; Swap-Pairs Drill Card</span>
-    <span class="sub">Board Review 2026 &middot; Personal study notes</span>
-  </div>
+<div class="wrap">
 
-  <div class="cols">
-
-    <!-- LEFT: REFERENCE -->
-    <div class="col">
-      <h2>Reference (answer key)</h2>
-      <p class="note">These are the pairs where both terms are known but assigned to the wrong one. Drill the contrast, not the fact.</p>
-
-      <h3>Absorption &mdash; how it crosses the membrane</h3>
-      <table>
-        <tr><th>Mechanism</th><th>Board clue</th></tr>
-        <tr><td class="k">Simple diffusion</td><td class="clue">lipid soluble, most drugs, most common</td></tr>
-        <tr><td class="k">Active transport</td><td class="clue">electrolyte, sodium, ion, against gradient (energy)</td></tr>
-        <tr><td class="k">Facilitated diffusion</td><td class="clue">carrier protein, no energy, glucose</td></tr>
-        <tr><td class="k">Filtration</td><td class="clue">small, water channels, pores</td></tr>
-      </table>
-
-      <h3>Interaction terms &mdash; the arithmetic</h3>
-      <table>
-        <tr><th>Term</th><th>Rule</th></tr>
-        <tr><td class="k">Additive</td><td class="clue">1 + 1 = 2 (both active, equals the sum)</td></tr>
-        <tr><td class="k">Synergism</td><td class="clue">1 + 1 &gt; 2 (both active, beats the sum): tropicamide + phenylephrine</td></tr>
-        <tr><td class="k">Potentiation</td><td class="clue">1 + 0 &gt; 1 (one inactive booster): lidocaine + hyaluronidase</td></tr>
-        <tr><td class="k">Antagonism</td><td class="clue">reverses / opposes: atropine vs organophosphate</td></tr>
-      </table>
-
-      <h3>Prescription parts &mdash; who it is for</h3>
-      <table>
-        <tr><th>Part</th><th>For</th></tr>
-        <tr><td class="k">Superscription</td><td class="clue">the heading (Rx symbol, patient, date)</td></tr>
-        <tr><td class="k">Inscription</td><td class="clue">the body: drug name, strength, quantity</td></tr>
-        <tr><td class="k">Subscription</td><td class="clue">to the pharmacist (how to dispense)</td></tr>
-        <tr><td class="k">Signatura (Sig)</td><td class="clue">to the patient (how to use)</td></tr>
-      </table>
-
-      <h3>Indication classes &mdash; why it is given</h3>
-      <table>
-        <tr><th>Class</th><th>Meaning + example</th></tr>
-        <tr><td class="k">Protective</td><td class="clue">replaces/maintains a body need: insulin for life</td></tr>
-        <tr><td class="k">Curative</td><td class="clue">eliminates the cause: acyclovir for varicella</td></tr>
-        <tr><td class="k">Prophylactic</td><td class="clue">prevents disease not yet present: antibiotic after surgery</td></tr>
-        <tr><td class="k">Palliative</td><td class="clue">relieves symptom only: naproxen for pain</td></tr>
-        <tr><td class="k">Diagnostic</td><td class="clue">to diagnose: cocaine test in Horner's</td></tr>
-      </table>
-
-      <div class="rule"><b>PK vs PD:</b> PK = what the body does to the drug (ADME). PD = what the drug does to the body (effect, potency, therapeutic index).</div>
-      <div class="rule"><b>Branches:</b> pharmacognosy = crude/natural source (guava leaves) &middot; pharmacotherapy = using drugs to treat disease.</div>
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Ocular Pharmacology</div>
     </div>
+    <div class="card-no">Card<b>07</b>G1 principles</div>
+  </header>
 
-    <!-- RIGHT: BLANK DRILL -->
-    <div class="col">
-      <h2>Daily drill (fill from memory)</h2>
-      <p class="note">Date: <span class="writeline">&nbsp;</span> &nbsp; Fill every blank without looking, then check the left. Circle misses, do not erase.</p>
+  <h1>G1 general principles: the words that <em>trade places</em></h1>
+  <p class="dek">On the MCU preboard, most of the G1 misses were not blank spots. They were twins: two terms you knew, assigned to the wrong one. Absorption routes, interaction terms, prescription parts, indication classes. This card lines each pair up so the difference, not the word, is what you drill. It closes with the one true gap: what is actually inside an eye drop.</p>
 
-      <h3>Absorption &mdash; write the mechanism</h3>
-      <table class="blank">
-        <tr><td>lipid soluble, most drugs</td><td>&nbsp;</td></tr>
-        <tr><td>sodium / electrolyte</td><td>&nbsp;</td></tr>
-        <tr><td>carrier, no energy (glucose)</td><td>&nbsp;</td></tr>
-        <tr><td>small, through pores</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Interaction &mdash; write the term</h3>
-      <table class="blank">
-        <tr><td>both active, effect beats the sum</td><td>&nbsp;</td></tr>
-        <tr><td>one inactive drug boosts the other</td><td>&nbsp;</td></tr>
-        <tr><td>both active, effect equals the sum</td><td>&nbsp;</td></tr>
-        <tr><td>one drug reverses the other</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Prescription parts &mdash; write the part</h3>
-      <table class="blank">
-        <tr><td>body: drug name, strength, quantity</td><td>&nbsp;</td></tr>
-        <tr><td>instruction to the patient</td><td>&nbsp;</td></tr>
-        <tr><td>instruction to the pharmacist</td><td>&nbsp;</td></tr>
-        <tr><td>the heading (Rx symbol)</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Indication classes &mdash; write the class</h3>
-      <table class="blank">
-        <tr><td>lifelong insulin in DM</td><td>&nbsp;</td></tr>
-        <tr><td>antibiotic after phacoemulsification</td><td>&nbsp;</td></tr>
-        <tr><td>naproxen for dysmenorrhea pain</td><td>&nbsp;</td></tr>
-        <tr><td>acyclovir for varicella</td><td>&nbsp;</td></tr>
-      </table>
-
-      <p class="note">Recall prompts:</p>
-      <ul style="margin:2px 0 4px; padding-left:14px;">
-        <li>PK = <span class="writeline">&nbsp;</span> &nbsp; PD = <span class="writeline">&nbsp;</span></li>
-        <li>therapeutic index is PK or PD? <span class="writeline">&nbsp;</span></li>
-        <li>crude effect of guava leaves = <span class="writeline">&nbsp;</span></li>
-      </ul>
+  <section>
+    <h2><span class="n">01</span> Why these miss (and how to stop it)</h2>
+    <p class="lead">A definition item feels easy, so you read "pharmacognosy," think "yes, I know that word," and mark it right in your head. But knowing a word is not the same as pointing it at the correct meaning. When two terms live in the same family, familiarity fails you: both feel right, and you pick the wrong twin.</p>
+    <div class="cal mnem">
+      <div class="lab">The fix in one line</div>
+      <p>Never study a swap-term alone. Study it <b>against its twin</b>, and memorize the one phrase that separates them. On this card that phrase is the "board clue" in every table.</p>
     </div>
+  </section>
 
-  </div>
-  <div class="foot">
-    <span>WAA &middot; Board Review 2026 &middot; G1 General Pharmacology</span>
-    <span>Print landscape &middot; reuse the right side daily</span>
-  </div>
+  <section>
+    <h2><span class="n">02</span> How a drug crosses the membrane</h2>
+    <p>The cell membrane is a fatty sheet. Fat-friendly drugs slip through it on their own. Salts cannot, so a pump spends energy to haul them across. That single picture decides most absorption questions.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-label="Lipid membrane showing simple diffusion of a lipid-soluble drug versus active transport of sodium">
+        <rect x="0" y="92" width="640" height="8" fill="var(--accent-wash)"/>
+        <rect x="0" y="120" width="640" height="8" fill="var(--accent-wash)"/>
+        <g fill="var(--ink-faint)" opacity=".55">
+          <circle cx="20" cy="96" r="6"/><circle cx="50" cy="96" r="6"/><circle cx="80" cy="96" r="6"/><circle cx="110" cy="96" r="6"/><circle cx="140" cy="96" r="6"/><circle cx="170" cy="96" r="6"/><circle cx="200" cy="96" r="6"/><circle cx="230" cy="96" r="6"/><circle cx="260" cy="96" r="6"/><circle cx="290" cy="96" r="6"/><circle cx="320" cy="96" r="6"/><circle cx="350" cy="96" r="6"/><circle cx="380" cy="96" r="6"/><circle cx="410" cy="96" r="6"/><circle cx="440" cy="96" r="6"/><circle cx="470" cy="96" r="6"/><circle cx="500" cy="96" r="6"/><circle cx="530" cy="96" r="6"/><circle cx="560" cy="96" r="6"/><circle cx="590" cy="96" r="6"/><circle cx="620" cy="96" r="6"/>
+        </g>
+        <text x="12" y="24" font-size="12" font-family="ui-monospace,monospace" fill="var(--ink-faint)">outside</text>
+        <text x="12" y="212" font-size="12" font-family="ui-monospace,monospace" fill="var(--ink-faint)">inside (cell)</text>
+        <!-- simple diffusion -->
+        <g>
+          <circle cx="140" cy="40" r="15" fill="var(--accent)"/>
+          <text x="140" y="44" text-anchor="middle" font-size="10" fill="var(--bg)" font-family="ui-monospace,monospace">drug</text>
+          <line x1="140" y1="58" x2="140" y2="170" stroke="var(--accent)" stroke-width="3" stroke-dasharray="2 6" marker-end="url(#ar)"/>
+          <text x="140" y="200" text-anchor="middle" font-size="12" fill="var(--ink)">simple diffusion</text>
+          <text x="140" y="215" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">lipid soluble, passive</text>
+        </g>
+        <!-- active transport -->
+        <g>
+          <circle cx="440" cy="40" r="15" fill="var(--why)"/>
+          <text x="440" y="44" text-anchor="middle" font-size="10" fill="#fff" font-family="ui-monospace,monospace">Na+</text>
+          <rect x="422" y="86" width="36" height="48" rx="6" fill="var(--why-w)" stroke="var(--why)"/>
+          <text x="440" y="114" text-anchor="middle" font-size="9" fill="var(--why)" font-family="ui-monospace,monospace">pump</text>
+          <line x1="440" y1="58" x2="440" y2="82" stroke="var(--why)" stroke-width="3" marker-end="url(#ar2)"/>
+          <line x1="440" y1="138" x2="440" y2="170" stroke="var(--why)" stroke-width="3" marker-end="url(#ar2)"/>
+          <text x="440" y="200" text-anchor="middle" font-size="12" fill="var(--ink)">active transport</text>
+          <text x="440" y="215" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">ions, needs energy</text>
+        </g>
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent)"/></marker>
+          <marker id="ar2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--why)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>fat slips through; salt gets pumped</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Mechanism</th><th>Energy</th><th>Direction</th><th>Board clue</th></tr></thead>
+        <tbody>
+          <tr><td><b>Simple diffusion</b></td><td>No</td><td>Down gradient</td><td class="rx">lipid soluble, most drugs, "most common"</td></tr>
+          <tr><td><b>Active transport</b></td><td>Yes</td><td>Against gradient</td><td class="rx">electrolyte, sodium, ion</td></tr>
+          <tr><td><b>Facilitated diffusion</b></td><td>No</td><td>Down gradient</td><td>carrier protein, glucose</td></tr>
+          <tr><td><b>Filtration</b></td><td>No</td><td>Bulk flow</td><td>small, water-soluble, through pores</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact flip you made</div>
+      <p>You put <span class="wrong">active transport</span> for the lipid-soluble drug and <span class="wrong">simple diffusion</span> for sodium. Reverse it: <b>lipid = simple diffusion, ion = active transport.</b></p>
+    </div>
+    <div class="cal why">
+      <div class="lab">Cross-link · Visual Biology</div>
+      <p>This is the same membrane-transport wiring tested in the A1 cell-physiology items. Learn it once here and it pays off in two subjects.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Interaction terms, as arithmetic</h2>
+    <p>Two drugs together. Treat their combined effect like a sum, and the four terms sort themselves out. The only hard split is synergism versus potentiation, and it turns on one question: is the second drug active on its own?</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Term</th><th>Arithmetic</th><th>Both drugs active?</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>Additive</b></td><td class="num">1 + 1 = 2</td><td>Yes</td><td>effect equals the sum</td></tr>
+          <tr><td><b>Synergism</b></td><td class="num">1 + 1 &gt; 2</td><td>Yes, both</td><td class="rx">tropicamide + phenylephrine; apraclonidine + pilocarpine</td></tr>
+          <tr><td><b>Potentiation</b></td><td class="num">1 + 0 &gt; 1</td><td>No, one is a booster</td><td class="rx">lidocaine + hyaluronidase</td></tr>
+          <tr><td><b>Antagonism</b></td><td class="num">1 + (&minus;1)</td><td>One opposes</td><td>atropine vs organophosphate</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">Synergism vs potentiation</div>
+      <p>If <b>both</b> drugs work toward the same effect and the total beats the sum, it is <b>synergism</b>. If one drug does little or nothing alone and only amplifies the other, it is <b>potentiation</b>. Hyaluronidase is not an anesthetic; it just spreads the lidocaine, so that pair is potentiation.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Parts of the prescription order</h2>
+    <p>One prescription talks to four readers. Read it top to bottom and each part names its audience.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 230" role="img" aria-label="A prescription showing superscription, inscription, subscription, and signatura">
+        <rect x="150" y="12" width="340" height="206" rx="12" fill="var(--surface-2)" stroke="var(--line)"/>
+        <text x="172" y="46" font-size="26" font-weight="800" fill="var(--accent)" font-family="ui-monospace,monospace">Rx</text>
+        <text x="215" y="42" font-size="12" fill="var(--ink-soft)">patient, date  ·  superscription</text>
+        <line x1="172" y1="58" x2="468" y2="58" stroke="var(--line)"/>
+        <text x="172" y="86" font-size="13" font-weight="700" fill="var(--ink)">Timolol 0.5% , 5 mL</text>
+        <text x="172" y="104" font-size="12" fill="var(--why)">inscription — the drug, strength, quantity</text>
+        <text x="172" y="140" font-size="13" font-weight="700" fill="var(--ink)">Dispense 1 bottle</text>
+        <text x="172" y="158" font-size="12" fill="var(--pearl)">subscription — to the pharmacist</text>
+        <text x="172" y="194" font-size="13" font-weight="700" fill="var(--ink)">Sig: 1 drop OU BID</text>
+        <text x="172" y="212" font-size="12" fill="var(--trap)">signatura — to the patient</text>
+      </svg>
+      <figcaption>heading → drug → pharmacist → patient</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Part</th><th>For</th><th>Contains</th></tr></thead>
+        <tbody>
+          <tr><td><b>Superscription</b></td><td>heading</td><td>Rx symbol, patient, date</td></tr>
+          <tr><td><b>Inscription</b></td><td class="rx">the body</td><td>drug name, strength, quantity</td></tr>
+          <tr><td><b>Subscription</b></td><td>the pharmacist</td><td>how to dispense</td></tr>
+          <tr><td><b>Signatura (Sig)</b></td><td class="rx">the patient</td><td>how and when to use</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>Body = <b>inscription</b> (you put transcription, which is not a classic part). Instruction to the patient = <b>signatura</b> (you put superscription, which is the heading).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Indication classes: why is it given?</h2>
+    <p>This is where "palliative" was over-firing. Palliative is correct only when the drug does nothing but ease a symptom. Ask that first.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Class</th><th>What the drug does</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>Protective</b></td><td>replaces / maintains a body need</td><td class="rx">insulin for life in DM</td></tr>
+          <tr><td><b>Curative</b></td><td>eliminates the cause</td><td>acyclovir for varicella</td></tr>
+          <tr><td><b>Prophylactic</b></td><td>prevents a disease not yet present</td><td class="rx">antibiotic after phaco</td></tr>
+          <tr><td><b>Palliative</b></td><td>relieves a symptom only</td><td>naproxen for pain</td></tr>
+          <tr><td><b>Diagnostic</b></td><td>helps make a diagnosis</td><td>cocaine in Horner's</td></tr>
+          <tr><td><b>Empirical</b></td><td>given before the cause is confirmed</td><td>antibiotic before culture</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>Insulin lifelong = <b>protective</b> (replacement). Antibiotic after surgery = <b>prophylactic</b> (prevents infection). You chose palliative for both. If it is not purely symptom relief, it is not palliative.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> PK vs PD, and the branch names</h2>
+    <p class="lead">One rule kills a whole family of items: <span class="term">PK is what the body does to the drug; PD is what the drug does to the body.</span></p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Term</th><th>Meaning</th><th>Board clue</th></tr></thead>
+        <tbody>
+          <tr><td><b>Pharmacokinetics</b></td><td>body acts on drug</td><td class="rx">absorption, distribution, metabolism, excretion (ADME)</td></tr>
+          <tr><td><b>Pharmacodynamics</b></td><td>drug acts on body</td><td class="rx">effect, potency, efficacy, therapeutic index</td></tr>
+          <tr><td><b>Pharmacognosy</b></td><td>drugs from natural sources</td><td>crude, plant, "guava leaves"</td></tr>
+          <tr><td><b>Pharmacotherapy</b></td><td>using drugs to treat disease</td><td>"application to treat"</td></tr>
+          <tr><td><b>Posology</b></td><td>study of dosage</td><td>"dose"</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact miss</div>
+      <p>Therapeutic index is <b>pharmacodynamics</b> (you picked biotransformation, which is PK). Pharmacologic effect is <b>not</b> part of pharmacokinetics.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> What is actually in an eye drop</h2>
+    <p class="lead">This was the one true content gap, not a swap. An eye drop is the drug plus a set of helpers that keep it dissolved, stable, sterile, and comfortable. Learn the job of each helper and the questions answer themselves.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="Components of an ophthalmic solution around a dropper bottle">
+        <rect x="286" y="40" width="68" height="150" rx="10" fill="var(--accent-wash)" stroke="var(--accent)"/>
+        <rect x="300" y="18" width="40" height="26" rx="5" fill="var(--accent)"/>
+        <text x="320" y="120" text-anchor="middle" font-size="12" font-family="ui-monospace,monospace" fill="var(--accent-deep)">eye</text>
+        <text x="320" y="138" text-anchor="middle" font-size="12" font-family="ui-monospace,monospace" fill="var(--accent-deep)">drop</text>
+        <g font-family="system-ui,sans-serif" font-size="12">
+          <text x="20" y="60" font-weight="700" fill="var(--ink)">Active</text><text x="20" y="76" fill="var(--ink-soft)">the drug</text>
+          <text x="20" y="112" font-weight="700" fill="var(--ink)">Vehicle</text><text x="20" y="128" fill="var(--ink-soft)">dissolves + carries</text>
+          <text x="20" y="164" font-weight="700" fill="var(--ink)">Buffer</text><text x="20" y="180" fill="var(--ink-soft)">holds pH (boric acid)</text>
+          <text x="470" y="60" font-weight="700" fill="var(--ink)">Preservative</text><text x="470" y="76" fill="var(--ink-soft)">BAK, antimicrobial</text>
+          <text x="470" y="112" font-weight="700" fill="var(--ink)">Chelator</text><text x="470" y="128" fill="var(--ink-soft)">EDTA, grabs Ca</text>
+          <text x="470" y="164" font-weight="700" fill="var(--ink)">Surfactant</text><text x="470" y="180" fill="var(--ink-soft)">lowers surface tension</text>
+        </g>
+      </svg>
+      <figcaption>one active drug, several helpers</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Component</th><th>Job</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>Active ingredient</b></td><td>does the work</td><td>dorzolamide</td></tr>
+          <tr><td><b>Vehicle</b></td><td class="rx">dissolves + carries the drug, controls viscosity</td><td>purified water base</td></tr>
+          <tr><td><b>Buffering agent</b></td><td>holds pH steady</td><td class="rx">boric acid, borate</td></tr>
+          <tr><td><b>Preservative</b></td><td>stops microbial growth</td><td>benzalkonium chloride (BAK)</td></tr>
+          <tr><td><b>Antioxidant / chelator</b></td><td>prevents oxidation, grabs calcium</td><td>EDTA</td></tr>
+          <tr><td><b>Excipient</b></td><td class="rx">inert filler, gives form; limited use in drops</td><td>inert base</td></tr>
+          <tr><td><b>Surfactant</b></td><td>lowers surface tension, wetting</td><td>polysorbate</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">Two traps you fell into</div>
+      <p><b>BAK is not a lubricant.</b> It is a preservative, wetting agent, and disinfectant. And do not swap <b>vehicle</b> (dissolves and carries the drug) with <b>excipient</b> (just gives form, barely used in eye drops).</p>
+    </div>
+    <div class="cal pearl">
+      <div class="lab">pH numbers</div>
+      <p>Formulate for <b>stability at pH ~6</b> (this is the answer the board wants, and what you missed twice by choosing 7). Do not confuse it with <b>tear pH 7.4</b>, which is comfort, not stability.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Micelle vs reverse micelle</h2>
+    <p>A surfactant molecule has a water-loving head and an oil-loving tail. When many gather, they hide from whatever they dislike, and the core always holds the opposite of the surrounding fluid.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-label="Micelle in water traps oil, reverse micelle in oil traps water">
+        <g>
+          <circle cx="160" cy="110" r="62" fill="var(--why-w)" stroke="var(--why)"/>
+          <circle cx="160" cy="110" r="24" fill="var(--pearl-w)" stroke="var(--pearl)"/>
+          <text x="160" y="106" text-anchor="middle" font-size="11" font-weight="700" fill="var(--pearl)">oil</text>
+          <text x="160" y="120" text-anchor="middle" font-size="9" fill="var(--pearl)">trapped</text>
+          <g stroke="var(--why)" stroke-width="2.2">
+            <line x1="160" y1="48" x2="160" y2="86"/><line x1="160" y1="134" x2="160" y2="172"/>
+            <line x1="98" y1="110" x2="136" y2="110"/><line x1="184" y1="110" x2="222" y2="110"/>
+            <line x1="116" y1="66" x2="143" y2="93"/><line x1="204" y1="154" x2="177" y2="127"/>
+            <line x1="204" y1="66" x2="177" y2="93"/><line x1="116" y1="154" x2="143" y2="127"/>
+          </g>
+          <g fill="var(--why)"><circle cx="160" cy="46" r="5"/><circle cx="160" cy="174" r="5"/><circle cx="96" cy="110" r="5"/><circle cx="224" cy="110" r="5"/><circle cx="114" cy="64" r="5"/><circle cx="206" cy="156" r="5"/><circle cx="206" cy="64" r="5"/><circle cx="114" cy="156" r="5"/></g>
+          <text x="160" y="205" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Micelle (in water)</text>
+        </g>
+        <g>
+          <circle cx="470" cy="110" r="62" fill="var(--pearl-w)" stroke="var(--pearl)"/>
+          <circle cx="470" cy="110" r="24" fill="var(--why-w)" stroke="var(--why)"/>
+          <text x="470" y="106" text-anchor="middle" font-size="11" font-weight="700" fill="var(--why)">water</text>
+          <text x="470" y="120" text-anchor="middle" font-size="9" fill="var(--why)">trapped</text>
+          <g stroke="var(--pearl)" stroke-width="2.2">
+            <line x1="470" y1="48" x2="470" y2="86"/><line x1="470" y1="134" x2="470" y2="172"/>
+            <line x1="408" y1="110" x2="446" y2="110"/><line x1="494" y1="110" x2="532" y2="110"/>
+            <line x1="426" y1="66" x2="453" y2="93"/><line x1="514" y1="154" x2="487" y2="127"/>
+            <line x1="514" y1="66" x2="487" y2="93"/><line x1="426" y1="154" x2="453" y2="127"/>
+          </g>
+          <g fill="var(--pearl)"><circle cx="470" cy="86" r="5"/><circle cx="470" cy="134" r="5"/><circle cx="446" cy="110" r="5"/><circle cx="494" cy="110" r="5"/><circle cx="453" cy="93" r="5"/><circle cx="487" cy="127" r="5"/><circle cx="487" cy="93" r="5"/><circle cx="453" cy="127" r="5"/></g>
+          <text x="470" y="205" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Reverse micelle (in oil)</text>
+        </g>
+      </svg>
+      <figcaption>tails-in traps oil · heads-in traps water</figcaption>
+    </figure>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">Hook</div>
+      <p>Likes hide from what they dislike. In water, the oil-loving <b>tails</b> huddle inside and trap oil. In oil, the water-loving <b>heads</b> huddle inside and trap water.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">09</span> Numbers to lock</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Value</th><th>What it is</th></tr></thead>
+        <tbody>
+          <tr><td class="num rx">pH ~6</td><td>stability pH of ophthalmic solutions and DPAs</td></tr>
+          <tr><td class="num rx">pH 7.4</td><td>physiologic tear pH (comfort target)</td></tr>
+          <tr><td class="num rx">15 mL</td><td>1 tablespoon (teaspoon = 5 mL)</td></tr>
+          <tr><td class="num rx">adipose</td><td>storage site of lipid-soluble drugs</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span> Rebuild it on paper</h2>
+    <p>Reading this is not studying it. Close the card and do these blind. The pull from memory is the part that sticks.</p>
+    <div class="drill"><div class="t">1 &middot; Brain dump the twins</div><p>Write the four absorption mechanisms with one clue each, then the four interaction terms as arithmetic. Circle every gap, re-read only the gaps, redo.</p></div>
+    <div class="drill"><div class="t">2 &middot; Fill two blank tables</div><p>Reproduce the prescription parts (part, who it is for) and the seven eye-drop components (component, job) with nothing in front of you.</p></div>
+    <div class="drill"><div class="t">3 &middot; Teach synergism vs potentiation</div><p>Explain the difference without using the word "sum," and give one ophthalmic example of each.</p></div>
+    <div class="drill"><div class="t">4 &middot; Sort the indication classes</div><p>For insulin, post-op antibiotic, naproxen, and acyclovir, write the class and the one word that placed it there.</p></div>
+    <div class="drill"><div class="t">5 &middot; Draw the micelles</div><p>Draw a micelle and a reverse micelle. Label head, tail, core, and what each traps.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">11</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab review queue on the 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Lipid-soluble drug absorption vs sodium absorption?</span> <span class="a">Simple diffusion (lipid); active transport (sodium).</span></li>
+      <li><span class="q">Synergism vs potentiation?</span> <span class="a">Both active, effect beats the sum = synergism; one inactive booster amplifies the other = potentiation.</span></li>
+      <li><span class="q">Body of the prescription vs instruction to the patient?</span> <span class="a">Inscription (body); signatura (patient).</span></li>
+      <li><span class="q">Lifelong insulin in DM is which indication class?</span> <span class="a">Protective (replacement), not palliative.</span></li>
+      <li><span class="q">Antibiotic after phaco is which class?</span> <span class="a">Prophylactic (prevents infection).</span></li>
+      <li><span class="q">Therapeutic index is PK or PD?</span> <span class="a">Pharmacodynamics.</span></li>
+      <li><span class="q">One-line PK vs PD?</span> <span class="a">PK = body acts on drug (ADME); PD = drug acts on body (effect, potency).</span></li>
+      <li><span class="q">Which is NOT a use of BAK?</span> <span class="a">Lubricant (it is a preservative, wetting agent, disinfectant).</span></li>
+      <li><span class="q">Vehicle vs excipient?</span> <span class="a">Vehicle dissolves and carries the drug; excipient just gives form, barely used in drops.</span></li>
+      <li><span class="q">Stability pH of an eye drop?</span> <span class="a">About 6 (tear pH 7.4 is comfort, not stability).</span></li>
+      <li><span class="q">Micelle in water vs reverse micelle?</span> <span class="a">Tails inward trapping oil; heads inward trapping water.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Ocular Pharma Card 7 &middot; drill the twin, not the word</div>
+
 </div>
-
-<!-- ============================ PAGE 2 — FORMULATION ============================ -->
-<div class="page">
-  <div class="topbar">
-    <span class="waa">WAA</span>
-    <span class="title">Ocular Pharma &middot; Formulation Drill Card</span>
-    <span class="sub">Board Review 2026 &middot; Personal study notes</span>
-  </div>
-
-  <div class="cols">
-
-    <!-- LEFT: REFERENCE -->
-    <div class="col">
-      <h2>Reference (answer key)</h2>
-      <p class="note">An eye drop is the drug plus helpers that keep it dissolved, stable, sterile, and comfortable.</p>
-
-      <h3>Solution components &mdash; the job</h3>
-      <table>
-        <tr><th>Component</th><th>Job / example</th></tr>
-        <tr><td class="k">Active ingredient</td><td class="clue">the drug that works (dorzolamide)</td></tr>
-        <tr><td class="k">Vehicle</td><td class="clue">dissolves and carries the drug, controls viscosity, aids transport</td></tr>
-        <tr><td class="k">Buffering agent</td><td class="clue">holds the pH steady (boric acid, borate, phosphate)</td></tr>
-        <tr><td class="k">Preservative</td><td class="clue">stops microbial growth (benzalkonium chloride, BAK)</td></tr>
-        <tr><td class="k">Antioxidant / chelator</td><td class="clue">prevents oxidation, grabs calcium/metals (EDTA)</td></tr>
-        <tr><td class="k">Excipient</td><td class="clue">inert filler, gives form/consistency, limited use in eye drops</td></tr>
-        <tr><td class="k">Surfactant</td><td class="clue">lowers surface tension, wetting</td></tr>
-      </table>
-
-      <h3>pH values</h3>
-      <table>
-        <tr><th>Value</th><th>Applies to</th></tr>
-        <tr><td class="k">pH ~6</td><td class="clue">stability pH of most ophthalmic solutions and DPAs</td></tr>
-        <tr><td class="k">pH 7.4</td><td class="clue">physiologic tear pH (comfort, not stability)</td></tr>
-      </table>
-
-      <h3>Micelle vs reverse micelle</h3>
-      <table>
-        <tr><th>Structure</th><th>Core faces in / traps</th></tr>
-        <tr><td class="k">Micelle (in water)</td><td class="clue">tails inward, traps an oil droplet</td></tr>
-        <tr><td class="k">Reverse micelle (in oil)</td><td class="clue">heads inward, traps a water droplet</td></tr>
-      </table>
-      <div class="rule"><b>Anchor:</b> likes hide from what they dislike. The core always holds the opposite of the surrounding fluid.</div>
-
-      <div class="trap"><b>Traps you fell into:</b> BAK is preservative + wetting + disinfectant, NOT a lubricant. Vehicle dissolves/carries the drug; excipient just gives form (barely used in drops).</div>
-    </div>
-
-    <!-- RIGHT: BLANK DRILL -->
-    <div class="col">
-      <h2>Daily drill (fill from memory)</h2>
-      <p class="note">Date: <span class="writeline">&nbsp;</span> &nbsp; Fill from memory, then check the left.</p>
-
-      <h3>Components &mdash; write the component</h3>
-      <table class="blank">
-        <tr><td>dissolves + carries the drug, controls viscosity</td><td>&nbsp;</td></tr>
-        <tr><td>holds pH steady</td><td>&nbsp;</td></tr>
-        <tr><td>stops microbial growth</td><td>&nbsp;</td></tr>
-        <tr><td>prevents oxidation, grabs calcium</td><td>&nbsp;</td></tr>
-        <tr><td>inert filler, gives form/consistency</td><td>&nbsp;</td></tr>
-        <tr><td>lowers surface tension</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>pH &mdash; write the value</h3>
-      <table class="blank">
-        <tr><td>stability pH of ophthalmic solutions</td><td>&nbsp;</td></tr>
-        <tr><td>physiologic tear pH</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Micelles &mdash; draw + label</h3>
-      <p class="note" style="min-height:70px; border:1px dashed #bbb; padding:4px;">Draw a micelle and a reverse micelle. Label head, tail, core, and what is trapped in each.</p>
-
-      <h3>Recall prompts</h3>
-      <ul style="margin:2px 0 4px; padding-left:14px;">
-        <li>BAK uses EXCEPT: <span class="writeline">&nbsp;</span></li>
-        <li>vehicle vs excipient in one line: <span class="writeline">&nbsp;</span></li>
-        <li>micelle in water traps <span class="writeline">&nbsp;</span>; reverse traps <span class="writeline">&nbsp;</span></li>
-      </ul>
-    </div>
-
-  </div>
-  <div class="foot">
-    <span>WAA &middot; Board Review 2026 &middot; G1 General Pharmacology</span>
-    <span>Personal study notes &middot; built from MCU 2026 preboard misses</span>
-  </div>
-</div>
-
 </body>
 </html>

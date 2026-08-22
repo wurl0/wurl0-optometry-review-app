@@ -2,157 +2,352 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Human Biology Systems Drill Card — Board Review 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Visual Biology Card 7 · Human Biology Systems</title>
 <style>
-  @page { size: letter landscape; margin: 0.35in; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #1a1a1a; margin: 0; font-size: 10px; line-height: 1.3;
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
   }
-  .page { page-break-after: always; }
-  .page:last-child { page-break-after: auto; }
-  .topbar {
-    display: flex; justify-content: space-between; align-items: baseline;
-    border-bottom: 2px solid #1a1a1a; padding-bottom: 4px; margin-bottom: 6px;
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
   }
-  .topbar .waa { font-weight: 700; font-size: 15px; letter-spacing: 1px; }
-  .topbar .title { font-size: 13px; font-weight: 700; }
-  .topbar .sub { font-size: 9px; color: #555; }
-  .cols { display: flex; gap: 12px; }
-  .col { flex: 1; }
-  .col h2 {
-    font-size: 11px; margin: 0 0 4px; padding: 2px 6px;
-    background: #1a1a1a; color: #fff; text-transform: uppercase; letter-spacing: .5px;
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
   }
-  .col h3 { font-size: 9.5px; margin: 7px 0 2px; text-transform: uppercase; color: #444; letter-spacing: .5px; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 4px; }
-  td, th { border: 1px solid #888; padding: 3px 4px; vertical-align: top; }
-  th { background: #eee; font-size: 9px; text-align: left; }
-  .k { font-weight: 700; white-space: nowrap; }
-  .clue { color: #555; }
-  .rule { background: #f6f6f6; border-left: 3px solid #888; padding: 3px 6px; margin: 3px 0; }
-  .note { font-size: 8.5px; color: #666; font-style: italic; margin: 2px 0 4px; }
-  .blank td { height: 30px; }
-  .writeline { border-bottom: 1px solid #bbb; display: inline-block; min-width: 90px; }
-  .foot { margin-top: 6px; border-top: 1px solid #ccc; padding-top: 3px; font-size: 8.5px; color: #666; display:flex; justify-content: space-between; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;
+    background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);font-weight:600;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
 </style>
 </head>
 <body>
 
-<!-- ============================ PAGE 1 — SWAP-PAIRS ============================ -->
-<div class="page">
-  <div class="topbar">
-    <span class="waa">WAA</span>
-    <span class="title">Human Biology Systems &middot; Swap-Pairs Drill Card</span>
-    <span class="sub">Board Review 2026 &middot; Personal study notes</span>
-  </div>
+<div class="wrap">
 
-  <div class="cols">
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Visual Biology</div>
+    </div>
+    <div class="card-no">Card<b>07</b>A1 systems</div>
+  </header>
 
-    <!-- LEFT: REFERENCE -->
-    <div class="col">
-      <h2>Reference (answer key)</h2>
-      <p class="note">Both members known, assigned to the wrong one. Drill the contrast.</p>
+  <h1>Human biology systems: the <em>general A&amp;P</em> the eye exam hides behind</h1>
+  <p class="dek">The MCU "Visual Biology" preboard was almost all general human anatomy and physiology. Of 100 items, one touched the eye. The misses were scattered across every body system, so this is a breadth problem, not a few bad ideas. This card pins down the exact facts you dropped, groups them by system, and pulls out the swap-pairs first because they are the fastest points back.</p>
 
+  <section>
+    <h2><span class="n">01</span> Read this first: it is a coverage problem</h2>
+    <p class="lead">Unlike pharma, where the misses clustered, here they are spread evenly: blood, kidney, gut, endocrine, reproductive, heart, larynx, bone. That pattern means the A1 general-biology base is thin across the board, not broken in one place.</p>
+    <div class="cal pearl">
+      <div class="lab">Honest framing</div>
+      <p>This card is the entry point, not the whole fix. It covers the actual preboard misses. The real lever for this subject is a systematic re-drill of the A1 human-biology material, one system at a time. Do not let this one card stand in for coverage.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The swap-pairs (fastest points back)</h2>
+    <p>Same disease as pharma: both members known, each filed under the wrong one. Learn the pair, memorize the one phrase that separates them.</p>
+    <div class="tw">
       <table>
-        <tr><th>Pair</th><th>Correct assignment + clue</th></tr>
-        <tr><td class="k">Tissue cells</td><td class="clue">monocyte in tissue = macrophage; basophil in tissue = mast cell</td></tr>
-        <tr><td class="k">Islet hormones</td><td class="clue">alpha = glucAgon (A/A); beta = insulin</td></tr>
-        <tr><td class="k">Pancreatic enzymes</td><td class="clue">protein = chymotrypsin; carbohydrate = amylOpsin (starch)</td></tr>
-        <tr><td class="k">Transfusion</td><td class="clue">donor = O (no antigens); recipient = AB (no antibodies)</td></tr>
-        <tr><td class="k">Top vertebrae</td><td class="clue">C1 = Atlas (holds skull); C2 = Axis (skull rotates on it)</td></tr>
-        <tr><td class="k">Hemoglobin</td><td class="clue">O2 = oxy; CO = carboxy; CO2 = carbamino; ferric = met</td></tr>
-        <tr><td class="k">Cardiac -tropic</td><td class="clue">rate = chrono; force = ino; conduction = dromo; excitability = bathmo</td></tr>
+        <thead><tr><th>Pair</th><th>Correct assignment</th><th>Separator</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tissue cells</b></td><td class="rx">monocyte in tissue = macrophage; basophil in tissue = mast cell</td><td>the monocyte becomes the big eater</td></tr>
+          <tr><td><b>Islet hormones</b></td><td class="rx">alpha = glucagon; beta = insulin</td><td>Alpha / glucAgon (A with A)</td></tr>
+          <tr><td><b>Pancreatic enzymes</b></td><td class="rx">protein = chymotrypsin; carbohydrate = amylopsin</td><td>amylO = amylase = starch</td></tr>
+          <tr><td><b>Transfusion</b></td><td class="rx">donor = O; recipient = AB</td><td>O gives to all; AB takes from all</td></tr>
+          <tr><td><b>Top vertebrae</b></td><td class="rx">C1 = Atlas; C2 = Axis</td><td>Atlas holds the head; head turns on the Axis</td></tr>
+          <tr><td><b>Hemoglobin</b></td><td class="rx">CO2 = carbamino; ferric Fe3+ = met</td><td>carbAmino carries CO2; met = non-functional</td></tr>
+          <tr><td><b>Cardiac "-tropic"</b></td><td class="rx">force = inotropic; rate = chronotropic</td><td>ino = "in-force"; chrono = time</td></tr>
+        </tbody>
       </table>
-
-      <div class="rule"><b>Anchors:</b> ino = "in-force" &middot; amylO = amylase = starch &middot; O gives to all, AB takes from all &middot; Atlas held the world (holds the head).</div>
     </div>
-
-    <!-- RIGHT: BLANK DRILL -->
-    <div class="col">
-      <h2>Daily drill (fill from memory)</h2>
-      <p class="note">Date: <span class="writeline">&nbsp;</span> &nbsp; Fill both members without looking, then check the left.</p>
-
-      <table class="blank">
-        <tr><td>monocyte in tissue / basophil in tissue</td><td>&nbsp;</td></tr>
-        <tr><td>alpha cells / beta cells</td><td>&nbsp;</td></tr>
-        <tr><td>pancreatic protein enzyme / carb enzyme</td><td>&nbsp;</td></tr>
-        <tr><td>universal donor / universal recipient</td><td>&nbsp;</td></tr>
-        <tr><td>C1 name / C2 name</td><td>&nbsp;</td></tr>
-        <tr><td>Hb carrying CO2 / Hb with ferric iron</td><td>&nbsp;</td></tr>
-        <tr><td>-tropic: rate / force</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Recall prompts</h3>
-      <ul style="margin:2px 0 4px; padding-left:14px;">
-        <li>Why can O give to all? <span class="writeline">&nbsp;</span></li>
-        <li>Why can AB receive from all? <span class="writeline">&nbsp;</span></li>
-        <li>ino vs chrono in one line each: <span class="writeline">&nbsp;</span></li>
-      </ul>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">The four hemoglobins in one line</div>
+      <p><b>Oxy</b> carries O2 &middot; <b>Carboxy</b> carries CO (poisoning) &middot; <b>Carbamino</b> carries CO2 &middot; <b>Met</b> holds ferric iron and carries nothing.</p>
     </div>
+  </section>
 
-  </div>
-  <div class="foot">
-    <span>WAA &middot; Board Review 2026 &middot; A1 Human Biology Systems</span>
-    <span>Print landscape &middot; reuse the right side daily</span>
-  </div>
-</div>
-
-<!-- ============================ PAGE 2 — BY SYSTEM ============================ -->
-<div class="page">
-  <div class="topbar">
-    <span class="waa">WAA</span>
-    <span class="title">Human Biology Systems &middot; By-System Drill Card</span>
-    <span class="sub">Board Review 2026 &middot; Personal study notes</span>
-  </div>
-
-  <div class="cols">
-
-    <!-- LEFT: REFERENCE -->
-    <div class="col">
-      <h2>Reference (answer key)</h2>
+  <section>
+    <h2><span class="n">03</span> Blood and immunity</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="ABO transfusion: type O is the universal donor, type AB is the universal recipient">
+        <rect x="40" y="46" width="120" height="58" rx="10" fill="var(--accent-wash)" stroke="var(--accent)"/>
+        <text x="100" y="72" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-deep)">Type O</text>
+        <text x="100" y="92" text-anchor="middle" font-size="11" fill="var(--ink-soft)">no antigens</text>
+        <text x="100" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">universal DONOR</text>
+        <line x1="168" y1="75" x2="300" y2="75" stroke="var(--accent)" stroke-width="3" marker-end="url(#a)"/>
+        <text x="234" y="66" text-anchor="middle" font-size="11" fill="var(--ink-faint)">gives to all</text>
+        <rect x="310" y="46" width="120" height="58" rx="10" fill="var(--surface-2)" stroke="var(--line)"/>
+        <text x="370" y="80" text-anchor="middle" font-size="12" fill="var(--ink-soft)">A · B · AB · O</text>
+        <line x1="472" y1="75" x2="596" y2="75" stroke="var(--why)" stroke-width="3" marker-end="url(#b)"/>
+        <text x="536" y="66" text-anchor="middle" font-size="11" fill="var(--ink-faint)">receives all</text>
+        <rect x="480" y="46" width="120" height="58" rx="10" fill="var(--why-w)" stroke="var(--why)"/>
+        <text x="540" y="72" text-anchor="middle" font-size="16" font-weight="800" fill="var(--why)">Type AB</text>
+        <text x="540" y="92" text-anchor="middle" font-size="11" fill="var(--ink-soft)">no antibodies</text>
+        <text x="540" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">universal RECIPIENT</text>
+        <defs>
+          <marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent)"/></marker>
+          <marker id="b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--why)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>no antigens = give to all; no antibodies = take from all</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
       <table>
-        <tr><th>System</th><th>High-yield facts</th></tr>
-        <tr><td class="k">Blood / immunity</td><td class="clue">B-cell = humoral; T-cell matures in thymus (not marrow); iron stored in liver; largest cell = monocyte</td></tr>
-        <tr><td class="k">Renal</td><td class="clue">emptying = micturition; normal urine has NO albumin; retention in elderly = BPH; terminal dysuria = bladder</td></tr>
-        <tr><td class="k">Digestive</td><td class="clue">liver capsule = Glisson's (Gerota = kidney); fundus gas = Magenblase; dry mouth = xerostomia</td></tr>
-        <tr><td class="k">Reproductive</td><td class="clue">empty follicle = corpus luteum then corpus albicans; colostrum antibody = IgA</td></tr>
-        <tr><td class="k">Cardiac</td><td class="clue">pacemaker = SA node; fetal PA-to-aorta = ductus arteriosus; mitral = 5th ICS L MCL; QRS = ventricular depol; artery = away from heart; orthopnea = CHF</td></tr>
-        <tr><td class="k">Respiratory</td><td class="clue">Adam's apple + largest cartilage = thyroid; not paranasal = mastoid antrum; posterior nares = choanae; NLD = inferior meatus</td></tr>
-        <tr><td class="k">Skeletal</td><td class="clue">largest tendon = Achilles (ankle); largest sesamoid = patella; ileum (gut) vs ilium (pelvis); osteocyte = lacuna; between coronal+sagittal = bregmatic fontanelle; anterior neck no-joint bone = hyoid</td></tr>
+        <thead><tr><th>Item</th><th>Answer</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>B-lymphocytes produce</td><td class="rx">humoral immunity</td><td>B = antiBody; T-cells = cellular</td></tr>
+          <tr><td>Does NOT mature in myeloid tissue</td><td class="rx">T-lymphocyte</td><td>matures in the thymus, not marrow</td></tr>
+          <tr><td>Largest iron store</td><td class="rx">liver</td><td>as ferritin</td></tr>
+          <tr><td>Largest blood cell</td><td class="rx">monocyte</td><td>biggest formed element</td></tr>
+        </tbody>
       </table>
     </div>
+  </section>
 
-    <!-- RIGHT: BLANK DRILL -->
-    <div class="col">
-      <h2>Daily drill (fill from memory)</h2>
-      <p class="note">Date: <span class="writeline">&nbsp;</span> &nbsp; Write one fact per system without looking, then check the left.</p>
-
-      <table class="blank">
-        <tr><td class="k" style="width:90px;">Blood / immunity</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Renal</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Digestive</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Reproductive</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Cardiac</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Respiratory</td><td>&nbsp;</td></tr>
-        <tr><td class="k">Skeletal</td><td>&nbsp;</td></tr>
-      </table>
-
-      <h3>Draw + label</h3>
-      <p class="note" style="min-height:64px; border:1px dashed #bbb; padding:4px;">Draw the heart: label SA node, AV node, the 4 valves, and the mitral apex point. Then draw C1-C2-C7 and label Atlas, Axis (dens), vertebra prominens.</p>
-
-      <h3>Sequence</h3>
-      <p class="note">Conduction path: <span class="writeline" style="min-width:220px;">&nbsp;</span></p>
-      <p class="note">4 paranasal sinuses (cross out the distractor): <span class="writeline" style="min-width:200px;">&nbsp;</span></p>
+  <section>
+    <h2><span class="n">04</span> The heart</h2>
+    <p>Your biggest cluster. The conduction path, one auscultation point, and two definitions carried most of the misses.</p>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="Heart conduction pathway from SA node to Purkinje fibers, with the mitral auscultation point">
+        <path d="M120,40 C60,40 40,110 120,180 C200,110 180,40 120,40 Z" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="150" cy="70" r="8" fill="var(--accent)"/>
+        <text x="165" y="66" font-size="11" font-weight="700" fill="var(--ink)">SA node</text>
+        <text x="165" y="80" font-size="10" fill="var(--ink-faint)">pacemaker</text>
+        <circle cx="120" cy="112" r="7" fill="var(--why)"/>
+        <text x="132" y="116" font-size="11" font-weight="700" fill="var(--ink)">AV node</text>
+        <line x1="120" y1="119" x2="120" y2="165" stroke="var(--why)" stroke-width="3"/>
+        <line x1="120" y1="165" x2="96" y2="185" stroke="var(--why)" stroke-width="2.4"/>
+        <line x1="120" y1="165" x2="144" y2="185" stroke="var(--why)" stroke-width="2.4"/>
+        <text x="120" y="205" text-anchor="middle" font-size="10" fill="var(--ink-faint)">His → branches → Purkinje</text>
+        <g font-family="system-ui,sans-serif">
+          <rect x="320" y="34" width="300" height="46" rx="9" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 40%,var(--line))"/>
+          <text x="334" y="53" font-size="12.5" font-weight="700" fill="var(--ink)">Pacemaker = SA node</text>
+          <text x="334" y="70" font-size="11.5" fill="var(--ink-soft)">AV node is the backup / delay</text>
+          <rect x="320" y="90" width="300" height="46" rx="9" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 40%,var(--line))"/>
+          <text x="334" y="109" font-size="12.5" font-weight="700" fill="var(--ink)">QRS = ventricular depolarization</text>
+          <text x="334" y="126" font-size="11.5" fill="var(--ink-soft)">P = atrial depol · T = ventricular repol</text>
+          <rect x="320" y="146" width="300" height="46" rx="9" fill="var(--pearl-w)" stroke="color-mix(in srgb,var(--pearl) 42%,var(--line))"/>
+          <text x="334" y="165" font-size="12.5" font-weight="700" fill="var(--ink)">Mitral auscultation</text>
+          <text x="334" y="182" font-size="11.5" fill="var(--ink-soft)">5th ICS, left mid-clavicular line (apex)</text>
+          <rect x="320" y="202" width="300" height="34" rx="9" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="334" y="224" font-size="11.5" fill="var(--ink-soft)">Artery = carries blood AWAY from the heart</text>
+        </g>
+      </svg>
+      <figcaption>SA → AV → His → branches → Purkinje</figcaption>
+    </figure>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The exact misses</div>
+      <p>Pacemaker = <b>SA node</b> (you put AV). Force of contraction = <b>inotropic</b> (you put chronotropic, which is rate). QRS = <b>ventricular depolarization</b>. Fetal vessel joining pulmonary artery to aorta = <b>ductus arteriosus</b> (foramen ovale joins the atria). Orthopnea points to <b>CHF</b>.</p>
     </div>
+  </section>
 
-  </div>
-  <div class="foot">
-    <span>WAA &middot; Board Review 2026 &middot; A1 Human Biology Systems</span>
-    <span>Personal study notes &middot; built from MCU 2026 preboard misses</span>
-  </div>
+  <section>
+    <h2><span class="n">05</span> Renal, digestive, endocrine</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>System</th><th>Item</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="4"><b>Renal</b></td><td>emptying the bladder</td><td class="rx">micturition</td></tr>
+          <tr><td>urine "except" (the false one)</td><td class="rx">normal urine has NO albumin</td></tr>
+          <tr><td>retention in the elderly</td><td class="rx">benign prostatic hyperplasia</td></tr>
+          <tr><td>terminal dysuria localizes to</td><td class="rx">urinary bladder</td></tr>
+          <tr><td rowspan="3"><b>Digestive</b></td><td>liver capsule</td><td class="rx">Glisson's (Gerota = kidney)</td></tr>
+          <tr><td>fundus gas bubble</td><td class="rx">Magenblase</td></tr>
+          <tr><td>deficient saliva, caries, halitosis</td><td class="rx">xerostomia</td></tr>
+          <tr><td rowspan="2"><b>Reproductive</b></td><td>empty Graafian follicle after ovulation</td><td class="rx">corpus luteum, then corpus albicans</td></tr>
+          <tr><td>main antibody in colostrum</td><td class="rx">IgA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Respiratory, larynx, nose</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Item</th><th>Answer</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Adam's apple / largest laryngeal cartilage</td><td class="rx">thyroid cartilage</td><td>both answers are thyroid</td></tr>
+          <tr><td>NOT a paranasal sinus</td><td class="rx">mastoid antrum</td><td>frontal, maxillary, ethmoid, sphenoid are paranasal</td></tr>
+          <tr><td>posterior nares</td><td class="rx">choanae</td><td>anterior nares = nostrils</td></tr>
+          <tr><td>nasolacrimal duct drains to</td><td class="rx">inferior meatus</td><td>this one is on your ocular anatomy too</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:13px">
+      <div class="lab">Cross-link · ocular anatomy</div>
+      <p>The nasolacrimal duct opening at the inferior meatus is the one eye-relevant fact in this whole exam. It reappears in lacrimal drainage and in dye-disappearance / Jones testing. Bank it in both places.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Skeletal</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 200" role="img" aria-label="Top cervical vertebrae: C1 Atlas, C2 Axis with dens, C7 vertebra prominens">
+        <circle cx="120" cy="60" r="34" fill="none" stroke="var(--accent)" stroke-width="4"/>
+        <text x="120" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-deep)">C1</text>
+        <text x="120" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Atlas</text>
+        <text x="120" y="134" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">holds the skull</text>
+        <circle cx="320" cy="60" r="30" fill="none" stroke="var(--why)" stroke-width="4"/>
+        <rect x="314" y="20" width="12" height="18" rx="3" fill="var(--why)"/>
+        <text x="320" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="var(--why)">C2</text>
+        <text x="320" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Axis</text>
+        <text x="320" y="134" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">dens; skull rotates on it</text>
+        <circle cx="520" cy="60" r="30" fill="none" stroke="var(--pearl)" stroke-width="4"/>
+        <line x1="520" y1="90" x2="520" y2="120" stroke="var(--pearl)" stroke-width="5"/>
+        <text x="520" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="var(--pearl)">C7</text>
+        <text x="520" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">vertebra prominens</text>
+        <text x="520" y="156" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">longest spinous process</text>
+      </svg>
+      <figcaption>C1 Atlas · C2 Axis (dens) · C7 prominens</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Item</th><th>Answer</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Largest tendon</td><td class="rx">Achilles (calcaneal), at the ankle</td><td>not the thigh</td></tr>
+          <tr><td>Largest sesamoid bone</td><td class="rx">patella</td><td>a bone inside a tendon</td></tr>
+          <tr><td>"NOT a pelvic bone" trap</td><td class="rx">ileum</td><td>ileuM = the gut; iliuM = the pelvis (spelling only)</td></tr>
+          <tr><td>Osteocyte space</td><td class="rx">lacuna</td><td>canaliculi connect lacunae</td></tr>
+          <tr><td>Between coronal and sagittal sutures</td><td class="rx">bregmatic (anterior) fontanelle</td><td>last to close, ~18 months</td></tr>
+          <tr><td>Only anterior neck bone with no joint</td><td class="rx">hyoid</td><td>held by muscles only</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The spelling trap that cost a point</div>
+      <p><b>ileum</b> is the last part of the small intestine; <b>ilium</b> is the flat bone of the pelvis. The "not a pelvic bone" answer is the one spelled with an e: ile<b>u</b>m.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Rebuild it on paper</h2>
+    <p>This subject is anatomy-heavy, so lean on diagrams and lists, not just term recall. Close the card and do these blind.</p>
+    <div class="drill"><div class="t">1 &middot; Brain dump the swap-pairs</div><p>Write all seven pairs with both members and the separator phrase. Then one high-yield fact per body system from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Draw the heart</div><p>Sketch it and label SA node, AV node, the four valves, and the mitral apex point. Then write the conduction path in order.</p></div>
+    <div class="drill"><div class="t">3 &middot; Draw the top cervical spine</div><p>Draw C1, C2, C7 and label Atlas, Axis (dens), and vertebra prominens. No prompts.</p></div>
+    <div class="drill"><div class="t">4 &middot; Teach the blood types</div><p>Explain, without naming the cells first, why O donates to all but receives only from O, and why AB is the opposite.</p></div>
+    <div class="drill"><div class="t">5 &middot; List the paranasal sinuses</div><p>Write the four (frontal, ethmoid, sphenoid, maxillary) and cross out the distractor (mastoid).</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">09</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab review queue on the 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Monocyte in tissue vs basophil in tissue?</span> <span class="a">Macrophage; mast cell.</span></li>
+      <li><span class="q">Alpha cells vs beta cells of the islets?</span> <span class="a">Glucagon; insulin.</span></li>
+      <li><span class="q">Pancreatic protein enzyme vs carb enzyme?</span> <span class="a">Chymotrypsin; amylopsin.</span></li>
+      <li><span class="q">Universal donor vs universal recipient?</span> <span class="a">O (no antigens); AB (no antibodies).</span></li>
+      <li><span class="q">C1 and C2 names?</span> <span class="a">Atlas (C1); Axis (C2, has the dens).</span></li>
+      <li><span class="q">Hemoglobin carrying CO2 vs holding ferric iron?</span> <span class="a">Carbaminohemoglobin; methemoglobin.</span></li>
+      <li><span class="q">B-lymphocytes make which immunity?</span> <span class="a">Humoral.</span></li>
+      <li><span class="q">Pacemaker of the heart, and what QRS shows?</span> <span class="a">SA node; ventricular depolarization.</span></li>
+      <li><span class="q">Force vs rate of contraction (the -tropic words)?</span> <span class="a">Inotropic = force; chronotropic = rate.</span></li>
+      <li><span class="q">Where does the mitral valve get auscultated?</span> <span class="a">5th ICS, left mid-clavicular line (apex).</span></li>
+      <li><span class="q">Where does the nasolacrimal duct drain?</span> <span class="a">Inferior meatus.</span></li>
+      <li><span class="q">"Not a pelvic bone": ileum or ilium?</span> <span class="a">Ileum (the intestine); ilium is the pelvic bone.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Visual Biology Card 7 &middot; breadth is the work here</div>
+
 </div>
-
 </body>
 </html>
