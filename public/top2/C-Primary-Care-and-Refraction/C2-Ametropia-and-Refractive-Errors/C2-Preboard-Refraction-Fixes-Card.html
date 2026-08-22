@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Primary Care Card 7 · Refraction Fixes</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);font-weight:600;}
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Primary Care and Refraction</div>
+    </div>
+    <div class="card-no">Card<b>07</b>Refraction fixes</div>
+  </header>
+
+  <h1>Primary care: <em>refraction fixes</em> for a strong subject</h1>
+  <p class="dek">Primary Care was your best subject on the preboard (121/150). These are the few that slipped, and they cluster tightly: the logic of what makes an eye myopic or hyperopic, the myopia-control mechanisms, astigmatism classification, and retinoscopy. Two of the missed items were mis-keyed on the form, and this card corrects them so you do not learn the wrong thing.</p>
+
+  <section>
+    <h2><span class="n">01</span> Refractive error is power vs length</h2>
+    <p class="lead">Every ametropia comes from two dials: the eye's <span class="term">refracting power</span> and its <span class="term">axial length</span>. Too much of either makes the focus fall short (myopia); too little makes it fall long (hyperopia). The "except" stems just ask which change does the opposite.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Change</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>longer eyeball</td><td class="rx">myopia (axial)</td></tr>
+          <tr><td>steeper cornea = shorter radius of curvature</td><td class="rx">myopia (more power)</td></tr>
+          <tr><td>shorter eyeball, normal power</td><td class="rx">hyperopia</td></tr>
+          <tr><td>flatter cornea = longer radius</td><td class="rx">hyperopia (less power)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">The "except" traps you missed</div>
+      <p>"Causes of hyperopia except" = <b>shorter radius of curvature</b>, because a shorter radius steepens the cornea, adds power, and causes myopia, not hyperopia. "Causes of myopia except" = <b>shorter eyeball with normal power</b>, because that is hyperopia. Read these by matching each option to power-or-length, then pick the one that lands on the wrong error.</p>
+    </div>
+    <div class="cal mnem">
+      <div class="lab">Anchor</div>
+      <p>Shorter radius = steeper = stronger = myopia. Shorter eyeball = less distance = hyperopia. Radius and length pull opposite ways when you say "shorter."</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Myopia control: it is all about defocus sign</h2>
+    <p>Modern myopia control turns on where the peripheral image falls. Hyperopic defocus (image behind the retina) tells the eye to grow; myopic defocus (image in front) tells it to stop.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>peripheral hyperopic defocus in an animal model causes</td><td class="rx">increased axial elongation</td></tr>
+          <tr><td>historical rationale for undercorrection</td><td class="rx">myopic defocus at the retina slows growth</td></tr>
+          <tr><td>atropine slows myopia mainly by</td><td class="rx">retinal dopamine release modulation</td></tr>
+          <tr><td>myopia from nuclear sclerosis of the lens</td><td class="rx">index (induced) myopia</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">The two facts the board reuses</div>
+      <p>Atropine works through the <b>retina (dopamine)</b>, not by relaxing the ciliary muscle. Undercorrection was believed to help by leaving <b>myopic defocus</b>, though the modern evidence went the other way. And a lens that goes cloudy with age (nuclear sclerosis) adds index, so it is <b>index/induced</b> myopia, not axial.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Astigmatism classification</h2>
+    <p>Two labels, done in order: the rule (from the minus-cylinder axis), then the type (from where each meridian focuses).</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Read this</th><th>Then call it</th></tr></thead>
+        <tbody>
+          <tr><td>minus-cyl axis near 180 (or plus-cyl axis near 90)</td><td class="rx">with-the-rule</td></tr>
+          <tr><td>minus-cyl axis near 90 (or plus-cyl axis near 180)</td><td class="rx">against-the-rule</td></tr>
+          <tr><td>one meridian on the retina, the other myopic</td><td class="rx">simple myopic astigmatism</td></tr>
+          <tr><td>one meridian myopic, the other hyperopic</td><td class="rx">mixed astigmatism</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal why" style="margin-top:13px">
+      <div class="lab">Worked example</div>
+      <p><b>&minus;1.00 sph = +1.00 cyl x 180.</b> Transpose to plano / &minus;1.00 x 090. The minus-cyl axis is 90, so it is <b>against-the-rule</b>; one meridian is plano and the other is myopic, so <b>simple myopic astigmatism</b>. Answer: against-the-rule simple myopic astigmatism.</p>
+    </div>
+    <div class="cal trap">
+      <div class="lab">Careful with "symmetric / homologous"</div>
+      <p>The both-eyes labels (symmetric vs asymmetric, homologous vs heterologous) are defined differently across Philippine reviewers, so the preboard's keys here are source-dependent. Know the terms, but do not treat those two items as settled. Rule and type (above) are the standard, safe classification.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Retinoscopy</h2>
+    <figure class="fig">
+      <svg viewBox="0 0 640 170" role="img" aria-label="With motion means add plus, against motion means add minus; neutrality is the endpoint">
+        <circle cx="120" cy="80" r="52" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <path d="M95 80 h50" stroke="var(--accent)" stroke-width="3" marker-end="url(#ar)"/>
+        <text x="120" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">WITH motion</text>
+        <text x="120" y="166" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">add plus (hyperopic side)</text>
+        <circle cx="320" cy="80" r="52" fill="none" stroke="var(--why)" stroke-width="2"/>
+        <path d="M345 80 h-50" stroke="var(--why)" stroke-width="3" marker-end="url(#ar2)"/>
+        <text x="320" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">AGAINST motion</text>
+        <text x="320" y="166" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">add minus (myopic side)</text>
+        <circle cx="520" cy="80" r="52" fill="var(--accent-wash)" stroke="var(--accent)" stroke-width="2"/>
+        <text x="520" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-deep)">neutral</text>
+        <text x="520" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Neutrality</text>
+        <text x="520" y="166" text-anchor="middle" font-size="10.5" fill="var(--ink-soft)">the endpoint</text>
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent)"/></marker>
+          <marker id="ar2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--why)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>with = add plus, against = add minus</figcaption>
+    </figure>
+    <div class="tw" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>purpose of dynamic retinoscopy</td><td class="rx">measure the refractive state at near (during near fixation)</td></tr>
+          <tr><td>cycloplegic retinoscopy contraindications, except</td><td class="rx">anisometropia</td></tr>
+          <tr><td>raising condensing-lens power in indirect ophthalmoscopy</td><td class="rx">magnification decreases, field of view increases</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal trap" style="margin-top:13px">
+      <div class="lab">Mis-keyed on the form (do not learn it)</div>
+      <p>One item called a <b>dull, slow "with" movement</b> "high myopia." That is wrong: a "with" reflex means you still need plus, which is the <b>hyperopic</b> side; a dull, slow reflex means a large error, so the real answer is <b>high hyperopia</b>. High myopia gives an "against" reflex. Trust the with-plus / against-minus rule, not that key.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Binocular vision and fusional reserves</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>slow inward recovery of the just-covered eye on alternate cover test</td><td class="rx">compensated exophoria</td></tr>
+          <tr><td>near exophoria, reading headaches, fails Sheard's criterion; treat by building</td><td class="rx">positive fusional reserve (base-out)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">Sheard's logic</div>
+      <p>Exophoria is corrected by convergence, which is <b>positive fusional vergence</b> (base-out). Failing Sheard's means the reserve is too small for the phoria, so vision therapy builds the positive fusional reserve.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Neuro, pupil, and clinical quick hits</h2>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Stem</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>right homonymous congruous hemianopsia localizes to the</td><td class="rx">left lateral geniculate body / posterior pathway</td></tr>
+          <tr><td>structure that controls how much light enters the eye</td><td class="rx">iris</td></tr>
+          <tr><td>structure lining about 5/6 of the interior of the globe</td><td class="rx">choroid</td></tr>
+          <tr><td>a 55-year-old reads better in bright light because</td><td class="rx">smaller pupils increase depth of focus</td></tr>
+          <tr><td>interviewer behavior to avoid in case history</td><td class="rx">asking leading questions</td></tr>
+          <tr><td>amblyopia improves with vision therapy through</td><td class="rx">neuroplasticity and visual learning</td></tr>
+          <tr><td>pleoptics dazzles the peripheral retina in order to</td><td class="rx">improve foveal function</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:13px">
+      <div class="lab">Congruous = posterior</div>
+      <p>The more congruous (matching) the two field defects, the more posterior the lesion. A congruous homonymous hemianopsia sits at the lateral geniculate body or occipital cortex, on the side opposite the field loss.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spherical equivalent in one move</h2>
+    <p>Adding cylinder shifts the circle of least confusion by half the cylinder. To keep it on the retina, move the sphere the opposite way by half.</p>
+    <div class="cal why">
+      <div class="lab">The exact item</div>
+      <p>After adding <b>&minus;0.50 D of cylinder</b>, add <b>+0.25 D sphere</b> to keep the interval of Sturm centered on the retina. Rule: sphere change = minus one-half of the cylinder change.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Rebuild it on paper</h2>
+    <div class="drill"><div class="t">1 &middot; The power-vs-length grid</div><p>Write the four refractive changes (longer/shorter eyeball, steeper/flatter cornea) and the error each causes. Then answer two "except" stems from memory.</p></div>
+    <div class="drill"><div class="t">2 &middot; Myopia-control facts</div><p>State the defocus rule, the atropine mechanism, and the myopia type from nuclear sclerosis, without looking.</p></div>
+    <div class="drill"><div class="t">3 &middot; Classify an astigmatism</div><p>Transpose &minus;1.00 = +1.00 x 180, then name the rule and the type. Do three more Rx of your own.</p></div>
+    <div class="drill"><div class="t">4 &middot; Retinoscopy reflexes</div><p>Draw with, against, and neutral, and write the lens you add for each. Say why a dull slow "with" is high hyperopia.</p></div>
+    <div class="drill"><div class="t">5 &middot; Sheard and spherical equivalent</div><p>Explain why exophoria needs positive fusional reserve, and the sphere move after adding &minus;0.50 cyl.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">09</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab review queue on the 1 / 2 / 3 / 7 / 14 day ladder. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">Cause of hyperopia except (steeper vs flatter)?</span> <span class="a">Shorter radius of curvature (that steepens and causes myopia).</span></li>
+      <li><span class="q">Cause of myopia except?</span> <span class="a">Shorter eyeball with normal power (that is hyperopia).</span></li>
+      <li><span class="q">Peripheral hyperopic defocus does what?</span> <span class="a">Increases axial elongation.</span></li>
+      <li><span class="q">Atropine slows myopia by?</span> <span class="a">Retinal dopamine release modulation.</span></li>
+      <li><span class="q">Nuclear sclerosis causes which myopia?</span> <span class="a">Index (induced) myopia.</span></li>
+      <li><span class="q">Classify &minus;1.00 = +1.00 x 180.</span> <span class="a">Against-the-rule, simple myopic astigmatism.</span></li>
+      <li><span class="q">With vs against retinoscopy motion?</span> <span class="a">With = add plus (hyperopic side); against = add minus (myopic side).</span></li>
+      <li><span class="q">Dull slow "with" in a dim room?</span> <span class="a">High hyperopia (not high myopia; that form key was wrong).</span></li>
+      <li><span class="q">Purpose of dynamic retinoscopy?</span> <span class="a">Measure refractive state during near fixation.</span></li>
+      <li><span class="q">Exophoria failing Sheard's: build what?</span> <span class="a">Positive fusional reserve (base-out).</span></li>
+      <li><span class="q">Congruous homonymous hemianopsia lies where?</span> <span class="a">Posterior pathway (LGB / occipital), opposite side.</span></li>
+      <li><span class="q">Sphere move after adding &minus;0.50 cyl?</span> <span class="a">Add +0.25 sphere (minus half the cylinder).</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Primary Care Card 7 &middot; power vs length, defocus sign</div>
+
+</div>
+</body>
+</html>
