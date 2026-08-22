@@ -73,6 +73,19 @@ for (const L of ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']) {
     })
   }
 }
+// Aliases for questions whose stem was corrected after cards were already harvested: the old
+// card's id is FNV-1a(old stem) and no longer matches the new stem, so it would be missed.
+// Map old id -> the new canonical patch (with the new stem) to repair the stale card in place.
+const RENAMED = [
+  {
+    oldStem: "A patient's spectacle prescription is OD −3.00 −1.00 × 90. The patient's pupillary distance is 30mm from the OC of the right lens. What is the prismatic effect?",
+    newStem: "A patient's right spectacle lens is OD −3.00 −1.00 × 90. The patient views through a point 3 mm temporal to the optical center (horizontal displacement). What is the horizontal prismatic effect?",
+  },
+]
+for (const { oldStem, newStem } of RENAMED) {
+  const p = patch.get(questionId(newStem))
+  if (p) patch.set(questionId(oldStem), { ...p, stem: newStem })
+}
 console.log(`patches available: ${patch.size} questions`)
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -95,7 +108,7 @@ for (;;) {
     if (!hit) continue
     // Only the fields this patch defines get written (Top 2 -> options/correct/decode/ow;
     // main-app -> options/correct/explanation). Build the diff, then skip if it is a no-op.
-    const fields = ['options', 'correct', 'decode', 'ow', 'explanation']
+    const fields = ['stem', 'options', 'correct', 'decode', 'ow', 'explanation']
     const next = { ...p }
     let differs = false
     for (const k of fields) {
