@@ -151,10 +151,10 @@
 
   <div class="note">
     <p><b>The floor is the yellow ticket.</b> On a dead day you close only that and your streak lives. Never zero.</p>
-    <p><b>Tap "open" on any ticket</b> to jump straight to that exam or the review queue. Do it, come back, tick the box. Check-offs save on this device only, same as your other trackers.</p>
+    <p><b>Tap "open" on any ticket</b> to jump straight to that exam or the review queue. Do it, come back, tick the box. Check-offs sync across your devices, so a box ticked on your laptop shows on your phone.</p>
     <p><b>Read the gaps</b> means open the rationale on every miss. That is what feeds tomorrow's review queue.</p>
     <p style="margin-bottom:0"><b>Timing and scores.</b> There is no in-app timer. In the simulate phase and on mocks, run board pace on your phone: about 1.2 min per item (2 hours per 100, 3 per 150). Build phase has no clock, you are still learning. Your real scores log themselves to <a href="/readiness">Board Readiness</a> after every exam, so there is nothing to record here.</p>
-    <button class="reset" onclick="if(confirm('Clear all check-offs on this device?')){localStorage.removeItem(KEY);location.reload()}">Reset queue</button>
+    <button class="reset" onclick="if(confirm('Clear all check-offs on every device?')){clearAll()}">Reset queue</button>
   </div>
 </div>
 
@@ -165,6 +165,41 @@ const EXAM =new Date(2026,8,28);   // Sep 28 2026 (exam)
 const DAYMS=86400000;
 const store=JSON.parse(localStorage.getItem(KEY)||"{}");
 function save(){localStorage.setItem(KEY,JSON.stringify(store))}
+
+// Cross-device sync. localStorage stays the instant/offline cache; /api/daily-queue is the
+// shared source of truth reconciled on load. Runs inside the admin-gated /top2 area, so the
+// session cookie carries identity.
+function post(items){
+  return fetch("/api/daily-queue",{method:"POST",headers:{"Content-Type":"application/json"},
+    credentials:"same-origin",body:JSON.stringify({items:items})}).catch(function(){});
+}
+// Push the on-screen checkboxes to match the current store (used after a server merge).
+function applyStore(){
+  document.querySelectorAll('input[type=checkbox][data-id]').forEach(function(cb){
+    var on=!!store[cb.dataset.id];
+    cb.checked=on; cb.closest("li").classList.toggle("checked",on);
+  });
+  refresh();
+}
+// Pull the server state, let it win per item, then flush any local-only (offline) ticks up.
+function syncFromServer(){
+  fetch("/api/daily-queue",{credentials:"same-origin"})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(d){
+      if(!d||!d.state) return;
+      var localOnly=[];
+      for(var k in store){ if(!(k in d.state)) localOnly.push({id:k,checked:!!store[k]}); }
+      for(var s in d.state){ store[s]=!!d.state[s]; }
+      save(); applyStore();
+      if(localOnly.length) post(localOnly);
+    }).catch(function(){});
+}
+function clearAll(){
+  localStorage.removeItem(KEY);
+  fetch("/api/daily-queue",{method:"POST",headers:{"Content-Type":"application/json"},
+    credentials:"same-origin",body:JSON.stringify({clear:true})}).catch(function(){});
+  location.reload();
+}
 
 const WEEK=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const MO=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -359,8 +394,9 @@ function refresh(){
 }
 
 container.addEventListener("change",e=>{ const t=e.target;
-  if(t.dataset.id!==undefined){ store[t.dataset.id]=t.checked; t.closest("li").classList.toggle("checked",t.checked); save(); refresh(); }});
+  if(t.dataset.id!==undefined){ store[t.dataset.id]=t.checked; t.closest("li").classList.toggle("checked",t.checked); save(); refresh(); post([{id:t.dataset.id,checked:t.checked}]); }});
 refresh();
+syncFromServer();
 const te=document.querySelector(".day.today"); if(te) te.scrollIntoView({block:"center"});
 </script>
 </body>
