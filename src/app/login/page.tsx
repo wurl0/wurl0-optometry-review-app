@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 import { createClient } from '@/lib/supabase-client'
 
 export default function LoginPage() {
@@ -27,9 +26,9 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <Image src="/brand/foquslab-appicon.png" alt="FoqusLab" width={56} height={56} className="inline-block rounded-2xl mb-4" priority />
-          <h1 className="text-2xl font-bold text-gray-900">FoqusLab</h1>
-          <p className="text-gray-500 text-sm mt-1">Study, drill, pass.</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/foquslab-lockup.svg" alt="FoqusLab" width={168} height={63} className="inline-block mb-3 h-14 w-auto" />
+          <p className="text-gray-500 text-sm">Study, drill, pass.</p>
         </div>
 
         <form onSubmit={handleLogin} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
@@ -40,24 +39,24 @@ export default function LoginPage() {
             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <input
               type="email" value={email} onChange={e => setEmail(e.target.value)} required
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B54FF] focus:border-transparent"
               placeholder="you@example.com"
             />
           </div>
           <div>
             <div className="flex items-center justify-between mb-1">
               <label className="block text-sm font-medium text-gray-700">Password</label>
-              <Link href="/forgot-password" className="text-xs text-teal-600 hover:underline">Forgot password?</Link>
+              <Link href="/forgot-password" className="text-xs text-[#3B54FF] hover:underline">Forgot password?</Link>
             </div>
             <input
               type="password" value={password} onChange={e => setPassword(e.target.value)} required
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B54FF] focus:border-transparent"
               placeholder="••••••••"
             />
           </div>
           <button
             type="submit" disabled={loading}
-            className="w-full bg-teal-600 text-white rounded-lg py-2.5 text-sm font-semibold hover:bg-teal-700 disabled:opacity-50 transition-colors"
+            className="w-full bg-[#3B54FF] text-white rounded-lg py-2.5 text-sm font-semibold hover:bg-[#3145E0] disabled:opacity-50 transition-colors"
           >
             {loading ? 'Signing in…' : 'Sign in'}
           </button>
@@ -65,7 +64,7 @@ export default function LoginPage() {
 
         <p className="text-center text-sm text-gray-500 mt-4">
           No account?{' '}
-          <Link href="/signup" className="text-teal-600 font-medium hover:underline">Sign up</Link>
+          <Link href="/signup" className="text-[#3B54FF] font-medium hover:underline">Sign up</Link>
         </p>
       </div>
     </div>
