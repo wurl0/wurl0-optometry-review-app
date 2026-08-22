@@ -192,6 +192,7 @@ const CARD_ITEMS: Item[] = [
   { id: 'card.G4-Glaucoma-Card', subject: 'G', type: 'card', label: 'Card 4 · Glaucoma', path: '/top2/G-Ocular-Pharmacology/G4-Therapeutic-Ophthalmic-Agents/G4-Glaucoma-Card.html' },
   { id: 'card.G3-Anesthetics-and-Dyes-Card', subject: 'G', type: 'card', label: 'Card 5 · Anes & Dyes', path: '/top2/G-Ocular-Pharmacology/G3-Diagnostic-Pharmaceutical-Agents/G3-Anesthetics-and-Dyes-Card.html' },
   { id: 'card.G5-Systemic-Drug-Side-Effects-Card', subject: 'G', type: 'card', label: 'Card 6 · Systemic SE', path: '/top2/G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Systemic-Drug-Side-Effects-Card.html' },
+  { id: 'card.G1-Swap-Pairs-and-Formulation-Card', subject: 'G', type: 'card', label: 'Card 7 · G1 principles', path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Swap-Pairs-and-Formulation-Card.html' },
   { id: 'card.H1-RA8050-Optometry-Law-Card', subject: 'H', type: 'card', label: 'Card 1 · RA 8050', path: '/top2/H-Jurisprudence-and-Ethics/H1-RA8050-Optometry-Law/H1-RA8050-Optometry-Law-Card.html' },
   { id: 'card.H2-Bioethics-Code-of-Ethics-Card', subject: 'H', type: 'card', label: 'Card 2 · Bioethics', path: '/top2/H-Jurisprudence-and-Ethics/H2-Bioethics-and-Code-of-Ethics/H2-Bioethics-Code-of-Ethics-Card.html' },
   { id: 'card.H3-Practice-Management-Taxes-Card', subject: 'H', type: 'card', label: 'Card 3 · Practice mgmt', path: '/top2/H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Practice-Management-Taxes-Card.html' },
