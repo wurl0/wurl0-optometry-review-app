@@ -1,9 +1,11 @@
 // Backfill / repair review-queue cards so each card's stored payload matches the current
 // canonical question. Re-run this after correcting a question's answer or rationale in a
-// bank; it rewrites the affected /review cards to the fixed content. Two sources are read:
-//   - main-app banks  (src/data/*.json: {stem, options, correct, explanation})
-//   - Top 2 banks     (exam-build/banks/A-H.json: {q, o, a, decode, ow})
-// Top 2 wins any stem-hash collision (its decode + per-option ow is the richer content).
+// bank/page; it rewrites the affected /review cards to the fixed content. Three sources:
+//   - scored Top 2 HTML (preboards/mocks/reviewer: {q, opts, ans, rat} or {q, o, a, w, ...})
+//   - main-app banks    (src/data/*.json: {stem, options, correct, explanation})
+//   - Top 2 banks       (exam-build/banks/A-H.json: {q, o, a, decode, ow})
+// Later sources win a stem-hash collision (banks last: their decode + per-option ow is the
+// richer content). This covers preboards questions that live only in the HTML pages.
 //
 // Existing cards also self-heal the next time their subject exam is sat (the record route
 // re-upserts the full payload), so this only matters for a card already sitting in /review
@@ -44,7 +46,57 @@ function questionId(stem) {
 // a patch defines are written, so a Top 2 card is not forced to grow an explanation etc.
 const patch = new Map()
 
-// Main-app banks first (src/data/*.json: {stem, options, correct, explanation}). Cards for
+// Scored Top 2 HTML pages first (preboards {q,opts,ans,rat}, mocks/reviewer {q,o,a,w,decode,ow}).
+// These carry questions that are NOT in the banks (e.g. preboards), so cards harvested from
+// them would otherwise be missed. We JSON.parse each embedded {"q":...} object; unquoted-JS
+// objects (subject-exams, which are bank-derived) fail to parse and are skipped — the banks
+// below cover those. Later sources (src/data, banks) win any stem-hash collision.
+function walkHtml(dir) {
+  const out = []
+  let entries
+  try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return out }
+  for (const e of entries) {
+    const p = join(dir, e.name)
+    if (e.isDirectory()) out.push(...walkHtml(p))
+    else if (e.name.endsWith('.html') && !p.includes('.bak')) out.push(p)
+  }
+  return out
+}
+function braceObj(t, i) {
+  let L = i
+  while (L >= 0 && t[L] !== '{') L--
+  if (L < 0) return null
+  let d = 0
+  for (let j = L; j < t.length; j++) {
+    if (t[j] === '{') d++
+    else if (t[j] === '}') { d--; if (d === 0) return t.slice(L, j + 1) }
+  }
+  return null
+}
+for (const file of walkHtml(join(HERE, '..', 'public', 'top2'))) {
+  const t = readFileSync(file, 'utf8')
+  const seen = new Set()
+  const re = /"q"\s*:/g
+  let m
+  while ((m = re.exec(t))) {
+    const obj = braceObj(t, m.index)
+    if (!obj || seen.has(obj)) continue
+    seen.add(obj)
+    let o
+    try { o = JSON.parse(obj) } catch { continue }
+    const stem = o.q ?? o.stem
+    const options = o.opts ?? o.options ?? o.o
+    const correct = o.ans ?? o.a ?? o.correct
+    if (typeof stem !== 'string' || !Array.isArray(options) || typeof correct !== 'number') continue
+    patch.set(questionId(stem), {
+      options, correct,
+      explanation: o.rat || o.explanation || o.w || undefined,
+      decode: o.decode || undefined, ow: o.ow || undefined,
+    })
+  }
+}
+
+// Main-app banks next (src/data/*.json: {stem, options, correct, explanation}). Cards for
 // these are harvested from app practice/exams (e.g. the Primary Eye Care drill).
 const mainDir = join(HERE, '..', 'src', 'data')
 const mainBanks = readdirSync(mainDir).filter(f => f.endsWith('.json')).map(f => join(mainDir, f))
