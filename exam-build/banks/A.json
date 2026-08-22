@@ -8646,5 +8646,405 @@
    "Correct. The partial decussation occurs at the optic chiasm.",
    "The visual cortex is the final destination, not the crossing."
   ]
+ },
+ {
+  "id": "A0377",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "B-lymphocytes are responsible for which type of immunity?",
+  "o": [
+   "passive immunity",
+   "innate immunity",
+   "humoral immunity",
+   "cellular immunity"
+  ],
+  "a": 2,
+  "w": "B-lymphocytes make antibodies, which is humoral immunity. T-lymphocytes mediate cellular immunity.",
+  "k": "B-cells = antiBody = humoral.",
+  "src": "authored"
+ },
+ {
+  "id": "A0378",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Which blood cell matures in the thymus rather than in myeloid tissue?",
+  "o": [
+   "T-lymphocyte",
+   "thrombocyte",
+   "neutrophil",
+   "erythrocyte"
+  ],
+  "a": 0,
+  "w": "T-lymphocytes mature in the thymus. Neutrophils, erythrocytes, and platelets mature in the myeloid tissue of the marrow.",
+  "k": "T-cell matures in the Thymus.",
+  "src": "authored"
+ },
+ {
+  "id": "A0379",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The organ that stores the largest amount of iron in the body is the:",
+  "o": [
+   "liver",
+   "bone marrow",
+   "spleen",
+   "kidney"
+  ],
+  "a": 0,
+  "w": "The liver holds the largest iron store as ferritin. The marrow uses iron for erythropoiesis but is not the main store.",
+  "k": "Largest iron store = liver.",
+  "src": "authored"
+ },
+ {
+  "id": "A0380",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The largest of the formed elements of the blood is the:",
+  "o": [
+   "erythrocyte",
+   "monocyte",
+   "platelet",
+   "lymphocyte"
+  ],
+  "a": 1,
+  "w": "The monocyte is the largest blood cell. Lymphocytes are smaller, erythrocytes lack a nucleus, platelets are cell fragments.",
+  "k": "Largest blood cell = monocyte.",
+  "src": "authored"
+ },
+ {
+  "id": "A0381",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "A monocyte that has migrated into the tissues becomes a:",
+  "o": [
+   "plasma cell",
+   "mast cell",
+   "macrophage",
+   "acidophil"
+  ],
+  "a": 2,
+  "w": "Monocytes leave the blood and become tissue macrophages. Basophils become tissue mast cells.",
+  "k": "Monocyte in tissue = macrophage.",
+  "src": "authored"
+ },
+ {
+  "id": "A0382",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "A basophil that has migrated into the tissues becomes a:",
+  "o": [
+   "mast cell",
+   "macrophage",
+   "acidophil",
+   "plasma cell"
+  ],
+  "a": 0,
+  "w": "Basophils become tissue mast cells. Monocytes become tissue macrophages.",
+  "k": "Basophil in tissue = mast cell.",
+  "src": "authored"
+ },
+ {
+  "id": "A0383",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Carbon dioxide is transported in the blood bound to hemoglobin as:",
+  "o": [
+   "carboxyhemoglobin",
+   "methemoglobin",
+   "carbaminohemoglobin",
+   "oxyhemoglobin"
+  ],
+  "a": 2,
+  "w": "CO2 binds the globin amino groups as carbaminohemoglobin. Carboxyhemoglobin is bound to carbon monoxide, oxyhemoglobin to oxygen.",
+  "k": "CarbAmino carries CO2.",
+  "src": "authored"
+ },
+ {
+  "id": "A0384",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Hemoglobin containing iron in the ferric state and unable to carry oxygen is:",
+  "o": [
+   "carbaminohemoglobin",
+   "methemoglobin",
+   "oxyhemoglobin",
+   "carboxyhemoglobin"
+  ],
+  "a": 1,
+  "w": "Methemoglobin has ferric (Fe3+) iron and cannot carry oxygen. Oxyhemoglobin and carbaminohemoglobin carry oxygen and carbon dioxide.",
+  "k": "Ferric iron, no O2 = methemoglobin.",
+  "src": "authored"
+ },
+ {
+  "id": "A0385",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The blood type considered the universal recipient is:",
+  "o": [
+   "type AB",
+   "type O",
+   "type B",
+   "type A"
+  ],
+  "a": 0,
+  "w": "Type AB has no anti-A or anti-B antibodies, so it can receive any type. Type O, having no antigens, is the universal donor.",
+  "k": "AB has no antibodies = universal recipient.",
+  "src": "authored"
+ },
+ {
+  "id": "A0386",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The process of emptying the urinary bladder is called:",
+  "o": [
+   "menstruation",
+   "deglutition",
+   "micturition",
+   "defecation"
+  ],
+  "a": 2,
+  "w": "Micturition is urination. Deglutition is swallowing, defecation is bowel emptying, menstruation is the uterine cycle.",
+  "k": "Emptying the bladder = micturition.",
+  "src": "authored"
+ },
+ {
+  "id": "A0387",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The alpha cells of the islets of Langerhans secrete:",
+  "o": [
+   "lipase",
+   "glucagon",
+   "bile",
+   "insulin"
+  ],
+  "a": 1,
+  "w": "Alpha cells secrete glucagon, which raises blood sugar. Beta cells secrete insulin, which lowers it.",
+  "k": "Alpha = glucAgon.",
+  "src": "authored"
+ },
+ {
+  "id": "A0388",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The beta cells of the islets of Langerhans secrete:",
+  "o": [
+   "bile",
+   "lipase",
+   "glucagon",
+   "insulin"
+  ],
+  "a": 3,
+  "w": "Beta cells secrete insulin, which lowers blood sugar. Alpha cells secrete glucagon, which raises it.",
+  "k": "Beta = insulin.",
+  "src": "authored"
+ },
+ {
+  "id": "A0389",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The pancreatic enzyme that digests protein is:",
+  "o": [
+   "pepsin",
+   "amylopsin",
+   "ptyalin",
+   "chymotrypsin"
+  ],
+  "a": 3,
+  "w": "Chymotrypsin and trypsin are pancreatic protein enzymes. Amylopsin digests carbohydrate, pepsin is a gastric enzyme.",
+  "k": "Pancreatic protein enzyme = chymotrypsin.",
+  "src": "authored"
+ },
+ {
+  "id": "A0390",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The pancreatic enzyme that digests carbohydrate is:",
+  "o": [
+   "trypsin",
+   "amylopsin",
+   "chymotrypsin",
+   "pepsin"
+  ],
+  "a": 1,
+  "w": "Amylopsin (pancreatic amylase) digests carbohydrate. Chymotrypsin and trypsin digest protein, pepsin is gastric.",
+  "k": "AmylO = amylase = starch.",
+  "src": "authored"
+ },
+ {
+  "id": "A0391",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The fibrous capsule that encloses the liver is:",
+  "o": [
+   "the falciform ligament",
+   "the Bowman capsule",
+   "the fascia of Gerota",
+   "the Glisson capsule"
+  ],
+  "a": 3,
+  "w": "Glisson's capsule surrounds the liver. Gerota's fascia surrounds the kidney, Bowman's capsule is in the glomerulus.",
+  "k": "Liver capsule = Glisson.",
+  "src": "authored"
+ },
+ {
+  "id": "A0392",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The natural pacemaker of the heart is the:",
+  "o": [
+   "AV node",
+   "Purkinje network",
+   "SA node",
+   "bundle of His"
+  ],
+  "a": 2,
+  "w": "The SA node sets the rhythm. The AV node relays and delays, the His bundle and Purkinje fibers conduct to the ventricles.",
+  "k": "Pacemaker = SA node.",
+  "src": "authored"
+ },
+ {
+  "id": "A0393",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "On an ECG tracing, the QRS complex represents:",
+  "o": [
+   "ventricular repolarization",
+   "atrial depolarization",
+   "ventricular depolarization",
+   "atrial repolarization"
+  ],
+  "a": 2,
+  "w": "QRS is ventricular depolarization. The P wave is atrial depolarization and the T wave is ventricular repolarization.",
+  "k": "QRS = ventricular depolarization.",
+  "src": "authored"
+ },
+ {
+  "id": "A0394",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The ability of the myocardium to contract with greater force is its:",
+  "o": [
+   "dromotropic property",
+   "chronotropic property",
+   "inotropic property",
+   "bathmotropic property"
+  ],
+  "a": 2,
+  "w": "Inotropy is force of contraction. Chronotropy is rate, dromotropy is conduction, bathmotropy is excitability.",
+  "k": "Ino = force (in-force).",
+  "src": "authored"
+ },
+ {
+  "id": "A0395",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The mitral valve is best auscultated at the:",
+  "o": [
+   "5th intercostal space at the left mid-clavicular line",
+   "left 2nd intercostal space at the sternal border",
+   "right 2nd intercostal space at the sternal border",
+   "5th intercostal space at the left sternal border"
+  ],
+  "a": 0,
+  "w": "The mitral area (apex) is the 5th intercostal space at the left mid-clavicular line. The 2nd spaces are the aortic and pulmonic areas.",
+  "k": "Mitral = apex, 5th ICS left mid-clavicular line.",
+  "src": "authored"
+ },
+ {
+  "id": "A0396",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The cervical vertebra known as the axis is:",
+  "o": [
+   "C1",
+   "C7",
+   "C2",
+   "C4"
+  ],
+  "a": 2,
+  "w": "C2 is the axis, on which the skull rotates via the dens. C1 is the atlas, which holds the skull; C7 is the vertebra prominens.",
+  "k": "Axis = C2 (atlas = C1).",
+  "src": "authored"
+ },
+ {
+  "id": "A0397",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The largest tendon in the human body is found at the:",
+  "o": [
+   "wrist",
+   "shoulder",
+   "thigh",
+   "ankle"
+  ],
+  "a": 3,
+  "w": "The Achilles (calcaneal) tendon at the ankle is the largest tendon. The others do not hold the largest tendon.",
+  "k": "Largest tendon = Achilles, at the ankle.",
+  "src": "authored"
+ },
+ {
+  "id": "A0398",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The largest sesamoid bone in the body is the:",
+  "o": [
+   "hyoid",
+   "vomer",
+   "pisiform",
+   "patella"
+  ],
+  "a": 3,
+  "w": "The patella is the largest sesamoid, a bone embedded in a tendon. The pisiform is a small carpal sesamoid.",
+  "k": "Largest sesamoid = patella.",
+  "src": "authored"
+ },
+ {
+  "id": "A0399",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The only bone in the anterior neck that does not articulate with another bone is the:",
+  "o": [
+   "clavicle",
+   "cervical vertebra",
+   "sternum",
+   "hyoid"
+  ],
+  "a": 3,
+  "w": "The hyoid is suspended by muscles and ligaments and articulates with no other bone. The others all form joints.",
+  "k": "Free-floating neck bone = hyoid.",
+  "src": "authored"
+ },
+ {
+  "id": "A0400",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Osteocytes are housed within bone spaces called:",
+  "o": [
+   "lacunae",
+   "Volkmann canals",
+   "canaliculi",
+   "Haversian canals"
+  ],
+  "a": 0,
+  "w": "Osteocytes sit in lacunae, connected by canaliculi. Haversian and Volkmann canals carry vessels.",
+  "k": "Osteocyte space = lacuna.",
+  "src": "authored"
+ },
+ {
+  "id": "A0401",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The main antibody present in colostrum is:",
+  "o": [
+   "IgM",
+   "IgA",
+   "IgE",
+   "IgG"
+  ],
+  "a": 1,
+  "w": "Colostrum is rich in secretory IgA, which protects mucosal surfaces of the newborn gut. IgG crosses the placenta but is not the main colostral antibody.",
+  "k": "Colostrum = IgA.",
+  "src": "authored"
  }
 ]

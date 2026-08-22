@@ -5794,5 +5794,341 @@
    "Excretion removes the drug from the body.",
    "Distribution carries the drug from blood to tissues, after absorption."
   ]
+ },
+ {
+  "id": "G0253",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Benzalkonium chloride in an ophthalmic solution acts as all of the following EXCEPT a:",
+  "o": [
+   "lubricant",
+   "wetting agent",
+   "preservative",
+   "disinfectant"
+  ],
+  "a": 0,
+  "w": "BAK is a preservative that also wets and disinfects, but it is not a lubricant; lubrication comes from the vehicle or added demulcents.",
+  "k": "BAK preserves, wets, disinfects; it does not lubricate.",
+  "src": "authored"
+ },
+ {
+  "id": "G0254",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The ophthalmic solution component that dissolves the active drug and controls viscosity is the:",
+  "o": [
+   "buffering agent",
+   "surfactant",
+   "vehicle",
+   "excipient"
+  ],
+  "a": 2,
+  "w": "The vehicle is the solvent base that dissolves and carries the drug and sets viscosity. The buffer holds pH, the excipient gives form, the surfactant lowers surface tension.",
+  "k": "Dissolves and carries the drug = vehicle.",
+  "src": "authored"
+ },
+ {
+  "id": "G0255",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Which ophthalmic component gives form or consistency but has limited use in eye drops?",
+  "o": [
+   "surfactant",
+   "vehicle",
+   "buffering agent",
+   "excipient"
+  ],
+  "a": 3,
+  "w": "An excipient is an inert filler that gives form or consistency; it is used little in liquid eye drops. The vehicle dissolves the drug, the buffer holds pH, the surfactant wets.",
+  "k": "Inert filler that gives form = excipient.",
+  "src": "authored"
+ },
+ {
+  "id": "G0256",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Boric acid is added to an ophthalmic solution mainly as a:",
+  "o": [
+   "buffering agent",
+   "chelating agent",
+   "surfactant",
+   "preservative"
+  ],
+  "a": 0,
+  "w": "Boric acid buffers the solution to hold a stable pH. Preservatives kill microbes, chelators bind metals, surfactants lower surface tension.",
+  "k": "Boric acid holds the pH = buffer.",
+  "src": "authored"
+ },
+ {
+  "id": "G0257",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "When a surfactant forms a micelle in water, the core is formed by the surfactant:",
+  "o": [
+   "heads, trapping oil",
+   "tails, trapping water",
+   "tails, trapping oil",
+   "heads, trapping water"
+  ],
+  "a": 2,
+  "w": "In water the oil-loving tails point inward and enclose an oil droplet, while the water-loving heads face outward. A reverse micelle in oil is the opposite.",
+  "k": "Micelle in water: tails in, traps oil.",
+  "src": "authored"
+ },
+ {
+  "id": "G0258",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Adding hyaluronidase to lidocaine to spread the anesthetic during a block is an example of:",
+  "o": [
+   "antagonism",
+   "additive effect",
+   "potentiation",
+   "synergism"
+  ],
+  "a": 2,
+  "w": "Hyaluronidase has no anesthetic effect of its own; it only enhances the lidocaine, which is potentiation. Synergism needs both drugs active toward the same effect.",
+  "k": "One inactive drug boosts another = potentiation.",
+  "src": "authored"
+ },
+ {
+  "id": "G0259",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Lifelong insulin injection to control blood sugar in diabetes is which type of drug use?",
+  "o": [
+   "prophylactic",
+   "palliative",
+   "curative",
+   "protective"
+  ],
+  "a": 3,
+  "w": "Insulin replaces what the body lacks to guard against harm, which is protective use. It does not cure diabetes, prevent a disease not yet present, or merely relieve a symptom.",
+  "k": "Lifelong replacement to guard against harm = protective.",
+  "src": "authored"
+ },
+ {
+  "id": "G0260",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A topical antibiotic given after cataract surgery to prevent infection is used as a:",
+  "o": [
+   "prophylactic",
+   "protective",
+   "curative",
+   "palliative"
+  ],
+  "a": 0,
+  "w": "Preventing an infection that has not yet occurred is prophylaxis. Curative eliminates a present disease, palliative only relieves a symptom, protective replaces a body need.",
+  "k": "Given to prevent a disease not yet present = prophylactic.",
+  "src": "authored"
+ },
+ {
+  "id": "G0261",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "In a prescription order, the instructions written for the patient are the:",
+  "o": [
+   "superscription",
+   "signatura",
+   "subscription",
+   "inscription"
+  ],
+  "a": 1,
+  "w": "The signatura (Sig) is the direction to the patient. The inscription is the drug and dose, the subscription tells the pharmacist how to dispense, the superscription is the heading.",
+  "k": "Directions to the patient = signatura.",
+  "src": "authored"
+ },
+ {
+  "id": "G0262",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The part of the prescription order that names the drug, its strength, and quantity is the:",
+  "o": [
+   "inscription",
+   "superscription",
+   "signatura",
+   "subscription"
+  ],
+  "a": 0,
+  "w": "The inscription is the body of the order: drug, strength, quantity. The signatura instructs the patient, the subscription instructs the pharmacist, the superscription is the heading.",
+  "k": "Body of the order = inscription.",
+  "src": "authored"
+ },
+ {
+  "id": "G0263",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "Prolonged intake of ethambutol for tuberculosis characteristically produces which color-vision defect?",
+  "o": [
+   "red-orange defect",
+   "blue-yellow defect",
+   "red-green defect",
+   "blue-green defect"
+  ],
+  "a": 2,
+  "w": "Ethambutol causes a toxic optic neuropathy with a red-green defect. Digitalis and chronic alcohol give a blue-yellow defect.",
+  "k": "Ethambutol = red-green defect.",
+  "src": "authored"
+ },
+ {
+  "id": "G0264",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "A patient taking digitalis who reports yellow-tinged vision most likely has which color defect?",
+  "o": [
+   "red-green defect",
+   "blue-green defect",
+   "red-orange defect",
+   "blue-yellow defect"
+  ],
+  "a": 3,
+  "w": "Digitalis toxicity causes xanthopsia, a blue-yellow defect with yellow vision and halos. Ethambutol instead gives a red-green defect.",
+  "k": "Digitalis = blue-yellow (yellow vision).",
+  "src": "authored"
+ },
+ {
+  "id": "G0265",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "Whorl-like corneal deposits, called cornea verticillata, are classically caused by:",
+  "o": [
+   "oxytetracycline",
+   "chloroquine",
+   "chloramphenicol",
+   "digitalis"
+  ],
+  "a": 1,
+  "w": "Chloroquine, hydroxychloroquine, and amiodarone deposit in the cornea as a vortex (verticillata) pattern. Digitalis affects color vision, not the cornea.",
+  "k": "Vortex cornea = chloroquine or amiodarone.",
+  "src": "authored"
+ },
+ {
+  "id": "G0266",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "Which is NOT an ocular effect of prolonged corticosteroid use?",
+  "o": [
+   "secondary open-angle glaucoma",
+   "hyperglycemia",
+   "posterior subcapsular cataract",
+   "pupil dilation"
+  ],
+  "a": 1,
+  "w": "Steroids cause posterior subcapsular cataract, secondary open-angle glaucoma, and mydriasis in the eye. Hyperglycemia is a systemic steroid effect, not an ocular one.",
+  "k": "Hyperglycemia is systemic, not an ocular steroid effect.",
+  "src": "authored"
+ },
+ {
+  "id": "G0267",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "The pupils of a patient under the influence of morphine are:",
+  "o": [
+   "isocoric",
+   "dilated",
+   "anisocoric",
+   "constricted"
+  ],
+  "a": 3,
+  "w": "All opioids, including morphine, heroin, and meperidine, cause miosis. Stimulants such as cocaine and methamphetamine dilate the pupil.",
+  "k": "Opioids constrict the pupil (miosis).",
+  "src": "authored"
+ },
+ {
+  "id": "G0268",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "Which condition does NOT cause band keratopathy?",
+  "o": [
+   "hypercalcemia",
+   "excess vitamin D",
+   "hyperthyroidism",
+   "hyperparathyroidism"
+  ],
+  "a": 2,
+  "w": "Band keratopathy is corneal calcium deposition, so its causes raise calcium (hyperparathyroidism, excess vitamin D, hypercalcemia) or chronically inflame the eye. The thyroid is not a calcium problem.",
+  "k": "Band keratopathy = calcium; thyroid is not a cause.",
+  "src": "authored"
+ },
+ {
+  "id": "G0269",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "Which antibiotic is considered safe to use during pregnancy?",
+  "o": [
+   "doxycycline",
+   "ciprofloxacin",
+   "tetracycline",
+   "ampicillin"
+  ],
+  "a": 3,
+  "w": "Penicillins such as ampicillin are safe in pregnancy. Tetracyclines stain developing teeth and bone, and fluoroquinolones are avoided.",
+  "k": "Safe pregnancy antibiotic = ampicillin (penicillin).",
+  "src": "authored"
+ },
+ {
+  "id": "G0270",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "The safest agent to control blood sugar in a pregnant diabetic is:",
+  "o": [
+   "sitagliptin",
+   "metformin",
+   "glibenclamide",
+   "insulin"
+  ],
+  "a": 3,
+  "w": "Insulin is a large protein that does not cross the placenta, making it the safe choice. Oral hypoglycemics are generally avoided in pregnancy.",
+  "k": "Pregnancy glucose control = insulin.",
+  "src": "authored"
+ },
+ {
+  "id": "G0271",
+  "sec": "G5 Side Effects / Special Populations",
+  "t": "G5 Side Effects",
+  "q": "All of the following are ocular side effects of oral contraceptives EXCEPT:",
+  "o": [
+   "retinal vein occlusion",
+   "retinal artery occlusion",
+   "contact lens intolerance",
+   "hyperopia"
+  ],
+  "a": 3,
+  "w": "Oral contraceptives raise thrombotic risk (retinal vein and artery occlusion) and cause contact lens intolerance. A refractive shift to hyperopia is not among their effects.",
+  "k": "OCP effects are vascular; hyperopia is the odd one out.",
+  "src": "authored"
+ },
+ {
+  "id": "G0272",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "Which drug is instilled before cataract extraction to widen the pupil for easy removal of the lens?",
+  "o": [
+   "physostigmine",
+   "carbachol",
+   "pilocarpine",
+   "tropicamide"
+  ],
+  "a": 3,
+  "w": "A mydriatic such as tropicamide opens the pupil wide for lens removal. Pilocarpine, carbachol, and physostigmine are miotics that constrict.",
+  "k": "Before extraction: dilate with a mydriatic (tropicamide).",
+  "src": "authored"
+ },
+ {
+  "id": "G0273",
+  "sec": "G2 Autonomic Drugs",
+  "t": "G2 Autonomic",
+  "q": "After intraocular lens implantation, which drug is given to constrict the pupil and help hold the implant in place?",
+  "o": [
+   "atropine",
+   "carbachol",
+   "cyclopentolate",
+   "tropicamide"
+  ],
+  "a": 1,
+  "w": "A miotic such as carbachol constricts the pupil to secure the implant. Tropicamide, atropine, and cyclopentolate are mydriatics that dilate.",
+  "k": "After the IOL: constrict with a miotic (carbachol).",
+  "src": "authored"
  }
 ]
