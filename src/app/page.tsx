@@ -101,14 +101,14 @@ export default async function HomePage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl">👁️</span>
-            <span className="font-bold text-gray-900">FoqusLab</span>
-            <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full font-medium">2026</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/foquslab-lockup-horizontal.svg?v=1" alt="FoqusLab" className="h-7 w-auto" />
+            <span className="text-xs bg-[#3B54FF]/10 text-[#3B54FF] px-2 py-0.5 rounded-full font-medium">2026</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 hidden sm:block">{user.email}</span>
             {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
-              <Link href="/admin" className="text-xs font-medium text-teal-600 hover:underline">Admin</Link>
+              <Link href="/admin" className="text-xs font-medium text-[#3B54FF] hover:underline">Admin</Link>
             )}
             <form action={handleSignOut}>
               <button className="text-sm text-gray-500 hover:text-gray-800 transition-colors">Sign out</button>
@@ -121,7 +121,7 @@ export default async function HomePage() {
         {/* Greeting */}
         <div className="mb-4">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
-          <p className="text-gray-500 mt-1">Prep. Practice. Pass. — OLE 2026, let&apos;s go.</p>
+          <p className="text-gray-500 mt-1">Study, drill, pass. OLE 2026, let&apos;s go.</p>
         </div>
 
         {/* Search every subject at once. A plain GET form on purpose: no client JS, so
