@@ -291,9 +291,12 @@ function readTix(s){ const arr=CARDS[s]; const i=(cardN[s]=(cardN[s]||0)+1)-1; c
 // remediation card for each subject (its actual misses), not the general
 // rotation. Pharmacology alternates its two. Older cards stay on the home page.
 const PINNED={
+  // Order is G5 then G1 on purpose: the week-0 Pharma Monday (Aug 17, already
+  // past) consumed slot 0, so listing G5 first makes the first LIVE build Pharma
+  // day (D-35) land on G1 principles, then alternate G5 / G1 after.
   "Pharmacology":[
-    ["G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Swap-Pairs-and-Formulation-Card.html","G1 principles: swap-pairs & formulation"],
-    ["G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Drug-Induced-Ocular-Signs-and-Toxidromes-Card.html","Drug-induced signs & toxidromes"]],
+    ["G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Drug-Induced-Ocular-Signs-and-Toxidromes-Card.html","Drug-induced signs & toxidromes"],
+    ["G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Swap-Pairs-and-Formulation-Card.html","G1 principles: swap-pairs & formulation"]],
   "Visual Biology":[
     ["A-Visual-Biology/A1-Human-Biology-Systems/A1-Human-Biology-Systems-Card.html","Human biology systems"]],
   "Ocular Disease":[
