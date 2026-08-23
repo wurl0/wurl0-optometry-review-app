@@ -46,6 +46,9 @@
   .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
   .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
   .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .opt.picked{border-color:var(--accent);background:var(--accent-soft)} .opt.picked .lab{color:var(--accent)}
+  .rev-item{font-size:14px;border-left:3px solid var(--line);padding:5px 0 5px 11px;margin:10px 0;color:var(--muted);text-align:left}
+  .rev-item b{color:var(--ink)}
   .optwhy{display:none;font-size:13px;line-height:1.45;color:var(--muted);padding:0 12px 0 34px;margin:-4px 0 9px}
   .optwhy.show{display:block}
   .optwhy.owright{color:var(--right);font-weight:600}
@@ -101,6 +104,11 @@
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
       <button class="modebtn" data-n="25">Quick (25)</button>
+    </div>
+    <p style="margin-bottom:8px"><b>Feedback:</b></p>
+    <div class="modes" id="fbmode">
+      <button class="modebtn sel" data-fb="practice">Practice &middot; answer feedback each question</button>
+      <button class="modebtn" data-fb="exam">Exam &middot; score &amp; answers only at the end</button>
     </div>
     <p style="margin-bottom:8px"><b>Topic:</b></p>
     <div class="scope" id="scope">
@@ -402,17 +410,21 @@ const BANK=[
 {t:"G2 Autonomic",q:"After intraocular lens implantation, which drug is given to constrict the pupil and help hold the implant in place?",o:["atropine", "carbachol", "cyclopentolate", "tropicamide"],a:1,w:"A miotic such as carbachol constricts the pupil to secure the implant. Tropicamide, atropine, and cyclopentolate are mydriatics that dilate.",k:"After the IOL: constrict with a miotic (carbachol)."}
 ];
 
-let MODE=273, SCOPE='*';
+let MODE=273, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
+}));
+document.querySelectorAll('#fbmode .modebtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#fbmode .modebtn').forEach(x=>x.classList.remove('sel'));
+  b.classList.add('sel');FB=b.dataset.fb;
 }));
 document.querySelectorAll('#scope .scopebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#scope .scopebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');SCOPE=b.dataset.t;
 }));
 
-let Q=[],i=0,s=0,done=false;const missed=[];let topicStats={};
+let Q=[],i=0,s=0,done=false;const missed=[];const review=[];let topicStats={};
 const intro=document.getElementById('intro'),quiz=document.getElementById('quiz');
 const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
 const L=['A','B','C','D'];
@@ -441,13 +453,14 @@ function prep(it){
 document.getElementById('startBtn').addEventListener('click',()=>{
   const pool=SCOPE==='*'?BANK:BANK.filter(x=>x.t===SCOPE);
   Q=shuffle(pool).slice(0,Math.min(MODE,pool.length)).map(prep);
-  i=0;s=0;missed.length=0;topicStats={};
+  i=0;s=0;missed.length=0;review.length=0;topicStats={};
   intro.style.display='none';quiz.style.display='block';render();
 });
 
 function render(){
  done=false;const it=Q[i];
- barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=s+' / '+Q.length;
+ barfill.style.width=(i/Q.length*100)+'%';
+ scoretext.textContent=(FB==='exam')?(review.length+' / '+Q.length+' answered'):(s+' / '+Q.length);
  let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
  h+='<div class="qtext">'+it.q+'</div>';
  it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+L[n]+'</span>'+o+'</button><div class="optwhy" id="ow'+n+'"></div>';});
@@ -459,17 +472,26 @@ function render(){
 function choose(c){
  if(done)return;done=true;const it=Q[i],right=it.a;
  const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ review.push({t:cat,q:it.q,ok:ok,you:L[c]+'. '+it.o[c],cor:L[right]+'. '+it.o[right],w:it.w,k:it.k});
+ const last=i===Q.length-1;
+ if(FB==='exam'){
+   body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===c)b.classList.add('picked');});
+   scoretext.textContent=review.length+' / '+Q.length+' answered';
+   document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
+   document.getElementById('nx').addEventListener('click',next);
+   document.getElementById('quitBtn').addEventListener('click',results);
+   return;
+ }
  body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
    if(n===right)b.classList.add('correct');
    if(n===c&&c!==right)b.classList.add('incorrect');});
  if(it.ow){it.ow.forEach((txt,n)=>{const el=document.getElementById('ow'+n);if(el){el.textContent=txt;el.className='optwhy show'+(n===right?' owright':(n===c?' owpick':''));}});}
- const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
  scoretext.textContent=s+' / '+Q.length;
  const fb=document.getElementById('fb');
  fb.className='feedback '+(ok?'good':'bad');
  const decodeHtml=it.decode?'<div class="decode"><b>Decode &middot; how to spot it:</b> '+it.decode+'</div>':'';
  fb.innerHTML='<span class="tag">'+(ok?'Correct':'Not quite. Answer: '+L[right])+'</span>'+decodeHtml+'<div>'+it.w+'</div><div class="key"><b>Anchor:</b> '+it.k+'</div>';
- const last=i===Q.length-1;
  document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
  document.getElementById('nx').addEventListener('click',next);
  document.getElementById('quitBtn').addEventListener('click',results);
@@ -487,7 +509,12 @@ function results(){
    h+='<div class="brow"><span class="name">'+k+'</span><span class="track"><span class="fill" style="width:'+p+'%;background:'+col+'"></span></span><span class="pct">'+st.c+'/'+st.t+'</span></div>';
  });
  h+='</div>';
- if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
+ if(FB==='exam'){
+   h+='<div class="breakdown"><h3>Answer review ('+review.length+')</h3>';
+   review.forEach((x,idx)=>{const col=x.ok?'#1d9e75':'#c0392b';
+     h+='<div class="rev-item" style="border-left-color:'+col+'"><b>'+(idx+1)+' &middot; '+x.t+'</b><br>'+x.q+'<br>Your answer: <b>'+x.you+'</b><br>Correct: <b>'+x.cor+'</b>'+(x.ok?'':'<div style="margin-top:4px">'+x.w+'</div>')+'</div>';});
+   h+='</div>';
+ } else if(missed.length){h+='<div class="breakdown"><h3>Review these ('+missed.length+')</h3>';
    missed.forEach(x=>{h+='<div class="missed-item"><b>'+x.t+'.</b> '+x.q+'<br>Correct: <b>'+x.a+'</b></div>';});h+='</div>';}
  h+='<div class="actions" style="justify-content:center"><button class="nav ghost" id="ag">Back to start</button></div></div>';
  const areaBreakdown=Object.keys(topicStats).map(k=>({area:k,percentage:Math.round(topicStats[k].c/topicStats[k].t*100)}));
