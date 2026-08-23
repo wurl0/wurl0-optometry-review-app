@@ -9046,5 +9046,341 @@
   "w": "Colostrum is rich in secretory IgA, which protects mucosal surfaces of the newborn gut. IgG crosses the placenta but is not the main colostral antibody.",
   "k": "Colostrum = IgA.",
   "src": "authored"
+ },
+ {
+  "id": "A0402",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Cardiac output is the product of heart rate and:",
+  "o": [
+   "peripheral resistance",
+   "ejection fraction",
+   "stroke volume",
+   "blood pressure"
+  ],
+  "a": 2,
+  "w": "Cardiac output equals heart rate times stroke volume. Blood pressure and resistance are downstream effects, and ejection fraction is a ratio, not a factor in the product.",
+  "k": "CO = HR x stroke volume.",
+  "src": "authored"
+ },
+ {
+  "id": "A0403",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The Frank-Starling law states that increased venous return causes the heart to:",
+  "o": [
+   "contract with greater force",
+   "reduce its output",
+   "beat more slowly",
+   "contract with less force"
+  ],
+  "a": 0,
+  "w": "More venous return stretches the myocardium, which contracts more forcefully, so output rises to match input. This is the Frank-Starling mechanism.",
+  "k": "More filling stretches the heart into a stronger beat.",
+  "src": "authored"
+ },
+ {
+  "id": "A0404",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The gastric parietal cells secrete hydrochloric acid and:",
+  "o": [
+   "intrinsic factor",
+   "gastrin",
+   "pepsinogen",
+   "mucus"
+  ],
+  "a": 0,
+  "w": "Parietal cells secrete HCl and intrinsic factor, which is needed for vitamin B12 absorption. Chief cells make pepsinogen, G cells make gastrin.",
+  "k": "Parietal cells: acid + intrinsic factor.",
+  "src": "authored"
+ },
+ {
+  "id": "A0405",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The gastric chief cells secrete:",
+  "o": [
+   "intrinsic factor",
+   "pepsinogen",
+   "gastrin",
+   "hydrochloric acid"
+  ],
+  "a": 1,
+  "w": "Chief cells secrete pepsinogen, the precursor of pepsin. Parietal cells make acid and intrinsic factor; G cells make gastrin.",
+  "k": "Chief cells make pepsinogen.",
+  "src": "authored"
+ },
+ {
+  "id": "A0406",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The most abundant immunoglobulin in the blood is:",
+  "o": [
+   "IgM",
+   "IgA",
+   "IgG",
+   "IgE"
+  ],
+  "a": 2,
+  "w": "IgG is the most abundant serum antibody and the only one that crosses the placenta. IgM is largest and appears first, IgA guards mucosa, IgE mediates allergy.",
+  "k": "IgG = most abundant, crosses placenta.",
+  "src": "authored"
+ },
+ {
+  "id": "A0407",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The first antibody produced in a primary immune response is:",
+  "o": [
+   "IgM",
+   "IgG",
+   "IgE",
+   "IgA"
+  ],
+  "a": 0,
+  "w": "IgM is the first and largest antibody made in a primary response. IgG dominates later and in secondary responses.",
+  "k": "IgM is first and largest.",
+  "src": "authored"
+ },
+ {
+  "id": "A0408",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The immunoglobulin that mediates type I hypersensitivity and allergy is:",
+  "o": [
+   "IgG",
+   "IgM",
+   "IgE",
+   "IgA"
+  ],
+  "a": 2,
+  "w": "IgE binds mast cells and basophils, triggering allergic and anaphylactic reactions. The others are not the primary allergy antibody.",
+  "k": "IgE = allergy and anaphylaxis.",
+  "src": "authored"
+ },
+ {
+  "id": "A0409",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Antidiuretic hormone increases water reabsorption in the:",
+  "o": [
+   "glomerulus",
+   "collecting duct",
+   "proximal tubule",
+   "loop of Henle"
+  ],
+  "a": 1,
+  "w": "ADH (vasopressin) makes the collecting duct permeable to water, concentrating the urine. Filtration happens at the glomerulus, not reabsorption.",
+  "k": "ADH acts on the collecting duct.",
+  "src": "authored"
+ },
+ {
+  "id": "A0410",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Aldosterone from the adrenal cortex increases reabsorption of:",
+  "o": [
+   "sodium",
+   "potassium",
+   "calcium",
+   "glucose"
+  ],
+  "a": 0,
+  "w": "Aldosterone promotes sodium reabsorption and potassium excretion in the distal nephron, raising blood volume and pressure.",
+  "k": "Aldosterone saves sodium, dumps potassium.",
+  "src": "authored"
+ },
+ {
+  "id": "A0411",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Parathyroid hormone acts primarily to:",
+  "o": [
+   "lower blood glucose",
+   "lower blood calcium",
+   "raise blood calcium",
+   "raise blood phosphate"
+  ],
+  "a": 2,
+  "w": "PTH raises blood calcium by mobilizing bone, increasing renal reabsorption, and activating vitamin D. Calcitonin does the opposite.",
+  "k": "PTH raises calcium; calcitonin lowers it.",
+  "src": "authored"
+ },
+ {
+  "id": "A0412",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Calcitonin, secreted by the thyroid C cells, acts to:",
+  "o": [
+   "raise blood glucose",
+   "lower blood calcium",
+   "raise blood phosphate",
+   "raise blood calcium"
+  ],
+  "a": 1,
+  "w": "Calcitonin lowers blood calcium by inhibiting osteoclasts, opposing parathyroid hormone.",
+  "k": "Calcitonin tones calcium down.",
+  "src": "authored"
+ },
+ {
+  "id": "A0413",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The adrenal medulla secretes:",
+  "o": [
+   "androgens",
+   "cortisol",
+   "aldosterone",
+   "epinephrine"
+  ],
+  "a": 3,
+  "w": "The medulla releases epinephrine and norepinephrine for the fight-or-flight response. Aldosterone, cortisol, and androgens come from the adrenal cortex.",
+  "k": "Medulla = epinephrine; cortex = the steroids.",
+  "src": "authored"
+ },
+ {
+  "id": "A0414",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Filtration of blood in the nephron occurs at the:",
+  "o": [
+   "distal tubule",
+   "proximal tubule",
+   "loop of Henle",
+   "glomerulus"
+  ],
+  "a": 3,
+  "w": "The glomerulus filters plasma into Bowman's capsule. The tubules then reabsorb and secrete, but do not perform the initial filtration.",
+  "k": "Filtration happens at the glomerulus.",
+  "src": "authored"
+ },
+ {
+  "id": "A0415",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The number of pairs of cranial nerves is:",
+  "o": [
+   "31",
+   "12",
+   "10",
+   "24"
+  ],
+  "a": 1,
+  "w": "There are 12 pairs of cranial nerves. There are 31 pairs of spinal nerves.",
+  "k": "12 cranial, 31 spinal.",
+  "src": "authored"
+ },
+ {
+  "id": "A0416",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The number of pairs of spinal nerves is:",
+  "o": [
+   "33",
+   "30",
+   "12",
+   "31"
+  ],
+  "a": 3,
+  "w": "There are 31 pairs of spinal nerves (8 cervical, 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal). There are 12 pairs of cranial nerves.",
+  "k": "31 spinal nerve pairs.",
+  "src": "authored"
+ },
+ {
+  "id": "A0417",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The longest and strongest bone in the body is the:",
+  "o": [
+   "tibia",
+   "fibula",
+   "femur",
+   "humerus"
+  ],
+  "a": 2,
+  "w": "The femur (thigh bone) is the longest and strongest bone. The tibia is the second longest.",
+  "k": "Longest, strongest bone = femur.",
+  "src": "authored"
+ },
+ {
+  "id": "A0418",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "The bone cells responsible for resorbing bone are the:",
+  "o": [
+   "chondrocytes",
+   "osteoblasts",
+   "osteoclasts",
+   "osteocytes"
+  ],
+  "a": 2,
+  "w": "Osteoclasts break down (resorb) bone. Osteoblasts build it, osteocytes maintain it, chondrocytes are cartilage cells.",
+  "k": "OsteoClasts Consume; osteoBlasts Build.",
+  "src": "authored"
+ },
+ {
+  "id": "A0419",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Pulmonary surfactant functions to:",
+  "o": [
+   "carry oxygen in blood",
+   "increase surface tension",
+   "reduce alveolar surface tension",
+   "warm inspired air"
+  ],
+  "a": 2,
+  "w": "Surfactant lowers alveolar surface tension, preventing collapse on expiration. Its absence causes respiratory distress in premature infants.",
+  "k": "Surfactant lowers surface tension, prevents collapse.",
+  "src": "authored"
+ },
+ {
+  "id": "A0420",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Most oxygen is transported in the blood:",
+  "o": [
+   "bound to hemoglobin",
+   "dissolved in plasma",
+   "as bicarbonate ion",
+   "bound to albumin"
+  ],
+  "a": 0,
+  "w": "About 98% of oxygen travels bound to hemoglobin; only a small fraction dissolves in plasma. Bicarbonate is a carbon dioxide carrier.",
+  "k": "O2 rides on hemoglobin.",
+  "src": "authored"
+ },
+ {
+  "id": "A0421",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Most carbon dioxide is transported in the blood as:",
+  "o": [
+   "dissolved gas",
+   "carbaminohemoglobin",
+   "bicarbonate ion",
+   "bound to plasma proteins"
+  ],
+  "a": 2,
+  "w": "About 70% of carbon dioxide is carried as bicarbonate, formed by carbonic anhydrase in red cells. Less travels as carbamino compounds or dissolved gas.",
+  "k": "Most CO2 travels as bicarbonate.",
+  "src": "authored"
+ },
+ {
+  "id": "A0422",
+  "sec": "A1 Body Systems & Cranial Nerves",
+  "t": "A1 Body & CN",
+  "q": "Follicle-stimulating hormone and luteinizing hormone are secreted by the:",
+  "o": [
+   "posterior pituitary",
+   "ovary",
+   "hypothalamus",
+   "anterior pituitary"
+  ],
+  "a": 3,
+  "w": "FSH and LH are gonadotropins from the anterior pituitary. The posterior pituitary stores ADH and oxytocin.",
+  "k": "FSH and LH: anterior pituitary.",
+  "src": "authored"
  }
 ]

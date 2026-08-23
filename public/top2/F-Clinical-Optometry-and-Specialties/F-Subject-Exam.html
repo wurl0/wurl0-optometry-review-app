@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject F — Board Exam</h1>
-    <p class="sub">Clinical Optometry and Specialties · 218 questions · mixed, board-style</p>
+    <p class="sub">Clinical Optometry and Specialties · 234 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>218 board-style questions drawn from every F note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>234 board-style questions drawn from every F note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">F1 DPA</span>
       <span class="chip">F2 Pediatric</span>
@@ -102,7 +102,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="218">Full (218)</button>
+      <button class="modebtn sel" data-n="234">Full (234)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -358,10 +358,26 @@ const BANK=[
 {t:"F7 Low Vision",q:"The earliest clinical sign of diabetic retinopathy is:",o:["neovascularization", "microaneurysms", "hard exudates", "cotton-wool spots"],a:1,w:"Microaneurysms, small outpouchings of the retinal capillaries, are the earliest visible sign. Cotton-wool spots and neovascularization appear later.",k:"Earliest DR sign = microaneurysms."},
 {t:"F7 Low Vision",q:"White retinal lesions caused by microinfarction and ischemia of the nerve fiber layer are:",o:["microaneurysms", "drusen", "hard exudates", "cotton-wool spots"],a:3,w:"Cotton-wool spots are nerve-fiber-layer microinfarcts. Hard exudates are lipid deposits, and drusen are sub-RPE deposits.",k:"NFL microinfarct = cotton-wool spot."},
 {t:"F7 Low Vision",q:"The type of diabetic retinopathy defined by the presence of neovascularization is:",o:["severe non-proliferative", "mild non-proliferative", "moderate non-proliferative", "proliferative diabetic retinopathy"],a:3,w:"New vessel growth defines proliferative diabetic retinopathy, the sight-threatening stage. Non-proliferative stages lack neovascularization.",k:"Neovascularization = proliferative DR."},
-{t:"F7 Low Vision",q:"The characteristic shape of the hemorrhages seen in diabetic retinopathy is:",o:["splinter", "dot-and-blot", "flame-shaped", "subhyaloid"],a:1,w:"Dot-and-blot hemorrhages in the deep retina are characteristic of diabetic retinopathy. Flame hemorrhages are more typical of hypertension.",k:"DR hemorrhage = dot-and-blot."}
+{t:"F7 Low Vision",q:"The characteristic shape of the hemorrhages seen in diabetic retinopathy is:",o:["splinter", "dot-and-blot", "flame-shaped", "subhyaloid"],a:1,w:"Dot-and-blot hemorrhages in the deep retina are characteristic of diabetic retinopathy. Flame hemorrhages are more typical of hypertension.",k:"DR hemorrhage = dot-and-blot."},
+{t:"F4 Neuro",q:"A relative afferent pupillary defect is detected using the:",o:["cross-cover test", "cover-uncover test", "near point of convergence test", "swinging flashlight test"],a:3,w:"The swinging flashlight test reveals an RAPD when the affected pupil dilates as light swings to it, indicating an optic nerve or retinal defect.",k:"RAPD = swinging flashlight test."},
+{t:"F4 Neuro",q:"An Argyll Robertson pupil characteristically:",o:["is fixed and dilated in bright light", "reacts to light but not to a near target", "shows no near or light response at all", "accommodates but does not react to light"],a:3,w:"The Argyll Robertson pupil accommodates to near but does not react to light (light-near dissociation), classically from neurosyphilis.",k:"Argyll Robertson: accommodates, no light reaction."},
+{t:"F4 Neuro",q:"The classic triad of Horner syndrome is ptosis, miosis, and:",o:["anhidrosis", "exophthalmos", "upper lid retraction", "mydriasis"],a:0,w:"Horner syndrome is ptosis, miosis, and anhidrosis from a sympathetic pathway lesion. The pupil is small, not dilated.",k:"Horner: ptosis, miosis, anhidrosis."},
+{t:"F4 Neuro",q:"Bilateral optic disc swelling caused by raised intracranial pressure is called:",o:["papillitis", "papilledema", "optic atrophy", "optic neuritis"],a:1,w:"Papilledema is bilateral disc swelling from raised intracranial pressure. Optic neuritis and papillitis are inflammatory and usually unilateral.",k:"Raised ICP + bilateral disc swelling = papilledema."},
+{t:"F4 Neuro",q:"The lateral rectus muscle is innervated by cranial nerve:",o:["six", "three", "seven", "four"],a:0,w:"The lateral rectus is supplied by CN VI (abducens). The superior oblique is CN IV, and the remaining extraocular muscles are CN III.",k:"LR6 SO4, the rest are CN3."},
+{t:"F4 Neuro",q:"Optic neuritis in a young adult is most commonly associated with:",o:["chronic hypertension", "multiple sclerosis", "open-angle glaucoma", "diabetes mellitus"],a:1,w:"Optic neuritis in a young adult, with pain on eye movement and an RAPD, is strongly associated with multiple sclerosis.",k:"Young adult optic neuritis: think multiple sclerosis."},
+{t:"F5 Occupational",q:"Under the 20-20-20 rule, every 20 minutes a computer user should look at something 20 feet away for:",o:["20 seconds", "20 minutes", "2 minutes", "2 seconds"],a:0,w:"The 20-20-20 rule: every 20 minutes, look 20 feet away for 20 seconds, relaxing accommodation to ease computer vision syndrome.",k:"Every 20 min, 20 ft, 20 seconds."},
+{t:"F5 Occupational",q:"The impact-resistant lens material of choice for occupational safety eyewear is:",o:["polycarbonate", "CR-39 plastic", "crown glass", "high-index glass"],a:0,w:"Polycarbonate is highly impact resistant and inherently blocks UV, making it the standard for safety eyewear. Glass and CR-39 are far more brittle.",k:"Safety eyewear = polycarbonate."},
+{t:"F5 Occupational",q:"Computer vision syndrome is most directly caused by:",o:["prolonged near screen work", "a color-vision defect", "infrared exposure", "ultraviolet exposure"],a:0,w:"Computer vision syndrome comes from sustained near demand and reduced blinking at a screen, causing eyestrain and dryness, not from UV or color deficits.",k:"CVS = sustained near screen work."},
+{t:"F5 Occupational",q:"For ergonomic computer use, the center of the monitor should be positioned:",o:["well above eye level", "exactly at eye level", "tilted away from the user", "slightly below eye level"],a:3,w:"A monitor slightly below eye level lets the eyes rest in slight downgaze, reducing exposure and strain. Screens above eye level worsen dryness.",k:"Monitor slightly below eye level."},
+{t:"F5 Occupational",q:"Discomfort glare at a computer workstation is best reduced by:",o:["sitting directly facing a window", "using indirect or shielded lighting", "using a glossy screen finish", "adding more overhead light"],a:1,w:"Indirect or shielded lighting and controlling window light reduce reflections and discomfort glare. More overhead light or a glossy screen makes glare worse.",k:"Cut glare with indirect, shielded light."},
+{t:"F6 Sports Vision",q:"Dynamic visual acuity measures the ability to resolve detail on a:",o:["near reading card", "stationary chart", "peripheral target", "moving target"],a:3,w:"Dynamic visual acuity is the ability to see detail on a moving object, key in sports. Static acuity uses a stationary chart.",k:"Dynamic acuity = moving target."},
+{t:"F6 Sports Vision",q:"The recommended lens material for sports eye protection is:",o:["CR-39 plastic", "polycarbonate", "crown glass", "Trivex glass"],a:1,w:"Polycarbonate's high impact resistance makes it the standard for sports eyewear, protecting against ball and collision injuries.",k:"Sports eyewear = polycarbonate."},
+{t:"F6 Sports Vision",q:"The sighting-dominant eye is most simply identified using the:",o:["Maddox rod test", "hole-in-card test", "Worth 4-dot test", "alternate cover test"],a:1,w:"The hole-in-card (or pointing) test finds the sighting-dominant eye. Worth 4-dot assesses fusion and suppression, not sighting dominance.",k:"Sighting dominance = hole-in-card test."},
+{t:"F6 Sports Vision",q:"In sports vision, the ability to distinguish an object from its background is:",o:["visual acuity", "stereopsis", "contrast sensitivity", "accommodation"],a:2,w:"Contrast sensitivity is distinguishing an object from its background at varying contrast, vital for tracking a ball against a busy field.",k:"Object vs background = contrast sensitivity."},
+{t:"F6 Sports Vision",q:"A batter detecting a ball entering the edge of vision is using:",o:["color discrimination", "peripheral awareness", "central visual acuity", "near point of convergence"],a:1,w:"Detecting motion at the edge of the field is peripheral awareness, a trainable sports-vision skill distinct from central acuity.",k:"Edge-of-field detection = peripheral awareness."}
 ];
 
-let MODE=218, SCOPE='*', FB='practice';
+let MODE=234, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
