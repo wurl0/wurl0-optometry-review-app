@@ -350,10 +350,12 @@ function buildDay(dt){
       let s,weak;
       if(wk[dow]){ s=wk[dow]; weak=true; } else { s=HEAVY[(hp++)%HEAVY.length]; weak=false; }
       tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
-      const src=SRC[Math.min(weekIdx,SRC.length-1)];
+      // Weak three -> Subject Exam (the reviewer-derived bank that carries the
+      // preboard-remediation questions). Heavy 15% -> rotate the 4 preboard sets.
+      const test=weak?SRC[0]:SRC[1+(weekIdx%4)];
       tix=[QUEUE(),
         pinTix(s),
-        {txt:s+" "+src[0], link:src[1](s), why:"One bank at a working pace. You are still learning here, so no clock. Score logs itself to Board Readiness."},
+        {txt:s+" "+test[0], link:test[1](s), why:"One bank at a working pace. You are still learning here, so no clock. Score logs itself to Board Readiness."},
         GAPS];
     }
   }
