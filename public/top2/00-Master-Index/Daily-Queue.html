@@ -287,6 +287,33 @@ function readTix(s){ const arr=CARDS[s]; const i=(cardN[s]=(cardN[s]||0)+1)-1; c
   return {read:true, txt:"Read the "+s+" card · "+label, link:"../"+href,
     why:"A 5-minute refresher before you test. Warm up retrieval, then answer cold."}; }
 
+// Build-sprint pin: from the 69% preboard, the READ ticket points to the
+// remediation card for each subject (its actual misses), not the general
+// rotation. Pharmacology alternates its two. Older cards stay on the home page.
+const PINNED={
+  "Pharmacology":[
+    ["G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Swap-Pairs-and-Formulation-Card.html","G1 principles: swap-pairs & formulation"],
+    ["G-Ocular-Pharmacology/G5-Special-Populations-and-Drug-Effects/G5-Drug-Induced-Ocular-Signs-and-Toxidromes-Card.html","Drug-induced signs & toxidromes"]],
+  "Visual Biology":[
+    ["A-Visual-Biology/A1-Human-Biology-Systems/A1-Human-Biology-Systems-Card.html","Human biology systems"]],
+  "Ocular Disease":[
+    ["E-Ocular-Disease-and-Emergencies/E3-Posterior-Segment-and-Retina/E3-Preboard-Diagnosis-Patterns-Card.html","Diagnosis patterns"]],
+  "Primary Care":[
+    ["C-Primary-Care-and-Refraction/C2-Ametropia-and-Refractive-Errors/C2-Preboard-Refraction-Fixes-Card.html","Refraction fixes"]],
+  "Theoretical Optics + CL":[
+    ["D-Theoretical-Optics-Dispensing-CL/D3-Contact-Lenses/D3-Preboard-Optics-and-CL-Fixes-Card.html","Optics & CL fixes"]],
+  "Physio Optics + BV":[
+    ["B-Physiological-Optics-and-BV/B1-Visual-System-and-Ocular-Optics/B1-Preboard-Retinal-Physiology-and-Optics-Card.html","Retinal physiology & optics"]],
+  "Clinical Optometry":[
+    ["F-Clinical-Optometry-and-Specialties/F7-Low-Vision-and-Rehabilitation/F7-Preboard-Clinical-Fixes-Card.html","Clinical fixes"]],
+  "Ethics + Jurisprudence":[
+    ["H-Jurisprudence-and-Ethics/H3-Practice-Management-and-Labor-Laws/H3-Preboard-Tax-and-Practice-Card.html","Tax & practice"]]
+};
+const pinN={};
+function pinTix(s){ const arr=PINNED[s]||CARDS[s]; const i=(pinN[s]=(pinN[s]||0)+1)-1; const [href,label]=arr[i%arr.length];
+  return {read:true, txt:"Read the "+s+" fix card · "+label, link:"../"+href,
+    why:"Targeted refresher from your preboard misses. Read it, then answer cold."}; }
+
 const HEAVY=["Primary Care","Theoretical Optics + CL","Physio Optics + BV","Clinical Optometry","Ethics + Jurisprudence"];
 let hp=0;
 
@@ -325,7 +352,7 @@ function buildDay(dt){
       tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
       const src=SRC[Math.min(weekIdx,SRC.length-1)];
       tix=[QUEUE(),
-        readTix(s),
+        pinTix(s),
         {txt:s+" "+src[0], link:src[1](s), why:"One bank at a working pace. You are still learning here, so no clock. Score logs itself to Board Readiness."},
         GAPS];
     }
