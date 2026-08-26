@@ -18,6 +18,7 @@
     else if (/Preboards-2025/i.test(file)) source = 'preboards-2025';
     else if (/Preboards-Set2/i.test(file)) source = 'preboards-set2';
     else if (/Preboards-Set3/i.test(file)) source = 'preboards-set3';
+    else if (/Preboards-Set5/i.test(file)) source = 'preboards-set5';
     else if (/Mock-Board/i.test(file)) source = 'mock';
     const m = file.match(/^([A-H])-/);
     return { source: source, subjectCode: m ? m[1] : null };

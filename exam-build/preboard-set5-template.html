@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:16px}
+  .wrap{width:100%;max-width:780px}.screen{display:none}.screen.active{display:block}
+  .brand{text-align:center;margin-bottom:18px}
+  .brand .waa{font-size:.7rem;font-weight:800;letter-spacing:.35em;color:#f59e0b}
+  .brand h1{font-size:1.4rem;font-weight:700;color:#f8fafc;margin:6px 0 2px}
+  .brand .sub{font-size:.78rem;color:#64748b}
+  .card{background:#1e293b;border-radius:16px;padding:30px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+  .stat{background:#0f172a;border-radius:10px;padding:14px;text-align:center}
+  .stat .v{font-size:1.5rem;font-weight:800;color:#f59e0b}.stat .l{font-size:.7rem;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+  .opt-row{margin:18px 0}.opt-row .lbl{font-size:.8rem;color:#94a3b8;margin-bottom:8px;font-weight:600}
+  .seg{display:flex;gap:8px;flex-wrap:wrap}
+  .seg button{flex:1;min-width:120px;background:#0f172a;border:2px solid #334155;color:#cbd5e1;border-radius:9px;padding:10px 12px;font-size:.82rem;cursor:pointer;transition:all .15s}
+  .seg button.on{border-color:#f59e0b;color:#f1f5f9;background:#3a2e15}.seg button:hover{border-color:#f59e0b}
+  .btn-start{margin-top:24px;width:100%;background:#f59e0b;color:#0f172a;border:none;padding:15px;border-radius:10px;font-size:1rem;font-weight:800;cursor:pointer}
+  .btn-start:hover{background:#fbbf24}
+  .note{font-size:.75rem;color:#64748b;margin-top:14px;line-height:1.6}.note b{color:#94a3b8}
+  .qhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px}
+  .progress-wrap{flex:1}.bar{background:#1e293b;border-radius:99px;height:6px;overflow:hidden}
+  .fill{background:#f59e0b;height:100%;border-radius:99px;transition:width .3s}
+  .plabel{font-size:.75rem;color:#64748b;margin-top:5px}
+  .score-pill{background:#1e293b;border-radius:8px;padding:6px 12px;font-size:.8rem;color:#94a3b8;white-space:nowrap}
+  .tags{margin-bottom:12px}
+  .tag{display:inline-block;background:#0f172a;border-radius:6px;padding:4px 10px;font-size:.7rem;font-weight:700;color:#f59e0b;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}
+  .tag.errata{color:#f87171}.tag.flagq{color:#facc15}
+  .qtext{font-size:1.05rem;line-height:1.65;color:#f1f5f9;margin-bottom:22px;font-weight:500}
+  .options{display:flex;flex-direction:column;gap:4px}
+  .obtn{background:#0f172a;border:2px solid #334155;border-radius:10px;padding:13px 16px;text-align:left;cursor:pointer;font-size:.9rem;color:#cbd5e1;transition:all .15s;display:flex;gap:11px;align-items:flex-start}
+  .obtn:hover:not(:disabled){border-color:#f59e0b;color:#f1f5f9}
+  .obtn .ltr{font-weight:800;color:#f59e0b;min-width:18px}
+  .obtn.correct{background:#052e16;border-color:#22c55e;color:#dcfce7}.obtn.correct .ltr{color:#22c55e}
+  .obtn.wrong{background:#2d0a0a;border-color:#ef4444;color:#fecaca}.obtn.wrong .ltr{color:#ef4444}
+  .obtn.picked{border-color:#f59e0b;background:#3a2e15;color:#f1f5f9}
+  .obtn:disabled{cursor:default}
+  .optwhy{display:none;font-size:.78rem;line-height:1.5;color:#94a3b8;padding:2px 16px 8px 45px;margin-top:-2px}
+  .optwhy.show{display:block}
+  .optwhy .owl{font-weight:700;margin-right:5px}
+  .optwhy.owright{color:#86efac}.optwhy.owright .owl{color:#22c55e}
+  .optwhy.owpick{color:#fca5a5}.optwhy.owpick .owl{color:#ef4444}
+  .rat{margin-top:18px;background:#0f172a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;font-size:.86rem;color:#cbd5e1;line-height:1.65;display:none}
+  .rat.show{display:block}.rat.erratab{border-left-color:#f87171}
+  .rat .rl{font-weight:700;color:#f59e0b;display:block;margin-bottom:5px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+  .rat.erratab .rl{color:#f87171}
+  .rat .anchor{margin-top:9px;font-size:.8rem;color:#94a3b8;border-top:1px dashed #334155;padding-top:8px}.rat .anchor b{color:#cbd5e1}
+  .nav{display:flex;gap:10px;margin-top:18px}
+  .nav button{flex:1;border:none;padding:12px;border-radius:9px;font-size:.88rem;font-weight:700;cursor:pointer}
+  .btn-prev{background:#334155;color:#e2e8f0}.btn-prev:hover{background:#475569}
+  .btn-next{background:#f59e0b;color:#0f172a}.btn-next:hover{background:#fbbf24}
+  .btn-quit{background:transparent;color:#64748b;border:none;font-size:.78rem;cursor:pointer;margin-top:14px;width:100%;padding:6px}.btn-quit:hover{color:#94a3b8}
+  .jump{margin-top:14px}.jump summary{font-size:.78rem;color:#64748b;cursor:pointer}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:6px;margin-top:10px}
+  .gcell{aspect-ratio:1;border-radius:6px;background:#0f172a;border:1px solid #334155;color:#94a3b8;font-size:.72rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .gcell.done{background:#3a2e15;border-color:#f59e0b;color:#fbbf24}.gcell.miss{background:#2d0a0a;border-color:#ef4444;color:#fca5a5}.gcell.seen{background:#1e293b;border-color:#475569;color:#cbd5e1}.gcell.cur{outline:2px solid #f59e0b}
+  .res .big{text-align:center;margin:18px 0}.ring{display:inline-block;width:120px;height:120px;line-height:120px;border-radius:50%;background:#0f172a;font-size:2rem;font-weight:800;color:#f59e0b}
+  .res .pct{font-size:.85rem;color:#64748b;margin-top:6px}
+  .revlist{margin-top:6px}
+  .rev-item{font-size:.82rem;border-left:3px solid #334155;padding:6px 0 6px 12px;margin:11px 0;color:#94a3b8;line-height:1.55}
+  .rev-item b{color:#e2e8f0}.rev-item .ok{color:#4ade80}.rev-item .no{color:#f87171}
+  .rev-item .why{margin-top:5px;color:#cbd5e1}
+  @media(max-width:520px){.card{padding:20px}.stats{grid-template-columns:1fr}.seg button{min-width:0}}
+</style></head><body><div class="wrap">
+<div class="screen active" id="s-intro">
+  <div class="brand"><div class="waa">WAA</div><h1>__H1__</h1>
+    <div class="sub">__SUBLINE__</div></div>
+  <div class="card">
+    <div class="stats">
+      <div class="stat"><div class="v">__NQ__</div><div class="l">Questions</div></div>
+      <div class="stat"><div class="v">__NFLAG__</div><div class="l">Verify-flagged</div></div>
+      <div class="stat"><div class="v">__NQ__</div><div class="l">With rationale</div></div></div>
+    <div class="opt-row"><div class="lbl">Mode</div><div class="seg" id="seg-mode">
+      <button data-v="quiz" class="on">Quiz &middot; answer then reveal</button>
+      <button data-v="study">Study &middot; answers shown</button>
+      <button data-v="exam">Exam &middot; score &amp; answers at the end</button></div></div>
+    <div class="opt-row"><div class="lbl">Which questions</div><div class="seg" id="seg-set">
+      <button data-v="all" class="on">All __NQ__</button>
+      <button data-v="flag">Only the __NFLAG__ to verify</button></div></div>
+    <div class="opt-row"><div class="lbl">Order</div><div class="seg" id="seg-order">
+      <button data-v="seq" class="on">In order</button>
+      <button data-v="shuf">Shuffle</button></div></div>
+    <button class="btn-start" onclick="start()">Start</button>
+    <div class="note">__NOTE__ Each question carries a full rationale plus a line on <b>why each other option is wrong</b>. <b style="color:#facc15">VERIFY</b> = answer is debatable or the source item is ambiguous; double-check against a reference. <b style="color:#f87171">ERRATA</b> = a wrong/typo'd source item corrected on review.</div>
+  </div></div>
+<div class="screen" id="s-quiz">
+  <div class="qhead"><div class="progress-wrap"><div class="bar"><div class="fill" id="fill"></div></div>
+    <div class="plabel" id="plabel"></div></div><div class="score-pill" id="score"></div></div>
+  <div class="card"><div class="tags" id="tags"></div><div class="qtext" id="qtext"></div>
+    <div class="options" id="options"></div><div class="rat" id="rat"></div>
+    <div class="nav"><button class="btn-prev" onclick="prev()">&larr; Prev</button>
+      <button class="btn-next" id="next" onclick="next()">Next &rarr;</button></div>
+    <details class="jump"><summary>Jump to question</summary><div class="grid" id="grid"></div></details></div>
+  <button class="btn-quit" onclick="finish()">End &amp; see results</button></div>
+<div class="screen res" id="s-res">
+  <div class="brand"><div class="waa">WAA</div><h1>Session Results</h1><div class="sub">__RESSUB__</div></div>
+  <div class="card"><div class="big"><div class="ring" id="ring">0%</div><div class="pct" id="rdetail"></div></div>
+    <div id="missed-list"></div><button class="btn-start" onclick="location.reload()">Restart</button></div></div>
+</div>
+<script>
+const SUBJECT="__SUBJECT__";
+const QUESTIONS = __QUESTIONS__;
+const LET=['A','B','C','D','E','F'];
+let cfg={mode:'quiz',set:'all',order:'seq'};
+let pool=[], i=0, answered={}, picked={};
+function bindSeg(id,key){document.querySelectorAll('#'+id+' button').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.remove('on'));b.classList.add('on');cfg[key]=b.dataset.v;};});}
+bindSeg('seg-mode','mode');bindSeg('seg-set','set');bindSeg('seg-order','order');
+function shuffle(a){a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]];}return a;}
+function start(){
+  pool=QUESTIONS.filter(q=>cfg.set==='all'||q.flag);
+  if(cfg.order==='shuf')pool=shuffle(pool);
+  i=0;answered={};picked={};
+  document.getElementById('s-intro').classList.remove('active');
+  document.getElementById('s-quiz').classList.add('active');
+  buildGrid();render();}
+function buildGrid(){const g=document.getElementById('grid');g.innerHTML='';
+  pool.forEach((q,idx)=>{const c=document.createElement('div');c.className='gcell';c.textContent=q.id;c.onclick=()=>{i=idx;render();};g.appendChild(c);});}
+function updGrid(){[...document.getElementById('grid').children].forEach((c,idx)=>{c.className='gcell';const q=pool[idx];
+  if(answered[q.id]!==undefined){if(cfg.mode==='exam')c.classList.add('seen');else c.classList.add(picked[q.id]===q.ans?'done':'miss');}if(idx===i)c.classList.add('cur');});}
+function render(){const q=pool[i];
+  document.getElementById('fill').style.width=((i+1)/pool.length*100)+'%';
+  document.getElementById('plabel').textContent='Question '+(i+1)+' of '+pool.length+'  ·  #'+q.id;
+  let done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
+  const sc=document.getElementById('score');
+  if(cfg.mode==='exam')sc.textContent=done+' / '+pool.length+' answered';
+  else if(cfg.mode==='study')sc.textContent='Study mode';
+  else sc.textContent=corr+' / '+done+' correct';
+  let t='<span class="tag">'+SUBJECT+'</span>';
+  if(q.errata)t+='<span class="tag errata">Errata</span>';
+  if(q.flag)t+='<span class="tag flagq">Verify</span>';
+  document.getElementById('tags').innerHTML=t;
+  document.getElementById('qtext').textContent=q.q;
+  const ob=document.getElementById('options');ob.innerHTML='';
+  // reveal shows the answer + rationale + per-option why. Never in exam mode.
+  const reveal=cfg.mode!=='exam'&&(cfg.mode==='study'||answered[q.id]!==undefined);
+  const examMarked=cfg.mode==='exam'&&answered[q.id]!==undefined;
+  q.opts.forEach((opt,idx)=>{const b=document.createElement('button');b.className='obtn';
+    b.innerHTML='<span class="ltr">'+(LET[idx]||'?')+'</span><span>'+esc(opt)+'</span>';
+    if(reveal){b.disabled=true;if(idx===q.ans)b.classList.add('correct');else if(picked[q.id]===idx)b.classList.add('wrong');}
+    else if(examMarked){b.disabled=true;if(picked[q.id]===idx)b.classList.add('picked');b.onclick=()=>choose(q,idx);}
+    else{b.onclick=()=>choose(q,idx);}
+    ob.appendChild(b);
+    const w=document.createElement('div');w.id='ow'+idx;w.className='optwhy';
+    if(reveal&&q.ow&&q.ow[idx]){const lbl=idx===q.ans?'':(picked[q.id]===idx?'Your pick:':'Why not:');
+      w.className='optwhy show'+(idx===q.ans?' owright':(picked[q.id]===idx?' owpick':''));
+      w.innerHTML=(lbl?'<span class="owl">'+lbl+'</span>':'')+esc(q.ow[idx]);}
+    ob.appendChild(w);});
+  const r=document.getElementById('rat');
+  if(reveal&&q.rat){r.className='rat show'+(q.errata?' erratab':'');
+    r.innerHTML='<span class="rl">'+(q.errata?'Errata · corrected':'Rationale')+'</span>'+esc(q.rat)+(q.k?'<div class="anchor"><b>Anchor:</b> '+esc(q.k)+'</div>':'');}
+  else{r.className='rat';r.innerHTML='';}
+  document.getElementById('next').textContent=i===pool.length-1?'Finish':'Next →';updGrid();}
+function choose(q,idx){if(cfg.mode!=='exam'&&answered[q.id]!==undefined)return;picked[q.id]=idx;answered[q.id]=(idx===q.ans);render();}
+function next(){if(i<pool.length-1){i++;render();}else finish();}
+function prev(){if(i>0){i--;render();}}
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+function finish(){document.getElementById('s-quiz').classList.remove('active');document.getElementById('s-res').classList.add('active');
+  const done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
+  const pct=done?Math.round(corr/done*100):0;
+  if(cfg.mode!=='study'&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}
+  /*WAA-SRS*/if(cfg.mode!=='study'&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>!x.errata&&!x.flag&&answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}
+  document.getElementById('ring').textContent=pct+'%';
+  document.getElementById('rdetail').textContent=cfg.mode==='study'?'Study mode, '+pool.length+' reviewed':(corr+' correct of '+done+' answered ('+pool.length+' in set)');
+  let h='';
+  if(cfg.mode==='exam'&&done){
+    h='<div class="revlist"><div class="opt-row"><div class="lbl">Answer review ('+done+')</div></div>';
+    pool.forEach(q=>{if(answered[q.id]===undefined)return;const ok=picked[q.id]===q.ans;
+      const you=picked[q.id]!==undefined?(LET[picked[q.id]]+') '+esc(q.opts[picked[q.id]])):'—';
+      h+='<div class="rev-item" style="border-left-color:'+(ok?'#22c55e':'#ef4444')+'"><b>#'+q.id+'</b> '+esc(q.q)+
+        '<br>Your answer: <span class="'+(ok?'ok':'no')+'">'+you+'</span>'+
+        '<br>Correct: <span class="ok">'+LET[q.ans]+') '+esc(q.opts[q.ans])+'</span>'+
+        (ok?'':'<div class="why">'+esc(q.rat)+'</div>')+'</div>';});
+    h+='</div>';
+  } else {
+    const missed=pool.filter(q=>answered[q.id]===false);
+    if(missed.length){h='<div class="opt-row"><div class="lbl">Review these ('+missed.length+')</div></div>';
+      missed.forEach(q=>{h+='<div class="rev-item" style="border-left-color:#ef4444"><b>#'+q.id+'</b> '+esc(q.q)+'<br><span class="ok">Ans: '+(LET[q.ans]||'?')+') '+esc(q.opts[q.ans]||'')+'</span><div class="why">'+esc(q.rat||'')+'</div></div>';});}
+    else if(cfg.mode==='quiz'&&done){h='<div class="note">Clean sweep, every answered question correct.</div>';}}
+  document.getElementById('missed-list').innerHTML=h;}
+</script><script src="/top2/_report.js"></script><script src="/top2/_srs.js"></script></body></html>
