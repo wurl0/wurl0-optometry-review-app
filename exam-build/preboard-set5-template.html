@@ -84,7 +84,7 @@
       <button data-v="seq" class="on">In order</button>
       <button data-v="shuf">Shuffle</button></div></div>
     <button class="btn-start" onclick="start()">Start</button>
-    <div class="note">__NOTE__ Each question carries a full rationale plus a line on <b>why each other option is wrong</b>. <b style="color:#facc15">VERIFY</b> = answer is debatable or the source item is ambiguous; double-check against a reference. <b style="color:#f87171">ERRATA</b> = a wrong/typo'd source item corrected on review.</div>
+    <div class="note">__NOTE__ Each question carries a full rationale plus a line on <b>why each other option is wrong</b>. <b style="color:#facc15">VERIFY</b> = the source key is debatable, so <b>both</b> the source answer and the better alternative are accepted; the rationale explains which is stronger. <b style="color:#f87171">ERRATA</b> = a wrong/typo'd source item corrected on review.</div>
   </div></div>
 <div class="screen" id="s-quiz">
   <div class="qhead"><div class="progress-wrap"><div class="bar"><div class="fill" id="fill"></div></div>
@@ -118,8 +118,9 @@ function start(){
   buildGrid();render();}
 function buildGrid(){const g=document.getElementById('grid');g.innerHTML='';
   pool.forEach((q,idx)=>{const c=document.createElement('div');c.className='gcell';c.textContent=q.id;c.onclick=()=>{i=idx;render();};g.appendChild(c);});}
+function isAccepted(q,n){return n===q.ans||(q.alt&&q.alt.indexOf(n)>=0);}
 function updGrid(){[...document.getElementById('grid').children].forEach((c,idx)=>{c.className='gcell';const q=pool[idx];
-  if(answered[q.id]!==undefined){if(cfg.mode==='exam')c.classList.add('seen');else c.classList.add(picked[q.id]===q.ans?'done':'miss');}if(idx===i)c.classList.add('cur');});}
+  if(answered[q.id]!==undefined){if(cfg.mode==='exam')c.classList.add('seen');else c.classList.add(answered[q.id]?'done':'miss');}if(idx===i)c.classList.add('cur');});}
 function render(){const q=pool[i];
   document.getElementById('fill').style.width=((i+1)/pool.length*100)+'%';
   document.getElementById('plabel').textContent='Question '+(i+1)+' of '+pool.length+'  ·  #'+q.id;
@@ -139,21 +140,23 @@ function render(){const q=pool[i];
   const examMarked=cfg.mode==='exam'&&answered[q.id]!==undefined;
   q.opts.forEach((opt,idx)=>{const b=document.createElement('button');b.className='obtn';
     b.innerHTML='<span class="ltr">'+(LET[idx]||'?')+'</span><span>'+esc(opt)+'</span>';
-    if(reveal){b.disabled=true;if(idx===q.ans)b.classList.add('correct');else if(picked[q.id]===idx)b.classList.add('wrong');}
+    const acc=isAccepted(q,idx);
+    if(reveal){b.disabled=true;if(acc)b.classList.add('correct');else if(picked[q.id]===idx)b.classList.add('wrong');}
     else if(examMarked){b.disabled=true;if(picked[q.id]===idx)b.classList.add('picked');b.onclick=()=>choose(q,idx);}
     else{b.onclick=()=>choose(q,idx);}
     ob.appendChild(b);
     const w=document.createElement('div');w.id='ow'+idx;w.className='optwhy';
-    if(reveal&&q.ow&&q.ow[idx]){const lbl=idx===q.ans?'':(picked[q.id]===idx?'Your pick:':'Why not:');
-      w.className='optwhy show'+(idx===q.ans?' owright':(picked[q.id]===idx?' owpick':''));
+    if(reveal&&q.ow&&q.ow[idx]){const lbl=idx===q.ans?'':(acc?'Also accepted:':(picked[q.id]===idx?'Your pick:':'Why not:'));
+      w.className='optwhy show'+(acc?' owright':(picked[q.id]===idx?' owpick':''));
       w.innerHTML=(lbl?'<span class="owl">'+lbl+'</span>':'')+esc(q.ow[idx]);}
     ob.appendChild(w);});
   const r=document.getElementById('rat');
   if(reveal&&q.rat){r.className='rat show'+(q.errata?' erratab':'');
-    r.innerHTML='<span class="rl">'+(q.errata?'Errata · corrected':'Rationale')+'</span>'+esc(q.rat)+(q.k?'<div class="anchor"><b>Anchor:</b> '+esc(q.k)+'</div>':'');}
+    const twoAns=(q.alt&&q.alt.length)?'<div class="anchor" style="border-top:none;padding-top:0;color:#facc15"><b>Two answers accepted</b> ('+([q.ans].concat(q.alt).sort((a,b)=>a-b).map(x=>LET[x]).join(' and '))+'), since the source key is debatable. See below.</div>':'';
+    r.innerHTML='<span class="rl">'+(q.errata?'Errata · corrected':'Rationale')+'</span>'+twoAns+esc(q.rat)+(q.k?'<div class="anchor"><b>Anchor:</b> '+esc(q.k)+'</div>':'');}
   else{r.className='rat';r.innerHTML='';}
   document.getElementById('next').textContent=i===pool.length-1?'Finish':'Next →';updGrid();}
-function choose(q,idx){if(cfg.mode!=='exam'&&answered[q.id]!==undefined)return;picked[q.id]=idx;answered[q.id]=(idx===q.ans);render();}
+function choose(q,idx){if(cfg.mode!=='exam'&&answered[q.id]!==undefined)return;picked[q.id]=idx;answered[q.id]=isAccepted(q,idx);render();}
 function next(){if(i<pool.length-1){i++;render();}else finish();}
 function prev(){if(i>0){i--;render();}}
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
@@ -167,11 +170,12 @@ function finish(){document.getElementById('s-quiz').classList.remove('active');d
   let h='';
   if(cfg.mode==='exam'&&done){
     h='<div class="revlist"><div class="opt-row"><div class="lbl">Answer review ('+done+')</div></div>';
-    pool.forEach(q=>{if(answered[q.id]===undefined)return;const ok=picked[q.id]===q.ans;
+    pool.forEach(q=>{if(answered[q.id]===undefined)return;const ok=answered[q.id]===true;
       const you=picked[q.id]!==undefined?(LET[picked[q.id]]+') '+esc(q.opts[picked[q.id]])):'—';
+      const alsoAcc=(q.alt&&q.alt.length)?' <span class="ok">(also accepted: '+q.alt.map(a=>LET[a]).join(', ')+')</span>':'';
       h+='<div class="rev-item" style="border-left-color:'+(ok?'#22c55e':'#ef4444')+'"><b>#'+q.id+'</b> '+esc(q.q)+
         '<br>Your answer: <span class="'+(ok?'ok':'no')+'">'+you+'</span>'+
-        '<br>Correct: <span class="ok">'+LET[q.ans]+') '+esc(q.opts[q.ans])+'</span>'+
+        '<br>Correct: <span class="ok">'+LET[q.ans]+') '+esc(q.opts[q.ans])+'</span>'+alsoAcc+
         (ok?'':'<div class="why">'+esc(q.rat)+'</div>')+'</div>';});
     h+='</div>';
   } else {
