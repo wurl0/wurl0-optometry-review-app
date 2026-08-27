@@ -2,6 +2,20 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 import { isAdmin, canOpenItem, isAsset, itemForPath, type Access } from '@/lib/access'
 
+const SUPABASE_TIMEOUT_MS = 4000
+
+// Reject if a Supabase call has not settled in time so the middleware can
+// degrade gracefully instead of hanging until Vercel kills the request with a
+// 504 (MIDDLEWARE_INVOCATION_TIMEOUT).
+function withTimeout<T>(p: PromiseLike<T>, ms = SUPABASE_TIMEOUT_MS): Promise<T> {
+  return Promise.race([
+    Promise.resolve(p),
+    new Promise<T>((_, reject) =>
+      setTimeout(() => reject(new Error('supabase-timeout')), ms)
+    ),
+  ])
+}
+
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
@@ -22,11 +36,22 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  const { data: { user } } = await supabase.auth.getUser()
   const { pathname } = request.nextUrl
 
   const publicPaths = ['/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password', '/pending', '/api/approve']
   const isPublic = publicPaths.some(p => pathname.startsWith(p))
+
+  // Auth check with a hard ceiling: a slow/unreachable Auth server must not
+  // hang the request. On timeout, treat the visitor as signed out and fail fast.
+  let user: Awaited<ReturnType<typeof supabase.auth.getUser>>['data']['user'] = null
+  try {
+    const { data } = await withTimeout(supabase.auth.getUser())
+    user = data.user
+  } catch {
+    return isPublic
+      ? supabaseResponse
+      : NextResponse.redirect(new URL('/login', request.url))
+  }
 
   if (!user && !isPublic) {
     return NextResponse.redirect(new URL('/login', request.url))
@@ -39,13 +64,17 @@ export async function middleware(request: NextRequest) {
   // Approval gate. Kept on its own query so it never depends on the newer
   // tier/grants columns (deploy order vs the SQL migration cannot break it).
   if (user && !isPublic && pathname !== '/pending') {
-    const { data: ap } = await supabase
-      .from('profiles')
-      .select('approved')
-      .eq('user_id', user.id)
-      .single()
-    if (ap && !ap.approved) {
-      return NextResponse.redirect(new URL('/pending', request.url))
+    try {
+      const { data: ap } = await withTimeout(
+        supabase.from('profiles').select('approved').eq('user_id', user.id).single()
+      )
+      if (ap && !ap.approved) {
+        return NextResponse.redirect(new URL('/pending', request.url))
+      }
+    } catch {
+      // Slow/failed approval check: let the request continue (matches the
+      // pre-existing behavior when this query returns an error) rather than
+      // blocking to a 504.
     }
   }
 
@@ -55,14 +84,16 @@ export async function middleware(request: NextRequest) {
     let grants: string[] = []
     if (user) {
       // If the migration has not run yet this select errors, leaving tier='base'
-      // (only public items visible). Safe by default.
-      const { data: acc } = await supabase
-        .from('profiles')
-        .select('tier, grants')
-        .eq('user_id', user.id)
-        .single()
-      const row = acc as { tier?: string; grants?: string[] } | null
-      if (row) { tier = row.tier ?? 'base'; grants = row.grants ?? [] }
+      // (only public items visible). A timeout leaves it at 'base' too. Safe by default.
+      try {
+        const { data: acc } = await withTimeout(
+          supabase.from('profiles').select('tier, grants').eq('user_id', user.id).single()
+        )
+        const row = acc as { tier?: string; grants?: string[] } | null
+        if (row) { tier = row.tier ?? 'base'; grants = row.grants ?? [] }
+      } catch {
+        // Slow/failed: leave tier='base' (only public items visible).
+      }
     }
     const access: Access = {
       tier,
