@@ -5,16 +5,6 @@ import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
 import { INTERVALS, boxLabel, type ReviewCard } from '@/lib/srs'
-import { ITEMS } from '@/lib/reviewer-manifest'
-
-// Subject (A..H) -> its Reviewer / Strategy page, so a missed item can link
-// straight to the card that teaches it. Single source of truth is the manifest.
-const REVIEWER_HREF: Record<string, string> = {}
-const STRATEGY_HREF: Record<string, string> = {}
-for (const it of ITEMS) {
-  if (it.type === 'reviewer') REVIEWER_HREF[it.subject] = it.path
-  if (it.type === 'strategy') STRATEGY_HREF[it.subject] = it.path
-}
 
 interface Props {
   cards: ReviewCard[]
@@ -326,18 +316,6 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
               {(card.payload.decode || card.payload.explanation) && (
                 <p className={`text-sm leading-relaxed ${selected === card.payload.correct ? 'text-green-800' : 'text-orange-800'}`}>
                   {card.payload.decode || card.payload.explanation}
-                </p>
-              )}
-              {REVIEWER_HREF[card.subject] && (
-                <p className="mt-3 text-xs font-semibold">
-                  <a href={REVIEWER_HREF[card.subject]} className="text-teal-700 hover:underline">
-                    Open the {labels[card.subject] ?? card.subject} reviewer →
-                  </a>
-                  {STRATEGY_HREF[card.subject] && (
-                    <a href={STRATEGY_HREF[card.subject]} className="text-teal-700 hover:underline ml-4">
-                      Strategy card →
-                    </a>
-                  )}
                 </p>
               )}
             </div>
