@@ -63,6 +63,14 @@ export default async function ReadinessPage() {
   // Where this user's exams actually live, so the empty-state link never dead-ends.
   const examsHref = isAdmin(access) ? '/top2/index.html' : canOpenCockpit(access) ? '/reviewer' : '/'
 
+  // A subject's Subject Exam page, but only when this user can actually open it,
+  // so the link never dead-ends at the home redirect (the middleware default-deny).
+  function examHref(code: string): string | null {
+    const item = ITEM_BY_ID.get(`${code}.exam`)
+    if (!item) return null
+    return isAdmin(access) || canOpenItem(access, item) ? item.path : null
+  }
+
   const { data } = await supabase
     .from('ole_attempts')
     .select('subject_code, source, score, total, percentage, created_at, area_breakdown')
@@ -188,9 +196,12 @@ export default async function ReadinessPage() {
                       <span className="w-7 h-7 shrink-0 rounded-lg bg-teal-600 text-white text-sm font-bold flex items-center justify-center">{d.code}</span>
                       <span className="font-medium text-gray-800 text-sm flex-1">{d.name}</span>
                       <span className="text-xs text-gray-400">{d.weight}%</span>
-                      <span className={`text-sm font-semibold w-24 text-right ${d.untested || d.provisional ? 'text-amber-600' : scoreColor(d.avg)}`}>
+                      <span className={`text-sm font-semibold w-20 text-right ${d.untested || d.provisional ? 'text-amber-600' : scoreColor(d.avg)}`}>
                         {d.untested ? 'untested' : d.provisional ? `${d.avg}% · confirm` : `${d.avg}%`}
                       </span>
+                      {examHref(d.code) && (
+                        <a href={examHref(d.code)!} className="shrink-0 text-xs font-semibold text-teal-700 hover:underline" title="Take this Subject Exam">exam →</a>
+                      )}
                     </li>
                   ))}
                 </ol>
@@ -247,6 +258,11 @@ export default async function ReadinessPage() {
                         ))}
                       </ul>
                     </details>
+                  )}
+                  {examHref(s.code) && (
+                    <a href={examHref(s.code)!} className="mt-3 block text-center text-xs font-semibold text-teal-700 border border-teal-200 rounded-lg py-2 hover:bg-teal-50 transition-colors">
+                      Take the Subject Exam →
+                    </a>
                   )}
                 </div>
               ))}
