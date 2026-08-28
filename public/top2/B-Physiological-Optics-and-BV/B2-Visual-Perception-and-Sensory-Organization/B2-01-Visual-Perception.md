@@ -697,8 +697,8 @@ BIPOLAR CELLS (depolarizing and hyperpolarizing)
 - [x] `PO-Physiological-Optics.md` — Visual acuity types (detection, resolution, legible), preferential looking tests, contrast sensitivity (Pelli-Robson), depth of focus/field
 - [x] `BV-Dr-Juarez.md` — Visual acuity charts (Bailey-Lovie, ETDRS, HOTV, Lea, Snellen gold standard discussion)
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.2 scope reference (Syllabi section 16.0)
-- [x] `SCOTOPIC-AND-PHOTOPIC-VISION.pdf` (MCU Review 2026, Dr. Aldwin Lanorio OD) — W/X/Y ganglion cell types, P/M cells, melanopsin ipRGCs, retinal neuron functions (horizontal cells, amacrine cells, bipolar cells ON/OFF), lateral inhibition, nyctalopia causes, retinal blood supply overview
-- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (MCU Review 2026) — Fechner's Law, Weber's Law context, retinal sensitivity laws
+- [x] `SCOTOPIC-AND-PHOTOPIC-VISION.pdf` (Review 2026, Dr. Aldwin Lanorio OD) — W/X/Y ganglion cell types, P/M cells, melanopsin ipRGCs, retinal neuron functions (horizontal cells, amacrine cells, bipolar cells ON/OFF), lateral inhibition, nyctalopia causes, retinal blood supply overview
+- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (Review 2026) — Fechner's Law, Weber's Law context, retinal sensitivity laws
 
 ---
 

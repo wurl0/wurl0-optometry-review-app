@@ -680,7 +680,7 @@ NOTATION:
 
 ## Extended Topics: Extraocular Muscles (EOMs) and the Horopter
 
-*(From BV-Binocular-Vision-Sumaya.md — added June 6, 2026 to complete B.5 MCU face-to-face review content)*
+*(From BV-Binocular-Vision-Sumaya.md — added June 6, 2026 to complete B.5 face-to-face review content)*
 
 ---
 
@@ -1311,7 +1311,7 @@ The difference is 3.50 D (greater than 3.00 D) with amblyopia in the more hypero
 - [x] `BV-Binocular-Vision-Sumaya.md` — Worth's grades, NRC/ARC, horopter, Panum's area, diplopia, fusion, eccentric fixation, suppression definitions
 - [x] `BV-Dr-Juarez.md` — BV anomalies detailed, Morgan's norms (NPC, PFC, NFC, NRA, PRA), Sheard's criterion formula, Percival's criterion, amblyopia classification + management, eccentric fixation assessment, SOAP approach
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.5 scope reference (Syllabi sections 3.1–3.4, amblyopia management)
-- [x] `MCU Review 2026/anisometropia-aniseikonia-study-guide.md` — anisometropia thresholds/classes/management + aniseikonia types/correction (Extended Topics section)
+- [x] `Review 2026/anisometropia-aniseikonia-study-guide.md` — anisometropia thresholds/classes/management + aniseikonia types/correction (Extended Topics section)
 
 ---
 

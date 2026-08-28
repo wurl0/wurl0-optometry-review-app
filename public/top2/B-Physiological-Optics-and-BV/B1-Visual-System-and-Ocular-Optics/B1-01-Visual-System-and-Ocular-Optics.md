@@ -614,7 +614,7 @@ BOARD RELEVANCE:
 
 ## Extended Topics: Phototransduction Cascade, Fixation Types, and Reference Lines of the Eye
 
-*(From BV-Binocular-Vision-Sumaya.md + General-Pathology.md — added June 6, 2026 to complete B.1 MCU face-to-face review content)*
+*(From BV-Binocular-Vision-Sumaya.md + General-Pathology.md — added June 6, 2026 to complete B.1 face-to-face review content)*
 
 ---
 
@@ -1028,9 +1028,9 @@ BICHROME TEST PRINCIPLE:
 - [x] `TOS Review Structure/B/REVIEW GUIDE — B.md` — Original B1 content
 - [x] `PO-Physiological-Optics.md` — Entoptic phenomena (floaters, Purkinje figures, blue field, phosphenes, halos, afterimages, Moore's lightning streaks); Scheiner's experiment; contrast sensitivity
 - [x] `BV-Binocular-Vision-Sumaya.md` — Axes of Fick, angles of fixation
-- [x] `TO-MCU-2024.md` — Accommodation theories (Helmholtz), far/near point/range, Donder's table, Purkinje-Sanson images, ametropia classification (axial vs refractive), Brachycephalia/Dolichocephalia, Law of Silo
+- [x] `TO-2024.md` — Accommodation theories (Helmholtz), far/near point/range, Donder's table, Purkinje-Sanson images, ametropia classification (axial vs refractive), Brachycephalia/Dolichocephalia, Law of Silo
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS B.1 scope reference (Syllabi sections 2.0, 3.0, 4.5, 5.0 Iris, 8.0, 17.0)
-- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (MCU Review 2026) — Chromatic aberration, Abbe value, refractive indices, cardinal points, schematic vs reduced eye comparison; aberration overview
+- [x] `PHYSIOLOGICAL Optics by doc mediran 2.pdf` (Review 2026) — Chromatic aberration, Abbe value, refractive indices, cardinal points, schematic vs reduced eye comparison; aberration overview
 
 ---
 

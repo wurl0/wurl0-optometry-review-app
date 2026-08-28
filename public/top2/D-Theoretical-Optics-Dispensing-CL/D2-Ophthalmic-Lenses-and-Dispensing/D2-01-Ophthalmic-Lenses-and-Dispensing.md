@@ -1219,7 +1219,7 @@ Ultex = 20mm OC → most jump; Executive = 0mm OC → zero jump.
 
 ## Extended Topics — Tints, Frame Hardware, and Optics Details
 
-*(From Practical and Mechanical Optics MCU 2024.pdf, added July 6, 2026. Fills named-fact gaps the board likes to test.)*
+*(From Practical and Mechanical Optics 2024.pdf, added July 6, 2026. Fills named-fact gaps the board likes to test.)*
 
 ---
 
@@ -1384,11 +1384,11 @@ Extends the geometric-center / effective-diameter / seg-height terms already cov
 
 ## Sources Used
 
-- [x] `Practical and Mechanical Optics MCU 2024.pdf` — Absorptive tint colors and uses, metal oxides for glass tinting, distortion (pincushion/barrel), achromatic doublet, progressive hard vs soft design and markings, frame parts, bridge and temple types, boxing-system measurement set, vertexometer/distometer, lens/eyeglass history anchors (added July 6, 2026)
+- [x] `Practical and Mechanical Optics 2024.pdf` — Absorptive tint colors and uses, metal oxides for glass tinting, distortion (pincushion/barrel), achromatic doublet, progressive hard vs soft design and markings, frame parts, bridge and temple types, boxing-system measurement set, vertexometer/distometer, lens/eyeglass history anchors (added July 6, 2026)
 - [x] `PMO-Practical-Mechanical-Optics.md` — Lens materials (crown glass, flint, barium, CR-39, polycarbonate, Trivex, PMMA, high-index), Abbe value, SG, impact resistance, optical and mechanical properties
 - [x] `PMO-5of5-Dr-Vinola.md` — Dispensing procedures, frame selection, bifocal types
 - [x] `Gap-Lectures/12-Absorptive-Lenses-Clinical-Theory.md` — UV bands, CPF filters, Wratten numbers, photochromic mechanism, clinical indications by diagnosis, UV 400 standard
 - [x] `SYLLABI-TOPIC-MAP.md` — TOS D.2 scope reference
-- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (MCU 2024) — Sagittae formula, thick lens powers, vertex distance/effective power, image jump, vertical imbalance, slab-off rules, decentration, spectacle magnification, anti-reflection coating physics, benchwork stages, lensometer procedures, boxing system, bifocal image displacement
+- [x] `Practical and Mechanical Optics - Dr. Vinola (Complete).pdf` (2024) — Sagittae formula, thick lens powers, vertex distance/effective power, image jump, vertical imbalance, slab-off rules, decentration, spectacle magnification, anti-reflection coating physics, benchwork stages, lensometer procedures, boxing system, bifocal image displacement
 
 *Note written: June 5, 2026 | Confidence: [ ] Low [ ] Okay [ ] Solid*
