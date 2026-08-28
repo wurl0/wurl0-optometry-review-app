@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase-server'
 import { computeReadiness, type OleAttempt, type Verdict } from '@/lib/readiness'
 import { ITEM_BY_ID, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
+import { areaToReviewer } from '@/lib/reviewer-anchors'
 import { canOpenItem, canOpenCockpit, isAdmin, type Access } from '@/lib/access'
 
 export const dynamic = 'force-dynamic'
@@ -69,6 +70,17 @@ export default async function ReadinessPage() {
     const item = ITEM_BY_ID.get(`${code}.exam`)
     if (!item) return null
     return isAdmin(access) || canOpenItem(access, item) ? item.path : null
+  }
+
+  // A weak sub-area (e.g. "B5 Binocular Vision") -> its exact section in the
+  // subject Reviewer, access-gated the same way, so "review →" lands on the topic.
+  function areaHref(area: string): string | null {
+    const r = areaToReviewer(area)
+    if (!r) return null
+    const item = ITEM_BY_ID.get(`${r.subject}.reviewer`)
+    if (!item) return null
+    if (!(isAdmin(access) || canOpenItem(access, item))) return null
+    return `${item.path}#${r.anchor}`
   }
 
   const { data } = await supabase
@@ -250,12 +262,20 @@ export default async function ReadinessPage() {
                         {s.weakAreas.length} weak area{s.weakAreas.length > 1 ? 's' : ''} to revisit
                       </summary>
                       <ul className="mt-2 space-y-1">
-                        {s.weakAreas.map(a => (
-                          <li key={a.area} className="flex justify-between text-xs">
-                            <span className="text-gray-600">{a.area}</span>
-                            <span className={`font-semibold ${scoreColor(a.percentage)}`}>{a.percentage}%</span>
-                          </li>
-                        ))}
+                        {s.weakAreas.map(a => {
+                          const href = areaHref(a.area)
+                          return (
+                            <li key={a.area} className="flex justify-between items-center gap-2 text-xs">
+                              <span className="text-gray-600">{a.area}</span>
+                              <span className="flex items-center gap-2 shrink-0">
+                                <span className={`font-semibold ${scoreColor(a.percentage)}`}>{a.percentage}%</span>
+                                {href && (
+                                  <a href={href} className="font-semibold text-teal-700 hover:underline" title="Review this topic in the reviewer">review →</a>
+                                )}
+                              </span>
+                            </li>
+                          )
+                        })}
                       </ul>
                     </details>
                   )}
