@@ -3,7 +3,7 @@ import { createAdminClient } from '@/lib/supabase-admin'
 
 export async function GET(req: NextRequest) {
   const token = req.nextUrl.searchParams.get('token')
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://wurl0-optometry-review-app.vercel.app'
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://foquslab.app'
 
   if (!token) {
     return NextResponse.redirect(new URL('/login', appUrl))

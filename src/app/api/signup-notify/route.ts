@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Profile not found' }, { status: 404 })
     }
 
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://wurl0-optometry-review-app.vercel.app'
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://foquslab.app'
     const adminUrl = `${appUrl}/admin`
 
     await resend.emails.send({
