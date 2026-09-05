@@ -74,6 +74,7 @@ function itemIdForCard(subject: string, source: string): string | null {
     case 'preboards-set2': return `${subject}.preboards-set2`
     case 'preboards-set3': return `${subject}.preboards-set3`
     case 'preboards-set4': return `${subject}.preboards-set4`
+    case 'preboards-set5': return `${subject}.preboards-set5`
     default: return null
   }
 }
