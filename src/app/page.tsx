@@ -491,6 +491,12 @@ export default async function HomePage() {
             </div>
           </details>
         </div>
+
+        {/* Footer */}
+        <footer className="mt-8 pt-6 border-t border-gray-100 text-center">
+          <Link href="/account#feedback" className="text-xs font-medium text-[#3B54FF] hover:underline">Send feedback</Link>
+          <p className="text-[10px] text-gray-400 mt-2">FoqusLab · foquslab.app</p>
+        </footer>
       </main>
     </div>
   )

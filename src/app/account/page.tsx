@@ -27,6 +27,11 @@ export default function AccountPage() {
       setName(user.user_metadata?.full_name ?? '')
       setEmail(user.email ?? '')
       setLoading(false)
+      // Deep link from the home footer ("/account#feedback") scrolls to the feedback card
+      // once it has rendered.
+      if (typeof window !== 'undefined' && window.location.hash === '#feedback') {
+        setTimeout(() => document.getElementById('feedback')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100)
+      }
     }
     load()
   }, [router])
@@ -109,7 +114,7 @@ export default function AccountPage() {
           </div>
         </form>
 
-        <form onSubmit={sendFeedback} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4 mt-5">
+        <form id="feedback" onSubmit={sendFeedback} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4 mt-5 scroll-mt-6">
           <div>
             <h2 className="text-base font-bold text-gray-900">Send feedback</h2>
             <p className="text-xs text-gray-500 mt-0.5">Found a bug, a wrong answer, or want to request something? Tell us.</p>
