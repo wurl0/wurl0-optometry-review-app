@@ -23,22 +23,25 @@ export async function GET() {
   }
 
   const admin = createAdminClient()
-  const full = await admin
-    .from('profiles')
-    .select('id, full_name, email, approved, approved_at, created_at, tier, grants, suspended')
-    .order('created_at', { ascending: false })
 
-  let profiles = full.data as ProfileRow[] | null
-  let error = full.error
+  // Tiered fallback so a single missing column can never blank out the others.
+  // Try the fullest select, then drop the newest columns one group at a time.
+  // (Previously suspended + tier/grants shared one select, so a missing
+  // `suspended` column silently dropped tier/grants and made every user read
+  // back as base.)
+  const base = 'id, full_name, email, approved, approved_at, created_at'
+  const selects = [
+    `${base}, tier, grants, suspended`, // all migrations applied
+    `${base}, tier, grants`,            // access-tiers applied, suspend not yet
+    base,                               // neither applied
+  ]
 
-  // Pre-migration fallback: if tier/grants/suspended columns do not exist yet, load without them.
-  if (error) {
-    const retry = await admin
-      .from('profiles')
-      .select('id, full_name, email, approved, approved_at, created_at')
-      .order('created_at', { ascending: false })
-    profiles = retry.data as ProfileRow[] | null
-    error = retry.error
+  let profiles: ProfileRow[] | null = null
+  let error: { message: string } | null = null
+  for (const sel of selects) {
+    const res = await admin.from('profiles').select(sel).order('created_at', { ascending: false })
+    if (!res.error) { profiles = res.data as unknown as ProfileRow[]; error = null; break }
+    error = res.error
   }
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
