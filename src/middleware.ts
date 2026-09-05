@@ -38,7 +38,7 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl
 
-  const publicPaths = ['/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password', '/pending', '/api/approve']
+  const publicPaths = ['/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password', '/pending', '/suspended', '/api/approve']
   const isPublic = publicPaths.some(p => pathname.startsWith(p))
 
   // Auth check with a hard ceiling: a slow/unreachable Auth server must not
@@ -75,6 +75,23 @@ export async function middleware(request: NextRequest) {
       // Slow/failed approval check: let the request continue (matches the
       // pre-existing behavior when this query returns an error) rather than
       // blocking to a 504.
+    }
+  }
+
+  // Suspension gate. Deliberately a separate query from the approval gate above,
+  // so if the `suspended` column does not exist yet (migration not run) this
+  // query erroring cannot disturb the approval check. Fail-open on error/timeout,
+  // matching the approval gate.
+  if (user && !isPublic && pathname !== '/suspended') {
+    try {
+      const { data: su } = await withTimeout(
+        supabase.from('profiles').select('suspended').eq('user_id', user.id).single()
+      )
+      if (su && (su as { suspended?: boolean }).suspended) {
+        return NextResponse.redirect(new URL('/suspended', request.url))
+      }
+    } catch {
+      // Column missing / slow / failed: let the request continue.
     }
   }
 

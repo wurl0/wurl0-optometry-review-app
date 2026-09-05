@@ -24,6 +24,7 @@ type Profile = {
   created_at: string
   tier?: string | null
   grants?: string[] | null
+  suspended?: boolean | null
 }
 
 const TIERS = ['base', 'select', 'full', 'admin'] as const
@@ -238,11 +239,79 @@ function AccessEditor({ profile, onSaved }: {
   )
 }
 
+// Inline rename used on both pending and approved cards. Shows the name with an
+// Edit affordance; editing swaps in a small input.
+function NameEditor({ profile, onSaved }: {
+  profile: Profile
+  onSaved: (name: string) => void
+}) {
+  const [editing, setEditing] = useState(false)
+  const [name, setName] = useState(profile.full_name ?? '')
+  const [saving, setSaving] = useState(false)
+  const [err, setErr] = useState('')
+
+  async function save() {
+    setSaving(true); setErr('')
+    const res = await fetch('/api/admin/rename', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ profileId: profile.id, name }),
+    })
+    const json = await res.json()
+    setSaving(false)
+    if (json.error) { setErr(json.error); return }
+    onSaved(json.name)
+    setEditing(false)
+  }
+
+  if (!editing) {
+    return (
+      <p className="text-sm font-medium text-gray-900 flex items-center gap-2">
+        {profile.full_name ?? '—'}
+        <button
+          onClick={() => { setName(profile.full_name ?? ''); setEditing(true) }}
+          className="text-xs font-normal text-teal-600 hover:underline"
+        >
+          Edit
+        </button>
+      </p>
+    )
+  }
+
+  return (
+    <div className="flex items-center gap-2">
+      <input
+        value={name}
+        onChange={e => setName(e.target.value)}
+        maxLength={80}
+        autoFocus
+        className="border border-gray-300 rounded-md px-2 py-1 text-sm w-44"
+      />
+      <button
+        onClick={save}
+        disabled={saving}
+        className="text-xs font-semibold text-teal-700 hover:underline disabled:opacity-50"
+      >
+        {saving ? 'Saving…' : 'Save'}
+      </button>
+      <button
+        onClick={() => { setEditing(false); setErr('') }}
+        className="text-xs font-medium text-gray-500 hover:underline"
+      >
+        Cancel
+      </button>
+      {err && <span className="text-xs text-rose-600">{err}</span>}
+    </div>
+  )
+}
+
 export default function AdminPage() {
   const [profiles, setProfiles] = useState<Profile[]>([])
   const [readiness, setReadiness] = useState<ReadinessUser[]>([])
   const [loading, setLoading] = useState(true)
   const [approving, setApproving] = useState<string | null>(null)
+  const [deleting, setDeleting] = useState<string | null>(null)
+  const [suspending, setSuspending] = useState<string | null>(null)
   const [justApproved, setJustApproved] = useState<Profile | null>(null)
   const [tab, setTab] = useState<Tab>('approvals')
   const [error, setError] = useState('')
@@ -297,6 +366,45 @@ export default function AdminPage() {
     // Approving grants nothing on its own, so hand off to the Access tab.
     setJustApproved(profiles.find(p => p.id === profileId) ?? null)
     setApproving(null)
+  }
+
+  async function remove(profile: Profile) {
+    const who = profile.full_name || profile.email || 'this user'
+    const msg = profile.approved
+      ? `Delete ${who}? This removes their account and revokes all access. This cannot be undone.`
+      : `Reject and delete ${who}? This removes their sign-up and account. This cannot be undone.`
+    if (!window.confirm(msg)) return
+
+    setDeleting(profile.id)
+    setError('')
+    const res = await fetch('/api/admin/users', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ profileId: profile.id }),
+    })
+    const json = await res.json()
+    if (json.error) { setError(json.error); setDeleting(null); return }
+    setProfiles(prev => prev.filter(p => p.id !== profile.id))
+    if (justApproved?.id === profile.id) setJustApproved(null)
+    setDeleting(null)
+  }
+
+  async function toggleSuspend(profile: Profile) {
+    const next = !profile.suspended
+    const who = profile.full_name || profile.email || 'this user'
+    if (next && !window.confirm(`Suspend ${who}? They lose access immediately but keep their account, progress, tier and grants. You can restore them anytime.`)) return
+
+    setSuspending(profile.id)
+    setError('')
+    const res = await fetch('/api/admin/suspend', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ profileId: profile.id, suspended: next }),
+    })
+    const json = await res.json()
+    if (json.error) { setError(json.error); setSuspending(null); return }
+    setProfiles(prev => prev.map(p => p.id === profile.id ? { ...p, suspended: next } : p))
+    setSuspending(null)
   }
 
   const pending = profiles.filter(p => !p.approved)
@@ -394,17 +502,29 @@ export default function AdminPage() {
               {pending.map(p => (
                 <div key={p.id} className="bg-white rounded-xl border border-gray-200 px-4 py-3 flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-gray-900">{p.full_name ?? '—'}</p>
+                    <NameEditor
+                      profile={p}
+                      onSaved={name => setProfiles(prev => prev.map(x => x.id === p.id ? { ...x, full_name: name } : x))}
+                    />
                     <p className="text-xs text-gray-400">{p.email}</p>
                     <p className="text-xs text-gray-300 mt-0.5">Signed up {new Date(p.created_at).toLocaleDateString()}</p>
                   </div>
-                  <button
-                    onClick={() => approve(p.id)}
-                    disabled={approving === p.id}
-                    className="bg-teal-600 text-white text-xs font-semibold px-4 py-1.5 rounded-lg hover:bg-teal-700 disabled:opacity-50 transition-colors"
-                  >
-                    {approving === p.id ? 'Approving…' : 'Approve'}
-                  </button>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      onClick={() => approve(p.id)}
+                      disabled={approving === p.id || deleting === p.id}
+                      className="bg-teal-600 text-white text-xs font-semibold px-4 py-1.5 rounded-lg hover:bg-teal-700 disabled:opacity-50 transition-colors"
+                    >
+                      {approving === p.id ? 'Approving…' : 'Approve'}
+                    </button>
+                    <button
+                      onClick={() => remove(p)}
+                      disabled={approving === p.id || deleting === p.id}
+                      className="text-rose-600 text-xs font-semibold px-3 py-1.5 rounded-lg border border-rose-200 hover:bg-rose-50 disabled:opacity-50 transition-colors"
+                    >
+                      {deleting === p.id ? 'Rejecting…' : 'Reject'}
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
@@ -418,7 +538,8 @@ export default function AdminPage() {
           <p className="font-semibold mb-1">Reviewer access</p>
           <p><b>Tiers:</b> base = original app only · select = granted items via home cards · full = granted items + the reviewer cockpit · admin = everything.</p>
           <p className="mt-1"><b>Grants</b> are per item: check to share, uncheck to revoke (applies to select and full). New sign-ups default to base, so nothing is shared until you grant it.</p>
-          <p className="mt-1 text-blue-700">If the controls error on save, run <code className="bg-blue-100 px-1 rounded">supabase/access-tiers.sql</code> in Supabase first.</p>
+          <p className="mt-1"><b>Suspend</b> blocks access immediately but keeps the account, progress, tier and grants intact, so Restore is one click. <b>Delete permanently</b> erases the account and all their data (cannot be undone).</p>
+          <p className="mt-1 text-blue-700">If access controls error on save, run <code className="bg-blue-100 px-1 rounded">supabase/access-tiers.sql</code> in Supabase first. If Suspend errors, run <code className="bg-blue-100 px-1 rounded">supabase/suspend-accounts.sql</code>.</p>
         </div>
 
         <section>
@@ -430,14 +551,42 @@ export default function AdminPage() {
           ) : (
             <div className="space-y-2">
               {approved.map(p => (
-                <div key={p.id} className="bg-white rounded-xl border border-gray-200 px-4 py-3">
+                <div key={p.id} className={`bg-white rounded-xl border px-4 py-3 ${p.suspended ? 'border-amber-300 bg-amber-50/40' : 'border-gray-200'}`}>
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{p.full_name ?? '—'}</p>
+                      <NameEditor
+                        profile={p}
+                        onSaved={name => setProfiles(prev => prev.map(x => x.id === p.id ? { ...x, full_name: name } : x))}
+                      />
                       <p className="text-xs text-gray-400">{p.email}</p>
                       <p className="text-xs text-gray-300 mt-0.5">Approved {p.approved_at ? new Date(p.approved_at).toLocaleDateString() : '—'}</p>
                     </div>
-                    <span className="text-xs font-medium text-teal-700 bg-teal-50 px-3 py-1 rounded-full">{p.tier ?? 'base'}</span>
+                    <div className="flex items-center gap-2 shrink-0">
+                      {p.suspended && (
+                        <span className="text-xs font-medium text-amber-800 bg-amber-100 px-3 py-1 rounded-full">Suspended</span>
+                      )}
+                      <span className="text-xs font-medium text-teal-700 bg-teal-50 px-3 py-1 rounded-full">{p.tier ?? 'base'}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 mt-2">
+                    <button
+                      onClick={() => toggleSuspend(p)}
+                      disabled={suspending === p.id || deleting === p.id}
+                      className={`text-xs font-semibold px-3 py-1 rounded-lg border disabled:opacity-50 transition-colors ${
+                        p.suspended
+                          ? 'text-emerald-700 border-emerald-200 hover:bg-emerald-50'
+                          : 'text-amber-700 border-amber-200 hover:bg-amber-50'
+                      }`}
+                    >
+                      {suspending === p.id ? 'Saving…' : p.suspended ? 'Restore access' : 'Suspend'}
+                    </button>
+                    <button
+                      onClick={() => remove(p)}
+                      disabled={deleting === p.id || suspending === p.id}
+                      className="text-rose-600 text-xs font-semibold px-3 py-1 rounded-lg border border-rose-200 hover:bg-rose-50 disabled:opacity-50 transition-colors"
+                    >
+                      {deleting === p.id ? 'Deleting…' : 'Delete permanently'}
+                    </button>
                   </div>
                   <AccessEditor
                     profile={p}

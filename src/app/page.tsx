@@ -107,6 +107,7 @@ export default async function HomePage() {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 hidden sm:block">{user.email}</span>
+            <Link href="/account" className="text-xs font-medium text-[#3B54FF] hover:underline">Account</Link>
             {(user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL) && (
               <Link href="/admin" className="text-xs font-medium text-[#3B54FF] hover:underline">Admin</Link>
             )}
