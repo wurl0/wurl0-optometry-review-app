@@ -43,3 +43,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# exam-build backups — local snapshots taken before bank merges, not for version control
+*.bak
+*.bak-*
+exam-build/banks.bak-*/
