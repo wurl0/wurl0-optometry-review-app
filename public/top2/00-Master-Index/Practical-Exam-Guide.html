@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Practical Exam Guide</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:64ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  h3{font-size:16.5px;margin:22px 0 4px;letter-spacing:-.01em;}
+  h3 .tag{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--accent);
+    letter-spacing:.06em;margin-right:7px;}
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  /* procedure block */
+  .proc{background:var(--surface);border:1px solid var(--line);border-radius:13px;
+    padding:15px 17px;margin:0 0 13px;box-shadow:var(--shadow);}
+  .proc h3{margin:0 0 8px;}
+  .proc .say{font-size:13.6px;color:var(--ink-soft);border-left:3px solid var(--accent);
+    padding-left:11px;margin:0 0 9px;font-style:italic;}
+  .proc ol{margin:0 0 9px;padding-left:19px;font-size:13.7px;}
+  .proc ol li{margin:3px 0;}
+  .proc .ask{font-size:13.2px;background:var(--why-w);border:1px solid color-mix(in srgb,var(--why) 30%,var(--line));
+    border-radius:9px;padding:9px 12px;margin-top:4px;}
+  .proc .ask .lab{font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--why);font-weight:700;display:block;margin-bottom:4px;}
+  .proc .ask ul{margin:0;padding-left:16px;} .proc .ask li{margin:2px 0;}
+
+  /* callouts */
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0 0 8px;} .cal p:last-child{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  /* diagram */
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);margin:0 0 13px;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  /* tables */
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);margin:0 0 13px;}
+  table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:460px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+
+  /* formula */
+  .eq{background:var(--inset);border-radius:10px;padding:12px 15px;margin:0 0 11px;
+    font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--accent-deep);font-weight:600;text-align:center;}
+
+  /* drills + srs */
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;}
+  .toc a{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;text-decoration:none;color:var(--accent-deep);
+    background:var(--accent-wash);border:1px solid color-mix(in srgb,var(--accent) 28%,var(--line));
+    border-radius:8px;padding:6px 10px;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Practical Exam</div>
+    </div>
+    <div class="card-no">Practicals<b>5</b>rooms &middot; 40 min</div>
+  </header>
+
+  <h1>The <em>practical</em> exam: perform it, then say it</h1>
+  <p class="dek">You draw a lot, get one item to perform plus five written questions, and an examiner who watches and asks. Every station rewards the same two skills: <b>do</b> the procedure clean, and <b>say</b> the why behind it. This is the phone-sized digest of your clinic scripts. The printable long version lives in your notes.</p>
+
+  <div class="toc">
+    <a href="#r1">Room 1 · BV</a>
+    <a href="#r2">Room 2 · Refraction</a>
+    <a href="#r3">Room 3 · Instruments</a>
+    <a href="#r4">Room 4 · Contact Lens</a>
+    <a href="#r5">Room 5 · Dispensing</a>
+    <a href="#tools">Tool table</a>
+    <a href="#lowvis">Low vision</a>
+    <a href="#srs">Recall deck</a>
+  </div>
+
+  <section>
+    <h2><span class="n">00</span> The one habit that carries every room</h2>
+    <div class="cal mnem">
+      <div class="lab">Universal intro skeleton</div>
+      <p>"Good morning, I'm [name]. I'll be performing <b>[test]</b>. This checks <b>[what]</b>. It's non-invasive and won't hurt. Please sit, chin here, forehead here. Look at the target and tell me what you see. Any questions?"</p>
+    </div>
+    <div class="cal pearl">
+      <div class="lab">Three reflexes graders reward</div>
+      <p><b>1. Infection control first</b> — hands and instrument before you touch anything. <b>2. Talk while you work</b> — silence reads as guessing. <b>3. Draw a lot, then breathe</b> — say the intro to buy recall time, then move; motion unlocks the steps.</p>
+    </div>
+    <div class="cal why">
+      <div class="lab">Phoria vs tropia, the answer to half of Room 1</div>
+      <p>A <b>phoria</b> is a hidden drift that only shows when you break fusion (cover an eye). A <b>tropia</b> is a turn visible with both eyes open. <b>Eso</b> = in, <b>exo</b> = out, <b>hyper</b> = higher, <b>hypo</b> = lower.</p>
+    </div>
+    <div class="cal trap">
+      <div class="lab">Tool selection is graded</div>
+      <p>The bench lays out a table of instruments. Part of many stations is picking the <b>correct</b> tool for the drawn test, then naming its use and showing how. Know what you reach for, not just the steps (NPC &rarr; RAF rule or an accommodative target, not a random penlight). The <b>Tool table</b> below maps every test; <b>Low vision</b> is its own pick-and-explain drill.</p>
+    </div>
+  </section>
+
+  <!-- ROOM 1 -->
+  <section id="r1">
+    <h2><span class="n">01</span> Room 1 &middot; Binocular Vision</h2>
+    <p class="lead">Theme: is the eye straight, and do the two eyes team? Nearly every question reduces to phoria vs tropia and its direction.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 190" role="img" aria-label="Cover test movement logic for eso and exo">
+        <text x="20" y="26" font-size="13" font-weight="700" fill="var(--ink)" font-family="system-ui">Cover-uncover: watch the UNCOVERED eye move to fixate</text>
+        <!-- eso row -->
+        <circle cx="70" cy="80" r="26" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="82" cy="80" r="9" fill="var(--ink)"/>
+        <text x="70" y="128" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui">turned IN</text>
+        <line x1="108" y1="80" x2="150" y2="80" stroke="var(--trap)" stroke-width="2.4" marker-end="url(#ar)"/>
+        <text x="129" y="72" text-anchor="middle" font-size="10" fill="var(--trap)" font-family="ui-monospace,monospace">moves OUT</text>
+        <circle cx="188" cy="80" r="26" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="188" cy="80" r="9" fill="var(--ink)"/>
+        <text x="188" y="128" text-anchor="middle" font-size="12" fill="var(--trap)" font-weight="700" font-family="system-ui">= ESO</text>
+        <!-- exo row -->
+        <circle cx="400" cy="80" r="26" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="388" cy="80" r="9" fill="var(--ink)"/>
+        <text x="400" y="128" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui">turned OUT</text>
+        <line x1="438" y1="80" x2="480" y2="80" stroke="var(--why)" stroke-width="2.4" marker-end="url(#ab)"/>
+        <text x="459" y="72" text-anchor="middle" font-size="10" fill="var(--why)" font-family="ui-monospace,monospace">moves IN</text>
+        <circle cx="518" cy="80" r="26" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="518" cy="80" r="9" fill="var(--ink)"/>
+        <text x="518" y="128" text-anchor="middle" font-size="12" fill="var(--why)" font-weight="700" font-family="system-ui">= EXO</text>
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--trap)"/></marker>
+          <marker id="ab" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--why)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>the direction the eye moves to pick up fixation names the deviation</figcaption>
+    </figure>
+
+    <div class="proc">
+      <h3><span class="tag">1.1</span>Cover Test</h3>
+      <p class="say">"I'll cover and uncover each eye. Keep this letter clear and single."</p>
+      <ol>
+        <li>Fixate a target at 40 cm and 6 m, one line above threshold.</li>
+        <li><b>Cover-uncover</b> (finds tropia): cover one eye, watch the <b>other</b>. Refixation movement = tropia; out-move = eso, in-move = exo.</li>
+        <li><b>Alternating</b> (total deviation): swing the occluder side to side, watch each eye as uncovered.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Cover-uncover finds tropia (watch uncovered eye); alternating gives the total but breaks fusion so it can't split phoria from tropia.</li>
+        <li>Out-movement = eso, in-movement = exo.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.2</span>Prism Cover Test (PCT)</h3>
+      <p class="say">"I'll hold a prism while I cover and uncover; tell me if the target still shifts."</p>
+      <ol>
+        <li>Find the direction by alternating cover first.</li>
+        <li>Prism apex toward the deviation: eso = base-out, exo = base-in, hyper = base-down on the high eye.</li>
+        <li>Increase power until the refixation neutralises. That value = the angle in Δ.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Esotropia needs base-out. Unit is the prism dioptre (1Δ = 1 cm shift at 1 m).</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.3 / 1.4</span>Hirschberg &amp; Krimsky</h3>
+      <p class="say">"I'll shine a light; look straight at it."</p>
+      <ol>
+        <li>Penlight at 50 cm; read the corneal reflex position. 1 mm decentration &asymp; 7&deg; &asymp; 15Δ.</li>
+        <li>Reflex temporal = eso; nasal = exo (Hirschberg, gross estimate).</li>
+        <li><b>Krimsky:</b> place prism over the <b>fixating</b> eye until the reflex in the deviated eye centres = the angle.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>1 mm &asymp; 7&deg;. Reflex temporal means the eye is turned in (eso).</li>
+        <li>Use Krimsky when the patient can't fixate or has poor vision in one eye.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.5</span>Ocular Motility / EOM</h3>
+      <p class="say">"Follow the light with your eyes only, head still. Tell me if it doubles or hurts."</p>
+      <ol>
+        <li>Broad <b>H</b> through the 9 gazes; watch both eyes (<b>versions</b>).</li>
+        <li>If a muscle underacts, cover the other eye and test that eye alone (<b>duction</b>).</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Up-and-right = right superior rectus + left inferior oblique (yoke pair).</li>
+        <li>Version = both eyes; duction = one eye. LR6 (CN VI), SO4 (CN IV), rest CN III.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.6 / 1.7</span>NPC &amp; NPA</h3>
+      <p class="say">"Keep it single (NPC) / clear (NPA) as I move it in. Tell me the moment it splits / blurs."</p>
+      <ol>
+        <li><b>NPC:</b> move a target to the nose; record break then recovery. Normal &asymp; 5 cm or better.</li>
+        <li><b>NPA:</b> push a near card in to first sustained blur. Amplitude (D) = 100 / distance in cm.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Receded NPC (&gt;10 cm) suggests convergence insufficiency.</li>
+        <li>Hofstetter minimum amp = 15 &minus; 0.25(age); blur at 10 cm = 10 D.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.8 / 1.9</span>Maddox Rod &amp; Maddox Wing</h3>
+      <p class="say">"Through this lens your eye sees a red line. Tell me where it sits versus the light."</p>
+      <ol>
+        <li>Red rod turns a spotlight into a streak so different the eyes dissociate, revealing a <b>phoria</b>.</li>
+        <li>Rods horizontal &rarr; vertical streak &rarr; tests lateral phoria. Streak on the covered-eye side = exo; opposite = eso.</li>
+        <li><b>Maddox Wing</b> = near (33 cm), septum-dissociated, read the number the arrow points to directly.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Rod horizontal gives a vertical streak. Streak through the light = orthophoria.</li>
+        <li>It measures a phoria because the rod breaks fusion.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.10</span>Worth 4-Dot</h3>
+      <p class="say">"Wear the red-green glasses. How many lit dots, and what colours?"</p>
+      <ol>
+        <li>Red over right, green over left; 4 dots at 40 cm and 6 m.</li>
+        <li><b>4</b> = fusion. <b>2 red</b> = left suppressed. <b>3 green</b> = right suppressed. <b>5</b> = diplopia.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Five dots = diplopia, no suppression. The white dot takes the dominant eye's colour.</li>
+        <li>Near tests a larger retinal area; distance isolates the macula and reveals suppression.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.11 - 1.13</span>Stereo Fly &middot; Brock String &middot; RAF Rule</h3>
+      <ol>
+        <li><b>Stereo (Titmus):</b> polarised glasses, booklet flat at 40 cm; fly &asymp;3000&Prime;, circles graded to 40&Prime;. Smaller arc = better; contour stereo (has monocular cues).</li>
+        <li><b>Brock string:</b> to the nose; normal = two strings crossing exactly at the fixated bead. One string gone = suppression; cross in front = over-convergence.</li>
+        <li><b>RAF rule:</b> rests on the cheeks; measures NPC and NPA (amplitude) off its cm and D scales.</li>
+      </ol>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">1.14 - 1.18</span>Howell &middot; Bagolini &middot; Pencil &middot; Flipper &middot; Aperture</h3>
+      <ol>
+        <li><b>Howell:</b> vertical prism dissociates; arrow reads near lateral phoria off a colour scale.</li>
+        <li><b>Bagolini striated:</b> least-dissociating; a full centred X = normal correspondence + fusion, a gap in one streak = suppression scotoma.</li>
+        <li><b>Two-pencil:</b> tip-to-tip both eyes open = gross stereopsis and eye-hand coordination.</li>
+        <li><b>Flipper &plusmn;2.00:</b> facility in cycles/min (~8 cpm binocular). Slow on plus = can't relax; slow on minus = can't stimulate.</li>
+        <li><b>Aperture rule:</b> single aperture = convergence (BO), double = divergence (BI); control features prove real fusion.</li>
+      </ol>
+    </div>
+
+    <div class="cal why">
+      <div class="lab">21-point (OEP) if drawn</div>
+      <p>#7 = distance subjective refraction. <b>NRA</b> = add plus to blur (relax, expect +2.00); <b>PRA</b> = add minus to blur (stimulate, expect &minus;2.37). Developed by the Optometric Extension Program.</p>
+    </div>
+  </section>
+
+  <!-- ROOM 2 -->
+  <section id="r2">
+    <h2><span class="n">02</span> Room 2 &middot; Refraction &amp; Phorometry</h2>
+    <p class="lead"><b>You draw a VT test number</b> from the 21-point exam and perform that one on the phoropter. Know two things: VT#7 subjective (below), and how to set up any of the 21 from its prism + endpoint + normal value (the table). Refraction logic: <b>fog to relax accommodation, then peel it back until 20/20 lands on the retina.</b></p>
+    <p class="say" style="border-left:3px solid var(--accent);padding-left:11px;font-style:italic;color:var(--ink-soft);font-size:13.6px;">"I'll show letters and lenses. Some blur on purpose. Just tell me clearer, one or two, and read the lowest line you can."</p>
+
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th>Step</th><th>Key move</th></tr></thead>
+      <tbody>
+        <tr><td>1-3</td><td>Hx, PD, entering VA</td><td>Decide: standard/sub-standard &rarr; fog; subnormal &rarr; no fog, go to minus</td></tr>
+        <tr><td>4</td><td><b>Fog</b></td><td>Push image in front of retina (artificial myope). 4 ways: +0.25 steps, sudden +2.00, gross from VT#4, autorefractor blur</td></tr>
+        <tr><td>5</td><td><b>Unfog</b></td><td>Reduce plus to the best line. <span class="rx">Overlap plus, never overlap minus</span></td></tr>
+        <tr><td>6</td><td>Tentative sphere</td><td>If minus, least minus; if plus, most plus</td></tr>
+        <tr><td>7</td><td>Proper fog +0.50</td><td>Re-blur ~2 lines above best line before the dial</td></tr>
+        <tr><td>8</td><td>Astigmatic (clock) dial</td><td>Tentative axis = <b>90&deg; from the darkest line</b> (or rule of 30); darker line = power meridian; add minus cyl, +0.25 sph per &minus;0.50 cyl</td></tr>
+        <tr><td>9</td><td>Duochrome</td><td>Bolder on red &rarr; add minus. Bolder on green &rarr; add plus. Endpoint equal</td></tr>
+        <tr><td>10</td><td>JCC</td><td>Axis: handle on axis, flip, <b>move 5&deg; toward red</b> (max 15&deg;). Power: red dot on axis = add cyl, white/green = deduct</td></tr>
+        <tr><td>11</td><td>Balance</td><td>Occlusion / prism dissociation / TIB (only if ~20/20 both eyes)</td></tr>
+      </tbody>
+    </table></div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Duochrome red green retina positions">
+        <line x1="60" y1="115" x2="580" y2="115" stroke="var(--line)" stroke-width="2"/>
+        <path d="M300,40 Q470,115 300,190" fill="none" stroke="var(--ink-soft)" stroke-width="2.5"/>
+        <text x="300" y="30" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui">retina</text>
+        <circle cx="215" cy="115" r="13" fill="#2ea043"/><text x="215" y="145" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">green: in front</text>
+        <circle cx="300" cy="115" r="13" fill="#d4a017"/><text x="300" y="145" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">yellow: on retina</text>
+        <circle cx="385" cy="115" r="13" fill="#c0392b"/><text x="385" y="145" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">red: behind</text>
+      </svg>
+      <figcaption>duochrome = transverse chromatic aberration; chase the clearer colour</figcaption>
+    </figure>
+
+    <div class="cal trap">
+      <div class="lab">The lines examiners recycle</div>
+      <p>Why plus in fogging? To relax accommodation. Duochrome principle? Transverse chromatic aberration. Bolder on red &rarr; add minus. Darker clock line = power meridian (not axis). JCC red dot = minus axis. Night-driving tint = amber/yellow. Circle of least confusion = circle of least diffusion. Don't balance in amblyopia, suppression, one eye, pathology, or presbyopia. Transposition (ARR): add sph+cyl, reverse cyl sign, rotate axis 90&deg;.</p>
+    </div>
+
+    <h3 style="margin-top:22px">The 21-point battery &middot; draw a number, perform it</h3>
+    <p>Setup for any drawn test: far 6 m / near 40 cm, smallest-readable target, <b>lenses in place = Test #7</b>, 20 ft-candle, PD to match. Then it is one of three archetypes:</p>
+    <div class="tw"><table>
+      <thead><tr><th>Archetype</th><th>Prisms</th><th>Endpoint</th></tr></thead>
+      <tbody>
+        <tr><td><b>Lateral phoria</b> (#3,8,13)</td><td>OD 12-15&Delta; BI (measure), OS 6&Delta; BU (dissociate)</td><td>Vertical align &middot; BI=exo, BO=eso</td></tr>
+        <tr><td><b>Vertical phoria</b> (#12,18)</td><td>OD 12-15&Delta; BI (fixate), OS 6&Delta; BU (measure)</td><td>Horizontal align &middot; BU=R hyper</td></tr>
+        <tr><td><b>Vergence</b> (#9,10,11,16,17)</td><td>OU turn <b>BO</b> (converge) or <b>BI</b> (diverge)</td><td>Blur &rarr; break &rarr; recovery</td></tr>
+      </tbody>
+    </table></div>
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th>Test</th><th>Normal</th></tr></thead>
+      <tbody>
+        <tr><td>3</td><td>Habitual phoria far</td><td class="rx">&frac12; exo</td></tr>
+        <tr><td>8</td><td>Induced phoria far</td><td class="rx">6 exo</td></tr>
+        <tr><td>9</td><td>True adduction far (BO blur)</td><td class="rx">7-9</td></tr>
+        <tr><td>10</td><td>Convergence far (BO)</td><td class="rx">19/10</td></tr>
+        <tr><td>11</td><td>Abduction far (BI)</td><td class="rx">9/5</td></tr>
+        <tr><td>12</td><td>Vertical phoria/duction far</td><td class="rx">ortho; 3/0</td></tr>
+        <tr><td>13B</td><td>Induced phoria near</td><td class="rx">6 exo</td></tr>
+        <tr><td>13B</td><td>AC/A (gradient)</td><td class="rx">4:1 min, 5:1 avg</td></tr>
+        <tr><td>16A</td><td>PRC near (BO blur)</td><td class="rx">15</td></tr>
+        <tr><td>16B</td><td>Pos fusional reserve</td><td class="rx">21/15</td></tr>
+        <tr><td>17A</td><td>NRC near (BI blur)</td><td class="rx">14</td></tr>
+        <tr><td>17B</td><td>Neg fusional reserve</td><td class="rx">22/18</td></tr>
+        <tr><td>18</td><td>Vertical phoria/duction near</td><td class="rx">ortho; 6/0</td></tr>
+        <tr><td>20</td><td>PRA (minus to blur)</td><td class="rx">&minus;2.50</td></tr>
+        <tr><td>21</td><td>NRA (plus to blur)</td><td class="rx">+2.00</td></tr>
+      </tbody>
+    </table></div>
+    <div class="cal why">
+      <div class="lab">Demand pairs with reserve</div>
+      <p>Far: #8 exo &rarr; #9 blur / #10 break; #8 eso &rarr; #11 break. Near: #13B exo &rarr; #16A blur / #16B break; #13B eso &rarr; #17A blur / #17B break.</p>
+    </div>
+  </section>
+
+  <!-- ROOM 3 -->
+  <section id="r3">
+    <h2><span class="n">03</span> Room 3 &middot; Instruments</h2>
+    <p class="lead">Set up correctly, state what it measures, take a clean reading. Focus the eyepiece first on any scope, it zeroes out your own accommodation.</p>
+
+    <div class="proc">
+      <h3><span class="tag">3.1</span>Keratometry</h3>
+      <p class="say">"I'll measure the curvature of the front of your cornea. Non-invasive, won't touch your eye. Chin on the rest, look at the target."</p>
+      <ol>
+        <li>Focus the eyepiece first. Align the reticle on the mires; focus until crisp.</li>
+        <li>Superimpose the <b>plus</b> mires (horizontal meridian), then the <b>minus</b> (vertical); read power and axis for each.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Focus the eyepiece first to remove examiner accommodation (else falsely steep).</li>
+        <li>Difference between the two readings = corneal astigmatism. WTR = steeper vertical.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">3.2</span>Lensometer</h3>
+      <ol>
+        <li>Focus the eyepiece; lens back surface against the stop (back vertex power).</li>
+        <li>First clear set of lines = sphere meridian (+ its axis); second = other meridian. Difference = cyl.</li>
+        <li>Mark the optical centre; prism = mire displacement (each ring 1Δ). Add = extra plus in the near segment.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Back surface faces the stop. In minus-cyl form the most-plus meridian = sphere, its lines' axis = cyl axis.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">3.3</span>Slit Lamp</h3>
+      <ol>
+        <li>Illumination arm 30-60&deg;; start low mag, sweep lids &rarr; conjunctiva &rarr; cornea &rarr; AC &rarr; iris &rarr; lens.</li>
+        <li>Know the illuminations: diffuse, direct/parallelepiped, optic section, retroillumination, sclerotic scatter, specular, Van Herick.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>Van Herick = 60&deg;, optic section at limbus, grade the AC angle. Specular reflection = endothelium. Optic section = corneal depth.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">3.4 / 3.5</span>Synoptophore &amp; Schematic Eye</h3>
+      <ol>
+        <li><b>Synoptophore:</b> history, then objective angle (no eye movement) vs subjective angle (patient superimposes). Difference = angle of anomaly (ARC). Grades: simultaneous perception &rarr; fusion &rarr; stereopsis.</li>
+        <li><b>Schematic eye:</b> six cardinal points (2 principal, 2 nodal, 2 focal); Gullstrand total ~+60 D (cornea +43, lens +19). Reduced eye = one surface, ~+60 D.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ROOM 4 -->
+  <section id="r4">
+    <h2><span class="n">04</span> Room 4 &middot; Contact Lens Fitting</h2>
+    <p class="lead">Measure the eye, pick a lens, prove the fit with fluorescein and lens movement.</p>
+
+    <div class="proc">
+      <h3><span class="tag">4.1</span>RGP Fitting</h3>
+      <ol>
+        <li>Measure pupil size, <b>HVID</b>, <b>K-readings</b>, VA/refraction.</li>
+        <li>Base curve: fit spheres on flat K; diameter ~ HVID &minus; 2 mm.</li>
+        <li>Insert trial lens, settle, add fluorescein, view under cobalt blue + Wratten.</li>
+        <li>Blink-and-look-up: fast drop = low-riding (flat/heavy); sticks high = high-riding (steep/tight). Target 1-2 mm movement.</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li><b>Steep</b> = central pooling (apical clearance). <b>Flat</b> = central touch, peripheral pooling.</li>
+        <li>"Fit on K" = base curve equals flattest K. Fluorescein glows green showing tear-film thickness.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">4.1b</span>The measurements and the math</h3>
+      <p style="font-size:13.7px;margin:0 0 8px">They hand you K's, HVID and an Rx and ask for the trial lens. Drill this.</p>
+      <div class="eq">r = 337.5 / D &nbsp;&middot;&nbsp; D = 337.5 / r</div>
+      <div class="tw"><table>
+        <thead><tr><th>Compute</th><th>RGP</th><th>SCL</th></tr></thead>
+        <tbody>
+          <tr><td>Diameter (TD)</td><td class="rx">HVID &minus; 2</td><td class="rx">HVID + 2 (or +2.5 high water)</td></tr>
+          <tr><td>Base curve (from flatter K)</td><td class="rx">337.5 / D</td><td class="rx">337.5 / D + 0.7</td></tr>
+        </tbody>
+      </table></div>
+      <p style="font-size:13.4px;color:var(--ink-soft);margin:8px 0 0"><b>Corneal astig</b> = flatter K &minus; steeper K (minus cyl, record horizontal first). WTR ~180, ATR ~90. Round BC to available (~0.3 mm; 8.4/8.6), within &plusmn;1 mm of flatter K. Higher BC = flatter.</p>
+      <div class="cal pearl">
+        <div class="lab">Worked (from your review)</div>
+        <p>OU &minus;3.00 &minus;0.50&times;180, HVID 11, K 45.00@180 / 45.50@90 &rarr; TD = 11&minus;2 = <b>9.0 mm</b>; BOZR = 337.5/45.00 = <b>7.5 mm</b>; power <b>&minus;3.00</b> (nearest available). Rides flat &rarr; drop to 7.4, recheck after 30 min.</p>
+      </div>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>RGP BC = 337.5 / flatter-K (fit on K); SCL = same + 0.7.</li>
+        <li>Flat = central touch + edge clearance; steep = central pooling; optimum = edge slightly lifted, even spread.</li>
+        <li>&uarr;Water = &uarr;Dk/O&#8322; but &uarr;index &amp; &uarr;protein; thin = more O&#8322;.</li>
+      </ul></div>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">4.2 / 4.3</span>Toric &amp; Multifocal</h3>
+      <ol>
+        <li><b>Toric:</b> stabilised by prism ballast / thin zones / truncation. Ordering axis by rotation: <b>LARS</b> (Left Add, Right Subtract).</li>
+        <li><b>Multifocal:</b> simultaneous (both images on retina, brain selects) vs alternating/translating (lens shifts on down-gaze). Monovision = distance in dominant eye.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ROOM 5 -->
+  <section id="r5">
+    <h2><span class="n">05</span> Room 5 &middot; Ophthalmic Dispensing &amp; Edging</h2>
+    <p class="lead">Measure patient and frame, do the decentration maths, run the lab workflow in order. The maths is the most-asked part, so know it cold.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-label="Boxing frame PD and decentration">
+        <rect x="70" y="60" width="150" height="95" rx="8" fill="none" stroke="var(--ink-soft)" stroke-width="2"/>
+        <rect x="290" y="60" width="150" height="95" rx="8" fill="none" stroke="var(--ink-soft)" stroke-width="2"/>
+        <line x1="220" y1="107" x2="290" y2="107" stroke="var(--why)" stroke-width="2"/>
+        <text x="255" y="98" text-anchor="middle" font-size="11" fill="var(--why)" font-family="ui-monospace,monospace">DBL</text>
+        <text x="145" y="45" text-anchor="middle" font-size="11" fill="var(--accent-deep)" font-family="ui-monospace,monospace">ES</text>
+        <line x1="70" y1="40" x2="220" y2="40" stroke="var(--accent)" stroke-width="1.5"/>
+        <!-- box centres -->
+        <line x1="145" y1="60" x2="145" y2="155" stroke="var(--line)" stroke-dasharray="3 3"/>
+        <line x1="365" y1="60" x2="365" y2="155" stroke="var(--line)" stroke-dasharray="3 3"/>
+        <circle cx="145" cy="107" r="4" fill="var(--accent)"/><circle cx="365" cy="107" r="4" fill="var(--accent)"/>
+        <!-- pupils -->
+        <circle cx="160" cy="107" r="6" fill="var(--trap)"/><circle cx="350" cy="107" r="6" fill="var(--trap)"/>
+        <text x="255" y="185" text-anchor="middle" font-size="12" fill="var(--ink)" font-family="system-ui">Frame PD = ES + DBL &middot; green = box centre, red = pupil</text>
+        <text x="255" y="203" text-anchor="middle" font-size="11.5" fill="var(--trap)" font-family="system-ui">Decentration moves each OC IN to meet the pupil</text>
+      </svg>
+      <figcaption>the optical centre must land on the pupil, not the box centre</figcaption>
+    </figure>
+
+    <div class="eq">Frame PD = ES + DBL</div>
+    <div class="eq">Decentration / eye = (Frame PD &minus; Patient PD) &divide; 2</div>
+
+    <div class="cal why">
+      <div class="lab">Why these forms (formula depth)</div>
+      <p><b>ES</b> = one lens-box width; <b>DBL</b> = the bridge gap. Each box centre sits half a lens-width from the bridge, so centre-to-centre = one full ES (two halves) + DBL. That is why it is ES + DBL.</p>
+      <p>If the frame is wider than the face, each OC starts too far out by the whole difference; split it between two eyes, hence &divide;2. Frame PD &gt; patient PD &rarr; decentre <b>in</b>; smaller &rarr; <b>out</b>.</p>
+    </div>
+
+    <div class="cal pearl">
+      <div class="lab">Worked (from the review)</div>
+      <p>Plastic: ES 51 + 1 = 52, DBL 20 &minus; 1 = 19 &rarr; <b>Frame PD 71</b>. Patient PD 66 &rarr; (71 &minus; 66)/2 = <b>2.5 mm IN</b> per eye. (Metal ES is inner-to-outer; plastic uses inner-to-inner + 1, DBL &minus; 1.)</p>
+    </div>
+
+    <div class="proc">
+      <h3><span class="tag">5.3</span>Edging workflow (say it in order)</h3>
+      <ol>
+        <li>Former making (dot the OC, draw 180 + fitting cross)</li>
+        <li>Set cyl axis (SV) / mark fitting cross (PAL) / set segment height (bifocal)</li>
+        <li>Mark fitting cross (SV) / set pupil height (PAL)</li>
+        <li>Tracing / cutting</li>
+        <li>Chipping / crumbing</li>
+        <li>Edging (grind the bevel)</li>
+        <li>Tinting</li>
+        <li>Glazing / mounting, then verify OC and axis on the lensmeter</li>
+      </ol>
+      <div class="ask"><span class="lab">They ask</span><ul>
+        <li>First step = former making / lens marking. Tracing before edging; tinting before glazing.</li>
+        <li>PAL fitting cross must sit at the pupil centre. Seg height measured to the lower lid margin.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <!-- TOOL TABLE -->
+  <section id="tools">
+    <h2><span class="n">06</span> Tool table &middot; pick from the bench</h2>
+    <p class="lead">Say the tool's name as you pick it up. The wrong pick loses the point before you start.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Test</th><th>Pick from the table</th></tr></thead>
+      <tbody>
+        <tr><td>Cover test / PCT</td><td>Occluder + distance chart and near card; <span class="rx">prism bar / loose prisms</span> to measure</td></tr>
+        <tr><td>Hirschberg</td><td>Penlight or transilluminator</td></tr>
+        <tr><td>Krimsky</td><td>Penlight + prism bar</td></tr>
+        <tr><td>Motility / EOM</td><td>Penlight or fixation stick</td></tr>
+        <tr><td><b>NPC</b></td><td><span class="rx">RAF rule</span> or an accommodative fixation target</td></tr>
+        <tr><td><b>NPA</b></td><td><span class="rx">RAF rule</span> or near reduced-Snellen card + occluder</td></tr>
+        <tr><td>Maddox rod</td><td>Red Maddox rod + spotlight (+ prism bar to measure)</td></tr>
+        <tr><td>Maddox wing</td><td>Maddox wing device</td></tr>
+        <tr><td>Worth 4-dot</td><td>Worth flashlight + red-green goggles</td></tr>
+        <tr><td>Stereopsis</td><td>Titmus / Randot booklet + polarised glasses</td></tr>
+        <tr><td>Brock string</td><td>Brock string with beads</td></tr>
+        <tr><td>Howell</td><td>Howell card + base-up/down prism</td></tr>
+        <tr><td>Bagolini</td><td>Bagolini striated lenses + spotlight</td></tr>
+        <tr><td>Facility</td><td>&plusmn;2.00 flipper + near card</td></tr>
+        <tr><td>Aperture rule</td><td>Aperture rule + slider cards</td></tr>
+        <tr><td>Subjective refraction</td><td>Trial frame + lens set (or phoropter); clock dial; duochrome; JCC; septum; loose prisms</td></tr>
+        <tr><td>Instruments room</td><td>Keratometer; lensometer; slit lamp (+ fluorescein, cobalt/Wratten); synoptophore; eye model</td></tr>
+        <tr><td>Contact lens</td><td>Keratometer; PD rule; HVID gauge; RGP trial set; fluorescein + saline; cobalt/Wratten; DMV remover; eyewash</td></tr>
+        <tr><td>Dispensing / edging</td><td>PD rule or pupillometer; lens clock; lensometer; box ruler; marker + former; tracer; edger; PAL layout chart</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- LOW VISION -->
+  <section id="lowvis">
+    <h2><span class="n">07</span> Low vision devices &middot; identify, use, how</h2>
+    <p class="lead">If handed a table of devices: pick one, then give the same three beats. <b>What it is &rarr; who it is for &rarr; how to use it.</b></p>
+    <div class="tw"><table>
+      <thead><tr><th>Device</th><th>For</th><th>How to use</th></tr></thead>
+      <tbody>
+        <tr><td><b>Hand magnifier</b></td><td>Short near bursts, portable (tags, menus)</td><td>Hold ~one focal length from print; stronger plus = closer, smaller field</td></tr>
+        <tr><td><b>Stand magnifier</b></td><td>Tremor, children, sustained reading</td><td>Rest flat on page (fixed focal distance); usually needs a reading add</td></tr>
+        <tr><td><b>Spectacle microscope</b><br>(high plus)</td><td>Hands-free prolonged near</td><td>High add (to +20 or more); hold material very close; base-in prism if binocular</td></tr>
+        <tr><td><b>Telescope</b></td><td>Distance spotting; near with a reading cap</td><td>Focus then localise, brace it. Galilean = upright, lighter; Keplerian = prisms, higher power/field</td></tr>
+        <tr><td><b>Dome / bright-field</b></td><td>Low mag, poor contrast, light-gathering</td><td>Place directly on the page</td></tr>
+        <tr><td><b>CCTV / video magnifier</b></td><td>Highest mag; reading and writing</td><td>Material on the tray; set zoom, contrast, reverse polarity; line markers</td></tr>
+        <tr><td><b>Absorptive filters</b></td><td>Glare and contrast (cataract, retina)</td><td>Worn over Rx; amber for contrast, dark grey for photophobia</td></tr>
+        <tr><td><b>Typoscope</b></td><td>Crowding, glare, keeping place</td><td>Slide the slot down one line at a time</td></tr>
+      </tbody>
+    </table></div>
+    <div class="cal why">
+      <div class="lab">Numbers they may ask</div>
+      <p><b>Equivalent magnification:</b> M = F / 4 (25 cm reference; +20 D &asymp; 5x). The 4 is the 25 cm baseline (1 / 0.25 m = 4 D).</p>
+      <p><b>Kestenbaum's rule</b> (starting reading add): add in D &asymp; reciprocal of the distance VA fraction. VA 20/200 &rarr; add &asymp; 200/20 = +10.00 D; reading distance = 1 / add.</p>
+      <p><b>Telescope:</b> M = Fo / Fe (objective over eyepiece power).</p>
+    </div>
+    <div class="cal trap">
+      <div class="lab">They ask</div>
+      <p>Galilean vs Keplerian? Galilean = upright, light, lower mag/field; Keplerian = inverted (needs prisms), higher mag/field. Stand vs hand magnifier? Stand for tremor/steadiness, hand for portability. Reading add estimate? Kestenbaum's rule. Why reverse-contrast on a CCTV? Cuts glare, helps many retinal/media conditions.</p>
+    </div>
+  </section>
+
+  <!-- DRILLS -->
+  <section>
+    <h2><span class="n">08</span> Rebuild it on paper</h2>
+    <p>Reading this is not practising it. These pull the exam skill, not the recognition.</p>
+    <div class="drill"><div class="t">1 &middot; Blind intro drill</div><p>Pick five random tests. Say the full intro skeleton for each from memory, swapping only the test name and the "checks what" clause. Aim for under 15 seconds each.</p></div>
+    <div class="drill"><div class="t">2 &middot; Cover-test direction tree</div><p>Draw the eso and exo cases. Write which eye you watch, which way it moves, and the prism base to neutralise. Three clean rounds.</p></div>
+    <div class="drill"><div class="t">3 &middot; VT#7 from zero</div><p>List steps 1 to 11 blind, then add the one-line "why" for fog, duochrome, JCC red dot, and when not to balance.</p></div>
+    <div class="drill"><div class="t">4 &middot; Decentration on paper</div><p>Given ES, DBL, and patient PD, compute frame PD and decentration in or out. Do three sets (one metal, two plastic) without the formula in view.</p></div>
+    <div class="drill"><div class="t">5 &middot; Blind tool pick</div><p>Lay every instrument you can find on a table. Have a partner call a random test; you grab the right tool in under 3 seconds and say its name, use, and first step. Repeat for the low-vision devices: pick, name, who it is for, how to use.</p></div>
+    <div class="drill"><div class="t">6 &middot; Clinic run-through</div><p>At the La Union clinic: perform each drawn item talking the whole time, timed under 8 minutes, with a partner firing the "They ask" lines as the examiner.</p></div>
+  </section>
+
+  <!-- SRS -->
+  <section id="srs">
+    <h2><span class="n">09</span> Recall deck</h2>
+    <p>Drop these into your FoqusLab queue. Answer out loud before you flip. These are the five-question and examiner spot-checks in miniature.</p>
+    <ol class="srs">
+      <li><span class="q">Phoria vs tropia?</span> <span class="a">Phoria = latent (needs fusion broken); tropia = manifest with both eyes open.</span></li>
+      <li><span class="q">Cover-uncover: eye moves out to fixate?</span> <span class="a">It was turned in &rarr; esotropia.</span></li>
+      <li><span class="q">Prism base to neutralise an esotropia?</span> <span class="a">Base-out.</span></li>
+      <li><span class="q">Hirschberg: 1 mm of reflex decentration equals?</span> <span class="a">~7 degrees ~15Δ; temporal reflex = eso.</span></li>
+      <li><span class="q">Krimsky prism goes over which eye?</span> <span class="a">The fixating (good) eye.</span></li>
+      <li><span class="q">Amplitude of accommodation formula?</span> <span class="a">100 / near point in cm (blur at 10 cm = 10 D).</span></li>
+      <li><span class="q">Maddox rod horizontal gives what streak, testing what?</span> <span class="a">Vertical streak; lateral phoria.</span></li>
+      <li><span class="q">Worth 4-dot: sees 5 dots?</span> <span class="a">Diplopia, no suppression.</span></li>
+      <li><span class="q">Why always plus in fogging?</span> <span class="a">To relax accommodation and avoid over-minus.</span></li>
+      <li><span class="q">Duochrome principle, and clearer on red means?</span> <span class="a">Transverse chromatic aberration; add minus.</span></li>
+      <li><span class="q">Darker line on the clock dial is which meridian?</span> <span class="a">The power meridian.</span></li>
+      <li><span class="q">JCC red dot represents?</span> <span class="a">Minus cylinder axis (white = plus).</span></li>
+      <li><span class="q">When do you NOT do binocular balance?</span> <span class="a">Amblyopia, suppression, one eye, pathology, presbyopia.</span></li>
+      <li><span class="q">Why focus the lensmeter/keratometer eyepiece first?</span> <span class="a">To zero out examiner accommodation (else falsely steep / wrong sphere).</span></li>
+      <li><span class="q">RGP steep vs flat fluorescein pattern?</span> <span class="a">Steep = central pooling; flat = central touch with peripheral pooling.</span></li>
+      <li><span class="q">Low-riding vs high-riding RGP cause?</span> <span class="a">Low = flat/heavy (drops fast); high = steep/tight (sticks up).</span></li>
+      <li><span class="q">Toric CL: rotation compensation rule?</span> <span class="a">LARS (Left Add, Right Subtract).</span></li>
+      <li><span class="q">Frame PD and decentration formulas?</span> <span class="a">Frame PD = ES + DBL; decentration/eye = (frame PD &minus; patient PD)/2.</span></li>
+      <li><span class="q">First step of edging, and tint vs glaze order?</span> <span class="a">Former making; tint before glazing.</span></li>
+      <li><span class="q">Synoptophore: objective vs subjective angle differ means?</span> <span class="a">Anomalous retinal correspondence; the gap is the angle of anomaly.</span></li>
+      <li><span class="q">Which tool do you pick for NPC and NPA?</span> <span class="a">RAF rule (or an accommodative target; NPA can also use a near card + occluder).</span></li>
+      <li><span class="q">Galilean vs Keplerian telescope?</span> <span class="a">Galilean = upright, lighter, lower mag/field; Keplerian = inverted (needs prisms), higher mag/field.</span></li>
+      <li><span class="q">Equivalent magnification of a +20 D magnifier?</span> <span class="a">M = F/4 = 5x (25 cm reference).</span></li>
+      <li><span class="q">Kestenbaum's rule for a 20/200 reader?</span> <span class="a">Add &asymp; 200/20 = +10.00 D; reading distance = 1/add = 10 cm.</span></li>
+      <li><span class="q">Lateral phoria: measuring vs dissociating prism, and endpoint?</span> <span class="a">OD 12-15&Delta; BI measures, OS 6&Delta; BU dissociates; endpoint vertical alignment (BI=exo, BO=eso).</span></li>
+      <li><span class="q">Convergence at far (#10) and abduction at far (#11) normals?</span> <span class="a">#10 = 19/10 (BO); #11 = 9/5 (BI).</span></li>
+      <li><span class="q">PRC vs NRC at near normals?</span> <span class="a">PRC (#16A, BO blur) = 15; NRC (#17A, BI blur) = 14.</span></li>
+      <li><span class="q">Expected PRA and NRA?</span> <span class="a">PRA (minus to blur) = &minus;2.50; NRA (plus to blur) = +2.00.</span></li>
+      <li><span class="q">RGP base curve and diameter from K and HVID?</span> <span class="a">BC = 337.5 / flatter-K power; TD = HVID &minus; 2 mm.</span></li>
+      <li><span class="q">Radius of curvature from a 45.00 D cornea?</span> <span class="a">r = 337.5 / 45.00 = 7.5 mm.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Practical Exam Guide &middot; perform it, then say it</div>
+
+</div>
+</body>
+</html>

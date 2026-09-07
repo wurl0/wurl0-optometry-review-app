@@ -106,6 +106,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.study-plans', subject: 'GLOBAL', type: 'tool', label: 'Study Plans',
     sub: 'Paced, burnout-aware schedule through Sept 28',
     path: '/top2/00-Master-Index/Study-Plans.html' },
+  { id: 'tool.practical-exam-guide', subject: 'GLOBAL', type: 'tool', label: 'Practical Exam Guide',
+    sub: 'Perform-and-say scripts for all 5 practical stations, with the examiner Q&A',
+    path: '/top2/00-Master-Index/Practical-Exam-Guide.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
