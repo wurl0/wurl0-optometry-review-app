@@ -315,6 +315,8 @@ export default function AdminPage() {
   const [justApproved, setJustApproved] = useState<Profile | null>(null)
   const [tab, setTab] = useState<Tab>('approvals')
   const [error, setError] = useState('')
+  const [maintenance, setMaintenance] = useState<boolean | null>(null)
+  const [maintBusy, setMaintBusy] = useState(false)
   const router = useRouter()
 
   // Read/write the tab through window.location rather than useSearchParams, which
@@ -347,9 +349,33 @@ export default function AdminPage() {
       const rRes = await fetch('/api/admin/readiness')
       const rJson = await rRes.json()
       if (!rJson.error) setReadiness(rJson.users)
+
+      // Maintenance flag. Non-fatal: if the table is missing it just stays null.
+      const mRes = await fetch('/api/admin/maintenance')
+      const mJson = await mRes.json()
+      if (!mJson.error) setMaintenance(!!mJson.maintenance)
     }
     load()
   }, [router])
+
+  async function toggleMaintenance() {
+    const next = !maintenance
+    if (next && !window.confirm(
+      'Turn ON maintenance mode? Every non-admin will get a 503 "Service Unavailable" ' +
+      'page and cannot use the app. You keep full access. You can turn it off anytime.'
+    )) return
+    setMaintBusy(true)
+    setError('')
+    const res = await fetch('/api/admin/maintenance', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ maintenance: next }),
+    })
+    const json = await res.json()
+    if (json.error) { setError(json.error); setMaintBusy(false); return }
+    setMaintenance(next)
+    setMaintBusy(false)
+  }
 
   async function approve(profileId: string) {
     setApproving(profileId)
@@ -429,6 +455,37 @@ export default function AdminPage() {
 
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3 mb-6">{error}</div>
+        )}
+
+        {maintenance !== null && (
+          <div className={`flex items-center justify-between gap-4 rounded-lg border px-4 py-3 mb-6 ${
+            maintenance ? 'bg-rose-50 border-rose-200' : 'bg-white border-gray-200'
+          }`}>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className={`inline-block w-2 h-2 rounded-full ${maintenance ? 'bg-rose-500' : 'bg-emerald-500'}`} />
+                <span className="text-sm font-semibold text-gray-900">
+                  Maintenance mode {maintenance ? 'ON' : 'OFF'}
+                </span>
+              </div>
+              <p className="text-xs text-gray-500 mt-1">
+                {maintenance
+                  ? 'Non-admins see a 503 outage page. You still have full access.'
+                  : 'App runs normally for everyone. Turn on to show non-admins a 503 outage page.'}
+              </p>
+            </div>
+            <button
+              onClick={toggleMaintenance}
+              disabled={maintBusy}
+              className={`shrink-0 text-sm font-medium rounded-lg px-3 py-1.5 transition-colors disabled:opacity-50 ${
+                maintenance
+                  ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                  : 'bg-rose-600 text-white hover:bg-rose-700'
+              }`}
+            >
+              {maintBusy ? '…' : maintenance ? 'Turn off' : 'Turn on'}
+            </button>
+          </div>
         )}
 
         <nav className="flex gap-1 border-b border-gray-200 mb-6">
