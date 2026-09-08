@@ -371,8 +371,6 @@ export default function AdminPage() {
     }
   }, [])
 
-  useEffect(() => { refreshUsage() }, [refreshUsage])
-
   // Read/write the tab through window.location rather than useSearchParams, which
   // would force this page under a Suspense boundary to build.
   function selectTab(next: Tab) {
@@ -408,7 +406,13 @@ export default function AdminPage() {
       const mRes = await fetch('/api/admin/maintenance')
       const mJson = await mRes.json()
       if (!mJson.error) setMaintenance(!!mJson.maintenance)
-      // Usage analytics is fetched separately by refreshUsage (with its own timestamp).
+
+      // Usage analytics (initial load). Fetched here inside load() so the setState
+      // runs after an await, not synchronously in the effect. The Refresh button
+      // re-pulls via refreshUsage. Non-fatal.
+      const uRes = await fetch('/api/admin/usage')
+      const uJson = await uRes.json()
+      if (!uJson.error) { setUsage(uJson); setUsageAt(new Date().toISOString()) }
     }
     load()
   }, [router])
