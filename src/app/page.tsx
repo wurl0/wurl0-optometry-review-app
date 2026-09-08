@@ -63,6 +63,16 @@ export default async function HomePage() {
   const showCockpitLink = access.tier === 'full'
   const showStaticIndex = isAdmin(access)
 
+  // Admin-only reminder that maintenance mode is on (so it is never left on by
+  // accident). Only the admin queries the flag; everyone else skips it. Fail-safe:
+  // any error leaves it off, so a hiccup never shows a false banner.
+  let maintenanceOn = false
+  if (isAdmin(access)) {
+    const { data: st } = await supabase
+      .from('app_settings').select('maintenance_mode').eq('id', 1).single()
+    maintenanceOn = !!(st as { maintenance_mode?: boolean } | null)?.maintenance_mode
+  }
+
   // Map: subject → { 1: passed, 2: passed, 3: passed }
   const levelMap: Record<string, Record<number, boolean>> = {}
   for (const row of progressRes.data ?? []) {
@@ -119,6 +129,23 @@ export default async function HomePage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-8">
+        {/* Admin-only: maintenance mode is on. Non-admins never see this (and never
+            reach this page while it is on). */}
+        {maintenanceOn && (
+          <div className="mb-5 flex items-center justify-between gap-3 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="inline-block w-2 h-2 rounded-full bg-rose-500 shrink-0" />
+              <span className="text-sm font-semibold text-rose-800 shrink-0">Maintenance mode is ON</span>
+              <span className="text-xs text-rose-700 truncate hidden sm:inline">
+                — non-admins get a 503 outage page. Only you can use the app.
+              </span>
+            </div>
+            <Link href="/admin" className="shrink-0 text-xs font-medium text-rose-700 underline hover:text-rose-900">
+              Turn off
+            </Link>
+          </div>
+        )}
+
         {/* Greeting */}
         <div className="mb-4">
           <h1 className="text-2xl font-bold text-gray-900">Hey {name} 👋</h1>
