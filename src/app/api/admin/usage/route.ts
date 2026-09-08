@@ -79,8 +79,8 @@ export async function GET() {
     if (s(r.type) === 'reading') {
       a.mainReadMins++                                     // one heartbeat ~= one minute reading
       a.lastRead = maxTime(a.lastRead, s(r.created_at))
-    } else {
-      a.pageViews++
+    } else if (s(r.type) !== 'login') {
+      a.pageViews++                                        // login is recency-only (via lastEvent)
     }
   }
 
@@ -118,7 +118,8 @@ export async function GET() {
   // Most-visited pages across everyone (last 30 days).
   const pageAgg = new Map<string, { views: number; users: Set<string> }>()
   for (const r of events) {
-    if (s(r.type) === 'reading') continue   // heartbeats aren't navigations
+    const t = s(r.type)
+    if (t === 'reading' || t === 'login') continue   // heartbeats / login stamps aren't navigations
     const p = s(r.path); if (!p) continue
     let e = pageAgg.get(p); if (!e) { e = { views: 0, users: new Set() }; pageAgg.set(p, e) }
     e.views++; e.users.add(String(r.user_id))
@@ -131,7 +132,12 @@ export async function GET() {
   //  - Top 2 static reviewers (reading_position), labeled by subject letter + section.
   //  - Main-app / React reviewers (reading heartbeats), labeled by the path's subject.
   const emailById = new Map<string, string | null>()
-  for (const p of profiles as Row[]) emailById.set(String(p.user_id), s(p.email))
+  const nameById = new Map<string, string>()
+  for (const p of profiles as Row[]) {
+    const id = String(p.user_id)
+    emailById.set(id, s(p.email))
+    nameById.set(id, s(p.full_name) || s(p.email) || id.slice(0, 8))
+  }
 
   type Read = { source: string; label: string; email: string | null; updatedAt: string | null }
   const readMap = new Map<string, Read>()   // key: user|source|label -> latest
@@ -175,6 +181,7 @@ export async function GET() {
     return [...m.entries()].map(([k, e]) => ({
       surface, subject: label(k), attempts: e.attempts, users: e.users.size,
       avgPct: Math.round(e.sum / e.attempts),
+      who: [...e.users].map(id => nameById.get(id) ?? id).sort(),
     }))
   }
   const mainLabel = (k: string) => mainName.get(k) ?? k

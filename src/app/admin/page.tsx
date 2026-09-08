@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase-client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -53,7 +53,7 @@ type UsageData = {
   users: UsageUser[]
   topPages: { path: string; views: number; users: number }[]
   reading: { source: string; label: string; email: string | null; updatedAt: string | null }[]
-  bySubject: { surface: string; subject: string; attempts: number; users: number; avgPct: number }[]
+  bySubject: { surface: string; subject: string; attempts: number; users: number; avgPct: number; who: string[] }[]
 }
 
 // Compact relative time, e.g. "3h", "2d", "just now".
@@ -356,7 +356,22 @@ export default function AdminPage() {
   const [maintenance, setMaintenance] = useState<boolean | null>(null)
   const [maintBusy, setMaintBusy] = useState(false)
   const [usage, setUsage] = useState<UsageData | null>(null)
+  const [usageAt, setUsageAt] = useState<string | null>(null)
+  const [usageLoading, setUsageLoading] = useState(false)
   const router = useRouter()
+
+  const refreshUsage = useCallback(async () => {
+    setUsageLoading(true)
+    try {
+      const res = await fetch('/api/admin/usage')
+      const json = await res.json()
+      if (!json.error) { setUsage(json); setUsageAt(new Date().toISOString()) }
+    } finally {
+      setUsageLoading(false)
+    }
+  }, [])
+
+  useEffect(() => { refreshUsage() }, [refreshUsage])
 
   // Read/write the tab through window.location rather than useSearchParams, which
   // would force this page under a Suspense boundary to build.
@@ -393,11 +408,7 @@ export default function AdminPage() {
       const mRes = await fetch('/api/admin/maintenance')
       const mJson = await mRes.json()
       if (!mJson.error) setMaintenance(!!mJson.maintenance)
-
-      // Usage analytics. Non-fatal.
-      const uRes = await fetch('/api/admin/usage')
-      const uJson = await uRes.json()
-      if (!uJson.error) setUsage(uJson)
+      // Usage analytics is fetched separately by refreshUsage (with its own timestamp).
     }
     load()
   }, [router])
@@ -586,6 +597,17 @@ export default function AdminPage() {
               Page views need the <code className="bg-gray-100 px-1 rounded">app_events</code> table (see supabase-setup.sql).
             </p>
 
+            <div className="flex items-center gap-3 mb-4">
+              <button
+                onClick={refreshUsage}
+                disabled={usageLoading}
+                className="text-xs font-medium rounded-lg px-3 py-1.5 bg-gray-900 text-white hover:bg-gray-700 disabled:opacity-50"
+              >
+                {usageLoading ? 'Refreshing…' : 'Refresh'}
+              </button>
+              <span className="text-xs text-gray-400">Updated {ago(usageAt)}</span>
+            </div>
+
             {!usage ? (
               <p className="text-gray-400 text-sm">No usage data yet.</p>
             ) : (
@@ -695,17 +717,22 @@ export default function AdminPage() {
                     <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Quizzes by subject (all surfaces)</h3>
                     <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
                       {usage.bySubject.map((b, i) => (
-                        <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm gap-2">
-                          <span className="text-gray-700 truncate min-w-0">
-                            <span className={`text-[10px] px-1 py-0.5 rounded mr-1.5 ${
-                              b.surface === 'Top 2' ? 'bg-indigo-50 text-indigo-600'
-                                : b.surface === 'Practice' ? 'bg-amber-50 text-amber-600'
-                                : 'bg-emerald-50 text-emerald-600'
-                            }`}>{b.surface}</span>
-                            {b.subject}
-                          </span>
-                          <span className="text-gray-400 text-xs tabular-nums shrink-0">{b.attempts} · {b.users}u · avg {b.avgPct}%</span>
-                        </div>
+                        <details key={i} className="px-3 py-1.5 text-sm">
+                          <summary className="flex items-center justify-between gap-2 cursor-pointer list-none">
+                            <span className="text-gray-700 truncate min-w-0">
+                              <span className={`text-[10px] px-1 py-0.5 rounded mr-1.5 ${
+                                b.surface === 'Top 2' ? 'bg-indigo-50 text-indigo-600'
+                                  : b.surface === 'Practice' ? 'bg-amber-50 text-amber-600'
+                                  : 'bg-emerald-50 text-emerald-600'
+                              }`}>{b.surface}</span>
+                              {b.subject}
+                            </span>
+                            <span className="text-gray-400 text-xs tabular-nums shrink-0">{b.attempts} · {b.users}u · avg {b.avgPct}%</span>
+                          </summary>
+                          <div className="text-xs text-gray-500 mt-1.5 pl-1 leading-relaxed">
+                            {b.who.length ? b.who.join(', ') : '—'}
+                          </div>
+                        </details>
                       ))}
                     </div>
                   </div>

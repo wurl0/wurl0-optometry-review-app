@@ -18,6 +18,15 @@ export default function LoginPage() {
     const supabase = createClient()
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) { setError(error.message); setLoading(false); return }
+    // Stamp activity on sign-in so a login counts even if they never click anything.
+    try {
+      fetch('/api/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'login', path: '/login' }),
+        keepalive: true,
+      }).catch(() => {})
+    } catch { /* ignore */ }
     router.push('/')
     router.refresh()
   }
