@@ -71,6 +71,12 @@ function ago(iso: string | null): string {
   if (d < 30) return `${d}d`
   return `${Math.floor(d / 30)}mo`
 }
+
+// No activity in the last 14 days. Kept at module scope so the Date.now read is
+// outside component render (react-hooks/purity), matching ago() above.
+function isIdle(iso: string | null): boolean {
+  return !iso || Date.now() - new Date(iso).getTime() > 14 * 864e5
+}
 const isTab = (v: string | null): v is Tab => TABS.some(t => t.id === v)
 
 // Same wording and colours as the user-facing /readiness page.
@@ -623,7 +629,7 @@ export default function AdminPage() {
                       </thead>
                       <tbody>
                         {usage.users.filter(u => u.approved).map((u, i) => {
-                          const idle = !u.lastActive || Date.now() - new Date(u.lastActive).getTime() > 14 * 864e5
+                          const idle = isIdle(u.lastActive)
                           return (
                             <tr key={i} className="border-b border-gray-50 last:border-0">
                               <td className="px-3 py-2">
