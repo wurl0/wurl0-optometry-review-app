@@ -53,7 +53,7 @@ type UsageData = {
   users: UsageUser[]
   topPages: { path: string; views: number; users: number }[]
   reading: { source: string; label: string; email: string | null; updatedAt: string | null }[]
-  bySubject: { subject: string; attempts: number; users: number; avgPct: number }[]
+  bySubject: { surface: string; subject: string; attempts: number; users: number; avgPct: number }[]
 }
 
 // Compact relative time, e.g. "3h", "2d", "just now".
@@ -692,12 +692,19 @@ export default function AdminPage() {
                 {/* By subject */}
                 {usage.bySubject.length > 0 && (
                   <div>
-                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Exam attempts by subject</h3>
+                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Quizzes by subject (all surfaces)</h3>
                     <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
                       {usage.bySubject.map((b, i) => (
-                        <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm">
-                          <span className="text-gray-700">{b.subject}</span>
-                          <span className="text-gray-400 text-xs tabular-nums">{b.attempts} attempts · {b.users}u · avg {b.avgPct}%</span>
+                        <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm gap-2">
+                          <span className="text-gray-700 truncate min-w-0">
+                            <span className={`text-[10px] px-1 py-0.5 rounded mr-1.5 ${
+                              b.surface === 'Top 2' ? 'bg-indigo-50 text-indigo-600'
+                                : b.surface === 'Practice' ? 'bg-amber-50 text-amber-600'
+                                : 'bg-emerald-50 text-emerald-600'
+                            }`}>{b.surface}</span>
+                            {b.subject}
+                          </span>
+                          <span className="text-gray-400 text-xs tabular-nums shrink-0">{b.attempts} · {b.users}u · avg {b.avgPct}%</span>
                         </div>
                       ))}
                     </div>

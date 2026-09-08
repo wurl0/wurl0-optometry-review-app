@@ -1,6 +1,14 @@
 import { NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase-admin'
 import { createClient } from '@/lib/supabase-server'
+import { SUBJECTS as MAIN_SUBJECTS } from '@/lib/subjects'
+import { SUBJECTS as TOP2_SUBJECTS } from '@/lib/reviewer-manifest'
+
+// Slug/code -> display name, straight from the live registries, so any subject added
+// there is picked up automatically. Unknown keys (a subject in the data but not yet in
+// a registry) fall back to the raw key, so a new subject is never silently dropped.
+const mainName = new Map(MAIN_SUBJECTS.map(x => [x.slug, x.name] as [string, string]))
+const top2Name = new Map(TOP2_SUBJECTS.map(x => [x.code, x.name] as [string, string]))
 
 // Admin Usage dashboard data. Fuses every activity signal the app already records
 // (exam attempts, review sweeps, reviewer reading, and page-view events) into one
@@ -35,8 +43,8 @@ export async function GET() {
   const [profiles, attempts, practice, ole, reviews, readPos, readProg, events] = await Promise.all([
     rowsOf(db.from('profiles').select('user_id, email, full_name, approved, tier, grants, suspended, created_at, last_active')),
     rowsOf(db.from('exam_attempts').select('user_id, subject, percentage, created_at')),
-    rowsOf(db.from('practice_progress').select('user_id, completed_at')),          // main-app practice quizzes
-    rowsOf(db.from('ole_attempts').select('user_id, percentage, created_at')),     // Top 2 exams
+    rowsOf(db.from('practice_progress').select('user_id, subject, percentage, completed_at')),   // main-app practice quizzes
+    rowsOf(db.from('ole_attempts').select('user_id, subject_code, percentage, created_at')),      // Top 2 exams
     rowsOf(db.from('question_reviews').select('user_id, swept_at').not('swept_at', 'is', null)),
     rowsOf(db.from('reading_position').select('user_id, subject, section_title, updated_at')),
     rowsOf(db.from('reading_progress').select('user_id, subject, updated_at')),
@@ -155,16 +163,28 @@ export async function GET() {
   const reading = [...readMap.values()]
     .sort((a, b) => (b.updatedAt ?? '').localeCompare(a.updatedAt ?? '')).slice(0, 40)
 
-  // Attempts by subject.
-  const subjAgg = new Map<string, { attempts: number; users: Set<string>; sum: number }>()
-  for (const r of attempts) {
-    const subj = s(r.subject) ?? '?'
-    let e = subjAgg.get(subj); if (!e) { e = { attempts: 0, users: new Set(), sum: 0 }; subjAgg.set(subj, e) }
-    e.attempts++; e.users.add(String(r.user_id)); e.sum += Number(r.percentage) || 0
+  // Quizzes by subject, broken out per surface and fully data-driven: every distinct
+  // subject value that shows up produces a row, so new subjects appear on their own.
+  const subjectAgg = (rows: Row[], key: string, surface: string, label: (k: string) => string) => {
+    const m = new Map<string, { attempts: number; users: Set<string>; sum: number }>()
+    for (const r of rows) {
+      const k = s(r[key]) ?? '?'
+      let e = m.get(k); if (!e) { e = { attempts: 0, users: new Set(), sum: 0 }; m.set(k, e) }
+      e.attempts++; e.users.add(String(r.user_id)); e.sum += Number(r.percentage) || 0
+    }
+    return [...m.entries()].map(([k, e]) => ({
+      surface, subject: label(k), attempts: e.attempts, users: e.users.size,
+      avgPct: Math.round(e.sum / e.attempts),
+    }))
   }
-  const bySubject = [...subjAgg.entries()]
-    .map(([subject, e]) => ({ subject, attempts: e.attempts, users: e.users.size, avgPct: Math.round(e.sum / e.attempts) }))
-    .sort((a, b) => b.attempts - a.attempts)
+  const mainLabel = (k: string) => mainName.get(k) ?? k
+  const top2Label = (k: string) => top2Name.get(k) ?? k
+  const order: Record<string, number> = { Exam: 0, Practice: 1, 'Top 2': 2 }
+  const bySubject = [
+    ...subjectAgg(attempts, 'subject', 'Exam', mainLabel),
+    ...subjectAgg(practice, 'subject', 'Practice', mainLabel),
+    ...subjectAgg(ole, 'subject_code', 'Top 2', top2Label),
+  ].sort((a, b) => (order[a.surface] - order[b.surface]) || (b.attempts - a.attempts))
 
   return NextResponse.json({ summary, users, topPages, reading, bySubject })
 }
