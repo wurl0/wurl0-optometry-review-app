@@ -43,8 +43,7 @@ const TABS: { id: Tab; label: string }[] = [
 type UsageUser = {
   email: string | null; name: string | null; tier: string
   approved: boolean; suspended: boolean; createdAt: string | null; lastActive: string | null
-  exams: number; reviews: number; readingUpdates: number; subjectsRead: string[]
-  pageViews: number; topPath: string | null
+  quizzes: number; reviews: number; pageViews: number; readMins: number; top2Reads: number
 }
 type UsageData = {
   summary: {
@@ -53,7 +52,7 @@ type UsageData = {
   }
   users: UsageUser[]
   topPages: { path: string; views: number; users: number }[]
-  reading: { email: string | null; subject: string; sectionTitle: string | null; updatedAt: string | null }[]
+  reading: { source: string; label: string; email: string | null; updatedAt: string | null }[]
   bySubject: { subject: string; attempts: number; users: number; avgPct: number }[]
 }
 
@@ -622,9 +621,9 @@ export default function AdminPage() {
                           <th className="px-3 py-2 font-medium">Tier</th>
                           <th className="px-3 py-2 font-medium">Last active</th>
                           <th className="px-3 py-2 font-medium text-right">Views</th>
-                          <th className="px-3 py-2 font-medium text-right">Exams</th>
-                          <th className="px-3 py-2 font-medium text-right">Reviews</th>
-                          <th className="px-3 py-2 font-medium">Reading</th>
+                          <th className="px-3 py-2 font-medium text-right" title="Main-app reviewer reading time (approx minutes)">Read</th>
+                          <th className="px-3 py-2 font-medium text-right" title="Answered quizzes: subject exams, practice, and Top 2 exams">Quizzes</th>
+                          <th className="px-3 py-2 font-medium text-right" title="SRS review / drill answers">Reviews</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -639,9 +638,9 @@ export default function AdminPage() {
                               <td className="px-3 py-2 text-gray-500">{u.tier}{u.suspended && ' · susp'}</td>
                               <td className={`px-3 py-2 ${idle ? 'text-gray-400' : 'text-gray-700'}`}>{ago(u.lastActive)}</td>
                               <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.pageViews || '—'}</td>
-                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.exams || '—'}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.readMins ? `${u.readMins}m` : (u.top2Reads ? '·' : '—')}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.quizzes || '—'}</td>
                               <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.reviews || '—'}</td>
-                              <td className="px-3 py-2 text-gray-500">{u.subjectsRead.length ? u.subjectsRead.join(' ') : '—'}</td>
                             </tr>
                           )
                         })}
@@ -670,15 +669,16 @@ export default function AdminPage() {
 
                   {/* Reading activity */}
                   <div>
-                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Recent reviewer reading</h3>
+                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Recent reviewer reading (Top 2 + main app)</h3>
                     {usage.reading.length === 0 ? (
                       <p className="text-gray-400 text-sm">No reading recorded yet.</p>
                     ) : (
                       <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
                         {usage.reading.map((r, i) => (
                           <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm gap-2">
-                            <span className="text-gray-700 truncate">
-                              <span className="font-medium">{r.subject}</span>
+                            <span className="text-gray-700 truncate min-w-0">
+                              <span className={`text-[10px] px-1 py-0.5 rounded mr-1.5 ${r.source === 'Top 2' ? 'bg-indigo-50 text-indigo-600' : 'bg-emerald-50 text-emerald-600'}`}>{r.source}</span>
+                              <span className="font-medium">{r.label}</span>
                               <span className="text-gray-400"> · {r.email ?? '—'}</span>
                             </span>
                             <span className="text-gray-400 text-xs shrink-0">{ago(r.updatedAt)}</span>
