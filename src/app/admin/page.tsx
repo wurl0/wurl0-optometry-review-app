@@ -32,12 +32,45 @@ const GLOBAL_ITEMS = ITEMS.filter(i => i.subject === 'GLOBAL')
 const shortLabel = (label: string) => label.split(' — ')[1] ?? label
 
 // Three different kinds of work: a queue you empty, a registry you edit, a report you read.
-type Tab = 'approvals' | 'access' | 'readiness'
+type Tab = 'approvals' | 'access' | 'readiness' | 'usage'
 const TABS: { id: Tab; label: string }[] = [
   { id: 'approvals', label: 'Approvals' },
   { id: 'access', label: 'Access' },
   { id: 'readiness', label: 'Readiness' },
+  { id: 'usage', label: 'Usage' },
 ]
+
+type UsageUser = {
+  email: string | null; name: string | null; tier: string
+  approved: boolean; suspended: boolean; createdAt: string | null; lastActive: string | null
+  exams: number; reviews: number; readingUpdates: number; subjectsRead: string[]
+  pageViews: number; topPath: string | null
+}
+type UsageData = {
+  summary: {
+    signups: number; approved: number; hasAccess: number; everActive: number
+    active24h: number; active7d: number; active30d: number
+  }
+  users: UsageUser[]
+  topPages: { path: string; views: number; users: number }[]
+  reading: { email: string | null; subject: string; sectionTitle: string | null; updatedAt: string | null }[]
+  bySubject: { subject: string; attempts: number; users: number; avgPct: number }[]
+}
+
+// Compact relative time, e.g. "3h", "2d", "just now".
+function ago(iso: string | null): string {
+  if (!iso) return 'never'
+  const ms = Date.now() - new Date(iso).getTime()
+  if (ms < 0) return 'just now'
+  const m = Math.floor(ms / 60000)
+  if (m < 1) return 'just now'
+  if (m < 60) return `${m}m`
+  const h = Math.floor(m / 60)
+  if (h < 24) return `${h}h`
+  const d = Math.floor(h / 24)
+  if (d < 30) return `${d}d`
+  return `${Math.floor(d / 30)}mo`
+}
 const isTab = (v: string | null): v is Tab => TABS.some(t => t.id === v)
 
 // Same wording and colours as the user-facing /readiness page.
@@ -317,6 +350,7 @@ export default function AdminPage() {
   const [error, setError] = useState('')
   const [maintenance, setMaintenance] = useState<boolean | null>(null)
   const [maintBusy, setMaintBusy] = useState(false)
+  const [usage, setUsage] = useState<UsageData | null>(null)
   const router = useRouter()
 
   // Read/write the tab through window.location rather than useSearchParams, which
@@ -354,6 +388,11 @@ export default function AdminPage() {
       const mRes = await fetch('/api/admin/maintenance')
       const mJson = await mRes.json()
       if (!mJson.error) setMaintenance(!!mJson.maintenance)
+
+      // Usage analytics. Non-fatal.
+      const uRes = await fetch('/api/admin/usage')
+      const uJson = await uRes.json()
+      if (!uJson.error) setUsage(uJson)
     }
     load()
   }, [router])
@@ -528,6 +567,136 @@ export default function AdminPage() {
             ) : (
               <div className="space-y-2">
                 {readiness.map(u => <ReadinessCard key={u.userId} u={u} />)}
+              </div>
+            )}
+          </section>
+        )}
+
+        {tab === 'usage' && (
+          <section>
+            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-1">Usage</h2>
+            <p className="text-xs text-gray-400 mb-4">
+              Activity across everything: exams, review sweeps, reviewer reading, and page views.
+              &ldquo;Active&rdquo; counts anyone who did any of these, so reading counts even with no exams.
+              Page views need the <code className="bg-gray-100 px-1 rounded">app_events</code> table (see supabase-setup.sql).
+            </p>
+
+            {!usage ? (
+              <p className="text-gray-400 text-sm">No usage data yet.</p>
+            ) : (
+              <div className="space-y-6">
+                {/* Summary */}
+                <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+                  {([
+                    ['Active 24h', usage.summary.active24h],
+                    ['Active 7d', usage.summary.active7d],
+                    ['Active 30d', usage.summary.active30d],
+                    ['Ever active', usage.summary.everActive],
+                    ['Signups', usage.summary.signups],
+                    ['Approved', usage.summary.approved],
+                    ['Has Top 2', usage.summary.hasAccess],
+                  ] as [string, number][]).map(([label, val]) => (
+                    <div key={label} className="bg-white border border-gray-200 rounded-lg px-3 py-2">
+                      <div className="text-lg font-bold text-gray-900">{val}</div>
+                      <div className="text-xs text-gray-500">{label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Per-user behavior */}
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">
+                    Per user — {usage.users.filter(u => u.approved).length} approved, by last active
+                  </h3>
+                  <div className="overflow-x-auto border border-gray-200 rounded-lg bg-white">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="text-left text-xs text-gray-400 border-b border-gray-100">
+                          <th className="px-3 py-2 font-medium">User</th>
+                          <th className="px-3 py-2 font-medium">Tier</th>
+                          <th className="px-3 py-2 font-medium">Last active</th>
+                          <th className="px-3 py-2 font-medium text-right">Views</th>
+                          <th className="px-3 py-2 font-medium text-right">Exams</th>
+                          <th className="px-3 py-2 font-medium text-right">Reviews</th>
+                          <th className="px-3 py-2 font-medium">Reading</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {usage.users.filter(u => u.approved).map((u, i) => {
+                          const idle = !u.lastActive || Date.now() - new Date(u.lastActive).getTime() > 14 * 864e5
+                          return (
+                            <tr key={i} className="border-b border-gray-50 last:border-0">
+                              <td className="px-3 py-2">
+                                <div className="text-gray-900">{u.name || u.email || '—'}</div>
+                                {u.name && u.email && <div className="text-xs text-gray-400">{u.email}</div>}
+                              </td>
+                              <td className="px-3 py-2 text-gray-500">{u.tier}{u.suspended && ' · susp'}</td>
+                              <td className={`px-3 py-2 ${idle ? 'text-gray-400' : 'text-gray-700'}`}>{ago(u.lastActive)}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.pageViews || '—'}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.exams || '—'}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.reviews || '—'}</td>
+                              <td className="px-3 py-2 text-gray-500">{u.subjectsRead.length ? u.subjectsRead.join(' ') : '—'}</td>
+                            </tr>
+                          )
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-6">
+                  {/* Top pages */}
+                  <div>
+                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Most-visited pages (30d)</h3>
+                    {usage.topPages.length === 0 ? (
+                      <p className="text-gray-400 text-sm">No page views recorded yet.</p>
+                    ) : (
+                      <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
+                        {usage.topPages.map((p, i) => (
+                          <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm">
+                            <span className="text-gray-700 truncate mr-2">{p.path}</span>
+                            <span className="text-gray-400 text-xs shrink-0 tabular-nums">{p.views} · {p.users}u</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Reading activity */}
+                  <div>
+                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Recent reviewer reading</h3>
+                    {usage.reading.length === 0 ? (
+                      <p className="text-gray-400 text-sm">No reading recorded yet.</p>
+                    ) : (
+                      <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
+                        {usage.reading.map((r, i) => (
+                          <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm gap-2">
+                            <span className="text-gray-700 truncate">
+                              <span className="font-medium">{r.subject}</span>
+                              <span className="text-gray-400"> · {r.email ?? '—'}</span>
+                            </span>
+                            <span className="text-gray-400 text-xs shrink-0">{ago(r.updatedAt)}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* By subject */}
+                {usage.bySubject.length > 0 && (
+                  <div>
+                    <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Exam attempts by subject</h3>
+                    <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
+                      {usage.bySubject.map((b, i) => (
+                        <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm">
+                          <span className="text-gray-700">{b.subject}</span>
+                          <span className="text-gray-400 text-xs tabular-nums">{b.attempts} attempts · {b.users}u · avg {b.avgPct}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </section>

@@ -48,3 +48,26 @@ drop policy if exists "anyone can read app settings" on app_settings;
 create policy "anyone can read app settings" on app_settings for select using (true);
 -- Writes go only through the service role (the /api/admin/maintenance route),
 -- which bypasses RLS, so no insert/update policy is granted here.
+
+-- ---------------------------------------------------------------------------
+-- Usage analytics: a "last active" stamp + a lightweight page-view event log,
+-- read by the admin Usage tab. Reading of the static /top2 reviewers is already
+-- captured in reading_position/reading_progress; this fills in the React pages.
+-- ---------------------------------------------------------------------------
+alter table profiles add column if not exists last_active timestamptz;
+
+create table if not exists app_events (
+  id bigint generated always as identity primary key,
+  user_id uuid not null,
+  type text not null,            -- currently 'page_view'
+  path text,                     -- route only, query strings stripped
+  meta jsonb,
+  created_at timestamptz not null default now()
+);
+create index if not exists app_events_user_time on app_events (user_id, created_at desc);
+create index if not exists app_events_time_idx on app_events (created_at desc);
+
+alter table app_events enable row level security;
+-- Users may log their own events; reads happen admin-side through the service role.
+drop policy if exists "insert own events" on app_events;
+create policy "insert own events" on app_events for insert with check (auth.uid() = user_id);
