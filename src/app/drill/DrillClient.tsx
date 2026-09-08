@@ -87,6 +87,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
         added: t.added + r.added,
         advanced: t.advanced + r.advanced,
         reset: t.reset + r.reset,
+        reviewAccess: r.reviewAccess ?? t.reviewAccess,
       }))
     })
   }, [])
@@ -213,7 +214,7 @@ export default function DrillClient({ pool, dueCount }: Props) {
             </p>
           </div>
 
-          {(srsTotals.added > 0 || srsTotals.reset > 0 || srsTotals.advanced > 0) && (
+          {srsTotals.reviewAccess && (srsTotals.added > 0 || srsTotals.reset > 0 || srsTotals.advanced > 0) && (
             <Link href="/review" className="block bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 hover:bg-gray-800 transition-colors">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🧠</span>

@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase-server'
 import { questionId, schedule, todayStr, type QuestionPayload } from '@/lib/srs'
-import { loadAccess, canServeCard } from '@/lib/access'
+import { loadAccess, canServeCard, canOpenItem } from '@/lib/access'
+import { ITEM_BY_ID, REVIEW_ITEM_ID } from '@/lib/reviewer-manifest'
 
 // Harvests a finished session's results into the review queue.
 //
@@ -46,6 +47,11 @@ export async function POST(req: NextRequest) {
   // currently open. Same rule the pages serve by: nothing enters the queue that /review
   // would then refuse to show.
   const access = await loadAccess(supabase, user)
+  // Whether this user can actually open /review. The clients use this to decide whether
+  // to show the "added to your review queue" prompt: cards may still be recorded (and
+  // re-authorised on serve), but the prompt must not point at a page /review will bounce.
+  const reviewItem = ITEM_BY_ID.get(REVIEW_ITEM_ID)
+  const reviewAccess = !!reviewItem && canOpenItem(access, reviewItem)
 
   // Validate and key each item by its stem hash, dropping anything malformed.
   const clean = new Map<string, { subject: string; source: string; payload: QuestionPayload; wasCorrect: boolean }>()
@@ -71,7 +77,7 @@ export async function POST(req: NextRequest) {
       },
     })
   }
-  if (!clean.size) return NextResponse.json({ added: 0, advanced: 0, reset: 0 })
+  if (!clean.size) return NextResponse.json({ added: 0, advanced: 0, reset: 0, reviewAccess })
 
   const ids = [...clean.keys()]
   const { data: existing } = await supabase
@@ -145,7 +151,7 @@ export async function POST(req: NextRequest) {
     })
   }
 
-  if (!rows.length) return NextResponse.json({ added: 0, advanced: 0, reset: 0 })
+  if (!rows.length) return NextResponse.json({ added: 0, advanced: 0, reset: 0, reviewAccess })
 
   const { error } = await supabase
     .from('question_reviews')
@@ -156,5 +162,5 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Save failed' }, { status: 500 })
   }
 
-  return NextResponse.json({ added, advanced, reset })
+  return NextResponse.json({ added, advanced, reset, reviewAccess })
 }

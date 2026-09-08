@@ -9,6 +9,7 @@ export interface RecordResult {
   added: number     // new cards entering the queue
   advanced: number  // due cards recalled correctly here, moved up a rung
   reset: number     // cards already in the queue, missed again
+  reviewAccess?: boolean  // whether this user can open /review (gates the post-session prompt)
 }
 
 export interface RecordItem {

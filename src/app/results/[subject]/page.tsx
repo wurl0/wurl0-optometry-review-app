@@ -103,8 +103,9 @@ export default function ResultsPage() {
           </div>
         </div>
 
-        {/* Review queue — what this exam fed into spaced repetition */}
-        {srs && (srs.added > 0 || srs.reset > 0 || srs.advanced > 0) && (
+        {/* Review queue — what this exam fed into spaced repetition. Only shown to users
+            who can actually open /review; others still have misses recorded silently. */}
+        {srs && srs.reviewAccess && (srs.added > 0 || srs.reset > 0 || srs.advanced > 0) && (
           <Link href="/review" className="block bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 mb-3 hover:bg-gray-800 transition-colors">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🧠</span>
