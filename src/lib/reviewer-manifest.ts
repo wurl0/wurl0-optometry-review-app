@@ -109,6 +109,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.practical-exam-guide', subject: 'GLOBAL', type: 'tool', label: 'Practical Exam Guide',
     sub: 'Perform-and-say scripts for all 5 practical stations, with the examiner Q&A',
     path: '/top2/00-Master-Index/Practical-Exam-Guide.html' },
+  { id: 'tool.daily-queue', subject: 'GLOBAL', type: 'tool', label: 'Daily Queue',
+    sub: 'Day-by-day tickets to the exam; opens the exact exam or review queue, weak-three weighted',
+    path: '/top2/00-Master-Index/Daily-Queue.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
