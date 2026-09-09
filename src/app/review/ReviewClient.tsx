@@ -12,7 +12,10 @@ interface Props {
   queueTotal: number
   solidTotal: number
   dueTotal: number
+  size: string
 }
+
+const SESSION_SIZES = ['30', '60', 'all'] as const
 
 type Phase = 'playing' | 'done'
 
@@ -30,7 +33,7 @@ const SOURCE_LABEL: Record<string, string> = {
   'mock': 'Mock board',
 }
 
-export default function ReviewClient({ cards, labels, queueTotal, solidTotal, dueTotal }: Props) {
+export default function ReviewClient({ cards, labels, queueTotal, solidTotal, dueTotal, size }: Props) {
   const router = useRouter()
   const [phase, setPhase] = useState<Phase>('playing')
   const [current, setCurrent] = useState(0)
@@ -222,6 +225,19 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
             <span className="text-base leading-none">🧠</span>
             <span className="text-xs font-semibold text-gray-900">Review Queue</span>
             <span className="text-xs text-gray-400">· {current + 1} of {cards.length} due</span>
+            <div className="ml-auto flex items-center gap-1" title="How many due cards per session">
+              {SESSION_SIZES.map(s => (
+                <Link
+                  key={s}
+                  href={`/review?size=${s}`}
+                  className={`text-[11px] leading-none px-2 py-1 rounded-md font-semibold transition-colors ${
+                    size === s ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                  }`}
+                >
+                  {s === 'all' ? 'All' : s}
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
             <div className="h-full bg-gray-900 rounded-full transition-all" style={{ width: `${pct}%` }} />

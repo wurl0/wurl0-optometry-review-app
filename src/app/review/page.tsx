@@ -8,7 +8,12 @@ import ReviewClient from './ReviewClient'
 
 // The queue is drawn interleaved across subjects rather than grouped: switching subjects
 // forces a re-read of which rules apply, which is the point of the drill.
-const SESSION_CAP = 30
+//
+// Session size is user-chosen via the ?size= picker on the page. 30 keeps the original
+// small-batch feel (the default), 60 is the common double-pass in one go, 'all' clears
+// everything due (bounded to a sane max so one sitting can't pull thousands).
+const SESSION_SIZES: Record<string, number> = { '30': 30, '60': 60, all: 400 }
+const DEFAULT_SIZE = '30'
 
 interface Row {
   question_id: string
@@ -21,7 +26,7 @@ interface Row {
   lapses: number
 }
 
-export default async function ReviewPage() {
+export default async function ReviewPage({ searchParams }: { searchParams: Promise<{ size?: string }> }) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -33,6 +38,10 @@ export default async function ReviewPage() {
   const item = ITEM_BY_ID.get(REVIEW_ITEM_ID)
   if (!item || !canOpenItem(access, item)) redirect('/')
 
+  const sp = await searchParams
+  const size = sp?.size && sp.size in SESSION_SIZES ? sp.size : DEFAULT_SIZE
+  const cap = SESSION_SIZES[size] ?? SESSION_SIZES[DEFAULT_SIZE]
+
   const [{ data: dueRows }, { data: allRows }] = await Promise.all([
     supabase
       .from('question_reviews')
@@ -41,7 +50,7 @@ export default async function ReviewPage() {
       .eq('retired', false)
       .lte('due_on', today)
       .order('due_on', { ascending: true })
-      .limit(SESSION_CAP * 2), // headroom: some may be filtered out below
+      .limit(cap * 2), // headroom: some may be filtered out below
     // Counted in JS rather than by the database, because the totals have to be filtered
     // by the same access rule as the cards. A count that disagrees with what the page
     // serves is worse than no count.
@@ -55,7 +64,7 @@ export default async function ReviewPage() {
   // produced it, so a revoked grant must stop serving its questions here too.
   const rows = ((dueRows ?? []) as Row[])
     .filter(r => canServeCard(access, r.subject, r.source))
-    .slice(0, SESSION_CAP)
+    .slice(0, cap)
 
   const servable = ((allRows ?? []) as
     { subject: string; source: string; due_on: string; retired: boolean; swept_at: string | null }[])
@@ -139,11 +148,13 @@ export default async function ReviewPage() {
 
   return (
     <ReviewClient
+      key={size}
       cards={interleaved}
       labels={labels}
       queueTotal={queueCount}
       solidTotal={solidCount}
       dueTotal={dueTotal}
+      size={size}
     />
   )
 }
