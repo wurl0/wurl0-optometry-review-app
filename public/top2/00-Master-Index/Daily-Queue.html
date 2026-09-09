@@ -446,11 +446,32 @@ function refresh(){
   } else { todayLine = (todayMid.getTime()>EXAM.getTime()) ? "Today: exam window" : "Today: not started yet"; }
   const dLeft=Math.max(0,Math.round((EXAM-todayMid)/DAYMS));
   const pct=total?Math.round(closed/total*100):0;
-  const snapTxt=
+  let snapTxt=
     "FoqusLab Daily Queue — "+MO[todayMid.getMonth()]+" "+todayMid.getDate()+" · D-"+dLeft+"\n"+
     todayLine+"\n"+
     "This week (floors): "+wk+"/"+wkTot+"\n"+
     "Overall: "+closed+"/"+total+" ("+pct+"%) · streak "+streak+"d";
+  // Outstanding: uncleared tickets on days up to and including today (the backlog).
+  let outLines=[], outCount=0;
+  for(let i=0;i<days.length;i++){
+    const d=days[i];
+    if(d.dt.getTime()>todayMid.getTime()) break;   // chronological; stop after today
+    if(d.phase==="rest"||d.phase==="exam") continue;
+    const miss=[];
+    for(let j=0;j<d.tix.length;j++){
+      if(store[i+"_"+j]!==true){ let x=String(d.tix[j].txt).replace(/<[^>]*>/g,""); if(x.length>70) x=x.slice(0,67)+"..."; miss.push(x); }
+    }
+    if(miss.length){ outCount+=miss.length; const isT=d.dt.getTime()===todayMid.getTime(); outLines.push(MO[d.dt.getMonth()]+" "+d.dt.getDate()+" (D-"+d.toExam+(isT?", today":"")+"): "+miss.join("; ")); }
+  }
+  let extra=0; if(outLines.length>20){ extra=outLines.length-20; outLines=outLines.slice(outLines.length-20); }
+  if(outCount){
+    const dayN=outLines.length+extra;
+    snapTxt += "\n\nNot cleared through today ("+outCount+" item"+(outCount>1?"s":"")+", "+dayN+" day"+(dayN>1?"s":"")+"):";
+    if(extra) snapTxt += "\n(+"+extra+" earlier day"+(extra>1?"s":"")+" not shown)";
+    snapTxt += "\n"+outLines.join("\n");
+  } else {
+    snapTxt += "\n\nNot cleared through today: none, caught up";
+  }
   const snEl=document.getElementById("snap"); if(snEl) snEl.textContent=snapTxt;
 }
 
