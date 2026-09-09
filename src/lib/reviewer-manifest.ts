@@ -112,6 +112,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.daily-queue', subject: 'GLOBAL', type: 'tool', label: 'Daily Queue',
     sub: 'Day-by-day tickets to the exam; opens the exact exam or review queue, weak-three weighted',
     path: '/top2/00-Master-Index/Daily-Queue.html' },
+  { id: 'tool.subjective-oep-guide', subject: 'GLOBAL', type: 'tool', label: 'Subjective Refraction & OEP Strategy',
+    sub: 'Step-by-step strategy card: fog-to-retina refraction + the 21-point OEP archetypes, with board traps and the examiner Q&A',
+    path: '/top2/00-Master-Index/Subjective-Refraction-OEP-Guide.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.

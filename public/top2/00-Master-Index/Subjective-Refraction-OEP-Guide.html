@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Subjective Refraction &amp; OEP Strategy</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:64ch;margin:0;}
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+  h3{font-size:16.5px;margin:20px 0 4px;letter-spacing:-.01em;}
+  h3 .tag{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--accent);letter-spacing:.06em;margin-right:7px;}
+  p{margin:0 0 13px;} .lead{font-size:15.5px;} .term{color:var(--accent-deep);font-weight:650;} b{color:var(--ink);}
+  /* step block */
+  .step{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:15px 17px;margin:0 0 13px;box-shadow:var(--shadow);}
+  .step h3{margin:0 0 6px;}
+  .step .pic{font-size:13.7px;color:var(--why);background:var(--why-w);border:1px solid color-mix(in srgb,var(--why) 28%,var(--line));border-radius:9px;padding:8px 11px;margin:0 0 8px;}
+  .step .pic b{color:var(--why);}
+  .step .do{font-size:13.9px;margin:0 0 7px;} .step .do b{color:var(--ink);}
+  .step .tp{font-size:13.2px;color:var(--trap);background:var(--trap-w);border:1px solid color-mix(in srgb,var(--trap) 28%,var(--line));border-radius:9px;padding:8px 11px;margin:0;}
+  .step .tp b{color:var(--trap);}
+  /* callouts */
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
+  .cal p{margin:0 0 8px;} .cal p:last-child{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);margin:0 0 13px;}
+  .fig svg{width:100%;height:auto;display:block;} .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);margin:0 0 13px;}
+  table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:460px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;} .rx{color:var(--accent-deep);font-weight:600;}
+  .ask{font-size:13.4px;background:var(--why-w);border:1px solid color-mix(in srgb,var(--why) 28%,var(--line));border-radius:10px;padding:11px 14px;margin:0 0 11px;}
+  .ask .lab{font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--why);font-weight:700;display:block;margin-bottom:5px;}
+  .ask ol{margin:0;padding-left:18px;} .ask li{margin:4px 0;} .ask b{color:var(--ink);}
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;} .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);} ol.srs .a{color:var(--ink-soft);} ol.srs .a::before{content:"→ ";color:var(--accent);}
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;}
+  .toc a{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;text-decoration:none;color:var(--accent-deep);background:var(--accent-wash);border:1px solid color-mix(in srgb,var(--accent) 28%,var(--line));border-radius:8px;padding:6px 10px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Subjective Refraction &amp; OEP</div>
+    </div>
+    <div class="card-no">Strategy<b>7+21</b>steps</div>
+  </header>
+
+  <h1>Subjective refraction &amp; OEP: the <em>step strategy</em></h1>
+  <p class="dek">You do not memorise 28 disconnected steps. You learn <b>two mental models</b> and hang everything on them. Subjective refraction is one loop repeated per eye. OEP phorometry is one number you draw, and it is always one of four shapes. This card walks each step with a picture, the move, and the trap, then arms you for the examiner's five questions.</p>
+
+  <div class="toc">
+    <a href="#m">The 2 mental models</a>
+    <a href="#sr">Subjective 7 steps</a>
+    <a href="#bal">Balance</a>
+    <a href="#oep">OEP 21</a>
+    <a href="#traps">Board traps</a>
+    <a href="#ask">The 5 they ask</a>
+    <a href="#paper">On paper</a>
+    <a href="#srs">Recall deck</a>
+  </div>
+
+  <!-- MENTAL MODELS -->
+  <section id="m">
+    <h2><span class="n">00</span> The two mental models</h2>
+
+    <div class="cal why">
+      <div class="lab">Model 1 — Subjective refraction = "fog, then peel to the retina"</div>
+      <p>Plain version: you deliberately make the eye a little short-sighted with plus lenses so it stops trying to focus (accommodation relaxes). Then you peel the plus away slowly until the sharpest image sits exactly on the retina at 20/20. Everything plus-heavy is on purpose, so you never accidentally hand out too much minus.</p>
+      <p>The clinical term for that relaxed-and-parked state: the far point is placed at optical infinity with accommodation relaxed.</p>
+    </div>
+    <div class="cal why">
+      <div class="lab">Model 2 — OEP = "draw a number, name its shape"</div>
+      <p>The 21-point exam feels huge until you see that every test you could draw is one of four shapes: a <b>lateral phoria</b>, a <b>vertical phoria</b>, a <b>horizontal vergence</b>, or an <b>accommodation</b> test. Name the shape and the prisms, endpoint, and recording fall out automatically. You are not memorising 21 things, you are memorising four patterns and a table of normal values.</p>
+    </div>
+    <div class="cal mnem">
+      <div class="lab">The 4-step spine of the refraction (say it as one breath)</div>
+      <p><b>Best sphere &rarr; cylinder &rarr; sphere refine &rarr; balance.</b> Fog and defog find the sphere; the astigmatic dial and JCC find the cylinder; the duochrome refines the sphere; then you balance the two eyes. Four beats, repeated for each eye.</p>
+    </div>
+  </section>
+
+  <!-- SUBJECTIVE 7 STEPS -->
+  <section id="sr">
+    <h2><span class="n">01</span> Subjective refraction, step by step</h2>
+    <p class="lead">Card facts to say up front: distance 6 m / 20 ft, target 20/20 Snellen, lenses in place = VT#4 gross (retinoscopy) or the autorefractor result, illumination 20 ft-candle, endpoint = maximum plus to 20/20. Start OD, occlude OS.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Fog puts the image in front of the retina">
+        <line x1="60" y1="80" x2="470" y2="80" stroke="var(--line)" stroke-width="2"/>
+        <path d="M470,30 Q560,80 470,130" fill="none" stroke="var(--ink-soft)" stroke-width="2.5"/>
+        <text x="470" y="20" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui">retina</text>
+        <circle cx="360" cy="80" r="9" fill="var(--why)"/>
+        <text x="360" y="108" text-anchor="middle" font-size="11" fill="var(--why)" font-family="system-ui">fogged: focus IN FRONT</text>
+        <circle cx="468" cy="80" r="8" fill="var(--accent)"/>
+        <text x="468" y="108" text-anchor="middle" font-size="11" fill="var(--accent-deep)" font-family="system-ui">endpoint: ON retina</text>
+      </svg>
+      <figcaption>fog makes the eye artificially myopic, so accommodation lets go; then you peel plus to land on the retina</figcaption>
+    </figure>
+
+    <div class="step">
+      <h3><span class="tag">1</span>Fog (find best sphere, part 1)</h3>
+      <p class="pic"><b>Picture:</b> pile plus in front of the eye until the biggest letter goes fully blurry. You have pushed the image well in front of the retina. The eye gives up focusing.</p>
+      <p class="do"><b>Do:</b> add plus lenses until the largest letter is totally blurred.</p>
+      <p class="tp"><b>Trap:</b> not fogging enough. If you never fully blur, accommodation is still active and every later step drifts toward over-minus.</p>
+    </div>
+    <div class="step">
+      <h3><span class="tag">2</span>Unfog / defog (best sphere, part 2)</h3>
+      <p class="pic"><b>Picture:</b> peel the plus back one click at a time; the image walks backward toward the retina and the letters sharpen.</p>
+      <p class="do"><b>Do:</b> reduce plus in 0.25 steps up to the best visual acuity (20/20).</p>
+      <p class="tp"><b>Trap:</b> overshooting into minus. Stop at the <b>most plus / least minus</b> that still gives 20/20. Extra minus looks sharp for a second, then the patient is accommodating to clear your over-minus.</p>
+    </div>
+    <div class="step">
+      <h3><span class="tag">3</span>Ideal fog before the dial</h3>
+      <p class="pic"><b>Picture:</b> nudge the image just off the retina again so the astigmatic dial's spokes separate cleanly.</p>
+      <p class="do"><b>Do:</b> add <b>+0.25 to +0.75</b> to blur about 2 lines above the best VA, then show the astigmatic (clock) dial.</p>
+      <p class="tp"><b>Trap:</b> going to the dial with no fog. Without the deliberate small blur the spokes look equal and you miss the cylinder.</p>
+    </div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 190" role="img" aria-label="Astigmatic clock dial: the blackest line, and axis 90 degrees away">
+        <circle cx="150" cy="95" r="70" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+        <g stroke="var(--ink-soft)" stroke-width="2"><line x1="150" y1="25" x2="150" y2="165"/><line x1="80" y1="95" x2="220" y2="95"/><line x1="100" y1="45" x2="200" y2="145"/><line x1="200" y1="45" x2="100" y2="145"/></g>
+        <line x1="80" y1="95" x2="220" y2="95" stroke="var(--trap)" stroke-width="4.5"/>
+        <text x="150" y="182" text-anchor="middle" font-size="11" fill="var(--trap)" font-family="system-ui">blackest line (3-9 o'clock)</text>
+        <g font-family="system-ui"><text x="340" y="60" font-size="13" font-weight="700" fill="var(--ink)">Blackest line = the POWER meridian</text>
+        <text x="340" y="84" font-size="12.5" fill="var(--ink-soft)">Minus-cyl AXIS sits 90&deg; away from it.</text>
+        <text x="340" y="112" font-size="12.5" fill="var(--ink-soft)">Clock shortcut (rule of 30): lowest of</text>
+        <text x="340" y="130" font-size="12.5" fill="var(--ink-soft)">the darkest numbers &times; 30 = axis.</text>
+        <text x="340" y="158" font-size="12.5" fill="var(--accent-deep)" font-weight="600">Every &minus;0.50 cyl &rarr; add +0.25 sphere.</text></g>
+      </svg>
+      <figcaption>the line that looks blackest is the power meridian, not the axis</figcaption>
+    </figure>
+
+    <div class="step">
+      <h3><span class="tag">4</span>Cylinder from the astigmatic dial</h3>
+      <p class="pic"><b>Picture:</b> one set of spokes looks darker and sharper because the eye focuses that meridian better. That dark line points along the power, so the correcting minus-cyl axis lies across it, 90&deg; away.</p>
+      <p class="do"><b>Tentative axis:</b> 90&deg; from the blackest line (or clock rule of 30). <b>Tentative power:</b> add minus cylinder until all spokes are equally dark; for <b>every &minus;0.50 cyl add +0.25 sphere</b> to keep the circle of least confusion on the retina. Target 2 lines above best VA.</p>
+      <p class="tp"><b>Trap:</b> confusing power meridian with axis. The dark line is the <b>power meridian</b>. If asked "is the dark line the axis?" the answer is no.</p>
+    </div>
+
+    <div class="step">
+      <h3><span class="tag">5</span>Refine cylinder with the JCC</h3>
+      <p class="pic"><b>Picture:</b> the cross-cylinder is a tiny flip-lens with a <b>red dot (minus axis)</b> and a white/green dot (plus axis). You flip it and ask "one or two, which is clearer?" and chase the clearer side.</p>
+      <p class="do"><b>Axis first:</b> put the JCC <b>handle on the tentative axis</b>, flip, ask preference, <b>rotate 5&deg; toward the red</b> of the preferred side (max 15&deg;). <b>Power next:</b> put the <b>red dot on the refined axis</b>, flip, ask; <b>red dot on axis = add cyl, white/green on axis = subtract cyl</b> (keep +0.25 sph per &minus;0.50 cyl).</p>
+      <p class="tp"><b>Trap:</b> if the axis never equalises even past 15&deg;, your fog was wrong, go back. And red dot = minus, always.</p>
+    </div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 130" role="img" aria-label="Duochrome red and green relative to the retina">
+        <line x1="60" y1="70" x2="580" y2="70" stroke="var(--line)" stroke-width="2"/>
+        <path d="M300,25 Q430,70 300,115" fill="none" stroke="var(--ink-soft)" stroke-width="2.5"/>
+        <text x="300" y="18" text-anchor="middle" font-size="11" fill="var(--ink-soft)" font-family="system-ui">retina</text>
+        <circle cx="210" cy="70" r="12" fill="#2ea043"/><text x="210" y="98" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">GREEN in front</text>
+        <circle cx="300" cy="70" r="12" fill="#d4a017"/><text x="300" y="98" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">yellow on retina</text>
+        <circle cx="390" cy="70" r="12" fill="#c0392b"/><text x="390" y="98" text-anchor="middle" font-size="11" fill="var(--ink)" font-family="system-ui">RED behind</text>
+      </svg>
+      <figcaption>duochrome = transverse chromatic aberration; you steer yellow onto the retina</figcaption>
+    </figure>
+
+    <div class="step">
+      <h3><span class="tag">6</span>Refine sphere with the duochrome</h3>
+      <p class="pic"><b>Picture:</b> the eye focuses green slightly in front of the retina and red slightly behind. Whichever side the letters look bolder tells you which way the focus has drifted.</p>
+      <p class="do"><b>Do:</b> ask if red and green letters are equally bold. Bolder on <b>red &rarr; add minus</b>. Bolder on <b>green &rarr; add plus</b>. Endpoint = equal. Then unfog to best VA and <b>repeat the whole loop on OS</b>.</p>
+      <p class="tp"><b>Trap:</b> reversing the direction. Hook it as <b>RAM-GAP</b>: <b>R</b>ed <b>A</b>dd <b>M</b>inus, <b>G</b>reen <b>A</b>dd <b>P</b>lus. (Over-corrected myope sees green; under-corrected myope sees red.)</p>
+    </div>
+  </section>
+
+  <!-- BALANCE -->
+  <section id="bal">
+    <h2><span class="n">02</span> Binocular balance (step 7)</h2>
+    <p class="lead">Balance equalises accommodation between the two eyes. It is the <b>last</b> step and only when both eyes reach about 20/20.</p>
+    <div class="cal trap">
+      <div class="lab">When you do NOT balance</div>
+      <p>Skip balancing if the two eyes cannot be compared fairly: <b>amblyopia, suppression, one eye only, ocular pathology, or a presbyope</b>. Examiners love this one.</p>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>Method</th><th>Setup</th><th>Endpoint</th></tr></thead>
+      <tbody>
+        <tr><td><b>Prism dissociation</b></td><td>Fog +0.50 to +0.75 OU; <b>3&Delta; BD over OD, 3&Delta; BU over OS</b>; view 2 lines above best (20/30)</td><td>Add +0.25 to the <b>clearer</b> eye until both equal</td></tr>
+        <tr><td><b>Turville (TIB)</b></td><td>+0.50 OU, septum splits the chart</td><td>Add +0.25 to the clearer eye until equal</td></tr>
+        <tr><td><b>Alternate occlusion</b></td><td>Cover-uncover between eyes</td><td>Add +0.25 to the clearer eye until equal</td></tr>
+      </tbody>
+    </table></div>
+    <p>Finish with <b>binocular reduction</b>: remove the balancing prism, then reduce plus binocularly to the best VA.</p>
+  </section>
+
+  <!-- OEP -->
+  <section id="oep">
+    <h2><span class="n">03</span> OEP / phorometry: draw a number, name the shape</h2>
+    <p class="lead">Universal setup for any drawn VT number: far 6 m / near 40 cm, smallest-readable target, <b>lenses in place = Test #7</b> (subjective findings), 20 ft-candle, PD to match. Then it is one of four shapes.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-label="Phorometry prism archetypes">
+        <g font-family="system-ui">
+          <rect x="20" y="20" width="600" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="34" y="38" font-size="13" font-weight="700" fill="var(--ink)">Lateral phoria</text>
+          <text x="34" y="55" font-size="11.5" fill="var(--ink-soft)">OD 12-15&Delta; BI (measure) &middot; OS 6&Delta; BU (dissociate) &rarr; VERTICAL align &middot; BI=exo, BO=eso</text>
+          <rect x="20" y="70" width="600" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="34" y="88" font-size="13" font-weight="700" fill="var(--ink)">Vertical phoria</text>
+          <text x="34" y="105" font-size="11.5" fill="var(--ink-soft)">OD 12-15&Delta; BI (fixate) &middot; OS 6&Delta; BU (measure) &rarr; HORIZONTAL align &middot; BU=R hyper</text>
+          <rect x="20" y="120" width="600" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="34" y="138" font-size="13" font-weight="700" fill="var(--ink)">Horizontal vergence</text>
+          <text x="34" y="155" font-size="11.5" fill="var(--ink-soft)">OU together, turn BO (converge) or BI (diverge) &rarr; blur &rarr; break &rarr; recovery</text>
+          <rect x="20" y="170" width="600" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="34" y="188" font-size="13" font-weight="700" fill="var(--ink)">Accommodation</text>
+          <text x="34" y="205" font-size="11.5" fill="var(--ink-soft)">cross-cyl (lag) &middot; amplitude &middot; PRA minus-to-blur &middot; NRA plus-to-blur</text>
+        </g>
+      </svg>
+      <figcaption>four shapes; name the shape and the prisms + endpoint follow</figcaption>
+    </figure>
+
+    <div class="cal mnem">
+      <div class="lab">The one thing that separates lateral from vertical</div>
+      <p>Same two prisms, roles swap. <b>Lateral phoria:</b> the 12-15&Delta; BI on OD <b>measures</b>, endpoint is <b>vertical</b> alignment. <b>Vertical phoria:</b> the 6&Delta; BU on OS <b>measures</b>, endpoint is <b>horizontal</b> alignment. Recording flips too: lateral is BI=exo/BO=eso; vertical is BU=right hyper.</p>
+    </div>
+
+    <p class="lead">Then memorise the normal values. This table is the single most-asked thing in the room.</p>
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th>Test</th><th>Normal</th></tr></thead>
+      <tbody>
+        <tr><td>3</td><td>Habitual phoria far</td><td class="rx">&frac12; exo</td></tr>
+        <tr><td>8</td><td>Induced phoria far</td><td class="rx">6 exo</td></tr>
+        <tr><td>9</td><td>True adduction far (BO blur)</td><td class="rx">7-9</td></tr>
+        <tr><td>10</td><td>Convergence far (BO)</td><td class="rx">19/10</td></tr>
+        <tr><td>11</td><td>Abduction far (BI)</td><td class="rx">9/5</td></tr>
+        <tr><td>12</td><td>Vertical phoria/duction far</td><td class="rx">ortho; 3/0</td></tr>
+        <tr><td>13B</td><td>Induced phoria near</td><td class="rx">6 exo</td></tr>
+        <tr><td>13B</td><td>AC/A (gradient)</td><td class="rx">4:1 min, 5:1 avg</td></tr>
+        <tr><td>16A</td><td>PRC near (BO blur)</td><td class="rx">15</td></tr>
+        <tr><td>16B</td><td>Pos fusional reserve</td><td class="rx">21/15</td></tr>
+        <tr><td>17A</td><td>NRC near (BI blur)</td><td class="rx">14</td></tr>
+        <tr><td>17B</td><td>Neg fusional reserve</td><td class="rx">22/18</td></tr>
+        <tr><td>18</td><td>Vertical phoria/duction near</td><td class="rx">ortho; 6/0</td></tr>
+        <tr><td>20</td><td>PRA (minus to blur)</td><td class="rx">&minus;2.50</td></tr>
+        <tr><td>21</td><td>NRA (plus to blur)</td><td class="rx">+2.00</td></tr>
+      </tbody>
+    </table></div>
+    <div class="cal why">
+      <div class="lab">Demand pairs with reserve (how to reason it, not memorise it)</div>
+      <p>A phoria is a <b>demand</b> on the fusion system; the vergence reserves are what answers it. Far: an exo demand (#8) is met by convergence reserve (#9 blur / #10 break); an eso demand by divergence (#11). Near: exo (#13B) &rarr; #16A blur / #16B break; eso &rarr; #17A / #17B. If you forget a number, reason from which direction the eyes must pull.</p>
+    </div>
+  </section>
+
+  <!-- TRAPS -->
+  <section id="traps">
+    <h2><span class="n">04</span> Board traps they slip in</h2>
+    <div class="cal trap">
+      <div class="lab">The recurring misses</div>
+      <p><b>1.</b> The blackest astigmatic line is the <b>power meridian</b>, not the axis. <b>2.</b> Duochrome: bolder on red &rarr; <b>minus</b> (RAM-GAP). <b>3.</b> JCC <b>red dot = minus</b> axis. <b>4.</b> You fog with <b>plus</b> because plus relaxes accommodation. <b>5.</b> Do <b>not</b> balance in amblyopia / suppression / one eye / pathology / presbyopia. <b>6.</b> Lateral phoria endpoint = <b>vertical</b> alignment; vertical phoria endpoint = <b>horizontal</b>. <b>7.</b> Endpoint of subjective = <b>maximum plus / least minus</b> to 20/20. <b>8.</b> PRA = <b>minus</b> to blur (&minus;2.50); NRA = <b>plus</b> to blur (+2.00). <b>9.</b> Circle of least confusion is also called the circle of least diffusion. <b>10.</b> Best night-driving tint = amber/yellow (keeps yellow on the retina, the duochrome logic again).</p>
+    </div>
+    <div class="cal mnem">
+      <div class="lab">Do not cross-wire these</div>
+      <p><b>LARS</b> (Left Add, Right Subtract) is for <b>toric contact lens</b> rotation, not the JCC or the dial. <b>Rule of 30</b> is the clock-dial axis shortcut. Keep them in separate drawers.</p>
+    </div>
+  </section>
+
+  <!-- THE 5 THEY ASK -->
+  <section id="ask">
+    <h2><span class="n">05</span> The five they ask (rehearse out loud)</h2>
+    <div class="ask">
+      <span class="lab">If you drew subjective refraction</span>
+      <ol>
+        <li><b>Why do you fog with plus?</b> To relax accommodation so you don't over-minus.</li>
+        <li><b>The blackest line on the dial is which meridian?</b> The power meridian; the minus-cyl axis is 90&deg; away.</li>
+        <li><b>Duochrome: letters clearer on red, what do you do?</b> Add minus (RAM). Principle is transverse chromatic aberration.</li>
+        <li><b>What does the red dot on the JCC represent?</b> The minus cylinder axis.</li>
+        <li><b>When do you NOT do binocular balance?</b> Amblyopia, suppression, one eye, pathology, presbyopia.</li>
+      </ol>
+    </div>
+    <div class="ask">
+      <span class="lab">If you drew an OEP / phorometry number</span>
+      <ol>
+        <li><b>Which prism measures a lateral phoria, and the endpoint?</b> OD 12-15&Delta; BI measures, OS 6&Delta; BU dissociates; endpoint vertical alignment.</li>
+        <li><b>BO vs BI in vergence testing?</b> BO tests convergence (PRC, #10/#16); BI tests divergence (abduction, NRC, #11/#17).</li>
+        <li><b>Normal convergence and abduction at far?</b> #10 = 19/10 (BO); #11 = 9/5 (BI).</li>
+        <li><b>Expected PRA and NRA?</b> PRA &minus;2.50 (minus to blur); NRA +2.00 (plus to blur).</li>
+        <li><b>How do you get the AC/A by gradient?</b> Change the lens by &plusmn;1.00 D and read the phoria shift; 4&Delta; per 1 D, normal 4:1 min, 5:1 avg.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ON PAPER -->
+  <section id="paper">
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <p>Reading this is not owning it. Do these blind, pen on paper. That is the retrieval that sticks.</p>
+    <div class="drill"><div class="t">1 &middot; The spine from zero</div><p>Write the 7 subjective steps in order, then next to each write the one-line "why" and its trap. Three clean rounds until no peeking.</p></div>
+    <div class="drill"><div class="t">2 &middot; Draw the three pictures</div><p>Sketch: fog in front of the retina; the clock dial with the black line and the axis 90&deg; away; the duochrome green-front / red-behind. Label the move each picture drives.</p></div>
+    <div class="drill"><div class="t">3 &middot; The 4-archetype grid</div><p>Blank columns: archetype, prisms, endpoint, recording. Fill it for lateral phoria, vertical phoria, vergence, accommodation. Then fill the normal-values table from memory.</p></div>
+    <div class="drill"><div class="t">4 &middot; Direction reflexes</div><p>Rapid-fire yourself: red bolder = ? green bolder = ? red dot = ? blackest line = ? PRA = ? NRA = ? lateral endpoint = ? Say each in under 2 seconds.</p></div>
+    <div class="drill"><div class="t">5 &middot; Teach the loop</div><p>Explain to an imaginary examiner why you fog with plus and how the duochrome tells you which way you drifted. If you can teach it, you own it.</p></div>
+  </section>
+
+  <!-- SRS -->
+  <section id="srs">
+    <h2><span class="n">07</span> Recall deck</h2>
+    <p>Drop these in your FoqusLab queue. Answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">The 4-step spine of subjective refraction?</span> <span class="a">Best sphere, cylinder, sphere refine, balance.</span></li>
+      <li><span class="q">Why fog with plus?</span> <span class="a">Plus relaxes accommodation so you avoid over-minus.</span></li>
+      <li><span class="q">Endpoint of the sphere?</span> <span class="a">Maximum plus / least minus to 20/20.</span></li>
+      <li><span class="q">Ideal fog before the astigmatic dial?</span> <span class="a">+0.25 to +0.75, about 2 lines above best VA.</span></li>
+      <li><span class="q">Blackest dial line is which meridian, and where is the axis?</span> <span class="a">Power meridian; minus-cyl axis is 90&deg; away (or rule of 30).</span></li>
+      <li><span class="q">Sphere adjustment per cylinder added?</span> <span class="a">+0.25 sphere for every &minus;0.50 cyl.</span></li>
+      <li><span class="q">JCC: refine axis how?</span> <span class="a">Handle on axis, flip, move 5&deg; toward red of the preferred side (max 15&deg;).</span></li>
+      <li><span class="q">JCC power: red dot on axis means?</span> <span class="a">Add cylinder (white/green on axis = subtract).</span></li>
+      <li><span class="q">Duochrome: bolder on red vs green?</span> <span class="a">Red = add minus, green = add plus (RAM-GAP). Principle: transverse chromatic aberration.</span></li>
+      <li><span class="q">When do you NOT balance?</span> <span class="a">Amblyopia, suppression, one eye, pathology, presbyopia.</span></li>
+      <li><span class="q">Prism-dissociation balance setup?</span> <span class="a">Fog +0.50-0.75 OU, 3&Delta; BD OD + 3&Delta; BU OS, add +0.25 to clearer eye until equal.</span></li>
+      <li><span class="q">OEP: the four archetypes?</span> <span class="a">Lateral phoria, vertical phoria, horizontal vergence, accommodation.</span></li>
+      <li><span class="q">Lateral phoria: measuring prism and endpoint?</span> <span class="a">OD 12-15&Delta; BI measures; endpoint vertical alignment (BI=exo, BO=eso).</span></li>
+      <li><span class="q">Vertical phoria: measuring prism and endpoint?</span> <span class="a">OS 6&Delta; BU measures; endpoint horizontal alignment (BU=R hyper).</span></li>
+      <li><span class="q">Convergence (#10) and abduction (#11) at far?</span> <span class="a">#10 = 19/10 (BO); #11 = 9/5 (BI).</span></li>
+      <li><span class="q">PRC vs NRC at near (blur)?</span> <span class="a">PRC (#16A, BO) = 15; NRC (#17A, BI) = 14.</span></li>
+      <li><span class="q">PRA and NRA?</span> <span class="a">PRA = minus to blur = &minus;2.50; NRA = plus to blur = +2.00.</span></li>
+      <li><span class="q">AC/A by gradient, normal?</span> <span class="a">&plusmn;1.00 D lens, 4&Delta; per 1 D; 4:1 min, 5:1 avg, 6:1 max.</span></li>
+    </ol>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Subjective Refraction &amp; OEP Strategy &middot; two models, not 28 steps</div>
+
+</div>
+</body>
+</html>
