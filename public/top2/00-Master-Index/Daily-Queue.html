@@ -140,6 +140,17 @@
   </div>
   <div class="track"><i id="bar"></i></div>
 
+  <div class="snapcard" style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0;box-shadow:var(--shadow)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
+      <b style="font-size:13px;color:var(--ink)">Daily snapshot for Lisa</b>
+      <span style="display:flex;align-items:center;gap:8px">
+        <span id="snap-copied" style="font-size:11px;color:var(--good);opacity:0;transition:opacity .2s">copied</span>
+        <button id="snap-copy" style="background:var(--accent);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12px;font-weight:600">Copy for Lisa</button>
+      </span>
+    </div>
+    <pre id="snap" style="margin:0;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--ink-soft);white-space:pre-wrap;line-height:1.55">—</pre>
+  </div>
+
   <div class="legend">
     <span><i class="dot" style="background:var(--weak)"></i>weak three</span>
     <span><i class="dot" style="background:var(--accent)"></i>heavy 15%</span>
@@ -423,10 +434,35 @@ function refresh(){
   document.getElementById("s-done").textContent=wk+"/"+wkTot;
   const total=days.reduce((a,d)=>a+((d.phase==="exam"||d.phase==="rest")?0:d.tix.length),0);
   document.getElementById("bar").style.width=(total?closed/total*100:0)+"%";
+
+  // Copy-ready snapshot for Lisa. Built from his own session data (read-only, no writes).
+  let tIdx=-1;
+  for(let i=0;i<days.length;i++){ if(days[i].dt.getTime()===todayMid.getTime()){ tIdx=i; break; } }
+  let todayLine;
+  if(tIdx>=0){
+    const dd=days[tIdx];
+    if(dd.phase==="rest"){ todayLine="Today: rest day"; }
+    else { let tDone=0; for(let j=0;j<dd.tix.length;j++){ if(store[tIdx+"_"+j]===true) tDone++; } todayLine="Today: "+tDone+"/"+dd.tix.length+" cleared"; }
+  } else { todayLine = (todayMid.getTime()>EXAM.getTime()) ? "Today: exam window" : "Today: not started yet"; }
+  const dLeft=Math.max(0,Math.round((EXAM-todayMid)/DAYMS));
+  const pct=total?Math.round(closed/total*100):0;
+  const snapTxt=
+    "FoqusLab Daily Queue — "+MO[todayMid.getMonth()]+" "+todayMid.getDate()+" · D-"+dLeft+"\n"+
+    todayLine+"\n"+
+    "This week (floors): "+wk+"/"+wkTot+"\n"+
+    "Overall: "+closed+"/"+total+" ("+pct+"%) · streak "+streak+"d";
+  const snEl=document.getElementById("snap"); if(snEl) snEl.textContent=snapTxt;
 }
 
 container.addEventListener("change",e=>{ const t=e.target;
   if(t.dataset.id!==undefined){ store[t.dataset.id]=t.checked; t.closest("li").classList.toggle("checked",t.checked); save(); refresh(); post([{id:t.dataset.id,checked:t.checked}]); }});
+
+document.getElementById("snap-copy").addEventListener("click",function(){
+  const txt=document.getElementById("snap").textContent;
+  function flash(){ const c=document.getElementById("snap-copied"); if(!c)return; c.style.opacity="1"; setTimeout(function(){c.style.opacity="0"},1500); }
+  function fallback(){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy")}catch(e){} document.body.removeChild(ta); flash(); }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(flash,fallback); } else { fallback(); }
+});
 refresh();
 syncFromServer();
 const te=document.querySelector(".day.today"); if(te) te.scrollIntoView({block:"center"});
