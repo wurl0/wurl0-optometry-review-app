@@ -10,6 +10,43 @@ import { SUBJECTS as TOP2_SUBJECTS } from '@/lib/reviewer-manifest'
 const mainName = new Map(MAIN_SUBJECTS.map(x => [x.slug, x.name] as [string, string]))
 const top2Name = new Map(TOP2_SUBJECTS.map(x => [x.code, x.name] as [string, string]))
 
+// A route -> human label, so the dashboard reads "Exam · Ocular Disease" instead of
+// "/exam/ocular-disease". Subject names come from the live registry (exam/practice/
+// notes/ole-prep/results all key off the main subject slug), so a new subject is
+// picked up automatically; an unknown route falls back to its raw path.
+function pageLabel(path: string | null): string {
+  if (!path) return '—'
+  const parts = path.split('/')       // '/exam/ocular-disease' -> ['', 'exam', 'ocular-disease']
+  const seg = parts[1] ?? ''
+  const subj = parts[2] ? (mainName.get(parts[2]) ?? parts[2]) : ''
+  switch (seg) {
+    case '': return 'Home'
+    case 'exam': return subj ? `Exam · ${subj}` : 'Exam'
+    case 'practice': return subj ? `Practice · ${subj}` : 'Practice'
+    case 'notes': return subj ? `Review · ${subj}` : 'Review'
+    case 'ole-prep': return subj ? `OLE Prep · ${subj}` : 'OLE Prep'
+    case 'results': return subj ? `Results · ${subj}` : 'Results'
+    case 'reviewer': return 'Top 2 cockpit'
+    case 'drill': return 'Drill'
+    case 'review': return 'SRS Review'
+    case 'readiness': return 'Readiness'
+    case 'search': return 'Search'
+    case 'account': return 'Account'
+    case 'admin': return 'Admin'
+    default: return path
+  }
+}
+
+// Which bucket a heartbeat/label belongs to, for coloring and the review-vs-exam split.
+function surfaceOf(path: string | null, type: string | null): 'reading' | 'doing' | 'other' {
+  if (type === 'reading') return 'reading'
+  if (type === 'doing') return 'doing'
+  const seg = (path ?? '').split('/')[1] ?? ''
+  if (seg === 'notes' || seg === 'ole-prep' || seg === 'reviewer') return 'reading'
+  if (seg === 'exam' || seg === 'practice' || seg === 'drill' || seg === 'review') return 'doing'
+  return 'other'
+}
+
 // Admin Usage dashboard data. Fuses every activity signal the app already records
 // (exam attempts, review sweeps, reviewer reading, and page-view events) into one
 // per-user picture, so passive reading counts as "using it" even with zero exams.
@@ -52,17 +89,29 @@ export async function GET() {
   ])
 
   // Per-user rollups keyed by user_id.
+  type TimelineEntry = { label: string; surface: string; at: string | null }
   type Agg = {
     quizzes: number; lastQuiz: string | null;          // exam_attempts + practice_progress + ole_attempts
     reviews: number; lastReview: string | null;        // SRS review / drill answers
     top2Reads: number; lastRead: string | null;        // Top 2 static reviewers (reading_position/progress)
     mainReadMins: number;                              // main-app + React reviewer dwell, ~1 min per heartbeat
+    examMins: number;                                  // exam/practice/drill dwell, ~1 min per 'doing' heartbeat
     pageViews: number; lastEvent: string | null;
+    lastLabel: string | null; lastAt: string | null; lastSurface: string;  // "currently on"
+    pages: Map<string, { units: number; surface: string }>;                // attention per page, for per-user top pages
+    timeline: TimelineEntry[];                                             // most recent path-bearing events, newest first
   }
   const agg = new Map<string, Agg>()
   const get = (id: string): Agg => {
     let a = agg.get(id)
-    if (!a) { a = { quizzes: 0, lastQuiz: null, reviews: 0, lastReview: null, top2Reads: 0, lastRead: null, mainReadMins: 0, pageViews: 0, lastEvent: null }; agg.set(id, a) }
+    if (!a) {
+      a = {
+        quizzes: 0, lastQuiz: null, reviews: 0, lastReview: null, top2Reads: 0, lastRead: null,
+        mainReadMins: 0, examMins: 0, pageViews: 0, lastEvent: null,
+        lastLabel: null, lastAt: null, lastSurface: 'other', pages: new Map(), timeline: [],
+      }
+      agg.set(id, a)
+    }
     return a
   }
 
@@ -73,14 +122,32 @@ export async function GET() {
   for (const r of reviews) { const a = get(String(r.user_id)); a.reviews++; a.lastReview = maxTime(a.lastReview, s(r.swept_at)) }
   for (const r of readPos) { const a = get(String(r.user_id)); a.top2Reads++; a.lastRead = maxTime(a.lastRead, s(r.updated_at)) }
   for (const r of readProg) { const a = get(String(r.user_id)); a.lastRead = maxTime(a.lastRead, s(r.updated_at)) }
+  // events arrive newest-first, so the first path-bearing hit per user is "currently on".
   for (const r of events) {
     const a = get(String(r.user_id))
-    a.lastEvent = maxTime(a.lastEvent, s(r.created_at))   // any event counts toward recency
-    if (s(r.type) === 'reading') {
+    const type = s(r.type)
+    const at = s(r.created_at)
+    const path = s(r.path)
+    a.lastEvent = maxTime(a.lastEvent, at)                 // any event counts toward recency
+    if (type === 'reading') {
       a.mainReadMins++                                     // one heartbeat ~= one minute reading
-      a.lastRead = maxTime(a.lastRead, s(r.created_at))
-    } else if (s(r.type) !== 'login') {
+      a.lastRead = maxTime(a.lastRead, at)
+    } else if (type === 'doing') {
+      a.examMins++                                         // one heartbeat ~= one minute on a quiz/exam
+    } else if (type !== 'login') {
       a.pageViews++                                        // login is recency-only (via lastEvent)
+    }
+
+    // Per-user "currently on", attention-by-page, and a short recent timeline. Any
+    // event that carries a path feeds these; a login (no path) is skipped.
+    if (type !== 'login' && path) {
+      const label = pageLabel(path)
+      const surface = surfaceOf(path, type)
+      if (!a.lastAt) { a.lastAt = at; a.lastLabel = label; a.lastSurface = surface }  // first = newest
+      const cur = a.pages.get(label) ?? { units: 0, surface }
+      cur.units++                                          // navigation = 1 unit, each dwell heartbeat = 1 more
+      a.pages.set(label, cur)
+      if (a.timeline.length < 12) a.timeline.push({ label, surface, at })
     }
   }
 
@@ -94,15 +161,32 @@ export async function GET() {
     const lastActive = maxTime(
       s(p.last_active), a?.lastQuiz, a?.lastReview, a?.lastRead, a?.lastEvent,
     )
+    const topPages = a
+      ? [...a.pages.entries()]
+          .map(([label, e]) => ({ label, units: e.units, surface: e.surface }))
+          .sort((x, y) => y.units - x.units).slice(0, 6)
+      : []
     return {
       email: s(p.email), name: s(p.full_name), tier: s(p.tier) ?? 'base',
       approved: !!p.approved, suspended: !!p.suspended,
       createdAt: s(p.created_at), lastActive,
       quizzes: a?.quizzes ?? 0, reviews: a?.reviews ?? 0,
       pageViews: a?.pageViews ?? 0,
-      readMins: a?.mainReadMins ?? 0, top2Reads: a?.top2Reads ?? 0,
+      readMins: a?.mainReadMins ?? 0, examMins: a?.examMins ?? 0, top2Reads: a?.top2Reads ?? 0,
+      current: a?.lastLabel ?? null, currentAt: a?.lastAt ?? null, currentSurface: a?.lastSurface ?? 'other',
+      topPages, timeline: a?.timeline ?? [],
     }
   }).sort((x, y) => (y.lastActive ?? '').localeCompare(x.lastActive ?? ''))
+
+  // Who's on right now: approved users whose most recent page hit is within 20 minutes,
+  // newest first. This is the "what page/exam are they on" live view.
+  const LIVE_MS = 20 * 60000
+  const live = users
+    .filter(u => u.approved && !u.suspended && within(u.currentAt, LIVE_MS))
+    .map(u => ({
+      name: u.name, email: u.email,
+      label: u.current, surface: u.currentSurface, at: u.currentAt,
+    }))
 
   const approvedUsers = users.filter(u => u.approved)
   const summary = {
@@ -125,7 +209,7 @@ export async function GET() {
     e.views++; e.users.add(String(r.user_id))
   }
   const topPages = [...pageAgg.entries()]
-    .map(([path, e]) => ({ path, views: e.views, users: e.users.size }))
+    .map(([path, e]) => ({ path, label: pageLabel(path), views: e.views, users: e.users.size }))
     .sort((a, b) => b.views - a.views).slice(0, 25)
 
   // Reading activity, merged across surfaces so main-app reviewers show alongside Top 2:
@@ -193,5 +277,5 @@ export async function GET() {
     ...subjectAgg(ole, 'subject_code', 'Top 2', top2Label),
   ].sort((a, b) => (order[a.surface] - order[b.surface]) || (b.attempts - a.attempts))
 
-  return NextResponse.json({ summary, users, topPages, reading, bySubject })
+  return NextResponse.json({ summary, live, users, topPages, reading, bySubject })
 }

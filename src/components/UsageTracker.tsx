@@ -2,14 +2,16 @@
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef } from 'react'
 
-// Records how people move through the app for the admin Usage tab. Two signals:
+// Records how people move through the app for the admin Usage tab. Three signals:
 //  - page_view: one per in-app navigation ("they opened X").
 //  - reading: a heartbeat every 60s while sitting on a reviewer page and the tab is
 //    visible ("they stayed and read"). This gives the main-app reviewer (/notes) the
 //    same dwell signal the static Top 2 reviewers already get from scroll pings.
+//  - doing: the same 60s heartbeat while on an exam/practice/drill/review page, so we
+//    can tell time spent taking exams apart from time spent reading.
 // Fire-and-forget; failures are swallowed and logged-out hits no-op server-side.
 const SKIP = ['/login', '/signup', '/pending', '/suspended', '/forgot-password', '/reset-password', '/auth']
-const READING_MS = 60000
+const HEARTBEAT_MS = 60000
 
 function post(type: string, path: string) {
   try {
@@ -24,8 +26,13 @@ function post(type: string, path: string) {
   }
 }
 
-function isReviewer(path: string): boolean {
-  return path.startsWith('/notes/') || path.startsWith('/ole-prep/') || path.startsWith('/reviewer')
+// Which dwell signal a page produces, if any. Reviewer pages count as reading; exam,
+// practice, drill and SRS review pages count as "doing" (working questions). The
+// reviewer check runs first so /reviewer is reading, not caught by the /review prefix.
+function heartbeatType(path: string): 'reading' | 'doing' | null {
+  if (path.startsWith('/notes/') || path.startsWith('/ole-prep/') || path.startsWith('/reviewer')) return 'reading'
+  if (path.startsWith('/exam/') || path.startsWith('/practice/') || path.startsWith('/drill') || path.startsWith('/review')) return 'doing'
+  return null
 }
 
 export default function UsageTracker() {
@@ -42,15 +49,17 @@ export default function UsageTracker() {
     post('page_view', pathname)
   }, [pathname])
 
-  // Reading heartbeat while on a reviewer page. First beat fires at 60s of dwell, so a
-  // quick bounce registers only as a page view, never as reading.
+  // Dwell heartbeat while on a reviewer (reading) or exam/practice/drill (doing) page.
+  // First beat fires at 60s of dwell, so a quick bounce registers only as a page view.
   useEffect(() => {
-    if (!pathname || !isReviewer(pathname)) return
+    if (!pathname) return
+    const kind = heartbeatType(pathname)
+    if (!kind) return
     const id = setInterval(() => {
       if (typeof document !== 'undefined' && document.visibilityState === 'visible') {
-        post('reading', pathname)
+        post(kind, pathname)
       }
-    }, READING_MS)
+    }, HEARTBEAT_MS)
     return () => clearInterval(id)
   }, [pathname])
 

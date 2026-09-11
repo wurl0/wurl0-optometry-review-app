@@ -6,7 +6,7 @@ import { createAdminClient } from '@/lib/supabase-admin'
 // stamp on the profile. Called by the client <UsageTracker/>. Deliberately forgiving:
 // logged-out or malformed calls are no-ops (200), never errors, so tracking can never
 // disrupt a page. Query strings are stripped so we never store search terms.
-const TYPES = new Set(['page_view', 'reading', 'login'])
+const TYPES = new Set(['page_view', 'reading', 'doing', 'login'])
 
 export async function POST(req: NextRequest) {
   const supabase = await createClient()

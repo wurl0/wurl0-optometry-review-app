@@ -1,5 +1,5 @@
 'use client'
-import { useCallback, useEffect, useState } from 'react'
+import { Fragment, useCallback, useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase-client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -40,18 +40,24 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'usage', label: 'Usage' },
 ]
 
+type PageUnit = { label: string; units: number; surface: string }
+type TimelineEntry = { label: string; surface: string; at: string | null }
 type UsageUser = {
   email: string | null; name: string | null; tier: string
   approved: boolean; suspended: boolean; createdAt: string | null; lastActive: string | null
-  quizzes: number; reviews: number; pageViews: number; readMins: number; top2Reads: number
+  quizzes: number; reviews: number; pageViews: number; readMins: number; examMins: number; top2Reads: number
+  current: string | null; currentAt: string | null; currentSurface: string
+  topPages: PageUnit[]; timeline: TimelineEntry[]
 }
+type LiveUser = { name: string | null; email: string | null; label: string | null; surface: string; at: string | null }
 type UsageData = {
   summary: {
     signups: number; approved: number; hasAccess: number; everActive: number
     active24h: number; active7d: number; active30d: number
   }
+  live: LiveUser[]
   users: UsageUser[]
-  topPages: { path: string; views: number; users: number }[]
+  topPages: { path: string; label: string; views: number; users: number }[]
   reading: { source: string; label: string; email: string | null; updatedAt: string | null }[]
   bySubject: { surface: string; subject: string; attempts: number; users: number; avgPct: number; who: string[] }[]
 }
@@ -358,6 +364,7 @@ export default function AdminPage() {
   const [usage, setUsage] = useState<UsageData | null>(null)
   const [usageAt, setUsageAt] = useState<string | null>(null)
   const [usageLoading, setUsageLoading] = useState(false)
+  const [openUser, setOpenUser] = useState<number | null>(null)   // expanded per-user drill-down row
   const router = useRouter()
 
   const refreshUsage = useCallback(async () => {
@@ -596,9 +603,10 @@ export default function AdminPage() {
           <section>
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-1">Usage</h2>
             <p className="text-xs text-gray-400 mb-4">
-              Activity across everything: exams, review sweeps, reviewer reading, and page views.
-              &ldquo;Active&rdquo; counts anyone who did any of these, so reading counts even with no exams.
-              Page views need the <code className="bg-gray-100 px-1 rounded">app_events</code> table (see supabase-setup.sql).
+              Who&rsquo;s on now and what page or exam they&rsquo;re on, plus review-vs-exam time, top pages and quizzes.
+              Click any user to see what they review most and their recent activity.
+              &ldquo;Active&rdquo; counts anyone who read, drilled or took an exam. Needs the
+              <code className="bg-gray-100 px-1 rounded mx-1">app_events</code> table (see supabase-setup.sql).
             </p>
 
             <div className="flex items-center gap-3 mb-4">
@@ -634,7 +642,30 @@ export default function AdminPage() {
                   ))}
                 </div>
 
-                {/* Per-user behavior */}
+                {/* Who's on now */}
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">
+                    On now — {usage.live.length} active in the last 20 min
+                  </h3>
+                  {usage.live.length === 0 ? (
+                    <p className="text-gray-400 text-sm">Nobody active right now.</p>
+                  ) : (
+                    <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
+                      {usage.live.map((u, i) => (
+                        <div key={i} className="flex items-center justify-between px-3 py-2 text-sm gap-2">
+                          <span className="text-gray-800 truncate min-w-0 flex items-center gap-2">
+                            <span className={`h-2 w-2 rounded-full shrink-0 ${u.surface === 'doing' ? 'bg-amber-400' : u.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
+                            <span className="font-medium truncate">{u.name || u.email || '—'}</span>
+                            <span className="text-gray-400 truncate">→ {u.label ?? '—'}</span>
+                          </span>
+                          <span className="text-gray-400 text-xs shrink-0">{ago(u.at)}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Per-user behavior — click a row to see their pages and recent timeline */}
                 <div>
                   <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">
                     Per user — {usage.users.filter(u => u.approved).length} approved, by last active
@@ -644,10 +675,10 @@ export default function AdminPage() {
                       <thead>
                         <tr className="text-left text-xs text-gray-400 border-b border-gray-100">
                           <th className="px-3 py-2 font-medium">User</th>
-                          <th className="px-3 py-2 font-medium">Tier</th>
+                          <th className="px-3 py-2 font-medium">Currently / last on</th>
                           <th className="px-3 py-2 font-medium">Last active</th>
-                          <th className="px-3 py-2 font-medium text-right">Views</th>
-                          <th className="px-3 py-2 font-medium text-right" title="Main-app reviewer reading time (approx minutes)">Read</th>
+                          <th className="px-3 py-2 font-medium text-right" title="Reviewer reading time (approx minutes, ~1 per minute on a reviewer page)">Review</th>
+                          <th className="px-3 py-2 font-medium text-right" title="Time on exams, practice and drills (approx minutes)">Exam</th>
                           <th className="px-3 py-2 font-medium text-right" title="Answered quizzes: subject exams, practice, and Top 2 exams">Quizzes</th>
                           <th className="px-3 py-2 font-medium text-right" title="SRS review / drill answers">Reviews</th>
                         </tr>
@@ -655,24 +686,89 @@ export default function AdminPage() {
                       <tbody>
                         {usage.users.filter(u => u.approved).map((u, i) => {
                           const idle = isIdle(u.lastActive)
+                          const open = openUser === i
+                          const maxUnits = Math.max(1, ...u.topPages.map(p => p.units))
                           return (
-                            <tr key={i} className="border-b border-gray-50 last:border-0">
+                            <Fragment key={i}>
+                            <tr
+                              className="border-b border-gray-50 last:border-0 cursor-pointer hover:bg-gray-50"
+                              onClick={() => setOpenUser(open ? null : i)}
+                            >
                               <td className="px-3 py-2">
-                                <div className="text-gray-900">{u.name || u.email || '—'}</div>
-                                {u.name && u.email && <div className="text-xs text-gray-400">{u.email}</div>}
+                                <div className="text-gray-900 flex items-center gap-1.5">
+                                  <span className={`text-gray-300 transition-transform ${open ? 'rotate-90' : ''}`}>›</span>
+                                  {u.name || u.email || '—'}
+                                </div>
+                                {u.name && u.email && <div className="text-xs text-gray-400 pl-4">{u.email}</div>}
                               </td>
-                              <td className="px-3 py-2 text-gray-500">{u.tier}{u.suspended && ' · susp'}</td>
+                              <td className="px-3 py-2">
+                                {u.current ? (
+                                  <span className="inline-flex items-center gap-1.5">
+                                    <span className={`h-1.5 w-1.5 rounded-full ${u.currentSurface === 'doing' ? 'bg-amber-400' : u.currentSurface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
+                                    <span className="text-gray-700 truncate">{u.current}</span>
+                                  </span>
+                                ) : <span className="text-gray-300">—</span>}
+                              </td>
                               <td className={`px-3 py-2 ${idle ? 'text-gray-400' : 'text-gray-700'}`}>{ago(u.lastActive)}</td>
-                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.pageViews || '—'}</td>
                               <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.readMins ? `${u.readMins}m` : (u.top2Reads ? '·' : '—')}</td>
+                              <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.examMins ? `${u.examMins}m` : '—'}</td>
                               <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.quizzes || '—'}</td>
                               <td className="px-3 py-2 text-right tabular-nums text-gray-700">{u.reviews || '—'}</td>
                             </tr>
+                            {open && (
+                              <tr className="bg-gray-50/60 border-b border-gray-100">
+                                <td colSpan={7} className="px-4 py-3">
+                                  {u.topPages.length === 0 && u.timeline.length === 0 ? (
+                                    <p className="text-xs text-gray-400">No page activity recorded in the last 30 days.</p>
+                                  ) : (
+                                    <div className="grid sm:grid-cols-2 gap-5">
+                                      <div>
+                                        <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Reviews the most (30d)</div>
+                                        <div className="space-y-1">
+                                          {u.topPages.map((p, j) => (
+                                            <div key={j} className="flex items-center gap-2">
+                                              <span className="text-xs text-gray-700 w-40 truncate shrink-0">{p.label}</span>
+                                              <span className="h-2 rounded-full bg-gray-200 grow overflow-hidden">
+                                                <span
+                                                  className={`block h-full rounded-full ${p.surface === 'doing' ? 'bg-amber-400' : p.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-400'}`}
+                                                  style={{ width: `${Math.round((p.units / maxUnits) * 100)}%` }}
+                                                />
+                                              </span>
+                                              <span className="text-[11px] text-gray-400 tabular-nums w-8 text-right shrink-0">{p.units}</span>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Recent activity</div>
+                                        <div className="space-y-0.5">
+                                          {u.timeline.map((t, j) => (
+                                            <div key={j} className="flex items-center justify-between gap-2 text-xs">
+                                              <span className="text-gray-700 truncate flex items-center gap-1.5">
+                                                <span className={`h-1.5 w-1.5 rounded-full shrink-0 ${t.surface === 'doing' ? 'bg-amber-400' : t.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
+                                                {t.label}
+                                              </span>
+                                              <span className="text-gray-400 shrink-0">{ago(t.at)}</span>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  )}
+                                </td>
+                              </tr>
+                            )}
+                            </Fragment>
                           )
                         })}
                       </tbody>
                     </table>
                   </div>
+                  <p className="text-[11px] text-gray-400 mt-1.5">
+                    <span className="inline-flex items-center gap-1"><span className="h-1.5 w-1.5 rounded-full bg-emerald-400" /> reviewing</span>
+                    <span className="inline-flex items-center gap-1 ml-3"><span className="h-1.5 w-1.5 rounded-full bg-amber-400" /> exam / practice / drill</span>
+                    <span className="ml-3">Time columns are approximate (~1 min per 60s the tab was open on that page).</span>
+                  </p>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
@@ -685,7 +781,7 @@ export default function AdminPage() {
                       <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
                         {usage.topPages.map((p, i) => (
                           <div key={i} className="flex items-center justify-between px-3 py-1.5 text-sm">
-                            <span className="text-gray-700 truncate mr-2">{p.path}</span>
+                            <span className="text-gray-700 truncate mr-2" title={p.path}>{p.label}</span>
                             <span className="text-gray-400 text-xs shrink-0 tabular-nums">{p.views} · {p.users}u</span>
                           </div>
                         ))}
