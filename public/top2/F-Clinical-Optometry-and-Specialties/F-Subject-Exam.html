@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject F — Board Exam</h1>
-    <p class="sub">Clinical Optometry and Specialties · 237 questions · mixed, board-style</p>
+    <p class="sub">Clinical Optometry and Specialties · 239 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>237 board-style questions drawn from every F note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>239 board-style questions drawn from every F note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">F1 DPA</span>
       <span class="chip">F2 Pediatric</span>
@@ -102,7 +102,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="237">Full (237)</button>
+      <button class="modebtn sel" data-n="239">Full (239)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -377,10 +377,12 @@ const BANK=[
 {t:"F6 Sports Vision",q:"A batter detecting a ball entering the edge of vision is using:",o:["color discrimination", "peripheral awareness", "central visual acuity", "near point of convergence"],a:1,w:"Detecting motion at the edge of the field is peripheral awareness, a trainable sports-vision skill distinct from central acuity.",k:"Edge-of-field detection = peripheral awareness."},
 {t:"F2 Pediatric",q:"A school-age child who reverses b and d and struggles to match or sort shapes most likely has a deficit in which visual perceptual skill?",o:["visual closure", "spatial relations", "visual discrimination", "visual memory"],a:2,w:"Visual discrimination is noticing similarities and differences among forms. Its deficit shows as b/d reversals and trouble matching or sorting, one of the seven visual perceptual skills.",k:"b/d reversal, poor matching = visual discrimination deficit."},
 {t:"F2 Pediatric",q:"A white pupil (leukocoria) found in a child must be urgently worked up to rule out:",o:["retinoblastoma", "simple refractive error", "allergic conjunctivitis", "a chalazion"],a:0,w:"Leukocoria is never normal and demands urgent evaluation to exclude retinoblastoma, the most common intraocular malignancy of childhood. Congenital cataract is another cause.",k:"Leukocoria in a child = rule out retinoblastoma."},
-{t:"F2 Pediatric",q:"The approximate visual acuity of a newborn at birth is:",o:["20/800", "20/40", "20/20", "20/200"],a:0,n:1,w:"A newborn sees at roughly 20/800 with shadowy vision and no coordinated eye movements, then matures toward 20/20 over the first few years.",k:"Newborn acuity is about 20/800."}
+{t:"F2 Pediatric",q:"The approximate visual acuity of a newborn at birth is:",o:["20/800", "20/40", "20/20", "20/200"],a:0,n:1,w:"A newborn sees at roughly 20/800 with shadowy vision and no coordinated eye movements, then matures toward 20/20 over the first few years.",k:"Newborn acuity is about 20/800."},
+{t:"F7 Low Vision",q:"Low-vision reading goals build in reserve acuity because fluent, accurate reading requires acuity about:",o:["1 line larger than threshold", "10 lines better than threshold", "3 lines better than threshold", "equal to threshold"],a:2,w:"Threshold acuity allows only slow spotting. Fluent reading needs roughly 3 lines of reserve, so a device is prescribed to give acuity better than the target print size.",k:"Fluent reading needs about 3 lines of acuity reserve."},
+{t:"F7 Low Vision",q:"For hemianopsia or a severely constricted visual field, the correct low-vision strategy is to:",o:["boost image contrast only", "add a strong reading plus", "minify to widen the field", "magnify the central image"],a:2,w:"Field expanders (prisms, mirrors, reverse telescopes, minus lenses) minify the scene so more of it fits within the remaining field. Magnifiers would shrink the field further.",k:"Constricted field or hemianopsia: minify with a field expander."}
 ];
 
-let MODE=237, SCOPE='*', FB='practice';
+let MODE=239, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);

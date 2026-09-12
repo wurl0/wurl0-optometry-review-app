@@ -5239,16 +5239,16 @@
   "id": "F0239",
   "sec": "F7-01",
   "t": "F7 Low Vision",
-  "q": "A patient with hemianopsia or a severely constricted visual field is best helped by a:",
+  "q": "For hemianopsia or a severely constricted visual field, the correct low-vision strategy is to:",
   "o": [
-   "field expander such as a reverse telescope or prism",
-   "tinted absorptive lens",
-   "high-plus magnifier",
-   "closed-circuit television"
+   "boost image contrast only",
+   "add a strong reading plus",
+   "minify to widen the field",
+   "magnify the central image"
   ],
-  "a": 0,
+  "a": 2,
   "w": "Field expanders (prisms, mirrors, reverse telescopes, minus lenses) minify the scene so more of it fits within the remaining field. Magnifiers would shrink the field further.",
-  "k": "Constricted field or hemianopsia = field expander (minify).",
+  "k": "Constricted field or hemianopsia: minify with a field expander.",
   "src": "authored"
  }
 ]
