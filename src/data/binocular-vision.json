@@ -1519,5 +1519,77 @@
     "correct": 1,
     "explanation": "Retinal aniseikonia comes from altered spacing of retinal elements (stretched or crowded receptors), as in retinal detachment repair or macular edema. Optical aniseikonia instead comes from unequal lens magnification, such as after unequal spectacle correction or aphakia.",
     "module": "Module 16"
+  },
+  {
+    "type": "mcq",
+    "stem": "How many diagnostic positions of gaze are there, and what is the primary position?",
+    "options": [
+      "6 positions; primary is dextroversion",
+      "9 positions; primary is eyes straight ahead (ortho)",
+      "5 positions; primary is convergence",
+      "3 positions; primary is upgaze"
+    ],
+    "correct": 1,
+    "explanation": "There are 9 positions of gaze: the primary (eyes straight ahead, the ortho position), 4 secondary (dextro, levo, supra, infra), and 4 tertiary (oblique) positions."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which is a requirement for sensory fusion?",
+    "options": [
+      "a large difference in acuity between the eyes",
+      "normal (matching) retinal correspondence",
+      "suppression of one eye",
+      "unequal image sizes"
+    ],
+    "correct": 1,
+    "explanation": "Fusion requires roughly equal acuity, monocular fixation of each eye, normal retinal correspondence, normal ocular motility, and similar images. Suppression and large image differences prevent fusion."
+  },
+  {
+    "type": "mcq",
+    "stem": "The first and foremost advantage of binocular vision is:",
+    "options": [
+      "a wider color range",
+      "single vision",
+      "faster reading",
+      "reduced glare"
+    ],
+    "correct": 1,
+    "explanation": "Single (fused) vision is the foremost advantage. Others include masking of one eye's optical defects, an enlarged field, better detail and contrast discrimination, and stereopsis."
+  },
+  {
+    "type": "mcq",
+    "stem": "Torsional (wheel) eye movements occur around which axis of Fick?",
+    "options": [
+      "the vertical (Z) axis",
+      "the transverse (X) axis",
+      "the antero-posterior (Y) axis",
+      "the visual axis"
+    ],
+    "correct": 2,
+    "explanation": "Torsion occurs around the antero-posterior (Y, sagittal) axis of Fick. The transverse X-axis gives elevation and depression, and the vertical Z-axis gives adduction and abduction."
+  },
+  {
+    "type": "mcq",
+    "stem": "Sherrington's law of reciprocal innervation states that when a muscle contracts:",
+    "options": [
+      "its yoke muscle in the other eye contracts equally",
+      "its direct antagonist relaxes to an equal extent",
+      "all four recti contract together",
+      "accommodation is inhibited"
+    ],
+    "correct": 1,
+    "explanation": "Sherrington's law (a monocular law) says that as a muscle contracts, its direct antagonist relaxes equally, allowing smooth movement. Hering's law governs the yoke muscle in the other eye."
+  },
+  {
+    "type": "mcq",
+    "stem": "The AC/A ratio expresses the amount of convergence produced per unit of:",
+    "options": [
+      "prism power",
+      "accommodation",
+      "retinal disparity",
+      "pupil size"
+    ],
+    "correct": 1,
+    "explanation": "The AC/A ratio is the accommodative convergence produced per diopter of accommodation, expressed in prism diopters per diopter. A high or low ratio underlies many binocular disorders."
   }
 ]

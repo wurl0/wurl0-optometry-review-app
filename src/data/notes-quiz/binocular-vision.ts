@@ -52,6 +52,41 @@ const quiz: NotesQuizData = {
       correct: 1,
       answer: 'Version — both eyes move together in the same direction (e.g., dextroversion = both eyes right). Vergence = opposite directions.',
     },
+    {
+      kind: 'mcq',
+      stem: 'Hering\'s law of equal innervation states that:',
+      options: ['antagonist muscles relax when the agonist contracts', 'yoke muscles of the two eyes receive equal innervation', 'accommodation drives convergence', 'the pupil constricts with near effort'],
+      correct: 1,
+      answer: 'Hering\'s law (a binocular law) says that yoke (contralateral synergist) muscles receive equal innervation, keeping the visual axes parallel. In dextroversion the right lateral rectus and left medial rectus fire equally.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Sherrington\'s law of reciprocal innervation describes that when a muscle contracts:',
+      options: ['its yoke muscle contracts equally', 'its direct antagonist relaxes to an equal degree', 'both eyes converge', 'accommodation relaxes'],
+      correct: 1,
+      answer: 'Sherrington\'s law is a monocular law: as one muscle contracts, its direct antagonist relaxes equally. In supraduction the superior rectus contracts as the inferior rectus relaxes.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Which condition is a requirement for binocular fusion?',
+      options: ['unequal acuity between the eyes', 'normal retinal correspondence', 'suppression of one image', 'markedly different image sizes'],
+      correct: 1,
+      answer: 'Fusion requires roughly equal acuity, monocular fixation, normal retinal correspondence, normal motility, and similar images. Suppression and large size differences prevent it.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Adduction and abduction of the eye occur around which axis of Fick?',
+      options: ['the transverse (X) axis', 'the vertical (Z) axis', 'the antero-posterior (Y) axis', 'the visual axis'],
+      correct: 1,
+      answer: 'Horizontal movements (adduction and abduction) occur around the vertical Z-axis. The transverse X-axis produces elevation and depression, and the antero-posterior Y-axis produces torsion.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The primary position of gaze, with the eyes directed straight ahead, is also called the:',
+      options: ['ortho position', 'cardinal position', 'tertiary position', 'vergence position'],
+      correct: 0,
+      answer: 'The primary position (eyes straight ahead) is the ortho position. The four secondary positions are dextro, levo, supra, and infra; the four tertiary positions are oblique.',
+    },
   ],
 }
 

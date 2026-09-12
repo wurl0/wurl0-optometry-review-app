@@ -16,7 +16,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Binocular Vision',
     description: 'Vergence, eye movements, stereopsis, binocular disorders',
     color: 'blue',
-    questionCount: 105,
+    questionCount: 123,
     icon: '🎯',
     olePrep: true,
     hasExam: true,
