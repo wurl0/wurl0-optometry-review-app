@@ -9058,5 +9058,53 @@
   "w": "Thimerosal is a mercury-containing preservative linked to hypersensitivity and has been largely replaced. Benzalkonium chloride is another older preservative, weak against Pseudomonas.",
   "k": "Mercury-containing CL preservative = thimerosal.",
   "src": "authored"
+ },
+ {
+  "id": "D0403",
+  "sec": "D2-01",
+  "t": "D2 Dispensing",
+  "q": "The Geneva lens measure (lens clock) reads true surface power only for a lens of index:",
+  "o": [
+   "1.530",
+   "1.523",
+   "1.498",
+   "1.586"
+  ],
+  "a": 0,
+  "w": "The lens clock is calibrated for crown glass of index 1.530. For any other material the reading must be corrected, since true surface power depends on the actual refractive index.",
+  "k": "Lens clock is calibrated for index 1.530.",
+  "src": "authored"
+ },
+ {
+  "id": "D0404",
+  "sec": "D1-01",
+  "t": "D1 Geometric Optics",
+  "q": "The power a cylinder exerts in a meridian oblique to its axis varies with the:",
+  "o": [
+   "tangent of the angle from the axis",
+   "angle divided by ninety",
+   "sine squared of the angle from the axis",
+   "cosine of the angle from the axis"
+  ],
+  "a": 2,
+  "w": "A cylinder has no power along its axis and full power 90 degrees away; between, power follows the sine-squared of the angle from the axis. This also underlies obliquely crossed cylinders.",
+  "k": "Oblique cylinder power follows sine-squared of the angle from the axis.",
+  "src": "authored"
+ },
+ {
+  "id": "D0405",
+  "sec": "D2-01",
+  "t": "D2 Dispensing",
+  "q": "Two prisms acting in perpendicular meridians combine into a resultant equal to the:",
+  "o": [
+   "vector sum of the two prisms",
+   "larger prism alone",
+   "arithmetic sum of the two",
+   "difference of the two"
+  ],
+  "a": 0,
+  "w": "Perpendicular prisms add as vectors, so the resultant magnitude is the square root of the horizontal squared plus the vertical squared, with base direction set by the quadrant.",
+  "k": "Perpendicular prisms combine as a vector sum.",
+  "src": "authored"
  }
 ]
