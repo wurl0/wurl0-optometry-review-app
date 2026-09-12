@@ -5981,5 +5981,53 @@
   "w": "Seeing one pink light means the red and white images have merged, indicating fusion. Two separate lights would mean diplopia, and one color means suppression.",
   "k": "One pink light = fusion.",
   "src": "authored"
+ },
+ {
+  "id": "B0266",
+  "sec": "B1-01",
+  "t": "B1 Visual System",
+  "q": "In the pupillary light reflex, the afferent limb is carried by the optic nerve and the efferent limb by the:",
+  "o": [
+   "abducens nerve",
+   "facial nerve",
+   "oculomotor nerve",
+   "trigeminal nerve"
+  ],
+  "a": 2,
+  "w": "Light is sensed through the optic nerve (afferent, CN II) and the constriction command returns through the oculomotor nerve (efferent, CN III) to the sphincter pupillae via the ciliary ganglion.",
+  "k": "Light reflex: afferent CN II, efferent CN III.",
+  "src": "authored"
+ },
+ {
+  "id": "B0267",
+  "sec": "B1-01",
+  "t": "B1 Visual System",
+  "q": "Light in one eye constricts both pupils because each Edinger-Westphal nucleus sends fibers to:",
+  "o": [
+   "both the right and left eye",
+   "the pretectal area only",
+   "only the same-side eye",
+   "the ciliary muscle alone"
+  ],
+  "a": 0,
+  "w": "Each pretectal nucleus drives both Edinger-Westphal nuclei, and each E-W nucleus projects to its own and the opposite eye, so light in one eye constricts both pupils (the consensual reflex).",
+  "k": "Consensual reflex = E-W nucleus drives both eyes.",
+  "src": "authored"
+ },
+ {
+  "id": "B0268",
+  "sec": "B1-01",
+  "t": "B1 Visual System",
+  "q": "On the swinging-flashlight test, a pupil that dilates when the light moves to it indicates a relative afferent pupillary defect on that side, also called a:",
+  "o": [
+   "Marcus Gunn pupil",
+   "Argyll Robertson pupil",
+   "Adie pupil",
+   "Horner pupil"
+  ],
+  "a": 0,
+  "w": "A relative afferent pupillary defect (Marcus Gunn pupil) means that eye senses light poorly, from optic nerve or extensive retinal disease, so it appears to dilate when the light swings to it.",
+  "k": "Swinging-flashlight dilation = RAPD (Marcus Gunn).",
+  "src": "authored"
  }
 ]

@@ -6,7 +6,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Physiologic Optics',
     description: 'Accommodation, refractive errors, schematic eye, visual physiology',
     color: 'teal',
-    questionCount: 80,
+    questionCount: 92,
     icon: '👁️',
     olePrep: true,
     hasExam: true,

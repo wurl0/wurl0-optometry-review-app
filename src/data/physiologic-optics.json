@@ -724,5 +724,149 @@
     "stem": "Depth of field relates to how far the visual acuity chart can move and still be focused.",
     "correct": true,
     "explanation": "Depth of focus relates to image position relative to retina"
+  },
+  {
+    "type": "mcq",
+    "stem": "Of the fibrous outer coat of the eye, the sclera covers what fraction of the eyeball?",
+    "options": [
+      "1/6",
+      "1/3",
+      "5/6",
+      "1/2"
+    ],
+    "correct": 2,
+    "explanation": "The sclera forms the posterior 5/6 of the fibrous coat and the transparent cornea the anterior 1/6. The sclera is opaque, protects the globe, and gives muscle attachment."
+  },
+  {
+    "type": "mcq",
+    "stem": "The main refractive structure of the eye and the anterior 1/6 of the fibrous coat is the:",
+    "options": [
+      "lens",
+      "cornea",
+      "sclera",
+      "choroid"
+    ],
+    "correct": 1,
+    "explanation": "The cornea is the transparent anterior 1/6 of the fibrous coat and the eye's main refractive apparatus. The sclera makes up the opaque posterior 5/6."
+  },
+  {
+    "type": "mcq",
+    "stem": "A rigid contact lens fitted STEEPER than the cornea creates a tear lens that requires a change of:",
+    "options": [
+      "more plus power",
+      "more minus power",
+      "no power change",
+      "added cylinder"
+    ],
+    "correct": 1,
+    "explanation": "A steeper lens steepens the tear layer radius, increasing its plus power and focusing in front of the retina, so more minus is added to compensate. SAM: Steeper Add Minus."
+  },
+  {
+    "type": "mcq",
+    "stem": "A rigid contact lens fitted FLATTER than the cornea requires a change of:",
+    "options": [
+      "more minus power",
+      "more plus power",
+      "added prism",
+      "no change"
+    ],
+    "correct": 1,
+    "explanation": "A flatter lens flattens the tear radius, decreasing its power and focusing behind the retina, so more plus is added. FAP: Flatter Add Plus."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the pupillary light reflex, the afferent (sensory) limb is carried by the:",
+    "options": [
+      "optic nerve (CN II)",
+      "oculomotor nerve (CN III)",
+      "trigeminal nerve (CN V)",
+      "facial nerve (CN VII)"
+    ],
+    "correct": 0,
+    "explanation": "The afferent limb of the light reflex travels in the optic nerve (CN II); the efferent limb returns through the oculomotor nerve (CN III) to the sphincter pupillae."
+  },
+  {
+    "type": "mcq",
+    "stem": "The consensual light reflex (both pupils constrict when one eye is lit) occurs because the:",
+    "options": [
+      "retina has two maculae",
+      "Edinger-Westphal nucleus sends fibers to BOTH eyes",
+      "optic nerves do not decussate",
+      "ciliary ganglion is single"
+    ],
+    "correct": 1,
+    "explanation": "Each Edinger-Westphal nucleus projects to both the ipsilateral and contralateral eye, so light in one eye constricts both pupils. That is the anatomic basis of the consensual reflex."
+  },
+  {
+    "type": "mcq",
+    "stem": "A lesion at the optic chiasm involving the crossing fibers produces:",
+    "options": [
+      "total monocular blindness",
+      "bitemporal heteronymous hemianopsia",
+      "homonymous hemianopsia",
+      "central scotoma only"
+    ],
+    "correct": 1,
+    "explanation": "Crossing nasal fibers at the chiasm serve the temporal fields, so a central chiasmal lesion causes bitemporal heteronymous hemianopsia. A single optic nerve lesion instead blinds that one eye."
+  },
+  {
+    "type": "mcq",
+    "stem": "A complete lesion of one optic nerve produces:",
+    "options": [
+      "bitemporal hemianopsia",
+      "total blindness of that eye (monocular)",
+      "homonymous hemianopsia",
+      "an enlarged blind spot only"
+    ],
+    "correct": 1,
+    "explanation": "Because the optic nerve carries all fibers from one eye before the chiasm, cutting it causes total monocular blindness on that side, with a positive afferent pupillary defect."
+  },
+  {
+    "type": "mcq",
+    "stem": "An eye blinded by an optic nerve lesion shows which pupillary finding?",
+    "options": [
+      "absent direct reflex but intact consensual when the good eye is lit",
+      "brisk direct reflex",
+      "fixed dilated pupil unresponsive to any light",
+      "constant miosis"
+    ],
+    "correct": 0,
+    "explanation": "In an amaurotic (blind) eye the direct reflex is absent because no light is sensed, but the pupil still constricts consensually when the normal eye is lit, since its efferent pathway is intact."
+  },
+  {
+    "type": "mcq",
+    "stem": "A scotoma in which light perception is entirely lost within the area is classified as:",
+    "options": [
+      "relative scotoma",
+      "absolute scotoma",
+      "negative scotoma",
+      "positive scotoma"
+    ],
+    "correct": 1,
+    "explanation": "An absolute scotoma has complete loss of light perception in that area; a relative scotoma only dims perception so that low-luminance targets are missed. Those two are graded by perception."
+  },
+  {
+    "type": "mcq",
+    "stem": "A scotoma the patient is NOT aware of, such as the physiologic blind spot, is called a:",
+    "options": [
+      "positive scotoma",
+      "negative scotoma",
+      "absolute scotoma",
+      "central scotoma"
+    ],
+    "correct": 1,
+    "explanation": "A negative scotoma is not perceived by the patient and is found only on testing (the physiologic blind spot is the classic example). A positive scotoma is seen by the patient as a dark patch."
+  },
+  {
+    "type": "mcq",
+    "stem": "Detachment of the iris from its root at the ciliary body is called:",
+    "options": [
+      "iridoplegia",
+      "iridodialysis",
+      "corectopia",
+      "polycoria"
+    ],
+    "correct": 1,
+    "explanation": "Iridodialysis is the tearing of the iris from the ciliary body root, often from blunt trauma. Iridoplegia is paralysis of the iris sphincter, corectopia is a displaced pupil, and polycoria is more than one pupil."
   }
 ]
