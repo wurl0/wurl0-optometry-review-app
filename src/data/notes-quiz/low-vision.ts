@@ -170,5 +170,33 @@ export const lowVisionQuiz: NotesQuizData = {
       correct: 1,
       answer: 'A closed-circuit television (CCTV) provides high magnification, zoom, contrast reversal and enhancement, and comfortable posture, making it best for prolonged reading. Its drawbacks are cost and bulk.',
     },
+    {
+      kind: 'mcq',
+      stem: 'Kestenbaum\'s rule estimates the starting near add as the:',
+      options: ['reciprocal of the distance Snellen acuity', 'square of the acuity', 'patient age divided by ten', 'working distance in centimeters'],
+      correct: 0,
+      answer: 'Kestenbaum\'s rule gives the initial add as the reciprocal of the distance Snellen acuity, so 20/200 gives 200/20 = +10.00 D. It is refined with the actual reading task.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Field expanders such as reverse telescopes, prisms, and mirrors are prescribed for patients with:',
+      options: ['a central scotoma', 'severely constricted fields or hemianopsia', 'presbyopia', 'dry eye'],
+      correct: 1,
+      answer: 'Field expanders minify the scene to fit more of it within a constricted field or hemianopsia. They are the opposite strategy from magnifiers, which are used for reduced acuity.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'A reverse (Galilean) telescope helps a patient with a constricted field because it:',
+      options: ['magnifies the central image', 'minifies the image to widen the effective field', 'increases contrast only', 'corrects color vision'],
+      correct: 1,
+      answer: 'Looking through the objective end of a telescope minifies the scene, so more of the world falls within the small remaining field. It trades acuity for a wider field.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Eccentric viewing training is most useful for a patient with:',
+      options: ['a dense central scotoma from macular disease', 'peripheral field constriction', 'a refractive error only', 'convergence insufficiency'],
+      correct: 0,
+      answer: 'A patient with a central scotoma learns to fixate slightly off-center so images land on healthier eccentric retina. It does not help peripheral field loss.',
+    },
   ],
 }

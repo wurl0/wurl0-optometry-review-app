@@ -126,7 +126,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Low Vision',
     description: 'Definitions and classification, colour vision, visual fields, contrast sensitivity, magnification, telescopes, reading adds, and low vision devices.',
     color: 'emerald',
-    questionCount: 104,
+    questionCount: 108,
     icon: '🔍',
     olePrep: true,
     hasExam: true,

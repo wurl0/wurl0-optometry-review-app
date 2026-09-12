@@ -5218,5 +5218,37 @@
   "w": "A newborn sees at roughly 20/800 with shadowy vision and no coordinated eye movements, then matures toward 20/20 over the first few years.",
   "k": "Newborn acuity is about 20/800.",
   "src": "authored"
+ },
+ {
+  "id": "F0238",
+  "sec": "F7-01",
+  "t": "F7 Low Vision",
+  "q": "Low-vision reading goals build in reserve acuity because fluent, accurate reading requires acuity about:",
+  "o": [
+   "1 line larger than threshold",
+   "10 lines better than threshold",
+   "3 lines better than threshold",
+   "equal to threshold"
+  ],
+  "a": 2,
+  "w": "Threshold acuity allows only slow spotting. Fluent reading needs roughly 3 lines of reserve, so a device is prescribed to give acuity better than the target print size.",
+  "k": "Fluent reading needs about 3 lines of acuity reserve.",
+  "src": "authored"
+ },
+ {
+  "id": "F0239",
+  "sec": "F7-01",
+  "t": "F7 Low Vision",
+  "q": "A patient with hemianopsia or a severely constricted visual field is best helped by a:",
+  "o": [
+   "field expander such as a reverse telescope or prism",
+   "tinted absorptive lens",
+   "high-plus magnifier",
+   "closed-circuit television"
+  ],
+  "a": 0,
+  "w": "Field expanders (prisms, mirrors, reverse telescopes, minus lenses) minify the scene so more of it fits within the remaining field. Magnifiers would shrink the field further.",
+  "k": "Constricted field or hemianopsia = field expander (minify).",
+  "src": "authored"
  }
 ]
