@@ -2,9 +2,10 @@
 import { useState } from 'react'
 import type { Readiness } from '@/lib/readiness'
 
-// A copy-ready readiness snapshot for Lisa, mirroring the "Copy for Lisa" on the Daily
-// Queue page. Built entirely from the readiness the server already computed, so it never
-// reads or writes anything — Wyrlo taps Copy and pastes it to Lisa.
+// A copy-ready text snapshot of the readiness readout. Neutral wording because this page
+// is a full-tier feature shared with other users (unlike the admin-only Daily Queue,
+// which can say "for Lisa"). Built entirely from the readiness the server already
+// computed, so it never reads or writes anything.
 
 const EXAM = new Date(2026, 8, 28) // written OLE: Sep 28, 2026
 const DAYMS = 86400000
@@ -66,14 +67,14 @@ export default function ReadinessSnapshot({ r }: { r: Readiness }) {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-4">
       <div className="flex items-center justify-between gap-3 mb-2">
-        <span className="text-sm font-bold text-gray-800">Readiness snapshot for Lisa</span>
+        <span className="text-sm font-bold text-gray-800">Readiness snapshot</span>
         <div className="flex items-center gap-2">
           <span className={`text-xs text-teal-600 transition-opacity ${copied ? 'opacity-100' : 'opacity-0'}`}>Copied</span>
           <button
             onClick={copy}
             className="text-xs font-semibold rounded-lg px-3 py-1.5 bg-teal-600 text-white hover:bg-teal-700 transition-colors"
           >
-            Copy for Lisa
+            Copy snapshot
           </button>
         </div>
       </div>
