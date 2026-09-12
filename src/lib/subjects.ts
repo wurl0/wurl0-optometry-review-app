@@ -46,7 +46,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Primary Eye Care',
     description: 'Case history, refraction, binocular vision, ocular disease, examination techniques',
     color: 'emerald',
-    questionCount: 151,
+    questionCount: 172,
     icon: '🩺',
     olePrep: true,
     hasExam: true,

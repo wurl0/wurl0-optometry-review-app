@@ -9918,5 +9918,37 @@
   "w": "Refractive myopia comes from over-powerful refracting surfaces in an eye of normal length, whether from steep curvature or a high lens index. Axial myopia instead comes from an eye that is too long.",
   "k": "Normal length but too-strong surfaces = refractive myopia.",
   "src": "authored"
+ },
+ {
+  "id": "C0439",
+  "sec": "C3-01",
+  "t": "C3 Preliminary Exam",
+  "q": "The form of visual acuity that represents letter recognition, as measured by the Snellen chart, is:",
+  "o": [
+   "minimum separable",
+   "minimum discriminable",
+   "minimum legible",
+   "minimum visible"
+  ],
+  "a": 2,
+  "w": "Minimum legible (recognition) is what the Snellen chart tests. Minimum visible is detection, minimum separable is resolution, and minimum discriminable is Vernier hyperacuity.",
+  "k": "Snellen tests minimum legible (recognition).",
+  "src": "authored"
+ },
+ {
+  "id": "C0440",
+  "sec": "C4-01",
+  "t": "C4 Objective Exam",
+  "q": "Retinoscopy performed with a near target and active accommodation, using no working-distance allowance, is:",
+  "o": [
+   "dynamic retinoscopy",
+   "radical retinoscopy",
+   "static retinoscopy",
+   "Mohindra retinoscopy"
+  ],
+  "a": 0,
+  "w": "Dynamic retinoscopy uses near fixation with active accommodation to measure the accommodative response (lag). Static retinoscopy uses distance fixation with relaxed accommodation and a working-distance allowance.",
+  "k": "Near target, active accommodation = dynamic retinoscopy.",
+  "src": "authored"
  }
 ]

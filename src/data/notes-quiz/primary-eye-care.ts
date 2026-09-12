@@ -62,6 +62,41 @@ const quiz: NotesQuizData = {
       answer:
         'HRR (Hardy Rand Rittler) can detect protan, deutan, AND tritan defects. Ishihara screens ONLY protan and deutan (red-green). Farnsworth-Munsell 100 Hue is most sensitive for mild/moderate congenital AND early acquired defects. D-15: pass = mild deficiency; fail = severe.',
     },
+    {
+      kind: 'mcq',
+      stem: 'A patient improves from 20/60 to 20/25 when looking through a pinhole. This suggests the cause of the blur is:',
+      options: ['a media opacity', 'uncorrected refractive error', 'macular disease', 'optic nerve disease'],
+      correct: 1,
+      answer: 'A pinhole eliminates most refractive blur, so improvement points to uncorrected refractive error. Little or no improvement suggests media opacity or retinal/optic nerve disease.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Using Hofstetter\'s average formula, the expected amplitude of accommodation for a 40-year-old is about:',
+      options: ['4.5 D', '6.5 D', '9.0 D', '2.0 D'],
+      correct: 1,
+      answer: 'Average expected AA = 18.5 − 0.30 × age = 18.5 − 12 = 6.5 D at age 40. The minimum formula (15 − 0.25 × age) gives 5.0 D.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'On the Hirschberg test, the corneal light reflex of a normal eye is located:',
+      options: ['exactly central', 'slightly nasal to the pupil center', 'slightly temporal to the pupil center', 'at the pupil margin'],
+      correct: 1,
+      answer: 'The normal reflex sits about 0.5 mm nasal to the pupil center because of angle kappa. A temporally displaced reflex suggests esotropia, a nasal one exotropia.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Dynamic retinoscopy differs from static retinoscopy in that the patient:',
+      options: ['fixates at distance with accommodation relaxed', 'fixates a near target with accommodation active', 'is fully cyclopleged', 'wears a pinhole'],
+      correct: 1,
+      answer: 'Dynamic retinoscopy uses a near fixation target with active accommodation and no working-distance allowance, to assess the accommodative response (lag). Static retinoscopy uses distance fixation with relaxed accommodation.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The lowest form of visual acuity, detecting the presence of a target against its background, is:',
+      options: ['minimum separable', 'minimum visible', 'minimum legible', 'minimum discriminable'],
+      correct: 1,
+      answer: 'Minimum visible (detection) is the lowest form of acuity. Resolution is minimum separable, letter recognition is minimum legible (Snellen), and Vernier alignment is minimum discriminable.',
+    },
   ],
 }
 
