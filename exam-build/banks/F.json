@@ -5170,5 +5170,53 @@
   "w": "Detecting motion at the edge of the field is peripheral awareness, a trainable sports-vision skill distinct from central acuity.",
   "k": "Edge-of-field detection = peripheral awareness.",
   "src": "authored"
+ },
+ {
+  "id": "F0235",
+  "sec": "F2-01",
+  "t": "F2 Pediatric",
+  "q": "A school-age child who reverses b and d and struggles to match or sort shapes most likely has a deficit in which visual perceptual skill?",
+  "o": [
+   "visual closure",
+   "spatial relations",
+   "visual discrimination",
+   "visual memory"
+  ],
+  "a": 2,
+  "w": "Visual discrimination is noticing similarities and differences among forms. Its deficit shows as b/d reversals and trouble matching or sorting, one of the seven visual perceptual skills.",
+  "k": "b/d reversal, poor matching = visual discrimination deficit.",
+  "src": "authored"
+ },
+ {
+  "id": "F0236",
+  "sec": "F2-01",
+  "t": "F2 Pediatric",
+  "q": "A white pupil (leukocoria) found in a child must be urgently worked up to rule out:",
+  "o": [
+   "retinoblastoma",
+   "simple refractive error",
+   "allergic conjunctivitis",
+   "a chalazion"
+  ],
+  "a": 0,
+  "w": "Leukocoria is never normal and demands urgent evaluation to exclude retinoblastoma, the most common intraocular malignancy of childhood. Congenital cataract is another cause.",
+  "k": "Leukocoria in a child = rule out retinoblastoma.",
+  "src": "authored"
+ },
+ {
+  "id": "F0237",
+  "sec": "F2-01",
+  "t": "F2 Pediatric",
+  "q": "The approximate visual acuity of a newborn at birth is:",
+  "o": [
+   "20/800",
+   "20/40",
+   "20/20",
+   "20/200"
+  ],
+  "a": 0,
+  "w": "A newborn sees at roughly 20/800 with shadowy vision and no coordinated eye movements, then matures toward 20/20 over the first few years.",
+  "k": "Newborn acuity is about 20/800.",
+  "src": "authored"
  }
 ]

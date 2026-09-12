@@ -136,7 +136,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Pediatric Optometry',
     description: 'Visual development, primitive reflexes, pediatric exam and acuity tests, refraction, binocular vision, amblyopia, and childhood strabismus.',
     color: 'rose',
-    questionCount: 102,
+    questionCount: 108,
     icon: '🧸',
     olePrep: true,
     hasExam: true,
