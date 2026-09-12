@@ -9382,5 +9382,69 @@
   "w": "FSH and LH are gonadotropins from the anterior pituitary. The posterior pituitary stores ADH and oxytocin.",
   "k": "FSH and LH: anterior pituitary.",
   "src": "authored"
+ },
+ {
+  "id": "A0423",
+  "sec": "A2-01",
+  "t": "A2 Orbit & EOM",
+  "q": "Venous blood from the orbit drains, by way of the superior and inferior ophthalmic veins, chiefly into the:",
+  "o": [
+   "internal jugular vein",
+   "sigmoid sinus",
+   "cavernous sinus",
+   "pterygoid plexus"
+  ],
+  "a": 2,
+  "w": "The superior and inferior ophthalmic veins are the orbit's main venous channels, and both empty into the cavernous sinus. This is why orbital and mid-face infections can spread to the cavernous sinus.",
+  "k": "Orbital venous drainage ends in the cavernous sinus.",
+  "src": "authored"
+ },
+ {
+  "id": "A0424",
+  "sec": "A2-06",
+  "t": "A2 Retina/Optic N",
+  "q": "The long posterior ciliary arteries supply mainly the:",
+  "o": [
+   "iris and ciliary body",
+   "central retinal territory",
+   "choroid and outer retina",
+   "optic nerve and disc"
+  ],
+  "a": 0,
+  "w": "The two long posterior ciliary arteries run forward to supply the anterior uvea, meaning the iris and ciliary body. The many short posterior ciliary arteries instead supply the choroid and outer retina through the choriocapillaris.",
+  "k": "Long PCAs feed the iris and ciliary body; short PCAs feed the choroid.",
+  "src": "authored"
+ },
+ {
+  "id": "A0425",
+  "sec": "A2-01",
+  "t": "A2 Orbit & EOM",
+  "q": "A mass or inflammation compressing the superior orbital fissure at the orbital apex characteristically causes:",
+  "o": [
+   "total ophthalmoplegia with vision loss",
+   "an isolated sixth nerve palsy",
+   "isolated ptosis",
+   "painless proptosis alone"
+  ],
+  "a": 0,
+  "w": "The superior orbital fissure transmits CN3, CN4, CN6, and the ophthalmic division of CN5 together, so a lesion there paralyzes all eye movement, and apex involvement of the optic nerve adds vision loss (orbital apex syndrome).",
+  "k": "Orbital apex lesion = all EOM paralyzed plus vision loss.",
+  "src": "authored"
+ },
+ {
+  "id": "A0426",
+  "sec": "A2-07",
+  "t": "A2 Visual Pathway",
+  "q": "Meyer's loop, a portion of the optic radiation, passes through which lobe of the brain?",
+  "o": [
+   "parietal lobe",
+   "temporal lobe",
+   "frontal lobe",
+   "occipital lobe"
+  ],
+  "a": 1,
+  "w": "The optic radiation splits, and its inferior fibers sweep forward through the temporal lobe as Meyer's loop before reaching the occipital cortex. A temporal lesion there affects the upper visual field.",
+  "k": "Meyer's loop runs through the temporal lobe.",
+  "src": "authored"
  }
 ]

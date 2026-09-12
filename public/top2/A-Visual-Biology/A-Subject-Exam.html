@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject A — Board Exam</h1>
-    <p class="sub">Visual Biology and Ocular Anatomy · 422 questions · mixed, board-style</p>
+    <p class="sub">Visual Biology and Ocular Anatomy · 426 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>422 board-style questions drawn from every A note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>426 board-style questions drawn from every A note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">A1 Body &amp; CN</span>
       <span class="chip">A2 Orbit &amp; EOM</span>
@@ -104,7 +104,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="422">Full (422)</button>
+      <button class="modebtn sel" data-n="426">Full (426)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -566,10 +566,14 @@ const BANK=[
 {t:"A1 Body & CN",q:"Pulmonary surfactant functions to:",o:["carry oxygen in blood", "increase surface tension", "reduce alveolar surface tension", "warm inspired air"],a:2,w:"Surfactant lowers alveolar surface tension, preventing collapse on expiration. Its absence causes respiratory distress in premature infants.",k:"Surfactant lowers surface tension, prevents collapse."},
 {t:"A1 Body & CN",q:"Most oxygen is transported in the blood:",o:["bound to hemoglobin", "dissolved in plasma", "as bicarbonate ion", "bound to albumin"],a:0,w:"About 98% of oxygen travels bound to hemoglobin; only a small fraction dissolves in plasma. Bicarbonate is a carbon dioxide carrier.",k:"O2 rides on hemoglobin."},
 {t:"A1 Body & CN",q:"Most carbon dioxide is transported in the blood as:",o:["dissolved gas", "carbaminohemoglobin", "bicarbonate ion", "bound to plasma proteins"],a:2,w:"About 70% of carbon dioxide is carried as bicarbonate, formed by carbonic anhydrase in red cells. Less travels as carbamino compounds or dissolved gas.",k:"Most CO2 travels as bicarbonate."},
-{t:"A1 Body & CN",q:"Follicle-stimulating hormone and luteinizing hormone are secreted by the:",o:["posterior pituitary", "ovary", "hypothalamus", "anterior pituitary"],a:3,w:"FSH and LH are gonadotropins from the anterior pituitary. The posterior pituitary stores ADH and oxytocin.",k:"FSH and LH: anterior pituitary."}
+{t:"A1 Body & CN",q:"Follicle-stimulating hormone and luteinizing hormone are secreted by the:",o:["posterior pituitary", "ovary", "hypothalamus", "anterior pituitary"],a:3,w:"FSH and LH are gonadotropins from the anterior pituitary. The posterior pituitary stores ADH and oxytocin.",k:"FSH and LH: anterior pituitary."},
+{t:"A2 Orbit & EOM",q:"Venous blood from the orbit drains, by way of the superior and inferior ophthalmic veins, chiefly into the:",o:["internal jugular vein", "sigmoid sinus", "cavernous sinus", "pterygoid plexus"],a:2,w:"The superior and inferior ophthalmic veins are the orbit's main venous channels, and both empty into the cavernous sinus. This is why orbital and mid-face infections can spread to the cavernous sinus.",k:"Orbital venous drainage ends in the cavernous sinus."},
+{t:"A2 Retina/Optic N",q:"The long posterior ciliary arteries supply mainly the:",o:["iris and ciliary body", "central retinal territory", "choroid and outer retina", "optic nerve and disc"],a:0,w:"The two long posterior ciliary arteries run forward to supply the anterior uvea, meaning the iris and ciliary body. The many short posterior ciliary arteries instead supply the choroid and outer retina through the choriocapillaris.",k:"Long PCAs feed the iris and ciliary body; short PCAs feed the choroid."},
+{t:"A2 Orbit & EOM",q:"A mass or inflammation compressing the superior orbital fissure at the orbital apex characteristically causes:",o:["total ophthalmoplegia with vision loss", "an isolated sixth nerve palsy", "isolated ptosis", "painless proptosis alone"],a:0,w:"The superior orbital fissure transmits CN3, CN4, CN6, and the ophthalmic division of CN5 together, so a lesion there paralyzes all eye movement, and apex involvement of the optic nerve adds vision loss (orbital apex syndrome).",k:"Orbital apex lesion = all EOM paralyzed plus vision loss."},
+{t:"A2 Visual Pathway",q:"Meyer's loop, a portion of the optic radiation, passes through which lobe of the brain?",o:["parietal lobe", "temporal lobe", "frontal lobe", "occipital lobe"],a:1,w:"The optic radiation splits, and its inferior fibers sweep forward through the temporal lobe as Meyer's loop before reaching the occipital cortex. A temporal lesion there affects the upper visual field.",k:"Meyer's loop runs through the temporal lobe."}
 ];
 
-let MODE=422, SCOPE='*', FB='practice';
+let MODE=426, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
