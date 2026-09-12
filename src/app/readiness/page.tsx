@@ -4,6 +4,7 @@ import { computeReadiness, type OleAttempt, type Verdict } from '@/lib/readiness
 import { ITEM_BY_ID, READINESS_ITEM_ID } from '@/lib/reviewer-manifest'
 import { areaToReviewer } from '@/lib/reviewer-anchors'
 import { canOpenItem, canOpenCockpit, isAdmin, type Access } from '@/lib/access'
+import ReadinessSnapshot from './ReadinessSnapshot'
 
 export const dynamic = 'force-dynamic'
 
@@ -195,6 +196,9 @@ export default async function ReadinessPage() {
                 </p>
               )}
             </div>
+
+            {/* Copy-ready snapshot to hand to Lisa (mirrors the Daily Queue's Copy for Lisa) */}
+            <ReadinessSnapshot r={r} />
 
             {/* Revisit first: ranked drill list */}
             {r.drillList.length > 0 && (
