@@ -476,5 +476,33 @@ export const ocularAnatomyQuiz: NotesQuizData = {
       correct: true,
       answer: 'TRUE. A normal C/D ratio is about 0.3. The physiologic cup is the funnel-shaped depression at the center of the 1.5 mm optic disc; a markedly enlarged ratio suggests glaucomatous optic neuropathy.',
     },
+    {
+      kind: 'mcq',
+      stem: 'Tears drain from the eye in which correct sequence?',
+      options: ['punctum → canaliculi → lacrimal sac → nasolacrimal duct → inferior meatus', 'lacrimal gland → punctum → fornix → nasal cavity', 'canaliculi → punctum → lacrimal sac → superior meatus', 'punctum → nasolacrimal duct → lacrimal sac → middle meatus'],
+      correct: 0,
+      answer: 'Tears pass from the puncta into the canaliculi, then the lacrimal sac, down the nasolacrimal duct, and out into the inferior meatus of the nose. Blockage anywhere along this path causes epiphora.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The nasolacrimal duct empties tears into which structure of the nasal cavity?',
+      options: ['superior meatus', 'middle meatus', 'inferior meatus', 'sphenoethmoidal recess'],
+      correct: 2,
+      answer: 'The nasolacrimal duct runs from the lacrimal fossa and opens into the inferior meatus, beneath the inferior turbinate. This is why crying produces a runny nose.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The oily (lipid) outer layer of the precorneal tear film is produced by the:',
+      options: ['lacrimal gland', 'goblet cells', 'meibomian (tarsal) glands', 'glands of Moll'],
+      correct: 2,
+      answer: 'The meibomian (tarsal) glands secrete the outer lipid layer, which slows tear evaporation. The lacrimal gland makes the middle aqueous layer and goblet cells make the inner mucin layer.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The innermost mucin layer of the tear film, which lets tears wet the cornea, is produced by:',
+      options: ['meibomian glands', 'conjunctival goblet cells', 'the lacrimal gland', 'glands of Zeis'],
+      correct: 1,
+      answer: 'Goblet cells in the conjunctiva secrete mucin, the wetting agent of the precorneal tear film. They are numerous at the fornix and absent at the lid margins and limbus.',
+    },
   ],
 }
