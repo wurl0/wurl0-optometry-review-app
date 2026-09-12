@@ -282,6 +282,41 @@ export const ethicsAndJurisprudenceQuiz: NotesQuizData = {
       stem: 'The republic act (FDA Act of 2009) under which the FDA licenses medical device establishments selling contact lenses and ophthalmic lenses.',
       answer: 'RA 9711',
     },
+    {
+      kind: 'mcq',
+      stem: 'A Philippine optometrist renews the Professional Identification Card (PIC):',
+      options: ['every year', 'every 3 years on the birth month', 'every 5 years', 'only once'],
+      correct: 1,
+      answer: 'The PIC is renewed every three years on the optometrist\'s birth month. Failing to renew places the optometrist in delinquent status and bars lawful practice.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Under RA 8981, a PRC officer or Board member who manipulates examination results faces, in addition to imprisonment and fine:',
+      options: ['a written warning', 'removal from office and perpetual disqualification from public office', 'a one-year suspension', 'community service'],
+      correct: 1,
+      answer: 'Beyond 6 years and 1 day to 12 years imprisonment and a P50,000 to P100,000 fine, an offending PRC officer or Board member is removed from office and perpetually disqualified from public office.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'One qualification required to be appointed to the Board of Optometry is:',
+      options: ['at least 25 years old', 'at least 10 years of active practice before appointment', 'a foreign optometry degree', 'membership in any profession'],
+      correct: 1,
+      answer: 'A Board member must be a natural-born Filipino, a registered optometrist in good standing, of good moral character, at least 35 years old, and in active practice for at least 10 years before appointment.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'The legal philosophy that separates law from morality, holding that law is simply what is duly enacted, is:',
+      options: ['natural law', 'legal positivism', 'legal realism', 'formalism'],
+      correct: 1,
+      answer: 'Legal positivism holds that law and morality are separate and that law is what is enacted. Natural law links law to morality; legal realism focuses on how judges actually decide cases.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Which is included in the minimum instruments and equipment required for optometric practice?',
+      options: ['optical coherence tomographer', 'trial lens set or phoropter', 'fundus camera', 'automated perimeter'],
+      correct: 1,
+      answer: 'The minimum set includes visual acuity charts, a trial lens set or phoropter, an ophthalmoscope and retinoscope, an ophthalmic chair, dispensing tools, and a slit lamp. Advanced imaging is not part of the minimum.',
+    },
   ],
 }
 

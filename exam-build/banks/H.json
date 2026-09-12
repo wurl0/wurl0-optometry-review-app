@@ -6193,5 +6193,37 @@
   "w": "The prescription is part of the patient's record and belongs to the patient once the service is paid, so it must be released on request.",
   "k": "Paid patient is entitled to the prescription.",
   "src": "sanitized"
+ },
+ {
+  "id": "H0274",
+  "sec": "H1-01",
+  "t": "H1 RA 8050",
+  "q": "Which instrument is part of the minimum equipment required for optometric practice under RA 8050?",
+  "o": [
+   "optical coherence tomographer",
+   "automated perimeter",
+   "trial lens set or phoropter",
+   "fundus camera"
+  ],
+  "a": 2,
+  "w": "The minimum set includes visual acuity charts, a trial lens set or phoropter, an ophthalmoscope and retinoscope, an ophthalmic chair, dispensing tools, and a slit lamp. Advanced imaging devices are not required.",
+  "k": "Minimum equipment includes a trial lens set or phoropter.",
+  "src": "authored"
+ },
+ {
+  "id": "H0275",
+  "sec": "H1-01",
+  "t": "H1 RA 8050",
+  "q": "Under RA 8981, leaking licensure questions or manipulating exam results is punishable by imprisonment of:",
+  "o": [
+   "6 years and 1 day to 12 years",
+   "30 days to 6 months",
+   "1 to 6 months",
+   "up to 30 days"
+  ],
+  "a": 0,
+  "w": "RA 8981 sets imprisonment of 6 years and 1 day to 12 years, a fine of P50,000 to P100,000, or both. A PRC officer or Board member is also removed and perpetually disqualified from public office.",
+  "k": "Exam manipulation under RA 8981: 6 yrs 1 day to 12 yrs.",
+  "src": "authored"
  }
 ]

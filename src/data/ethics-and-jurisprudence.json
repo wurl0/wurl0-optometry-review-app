@@ -3143,5 +3143,89 @@
     ],
     "correct": 1,
     "explanation": "Liability for breach of contract requires that the optometrist specifically promised a cure or result and failed. Expert testimony is not required and pain and suffering is not an element. The prudent rule is never to guarantee results."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under RA 8981, manipulating licensure results or leaking examination questions is punishable by imprisonment of:",
+    "options": [
+      "1 month to 6 months",
+      "6 years and 1 day to 12 years",
+      "up to 30 days only",
+      "life imprisonment"
+    ],
+    "correct": 1,
+    "explanation": "RA 8981 penalizes exam manipulation or leakage with imprisonment of 6 years and 1 day to 12 years, a fine of P50,000 to P100,000, or both. A PRC officer or Board member also faces removal and perpetual disqualification from public office."
+  },
+  {
+    "type": "mcq",
+    "stem": "The Professional Identification Card (PIC) of a Philippine optometrist is renewed:",
+    "options": [
+      "every year on January 1",
+      "every 3 years on the optometrist's birth month",
+      "every 5 years",
+      "only once, permanently"
+    ],
+    "correct": 1,
+    "explanation": "The PIC is renewed every three years on the optometrist's birth month. Lapsing without renewal places the optometrist in delinquent status."
+  },
+  {
+    "type": "mcq",
+    "stem": "A valid optometric prescription in the Philippines must display all of the following EXCEPT the:",
+    "options": [
+      "certificate of registration number",
+      "PTR (professional tax receipt) number",
+      "PIC expiry date",
+      "patient's SSS number"
+    ],
+    "correct": 3,
+    "explanation": "Prescriptions must show the certificate of registration number, the PTR number, and the PIC expiry date. The patient's SSS number is not required."
+  },
+  {
+    "type": "mcq",
+    "stem": "To qualify as a member of the Board of Optometry, one must be at least:",
+    "options": [
+      "25 years old with 3 years of practice",
+      "30 years old with 5 years of practice",
+      "35 years old with 10 years of active practice",
+      "40 years old with 15 years of practice"
+    ],
+    "correct": 2,
+    "explanation": "A Board member must be a natural-born Filipino, a registered optometrist in good standing, of good moral character, at least 35 years old, and in active practice for at least 10 years before appointment."
+  },
+  {
+    "type": "mcq",
+    "stem": "The school of jurisprudence holding that law and morality are entirely separate, and that law is simply what is enacted, is:",
+    "options": [
+      "natural law",
+      "legal positivism",
+      "legal realism",
+      "formalism"
+    ],
+    "correct": 1,
+    "explanation": "Legal positivism separates law from morality: law is what is duly enacted, regardless of moral content. Natural law ties law to morality, and legal realism looks at how judges actually decide."
+  },
+  {
+    "type": "mcq",
+    "stem": "Which instrument is part of the minimum equipment required for optometric practice under RA 8050?",
+    "options": [
+      "fundus camera",
+      "slit-lamp biomicroscope",
+      "OCT scanner",
+      "corneal topographer"
+    ],
+    "correct": 1,
+    "explanation": "Minimum required equipment includes visual acuity charts, a trial lens set or phoropter, an ophthalmoscope and retinoscope, an ophthalmic chair, dispensing tools, and a slit-lamp biomicroscope. Advanced imaging devices are not part of the minimum."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the 4 Ds of malpractice, the element establishing that an optometrist-patient relationship existed is:",
+    "options": [
+      "duty",
+      "dereliction",
+      "direct causation",
+      "damages"
+    ],
+    "correct": 0,
+    "explanation": "Duty means a professional relationship existed, creating a duty of care. The other Ds are dereliction (breach of the standard), direct causation, and damages (actual harm)."
   }
 ]
