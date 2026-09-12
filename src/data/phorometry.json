@@ -1580,5 +1580,65 @@
     "explanation": "All lateral phoria tests use OD: 12-15△BI and OS: 6△BU. The BI prism dissociates the images laterally, and the BU prism separates them vertically so the measuring prism can quantify the lateral deviation.",
     "isTrap": false,
     "category": "concept"
+  },
+  {
+    "type": "mcq",
+    "stem": "In phorometry, a base-out (BO) prism placed before the eyes:",
+    "options": [
+      "inhibits convergence",
+      "stimulates convergence",
+      "inhibits accommodation",
+      "stimulates accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Base-out prism bends light inward toward the nose, so the images land temporally and the eyes must turn in to fuse. The medial recti contract more, stimulating convergence. BO measures positive fusional vergence."
+  },
+  {
+    "type": "mcq",
+    "stem": "A base-in (BI) prism placed before the eyes during phorometry:",
+    "options": [
+      "stimulates convergence",
+      "inhibits convergence",
+      "stimulates accommodation",
+      "inhibits accommodation"
+    ],
+    "correct": 1,
+    "explanation": "Base-in prism bends light outward toward the temples, so images land nasally and the eyes must diverge to fuse. The medial recti relax, inhibiting convergence. BI measures negative fusional vergence."
+  },
+  {
+    "type": "mcq",
+    "stem": "The most common technique used to measure the dissociated phoria in the OEP sequence is the:",
+    "options": [
+      "cover test",
+      "von Graefe technique",
+      "Maddox rod",
+      "Hirschberg test"
+    ],
+    "correct": 1,
+    "explanation": "The von Graefe technique dissociates the eyes with prism (classically OD 12 to 15 base-in and OS 6 base-up) and then a measuring prism realigns the images to read the phoria."
+  },
+  {
+    "type": "mcq",
+    "stem": "Under the OEP A/B rule, an A-type test (such as #14A) ends at:",
+    "options": [
+      "blur or alignment",
+      "break and recovery",
+      "diplopia only",
+      "full suppression"
+    ],
+    "correct": 0,
+    "explanation": "A-type tests stop at the blur or alignment point and are less invasive. B-type tests (such as #14B) continue further to the break and recovery endpoints."
+  },
+  {
+    "type": "mcq",
+    "stem": "A convex (plus) lens used as a probe during phorometry:",
+    "options": [
+      "stimulates accommodation",
+      "inhibits accommodation",
+      "stimulates convergence",
+      "inhibits convergence"
+    ],
+    "correct": 1,
+    "explanation": "A convex lens does some of the focusing before light enters the eye, so the ciliary muscle relaxes and accommodation is inhibited. A concave (minus) lens does the opposite, stimulating accommodation."
   }
 ]

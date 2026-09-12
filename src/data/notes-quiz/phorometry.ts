@@ -57,6 +57,41 @@ const quiz: NotesQuizData = {
       correct: 1,
       answer: 'BO forces extra convergence → convergence drives accommodation (near triad linkage) → accommodation reaches its maximum first → blur. Vergence system breaks only after accommodation is already exhausted.',
     },
+    {
+      kind: 'mcq',
+      stem: 'A concave (minus) lens used as a probe body during phorometry:',
+      options: ['inhibits accommodation', 'stimulates accommodation', 'inhibits convergence', 'stimulates convergence'],
+      correct: 1,
+      answer: 'A concave (minus) lens diverges light before it enters the eye, so the crystalline lens must add power. The ciliary muscle contracts more, stimulating accommodation. A convex (plus) lens does the reverse.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Base-out prism stimulates convergence because it makes the images land:',
+      options: ['nasally, so the eyes diverge', 'temporally, so the eyes converge', 'higher, so the eyes depress', 'lower, so the eyes elevate'],
+      correct: 1,
+      answer: 'Base-out bends light inward toward the nose, so images fall on the temporal retina and the eyes must turn inward (converge) to fuse. This tests positive fusional vergence.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Base-in prism inhibits (relaxes) convergence because it makes the images land:',
+      options: ['temporally, so the eyes converge', 'nasally, so the eyes diverge', 'higher, so the eyes depress', 'centrally, with no change'],
+      correct: 1,
+      answer: 'Base-in bends light outward toward the temples, so images fall on the nasal retina and the eyes must diverge to fuse, relaxing convergence. This tests negative fusional vergence.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'In the von Graefe phoria test, the dissociating prism classically placed before the right eye is:',
+      options: ['6 base-up', '12 to 15 base-in', '6 base-out', '10 base-down'],
+      correct: 1,
+      answer: 'The classic von Graefe set-up uses a large dissociating prism of about 12 to 15 base-in before the right eye and 6 base-up before the left, splitting the images so a measuring prism can realign them.',
+    },
+    {
+      kind: 'mcq',
+      stem: 'Under the OEP A/B rule, the B-type tests differ from A-type tests in that they:',
+      options: ['stop at blur or alignment', 'continue to the break and recovery points', 'use plus lenses only', 'are done at distance only'],
+      correct: 1,
+      answer: 'B-type tests (such as #14B) push past the alignment point to the break and recovery endpoints, so they are more invasive. A-type tests stop earlier at blur or alignment.',
+    },
   ],
 }
 

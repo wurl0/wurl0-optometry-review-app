@@ -36,7 +36,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Phorometry (21 Steps)',
     description: 'OEP 21-step sequence, probe bodies, phoria measurements',
     color: 'amber',
-    questionCount: 113,
+    questionCount: 118,
     icon: '🕶️',
     olePrep: true,
     hasExam: true,
