@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject D — Board Exam</h1>
-    <p class="sub">Theoretical Optics, Dispensing and Contact Lenses · 398 questions · mixed, board-style</p>
+    <p class="sub">Theoretical Optics, Dispensing and Contact Lenses · 400 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>398 board-style questions drawn from every D note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>400 board-style questions drawn from every D note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">D1 Physical Optics</span>
       <span class="chip">D1 Geometric Optics</span>
@@ -99,7 +99,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="398">Full (398)</button>
+      <button class="modebtn sel" data-n="400">Full (400)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -532,10 +532,12 @@ const BANK=[
 {t:"D2 Dispensing",q:"Which test measures the scratch resistance of a lens using an abrasion wheel?",o:["Bayer test", "Taber test", "salt-spray test", "drop-ball test"],a:1,w:"The Taber abrasion test uses a rotating abrasion wheel to grade scratch resistance. The drop-ball test measures impact resistance.",k:"Taber test = scratch resistance."},
 {t:"D2 Dispensing",q:"Which bifocal design gives the widest field of view for near work?",o:["round-segment bifocal", "curved-top bifocal", "executive bifocal", "flat-top 28 bifocal"],a:2,w:"The executive (Franklin) bifocal segment spans the full width of the lens, giving the widest near field. Segment bifocals give a narrower reading area.",k:"Widest near field = executive bifocal."},
 {t:"D2 Dispensing",q:"Compared with glass, plastic (CR-39) lenses generally:",o:["absorb less UV than glass", "absorb more UV than glass", "block only infrared", "transmit all UV"],a:1,w:"Plastic (CR-39) inherently absorbs more ultraviolet than ordinary crown glass, and coatings can raise this further.",k:"Plastic absorbs more UV than glass."},
-{t:"D3 Contact Lens",q:"A multifocal contact lens wearer complaining of ghost images is best managed by:",o:["adjusting the add power", "switching to a spherical lens", "increasing the base curve", "increasing lens diameter"],a:0,w:"Ghosting with a multifocal usually reflects an add or pupil-zone mismatch, so adjusting the add power is the first step.",k:"Multifocal ghosting -> adjust the add."}
+{t:"D3 Contact Lens",q:"A multifocal contact lens wearer complaining of ghost images is best managed by:",o:["adjusting the add power", "switching to a spherical lens", "increasing the base curve", "increasing lens diameter"],a:0,w:"Ghosting with a multifocal usually reflects an add or pupil-zone mismatch, so adjusting the add power is the first step.",k:"Multifocal ghosting -> adjust the add."},
+{t:"D3 Contact Lens",q:"A hydrogen peroxide contact lens disinfecting system must be neutralized before wear because un-neutralized peroxide is:",o:["too weak to store the lens", "unable to remove protein", "toxic to the ocular surface", "ineffective as a disinfectant"],a:2,w:"Hydrogen peroxide disinfects well but stings and burns the eye until neutralized to saline. A non-neutralized lens causes an immediate chemical keratitis.",k:"Peroxide must be neutralized; otherwise it is toxic to the eye."},
+{t:"D3 Contact Lens",q:"Which older contact lens solution preservative contains mercury and is now avoided due to hypersensitivity?",o:["thimerosal", "sorbic acid", "polyquad", "chlorhexidine"],a:0,w:"Thimerosal is a mercury-containing preservative linked to hypersensitivity and has been largely replaced. Benzalkonium chloride is another older preservative, weak against Pseudomonas.",k:"Mercury-containing CL preservative = thimerosal."}
 ];
 
-let MODE=398, SCOPE='*', FB='practice';
+let MODE=400, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);

@@ -9026,5 +9026,37 @@
   "w": "Ghosting with a multifocal usually reflects an add or pupil-zone mismatch, so adjusting the add power is the first step.",
   "k": "Multifocal ghosting -> adjust the add.",
   "src": "authored"
+ },
+ {
+  "id": "D0399",
+  "sec": "D3-01",
+  "t": "D3 Contact Lens",
+  "q": "A hydrogen peroxide contact lens disinfecting system must be neutralized before wear because un-neutralized peroxide is:",
+  "o": [
+   "too weak to store the lens",
+   "unable to remove protein",
+   "toxic to the ocular surface",
+   "ineffective as a disinfectant"
+  ],
+  "a": 2,
+  "w": "Hydrogen peroxide disinfects well but stings and burns the eye until neutralized to saline. A non-neutralized lens causes an immediate chemical keratitis.",
+  "k": "Peroxide must be neutralized; otherwise it is toxic to the eye.",
+  "src": "authored"
+ },
+ {
+  "id": "D0400",
+  "sec": "D3-01",
+  "t": "D3 Contact Lens",
+  "q": "Which older contact lens solution preservative contains mercury and is now avoided due to hypersensitivity?",
+  "o": [
+   "thimerosal",
+   "sorbic acid",
+   "polyquad",
+   "chlorhexidine"
+  ],
+  "a": 0,
+  "w": "Thimerosal is a mercury-containing preservative linked to hypersensitivity and has been largely replaced. Benzalkonium chloride is another older preservative, weak against Pseudomonas.",
+  "k": "Mercury-containing CL preservative = thimerosal.",
+  "src": "authored"
  }
 ]
