@@ -6,28 +6,18 @@ import { createClient } from '@/lib/supabase-client'
 import { COLOR_MAP } from '@/lib/subjects'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
 import { recordSession } from '@/lib/srs-record'
+import { shuffle, shuffleOptions } from '@/lib/shuffle'
 
 interface Props {
   subject: Subject
   questions: Question[]
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    const tmp = a[i]
-    a[i] = a[j]
-    a[j] = tmp
-  }
-  return a
-}
-
 export default function ExamClient({ subject, questions }: Props) {
   const router = useRouter()
   const c = COLOR_MAP[subject.color]
 
-  const [shuffled] = useState(() => shuffle(questions))
+  const [shuffled] = useState(() => shuffle(questions).map(shuffleOptions))
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<(number | boolean | null)[]>(() => new Array(questions.length).fill(null))
   const [flagged, setFlagged] = useState<Set<number>>(new Set())

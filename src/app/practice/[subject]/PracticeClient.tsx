@@ -7,6 +7,7 @@ import { COLOR_MAP } from '@/lib/subjects'
 import { createClient } from '@/lib/supabase-client'
 import { updateGamification, GamificationResult } from '@/lib/gamification'
 import { recordSession, itemsFromSession, type RecordResult } from '@/lib/srs-record'
+import { shuffle, shuffleOptions } from '@/lib/shuffle'
 
 const LEVEL_CONFIG = [
   { level: 1, label: 'Level 1', questions: 25, description: 'Foundation', emoji: '🌱' },
@@ -27,15 +28,6 @@ interface Props {
   subject: Subject
   questions: Question[]
   levelProgress: Record<number, LevelRecord>
-}
-
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
-  }
-  return a
 }
 
 // How many questions each level draws. When the bank is large enough we use the
@@ -80,7 +72,7 @@ export default function PracticeClient({ subject, questions, levelProgress: init
 
   function startLevel(lvl: 1 | 2 | 3) {
     const count = levelSize(lvl, questions.length)
-    const sliced = shuffle(questions).slice(0, count)
+    const sliced = shuffle(questions).slice(0, count).map(shuffleOptions)
     setActiveLevel(lvl)
     setLevelQuestions(sliced)
     setCurrent(0)
