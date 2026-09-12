@@ -86,7 +86,7 @@ export const SUBJECTS: Subject[] = [
     name: 'General Pharmacology',
     description: 'Pharmacokinetics, pharmacodynamics, ANS drugs, antimicrobials, anti-inflammatories, antihypertensives, anesthetics, and CNS agents.',
     color: 'indigo',
-    questionCount: 228,
+    questionCount: 236,
     icon: '💊',
     olePrep: true,
     hasExam: true,

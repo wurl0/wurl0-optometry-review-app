@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject G — Board Exam</h1>
-    <p class="sub">Ocular Pharmacology · 286 questions · mixed, board-style</p>
+    <p class="sub">Ocular Pharmacology · 288 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>286 board-style questions drawn from every G note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>288 board-style questions drawn from every G note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">G1 Principles</span>
       <span class="chip">G2 Autonomic</span>
@@ -99,7 +99,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="286">Full (286)</button>
+      <button class="modebtn sel" data-n="288">Full (288)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -420,10 +420,12 @@ const BANK=[
 {t:"G4 Therapeutic",q:"The topical antiviral classically used for herpes simplex keratitis is:",o:["polymyxin B", "natamycin", "trifluridine", "tobramycin"],a:2,w:"Trifluridine (with vidarabine and acyclovir) is a topical antiviral for herpes and VZV keratitis. Natamycin is antifungal; the others are antibacterial.",k:"Topical antiviral for HSV keratitis = trifluridine."},
 {t:"G4 Therapeutic",q:"Which antiviral is given intravenously to treat CMV retinitis?",o:["vidarabine", "ganciclovir", "natamycin", "trifluridine"],a:1,w:"IV ganciclovir or foscarnet, and intravitreal fomivirsen, treat CMV retinitis. Trifluridine and vidarabine are topical drugs for herpes keratitis.",k:"IV drug for CMV retinitis = ganciclovir."},
 {t:"G4 Therapeutic",q:"The topical antifungal of choice for filamentous fungal keratitis from Fusarium or Aspergillus is:",o:["gentamicin", "acyclovir", "amphotericin B", "natamycin"],a:3,w:"Natamycin, a polyene, is the topical workhorse for filamentous fungi such as Fusarium and Aspergillus. Amphotericin B is reserved for yeast such as Candida.",k:"Filamentous fungal keratitis = natamycin."},
-{t:"G4 Therapeutic",q:"Antifungal agents used in the eye act mainly by inhibiting the synthesis of:",o:["folic acid", "bacterial cell wall", "viral DNA polymerase", "ergosterol"],a:3,w:"Antifungals such as the polyenes and azoles block ergosterol, the sterol of the fungal cell membrane, so the membrane fails.",k:"Antifungals block ergosterol in the fungal membrane."}
+{t:"G4 Therapeutic",q:"Antifungal agents used in the eye act mainly by inhibiting the synthesis of:",o:["folic acid", "bacterial cell wall", "viral DNA polymerase", "ergosterol"],a:3,w:"Antifungals such as the polyenes and azoles block ergosterol, the sterol of the fungal cell membrane, so the membrane fails.",k:"Antifungals block ergosterol in the fungal membrane."},
+{t:"G1 Principles",q:"An antagonist that directly neutralizes an agonist, such as a chelator binding a heavy metal, is exerting:",o:["competitive antagonism", "pharmacologic antagonism", "chemical antagonism", "physiologic antagonism"],a:2,w:"Chemical antagonism is direct neutralization of the agonist, as when a chelator binds a metal. It needs no receptor, unlike physiologic (separate receptor, opposite effect) or pharmacologic (same receptor) antagonism.",k:"Direct neutralization of the agonist = chemical antagonism."},
+{t:"G1 Principles",q:"When two drugs act at DIFFERENT receptors to produce opposite physiologic effects, the interaction is called:",o:["physiologic antagonism", "pharmacologic antagonism", "chemical antagonism", "competitive antagonism"],a:0,w:"Physiologic (functional) antagonism uses two separate receptors that drive opposite effects, so the net response is blunted. Pharmacologic antagonism instead blocks the same receptor the agonist uses.",k:"Opposite effects via different receptors = physiologic antagonism."}
 ];
 
-let MODE=286, SCOPE='*', FB='practice';
+let MODE=288, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);

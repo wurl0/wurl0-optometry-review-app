@@ -6338,5 +6338,37 @@
   "w": "Antifungals such as the polyenes and azoles block ergosterol, the sterol of the fungal cell membrane, so the membrane fails.",
   "k": "Antifungals block ergosterol in the fungal membrane.",
   "src": "authored"
+ },
+ {
+  "id": "G0287",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "An antagonist that directly neutralizes an agonist, such as a chelator binding a heavy metal, is exerting:",
+  "o": [
+   "competitive antagonism",
+   "pharmacologic antagonism",
+   "chemical antagonism",
+   "physiologic antagonism"
+  ],
+  "a": 2,
+  "w": "Chemical antagonism is direct neutralization of the agonist, as when a chelator binds a metal. It needs no receptor, unlike physiologic (separate receptor, opposite effect) or pharmacologic (same receptor) antagonism.",
+  "k": "Direct neutralization of the agonist = chemical antagonism.",
+  "src": "authored"
+ },
+ {
+  "id": "G0288",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "When two drugs act at DIFFERENT receptors to produce opposite physiologic effects, the interaction is called:",
+  "o": [
+   "physiologic antagonism",
+   "pharmacologic antagonism",
+   "chemical antagonism",
+   "competitive antagonism"
+  ],
+  "a": 0,
+  "w": "Physiologic (functional) antagonism uses two separate receptors that drive opposite effects, so the net response is blunted. Pharmacologic antagonism instead blocks the same receptor the agonist uses.",
+  "k": "Opposite effects via different receptors = physiologic antagonism.",
+  "src": "authored"
  }
 ]
