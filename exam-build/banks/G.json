@@ -6130,5 +6130,213 @@
   "w": "A miotic such as carbachol constricts the pupil to secure the implant. Tropicamide, atropine, and cyclopentolate are mydriatics that dilate.",
   "k": "After the IOL: constrict with a miotic (carbachol).",
   "src": "authored"
+ },
+ {
+  "id": "G0274",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Most drugs cross the cell membrane down their concentration gradient without energy or a carrier. This process is:",
+  "o": [
+   "pinocytosis",
+   "filtration",
+   "simple diffusion",
+   "active transport"
+  ],
+  "a": 2,
+  "w": "Simple diffusion moves lipid-soluble drugs from high to low concentration, needing no energy and no carrier. It is the route most drugs take.",
+  "k": "Most drugs: high to low, no energy, no carrier = simple diffusion.",
+  "src": "authored"
+ },
+ {
+  "id": "G0275",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A membrane process that moves a substance from low to high concentration using both energy and a carrier is:",
+  "o": [
+   "active transport",
+   "filtration",
+   "simple diffusion",
+   "facilitated diffusion"
+  ],
+  "a": 0,
+  "w": "Active transport pumps against the gradient (low to high), so it needs both energy and a carrier. Electrolytes move this way.",
+  "k": "Against the gradient, energy plus carrier = active transport.",
+  "src": "authored"
+ },
+ {
+  "id": "G0276",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A lipid-insoluble drug moves down its gradient with a carrier but no energy. This transport is:",
+  "o": [
+   "facilitated diffusion",
+   "active transport",
+   "simple diffusion",
+   "pinocytosis"
+  ],
+  "a": 0,
+  "w": "Facilitated diffusion is high to low like simple diffusion, but a carrier ferries the lipid-insoluble drug across. No energy is spent.",
+  "k": "High to low, carrier, no energy = facilitated diffusion.",
+  "src": "authored"
+ },
+ {
+  "id": "G0277",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Large dissolved substances enter a cell when the membrane engulfs them in a vesicle. This is:",
+  "o": [
+   "active transport",
+   "pinocytosis",
+   "filtration",
+   "simple diffusion"
+  ],
+  "a": 1,
+  "w": "Pinocytosis engulfs dissolved material by endocytosis, an energy-using process that needs no carrier protein.",
+  "k": "Membrane engulfs and drinks in material = pinocytosis.",
+  "src": "authored"
+ },
+ {
+  "id": "G0278",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "Small water-soluble molecules pass through membrane pores driven by a pressure gradient. This is:",
+  "o": [
+   "active transport",
+   "pinocytosis",
+   "filtration",
+   "facilitated diffusion"
+  ],
+  "a": 2,
+  "w": "Filtration pushes small molecules through pores by hydrostatic pressure, with no energy and no carrier.",
+  "k": "Small molecules through pores by pressure = filtration.",
+  "src": "authored"
+ },
+ {
+  "id": "G0279",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "The dose range that lies above the effective dose but below the toxic dose is called the:",
+  "o": [
+   "therapeutic window",
+   "therapeutic index",
+   "steady-state level",
+   "biologic half-life"
+  ],
+  "a": 0,
+  "w": "The therapeutic window is the safe range between the minimum effective dose and the toxic dose. The therapeutic index is the ratio, not the range.",
+  "k": "Range between effective and toxic dose = therapeutic window.",
+  "src": "authored"
+ },
+ {
+  "id": "G0280",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A drug said to have a narrow therapeutic window is one that:",
+  "o": [
+   "has a wide margin of safety",
+   "carries no risk of toxicity",
+   "has close effective and toxic doses",
+   "needs no plasma monitoring"
+  ],
+  "a": 2,
+  "w": "A narrow window means the effective and toxic doses sit close together, so small dose changes can cause harm and monitoring matters.",
+  "k": "Narrow window: effective and toxic doses are close.",
+  "src": "authored"
+ },
+ {
+  "id": "G0281",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "A higher first dose given to reach a therapeutic plasma level quickly is the:",
+  "o": [
+   "maintenance dose",
+   "loading dose",
+   "divided dose",
+   "tapering dose"
+  ],
+  "a": 1,
+  "w": "The loading (initial) dose is a larger first dose that reaches the target plasma level fast; smaller maintenance doses then hold it there.",
+  "k": "Big first dose to hit target level fast = loading dose.",
+  "src": "authored"
+ },
+ {
+  "id": "G0282",
+  "sec": "G1 General Pharmacology Principles",
+  "t": "G1 Principles",
+  "q": "After the target plasma level is reached, the dose that keeps the drug effect going is the:",
+  "o": [
+   "maintenance dose",
+   "loading dose",
+   "bolus dose",
+   "initial dose"
+  ],
+  "a": 0,
+  "w": "The maintenance dose replaces what the body clears so the plasma level stays in the therapeutic range after loading.",
+  "k": "Dose that holds the level steady = maintenance dose.",
+  "src": "authored"
+ },
+ {
+  "id": "G0283",
+  "sec": "G4 Therapeutic Ophthalmic Agents",
+  "t": "G4 Therapeutic",
+  "q": "The topical antiviral classically used for herpes simplex keratitis is:",
+  "o": [
+   "polymyxin B",
+   "natamycin",
+   "trifluridine",
+   "tobramycin"
+  ],
+  "a": 2,
+  "w": "Trifluridine (with vidarabine and acyclovir) is a topical antiviral for herpes and VZV keratitis. Natamycin is antifungal; the others are antibacterial.",
+  "k": "Topical antiviral for HSV keratitis = trifluridine.",
+  "src": "authored"
+ },
+ {
+  "id": "G0284",
+  "sec": "G4 Therapeutic Ophthalmic Agents",
+  "t": "G4 Therapeutic",
+  "q": "Which antiviral is given intravenously to treat CMV retinitis?",
+  "o": [
+   "vidarabine",
+   "ganciclovir",
+   "natamycin",
+   "trifluridine"
+  ],
+  "a": 1,
+  "w": "IV ganciclovir or foscarnet, and intravitreal fomivirsen, treat CMV retinitis. Trifluridine and vidarabine are topical drugs for herpes keratitis.",
+  "k": "IV drug for CMV retinitis = ganciclovir.",
+  "src": "authored"
+ },
+ {
+  "id": "G0285",
+  "sec": "G4 Therapeutic Ophthalmic Agents",
+  "t": "G4 Therapeutic",
+  "q": "The topical antifungal of choice for filamentous fungal keratitis from Fusarium or Aspergillus is:",
+  "o": [
+   "gentamicin",
+   "acyclovir",
+   "amphotericin B",
+   "natamycin"
+  ],
+  "a": 3,
+  "w": "Natamycin, a polyene, is the topical workhorse for filamentous fungi such as Fusarium and Aspergillus. Amphotericin B is reserved for yeast such as Candida.",
+  "k": "Filamentous fungal keratitis = natamycin.",
+  "src": "authored"
+ },
+ {
+  "id": "G0286",
+  "sec": "G4 Therapeutic Ophthalmic Agents",
+  "t": "G4 Therapeutic",
+  "q": "Antifungal agents used in the eye act mainly by inhibiting the synthesis of:",
+  "o": [
+   "folic acid",
+   "bacterial cell wall",
+   "viral DNA polymerase",
+   "ergosterol"
+  ],
+  "a": 3,
+  "w": "Antifungals such as the polyenes and azoles block ergosterol, the sterol of the fungal cell membrane, so the membrane fails.",
+  "k": "Antifungals block ergosterol in the fungal membrane.",
+  "src": "authored"
  }
 ]
