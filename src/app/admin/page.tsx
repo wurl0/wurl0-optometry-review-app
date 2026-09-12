@@ -725,6 +725,9 @@ export default function AdminPage() {
                           const idle = isIdle(u.lastActive)
                           const open = openUser === i
                           const maxUnits = Math.max(1, ...u.topPages.map(p => p.units))
+                          // Match this usage row to its profile (by email) so the block
+                          // control can reuse the same setBlock/isBlocked as the Access tab.
+                          const prof = u.email ? profiles.find(pr => pr.email === u.email) : undefined
                           return (
                             <Fragment key={i}>
                             <tr
@@ -735,6 +738,9 @@ export default function AdminPage() {
                                 <div className="text-gray-900 flex items-center gap-1.5">
                                   <span className={`text-gray-300 transition-transform ${open ? 'rotate-90' : ''}`}>›</span>
                                   {u.name || u.email || '—'}
+                                  {prof && isBlocked(prof.blocked_until) && (
+                                    <span className="text-[10px] font-medium text-slate-700 bg-slate-100 px-1.5 py-0.5 rounded-full">Offline</span>
+                                  )}
                                 </div>
                                 {u.name && u.email && <div className="text-xs text-gray-400 pl-4">{u.email}</div>}
                               </td>
@@ -758,7 +764,7 @@ export default function AdminPage() {
                                   {u.topPages.length === 0 && u.timeline.length === 0 ? (
                                     <p className="text-xs text-gray-400">No page activity recorded in the last 30 days.</p>
                                   ) : (
-                                    <div className="grid sm:grid-cols-2 gap-5">
+                                    <div className="grid sm:grid-cols-2 gap-5 mb-3">
                                       <div>
                                         <div className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Reviews the most (30d)</div>
                                         <div className="space-y-1">
@@ -791,6 +797,40 @@ export default function AdminPage() {
                                         </div>
                                       </div>
                                     </div>
+                                  )}
+                                  {prof ? (
+                                    <div className="mt-1 pt-3 border-t border-gray-200 flex items-center gap-2 flex-wrap">
+                                      <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">Access</span>
+                                      {isBlocked(prof.blocked_until) ? (
+                                        <>
+                                          <span className="text-xs text-slate-600">Offline until {new Date(prof.blocked_until!).toLocaleString()}</span>
+                                          <button
+                                            onClick={() => setBlock(prof, 'clear')}
+                                            disabled={blocking === prof.id}
+                                            className="text-xs font-semibold px-3 py-1 rounded-lg border border-emerald-200 text-emerald-700 hover:bg-emerald-50 disabled:opacity-50 transition-colors"
+                                          >
+                                            {blocking === prof.id ? 'Saving…' : 'Bring online'}
+                                          </button>
+                                        </>
+                                      ) : (
+                                        <select
+                                          aria-label="Take offline"
+                                          disabled={blocking === prof.id}
+                                          defaultValue=""
+                                          onChange={e => { const v = e.target.value; e.target.value = ''; if (v) setBlock(prof, v) }}
+                                          className="text-xs font-semibold px-2 py-1 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 disabled:opacity-50 transition-colors"
+                                        >
+                                          <option value="" disabled>{blocking === prof.id ? 'Saving…' : 'Take offline…'}</option>
+                                          <option value="1h">Offline · 1 hour</option>
+                                          <option value="6h">Offline · 6 hours</option>
+                                          <option value="1d">Offline · 1 day</option>
+                                          <option value="forever">Offline · until I lift it</option>
+                                        </select>
+                                      )}
+                                      {prof.suspended && <span className="text-xs text-amber-700">· suspended</span>}
+                                    </div>
+                                  ) : (
+                                    <p className="text-[11px] text-gray-400 mt-2">Open the Access tab to block this user (profile not matched here).</p>
                                   )}
                                 </td>
                               </tr>
