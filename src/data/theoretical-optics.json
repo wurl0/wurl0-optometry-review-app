@@ -850,5 +850,113 @@
     ],
     "correct": 2,
     "explanation": "Nocturnal presbyopia is reduction in accommodation induced by reduced illumination."
+  },
+  {
+    "type": "mcq",
+    "stem": "Medium (moderate) myopia is classified as a refractive error in the range of:",
+    "options": [
+      "0.25 D to 3.00 D",
+      "3.00 D to 6.00 D",
+      "6.00 D to 9.00 D",
+      "above 10.00 D"
+    ],
+    "correct": 1,
+    "explanation": "By degree, myopia is graded low (0.25 to 3.00 D), medium (3.00 to 6.00 D), and high (6.00 D and above). Medium myopia falls in the 3.00 to 6.00 D range."
+  },
+  {
+    "type": "mcq",
+    "stem": "A myopic eye whose axial length is too long while its refracting power is normal has which type of myopia?",
+    "options": [
+      "Refractive myopia",
+      "Axial myopia",
+      "Curvature myopia",
+      "Index myopia"
+    ],
+    "correct": 1,
+    "explanation": "Axial myopia results from an eye that is too long with normal refracting power. Refractive myopia has a normal length but surfaces that are too strong, by increased curvature (curvature myopia) or increased lens index (index myopia)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Nuclear sclerosis of the lens raises the lens refractive index and produces which type of myopia?",
+    "options": [
+      "Axial myopia",
+      "Curvature myopia",
+      "Index myopia",
+      "Nocturnal myopia"
+    ],
+    "correct": 2,
+    "explanation": "Index myopia comes from an increased refractive index of the lens, classically from nuclear sclerotic cataract. It is a form of refractive (not axial) myopia."
+  },
+  {
+    "type": "mcq",
+    "stem": "In the Donders classification, degenerative (pathologic) myopia is characterized by:",
+    "options": [
+      "error under 3 D that stabilizes in the teens",
+      "progressive error over 6 D with fundus changes such as lacquer cracks and a Fuchs spot",
+      "myopia only in dim illumination",
+      "apparent myopia from ciliary spasm"
+    ],
+    "correct": 1,
+    "explanation": "Degenerative (pathologic) myopia is progressive, exceeds 6 D, and shows fundus changes such as lacquer cracks, a Fuchs spot, and staphyloma. Nocturnal myopia appears in dim light, and pseudomyopia is from ciliary spasm."
+  },
+  {
+    "type": "mcq",
+    "stem": "Regular astigmatism is defined by two principal meridians that are:",
+    "options": [
+      "perpendicular to each other",
+      "parallel to each other",
+      "irregular in curvature",
+      "identical in power"
+    ],
+    "correct": 0,
+    "explanation": "In regular astigmatism the two principal meridians are perpendicular to each other with consistent curvature along each, so it is correctable with spectacle or toric contact lenses. Irregular astigmatism has non-perpendicular, varying meridians."
+  },
+  {
+    "type": "mcq",
+    "stem": "Irregular astigmatism, as seen in keratoconus or after corneal surgery, is best corrected with:",
+    "options": [
+      "a spherical spectacle lens",
+      "a rigid gas permeable contact lens",
+      "a plus cylinder only",
+      "a prism"
+    ],
+    "correct": 1,
+    "explanation": "Irregular astigmatism has meridians that are not perpendicular and curvature that varies within a meridian, so spectacles cannot neutralize it. A rigid gas permeable lens masks it with a smooth new refracting surface."
+  },
+  {
+    "type": "mcq",
+    "stem": "The type of accommodation driven by retinal blur, and the dominant type in clinical practice, is:",
+    "options": [
+      "proximal accommodation",
+      "tonic accommodation",
+      "reflex accommodation",
+      "vergence accommodation"
+    ],
+    "correct": 2,
+    "explanation": "Reflex accommodation is the automatic response to retinal blur and is the dominant type clinically. Proximal is driven by awareness of nearness, vergence by convergence demand, and tonic by resting ciliary tone."
+  },
+  {
+    "type": "mcq",
+    "stem": "Aniseikonia is best defined as:",
+    "options": [
+      "a difference in refractive error between the two eyes",
+      "a difference in retinal image size between the two eyes",
+      "unequal pupil size",
+      "unequal accommodation between the two eyes"
+    ],
+    "correct": 1,
+    "explanation": "Aniseikonia is a difference in the retinal image size between the two eyes. It often accompanies anisometropia, where roughly 1 D of anisometropia produces about 1 percent of aniseikonia."
+  },
+  {
+    "type": "mcq",
+    "stem": "Emmetropia is the refractive state in which the posterior principal focus falls:",
+    "options": [
+      "in front of the retina",
+      "exactly on the retina with accommodation relaxed",
+      "behind the retina",
+      "on the retina only while accommodating"
+    ],
+    "correct": 1,
+    "explanation": "In emmetropia the posterior principal focus of the relaxed eye sits exactly on the retina. Myopia focuses in front of the retina and hyperopia behind it."
   }
 ]

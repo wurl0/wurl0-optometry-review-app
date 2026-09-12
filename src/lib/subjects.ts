@@ -26,7 +26,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Theoretical Optics',
     description: 'Geometric optics, lenses, prisms, optical principles',
     color: 'violet',
-    questionCount: 71,
+    questionCount: 80,
     icon: '🌈',
     olePrep: true,
     hasExam: true,

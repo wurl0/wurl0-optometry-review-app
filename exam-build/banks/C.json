@@ -9870,5 +9870,53 @@
   "w": "Leading questions bias the patient toward a particular answer and distort the history. Open-ended, clarifying, and reflective techniques gather accurate information.",
   "k": "Avoid leading questions; they bias the answer.",
   "src": "authored"
+ },
+ {
+  "id": "C0436",
+  "sec": "C2-01",
+  "t": "C2 Ametropia",
+  "q": "An astigmatic eye in which one focal line lies on the retina and the other lies in front of it has:",
+  "o": [
+   "simple hyperopic astigmatism",
+   "mixed astigmatism",
+   "simple myopic astigmatism",
+   "compound myopic astigmatism"
+  ],
+  "a": 2,
+  "w": "Simple myopic astigmatism places one focal line on the retina and the other in front, so a minus cylinder alone corrects it. Compound myopic astigmatism puts both lines in front of the retina.",
+  "k": "One line on retina, one in front = simple myopic astigmatism.",
+  "src": "authored"
+ },
+ {
+  "id": "C0437",
+  "sec": "C2-01",
+  "t": "C2 Ametropia",
+  "q": "When one focal line falls in front of the retina and the other falls behind it, the astigmatism is:",
+  "o": [
+   "mixed astigmatism",
+   "simple myopic",
+   "compound myopic",
+   "compound hyperopic"
+  ],
+  "a": 0,
+  "w": "Mixed astigmatism straddles the retina: one focal line in front and one behind. It is corrected with a combined plus and minus cylinder (a spherocylinder that crosses zero).",
+  "k": "One line in front, one behind = mixed astigmatism.",
+  "src": "authored"
+ },
+ {
+  "id": "C0438",
+  "sec": "C2-01",
+  "t": "C2 Ametropia",
+  "q": "A myopic eye whose refracting surfaces are too strong while its axial length is normal has:",
+  "o": [
+   "refractive myopia",
+   "index myopia due to cataract",
+   "axial myopia",
+   "curvature-independent myopia"
+  ],
+  "a": 0,
+  "w": "Refractive myopia comes from over-powerful refracting surfaces in an eye of normal length, whether from steep curvature or a high lens index. Axial myopia instead comes from an eye that is too long.",
+  "k": "Normal length but too-strong surfaces = refractive myopia.",
+  "src": "authored"
  }
 ]

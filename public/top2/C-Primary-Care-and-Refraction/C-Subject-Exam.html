@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject C — Board Exam</h1>
-    <p class="sub">Primary Care and Refraction · 435 questions · mixed, board-style</p>
+    <p class="sub">Primary Care and Refraction · 438 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>435 board-style questions drawn from every C note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>438 board-style questions drawn from every C note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">C1 Epidemiology</span>
       <span class="chip">C2 Ametropia</span>
@@ -101,7 +101,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="435">Full (435)</button>
+      <button class="modebtn sel" data-n="438">Full (438)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -573,10 +573,13 @@ const BANK=[
 {t:"C3 Preliminary Exam",q:"On alternate cover test, a slow inward recovery of the just-covered eye indicates:",o:["compensated esophoria", "orthophoria", "compensated exophoria", "decompensated exophoria"],a:2,w:"An outward drift under cover with a slow inward recovery is exophoria that is still compensated by fusional vergence. Esophoria drifts inward.",k:"Outward drift, slow inward recovery = compensated exophoria."},
 {t:"C3 Preliminary Exam",q:"A right homonymous congruous hemianopsia localizes the lesion to the:",o:["optic chiasm", "right optic tract", "left lateral geniculate body", "right optic nerve"],a:2,w:"A right field loss in both eyes is a left-sided retrochiasmal lesion, and high congruity places it posteriorly at the lateral geniculate body or occipital cortex.",k:"Congruous homonymous defect = posterior, opposite side."},
 {t:"C3 Preliminary Exam",q:"A 55-year-old reports that reading is easier in bright light than in dim light because:",o:["pupil dilation improves resolution", "bright light relaxes accommodation", "smaller pupils increase depth of focus", "brightness raises contrast sensitivity"],a:2,w:"Bright light constricts the pupil, and a smaller pupil increases depth of focus, easing near tasks in early presbyopia. Dilation would reduce depth of focus.",k:"Bright light, small pupil, more depth of focus."},
-{t:"C3 Preliminary Exam",q:"Which interviewer behavior should be avoided during case history taking?",o:["asking leading questions", "asking open-ended questions", "using clarifying questions", "reflective listening"],a:0,w:"Leading questions bias the patient toward a particular answer and distort the history. Open-ended, clarifying, and reflective techniques gather accurate information.",k:"Avoid leading questions; they bias the answer."}
+{t:"C3 Preliminary Exam",q:"Which interviewer behavior should be avoided during case history taking?",o:["asking leading questions", "asking open-ended questions", "using clarifying questions", "reflective listening"],a:0,w:"Leading questions bias the patient toward a particular answer and distort the history. Open-ended, clarifying, and reflective techniques gather accurate information.",k:"Avoid leading questions; they bias the answer."},
+{t:"C2 Ametropia",q:"An astigmatic eye in which one focal line lies on the retina and the other lies in front of it has:",o:["simple hyperopic astigmatism", "mixed astigmatism", "simple myopic astigmatism", "compound myopic astigmatism"],a:2,w:"Simple myopic astigmatism places one focal line on the retina and the other in front, so a minus cylinder alone corrects it. Compound myopic astigmatism puts both lines in front of the retina.",k:"One line on retina, one in front = simple myopic astigmatism."},
+{t:"C2 Ametropia",q:"When one focal line falls in front of the retina and the other falls behind it, the astigmatism is:",o:["mixed astigmatism", "simple myopic", "compound myopic", "compound hyperopic"],a:0,w:"Mixed astigmatism straddles the retina: one focal line in front and one behind. It is corrected with a combined plus and minus cylinder (a spherocylinder that crosses zero).",k:"One line in front, one behind = mixed astigmatism."},
+{t:"C2 Ametropia",q:"A myopic eye whose refracting surfaces are too strong while its axial length is normal has:",o:["refractive myopia", "index myopia due to cataract", "axial myopia", "curvature-independent myopia"],a:0,w:"Refractive myopia comes from over-powerful refracting surfaces in an eye of normal length, whether from steep curvature or a high lens index. Axial myopia instead comes from an eye that is too long.",k:"Normal length but too-strong surfaces = refractive myopia."}
 ];
 
-let MODE=435, SCOPE='*', FB='practice';
+let MODE=438, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);
