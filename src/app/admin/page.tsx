@@ -25,6 +25,7 @@ type Profile = {
   tier?: string | null
   grants?: string[] | null
   suspended?: boolean | null
+  blocked_until?: string | null
 }
 
 const TIERS = ['base', 'select', 'full', 'admin'] as const
@@ -81,6 +82,11 @@ function ago(iso: string | null): string {
 // outside component render (react-hooks/purity), matching ago() above.
 function isIdle(iso: string | null): boolean {
   return !iso || Date.now() - new Date(iso).getTime() > 14 * 864e5
+}
+
+// A per-user block is active only while blocked_until is still in the future.
+function isBlocked(iso: string | null | undefined): boolean {
+  return !!iso && new Date(iso).getTime() > Date.now()
 }
 const isTab = (v: string | null): v is Tab => TABS.some(t => t.id === v)
 
@@ -356,6 +362,7 @@ export default function AdminPage() {
   const [approving, setApproving] = useState<string | null>(null)
   const [deleting, setDeleting] = useState<string | null>(null)
   const [suspending, setSuspending] = useState<string | null>(null)
+  const [blocking, setBlocking] = useState<string | null>(null)
   const [justApproved, setJustApproved] = useState<Profile | null>(null)
   const [tab, setTab] = useState<Tab>('approvals')
   const [error, setError] = useState('')
@@ -497,6 +504,36 @@ export default function AdminPage() {
     if (json.error) { setError(json.error); setSuspending(null); return }
     setProfiles(prev => prev.map(p => p.id === profile.id ? { ...p, suspended: next } : p))
     setSuspending(null)
+  }
+
+  // Quiet per-user block: the user sees the neutral 503 maintenance page (not the
+  // /suspended page) until the time passes. `choice` is a duration or 'clear'.
+  async function setBlock(profile: Profile, choice: string) {
+    let until: string | null = null
+    if (choice !== 'clear') {
+      const ms = choice === '1h' ? 3600e3 : choice === '6h' ? 6 * 3600e3 : choice === '1d' ? 24 * 3600e3 : 0
+      until = choice === 'forever'
+        ? new Date(2999, 0, 1).toISOString()   // effectively "until I lift it"
+        : new Date(Date.now() + ms).toISOString()
+    }
+    const who = profile.full_name || profile.email || 'this user'
+    if (choice !== 'clear' && !window.confirm(
+      `Take ${who} offline? They will see the neutral 503 maintenance page (not a suspension) ` +
+      `${choice === 'forever' ? 'until you bring them back online' : 'for the chosen time'}. ` +
+      `Their account, progress, tier and grants are untouched.`
+    )) return
+
+    setBlocking(profile.id)
+    setError('')
+    const res = await fetch('/api/admin/block', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ profileId: profile.id, until }),
+    })
+    const json = await res.json()
+    if (json.error) { setError(json.error); setBlocking(null); return }
+    setProfiles(prev => prev.map(p => p.id === profile.id ? { ...p, blocked_until: until } : p))
+    setBlocking(null)
   }
 
   const pending = profiles.filter(p => !p.approved)
@@ -904,8 +941,8 @@ export default function AdminPage() {
           <p className="font-semibold mb-1">Reviewer access</p>
           <p><b>Tiers:</b> base = original app only · select = granted items via home cards · full = granted items + the reviewer cockpit · admin = everything.</p>
           <p className="mt-1"><b>Grants</b> are per item: check to share, uncheck to revoke (applies to select and full). New sign-ups default to base, so nothing is shared until you grant it.</p>
-          <p className="mt-1"><b>Suspend</b> blocks access immediately but keeps the account, progress, tier and grants intact, so Restore is one click. <b>Delete permanently</b> erases the account and all their data (cannot be undone).</p>
-          <p className="mt-1 text-blue-700">If access controls error on save, run <code className="bg-blue-100 px-1 rounded">supabase/access-tiers.sql</code> in Supabase first. If Suspend errors, run <code className="bg-blue-100 px-1 rounded">supabase/suspend-accounts.sql</code>.</p>
+          <p className="mt-1"><b>Suspend</b> blocks access immediately but keeps the account, progress, tier and grants intact, so Restore is one click. <b>Take offline</b> is a quieter, timed block: the user sees the neutral 503 maintenance page (not a suspension notice) for the chosen time, then it lifts itself. <b>Delete permanently</b> erases the account and all their data (cannot be undone).</p>
+          <p className="mt-1 text-blue-700">If access controls error on save, run <code className="bg-blue-100 px-1 rounded">supabase/access-tiers.sql</code> in Supabase first. If Suspend errors, run <code className="bg-blue-100 px-1 rounded">supabase/suspend-accounts.sql</code>. If Take offline errors, run <code className="bg-blue-100 px-1 rounded">supabase/per-user-block.sql</code>.</p>
         </div>
 
         <section>
@@ -931,6 +968,14 @@ export default function AdminPage() {
                       {p.suspended && (
                         <span className="text-xs font-medium text-amber-800 bg-amber-100 px-3 py-1 rounded-full">Suspended</span>
                       )}
+                      {isBlocked(p.blocked_until) && (
+                        <span
+                          title={`Offline until ${new Date(p.blocked_until!).toLocaleString()}`}
+                          className="text-xs font-medium text-slate-700 bg-slate-100 px-3 py-1 rounded-full"
+                        >
+                          Offline
+                        </span>
+                      )}
                       <span className="text-xs font-medium text-teal-700 bg-teal-50 px-3 py-1 rounded-full">{p.tier ?? 'base'}</span>
                     </div>
                   </div>
@@ -946,6 +991,29 @@ export default function AdminPage() {
                     >
                       {suspending === p.id ? 'Saving…' : p.suspended ? 'Restore access' : 'Suspend'}
                     </button>
+                    {isBlocked(p.blocked_until) ? (
+                      <button
+                        onClick={() => setBlock(p, 'clear')}
+                        disabled={blocking === p.id || suspending === p.id || deleting === p.id}
+                        className="text-xs font-semibold px-3 py-1 rounded-lg border border-emerald-200 text-emerald-700 hover:bg-emerald-50 disabled:opacity-50 transition-colors"
+                      >
+                        {blocking === p.id ? 'Saving…' : 'Bring online'}
+                      </button>
+                    ) : (
+                      <select
+                        aria-label="Take offline"
+                        disabled={blocking === p.id || suspending === p.id || deleting === p.id}
+                        defaultValue=""
+                        onChange={e => { const v = e.target.value; e.target.value = ''; if (v) setBlock(p, v) }}
+                        className="text-xs font-semibold px-2 py-1 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 disabled:opacity-50 transition-colors"
+                      >
+                        <option value="" disabled>{blocking === p.id ? 'Saving…' : 'Take offline…'}</option>
+                        <option value="1h">Offline · 1 hour</option>
+                        <option value="6h">Offline · 6 hours</option>
+                        <option value="1d">Offline · 1 day</option>
+                        <option value="forever">Offline · until I lift it</option>
+                      </select>
+                    )}
                     <button
                       onClick={() => remove(p)}
                       disabled={deleting === p.id || suspending === p.id}

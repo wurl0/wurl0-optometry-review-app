@@ -139,6 +139,33 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Per-user timed block ("maintenance for one user"). While profiles.blocked_until is a
+  // future timestamp, that single user gets the SAME neutral 503 as global maintenance,
+  // so it reads as an outage rather than a personal /suspended page. It lifts itself when
+  // the time passes. Admin and the auth-entry paths are exempt. Its own query + fail-open,
+  // matching the suspension gate, so a missing column or slow call never blocks anyone.
+  if (user && !isPublic && pathname !== '/suspended') {
+    const isEnvAdminBlock =
+      user.id === process.env.ADMIN_USER_ID || user.email === process.env.ADMIN_EMAIL
+    const onAuthEntryBlock = MAINTENANCE_AUTH_ENTRY.some(p => pathname.startsWith(p))
+    if (!isEnvAdminBlock && !onAuthEntryBlock) {
+      try {
+        const { data: bu } = await withTimeout(
+          supabase.from('profiles').select('blocked_until').eq('user_id', user.id).single()
+        )
+        const until = bu ? (bu as { blocked_until?: string | null }).blocked_until : null
+        if (until && new Date(until).getTime() > Date.now()) {
+          return new NextResponse(MAINTENANCE_HTML, {
+            status: 503,
+            headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': '3600' },
+          })
+        }
+      } catch {
+        // Column missing / slow / failed: fail-open (user keeps access).
+      }
+    }
+  }
+
   // Top 2 reviewer: gated by tier + per-user grants (admin sees all).
   if (pathname.startsWith('/top2')) {
     let tier = 'base'

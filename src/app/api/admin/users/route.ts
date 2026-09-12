@@ -12,6 +12,7 @@ type ProfileRow = {
   tier?: string | null
   grants?: string[] | null
   suspended?: boolean | null
+  blocked_until?: string | null
 }
 
 export async function GET() {
@@ -31,9 +32,10 @@ export async function GET() {
   // back as base.)
   const base = 'id, full_name, email, approved, approved_at, created_at'
   const selects = [
-    `${base}, tier, grants, suspended`, // all migrations applied
-    `${base}, tier, grants`,            // access-tiers applied, suspend not yet
-    base,                               // neither applied
+    `${base}, tier, grants, suspended, blocked_until`, // all migrations applied
+    `${base}, tier, grants, suspended`,                // per-user-block not yet
+    `${base}, tier, grants`,                           // access-tiers applied, suspend not yet
+    base,                                              // none applied
   ]
 
   let profiles: ProfileRow[] | null = null
