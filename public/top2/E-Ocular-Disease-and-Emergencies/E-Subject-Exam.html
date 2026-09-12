@@ -84,12 +84,12 @@
   <header class="brand">
     <div class="kicker">WAA · Board Review 2026</div>
     <h1>Subject E — Board Exam</h1>
-    <p class="sub">Ocular Disease and Emergencies · 300 questions · mixed, board-style</p>
+    <p class="sub">Ocular Disease and Emergencies · 302 questions · mixed, board-style</p>
   </header>
 
   <div class="panel intro" id="intro">
     <h2>Before you start</h2>
-    <p>300 board-style questions drawn from every E note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
+    <p>302 board-style questions drawn from every E note in the reviewer. Every attempt draws a fresh random sample <b>and reshuffles the answer choices</b>, so the letter positions never repeat and you cannot pattern-match your way through a retake. Answer, read the explanation, and the breakdown at the end tells you exactly which note to reread.</p>
     <div class="topic-list">
       <span class="chip">E1 Orbit/Adnexa/Lids</span>
       <span class="chip">E2 Anterior Segment</span>
@@ -99,7 +99,7 @@
     </div>
     <p style="margin-bottom:8px"><b>Length:</b></p>
     <div class="modes" id="modes">
-      <button class="modebtn sel" data-n="300">Full (300)</button>
+      <button class="modebtn sel" data-n="302">Full (302)</button>
       <button class="modebtn" data-n="150">Deep (150)</button>
       <button class="modebtn" data-n="100">Long (100)</button>
       <button class="modebtn" data-n="50">Half (50)</button>
@@ -434,10 +434,12 @@ const BANK=[
 {t:"E2 Anterior Segment",q:"Conjunctivitis resulting from mishandling of contact lenses is:",o:["bacterial conjunctivitis", "viral conjunctivitis", "allergic conjunctivitis", "giant papillary conjunctivitis"],a:3,w:"Chronic mechanical and immune irritation from contact lenses causes giant papillary conjunctivitis. Pseudomonas instead causes contact-lens keratitis.",k:"Contact-lens mishandling = giant papillary conjunctivitis."},
 {t:"E2 Anterior Segment",q:"The most common cause of bacterial conjunctivitis is:",o:["Pseudomonas aeruginosa", "Staphylococcus aureus", "Streptococcus pneumoniae", "Haemophilus influenzae"],a:1,w:"Staphylococcus aureus is the most common bacterial conjunctivitis. Pseudomonas is the contact-lens keratitis organism.",k:"Commonest bacterial conjunctivitis = S. aureus."},
 {t:"E2 Anterior Segment",q:"Conjunctivitis with intense itching and a thick discharge triggered by cosmetics or eye medications is:",o:["allergic conjunctivitis", "viral conjunctivitis", "contact conjunctivitis", "phlyctenular conjunctivitis"],a:2,w:"A reaction to drugs, cosmetics, or eye drops on the ocular surface is contact conjunctivitis. Allergic conjunctivitis is more seasonal and airborne-triggered.",k:"Drug or cosmetic trigger = contact conjunctivitis."},
-{t:"E2 Anterior Segment",q:"A corneal opacity that is dense and totally opaque is a:",o:["nebula", "leukoma", "faint scar", "macula"],a:1,w:"The opacity ladder runs nebula (faint) to macula (moderate) to leukoma (dense, totally opaque).",k:"Totally opaque cornea = leukoma."}
+{t:"E2 Anterior Segment",q:"A corneal opacity that is dense and totally opaque is a:",o:["nebula", "leukoma", "faint scar", "macula"],a:1,w:"The opacity ladder runs nebula (faint) to macula (moderate) to leukoma (dense, totally opaque).",k:"Totally opaque cornea = leukoma."},
+{t:"E3 Posterior/Retina",q:"An age-related separation of the vitreous from the retina that presents with floaters and a Weiss ring is:",o:["vitreous hemorrhage", "central serous retinopathy", "posterior vitreous detachment", "retinal detachment"],a:2,w:"Posterior vitreous detachment (PVD) is the age-related separation of the vitreous cortex from the retina. It presents with floaters and flashes, and a Weiss ring, the detached ring of tissue from around the disc, is a classic sign.",k:"Floaters plus a Weiss ring = posterior vitreous detachment."},
+{t:"E3 Posterior/Retina",q:"The floater that appears as a detached ring of tissue over the optic disc in a posterior vitreous detachment is the:",o:["Weiss ring", "Mittendorf dot", "cotton-wool spot", "Vossius ring"],a:0,w:"The Weiss ring is the peripapillary ring of glial tissue that pulls free of the disc during a posterior vitreous detachment, seen by the patient as a ring-shaped floater. A Vossius ring is lens pigment from blunt trauma.",k:"Peripapillary ring floater in PVD = Weiss ring."}
 ];
 
-let MODE=300, SCOPE='*', FB='practice';
+let MODE=302, SCOPE='*', FB='practice';
 document.querySelectorAll('#modes .modebtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#modes .modebtn').forEach(x=>x.classList.remove('sel'));
   b.classList.add('sel');MODE=parseInt(b.dataset.n);

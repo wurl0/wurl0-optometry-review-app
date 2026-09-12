@@ -6744,5 +6744,37 @@
   "w": "The opacity ladder runs nebula (faint) to macula (moderate) to leukoma (dense, totally opaque).",
   "k": "Totally opaque cornea = leukoma.",
   "src": "authored"
+ },
+ {
+  "id": "E0301",
+  "sec": "E3 Posterior/Retina",
+  "t": "E3 Posterior/Retina",
+  "q": "An age-related separation of the vitreous from the retina that presents with floaters and a Weiss ring is:",
+  "o": [
+   "vitreous hemorrhage",
+   "central serous retinopathy",
+   "posterior vitreous detachment",
+   "retinal detachment"
+  ],
+  "a": 2,
+  "w": "Posterior vitreous detachment (PVD) is the age-related separation of the vitreous cortex from the retina. It presents with floaters and flashes, and a Weiss ring, the detached ring of tissue from around the disc, is a classic sign.",
+  "k": "Floaters plus a Weiss ring = posterior vitreous detachment.",
+  "src": "authored"
+ },
+ {
+  "id": "E0302",
+  "sec": "E3 Posterior/Retina",
+  "t": "E3 Posterior/Retina",
+  "q": "The floater that appears as a detached ring of tissue over the optic disc in a posterior vitreous detachment is the:",
+  "o": [
+   "Weiss ring",
+   "Mittendorf dot",
+   "cotton-wool spot",
+   "Vossius ring"
+  ],
+  "a": 0,
+  "w": "The Weiss ring is the peripapillary ring of glial tissue that pulls free of the disc during a posterior vitreous detachment, seen by the patient as a ring-shaped floater. A Vossius ring is lens pigment from blunt trauma.",
+  "k": "Peripapillary ring floater in PVD = Weiss ring.",
+  "src": "authored"
  }
 ]
