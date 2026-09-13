@@ -172,7 +172,18 @@
 <script>
 const KEY="waa-daily-queue-v1";
 const START=new Date(2026,7,16);   // Aug 16 2026 (rest day)
-const EXAM =new Date(2026,8,28);   // Sep 28 2026 (exam)
+const EXAM =new Date(2026,8,28);   // Sep 28 2026 (exam day 1 — countdown anchor)
+const EXAM_END=new Date(2026,8,30);// Sep 30 2026 (exam day 3)
+// The 2026 OLE runs Sep 28-30; each day sits a fixed subject cluster (MCU
+// pre-board timetable). Review each cluster the night before it is tested.
+const CLUSTERS=[
+  {n:1, date:new Date(2026,8,28), label:"Pharma · Vis Bio · Clinical",
+   subs:["Pharmacology","Visual Biology","Clinical Optometry"]},
+  {n:2, date:new Date(2026,8,29), label:"Physio/BV · Primary Care",
+   subs:["Physio Optics + BV","Primary Care"]},
+  {n:3, date:new Date(2026,8,30), label:"Ocular Dse · Ethics · Theoretical/CL",
+   subs:["Ocular Disease","Ethics + Jurisprudence","Theoretical Optics + CL"]}
+];
 const DAYMS=86400000;
 const store=JSON.parse(localStorage.getItem(KEY)||"{}");
 function save(){localStorage.setItem(KEY,JSON.stringify(store))}
@@ -377,16 +388,37 @@ function buildDay(dt){
 }
 
 const days=[]; let cur=new Date(START);
-while(cur<=EXAM){ days.push({dt:new Date(cur), ...buildDay(cur)}); cur=new Date(cur.getTime()+DAYMS); }
+while(cur<=EXAM_END){ days.push({dt:new Date(cur), ...buildDay(cur)}); cur=new Date(cur.getTime()+DAYMS); }
 
 // today = rest day (excluded from stats)
 const first=days[0];
 first.phase="rest"; first.tag="rest day"; first.tagClass="t-rest"; first.subj="Recover";
 first.tix=[{txt:"Rest. No queue, no exam.", why:"A planned rest day is part of the plan, not a crack in it. The real start is tomorrow, D-42."}];
-// exam day
-const last=days[days.length-1];
-last.phase="exam"; last.tag="exam day"; last.tagClass="t-today"; last.subj="Execute";
-last.tix=[{txt:"Arrive early, breathe, trust the reps", why:"You did the work. Read every stem twice, eliminate, commit."}];
+// exam block: Sep 28-30, one subject cluster per day. Night before each day,
+// pull that day's cluster forward (recency). Day 1 is heaviest (two weak subjects).
+const clusterTix=c=>c.subs.map(s=>(
+  {txt:"Review "+s+" · Reviewer + Strategy", link:revLink(s),
+   why:"Fresh tonight, sat tomorrow. Traps and fast-picks only, no new material."}));
+
+// D-1 (night before Day 1): review the whole Day-1 cluster.
+const eve=days.find(d=>d.dt.getTime()===(CLUSTERS[0].date.getTime()-DAYMS));
+if(eve){ eve.phase="taper"; eve.tag="eve · day 1"; eve.tagClass="t-taper";
+  eve.subj="Tonight: Day 1 — "+CLUSTERS[0].label;
+  eve.tix=[QUEUE(), ...clusterTix(CLUSTERS[0]),
+    {txt:"Bag, IDs, route. Lights out by 10pm", why:"Two of your weak subjects sit tomorrow morning. Sleep is the last study tool."}]; }
+
+// the three exam days
+CLUSTERS.forEach((c,idx)=>{
+  const d=days.find(x=>x.dt.getTime()===c.date.getTime());
+  if(!d) return;
+  d.phase="exam"; d.tagClass="t-today"; d.tag="exam · day "+c.n;
+  d.dLabel="DAY "+c.n; d.subj="Day "+c.n+": "+c.label;
+  d.tix=[{txt:"Sit Day "+c.n+". Read every stem twice, eliminate, commit.", why:"You did the reps. Trust them."}];
+  const next=CLUSTERS[idx+1];
+  if(next) d.tix.push({txt:"Tonight: review Day "+next.n+" cluster — "+next.label,
+    why:"Once you are home. Skim Reviewer + Strategy for tomorrow's subjects, nothing new.", link:revLink(next.subs[0])});
+  else d.tix.push({txt:"That is the boards. You are done.", why:"You showed up and finished the whole thing. Rest."});
+});
 
 const container=document.getElementById("days");
 const PH={rest:"Rest day",build:"Build phase · daily loop, weekly checkpoint",simulate:"Simulate phase · timed papers, exam conditions",taper:"Taper · high-yield, rest, logistics",exam:"Exam"};
@@ -397,7 +429,7 @@ days.forEach((d,i)=>{
   if(d.phase!==lastPhase){ const h=document.createElement("div"); h.className="phase"; h.textContent=PH[d.phase]; container.appendChild(h); lastPhase=d.phase; }
   const isToday = d.dt.getTime()===todayMid.getTime();
   const card=document.createElement("div"); card.className="day"+(isToday?" today":"");
-  const dnum = d.toExam===0?"EXAM":"D-"+d.toExam;
+  const dnum = d.dLabel ? d.dLabel : (d.toExam===0?"EXAM":"D-"+d.toExam);
   let html=`<div class="dhead"><span class="dcount">${dnum}</span>`+
     `<span class="ddate">${WEEK[d.dow]} ${MO[d.dt.getMonth()]} ${d.dt.getDate()}</span>`+
     `<span class="tag ${isToday?'t-today':d.tagClass}">${isToday?'today':d.tag}</span>`+
