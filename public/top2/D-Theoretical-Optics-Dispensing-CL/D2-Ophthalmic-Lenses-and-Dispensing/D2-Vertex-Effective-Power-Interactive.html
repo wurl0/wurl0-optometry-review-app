@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Vertex Distance & Effective Power Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --plus:#854f0b; --plus-soft:#faeeda; --minus:#185fa5; --minus-soft:#e6f1fb;
+    --ghost:#cbc6b8;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --glass:#cfe6ef; --glassln:#5a97ab; --ray:#c0653a; --eye:#efe9dc;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .toggle{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+  .tbtn{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .tbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .sliders{display:grid;grid-template-columns:1fr;gap:2px;margin-top:6px}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:8px 0 2px}
+  .sliderow label{font-size:14px;color:var(--muted);min-width:190px}
+  .sliderow .v{color:var(--ink);font-weight:600}
+  input[type=range]{flex:1;accent-color:var(--accent)}
+  .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin:-2px 2px 0}
+  .readout{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .pill{font-size:13.5px;font-weight:700;padding:6px 13px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .pill.plus{background:var(--plus-soft);color:var(--plus)}
+  .pill.minus{background:var(--minus-soft);color:var(--minus)}
+  .pill.ghost{background:#efefe9;color:var(--muted)}
+  .gauge{margin-top:14px;display:grid;gap:9px}
+  .grow{display:grid;grid-template-columns:132px 1fr 96px;align-items:center;gap:10px;font-size:13px}
+  .grow .lbl{color:var(--muted)}
+  .track{height:16px;background:#f1efe8;border-radius:8px;position:relative;overflow:hidden}
+  .track .fill{height:100%;border-radius:8px;transition:width .12s}
+  .track .fill.plus{background:var(--plus)} .track .fill.minus{background:var(--minus)}
+  .track .fill.ghost{background:var(--ghost)}
+  .grow .num{text-align:right;font-weight:700;font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+  .eqbox{margin-top:14px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:13.5px;color:var(--ink)}
+  .eqbox .row{display:flex;flex-wrap:wrap;gap:6px 18px;margin:2px 0}
+  .eqbox code{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--accent);background:none}
+  .eqbox .lbl{color:var(--muted)}
+  .note{font-size:13.5px;color:var(--ink);margin-top:12px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 14px}
+  .mnem{margin-top:12px;background:var(--accent-soft);border:1px solid #ecd9b0;border-radius:10px;padding:11px 14px;font-size:14px;color:var(--accent);font-weight:600}
+  ul.concept{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+  ul.concept li{margin:5px 0}
+  ul.concept b{color:var(--accent)}
+  /* quiz */
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.nav.ghost{background:#fff;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center;padding:10px 0}
+  .results .big{font-size:38px;font-weight:800;color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D2 · Vertex Distance & Effective Power, interactive</h1>
+    <p class="sub">Personal study notes · slide the lens toward the eye and watch minus gain, plus drain</p>
+  </header>
+
+  <section>
+    <h2>1. Slide the lens</h2>
+    <p class="hint">The eye is fixed on the right. Move the lens toward or away from the cornea. Its labeled power never changes, but the power that actually reaches the cornea does. Watch the effective bar close on the labeled bar as the lens nears the eye.</p>
+
+    <div class="toggle" id="lensToggle">
+      <button class="tbtn on" data-sign="1">Plus lens</button>
+      <button class="tbtn" data-sign="-1">Minus lens</button>
+    </div>
+
+    <svg id="scene" width="100%" viewBox="0 0 720 340" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Lens at a vertex distance in front of the eye"></svg>
+
+    <div class="sliders">
+      <div class="sliderow">
+        <label>Labeled power |F|: <span class="v"><b id="fval">10.0</b> D</span></label>
+        <input type="range" id="fslider" min="1" max="15" step="0.5" value="10">
+      </div>
+      <div class="sliderow">
+        <label>Vertex distance d: <span class="v"><b id="dval">12</b> mm</span></label>
+        <input type="range" id="dslider" min="0" max="20" step="1" value="12">
+      </div>
+      <div class="ends"><span>At the cornea (0 mm)</span><span>toward the eye &#8592;</span><span>Far (20 mm)</span></div>
+    </div>
+
+    <div class="readout" id="readout"></div>
+    <div class="gauge" id="gauge"></div>
+    <div class="eqbox" id="eqbox"></div>
+    <div class="note" id="rule"></div>
+    <div class="mnem">Toward the eye, minus gains, plus drains. Away, the other way. Effective power always slides toward the labeled power as the lens nears the cornea.</div>
+  </section>
+
+  <section>
+    <h2>2. Why it works</h2>
+    <ul class="concept">
+      <li>A plus lens focuses light behind itself. Held far away, that converging bundle is tighter by the time it reaches the cornea, so it acts <b>stronger</b> than the label. Slide it in and the effect <b>drains</b> back toward the label.</li>
+      <li>A minus lens diverges light. Far away, some of that spread is lost before the cornea, so it acts <b>weaker</b>. Slide it in and the effect <b>gains</b> back toward the label.</li>
+      <li><b>Formula:</b> <code>F_eff = F / (1 &#8722; d&#183;F)</code>, with d in metres. At d = 0 the factor is 1, so effective power equals the label.</li>
+      <li><b>Spec &#8594; contact lens</b> moves the lens to the cornea. The equivalent CL power is this effective power: <b>more plus</b> for a plus Rx, <b>less minus</b> for a minus Rx.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 6</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+</div>
+
+<script>
+const scene=document.getElementById('scene');
+const fslider=document.getElementById('fslider'),dslider=document.getElementById('dslider');
+const fval=document.getElementById('fval'),dval=document.getElementById('dval');
+const readout=document.getElementById('readout'),gauge=document.getElementById('gauge'),eqbox=document.getElementById('eqbox'),rule=document.getElementById('rule');
+let sign=1;
+
+const YC=170, CORNEA=558, PXMM=15.5, GT=110, GB=230; // GT/GB = glass top/bottom
+
+function fmt(x){return (x>=0?'+':'&#8722;')+Math.abs(x).toFixed(2);}
+
+function draw(){
+  const F=parseFloat(fslider.value);
+  const dmm=parseInt(dslider.value);
+  fval.textContent=F.toFixed(1);
+  dval.textContent=dmm;
+  const Fs=sign*F;
+  const dm=dmm/1000;
+  const denom=1 - dm*Fs;
+  const Feff=Fs/denom;
+  const lensX=CORNEA - dmm*PXMM;
+
+  // lens shape
+  const HW=13, HH=54;
+  let glass;
+  if(sign>0){
+    glass='<path d="M'+lensX+' '+(YC-HH)+' q'+HW+' '+HH+' 0 '+(2*HH)+' q'+(-HW)+' '+(-HH)+' 0 '+(-2*HH)+' z" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2" transform="translate(0,0)"/>'
+      +'<path d="M'+lensX+' '+(YC-HH)+' q'+(-HW)+' '+HH+' 0 '+(2*HH)+'" fill="none" stroke="var(--glassln)" stroke-width="1.2"/>';
+    glass='<ellipse cx="'+lensX+'" cy="'+YC+'" rx="'+HW+'" ry="'+HH+'" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>';
+  }else{
+    glass='<path d="M'+(lensX-HW)+' '+(YC-HH)+' L'+(lensX+HW)+' '+(YC-HH)+' Q'+(lensX-2)+' '+YC+' '+(lensX+HW)+' '+(YC+HH)+' L'+(lensX-HW)+' '+(YC+HH)+' Q'+(lensX+2)+' '+YC+' '+(lensX-HW)+' '+(YC-HH)+' z" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>';
+  }
+
+  // incoming parallel rays
+  const rys=[YC-40,YC,YC+40];
+  let inc='';
+  rys.forEach(y=>{inc+='<line x1="48" y1="'+y+'" x2="'+lensX+'" y2="'+y+'" stroke="var(--ray)" stroke-width="1.6"/>';});
+
+  // refracted rays (schematic)
+  let ref='';
+  if(sign>0){
+    const cp=CORNEA+26; // converge just behind cornea
+    rys.forEach(y=>{ref+='<line x1="'+lensX+'" y1="'+y+'" x2="'+cp+'" y2="'+YC+'" stroke="var(--ray)" stroke-width="1.6"/>';});
+  }else{
+    const spread=46;
+    ref+='<line x1="'+lensX+'" y1="'+(YC-40)+'" x2="'+(CORNEA+30)+'" y2="'+(YC-40-spread)+'" stroke="var(--ray)" stroke-width="1.6"/>';
+    ref+='<line x1="'+lensX+'" y1="'+YC+'" x2="'+(CORNEA+30)+'" y2="'+YC+'" stroke="var(--ray)" stroke-width="1.6"/>';
+    ref+='<line x1="'+lensX+'" y1="'+(YC+40)+'" x2="'+(CORNEA+30)+'" y2="'+(YC+40+spread)+'" stroke="var(--ray)" stroke-width="1.6"/>';
+    const vf=lensX-70;
+    ref+='<line x1="'+lensX+'" y1="'+(YC-40)+'" x2="'+vf+'" y2="'+YC+'" stroke="var(--ray)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>';
+    ref+='<line x1="'+lensX+'" y1="'+(YC+40)+'" x2="'+vf+'" y2="'+YC+'" stroke="var(--ray)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>';
+  }
+
+  // eye
+  const eye='<circle cx="613" cy="'+YC+'" r="42" fill="var(--eye)" stroke="#b8ae95" stroke-width="1.4"/>'
+    +'<circle cx="582" cy="'+YC+'" r="12" fill="#3a3730"/>'
+    +'<line x1="'+CORNEA+'" y1="'+(YC-56)+'" x2="'+CORNEA+'" y2="'+(YC+56)+'" stroke="#a99" stroke-width="1.2" stroke-dasharray="4 3"/>'
+    +'<text x="'+CORNEA+'" y="'+(YC-64)+'" text-anchor="middle" font-size="12" fill="#8a8577">cornea</text>';
+
+  // vertex dimension
+  const dimY=294;
+  let dim='';
+  if(dmm>0){
+    dim='<line x1="'+lensX+'" y1="'+dimY+'" x2="'+CORNEA+'" y2="'+dimY+'" stroke="#9a9486" stroke-width="1" marker-start="url(#t)" marker-end="url(#t)"/>'
+      +'<text x="'+((lensX+CORNEA)/2)+'" y="'+(dimY-6)+'" text-anchor="middle" font-size="12" fill="#6b685f">d = '+dmm+' mm</text>';
+  }else{
+    dim='<text x="'+(CORNEA-40)+'" y="'+(dimY-6)+'" text-anchor="middle" font-size="12" fill="#6b685f">d = 0 (at cornea)</text>';
+  }
+
+  scene.innerHTML=
+    '<defs><marker id="t" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M5 1 L5 9" stroke="#9a9486" stroke-width="1.4"/></marker></defs>'
+    +'<line x1="40" y1="'+YC+'" x2="660" y2="'+YC+'" stroke="#e0dccf" stroke-width="1" stroke-dasharray="2 4"/>'
+    +'<text x="52" y="34" font-size="12" fill="#8a8577">parallel light in</text>'
+    +inc+ref+glass+eye+dim
+    +'<text x="'+lensX+'" y="'+(GB+2)+'" text-anchor="middle" font-size="12" fill="#6b685f">lens ('+(sign>0?'+':'&#8722;')+F.toFixed(2)+' D)</text>';
+
+  // pills
+  const cls = sign>0?'plus':'minus';
+  readout.innerHTML='<span class="pill ghost">Labeled: '+fmt(Fs)+' D</span>'
+    +'<span class="pill '+cls+'">Effective at cornea: '+fmt(Feff)+' D</span>';
+
+  // gauge bars (scaled by magnitude)
+  const PXD=15, maxpx=270;
+  const wl=Math.min(Math.abs(Fs)*PXD,maxpx);
+  const we=Math.min(Math.abs(Feff)*PXD,maxpx);
+  gauge.innerHTML=
+    '<div class="grow"><span class="lbl">Labeled</span><div class="track"><div class="fill ghost" style="width:'+wl+'px"></div></div><span class="num">'+fmt(Fs)+' D</span></div>'
+    +'<div class="grow"><span class="lbl">Effective</span><div class="track"><div class="fill '+cls+'" style="width:'+we+'px"></div></div><span class="num">'+fmt(Feff)+' D</span></div>';
+
+  // Prentice-style effective-power box
+  eqbox.innerHTML='<div class="row"><span class="lbl">Effective power</span><code>F_eff = F / (1 &#8722; d&#183;F)</code></div>'
+    +'<div class="row"><span class="lbl">d</span><code>'+dmm+' mm = '+dm.toFixed(3)+' m</code>'
+    +'<span class="lbl">F</span><code>'+fmt(Fs)+' D</code>'
+    +'<span class="lbl">1 &#8722; d&#183;F</span><code>'+denom.toFixed(3)+'</code>'
+    +'<span class="lbl">F_eff</span><code>'+fmt(Feff)+' D</code></div>';
+
+  // sentence
+  const diff=Feff-Fs;
+  if(dmm===0){
+    rule.innerHTML='The lens sits at the cornea, so effective power equals the labeled power ('+fmt(Fs)+' D). Slide it away to see the gap open up.';
+  }else if(sign>0){
+    rule.innerHTML='Held '+dmm+' mm out, this plus lens acts like '+fmt(Feff)+' D, about '+Math.abs(diff).toFixed(2)+' D stronger than its label. Slide it toward the eye and the extra power drains away toward '+fmt(Fs)+' D.';
+  }else{
+    rule.innerHTML='Held '+dmm+' mm out, this minus lens acts like '+fmt(Feff)+' D, about '+Math.abs(diff).toFixed(2)+' D weaker than its label. Slide it toward the eye and it gains minus power back toward '+fmt(Fs)+' D.';
+  }
+}
+
+document.querySelectorAll('#lensToggle .tbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#lensToggle .tbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); sign=parseInt(b.dataset.sign); draw();
+}));
+fslider.addEventListener('input',draw);
+dslider.addEventListener('input',draw);
+draw();
+
+// ---------- quiz ----------
+const Q=[
+ {q:"A high plus lens is moved CLOSER to the eye, its labeled power unchanged. Its effective power at the cornea:",o:["Increases","Decreases","Becomes plano","Stays the same"],a:1,w:"Plus drains toward the eye. As vertex distance shrinks, effective power falls back toward the labeled power.",k:"Plus lens toward the eye = effective power DECREASES (drains)."},
+ {q:"A minus lens is moved CLOSER to the eye. Its effective power at the cornea:",o:["Decreases (less minus)","Increases (more minus)","Becomes plano","Stays the same"],a:1,w:"Minus gains toward the eye, so it acts more minus as it nears the cornea, climbing toward the labeled power.",k:"Minus lens toward the eye = effective power INCREASES (gains)."},
+ {q:"A +10.00 D spectacle sits at a 14 mm vertex distance. Its effective power at the cornea is about:",o:["+8.77 D","+10.00 D","+11.63 D","+14.00 D"],a:2,w:"F_eff = 10 / (1 − 0.014 × 10) = 10 / 0.86 = +11.63 D. Held out, a plus lens acts stronger than its label.",k:"F_eff = F/(1 − dF); 10/0.86 = +11.63 D."},
+ {q:"A myope's minus spectacle Rx is refitted as a contact lens (moved to the cornea). The contact lens power should be:",o:["More minus","Less minus","The same","Plano"],a:1,w:"At the cornea the minus lens gains power, so it would over-correct. You compensate by prescribing less minus.",k:"Minus spec → CL = less minus."},
+ {q:"Complete the rule: moving TOWARD the eye, a plus lens ___ and a minus lens ___.",o:["gains ... drains","drains ... gains","gains ... gains","drains ... drains"],a:1,w:"Toward the eye, minus gains, plus drains. Both effective powers slide toward the labeled value.",k:"Toward the eye: minus gains, plus drains."},
+ {q:"In F_eff = F / (1 − d·F), the distance d must be entered in:",o:["millimetres","centimetres","metres","diopters"],a:2,w:"d is in metres. A 12 mm vertex distance is 0.012 m. Using mm or cm gives a wildly wrong answer.",k:"Vertex formula: d is in METRES."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const LTR=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+LTR[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+LTR[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>
