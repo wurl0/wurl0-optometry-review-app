@@ -246,6 +246,7 @@ const SRC=[["Subject Exam",examLink],["Preboard Set 1",s=>prebN(s,"2025")],["Pre
            ["Preboard Set 3",s=>prebN(s,"Set3")],["Preboard Set 4",s=>prebN(s,"Set4")]];
 const QUEUE_LINK="/review";
 const MOCK_LINK ="OLE-Mock-Board-Exam-Set2.html";
+const REVMOCK_LINK="OLE-Mock-Board-Reviewer.html"; // full 1000-item weighted paper from the reviewer banks (aligned)
 
 // quick-read cards per subject (href relative to top2 root, label). Rotated one per appearance.
 const CARDS={
@@ -425,6 +426,21 @@ CLUSTERS.forEach((c,idx)=>{
     why:"Once you are home. Skim Reviewer + Strategy for tomorrow's subjects, nothing new.", link:revLink(next.subs[0])});
   else d.tix.push({txt:"That is the boards. You are done.", why:"You showed up and finished the whole thing. Rest."});
 });
+
+// Board dress rehearsal: the aligned 1000-item reviewer mock, split into two ~500
+// halves across the Sep 19-20 weekend. Readiness pools both sittings per subject
+// into one clean, board-weighted read across all 8 with a week left to act.
+// Overrides whatever buildDay set for those two days (Sat preboard, Sun Set2 mock).
+const dr1=days.find(d=>d.dt.getTime()===new Date(2026,8,19).getTime());
+if(dr1){ dr1.phase="simulate"; dr1.tag="dress rehearsal"; dr1.tagClass="t-mock"; dr1.subj="Board dress rehearsal · part 1 of 2";
+  dr1.tix=[QUEUE(),
+    {txt:"Reviewer Mock Board — run ~500 items", link:REVMOCK_LINK, why:"Aligned full-shape board sim from your own reviewer banks, weighted like the real paper. Board pace, phone timer. Part 1 of a two-day dress rehearsal; both halves pool into a clean readiness read across all 8 subjects."},
+    GAPS]; }
+const dr2=days.find(d=>d.dt.getTime()===new Date(2026,8,20).getTime());
+if(dr2){ dr2.phase="simulate"; dr2.tag="dress rehearsal"; dr2.tagClass="t-mock"; dr2.subj="Board dress rehearsal · part 2 of 2";
+  dr2.tix=[QUEUE(),
+    {txt:"Reviewer Mock Board — run the other ~500 items", link:REVMOCK_LINK, why:"Second half of the aligned 1000-item board sim. After this, check Board Readiness ONCE: it now reflects the full weighted paper. Spend Sep 21-26 on whatever it flags weak."},
+    GAPS]; }
 
 const container=document.getElementById("days");
 const PH={rest:"Rest day",build:"Build phase · daily loop, weekly checkpoint",simulate:"Simulate phase · timed papers, exam conditions",taper:"Taper · high-yield, rest, logistics",exam:"Exam"};
