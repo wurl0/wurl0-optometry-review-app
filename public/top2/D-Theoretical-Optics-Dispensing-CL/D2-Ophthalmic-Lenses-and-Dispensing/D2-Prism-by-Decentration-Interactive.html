@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — Prism by Decentration Interactive</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --accent:#854f0b; --accent-soft:#faeeda;
+    --in:#0f6e56; --in-soft:#e1f5ee; --out:#185fa5; --out-soft:#e6f1fb;
+    --right:#1d9e75; --right-soft:#e1f5ee; --wrong:#c0392b; --wrong-soft:#fbeaea;
+    --glass:#cfe6ef; --glassln:#5a97ab; --sight:#854f0b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 18px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600;text-transform:uppercase}
+  h1{font-size:22px;margin:6px 0 2px}
+  .sub{font-size:14px;color:var(--muted);margin:0}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+  h2{font-size:17px;margin:0 0 6px}
+  .hint{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  .toggle{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+  .tbtn{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font-size:14px;cursor:pointer;color:var(--ink)}
+  .tbtn.on{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+  .sliders{display:grid;grid-template-columns:1fr;gap:2px;margin-top:6px}
+  .sliderow{display:flex;align-items:center;gap:12px;margin:8px 0 2px}
+  .sliderow label{font-size:14px;color:var(--muted);min-width:190px}
+  .sliderow .v{color:var(--ink);font-weight:600}
+  input[type=range]{flex:1;accent-color:var(--accent)}
+  .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin:-2px 2px 0}
+  .readout{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .pill{font-size:13.5px;font-weight:700;padding:6px 13px;border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .pill.in{background:var(--in-soft);color:var(--in)}
+  .pill.out{background:var(--out-soft);color:var(--out)}
+  .pill.none{background:#efefe9;color:var(--muted)}
+  .pill.mag{background:var(--accent-soft);color:var(--accent)}
+  .eqbox{margin-top:12px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:13.5px;color:var(--ink)}
+  .eqbox .row{display:flex;flex-wrap:wrap;gap:6px 18px;margin:2px 0}
+  .eqbox code{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--accent);background:none}
+  .eqbox .lbl{color:var(--muted)}
+  .note{font-size:13.5px;color:var(--ink);margin-top:12px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 14px}
+  .mnem{margin-top:12px;background:var(--accent-soft);border:1px solid #ecd9b0;border-radius:10px;padding:11px 14px;font-size:14px;color:var(--accent);font-weight:600}
+  ul.concept{margin:6px 0 0;padding-left:20px;font-size:14.5px}
+  ul.concept li{margin:5px 0}
+  ul.concept b{color:var(--accent)}
+  /* quiz */
+  .progress-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-weight:600;color:var(--ink);white-space:nowrap}
+  .qtext{font-size:16px;font-weight:600;margin:6px 0 14px}
+  .opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:11px 14px;margin-bottom:9px;font-size:15px;cursor:pointer;color:var(--ink)}
+  .opt:hover:not(:disabled){border-color:var(--accent);background:#fbfbf9}
+  .opt:disabled{cursor:default}
+  .opt .lab{font-weight:700;margin-right:8px;color:var(--muted)}
+  .opt.correct{border-color:var(--right);background:var(--right-soft)} .opt.correct .lab{color:var(--right)}
+  .opt.incorrect{border-color:var(--wrong);background:var(--wrong-soft)} .opt.incorrect .lab{color:var(--wrong)}
+  .feedback{border-radius:11px;padding:12px 15px;margin:6px 0 2px;font-size:14.5px}
+  .feedback.good{background:var(--right-soft);border:1px solid #bfe6d7}
+  .feedback.bad{background:var(--wrong-soft);border:1px solid #efc9c5}
+  .feedback .tag{font-weight:700;display:block;margin-bottom:3px}
+  .feedback.good .tag{color:var(--accent)} .feedback.bad .tag{color:var(--wrong)}
+  .actions{display:flex;justify-content:flex-end;margin-top:12px}
+  button.nav{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:9px 20px;font-size:15px;font-weight:600;cursor:pointer}
+  button.nav.ghost{background:#fff;color:var(--accent);border:1.5px solid var(--accent)}
+  .results{text-align:center;padding:10px 0}
+  .results .big{font-size:38px;font-weight:800;color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>D2 · Prism by Decentration, interactive</h1>
+    <p class="sub">Personal study notes · slide the optical center off the line of sight and watch the base flip, then test yourself</p>
+  </header>
+
+  <section>
+    <h2>1. See the prism appear</h2>
+    <p class="hint">The dashed vertical line is the eye's line of sight, fixed straight ahead. Move the optical center off it and the eye looks through a thicker part of the lens, which acts as a prism. The base always points to the thicker glass.</p>
+
+    <div class="toggle" id="lensToggle">
+      <button class="tbtn on" data-sign="1">Plus lens (thick center)</button>
+      <button class="tbtn" data-sign="-1">Minus lens (thick edges)</button>
+    </div>
+
+    <svg id="scene" width="100%" viewBox="0 0 720 340" style="background:#fff;border:1px solid var(--line);border-radius:10px" aria-label="Lens decentration and induced prism"></svg>
+
+    <div class="sliders">
+      <div class="sliderow">
+        <label>Lens power |F|: <span class="v"><b id="fval">4.0</b> D</span></label>
+        <input type="range" id="fslider" min="1" max="12" step="0.5" value="4">
+      </div>
+      <div class="sliderow">
+        <label>Optical center offset: <span class="v"><b id="dval">4</b> mm</span></label>
+        <input type="range" id="dslider" min="-8" max="8" step="1" value="4">
+      </div>
+      <div class="ends"><span>Temporal (toward ear)</span><span>centered</span><span>Nasal (toward nose)</span></div>
+    </div>
+
+    <div class="readout" id="readout"></div>
+    <div class="eqbox" id="eqbox"></div>
+    <div class="note" id="rule"></div>
+    <div class="mnem">Plus follows, minus opposes. The base goes the way you decenter a plus lens, the opposite way for a minus lens.</div>
+  </section>
+
+  <section>
+    <h2>2. Why it works</h2>
+    <ul class="concept">
+      <li>A prism's <b>base is its thick edge</b>. Light bends toward the base; the image shifts toward the thin apex.</li>
+      <li><b>Plus lens</b> is thick in the center, so its base sits at the optical center. Look off-center and the base points back toward the OC.</li>
+      <li><b>Minus lens</b> is thick at the rim, so its base sits at the edge. Look off-center and the base points out to the nearest rim.</li>
+      <li><b>Prescribing:</b> to get base in, decenter a plus lens in, or a minus lens out. Prentice gives the amount: <code>&#916; = c &#215; F</code>, c in cm.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Test yourself</h2>
+    <div class="progress-row">
+      <div class="bar"><span id="barfill"></span></div>
+      <div class="score" id="scoretext">0 / 6</div>
+    </div>
+    <div id="qbody"></div>
+  </section>
+</div>
+
+<script>
+const scene=document.getElementById('scene');
+const fslider=document.getElementById('fslider'),dslider=document.getElementById('dslider');
+const fval=document.getElementById('fval'),dval=document.getElementById('dval');
+const readout=document.getElementById('readout'),eqbox=document.getElementById('eqbox'),rule=document.getElementById('rule');
+let sign=1; // +1 plus, -1 minus
+
+const CX=360, YC=170, HW=115, HH=62, SCALE=6;
+
+function draw(){
+  const F=parseFloat(fslider.value);
+  const dec=parseInt(dslider.value); // mm, + = nasal (left), - = temporal (right)
+  fval.textContent=F.toFixed(1);
+  dval.textContent=(dec>0?'+':'')+dec;
+  const ocx=CX + dec*SCALE; // nasal decentration (positive) slides OC toward the nose (right)
+
+  const glass = sign>0
+    ? '<polygon points="'+(ocx-HW)+','+YC+' '+ocx+','+(YC-HH)+' '+ocx+','+(YC+HH)+'" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>'
+      +'<polygon points="'+(ocx+HW)+','+YC+' '+ocx+','+(YC-HH)+' '+ocx+','+(YC+HH)+'" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>'
+    : '<polygon points="'+(ocx-HW)+','+(YC-HH)+' '+(ocx-HW)+','+(YC+HH)+' '+ocx+','+YC+'" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>'
+      +'<polygon points="'+(ocx+HW)+','+(YC-HH)+' '+(ocx+HW)+','+(YC+HH)+' '+ocx+','+YC+'" fill="var(--glass)" stroke="var(--glassln)" stroke-width="1.2"/>';
+
+  // where does the sightline hit relative to OC
+  const sightSide = Math.sign(CX - ocx); // +1 sightline temporal (right), -1 nasal (left), 0 centered
+  const baseScreenDir = sign>0 ? -sightSide : sightSide; // plus toward OC, minus toward rim
+  const baseIn = baseScreenDir > 0; // right = nasal = base in
+  const c_cm = Math.abs(dec)/10;
+  const prism = c_cm * F;
+  const zero = dec===0;
+
+  const baseColor = zero ? 'var(--muted)' : (baseIn ? 'var(--in)' : 'var(--out)');
+
+  // highlight the thick base the eye looks through
+  let baseMark='';
+  if(sign>0){
+    baseMark='<line x1="'+ocx+'" y1="'+(YC-HH)+'" x2="'+ocx+'" y2="'+(YC+HH)+'" stroke="'+baseColor+'" stroke-width="4"/>';
+  }else{
+    const edge = sightSide>=0 ? ocx+HW : ocx-HW;
+    baseMark='<line x1="'+edge+'" y1="'+(YC-HH)+'" x2="'+edge+'" y2="'+(YC+HH)+'" stroke="'+baseColor+'" stroke-width="4"/>';
+  }
+
+  // base-direction arrow at the sight point
+  let arrow='';
+  if(!zero){
+    const x2 = CX + baseScreenDir*52;
+    arrow='<line x1="'+CX+'" y1="'+YC+'" x2="'+x2+'" y2="'+YC+'" stroke="'+baseColor+'" stroke-width="3.5" marker-end="url(#ah)"/>'
+      +'<text x="'+CX+'" y="'+(YC-16)+'" text-anchor="middle" font-size="13" font-weight="700" fill="'+baseColor+'">'+(baseIn?'BASE IN':'BASE OUT')+'</text>';
+  }
+
+  scene.innerHTML=
+    '<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">'
+    +'<path d="M2 1L8 5L2 9" fill="none" stroke="'+baseColor+'" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>'
+    // optical axis
+    +'<line x1="40" y1="'+YC+'" x2="680" y2="'+YC+'" stroke="#d7d3c7" stroke-width="1" stroke-dasharray="2 4"/>'
+    // nasal / temporal labels
+    +'<text x="52" y="34" font-size="12" fill="#8a8577">Temporal (ear)</text>'
+    +'<text x="668" y="34" text-anchor="end" font-size="12" fill="#8a8577">Nasal (nose)</text>'
+    +glass+baseMark
+    // optical center marker
+    +'<line x1="'+ocx+'" y1="70" x2="'+ocx+'" y2="270" stroke="#b7b2a5" stroke-width="1" stroke-dasharray="3 3"/>'
+    +'<circle cx="'+ocx+'" cy="'+YC+'" r="3.5" fill="#6b685f"/>'
+    +'<text x="'+ocx+'" y="288" text-anchor="middle" font-size="12" fill="#6b685f">optical center</text>'
+    // line of sight (fixed)
+    +'<line x1="'+CX+'" y1="56" x2="'+CX+'" y2="300" stroke="var(--sight)" stroke-width="1.5" stroke-dasharray="5 4"/>'
+    +'<circle cx="'+CX+'" cy="'+YC+'" r="4" fill="var(--sight)"/>'
+    +'<text x="'+CX+'" y="316" text-anchor="middle" font-size="12" fill="var(--sight)">line of sight</text>'
+    +arrow;
+
+  // readout pills
+  let pills='';
+  if(zero){
+    pills='<span class="pill none">No prism (looking through OC)</span>';
+  }else{
+    pills='<span class="pill '+(baseIn?'in':'out')+'">'+(baseIn?'Base IN':'Base OUT')+'</span>'
+      +'<span class="pill mag">'+prism.toFixed(2)+'&#916;</span>';
+  }
+  readout.innerHTML=pills;
+
+  // Prentice box
+  eqbox.innerHTML='<div class="row"><span class="lbl">Prentice&#39;s rule</span><code>&#916; = c(cm) &#215; F(D)</code></div>'
+    +'<div class="row"><span class="lbl">c</span><code>'+Math.abs(dec)+' mm = '+c_cm.toFixed(2)+' cm</code>'
+    +'<span class="lbl">F</span><code>'+F.toFixed(2)+' D</code>'
+    +'<span class="lbl">prism</span><code>'+c_cm.toFixed(2)+' &#215; '+F.toFixed(2)+' = '+prism.toFixed(2)+'&#916;</code></div>';
+
+  // dynamic sentence
+  if(zero){
+    rule.innerHTML='The line of sight passes through the optical center, so no prism is induced. Slide the optical center off the line of sight to see the effect.';
+  }else{
+    const lens = sign>0?'plus':'minus';
+    const decDir = dec>0?'nasally':'temporally';
+    const lookSide = sightSide>0?'nasal':'temporal';
+    const thick = sign>0?'toward the center':'toward the '+lookSide+' rim';
+    rule.innerHTML='This '+lens+' lens has its optical center decentered '+decDir+', so the eye looks through the '+lookSide+' part. A '+lens+' lens thickens '+thick+', so the base points '+(baseIn?'nasally = base in':'temporally = base out')+'.';
+  }
+}
+
+document.querySelectorAll('#lensToggle .tbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#lensToggle .tbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); sign=parseInt(b.dataset.sign); draw();
+}));
+fslider.addEventListener('input',draw);
+dslider.addEventListener('input',draw);
+draw();
+
+// ---------- quiz ----------
+const Q=[
+ {q:"A minus lens has its optical center decentered NASALLY. The induced prism is:",o:["Base in","Base out","Base up","No prism"],a:1,w:"Minus is thick at the rim. Decentered nasally, the eye looks through the temporal part, so the base points out to the temporal rim.",k:"Minus, decentered nasal = base OUT (minus opposes)."},
+ {q:"A plus lens has its optical center decentered NASALLY. The induced prism is:",o:["Base out","Base in","Base down","No prism"],a:1,w:"Plus is thick at the center. Looking through the temporal part, the glass thickens toward the center, so the base points nasally.",k:"Plus, decentered nasal = base IN (plus follows)."},
+ {q:"A minus lens has its optical center decentered TEMPORALLY. The induced prism is:",o:["Base out","Base in","Base up","No prism"],a:1,w:"Now the eye looks through the nasal part; a minus lens thickens toward the nasal rim, so the base points in.",k:"Minus, decentered temporal = base IN (minus opposes)."},
+ {q:"To create BASE-IN prism for a patient using decentration, you would:",o:["Decenter a plus lens in, or a minus lens out","Decenter a plus lens out, or a minus lens in","Decenter either lens in","Decenter either lens out"],a:0,w:"Base in follows the plus lens's decentration, and runs opposite to the minus lens's. So plus in, or minus out.",k:"Base in: plus decentered in, minus decentered out."},
+ {q:"A +4.00 D lens is decentered 5 mm. The induced prism by Prentice's rule is:",o:["0.8Δ","2.0Δ","4.5Δ","20Δ"],a:1,w:"Prentice: prism = c(cm) × F = 0.5 cm × 4.00 D = 2.0 prism diopters. Remember to convert mm to cm first.",k:"Δ = c(cm) × F; 0.5 × 4 = 2.0Δ."},
+ {q:"In a prism, the base is the thick edge. In a minus lens the thickest glass is at the:",o:["Center","Edges (rim)","Top only","There is none"],a:1,w:"A minus lens is thin in the center and thick at the rim, so its base sits at the edge. That is why its induced base runs opposite to the plus lens.",k:"Minus lens: thick at the rim = base at the edge."}
+];
+let i=0,sc=0,done=false;
+const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
+const LTR=['A','B','C','D'];
+function render(){done=false;const it=Q[i];barfill.style.width=(i/Q.length*100)+'%';scoretext.textContent=sc+' / '+Q.length;
+ let h='<div class="qtext">'+it.q+'</div>';it.o.forEach((o,n)=>{h+='<button class="opt" data-i="'+n+'"><span class="lab">'+LTR[n]+'</span>'+o+'</button>';});
+ h+='<div id="fb"></div><div class="actions" id="acts"></div>';body.innerHTML=h;
+ body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(parseInt(b.dataset.i))));}
+function choose(c){if(done)return;done=true;const it=Q[i],r=it.a;
+ body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===r)b.classList.add('correct');if(n===c&&c!==r)b.classList.add('incorrect');});
+ const ok=c===r;if(ok)sc++;scoretext.textContent=sc+' / '+Q.length;
+ const fb=document.getElementById('fb');fb.className='feedback '+(ok?'good':'bad');
+ fb.innerHTML='<span class="tag">'+(ok?'Correct':'Answer: '+LTR[r])+'</span><div>'+it.w+'</div><div style="margin-top:6px;font-size:12.5px;color:var(--muted)"><b>Anchor:</b> '+it.k+'</div>';
+ const last=i===Q.length-1;document.getElementById('acts').innerHTML='<button class="nav" id="nx">'+(last?'See score':'Next')+'</button>';
+ document.getElementById('nx').addEventListener('click',next);}
+function next(){if(i<Q.length-1){i++;render();}else{barfill.style.width='100%';const pct=Math.round(sc/Q.length*100);
+ body.innerHTML='<div class="results"><div class="big">'+pct+'%</div><div style="color:var(--muted);margin-bottom:12px">'+sc+' of '+Q.length+' correct.</div><button class="nav ghost" id="ag">Restart</button></div>';
+ document.getElementById('ag').addEventListener('click',()=>{i=0;sc=0;render();});}}
+render();
+</script>
+</body>
+</html>

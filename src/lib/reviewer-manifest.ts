@@ -140,6 +140,7 @@ const INTERACTIVE_ITEMS: Item[] = [
   { id: 'int.D1-Ray-Diagram-Interactive', subject: 'D', type: 'interactive', label: 'D1 Ray Diagram', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Ray-Diagram-Interactive.html' },
   { id: 'int.D1-Ocular-Axes-and-Angles-Interactive', subject: 'D', type: 'interactive', label: 'D1 Axes & Angles of the Eye', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Ocular-Axes-and-Angles-Interactive.html' },
   { id: 'int.D1-Image-Formation-Zones-Interactive', subject: 'D', type: 'interactive', label: 'D1 Image Formation Zones', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D1-Geometric-and-Physical-Optics/D1-Image-Formation-Zones-Interactive.html' },
+  { id: 'int.D2-Prism-by-Decentration-Interactive', subject: 'D', type: 'interactive', label: 'D2 Prism by Decentration', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D2-Ophthalmic-Lenses-and-Dispensing/D2-Prism-by-Decentration-Interactive.html' },
   // Named -Visualizer rather than -Interactive, so it fell outside the generator's glob
   // and was reachable only from the D reviewer's layers bar until now.
   { id: 'int.D-Prism-360-Visualizer', subject: 'D', type: 'interactive', label: 'D Prism 360 Dial', path: '/top2/D-Theoretical-Optics-Dispensing-CL/D-Prism-360-Visualizer.html' },
