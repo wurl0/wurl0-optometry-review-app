@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase-client'
@@ -46,6 +46,11 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
   // post-session figures, and the results screen already subtracts the session itself
   // from them, so reading the live props there would count the same work twice.
   const [atStart] = useState({ due: dueTotal, queue: queueTotal, solid: solidTotal })
+  // Guards against a second click advancing twice before the re-render removes the
+  // button. Reset once the card actually changes (below), not synchronously, so two
+  // clicks in the same tick cannot both get through.
+  const advancing = useRef(false)
+  useEffect(() => { advancing.current = false }, [current])
 
   // ─── NOTHING DUE ──────────────────────────────────────────────────────────
 
@@ -98,24 +103,44 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
     setRevealed(true)
   }
 
-  async function handleNext() {
-    const correct = selected === card.payload.correct
-    const { retired } = await grade(correct)
-    const next = [...results, { correct, retired }]
-    setResults(next)
+  function handleNext() {
+    if (advancing.current) return
+    advancing.current = true
 
-    if (current === cards.length - 1) {
-      setSaving(true)
-      const score = next.filter(r => r.correct).length
+    const correct = selected === card.payload.correct
+    const idx = current
+    const isLast = current === cards.length - 1
+
+    // Record the answer optimistically and advance right away — the grade save happens
+    // in the background so a slow /api/srs/grade never freezes the card. `retired` is
+    // patched in when the save resolves (it only feeds the end-of-session summary).
+    setResults(prev => { const c = [...prev]; c[idx] = { correct, retired: false }; return c })
+    grade(correct).then(({ retired }) => {
+      if (retired) setResults(prev => prev.map((r, k) => (k === idx ? { ...r, retired: true } : r)))
+    })
+
+    if (!isLast) {
+      setCurrent(i => i + 1)
+      setSelected(null)
+      setRevealed(false)
+      return
+    }
+
+    // Last card: finish. Gamification is the only awaited work; the grade is already
+    // saving in the background above.
+    setSaving(true)
+    const score = results.filter(r => r.correct).length + (correct ? 1 : 0)
+    const total = cards.length
+    ;(async () => {
       try {
         const supabase = createClient()
         const { data: { user } } = await supabase.auth.getUser()
         if (user) {
           const g = await updateGamification(supabase, user.id, {
             correct: score,
-            total: next.length,
+            total,
             isExam: false,
-            percentage: Math.round((score / next.length) * 100),
+            percentage: Math.round((score / total) * 100),
             subject: 'review',
           })
           setGamResult(g)
@@ -128,11 +153,7 @@ export default function ReviewClient({ cards, labels, queueTotal, solidTotal, du
       // and in a standalone web app the only way out of that is quitting the app.
       // This drops the cached render for the whole tree so the next navigation is fresh.
       router.refresh()
-    } else {
-      setCurrent(i => i + 1)
-      setSelected(null)
-      setRevealed(false)
-    }
+    })()
   }
 
   // ─── DONE ─────────────────────────────────────────────────────────────────
