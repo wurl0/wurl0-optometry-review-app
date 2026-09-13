@@ -364,11 +364,13 @@ function buildDay(dt){
       const s = wk[dow] || HEAVY[(hp++)%HEAVY.length];
       const weak = !!wk[dow];
       tag = weak?"weak three":"board pace"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — board pace";
-      const preb={txt:"Preboards: "+s, link:prebLink(s), why:"Board pace, phone timer, ~1.2 min per item (2h/100, 3h/150). No pausing. This is the timed rep."};
-      const sexam={txt:s+" Subject Exam", link:examLink(s), why:"Added aligned bank from your own review content, no clock. Clear it when you have gas after the timed preboard; the review queue is the only hard floor."};
-      // Both banks present every non-Sunday (Wyrlo's call). Weak three does the aligned
-      // Subject Exam first; heavy days do the timed preboard first. Neither is a hard floor.
-      tix = weak ? [QUEUE(), sexam, preb, GAPS] : [QUEUE(), preb, sexam, GAPS];
+      // One bank per day, never two stacked on the same subject (Wyrlo's call, Sep 13:
+      // two full banks was a burnout plate). Weak three -> aligned Subject Exam; heavy 15%
+      // -> preboard for stamina/stress. Optional to reach for the other bank on a light day.
+      const test = weak
+        ? {txt:s+" Subject Exam", link:examLink(s), why:"Aligned bank from your own review content, carries your preboard-remediation. Board pace, phone timer, ~1.2 min per item. This is your weak-three rep."}
+        : {txt:"Preboards: "+s, link:prebLink(s), why:"Board pace, phone timer, ~1.2 min per item (2h/100, 3h/150). No pausing. Stamina and stress inoculation on a subject you are already strong in."};
+      tix=[QUEUE(), test, GAPS];
     }
   } else {
     phase="build";
