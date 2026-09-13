@@ -364,7 +364,11 @@ function buildDay(dt){
       const s = wk[dow] || HEAVY[(hp++)%HEAVY.length];
       const weak = !!wk[dow];
       tag = weak?"weak three":"board pace"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — board pace";
-      tix=[QUEUE(),{txt:"Preboards: "+s, link:prebLink(s), why:"Board pace, phone timer, ~1.2 min per item (2h/100, 3h/150). No pausing."}, GAPS];
+      const preb={txt:"Preboards: "+s, link:prebLink(s), why:"Board pace, phone timer, ~1.2 min per item (2h/100, 3h/150). No pausing. This is the timed rep."};
+      const sexam={txt:s+" Subject Exam", link:examLink(s), why:"Added aligned bank from your own review content, no clock. Clear it when you have gas after the timed preboard; the review queue is the only hard floor."};
+      // Both banks present every non-Sunday (Wyrlo's call). Weak three does the aligned
+      // Subject Exam first; heavy days do the timed preboard first. Neither is a hard floor.
+      tix = weak ? [QUEUE(), sexam, preb, GAPS] : [QUEUE(), preb, sexam, GAPS];
     }
   } else {
     phase="build";
