@@ -9,7 +9,22 @@ export async function GET() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  const name = (user.user_metadata && user.user_metadata.full_name) || ''
+
+  // Prefer auth metadata (the home greeting's source); fall back to the profiles
+  // row, then the email local-part, so the field is never left blank if the two
+  // name stores have drifted.
+  let name = (user.user_metadata?.full_name as string) || ''
+  if (!name) {
+    const admin = createAdminClient()
+    const { data } = await admin
+      .from('profiles')
+      .select('full_name')
+      .eq('user_id', user.id)
+      .maybeSingle()
+    name = (data?.full_name as string) || ''
+  }
+  if (!name) name = (user.email || '').split('@')[0]
+
   return NextResponse.json({ name })
 }
 
