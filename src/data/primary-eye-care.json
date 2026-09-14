@@ -308,7 +308,7 @@
       "60 degrees"
     ],
     "correct": 2,
-    "explanation": "The 9 o'clock spoke is the horizontal (3-9) line, lying along the 180° meridian. That clearest line marks the more powerful meridian; the minus cylinder axis sits 90° away, on the flat meridian, so a horizontal clearest line gives a vertical (90°) axis. By the Rule of 30 (lower clock number × 30): 3 × 30 = 90°. Answer: 90°. Note the 9 o'clock and 3 o'clock spokes are the same line, so both must give the same axis, 90°. (180° would be the PLUS cylinder axis, not what the fan dial and Rule of 30 give.)",
+    "explanation": "The 9 o'clock line is horizontal (the 3-9 line). The clearest line sits on the powerful meridian, and the minus-cylinder axis is 90° away, so a horizontal line gives a 90° axis. Rule of 30: lower clock number × 30 = 3 × 30 = 90°. Answer: 90°. (180° is the plus-cylinder axis; the fan dial gives the minus-cylinder axis.)",
     "module": "Module 3: Refraction & Refractive Errors"
   },
   {
@@ -815,7 +815,7 @@
       "60 degrees"
     ],
     "correct": 2,
-    "explanation": "The 3 o'clock spoke is the horizontal (3-9) line, lying along the 180° meridian. That clearest line marks the more powerful meridian; the minus cylinder axis sits 90° away, on the flat meridian, so a horizontal clearest line gives a vertical (90°) axis. By the Rule of 30 (lower clock number × 30): 3 × 30 = 90°. Answer: 90°. The 3 o'clock and 9 o'clock spokes are the same line, so both give 90°.",
+    "explanation": "The 3 o'clock line is horizontal (the 3-9 line, same line as 9 o'clock). The clearest line sits on the powerful meridian, and the minus-cylinder axis is 90° away, so a horizontal line gives a 90° axis. Rule of 30: lower clock number × 30 = 3 × 30 = 90°. Answer: 90°. (180° is the plus-cylinder axis; the fan dial gives the minus-cylinder axis.)",
     "module": "Module 3: Refraction & Refractive Errors"
   },
   {
