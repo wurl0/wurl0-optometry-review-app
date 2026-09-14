@@ -352,8 +352,9 @@ export default function PracticeClient({ subject, questions, levelProgress: init
             </div>
           )}
 
-          {/* Review queue — what this session fed into spaced repetition */}
-          {srsResult && (srsResult.added > 0 || srsResult.reset > 0 || srsResult.advanced > 0) && (
+          {/* Review queue — what this session fed into spaced repetition.
+              Only shown to users with review access (gates the post-session prompt). */}
+          {srsResult && srsResult.reviewAccess && (srsResult.added > 0 || srsResult.reset > 0 || srsResult.advanced > 0) && (
             <div className="bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🧠</span>
