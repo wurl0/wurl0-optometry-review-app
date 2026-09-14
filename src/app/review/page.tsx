@@ -10,9 +10,10 @@ import ReviewClient from './ReviewClient'
 // forces a re-read of which rules apply, which is the point of the drill.
 //
 // Session size is user-chosen via the ?size= picker on the page. 30 keeps the original
-// small-batch feel (the default), 60 is the common double-pass in one go, 'all' clears
-// everything due (bounded to a sane max so one sitting can't pull thousands).
-const SESSION_SIZES: Record<string, number> = { '30': 30, '60': 60, all: 400 }
+// small-batch feel (the default), 60 is the common double-pass in one go, 120 is a
+// heavier single sitting, and 'all' clears everything due (bounded to a sane max so
+// one sitting can't pull thousands).
+const SESSION_SIZES: Record<string, number> = { '30': 30, '60': 60, '120': 120, all: 400 }
 const DEFAULT_SIZE = '30'
 
 interface Row {

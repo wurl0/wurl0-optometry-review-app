@@ -15,7 +15,7 @@ interface Props {
   size: string
 }
 
-const SESSION_SIZES = ['30', '60', 'all'] as const
+const SESSION_SIZES = ['30', '60', '120', 'all'] as const
 
 type Phase = 'playing' | 'done'
 
