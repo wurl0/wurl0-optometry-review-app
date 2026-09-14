@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA Board Review 2026 — CBLE Interface Cheat Sheet</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#23211c; --muted:#6b685f; --line:#e3e0d6;
+    --navy:#042c53; --navy-soft:#e6eef6;
+    --green:#1d9e75; --green-soft:#e1f5ee; --red:#c0392b; --red-soft:#fbeaea;
+    --blue:#1785b3; --orange:#e8930c; --gold:#8a6a12; --gold-soft:#f6efdc;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-text-size-adjust:100%}
+  .wrap{max-width:840px;margin:0 auto;padding:26px 20px 70px}
+  header.brand{border-bottom:2px solid var(--navy);padding-bottom:12px;margin-bottom:20px}
+  .kicker{font-size:12px;letter-spacing:.08em;color:var(--navy);font-weight:700;text-transform:uppercase}
+  h1{font-size:24px;margin:6px 0 2px}
+  .sub{font-size:13.5px;color:var(--muted);margin:0}
+  h2{font-size:16px;margin:26px 0 10px;color:var(--navy);border-left:4px solid var(--navy);padding-left:9px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 16px}
+  .box h3{margin:0 0 6px;font-size:14px}
+  .box p{margin:0;font-size:13.5px;color:var(--muted)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-right:6px;vertical-align:middle}
+  .t-time{background:var(--red-soft);color:var(--red)}
+  .t-map{background:#fdeecd;color:var(--orange)}
+  .t-book{background:var(--navy-soft);color:var(--blue)}
+  .t-sub{background:var(--green-soft);color:var(--green)}
+  ol,ul{margin:6px 0 0;padding-left:20px}
+  li{font-size:13.8px;margin-bottom:5px}
+  .legend{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 16px;font-size:13.8px}
+  .legend div{margin-bottom:7px;display:flex;align-items:center;gap:9px}
+  .dot{width:16px;height:16px;border-radius:50%;flex:0 0 16px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff}
+  .d-green{background:var(--green)} .d-red{background:#fff;border:2px solid var(--red)} .d-blue{color:var(--blue);font-size:15px}
+  .strat{background:var(--gold-soft);border:1px solid #e7d9a8;border-radius:11px;padding:14px 18px;margin-top:8px}
+  .strat h3{margin:0 0 8px;font-size:14px;color:var(--gold)}
+  .strat ol li{margin-bottom:7px}
+  .callout{background:var(--red-soft);border:1px solid #efc9c5;border-radius:11px;padding:13px 16px;margin-top:16px;font-size:14px}
+  .callout b{color:var(--red)}
+  .link{background:var(--navy-soft);border:1px solid #cfe0f0;border-radius:11px;padding:13px 16px;margin-top:18px;font-size:13.8px}
+  .link a{color:var(--navy);font-weight:700}
+  .foot{font-size:11.5px;color:var(--muted);text-align:center;margin-top:26px;border-top:1px solid var(--line);padding-top:12px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  @media print{body{background:#fff}.wrap{padding:0}.box,.legend,.strat{break-inside:avoid}}
+</style>
+</head>
+<body>
+<!--WAA-HOME-LINK--><a href="../index.html" style="position:fixed;top:10px;left:10px;z-index:99999;background:#fff;border:1px solid #cbd5e1;border-radius:10px;padding:6px 12px;font:600 13px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#334155;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)">← Home</a>
+<div class="wrap">
+  <header class="brand">
+    <div class="kicker">WAA · Board Review 2026</div>
+    <h1>CBLE Interface Cheat Sheet</h1>
+    <p class="sub">How the PRC Computer-Based Licensure Exam screen works — so nothing on exam day is a surprise. Personal study notes.</p>
+  </header>
+
+  <h2>Screen 1 — The exam screen</h2>
+  <div class="grid">
+    <div class="box">
+      <h3>Header info box (left)</h3>
+      <p>Your name, the exam name, and the subject. Just confirms you are in the right test.</p>
+    </div>
+    <div class="box">
+      <h3><span class="tag t-time">TIME</span>Time Remaining (right)</h3>
+      <p>Live countdown in red. Below it: <b>Questions Answered</b> and <b>Total Number of TIQ</b> (total items). Your pacing dashboard — read "answered vs total" against the clock.</p>
+    </div>
+    <div class="box">
+      <h3>Question / Choices</h3>
+      <p>One item at a time. Four options (A–D), click the radio to answer. Selecting an option bumps the Answered count.</p>
+    </div>
+    <div class="box">
+      <h3><span class="tag t-book">NAV</span>Previous · Next · First · Last</h3>
+      <p>Step one item at a time, or jump straight to the start or end of the set.</p>
+    </div>
+    <div class="box">
+      <h3><span class="tag t-map">▦ MAP</span>Question Roadmap (orange)</h3>
+      <p>The big one. Opens an overview to jump to any question directly and see what is answered or bookmarked. Use this instead of clicking Next 100 times.</p>
+    </div>
+    <div class="box">
+      <h3><span class="tag t-book">☆ MARK</span>Bookmark this item</h3>
+      <p>The "flag for review" button. Bookmark anything you are unsure of, then return to just those via the Roadmap.</p>
+    </div>
+    <div class="box">
+      <h3>👁 Hide Screen</h3>
+      <p>Blurs/hides the screen for privacy or a quick pause without exposing your answers. Does not stop the clock.</p>
+    </div>
+    <div class="box">
+      <h3><span class="tag t-sub">✔ END</span>Submit (green)</h3>
+      <p>Ends and locks in the whole exam. You hit this once, at the very end. Do not touch it until the Roadmap shows no red left.</p>
+    </div>
+  </div>
+
+  <h2>Screen 2 — The Question Roadmap</h2>
+  <div class="legend">
+    <div><span class="dot d-green">●</span> <b style="color:var(--green)">GREEN</b> (with ●) = already answered</div>
+    <div><span class="dot d-red"></span> <b style="color:var(--red)">RED</b> = not yet answered</div>
+    <div><span class="d-blue">◉</span> <b style="color:var(--blue)">Blue bookmark</b> = an item you marked for review</div>
+    <div style="color:var(--muted);font-size:12.5px;margin-top:4px">Click any question number to jump straight to it. Close returns you to the current item — it does not submit.</div>
+  </div>
+
+  <div class="strat">
+    <h3>The two-pass strategy this interface rewards</h3>
+    <ol>
+      <li><b>First pass:</b> answer everything you know fast (turns green). Bookmark the hard ones (blue icon) and keep moving — never stall on one item.</li>
+      <li><b>Second pass:</b> open the Roadmap and hit only your bookmarked and remaining red items, easiest first.</li>
+      <li><b>Pace check:</b> watch <b>Questions Answered / Total TIQ</b> against <b>Time Remaining</b>. "8 reds left, 3 minutes" tells you to speed up.</li>
+      <li><b>Before Submit:</b> reopen the Roadmap and confirm <b>zero red</b>. No penalty for guessing — a red is a guaranteed zero, a guess is not.</li>
+    </ol>
+  </div>
+
+  <div class="callout">
+    <b>The one habit that saves points:</b> the exam is not done when you reach the last question — it is done when the Roadmap has no red left. That is the trap that costs marks.
+  </div>
+
+  <div class="link">
+    Practice on a live clone of this exact screen: <a href="CBLE-Simulator.html">CBLE-Simulator.html</a> — pulls from your 2,600+ item OLE Mock Board bank and gives full rationales after you submit (the real PRC exam gives none).
+  </div>
+
+  <p class="foot">WAA · Board Review 2026 · Personal study notes · OLE 2026 · Interface mirrors the PRC-CBLE as of the Oct 2025 optometry exam</p>
+</div>
+</body>
+</html>
