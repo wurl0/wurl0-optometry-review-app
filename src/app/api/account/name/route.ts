@@ -2,6 +2,17 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase-admin'
 import { createClient } from '@/lib/supabase-server'
 
+// Read the signed-in user's display name (from auth user_metadata, kept in sync
+// by the POST below). Used by client pages that prefill the name, e.g. the CBLE
+// simulator's examinee field.
+export async function GET() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  const name = (user.user_metadata && user.user_metadata.full_name) || ''
+  return NextResponse.json({ name })
+}
+
 // Self-service: the signed-in user renames themselves. The name lives in two
 // stores that must stay in sync — auth user_metadata (used for the home greeting)
 // and profiles.full_name (used in the admin panel and sign-up emails).

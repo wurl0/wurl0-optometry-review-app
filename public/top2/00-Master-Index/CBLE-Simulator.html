@@ -227,9 +227,11 @@
       <button class="chip" data-n="20">20</button>
       <button class="chip sel" data-n="50">50</button>
       <button class="chip" data-n="100">100</button>
+      <button class="chip" data-n="150">150</button>
       <button class="chip" data-n="200">200</button>
+      <button class="chip" data-n="all">All (Full OLE)</button>
     </div>
-    <p class="hint">Split across your chosen subjects by OLE weight (higher-weight subjects get more items).</p>
+    <p class="hint">Split across your chosen subjects by OLE weight (higher-weight subjects get more items). "All" = the full OLE scale: 10% = 100 items, 15% = 150 (all 8 = 1000).</p>
   </div>
 
   <div class="card">
@@ -360,6 +362,8 @@
 </div>
 
 <script src="cble-bank.js"></script>
+<script src="/top2/_report.js"></script>
+<script src="/top2/_srs.js"></script>
 <script>
 (function(){
   "use strict";
@@ -377,6 +381,12 @@
 
   var AVAIL={};
   ORDER.forEach(function(t){AVAIL[t]=POOL.filter(function(q){return q.t===t;}).length;});
+
+  // Prefill the examinee name with the signed-in user's name (kept editable).
+  fetch('/api/account/name',{credentials:'same-origin'})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(d){if(d&&d.name){document.getElementById('inName').value=String(d.name).toUpperCase();}})
+    .catch(function(){});
 
   // ---- setup state ----
   var selected={};                 // topic -> true
@@ -429,7 +439,7 @@
       b.classList.add('sel');cb(b);updatePlan();
     });
   }
-  chipHandler(document.getElementById('countChips'),function(b){pickCount=parseInt(b.dataset.n,10);});
+  chipHandler(document.getElementById('countChips'),function(b){pickCount=(b.dataset.n==='all')?'all':parseInt(b.dataset.n,10);});
   chipHandler(document.getElementById('timeChips'),function(b){pickMin=parseFloat(b.dataset.min);});
 
   // ---- weighted allocation ----
@@ -437,6 +447,13 @@
   function allocate(N){
     var sel=selectedTopics();
     if(!sel.length)return {};
+    // "All" = the full OLE scale: each subject gets weight×10 items
+    // (10% = 100, 15% = 150), so all 8 subjects total 1000.
+    if(N==='all'){
+      var full={};
+      sel.forEach(function(t){full[t]=Math.min(WEIGHT[t]*10,AVAIL[t]);});
+      return full;
+    }
     var wsum=0;sel.forEach(function(t){wsum+=WEIGHT[t];});
     // cap N by total available across selected
     var availSum=0;sel.forEach(function(t){availSum+=AVAIL[t];});
@@ -491,6 +508,16 @@
   // ---- exam state ----
   var S=null;
   function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  // Reshuffle the A–D options every attempt. Permute options, the correct index,
+  // and the per-option explanations (ow) together so they stay aligned.
+  function shuffleOptions(q){
+    var idx=shuffle([0,1,2,3]);
+    var item={t:q.t,st:q.st,q:q.q,w:q.w,k:q.k,decode:q.decode,n:q.n};
+    item.o=idx.map(function(i){return q.o[i];});
+    item.ow=q.ow?idx.map(function(i){return q.ow[i];}):undefined;
+    item.a=idx.indexOf(q.a);
+    return item;
+  }
 
   function startExam(){
     var sel=selectedTopics();
@@ -499,7 +526,7 @@
     var items=[];
     sel.forEach(function(t){
       var pool=shuffle(POOL.filter(function(q){return q.t===t;}));
-      items=items.concat(pool.slice(0,alloc[t]||0));
+      items=items.concat(pool.slice(0,alloc[t]||0).map(shuffleOptions));
     });
     shuffle(items);
     var n=items.length;
@@ -618,10 +645,37 @@
 
   function finish(){
     if(S.timer){clearInterval(S.timer);S.timer=null;}
+    reportAttempt();
     document.getElementById('exam').style.display='none';
     document.getElementById('results').style.display='block';
     window.scrollTo(0,0);
     buildResults();
+  }
+
+  // Exam mode only: log per-subject scores to Readiness (ole_attempts) and push
+  // answered items into the Review/SRS queue. Study mode reveals answers as you
+  // go, so it is practice and never logged. Score counts unanswered as wrong, to
+  // match the results screen and a real board sitting.
+  function reportAttempt(){
+    if(S.mode!=='exam')return;
+    var stat={};
+    S.items.forEach(function(q,i){
+      var sc=(q.t||'').charAt(0); if(!/^[A-H]$/.test(sc))return;
+      if(!stat[sc])stat[sc]={c:0,t:0};
+      stat[sc].t++; if(S.answers[i]===q.a)stat[sc].c++;
+    });
+    if(window.reportOleMock){
+      window.reportOleMock(Object.keys(stat).map(function(k){return {subjectCode:k,score:stat[k].c,total:stat[k].t};}));
+    }
+    if(window.reportSrsItems){
+      var srs=[];
+      S.items.forEach(function(q,i){
+        if(S.answers[i]<0)return; // only answered items enter the review queue
+        var sc=(q.t||'').charAt(0); if(!/^[A-H]$/.test(sc))return;
+        srs.push({stem:q.q,options:q.o,correct:q.a,explanation:q.w||'',subjectCode:sc,wasCorrect:S.answers[i]===q.a});
+      });
+      if(srs.length)window.reportSrsItems(srs);
+    }
   }
 
   // ---- results ----

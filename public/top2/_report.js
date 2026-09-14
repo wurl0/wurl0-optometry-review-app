@@ -13,6 +13,7 @@
     else if (/Preboards-Set4/i.test(file)) source = 'preboards-set4';
     else if (/Preboards-Set5/i.test(file)) source = 'preboards-set5';
     else if (/Mock-Board/i.test(file)) source = 'mock';
+    else if (/CBLE-Simulator/i.test(file)) source = 'mock';
     const m = file.match(/^([A-H])-/); // "D-Subject-Exam.html" -> "D"
     return { source, subjectCode: m ? m[1] : null };
   }
