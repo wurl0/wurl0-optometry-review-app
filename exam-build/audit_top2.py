@@ -133,7 +133,11 @@ for path, (item_id, _t) in sorted(man.items()):
         flag("blocking", "manifest-points-at-missing-file", f"{item_id}  ->  {path}")
 
 # 2. BLOCKING: a home-page chip whose target is missing is a 404 for Wyrlo.
+#    Skip the page's own "Top 2 Home" self-link: index.html is deliberately kept out of
+#    disk_pages by IGNORE, so a link back to it is not a real 404.
 for href in sorted(links):
+    if IGNORE.search("/" + href):
+        continue
     if href not in disk:
         flag("blocking", "home-chip-target-missing", href)
 
