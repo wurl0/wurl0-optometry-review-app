@@ -27,6 +27,19 @@ function pageLabel(path: string | null): string {
     case 'ole-prep': return subj ? `OLE Prep · ${subj}` : 'OLE Prep'
     case 'results': return subj ? `Results · ${subj}` : 'Results'
     case 'reviewer': return 'Top 2 cockpit'
+    case 'top2': {
+      // Static Top 2 pages, e.g. '/top2/C-Primary-Care-and-Refraction/C-Subject-Exam.html'
+      // or '/top2/00-Master-Index/OLE-Mock-Board-Reviewer.html'.
+      const file = decodeURIComponent(parts[parts.length - 1] || '').replace(/\.html$/i, '')
+      const folder = parts[2] ?? ''
+      if (!file || file === 'index') return 'Top 2 home'
+      if (/CBLE-Simulator/i.test(file)) return 'Top 2 · CBLE Simulator'
+      if (folder === '00-Master-Index') return `Top 2 · ${file.replace(/-/g, ' ')}`
+      const code = (folder.match(/^([A-H])-/) ?? [])[1]
+      const name = code ? (top2Name.get(code) ?? code) : ''
+      const doing = /Exam|Preboard|Mock-Board|Drill/i.test(file)
+      return `Top 2 ${doing ? 'exam' : 'reviewer'}${name ? ' · ' + name : ''}`
+    }
     case 'drill': return 'Drill'
     case 'review': return 'SRS Review'
     case 'readiness': return 'Readiness'
