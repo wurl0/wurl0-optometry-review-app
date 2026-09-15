@@ -713,7 +713,7 @@ export default function AdminPage() {
                 {/* Who's on now */}
                 <div>
                   <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">
-                    On now — {usage.live.length} active in the last 20 min
+                    On now — {usage.live.length} active in the last 3 min
                   </h3>
                   {usage.live.length === 0 ? (
                     <p className="text-gray-400 text-sm">Nobody active right now.</p>

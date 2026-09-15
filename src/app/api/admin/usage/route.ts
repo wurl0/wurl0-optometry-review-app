@@ -203,9 +203,13 @@ export async function GET() {
     }
   }).sort((x, y) => (y.lastActive ?? '').localeCompare(x.lastActive ?? ''))
 
-  // Who's on right now: approved users whose most recent page hit is within 20 minutes,
-  // newest first. This is the "what page/exam are they on" live view.
-  const LIVE_MS = 20 * 60000
+  // Who's on right now: approved users whose most recent hit is within 3 minutes,
+  // newest first. Content pages (reviewers, exams, cockpit, static Top 2) heartbeat
+  // every 60s while the tab is open and visible, so a 3-minute window keeps genuinely
+  // open tabs listed and drops a closed/backgrounded one within a few minutes. This
+  // tracks activity/presence on a page, not login state: an idle-but-logged-in user
+  // is simply absent here.
+  const LIVE_MS = 3 * 60000
   const live = users
     .filter(u => u.approved && !u.suspended && within(u.currentAt, LIVE_MS))
     .map(u => ({
