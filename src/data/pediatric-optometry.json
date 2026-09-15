@@ -1294,5 +1294,41 @@
     ],
     "correct": 0,
     "explanation": "Plasticity peaks from birth to age 3, with a functional window to about age 7 to 8. A partial response is still possible to about age 12, and little after that."
+  },
+  {
+    "type": "mcq",
+    "stem": "A child in Piaget's preoperational stage is typically what age?",
+    "options": [
+      "0 to 2 years",
+      "2 to 7 years",
+      "7 to 11 years",
+      "11 years and older"
+    ],
+    "correct": 1,
+    "explanation": "The preoperational stage runs about 2 to 7 years, early childhood into the start of school age. Markers: symbolic play, rapid language, egocentrism, and no conservation. 0 to 2 is sensorimotor, 7 to 11 concrete operational, and 11+ formal operational."
+  },
+  {
+    "type": "mcq",
+    "stem": "Egocentrism and the lack of conservation are hallmarks of which Piaget stage?",
+    "options": [
+      "Sensorimotor",
+      "Preoperational",
+      "Concrete operational",
+      "Formal operational"
+    ],
+    "correct": 1,
+    "explanation": "These define the preoperational stage (2 to 7 years). Conservation, understanding that quantity stays the same when only the shape changes, appears in the next stage, concrete operational (7 to 11 years)."
+  },
+  {
+    "type": "mcq",
+    "stem": "Object permanence, knowing an object still exists when out of sight, develops during which Piaget stage?",
+    "options": [
+      "Sensorimotor (0 to 2 years)",
+      "Preoperational (2 to 7 years)",
+      "Concrete operational (7 to 11 years)",
+      "Formal operational (11+ years)"
+    ],
+    "correct": 0,
+    "explanation": "Object permanence develops in the sensorimotor stage (0 to 2 years), when the infant learns through senses and movement. Symbolic play marks preoperational, conservation marks concrete operational, and abstract reasoning marks formal operational."
   }
 ]

@@ -45,6 +45,23 @@ A misaligned eye projects a confused or diplopic image. The brain suppresses the
 
 ---
 
+### Piaget Cognitive-Developmental Stages
+
+Piaget maps thinking, not vision, but the board pairs the stage with an age band the same way it pairs a visual milestone with an age. Match the stage to its ages.
+
+| Stage | Age | One identifying feature |
+|---|---|---|
+| Sensorimotor | 0–2 yr | Learns through senses and movement; object permanence develops |
+| Preoperational | 2–7 yr | Symbolic/pretend play and language; egocentric; no conservation |
+| Concrete operational | 7–11 yr | Logical about concrete things; conservation and reversibility appear |
+| Formal operational | 11+ yr | Abstract and hypothetical reasoning |
+
+**Preoperational (2–7 yr)** spans early childhood into the start of school age. Its markers: symbolic play, rapid language growth, egocentrism (cannot take another's viewpoint), and no conservation (thinks a tall thin glass holds more than a short wide one). Conservation appearing is the jump into concrete operational.
+
+> The only Piaget content already in the reviewer was the Right-Left Awareness Test (laterality). This adds the stage-to-age map.
+
+---
+
 ### Pediatric VA Testing Methods
 
 | Method | Age | Principle |
