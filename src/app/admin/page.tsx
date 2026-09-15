@@ -50,7 +50,7 @@ type UsageUser = {
   current: string | null; currentAt: string | null; currentSurface: string
   topPages: PageUnit[]; timeline: TimelineEntry[]
 }
-type LiveUser = { name: string | null; email: string | null; label: string | null; surface: string; at: string | null }
+type LiveUser = { name: string | null; email: string | null; label: string | null; surface: string; at: string | null; ip: string | null; ua: string | null }
 type UsageData = {
   summary: {
     signups: number; approved: number; hasAccess: number; everActive: number
@@ -362,6 +362,7 @@ export default function AdminPage() {
   const [approving, setApproving] = useState<string | null>(null)
   const [deleting, setDeleting] = useState<string | null>(null)
   const [suspending, setSuspending] = useState<string | null>(null)
+  const [forcingOut, setForcingOut] = useState<string | null>(null)
   const [blocking, setBlocking] = useState<string | null>(null)
   const [justApproved, setJustApproved] = useState<Profile | null>(null)
   const [tab, setTab] = useState<Tab>('approvals')
@@ -486,6 +487,21 @@ export default function AdminPage() {
     setProfiles(prev => prev.filter(p => p.id !== profile.id))
     if (justApproved?.id === profile.id) setJustApproved(null)
     setDeleting(null)
+  }
+
+  async function forceLogout(email: string | null) {
+    if (!email) return
+    if (!window.confirm(`Force sign out ${email}? Every current login for this account is bounced to the sign-in page within about a minute. The account is not suspended: they can sign in again. Use this to boot a session you don't recognize.`)) return
+    setForcingOut(email)
+    setError('')
+    const res = await fetch('/api/admin/force-logout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    })
+    const json = await res.json()
+    if (json.error) setError(json.error)
+    setForcingOut(null)
   }
 
   async function toggleSuspend(profile: Profile) {
@@ -689,13 +705,30 @@ export default function AdminPage() {
                   ) : (
                     <div className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-50">
                       {usage.live.map((u, i) => (
-                        <div key={i} className="flex items-center justify-between px-3 py-2 text-sm gap-2">
-                          <span className="text-gray-800 truncate min-w-0 flex items-center gap-2">
-                            <span className={`h-2 w-2 rounded-full shrink-0 ${u.surface === 'doing' ? 'bg-amber-400' : u.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
-                            <span className="font-medium truncate">{u.name || u.email || '—'}</span>
-                            <span className="text-gray-400 truncate">→ {u.label ?? '—'}</span>
-                          </span>
-                          <span className="text-gray-400 text-xs shrink-0">{ago(u.at)}</span>
+                        <div key={i} className="px-3 py-2 text-sm">
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="text-gray-800 truncate min-w-0 flex items-center gap-2">
+                              <span className={`h-2 w-2 rounded-full shrink-0 ${u.surface === 'doing' ? 'bg-amber-400' : u.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
+                              <span className="font-medium truncate">{u.name || u.email || '—'}</span>
+                              <span className="text-gray-400 truncate">→ {u.label ?? '—'}</span>
+                            </span>
+                            <span className="flex items-center gap-2 shrink-0">
+                              <span className="text-gray-400 text-xs">{ago(u.at)}</span>
+                              <button
+                                onClick={() => forceLogout(u.email)}
+                                disabled={forcingOut === u.email}
+                                className="text-xs font-medium text-red-600 hover:underline disabled:opacity-50"
+                                title="Bounce every current login for this account to the sign-in page"
+                              >
+                                {forcingOut === u.email ? '…' : 'Force sign out'}
+                              </button>
+                            </span>
+                          </div>
+                          {(u.ip || u.ua) && (
+                            <div className="text-gray-400 text-xs mt-0.5 pl-4 truncate" title={u.ua ?? ''}>
+                              {u.ip ?? 'no ip'}{u.ua ? ` · ${u.ua}` : ''}
+                            </div>
+                          )}
                         </div>
                       ))}
                     </div>

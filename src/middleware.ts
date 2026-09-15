@@ -34,6 +34,18 @@ function withTimeout<T>(p: PromiseLike<T>, ms = SUPABASE_TIMEOUT_MS): Promise<T>
   ])
 }
 
+// Decode a JWT's issued-at (seconds -> ms). Edge-safe (atob). Returns null on any
+// problem, so the force-logout check can fail open and never wrongly bounce a session.
+function jwtIatMs(token: string | undefined | null): number | null {
+  if (!token) return null
+  try {
+    const seg = token.split('.')[1]
+    const json = atob(seg.replace(/-/g, '+').replace(/_/g, '/'))
+    const p = JSON.parse(json)
+    return typeof p.iat === 'number' ? p.iat * 1000 : null
+  } catch { return null }
+}
+
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
@@ -110,10 +122,24 @@ export async function middleware(request: NextRequest) {
   if (user && !isPublic && pathname !== '/pending') {
     try {
       const { data: ap } = await withTimeout(
-        supabase.from('profiles').select('approved').eq('user_id', user.id).single()
+        supabase.from('profiles').select('approved, force_logout_at').eq('user_id', user.id).single()
       )
       if (ap && !ap.approved) {
         return NextResponse.redirect(new URL('/pending', request.url))
+      }
+      // Force sign-out: if an admin stamped force_logout_at after this token was
+      // issued, end the session by clearing the auth cookies and sending to /login.
+      // Fail-open: act only when both the token's iat and the stamp parse cleanly.
+      const flAt = ap && (ap as { force_logout_at?: string | null }).force_logout_at
+      if (flAt) {
+        const { data: sess } = await withTimeout(supabase.auth.getSession())
+        const iat = jwtIatMs(sess.session?.access_token)
+        const cutoff = Date.parse(flAt)
+        if (iat !== null && !Number.isNaN(cutoff) && iat < cutoff) {
+          const res = NextResponse.redirect(new URL('/login', request.url))
+          request.cookies.getAll().forEach(c => { if (c.name.startsWith('sb-')) res.cookies.delete(c.name) })
+          return res
+        }
       }
     } catch {
       // Slow/failed approval check: let the request continue (matches the

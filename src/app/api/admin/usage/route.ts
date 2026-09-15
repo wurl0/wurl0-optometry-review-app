@@ -98,7 +98,7 @@ export async function GET() {
     rowsOf(db.from('question_reviews').select('user_id, swept_at').not('swept_at', 'is', null)),
     rowsOf(db.from('reading_position').select('user_id, subject, section_title, updated_at')),
     rowsOf(db.from('reading_progress').select('user_id, subject, updated_at')),
-    rowsOf(db.from('app_events').select('user_id, type, path, created_at').gte('created_at', since30).order('created_at', { ascending: false }).limit(20000)),
+    rowsOf(db.from('app_events').select('user_id, type, path, created_at, ip, ua').gte('created_at', since30).order('created_at', { ascending: false }).limit(20000)),
   ])
 
   // Per-user rollups keyed by user_id.
@@ -111,6 +111,7 @@ export async function GET() {
     examMins: number;                                  // exam/practice/drill dwell, ~1 min per 'doing' heartbeat
     pageViews: number; lastEvent: string | null;
     lastLabel: string | null; lastAt: string | null; lastSurface: string;  // "currently on"
+    lastIp: string | null; lastUa: string | null;                          // origin of the newest event, for spotting a session you don't recognize
     pages: Map<string, { units: number; surface: string }>;                // attention per page, for per-user top pages
     timeline: TimelineEntry[];                                             // most recent path-bearing events, newest first
   }
@@ -121,7 +122,7 @@ export async function GET() {
       a = {
         quizzes: 0, lastQuiz: null, reviews: 0, lastReview: null, top2Reads: 0, lastRead: null,
         mainReadMins: 0, examMins: 0, pageViews: 0, lastEvent: null,
-        lastLabel: null, lastAt: null, lastSurface: 'other', pages: new Map(), timeline: [],
+        lastLabel: null, lastAt: null, lastSurface: 'other', lastIp: null, lastUa: null, pages: new Map(), timeline: [],
       }
       agg.set(id, a)
     }
@@ -141,6 +142,9 @@ export async function GET() {
     const type = s(r.type)
     const at = s(r.created_at)
     const path = s(r.path)
+    // Events arrive newest-first, so the first hit per user carries the most recent
+    // origin. Capture it so the admin can spot a session from an unfamiliar IP/device.
+    if (a.lastIp === null && a.lastUa === null) { a.lastIp = s(r.ip); a.lastUa = s(r.ua) }
     a.lastEvent = maxTime(a.lastEvent, at)                 // any event counts toward recency
     if (type === 'reading') {
       a.mainReadMins++                                     // one heartbeat ~= one minute reading
@@ -187,6 +191,7 @@ export async function GET() {
       pageViews: a?.pageViews ?? 0,
       readMins: a?.mainReadMins ?? 0, examMins: a?.examMins ?? 0, top2Reads: a?.top2Reads ?? 0,
       current: a?.lastLabel ?? null, currentAt: a?.lastAt ?? null, currentSurface: a?.lastSurface ?? 'other',
+      ip: a?.lastIp ?? null, ua: a?.lastUa ?? null,
       topPages, timeline: a?.timeline ?? [],
     }
   }).sort((x, y) => (y.lastActive ?? '').localeCompare(x.lastActive ?? ''))
@@ -199,6 +204,7 @@ export async function GET() {
     .map(u => ({
       name: u.name, email: u.email,
       label: u.current, surface: u.currentSurface, at: u.currentAt,
+      ip: u.ip, ua: u.ua,
     }))
 
   const approvedUsers = users.filter(u => u.approved)

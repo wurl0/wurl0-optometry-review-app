@@ -18,9 +18,14 @@ export async function POST(req: NextRequest) {
   let path: string | null = typeof body?.path === 'string' ? body.path : null
   if (path) path = path.split('?')[0].split('#')[0].slice(0, 200)
 
+  // Origin of the hit, so the admin Usage tab can spot a session from an unfamiliar
+  // IP or device. x-forwarded-for is a comma list on Vercel; the first entry is the client.
+  const ip = (req.headers.get('x-forwarded-for')?.split(',')[0].trim() || req.headers.get('x-real-ip') || null)?.slice(0, 64) ?? null
+  const ua = req.headers.get('user-agent')?.slice(0, 300) ?? null
+
   try {
     const admin = createAdminClient()
-    await admin.from('app_events').insert({ user_id: user.id, type, path })
+    await admin.from('app_events').insert({ user_id: user.id, type, path, ip, ua })
     await admin.from('profiles').update({ last_active: new Date().toISOString() }).eq('user_id', user.id)
   } catch {
     // Never surface tracking failures to the client.

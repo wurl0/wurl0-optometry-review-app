@@ -71,3 +71,11 @@ alter table app_events enable row level security;
 -- Users may log their own events; reads happen admin-side through the service role.
 drop policy if exists "insert own events" on app_events;
 create policy "insert own events" on app_events for insert with check (auth.uid() = user_id);
+
+-- Session origin, so the admin Usage tab can spot a login from an unfamiliar IP/device.
+alter table app_events add column if not exists ip text;
+alter table app_events add column if not exists ua text;
+
+-- Force sign-out stamp. When set, the middleware bounces any session whose token was
+-- issued before this time. Not a suspension: the user can sign in again immediately.
+alter table profiles add column if not exists force_logout_at timestamptz;
