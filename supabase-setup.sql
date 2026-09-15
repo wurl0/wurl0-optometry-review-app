@@ -79,3 +79,8 @@ alter table app_events add column if not exists ua text;
 -- Force sign-out stamp. When set, the middleware bounces any session whose token was
 -- issued before this time. Not a suspension: the user can sign in again immediately.
 alter table profiles add column if not exists force_logout_at timestamptz;
+
+-- Account role. 'service' marks a non-human account (e.g. Lisa's mirror reader): it is
+-- labeled in the admin Usage tab and left out of the active-user counts, so a bot's
+-- reads never look like a stranger on your account or inflate your numbers.
+alter table profiles add column if not exists role text;

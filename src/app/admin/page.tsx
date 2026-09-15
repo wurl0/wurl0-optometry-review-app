@@ -50,7 +50,7 @@ type UsageUser = {
   current: string | null; currentAt: string | null; currentSurface: string
   topPages: PageUnit[]; timeline: TimelineEntry[]
 }
-type LiveUser = { name: string | null; email: string | null; label: string | null; surface: string; at: string | null; ip: string | null; ua: string | null }
+type LiveUser = { name: string | null; email: string | null; label: string | null; surface: string; at: string | null; ip: string | null; ua: string | null; role: string | null }
 type UsageData = {
   summary: {
     signups: number; approved: number; hasAccess: number; everActive: number
@@ -489,6 +489,21 @@ export default function AdminPage() {
     setDeleting(null)
   }
 
+  async function setServiceRole(email: string | null, makeService: boolean) {
+    if (!email) return
+    setForcingOut(email)
+    setError('')
+    const res = await fetch('/api/admin/role', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, role: makeService ? 'service' : null }),
+    })
+    const json = await res.json()
+    if (json.error) setError(json.error)
+    else refreshUsage()
+    setForcingOut(null)
+  }
+
   async function forceLogout(email: string | null) {
     if (!email) return
     if (!window.confirm(`Force sign out ${email}? Every current login for this account is bounced to the sign-in page within about a minute. The account is not suspended: they can sign in again. Use this to boot a session you don't recognize.`)) return
@@ -710,10 +725,19 @@ export default function AdminPage() {
                             <span className="text-gray-800 truncate min-w-0 flex items-center gap-2">
                               <span className={`h-2 w-2 rounded-full shrink-0 ${u.surface === 'doing' ? 'bg-amber-400' : u.surface === 'reading' ? 'bg-emerald-400' : 'bg-gray-300'}`} />
                               <span className="font-medium truncate">{u.name || u.email || '—'}</span>
+                              {u.role === 'service' && <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wide text-sky-600 bg-sky-50 border border-sky-200 rounded px-1">service</span>}
                               <span className="text-gray-400 truncate">→ {u.label ?? '—'}</span>
                             </span>
                             <span className="flex items-center gap-2 shrink-0">
                               <span className="text-gray-400 text-xs">{ago(u.at)}</span>
+                              <button
+                                onClick={() => setServiceRole(u.email, u.role !== 'service')}
+                                disabled={forcingOut === u.email}
+                                className="text-xs font-medium text-sky-600 hover:underline disabled:opacity-50"
+                                title="Mark as a service (bot) account, or clear it. Service accounts are excluded from the active-user counts."
+                              >
+                                {u.role === 'service' ? 'Unmark service' : 'Mark service'}
+                              </button>
                               <button
                                 onClick={() => forceLogout(u.email)}
                                 disabled={forcingOut === u.email}

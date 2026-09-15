@@ -101,6 +101,12 @@ export async function GET() {
     rowsOf(db.from('app_events').select('user_id, type, path, created_at, ip, ua').gte('created_at', since30).order('created_at', { ascending: false }).limit(20000)),
   ])
 
+  // Account roles, fetched separately so a missing 'role' column (pre-migration)
+  // degrades to "nobody is service" rather than emptying the whole profiles source.
+  const roleRows = await rowsOf(db.from('profiles').select('user_id, role'))
+  const roleOf = new Map<string, string | null>()
+  for (const r of roleRows) roleOf.set(String(r.user_id), s(r.role))
+
   // Per-user rollups keyed by user_id.
   type TimelineEntry = { label: string; surface: string; at: string | null }
   type Agg = {
@@ -185,6 +191,7 @@ export async function GET() {
       : []
     return {
       email: s(p.email), name: s(p.full_name), tier: s(p.tier) ?? 'base',
+      role: roleOf.get(String(p.user_id)) ?? null,
       approved: !!p.approved, suspended: !!p.suspended,
       createdAt: s(p.created_at), lastActive,
       quizzes: a?.quizzes ?? 0, reviews: a?.reviews ?? 0,
@@ -202,20 +209,23 @@ export async function GET() {
   const live = users
     .filter(u => u.approved && !u.suspended && within(u.currentAt, LIVE_MS))
     .map(u => ({
-      name: u.name, email: u.email,
+      name: u.name, email: u.email, role: u.role,
       label: u.current, surface: u.currentSurface, at: u.currentAt,
       ip: u.ip, ua: u.ua,
     }))
 
   const approvedUsers = users.filter(u => u.approved)
+  // Service accounts (bots like Lisa's reader) are excluded from the active-user
+  // metrics so they never inflate the numbers.
+  const humans = approvedUsers.filter(u => u.role !== 'service')
   const summary = {
     signups: users.length,
     approved: approvedUsers.length,
     hasAccess: (profiles as Row[]).filter(p => p.approved && ((s(p.tier) && s(p.tier) !== 'base') || (Array.isArray(p.grants) && p.grants.length > 0))).length,
-    everActive: approvedUsers.filter(u => u.lastActive).length,
-    active24h: approvedUsers.filter(u => within(u.lastActive, DAY)).length,
-    active7d: approvedUsers.filter(u => within(u.lastActive, 7 * DAY)).length,
-    active30d: approvedUsers.filter(u => within(u.lastActive, 30 * DAY)).length,
+    everActive: humans.filter(u => u.lastActive).length,
+    active24h: humans.filter(u => within(u.lastActive, DAY)).length,
+    active7d: humans.filter(u => within(u.lastActive, 7 * DAY)).length,
+    active30d: humans.filter(u => within(u.lastActive, 30 * DAY)).length,
   }
 
   // Most-visited pages across everyone (last 30 days).
