@@ -63,6 +63,8 @@ Because once the object is closer than f, its divergence (1/p) is larger than th
 
 > **Lookalike trap flagged:** mirror questions say "C" and lens questions say "2F." Students memorize two separate tables and then blank under pressure. **They are the same landmark.** C = 2F. Once you see that, the concave mirror table stops being new information.
 >
+> **The one picture to hold: same seesaw, folded, not flipped.** The converging lens and the concave mirror are one system. The lens passes the light through, so object and image land on opposite sides. The concave mirror folds that same light back onto one side, so both land in front. The zones and the words do not change; only the geometry is folded. Convex mirror and minus lens are the diverging case: no zones, always virtual, upright, minified.
+>
 > **Second lookalike:** "real" and "erect" never appear together for a single element with a real object; neither do "virtual" and "inverted." If an option pairs them, it is fabricated.
 
 ---
