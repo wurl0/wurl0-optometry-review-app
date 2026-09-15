@@ -112,3 +112,114 @@ To stop further drift while the app stays as-is for boards:
 - Reviewer authoring format: MDX vs structured JSON sections.
 - URL scheme for migrated Top 2 routes, and the redirect map from the old `.html` paths.
 - Whether Top 2 and main-app content share one namespace or stay separated by a flag.
+
+---
+
+# Part 2 — Product and pedagogy
+
+The first half is the how (one stack, one data store). This half is the why: what the
+app should do for a learner, how it earns a subscription, and how it teaches concepts
+instead of letting people memorize a finite bank.
+
+## Consolidation does not remove the tiers, it improves them
+
+Consolidation is about the plumbing (one schema, one engine). Tiering is about access.
+They are separate concerns. Every question and collection carries metadata, and the
+access layer (see `ACCESS-CONTROL-SPEC.md`) decides what a given user sees.
+
+Today the premium boundary is accidental: Top 2 is premium mostly because it lives in a
+separate folder. After consolidation, access is gated on real attributes:
+
+- **by content:** free users get a capped subset, paid users get the full bank and
+  exclusive sets,
+- **by feature:** SRS review queue, CBLE simulator, item analytics, readiness dashboard,
+  per-option rationales, practical-station training,
+- **by mode:** timed mock exams, adaptive study, explanation-rich review.
+
+So the main-app vs Top 2 line stops being a wall in the code and becomes a product
+decision set by a flag, which can be redrawn anytime. This is more control over what to
+sell, not less.
+
+## Tier ladder (draft, for post-boards)
+
+- **Free:** a capped number of questions per day, basic practice, scores only. Enough to
+  build the habit and prove value.
+- **Paid:** full bank, the per-option "why" explanations, SRS review, readiness, adaptive
+  study.
+- **Premium / Top 2:** curated hard sets, CBLE simulator, item analytics, practical-station
+  training, the Top 2 coaching layer.
+
+The framing that matters: we are not selling more questions, we are selling better
+learning. The anti-memorization tools below are what justify the fee.
+
+## Growing the question bank
+
+Five levers, roughly easiest to highest-value:
+
+1. **Author into the canonical schema.** The required per-option rationale keeps quality
+   high.
+2. **Import from sources** (past boards, texts) through the importer pipeline, then verify.
+   Real volume, but finite.
+3. **Isomorphic variants.** One concept, several surface forms: change the vignette, swap
+   which option is correct, reword the stem. Memorizing one variant does not help with its
+   siblings.
+4. **Template items for anything numeric.** Vertex distance, prism, Prentice, transposition,
+   dosing. Parametrize the numbers and one template yields effectively unlimited items.
+   This is the strongest defense against pattern-memorization for calculation topics.
+5. **AI-assisted drafting, human verification.** Generate candidate items and rationales
+   from a concept and its keywords, then approve each into `verified`. Scales authoring
+   without lowering the bar.
+
+Variants and templates are the game-changers, because they attack the memorization problem
+directly.
+
+## The core pedagogy problem: a finite bank teaches the bank, not the boards
+
+Grinding a fixed set rewards memorizing items, not learning concepts. Shuffling only
+delays recognition, and showing the total count invites a grind-to-100% mindset. Board
+prep should build durable concept mastery that transfers to any phrasing, for both the
+theoretical and the practical exam. Design against memorization with:
+
+1. **Concept as the unit of progress.** Tag every item to a concept or learning objective
+   and track mastery per concept. Progress reads "solid on 12 of 18 refraction concepts,"
+   not "answered 340 questions." This reorients the learner from finishing a list to
+   mastering a domain.
+2. **Hide the finite denominator.** Stop showing "X of 2635." Show mastery and readiness.
+   With variants and adaptive selection the pool feels open-ended, so the completion
+   instinct has nothing to latch onto. Keep raw counts for the premium analytics view only.
+3. **Concept-keyed spaced repetition with sibling items.** The key lever, built on the
+   existing SRS. A missed concept resurfaces as a different item testing the same concept,
+   never the same item. You cannot memorize past that, you have to know the point. This
+   requires stable IDs and concept tags (Part 1).
+4. **Recall, not just recognition.** MCQ tests recognition; boards and practice need
+   production. Mix in fill-in-the-keyword, name-the-mechanism, rationale-flipped prompts
+   ("why is this option wrong?"), and image labeling. This is what makes keywords stick.
+5. **Interleave and adapt.** Mix subjects and concepts rather than blocking, and let an
+   adaptive engine choose the next item by weakness and spacing, weighted to soft spots.
+6. **Calibration.** A confidence tap surfaces confident-and-wrong first (the dangerous
+   state on boards) and recycles right-but-unsure.
+7. **Carry it into the practical.** Tag concepts so a theory item links to its practical
+   station (retinoscopy concept links to the retinoscopy perform-and-say script). Add
+   step-ordering and examiner-facing recall drills. One concept model serves both exams.
+
+## Why the pedagogy is the business
+
+The anti-memorization list and the premium tier are the same list: concept mastery,
+sibling-item SRS, variants, recall formats, adaptivity, practical drills, analytics. The
+parts that teach best are the parts worth paying for. People subscribe because they learn
+faster and walk in ready, not because a folder is paywalled. All of it depends on the
+Part 1 consolidation: concept tags, stable IDs, and one attempt log are what make the
+adaptive, sibling-item, analytics-driven behavior possible.
+
+## Product open decisions
+
+- Free-tier cap: per-day question limit, or a fixed intro set.
+- Whether difficulty is author-assigned at first or learned from item statistics later.
+- Which recall formats to build first (fill-in-keyword is likely the highest value).
+- How readiness is scored and presented as the primary progress signal in place of counts.
+- Pricing model and timing, tracked with the monetization roadmap (post-2026-boards).
+
+## Next planning step (not now)
+
+A full product spec that scopes this out screen by screen, with the data model, the access
+matrix, and the milestone plan. Worth doing before phase 1 begins, after the boards.
