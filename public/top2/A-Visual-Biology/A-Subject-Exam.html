@@ -587,7 +587,7 @@ document.querySelectorAll('#scope .scopebtn').forEach(b=>b.addEventListener('cli
   b.classList.add('sel');SCOPE=b.dataset.t;
 }));
 
-let Q=[],i=0,s=0,done=false;const missed=[];const review=[];let topicStats={};
+let Q=[],i=0,s=0,done=false,sel=null;const missed=[];const review=[];let topicStats={};
 const intro=document.getElementById('intro'),quiz=document.getElementById('quiz');
 const body=document.getElementById('qbody'),barfill=document.getElementById('barfill'),scoretext=document.getElementById('scoretext');
 const L=['A','B','C','D'];
@@ -621,7 +621,7 @@ document.getElementById('startBtn').addEventListener('click',()=>{
 });
 
 function render(){
- done=false;const it=Q[i];
+ done=false;sel=null;const it=Q[i];
  barfill.style.width=(i/Q.length*100)+'%';
  scoretext.textContent=(FB==='exam')?(review.length+' / '+Q.length+' answered'):(s+' / '+Q.length);
  let h='<span class="qtag">'+it.t+'</span><span class="qnum">Q '+(i+1)+' / '+Q.length+'</span>';
@@ -633,19 +633,22 @@ function render(){
  document.getElementById('quitBtn').addEventListener('click',()=>{if(i>0||done)results();});
 }
 function choose(c){
- if(done)return;done=true;const it=Q[i],right=it.a;
- const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
- const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
- review.push({t:cat,q:it.q,ok:ok,you:L[c]+'. '+it.o[c],cor:L[right]+'. '+it.o[right],w:it.w,k:it.k});
+ if(done)return;const it=Q[i],right=it.a;
  const last=i===Q.length-1;
  if(FB==='exam'){
-   body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;if(n===c)b.classList.add('picked');});
-   scoretext.textContent=review.length+' / '+Q.length+' answered';
+   // Exam mode: selecting only marks the choice. The answer is not scored or
+   // locked until Next (or End) is pressed, so it can be changed freely first.
+   sel=c;
+   body.querySelectorAll('.opt').forEach((b,n)=>b.classList.toggle('picked',n===c));
    document.getElementById('acts').innerHTML='<button class="quit" id="quitBtn">End and see results</button><button class="nav" id="nx">'+(last?'See results':'Next')+'</button>';
    document.getElementById('nx').addEventListener('click',next);
    document.getElementById('quitBtn').addEventListener('click',results);
    return;
  }
+ done=true;
+ const cat=it.t;if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ review.push({t:cat,q:it.q,ok:ok,you:L[c]+'. '+it.o[c],cor:L[right]+'. '+it.o[right],w:it.w,k:it.k});
  body.querySelectorAll('.opt').forEach((b,n)=>{b.disabled=true;
    if(n===right)b.classList.add('correct');
    if(n===c&&c!==right)b.classList.add('incorrect');});
@@ -659,8 +662,19 @@ function choose(c){
  document.getElementById('nx').addEventListener('click',next);
  document.getElementById('quitBtn').addEventListener('click',results);
 }
-function next(){if(i<Q.length-1){i++;render();}else results();}
+/* Exam mode scores the currently-selected option only now, when the user
+   commits by pressing Next or End. Practice mode has already scored in choose(),
+   so this is a no-op there. The done guard blocks a double-count. */
+function commitExam(){
+ if(FB!=='exam'||sel===null||done)return;
+ done=true;const it=Q[i],right=it.a,c=sel,cat=it.t;
+ if(!topicStats[cat])topicStats[cat]={c:0,t:0};topicStats[cat].t++;
+ const ok=c===right;if(ok){s++;topicStats[cat].c++;}else missed.push({n:i+1,t:cat,q:it.q,a:L[right]+'. '+it.o[right]});
+ review.push({t:cat,q:it.q,ok:ok,you:L[c]+'. '+it.o[c],cor:L[right]+'. '+it.o[right],w:it.w,k:it.k});
+}
+function next(){commitExam();if(i<Q.length-1){i++;render();}else results();}
 function results(){
+ commitExam();
  const answered=Object.values(topicStats).reduce((x,y)=>x+y.t,0)||1;
  barfill.style.width='100%';const pct=Math.round(s/answered*100);
  let m=pct>=80?'Strong across Subject A. Review the misses and you are board-ready here.':pct>=60?'Solid base. Focus on the weak topics in the breakdown below.':'Keep building. Reread the weak-topic notes, then retake.';
