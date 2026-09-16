@@ -118,6 +118,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.cble-simulator', subject: 'GLOBAL', type: 'tool', label: 'CBLE Simulator',
     sub: 'Clone of the PRC computer-based screen: pick any subjects (weighted to OLE), take it timed with the Question Roadmap and bookmarks, then full rationale review after you submit',
     path: '/top2/00-Master-Index/CBLE-Simulator.html' },
+  { id: 'tool.cble-interface-cheat-sheet', subject: 'GLOBAL', type: 'tool', label: 'CBLE Interface Cheat Sheet',
+    sub: 'Walkthrough of the PRC computer-based test screen and controls before exam day',
+    path: '/top2/00-Master-Index/CBLE-Interface-Cheat-Sheet.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
