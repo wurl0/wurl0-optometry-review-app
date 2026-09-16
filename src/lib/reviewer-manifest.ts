@@ -115,6 +115,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.subjective-oep-guide', subject: 'GLOBAL', type: 'tool', label: 'Subjective Refraction & OEP Strategy',
     sub: 'Step-by-step strategy card: fog-to-retina refraction + the 21-point OEP archetypes, with board traps and the examiner Q&A',
     path: '/top2/00-Master-Index/Subjective-Refraction-OEP-Guide.html' },
+  { id: 'tool.cble-simulator', subject: 'GLOBAL', type: 'tool', label: 'CBLE Simulator',
+    sub: 'Clone of the PRC computer-based screen: pick any subjects (weighted to OLE), take it timed with the Question Roadmap and bookmarks, then full rationale review after you submit',
+    path: '/top2/00-Master-Index/CBLE-Simulator.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
