@@ -108,8 +108,9 @@ const notes: NotesData = {
             ['At birth', 'Eyes are not associated; act as two different organs; VA not greater than 5/200; normally hyperopic'],
             ['Newborn', 'First sign of fixation development: eyes follow light'],
             ['2 months', 'Eyes follow large objects'],
-            ['3 months', "Foveas are fully formed; eyes hold objects"],
+            ['3 months', 'Eyes hold fixation and follow objects through ~180°'],
             ['3–4 months', 'Eyes expected to be straight'],
+            ['4 months', 'Shifts fixation between objects; reaching develops; color vision emerging'],
             ['6 months', 'Fixates at an object for 1–2 minutes'],
             ['1 year', 'VA: 20/70'],
             ['1–1.5 years', 'Fusional mechanism becomes fully developed'],
@@ -121,6 +122,11 @@ const notes: NotesData = {
           kind: 'pearl',
           content:
             'At birth: VA ≤ 5/200. At 1 year: 20/70. At 3 years: 20/20. Fusional mechanism is fully developed at 1–1.5 years. Critical period for amblyopia treatment corresponds to early neuroplasticity window.',
+        },
+        {
+          kind: 'pearl',
+          content:
+            'Foveal maturation is prolonged: the fovea is NOT fully formed at 3 months. It becomes adult-like around 15 to 17 months, and cone packing continues to about age 4. Older reviewers say "fully formed at 3 months" or "complete at 4 months" — that is shorthand, not accurate. Fixation sequence: follows light (newborn) → follows large objects (~2 months) → smooth following (~3 months).',
         },
       ],
     },

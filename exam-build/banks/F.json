@@ -4447,18 +4447,18 @@
    "2 years",
    "Birth",
    "1 month",
-   "4 months"
+   "About 4 years"
   ],
   "a": 3,
-  "w": "The fovea matures by about 4 months, which is why acuity climbs steeply over the first half-year. Optic nerve myelination continues far longer, from 7 months to 2 years.",
-  "k": "Foveal maturation ≈ 4 months; myelination to age 2.",
+  "w": "Foveal maturation is prolonged: the fovea becomes adult-like around 15 to 17 months and cone maturation continues to about age 4. Optic nerve myelination continues from 7 months to 2 years. ('Complete at 4 months' is older reviewer shorthand, not accurate.)",
+  "k": "Foveal maturation to ~4 years (adult-like ~15-17 mo); myelination to age 2.",
   "src": "authored",
-  "decode": "Foveal maturation is complete at about 4 months (optic nerve myelination continues to age 2).",
+  "decode": "Foveal maturation is completed at about age 4 (adult-like ~15 to 17 months); it is NOT complete at 3 to 4 months. Optic nerve myelination continues to age 2.",
   "ow": [
-   "2 years is when myelination completes, not foveal maturation.",
+   "2 years is not yet complete; the fovea keeps maturing toward age 4.",
    "It is not mature at birth.",
-   "1 month is too early for foveal maturation.",
-   "Correct. Foveal maturation by about 4 months."
+   "1 month is far too early for foveal maturation.",
+   "Correct. Foveal maturation continues to about age 4."
   ]
  },
  {

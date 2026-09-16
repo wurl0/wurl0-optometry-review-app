@@ -92,7 +92,7 @@
 | Saccades | 1-3 months |
 | Optokinetic nystagmus (OKN) | 2-4 months |
 | Ocular alignment | 1 month |
-| Foveal maturation | 4 months |
+| Foveal maturation | Prolonged: adult-like ~15-17 months, continues to ~4 years (not complete at 3-4 months) |
 | Optic nerve myelination | 7 months to 2 years |
 
 **Emmetropization:** Neonates are typically hyperopic (+2.00 to +3.00D). The eye grows to match its optical power over childhood, progressively reducing refractive error toward emmetropia. Most hyperopia resolves by age 4.

@@ -107,13 +107,13 @@
     "type": "mcq",
     "stem": "At what age are the foveas fully formed?",
     "options": [
-      "At birth",
-      "2 months",
       "3 months",
-      "6 months"
+      "4 months",
+      "About 15 months",
+      "About 4 years"
     ],
-    "correct": 2,
-    "explanation": "The foveas are fully formed at 3 months. At 3 months, the infant also begins to HOLD fixation on objects. At 3–4 months, eyes are expected to be STRAIGHT.",
+    "correct": 3,
+    "explanation": "Foveal maturation is a prolonged process. The fovea is NOT fully formed at 3 months. It becomes adult-like around 15 to 17 months, and cone packing continues to about age 4. At 3 months the infant holds fixation and follows objects, but the fovea is still maturing. ('Fully formed at 3 months' and 'complete at 4 months' are older reviewer shorthand, not accurate.)",
     "module": "Module 2"
   },
   {
@@ -126,7 +126,7 @@
       "Equal VA in both eyes"
     ],
     "correct": 2,
-    "explanation": "In the newborn, the first sign of fixation development appears when the eyes follow LIGHT. At 2 months, they follow large objects. At 3 months, foveas are fully formed.",
+    "explanation": "In the newborn, the first sign of fixation development appears when the eyes follow LIGHT. At 2 months, they follow large objects. At 3 months, the infant holds fixation and follows objects; foveal maturation is prolonged and continues to about age 4 (adult-like around 15 to 17 months).",
     "module": "Module 2"
   },
   {

@@ -72,7 +72,7 @@ export const pediatricOptometryNotes: NotesData = {
               kind: 'bullets',
               items: [
                 'Embryology highlights: orbit 2nd month; optic nerve and choroid 3rd month; cornea and vitreous 4th month; retina and iris/ciliary body 6th month; lens onset 7th month',
-                'Pupillary light reaction develops at 30 weeks gestation; foveal maturation at 4 months; optic nerve myelination from 7 months to 2 years',
+                'Pupillary light reaction develops at 30 weeks gestation; foveal maturation is prolonged (adult-like ~15 to 17 months, cone maturation to about age 4, not complete at 3 to 4 months); optic nerve myelination from 7 months to 2 years',
                 'Smooth pursuit 6-8 weeks; saccades 1-3 months; optokinetic nystagmus 2-4 months; fixation 2 months',
                 'Emmetropization: neonates are typically hyperopic (+2.00 to +3.00 D); the eye grows to reduce error toward emmetropia, with most hyperopia resolved by age 4',
                 'Retinopathy of prematurity (ROP), historically retrolental fibroplasia (RLF): abnormal retinal vessels from prematurity plus supplemental oxygen; can scar and detach the retina',

@@ -93,7 +93,7 @@
       "30 weeks gestation"
     ],
     "correct": 3,
-    "explanation": "The pupillary light reaction develops at about 30 weeks gestation. Foveal maturation occurs around 4 months and optic nerve myelination from 7 months to 2 years."
+    "explanation": "The pupillary light reaction develops at about 30 weeks gestation. Foveal maturation is prolonged (adult-like around 15 to 17 months, continuing to about age 4) and optic nerve myelination proceeds from 7 months to 2 years."
   },
   {
     "type": "mcq",
@@ -969,7 +969,7 @@
       "7 months to 2 years"
     ],
     "correct": 3,
-    "explanation": "Optic nerve myelination proceeds from about 7 months to 2 years of age. Foveal maturation is around 4 months."
+    "explanation": "Optic nerve myelination proceeds from about 7 months to 2 years of age. Foveal maturation is prolonged, becoming adult-like around 15 to 17 months and continuing to about age 4."
   },
   {
     "type": "mcq",
@@ -1191,13 +1191,13 @@
     "type": "mcq",
     "stem": "Foveal maturation is completed at about:",
     "options": [
-      "1 year",
       "4 months of age",
+      "About 4 years",
       "30 weeks gestation",
-      "3 years"
+      "15 months"
     ],
     "correct": 1,
-    "explanation": "Foveal maturation completes at about 4 months of age, contributing to the rapid acuity gains over the first year."
+    "explanation": "Foveal maturation is a prolonged process. The fovea becomes adult-like around 15 to 17 months, and cone packing continues to about age 4. It is NOT complete at 3 or 4 months. ('Complete at 4 months' is older reviewer shorthand.)"
   },
   {
     "type": "mcq",
