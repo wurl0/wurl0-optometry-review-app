@@ -11,6 +11,13 @@ export default function AccountPage() {
   const [saving, setSaving] = useState(false)
   const [msg, setMsg] = useState('')
   const [error, setError] = useState('')
+  // change password form
+  const [currentPassword, setCurrentPassword] = useState('')
+  const [newPassword, setNewPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+  const [pwSaving, setPwSaving] = useState(false)
+  const [pwMsg, setPwMsg] = useState('')
+  const [pwError, setPwError] = useState('')
   // feedback form
   const [fbCategory, setFbCategory] = useState('general')
   const [fbMessage, setFbMessage] = useState('')
@@ -51,6 +58,26 @@ export default function AccountPage() {
     setMsg('Saved')
     // Refresh the server components (home greeting reads from auth metadata).
     router.refresh()
+  }
+
+  async function changePassword(e: React.FormEvent) {
+    e.preventDefault()
+    setPwSaving(true); setPwMsg(''); setPwError('')
+    if (newPassword.length < 6) {
+      setPwError('New password must be at least 6 characters.'); setPwSaving(false); return
+    }
+    if (newPassword !== confirmPassword) {
+      setPwError('New passwords do not match.'); setPwSaving(false); return
+    }
+    const supabase = createClient()
+    // Verify identity by re-authenticating with the current password before we
+    // let it be changed (updateUser alone trusts the session and wouldn't check).
+    const { error: signInError } = await supabase.auth.signInWithPassword({ email, password: currentPassword })
+    if (signInError) { setPwError('Current password is incorrect.'); setPwSaving(false); return }
+    const { error: updateError } = await supabase.auth.updateUser({ password: newPassword })
+    if (updateError) { setPwError(updateError.message); setPwSaving(false); return }
+    setCurrentPassword(''); setNewPassword(''); setConfirmPassword('')
+    setPwSaving(false); setPwMsg('Password updated')
   }
 
   async function sendFeedback(e: React.FormEvent) {
@@ -111,6 +138,49 @@ export default function AccountPage() {
               {saving ? 'Saving…' : 'Save changes'}
             </button>
             {msg && <span className="text-sm text-gray-500">{msg}</span>}
+          </div>
+        </form>
+
+        <form onSubmit={changePassword} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4 mt-5">
+          <div>
+            <h2 className="text-base font-bold text-gray-900">Change password</h2>
+            <p className="text-xs text-gray-500 mt-0.5">Enter your current password, then choose a new one.</p>
+          </div>
+          {pwError && (
+            <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3">{pwError}</div>
+          )}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Current password</label>
+            <input
+              type="password" value={currentPassword} onChange={e => setCurrentPassword(e.target.value)} required autoComplete="current-password"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B54FF] focus:border-transparent"
+              placeholder="••••••••"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">New password</label>
+            <input
+              type="password" value={newPassword} onChange={e => setNewPassword(e.target.value)} required minLength={6} autoComplete="new-password"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B54FF] focus:border-transparent"
+              placeholder="Min. 6 characters"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Confirm new password</label>
+            <input
+              type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required minLength={6} autoComplete="new-password"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B54FF] focus:border-transparent"
+              placeholder="Re-enter new password"
+            />
+          </div>
+          <div className="flex items-center gap-3">
+            <button
+              type="submit" disabled={pwSaving}
+              className="bg-[#3B54FF] text-white rounded-lg py-2.5 px-5 text-sm font-semibold hover:bg-[#3145E0] disabled:opacity-50 transition-colors"
+            >
+              {pwSaving ? 'Updating…' : 'Update password'}
+            </button>
+            {pwMsg && <span className="text-sm text-gray-500">{pwMsg}</span>}
           </div>
         </form>
 
