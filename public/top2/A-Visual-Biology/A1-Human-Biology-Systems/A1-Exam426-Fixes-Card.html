@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAA | Board Review 2026 · Visual Biology · Exam 426 Fixes</title>
+<style>
+  :root{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }}
+  :root[data-theme="light"]{
+    --bg:#F6F5F1; --surface:#FFFFFF; --surface-2:#F0EFEA; --inset:#EAE9E2;
+    --ink:#1A1D19; --ink-soft:#53574E; --ink-faint:#8A8E82;
+    --line:#E3E1D8; --line-soft:#EDEBE3;
+    --accent:#1F7A4D; --accent-deep:#155C39; --accent-wash:#E2EFE8;
+    --why:#1E63B0; --why-w:#E4EDF8; --trap:#BC3A2B; --trap-w:#F7E3DF;
+    --mnem:#7A46B0; --mnem-w:#EEE7F7; --pearl:#8F6410; --pearl-w:#F4EAD1;
+    --shadow:0 1px 2px rgba(20,25,18,.05),0 8px 22px rgba(20,25,18,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12140F; --surface:#191C15; --surface-2:#20241A; --inset:#161910;
+    --ink:#E9ECE1; --ink-soft:#A3A897; --ink-faint:#767B6A;
+    --line:#2A2F21; --line-soft:#222719;
+    --accent:#4FB980; --accent-deep:#93E2B2; --accent-wash:#152A1D;
+    --why:#63A3E8; --why-w:#122235; --trap:#E9786C; --trap-w:#2F1B17;
+    --mnem:#B58BE7; --mnem-w:#241B32; --pearl:#D7AB50; --pearl-w:#2B2513;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:800px;margin:0 auto;padding:34px 22px 90px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+  .eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--ink-faint);}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap;}
+  .mast .brand{font-family:ui-monospace,Menlo,monospace;font-weight:600;font-size:13px;letter-spacing:.03em;}
+  .mast .brand span{color:var(--accent);}
+  .mast .sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .mast .card-no{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--ink-faint);
+    text-align:right;letter-spacing:.06em;line-height:1.5;}
+  .mast .card-no b{color:var(--accent);font-size:22px;display:block;letter-spacing:0;}
+
+  h1{font-size:clamp(27px,5.4vw,40px);line-height:1.05;letter-spacing:-.02em;font-weight:800;
+    margin:24px 0 8px;text-wrap:balance;}
+  h1 em{font-style:normal;color:var(--accent);}
+  .dek{color:var(--ink-soft);font-size:16px;max-width:62ch;margin:0;}
+
+  section{margin-top:38px;}
+  h2{font-size:12px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .n{color:var(--accent);}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  p{margin:0 0 13px;}
+  .lead{font-size:15.5px;}
+  .term{color:var(--accent-deep);font-weight:650;}
+  b{color:var(--ink);}
+
+  .fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:10px;text-align:center;font-family:ui-monospace,Menlo,monospace;}
+
+  .cal{border:1px solid;border-radius:11px;padding:12px 15px;margin:0 0 12px;font-size:14.3px;
+    background:var(--surface);}
+  .cal .lab{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .cal p{margin:0;}
+  .cal.why{border-color:color-mix(in srgb,var(--why) 40%,var(--line));background:var(--why-w);} .cal.why .lab{color:var(--why);}
+  .cal.trap{border-color:color-mix(in srgb,var(--trap) 40%,var(--line));background:var(--trap-w);} .cal.trap .lab{color:var(--trap);}
+  .cal.mnem{border-color:color-mix(in srgb,var(--mnem) 40%,var(--line));background:var(--mnem-w);} .cal.mnem .lab{color:var(--mnem);}
+  .cal.pearl{border-color:color-mix(in srgb,var(--pearl) 42%,var(--line));background:var(--pearl-w);} .cal.pearl .lab{color:var(--pearl);}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);background:var(--surface);}
+  table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:520px;}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+  thead th{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);}
+  tbody tr:last-child td{border-bottom:none;}
+  td b{color:var(--ink);} .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .rx{color:var(--accent-deep);font-weight:600;}
+  .wrong{color:var(--trap);text-decoration:line-through;}
+
+  /* miss-map bars */
+  .bars{display:flex;flex-direction:column;gap:9px;}
+  .brow{display:grid;grid-template-columns:130px 1fr 48px;gap:10px;align-items:center;font-size:13px;}
+  .brow .bl{color:var(--ink-soft);}
+  .track{background:var(--inset);border-radius:6px;height:16px;overflow:hidden;}
+  .fillg{height:100%;background:var(--accent);opacity:.85;border-radius:6px;}
+  .fillr{height:100%;background:var(--trap);opacity:.8;border-radius:6px;}
+  .brow .pc{font-family:ui-monospace,Menlo,monospace;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;}
+
+  /* germ-layer split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .col{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 15px;box-shadow:var(--shadow);}
+  .col h4{margin:0 0 6px;font-size:14px;}
+  .col .k{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);}
+  .col ul{margin:8px 0 0;padding-left:16px;font-size:13.3px;color:var(--ink-soft);}
+  .col ul li{margin:3px 0;}
+
+  .drill{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:12px 15px;margin-bottom:9px;box-shadow:var(--shadow);}
+  .drill .t{font-weight:650;font-size:14px;margin-bottom:2px;}
+  .drill p{margin:0;font-size:13.4px;color:var(--ink-soft);}
+  ol.srs{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:8px;}
+  ol.srs li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px 11px 42px;position:relative;box-shadow:var(--shadow);font-size:13.8px;}
+  ol.srs li::before{content:counter(s);position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:6px;
+    background:var(--accent-wash);color:var(--accent-deep);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  ol.srs .q{font-weight:600;color:var(--ink);}
+  ol.srs .a{color:var(--ink-soft);}
+  ol.srs .a::before{content:"→ ";color:var(--accent);}
+
+  .foot{margin-top:36px;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+
+  @media (max-width:640px){
+    .split{grid-template-columns:1fr;}
+    .brow{grid-template-columns:96px 1fr 44px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="brand">WAA <span>//</span> Board Review 2026</div>
+      <div class="sub">Personal study notes &middot; Visual Biology</div>
+    </div>
+    <div class="card-no">Card<b>08</b>Exam 426 fixes</div>
+  </header>
+
+  <h1>Exam 426: the <em>two holes</em> that cost the score</h1>
+  <p class="dek">82.4% on Subject A, and it was not fatigue. The whole drop lived in two places: A1 body systems at 62% and A3 embryology at 69%, while your ocular anatomy held at 88%. That is good news. The repair is narrow, four clusters, not a rebuild. Drill these, leave the rest.</p>
+
+  <section>
+    <h2><span class="n">01</span> Where the points actually went</h2>
+    <p class="lead">Recognition on a review app hides this. Free recall exposes it. The bars below are your real weak-to-strong order. Spend time top to bottom, not evenly across all 75 misses.</p>
+    <div class="fig">
+      <div class="bars">
+        <div class="brow"><span class="bl">A1 Body &amp; CN</span><div class="track"><div class="fillr" style="width:62%"></div></div><span class="pc">62%</span></div>
+        <div class="brow"><span class="bl">A3 Embryology</span><div class="track"><div class="fillr" style="width:69%"></div></div><span class="pc">69%</span></div>
+        <div class="brow"><span class="bl">A2 Retina/Optic N</span><div class="track"><div class="fillg" style="width:82%"></div></div><span class="pc">82%</span></div>
+        <div class="brow"><span class="bl">A2 Uveal tract</span><div class="track"><div class="fillg" style="width:84%"></div></div><span class="pc">84%</span></div>
+        <div class="brow"><span class="bl">A2 combined</span><div class="track"><div class="fillg" style="width:88%"></div></div><span class="pc">88%</span></div>
+      </div>
+      <figcaption>red = repair now, green = maintain with a light pass</figcaption>
+    </div>
+    <div class="cal why">
+      <div class="lab">Read the pattern</div>
+      <p>A1 and A3 are non-ocular systems and developmental facts, the stuff that feels far from the clinic and gets studied last. They are pure retrieval, no reasoning to fall back on, so a blank page is exactly the right tool. A2 held because you use that anatomy daily. Protect it with light review, pour the effort into red.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> Cluster 1 &middot; A1 body systems (the 62%)</h2>
+    <p>Twenty-seven misses, almost all one-line facts. No diagram will save this one. The fix is speed: term to answer in under five seconds. Here is the whole cluster in one grid.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>System</th><th>Cue</th><th>Answer to lock</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="2"><b>Immuno&shy;globulins</b></td><td>Allergy / parasites</td><td class="rx">IgE</td></tr>
+          <tr><td>First in a response / most abundant in serum / in tears &amp; colostrum</td><td class="rx">IgM first &middot; IgG most abundant &middot; IgA secretory</td></tr>
+          <tr><td rowspan="2"><b>Blood cells</b></td><td>Monocyte matures into</td><td class="rx">Macrophage</td></tr>
+          <tr><td>Blood counterpart of the tissue mast cell</td><td class="rx">Basophil</td></tr>
+          <tr><td rowspan="4"><b>Endocrine / renal</b></td><td>ADH acts on</td><td class="rx">Collecting duct</td></tr>
+          <tr><td>Aldosterone reabsorbs</td><td class="rx">Sodium</td></tr>
+          <tr><td>Raises blood calcium</td><td class="rx">PTH</td></tr>
+          <tr><td>Lowers blood calcium</td><td class="rx">Calcitonin</td></tr>
+          <tr><td rowspan="3"><b>Systemic anatomy</b></td><td>CN VII exits through</td><td class="rx">Stylomastoid foramen</td></tr>
+          <tr><td>Thinnest motor cranial nerve</td><td class="rx">CN IV (trochlear)</td></tr>
+          <tr><td>Heart pacemaker / mitral heard at</td><td class="rx">SA node &middot; apex</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:13px">
+      <div class="lab">Hooks that stick</div>
+      <p><b>Ig by job:</b> E = allergy (Exposure), M = first (iMMediate/big pentaMer), G = most (Greatest amount), A = secretions (sAliva, teArs). <b>Calcium:</b> P<b>T</b>H = <b>T</b>akes it up (raises), Calci<b>T</b>onin = <b>T</b>ones it down. <b>CN IV</b> is the thinnest and the only one that exits the brainstem dorsally.</p>
+    </div>
+    <div class="cal trap">
+      <div class="lab">The exact slips on 426</div>
+      <p>AB blood type was marked as universal <b>recipient</b> and you slipped it, and PTH vs calcitonin flipped. These are the careless-under-speed misses. They vanish once the grid above is automatic, not re-read.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Cluster 2 &middot; A3 embryology (the 69%)</h2>
+    <p class="lead">Two ideas carry almost all ten misses: the three vitreous generations, and the surface-ectoderm vs neural-crest split. Get these two pictures and A3 stops being guesswork.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 200" role="img" aria-label="Three vitreous generations across development">
+        <line x1="40" y1="150" x2="600" y2="150" stroke="var(--line)" stroke-width="2"/>
+        <text x="40" y="180" font-size="11" fill="var(--ink-faint)" font-family="ui-monospace,monospace">week 0</text>
+        <text x="300" y="180" font-size="11" fill="var(--ink-faint)" font-family="ui-monospace,monospace" text-anchor="middle">gestation</text>
+        <text x="600" y="180" font-size="11" fill="var(--ink-faint)" font-family="ui-monospace,monospace" text-anchor="end">birth</text>
+
+        <rect x="40" y="60" width="200" height="46" rx="9" fill="var(--trap-w)" stroke="color-mix(in srgb,var(--trap) 40%,var(--line))"/>
+        <text x="140" y="80" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle">Primary</text>
+        <text x="140" y="97" font-size="11" fill="var(--ink-soft)" text-anchor="middle">vascular, then regresses</text>
+
+        <rect x="250" y="60" width="200" height="46" rx="9" fill="var(--accent-wash)" stroke="color-mix(in srgb,var(--accent) 40%,var(--line))"/>
+        <text x="350" y="80" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle">Secondary</text>
+        <text x="350" y="97" font-size="11" fill="var(--ink-soft)" text-anchor="middle">avascular &rarr; adult gel</text>
+
+        <rect x="460" y="60" width="140" height="46" rx="9" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 40%,var(--line))"/>
+        <text x="530" y="80" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle">Tertiary</text>
+        <text x="530" y="97" font-size="11" fill="var(--ink-soft)" text-anchor="middle">&rarr; lens zonules</text>
+
+        <line x1="140" y1="106" x2="140" y2="150" stroke="var(--trap)" stroke-width="2" stroke-dasharray="4 3"/>
+        <circle cx="140" cy="150" r="4" fill="var(--trap)"/>
+        <text x="140" y="42" font-size="10.5" fill="var(--trap)" text-anchor="middle" font-family="ui-monospace,monospace">hyaloid a. regresses ~wk 36</text>
+      </svg>
+      <figcaption>1 vascular and gone, 2 is the gel you keep, 3 becomes the zonules</figcaption>
+    </figure>
+
+    <div class="split" style="margin-top:12px">
+      <div class="col">
+        <div class="k">Surface ectoderm</div>
+        <h4>The outside-in list</h4>
+        <ul>
+          <li><b>Lens</b></li>
+          <li>Corneal <b>epithelium</b></li>
+          <li>Lacrimal gland</li>
+          <li>Conjunctival epithelium</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="k">Neural crest</div>
+        <h4>The stroma / support list</h4>
+        <ul>
+          <li>Corneal <b>stroma + endothelium</b></li>
+          <li>Most of the sclera, choroidal stroma</li>
+          <li>Ciliary muscle, iris stroma</li>
+          <li>Trabecular meshwork</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cal mnem" style="margin-top:12px">
+      <div class="lab">Hook</div>
+      <p><b>Lens sits on the surface</b>, so lens and the epithelia are surface ectoderm. <b>Crest builds the scaffolding</b>: stroma, endothelium, meshwork, muscle. If a structure is a clear covering layer, think surface ectoderm; if it is connective or support tissue, think neural crest.</p>
+    </div>
+    <div class="cal trap">
+      <div class="lab">The two that caught you</div>
+      <p>Corneal <b>stroma and endothelium are neural crest</b>, not ectoderm (only the epithelium is ectoderm). And the <b>fetal fissure closes at week 7</b>: fail to close and you get an <b>inferonasal coloboma</b>. Anchor the direction: colobomas point down and in.</p>
+    </div>
+    <div class="cal pearl">
+      <div class="lab">Distinguish these two</div>
+      <p><b>Mittendorf dot</b> = benign hyaloid remnant on the back of the lens. <b>PHPV/PFV</b> = persistent primary vitreous, a retrolental fibrovascular mass, and the board key is <b>no calcium</b>, which is what separates it from retinoblastoma.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Cluster 3 &middot; pupil and pathway traps</h2>
+    <p>A2 held overall, but these classic distinctions are where A2 leaks. Drill the difference, not the definition.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 170" role="img" aria-label="Adie pupil versus Argyll-Robertson pupils">
+        <text x="160" y="24" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle" font-family="system-ui">Adie (tonic)</text>
+        <circle cx="160" cy="92" r="52" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="160" cy="92" r="34" fill="var(--ink)"/>
+        <text x="160" y="160" font-size="11" fill="var(--ink-soft)" text-anchor="middle" font-family="system-ui">one big, tonic, ciliary ganglion</text>
+
+        <text x="470" y="24" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle" font-family="system-ui">Argyll-Robertson</text>
+        <circle cx="420" cy="92" r="40" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <path d="M420 76 a16 16 0 1 0 0.1 0 Z" fill="var(--ink)"/>
+        <circle cx="520" cy="92" r="40" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <path d="M520 78 a14 14 0 1 0 0.1 0 Z" fill="var(--ink)"/>
+        <text x="470" y="160" font-size="11" fill="var(--ink-soft)" text-anchor="middle" font-family="system-ui">small, irregular, both, neurosyphilis</text>
+      </svg>
+      <figcaption>big and tonic vs small, irregular, and bilateral</figcaption>
+    </figure>
+
+    <div class="tw" style="margin-top:12px">
+      <table>
+        <thead><tr><th>Trap</th><th>Key feature</th><th>Answer to lock</th></tr></thead>
+        <tbody>
+          <tr><td><b>Adie</b></td><td>Dilated, tonic, poor light</td><td class="rx">Ciliary ganglion lesion; dilute pilocarpine 0.125% constricts</td></tr>
+          <tr><td><b>Argyll-Robertson</b></td><td>Small, irregular, light-near dissociation</td><td class="rx">Light absent, near preserved; neurosyphilis</td></tr>
+          <tr><td><b>Optic tract</b></td><td>Homonymous hemianopia</td><td class="rx">Incongruous; posterior lesions get more congruous</td></tr>
+          <tr><td><b>Meyer loop</b> (temporal)</td><td>Upper fibers loop forward</td><td class="rx">Contralateral superior quadrantanopia (pie in the sky)</td></tr>
+          <tr><td><b>Parietal</b></td><td>Lower radiation</td><td class="rx">Contralateral inferior quadrantanopia</td></tr>
+          <tr><td><b>LGN layers</b></td><td>Which eye per layer</td><td class="rx">Uncrossed 2,3,5 &middot; crossed 1,4,6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal mnem" style="margin-top:12px">
+      <div class="lab">Hooks</div>
+      <p><b>Argyll-Robertson</b> = the "prostitute's pupil": accommodates but does not react (near yes, light no). <b>Temporal loop, superior defect</b>: TEMPoral is up in the sky, pie in the sky. <b>LGN:</b> odd-in-front is a trap, just memorize uncrossed 2-3-5.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Cluster 4 &middot; retina supply + the numbers</h2>
+    <p class="lead">Blood supply splits the retina in half, and the macular measurements are a fixed set the board reuses. One picture plus one number table.</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-label="Retinal blood supply, inner from CRA and outer from choriocapillaris">
+        <rect x="60" y="40" width="520" height="34" fill="var(--why-w)" stroke="color-mix(in srgb,var(--why) 40%,var(--line))"/>
+        <text x="320" y="62" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle" font-family="system-ui">INNER retina</text>
+        <text x="600" y="62" font-size="11" fill="var(--why)" text-anchor="end" font-family="ui-monospace,monospace">CRA</text>
+
+        <rect x="60" y="74" width="520" height="34" fill="var(--surface-2)" stroke="var(--line)"/>
+        <text x="320" y="96" font-size="11.5" fill="var(--ink-soft)" text-anchor="middle" font-family="system-ui">outer plexiform / watershed</text>
+
+        <rect x="60" y="108" width="520" height="34" fill="var(--trap-w)" stroke="color-mix(in srgb,var(--trap) 40%,var(--line))"/>
+        <text x="320" y="130" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="middle" font-family="system-ui">OUTER retina (photoreceptors)</text>
+        <text x="600" y="130" font-size="11" fill="var(--trap)" text-anchor="end" font-family="ui-monospace,monospace">choriocapillaris</text>
+
+        <rect x="60" y="142" width="520" height="20" fill="var(--inset)"/>
+        <text x="320" y="156" font-size="10.5" fill="var(--ink-faint)" text-anchor="middle" font-family="ui-monospace,monospace">choroid: thickest posteriorly, thinnest anteriorly</text>
+
+        <text x="60" y="192" font-size="11" fill="var(--ink-soft)" font-family="system-ui">CRA enters the optic nerve 10&ndash;12 mm behind the globe</text>
+      </svg>
+      <figcaption>inner half from the artery, outer half from the choroid</figcaption>
+    </figure>
+
+    <div class="tw" style="margin-top:12px">
+      <table>
+        <thead><tr><th>Value</th><th class="num">Number</th><th>Anchor</th></tr></thead>
+        <tbody>
+          <tr><td>Macula diameter</td><td class="num rx">4.5 mm</td><td>the whole macular zone</td></tr>
+          <tr><td>Foveola diameter</td><td class="num rx">0.4 mm</td><td>cones only, avascular, thinnest retina</td></tr>
+          <tr><td>Thickest retina</td><td class="num rx">parafovea</td><td>packed ganglion cells ring the pit</td></tr>
+          <tr><td>CRA entry behind globe</td><td class="num rx">10&ndash;12 mm</td><td>inside the optic nerve</td></tr>
+          <tr><td>Inner retina supply</td><td class="num rx">CRA</td><td>artery feeds the inner half</td></tr>
+          <tr><td>Outer retina supply</td><td class="num rx">choriocapillaris</td><td>choroid feeds the photoreceptors</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cal pearl" style="margin-top:12px">
+      <div class="lab">Why the split matters clinically</div>
+      <p>A central retinal artery occlusion whites out the <b>inner</b> retina but the fovea stays red, the cherry-red spot, because its outer layers still get choroidal blood. That single fact ties the anatomy to the disease you will see tested in Subject E.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Rebuild it on paper</h2>
+    <p>Reading this card is not studying it. Close it and do these blind. Three passes: today, Sep 20, Sep 24.</p>
+    <div class="drill"><div class="t">1 &middot; Brain dump the A1 grid</div><p>Blank page titled "Ig + endocrine + systemic." Write all eleven rows from section 2 with nothing in front of you. Circle every gap, re-drill only the gaps.</p></div>
+    <div class="drill"><div class="t">2 &middot; Draw the vitreous timeline</div><p>Reproduce the three-generation figure: which is vascular, what each becomes, and where the hyaloid artery regresses. Then write the two germ-layer lists from memory.</p></div>
+    <div class="drill"><div class="t">3 &middot; Two-pupil teach-back</div><p>Explain out loud why Argyll-Robertson accommodates but will not react to light, and how dilute pilocarpine proves an Adie pupil. No notes.</p></div>
+    <div class="drill"><div class="t">4 &middot; Field-defect sequence</div><p>Trace retina to cortex, naming the defect at each station: optic tract, Meyer loop, parietal radiation, occipital. Say congruous or incongruous for each.</p></div>
+    <div class="drill"><div class="t">5 &middot; Retina number sheet</div><p>Blank the number table in section 5 and fill every value. Then say why a CRAO gives a cherry-red spot, in one sentence.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Spaced-repetition deck</h2>
+    <p>Drop these into your FoqusLab queue and answer out loud before you flip.</p>
+    <ol class="srs">
+      <li><span class="q">First antibody in a response vs most abundant in serum?</span> <span class="a">IgM first; IgG most abundant.</span></li>
+      <li><span class="q">Antibody in tears and colostrum?</span> <span class="a">IgA (secretory).</span></li>
+      <li><span class="q">PTH vs calcitonin on blood calcium?</span> <span class="a">PTH raises it, calcitonin lowers it.</span></li>
+      <li><span class="q">CN VII exit, and the thinnest motor nerve?</span> <span class="a">Stylomastoid foramen; CN IV is thinnest.</span></li>
+      <li><span class="q">The three vitreous generations and what each becomes?</span> <span class="a">Primary (vascular, regresses), secondary (adult gel), tertiary (lens zonules).</span></li>
+      <li><span class="q">Corneal stroma and endothelium come from?</span> <span class="a">Neural crest; only the epithelium is surface ectoderm.</span></li>
+      <li><span class="q">Lens, lacrimal gland origin?</span> <span class="a">Surface ectoderm.</span></li>
+      <li><span class="q">Fetal fissure closes when, failure gives?</span> <span class="a">Week 7; inferonasal coloboma.</span></li>
+      <li><span class="q">PHPV vs retinoblastoma, the key sign?</span> <span class="a">PHPV has no calcium; retinoblastoma calcifies.</span></li>
+      <li><span class="q">Adie pupil confirming test?</span> <span class="a">Dilute pilocarpine 0.125% constricts it (denervation supersensitivity).</span></li>
+      <li><span class="q">Argyll-Robertson pattern?</span> <span class="a">Small, irregular, light absent, near preserved; neurosyphilis.</span></li>
+      <li><span class="q">Meyer loop lesion field defect?</span> <span class="a">Contralateral superior quadrantanopia (pie in the sky).</span></li>
+      <li><span class="q">LGN uncrossed vs crossed layers?</span> <span class="a">Uncrossed 2,3,5; crossed 1,4,6.</span></li>
+      <li><span class="q">Inner vs outer retina blood supply?</span> <span class="a">CRA inner; choriocapillaris outer.</span></li>
+      <li><span class="q">Macula and foveola diameters?</span> <span class="a">Macula 4.5 mm; foveola 0.4 mm.</span></li>
+    </ol>
+    <div class="cal why" style="margin-top:14px">
+      <div class="lab">Cross-links</div>
+      <p><b>Ocular Disease (E):</b> CRAO cherry-red spot, colobomas, and leukocoria differential (PHPV vs retinoblastoma) all sit on this card. <b>Physiologic Optics / BV (B):</b> the visual pathway field defects are the same map from the function side. <b>Pharmacology (G):</b> the Adie and pupil tests reuse the autonomic wiring from the G2 card.</p>
+    </div>
+  </section>
+
+  <div class="foot">WAA &middot; Board Review 2026 &middot; Visual Biology Card 8 &middot; fix the two holes, protect the rest</div>
+
+</div>
+<script src="/top2/_track.js"></script>
+</body>
+</html>
