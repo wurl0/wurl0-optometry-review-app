@@ -354,14 +354,14 @@ function buildDay(dt){
   if(toExam<=3){
     phase="taper"; tag="taper"; tagClass="t-taper"; subj="High-yield only";
     tix=[QUEUE(),
-      {txt:"Skim one weak-subject Reviewer + Strategy", link:revLink("Pharmacology"), why:"No new material. Just the traps and fast-picks."},
+      {txt:"Skim one weak-subject Reviewer + Strategy", link:revLink("Theoretical Optics + CL"), why:"No new material. Just the traps and fast-picks."},
       {txt:"Logistics + lights out by 10pm", why:"Bag, IDs, route to venue. Sleep is a study tool now."}];
   } else if(toExam<=14){
     phase="simulate";
     if(dow===0){ tag="simulation"; tagClass="t-mock"; subj="Full board simulation";
       tix=[QUEUE(),{txt:"Full Board Simulation", link:MOCK_LINK, why:"Board pace on your phone timer, ~1.2 min per item. 822-question mock, weighted like the real paper, 75% pass line."}, GAPS];
     } else {
-      const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
+      const wk={1:"Theoretical Optics + CL",3:"Ethics + Jurisprudence",5:"Pharmacology"};
       const s = wk[dow] || HEAVY[(hp++)%HEAVY.length];
       const weak = !!wk[dow];
       tag = weak?"weak three":"board pace"; tagClass = weak?"t-weak":"t-heavy"; subj=s+" — board pace";
@@ -378,7 +378,7 @@ function buildDay(dt){
     if(dow===0){ tag="checkpoint"; tagClass="t-mock"; subj="Weekly checkpoint";
       tix=[QUEUE(),{txt:"Full Board Simulation", link:MOCK_LINK, why:"Board pace: ~1.2 min per item (2h/100, 3h/150). No in-app timer, so set your phone. Watch your number climb from 74."}, GAPS];
     } else {
-      const wk={1:"Pharmacology",3:"Visual Biology",5:"Ocular Disease"};
+      const wk={1:"Theoretical Optics + CL",3:"Ethics + Jurisprudence",5:"Pharmacology"};
       let s,weak;
       if(wk[dow]){ s=wk[dow]; weak=true; } else { s=HEAVY[(hp++)%HEAVY.length]; weak=false; }
       tag=weak?"weak three":"heavy 15%"; tagClass=weak?"t-weak":"t-heavy"; subj=s;
@@ -442,8 +442,32 @@ if(dr2){ dr2.phase="simulate"; dr2.tag="dress rehearsal"; dr2.tagClass="t-mock";
     {txt:"Reviewer Mock Board — run the other ~500 items", link:REVMOCK_LINK, why:"Second half of the aligned 1000-item board sim. After this, check Board Readiness ONCE: it now reflects the full weighted paper. Spend Sep 21-26 on whatever it flags weak."},
     GAPS]; }
 
+// ---- Practical prep block (Oct 1-5). Appended AFTER the written exam days so it
+// only adds higher check-off indices and never shifts an existing box. Its own
+// "practical" phase is kept out of the written streak/stats (see refresh()).
+// Content mirrors practical-4-day-plan.md; no in-app links (scripts live outside /public).
+const PRAC=[
+  {d:new Date(2026,9,1), lbl:"P-4", tc:"t-heavy", subj:"Room 1 — Binocular Vision (re-entry)", tix:[
+    {txt:"Drill the universal intro + infection-control first move to automatic", why:"Carries into all 5 rooms: sanitise, confirm name, intro line, every station."},
+    {txt:"Perform Room 1 backbone cards out loud: cover test, PCT, Hirschberg/Krimsky, EOM, NPC/NPA, Maddox, Worth 4-dot", why:"Hands moving, saying matches doing. Write each record line by hand."}]},
+  {d:new Date(2026,9,2), lbl:"P-3", tc:"t-heavy", subj:"Room 2 — Refraction & Phorometry", tix:[
+    {txt:"VT#7 subjective cold: fog, unfog, clock dial, duochrome, JCC, balance", why:"Your heaviest room and usual freeze point. Recite the card, perform on the phoropter."},
+    {txt:"Memorise the 21-point normal-values table", why:"The single most examinable item in the room."}]},
+  {d:new Date(2026,9,3), lbl:"P-2", tc:"t-heavy", subj:"Room 3 Instruments · Room 4 Contact Lens", tix:[
+    {txt:"AM — Instruments: keratometry, lensometer, slit lamp + Van Herick, synoptophore, schematic eye", why:"Set up, state what it measures, take a clean reading."},
+    {txt:"PM — Contact Lens: RGP fit + the CL math (r=337.5/D, TD, BOZR, fluorescein patterns)", why:"Doubles as review for your weak written subject D."}]},
+  {d:new Date(2026,9,4), lbl:"P-1", tc:"t-mock", subj:"Room 5 Dispensing · mock run · taper", tix:[
+    {txt:"AM — Dispensing & edging: PD, decentration math, lab workflow in order", why:"The math is the most-asked part here."},
+    {txt:"Timed mock: draw one procedure per room, perform cold under 8 min, talking throughout", why:"Fix only the shaky ones."},
+    {txt:"Logistics + early sleep: instrument kit, ID, route", why:"Same as the written. Rest is the last tool."}]},
+  {d:new Date(2026,9,5), lbl:"P-0", tc:"t-today", subj:"PRACTICAL EXAM", tix:[
+    {txt:"Sit the practical. Sanitise, confirm name, intro, then let muscle memory run.", why:"If a station blanks, start the first move and the script follows."}]}
+];
+PRAC.forEach(p=>days.push({dt:p.d, dow:p.d.getDay(), toExam:-1, phase:"practical",
+  tag:p.lbl, tagClass:p.tc, subj:p.subj, dLabel:p.lbl, tix:p.tix}));
+
 const container=document.getElementById("days");
-const PH={rest:"Rest day",build:"Build phase · daily loop, weekly checkpoint",simulate:"Simulate phase · timed papers, exam conditions",taper:"Taper · high-yield, rest, logistics",exam:"Exam"};
+const PH={rest:"Rest day",build:"Build phase · daily loop, weekly checkpoint",simulate:"Simulate phase · timed papers, exam conditions",taper:"Taper · high-yield, rest, logistics",exam:"Exam",practical:"Practical prep · hands-on for the Oct 5 exam"};
 const todayMid=new Date(); todayMid.setHours(0,0,0,0);
 let lastPhase="";
 
@@ -472,7 +496,7 @@ function refresh(){
   document.getElementById("s-closed").textContent=closed;
   let elapsed=0,held=0,run=0,streak=0;
   days.forEach((d,i)=>{
-    if(d.phase==="exam"||d.phase==="rest") return;
+    if(d.phase==="exam"||d.phase==="rest"||d.phase==="practical") return;
     if(d.dt.getTime()<=todayMid.getTime()){
       elapsed++;
       if(store[i+"_0"]===true){ held++; run++; streak=run; }
@@ -483,10 +507,10 @@ function refresh(){
   document.getElementById("s-pct").textContent=(elapsed?Math.round(held/elapsed*100):0)+"%";
   // this-week floors (Mon-Sun containing today)
   let wk=0,wkTot=0; const wd=(todayMid.getDay()+6)%7; const monday=new Date(todayMid.getTime()-wd*DAYMS);
-  days.forEach((d,i)=>{ if(d.phase==="exam"||d.phase==="rest")return;
+  days.forEach((d,i)=>{ if(d.phase==="exam"||d.phase==="rest"||d.phase==="practical")return;
     if(d.dt>=monday && d.dt<new Date(monday.getTime()+7*DAYMS)){ wkTot++; if(store[i+"_0"]===true) wk++; } });
   document.getElementById("s-done").textContent=wk+"/"+wkTot;
-  const total=days.reduce((a,d)=>a+((d.phase==="exam"||d.phase==="rest")?0:d.tix.length),0);
+  const total=days.reduce((a,d)=>a+((d.phase==="exam"||d.phase==="rest"||d.phase==="practical")?0:d.tix.length),0);
   document.getElementById("bar").style.width=(total?closed/total*100:0)+"%";
 
   // Copy-ready snapshot for Lisa. Built from his own session data (read-only, no writes).
