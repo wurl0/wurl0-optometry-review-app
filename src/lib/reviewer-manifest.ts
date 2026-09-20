@@ -3,13 +3,15 @@
 // Add or restructure content here; nothing else hard-codes these paths.
 
 export type ItemType =
-  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'preboards-set4' | 'preboards-set5' | 'mock' | 'interactive' | 'feature'
+  | 'reviewer' | 'strategy' | 'exam' | 'preboards-2025' | 'preboards-set2' | 'preboards-set3' | 'preboards-set4' | 'preboards-set5' | 'preboards-set6' | 'mock' | 'interactive' | 'feature'
   | 'tool' | 'card'
 
 // The five per-subject content types (everything except the global mocks, interactives,
 // features, and tools). Every new cross-subject type MUST be added to this Exclude, or
 // the Record<SubjectItemType, …> maps below stop being exhaustive and tsc fails.
-type SubjectItemType = Exclude<ItemType, 'mock' | 'interactive' | 'feature' | 'tool' | 'card'>
+// 'preboards-set6' is excluded so it is NOT auto-fanned across all 8 subjects (only E has a
+// Set 6 file so far); it is registered as a single manual item in EXTRA_SUBJECT_ITEMS instead.
+type SubjectItemType = Exclude<ItemType, 'preboards-set6' | 'mock' | 'interactive' | 'feature' | 'tool' | 'card'>
 
 export type Item = {
   id: string          // stable ID, e.g. "A.exam", "mock.set2"
@@ -244,6 +246,11 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'G.g1-strategy', subject: 'G', type: 'strategy', label: 'Ocular Pharmacology — G1 Strategy',
     sub: 'General pharmacology principles: rules, mnemonics and traps',
     path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Strategy.html' },
+  // Set 6 preboards — only Ocular Disease (E) is built so far, so it is a single manual
+  // item rather than auto-fanned across all 8 subjects. Grant/admin-only (not in PUBLIC_IDS).
+  { id: 'E.preboards-set6', subject: 'E', type: 'preboards-set6', label: 'Ocular Disease — Preboards Set 6',
+    sub: '130-item Set 6 mock-board bank; Quiz / Exam / Study modes',
+    path: '/top2/E-Ocular-Disease-and-Emergencies/E-Preboards-Set6.html' },
 ]
 
 // App features (not static /top2 files) that are grantable like any other item.
