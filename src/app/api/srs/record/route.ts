@@ -18,7 +18,7 @@ const MAX_ITEMS = 400
 
 const SOURCES = new Set([
   'practice', 'exam', 'notes-quiz', 'drill',
-  'subject-exam', 'preboards-2025', 'preboards-set2', 'preboards-set3', 'preboards-set4', 'mock',
+  'subject-exam', 'preboards-2025', 'preboards-set2', 'preboards-set3', 'preboards-set4', 'preboards-set5', 'preboards-set6', 'mock',
 ])
 
 interface IncomingItem {

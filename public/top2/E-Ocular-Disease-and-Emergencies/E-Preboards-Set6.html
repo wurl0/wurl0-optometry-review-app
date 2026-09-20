@@ -139,7 +139,7 @@ function prev(){if(i>0){i--;render();}}
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 function finish(){if(cfg.mode==='exam')submitted=true;document.getElementById('s-quiz').classList.remove('active');document.getElementById('s-res').classList.add('active');
   const done=Object.keys(answered).length, corr=Object.values(answered).filter(Boolean).length;
-  const pct=done?Math.round(corr/done*100):0;document.getElementById('ring').textContent=pct+'%';
+  const pct=done?Math.round(corr/done*100):0;if((cfg.mode==='quiz'||cfg.mode==='exam')&&cfg.set==='all'&&done&&window.reportOleScore){window.reportOleScore({score:corr,total:done});}if((cfg.mode==='quiz'||cfg.mode==='exam')&&window.reportSrsItems){window.reportSrsItems(pool.filter(x=>!x.errata&&!x.flag&&answered[x.id]!==undefined).map(x=>({stem:x.q,options:x.opts,correct:x.ans,explanation:x.rat||'',wasCorrect:answered[x.id]===true})));}document.getElementById('ring').textContent=pct+'%';
   document.getElementById('rdetail').textContent=cfg.mode==='study'?'Study mode — '+pool.length+' reviewed':(corr+' correct of '+done+' answered ('+pool.length+' in set)');
   const review=cfg.mode==='exam'?pool:pool.filter(q=>answered[q.id]===false);let h='';
   if(review.length){h='<div class="opt-row"><div class="lbl">'+(cfg.mode==='exam'?('Review all ('+review.length+')'):('Review these ('+review.length+')'))+'</div></div>';
@@ -150,4 +150,4 @@ function finish(){if(cfg.mode==='exam')submitted=true;document.getElementById('s
         +(q.rat?'<br><span style="color:#94a3b8">'+esc(q.rat)+'</span>':'')+'</div>';});}
   else if(cfg.mode==='quiz'&&done){h='<div class="note">Clean sweep — every answered question correct.</div>';}
   document.getElementById('missed-list').innerHTML=h;}
-</script></body></html>
+</script><script src="/top2/_report.js"></script><script src="/top2/_srs.js"></script><script src="/top2/_track.js"></script></body></html>
