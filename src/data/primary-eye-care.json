@@ -1724,7 +1724,7 @@
       "logMAR 0.3",
       "logMAR 0.4"
     ],
-    "correct": 1,
+    "correct": 2,
     "explanation": "logMAR = log10(MAR). For 20/40: MAR = 40/20 = 2 arcminutes; log10(2) = 0.301 ≈ 0.3. Therefore 20/40 = logMAR 0.3.",
     "module": "Module 1: Visual Acuity"
   },

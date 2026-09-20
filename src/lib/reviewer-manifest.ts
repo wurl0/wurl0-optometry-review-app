@@ -251,6 +251,9 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'E.preboards-set6', subject: 'E', type: 'preboards-set6', label: 'Ocular Disease — Preboards Set 6',
     sub: '130-item Set 6 mock-board bank; Quiz / Exam / Study modes',
     path: '/top2/E-Ocular-Disease-and-Emergencies/E-Preboards-Set6.html' },
+  { id: 'G.preboards-set6', subject: 'G', type: 'preboards-set6', label: 'Ocular Pharmacology — Preboards Set 6',
+    sub: '100-item Set 6 mock-board bank; Quiz / Exam / Study modes',
+    path: '/top2/G-Ocular-Pharmacology/G-Preboards-Set6.html' },
 ]
 
 // App features (not static /top2 files) that are grantable like any other item.
