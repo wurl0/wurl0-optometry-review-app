@@ -174,6 +174,17 @@
   .rev .decode{background:var(--gold-soft);color:var(--gold);border-radius:8px;padding:9px 12px;font-size:13.5px;margin-top:8px}
   .rev .keyline{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);margin-top:9px;padding-top:7px}
   .again{background:var(--navy);color:#fff;border:none;border-radius:9px;padding:12px 26px;font-size:15px;font-weight:700;cursor:pointer;margin-top:8px}
+  .revgroup{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:18px 0 9px}
+  .revgroup.wrong{color:var(--wrong)} .revgroup.right{color:var(--right)}
+  .snapbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:18px}
+  .snaphead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}
+  .snaptitle{font-size:13px;font-weight:700;color:var(--ink)}
+  .snapactions{display:flex;align-items:center;gap:8px}
+  .snapcopied{font-size:12px;color:var(--right);opacity:0;transition:opacity .2s}
+  .snapcopied.on{opacity:1}
+  .snapbtn{background:var(--navy);color:#fff;border:1.5px solid var(--navy);border-radius:8px;padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer}
+  .snapbtn.ghost{background:#fff;color:var(--navy)}
+  .snappre{font-size:11px;line-height:1.5;color:var(--muted);background:#f7f8fa;border:1px solid var(--line);border-radius:8px;padding:10px 11px;margin:0;white-space:pre-wrap;overflow:auto;max-height:280px}
 
   @media(max-width:640px){
     .side{display:none}
@@ -352,6 +363,17 @@
     <thead><tr><th>Subject</th><th class="num">Correct</th><th class="num">Items</th><th class="num">%</th></tr></thead>
     <tbody id="brkBody"></tbody>
   </table>
+  <div class="snapbox" id="snapBox">
+    <div class="snaphead">
+      <span class="snaptitle">Result snapshot</span>
+      <div class="snapactions">
+        <span class="snapcopied" id="snapCopied">Copied</span>
+        <button class="snapbtn" id="snapBtn">Copy snapshot</button>
+        <button class="snapbtn ghost" id="missBtn">Copy detailed misses</button>
+      </div>
+    </div>
+    <pre class="snappre" id="snapPre"></pre>
+  </div>
   <div class="revfilter">
     <button class="chip sel" data-rev="all">All items</button>
     <button class="chip" data-rev="wrong">Wrong only</button>
@@ -702,6 +724,7 @@
       body.appendChild(tr);
     });
     renderReview();
+    document.getElementById('snapPre').textContent=buildSnapshot();
   }
 
   document.querySelector('.revfilter').addEventListener('click',function(e){
@@ -710,35 +733,119 @@
     b.classList.add('sel');revMode=b.dataset.rev;renderReview();
   });
 
+  // One review card for question index i. Shared by the grouped review list.
+  function reviewCard(q,i){
+    var labs=['A','B','C','D'];
+    var div=document.createElement('div');div.className='rev';
+    var html='<div class="rtag">'+esc((q.t||'')+(q.st?' · '+q.st:''))+(S.flags[i]?' · ★ bookmarked':'')+'</div>';
+    html+='<div class="rq2">'+(i+1)+'.) '+esc(q.q)+'</div>';
+    q.o.forEach(function(opt,idx){
+      var cls='ro';
+      if(idx===q.a)cls+=' correct';
+      else if(idx===S.answers[i])cls+=' chosen-wrong';
+      var tag='';
+      if(idx===q.a)tag=' ✓ correct';
+      else if(idx===S.answers[i])tag=' ✗ your answer';
+      var why=(q.ow&&q.ow[idx])?'<span class="why">'+esc(q.ow[idx])+'</span>':'';
+      html+='<div class="'+cls+'"><span class="lab">'+labs[idx]+'.)</span>'+esc(opt)+tag+why+'</div>';
+    });
+    if(S.answers[i]<0)html+='<div class="ro chosen-wrong"><span class="lab">—</span>You left this unanswered.</div>';
+    if(q.decode)html+='<div class="decode">🧭 '+esc(q.decode)+'</div>';
+    if(q.k)html+='<div class="keyline"><b>Key:</b> '+esc(q.k)+'</div>';
+    else if(q.w)html+='<div class="keyline"><b>Why:</b> '+esc(q.w)+'</div>';
+    div.innerHTML=html;
+    return div;
+  }
+
+  // Review list: wrong items first, then correct, each group headed by its total.
   function renderReview(){
     var list=document.getElementById('reviewList');list.innerHTML='';
-    var labs=['A','B','C','D'];
+    var wrong=[],right=[];
     S.items.forEach(function(q,i){
       var ok=S.answers[i]===q.a;
       if(revMode==='wrong'&&ok)return;
       if(revMode==='flagged'&&!S.flags[i])return;
-      var div=document.createElement('div');div.className='rev';
-      var html='<div class="rtag">'+esc((q.t||'')+(q.st?' · '+q.st:''))+(S.flags[i]?' · ★ bookmarked':'')+'</div>';
-      html+='<div class="rq2">'+(i+1)+'.) '+esc(q.q)+'</div>';
-      q.o.forEach(function(opt,idx){
-        var cls='ro';
-        if(idx===q.a)cls+=' correct';
-        else if(idx===S.answers[i])cls+=' chosen-wrong';
-        var tag='';
-        if(idx===q.a)tag=' ✓ correct';
-        else if(idx===S.answers[i])tag=' ✗ your answer';
-        var why=(q.ow&&q.ow[idx])?'<span class="why">'+esc(q.ow[idx])+'</span>':'';
-        html+='<div class="'+cls+'"><span class="lab">'+labs[idx]+'.)</span>'+esc(opt)+tag+why+'</div>';
-      });
-      if(S.answers[i]<0)html+='<div class="ro chosen-wrong"><span class="lab">—</span>You left this unanswered.</div>';
-      if(q.decode)html+='<div class="decode">🧭 '+esc(q.decode)+'</div>';
-      if(q.k)html+='<div class="keyline"><b>Key:</b> '+esc(q.k)+'</div>';
-      else if(q.w)html+='<div class="keyline"><b>Why:</b> '+esc(q.w)+'</div>';
-      list.appendChild(div);
-      div.innerHTML=html;
+      (ok?right:wrong).push({q:q,i:i});
     });
-    if(!list.children.length)list.innerHTML='<div class="rev" style="text-align:center;color:var(--muted)">Nothing to show in this filter.</div>';
+    function group(entries,cls,label){
+      if(!entries.length)return;
+      var h=document.createElement('div');h.className='revgroup '+cls;
+      h.textContent=label+' — '+entries.length+' item'+(entries.length>1?'s':'');
+      list.appendChild(h);
+      entries.forEach(function(e){list.appendChild(reviewCard(e.q,e.i));});
+    }
+    group(wrong,'wrong','✗ Wrong');
+    group(right,'right','✓ Correct');
+    if(!wrong.length&&!right.length)list.innerHTML='<div class="rev" style="text-align:center;color:var(--muted)">Nothing to show in this filter.</div>';
   }
+
+  // Copy-ready text snapshot of this result, to hand to Lisa or Claude. Built
+  // from the same per-subject buckets the results table uses, then a compact
+  // wrong-items list (subject and subtopic only, no stems).
+  var FULLMO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function buildSnapshot(){
+    var byT={},correct=0,wrongList=[];
+    S.items.forEach(function(q,i){
+      var ok=S.answers[i]===q.a;if(ok)correct++;
+      var t=q.t||'—';if(!byT[t])byT[t]={c:0,n:0};byT[t].n++;if(ok)byT[t].c++;
+      if(!ok)wrongList.push({i:i,t:t,st:q.st||''});
+    });
+    var n=S.n,pct=n?Math.round(correct/n*100):0,wrongN=n-correct;
+    var now=new Date(),today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    var dLeft=Math.max(0,Math.round((new Date(2026,8,28).getTime()-today.getTime())/86400000));
+    var L=[];
+    L.push('FoqusLab CBLE Simulator — '+FULLMO[now.getMonth()]+' '+now.getDate()+' · D-'+dLeft+' · '+(S.mode==='study'?'Study':'Exam')+' mode');
+    L.push(S.subjLabel+' · '+n+' items');
+    L.push('Score: '+correct+' / '+n+' ('+pct+'%) · '+(pct>=75?'PASSING (>=75%)':'BELOW 75%'));
+    L.push('Wrong: '+wrongN+' · Correct: '+correct);
+    L.push('');
+    L.push('Per subject (correct / items · %):');
+    Object.keys(byT).sort().forEach(function(t){
+      var o=byT[t];L.push((FULLNAME[t]||t)+' — '+o.c+'/'+o.n+' · '+Math.round(o.c/o.n*100)+'%');
+    });
+    if(wrongList.length){
+      L.push('');
+      L.push('Wrong items (# · subject · subtopic):');
+      wrongList.forEach(function(w){L.push('#'+(w.i+1)+' '+w.t+(w.st?' · '+w.st:''));});
+    }
+    return L.join('\n');
+  }
+
+  // Coaching-grade export: per wrong item, the stem plus the chosen-vs-correct
+  // gap (the real diagnostic) and the key line. Heavier and includes stems, so
+  // it is a separate button, meant for a focused coaching pass, not every mock.
+  function buildDetailedMisses(){
+    var labs=['A','B','C','D'];
+    var wrong=[],correct=0;
+    S.items.forEach(function(q,i){ if(S.answers[i]===q.a)correct++; else wrong.push({q:q,i:i}); });
+    var now=new Date();
+    var L=[];
+    L.push('FoqusLab CBLE Simulator — detailed misses — '+FULLMO[now.getMonth()]+' '+now.getDate()+' · '+(S.mode==='study'?'Study':'Exam')+' mode');
+    L.push(S.subjLabel+' · '+S.n+' items · Wrong: '+wrong.length);
+    if(!wrong.length){ L.push(''); L.push('No misses. Nothing to drill.'); return L.join('\n'); }
+    wrong.forEach(function(w){
+      var q=w.q,i=w.i,a=S.answers[i];
+      L.push('');
+      L.push('#'+(i+1)+' '+(q.t||'—')+(q.st?' · '+q.st:''));
+      L.push('Q: '+q.q);
+      L.push('Your answer: '+(a<0?'left blank':labs[a]+') '+q.o[a]));
+      L.push('Correct: '+labs[q.a]+') '+q.o[q.a]);
+      if(q.k)L.push('Key: '+q.k);
+      else if(q.w)L.push('Why: '+q.w);
+    });
+    return L.join('\n');
+  }
+
+  // Copy helper with a textarea fallback for when the clipboard API is blocked.
+  function copyText(text){
+    function done(){var c=document.getElementById('snapCopied');c.classList.add('on');setTimeout(function(){c.classList.remove('on');},1500);}
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){});}
+      else{var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);done();}
+    }catch(e){/* clipboard blocked; the snapshot text is visible in the box to copy by hand */}
+  }
+  document.getElementById('snapBtn').onclick=function(){copyText(document.getElementById('snapPre').textContent);};
+  document.getElementById('missBtn').onclick=function(){copyText(buildDetailedMisses());};
 
   document.getElementById('startBtn').onclick=startExam;
   document.getElementById('againBtn').onclick=function(){
