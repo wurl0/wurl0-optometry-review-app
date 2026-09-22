@@ -1333,18 +1333,6 @@
   },
   {
     "type": "mcq",
-    "stem": "The most common type of retinal detachment is:",
-    "options": [
-      "tractional",
-      "exudative",
-      "rhegmatogenous",
-      "serous"
-    ],
-    "correct": 2,
-    "explanation": "Rhegmatogenous detachment, from a retinal break that lets fluid under the retina, is the most common type. It presents with flashes, floaters, and a curtain."
-  },
-  {
-    "type": "mcq",
     "stem": "Ptosis with the eye resting down and out and a fixed dilated pupil indicates a palsy of:",
     "options": [
       "CN 3 (oculomotor)",
