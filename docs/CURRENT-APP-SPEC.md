@@ -30,12 +30,13 @@ Working rules:
 4. **Verify before relying on a load-bearing claim.** For anything that would cause harm if
    wrong (access control, SRS backfills, schema, deploy), confirm against code even if it's
    written here. This doc removes routine code-reading, not judgment on risky work.
-5. **Lisa writes to the doc, not to the live app.** Lisa keeps operational sections current
-   (users, support notes, runbook results) via the repo; the standing decision that Lisa has no
-   admin/login to the live app still holds (section 18). Claude owns the architecture sections.
-6. **One home.** This file (`docs/CURRENT-APP-SPEC.md` on `main`) is the only copy. Lisa reads
-   it through the work mirror; edits flow back through the repo so both agents see the same
-   version. Do not fork a second architecture doc.
+5. **Lisa proposes, Claude commits.** Lisa reads this doc through the work mirror and drafts
+   edits (operational sections, support notes, staleness flags) into the mirror or her brief;
+   Claude reviews and commits them to `main`. Lisa holds no repo credentials and no admin/login
+   to the live app (section 18). Claude owns the architecture sections and is the single writer
+   to git.
+6. **One home.** This file (`docs/CURRENT-APP-SPEC.md` on `main`) is the only copy. Do not fork
+   a second architecture doc; the mirror is a read view, not a parallel source.
 
 Changelog is at the bottom. Add a dated line whenever you edit a section.
 
@@ -446,8 +447,9 @@ Coordination model:
   the routine steps Claude hands off. Model upgrade under consideration.
 - Handoff stays a distilled brief from Claude to Lisa. Standing decision on record: Lisa does
   not get admin/login to the live app (an admin reset could wipe the review queue).
-- This document is the shared reference that makes the split work: see "How this document stays
-  current" at the top for how both agents read from and write back to it. Adopted 2026-09-22.
+- This document is the shared reference that makes the split work. Maintenance path (decided
+  2026-09-22): Lisa proposes edits through the mirror or her brief, Claude reviews and commits
+  to `main`. Single git writer, no repo creds for Lisa. See "How this document stays current".
 
 ---
 
