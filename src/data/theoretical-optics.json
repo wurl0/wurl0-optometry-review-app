@@ -493,15 +493,15 @@
   },
   {
     "type": "mcq",
-    "stem": "The cornea contributes approximately 2/3 of the eye's total refractive power.",
+    "stem": "Which of the following is NOT a factor influencing refractive status?",
     "options": [
       "Length of the eyeball",
       "Power of the cornea",
       "Colour of the iris",
-      "Depth of anterior chamber"
+      "Depth of the anterior chamber"
     ],
     "correct": 2,
-    "explanation": "The four factors that influence refractive status are: length of eyeball, power of cornea, power of lens, and depth of anterior chamber."
+    "explanation": "The main factors influencing refractive status are the length of the eyeball, the power of the cornea, the power of the crystalline lens, and the depth of the anterior chamber. Colour of the iris does not determine refractive status. The cornea contributes approximately two-thirds of the eye's total refractive power, about 43 D of the approximately 58.64 D total."
   },
   {
     "type": "mcq",
