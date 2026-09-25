@@ -1,0 +1,199 @@
+@4a65dada-p
+c: The definition pairs where parallel light focuses (posterior principal focus) with the retina, accommodation relaxed.
+m: Refractive status is a comparison: with focusing effort switched off, does the eye's optical system bring distant light to a point on the retina, in front of it, or behind it? That comparison names the eye emmetropic, myopic, or hyperopic.
+t: Refractive status (ametropia vs emmetropia)
+o: Chamber depth is only one factor that shifts the focus, not the definition. | Fits: it compares the focal point of the whole system to the retina at rest. | Corneal vs lens power is a component, not the relationship being defined. | Axial length is one factor; the status is the focus-to-retina relationship.
+l: Refractive status is always a relationship (focus vs retina), never a single component like length or power.
+x: If a choice names one part of the eye, it is a factor, not the definition. Pick the choice that relates focus to retina.
+
+@f6def6ee-20
+c: The cornea gives about 43 D of the eye's roughly 58.64 D total.
+m: Light bends most where the index jump is biggest. Air (1.000) to cornea (1.376) is a far bigger jump than aqueous to lens, so the front of the cornea does most of the focusing: 43 / 58.64 is about two-thirds.
+t: Corneal refractive power
+o: One-third is closer to the lens's share. | Half understates the cornea's dominance. | Fits: 43 D of 58.64 D is about two-thirds. | Three-quarters overstates it; the lens still adds about 19 D.
+l: Refractive power follows index difference: the air-cornea interface is the eye's strongest lens.
+x: Cornea 2/3, lens 1/3. Anchor it with 43 D cornea, 58.64 D total.
+
+@f48c3448-2r
+c: Gullstrand's complete unaccommodated eye totals 58.64 D.
+m: The eye's total power is not cornea plus lens added straight; the two are separated by the anterior chamber, so the combined system comes to 58.64 D rather than 43 + 19.
+t: Gullstrand's schematic eye, total power
+o: 43.05 D is the cornea alone in Gullstrand's eye. | 50.00 D sits at the top of the normal corneal range, not the whole eye. | Fits: 58.64 D is the complete unaccommodated eye. | 62.00 D does not match the schematic eye.
+l: Separated lenses combine to less than their simple sum; that is why 43 + 19 does not equal 58.64.
+x: Memorize the trio: cornea 43, lens 19.11, whole eye 58.64.
+
+@7125971a-1g
+c: Aqueous and vitreous share an index of 1.336, close to water.
+m: Aqueous is mostly water with a little salt and protein, so its index sits just above water's 1.333.
+t: Refractive index of aqueous humor
+o: Fits: 1.336, near water. | 1.376 is the cornea. | 1.386 is the lens cortex. | 1.406 is the lens nucleus, the highest.
+l: The eye's indices climb from watery media (1.336) to cornea (1.376) to lens cortex (1.386) to lens nucleus (1.406).
+x: Index questions share the same four numbers. Know the ladder and match each number to its tissue.
+
+@cf9307e0-19
+c: Cornea = 1.376 in the standard index ladder.
+m: The cornea is packed collagen, denser than watery aqueous, so light slows more in it and its index sits above the aqueous value.
+t: Refractive index of the cornea
+o: 1.336 is aqueous and vitreous. | Fits: 1.376 is the cornea. | 1.386 is the lens cortex. | 1.406 is the lens nucleus.
+l: Denser, more protein-rich tissue has a higher index: fluids 1.336, cornea 1.376, lens up to 1.406.
+x: Cornea ends in 76, lens nucleus ends in 06. Do not swap them.
+
+@3918a067-22
+c: The unaccommodated crystalline lens in Gullstrand's eye is 19.11 D.
+m: The lens sits in fluid of similar index, so its surfaces bend light far less than the cornea does. At rest it adds about 19 D; accommodation raises this by rounding the lens.
+t: Crystalline lens power (Gullstrand, unaccommodated)
+o: 15.00 D understates the resting lens. | Fits: 19.11 D is the unaccommodated lens. | 21.00 D is too high for the relaxed lens. | 24.00 D is closer to an accommodated value.
+l: The lens is weaker than the cornea because it sits between fluids with a small index difference.
+x: Unaccommodated lens 19.11 D. If the stem says accommodated, expect a higher number.
+
+@f5907dd8-1q
+c: The primary (first) nodal point sits 7.08 mm behind the corneal apex.
+m: Nodal points are the pair of points where a ray entering toward the first leaves from the second at the same angle. In the eye they sit near the back of the lens, 7.08 mm and 7.33 mm from the cornea.
+t: Nodal points of Gullstrand's schematic eye
+o: 3.6 mm is the depth to the front lens surface. | Fits: 7.08 mm is the primary nodal point. | 7.33 mm is the secondary nodal point. | 15.70 mm is the anterior focal point distance.
+l: Cardinal points come in pairs: principal points near the cornea (about 1.35 and 1.60 mm), nodal points near the lens back (7.08 and 7.33 mm).
+x: Primary always comes first and is the smaller number of each pair.
+
+@e319148c-1r
+c: The primary (anterior) focal point lies 15.70 mm in front of the corneal apex.
+m: Light starting from the anterior focal point leaves the eye parallel. For the 58.64 D eye that point sits about 15.7 mm in front of the cornea.
+t: Anterior focal point (primary focal length from the cornea)
+o: 7.08 mm is the primary nodal point. | Fits: 15.70 mm to the anterior focal point. | 24.38 mm is the corneal apex to the secondary focal point. | 31.00 mm matches no cardinal point.
+l: Front focal distances are shorter than back ones because the back of the eye is filled with a medium of index 1.336, not air.
+x: Front 15.70, back 24.38. The back one is basically axial length.
+
+@b3b82093-1s
+c: The secondary focal point sits 24.38 mm behind the corneal apex, which is where the retina must be for emmetropia.
+m: Parallel light entering the relaxed eye comes to focus 24.38 mm behind the cornea. An eye this long is emmetropic; shorter is hyperopic, longer is myopic.
+t: Secondary focal point of the schematic eye
+o: 15.70 mm is the anterior focal distance. | 20.00 mm is too short, a hyperopic eye length. | Fits: 24.38 mm, about the axial length of the emmetropic eye. | 30.00 mm is a highly myopic eye length.
+l: Axial length and secondary focal distance match in emmetropia; any mismatch is axial ametropia.
+x: 24.38 mm is the number to tie to the retina. Longer eye = myopia.
+
+@99d5b1b4-1n
+c: Gullstrand's schematic cornea is 0.5 mm thick.
+m: The cornea is a thin shell, about half a millimeter, which is why its two surfaces can be treated almost as one lens.
+t: Corneal thickness (schematic eye)
+o: Fits: 0.5 mm. | 1.0 mm is about scleral thickness at the optic nerve. | 1.5 mm is too thick for any cornea. | 2.0 mm is far beyond normal.
+l: A thin cornea lets optics texts reduce it to a single refracting surface with little error.
+x: Cornea 0.5 mm, anterior chamber 3.6 mm to the lens.
+
+@fd64c390-1w
+c: The front lens surface sits 3.6 mm behind the corneal apex.
+m: This distance is the corneal thickness plus the anterior chamber depth, about 0.5 + 3.1 mm, measured along the axis.
+t: Anterior chamber depth (schematic eye)
+o: 0.5 mm is corneal thickness. | Fits: 3.6 mm to the front lens surface. | 7.2 mm is near the back lens surface. | 10.0 mm matches no landmark.
+l: Schematic distances add up: cornea 0.5, lens front 3.6, lens back 7.2, retina about 24.
+x: Build the eye along one line from the cornea and each distance becomes easy to place.
+
+@ba46fac6-1t
+c: Myopia = too much power for the eye's length, so parallel rays focus in front of the retina.
+m: Either the eye is too long or its optics too strong. Distant light converges before it reaches the retina and spreads into a blur circle by the time it lands.
+t: Myopia (focus anterior to the retina)
+o: Focus on the retina is emmetropia. | Behind the retina is hyperopia. | Fits: in front of the retina. | Light never focuses at the cornea; that is where refraction starts.
+l: Too strong or too long = focus in front; too weak or too short = focus behind.
+x: Myopia is corrected with minus lenses because you must push the focus back onto the retina.
+
+@6f1b09ae-1w
+c: Hyperopia = too little power for the eye's length, so parallel rays focus behind the retina.
+m: The eye is too short or its optics too weak, so distant light has not yet come to a point when it meets the retina. Accommodation can add power to pull the focus forward.
+t: Hyperopia (focus posterior to the retina)
+o: On the retina is emmetropia. | Fits: behind the retina. | In front of the retina is myopia. | Focus never lands at the lens.
+l: Hyperopes can often see distance clearly by accommodating; myopes cannot relax their way to clear distance.
+x: Plus lenses correct hyperopia because they add the missing converging power.
+
+@048f6333-1m
+c: Low myopia runs from 0.25 D to 3.00 D.
+m: The grading is by lens power needed: small corrections up to 3 D are low, then medium, then high.
+t: Myopia classification by degree
+o: Fits: low, up to 3.00 D. | Medium starts above 3.00 D. | High is above about 6.00 D. | Extreme is not part of this classification.
+l: Degree classes are cutoffs on the correcting power, so memorize the boundaries, not descriptions.
+x: Myopia: low to 3, medium to 6, high beyond.
+
+@0105da21-1p
+c: Hyperopia of 5.00 D and above is high.
+m: Hyperopic grades use lower cutoffs than myopia because even moderate hyperopia forces constant accommodation.
+t: Hyperopia classification by degree
+o: Low covers the small corrections, up to about 2.00 D. | Medium sits between low and 5.00 D. | Fits: high, 5.00 D and above. | Severe is not one of the standard classes.
+l: Hyperopia cutoffs are lower than myopia's; do not reuse the myopia numbers.
+x: Hyperopia high starts at 5. Myopia high starts at 6. Keep them apart.
+
+@048c8e5b-1n
+c: Absolute hyperopia is the part accommodation cannot overcome.
+m: A hyperope can add power by accommodating, but only up to their amplitude. Whatever is left beyond that stays uncorrected and blurs vision; that leftover is absolute hyperopia.
+t: Absolute hyperopia
+o: Fits: absolute, the part beyond accommodation's reach. | Facultative is the part accommodation can overcome. | Latent is hidden by ciliary tone, revealed only with cycloplegia. | Manifest is absolute plus facultative combined.
+l: Hyperopia splits by what hides or corrects it: latent (tone hides it), facultative (effort fixes it), absolute (nothing fixes it without lenses).
+x: Absolute = "absolutely needs glasses." Facultative = "the faculty to fix it."
+
+@e5473eb4-1s
+c: Latent hyperopia is hidden by ciliary tone and needs cycloplegia to show.
+m: The ciliary muscle never fully relaxes on its own, so part of the hyperopia is masked by constant tone. Paralyzing the muscle with a cycloplegic drop removes that tone and reveals the hidden part.
+t: Latent hyperopia
+o: Absolute shows up without drops; it is the uncorrectable part. | Facultative shows on manifest refraction with plus lenses. | Fits: latent, revealed by cycloplegic refraction. | Manifest is what shows without drops.
+l: Manifest = found without drops; latent = only found with drops. Total = both.
+x: "Requires cycloplegia" in the stem points straight to latent.
+
+@ec940f28-1j
+c: Manifest plus latent equals total hyperopia.
+m: Total hyperopia is the full refractive error once all ciliary tone is removed, so it counts both what shows on a dry refraction and what was hidden.
+t: Total hyperopia
+o: Absolute is only the uncorrectable part of manifest. | Fits: total = manifest + latent. | Facultative is the accommodation-correctable part of manifest. | Complete hyperopia is not a standard term.
+l: Build the tree: total splits into latent and manifest; manifest splits into facultative and absolute.
+x: If a choice is not in the tree (total, latent, manifest, facultative, absolute), eliminate it.
+
+@c111c371-1v
+c: Hofstetter's minimum amplitude = 15 - 0.25 x age.
+m: Focusing range shrinks steadily as the lens stiffens with age. Hofstetter fitted three lines to that decline; the minimum line is the lowest amplitude still counted as normal.
+t: Hofstetter's formulas (minimum)
+o: Fits: 15 - 0.25(age). | 18.5 - 0.30(age) is the average. | 25 - 0.40(age) is the maximum. | 20 - 0.30(age) is not a Hofstetter formula.
+l: The three formulas step up together: 15/0.25, 18.5/0.30, 25/0.40.
+x: Minimum starts at 15. Below that for a patient's age, suspect accommodative insufficiency.
+
+@5297a428-1v
+c: Hofstetter's average amplitude = 18.5 - 0.30 x age.
+m: The average line sits between the minimum and maximum curves and predicts a typical amplitude for a given age.
+t: Hofstetter's formulas (average)
+o: 15 - 0.25(age) is the minimum. | Fits: 18.5 - 0.30(age). | 25 - 0.40(age) is the maximum. | 20 - 0.35(age) is not a Hofstetter formula.
+l: The middle formula has the middle numbers: 18.5 and 0.30.
+x: Check both constants. Distractors often keep one right and change the other.
+
+@bf4349cb-1v
+c: Hofstetter's maximum amplitude = 25 - 0.40 x age.
+m: The maximum line is the highest amplitude expected at a given age; it starts highest and drops fastest.
+t: Hofstetter's formulas (maximum)
+o: 15 - 0.25(age) is the minimum. | 18.5 - 0.30(age) is the average. | Fits: 25 - 0.40(age). | 30 - 0.50(age) is not a Hofstetter formula.
+l: Higher starting value goes with a steeper slope: 25 pairs with 0.40.
+x: Minimum, average, maximum = 15, 18.5, 25. Say it once and it sticks.
+
+@78885806-1v
+c: Presbyopia usually becomes clinically apparent around 45.
+m: Amplitude falls steadily from childhood, but near work stays comfortable until the remaining amplitude can no longer cover about 2.5 D of reading demand with reserve. That point usually arrives in the mid-40s.
+t: Onset of presbyopia
+o: At 35, amplitude still comfortably covers reading. | 40 is the early edge of the range, not the typical age. | Fits: about 45. | By 50 most people are already symptomatic.
+l: Presbyopia is not a sudden event; it is when a steady decline crosses the near demand.
+x: If the choices include both 40 and 45, the typical age is 45; 40 to 50 is the range.
+
+@ff516483-20
+c: Scheiner's disc (two pinholes, 1619) proved accommodation exists.
+m: Looking through two pinholes, an object not in focus appears doubled. Scheiner showed the eye can change its focus to make a near or far object single, which proved accommodation.
+t: Scheiner's experiment (1619)
+o: Young later showed the lens changes shape during accommodation. | Fits: Christopher Scheiner. | Airy is known for correcting astigmatism. | Kepler explained image formation and defined myopia.
+l: Scheiner proved accommodation exists; Young showed where it happens (the lens).
+x: Pinhole disc = Scheiner. Same name as the Scheiner principle behind optometers.
+
+@2137cb81-1p
+c: George Biddle Airy first corrected astigmatism with a cylindrical-type lens.
+m: Airy noticed his own eye focused differently in two meridians and had a lens made with extra power in one meridian, the first astigmatic correction.
+t: History of astigmatism correction
+o: Young described astigmatism in his own eye but did not correct it with lenses. | Scheiner is linked to accommodation. | Fits: Airy. | John Green is not linked to this first correction.
+l: Young described astigmatism first; Airy corrected it first.
+x: Describe vs correct is the classic trap between Young and Airy.
+
+@43f98710-15
+c: Kepler defined myopia in 1611.
+m: Kepler worked out that the eye forms an image on the retina and explained that in myopia distant light focuses in front of it.
+t: History of myopia
+o: Aristotle described near-sighted people but did not give the optical definition. | Fits: Johannes Kepler, 1611. | Donders classified refractive errors in the 1860s. | Young is linked to astigmatism and accommodation.
+l: Kepler founded modern ocular optics: retinal image and the definition of myopia.
+x: 1611 = Kepler. Donders = 1864 classification.
