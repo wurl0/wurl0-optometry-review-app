@@ -30,6 +30,7 @@ const SOURCE_LABEL: Record<string, string> = {
   'preboards-set3': 'Preboards Set 3',
   'preboards-set4': 'Preboards Set 4',
   'preboards-set5': 'Preboards Set 5',
+  'preboards-set6': 'Preboards Set 6',
   'mock': 'Mock board',
 }
 

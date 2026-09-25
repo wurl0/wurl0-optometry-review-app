@@ -12,6 +12,7 @@
     else if (/Preboards-Set3/i.test(file)) source = 'preboards-set3';
     else if (/Preboards-Set4/i.test(file)) source = 'preboards-set4';
     else if (/Preboards-Set5/i.test(file)) source = 'preboards-set5';
+    else if (/Preboards-Set6/i.test(file)) source = 'preboards-set6';
     else if (/Mock-Board/i.test(file)) source = 'mock';
     else if (/CBLE-Simulator/i.test(file)) source = 'mock';
     const m = file.match(/^([A-H])-/); // "D-Subject-Exam.html" -> "D"
