@@ -1,0 +1,200 @@
+@e658bd44-s
+c: Constant accommodation drags the pupil smaller, so a hyperope tends to show a constricted pupil.
+m: Accommodation, convergence, and pupil constriction are linked in the near triad. A hyperope accommodates all the time, so the pupil stays relatively small.
+t: Near triad (accommodative miosis)
+o: A dilated pupil points the other way, more typical of myopes. | Fits: constricted pupil. | A normal pupil is not a sign. | An irregular pupil suggests trauma or iritis, not refraction.
+l: Whatever makes the eye accommodate also constricts the pupil.
+x: Hyperope = small pupil; myope = larger pupil.
+
+@4c5cc997-1k
+c: Donders gave the definitive description and classification of myopia in the 1860s.
+m: Donders' work on accommodation and refraction set up the modern framework for ametropia, including myopia's classification.
+t: History of myopia
+o: Aristotle described near-sighted people long before any optical theory. | Kepler defined myopia optically in 1611. | Fits: Donders. | Scheiner is linked to accommodation.
+l: Kepler defined myopia; Donders classified it.
+x: Define = Kepler (1611). Classify = Donders (1860s).
+
+@99e3d5de-z
+c: Helmholtz used the term "hyperopia" in 1859.
+m: As refractive errors were described, different authors coined names: Kastner first described the condition, Donders used "hypermetropia", Helmholtz "hyperopia".
+t: History of hyperopia
+o: Kastner first described hyperopia in 1855. | Donders is linked to "hypermetropia" and its classification. | Fits: Helmholtz. | Kepler is linked to myopia.
+l: For hyperopia: Kastner described it, Donders corroborated it, Helmholtz named it hyperopia.
+x: Match the verb in the stem (described, corroborated, named) to the person.
+
+@bc00bfcf-r
+c: Oblique astigmatism has its greatest power between 30 and 60 or 120 and 150 degrees.
+m: When neither principal meridian sits near horizontal or vertical, the astigmatism is oblique.
+t: Oblique astigmatism
+o: 0 to 30 degrees is against-the-rule territory. | 60 to 120 degrees is with-the-rule. | Fits: 30 to 60 or 120 to 150. | Regular astigmatism always has specific meridians.
+l: Split the clock into thirds: near 90 WTR, near 180 ATR, the diagonals oblique.
+x: Oblique = the diagonal zones.
+
+@75ee0825-1u
+c: Compound hyperopic WTR on the retina gives a horizontal oval blur.
+m: Both focal lines fall behind the retina. The vertical meridian is stronger, so its rays have converged more by the time they hit the retina and spread less vertically. Less vertical spread and more horizontal spread makes a horizontal oval.
+t: Blur ellipse in astigmatism
+o: A vertical oval is the compound myopic WTR case. | Fits: horizontal oval. | A circle would need equal meridians. | A vertical line needs the retina at a focal line.
+l: Hyperopic: the stronger meridian gives the shorter axis. Myopic: the stronger meridian gives the longer axis.
+x: Work it out by asking which meridian's rays are closer to focus at the retina.
+
+@b7a27963-1r
+c: Compound myopic WTR on the retina gives a vertical oval blur.
+m: Both focal lines are in front of the retina. The stronger vertical meridian focused earliest, so its rays have spread the most by the retina, making the blur tall.
+t: Blur ellipse in astigmatism
+o: Fits: vertical oval. | A horizontal oval is the compound hyperopic WTR case. | A circle needs equal meridians. | A horizontal line needs the retina at a focal line.
+l: In front of the retina, the meridian that focused first spreads the most.
+x: Myopic and hyperopic WTR give opposite ovals. Remember one, flip for the other.
+
+@323d5fbc-1o
+c: Both meridians hyperopic, so both need plus: plus sphere with plus cylinder.
+m: Plus sphere fixes the weaker error in both meridians; plus cylinder adds the extra power the weaker meridian still lacks.
+t: Correcting compound hyperopic astigmatism
+o: Fits: plus sphere with plus cylinder. | Minus with minus corrects compound myopic. | Plus sphere with minus cylinder can be the same lens written in minus-cylinder form (for example +2.00 +1.00 x 90 = +3.00 -1.00 x 180). | Minus sphere with plus cylinder is mixed or transposed myopic.
+s: verify | Ambiguous key: plus sphere with minus cylinder is the minus-cylinder transposition of the keyed answer and also corrects compound hyperopic astigmatism. Reword the stem to ask for the plus-cylinder form, or replace that distractor.
+l: Same-sign sphere and cylinder = compound; opposite signs = mixed (or a transposed form).
+x: Compound hyperopic, both plus. Compound myopic, both minus.
+
+@10c8b104-1l
+c: Both meridians myopic, so both need minus: minus sphere with minus cylinder.
+m: Minus sphere removes the smaller myopic error in both meridians; minus cylinder removes the extra in the stronger meridian.
+t: Correcting compound myopic astigmatism
+o: Plus with plus corrects compound hyperopic. | Fits: minus sphere with minus cylinder. | Plus sphere with minus cylinder suggests mixed astigmatism. | A plus cylinder alone corrects simple hyperopic.
+l: Match the sign of each lens part to the error it corrects.
+x: Compound means both lens parts share one sign.
+
+@432cc4cb-1m
+c: One meridian already on the retina, the other behind: a plus cylinder alone.
+m: No sphere is needed because one meridian is already focused. A plus cylinder adds power only to the weak meridian.
+t: Correcting simple hyperopic astigmatism
+o: Fits: simple plus cylinder. | A minus cylinder alone corrects simple myopic. | Plus sphere with plus cylinder is for compound hyperopic. | A minus sphere worsens hyperopia.
+l: "Simple" means plano sphere; the whole correction lives in the cylinder.
+x: Simple = cylinder only. Its sign follows the off meridian.
+
+@2b94da21-1j
+c: One meridian on the retina, the other in front: a minus cylinder alone.
+m: The focused meridian needs nothing. A minus cylinder takes power out of only the too-strong meridian.
+t: Correcting simple myopic astigmatism
+o: A plus cylinder alone corrects simple hyperopic. | Fits: simple minus cylinder. | Minus sphere with minus cylinder is for compound myopic. | A plus sphere worsens myopia.
+l: Simple astigmatism needs no sphere.
+x: Off meridian in front = too strong = minus.
+
+@03c6180a-13
+c: Presbyopia comes from sclerosis (stiffening) of the lens fibres and capsule.
+m: The lens keeps adding fibres for life and the older ones harden. A stiff lens cannot round up even when the ciliary muscle contracts, so near focus is lost.
+t: Lenticular sclerosis
+o: The cornea does not drive accommodation. | Fits: sclerosis of lens fibres and capsule. | Retinal degeneration affects vision, not focusing range. | Vitreous liquefaction causes floaters, not presbyopia.
+l: Presbyopia is a lens problem (lenticular), not a muscle problem; the ciliary muscle still contracts.
+x: Accommodation happens in the lens, so its loss starts there.
+
+@73750749-26
+c: Symptoms appear when amplitude drops below about 5.00 D.
+m: Reading at 40 cm needs 2.5 D, and people read comfortably only while half their amplitude stays in reserve. That needs about 5 D, so below it near work becomes a strain.
+t: Accommodative reserve
+o: 10.00 D still leaves plenty of reserve. | 7.00 D still covers reading comfortably. | Fits: below 5.00 D. | By 3.00 D symptoms are well established, not starting.
+l: Comfort rule: use no more than half the amplitude for sustained near work.
+x: 40 cm = 2.5 D; double it for reserve = 5 D.
+
+@cb8165e4-r
+c: Absolute presbyopia means accommodation is practically gone.
+m: After years of decline the lens barely changes shape, so near vision depends entirely on the reading add.
+t: Absolute presbyopia
+o: Early presbyopia is incipient. | Some remaining accommodation is functional presbyopia. | Fits: practically no accommodation. | Temporary loss is a different problem.
+l: Stages: incipient (early), functional (symptomatic), absolute (none left).
+x: Absolute = nothing left, same as absolute hyperopia means nothing can fix it.
+
+@d54d3f42-s
+c: Incipient presbyopia is the earliest stage, reading small print only with effort.
+m: The amplitude has just started to fall short of comfortable near demand, so fine print needs strain but still works.
+t: Incipient presbyopia
+o: Terminal is the absolute stage. | Fits: early stage. | Complete presbyopia is absolute. | Severe is not a standard stage.
+l: Incipient = just beginning, usually managed without an add or with a small one.
+x: "Incipient" means beginning in any clinical context.
+
+@03740176-s
+c: Premature presbyopia starts before age 40.
+m: Something speeds up near-focus loss (uncorrected hyperopia, illness, medications), so symptoms arrive earlier than the usual mid-40s.
+t: Premature presbyopia
+o: After 50 is late, not premature. | Fits: before 40. | 45 is the typical age. | After 60 is far past onset.
+l: Early presbyopia calls for a look at causes such as uncorrected hyperopia or systemic drugs.
+x: Premature = before the expected age, and the cutoff is 40.
+
+@c0ee64cf-s
+c: Nocturnal presbyopia is reduced accommodation in dim light.
+m: In dim light the pupil dilates and depth of focus shrinks, and the accommodative response itself weakens, so near work fails first in poor light.
+t: Nocturnal presbyopia
+o: Daylight is when it is least noticeable. | Bright light helps near vision by shrinking the pupil. | Fits: reduced illumination. | Near work alone does not define this type.
+l: Light level changes effective near vision through pupil size and depth of focus.
+x: Nocturnal = night = dim light.
+
+@ddd64cfb-22
+c: Medium myopia = 3.00 to 6.00 D.
+m: The grade follows the correcting power: low to 3 D, medium to 6 D, high beyond.
+t: Myopia classification by degree
+o: 0.25 to 3.00 D is low. | Fits: 3.00 to 6.00 D. | 6.00 to 9.00 D is high. | Above 10.00 D is high, not medium.
+l: Two numbers carry the whole scale: 3 and 6.
+x: Same fact appears worded as a range or as a class name. Answer both ways.
+
+@908814b6-2x
+c: Too long with normal power = axial myopia.
+m: The optics are normal but the retina sits too far back, so the focus lands in front of it. About 1 mm of extra length adds about 3 D of myopia.
+t: Axial myopia
+o: Refractive myopia has normal length and too much power. | Fits: axial. | Curvature myopia comes from steeper surfaces. | Index myopia comes from a higher lens index.
+l: Axial = length problem; refractive (curvature, index) = power problem.
+x: The stem gives you which part is abnormal. Name the myopia after it.
+
+@f7e8d9ec-2o
+c: A higher lens index from nuclear sclerosis = index myopia.
+m: As the nucleus hardens its refractive index rises, so the lens bends light more and the eye becomes more myopic without any change in length or curvature.
+t: Index myopia
+o: Axial needs a longer eye. | Curvature needs steeper surfaces. | Fits: index myopia. | Nocturnal myopia is a dim-light effect.
+l: Nuclear cataract can cause "second sight": older presbyopes suddenly read without glasses.
+x: Cataract in the stem plus a myopic shift = index myopia.
+
+@7f64a6ca-28
+c: Degenerative myopia is progressive, over 6 D, with fundus damage.
+m: The eye keeps elongating, stretching and thinning the retina and choroid. Breaks in Bruch's membrane (lacquer cracks), a pigmented macular scar (Fuchs spot), and staphyloma follow.
+t: Pathologic (degenerative) myopia
+o: Low myopia that stabilizes is simple myopia. | Fits: progressive, over 6 D, fundus changes. | Dim-light myopia is nocturnal. | Ciliary spasm gives pseudomyopia.
+l: Simple myopia is a focusing error; pathologic myopia is a disease of the stretched eye.
+x: Lacquer cracks or a Fuchs spot in the stem means pathologic myopia.
+
+@fd9387cb-1u
+c: Regular astigmatism has two principal meridians at 90 degrees to each other.
+m: The cornea is shaped like a rugby ball: one steepest and one flattest direction at right angles, each with even curvature, so a cylinder lens can correct it.
+t: Regular astigmatism
+o: Fits: perpendicular. | Parallel meridians are not possible for a principal pair. | Irregular curvature defines irregular astigmatism. | Identical power means no astigmatism.
+l: Regular = perpendicular and correctable with glasses; irregular = not perpendicular, needs a rigid lens.
+x: Correctable by spectacles is the practical test of regular astigmatism.
+
+@3c91fa00-2k
+c: Irregular astigmatism needs a rigid gas permeable lens.
+m: The corneal surface is warped unevenly, so no spectacle lens can match it. A rigid lens creates a smooth new front surface and the tear layer beneath fills in the irregularities.
+t: Correcting irregular astigmatism
+o: A sphere cannot correct any astigmatism. | Fits: rigid gas permeable lens. | A cylinder corrects only regular astigmatism. | A prism shifts images; it does not fix blur.
+l: The tear lens under an RGP neutralizes most corneal irregularity.
+x: Keratoconus or post-surgical cornea in the stem = RGP.
+
+@17393ec9-2m
+c: Accommodation driven by retinal blur = reflex accommodation, the main clinical type.
+m: The brain senses blur and automatically adjusts lens power to sharpen the image. This feedback loop does most of the work in everyday focusing.
+t: Reflex accommodation
+o: Proximal is driven by knowing the object is near. | Tonic is the resting ciliary tone. | Fits: reflex, driven by blur. | Vergence accommodation is driven by convergence.
+l: Four types by stimulus: blur (reflex), nearness (proximal), convergence (vergence), rest (tonic).
+x: The stimulus named in the stem picks the type.
+
+@79638cab-u
+c: Aniseikonia is a difference in image size between the eyes.
+m: If the two retinal images differ in size, the brain struggles to fuse them. It often follows anisometropia, about 1% size difference per diopter.
+t: Aniseikonia
+o: A difference in refractive error is anisometropia. | Fits: difference in retinal image size. | Unequal pupils is anisocoria. | Unequal accommodation is not this term.
+l: Anisometropia is the cause (power); aniseikonia is the effect (size).
+x: "Eikon" = image. Aniseikonia is about image, anisometropia about measure.
+
+@bf962cbb-27
+c: Emmetropia: the relaxed eye focuses parallel light exactly on the retina.
+m: Power and length match, so no focusing effort is needed to see distance clearly.
+t: Emmetropia
+o: In front of the retina is myopia. | Fits: on the retina, accommodation relaxed. | Behind the retina is hyperopia. | Needing accommodation to reach the retina is hyperopia.
+l: Every refractive definition includes "accommodation relaxed". Drop it and a hyperope could pass as emmetropic.
+x: Watch for "while accommodating"; it turns emmetropia into hyperopia.

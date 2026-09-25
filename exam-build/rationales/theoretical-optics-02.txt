@@ -1,0 +1,201 @@
+@a4ade236-1x
+c: With-the-rule means the vertical meridian is steepest, as the lids normally make it.
+m: Lid pressure presses on the top and bottom of the cornea, steepening it vertically. The steeper vertical meridian carries the most power, within about 60 to 120 degrees.
+t: With-the-rule astigmatism
+o: Greatest power horizontal is against-the-rule. | Fits: greatest power near the vertical. | 45 degrees is oblique. | 135 degrees is also oblique.
+l: WTR = vertical steepest (young eyes); ATR = horizontal steepest (older eyes).
+x: Minus-cylinder axis for WTR sits near 180, which is 90 degrees from the steep vertical meridian. Do not confuse axis with power meridian.
+
+@e9e7aea1-20
+c: Against-the-rule means the horizontal meridian is steepest.
+m: With age, lid tension relaxes and the cornea shifts so the horizontal meridian becomes the steeper one, within 0 to 30 or 150 to 180 degrees.
+t: Against-the-rule astigmatism
+o: Fits: greatest power near the horizontal. | Vertical greatest power is with-the-rule. | 45 degrees alone is oblique. | Oblique covers 30 to 60 and 120 to 150.
+l: Astigmatism drifts from WTR in youth toward ATR with age.
+x: Against the rule = against what the lids do, so the horizontal wins.
+
+@11e491f6-28
+c: Both meridians behind the retina = compound hyperopic.
+m: Both principal meridians are too weak for the eye's length, so both focal lines fall behind the retina, by different amounts.
+t: Compound hyperopic astigmatism
+o: Simple myopic has one on the retina, one in front. | Compound myopic has both in front. | Simple hyperopic has one on the retina, one behind. | Fits: both behind.
+l: Simple = one meridian on the retina; compound = both off to the same side; mixed = one each side.
+x: Read "both" and "behind" and you have compound hyperopic.
+
+@7a11a019-2f
+c: One meridian on the retina, the other in front = simple myopic.
+m: One meridian is exactly right for the eye's length; the other is too strong and focuses early, in front of the retina.
+t: Simple myopic astigmatism
+o: Fits: simple myopic. | Compound myopic has both in front. | Mixed has one in front and one behind. | Simple hyperopic has the off meridian behind.
+l: "Simple" always means one meridian already sits on the retina.
+x: Correct it with a minus cylinder alone.
+
+@5a1bd655-24
+c: One meridian in front, one behind = mixed astigmatism.
+m: One meridian is too strong and focuses in front of the retina, the other too weak and focuses behind, so the retina sits between the two focal lines.
+t: Mixed astigmatism
+o: Simple myopic has one on the retina. | Compound myopic has both in front. | Fits: mixed. | Compound hyperopic has both behind.
+l: In mixed astigmatism the circle of least confusion can sit near the retina, so vision may be better than the cylinder suggests.
+x: Mixed shows up as a sphere and cylinder of opposite signs.
+
+@f8b6b7c2-39
+c: Grosvenor sets anisometropia at a difference of 1.00 D or more.
+m: Small differences between eyes are common and harmless; about 1 D is where image size and focus differences start to matter for binocular vision.
+t: Anisometropia (Grosvenor criterion)
+o: 0.25 D is within normal variation. | 0.50 D is still too small by this criterion. | Fits: 1.00 D. | 2.00 D overshoots the definition.
+l: Around 1 D of anisometropia gives about 1% image size difference, where symptoms can begin.
+x: Named authority in the stem means use that author's cutoff, not a general guess.
+
+@26062e1a-1x
+c: One eye myopic, the other hyperopic = antimetropia.
+m: The two eyes err in opposite directions, so a single spectacle sphere cannot suit both; each needs a lens of opposite sign.
+t: Antimetropia
+o: Isometropia means equal refraction in both eyes. | Isoanisometropia is not the opposite-sign term. | Fits: antimetropia, "anti" for opposite signs. | Aniso-oxyopia is a difference in acuity, not in sign.
+l: Anisometropia is any difference; antimetropia is the special case of opposite signs.
+x: "Anti" = opposite. Read the prefix.
+
+@8c49d7cb-21
+c: Changing the lens's focal length = accommodation.
+m: The ciliary muscle contracts, the zonules slacken, and the elastic lens rounds up, adding power to focus near objects.
+t: Accommodation
+o: Refraction is light bending at any surface, not the lens changing. | Fits: accommodation. | Convergence is the eyes turning inward. | Adaptation is a sensitivity change to light level.
+l: Accommodation changes power; convergence changes eye position. They are linked but different.
+x: "Varies its focal length" is the lens changing power, so accommodation.
+
+@12973a53-16
+c: Static refraction = refractive status with accommodation relaxed.
+m: "Static" means the focusing system is at rest, so the measurement shows the eye's baseline error without any accommodative effort mixed in.
+t: Static refraction
+o: Dynamic accommodation is the opposite, the eye actively focusing. | Fits: accommodation relaxed. | Near testing involves accommodation. | Convergence is an eye-movement measure.
+l: Static = at rest (distance, relaxed); dynamic = focusing in action (near, e.g. dynamic retinoscopy).
+x: Match static with relaxed and dynamic with accommodating.
+
+@c388f597-2j
+c: Minimum amplitude = 15 - 0.25 x 20 = 10.00 D.
+m: Plug the age into Hofstetter's minimum line: 0.25 x 20 is 5, and 15 - 5 is 10.
+t: Hofstetter minimum amplitude
+o: 8.00 D does not come from any Hofstetter line at 20. | Fits: 10.00 D. | 12.50 D is the average for age 20. | 17.00 D is the maximum for age 20.
+l: At one age the three lines give three answers: minimum 10, average 12.5, maximum 17 at age 20.
+x: The distractors are usually the other two formulas at the same age. Check which one the stem names.
+
+@6f7d737c-2j
+c: Average amplitude = 18.5 - 0.30 x 20 = 12.50 D.
+m: 0.30 x 20 is 6, and 18.5 - 6 is 12.5.
+t: Hofstetter average amplitude
+o: 10.00 D is the minimum for age 20. | Fits: 12.50 D. | 15.00 D does not match any line at 20. | 17.00 D is the maximum for age 20.
+l: Same age, three formulas: pick the one the stem asks for.
+x: Do the multiplication first; most errors come from mixing 0.25 and 0.30.
+
+@0161a26e-21
+c: Presbyopia is the age-related diminution of accommodative amplitude.
+m: The lens stiffens and grows with age, so it can round up less when the ciliary muscle contracts, and near focus fades.
+t: Presbyopia
+o: Amplitude does not increase with age. | It clearly changes with age. | Fits: diminution with age. | The decline is steady, not fluctuating.
+l: Presbyopia is a loss of range, not a refractive error; distance vision can be perfect.
+x: Any choice suggesting improvement or no change with age is out.
+
+@ab2c82d5-1w
+k: not
+c: Iris colour has no optical role in where light focuses.
+m: Refractive status depends on how strongly the eye bends light and how long it is. Axial length, corneal power, lens power, and chamber depth all change that; iris pigment does not.
+t: Components of refraction
+o: Axial length is a major factor. | Corneal power is the largest single factor. | Fits: iris colour does not affect focus. | Chamber depth shifts the lens and changes total power.
+l: Refraction = power vs length. Anything that changes neither is not a refractive factor.
+x: NOT questions: eliminate the three that change power or length.
+
+@42e00321-1e
+c: Lens cortex = 1.386 in the index ladder.
+m: The outer lens fibres are less densely packed than the nucleus, so the cortex index sits below the nucleus (1.406) and above the cornea (1.376).
+t: Refractive index of the lens cortex
+o: 1.336 is aqueous and vitreous. | 1.376 is the cornea. | Fits: 1.386, lens cortex. | 1.406 is the lens nucleus.
+l: The lens has a gradient index, rising from cortex to nucleus.
+x: Cortex 86, nucleus 06. Outer is lower.
+
+@6685eb76-1n
+c: Back corneal surface radius = 6.8 mm.
+m: The back of the cornea is more steeply curved than the front, which makes the cornea slightly thicker at its edge than its center.
+t: Corneal radii (schematic eye)
+o: 6.0 mm is the back lens surface. | Fits: 6.8 mm. | 7.7 mm is the front cornea. | 10.0 mm is the front lens surface.
+l: Front surfaces have larger radii than back surfaces for both cornea (7.7 vs 6.8) and lens (10.0 vs 6.0).
+x: The same four radii rotate through these items. Pair each with its surface once.
+
+@608e9dac-1l
+c: Front lens surface radius = 10.0 mm, the flattest surface in the eye.
+m: The front of the lens is gently curved and the back strongly curved, so the lens is asymmetric, flatter in front.
+t: Crystalline lens radii (schematic eye)
+o: 6.0 mm is the back lens surface. | 6.8 mm is the back cornea. | 7.7 mm is the front cornea. | Fits: 10.0 mm.
+l: Largest radius = flattest surface; the front lens is the flattest of the four.
+x: 10 for the lens front, 6 for the lens back.
+
+@6d859960-1k
+c: Back lens surface radius = 6.0 mm, the steepest surface.
+m: The back of the lens bulges strongly, giving it the smallest radius of the four schematic surfaces.
+t: Crystalline lens radii (schematic eye)
+o: Fits: 6.0 mm. | 6.8 mm is the back cornea. | 7.7 mm is the front cornea. | 10.0 mm is the front lens surface.
+l: Smallest radius = steepest surface; the back lens is the steepest.
+x: Front surfaces flatter, back surfaces steeper, for both cornea and lens.
+
+@75638d29-16
+c: Secondary nodal point = 7.33 mm from the corneal apex.
+m: The second nodal point sits just behind the first (7.08 mm). A ray aimed at the first leaves from the second at the same angle, which is how retinal image size is worked out.
+t: Nodal points (schematic eye)
+o: 3.6 mm is the depth to the front lens. | 7.08 mm is the primary nodal point. | Fits: 7.33 mm. | 15.70 mm is the anterior focal point.
+l: Nodal points come as a close pair near the back of the lens.
+x: Secondary is the second, larger number of the pair.
+
+@5a7aac80-1m
+c: Medium myopia = 3.00 to 6.00 D.
+m: The class is set by the lens power needed: past 3 D is medium, past 6 D is high.
+t: Myopia classification by degree
+o: Low is up to 3.00 D. | Fits: medium. | High is above 6.00 D. | Severe is not a standard class.
+l: Myopia cutoffs: 3 and 6.
+x: Boundary values belong to the class the bank states; here 3.00 to 6.00 is medium.
+
+@87cea699-1p
+c: Medium hyperopia = 3.00 to 5.00 D.
+m: Hyperopia uses a lower top cutoff than myopia because moderate hyperopia already strains accommodation.
+t: Hyperopia classification by degree
+o: Low is up to 3.00 D. | Fits: medium. | High is 5.00 D and above. | Extreme is not a standard class.
+l: Hyperopia cutoffs: 3 and 5. Myopia cutoffs: 3 and 6.
+x: The second cutoff is the trap. Hyperopia 5, myopia 6.
+
+@a05ffd66-1u
+c: Sorsby's correlative hyperopia covers the lower range, 0.25 to 6.00 D in this source.
+m: In correlative ametropia each part of the eye (cornea, lens, length) is within normal range, but they are poorly matched to each other, so the error stays modest.
+t: Sorsby correlative ametropia
+o: 0.25 to 3.00 D is too narrow for this source's range. | Fits: 0.25 to 6.00 D. | Above 6.00 D is component hyperopia. | 3.00 to 6.00 D leaves out the low errors.
+l: Correlative = normal parts badly matched (small errors); component = one part out of range (large errors).
+x: Correlative is the "normal parts" group, so it starts at the smallest errors.
+
+@f62a2a51-1s
+c: Sorsby's component hyperopia is above 6.00 D.
+m: Here one component, usually a very short axial length, falls outside the normal range, producing a large error.
+t: Sorsby component ametropia
+o: 0.25 to 3.00 D is low, correlative range. | 0.25 to 6.00 D is correlative. | Fits: above 6.00 D. | 3.00 to 5.00 D is not a Sorsby band.
+l: Large errors usually mean one abnormal component, most often axial length.
+x: Component = a component is abnormal = big error.
+
+@aec75c49-u
+c: Tonic latent hyperopia is a fixed, permanent ciliary spasm.
+m: "Tonic" means sustained tone. The ciliary muscle holds a steady contraction that hides part of the hyperopia and does not let go without cycloplegia.
+t: Tonic latent hyperopia
+o: Temporary spasm is clonic. | Fits: permanent spasm. | Latent hyperopia always involves ciliary tone. | Variable spasm is not the tonic form.
+l: Tonic = steady; clonic = intermittent. Same pairing as in muscle physiology.
+x: Tonic sounds like "tone", which stays on.
+
+@bb9e0f1a-v
+c: Clonic latent hyperopia is a temporary, intermittent spasm.
+m: The ciliary muscle contracts in bursts that come and go, so the hidden hyperopia varies between visits.
+t: Clonic latent hyperopia
+o: Fits: temporary spasm. | Permanent spasm is tonic. | Latent hyperopia always involves ciliary tone. | Chronic suggests permanent, which is tonic.
+l: Variable readings between refractions suggest a clonic component.
+x: Clonic = comes and goes, like clonus.
+
+@9893e173-z
+k: not
+c: Hyperopes struggle at near, so improved near vision does not fit.
+m: A hyperope must accommodate even for distance and needs still more for near, so near work is the first thing to blur or tire the eyes.
+t: Symptoms of hyperopia
+o: Asthenopia from constant focusing effort is typical. | Photophobia can accompany the strain. | Fits: near vision gets worse, not better. | Tearing can accompany asthenopia.
+l: Near vision improving with age is the myope's story (or second sight from index change), not the hyperope's.
+x: In NOT items, look for the choice describing the opposite condition.

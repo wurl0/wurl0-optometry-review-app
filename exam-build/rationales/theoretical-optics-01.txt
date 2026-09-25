@@ -114,7 +114,7 @@ x: Myopia: low to 3, medium to 6, high beyond.
 c: Hyperopia of 5.00 D and above is high.
 m: Hyperopic grades use lower cutoffs than myopia because even moderate hyperopia forces constant accommodation.
 t: Hyperopia classification by degree
-o: Low covers the small corrections, up to about 2.00 D. | Medium sits between low and 5.00 D. | Fits: high, 5.00 D and above. | Severe is not one of the standard classes.
+o: Low covers the small corrections, up to 3.00 D. | Medium runs from 3.00 D to 5.00 D. | Fits: high, 5.00 D and above. | Severe is not one of the standard classes.
 l: Hyperopia cutoffs are lower than myopia's; do not reuse the myopia numbers.
 x: Hyperopia high starts at 5. Myopia high starts at 6. Keep them apart.
 
