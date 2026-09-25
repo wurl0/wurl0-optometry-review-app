@@ -1,9 +1,9 @@
-// Emit an idempotent seed for ONE main-app bank subject into public.questions.
-// Re-running is safe: it deletes that subject's 'bank' rows, then re-inserts.
+// Emit a FIRST-TIME seed for ONE main-app bank subject into public.questions.
+// The table is the master copy once a subject is in it (fixes are made there, not in the app's
+// files), so the emitted SQL refuses to run if that subject is already seeded. It never deletes.
 //   node exam-build/seed_subject.mjs <slug> > seed.sql
-// Reads only local JSON. stem_hash matches src/lib/srs.ts questionId().
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+// Reads only local bank files (JSON, or the notes-quiz .ts for ocular-anatomy). stem_hash matches src/lib/srs.ts questionId().
+import { loadBank } from './_load_bank.mjs'
 const slug = process.argv[2]
 if (!slug) { console.error('usage: seed_subject.mjs <slug>'); process.exit(1) }
 // Bank slug -> OLE 2016 TOS area (A-H), mirroring src/lib/subjects.ts SUBJECT_GROUPS.
@@ -27,7 +27,7 @@ function questionId(s){s=normalizeStem(s);let h=0x811c9dc5;for(let i=0;i<s.lengt
 const sqlStr=(v)=>v==null?'NULL':`'${String(v).replace(/'/g,"''")}'`
 const sqlJson=(v)=>v==null?'NULL':`'${JSON.stringify(v).replace(/'/g,"''")}'::jsonb`
 const sqlBool=(v)=>v?'true':'false'
-const arr=JSON.parse(readFileSync(join('src','data',`${slug}.json`),'utf8'))
+const { file, questions: arr } = loadBank(slug)
 const cols=['stem_hash','type','stem','options','correct','explanation','subject','area','subtopic','section_code','is_trap','source','origin_file']
 const values=arr.map((q)=>{
   const type=q.type==='tf'?'tf':'mcq'
@@ -35,11 +35,11 @@ const values=arr.map((q)=>{
     options:type==='mcq'?(q.options??[]):null,
     correct:type==='tf'?Boolean(q.correct):Number(q.correct),
     explanation:q.explanation??null,subject:slug,area,subtopic:q.category??null,
-    section_code:q.module??null,is_trap:Boolean(q.isTrap),source:'bank',origin_file:`src/data/${slug}.json`}
+    section_code:q.module??null,is_trap:Boolean(q.isTrap),source:'bank',origin_file:file}
   return `  (${sqlStr(r.stem_hash)}, ${sqlStr(r.type)}, ${sqlStr(r.stem)}, ${sqlJson(r.options)}, ${sqlJson(r.correct)}, ${sqlStr(r.explanation)}, ${sqlStr(r.subject)}, ${sqlStr(r.area)}, ${sqlStr(r.subtopic)}, ${sqlStr(r.section_code)}, ${sqlBool(r.is_trap)}, ${sqlStr(r.source)}, ${sqlStr(r.origin_file)})`
 })
 let out=`begin;\n`
-out+=`delete from public.questions where subject=${sqlStr(slug)} and source='bank';\n`
+out+=`do $$ begin if exists (select 1 from public.questions where subject=${sqlStr(slug)} and source='bank') then raise exception 'already seeded: the questions table is the master copy, edit it there'; end if; end $$;\n`
 out+=`insert into public.questions (${cols.join(', ')}) values\n`+values.join(',\n')+';\n'
 out+=`commit;\n`
 process.stdout.write(out)
