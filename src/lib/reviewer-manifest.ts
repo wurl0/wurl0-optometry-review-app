@@ -266,6 +266,9 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'C.preboards-set6', subject: 'C', type: 'preboards-set6', label: 'Primary Care & Refraction — Preboards Set 6',
     sub: '100-item Set 6 mock-board bank; Quiz / Exam / Study modes',
     path: '/top2/C-Primary-Care-and-Refraction/C-Preboards-Set6.html' },
+  { id: 'F.preboards-set6', subject: 'F', type: 'preboards-set6', label: 'Clinical Optometry & Specialties — Preboards Set 6',
+    sub: '139-item Set 6 mock-board bank; Quiz / Exam / Study modes',
+    path: '/top2/F-Clinical-Optometry-and-Specialties/F-Preboards-Set6.html' },
 ]
 
 // App features (not static /top2 files) that are grantable like any other item.
