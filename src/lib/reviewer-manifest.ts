@@ -246,7 +246,7 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'G.g1-strategy', subject: 'G', type: 'strategy', label: 'Ocular Pharmacology — G1 Strategy',
     sub: 'General pharmacology principles: rules, mnemonics and traps',
     path: '/top2/G-Ocular-Pharmacology/G1-General-Pharmacology-Principles/G1-Strategy.html' },
-  // Set 6 preboards — only some subjects (D, E, G) are built so far, so each is a manual
+  // Set 6 preboards — subjects are added one at a time as they are built, so each is a manual
   // item rather than auto-fanned across all 8 subjects. Grant/admin-only (not in PUBLIC_IDS).
   { id: 'E.preboards-set6', subject: 'E', type: 'preboards-set6', label: 'Ocular Disease — Preboards Set 6',
     sub: '130-item Set 6 mock-board bank; Quiz / Exam / Study modes',
@@ -257,6 +257,9 @@ const EXTRA_SUBJECT_ITEMS: Item[] = [
   { id: 'D.preboards-set6', subject: 'D', type: 'preboards-set6', label: 'Theoretical Optics & CL — Preboards Set 6',
     sub: '299-item Set 6 mock-board bank; Quiz / Exam / Study modes',
     path: '/top2/D-Theoretical-Optics-Dispensing-CL/D-Preboards-Set6.html' },
+  { id: 'A.preboards-set6', subject: 'A', type: 'preboards-set6', label: 'Visual Biology — Preboards Set 6',
+    sub: '125-item Set 6 mock-board bank; Quiz / Exam / Study modes',
+    path: '/top2/A-Visual-Biology/A-Preboards-Set6.html' },
 ]
 
 // App features (not static /top2 files) that are grantable like any other item.
