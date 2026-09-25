@@ -65,7 +65,7 @@ create index if not exists questions_tags_idx      on public.questions using gin
 
 -- keep updated_at honest
 create or replace function public.touch_updated_at() returns trigger
-  language plpgsql as $$ begin new.updated_at = now(); return new; end $$;
+  language plpgsql set search_path = public as $$ begin new.updated_at = now(); return new; end $$;
 
 drop trigger if exists questions_touch on public.questions;
 create trigger questions_touch before update on public.questions

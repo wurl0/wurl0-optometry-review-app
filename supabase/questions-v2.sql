@@ -1,6 +1,6 @@
 -- FoqusLab questions v2: structured rationales + answer log + mastery/advice.
 --
--- Builds on questions-table.sql (live, 1,905 bank rows). Additive only: new nullable columns,
+-- Builds on questions-table.sql (live, 1,972 bank rows, all 15 subjects). Additive only: new nullable columns,
 -- new tables, new views. Nothing the live app reads today changes.
 --
 -- Three layers, one per goal:
@@ -98,7 +98,7 @@ alter table public.questions add  constraint questions_active_has_rationale_chk 
   status <> 'active' or coalesce(length(trim(explanation)), 0) > 0 or meets_standard
 );
 
--- Anything NEW goes live only at full standard. The 1,905 legacy 'bank' rows are exempt so they
+-- Anything NEW goes live only at full standard. The 1,972 legacy 'bank' rows are exempt so they
 -- keep serving while they are upgraded; drop the exemption once `where not meets_standard` is empty.
 alter table public.questions drop constraint if exists questions_new_meets_standard_chk;
 alter table public.questions add  constraint questions_new_meets_standard_chk check (
@@ -111,8 +111,7 @@ alter table public.questions drop constraint if exists questions_no_letter_refs_
 alter table public.questions add  constraint questions_no_letter_refs_chk check (
   concat_ws(' ', explanation, decisive_clue, mechanism, teaching_moment, exam_tip, option_rationales::text)
     !~ '\m([Oo]ption|[Cc]hoice|[Aa]nswer)s?\s+[A-D]\M'   -- letter case-sensitive: skips "answer a question"
-) not valid;  -- enforced on every insert/update; 1 legacy row (binocular-vision, "Options A and D")
-              -- still breaks it. Fix that row, then: alter table public.questions validate constraint questions_no_letter_refs_chk;
+);  -- validated against every row: the one legacy offender was fixed in the table on 2026-09-25
 
 create unique index if not exists questions_code_uidx on public.questions (code) where code is not null;
 create index if not exists questions_subtopic_idx on public.questions (area, subtopic) where status = 'active';
@@ -270,13 +269,13 @@ $$
                + 0.05 * m.missed_unread::numeric   / m.answered )::numeric, 3) as priority,
          case
            when m.confident_wrong >= 2
-             then 'You answered these confidently and got them wrong. Reread the rationales, the idea you have is off.'
+             then 'You answered these confidently and got them wrong. Reread the rationales: the idea you have is off.'
            when m.missed_unread >= 3
              then 'You are skipping the rationale after a miss. Open it: that is where the point is.'
            when m.lucky_right >= 3
              then 'Several right answers here were guesses. Drill it until you are sure.'
-           when coalesce(m.accuracy_30d, m.accuracy) < 0.60
-             then 'Below passing. Review the notes for this topic, then retry a short set.'
+           when coalesce(m.accuracy_30d, m.accuracy) < 0.75
+             then 'Below the 75% board passing average. Review the notes for this topic, then retry a short set.'
            when m.last_seen < now() - interval '14 days'
              then 'Not practiced in two weeks. A short refresher keeps it from fading.'
            else 'Close to solid. Keep it in rotation.'
