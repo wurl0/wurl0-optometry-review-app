@@ -123,6 +123,9 @@ const TOOL_ITEMS: Item[] = [
   { id: 'tool.cble-interface-cheat-sheet', subject: 'GLOBAL', type: 'tool', label: 'CBLE Interface Cheat Sheet',
     sub: 'Walkthrough of the PRC computer-based test screen and controls before exam day',
     path: '/top2/00-Master-Index/CBLE-Interface-Cheat-Sheet.html' },
+  { id: 'tool.final-coaching-card', subject: 'GLOBAL', type: 'tool', label: 'Final Coaching Card',
+    sub: 'The full final coaching on one card: cornea, CL fitting, lens care, tears, orbit, retina, accommodation, EOMs, color vision, with 20 diagrams and a recall deck',
+    path: '/top2/00-Master-Index/Final-Coaching-Card.html' },
 ]
 
 // Visual interactives (grouped under their subject). Grantable like any other item.
